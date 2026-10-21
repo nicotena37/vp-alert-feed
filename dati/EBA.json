@@ -1,0 +1,19 @@
+{
+"nome_file": "vpalert_rss_EBA_2026-10-21T22-13-42.json",
+"sito": "EBA",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:13:42Z",
+"feed": [
+{
+"nome": "EBA - news",
+"url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 502"
+}
+],
+"allarmi": [
+"EBA - news: feed non leggibile (ValueError: HTTP 502) - https://www.eba.europa.eu/news-press/news/rss.xml"
+],
+"notizie": []
+}

@@ -1,0 +1,125 @@
+{
+"nome_file": "vpalert_rss_Camera-dei-deputati-documenti_2026-10-21T22-12-59.json",
+"sito": "Camera dei deputati (documenti)",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:12:59Z",
+"feed": [
+{
+"nome": "Camera - Temi Commissione VI Finanze",
+"url": "https://documenti.camera.it/rss/temi/bridgeCommissioni6.xml",
+"voci": 10
+},
+{
+"nome": "Camera - Ultimi progetti di legge annunciati",
+"url": "https://documenti.camera.it/apps/rssFeeds/ultimipdl/pdlUltimiAnnunciati.asp?idLegislatura=19",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: XML non valido (feed cambiato?)"
+}
+],
+"allarmi": [
+"Camera - Ultimi progetti di legge annunciati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://documenti.camera.it/apps/rssFeeds/ultimipdl/pdlUltimiAnnunciati.asp?idLegislatura=19"
+],
+"notizie": [
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Gli interventi di adeguamento alle disposizioni europee per il settore fiscale, bancario e finanziario",
+"link": "https://temi.camera.it/leg19/temi/gli-interventi-di-adeguamento-alle-disposizioni-europee-nel-corso-della-xix-legislatura",
+"data_originale": "Wed, 23 Sep 2026 12:00:00 GMT",
+"data": "2026-09-23",
+"descrizione": "Nel corso della XIX legislatura si è proceduto ad allineare il nostro ordinamento alle disposizioni normative dell'Unione europea attraverso il recepimento di direttive e l'adeguamento della normativa nazionale a regolamenti unionali. In attuazione della legge di delegazione europea 2021 (legge n. 127 del 2022), approvata nella parte conclusiva della XVIII legislatura, il Governo è stato delegato al recepimento di 4 direttive, nonché per l'adeguamento della normativa nazionale a 22 regolamenti europei e il recepimento di una raccomandazione. Successivamente, la legge n. 15 del 2024, Legge di delegazione europea 2022-2023, ha conferito delega al Governo per il recepimento, secondo i termini e"
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Accise e dogane",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_accise",
+"data_originale": "Tue, 22 Sep 2026 12:00:00 GMT",
+"data": "2026-09-22",
+"descrizione": "Il presente tema, dopo un inquadramento generale della disciplina delle accise, tratta nello specifico la disciplina delle principali accise nazionali: sui carburanti, sul gas, sull'energia elettrica, sui prodotti da fumo e sugli alcolici. Nel corso della XIX legislatura, in attuazione della legge delega n. 111 del 2023, il Governo ha emanato il decreto legislativo n. 43 del 2025 il quale contiene la revisione delle disposizioni in materia di accise. Tra gli interventi più rilevanti si segnalano la riforma dell'accisa sul gas naturale, con il superamento della distinzione fra usi civili e industriali; l'avvicinamento graduale fra l'accisa sui gasoli e sulla benzina; nonché il riordino e la s"
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "D.L. 133/2026 - Disposizioni urgenti in materia di prezzi petroliferi connessi alla ulteriore crisi dei mercati internazionali e disposizioni in materia di ILVA S.p.A. in amministrazione straordinaria",
+"link": "https://temi.camera.it/leg19/temi/d-l-133-2026-isposizioni-urgenti-in-materia-di-prezzi-petroliferi-connessi-alla-ulteriore-crisi-dei-mercati-internazionali-e-disposizioni-in-materia-di-ilva-s-p-a-in-amministrazione-straordinaria",
+"data_originale": "Wed, 16 Sep 2026 12:00:00 GMT",
+"data": "2026-09-16",
+"descrizione": "La Camera dei deputati ha approvato il decreto-legge n. 133 del 2026 (C. 3045​), contenente disposizioni urgenti in materia di prezzi petroliferi connessi alla ulteriore crisi dei mercati internazionali e disposizioni in materia di ILVA S.p.A. in amministrazione straordinaria. L'esame era iniziato presso la Commissione VI il 29 luglio 2026. Nel corso della seduta del 9 settembre 2026 la Commissione ne aveva concluso l'esame in sede referente a seguito dell'approvazione di alcune proposte emendative. Per maggiori approndimenti si veda il relativo dossier di documentazione."
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Società quotate e mercati finanziari",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_intermediazione_finanziaria",
+"data_originale": "Thu, 30 Jul 2026 12:00:00 GMT",
+"data": "2026-07-30",
+"descrizione": "Nel presente tema si dà atto dei più recenti lineamenti normativi in materia di società e mercati. Il decreto-legge 30 marzo 2023, n. 25 ha introdotto disposizioni in materia di emissioni e circolazione di strumenti finanziari in forma digitale e di semplificazione della sperimentazione FinTech. Il provvedimento intende adeguare l'ordinamento nazionale alle disposizioni del regolamento UE 2022/858 (capo I-Capo VII) e introdurre misure di semplificazione della sperimentazione FinTech (Capo VIII). Si veda il relativo tema per dettagli. E' in vigore la legge n. 21 del 2024 contenente Interventi a sostegno della competitività dei capitali, il cui esame da parte della Camera si è concluso il 6 fe"
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Giochi",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_giochi",
+"data_originale": "Thu, 30 Jul 2026 12:00:00 GMT",
+"data": "2026-07-30",
+"descrizione": "In Italia il quadro normativo che disciplina il settore dei giochi legali risulta assai complesso in assenza di un testo unico che raccolga le numerose norme che nel tempo sono state adottate in materia. Nel seguente tema si dà conto sia degli interventi che il legislatore ha adottato ai fini del gettito fiscale derivante dai giochi (indicando anche i dati aggiornati delle entrate nei vari periodi di riferimento), sia delle misure volte al contrasto del fenomeno del gioco d'azzardo, nonché della gestione del gioco legale."
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Le misure fiscali di sostegno al settore produttivo",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_ires_irap_d",
+"data_originale": "Wed, 29 Jul 2026 12:00:00 GMT",
+"data": "2026-07-29",
+"descrizione": "Il legislatore fiscale negli anni ha ritoccato la tassazione del settore produttivo - fermi restando i lineamenti fondamentali delle imposte dirette - con l'introduzione di numerose agevolazioni sotto forma di deduzioni, detrazioni, modifiche riguardanti la contabilizzazione di alcuni valori aziendali a fini fiscali (ad esempi con riferimento alle percentuali di ammortamento di determinati beni ovvero all'aggiornamento del valore effettivo a bilancio di immobilizzazioni materiali o immateriali) e soprattutto di crediti di imposta. Tale sistema di agevolazioni è stato diretto ad alleggerire da un lato il carico fiscale sulle imprese e, con interventi mirati in specifici settori, a sostenere l"
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Tassazione del settore produttivo",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_ires_irap",
+"data_originale": "Tue, 21 Jul 2026 12:00:00 GMT",
+"data": "2026-07-21",
+"descrizione": "In Italia, il tipo di imposizione diretta che grava sulle attività produttive è dipendente dalla natura del soggetto passivo (persone fisiche o persone giuridiche) e dall'organizzazione degli stessi (società di persone o di capitali). In linea generale, i lavoratori autonomi e le imprese individuali sono assoggettati a Irpef, mentre le persone giuridiche (con la rilevante eccezione delle società di persone) sono assoggettate a Ires, imposta sul reddito delle società. La legge di delega sulla riforma fiscale (legge n. 111 del 2023) intende operare un complessivo riordino della tassazione del settore produttivo. Accanto alla revisione delle singole imposte, il legislatore intende altresì modif"
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Tassazione delle persone fisiche",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_irpef",
+"data_originale": "Tue, 21 Jul 2026 12:00:00 GMT",
+"data": "2026-07-21",
+"descrizione": "Nel seguente tema si dà conto degli interventi normativi che disciplinano le caratteristiche fondamentali della tassazione in Italia delle persone fisiche, escluse quelle che esercitano attività di arte e professioni. Con riferimento alla tassazione dei redditi d'impresa e da lavoro autonomo, si rinvia allo specifico tema concernente la tassazione del settore produttivo. Nel corso della XIX legislatura sono stati adottati dal legislatore numerosi interventi normativi in materia di tassazione delle persone fisiche. In particolare sono stati ridisegnati i lineamenti fondamentali dell'Imposta sul reddito delle persone fisiche (IRPEF), sia attraverso interventi sulle aliquote e sugli scaglioni, "
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "Immobili pubblici e concessioni demaniali",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_gli_immobili_pubblici",
+"data_originale": "Thu, 16 Jul 2026 12:00:00 GMT",
+"data": "2026-07-16",
+"descrizione": "Nel corso della XIX legislatura sono stati introdotte diverse disposizioni volte a rafforzare il ruolo dell'Agenzia del demanio nella gestione attiva del patrimonio immobiliare pubblico, anche al fine di favorire l'attuazione del PNRR. Per elementi informativi in merito alla consistenza e all'uso e al valore dei beni del patrimonio pubblico si veda il Rapporto annuale dell'Agenzia del demanio (anno 2026)."
+},
+{
+"sito": "Camera dei deputati (documenti)",
+"feed": "Camera - Temi Commissione VI Finanze",
+"categoria": "Iter",
+"titolo": "IVA e altre imposte indirette",
+"link": "https://temi.camera.it/leg19/temi/19_tl18_iva_imposte_indirette",
+"data_originale": "Mon, 08 Jun 2026 12:00:00 GMT",
+"data": "2026-06-08",
+"descrizione": "L'Imposta sul valore aggiunto – Iva è un'imposta armonizzata: ciò significa che i lineamenti fondamentali della disciplina e i livelli minimi di aliquote sono stabiliti dal legislatore europeo, lasciando agli Stati membri il compito di innalzare o mantenere le aliquote e dettare la disciplina di dettaglio, anche in materia di fatturazione e documentazione necessaria al corretto adempimento dell'obbligo tributario, coerentemente agli indirizzi forniti in sede UE. La direttiva 2006/112/CE del Consiglio del 28 novembre 2006, relativa al sistema comune d'imposta sul valore aggiunto, contiene la disciplina Iva valevole in sede europea. La direttiva (UE) 2022/542 ha recentemente modificato la \"dir"
+}
+]
+}

@@ -1,0 +1,27 @@
+{
+"nome_file": "vpalert_rss_Consiglio-UE_2026-10-21T22-14-29.json",
+"sito": "Consiglio UE",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:14:29Z",
+"feed": [
+{
+"nome": "Consiglio UE - comunicati",
+"url": "https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
+"voci": 0,
+"errore": true,
+"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+},
+{
+"nome": "Consiglio UE - riunioni ECOFIN",
+"url": "https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/",
+"voci": 0,
+"errore": true,
+"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+}
+],
+"allarmi": [
+"Consiglio UE - comunicati: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
+"Consiglio UE - riunioni ECOFIN: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
+],
+"notizie": []
+}

@@ -1,0 +1,35 @@
+{
+"nome_file": "vpalert_rss_Parlamento-europeo_2026-10-21T22-14-20.json",
+"sito": "Parlamento europeo",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:14:20Z",
+"feed": [
+{
+"nome": "Parlamento UE - comunicati",
+"url": "https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 202"
+},
+{
+"nome": "Parlamento UE - Commissione ECON",
+"url": "https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 202"
+},
+{
+"nome": "Parlamento UE - testi approvati",
+"url": "https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 202"
+}
+],
+"allarmi": [
+"Parlamento UE - comunicati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+"Parlamento UE - Commissione ECON: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+"Parlamento UE - testi approvati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
+],
+"notizie": []
+}

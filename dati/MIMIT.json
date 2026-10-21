@@ -1,0 +1,19 @@
+{
+"nome_file": "vpalert_rss_MIMIT_2026-10-21T22-13-17.json",
+"sito": "MIMIT",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:13:17Z",
+"feed": [
+{
+"nome": "MIMIT - notizie stampa",
+"url": "https://www.mimit.gov.it/it/notizie-stampa?format=feed&type=rss",
+"voci": 0,
+"errore": true,
+"motivo": "sito non raggiungibile (URLError: <urlopen error timed out>)"
+}
+],
+"allarmi": [
+"MIMIT - notizie stampa: non letto, sito non raggiungibile (URLError: <urlopen error timed out>) - https://www.mimit.gov.it/it/notizie-stampa?format=feed&type=rss"
+],
+"notizie": []
+}

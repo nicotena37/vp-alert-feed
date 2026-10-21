@@ -1,0 +1,19 @@
+{
+"nome_file": "vpalert_rss_MEF-Ragioneria-Generale-dello-Stato_2026-10-21T22-12-36.json",
+"sito": "MEF - Ragioneria Generale dello Stato",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:12:36Z",
+"feed": [
+{
+"nome": "RGS - novità",
+"url": "https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml",
+"voci": 0,
+"errore": true,
+"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+}
+],
+"allarmi": [
+"RGS - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml"
+],
+"notizie": []
+}

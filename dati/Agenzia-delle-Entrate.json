@@ -1,0 +1,27 @@
+{
+"nome_file": "vpalert_rss_Agenzia-delle-Entrate_2026-10-21T22-12-39.json",
+"sito": "Agenzia delle Entrate",
+"origine": "github-actions",
+"letto_il": "2026-10-21T22:12:39Z",
+"feed": [
+{
+"nome": "Agenzia Entrate - News",
+"url": "https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9",
+"voci": 0,
+"errore": true,
+"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+},
+{
+"nome": "Agenzia Entrate - Normativa e prassi",
+"url": "https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4",
+"voci": 0,
+"errore": true,
+"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+}
+],
+"allarmi": [
+"Agenzia Entrate - News: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9",
+"Agenzia Entrate - Normativa e prassi: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4"
+],
+"notizie": []
+}

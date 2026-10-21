@@ -1,0 +1,220 @@
+{
+ "letto_il": "2026-10-21T22:11:51+00:00",
+ "siti": {
+  "Banca d'Italia": {
+   "feed_ok": 0,
+   "feed_totali": 9,
+   "notizie": 0,
+   "allarmi": [
+    "Banca d'Italia - tutte le novità: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?lingua=it",
+    "Banca d'Italia - Vigilanza: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/vigilanza&lingua=it",
+    "Banca d'Italia - Normativa antiriciclaggio: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/supervisione-normativa-antiriciclaggio&lingua=it",
+    "Banca d'Italia - Tutela dei clienti: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/tutela-educazione&lingua=it",
+    "Banca d'Italia - Sistema dei pagamenti: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/sispaga-mercati&lingua=it",
+    "Banca d'Italia - Risoluzione e crisi: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/risoluzione-gestione-crisi&lingua=it",
+    "Banca d'Italia - Segnalazioni: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/statistiche/raccolta-dati/segnalazioni&lingua=it",
+    "Banca d'Italia - Centrale dei rischi: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/statistiche/raccolta-dati/centrale-rischi&lingua=it",
+    "Banca d'Italia - Notizie: non letto, vietato dal robots.txt del sito - https://www.bancaditalia.it/util/index.rss.html?sezione=/media/notizia&lingua=it"
+   ]
+  },
+  "UIF": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 1,
+   "allarmi": []
+  },
+  "IVASS": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "Consob": {
+   "feed_ok": 1,
+   "feed_totali": 5,
+   "notizie": 60,
+   "allarmi": [
+    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
+    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
+    "Consob - consultazioni: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+    "Consob - comunicati stampa: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.consob.it/web/area-pubblica/comunicati-stampa-2026"
+   ]
+  },
+  "MEF": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 20,
+   "allarmi": []
+  },
+  "MEF - Ragioneria Generale dello Stato": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "RGS - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml"
+   ]
+  },
+  "MEF - Dipartimento Finanze": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "Dipartimento Finanze - ultimi aggiornamenti: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.finanze.gov.it/opencms/it/rss.xml"
+   ]
+  },
+  "Agenzia delle Entrate": {
+   "feed_ok": 0,
+   "feed_totali": 2,
+   "notizie": 0,
+   "allarmi": [
+    "Agenzia Entrate - News: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9",
+    "Agenzia Entrate - Normativa e prassi: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4"
+   ]
+  },
+  "INPS": {
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 150,
+   "allarmi": []
+  },
+  "Ministero del Lavoro": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 50,
+   "allarmi": []
+  },
+  "Governo": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "Camera dei deputati (documenti)": {
+   "feed_ok": 1,
+   "feed_totali": 2,
+   "notizie": 10,
+   "allarmi": [
+    "Camera - Ultimi progetti di legge annunciati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://documenti.camera.it/apps/rssFeeds/ultimipdl/pdlUltimiAnnunciati.asp?idLegislatura=19"
+   ]
+  },
+  "Garante privacy": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "ACN": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "ACN - notizie: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192"
+   ]
+  },
+  "AGCM": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 14,
+   "allarmi": []
+  },
+  "COVIP": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "COVIP - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.covip.it/rss.xml"
+   ]
+  },
+  "MIMIT": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "MIMIT - notizie stampa: non letto, sito non raggiungibile (URLError: <urlopen error timed out>) - https://www.mimit.gov.it/it/notizie-stampa?format=feed&type=rss"
+   ]
+  },
+  "EBA": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "EBA - news: feed non leggibile (ValueError: HTTP 502) - https://www.eba.europa.eu/news-press/news/rss.xml"
+   ]
+  },
+  "ESMA": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "ESMA - novità (senza data): non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.esma.europa.eu/rss.xml"
+   ]
+  },
+  "BCE - Vigilanza bancaria": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 30,
+   "allarmi": []
+  },
+  "BCE": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 30,
+   "allarmi": []
+  },
+  "ESRB": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 30,
+   "allarmi": []
+  },
+  "EDPB": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 20,
+   "allarmi": []
+  },
+  "Parlamento europeo": {
+   "feed_ok": 0,
+   "feed_totali": 3,
+   "notizie": 0,
+   "allarmi": [
+    "Parlamento UE - comunicati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+    "Parlamento UE - Commissione ECON: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+    "Parlamento UE - testi approvati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
+   ]
+  },
+  "Consiglio UE": {
+   "feed_ok": 0,
+   "feed_totali": 2,
+   "notizie": 0,
+   "allarmi": [
+    "Consiglio UE - comunicati: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
+    "Consiglio UE - riunioni ECOFIN: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
+   ]
+  },
+  "Commissione europea": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "BIS": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 30,
+   "allarmi": []
+  },
+  "FSB": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "Teleborsa": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 87,
+   "allarmi": []
+  }
+ }
+}
