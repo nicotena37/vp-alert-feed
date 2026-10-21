@@ -1,92 +1,68 @@
 [
  {
   "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/plenary-documents/feed",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/events/feed?timeframe=one-week",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/documents/feed",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://www.consob.it/web/consob/comunicati-stampa",
+  "accept": "application/atom+xml",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 299811,
+  "byte": 153944,
+  "secondi": 5.4,
+  "captcha": false,
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Adopted Texts</title><id>https://data.europarl.europa.eu/api/v2/adopted-texts/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/adopted-texts/feed\"/><updated>2026-10-21T22:34:50.977Z</updated><entry><title type=\"text\" xml:lang=\"en\">Genetically modified soybean MON 87769</title><id>https://data.europarl.europa.eu/eli/dl/doc/T"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month&user-agent=vp-alert-feed",
+  "accept": "application/atom+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 153944,
+  "secondi": 6.0,
+  "captcha": false,
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Adopted Texts</title><id>https://data.europarl.europa.eu/api/v2/adopted-texts/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/adopted-texts/feed\"/><updated>2026-10-21T22:34:56.986Z</updated><entry><title type=\"text\" xml:lang=\"en\">Genetically modified soybean MON 87769</title><id>https://data.europarl.europa.eu/eli/dl/doc/T"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week&user-agent=vp-alert-feed",
+  "accept": "application/atom+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 205422,
+  "secondi": 4.1,
+  "captcha": false,
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Procedures executed by the European Parliament</title><id>https://data.europarl.europa.eu/api/v2/procedures/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/procedures/feed\"/><updated>2026-10-21T22:35:00.948Z</updated><entry><title type=\"text\" xml:lang=\"en\">Escalation of Houthi attacks and implications for regional security"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/plenary-documents/feed?user-agent=vp-alert-feed",
+  "accept": "application/atom+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 382555,
+  "secondi": 54.3,
+  "captcha": false,
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Plenary Documents</title><id>https://data.europarl.europa.eu/api/v2/plenary-documents/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/plenary-documents/feed\"/><updated>2026-10-21T22:35:55.000Z</updated><entry><title type=\"text\" xml:lang=\"en\">MOTION FOR A RESOLUTION on the state of play of advancing EU-Africa trade and inve"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/documents/feed?user-agent=vp-alert-feed",
+  "accept": "*/*",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 598674,
+  "secondi": 27.7,
+  "captcha": false,
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Documents</title><id>https://data.europarl.europa.eu/api/v2/documents/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/documents/feed\"/><updated>2026-10-21T22:36:22.515Z</updated><entry><title type=\"text\" xml:lang=\"en\">MOTION FOR A RESOLUTION on the state of play of advancing EU-Africa trade and investment relations</title>"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/adopted-texts?year=2026&sort-by=date:desc&limit=10&format=application%2Fld%2Bjson",
+  "accept": "application/ld+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 365640,
   "secondi": 4.5,
   "captcha": false,
-  "inizio": " <!DOCTYPE html> <html class=\"ltr\" dir=\" lang.dir\" lang=\"it-IT\"> <head> <title>Comunicati stampa - CONSOB</title> <meta content=\"initial-scale=1.0, width=device-width\" name=\"viewport\" /> <meta content=\"text/html; charset=UTF-8\" http-equiv=\"content-type\" /> <script type=\"importmap\">{\"imports\":{\"react-dom\":\"/o/frontend-js-react-web/__liferay__/exports/react-dom.js\",\"@clayui/breadcrumb\":\"/o/frontend-taglib-clay/__liferay__/exports/@clayui$breadcr"
- },
- {
-  "url": "https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 15073,
-  "secondi": 3.9,
-  "captcha": true,
-  "inizio": "<!DOCTYPE html> <html lang=\"en\"> <head> <title>Radware Captcha Page</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <link rel=\"stylesheet\" href=\"https://captcha.perfdrive.com/captcha-public/css/shieldsquare_styles.min.css\"> <script type=\"text/javascript\"> window.SSJSInternal = 64623; var __uzdbm_1 = \"fe5c6205-b064-4e38-8287-b38dc73e14bd\"; var __uzdbm_2 = \"M2I5YmQ0YWYtY2g2di00NDU4LThjZjktMmQ5NmZiYWZlYjMwJDEzNC4zMy43OC4yMjA=\"; (function(w, d, e, u, c, g, a, b){ w[\"SSJSConnectorObj\"] = w[\"SSJSConnectorObj\"] || {ss_cid : c, d"
- },
- {
-  "url": "https://www.consob.it/web/area-pubblica/sanzioni",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 15060,
-  "secondi": 3.8,
-  "captcha": true,
-  "inizio": "<!DOCTYPE html> <html lang=\"en\"> <head> <title>Radware Captcha Page</title> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <link rel=\"stylesheet\" href=\"https://captcha.perfdrive.com/captcha-public/css/shieldsquare_styles.min.css\"> <script type=\"text/javascript\"> window.SSJSInternal = 64623; var __uzdbm_1 = \"f0b349cd-c55c-4a31-bd54-7dd33ba57676\"; var __uzdbm_2 = \"NDVjOTZmZTEtY2g2di00NTNlLWEzMWEtYmVjNDA4NGM1OTc2JDEzNC4zMy43OC4yMjA=\"; (function(w, d, e, u, c, g, a, b){ w[\"SSJSConnectorObj\"] = w[\"SSJSConnectorObj\"] || {ss_cid : c, d"
- },
- {
-  "url": "https://www.eba.europa.eu/",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 502,
-  "byte": 0,
-  "secondi": 4.2,
-  "captcha": false,
-  "inizio": ""
+  "inizio": "{\"data\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347\",\"type\":\"Work\",\"adopts\":[\"eli/dl/doc/A-10-2025-0136\"],\"parliamentary_term\":\"org/ep-10\",\"document_date\":\"2026-10-20\",\"is_realized_by\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347/hu\",\"type\":\"Expression\",\"is_embodied_by\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347/hu/pdf\",\"type\":\"Manifestation\",\"is_exemplified_by\":\"distribution/doc/TA-10-2026-0347_hu.pdf\",\"media_type\":\"https://www.iana.org/assignments/media-types/application/pdf\",\"format\":\"http://publications.europa.eu/resource/authority/file-type/PDF\",\"issued\":\"2026-10-21T14:42:31+02:00\",\"byteSize\":\"334346\"},{\"id\":\"eli/d"
  }
 ]
