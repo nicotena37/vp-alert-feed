@@ -211,10 +211,10 @@ def leggi_sito(sito: dict) -> dict:
                 raise ValueError(f"HTTP {stato}: il sito blocca le richieste dai server di GitHub")
             if stato != 200:
                 raise ValueError(f"HTTP {stato}")
+            if re.search(rb"<title>[^<]*captcha", contenuto[:20000], re.I):
+                raise ValueError("il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)")
             voci = leggi_pagina(sito, f, contenuto) if f.get("tipo") else leggi_rss(sito, f, contenuto)
             if f.get("tipo") and not voci:
-                (DATI / "debug").mkdir(parents=True, exist_ok=True)
-                (DATI / "debug" / (re.sub(r"[^A-Za-z0-9]+", "-", f["nome"]) + ".html")).write_bytes(contenuto[:400000])
                 raise ValueError("nessuna voce trovata nella pagina (struttura cambiata?)")
             ris["notizie"] += voci
             ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(voci)})
