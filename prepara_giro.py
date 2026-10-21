@@ -26,6 +26,8 @@ def main() -> int:
         if f.name == "stato.json":
             continue
         d = json.loads(f.read_text(encoding="utf-8"))
+        if not isinstance(d, dict) or "nome_file" not in d:      # es. prova_url.json
+            continue
         eta = (adesso - datetime.fromisoformat(d["letto_il"].replace("Z", "+00:00"))).total_seconds() / 3600
         if eta > ore:
             vecchi.append(d["sito"])
