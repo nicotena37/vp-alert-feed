@@ -1,12 +1,6 @@
-# Parlamento UE: feed Atom del servizio dati aperti
-https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month
-https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week
-https://data.europarl.europa.eu/api/v2/plenary-documents/feed
-https://data.europarl.europa.eu/api/v2/events/feed?timeframe=one-week
-https://data.europarl.europa.eu/api/v2/documents/feed
-# Consob: pagina comunicati stampa (raggiungibile)
-https://www.consob.it/web/consob/comunicati-stampa
-https://www.consob.it/web/consob/consultazioni-con-il-mercato
-https://www.consob.it/web/area-pubblica/sanzioni
-# EBA di nuovo
-https://www.eba.europa.eu/
+https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month | application/atom+xml
+https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month&user-agent=vp-alert-feed | application/atom+xml
+https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week&user-agent=vp-alert-feed | application/atom+xml
+https://data.europarl.europa.eu/api/v2/plenary-documents/feed?user-agent=vp-alert-feed | application/atom+xml
+https://data.europarl.europa.eu/api/v2/documents/feed?user-agent=vp-alert-feed | */*
+https://data.europarl.europa.eu/api/v2/adopted-texts?year=2026&sort-by=date:desc&limit=10&format=application%2Fld%2Bjson | application/ld+json

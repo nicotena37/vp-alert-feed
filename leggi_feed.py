@@ -42,13 +42,13 @@ def pulisci(s: str | None) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def scarica(url: str) -> tuple[int, bytes]:
+def scarica(url: str, accetta: str | None = None) -> tuple[int, bytes]:
     host = urlparse(url).netloc
     attesa = _ultima.get(host, 0) + PAUSA - time.time()
     if attesa > 0:
         time.sleep(attesa)
-    req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "application/rss+xml, application/xml, "
-                                               "text/xml, application/atom+xml, text/html;q=0.8, */*;q=0.5"})
+    req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": accetta or "application/rss+xml, "
+                                 "application/xml, text/xml, application/atom+xml, text/html;q=0.8, */*;q=0.5"})
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
             return r.status, r.read()
