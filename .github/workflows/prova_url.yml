@@ -22,11 +22,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --quiet lxml==5.3.0 beautifulsoup4==4.12.3
-      - run: python prova_url.py
+      - run: python prova_url.py --salva
       - run: |
           git config user.name "vp-alert-feed"
           git config user.email "vp-alert-feed@users.noreply.github.com"
-          git add dati/prova_url.json
+          git add dati/prova_url.json dati/prova
           git diff --cached --quiet || git commit -m "Prova indirizzi $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase --quiet || true
           git push

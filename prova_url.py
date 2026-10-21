@@ -20,6 +20,9 @@ for url in [u.strip() for u in (QUI / "prova_url.txt").read_text(encoding="utf-8
         t0 = time.time()
         try:
             stato, c = L.scarica(url)
+            if "--salva" in __import__("sys").argv and c:
+                (QUI / "dati" / "prova").mkdir(parents=True, exist_ok=True)
+                (QUI / "dati" / "prova" / (re.sub(r"[^A-Za-z0-9]+", "_", url)[8:90] + ".txt")).write_bytes(c[:600000])
             r.update(stato=stato, byte=len(c), secondi=round(time.time() - t0, 1),
                      captcha=bool(re.search(rb"captcha", c[:20000], re.I)),
                      inizio=re.sub(r"\s+", " ", c[:600].decode("utf-8", "replace")))

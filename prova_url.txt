@@ -1,22 +1,12 @@
-# EBA (ieri errore 502)
-https://www.eba.europa.eu/news-press/news/rss.xml
-https://www.eba.europa.eu/rss.xml
-# ESMA
-https://www.esma.europa.eu/rss.xml
-https://www.esma.europa.eu/press-news/esma-news
-# Parlamento europeo: servizio dati aperti (per programmi) e Osservatorio legislativo
-https://data.europarl.europa.eu/api/v2/adopted-texts?year=2026&format=application%2Fld%2Bjson&offset=0&limit=20
-https://data.europarl.europa.eu/api/v2/plenary-documents?year=2026&format=application%2Fld%2Bjson&offset=0&limit=20
-https://data.europarl.europa.eu/api/v2/meetings?year=2026&format=application%2Fld%2Bjson&offset=0&limit=20
-https://oeil.secure.europarl.europa.eu/oeil/en/rss
-https://www.europarl.europa.eu/rss/doc/press-releases/it.xml
-# COVIP
-https://www.covip.it/rss.xml
-https://www.covip.it/
-# Consob
+# Parlamento UE: feed Atom del servizio dati aperti
+https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month
+https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week
+https://data.europarl.europa.eu/api/v2/plenary-documents/feed
+https://data.europarl.europa.eu/api/v2/events/feed?timeframe=one-week
+https://data.europarl.europa.eu/api/v2/documents/feed
+# Consob: pagina comunicati stampa (raggiungibile)
 https://www.consob.it/web/consob/comunicati-stampa
-https://www.consob.it/web/area-pubblica/bollettino/periodo1
-# MIMIT (con attesa di 60 secondi)
-https://www.mimit.gov.it/it/notizie-stampa?format=feed&type=rss
-# Consiglio UE ECOFIN
-https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/
+https://www.consob.it/web/consob/consultazioni-con-il-mercato
+https://www.consob.it/web/area-pubblica/sanzioni
+# EBA di nuovo
+https://www.eba.europa.eu/
