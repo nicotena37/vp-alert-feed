@@ -1,27 +1,225 @@
 {
-"nome_file": "vpalert_rss_Consiglio-UE_2026-10-21T22-14-29.json",
+"nome_file": "vpalert_rss_Consiglio-UE_2026-10-21T22-18-48.json",
 "sito": "Consiglio UE",
 "origine": "github-actions",
-"letto_il": "2026-10-21T22:14:29Z",
+"letto_il": "2026-10-21T22:18:48Z",
 "feed": [
 {
 "nome": "Consiglio UE - comunicati",
 "url": "https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
-"voci": 0,
-"errore": true,
-"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+"voci": 20
 },
 {
 "nome": "Consiglio UE - riunioni ECOFIN",
 "url": "https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/",
 "voci": 0,
 "errore": true,
-"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
 }
 ],
 "allarmi": [
-"Consiglio UE - comunicati: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
-"Consiglio UE - riunioni ECOFIN: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
+"Consiglio UE - riunioni ECOFIN: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
 ],
-"notizie": []
+"notizie": [
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Savings and investments union: Council and Parliament strike deal to revitalise the EU’s securitisation market",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/savings-and-investments-union-council-and-parliament-strike-deal-to-revitalise-the-eu-s-securitisation-market/",
+"data_originale": "2026-10-21T23:17:00Z",
+"data": "2026-10-21",
+"descrizione": "The Council and the Parliament agreed new rules to revitalise the EU’s securitisation market - an integral part of the savings and investments union (SIU) and the ‘One Europe, One Market’ roadmap to boost economic growth."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Libya/Türkiye: Statement by the High Representative on behalf of the EU on the ratification of the Libya-Türkiye MoU by Libya’s House of Representatives",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/libyaturkiye-statement-by-the-high-representative-on-behalf-of-the-eu-on-the-ratification-of-the-libya-turkiye-mou-by-libya-s-house-of-representatives/",
+"data_originale": "2026-10-21T18:54:00Z",
+"data": "2026-10-21",
+"descrizione": "Statement by the High Representative on behalf of the EU on the ratification of the Libya-Türkiye MoU by Libya’s House of Representatives."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Simplification: Council agrees negotiating stance to cut red tape for small packaging producers",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/simplification-council-agrees-negotiating-stance-to-cut-red-tape-for-small-packaging-producers/",
+"data_originale": "2026-10-21T17:40:00Z",
+"data": "2026-10-21",
+"descrizione": "Council agrees negotiating position on proposal for a regulation suspending extended producer responsibility."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Digital rulebook: Council agrees position to simplify data protection, privacy and cyber reporting rules",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/digital-rulebook-council-agrees-position-to-simplify-data-protection-privacy-and-cyber-reporting-rules/",
+"data_originale": "2026-10-21T17:30:00Z",
+"data": "2026-10-21",
+"descrizione": "Simplification: Council agrees position to streamline EU’s data, privacy and cyber reporting rules."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "ETS market stability reserve: Council and Parliament reach provisional agreement on targeted amendment",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/ets-market-stability-reserve-council-and-parliament-reach-provisional-agreement-on-targeted-amendment/",
+"data_originale": "2026-10-21T11:49:00Z",
+"data": "2026-10-21",
+"descrizione": "The Council and the European Parliament reached a provisional agreement on amending the rules on the invalidation of allowances in the market stability reserve, in order to increase long-term market liquidity and predictability within its emission trading system."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Press briefing - Agriculture and Fisheries Council of 26-27 October 2026",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/press-briefing-agriculture-and-fisheries-council-of-26-27-october-2026/",
+"data_originale": "2026-10-21T11:00:00Z",
+"data": "2026-10-21",
+"descrizione": "Press briefing ahead of the upcoming Agriculture and Fisheries Council will take place on 23 October 2026 at 13:00."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Rapport du président António Costa au Parlement européen réuni en séance plénière",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/21/report-by-president-antonio-costa-to-the-european-parliament-plenary-session/",
+"data_originale": "2026-10-21T10:25:00Z",
+"data": "2026-10-21",
+"descrizione": "António Costa, président du Conseil européen, a présenté à la plénière du Parlement européen, à Strasbourg, un compte rendu des discussions qui ont eu lieu lors de la réunion du Conseil européen des 15 et 16 octobre 2026."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Joint statement by the President of the European Council António Costa and the President of the European Commission Ursula von der Leyen",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/20/joint-statement-by-the-president-of-the-european-council-and-the-president-of-the-european-commission/",
+"data_originale": "2026-10-20T21:30:00Z",
+"data": "2026-10-20",
+"descrizione": "Joint statement by the President of the European Council António Costa and the President of the European Commission Ursula von der Leyen."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Il Consiglio e il Parlamento raggiungono un accordo su misure aggiornate a sostegno dell'agricoltura biologica nell'UE",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/20/council-and-parliament-strike-deal-on-updated-measures-to-support-organic-farming-in-the-eu/",
+"data_originale": "2026-10-20T12:20:00Z",
+"data": "2026-10-20",
+"descrizione": "Il Consiglio e il Parlamento europeo hanno raggiunto un accordo provvisorio su norme più semplici e più chiare in materia di produzione, etichettatura, certificazione e commercio di prodotti biologici."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Media advisory - Accreditation for the Special European Council, 26 and 27 November 2026",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/media-advisory-accreditation-for-the-special-european-council-26-and-27-november-2026/",
+"data_originale": "2026-10-19T14:45:00Z",
+"data": "2026-10-19",
+"descrizione": "The Special European Council will take place on 26 and 27 November 2026 in the Europa building in Brussels."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "One-year badge 2026 - accreditation is open",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/one-year-badge-2026-accreditation-is-open-3/",
+"data_originale": "2026-10-19T14:40:00Z",
+"data": "2026-10-19",
+"descrizione": "Information about accreditation requirements for the one-year badge (2026)"
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Esercitazione EU Integrated Resolve 2026: rafforzare il coordinamento della risposta alle crisi dell'UE",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/eu-integrated-resolve-2026-exercise-enhancing-eu-crisis-response-coordination/",
+"data_originale": "2026-10-19T14:00:00Z",
+"data": "2026-10-19",
+"descrizione": "L'Unione europea sta svolgendo la sua esercitazione di gestione delle crisi EU Integrated Resolve per il 2026 (EU IR26)."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Strumento europeo per la pace: il Consiglio adotta una misura di assistenza a sostegno delle capacità di difesa della Nigeria",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/european-peace-facility-council-adopts-assistance-measure-to-support-defence-capacities-of-nigeria/",
+"data_originale": "2026-10-19T13:40:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio ha adottato la prima misura di assistenza bilaterale nell'ambito dello strumento europeo per la pace, per un valore di 20 milioni di euro, a sostegno delle forze armate nigeriane."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Diritti umani: l'UE nomina una nuova rappresentante speciale",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/human-rights-eu-appoints-a-new-special-representative/",
+"data_originale": "2026-10-19T13:35:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio ha nominato Ilze Brands Kehris rappresentante speciale dell'UE per i diritti umani per il periodo che va dal 19 ottobre 2026 al 29 febbraio 2028."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Un posto da poter chiamare casa: il Consiglio adotta una raccomandazione sulla lotta contro l'esclusione abitativa, compresa la mancanza di fissa dimora",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/a-place-to-call-home-council-adopts-recommendation-on-tackling-housing-exclusion-and-homelessness/",
+"data_originale": "2026-10-19T11:50:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio ha adottato una raccomandazione che definisce un approccio incentrato sulla persona e orientato all'alloggio per prevenire l'esclusione abitativa nell'UE, compresa la mancanza di una fissa dimora."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "QFP 2028-2034: il Consiglio concorda una posizione sull'organizzazione comune dei mercati dei prodotti agricoli",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/mff-2028-2034-council-agrees-position-on-the-common-market-organisation-for-agricultural-products/",
+"data_originale": "2026-10-19T11:32:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio raggiunge una posizione negoziale parziale su una serie aggiornata di norme che disciplinano l'organizzazione comune dei mercati dei prodotti agricoli nel quadro dei negoziati sul QFP per il periodo successivo al 2027."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Il Consiglio chiede maggiore uguaglianza per stimolare la competitività dell'UE",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/council-calls-for-greater-equality-to-boost-eu-competitiveness/",
+"data_originale": "2026-10-19T09:55:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio ha approvato conclusioni in cui chiede maggiori sforzi per promuovere l'uguaglianza come mezzo per rafforzare la crescita economica e la competitività in Europa."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Via libera del Consiglio alle misure per proteggere i lavoratori dall'esposizione a sostanze pericolose",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/19/council-greenlights-measures-to-protect-workers-from-exposure-to-hazardous-substances/",
+"data_originale": "2026-10-19T09:44:00Z",
+"data": "2026-10-19",
+"descrizione": "Il Consiglio dell'UE ha adottato una serie di norme rivedute volte a proteggere i lavoratori nell'UE dall'esposizione a sostanze pericolose che potrebbero causare malattie quali il cancro o l'asma."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Prossimamente: 19 ottobre - 1º novembre 2026",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/17/forward-look-2026/",
+"data_originale": "2026-10-17T14:20:00Z",
+"data": "2026-10-17",
+"descrizione": "Panoramica dei principali temi che saranno discussi nelle sessioni del Consiglio dell'UE delle prossime due settimane e prossimi eventi per i media."
+},
+{
+"sito": "Consiglio UE",
+"feed": "Consiglio UE - comunicati",
+"categoria": "Iter",
+"titolo": "Weekly schedule of President António Costa",
+"link": "https://www.consilium.europa.eu/it/press/press-releases/2026/10/16/weekly-schedule-of-president-antonio-costa/",
+"data_originale": "2026-10-16T20:30:00Z",
+"data": "2026-10-16",
+"descrizione": "Weekly schedule of President António Costa, 19-25 October 2026."
+}
+]
 }

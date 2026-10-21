@@ -1,19 +1,516 @@
 {
-"nome_file": "vpalert_rss_MEF-Ragioneria-Generale-dello-Stato_2026-10-21T22-12-36.json",
+"nome_file": "vpalert_rss_MEF-Ragioneria-Generale-dello-Stato_2026-10-21T22-16-29.json",
 "sito": "MEF - Ragioneria Generale dello Stato",
 "origine": "github-actions",
-"letto_il": "2026-10-21T22:12:36Z",
+"letto_il": "2026-10-21T22:16:29Z",
 "feed": [
 {
 "nome": "RGS - novità",
 "url": "https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml",
-"voci": 0,
-"errore": true,
-"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+"voci": 50
 }
 ],
-"allarmi": [
-"RGS - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml"
-],
-"notizie": []
+"allarmi": [],
+"notizie": [
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 agosto 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_08_ottobre_2026/index.html",
+"data_originale": "Thu, 8 Oct 2026 15:00:00 +0200",
+"data": "2026-10-08",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 agosto 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Bilancio Aperto - Pubblicati Rendiconto 2025 e Assestamento 2026 approvati dal Parlamento",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/bilancio_aperto/index.html",
+"data_originale": "Wed, 7 Oct 2026 16:38:00 +0200",
+"data": "2026-10-07",
+"descrizione": "\"Bilancio Aperto\", l’app che consente di consultare il bilancio dello Stato e notizie di finanza pubblica attraverso Smartphone e Tablet, pubblica il Rendiconto 2025 e l’Assestamento 2026 approvati dal Parlamento"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Agosto 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_29_settembre_2026/index.html",
+"data_originale": "Tue, 29 Sep 2026 15:11:00 +0200",
+"data": "2026-09-29",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Agosto 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario - Rapporto n. 27",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/monitoraggio/spesa_pensionistica/",
+"data_originale": "Tue, 22 Sep 2026 14:01:00 +0200",
+"data": "2026-09-22",
+"descrizione": "La Ragioneria Generale dello Stato pubblica Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario - Rapporto n. 27"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 luglio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_21_settembre_2026/index.html",
+"data_originale": "Mon, 21 Sep 2026 11:06:00 +0200",
+"data": "2026-09-21",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 luglio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Rapporto mensile sull'andamento delle entrate tributarie e contributive",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_09_settembre_2026/index.html",
+"data_originale": "Wed, 9 Sep 2026 14:06:00 +0200",
+"data": "2026-09-09",
+"descrizione": "Disponibile l'edizione di Giugno 2026 del Rapporto mensile sull'andamento delle entrate tributarie e contributive, redatto dal Dipartimento delle finanze e dal Dipartimento della Ragioneria generale dello Stato, secondo le disposizioni della legge di contabilità e finanza pubblica (art. 14, comma 5, L. 196/2009)."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Luglio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_07_settembre_2026/index.html",
+"data_originale": "Mon, 7 Sep 2026 15:47:00 +0200",
+"data": "2026-09-07",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Luglio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 7 settembre 2026, n. 15",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_07_settembre_2026_1/index.html",
+"data_originale": "Mon, 7 Sep 2026 15:06:00 +0200",
+"data": "2026-09-07",
+"descrizione": "Triennio formativo 2026-2028. Istruzioni in materia di formazione continua dei revisori legali iscritti nel registro in attuazione dell’articolo 5 del decreto legislativo 27 gennaio 2010, n. 39."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Annuario statistico della Ragioneria Generale dello Stato - Anno 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/pubblicazioni/pubblicazioni_statistiche/annuario_statistico_della_ragioneria_generale_dello_stato/index.html",
+"data_originale": "Mon, 24 Aug 2026 17:27:00 +0200",
+"data": "2026-08-24",
+"descrizione": "La Ragioneria Generale dello Stato pubblica l'Annuario statistico della Ragioneria Generale dello Stato - Anno 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 30 giugno 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_11_agosto_2026/index.html",
+"data_originale": "Wed, 12 Aug 2026 09:06:00 +0200",
+"data": "2026-08-12",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 30 giugno 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 7 agosto 2026, n. 14",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_07_agosto_2026/index.html",
+"data_originale": "Fri, 7 Aug 2026 18:52:00 +0200",
+"data": "2026-08-07",
+"descrizione": "Portale della Tesoreria dello Stato."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Pareggio di Bilancio",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_03_agosto_2026/index.html",
+"data_originale": "Mon, 3 Aug 2026 11:05:00 +0200",
+"data": "2026-08-03",
+"descrizione": "Decreto MEF dell’11 maggio 2026 concernente la revisione dei contributi alla finanza pubblica per le annualità dal 2026 al 2029 per le RSO che hanno rinunciato al contributo agli investimenti di cui all’articolo 1, comma 134, della legge n. 145 del 2018, per l’anno 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Pareggio di Bilancio",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_31_luglio_2026/index.html",
+"data_originale": "Fri, 31 Jul 2026 17:32:00 +0200",
+"data": "2026-07-31",
+"descrizione": "Decreto del Ministro dell’economia e delle finanze del 17 luglio 2026 concernente la verifica del rispetto dei vincoli di finanza pubblica 2025"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Giugno 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_30_luglio_2026/index.html",
+"data_originale": "Thu, 30 Jul 2026 16:57:00 +0200",
+"data": "2026-07-30",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Giugno 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 maggio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_27_luglio_2026/index.html",
+"data_originale": "Mon, 27 Jul 2026 09:08:00 +0200",
+"data": "2026-07-27",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 maggio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Rapporto mensile sull'andamento delle entrate tributarie e contributive",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_24_luglio_2026_3/",
+"data_originale": "Fri, 24 Jul 2026 17:46:00 +0200",
+"data": "2026-07-24",
+"descrizione": "Disponibili le edizioni di Aprile 2026 e Maggio 2026 del Rapporto mensile sull'andamento delle entrate tributarie e contributive, redatto dal Dipartimento delle finanze e dal Dipartimento della Ragioneria generale dello Stato, secondo le disposizioni della legge di contabilità e finanza pubblica (art. 14, comma 5, L. 196/2009)."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Maggio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_14_luglio_2026_2/index.html",
+"data_originale": "Fri, 24 Jul 2026 16:31:00 +0200",
+"data": "2026-07-24",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Maggio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Consuntivo 2025 Disponibili i pagamenti del bilancio dello Stato relativi al consuntivo 2025.",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_20_luglio_2026/index.html",
+"data_originale": "Mon, 20 Jul 2026 16:15:00 +0200",
+"data": "2026-07-20",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi al consuntivo 2025."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Annuale",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_30_giugno_2026_2/index.html",
+"data_originale": "Tue, 30 Jun 2026 16:50:00 +0200",
+"data": "2026-06-30",
+"descrizione": "Sono disponibili i dati del Conto Annuale 2024 sul sito del https://contoannuale.rgs.mef.gov.it/ con report e documentazione di approfondimento a cura dell'Ispettorato IGOP."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 30 giugno 2026, n. 13",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_30_giugno_2026/index.html",
+"data_originale": "Tue, 30 Jun 2026 10:12:00 +0200",
+"data": "2026-06-30",
+"descrizione": "Corresponsione dell’assegno per il nucleo familiare - Rivalutazione dei livelli di reddito per il periodo dal 1° luglio 2026 - 30 giugno 2027."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 26 giugno 2026, n. 12",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_26_giugno_2026/index.html",
+"data_originale": "Fri, 26 Jun 2026 13:44:00 +0200",
+"data": "2026-06-26",
+"descrizione": "Il Conto annuale 2025 - rilevazione prevista dal titolo V del decreto legislativo 30 marzo 2001, n.165"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Indagine sui mutui contratti dagli enti territoriali per il finanziamento degli investimenti - Anno 2025",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/pubblicazioni/pubblicazioni_statistiche/indagine_mutui_contratti_enti_territoriali/",
+"data_originale": "Mon, 22 Jun 2026 12:01:00 +0200",
+"data": "2026-06-22",
+"descrizione": "La Ragioneria Generale dello Stato pubblica l'Indagine sui mutui contratti dagli enti territoriali per il finanziamento degli investimenti - Anno 2025"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 30 aprile 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_19_giugno_2026/index.html",
+"data_originale": "Fri, 19 Jun 2026 09:08:00 +0200",
+"data": "2026-06-19",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 30 aprile 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Aprile 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_17_giugno_2026/index.html",
+"data_originale": "Wed, 17 Jun 2026 17:44:00 +0200",
+"data": "2026-06-17",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Aprile 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Bilancio in breve",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/formazione_e_gestione_del_bilancio/bilancio_di_previsione/bilancio_in_breve/",
+"data_originale": "Wed, 3 Jun 2026 18:07:00 +0200",
+"data": "2026-06-03",
+"descrizione": "La Ragioneria Generale dello Stato pubblica il Bilancio in breve - 2026-2028."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 29 maggio 2026, n. 11",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_29_maggio_2026/index.html",
+"data_originale": "Fri, 29 May 2026 16:45:00 +0200",
+"data": "2026-05-29",
+"descrizione": "Bilancio di genere. Linee guida e avvio delle attività relative al Rendiconto generale dello Stato 2025."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Rapporto mensile sull'andamento delle entrate tributarie e contributive",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_25_maggio_2026/index.html",
+"data_originale": "Mon, 25 May 2026 11:23:00 +0200",
+"data": "2026-05-25",
+"descrizione": "Disponibile l'edizione di Marzo 2026 del Rapporto mensile sull'andamento delle entrate tributarie e contributive, redatto dal Dipartimento delle finanze e dal Dipartimento della Ragioneria generale dello Stato, secondo le disposizioni della legge di contabilità e finanza pubblica (art. 14, comma 5, L. 196/2009)."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Note Integrative a consuntivo - Anno 2024",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/formazione_e_gestione_del_bilancio/rendiconto/note_integrative_a_consuntivo/",
+"data_originale": "Thu, 21 May 2026 15:40:00 +0200",
+"data": "2026-05-21",
+"descrizione": "La Ragioneria Generale dello Stato pubblica le Note Integrative a consuntivo - Anno 2024"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 marzo 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_20_maggio_2026/index.html",
+"data_originale": "Wed, 20 May 2026 15:15:00 +0200",
+"data": "2026-05-20",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 marzo 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Marzo 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_19_maggio_2026/index.html",
+"data_originale": "Tue, 19 May 2026 09:39:00 +0200",
+"data": "2026-05-19",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Marzo 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 15 maggio 2026, n. 10",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_15_maggio_2026/index.html",
+"data_originale": "Fri, 15 May 2026 18:47:00 +0200",
+"data": "2026-05-15",
+"descrizione": "Previsioni di bilancio per l’anno 2027 e per il triennio 2027 – 2029 e Budget per il triennio 2027 – 2029. Proposte per la manovra 2027."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Il Bilancio di genere per l’esercizio finanziario 2024 - Relazione al Parlamento",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/attivita_istituzionali/formazione_e_gestione_del_bilancio/rendiconto/bilancio_di_genere/",
+"data_originale": "Fri, 15 May 2026 09:35:00 +0200",
+"data": "2026-05-15",
+"descrizione": "La Ragioneria Generale dello Stato pubblica il Bilancio di genere per l’esercizio finanziario 2024 - Relazione al Parlamento"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare dell'11 maggio 2026, n. 9",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_11_maggio_2026/index.html",
+"data_originale": "Mon, 11 May 2026 18:38:00 +0200",
+"data": "2026-05-11",
+"descrizione": "Nota illustrativa sulle leggi pluriennali di spesa in conto capitale a carattere non permanente – Adempimento previsto dall’articolo 10-bis comma 3 della legge n. 196 del 2009 e successive modificazioni."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 7 maggio 2026, n. 8",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_7_maggio_2026/index.html",
+"data_originale": "Thu, 7 May 2026 11:58:00 +0200",
+"data": "2026-05-07",
+"descrizione": "Rilevazioni previste dal titolo V del decreto legislativo 30 marzo 2001, n. 165. Istruzioni in materia di Relazione allegata al Conto Annuale (anno 2025) e Monitoraggio trimestrale anno 2026."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 28 febbraio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_29_aprile_2026/index.html",
+"data_originale": "Wed, 29 Apr 2026 14:03:00 +0200",
+"data": "2026-04-29",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 28 febbraio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "INDENNITA’ DI VACANZA CONTRATTUALE",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_28_aprile_2026/index.html",
+"data_originale": "Tue, 28 Apr 2026 13:40:00 +0200",
+"data": "2026-04-28",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibili gli aggiornamenti degli importi delle misure dell’Indennità di Vacanza Contrattuale (art. 47-bis, comma 2, del decreto legislativo 30 marzo 2001, n. 165) anno 2025 per il personale dei comparti, aree e settori per i quali si è definito il rinnovo contrattuale 2022-2024 e per il personale del comparto e Area PCM per il triennio 2019-2021."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 23 aprile 2026, n. 7",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_23_aprile_2026/index.html",
+"data_originale": "Thu, 23 Apr 2026 10:46:00 +0200",
+"data": "2026-04-23",
+"descrizione": "Assestamento del bilancio di previsione e Budget rivisto per l’anno finanziario 2026."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 22 aprile 2026, n. 6",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_22_aprile_2026/index.html",
+"data_originale": "Wed, 22 Apr 2026 11:17:00 +0200",
+"data": "2026-04-22",
+"descrizione": "Enti e organismi pubblici - aggiornamento bilancio di previsione 2026. Ulteriori indicazioni sulle disposizioni di contenimento della spesa."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 21 aprile 2026, n. 5",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_21_aprile_2026_1/index.html",
+"data_originale": "Tue, 21 Apr 2026 18:33:00 +0200",
+"data": "2026-04-21",
+"descrizione": "Attuazione dell’articolo 21, comma 18, della legge 31 dicembre 2009, n. 196 come modificato dall’articolo 1 del decreto legislativo 12 maggio 2016, n. 90 – Elenchi degli enti cui lo Stato contribuisce in via ordinaria. Annessi 2027."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 21 aprile 2026, n. 4",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_21_aprile_2026/index.html",
+"data_originale": "Tue, 21 Apr 2026 12:28:00 +0200",
+"data": "2026-04-21",
+"descrizione": "Liquidazione delle diarie di missione all'estero - Tabelle di lordizzazione - Anno 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Rapporto mensile sull'andamento delle entrate tributarie e contributive",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_15_aprile_2026/index.html",
+"data_originale": "Wed, 15 Apr 2026 17:19:00 +0200",
+"data": "2026-04-15",
+"descrizione": "Disponibile l'edizione di Febbraio 2026 del Rapporto mensile sull'andamento delle entrate tributarie e contributive, redatto dal Dipartimento delle finanze e dal Dipartimento della Ragioneria generale dello Stato, secondo le disposizioni della legge di contabilità e finanza pubblica (art. 14, comma 5, L. 196/2009)."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 gennaio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_08_aprile_2026/index.html",
+"data_originale": "Wed, 8 Apr 2026 09:06:00 +0200",
+"data": "2026-04-08",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 gennaio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Febbraio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_02_aprile_2026/index.html",
+"data_originale": "Thu, 2 Apr 2026 13:05:00 +0200",
+"data": "2026-04-02",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Febbraio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Open data - Pagamenti del bilancio dello Stato - Gennaio 2026",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_31_marzo_2026/index.html",
+"data_originale": "Tue, 31 Mar 2026 11:11:00 +0200",
+"data": "2026-03-31",
+"descrizione": "Disponibili i pagamenti del bilancio dello Stato relativi a tutto il mese di Gennaio 2026"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Rapporto mensile sull'andamento delle entrate tributarie e contributive",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_26_marzo_2026/index.html",
+"data_originale": "Thu, 26 Mar 2026 12:01:00 +0100",
+"data": "2026-03-26",
+"descrizione": "Disponibili le edizioni di Dicembre 2025 e Gennaio 2026 del Rapporto mensile sull'andamento delle entrate tributarie e contributive, redatto dal Dipartimento delle finanze e dal Dipartimento della Ragioneria generale dello Stato, secondo le disposizioni della legge di contabilità e finanza pubblica (art. 14, comma 5, L. 196/2009)."
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "SCAI - Sistema Ciclo Acquisti Integrato",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_24_marzo_2026/index.html",
+"data_originale": "Tue, 24 Mar 2026 09:19:00 +0100",
+"data": "2026-03-24",
+"descrizione": "Previsione annuale dei fabbisogni per il 2026 (articolo 2, comma 569 della legge 24 dicembre 2007. n. 244, legge finanziaria 2008) - Avvio rilevazione e modalità operative"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 2 marzo 2026, n. 3",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_02_marzo_2026/index.html",
+"data_originale": "Mon, 2 Mar 2026 12:06:00 +0100",
+"data": "2026-03-02",
+"descrizione": "Rendiconto generale dell'esercizio finanziario 2025"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Conto Riassuntivo del Tesoro al 31 dicembre 2025",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_27_febbraio_2026/index.html",
+"data_originale": "Fri, 27 Feb 2026 09:28:00 +0100",
+"data": "2026-02-27",
+"descrizione": "La Ragioneria Generale dello Stato rende disponibile il Conto Riassuntivo del Tesoro al 31 dicembre 2025"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "Circolare del 6 febbraio 2026, n. 2",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/news/Ispettorati/2026/news_06_febbraio_2026/index.html",
+"data_originale": "Fri, 6 Feb 2026 15:23:00 +0100",
+"data": "2026-02-06",
+"descrizione": "Accertamento residui passivi di bilancio e residui passivi perenti alla chiusura dell’esercizio finanziario 2025"
+},
+{
+"sito": "MEF - Ragioneria Generale dello Stato",
+"feed": "RGS - novità",
+"categoria": "Normativa",
+"titolo": "La spesa statale regionalizzata - Anno 2024 - Stima provvisoria",
+"link": "http://www.rgs.mef.gov.it/VERSIONE-I/pubblicazioni/pubblicazioni_statistiche/la_spesa_statale_regionalizzata/",
+"data_originale": "Thu, 5 Feb 2026 14:04:00 +0100",
+"data": "2026-02-05",
+"descrizione": "La Ragioneria Generale dello Stato pubblica La spesa statale regionalizzata - Anno 2024 - Stima provvisoria"
+}
+]
 }

@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-21T22:11:51+00:00",
+ "letto_il": "2026-10-21T22:15:47+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -47,29 +47,22 @@
    "allarmi": []
   },
   "MEF - Ragioneria Generale dello Stato": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "RGS - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml"
-   ]
+   "notizie": 50,
+   "allarmi": []
   },
   "MEF - Dipartimento Finanze": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "Dipartimento Finanze - ultimi aggiornamenti: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.finanze.gov.it/opencms/it/rss.xml"
-   ]
+   "notizie": 10,
+   "allarmi": []
   },
   "Agenzia delle Entrate": {
-   "feed_ok": 0,
+   "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 0,
-   "allarmi": [
-    "Agenzia Entrate - News: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9",
-    "Agenzia Entrate - Normativa e prassi: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4"
-   ]
+   "notizie": 39,
+   "allarmi": []
   },
   "INPS": {
    "feed_ok": 3,
@@ -104,12 +97,10 @@
    "allarmi": []
   },
   "ACN": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "ACN - notizie: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192"
-   ]
+   "notizie": 50,
+   "allarmi": []
   },
   "AGCM": {
    "feed_ok": 1,
@@ -122,7 +113,7 @@
    "feed_totali": 1,
    "notizie": 0,
    "allarmi": [
-    "COVIP - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.covip.it/rss.xml"
+    "COVIP - novità: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.covip.it/rss.xml"
    ]
   },
   "MIMIT": {
@@ -146,7 +137,7 @@
    "feed_totali": 1,
    "notizie": 0,
    "allarmi": [
-    "ESMA - novità (senza data): non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.esma.europa.eu/rss.xml"
+    "ESMA - novità (senza data): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml"
    ]
   },
   "BCE - Vigilanza bancaria": {
@@ -178,18 +169,17 @@
    "feed_totali": 3,
    "notizie": 0,
    "allarmi": [
-    "Parlamento UE - comunicati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
-    "Parlamento UE - Commissione ECON: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/committee/econ/it.xml",
-    "Parlamento UE - testi approvati: feed non leggibile (ValueError: HTTP 202) - https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
+    "Parlamento UE - comunicati: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+    "Parlamento UE - Commissione ECON: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+    "Parlamento UE - testi approvati: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
    ]
   },
   "Consiglio UE": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 2,
-   "notizie": 0,
+   "notizie": 20,
    "allarmi": [
-    "Consiglio UE - comunicati: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
-    "Consiglio UE - riunioni ECOFIN: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
+    "Consiglio UE - riunioni ECOFIN: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
    ]
   },
   "Commissione europea": {

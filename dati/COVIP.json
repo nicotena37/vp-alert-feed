@@ -1,19 +1,19 @@
 {
-"nome_file": "vpalert_rss_COVIP_2026-10-21T22-13-16.json",
+"nome_file": "vpalert_rss_COVIP_2026-10-21T22-17-28.json",
 "sito": "COVIP",
 "origine": "github-actions",
-"letto_il": "2026-10-21T22:13:16Z",
+"letto_il": "2026-10-21T22:17:28Z",
 "feed": [
 {
 "nome": "COVIP - novità",
 "url": "https://www.covip.it/rss.xml",
 "voci": 0,
 "errore": true,
-"motivo": "il sito rifiuta le richieste dai server di GitHub (HTTP 403)"
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
 }
 ],
 "allarmi": [
-"COVIP - novità: non letto, il sito rifiuta le richieste dai server di GitHub (HTTP 403) - https://www.covip.it/rss.xml"
+"COVIP - novità: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.covip.it/rss.xml"
 ],
 "notizie": []
 }
