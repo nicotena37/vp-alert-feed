@@ -27,7 +27,7 @@ from lxml import etree
 
 QUI = Path(__file__).parent
 DATI = QUI / "dati"
-AGENTE = "VP-Alert-Feed/1.0 (lettore RSS per monitoraggio normativo; GitHub Actions)"
+AGENTE = "Mozilla/5.0 (compatible; VP-Alert-Feed/1.0; lettore RSS per monitoraggio normativo)"
 PAUSA = 3.0
 TIMEOUT = 25
 MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
@@ -68,9 +68,7 @@ def robots(url: str) -> tuple[bool, str]:
         except Exception as e:  # noqa: BLE001
             _robots[base] = (None, f"sito non raggiungibile ({type(e).__name__}: {e})")
         else:
-            if stato in (401, 403):
-                _robots[base] = (None, f"il sito rifiuta le richieste dai server di GitHub (HTTP {stato})")
-            else:
+            if True:   # RFC 9309: robots.txt 4xx/assente = nessun divieto; il blocco vero si vede sul feed (HTTP 403)
                 rp = urllib.robotparser.RobotFileParser()
                 rp.parse(testo.decode("utf-8", "replace").splitlines() if stato == 200 else [])
                 _robots[base] = (rp, "")
@@ -209,10 +207,14 @@ def leggi_sito(sito: dict) -> dict:
             continue
         try:
             stato, contenuto = scarica(f["url"])
+            if stato in (401, 403, 202, 429):
+                raise ValueError(f"HTTP {stato}: il sito blocca le richieste dai server di GitHub")
             if stato != 200:
                 raise ValueError(f"HTTP {stato}")
             voci = leggi_pagina(sito, f, contenuto) if f.get("tipo") else leggi_rss(sito, f, contenuto)
             if f.get("tipo") and not voci:
+                (DATI / "debug").mkdir(parents=True, exist_ok=True)
+                (DATI / "debug" / (re.sub(r"[^A-Za-z0-9]+", "-", f["nome"]) + ".html")).write_bytes(contenuto[:400000])
                 raise ValueError("nessuna voce trovata nella pagina (struttura cambiata?)")
             ris["notizie"] += voci
             ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(voci)})
