@@ -1,0 +1,594 @@
+{
+ "verificati_il": "2026-10-19 (seconda prova completa alle 23:30)",
+ "nota": "Feed RSS verificati aprendo ogni sito nel browser e leggendo il feed (numero di notizie e data dell'ultima). Ogni gruppo 'sito' si legge con leggi_rss.js aperto su una pagina di quel sito (il browser legge solo i feed del sito aperto). 'pagina_apertura' è la pagina da aprire prima di eseguire lo script. La pagina di apertura deve essere una pagina HTML del sito (non il feed stesso: sul feed visualizzato come XML il browser non permette le letture).",
+ "siti": [
+  {
+   "sito": "Banca d'Italia",
+   "pagina_apertura": "https://www.bancaditalia.it/",
+   "feed": [
+    {
+     "nome": "Banca d'Italia - tutte le novità",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Vigilanza",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/vigilanza&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Normativa antiriciclaggio",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/supervisione-normativa-antiriciclaggio&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Tutela dei clienti",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/tutela-educazione&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Sistema dei pagamenti",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/sispaga-mercati&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Risoluzione e crisi",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/compiti/risoluzione-gestione-crisi&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Segnalazioni",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/statistiche/raccolta-dati/segnalazioni&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Centrale dei rischi",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/statistiche/raccolta-dati/centrale-rischi&lingua=it",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "Banca d'Italia - Notizie",
+     "url": "https://www.bancaditalia.it/util/index.rss.html?sezione=/media/notizia&lingua=it",
+     "categoria": "Notizie"
+    }
+   ],
+   "ente": "Banca d'Italia",
+   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
+   "nota_affidabilita": "Feed ufficiale del sito, notizie datate, aggiornato ogni giorno. Il 19/10 alle 23 il sito non si apriva (anche all'utente): da ricontrollare",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "UIF",
+   "pagina_apertura": "https://uif.bancaditalia.it/",
+   "feed": [
+    {
+     "nome": "UIF - novità",
+     "url": "https://uif.bancaditalia.it/util/index.rss.html?lingua=it",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Unità di Informazione Finanziaria per l'Italia (UIF)",
+   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
+   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia)",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "IVASS",
+   "pagina_apertura": "https://www.ivass.it/",
+   "feed": [
+    {
+     "nome": "IVASS - novità",
+     "url": "https://www.ivass.it/util/index.rss.html?lingua=it",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "IVASS - Istituto per la Vigilanza sulle Assicurazioni",
+   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
+   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia)",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "Consob",
+   "ente": "Consob",
+   "pagina_apertura": "https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+   "affidabilita": "Affidabile (senza RSS: lettura delle pagine ufficiali)",
+   "nota_affidabilita": "Consob non ha RSS: lo script legge le pagine ufficiali (sanzioni, Bollettino, consultazioni, comunicati). Se Consob cambia la grafica delle pagine scatta l'allarme 'nessuna voce trovata'",
+   "feed": [
+    {
+     "nome": "Consob - provvedimenti sanzionatori",
+     "url": "https://www.consob.it/web/area-pubblica/sanzioni",
+     "categoria": "Sanzioni",
+     "tipo": "consob_sanzioni"
+    },
+    {
+     "nome": "Consob - Bollettino (ultima quindicina)",
+     "url": "https://www.consob.it/web/area-pubblica/bollettino/periodo1",
+     "categoria": "Normativa",
+     "tipo": "consob_bollettino"
+    },
+    {
+     "nome": "Consob - Bollettino (quindicina precedente)",
+     "url": "https://www.consob.it/web/area-pubblica/bollettino/periodo2",
+     "categoria": "Normativa",
+     "tipo": "consob_bollettino"
+    },
+    {
+     "nome": "Consob - consultazioni",
+     "url": "https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+     "categoria": "Normativa",
+     "tipo": "consob_schede"
+    },
+    {
+     "nome": "Consob - comunicati stampa",
+     "url": "https://www.consob.it/web/area-pubblica/comunicati-stampa-2026",
+     "categoria": "Vigilanza",
+     "tipo": "consob_schede"
+    }
+   ],
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "MEF",
+   "pagina_apertura": "https://www.mef.gov.it/comunica-con-noi/seguici/social-mef.html",
+   "feed": [
+    {
+     "nome": "MEF - Comunicati stampa",
+     "url": "https://www.mef.gov.it/rss/rss.asp?t=4",
+     "categoria": "Normativa"
+    },
+    {
+     "nome": "MEF - Ultimi documenti",
+     "url": "https://www.mef.gov.it/rss/rss.asp?t=5",
+     "categoria": "Normativa"
+    }
+   ],
+   "ente": "Ministero dell'Economia e delle Finanze",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "MEF - Ragioneria Generale dello Stato",
+   "pagina_apertura": "https://www.rgs.mef.gov.it/VERSIONE-I/home.html",
+   "feed": [
+    {
+     "nome": "RGS - novità",
+     "url": "https://www.rgs.mef.gov.it/VERSIONE-I/RSS/rssRGS.xml",
+     "categoria": "Normativa"
+    }
+   ],
+   "ente": "Ragioneria Generale dello Stato (MEF)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale; contenuti soprattutto di finanza pubblica (poco bancari)",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "MEF - Dipartimento Finanze",
+   "pagina_apertura": "https://www.finanze.gov.it/it/",
+   "feed": [
+    {
+     "nome": "Dipartimento Finanze - ultimi aggiornamenti",
+     "url": "https://www.finanze.gov.it/opencms/it/rss.xml",
+     "categoria": "Normativa"
+    }
+   ],
+   "ente": "Dipartimento delle Finanze (MEF)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "Agenzia delle Entrate",
+   "pagina_apertura": "https://www.agenziaentrate.gov.it/portale/agenzia/agenzia-comunica/novita/news-rss",
+   "feed": [
+    {
+     "nome": "Agenzia Entrate - News",
+     "url": "https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=79b071d0-a537-4a3d-86cc-7a7d5a36f2a9",
+     "categoria": "Notizie"
+    },
+    {
+     "nome": "Agenzia Entrate - Normativa e prassi",
+     "url": "https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4",
+     "categoria": "Normativa"
+    }
+   ],
+   "ente": "Agenzia delle Entrate",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "INPS",
+   "ente": "INPS - Istituto Nazionale della Previdenza Sociale",
+   "pagina_apertura": "https://www.inps.it/it/it/rss.html",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiali (verificati il 20/10/2026): circolari e messaggi su pensioni, contributi, prestazioni ai lavoratori",
+   "feed": [
+    {
+     "nome": "INPS - Circolari",
+     "url": "https://www.inps.it/it/it.rss.circolari.xml",
+     "categoria": "Lavoro"
+    },
+    {
+     "nome": "INPS - Messaggi",
+     "url": "https://www.inps.it/it/it.rss.messaggi.xml",
+     "categoria": "Lavoro"
+    },
+    {
+     "nome": "INPS - Comunicati stampa",
+     "url": "https://www.inps.it/it/it.rss.comunicati.xml",
+     "categoria": "Lavoro"
+    }
+   ],
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "Ministero del Lavoro",
+   "ente": "Ministero del Lavoro e delle Politiche Sociali",
+   "pagina_apertura": "https://www.lavoro.gov.it/",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale delle notizie (verificato il 20/10/2026)",
+   "feed": [
+    {
+     "nome": "Ministero del Lavoro - notizie",
+     "url": "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS",
+     "categoria": "Lavoro"
+    }
+   ],
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "Governo",
+   "pagina_apertura": "https://www.governo.it/",
+   "feed": [
+    {
+     "nome": "Governo - notizie e Consiglio dei ministri",
+     "url": "https://www.governo.it/feed/rss",
+     "categoria": "Iter"
+    }
+   ],
+   "ente": "Presidenza del Consiglio dei Ministri",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "Camera dei deputati (documenti)",
+   "pagina_apertura": "https://documenti.camera.it/rss/temi/bridgeCommissioni6.xml",
+   "feed": [
+    {
+     "nome": "Camera - Temi Commissione VI Finanze",
+     "url": "https://documenti.camera.it/rss/temi/bridgeCommissioni6.xml",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "Camera - Ultimi progetti di legge annunciati",
+     "url": "https://documenti.camera.it/apps/rssFeeds/ultimipdl/pdlUltimiAnnunciati.asp?idLegislatura=19",
+     "categoria": "Iter"
+    }
+   ],
+   "ente": "Camera dei deputati",
+   "affidabilita": "Parziale",
+   "nota_affidabilita": "Feed ufficiali; i 'temi' della Commissione Finanze si aggiornano di rado, i progetti di legge ogni giorno",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "Garante privacy",
+   "pagina_apertura": "https://www.garanteprivacy.it/",
+   "feed": [
+    {
+     "nome": "Garante privacy - novità",
+     "url": "https://www.garanteprivacy.it/o/gpdp-rss/rss?c=10524",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Garante per la protezione dei dati personali",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "ACN",
+   "pagina_apertura": "https://www.acn.gov.it/portale/",
+   "feed": [
+    {
+     "nome": "ACN - notizie",
+     "url": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Agenzia per la Cybersicurezza Nazionale (ACN)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "AGCM",
+   "pagina_apertura": "https://www.agcm.it/",
+   "feed": [
+    {
+     "nome": "AGCM - notizie",
+     "url": "https://www.agcm.it/rss/atom-feed",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Autorità Garante della Concorrenza e del Mercato (AGCM)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "COVIP",
+   "pagina_apertura": "https://www.covip.it/",
+   "feed": [
+    {
+     "nome": "COVIP - novità",
+     "url": "https://www.covip.it/rss.xml",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "COVIP - Commissione di Vigilanza sui Fondi Pensione",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "MIMIT",
+   "pagina_apertura": "https://www.mimit.gov.it/",
+   "feed": [
+    {
+     "nome": "MIMIT - notizie stampa",
+     "url": "https://www.mimit.gov.it/it/notizie-stampa?format=feed&type=rss",
+     "categoria": "Notizie"
+    }
+   ],
+   "ente": "Ministero delle Imprese e del Made in Italy",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "EBA",
+   "pagina_apertura": "https://www.eba.europa.eu/",
+   "feed": [
+    {
+     "nome": "EBA - news",
+     "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Autorità bancaria europea (EBA)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "ESMA",
+   "pagina_apertura": "https://www.esma.europa.eu/",
+   "feed": [
+    {
+     "nome": "ESMA - novità (senza data)",
+     "url": "https://www.esma.europa.eu/rss.xml",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Autorità europea degli strumenti finanziari e dei mercati (ESMA)",
+   "affidabilita": "Parziale",
+   "nota_affidabilita": "Feed ufficiale ma le notizie non hanno data: si riconoscono le nuove solo dal link",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "BCE - Vigilanza bancaria",
+   "pagina_apertura": "https://www.bankingsupervision.europa.eu/",
+   "feed": [
+    {
+     "nome": "SSM - comunicati",
+     "url": "https://www.bankingsupervision.europa.eu/rss/press.html",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "SSM - pubblicazioni",
+     "url": "https://www.bankingsupervision.europa.eu/rss/pub.html",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "BCE - Vigilanza bancaria",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "BCE",
+   "pagina_apertura": "https://www.ecb.europa.eu/",
+   "feed": [
+    {
+     "nome": "BCE - comunicati",
+     "url": "https://www.ecb.europa.eu/rss/press.html",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "BCE - pubblicazioni",
+     "url": "https://www.ecb.europa.eu/rss/pub.html",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Banca Centrale Europea",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "ESRB",
+   "pagina_apertura": "https://www.esrb.europa.eu/",
+   "feed": [
+    {
+     "nome": "ESRB - comunicati",
+     "url": "https://www.esrb.europa.eu/rss/press.xml",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "ESRB - pubblicazioni",
+     "url": "https://www.esrb.europa.eu/rss/pub.rss",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Comitato europeo per il rischio sistemico (ESRB)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "EDPB",
+   "pagina_apertura": "https://www.edpb.europa.eu/",
+   "feed": [
+    {
+     "nome": "EDPB - news",
+     "url": "https://www.edpb.europa.eu/feed/news_en",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "EDPB - pubblicazioni",
+     "url": "https://www.edpb.europa.eu/feed/publications_en",
+     "categoria": "Vigilanza"
+    }
+   ],
+   "ente": "Comitato europeo per la protezione dei dati (EDPB)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "Parlamento europeo",
+   "pagina_apertura": "https://www.europarl.europa.eu/news/it",
+   "feed": [
+    {
+     "nome": "Parlamento UE - comunicati",
+     "url": "https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "Parlamento UE - Commissione ECON",
+     "url": "https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "Parlamento UE - testi approvati",
+     "url": "https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml",
+     "categoria": "Iter"
+    }
+   ],
+   "ente": "Parlamento europeo",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "Consiglio UE",
+   "pagina_apertura": "https://www.consilium.europa.eu/it/",
+   "feed": [
+    {
+     "nome": "Consiglio UE - comunicati",
+     "url": "https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "Consiglio UE - riunioni ECOFIN",
+     "url": "https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/",
+     "categoria": "Iter"
+    }
+   ],
+   "ente": "Consiglio dell'Unione europea",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "Commissione europea",
+   "pagina_apertura": "https://ec.europa.eu/commission/presscorner/home/it",
+   "feed": [
+    {
+     "nome": "Commissione UE - press corner",
+     "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=it",
+     "categoria": "Iter"
+    }
+   ],
+   "ente": "Commissione europea",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "ogni giro"
+  },
+  {
+   "sito": "BIS",
+   "pagina_apertura": "https://www.bis.org/",
+   "feed": [
+    {
+     "nome": "BIS - comunicati",
+     "url": "https://www.bis.org/doclist/all_pressrels.rss",
+     "categoria": "Resto del mondo"
+    },
+    {
+     "nome": "BIS - FSI (sintesi regolamentari)",
+     "url": "https://www.bis.org/doclist/bis_fsi_publs.rss",
+     "categoria": "Resto del mondo"
+    }
+   ],
+   "ente": "Banca dei Regolamenti Internazionali (BIS)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "FSB",
+   "pagina_apertura": "https://www.fsb.org/",
+   "feed": [
+    {
+     "nome": "FSB - novità",
+     "url": "https://www.fsb.org/feed/",
+     "categoria": "Resto del mondo"
+    }
+   ],
+   "ente": "Financial Stability Board (FSB)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "frequenza": "settimanale"
+  },
+  {
+   "sito": "Teleborsa",
+   "ente": "Teleborsa",
+   "pagina_apertura": "https://news.teleborsa.it/NewsFeed.ashx?channel=banche",
+   "affidabilita": "Affidabile (fonte giornalistica, non ufficiale)",
+   "nota_affidabilita": "Feed RSS del canale Banche, aggiornato più volte al giorno; notizie di stampa: da verificare sulla fonte ufficiale prima di agire",
+   "feed": [
+    {
+     "nome": "Teleborsa - banche",
+     "url": "https://news.teleborsa.it/NewsFeed.ashx?channel=banche",
+     "categoria": "Notizie"
+    }
+   ],
+   "frequenza": "settimanale"
+  }
+ ],
+ "senza_rss": [
+  {
+   "sito": "EIOPA",
+   "cosa_fare": "nessun feed trovato: leggere la pagina news"
+  },
+  {
+   "sito": "Senato",
+   "cosa_fare": "il vecchio feed rss.xml non esiste più (pagina 404): usare i feed della Camera e la pagina dei disegni di legge"
+  },
+  {
+   "sito": "Commissione UE - Have your say",
+   "cosa_fare": "nessun feed: iscrizione alle notifiche dal sito"
+  },
+  {
+   "sito": "Diritto Bancario",
+   "cosa_fare": "nessun feed trovato (il sito non risponde ai percorsi feed): leggere la home"
+  },
+  {
+   "sito": "Normattiva",
+   "cosa_fare": "nessun feed noto (non verificato nel browser): le novità arrivano già dalla Gazzetta Ufficiale"
+  }
+ ],
+ "nota_frequenza": "Giro leggero (predefinito): solo i siti 'ogni giro'. Giro completo (una volta a settimana o su richiesta): tutti. I siti settimanali tengono le ultime 10-50 notizie, quindi una lettura a settimana non perde nulla (lo verifica il foglio Stato fonti RSS)."
+}

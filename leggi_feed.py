@@ -1,0 +1,251 @@
+"""VP ALERT - lettura dei feed RSS degli enti dai server di GitHub (al posto del browser del PC).
+
+Legge fonti_rss.json e scrive in dati/ un file per sito, nello stesso formato che produce leggi_rss.js nel browser
+(campi nome_file, sito, origine, letto_il, feed, allarmi, notizie): rss.py li usa senza modifiche.
+Regole di cortesia verso i siti:
+  - rispetta il robots.txt di ogni sito (se vieta il feed, il feed non viene letto e lo segnala);
+  - si presenta con un nome chiaro (User-Agent) e non si spaccia per un browser;
+  - una sola richiesta alla volta e 3 secondi di pausa tra due richieste allo stesso sito.
+Uso:  python leggi_feed.py [--solo "Banca d'Italia,UIF"]
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+import time
+import urllib.error
+import urllib.request
+import urllib.robotparser
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+from urllib.parse import urljoin, urlparse
+
+from bs4 import BeautifulSoup
+from lxml import etree
+
+QUI = Path(__file__).parent
+DATI = QUI / "dati"
+AGENTE = "VP-Alert-Feed/1.0 (lettore RSS per monitoraggio normativo; GitHub Actions)"
+PAUSA = 3.0
+TIMEOUT = 25
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
+        "novembre", "dicembre"]
+
+_ultima: dict[str, float] = {}
+_robots: dict[str, tuple[urllib.robotparser.RobotFileParser | None, str]] = {}
+
+
+def pulisci(s: str | None) -> str:
+    s = re.sub(r"<[^>]+>", " ", s or "").replace("&nbsp;", " ").replace("\xa0", " ")
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def scarica(url: str) -> tuple[int, bytes]:
+    host = urlparse(url).netloc
+    attesa = _ultima.get(host, 0) + PAUSA - time.time()
+    if attesa > 0:
+        time.sleep(attesa)
+    req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": "application/rss+xml, application/xml, "
+                                               "text/xml, application/atom+xml, text/html;q=0.8, */*;q=0.5"})
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            return r.status, r.read()
+    except urllib.error.HTTPError as e:
+        return e.code, b""
+    finally:
+        _ultima[host] = time.time()
+
+
+def robots(url: str) -> tuple[bool, str]:
+    """(si può leggere?, motivo). Se il sito non risponde nemmeno al robots.txt lo dice."""
+    p = urlparse(url)
+    base = f"{p.scheme}://{p.netloc}"
+    if base not in _robots:
+        try:
+            stato, testo = scarica(base + "/robots.txt")
+        except Exception as e:  # noqa: BLE001
+            _robots[base] = (None, f"sito non raggiungibile ({type(e).__name__}: {e})")
+        else:
+            if stato in (401, 403):
+                _robots[base] = (None, f"il sito rifiuta le richieste dai server di GitHub (HTTP {stato})")
+            else:
+                rp = urllib.robotparser.RobotFileParser()
+                rp.parse(testo.decode("utf-8", "replace").splitlines() if stato == 200 else [])
+                _robots[base] = (rp, "")
+    rp, motivo = _robots[base]
+    if rp is None:
+        return False, motivo
+    if not rp.can_fetch(AGENTE, url):
+        return False, "vietato dal robots.txt del sito"
+    return True, ""
+
+
+def data_iso(s: str) -> str:
+    s = (s or "").strip().replace("T ", "T")
+    if not s:
+        return ""
+    try:
+        return parsedate_to_datetime(s).date().isoformat()
+    except (TypeError, ValueError, IndexError):
+        pass
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00")).date().isoformat()
+    except ValueError:
+        pass
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if m:
+        return m.group(0)
+    m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", s)
+    return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else ""
+
+
+def gma(s: str) -> str:
+    m = re.search(r"(\d{2})/(\d{2})/(\d{4})", s or "")
+    return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else ""
+
+
+def _nome(el) -> str:
+    return etree.QName(el).localname if isinstance(el.tag, str) else ""
+
+
+def _testo(voce, nomi: list[str]) -> str:
+    figli = [c for c in voce if isinstance(c.tag, str)]
+    for n in nomi:
+        pref, _, loc = n.rpartition(":")
+        for c in figli:
+            q = etree.QName(c)
+            if q.localname == loc and (not pref or voce.nsmap.get(pref) == q.namespace or c.prefix == pref):
+                t = "".join(c.itertext()).strip()
+                if t:
+                    return t
+    return ""
+
+
+def leggi_rss(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
+    radice = etree.fromstring(contenuto, etree.XMLParser(recover=True, resolve_entities=False, no_network=True,
+                                                          huge_tree=True))
+    if radice is None:
+        raise ValueError("XML non valido (feed cambiato?)")
+    if not re.fullmatch(r"rss|feed|RDF", _nome(radice), re.I):
+        raise ValueError(f"non è un feed RSS/Atom (radice <{_nome(radice)}>)")
+    out = []
+    for v in radice.iter():
+        if _nome(v) not in ("item", "entry"):
+            continue
+        link = _testo(v, ["link", "guid"])
+        if not link:
+            l = next((c for c in v if _nome(c) == "link" and c.get("href")), None)
+            link = l.get("href") if l is not None else ""
+        data = _testo(v, ["pubDate", "pubdate", "date", "updated", "published"]).replace("T ", "T")
+        out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"],
+                    "titolo": pulisci(_testo(v, ["title"])), "link": link.strip(), "data_originale": data,
+                    "data": data_iso(data),
+                    "descrizione": pulisci(_testo(v, ["description", "summary", "content", "encoded"]))[:700]})
+    return out
+
+
+def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
+    """Pagine Consob senza RSS (stessa logica di leggi_rss.js)."""
+    d = BeautifulSoup(contenuto, "html.parser")
+    out = []
+
+    def metti(titolo, link, data, descr, **extra):
+        out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"], "titolo": pulisci(titolo),
+                    "link": re.sub(r"\?redirect=.*$", "", urljoin(f["url"], link or "")), "data_originale": data,
+                    "data": gma(data), "descrizione": pulisci(descr)[:700], **extra})
+
+    if f["tipo"] == "consob_sanzioni":
+        for e in d.select("div.news-entry"):
+            a = e.find("a")
+            if not a:
+                continue
+            t = pulisci(e.get_text(" "))
+            m = re.search(r"Data Pubblicazione:\s*([\d/]+)", t, re.I)
+            ad = re.search(r"Data adozione:\s*([\d/]+)", t, re.I)
+            metti(a.get("title") or a.get_text(" "), a.get("href"), m.group(1) if m else "", t, sanzione=True,
+                  data_adozione=gma(ad.group(1)) if ad else "",
+                  impugnato=bool(re.search(r"opposizione|ricorso|impugn", t, re.I)))
+    elif f["tipo"] == "consob_bollettino":
+        for a in d.select('a[href*="/-/delibera"], a[href*="/-/provvedimento"], a[href*="/-/decisione"]'):
+            c = a
+            for _ in range(4):
+                if c is None or re.search(r"Data di pubblicazione", c.get_text(" "), re.I):
+                    break
+                c = c.parent
+            t = pulisci((c or a).get_text(" "))
+            m = re.search(r"Data di pubblicazione:\s*([\d/]+)", t, re.I)
+            metti(a.get_text(" "), a.get("href"), m.group(1) if m else "", t)
+    elif f["tipo"] == "consob_schede":
+        for w in d.select(".card-bianca-wrapper"):
+            link = next((x for x in w.find_all("a") if re.search(r"comunicato|consultazione|leggi|vai",
+                         x.get_text(" ") + (x.get("href") or ""), re.I)), None) or w.find("a")
+            el = w.select_one(".immagine-con-testo .text")
+            dt = pulisci(el.get_text(" ") if el else "")
+            m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", dt)
+            data = ""
+            if m and m.group(2).lower() in MESI:
+                data = f"{int(m.group(1)):02d}/{MESI.index(m.group(2).lower()) + 1:02d}/{m.group(3)}"
+            el_t, el_x = w.select_one(".card .title"), w.select_one(".card .text")
+            tit, txt = pulisci(el_t.get_text(" ") if el_t else ""), pulisci(el_x.get_text(" ") if el_x else "")
+            if len(tit) < 40 and txt:
+                tit = f"{tit}: {txt[:220]}"
+            metti(tit, link.get("href") if link else "", data, txt)
+    return out
+
+
+def leggi_sito(sito: dict) -> dict:
+    ora = datetime.now(timezone.utc)
+    slug = re.sub(r"[^A-Za-z0-9]+", "-", sito["sito"]).strip("-")
+    ris = {"nome_file": f"vpalert_rss_{slug}_{ora.strftime('%Y-%m-%dT%H-%M-%S')}.json", "sito": sito["sito"],
+           "origine": "github-actions", "letto_il": ora.isoformat(timespec="seconds").replace("+00:00", "Z"),
+           "feed": [], "allarmi": [], "notizie": []}
+    for f in sito["feed"]:
+        ok, motivo = robots(f["url"])
+        if not ok:
+            ris["allarmi"].append(f"{f['nome']}: non letto, {motivo} - {f['url']}")
+            ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": 0, "errore": True, "motivo": motivo})
+            continue
+        try:
+            stato, contenuto = scarica(f["url"])
+            if stato != 200:
+                raise ValueError(f"HTTP {stato}")
+            voci = leggi_pagina(sito, f, contenuto) if f.get("tipo") else leggi_rss(sito, f, contenuto)
+            if f.get("tipo") and not voci:
+                raise ValueError("nessuna voce trovata nella pagina (struttura cambiata?)")
+            ris["notizie"] += voci
+            ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(voci)})
+        except Exception as e:  # noqa: BLE001
+            msg = "nessuna risposta in %d s" % TIMEOUT if "timed out" in str(e) else f"{type(e).__name__}: {e}"
+            ris["allarmi"].append(f"{f['nome']}: feed non leggibile ({msg}) - {f['url']}")
+            ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": 0, "errore": True, "motivo": msg})
+    return ris
+
+
+def main() -> int:
+    solo = None
+    if "--solo" in sys.argv:
+        solo = {s.strip() for s in sys.argv[sys.argv.index("--solo") + 1].split(",")}
+    siti = [s for s in json.loads((QUI / "fonti_rss.json").read_text(encoding="utf-8"))["siti"]
+            if solo is None or s["sito"] in solo]
+    DATI.mkdir(exist_ok=True)
+    stato = {"letto_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "siti": {}}
+    for sito in siti:
+        ris = leggi_sito(sito)
+        slug = re.sub(r"[^A-Za-z0-9]+", "-", sito["sito"]).strip("-")
+        (DATI / f"{slug}.json").write_text(json.dumps(ris, ensure_ascii=False, indent=0), encoding="utf-8")
+        ok = sum(1 for f in ris["feed"] if not f.get("errore"))
+        stato["siti"][sito["sito"]] = {"feed_ok": ok, "feed_totali": len(ris["feed"]), "notizie": len(ris["notizie"]),
+                                       "allarmi": ris["allarmi"]}
+        print(f"{sito['sito']}: {ok}/{len(ris['feed'])} feed, {len(ris['notizie'])} notizie"
+              + (f"  ALLARMI: {ris['allarmi']}" if ris["allarmi"] else ""))
+    vecchio = json.loads((DATI / "stato.json").read_text(encoding="utf-8")) if (DATI / "stato.json").exists() else {}
+    if solo is not None:
+        stato["siti"] = {**vecchio.get("siti", {}), **stato["siti"]}
+    (DATI / "stato.json").write_text(json.dumps(stato, ensure_ascii=False, indent=1), encoding="utf-8")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
