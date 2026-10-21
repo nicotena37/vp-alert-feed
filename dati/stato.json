@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-21T22:20:23+00:00",
+ "letto_il": "2026-10-21T22:46:30+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -37,7 +37,7 @@
     "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
     "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
     "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/comunicati-stampa-2026"
+    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
    ]
   },
   "MEF": {
@@ -165,14 +165,10 @@
    "allarmi": []
   },
   "Parlamento europeo": {
-   "feed_ok": 0,
-   "feed_totali": 3,
-   "notizie": 0,
-   "allarmi": [
-    "Parlamento UE - comunicati: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
-    "Parlamento UE - Commissione ECON: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/committee/econ/it.xml",
-    "Parlamento UE - testi approvati: feed non leggibile (ValueError: HTTP 202: il sito blocca le richieste dai server di GitHub) - https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
-   ]
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 411,
+   "allarmi": []
   },
   "Consiglio UE": {
    "feed_ok": 1,
