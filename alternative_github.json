@@ -1,0 +1,18 @@
+{
+ "nota": "Solo per la lettura da GitHub: feed bloccati ai server di GitHub sostituiti con indirizzi ufficiali raggiungibili.",
+ "siti": {
+  "Consob": {
+   "togli": [
+    "https://www.consob.it/web/area-pubblica/comunicati-stampa-2026"
+   ],
+   "aggiungi": [
+    {
+     "nome": "Consob - comunicati stampa",
+     "url": "https://www.consob.it/web/consob/comunicati-stampa",
+     "categoria": "Vigilanza",
+     "tipo": "consob_comunicati"
+    }
+   ]
+  }
+ }
+}

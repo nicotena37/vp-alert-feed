@@ -190,6 +190,24 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
             if len(tit) < 40 and txt:
                 tit = f"{tit}: {txt[:220]}"
             metti(tit, link.get("href") if link else "", data, txt)
+    elif f["tipo"] == "consob_comunicati":         # pagina /web/consob/comunicati-stampa (ultimi comunicati)
+        anno = datetime.now().year
+        for a in d.find_all("a", string=re.compile(r"Leggi il comunicato", re.I)):
+            c = a
+            for _ in range(6):
+                c = c.parent
+                if c is None or len(c.get_text(" ", strip=True)) > 80:
+                    break
+            if c is None:
+                continue
+            el_t = c.select_one(".title")
+            testo = pulisci(c.get_text(" ")).replace("Leggi il comunicato", "").strip()
+            tit = pulisci(el_t.get_text(" ")) if el_t else testo[:160]
+            m = re.search(r"del-(\d{1,2})-([a-z]+)(?:-(\d{4}))?", a.get("href") or "")
+            data = ""
+            if m and m.group(2) in MESI:
+                data = f"{int(m.group(1)):02d}/{MESI.index(m.group(2)) + 1:02d}/{m.group(3) or anno}"
+            metti(tit, a.get("href"), data, testo)
     return out
 
 
@@ -231,6 +249,13 @@ def main() -> int:
         solo = {s.strip() for s in sys.argv[sys.argv.index("--solo") + 1].split(",")}
     siti = [s for s in json.loads((QUI / "fonti_rss.json").read_text(encoding="utf-8"))["siti"]
             if solo is None or s["sito"] in solo]
+    alt = QUI / "alternative_github.json"          # indirizzi ufficiali alternativi per i feed bloccati a GitHub
+    if alt.exists():
+        alternative = json.loads(alt.read_text(encoding="utf-8"))["siti"]
+        for s in siti:
+            a = alternative.get(s["sito"])
+            if a:
+                s["feed"] = [f for f in s["feed"] if f["url"] not in a.get("togli", [])] + a.get("aggiungi", [])
     DATI.mkdir(exist_ok=True)
     stato = {"letto_il": datetime.now(timezone.utc).isoformat(timespec="seconds"), "siti": {}}
     for sito in siti:
