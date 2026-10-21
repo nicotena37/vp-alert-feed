@@ -13,6 +13,27 @@
      "tipo": "consob_comunicati"
     }
    ]
+  },
+  "Parlamento europeo": {
+   "togli": [
+    "https://www.europarl.europa.eu/rss/doc/press-releases/it.xml",
+    "https://www.europarl.europa.eu/rss/committee/econ/it.xml",
+    "https://www.europarl.europa.eu/rss/doc/texts-adopted/it.xml"
+   ],
+   "aggiungi": [
+    {
+     "nome": "Parlamento UE - testi approvati (dati aperti)",
+     "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week",
+     "categoria": "Iter",
+     "accept": "application/atom+xml"
+    },
+    {
+     "nome": "Parlamento UE - procedure (dati aperti)",
+     "url": "https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week",
+     "categoria": "Iter",
+     "accept": "application/atom+xml"
+    }
+   ]
   }
  }
 }

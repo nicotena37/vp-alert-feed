@@ -224,7 +224,7 @@ def leggi_sito(sito: dict) -> dict:
             ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": 0, "errore": True, "motivo": motivo})
             continue
         try:
-            stato, contenuto = scarica(f["url"])
+            stato, contenuto = scarica(f["url"], f.get("accept"))
             if stato in (401, 403, 202, 429):
                 raise ValueError(f"HTTP {stato}: il sito blocca le richieste dai server di GitHub")
             if stato != 200:
