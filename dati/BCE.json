@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BCE_2026-10-22T08-02-32.json",
+"nome_file": "vpalert_rss_BCE_2026-10-22T08-08-49.json",
 "sito": "BCE",
 "origine": "github-actions",
-"letto_il": "2026-10-22T08:02:32Z",
+"letto_il": "2026-10-22T08:08:49Z",
 "feed": [
 {
 "nome": "BCE - comunicati",
@@ -53,6 +53,11 @@
 "nome": "BCE - curva dei rendimenti area euro",
 "url": "https://www.ecb.europa.eu/rss/yc.html",
 "voci": 3
+},
+{
+"nome": "BCE - situazione contabile settimanale dell'Eurosistema",
+"url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/html/index.en.html",
+"voci": 2
 }
 ],
 "allarmi": [],
@@ -1506,6 +1511,26 @@
 "data_originale": "Mon, 9 Jan 2017 12:00:00 +0100",
 "data": "2017-01-09",
 "descrizione": "The historical euro area government bond yield curve contains the spot rate, instantaneous forward and par yield curves for both AAA-rated euro-denominated bonds issued by euro area central governments and all euro area central government bonds. The maturity spectrum covers three months up to 30 years. Data are available from 29 December 2006 to 06 January 2017."
+},
+{
+"sito": "BCE",
+"feed": "BCE - situazione contabile settimanale dell'Eurosistema",
+"categoria": "Vigilanza",
+"titolo": "Consolidated financial statement of the Eurosystem as at 16 October 2026",
+"link": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/2026/html/ecb.fst261020.en.html",
+"data_originale": "2026-10-20",
+"data": "2026-10-20",
+"descrizione": "Consolidated financial statement of the Eurosystem 16 October 2026 Assets (EUR millions) Balance Difference compared with last week due to transactions Totals/sub-totals may not add up, due to rounding 1 Gold and gold receivables 1,286,240 1 2 Claims on non-euro area residents denominated in foreign currency 524,355 −111 2.1 Receivables from the IMF 233,292 0 2.2 Balances with banks and security investments, external loans and other external assets 291,062 −111 3 Claims on euro area residents denominated in foreign currency 21,271 −36 4 Claims on non-euro area residents denominated in euro 40,689 −898 4.1 Balances with banks, security investments and loans 40,689 −898 4.2 Claims arising from"
+},
+{
+"sito": "BCE",
+"feed": "BCE - situazione contabile settimanale dell'Eurosistema",
+"categoria": "Vigilanza",
+"titolo": "Consolidated financial statement of the Eurosystem as at 9 October 2026",
+"link": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/2026/html/ecb.fst261013.en.html",
+"data_originale": "2026-10-13",
+"data": "2026-10-13",
+"descrizione": "Consolidated financial statement of the Eurosystem 9 October 2026 Assets (EUR millions) Balance Difference compared with last week due to transactions Totals/sub-totals may not add up, due to rounding 1 Gold and gold receivables 1,286,239 0 2 Claims on non-euro area residents denominated in foreign currency 524,466 −1,272 2.1 Receivables from the IMF 233,292 −225 2.2 Balances with banks and security investments, external loans and other external assets 291,173 −1,047 3 Claims on euro area residents denominated in foreign currency 21,307 90 4 Claims on non-euro area residents denominated in euro 41,587 −121 4.1 Balances with banks, security investments and loans 41,587 −121 4.2 Claims arising"
 }
 ]
 }

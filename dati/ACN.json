@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-22T08-01-36.json",
+"nome_file": "vpalert_rss_ACN_2026-10-22T08-07-57.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-22T08:01:36Z",
+"letto_il": "2026-10-22T08:07:57Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -12,6 +12,26 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Splunk",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-splunk-6",
+"data_originale": "Thu, 22 Oct 2026 08:06:52 GMT",
+"data": "2026-10-22",
+"descrizione": "Splunk ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 4 con gravità “critica” e 13 con gravità “alta”, nei prodotti Splunk SOAR e Splunk Enterprise. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di accedere a informazioni sensibili, di eludere i meccanismi di autenticazione e di autorizzazione o di eludere le misure di sicurezza."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Laravel: disponibile PoC per lo sfruttamento della CVE-2026-114509",
+"link": "https://www.acn.gov.it/portale/w/laravel-disponibile-poc-per-lo-sfruttamento-della-cve-2026-114509",
+"data_originale": "Thu, 22 Oct 2026 08:04:08 GMT",
+"data": "2026-10-22",
+"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento della CVE-2026-114509 presente in Laravel, noto framework open source per lo sviluppo di applicazioni web. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione sui sistemi interessati, consentendo di impersonare un altro utente."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -491,26 +511,6 @@
 "data_originale": "Wed, 14 Oct 2026 08:49:33 GMT",
 "data": "2026-10-14",
 "descrizione": "Microsoft ha rilasciato gli aggiornamenti di sicurezza mensili che risolvono un totale di 1416 nuove vulnerabilità, di cui una di tipo 0-day."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Gitea",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-gitea",
-"data_originale": "Thu, 15 Oct 2026 09:49:25 GMT",
-"data": "2026-10-15",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare 36 vulnerabilità, di cui una con gravità “critica” e due con gravità “alta”, in Gitea, piattaforma collaborativa open source per la gestione del codice sorgente e lo sviluppo di applicazioni software. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a utenti malintenzionati di aggirare le restrizioni di sicurezza, leggere file arbitrari o eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in cURL",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-curl-1",
-"data_originale": "Thu, 15 Oct 2026 09:01:36 GMT",
-"data": "2026-10-15",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare una vulnerabilità con gravità \"alta\" in cURL, noto tool a linea di comando e libreria per il trasferimento dati. Tale vulnerabilità potrebbe consentire a un utente malintenzionato di eseguire codice arbitrario sui sistemi interessati."
 }
 ]
 }
