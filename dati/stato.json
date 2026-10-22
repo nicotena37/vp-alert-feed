@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-22T09:27:05+00:00",
+ "letto_il": "2026-10-22T15:03:53+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -126,19 +126,18 @@
    ]
   },
   "EBA": {
-   "feed_ok": 0,
-   "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "EBA - news: feed non leggibile (ValueError: HTTP 502) - https://www.eba.europa.eu/news-press/news/rss.xml"
-   ]
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 20,
+   "allarmi": []
   },
   "ESMA": {
    "feed_ok": 0,
-   "feed_totali": 1,
+   "feed_totali": 2,
    "notizie": 0,
    "allarmi": [
-    "ESMA - novità (senza data): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml"
+    "ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
+    "ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library"
    ]
   },
   "BCE - Vigilanza bancaria": {
@@ -166,12 +165,10 @@
    "allarmi": []
   },
   "Parlamento europeo": {
-   "feed_ok": 1,
+   "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 370,
-   "allarmi": [
-    "Parlamento UE - testi approvati (dati aperti): feed non leggibile (ValueError: HTTP 500) - https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week"
-   ]
+   "notizie": 399,
+   "allarmi": []
   },
   "Consiglio UE": {
    "feed_ok": 1,
@@ -202,7 +199,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 3,
+   "notizie": 25,
    "allarmi": []
   }
  }

@@ -1,19 +1,221 @@
 {
-"nome_file": "vpalert_rss_EBA_2026-10-22T09-29-17.json",
+"nome_file": "vpalert_rss_EBA_2026-10-22T15-06-08.json",
 "sito": "EBA",
 "origine": "github-actions",
-"letto_il": "2026-10-22T09:29:17Z",
+"letto_il": "2026-10-22T15:06:08Z",
 "feed": [
 {
 "nome": "EBA - news",
 "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: HTTP 502"
+"voci": 10
+},
+{
+"nome": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"url": "https://www.eba.europa.eu/rss.xml",
+"voci": 10
 }
 ],
-"allarmi": [
-"EBA - news: feed non leggibile (ValueError: HTTP 502) - https://www.eba.europa.eu/news-press/news/rss.xml"
-],
-"notizie": []
+"allarmi": [],
+"notizie": [
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "The ​EBA extends some consultation deadlines due to website maintenance​",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-extends-some-consultation-deadlines-due-website-maintenance",
+"data_originale": "Thu, 22 Oct 2026 14:53:14 +0200",
+"data": "2026-10-22",
+"descrizione": "On 21 October 2026, CERT-EU, the cybersecurity service for the EU institutions, bodies and agencies, alerted organisations to two critical security flaws in software used to run many websites, including that of the European Banking Authority (EBA). As a precaution, the EBA took its website offline on Wednesday 21 October 2026 at 13:00 CEST while the necessary security updates were applied. The website was restored on Thursday 22 October 2026 at 14:00 CEST."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "​The EBA classifies USDC as the first significant e-money token in the European Union",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-classifies-usdc-first-significant-e-money-token-european-union",
+"data_originale": "Wed, 14 Oct 2026 16:36:49 +0200",
+"data": "2026-10-14",
+"descrizione": "​The European Banking Authority (EBA) has classified USDC, issued by Circle Internet Financial Europe SAS, as a significant e-money token (EMT) under the Markets in Crypto Assets Regulation (MiCA), following its assessment of the criteria set out in the Regulation. There are currently 45 EMTs in the European Union, which have been notified under MiCA, and USDC is the first one to be classified as being significant."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "European Supervisory Authorities set priorities for 2027",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/european-supervisory-authorities-set-priorities-2027",
+"data_originale": "Tue, 13 Oct 2026 10:16:04 +0200",
+"data": "2026-10-13",
+"descrizione": "The Joint Committee of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) published today its Annual Work Programme for 2027, setting out its priorities for addressing cross-sectoral risks and strengthening coordination across the European Union's financial sector."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "​The EBA releases the final technical package for release 4.4 of its reporting and Pillar 3 disclosure framework",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
+"data_originale": "Mon, 12 Oct 2026 15:10:34 +0200",
+"data": "2026-10-12",
+"descrizione": "​The European Banking Authority (EBA) today released the final technical package for version 4.4 of its reporting and disclosure framework, covering IFRS 18 reporting, Pillar 3 ESG disclosures and other technical amendments."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "The EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+"data_originale": "Mon, 12 Oct 2026 09:13:34 +0200",
+"data": "2026-10-12",
+"descrizione": "The European Banking Authority (EBA) today published a report proposing draft amendments to the Regulatory Technical Standards (RTS) on certain prudential requirements for central securities depositories (CSDs) and designated credit institutions offering ‘banking-type ancillary services’. This mostly responds to changes introduced by the Central Securities Depositories Regulation (CSDR) “Refit”, notably those allowing banking CSDs to provide banking-type ancillary services to other CSDs."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "EBA CRR3/CRD6 dashboard shows banks maintain capital levels well above minimum requirements under the fully loaded Basel III framework",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-crr3crd6-dashboard-shows-banks-maintain-capital-levels-well-above-minimum-requirements-under",
+"data_originale": "Fri, 09 Oct 2026 11:13:19 +0200",
+"data": "2026-10-09",
+"descrizione": "The European Banking Authority (EBA) today published its CRR3/CRD6 dashboard as of Q2 2026 for 129 banks at the highest level of consolidation across the EU/EEA. EU/EEA banks maintain capital levels well above minimum requirements under the fully loaded CRR3 framework, with an average Common Equity Tier 1 (CET1) ratio projected at 15.1%, despite an increased impact of the output floor compared with previous editions."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "​The EBA publishes its 2027 Work Programme",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-2027-work-programme",
+"data_originale": "Wed, 30 Sep 2026 15:49:37 +0200",
+"data": "2026-09-30",
+"descrizione": "​The European Banking Authority (EBA) published today its Work Programme outlining the key areas of focus and deliverables for 2027. The Programme also marks the first step towards a broader medium-term strategy to position the EBA as a next-generation regulator, a body developing supervision at new frontiers, and a provider of services to the supervisory and resolution community."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "EU/EEA banks display strength amid a challenging risk environment",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-display-strength-amid-challenging-risk-environment",
+"data_originale": "Fri, 25 Sep 2026 11:05:09 +0200",
+"data": "2026-09-25",
+"descrizione": "The European Banking Authority (EBA) today published its Risk Dashboard for the second quarter of 2026. It summarises the main risks and vulnerabilities of the EU/EEA banking sector based on supervisory reporting data."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "The EBA consults on revised technical standards for joint decisions on institution-specific capital and liquidity requirements",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-technical-standards-joint-decisions-institution-specific-capital-and-liquidity",
+"data_originale": "Fri, 25 Sep 2026 10:27:16 +0200",
+"data": "2026-09-25",
+"descrizione": "The European Banking Authority (EBA) today started a public consultation on proposed revisions to the Implementing Technical Standards (ITS) governing the joint decision process for institution-specific prudential requirements foreseen by Article 113 of the Capital Requirements Directive. The revisions are part of the EBA’s broader efforts to simplify and enhance the efficiency of the regulatory and supervisory framework, as outlined in its Report on the efficiency of the regulatory and supervisory framework, published in October 2025."
+},
+{
+"sito": "EBA",
+"feed": "EBA - news",
+"categoria": "Vigilanza",
+"titolo": "The EBA identifies priorities for the review of MiCA",
+"link": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica",
+"data_originale": "Thu, 24 Sep 2026 09:00:00 +0200",
+"data": "2026-09-24",
+"descrizione": "The European Banking Authority (EBA) today published its response to the European Commission’s targeted consultation on the review of the Regulation on Markets in Crypto-assets (MiCA). While MiCA has established a comprehensive regulatory framework for crypto-asset activities in the European Union, the crypto sector continues to evolve rapidly with new products, services and business models emerging to market. Against this backdrop, the EBA recommends the European Commission prioritise specific issues in its review of MiCA."
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation",
+"link": "https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation",
+"data_originale": "Fri, 28 Jun 2024 08:22:54 +0000",
+"data": "2024-06-28",
+"descrizione": "Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation Jana Jaklic Fri, 06/28/2024 - 10:22"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 22 October, 2026",
+"link": "https://www.eba.europa.eu/node/20121",
+"data_originale": "Thu, 22 Oct 2026 15:00:03 +0000",
+"data": "2026-10-22",
+"descrizione": "EBA E-mail alert 22 October, 2026 Date 22/10/2026 Anonymous (not verified) Thu, 10/22/2026 - 17:00 News &amp; Press The ​EBA extends some consultation deadlines due to website maintenance​"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 16 October, 2026",
+"link": "https://www.eba.europa.eu/node/20106",
+"data_originale": "Fri, 16 Oct 2026 15:00:03 +0000",
+"data": "2026-10-16",
+"descrizione": "EBA E-mail alert 16 October, 2026 Date 16/10/2026 Anonymous (not verified) Fri, 10/16/2026 - 17:00 Final Q&amp;As 2026_7854 Incoherent formulae on the validation rule v0478_m 2026_7867 Validity of validation rule v903610"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 14 October, 2026",
+"link": "https://www.eba.europa.eu/node/20099",
+"data_originale": "Wed, 14 Oct 2026 15:00:03 +0000",
+"data": "2026-10-14",
+"descrizione": "EBA E-mail alert 14 October, 2026 Date 14/10/2026 Anonymous (not verified) Wed, 10/14/2026 - 17:00 News &amp; Press ​The EBA classifies USDC as the first significant e-money token in the European Union"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 13 October, 2026",
+"link": "https://www.eba.europa.eu/node/20094",
+"data_originale": "Tue, 13 Oct 2026 15:00:03 +0000",
+"data": "2026-10-13",
+"descrizione": "EBA E-mail alert 13 October, 2026 Date 13/10/2026 Anonymous (not verified) Tue, 10/13/2026 - 17:00 News &amp; Press European Supervisory Authorities set priorities for 2027"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 12 October, 2026",
+"link": "https://www.eba.europa.eu/node/20089",
+"data_originale": "Mon, 12 Oct 2026 15:00:02 +0000",
+"data": "2026-10-12",
+"descrizione": "EBA E-mail alert 12 October, 2026 Date 12/10/2026 Anonymous (not verified) Mon, 10/12/2026 - 17:00 News &amp; Press The EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories ​The EBA releases the final technical package for release 4.4 of its reporting and Pillar 3 disclosure framework"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 9 October, 2026",
+"link": "https://www.eba.europa.eu/node/20084",
+"data_originale": "Fri, 09 Oct 2026 15:45:02 +0000",
+"data": "2026-10-09",
+"descrizione": "EBA E-mail alert 9 October, 2026 Date 09/10/2026 Anonymous (not verified) Fri, 10/09/2026 - 17:45 News &amp; Press EBA CRR3/CRD6 dashboard shows banks maintain capital levels well above minimum requirements under the fully loaded Basel III framework Procurement Ex-ante publicity for negotiated procurement procedure: EBA End-of-Year Celebration 2026 – Venue and associated services Final Q&amp;As 2025_7617 Accrued interest on withdrawable central bank reserves 2026_7725 Clarification on whether non resident / cross border clients must be included in CFR reporting under the new ITS. 2026_7797 Where to classify Tier2 Subordinated issuances when they loss their MREL computability due to an earlie"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 2 October, 2026",
+"link": "https://www.eba.europa.eu/node/20066",
+"data_originale": "Fri, 02 Oct 2026 15:00:02 +0000",
+"data": "2026-10-02",
+"descrizione": "EBA E-mail alert 2 October, 2026 Date 02/10/2026 Anonymous (not verified) Fri, 10/02/2026 - 17:00 Final Q&amp;As 2026_7779 Scope of Article 6 lit. c RTS"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 30 September, 2026",
+"link": "https://www.eba.europa.eu/node/20057",
+"data_originale": "Wed, 30 Sep 2026 15:00:03 +0000",
+"data": "2026-09-30",
+"descrizione": "EBA E-mail alert 30 September, 2026 Date 30/09/2026 Anonymous (not verified) Wed, 09/30/2026 - 17:00 News &amp; Press ​The EBA publishes its 2027 Work Programme"
+},
+{
+"sito": "EBA",
+"feed": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+"categoria": "Vigilanza",
+"titolo": "EBA E-mail alert 25 September, 2026",
+"link": "https://www.eba.europa.eu/node/20044",
+"data_originale": "Fri, 25 Sep 2026 15:00:01 +0000",
+"data": "2026-09-25",
+"descrizione": "EBA E-mail alert 25 September, 2026 Date 25/09/2026 Anonymous (not verified) Fri, 09/25/2026 - 17:00 News &amp; Press The EBA consults on revised technical standards for joint decisions on institution-specific capital and liquidity requirements EU/EEA banks display strength amid a challenging risk environment Consultations Consultation on revised Implementing Technical Standards on joint decisions on institution-specific prudential requirements"
+}
+]
 }

@@ -1,26 +1,1332 @@
 {
-"nome_file": "vpalert_rss_Parlamento-europeo_2026-10-22T09-30-47.json",
+"nome_file": "vpalert_rss_Parlamento-europeo_2026-10-22T15-07-45.json",
 "sito": "Parlamento europeo",
 "origine": "github-actions",
-"letto_il": "2026-10-22T09:30:47Z",
+"letto_il": "2026-10-22T15:07:45Z",
 "feed": [
 {
 "nome": "Parlamento UE - testi approvati (dati aperti)",
 "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: HTTP 500"
+"voci": 67
 },
 {
 "nome": "Parlamento UE - procedure (dati aperti)",
 "url": "https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week",
-"voci": 370
+"voci": 332
 }
 ],
-"allarmi": [
-"Parlamento UE - testi approvati (dati aperti): feed non leggibile (ValueError: HTTP 500) - https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week"
-],
+"allarmi": [],
 "notizie": [
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Russian strikes in the EU, particularly on Black Sea shipping, threatening human life, regional stability and food security",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0365",
+"data_originale": "2026-10-22T14:55:32.377Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Houthi attacks and implications for regional security",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0366",
+"data_originale": "2026-10-22T14:48:27.885Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "UN Climate Change Conference 2026 in Antalya, Türkiye (COP31)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0367",
+"data_originale": "2026-10-22T14:48:25.415Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cohesion policy in the EU’s eastern border regions: strengthening territorial resilience and cross-border cooperation",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0364",
+"data_originale": "2026-10-22T14:47:57.360Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Revised heat and fuel benchmark values for 2026-2030",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0363",
+"data_originale": "2026-10-22T14:47:52.491Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Connecting Europe through high-speed rail",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0351",
+"data_originale": "2026-10-22T14:47:44.893Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Combating VAT fraud – the effectiveness of cross-border cooperation when it comes to VAT fraud and its impact on the EU budget",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0350",
+"data_originale": "2026-10-22T14:47:42.272Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Erasmus+ programme 2028–2034",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0361",
+"data_originale": "2026-10-22T14:47:30.449Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amendments to the Critical Raw Materials Act",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0343",
+"data_originale": "2026-10-22T14:37:35.907Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Suspending the application of the rules on extended producer responsibility for batteries and waste batteries and packaging and packaging waste (Omnibus VIII on environmental legislation)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0345",
+"data_originale": "2026-10-22T14:37:33.065Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Suspending the application of the rules on extended producer responsibility for waste, waste electrical and electronical equipment and single use plastic waste (Omnibus VIII on environmental legislation)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0344",
+"data_originale": "2026-10-22T14:37:29.494Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cohesion policy – the driving force in implementing the EU agenda for cities",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0349",
+"data_originale": "2026-10-22T14:37:21.562Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0360",
+"data_originale": "2026-10-22T13:53:03.622Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Guidelines for the employment policies of the Member States",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0357",
+"data_originale": "2026-10-22T13:50:21.122Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Boosting skills in the Union – opportunities for vocational education and training in times of transition",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0358",
+"data_originale": "2026-10-22T13:49:53.884Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amendments to the draft general budget of the European Union for the financial year 2027",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-10-21-ANN01",
+"data_originale": "2026-10-22T13:49:53.427Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Pericles V exchange, assistance and training programme for the protection of the euro against counterfeiting 2028–2034",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0356",
+"data_originale": "2026-10-22T13:49:50.431Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/004 FI/Etelä-Suomi and Helsinki-Uusimaa paper - Finland",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0355",
+"data_originale": "2026-10-22T13:49:47.555Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "General budget of the European Union for the financial year 2027 – all sections",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0352",
+"data_originale": "2026-10-22T13:49:46.549Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Union Solidarity Fund: assistance to Malta, Italy, Portugal and Spain with regard to storms in 2026",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0354",
+"data_originale": "2026-10-22T13:49:41.647Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Genetically modified soybean MON 87769",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0359",
+"data_originale": "2026-10-22T13:49:41.352Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Discharge 2024: EU general budget – European Council and Council",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0353",
+"data_originale": "2026-10-22T13:49:40.863Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Simplification of certain requirements and procedures for chemical products",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0362",
+"data_originale": "2026-10-22T13:13:48.048Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The EU’s approach to corporate tax policy in a changing international environment",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0327",
+"data_originale": "2026-10-22T09:03:45.379Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Economic and budgetary surveillance of Member States in the euro area experiencing or threatened with serious difficulties with respect to their financial stability",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0323",
+"data_originale": "2026-10-22T09:03:34.736Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Establishment and functioning of European Works Councils - effective enforcement",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2025-0226",
+"data_originale": "2026-10-22T09:03:18.867Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Simplification of certain requirements for spatial information infrastructure in the Union (INSPIRE) (Omnibus VIII on environmental legislation)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0325",
+"data_originale": "2026-10-22T09:03:15.945Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Funding arrangements and the use of a diversified funding strategy",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0324",
+"data_originale": "2026-10-22T09:03:13.877Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Alignment with the EU economic governance framework and further simplification of that framework",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0322",
+"data_originale": "2026-10-22T09:03:10.914Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Psychosocial risks, stress and mental health at work",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0326",
+"data_originale": "2026-10-22T09:03:05.416Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Programme for agile and rapid defence innovation (AGILE)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0320",
+"data_originale": "2026-10-22T09:03:00.737Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Protection of workers from the risks related to exposure to carcinogens, mutagens or reprotoxic substances at work",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0321",
+"data_originale": "2026-10-22T09:02:56.945Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Request for the waiver of the immunity of Matteo Ricci",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0319",
+"data_originale": "2026-10-22T09:02:56.299Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Pilot project on European Schools Alliances and its contribution to citizenship education, democratic competences and European values",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0338",
+"data_originale": "2026-10-22T08:22:43.590Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Protection of adults: jurisdiction, applicable law, recognition and enforcement of measures and cooperation",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0348",
+"data_originale": "2026-10-21T15:35:59.843Z",
+"data": "2026-10-21",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Public interface connected to the Internal Market Information System for the declaration of posting of workers",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0346",
+"data_originale": "2026-10-21T15:34:07.449Z",
+"data": "2026-10-21",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transport: enforcement of passenger rights in the Union",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0347",
+"data_originale": "2026-10-21T15:34:02.870Z",
+"data": "2026-10-21",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0035",
+"data_originale": "2026-10-21T07:20:21.994Z",
+"data": "2026-10-21",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Electronic evidence regulation: European production and preservation orders for electronic evidence in criminal matters",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-9-2023-0225",
+"data_originale": "2026-10-21T07:20:17.562Z",
+"data": "2026-10-21",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on North Macedonia",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0218",
+"data_originale": "2026-10-20T14:43:35.489Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Georgia",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0222",
+"data_originale": "2026-10-20T14:43:32.845Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Recommendation on promoting transnational governance on water in the interests of conflict prevention and peace",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0221",
+"data_originale": "2026-10-20T14:43:29.768Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Bosnia and Herzegovina",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0219",
+"data_originale": "2026-10-20T14:43:29.667Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Kosovo",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0220",
+"data_originale": "2026-10-20T14:43:29.422Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Albania",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0217",
+"data_originale": "2026-10-20T14:43:29.378Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Montenegro",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0216",
+"data_originale": "2026-10-20T14:43:26.402Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU–Pakistan Agreement: modification of concessions on all the tariff rate quotas included in the EU Schedule CLXXV",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0208",
+"data_originale": "2026-10-20T14:42:53.686Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Hague Convention (1980) on the Civil Aspects of International Child Abduction: accession of Cabo Verde",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0214",
+"data_originale": "2026-10-20T14:42:51.765Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Structure and rates of excise duty applied to tobacco and tobacco related products (recast)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0211",
+"data_originale": "2026-10-20T14:42:49.762Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "2025 Commission report on Türkiye",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0215",
+"data_originale": "2026-10-20T14:42:47.147Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Title is not available for this language",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0207",
+"data_originale": "2026-10-20T14:42:44.950Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU–Liberia Voluntary Partnership Agreement on forest law enforcement, governance and trade in timber products: termination (Resolution)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0210",
+"data_originale": "2026-10-20T14:42:42.664Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "General arrangements for excise duty applied to tobacco and tobacco related products",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0212",
+"data_originale": "2026-10-20T14:42:40.312Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU–Liberia Voluntary Partnership Agreement on forest law enforcement, governance and trade in timber products: termination",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0209",
+"data_originale": "2026-10-20T14:42:38.472Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "European Public Prosecutor’s Office (EPPO) and European Anti-Fraud Office (OLAF): access to VAT information at Union level",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0213",
+"data_originale": "2026-10-20T14:42:35.557Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Plants obtained by certain new genomic techniques and their food and feed",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0206",
+"data_originale": "2026-10-20T14:42:27.282Z",
+"data": "2026-10-20",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Targeted expulsions of foreign journalists and foreign Christians in Türkiye under national security pretexts",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0047",
+"data_originale": "2026-10-16T15:28:14.986Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Post-election situation in Uganda and threats against opposition leader Bobi Wine",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0045",
+"data_originale": "2026-10-16T15:28:12.895Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cooperation among enforcement authorities regarding unfair trading practices in the agri-food supply chain",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0048",
+"data_originale": "2026-10-16T15:28:05.714Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Situation in Northeast Syria, the violence against civilians and the need to maintain a sustainable ceasefire",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0053",
+"data_originale": "2026-10-16T15:28:03.466Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Accession of the Republic of Albania to the Convention of 2 July 2019 on the Recognition and Enforcement of Foreign Judgments in Civil or Commercial Matters",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0055",
+"data_originale": "2026-10-16T15:28:03.228Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Accession of Montenegro to the Convention of 2 July 2019 on the Recognition and Enforcement of Foreign Judgments in Civil or Commercial Matters",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0054",
+"data_originale": "2026-10-16T15:27:59.979Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "World Cancer Day",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0052",
+"data_originale": "2026-10-16T15:27:57.843Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Developing a new EU anti-poverty strategy",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0049",
+"data_originale": "2026-10-16T15:27:55.980Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Systemic oppression, inhumane conditions and arbitrary detentions by the regime in Iran",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0046",
+"data_originale": "2026-10-16T15:27:44.641Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Recommendation to the Council on EU priorities for the 70th session of the UN Commission on the Status of Women",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0051",
+"data_originale": "2026-10-16T15:27:42.244Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Addressing subcontracting chains and the role of intermediaries in order to protect workers’ rights",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0050",
+"data_originale": "2026-10-16T15:27:04.077Z",
+"data": "2026-10-16",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "The Institutional Framework of the European Union and its interaction with national authorities in the application of Union law, with particular reference to Article 19 TEU",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2263",
+"data_originale": "2026-10-22T15:06:25.449Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Conclusion, on behalf of the European Union, of the International Coffee Agreement 2022",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0267",
+"data_originale": "2026-10-22T15:06:25.051Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "European Union Space Services Agency and amending Regulation (EU) 2021/696",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0084",
+"data_originale": "2026-10-22T15:06:14.212Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Establishing the Erasmus+ programme for the period 2028-2034, and repealing Regulations (EU) 2021/817 and (EU) 2021/888",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0222",
+"data_originale": "2026-10-22T14:55:42.781Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amending Regulations (EC) No 1272/2008, (EC) No 1223/2009 and (EU) 2019/1009 as regards simplification of certain requirements and procedures for chemical products",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0531",
+"data_originale": "2026-10-22T14:55:39.807Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Russian strikes in the EU, particularly on Black Sea shipping, threatening human life, regional stability and food security",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2933",
+"data_originale": "2026-10-22T14:52:18.108Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "UN Climate Change Conference 2026 in Antalya, Turkey (COP31)",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2666",
+"data_originale": "2026-10-22T14:52:03.461Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Houthi attacks and implications for regional security",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2939",
+"data_originale": "2026-10-22T14:52:01.773Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cohesion policy in the EU’s eastern border regions: strengthening territorial resilience and cross-border cooperation",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2054",
+"data_originale": "2026-10-22T14:52:00.225Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU Emissions Trading System: heat and fuel benchmark values for 2026–2030",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0211",
+"data_originale": "2026-10-22T14:51:27.875Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Conclusion, on behalf of the Union, of the Agreement on Digital Trade between the European Union and the Republic of Korea",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0273M",
+"data_originale": "2026-10-22T14:43:04.107Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Generational renewal in agriculture",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2041",
+"data_originale": "2026-10-22T14:38:32.640Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amending Regulation (EU) 2018/848 as regards certain production, labelling and certification rules and certain rules on trade with third countries",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0417",
+"data_originale": "2026-10-22T14:38:31.647Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Control of the financial activities of the European Investment Bank Group - annual report 2025",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2141",
+"data_originale": "2026-10-22T14:30:23.743Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Implementation of the common security and defence policy – annual report 2026",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2060",
+"data_originale": "2026-10-22T14:27:58.479Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Activities of the European Ombudsman - annual report 2025",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2073",
+"data_originale": "2026-10-22T14:20:30.367Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU Emissions Trading System and market stability reserve: competitiveness and cost-effective decarbonisation",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0212",
+"data_originale": "2026-10-22T14:18:31.916Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Agreement on Electronic Commerce",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0191R",
+"data_originale": "2026-10-22T14:08:17.662Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Agreement on Electronic Commerce",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0191",
+"data_originale": "2026-10-22T14:08:14.216Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Institutional aspects of the Common European Defence Union",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2212",
+"data_originale": "2026-10-22T14:06:20.676Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Administrative cooperation in the field of taxation (recast)",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0168",
+"data_originale": "2026-10-22T14:04:20.769Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cultural and creative sectors in the age of AI",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2180",
+"data_originale": "2026-10-22T14:04:18.386Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Safety, resilience and sustainability of space activities in the Union",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0335",
+"data_originale": "2026-10-22T13:54:31.806Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "General budget of the European Union for the financial year 2027 - all sections",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0196",
+"data_originale": "2026-10-22T13:50:19.808Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Union Solidarity Fund to provide assistance to Malta and Italy regarding storm Harry in January 2026 and to Portugal and Spain following the storms in January and February 2026",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0284",
+"data_originale": "2026-10-22T13:50:19.806Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Conclusions of the European Council meeting of 15-16 October 2026",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2898",
+"data_originale": "2026-10-22T13:50:19.805Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Commission Delegated Regulation amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards technical measures for the conservation of fishery resources of the Celtic Sea, West of Scotland, Irish Sea and the Channel",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2928",
+"data_originale": "2026-10-22T13:50:19.804Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations DEC 21/2026 - Section III - Commission",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2155",
+"data_originale": "2026-10-22T13:50:19.765Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Boosting skills in the Union – opportunities for vocational education and training in times of transition",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2070",
+"data_originale": "2026-10-22T13:50:19.754Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations DEC 20/2026 - Section III - Commission",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2150",
+"data_originale": "2026-10-22T13:49:53.809Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "A new co-ownership for the future of Euro-Mediterranean relations – the Pact for the Mediterranean",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2035",
+"data_originale": "2026-10-22T13:49:53.424Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Guidelines for the employment policies of the Member States",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0137",
+"data_originale": "2026-10-22T13:49:50.430Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2018/273 as regards the scheme of authorisations for vine planting and the functioning of the analytical databank of isotopic data for the wine sector",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2942",
+"data_originale": "2026-10-22T13:49:49.755Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2015/35 as regards the simplified calculation of the risk margin",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2927",
+"data_originale": "2026-10-22T13:49:49.727Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Commission Regulation amending Annex I to Regulation (EU) No 10/2011 as regards a migration limit for the substance styrene",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2941",
+"data_originale": "2026-10-22T13:49:48.084Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations V/INF-09/T/26 - Section V - Court of Auditors",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2157",
+"data_originale": "2026-10-22T13:49:46.510Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations V/INF-08/T/26 - Section V - Court of Auditors",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2156",
+"data_originale": "2026-10-22T13:48:48.523Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Discharge 2024: General budget of the EU - European Council and Council",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2147",
+"data_originale": "2026-10-22T13:48:46.733Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Commission Delegated Regulation supplementing Directive 2009/138/EC of the European Parliament and of the Council with regard to regulatory technical standards specifying the applicability criteria for macroprudential analyses in the own risk and solvency assessment and as part of the prudent person principle, and specifying the applicability criteria, the content and the frequency of update of liquidity risk management plans",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2931",
+"data_originale": "2026-10-22T13:48:46.400Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Deepening the EU-Canada alliance - preparation of the EU-Canada summit",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2940",
+"data_originale": "2026-10-22T13:48:46.370Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations V/INF-10/C/26 - Section V - Court of Auditors",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2158",
+"data_originale": "2026-10-22T13:48:46.244Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "A Circular Economy Act that strengthens Europe’s strategic autonomy, boosts competitiveness and makes the lives of Europeans more affordable",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2932",
+"data_originale": "2026-10-22T13:48:45.936Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers following an application from Finland - EGF/2026/004 FI/Etelä-Suomi and Helsinki-Uusimaa paper",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0254",
+"data_originale": "2026-10-22T13:48:45.840Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Objection pursuant to Rule 115(2) and (3) of the Rules of Procedure on the draft Commission Implementing Decision renewing the authorisation for the placing on the market of products containing, consisting of or produced from genetically modified soybean MON 87769 pursuant to Regulation (EC) No 1829/2003 of the European Parliament and of the Council (D117576)",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2880",
+"data_originale": "2026-10-22T13:48:45.539Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Establishing the exchange, assistance and training programme for the protection of the euro against counterfeiting for the period 2028-2034 (the 'Pericles V' programme) and repealing Regulation (EU) 2021/840",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0258",
+"data_originale": "2026-10-22T13:48:45.452Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "The rule of law in Malta, nine years after the assassination of Daphne Caruana Galizia",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2934",
+"data_originale": "2026-10-22T13:48:45.145Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transfer of appropriations V/INF-11/A/26 - Section V - Court of Auditors",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2159",
+"data_originale": "2026-10-22T13:48:44.780Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Presentation of the Court of Auditors' annual report 2025",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2897",
+"data_originale": "2026-10-22T13:48:16.182Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amending Directive (EU) 2022/2555 as regards simplification measures and alignment with the [Proposal for the Cybersecurity Act 2]",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0012",
+"data_originale": "2026-10-22T13:38:20.306Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2)",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0011",
+"data_originale": "2026-10-22T13:36:14.866Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amending Regulation (EU) 2019/631 as regards CO2 emission performance standards for new light duty vehicles and vehicle labelling and repealing Directive 1999/94/EC",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0420",
+"data_originale": "2026-10-22T13:22:19.285Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0325",
+"data_originale": "2026-10-22T13:12:26.805Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Affordable Housing Act",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0268",
+"data_originale": "2026-10-22T12:38:14.740Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Combating the ‘tradwives’ phenomenon – promoting women’s rights, economic independence and digital narratives",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2118",
+"data_originale": "2026-10-22T11:48:20.285Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Public Procurement Act",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0265",
+"data_originale": "2026-10-22T11:32:16.881Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Skills Portability Act",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0274",
+"data_originale": "2026-10-22T11:30:20.432Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Recognition of qualifications of third-country nationals",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0275",
+"data_originale": "2026-10-22T10:58:16.234Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amending Regulation (EU) 2024/1252",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0385",
+"data_originale": "2026-10-22T10:48:14.674Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "EU KIDS Act",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0286",
+"data_originale": "2026-10-22T10:12:36.242Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Maritime transport: monitoring, reporting and verification and alignment with revisions of the EU Emissions Trading System",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0210",
+"data_originale": "2026-10-22T10:06:23.230Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Recommendation to the Council, the Commission and the Vice-President of the Commission / High Representative of the Union for Foreign Affairs and Security Policy on EU-Norway political relations",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2042",
+"data_originale": "2026-10-22T10:04:21.535Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Conclusion, on behalf of the Union, of the Agreement on Digital Trade between the European Union and the Republic of Korea",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0273",
+"data_originale": "2026-10-22T09:38:22.240Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Discharge 2025: General budget of the EU - Commission",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2079",
+"data_originale": "2026-10-22T09:36:16.959Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - procedure (dati aperti)",
+"categoria": "Iter",
+"titolo": "Discharge 2025: General budget of the EU - Agencies",
+"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2090",
+"data_originale": "2026-10-22T09:34:27.148Z",
+"data": "2026-10-22",
+"descrizione": ""
+},
 {
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
@@ -35,79 +1341,9 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Cultural and creative sectors in the age of AI",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2180",
-"data_originale": "2026-10-22T09:26:23.309Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Agreement on Electronic Commerce",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0191",
-"data_originale": "2026-10-22T09:25:29.319Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Conclusion, on behalf of the European Union, of the International Coffee Agreement 2022",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0267",
-"data_originale": "2026-10-22T09:25:03.384Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "EU Emissions Trading System: heat and fuel benchmark values for 2026–2030",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0211",
-"data_originale": "2026-10-22T09:24:53.006Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Establishing a framework of measures for the acceleration of industrial capacity and decarbonisation in strategic sectors and amending Regulations (EU) 2018/1724, (EU) 2024/1735 and (EU) 2024/3110",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0068",
 "data_originale": "2026-10-22T09:24:50.468Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "The Institutional Framework of the European Union and its interaction with national authorities in the application of Union law, with particular reference to Article 19 TEU",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2263",
-"data_originale": "2026-10-22T09:24:48.103Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Administrative cooperation in the field of taxation (recast)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0168",
-"data_originale": "2026-10-22T09:24:47.959Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Agreement on Electronic Commerce",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0191R",
-"data_originale": "2026-10-22T09:24:45.321Z",
 "data": "2026-10-22",
 "descrizione": ""
 },
@@ -135,109 +1371,9 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Commission Regulation amending Annex I to Regulation (EU) No 10/2011 as regards a migration limit for the substance styrene",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2941",
-"data_originale": "2026-10-22T09:22:21.191Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Request for the waiver of the immunity of András Tivadar Kulja",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2016",
 "data_originale": "2026-10-22T09:22:17.502Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2018/273 as regards the scheme of authorisations for vine planting and the functioning of the analytical databank of isotopic data for the wine sector",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2942",
-"data_originale": "2026-10-22T09:20:48.926Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Regulation (EU) 2019/1241 of the European Parliament and of the Council as regards technical measures for the conservation of fishery resources of the Celtic Sea, West of Scotland, Irish Sea and the Channel",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2928",
-"data_originale": "2026-10-22T09:20:42.865Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2015/35 as regards the simplified calculation of the risk margin",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2927",
-"data_originale": "2026-10-22T09:20:35.594Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation supplementing Directive 2009/138/EC of the European Parliament and of the Council with regard to regulatory technical standards specifying the applicability criteria for macroprudential analyses in the own risk and solvency assessment and as part of the prudent person principle, and specifying the applicability criteria, the content and the frequency of update of liquidity risk management plans",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2931",
-"data_originale": "2026-10-22T09:20:32.563Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Establishing the exchange, assistance and training programme for the protection of the euro against counterfeiting for the period 2028-2034 (the 'Pericles V' programme) and repealing Regulation (EU) 2021/840",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0258",
-"data_originale": "2026-10-22T09:19:56.349Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Objection pursuant to Rule 115(2) and (3) of the Rules of Procedure on the draft Commission Implementing Decision renewing the authorisation for the placing on the market of products containing, consisting of or produced from genetically modified soybean MON 87769 pursuant to Regulation (EC) No 1829/2003 of the European Parliament and of the Council (D117576)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2880",
-"data_originale": "2026-10-22T09:19:51.685Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Boosting skills in the Union – opportunities for vocational education and training in times of transition",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2070",
-"data_originale": "2026-10-22T09:19:51.447Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "EU Emissions Trading System and market stability reserve: competitiveness and cost-effective decarbonisation",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0212",
-"data_originale": "2026-10-22T09:12:18.469Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Activities of the European Ombudsman - annual report 2025",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2073",
-"data_originale": "2026-10-22T09:12:18.388Z",
 "data": "2026-10-22",
 "descrizione": ""
 },
@@ -495,56 +1631,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Deepening the EU-Canada alliance - preparation of the EU-Canada summit",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2940",
-"data_originale": "2026-10-22T08:54:33.686Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "The rule of law in Malta, nine years after the assassination of Daphne Caruana Galizia",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2934",
-"data_originale": "2026-10-22T08:54:33.470Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "UN Climate Change Conference 2026 in Antalya, Turkey (COP31)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2666",
-"data_originale": "2026-10-22T08:54:21.996Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "A Circular Economy Act that strengthens Europe’s strategic autonomy, boosts competitiveness and makes the lives of Europeans more affordable",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2932",
-"data_originale": "2026-10-22T08:54:21.835Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "General budget of the European Union for the financial year 2027 - all sections",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0196",
-"data_originale": "2026-10-22T08:54:20.949Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Electricity market: network charges, taxation, smart grids and grid connections",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0203",
 "data_originale": "2026-10-22T08:50:21.388Z",
@@ -558,56 +1644,6 @@
 "titolo": "Title is not available for this language",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0324",
 "data_originale": "2026-10-22T08:50:21.034Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Guidelines for the employment policies of the Member States",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0137",
-"data_originale": "2026-10-22T08:50:15.524Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "A new co-ownership for the future of Euro-Mediterranean relations – the Pact for the Mediterranean",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2035",
-"data_originale": "2026-10-22T08:49:57.995Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Discharge 2024: General budget of the EU - European Council and Council",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2147",
-"data_originale": "2026-10-22T08:44:50.775Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Mobilisation of the European Union Solidarity Fund to provide assistance to Malta and Italy regarding storm Harry in January 2026 and to Portugal and Spain following the storms in January and February 2026",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0284",
-"data_originale": "2026-10-22T08:44:46.602Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers following an application from Finland - EGF/2026/004 FI/Etelä-Suomi and Helsinki-Uusimaa paper",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0254",
-"data_originale": "2026-10-22T08:44:46.601Z",
 "data": "2026-10-22",
 "descrizione": ""
 },
@@ -635,69 +1671,9 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Conclusion, on behalf of the Union, of the Agreement on Digital Trade between the European Union and the Republic of Korea",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0273M",
-"data_originale": "2026-10-22T08:14:24.630Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Establishing the Erasmus+ programme for the period 2028-2034, and repealing Regulations (EU) 2021/817 and (EU) 2021/888",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0222",
-"data_originale": "2026-10-22T08:12:49.507Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Conclusions of the European Council meeting of 15-16 October 2026",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2898",
-"data_originale": "2026-10-22T08:11:55.635Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "EU–Indonesia Comprehensive Economic Partnership Agreement",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0182",
 "data_originale": "2026-10-22T08:06:18.467Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Conclusion, on behalf of the Union, of the Agreement on Digital Trade between the European Union and the Republic of Korea",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0273",
-"data_originale": "2026-10-22T08:02:14.233Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Discharge 2025: General budget of the EU - Commission",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2079",
-"data_originale": "2026-10-22T08:00:22.158Z",
-"data": "2026-10-22",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Discharge 2025: General budget of the EU - Agencies",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2090",
-"data_originale": "2026-10-22T08:00:17.953Z",
 "data": "2026-10-22",
 "descrizione": ""
 },
@@ -788,26 +1764,6 @@
 "titolo": "European Union Critical Communication System",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0301",
 "data_originale": "2026-10-21T23:34:22.771Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Escalation of Houthi attacks and implications for regional security",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2939",
-"data_originale": "2026-10-21T20:58:16.607Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Escalation of Russian strikes in the EU, particularly on Black Sea shipping, threatening human life, regional stability and food security",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2933",
-"data_originale": "2026-10-21T20:52:31.644Z",
 "data": "2026-10-21",
 "descrizione": ""
 },
@@ -935,49 +1891,9 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "European Union Agency for Cybersecurity (ENISA), the European cybersecurity certification framework, and ICT supply chain security and repealing Regulation (EU) 2019/881 (The Cybersecurity Act 2)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0011",
-"data_originale": "2026-10-21T16:20:29.211Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Directive (EU) 2022/2555 as regards simplification measures and alignment with the [Proposal for the Cybersecurity Act 2]",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0012",
-"data_originale": "2026-10-21T16:18:29.422Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Recommendation to the Council, the Commission and the Vice-President of the Commission / High Representative of the Union for Foreign Affairs and Security Policy on the foreign policy response to external interference in the EU's neighbourhood",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2046",
 "data_originale": "2026-10-21T16:18:25.646Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0325",
-"data_originale": "2026-10-21T16:14:23.471Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Regulation (EU) 2024/1252",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0385",
-"data_originale": "2026-10-21T16:14:21.579Z",
 "data": "2026-10-21",
 "descrizione": ""
 },
@@ -1135,16 +2051,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Public Procurement Act",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0265",
-"data_originale": "2026-10-21T15:28:23.679Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Establishing Global Europe",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0227",
 "data_originale": "2026-10-21T15:26:17.724Z",
@@ -1168,16 +2074,6 @@
 "titolo": "Digitalisation of procedures for the recognition of professional qualifications",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0273",
 "data_originale": "2026-10-21T14:55:12.414Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Maritime transport: monitoring, reporting and verification and alignment with revisions of the EU Emissions Trading System",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0210",
-"data_originale": "2026-10-21T14:54:51.866Z",
 "data": "2026-10-21",
 "descrizione": ""
 },
@@ -1325,26 +2221,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Recognition of qualifications of third-country nationals",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0275",
-"data_originale": "2026-10-21T13:04:35.632Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Regulation (EU) 2018/848 as regards certain production, labelling and certification rules and certain rules on trade with third countries",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0417",
-"data_originale": "2026-10-21T12:54:48.807Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Towards an EU strategy to protect and strengthen the international justice system and its institutions, mechanisms and partners",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2004",
 "data_originale": "2026-10-21T12:54:36.920Z",
@@ -1445,26 +2321,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Institutional aspects of the Common European Defence Union",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2212",
-"data_originale": "2026-10-21T09:58:27.967Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Implementation of the common security and defence policy – annual report 2026",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2060",
-"data_originale": "2026-10-21T09:58:21.911Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "Recommendation to the Council, to the Commission and to the Vice-President of the Commission / High Representative of the Union for Foreign Affairs and Security Policy on EU-Armenia political relations",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2146",
 "data_originale": "2026-10-21T09:32:43.956Z",
@@ -1478,16 +2334,6 @@
 "titolo": "Framework of measures to facilitate the transport of military equipment, goods and personnel across the Union",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0847",
 "data_originale": "2026-10-21T09:30:33.488Z",
-"data": "2026-10-21",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Recommendation to the Council, the Commission and the Vice-President of the Commission / High Representative of the Union for Foreign Affairs and Security Policy on EU-Norway political relations",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2042",
-"data_originale": "2026-10-21T09:20:24.587Z",
 "data": "2026-10-21",
 "descrizione": ""
 },
@@ -2265,16 +3111,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - procedure (dati aperti)",
 "categoria": "Iter",
-"titolo": "Amending Regulations (EC) No 1272/2008, (EC) No 1223/2009 and (EU) 2019/1009 as regards simplification of certain requirements and procedures for chemical products",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0531",
-"data_originale": "2026-10-20T15:08:16.912Z",
-"data": "2026-10-20",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
 "titolo": "European Maritime, Fisheries and Aquaculture Fund: simplification and transposition of the WTO Agreement on Fisheries Subsidies",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0289",
 "data_originale": "2026-10-20T14:56:23.732Z",
@@ -2318,16 +3154,6 @@
 "titolo": "Commission Delegated Regulation on supplementing Regulation (EU) 2019/2033 of the European Parliament and of the Council with regard to regulatory technical standards specifying the details of the scope and methods for prudential consolidation of an investment firm group",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2024-2666",
 "data_originale": "2026-10-20T14:55:12.066Z",
-"data": "2026-10-20",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Cohesion policy in the EU’s eastern border regions: strengthening territorial resilience and cross-border cooperation",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2054",
-"data_originale": "2026-10-20T14:54:58.415Z",
 "data": "2026-10-20",
 "descrizione": ""
 },
@@ -2408,36 +3234,6 @@
 "titolo": "Establishing the 'AgoraEU' programme for the period 2028-2034, and repealing Regulations (EU) 2021/692 and (EU) 2021/818",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0550",
 "data_originale": "2026-10-20T14:10:20.856Z",
-"data": "2026-10-20",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Control of the financial activities of the European Investment Bank Group - annual report 2025",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2141",
-"data_originale": "2026-10-20T14:08:46.110Z",
-"data": "2026-10-20",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Skills Portability Act",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0274",
-"data_originale": "2026-10-20T11:28:33.707Z",
-"data": "2026-10-20",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Presentation of the Court of Auditors' annual report 2025",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2897",
-"data_originale": "2026-10-20T10:38:23.063Z",
 "data": "2026-10-20",
 "descrizione": ""
 },
@@ -2658,16 +3454,6 @@
 "titolo": "Commission Delegated Regulation amending Regulation (EU) 2023/1115 of the European Parliament and of the Council as regards the list of relevant commodities and relevant products",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2829",
 "data_originale": "2026-10-19T10:42:51.106Z",
-"data": "2026-10-19",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "European Union Space Services Agency and amending Regulation (EU) 2021/696",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0084",
-"data_originale": "2026-10-19T09:56:32.457Z",
 "data": "2026-10-19",
 "descrizione": ""
 },
@@ -3218,506 +4004,6 @@
 "titolo": "Union Civil Protection Mechanism and Union support for health emergency preparedness and response, and repealing Decision No 1313/2013/EU (Union Civil Protection Mechanism)",
 "link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0223",
 "data_originale": "2026-10-15T15:40:32.767Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "EU KIDS Act",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-0286",
-"data_originale": "2026-10-15T15:28:49.546Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Modernising enforcement of intellectual property rights in the EU: strengthening the IPRED framework",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2115",
-"data_originale": "2026-10-15T15:02:45.696Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "European Semester for economic policy coordination: employment and social priorities for 2027",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2143",
-"data_originale": "2026-10-15T14:06:11.703Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Agreement between the EU and the Government of the Republic of Peru on certain aspects of air services",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2013-0197",
-"data_originale": "2026-10-15T12:54:43.881Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Creation of a European network of immigration liaison officers (recast)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2018-0153",
-"data_originale": "2026-10-15T12:36:27.690Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Need for a long-term EU development cooperation strategy to face challenges in education in developing countries",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2026",
-"data_originale": "2026-10-15T12:36:17.285Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Banking Union – annual report 2026",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2122",
-"data_originale": "2026-10-15T11:10:18.035Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Transfer of appropriations DEC 15/2026 - Section III - Commission",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2026-2148",
-"data_originale": "2026-10-15T10:14:22.750Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Recognition of professional qualifications in inland navigation",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2016-0050",
-"data_originale": "2026-10-15T09:54:46.607Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Regulation (EU) 2024/1348 as regards the application of the ‘safe third country’ concept",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0132",
-"data_originale": "2026-10-15T09:45:08.117Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Digitalisation, artificial intelligence and algorithmic management in the workplace – shaping the future of work",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2080",
-"data_originale": "2026-10-15T09:45:06.376Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Preparation of the European Council meeting of 18-19 December 2025, in particular the need to support Ukraine, transatlantic relations and the EU’s strategic autonomy",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2719",
-"data_originale": "2026-10-15T09:45:06.066Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Commission Delegated Regulation (EU) 2021/2178 as regards the simplification of the content and presentation of information to be disclosed concerning environmentally sustainable activities and Commission Delegated Regulations (EU) 2021/2139 and (EU) 2023/2486 as regards simplification of certain technical screening criteria for determining whether economic activities cause no significant harm to environmental objectives",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2806",
-"data_originale": "2026-10-15T09:45:04.325Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Regulation (EU) 2024/1348 as regards the establishment of a list of safe countries of origin at Union level",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0101",
-"data_originale": "2026-10-15T09:45:04.323Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "European Defence Readiness 2030: assessment of needs",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2142",
-"data_originale": "2026-10-15T09:45:04.322Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Phasing out Russian natural gas imports, improving monitoring of potential energy dependencies and amending Regulation (EU) 2017/1938",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0180",
-"data_originale": "2026-10-15T09:45:04.315Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending and supplementing the Agreement for scientific and technological cooperation between the European Union and the Hashemite Kingdom of Jordan, setting out the terms and conditions for the participation of the Hashemite Kingdom of Jordan in the Partnership for Research and Innovation in the Mediterranean Area (PRIMA)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2024-0178",
-"data_originale": "2026-10-15T09:45:04.313Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Military mobility",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2090",
-"data_originale": "2026-10-15T09:45:04.312Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Mass kidnapping of children in Nigeria, including from St Mary's Catholic School in Papiri",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3029",
-"data_originale": "2026-10-15T09:45:04.311Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Implementation of the rule of law conditionality regime",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2061",
-"data_originale": "2026-10-15T09:44:59.167Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amending Council Regulation (EU) 2021/1173 of 13 July 2021 on establishing the European High Performance Computing Joint Undertaking and repealing Regulation (EU) 2018/1488",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0229",
-"data_originale": "2026-10-15T09:44:53.856Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Preventing sexual harassment in public institutions: latest revelations and resignations in Spain and institutional responses",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3043",
-"data_originale": "2026-10-15T09:43:59.529Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation correcting Regulation (EC) No 451/2008 of the European Parliament and of the Council as regards specific positions of the classification of products by activity (CPA)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3037",
-"data_originale": "2026-10-15T09:43:19.598Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation supplementing Regulation (EU) 2024/2847 of the European Parliament and of the Council by specifying the terms and conditions for applying the cybersecurity-related grounds in relation to delaying the dissemination of notifications",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3036",
-"data_originale": "2026-10-15T09:43:18.033Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Commission Delegated Regulation (EU) 2021/2223 supplementing Regulation (EU) 2019/817 of the European Parliament and of the Council with detailed rules on the operation of the central repository for reporting and statistics",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3035",
-"data_originale": "2026-10-15T09:43:17.049Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Commission Delegated Regulation (EU) 2021/2222 supplementing Regulation (EU) 2019/818 of the European Parliament and of the Council with detailed rules on the operation of the central repository for reporting and statistics",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3034",
-"data_originale": "2026-10-15T09:43:16.424Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Annexes V and VI to Regulation (EU) 2019/2152 of the European Parliament and of the Council and amending Delegated Regulation (EU) 2021/1704 as regards the statistical information to be provided by tax and customs authorities",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3033",
-"data_originale": "2026-10-15T09:43:15.569Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Grave political situation in Guinea-Bissau after the coup of 26 November",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3027",
-"data_originale": "2026-10-15T09:43:13.588Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Arbitrary arrest and sentencing of academics Bahruz Samadov and Igbal Abilov in Azerbaijan",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3028",
-"data_originale": "2026-10-15T09:43:12.723Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2016/1675 to add Bolivia and the British Virgin Islands to the list of high-risk third countries which have provided a written high-level political commitment to address the identified deficiencies and have developed an action plan with the FATF, and to remove Burkina Faso, Mali, Mozambique, Nigeria, South Africa and Tanzania from that list",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3016",
-"data_originale": "2026-10-15T09:43:12.123Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Cases of pro-Russian espionage in the European Parliament",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3019",
-"data_originale": "2026-10-15T09:43:11.478Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation correcting certain language versions of Delegated Regulation (EU) 2023/1669 supplementing Regulation (EU) 2017/1369 of the European Parliament and of the Council with regard to the energy labelling of smartphones and slate tablets",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3017",
-"data_originale": "2026-10-15T09:43:10.406Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Regulation amending Annex XVII to Regulation (EC) No 1907/2006 of the European Parliament and of the Council concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH) as regards 2,4-dinitrotoluene in articles",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3012",
-"data_originale": "2026-10-15T09:43:09.166Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Commission Delegated Regulation (EU) 2023/333 supplementing Regulation (EU) 2019/817 of the European Parliament and of the Council as regards determining cases where identity data are considered as same or similar for the purpose of the multiple identity detection",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3013",
-"data_originale": "2026-10-15T09:43:08.581Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Delegated Regulation (EU) 2016/1675 to add Russia to the list of high-risk third countries with strategic deficiencies",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3014",
-"data_originale": "2026-10-15T09:43:07.584Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Commission Delegated Regulation (EU) 2023/332 supplementing Regulation (EU) 2019/818 of the European Parliament and of the Council as regards determining cases where identity data are considered as same or similar for the purpose of the multiple identity detection",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3015",
-"data_originale": "2026-10-15T09:43:06.147Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "The deepening democratic crisis in Georgia",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3005",
-"data_originale": "2026-10-15T09:43:05.220Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Transfer of appropriations INF 3/2025 - Section X - European External Action Service",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2245",
-"data_originale": "2026-10-15T09:43:05.074Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Appointment of a Member of the Executive Board of the Anti-Money Laundering Authority (AMLA)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0905",
-"data_originale": "2026-10-15T09:43:04.498Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Appointment of the Executive Director of the European Insurance and Occupational Pensions Authority (EIOPA)",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-0904",
-"data_originale": "2026-10-15T09:43:03.817Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Regulation (EU) 2021/2115 of the European Parliament and of the Council as regards Member States allocations for direct payments and the annual breakdown by Member State of the Union support for rural development",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3008",
-"data_originale": "2026-10-15T09:43:03.261Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Annex III to Directive (EU) 2024/1275 of the European Parliament and of the Council as regards the Union framework for the national calculation of life-cycle global warming potential",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3044",
-"data_originale": "2026-10-15T09:43:02.630Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending the regulatory technical standards laid down in Delegated Regulation (EU) 2019/815 as regards the 2025 update of the taxonomy for the single electronic reporting format",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3039",
-"data_originale": "2026-10-15T09:43:02.211Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation supplementing Regulation (EU) 2018/1139 of the European Parliament and of the Council by laying down rules on the organisation and composition of the Board of Appeal of the European Union Aviation Safety Agency, on its members and on the rules and procedures for voting, and repealing Commission Regulation (EC) No 104/2004",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3038",
-"data_originale": "2026-10-15T09:43:02.028Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Transfer of appropriations 2/2025 - Section VIII – European Ombudsman",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2242",
-"data_originale": "2026-10-15T09:43:01.718Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Directive 2009/81/EC of the European Parliament and of the Council in respect of the thresholds for supply, service and works contracts",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3010",
-"data_originale": "2026-10-15T09:43:01.530Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "2030 Consumer Agenda",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3006",
-"data_originale": "2026-10-15T09:43:01.031Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Commission Delegated Regulation amending Regulation (EU) 2022/869 of the European Parliament and of the Council as regards the Union list of projects of common interest and projects of mutual interest",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3009",
-"data_originale": "2026-10-15T09:43:00.547Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "Transfer of appropriations INF 12/2025 - Section VI - Economic and Social Committee",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-2244",
-"data_originale": "2026-10-15T09:43:00.477Z",
-"data": "2026-10-15",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - procedure (dati aperti)",
-"categoria": "Iter",
-"titolo": "European Citizens’ Initiative 'My voice, my choice: for safe and accessible abortion'",
-"link": "https://data.europarl.europa.eu/eli/dl/proc/2025-3007",
-"data_originale": "2026-10-15T09:42:57.872Z",
 "data": "2026-10-15",
 "descrizione": ""
 }

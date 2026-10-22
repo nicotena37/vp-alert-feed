@@ -1,19 +1,27 @@
 {
-"nome_file": "vpalert_rss_ESMA_2026-10-22T09-29-21.json",
+"nome_file": "vpalert_rss_ESMA_2026-10-22T15-06-16.json",
 "sito": "ESMA",
 "origine": "github-actions",
-"letto_il": "2026-10-22T09:29:21Z",
+"letto_il": "2026-10-22T15:06:16Z",
 "feed": [
 {
-"nome": "ESMA - novità (senza data)",
+"nome": "ESMA - news",
 "url": "https://www.esma.europa.eu/rss.xml",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+},
+{
+"nome": "ESMA - biblioteca documenti",
+"url": "https://www.esma.europa.eu/databases-library/esma-library",
 "voci": 0,
 "errore": true,
 "motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
 }
 ],
 "allarmi": [
-"ESMA - novità (senza data): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml"
+"ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
+"ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library"
 ],
 "notizie": []
 }
