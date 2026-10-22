@@ -242,6 +242,31 @@ def leggi_sito(sito: dict) -> dict:
            "origine": "github-actions", "letto_il": ora.isoformat(timespec="seconds").replace("+00:00", "Z"),
            "feed": [], "allarmi": [], "notizie": []}
     for f in sito["feed"]:
+        if f.get("tipo") == "bce_wfs":       # situazione contabile settimanale Eurosistema: nessun RSS, indirizzo per data
+            n0 = len(ris["notizie"])
+            oggi = datetime.now(timezone.utc).date()
+            for g in range(14):
+                x = oggi.fromordinal(oggi.toordinal() - g)
+                if x.isoweekday() not in (2, 3, 4):
+                    continue
+                u = (f"https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/{x.year}/html/"
+                     f"ecb.fst{x.strftime('%y%m%d')}.en.html")
+                try:
+                    stato, c = scarica(u)
+                except Exception:  # noqa: BLE001
+                    continue
+                if stato != 200:
+                    continue
+                d = BeautifulSoup(c, "html.parser")
+                corpo = pulisci((d.find("main") or d).get_text(" "))
+                m = re.search(r"Eurosystem\s+(\d{1,2} \w+ \d{4})", corpo)
+                ris["notizie"].append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"],
+                                       "titolo": "Consolidated financial statement of the Eurosystem"
+                                                 + (f" as at {m.group(1)}" if m else ""),
+                                       "link": u, "data_originale": x.isoformat(), "data": x.isoformat(),
+                                       "descrizione": corpo[:700]})
+            ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(ris["notizie"]) - n0})
+            continue
         ok, motivo = robots(f["url"])
         if not ok:
             ris["allarmi"].append(f"{f['nome']}: non letto, {motivo} - {f['url']}")
