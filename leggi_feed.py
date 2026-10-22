@@ -190,6 +190,30 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
             if len(tit) < 40 and txt:
                 tit = f"{tit}: {txt[:220]}"
             metti(tit, link.get("href") if link else "", data, txt)
+    elif f["tipo"] == "consob_newsletter":         # Consob Informa: ultimo numero con le notizie della settimana
+        visti = set()
+        for a in d.select('a[href*="/-/consob-informa-"]'):
+            tit = pulisci(a.get_text(" "))
+            base = re.sub(r"[?#].*$", "", a.get("href") or "")
+            if not re.match(r"Consob Informa", tit, re.I) or base in visti:
+                continue
+            visti.add(base)
+            m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", tit)
+            data = (f"{int(m.group(1)):02d}/{MESI.index(m.group(2).lower()) + 1:02d}/{m.group(3)}"
+                    if m and m.group(2).lower() in MESI else "")
+            notizie = [pulisci(x.get_text(" ")) for x in d.find_all("a")
+                       if re.sub(r"[?#].*$", "", x.get("href") or "") == base and "#notizia" in (x.get("href") or "")]
+            metti(f"Newsletter {tit}", base, data, "Le notizie della settimana: " + "; ".join(notizie))
+    elif f["tipo"] == "pagina_aggiornamenti":      # pagina senza RSS con "(aggiornamento del 19 ottobre 2026)"
+        corpo = d.select_one("#main-content, main, .journal-content-article") or d
+        m = re.search(r"aggiornament[oi]\s+(?:del|al)\s+(\d{1,2})\s+(\w+)\s+(\d{4})", pulisci(corpo.get_text(" ")), re.I)
+        if m and m.group(2).lower() in MESI:
+            data = f"{int(m.group(1)):02d}/{MESI.index(m.group(2).lower()) + 1:02d}/{m.group(3)}"
+            a = next((x for x in corpo.find_all("a") if x.parent is not None
+                      and re.search(r"aggiornament", x.parent.get_text(" "), re.I)
+                      and not (x.get("href") or "").lower().endswith(".jnlp")), None)
+            metti(f"{f.get('titolo') or f['nome']} - aggiornamento del {m.group(1)} {m.group(2)} {m.group(3)}",
+                  a.get("href") if a else f"{f['url']}#{data}", data, f.get("descrizione", ""))
     elif f["tipo"] == "consob_comunicati":         # pagina /web/consob/comunicati-stampa (ultimi comunicati)
         anno = datetime.now().year
         for a in d.find_all("a", string=re.compile(r"Leggi il comunicato", re.I)):
