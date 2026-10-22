@@ -1,68 +1,63 @@
 [
  {
-  "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month",
-  "accept": "application/atom+xml",
+  "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+  "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 153944,
-  "secondi": 5.4,
+  "byte": 10083,
+  "secondi": 3.5,
   "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Adopted Texts</title><id>https://data.europarl.europa.eu/api/v2/adopted-texts/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/adopted-texts/feed\"/><updated>2026-10-21T22:34:50.977Z</updated><entry><title type=\"text\" xml:lang=\"en\">Genetically modified soybean MON 87769</title><id>https://data.europarl.europa.eu/eli/dl/doc/T"
+  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description>Stay abreast of our work</description> <language>en</language> <item> <title>The ​EBA extends some consultation deadlines due to website maintenance​ </title> <link>https://www.eba.europa.eu/publications-and-media/press-releases/eba-extends-some-consultation-deadlines-due-website-maintenance</link> <description>On 2"
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-month&user-agent=vp-alert-feed",
-  "accept": "application/atom+xml",
+  "url": "https://eba.europa.eu/rss.xml",
+  "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 153944,
-  "secondi": 6.0,
+  "byte": 20360,
+  "secondi": 3.7,
   "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Adopted Texts</title><id>https://data.europarl.europa.eu/api/v2/adopted-texts/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/adopted-texts/feed\"/><updated>2026-10-21T22:34:56.986Z</updated><entry><title type=\"text\" xml:lang=\"en\">Genetically modified soybean MON 87769</title><id>https://data.europarl.europa.eu/eli/dl/doc/T"
+  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description/> <language>en</language> <item> <title>Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation</title> <link>https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation</link> <description> &lt;span&gt;Call for papers - 13th "
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/procedures/feed?timeframe=one-week&user-agent=vp-alert-feed",
-  "accept": "application/atom+xml",
+  "url": "https://www.eba.europa.eu/rss.xml",
+  "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 205422,
-  "secondi": 4.1,
+  "byte": 20360,
+  "secondi": 0.8,
   "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Procedures executed by the European Parliament</title><id>https://data.europarl.europa.eu/api/v2/procedures/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/procedures/feed\"/><updated>2026-10-21T22:35:00.948Z</updated><entry><title type=\"text\" xml:lang=\"en\">Escalation of Houthi attacks and implications for regional security"
+  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description/> <language>en</language> <item> <title>Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation</title> <link>https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation</link> <description> &lt;span&gt;Call for papers - 13th "
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/plenary-documents/feed?user-agent=vp-alert-feed",
-  "accept": "application/atom+xml",
+  "url": "https://www.esma.europa.eu/rss.xml",
+  "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 382555,
-  "secondi": 54.3,
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.1,
   "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Plenary Documents</title><id>https://data.europarl.europa.eu/api/v2/plenary-documents/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/plenary-documents/feed\"/><updated>2026-10-21T22:35:55.000Z</updated><entry><title type=\"text\" xml:lang=\"en\">MOTION FOR A RESOLUTION on the state of play of advancing EU-Africa trade and inve"
+  "inizio": ""
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/documents/feed?user-agent=vp-alert-feed",
-  "accept": "*/*",
+  "url": "https://www.esma.europa.eu/press-news/esma-news",
+  "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 598674,
-  "secondi": 27.7,
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.0,
   "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Documents</title><id>https://data.europarl.europa.eu/api/v2/documents/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/documents/feed\"/><updated>2026-10-21T22:36:22.515Z</updated><entry><title type=\"text\" xml:lang=\"en\">MOTION FOR A RESOLUTION on the state of play of advancing EU-Africa trade and investment relations</title>"
+  "inizio": ""
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/adopted-texts?year=2026&sort-by=date:desc&limit=10&format=application%2Fld%2Bjson",
-  "accept": "application/ld+json",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 365640,
-  "secondi": 4.5,
-  "captcha": false,
-  "inizio": "{\"data\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347\",\"type\":\"Work\",\"adopts\":[\"eli/dl/doc/A-10-2025-0136\"],\"parliamentary_term\":\"org/ep-10\",\"document_date\":\"2026-10-20\",\"is_realized_by\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347/hu\",\"type\":\"Expression\",\"is_embodied_by\":[{\"id\":\"eli/dl/doc/TA-10-2026-0347/hu/pdf\",\"type\":\"Manifestation\",\"is_exemplified_by\":\"distribution/doc/TA-10-2026-0347_hu.pdf\",\"media_type\":\"https://www.iana.org/assignments/media-types/application/pdf\",\"format\":\"http://publications.europa.eu/resource/authority/file-type/PDF\",\"issued\":\"2026-10-21T14:42:31+02:00\",\"byteSize\":\"334346\"},{\"id\":\"eli/d"
+  "url": "https://www.bancaditalia.it/util/index.rss.html?lingua=it",
+  "accept": "",
+  "robots_ok": false,
+  "motivo": "vietato dal robots.txt del sito"
  }
 ]
