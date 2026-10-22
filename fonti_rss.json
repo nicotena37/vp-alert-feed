@@ -369,11 +369,16 @@
      "nome": "EBA - news",
      "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "EBA - e-mail alert (Q&A finali e pubblicazioni del giorno)",
+     "url": "https://www.eba.europa.eu/rss.xml",
+     "categoria": "Vigilanza"
     }
    ],
    "ente": "Autorità bancaria europea (EBA)",
    "affidabilita": "Affidabile",
-   "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
+   "nota_affidabilita": "Affidabile: due feed (news ed e-mail alert con le Q&A). Il 21/10 GitHub ha avuto un errore temporaneo 502, dal 22/10 funziona.",
    "frequenza": "ogni giro"
   },
   {
@@ -381,15 +386,21 @@
    "pagina_apertura": "https://www.esma.europa.eu/",
    "feed": [
     {
-     "nome": "ESMA - novità (senza data)",
+     "nome": "ESMA - news",
      "url": "https://www.esma.europa.eu/rss.xml",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "ESMA - biblioteca documenti",
+     "url": "https://www.esma.europa.eu/databases-library/esma-library",
+     "categoria": "Vigilanza",
+     "tipo": "esma_library"
     }
    ],
    "ente": "Autorità europea degli strumenti finanziari e dei mercati (ESMA)",
-   "affidabilita": "Parziale",
-   "nota_affidabilita": "Feed ufficiale ma le notizie non hanno data: si riconoscono le nuove solo dal link",
-   "frequenza": "settimanale"
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Affidabile dal browser del PC (feed news con data nel testo + biblioteca documenti). GitHub è rifiutato (403): solo browser.",
+   "frequenza": "ogni giro"
   },
   {
    "sito": "BCE - Vigilanza bancaria",
