@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-21T22:46:30+00:00",
+ "letto_il": "2026-10-22T07:59:55+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -30,15 +30,10 @@
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 1,
-   "feed_totali": 5,
-   "notizie": 60,
-   "allarmi": [
-    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
-   ]
+   "feed_ok": 6,
+   "feed_totali": 6,
+   "notizie": 90,
+   "allarmi": []
   },
   "MEF": {
    "feed_ok": 2,
@@ -59,9 +54,9 @@
    "allarmi": []
   },
   "Agenzia delle Entrate": {
-   "feed_ok": 2,
-   "feed_totali": 2,
-   "notizie": 39,
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 40,
    "allarmi": []
   },
   "INPS": {
@@ -147,9 +142,9 @@
    "allarmi": []
   },
   "BCE": {
-   "feed_ok": 2,
-   "feed_totali": 2,
-   "notizie": 30,
+   "feed_ok": 10,
+   "feed_totali": 10,
+   "notizie": 145,
    "allarmi": []
   },
   "ESRB": {
@@ -167,7 +162,7 @@
   "Parlamento europeo": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 411,
+   "notizie": 416,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -199,7 +194,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 87,
+   "notizie": 2,
    "allarmi": []
   }
  }

@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_Agenzia-delle-Entrate_2026-10-21T22-47-22.json",
+"nome_file": "vpalert_rss_Agenzia-delle-Entrate_2026-10-22T08-00-52.json",
 "sito": "Agenzia delle Entrate",
 "origine": "github-actions",
-"letto_il": "2026-10-21T22:47:22Z",
+"letto_il": "2026-10-22T08:00:52Z",
 "feed": [
 {
 "nome": "Agenzia Entrate - News",
@@ -13,6 +13,11 @@
 "nome": "Agenzia Entrate - Normativa e prassi",
 "url": "https://www.agenziaentrate.gov.it/portale/c/portal/rss/entrate?idrss=0753fcb1-1a42-4f8c-f40d-02793c6aefb4",
 "voci": 19
+},
+{
+"nome": "Agenzia Entrate - F24, tabelle codici tributo (archivi software di controllo per banche)",
+"url": "https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24/proccontr-f24-banche-poste-agenti-riscossione",
+"voci": 1
 }
 ],
 "allarmi": [],
@@ -406,6 +411,16 @@
 "data_originale": "Fri, 02 Oct 2026 00:00:00 GMT",
 "data": "2026-10-02",
 "descrizione": ""
+},
+{
+"sito": "Agenzia delle Entrate",
+"feed": "Agenzia Entrate - F24, tabelle codici tributo (archivi software di controllo per banche)",
+"categoria": "Normativa",
+"titolo": "Modello F24 - aggiornamento tabelle dei codici tributo e altri codici (archivi del software di controllo per banche, Poste e agenti della riscossione) - aggiornamento del 19 ottobre 2026",
+"link": "https://swdownload2.agenziaentrate.gov.it/pub/versamenti/Archivi_di_controllo_F24_20261019.zip",
+"data_originale": "19/10/2026",
+"data": "2026-10-19",
+"descrizione": "L'Agenzia delle Entrate aggiorna le tabelle dei codici tributo e degli altri codici del modello F24 negli archivi del software di controllo riservato a banche, Poste e agenti della riscossione."
 }
 ]
 }
