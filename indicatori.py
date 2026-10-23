@@ -375,6 +375,9 @@ def calcola(tutti: dict[tuple, dict], conteggi: list[dict], oggi: date) -> None:
                 continue
             rapporti, dett = [], {}
             for mis in MISURE:
+                if mis == "studiosi" and k > corrente - timedelta(weeks=4):
+                    dett[mis] = str(per_mis.get((k, tema, mis), 0)) + " (in indicizzazione)"
+                    continue                                 # gli studi arrivano con settimane di ritardo
                 prec = [per_mis.get((k - timedelta(weeks=i), tema, mis), 0) for i in range(1, 9)
                         if (k - timedelta(weeks=i)) in settimane]
                 v = per_mis.get((k, tema, mis), 0)
@@ -389,10 +392,10 @@ def calcola(tutti: dict[tuple, dict], conteggi: list[dict], oggi: date) -> None:
             tend = ("Dati insufficienti" if indice == "" else "In forte crescita" if indice >= 150 else
                     "In crescita" if indice >= 115 else "In calo" if indice <= 70 else "Stabile")
             righe.append([sett(k), ita(k), "sì" if k == corrente else "", tema, indice, tend,
-                          sum(per_mis.get((k, tema, m), 0) for m in MISURE)] + [dett[m] for m in MISURE])
+                          sum(per_mis.get((k, tema, m), 0) for m in MISURE if m != "studiosi")] + [dett[m] for m in MISURE])
     with (ARCH / "indice_temi.csv").open("w", encoding="utf-8", newline="") as h:
         w = csv.writer(h)
-        w.writerow(["settimana", "dal", "in_corso", "tema", "indice_attenzione", "tendenza", "voci_totali"]
+        w.writerow(["settimana", "dal", "in_corso", "tema", "indice_attenzione", "tendenza", "voci_totali (senza studi)"]
                    + [f"{m} (voci e indice)" for m in MISURE])
         w.writerows(righe)
     # ultime voci per tema (ultime 3 settimane)
