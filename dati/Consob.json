@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_Consob_2026-10-22T15-04-06.json",
+"nome_file": "vpalert_rss_Consob_2026-10-23T09-23-47.json",
 "sito": "Consob",
 "origine": "github-actions",
-"letto_il": "2026-10-22T15:04:06Z",
+"letto_il": "2026-10-23T09:23:47Z",
 "feed": [
 {
 "nome": "Consob - provvedimenti sanzionatori",
@@ -12,46 +12,30 @@
 {
 "nome": "Consob - Bollettino (ultima quindicina)",
 "url": "https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)"
+"voci": 6
 },
 {
 "nome": "Consob - Bollettino (quindicina precedente)",
 "url": "https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)"
+"voci": 21
 },
 {
 "nome": "Consob - consultazioni",
 "url": "https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)"
+"voci": 3
 },
 {
 "nome": "Consob - newsletter Consob Informa",
 "url": "https://www.consob.it/web/area-pubblica/newsletter",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)"
+"voci": 1
 },
 {
 "nome": "Consob - comunicati stampa",
 "url": "https://www.consob.it/web/consob/comunicati-stampa",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)"
+"voci": 4
 }
 ],
-"allarmi": [
-"Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-"Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-"Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-"Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
-"Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
-],
+"allarmi": [],
 "notizie": [
 {
 "sito": "Consob",
@@ -832,6 +816,356 @@
 "sanzione": true,
 "data_adozione": "2024-09-18",
 "impugnato": false
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24172, approvazione del documento relativo all'offerta pubblica di acquisto volontaria totalitaria promossa da PF Holdings B.V., ai sensi degli articoli 102 e ss. del D. Lgs. n. 58 del 1998 e successive modificazioni, su azioni ordinarie emesse da Pininfarina S.p.A.",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24172",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24172, approvazione del documento relativo all'offerta pubblica di acquisto volontaria totalitaria promossa da PF Holdings B.V., ai sensi degli articoli 102 e ss. del D. Lgs. n. 58 del 1998 e successive modificazioni, su azioni ordinarie emesse da Pininfarina S.p.A. Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24174, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite il sito internet https://iincome-max.com e la relativa pagina https://web.iincomemax.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24174",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24174, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite il sito internet https://iincome-max.com e la relativa pagina https://web.iincomemax.com Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24177, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://rlmassetstrategy.com e relative pagine https://client.rlmassetstrategy.com e https://webtrader.rlmassetstrategy.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24177",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24177, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://rlmassetstrategy.com e relative pagine https://client.rlmassetstrategy.com e https://webtrader.rlmassetstrategy.com Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24175, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://ava-inv.com e la relativa pagina https://web-trendix.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24175",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24175, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://ava-inv.com e la relativa pagina https://web-trendix.com Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24176, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"TUF\"), di porre termine alla violazione dell'art. 18 del TUF posta in essere tramite il sito internet https://gmtrade.co e la relativa pagina https://my.gmtrade.co",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24176",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24176, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"TUF\"), di porre termine alla violazione dell'art. 18 del TUF posta in essere tramite il sito internet https://gmtrade.co e la relativa pagina https://my.gmtrade.co Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (ultima quindicina)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24173, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite il sito internet https://brelliozoia-it.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24173",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "Delibera n. 24173, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite il sito internet https://brelliozoia-it.com Data di pubblicazione: 22/10/2026 Data di adozione: 21/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24162, collocamento in aspettativa della dott.ssa Valentina Massone per assunzione di impiego presso il Dipartimento dell'Amministrazione Penitenziaria, ai sensi dell'art. 49 della I parte del Regolamento del Personale della Consob",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24162",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24162, collocamento in aspettativa della dott.ssa Valentina Massone per assunzione di impiego presso il Dipartimento dell'Amministrazione Penitenziaria, ai sensi dell'art. 49 della I parte del Regolamento del Personale della Consob Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24170, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://neolinfx.com e la relativa pagina https://my.neolinfx.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24170",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24170, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://neolinfx.com e la relativa pagina https://my.neolinfx.com Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24165, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite i siti internet https://aswd78.it; https://cdzg36.it; https://ezwq66.it; https://hree25.it; https://k9c3y.fr",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24165",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24165, ordine, ai sensi dell'art. 94, par. 1, lett. h), del Regolamento (UE) 2023/1114 (\"MiCAR\") e dell'art. 4, comma 1, del D.lgs. n. 129/2024 di porre termine alla violazione dell'art. 59 del MiCAR posta in essere tramite i siti internet https://aswd78.it; https://cdzg36.it; https://ezwq66.it; https://hree25.it; https://k9c3y.fr Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24168, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b) del d.lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet www.vantagemarkets.co e la relativa pagina https://secure.vantagemarkets.co",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24168",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24168, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b) del d.lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet www.vantagemarkets.co e la relativa pagina https://secure.vantagemarkets.co Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24169, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://bp-esolution.com e relativa pagina https://webtrader.bespsys.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24169",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24169, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://bp-esolution.com e relativa pagina https://webtrader.bespsys.com Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24167, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://oskarinvest.io e relativa pagina https://cfd.oskarinvest.io",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24167",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24167, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://oskarinvest.io e relativa pagina https://cfd.oskarinvest.io Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24171, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://swapeurobv.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24171",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24171, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://swapeurobv.com Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24163, diffida ad adeguare la composizione del Collegio Sindacale di Bestbe Holding S.p.A. al criterio di riparto tra i generi previsto dall'art. 148, comma 1, del Decreto Legislativo n. 58 del 24 febbraio 1998",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24163-1",
+"data_originale": "15/10/2026",
+"data": "2026-10-15",
+"descrizione": "Delibera n. 24163, diffida ad adeguare la composizione del Collegio Sindacale di Bestbe Holding S.p.A. al criterio di riparto tra i generi previsto dall'art. 148, comma 1, del Decreto Legislativo n. 58 del 24 febbraio 1998 Data di pubblicazione: 15/10/2026 Data di adozione: 14/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24155, Modifiche alle Disposizioni di attuazione dell'articolo 4-septies.2 del d.lgs. 24 febbraio 1998, n. 58",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24155",
+"data_originale": "13/10/2026",
+"data": "2026-10-13",
+"descrizione": "Delibera n. 24155, Modifiche alle Disposizioni di attuazione dell'articolo 4-septies.2 del d.lgs. 24 febbraio 1998, n. 58 Data di pubblicazione: 13/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24159, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://tradoxiumpro.com e le pagine https://clientzone.tradoxiumpro.com e https://wt.quantivaedge.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24159",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Delibera n. 24159, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://tradoxiumpro.com e le pagine https://clientzone.tradoxiumpro.com e https://wt.quantivaedge.com Data di pubblicazione: 09/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24160, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://fxpepper.eu e relativa pagina https://portal.fxpepper.eu",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24160",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Delibera n. 24160, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://fxpepper.eu e relativa pagina https://portal.fxpepper.eu Data di pubblicazione: 09/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24156, autorizzazione di YouHodler Italy S.r.l. come prestatore dei servizi per le cripto-attività di cui all'art. 3, paragrafo 1, numero 16, lettere a), c), d), e), j) del regolamento (UE) 2023/1114",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24156",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Delibera n. 24156, autorizzazione di YouHodler Italy S.r.l. come prestatore dei servizi per le cripto-attività di cui all'art. 3, paragrafo 1, numero 16, lettere a), c), d), e), j) del regolamento (UE) 2023/1114 Data di pubblicazione: 09/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24158, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://goldgcapital.net e relativa pagina https://my.aipltfrm.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24158",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Delibera n. 24158, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://goldgcapital.net e relativa pagina https://my.aipltfrm.com Data di pubblicazione: 09/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24157, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://money-mentor.io e relativa pagina https://cfd.money-mentor.io",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24157",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Delibera n. 24157, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://money-mentor.io e relativa pagina https://cfd.money-mentor.io Data di pubblicazione: 09/10/2026 Data di adozione: 08/10/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24150, approvazione della graduatoria finale del concorso interno, per esami, a vice assistente per l'accesso al profilo amministrativo dell'Area Operativa del Personale di ruolo della Consob per l'anno 2026 e nomina dei vincitori nella qualifica di vice assistente",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24150",
+"data_originale": "02/10/2026",
+"data": "2026-10-02",
+"descrizione": "Delibera n. 24150, approvazione della graduatoria finale del concorso interno, per esami, a vice assistente per l'accesso al profilo amministrativo dell'Area Operativa del Personale di ruolo della Consob per l'anno 2026 e nomina dei vincitori nella qualifica di vice assistente Data di pubblicazione: 02/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24148, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://daxton-italia.com e la relativa pagina https://client.daxton-italia.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24148",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24148, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite il sito internet https://daxton-italia.com e la relativa pagina https://client.daxton-italia.com Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24152, approvazione del documento relativo all'offerta pubblica di scambio volontaria totalitaria promossa da Metriks AI S.p.A. Società Benefit, ai sensi degli articoli 102 e 106, comma 4, del d.lgs. n. 58/1998 e dell'articolo 10 dello statuto sociale di TradeLab S.p.A. sulla totalità delle azioni ordinarie emesse da TradeLab S.p.A.",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24152",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24152, approvazione del documento relativo all'offerta pubblica di scambio volontaria totalitaria promossa da Metriks AI S.p.A. Società Benefit, ai sensi degli articoli 102 e 106, comma 4, del d.lgs. n. 58/1998 e dell'articolo 10 dello statuto sociale di TradeLab S.p.A. sulla totalità delle azioni ordinarie emesse da TradeLab S.p.A. Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24151, approvazione del documento relativo all'offerta pubblica di acquisto totalitaria promossa da Rinova BidCo S.p.A., ai sensi degli articoli 102 e ss. del D. Lgs. n. 58 del 1998 nonché obbligatoria ai sensi dell'art. 14 dello Statuto di Reway Group S.p.A., su azioni ordinarie emesse da Reway Group S.p.A.",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24151",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24151, approvazione del documento relativo all'offerta pubblica di acquisto totalitaria promossa da Rinova BidCo S.p.A., ai sensi degli articoli 102 e ss. del D. Lgs. n. 58 del 1998 nonché obbligatoria ai sensi dell'art. 14 dello Statuto di Reway Group S.p.A., su azioni ordinarie emesse da Reway Group S.p.A. Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24146, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite i siti internet www.inmarket24.com e www.inmarket24.info e la relativa pagina https://client.inmarket24.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24146",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24146, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"Tuf\") di porre termine alla violazione dell'art. 18 del Tuf posta in essere tramite i siti internet www.inmarket24.com e www.inmarket24.info e la relativa pagina https://client.inmarket24.com Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24149, ordine, ai sensi dell’art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell’art. 18 del Tuf posta in essere tramite il sito internet https://icloudfx.com e la relativa pagina https://webtrader.icloudfx.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24149",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24149, ordine, ai sensi dell’art. 7-octies, comma 1, lett. b), del d. lgs. n. 58/1998 (\"Tuf\"), di porre termine alla violazione dell’art. 18 del Tuf posta in essere tramite il sito internet https://icloudfx.com e la relativa pagina https://webtrader.icloudfx.com Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - Bollettino (quindicina precedente)",
+"categoria": "Normativa",
+"titolo": "Delibera n. 24147, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"TUF\"), di porre termine alla violazione dell'art. 18 del TUF posta in essere tramite il sito internet https://ambrosiafx.com e la relativa pagina https://client.ambrosiafx.com",
+"link": "https://www.consob.it/web/area-pubblica/-/delibera-n.-24147",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Delibera n. 24147, ordine, ai sensi dell'art. 7-octies, comma 1, lett. b), del D. lgs. n. 58/1998 (\"TUF\"), di porre termine alla violazione dell'art. 18 del TUF posta in essere tramite il sito internet https://ambrosiafx.com e la relativa pagina https://client.ambrosiafx.com Data di pubblicazione: 01/10/2026 Data di adozione: 30/09/2026"
+},
+{
+"sito": "Consob",
+"feed": "Consob - consultazioni",
+"categoria": "Normativa",
+"titolo": "Documento di consultazione: Aggiornamento della disciplina sugli schemi e sull’informativa di bilancio in vista dell’applicazione del principio contabile internazionale IFRS 18 dal 1° gennaio 2027.",
+"link": "https://www.consob.it/web/area-pubblica/w/documento-di-consultazione-del-31-luglio-2026-ifrs-18-",
+"data_originale": "31/07/2026",
+"data": "2026-07-31",
+"descrizione": "Aggiornamento della disciplina sugli schemi e sull’informativa di bilancio in vista dell’applicazione del principio contabile internazionale IFRS 18 dal 1° gennaio 2027."
+},
+{
+"sito": "Consob",
+"feed": "Consob - consultazioni",
+"categoria": "Normativa",
+"titolo": "Documento di consultazione: Modifica del Manuale degli obblighi informativi dei soggetti vigilati, adottato con delibera n. 17297 del 28 aprile 2010 e successive modifiche.",
+"link": "https://www.consob.it/web/area-pubblica/w/documento-di-consultazione-del-31-luglio-2026-intermediari-",
+"data_originale": "31/07/2026",
+"data": "2026-07-31",
+"descrizione": "Modifica del Manuale degli obblighi informativi dei soggetti vigilati, adottato con delibera n. 17297 del 28 aprile 2010 e successive modifiche."
+},
+{
+"sito": "Consob",
+"feed": "Consob - consultazioni",
+"categoria": "Normativa",
+"titolo": "Documento di consultazione: Modifiche ai regolamenti mercati, intermediari ed emittenti per l’adeguamento alla normativa europea e la semplificazione degli obblighi per gli operatori.",
+"link": "https://www.consob.it/web/area-pubblica/w/documento-di-consultazione-del-17-luglio-2026",
+"data_originale": "17/07/2026",
+"data": "2026-07-17",
+"descrizione": "Modifiche ai regolamenti mercati, intermediari ed emittenti per l’adeguamento alla normativa europea e la semplificazione degli obblighi per gli operatori."
+},
+{
+"sito": "Consob",
+"feed": "Consob - newsletter Consob Informa",
+"categoria": "Vigilanza",
+"titolo": "Newsletter Consob Informa - Anno XXXII - N. 39 - 20 ottobre 2026",
+"link": "https://www.consob.it/web/area-pubblica/-/consob-informa-anno-xxxii-n.-39-20-ottobre-2026",
+"data_originale": "20/10/2026",
+"data": "2026-10-20",
+"descrizione": "Le notizie della settimana: SAVE THE DATE - Consob: il 19 novembre il convegno \"Dalla cittadinanza politica alla cittadinanza economica\"; L'educazione finanziaria sale in cattedra: il Presidente della Consob Stazi incontra il Rettore di Roma Tre Fiorucci; SAVE THE DATE – Acf Consob: il 26 novembre 2026, il convegno \"Il Risparmio: da valore costituzionale a volano di una efficace e virtuosa crescita economica\"; Relazioni finanziarie annuali 2026: l'Esma pubblica le priorità comuni europee di vigilanza; Occhio alle Truffe! Abusivismo finanziario: Consob oscura 10 siti internet"
+},
+{
+"sito": "Consob",
+"feed": "Consob - comunicati stampa",
+"categoria": "Vigilanza",
+"titolo": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 5 siti internet La Consob nell'ambito dell'attività di contrasto all'abusivismo finanziario ha ordinat",
+"link": "https://www.consob.it/web/area-pubblica/w/comunicato-stampa-del-23-ottobre",
+"data_originale": "23/10/2026",
+"data": "2026-10-23",
+"descrizione": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 5 siti internet La Consob nell'ambito dell'attività di contrasto all'abusivismo finanziario ha ordinato complessivamente l'oscuramento di 5 siti internet."
+},
+{
+"sito": "Consob",
+"feed": "Consob - comunicati stampa",
+"categoria": "Vigilanza",
+"titolo": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 4 siti internet",
+"link": "https://www.consob.it/web/area-pubblica/w/comunicato-stampa-del-9-ottobre",
+"data_originale": "09/10/2026",
+"data": "2026-10-09",
+"descrizione": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 4 siti internet La Consob, nell'ambito dell'attività di contrasto all'abusivismo finanziario, ha disposto l'oscuramento di 4 siti web mediante i quali venivano svolti sena autorizzazione servizi e attività di investimento su strumenti finanziari."
+},
+{
+"sito": "Consob",
+"feed": "Consob - comunicati stampa",
+"categoria": "Vigilanza",
+"titolo": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 5 siti internet",
+"link": "https://www.consob.it/web/area-pubblica/w/comunicato-stampa-del-1-ottobre-2026",
+"data_originale": "01/10/2026",
+"data": "2026-10-01",
+"descrizione": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 5 siti internet La Consob, nell'ambito dell'attività di contrasto all'abusivismo finanziario, ha disposto l'oscuramento di 5 siti web mediante i quali venivano svolti senza autorizzazione servizi e attività di investimento su strumenti finanziari."
+},
+{
+"sito": "Consob",
+"feed": "Consob - comunicati stampa",
+"categoria": "Vigilanza",
+"titolo": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 7 siti internet",
+"link": "https://www.consob.it/web/area-pubblica/w/comunicato-stampa-del-24-settembre-2026",
+"data_originale": "24/09/2026",
+"data": "2026-09-24",
+"descrizione": "Occhio alle truffe! Abusivismo finanziario: Consob oscura 7 siti internet La Consob, nell'ambito dell'attività di contrasto all'abusivismo finanziario, ha ordinato l'oscuramento 7 nuovi siti web : si tratta, in particolare di 5 siti mediante i quali venivano svolti servizi e attività di investimento su strumenti finanziari senza autorizzazione e di 2 siti tramite cui veniva abusivamente svolta un'attività di promozione e collocamento mediante tecniche di comunicazione a distanza di prodotti finanziari."
 }
 ]
 }

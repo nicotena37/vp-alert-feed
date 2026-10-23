@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-22T15-05-30.json",
+"nome_file": "vpalert_rss_ACN_2026-10-23T09-25-08.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-22T15:05:30Z",
+"letto_il": "2026-10-23T09:25:08Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -12,6 +12,36 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Arista Networks: rilevato sfruttamento in rete della CVE-2026-114625",
+"link": "https://www.acn.gov.it/portale/w/arista-networks-rilevato-sfruttamento-in-rete-della-cve-2026-114625",
+"data_originale": "Fri, 23 Oct 2026 08:17:39 GMT",
+"data": "2026-10-23",
+"descrizione": "Arista Networks ha rilevato lo sfruttamento in rete di una vulnerabilità con gravità \"critica\", identificata tramite la CVE-2026-114625, in VeloCloud Orchestrator (VCO) On-Prem, piattaforma di gestione e orchestrazione centralizzata per infrastrutture SD-WAN, utilizzata per la configurazione, il monitoraggio e l'amministrazione delle reti VeloCloud."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Compromissione di chiavi private associate a certificati CA intermedi eMudhra",
+"link": "https://www.acn.gov.it/portale/w/compromissione-di-chiavi-private-associate-a-certificati-ca-intermedi-emudhra",
+"data_originale": "Fri, 23 Oct 2026 07:21:08 GMT",
+"data": "2026-10-23",
+"descrizione": "È stata resa pubblica la compromissione delle chiavi private associate ai certificati di otto autorità di certificazione (CA) intermedie di eMudhra , sei destinate all'emissione di certificati TLS e due alla firma del codice. Risultano interessate anche le corrispondenti versioni dei certificati intermedi oggetto di certificazione incrociata (cross-signing) da parte di Sectigo."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "PHP2Shell: sanate vulnerabilità critiche in PHP",
+"link": "https://www.acn.gov.it/portale/w/php2shell-sanate-vulnerabilita-critiche-in-php",
+"data_originale": "Wed, 21 Oct 2026 14:21:31 GMT",
+"data": "2026-10-21",
+"descrizione": "Aggiornamenti di sicurezza sanano 2 nuove vulnerabilità con gravità \"critica\" in PHP, noto interprete del linguaggio di scripting per lo sviluppo web. Tali vulnerabilità interessano la componente php-src e, qualora sfruttate, potrebbero permettere a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -71,16 +101,6 @@
 "data_originale": "Thu, 22 Oct 2026 07:15:22 GMT",
 "data": "2026-10-22",
 "descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 12 vulnerabilità, di cui 1 con gravità “critica” e 2 con gravità “alta”, in GitLab Community Edition (CE) ed Enterprise Edition (EE). Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere le funzionalità di sicurezza, di impersonare un'entità legittima o di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "PHP2Shell: sanate vulnerabilità critiche in PHP",
-"link": "https://www.acn.gov.it/portale/w/php2shell-sanate-vulnerabilita-critiche-in-php",
-"data_originale": "Wed, 21 Oct 2026 14:21:31 GMT",
-"data": "2026-10-21",
-"descrizione": "Aggiornamenti di sicurezza sanano 2 nuove vulnerabilità con gravità \"critica\" in PHP, noto interprete del linguaggio di scripting per lo sviluppo web. Tali vulnerabilità interessano la componente php-src e, qualora sfruttate, potrebbero permettere a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -491,26 +511,6 @@
 "data_originale": "Thu, 15 Oct 2026 12:45:15 GMT",
 "data": "2026-10-15",
 "descrizione": "Juniper Networks ha rilasciato aggiornamenti per risolvere numerose vulnerabilità, di cui 23 con gravità \"critica\" e 119 con gravità “alta”, nei sistemi operativi Junos OS e Junos OS Evolved."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in OpenVPN",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-openvpn-1",
-"data_originale": "Thu, 15 Oct 2026 12:36:21 GMT",
-"data": "2026-10-15",
-"descrizione": "Aggiornamenti di sicurezza risolvono quattro vulnerabilità, di cui tre con gravità “alta”, in OpenVPN, software open-source per la creazione di reti private virtuali (VPN). Tali vulnerabilità potrebbero consentire a un utente malintenzionato di impersonare utenti o servizi legittimi, accedere a informazioni sensibili o compromettere da disponibilità del servizio."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "F5: risolte vulnerabilità nei prodotti NGINX",
-"link": "https://www.acn.gov.it/portale/w/f5-risolte-vulnerabilita-nei-prodotti-nginx-1",
-"data_originale": "Thu, 15 Oct 2026 11:58:01 GMT",
-"data": "2026-10-15",
-"descrizione": "F5 ha rilasciato aggiornamenti di sicurezza che sanano alcune vulnerabilità, di cui 3 con gravità \"critica\" e 6 con gravità \"alta\", in prodotti NGINX, noto software per la gestione del traffico e degli applicativi web."
 }
 ]
 }
