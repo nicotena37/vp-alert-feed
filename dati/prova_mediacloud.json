@@ -1,4 +1,10 @@
 {
  "chiave_presente": true,
+ "lunghezza": 40,
+ "solo_esadecimale": true,
+ "spazi_o_a_capo": true,
+ "inizia_con_token": false,
+ "profilo_http": 401,
+ "profilo_risposta": "{\"detail\":\"Invalid token.\"}",
  "errore": "APIResponseError: API Server Error 401. MESSAGE: None. PARAMS: None"
 }
