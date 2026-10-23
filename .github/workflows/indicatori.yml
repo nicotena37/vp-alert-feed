@@ -31,6 +31,7 @@ jobs:
       - name: Raccogli indicatori
         env:
           MEDIACLOUD_API_KEY: ${{ secrets.MEDIACLOUD_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           N="${{ github.event.inputs.storico }}"
           if [ "${{ github.event_name }}" = "push" ] && [ -f indicatori_avvia.txt ]; then N=$(grep -oE '^[0-9]+' indicatori_avvia.txt | head -1); fi
