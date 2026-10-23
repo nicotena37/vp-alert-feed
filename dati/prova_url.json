@@ -1,123 +1,57 @@
 [
  {
-  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions/E-10-2026-000002?format=application%2Fld%2Bjson",
+  "url": "https://dati.camera.it/sparql?query=SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20%3Fp%20%3Fo%20.%20FILTER%28STRENDS%28STR%28%3Fs%29%2C%22_19%22%29%29%20%7D%20LIMIT%2060&format=application%2Fjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 6362,
+  "byte": 2250,
+  "secondi": 8.9,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/ramo\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/altro_firmatario\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/concluso\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/destinatario\" "
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=PREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%20SELECT%20%3Fs%20%3Fd%20%3Ft%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20dc%3Adate%20%3Fd%20%3B%20dc%3Atitle%20%3Ft%20.%20FILTER%28STRENDS%28STR%28%3Fs%29%2C%22_19%22%29%20%26%26%20%3Fd%20%3E%3D%20%2220261001%22%29%20%7D%20LIMIT%2020&format=application%2Fjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 6451,
   "secondi": 3.8,
   "captcha": false,
-  "inizio": "{\"data\":[{\"id\":\"eli/dl/doc/E-10-2026-000002\",\"type\":\"Work\",\"parliamentary_term\":\"org/ep-10\",\"document_date\":\"2026-01-02\",\"is_realized_by\":[{\"id\":\"eli/dl/doc/E-10-2026-000002/en\",\"type\":\"Expression\",\"is_embodied_by\":[{\"id\":\"eli/dl/doc/E-10-2026-000002/en/docx\",\"type\":\"Manifestation\",\"is_exemplified_by\":\"distribution/reds_iMaQp/E-10-2026-000002/E-10-2026-000002_en.docx\",\"media_type\":\"https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.wordprocessingml.document\",\"format\":\"http://publications.europa.eu/resource/authority/file-type/DOCX\",\"issued\":\"2026-01-08T1"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"d\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_09012_19\" } , \"d\": { \"type\": \"literal\", \"value\": \"20260924\" } , \"t\": { \"type\": \"literal\", \"value\": \"INTERROGAZIONE A RISPOSTA SCRITTA 4/09012 presentata da BENZONI FABRIZIO (AZIONE-POPOLARI EUROPEISTI RIFORMATORI-RENEW EUROPE) in data 24/09/2026\" }}, { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_09012_19\" } , \"d\": { \"type\": \"literal\", \"value\": \"20260924\" } , \"t\": { \"type\":"
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions?year=2026&format=application%2Fld%2Bjson&offset=4000&limit=2",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 204,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/speeches?sitting-date=2026-10-08&sitting-date-end=2026-10-09&format=application%2Fld%2Bjson&limit=5",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fddl%2F59000%3E%20%3Fp%20%3Fo%20%7D%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 18612,
-  "secondi": 4.2,
+  "byte": 10555,
+  "secondi": 3.3,
   "captcha": false,
-  "inizio": "{\"data\":[{\"id\":\"eli/dl/event/MTG-PL-2026-10-08-OTH-2017098248385\",\"type\":\"Activity\",\"activity_date\":\"2026-10-08\",\"activity_end_date\":\"2026-10-08T10:07:20.462+02:00\",\"activity_id\":\"MTG-PL-2026-10-08-OTH-2017098248385\",\"activity_label\":{\"bg\":\"Стратегиите на ЕС за островите, крайбрежните общности и най-отдалечените региони (разискване)\",\"en\":\"EU strategies for islands, coastal communities and outermost regions (debate)\",\"sl\":\"Strategije EU za otoke, priobalne skupnosti in najbolj oddaljene regije (razprava)\",\"hu\":\"Uni�"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Ddl\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/assegnazione\" } , \"o\": { \"type\": \"bnode\", \"value\": \"nodeID://b323582290\" }}, { \"p\": { \"type\": \"uri\", \"v"
  },
  {
-  "url": "https://data.europarl.europa.eu/api/v2/meetings?year=2026&format=application%2Fld%2Bjson&limit=3&offset=0",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FSindacatoIspettivo%3E%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20%3B%20%3Fp%20%3Fo%20%7D%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 41591,
-  "secondi": 8.3,
+  "byte": 839,
+  "secondi": 3.8,
   "captcha": false,
-  "inizio": "{\"data\":[{\"id\":\"eli/dl/event/MTG-PL-2026-01-19\",\"type\":\"Activity\",\"activity_date\":\"2026-01-19\",\"activity_end_date\":\"2026-01-19T23:00:00+01:00\",\"activity_id\":\"MTG-PL-2026-01-19\",\"activity_label\":{\"mt\":\"It-Tnejn, 19 ta' Jannar 2026\",\"hr\":\"ponedjeljak, 19. siječnja 2026.\",\"fi\":\"Maanantai 19. tammikuuta 2026\",\"lv\":\"Pirmdiena, 2026. gada 19. janvāris\",\"ga\":\"Dé Luain, 19 Eanáir 2026\",\"nl\":\"Maandag 19 januari 2026\",\"en\":\"Monday, 19 January 2026\",\"it\":\"Lunedì 19 gennaio 2026\",\"da\":\"Mandag den 19. januar 2026\",\"pt\":\"Segunda-feira, 19 de Janeiro de 2026\",\"el\":\"Δευτέρα 19 Ιανουαρίου"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/dataPresentazione\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/iniziativa\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/legislatura\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/tipo"
  },
  {
-  "url": "https://publications.europa.eu/webapi/rdf/sparql?query=PREFIX%20cdm%3A%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23%3E%0ASELECT%20%3Fw%20%3Fd%20%3Ft%20WHERE%20%7B%20%3Fw%20cdm%3Awork_date_document%20%3Fd%20.%20FILTER%28%3Fd%20%3E%3D%20%222026-10-12%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%20%26%26%20%3Fd%20%3C%3D%20%222026-10-18%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%29%0A%3Fe%20cdm%3Aexpression_belongs_to_work%20%3Fw%20%3B%20cdm%3Aexpression_uses_language%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Flanguage%2FITA%3E%20%3B%20cdm%3Aexpression_title%20%3Ft%20.%20%7D%20LIMIT%203000&format=application%2Fsparql-results%2Bjson",
-  "accept": "",
+  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed?timeframe=one-week",
+  "accept": "application/atom+xml",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 1022210,
-  "secondi": 4.6,
+  "byte": 805424,
+  "secondi": 25.6,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"w\", \"d\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"w\": { \"type\": \"uri\", \"value\": \"http://publications.europa.eu/resource/cellar/c6300b5b-c61b-11f1-bfcb-01aa75ed71a1\" } , \"d\": { \"type\": \"literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#date\", \"value\": \"2026-10-12\" } , \"t\": { \"type\": \"literal\", \"xml:lang\": \"it\", \"value\": \"DECISIONE DEL CONSIGLIO relativa alla firma e all'applicazione a titolo provvisorio dell'accordo tra l'Unione europea, da una parte, e l'Australia, dall'altra, sulla partecipazione dell'Australia ai"
- },
- {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FSindacatoIspettivo%3E%20.%20%3Fs%20%3Fp%20%3Fo%20%7D%20ORDER%20BY%20DESC%28%3Fs%29%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 16752,
-  "secondi": 7.9,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/sindacatoispettivo/99993\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/sindacatoispettivo/99993\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Sindaca"
- },
- {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fc%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fc%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FClassificazione%3E%20.%20%3Fc%20%3Fp%20%3Fo%20%7D%20LIMIT%2020&format=application%2Fsparql-results%2Bjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 5270,
-  "secondi": 7.7,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"c\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/classificazione/26287-ART-22\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Classificazione\" }}, { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/classificazione/26287-ART-84\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.se"
- },
- {
-  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20%3Fp%20%3Fo%20.%20FILTER%28CONTAINS%28STR%28%3Fs%29%2C%20%22_19%22%29%29%20%7D%20LIMIT%2060&format=application%2Fjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 15967,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_19020_17\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_19020_17\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }"
- },
- {
-  "url": "https://ec.europa.eu/info/law/better-regulation/brpapi/groupInitiatives/13429",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 39420,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": "{\"reference\":\"Ares(2022)2272159\",\"unit\":\"SECRETARIAT-GENERAL\",\"dossierSummary\":\"The initiative aims to enshrine in secondary legislation the meaning of legal tender of euro cash. Currently this is only set out in a judgment of 2021 of the Court of Justice of the EU and in a Commission Recommendation of 2010 on the scope and effects of legal tender of euro banknotes and coins. The initiative will clarify the legal tender status of euro cash, thereby safeguarding the role of euro cash. It will also ensure coherence with the related initiative establishing the digital euro\",\"shortTitle\":\"The sco"
- },
- {
-  "url": "https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?topic=FISMA&feedbackStatus=OPEN&language=EN&size=5",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 406,
-  "byte": 0,
-  "secondi": 3.4,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://api.openalex.org/works?search=%22digital%20euro%22&filter=from_publication_date:2026-09-01,to_publication_date:2026-10-18&per-page=1",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 14693,
-  "secondi": 3.2,
-  "captcha": false,
-  "inizio": "{\"meta\": {\"notice\": \"No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\\\"email\\\": \\\"<your user's email>\\\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt\", \"count\": 75, \"db_response_time_ms\": 34, \"page\": 1, \"per_page\": 1, \"groups_count\": null, \"x_query\": {\"oql\": \"g"
+  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Questions created in the European Parliament sessions</title><id>https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed\"/><updated>2026-10-23T12:24:48.322Z</updated><entry><title type=\"text\" xml:lang=\"en\">Need to modify housing stress crit"
  }
 ]

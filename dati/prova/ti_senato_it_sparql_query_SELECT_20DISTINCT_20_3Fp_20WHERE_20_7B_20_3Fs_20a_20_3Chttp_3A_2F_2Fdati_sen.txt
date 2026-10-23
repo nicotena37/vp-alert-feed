@@ -1,0 +1,12 @@
+
+{ "head": { "link": [], "vars": ["p"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "p": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }},
+    { "p": { "type": "uri", "value": "http://www.w3.org/2000/01/rdf-schema#label" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/dataPresentazione" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/iniziativa" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/legislatura" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/tipo" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/numero" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/URLTesto" }},
+    { "p": { "type": "uri", "value": "http://dati.senato.it/osr/esito" }} ] } }
