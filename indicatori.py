@@ -23,6 +23,7 @@ Rispetta robots.txt (leggi_feed.robots) e fa una pausa tra due richieste allo st
 from __future__ import annotations
 
 import csv
+import html
 import io
 import json
 import os
@@ -67,7 +68,10 @@ def _rx(termini: list[str]) -> re.Pattern | None:
 
 
 def _rx_sigle(sigle: list[str]) -> re.Pattern | None:
-    return re.compile(r"(?<![\w])(?:" + "|".join(re.escape(s) for s in sigle) + r")(?![\w])") if sigle else None
+    if not sigle:
+        return None
+    # una sigla non conta se è attaccata ad altre parole tutte maiuscole (titoli in maiuscolo: "DECISIONE AI SENSI")
+    return re.compile(r"(?<![\w])(?<![A-Z]{2} )(?:" + "|".join(re.escape(s) for s in sigle) + r")(?![\w])(?! [A-Z]{2})")
 
 
 CTX_BANCA = _rx(CONF["contesto_banca"])
@@ -78,14 +82,15 @@ for t in CONF["temi"]:
                  "_ctx": CTX_BANCA if ctx is True else (_rx(ctx) if ctx else None)})
 
 
-def temi_di(titolo: str, testo: str = "") -> list[str]:
+def temi_di(titolo: str, testo: str = "") -> dict[str, str]:
+    """{tema: parola che l'ha fatto scattare}"""
     grezzo = f"{titolo} {testo}"
     n = norm(grezzo)
-    out = []
+    out = {}
     for t in TEMI:
-        if (t["_rx"] and t["_rx"].search(n)) or (t["_sig"] and t["_sig"].search(grezzo)):
-            if t["_ctx"] is None or t["_ctx"].search(n):
-                out.append(t["tema"])
+        m = (t["_rx"] and t["_rx"].search(n)) or (t["_sig"] and t["_sig"].search(grezzo))
+        if m and (t["_ctx"] is None or t["_ctx"].search(n)):
+            out[t["tema"]] = m.group(0)
     return out
 
 
@@ -165,15 +170,19 @@ def pe_interrogazioni(dal: date, al: date) -> list[dict]:
 def camera_interrogazioni(dal: date, al: date) -> list[dict]:
     dal = min(dal, date.today() - timedelta(days=60))       # i dati della Camera arrivano con qualche settimana di ritardo
     q = f"""PREFIX dc: <http://purl.org/dc/elements/1.1/> PREFIX dct: <http://purl.org/dc/terms/>
-SELECT ?s ?d ?t (SAMPLE(?ds) AS ?desc) (GROUP_CONCAT(DISTINCT STR(?sg); separator=" | ") AS ?sog) WHERE {{
+SELECT ?s ?d ?t (SAMPLE(?ds) AS ?desc) (SAMPLE(?rl) AS ?rel) WHERE {{
  ?s a <http://dati.camera.it/ocd/aic> ; dc:date ?d ; dc:title ?t .
- OPTIONAL {{ ?s dc:description ?ds }} OPTIONAL {{ ?s dct:subject ?sg }}
+ OPTIONAL {{ ?s dc:description ?ds }} OPTIONAL {{ ?s dc:relation ?rl }}
  FILTER(?d >= "{dal:%Y%m%d}" && ?d <= "{al:%Y%m%d}") }} GROUP BY ?s ?d ?t LIMIT 10000"""
     out = []
     for r in sparql("https://dati.camera.it/sparql", q, "application/json"):
-        testo = f"{r.get('desc', '')} {r.get('sog', '')}"
+        desc = html.unescape(r.get("desc", ""))
+        corpo = re.split(r"seduta n\. ?\d+", desc, maxsplit=1)[-1].strip()
+        corpo = re.sub(r"^[A-ZÀ-Ü' ]+\s*\.\s*[—-]\s*", "", corpo)          # toglie "COGNOME . —"
+        tipo = re.match(r"[A-ZÀ-Ü' ]+?(?= \d)", r["t"])
+        titolo = f"{(tipo.group(0).capitalize() if tipo else 'Atto')} {(re.search(r"\d+/\d+", r["t"]) or re.search(r"", "")).group(0)}: {corpo[:220]}"
         out.append(voce("Camera - interrogazioni e mozioni", "politica", "Italia", r["s"].rsplit("/", 1)[-1],
-                        a_data(r["d"]), r["t"], testo, r["s"]))
+                        a_data(r["d"]), titolo, corpo[:600], r.get("rel") or r["s"]))
     return out
 
 
@@ -279,8 +288,10 @@ def openalex(settimane: list[date]) -> list[dict]:
         for t in TEMI:
             if not t.get("oa"):
                 continue
+            chiave = os.environ.get("OPENALEX_API_KEY", "").strip()
             url = (f"https://api.openalex.org/works?search={quote(t['oa'])}&per-page=1&select=id"
-                   f"&filter=from_publication_date:{k},to_publication_date:{k + timedelta(days=6)}")
+                   f"&filter=from_publication_date:{k},to_publication_date:{k + timedelta(days=6)}"
+                   + (f"&api_key={chiave}" if chiave else ""))
             n = json.loads(prendi(url, "application/json", 60))["meta"]["count"]
             righe.append({"settimana": sett(k), "dal": k.isoformat(), "fonte": "OpenAlex - studi", "misura": "studiosi",
                           "area": "Mondo", "tema": t["tema"], "valore": n, "totale": ""})
@@ -420,12 +431,15 @@ def main() -> int:
         con_tema = 0
         for v in voci:
             testo = v.pop("_testo", "")
-            v["temi"] = temi_di(v["titolo"], testo)
+            trovati = temi_di(v["titolo"], testo)
+            v["temi"], v["parole"] = list(trovati), list(trovati.values())
             con_tema += bool(v["temi"])
             k = (v["fonte"], v["id"])
             if k not in tutti:
                 nuove += 1
             tutti[k] = v if v["temi"] else {c: v[c] for c in ("fonte", "misura", "area", "id", "data", "temi")}
+            if not v["temi"]:
+                v.pop("parole", None)
         esito[nome] = {"ok": True, "voci": len(voci), "con_tema": con_tema, "secondi": round(time.time() - t0)}
         print(f"{nome}: {len(voci)} voci, {con_tema} con tema", flush=True)
 
@@ -451,6 +465,8 @@ def main() -> int:
     print("Media Cloud:", esito["Media Cloud"], flush=True)
     # OpenAlex: settimane complete; nel giro normale solo le ultime 2 (gli studi vengono indicizzati con ritardo)
     sett_oa = [lunedi(oggi) - timedelta(weeks=i) for i in range(1, (storico or 2) + 1)]
+    if not storico and oggi.weekday() != 0:
+        sett_oa = []                                         # nel giro normale: una volta a settimana (lunedì)
     try:
         r = openalex(sett_oa)
         conteggi += r
