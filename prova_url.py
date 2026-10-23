@@ -9,7 +9,7 @@ from pathlib import Path
 
 import leggi_feed as L
 
-L.TIMEOUT = 60
+L.TIMEOUT = 180
 QUI = Path(__file__).parent
 out = []
 for riga in [u.strip() for u in (QUI / "prova_url.txt").read_text(encoding="utf-8").splitlines()
