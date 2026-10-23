@@ -1,57 +1,35 @@
 [
  {
-  "url": "https://dati.camera.it/sparql?query=SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20%3Fp%20%3Fo%20.%20FILTER%28STRENDS%28STR%28%3Fs%29%2C%22_19%22%29%29%20%7D%20LIMIT%2060&format=application%2Fjson",
+  "url": "https://dati.camera.it/sparql?query=PREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%20PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%20SELECT%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Fp%20%3Fo%20%7D&format=application%2Fjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 2250,
-  "secondi": 8.9,
+  "byte": 11314,
+  "secondi": 3.5,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/ramo\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/altro_firmatario\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/concluso\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/destinatario\" "
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" } , \"o\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\","
  },
  {
-  "url": "https://dati.camera.it/sparql?query=PREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%20SELECT%20%3Fs%20%3Fd%20%3Ft%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20dc%3Adate%20%3Fd%20%3B%20dc%3Atitle%20%3Ft%20.%20FILTER%28STRENDS%28STR%28%3Fs%29%2C%22_19%22%29%20%26%26%20%3Fd%20%3E%3D%20%2220261001%22%29%20%7D%20LIMIT%2020&format=application%2Fjson",
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fo%20%3Fp2%20%3Fo2%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fsubject%3E%20%3Fo%20.%20OPTIONAL%20%7B%20%3Fo%20%3Fp2%20%3Fo2%20%7D%20%7D%20LIMIT%2040&format=application%2Fjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 6451,
-  "secondi": 3.8,
+  "byte": 922,
+  "secondi": 3.4,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"d\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_09012_19\" } , \"d\": { \"type\": \"literal\", \"value\": \"20260924\" } , \"t\": { \"type\": \"literal\", \"value\": \"INTERROGAZIONE A RISPOSTA SCRITTA 4/09012 presentata da BENZONI FABRIZIO (AZIONE-POPOLARI EUROPEISTI RIFORMATORI-RENEW EUROPE) in data 24/09/2026\" }}, { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic4_09012_19\" } , \"d\": { \"type\": \"literal\", \"value\": \"20260924\" } , \"t\": { \"type\":"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"o\", \"p2\", \"o2\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/7135\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3885\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3525\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/1684\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/877\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/35\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://e"
  },
  {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fddl%2F59000%3E%20%3Fp%20%3Fo%20%7D%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
+  "url": "https://publications.europa.eu/webapi/rdf/sparql?query=PREFIX%20cdm%3A%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23%3E%0ASELECT%20%3Fw%20%3Ft%20WHERE%20%7B%20%3Fw%20cdm%3Awork_date_document%20%3Fd%20.%20FILTER%28%3Fd%20%3E%3D%20%222026-09-10%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%20%26%26%20%3Fd%20%3C%3D%20%222026-09-11%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%29%0A%3Fe%20cdm%3Aexpression_belongs_to_work%20%3Fw%20%3B%20cdm%3Aexpression_uses_language%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Flanguage%2FITA%3E%20%3B%20cdm%3Aexpression_title%20%3Ft%20.%20FILTER%28CONTAINS%28%3Ft%2C%22Vondra%22%29%20%7C%7C%20CONTAINS%28%3Ft%2C%22applicazione%20a%20titolo%20provvisorio%22%29%29%20%7D%20LIMIT%205&format=application%2Fsparql-results%2Bjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 10555,
-  "secondi": 3.3,
+  "stato": 503,
+  "byte": 0,
+  "secondi": 110.3,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Ddl\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/assegnazione\" } , \"o\": { \"type\": \"bnode\", \"value\": \"nodeID://b323582290\" }}, { \"p\": { \"type\": \"uri\", \"v"
- },
- {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20DISTINCT%20%3Fp%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FSindacatoIspettivo%3E%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20%3B%20%3Fp%20%3Fo%20%7D%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 839,
-  "secondi": 3.8,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/dataPresentazione\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/iniziativa\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/legislatura\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/tipo"
- },
- {
-  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed?timeframe=one-week",
-  "accept": "application/atom+xml",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 805424,
-  "secondi": 25.6,
-  "captcha": false,
-  "inizio": "<?xml version='1.0' encoding='UTF-8'?><feed xmlns=\"http://www.w3.org/2005/Atom\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xml:lang=\"en\"><author><name>European Parliament</name></author><title type=\"text\">Questions created in the European Parliament sessions</title><id>https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed</id><link href=\"https://data.europarl.europa.eu\"/><link href=\"https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed\"/><updated>2026-10-23T12:24:48.322Z</updated><entry><title type=\"text\" xml:lang=\"en\">Need to modify housing stress crit"
+  "inizio": ""
  }
 ]
