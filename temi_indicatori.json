@@ -1,0 +1,862 @@
+{
+ "_istruzioni": "Temi per gli indicatori di attenzione (pagina Temi attuali). Stessi nomi del foglio Temi di Filtro intelligente.xlsx, ma con parole PIÙ SPECIFICHE: qui si contano notizie di giornali, parlamenti e banche centrali, non solo di fonti bancarie. it/en: parole o frasi (minuscole; senza * = parola intera, con * finale = inizio di parola). sigle: maiuscole, cercate rispettando le maiuscole. contesto: se presente, il testo deve contenere anche una di queste parole (per temi generici come lavoro o fisco). mc: ricerca per Media Cloud (giornali italiani). oa: ricerca per OpenAlex (studi, in inglese).",
+ "contesto_banca": [
+  "banc*",
+  "bank*",
+  "credit*",
+  "finanz*",
+  "financ*",
+  "assicur*",
+  "insur*",
+  "risparm*",
+  "intermediari*",
+  "istituti di credito"
+ ],
+ "temi": [
+  {
+   "tema": "Antiriciclaggio e sanzioni finanziarie",
+   "area": "Banca",
+   "it": [
+    "antiriciclaggio",
+    "riciclaggio",
+    "finanziamento del terrorismo",
+    "titolare effettivo",
+    "titolari effettivi",
+    "operazioni sospette",
+    "adeguata verifica",
+    "misure restrittive",
+    "congelamento dei beni",
+    "elusione delle sanzioni",
+    "sanzioni contro la russia"
+   ],
+   "en": [
+    "money laundering",
+    "anti-money laundering",
+    "terrorist financing",
+    "beneficial owner*",
+    "suspicious transaction*",
+    "restrictive measures",
+    "asset freez*",
+    "sanctions evasion",
+    "circumvention of sanctions",
+    "sanctions against russia"
+   ],
+   "sigle": [
+    "AMLA",
+    "AML",
+    "CFT",
+    "FATF",
+    "GAFI",
+    "AMLR",
+    "AMLD"
+   ],
+   "mc": "antiriciclaggio OR riciclaggio OR \"finanziamento del terrorismo\" OR \"titolare effettivo\" OR \"operazioni sospette\" OR \"sanzioni alla russia\" OR \"sanzioni contro la russia\"",
+   "oa": "\"money laundering\" OR \"terrorist financing\" OR \"financial sanctions\""
+  },
+  {
+   "tema": "Vigilanza prudenziale e capitale",
+   "area": "Banca",
+   "it": [
+    "requisiti patrimoniali",
+    "requisiti di capitale",
+    "fondi propri",
+    "vigilanza prudenziale",
+    "basilea 3",
+    "basilea iii",
+    "basilea 4",
+    "coefficiente di leva",
+    "grandi esposizioni",
+    "riserva di capitale",
+    "riserve di capitale",
+    "requisiti prudenziali"
+   ],
+   "en": [
+    "capital requirement*",
+    "own funds",
+    "prudential",
+    "basel iii",
+    "basel 3",
+    "basel iv",
+    "leverage ratio",
+    "large exposures",
+    "liquidity coverage",
+    "net stable funding",
+    "capital buffer*",
+    "bank stress test*"
+   ],
+   "sigle": [
+    "CRR",
+    "CRD",
+    "CRR3",
+    "CRD6",
+    "CRDVI",
+    "SREP",
+    "LCR",
+    "NSFR",
+    "BCBS",
+    "G-SIB",
+    "G-SIBs",
+    "O-SII",
+    "FRTB"
+   ],
+   "mc": "\"requisiti patrimoniali\" OR \"requisiti di capitale\" OR \"basilea 3\" OR \"basilea 4\" OR \"vigilanza prudenziale\" OR \"stress test delle banche\" OR \"stress test bancari\"",
+   "oa": "\"capital requirements\" OR \"Basel III\" OR \"bank capital\" OR \"prudential regulation\""
+  },
+  {
+   "tema": "Segnalazioni e reporting di vigilanza",
+   "area": "Banca",
+   "it": [
+    "segnalazioni di vigilanza",
+    "segnalazioni statistiche",
+    "terzo pilastro",
+    "centrale dei rischi",
+    "informativa al pubblico"
+   ],
+   "en": [
+    "supervisory reporting",
+    "reporting framework",
+    "pillar 3",
+    "integrated reporting",
+    "regulatory reporting"
+   ],
+   "sigle": [
+    "FINREP",
+    "COREP",
+    "IReF",
+    "BIRD",
+    "XBRL"
+   ],
+   "mc": "\"segnalazioni di vigilanza\" OR \"centrale dei rischi\" OR anacredit",
+   "oa": "\"supervisory reporting\" OR \"regulatory reporting\" OR \"Pillar 3\""
+  },
+  {
+   "tema": "Governance, controlli e organizzazione",
+   "area": "Banca",
+   "it": [
+    "controlli interni",
+    "funzione di conformità",
+    "funzione compliance",
+    "esponenti aziendali",
+    "requisiti di professionalità",
+    "politiche di remunerazione",
+    "whistleblowing",
+    "231/2001",
+    "governo societario",
+    "idoneità degli esponenti"
+   ],
+   "en": [
+    "internal governance",
+    "internal control*",
+    "compliance function",
+    "fit and proper",
+    "remuneration polic*",
+    "whistleblow*",
+    "corporate governance"
+   ],
+   "sigle": [],
+   "contesto": true,
+   "mc": "(\"politiche di remunerazione\" OR \"esponenti aziendali\" OR \"controlli interni\" OR whistleblowing OR \"governo societario\") AND (banca OR banche)",
+   "oa": "\"bank governance\" OR \"internal control\" AND bank OR \"executive remuneration\" AND bank"
+  },
+  {
+   "tema": "Crisi bancarie, risoluzione e garanzia dei depositi",
+   "area": "Banca",
+   "it": [
+    "risoluzione delle crisi",
+    "risoluzione bancaria",
+    "bail-in",
+    "garanzia dei depositi",
+    "fondo interbancario",
+    "fondo di risoluzione",
+    "crisi bancaria",
+    "crisi bancarie",
+    "salvataggio bancario",
+    "salvataggi bancari",
+    "gestione delle crisi bancarie"
+   ],
+   "en": [
+    "bank resolution",
+    "resolution authorit*",
+    "bail-in",
+    "deposit guarantee*",
+    "deposit insurance",
+    "crisis management and deposit insurance",
+    "single resolution",
+    "bank failure*"
+   ],
+   "sigle": [
+    "MREL",
+    "BRRD",
+    "SRB",
+    "SRM",
+    "CMDI",
+    "EDIS",
+    "FITD",
+    "DGSD"
+   ],
+   "mc": "\"bail-in\" OR \"garanzia dei depositi\" OR \"crisi bancaria\" OR \"crisi bancarie\" OR \"fondo interbancario\" OR \"risoluzione bancaria\" OR \"salvataggio bancario\"",
+   "oa": "\"bank resolution\" OR \"bail-in\" OR \"deposit insurance\" OR \"bank failure\""
+  },
+  {
+   "tema": "Credito e finanziamenti",
+   "area": "Banca",
+   "it": [
+    "credito ai consumatori",
+    "credito al consumo",
+    "credito immobiliare",
+    "mutui",
+    "mutuo",
+    "cessione del quinto",
+    "crediti deteriorati",
+    "cartolarizzazion*",
+    "usura",
+    "tassi soglia",
+    "merito creditizio",
+    "sovraindebitamento",
+    "fondo di garanzia per le pmi",
+    "prestiti alle imprese",
+    "prestiti bancari",
+    "erogazione del credito"
+   ],
+   "en": [
+    "consumer credit",
+    "mortgage*",
+    "non-performing loan*",
+    "non-performing exposure*",
+    "securitisation*",
+    "securitization*",
+    "creditworthiness",
+    "bank lending",
+    "loan origination"
+   ],
+   "sigle": [
+    "NPL",
+    "NPLs",
+    "NPE",
+    "CCD2"
+   ],
+   "mc": "mutui OR mutuo OR \"credito al consumo\" OR \"crediti deteriorati\" OR \"cessione del quinto\" OR npl OR cartolarizzazione OR \"prestiti alle imprese\" OR \"prestiti bancari\"",
+   "oa": "\"bank lending\" OR \"consumer credit\" OR \"non-performing loans\" OR securitisation OR mortgage AND bank"
+  },
+  {
+   "tema": "Pagamenti, conti e moneta",
+   "area": "Banca",
+   "it": [
+    "servizi di pagamento",
+    "bonifici istantanei",
+    "bonifico istantaneo",
+    "pagamenti digitali",
+    "pagamenti elettronici",
+    "euro digitale",
+    "conto corrente",
+    "conti correnti",
+    "conto di base",
+    "moneta elettronica",
+    "autenticazione forte",
+    "frodi nei pagamenti",
+    "limite al contante",
+    "tetto al contante",
+    "uso del contante",
+    "commissioni bancarie",
+    "sistemi di pagamento"
+   ],
+   "en": [
+    "payment service*",
+    "instant payment*",
+    "digital euro",
+    "e-money",
+    "electronic money",
+    "strong customer authentication",
+    "payment fraud",
+    "payment system*",
+    "retail payment*",
+    "central bank digital currenc*",
+    "legal tender"
+   ],
+   "sigle": [
+    "PSD2",
+    "PSD3",
+    "PSR",
+    "SEPA",
+    "CBDC",
+    "TIPS",
+    "EPI"
+   ],
+   "mc": "\"euro digitale\" OR \"bonifici istantanei\" OR \"bonifico istantaneo\" OR \"pagamenti digitali\" OR \"pagamenti elettronici\" OR \"conto corrente\" OR \"limite al contante\" OR \"tetto al contante\" OR \"commissioni bancarie\" OR \"moneta elettronica\"",
+   "oa": "\"digital euro\" OR \"central bank digital currency\" OR \"instant payments\" OR \"payment services\""
+  },
+  {
+   "tema": "Trasparenza e tutela della clientela",
+   "area": "Banca",
+   "it": [
+    "trasparenza bancaria",
+    "tutela del consumatore",
+    "tutela dei consumatori",
+    "clausole vessatorie",
+    "pratiche commerciali scorrette",
+    "arbitro bancario finanziario",
+    "arbitro per le controversie finanziarie",
+    "reclami",
+    "piccoli risparmiatori"
+   ],
+   "en": [
+    "consumer protection",
+    "unfair commercial practice*",
+    "retail investor protection",
+    "complaints handling",
+    "unfair terms"
+   ],
+   "sigle": [
+    "ABF",
+    "ACF"
+   ],
+   "contesto": true,
+   "mc": "(\"tutela dei consumatori\" OR \"pratiche commerciali scorrette\" OR \"clausole vessatorie\" OR \"arbitro bancario\" OR risparmiatori) AND (banca OR banche OR bancari OR finanziari)",
+   "oa": "\"consumer protection\" AND (bank OR financial)"
+  },
+  {
+   "tema": "Sistema bancario e vigilanza",
+   "area": "Banca",
+   "it": [
+    "vigilanza bancaria",
+    "unione bancaria",
+    "sistema bancario",
+    "fusione bancaria",
+    "fusioni bancarie",
+    "risiko bancario",
+    "consolidamento bancario",
+    "vigilanza unica",
+    "meccanismo di vigilanza unico"
+   ],
+   "en": [
+    "banking union",
+    "banking supervision",
+    "bank merger*",
+    "single supervisory mechanism",
+    "banking sector",
+    "banking system"
+   ],
+   "sigle": [
+    "SSM",
+    "MVU"
+   ],
+   "mc": "\"vigilanza bancaria\" OR \"unione bancaria\" OR \"sistema bancario\" OR \"risiko bancario\" OR \"fusione bancaria\" OR \"fusioni bancarie\" OR \"consolidamento bancario\"",
+   "oa": "\"banking union\" OR \"banking supervision\" OR \"bank mergers\""
+  },
+  {
+   "tema": "Assicurazioni e bancassicurazione",
+   "area": "Assicurazioni",
+   "it": [
+    "assicurazion*",
+    "assicurativ*",
+    "polizz*",
+    "bancassicurazion*",
+    "riassicurazion*",
+    "solvibilità ii",
+    "distribuzione assicurativa",
+    "rc auto",
+    "compagnie assicurative"
+   ],
+   "en": [
+    "insurance",
+    "insurer*",
+    "reinsurance",
+    "reinsurer*",
+    "solvency ii",
+    "insurance distribution",
+    "bancassurance"
+   ],
+   "sigle": [
+    "IDD",
+    "IRRD",
+    "IORP"
+   ],
+   "mc": "assicurazioni OR polizze OR ivass OR bancassicurazione OR \"rc auto\" OR \"compagnie assicurative\"",
+   "oa": "insurance regulation OR \"Solvency II\" OR insurer"
+  },
+  {
+   "tema": "Previdenza complementare",
+   "area": "Assicurazioni",
+   "it": [
+    "fondi pensione",
+    "fondo pensione",
+    "previdenza complementare",
+    "prodotto pensionistico individuale paneuropeo"
+   ],
+   "en": [
+    "pension fund*",
+    "occupational pension*",
+    "pan-european personal pension",
+    "supplementary pension*"
+   ],
+   "sigle": [
+    "PEPP"
+   ],
+   "mc": "\"fondi pensione\" OR \"fondo pensione\" OR \"previdenza complementare\" OR covip",
+   "oa": "\"pension fund\" OR \"occupational pension\" OR \"supplementary pension\""
+  },
+  {
+   "tema": "Servizi di investimento e mercati",
+   "area": "Mercati e investimenti",
+   "it": [
+    "servizi di investimento",
+    "consulenza finanziaria",
+    "consulenza in materia di investimenti",
+    "abusi di mercato",
+    "abuso di mercato",
+    "prospetto informativo",
+    "unione dei mercati dei capitali",
+    "unione del risparmio e degli investimenti",
+    "mercato dei capitali",
+    "mercati dei capitali",
+    "vendite allo scoperto",
+    "controparte centrale",
+    "piccoli investitori",
+    "legge capitali"
+   ],
+   "en": [
+    "investment service*",
+    "market abuse",
+    "capital markets union",
+    "savings and investments union",
+    "retail investment",
+    "short selling",
+    "central counterpart*",
+    "post-trade",
+    "trading venue*",
+    "investment firm*",
+    "market maker*",
+    "insider dealing"
+   ],
+   "sigle": [
+    "MiFID",
+    "MiFID II",
+    "MiFIR",
+    "EMIR",
+    "CSDR",
+    "PRIIPs",
+    "UCITS",
+    "AIFMD",
+    "SIU",
+    "CMU",
+    "CCP",
+    "CCPs",
+    "T+1"
+   ],
+   "mc": "mifid OR \"abusi di mercato\" OR \"unione dei mercati dei capitali\" OR \"unione del risparmio e degli investimenti\" OR consob OR \"consulenza finanziaria\" OR \"legge capitali\" OR \"piccoli investitori\"",
+   "oa": "\"capital markets union\" OR MiFID OR \"market abuse\" OR \"retail investors\""
+  },
+  {
+   "tema": "Cripto-attività e finanza digitale",
+   "area": "Mercati e investimenti",
+   "it": [
+    "cripto-attività",
+    "criptoattività",
+    "criptovalut*",
+    "cripto valut*",
+    "stablecoin*",
+    "tokenizzazion*",
+    "blockchain",
+    "fintech",
+    "bitcoin"
+   ],
+   "en": [
+    "crypto-asset*",
+    "cryptoasset*",
+    "cryptocurrenc*",
+    "stablecoin*",
+    "tokenisation",
+    "tokenization",
+    "distributed ledger",
+    "bitcoin",
+    "fintech"
+   ],
+   "sigle": [
+    "MiCA",
+    "MiCAR",
+    "DLT",
+    "CASP",
+    "CASPs"
+   ],
+   "mc": "criptovalute OR criptovaluta OR \"cripto-attività\" OR stablecoin OR bitcoin OR tokenizzazione OR fintech",
+   "oa": "cryptocurrency OR \"crypto-assets\" OR stablecoin OR \"MiCA regulation\""
+  },
+  {
+   "tema": "Finanza sostenibile ed ESG",
+   "area": "Mercati e investimenti",
+   "it": [
+    "finanza sostenibile",
+    "rischi climatici",
+    "rischio climatico",
+    "greenwashing",
+    "tassonomia ue",
+    "tassonomia europea",
+    "rendicontazione di sostenibilità",
+    "dovere di diligenza",
+    "omnibus",
+    "obbligazioni verdi"
+   ],
+   "en": [
+    "sustainable finance",
+    "climate risk*",
+    "climate-related",
+    "greenwashing",
+    "eu taxonomy",
+    "sustainability reporting",
+    "green bond*",
+    "transition plan*",
+    "sustainability due diligence"
+   ],
+   "sigle": [
+    "SFDR",
+    "CSRD",
+    "CSDDD",
+    "ESRS",
+    "ESG",
+    "NGFS"
+   ],
+   "mc": "\"finanza sostenibile\" OR greenwashing OR \"rischio climatico\" OR \"rischi climatici\" OR \"tassonomia europea\" OR csrd OR sfdr OR (esg AND (banche OR finanza))",
+   "oa": "\"sustainable finance\" OR \"climate risk\" AND bank OR greenwashing OR \"ESG disclosure\""
+  },
+  {
+   "tema": "Fisco per banca e clienti",
+   "area": "Fisco",
+   "it": [
+    "imposta di bollo",
+    "imposta sostitutiva",
+    "tassazione delle rendite",
+    "rendite finanziarie",
+    "extraprofitti",
+    "contributo delle banche",
+    "tassa sulle banche",
+    "ritenuta d'acconto",
+    "ritenute",
+    "scambio automatico di informazioni",
+    "crediti d'imposta",
+    "credito d'imposta",
+    "superbonus",
+    "bonus edilizi",
+    "codici tributo",
+    "codice tributo"
+   ],
+   "en": [
+    "withholding tax",
+    "automatic exchange of information",
+    "windfall tax",
+    "financial transaction tax",
+    "bank levy",
+    "administrative cooperation in the field of taxation",
+    "tax evasion"
+   ],
+   "sigle": [
+    "FATCA",
+    "CRS",
+    "DAC6",
+    "DAC7",
+    "DAC8",
+    "DAC9",
+    "FTT"
+   ],
+   "mc": "extraprofitti OR \"imposta di bollo\" OR \"tassazione delle rendite\" OR (\"crediti d'imposta\" AND banche) OR (tasse AND banche) OR superbonus OR \"contributo delle banche\"",
+   "oa": "\"bank tax\" OR \"windfall tax\" OR \"automatic exchange of information\" OR \"financial transaction tax\""
+  },
+  {
+   "tema": "Cybersicurezza, ICT e DORA",
+   "area": "Tecnologia e dati",
+   "it": [
+    "cybersicurezza",
+    "sicurezza informatica",
+    "attacchi informatici",
+    "attacco informatico",
+    "resilienza operativa digitale",
+    "incidenti informatici",
+    "ransomware",
+    "fornitori di servizi ict",
+    "rischio ict",
+    "rischi ict",
+    "esternalizzazion*"
+   ],
+   "en": [
+    "cybersecurity",
+    "cyber security",
+    "cyberattack*",
+    "cyber attack*",
+    "cyber resilience",
+    "digital operational resilience",
+    "ict risk*",
+    "ict third-party",
+    "ransomware",
+    "outsourcing"
+   ],
+   "sigle": [
+    "DORA",
+    "NIS2",
+    "TIBER",
+    "TIBER-EU",
+    "ENISA",
+    "ACN"
+   ],
+   "mc": "cybersicurezza OR \"attacco informatico\" OR \"attacchi informatici\" OR ransomware OR \"sicurezza informatica\" OR \"regolamento dora\"",
+   "oa": "cybersecurity AND (bank OR financial) OR \"operational resilience\""
+  },
+  {
+   "tema": "Privacy e protezione dei dati",
+   "area": "Tecnologia e dati",
+   "it": [
+    "protezione dei dati",
+    "dati personali",
+    "garante privacy",
+    "garante per la protezione dei dati",
+    "data breach",
+    "violazione dei dati"
+   ],
+   "en": [
+    "data protection",
+    "personal data",
+    "data breach*",
+    "privacy"
+   ],
+   "sigle": [
+    "GDPR",
+    "EDPB",
+    "EDPS"
+   ],
+   "mc": "\"garante privacy\" OR \"dati personali\" OR gdpr OR \"data breach\" OR \"protezione dei dati\"",
+   "oa": "GDPR OR \"data protection\" AND financial"
+  },
+  {
+   "tema": "Intelligenza artificiale e innovazione",
+   "area": "Tecnologia e dati",
+   "it": [
+    "intelligenza artificiale",
+    "ia generativa",
+    "ai act",
+    "identità digitale",
+    "portafoglio europeo di identità digitale",
+    "algoritm*"
+   ],
+   "en": [
+    "artificial intelligence",
+    "ai act",
+    "generative ai",
+    "machine learning",
+    "digital identity",
+    "eudi wallet",
+    "large language model*"
+   ],
+   "sigle": [
+    "AI",
+    "IA",
+    "eIDAS",
+    "SPID",
+    "LLM",
+    "LLMs",
+    "GenAI"
+   ],
+   "mc": "\"intelligenza artificiale\" OR \"ai act\" OR \"ia generativa\" OR \"identità digitale\"",
+   "oa": "\"artificial intelligence\" AND (bank OR finance OR financial)"
+  },
+  {
+   "tema": "Truffe e frodi ai clienti",
+   "area": "Clientela e consumatori",
+   "it": [
+    "phishing",
+    "smishing",
+    "vishing",
+    "spoofing",
+    "furto d'identità",
+    "frodi online",
+    "truffe online",
+    "truffa online",
+    "truffe bancarie",
+    "truffa bancaria",
+    "abusivismo finanziario",
+    "siti abusivi",
+    "frodi finanziarie",
+    "frode finanziaria",
+    "oscuramento",
+    "7-octies"
+   ],
+   "en": [
+    "phishing",
+    "scam*",
+    "identity theft",
+    "authorised push payment",
+    "app fraud",
+    "financial fraud",
+    "investment fraud"
+   ],
+   "sigle": [],
+   "mc": "phishing OR smishing OR vishing OR \"truffa bancaria\" OR \"truffe bancarie\" OR \"frodi online\" OR \"truffe online\" OR \"abusivismo finanziario\" OR (truffa AND (conto OR bonifico OR carta))",
+   "oa": "\"financial fraud\" OR \"payment fraud\" OR phishing AND bank"
+  },
+  {
+   "tema": "Contratto, stipendio e rapporto di lavoro",
+   "area": "Lavoratori",
+   "it": [
+    "bancari",
+    "lavoratori bancari",
+    "dipendenti bancari",
+    "contratto dei bancari",
+    "ccnl credito",
+    "sindacati bancari",
+    "esuberi",
+    "trasparenza retributiva",
+    "parità retributiva",
+    "comitati aziendali europei",
+    "comitato aziendale europeo",
+    "salario minimo",
+    "lavoro agile",
+    "smart working",
+    "diritto alla disconnessione"
+   ],
+   "en": [
+    "pay transparency",
+    "european works council*",
+    "works council*",
+    "minimum wage*",
+    "telework*",
+    "remote work",
+    "right to disconnect",
+    "bank employees"
+   ],
+   "sigle": [
+    "FABI",
+    "CCNL"
+   ],
+   "contesto": [
+    "banc*",
+    "bank*",
+    "credit*",
+    "lavorator*",
+    "dipendent*",
+    "worker*",
+    "employee*"
+   ],
+   "mc": "(bancari AND (contratto OR sindacati OR esuberi)) OR \"trasparenza retributiva\" OR \"comitati aziendali europei\" OR fabi OR \"lavoratori bancari\"",
+   "oa": "\"pay transparency\" OR \"works councils\" OR \"bank employees\""
+  },
+  {
+   "tema": "Pensioni, previdenza e welfare",
+   "area": "Lavoratori",
+   "it": [
+    "welfare aziendale",
+    "fringe benefit",
+    "premi di risultato",
+    "premi di produttività",
+    "cuneo fiscale",
+    "riforma delle pensioni",
+    "riforma pensioni",
+    "quota 103",
+    "quota 41",
+    "ape sociale",
+    "età pensionabile"
+   ],
+   "en": [
+    "pension reform",
+    "retirement age",
+    "social security contribution*"
+   ],
+   "sigle": [],
+   "mc": "\"welfare aziendale\" OR \"fringe benefit\" OR \"premi di risultato\" OR \"cuneo fiscale\" OR \"riforma delle pensioni\" OR \"riforma pensioni\"",
+   "oa": "\"pension reform\" OR \"retirement age\""
+  },
+  {
+   "tema": "Salute e sicurezza sul lavoro",
+   "area": "Lavoratori",
+   "it": [
+    "sicurezza sul lavoro",
+    "infortuni sul lavoro",
+    "rischio rapina",
+    "rapina in banca",
+    "rapine in banca",
+    "stress lavoro correlato",
+    "stress lavoro-correlato",
+    "81/2008"
+   ],
+   "en": [
+    "occupational safety",
+    "health and safety at work",
+    "occupational health"
+   ],
+   "sigle": [],
+   "mc": "\"sicurezza sul lavoro\" OR \"infortuni sul lavoro\" OR \"rapina in banca\" OR \"rapine in banca\"",
+   "oa": "\"occupational safety\" AND (bank OR financial)"
+  },
+  {
+   "tema": "Formazione e competenze del personale",
+   "area": "Lavoratori",
+   "it": [
+    "consulenti finanziari",
+    "albo dei consulenti",
+    "requisiti di conoscenza e competenza",
+    "aggiornamento professionale",
+    "formazione obbligatoria",
+    "competenze digitali",
+    "formazione del personale"
+   ],
+   "en": [
+    "professional qualification*",
+    "upskilling",
+    "reskilling",
+    "training requirement*",
+    "knowledge and competence"
+   ],
+   "sigle": [
+    "OCF"
+   ],
+   "contesto": true,
+   "mc": "\"consulenti finanziari\" OR \"albo dei consulenti\" OR (formazione AND bancari)",
+   "oa": "\"financial advisers\" AND qualification OR upskilling AND bank"
+  },
+  {
+   "tema": "Economia, tassi e politica monetaria",
+   "area": "Economia e contesto",
+   "it": [
+    "tassi di interesse",
+    "politica monetaria",
+    "inflazione",
+    "euribor",
+    "spread",
+    "stabilità finanziaria",
+    "taglio dei tassi",
+    "rialzo dei tassi",
+    "tassi ufficiali",
+    "legge di bilancio",
+    "manovra finanziaria"
+   ],
+   "en": [
+    "monetary policy",
+    "interest rate*",
+    "inflation",
+    "financial stability",
+    "rate cut*",
+    "rate hike*",
+    "euro area economy"
+   ],
+   "sigle": [
+    "HICP"
+   ],
+   "mc": "\"tassi di interesse\" OR \"politica monetaria\" OR inflazione OR euribor OR \"taglio dei tassi\" OR \"stabilità finanziaria\"",
+   "oa": "\"monetary policy\" AND (euro OR ECB) OR \"financial stability\""
+  },
+  {
+   "tema": "Educazione e inclusione finanziaria",
+   "area": "Clientela e consumatori",
+   "it": [
+    "educazione finanziaria",
+    "alfabetizzazione finanziaria",
+    "inclusione finanziaria",
+    "cultura finanziaria"
+   ],
+   "en": [
+    "financial literacy",
+    "financial education",
+    "financial inclusion"
+   ],
+   "sigle": [],
+   "mc": "\"educazione finanziaria\" OR \"alfabetizzazione finanziaria\" OR \"inclusione finanziaria\"",
+   "oa": "\"financial literacy\" OR \"financial inclusion\""
+  }
+ ]
+}
