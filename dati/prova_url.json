@@ -1,200 +1,87 @@
 [
  {
-  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%20digitale%22%20sourcecountry:IT&mode=timelinevol&format=json&timespan=6months",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 429,
-  "byte": 0,
-  "secondi": 14.3,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Digital_euro/monthly/20250101/20261001",
+  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions?year=2026&format=application%2Fld%2Bjson&limit=3",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 3334,
-  "secondi": 3.2,
+  "byte": 548,
+  "secondi": 14.7,
   "captcha": false,
-  "inizio": "{\"items\":[{\"project\":\"en.wikipedia\",\"article\":\"Digital_euro\",\"granularity\":\"monthly\",\"timestamp\":\"2025010100\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":2482},{\"project\":\"en.wikipedia\",\"article\":\"Digital_euro\",\"granularity\":\"monthly\",\"timestamp\":\"2025020100\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":3835},{\"project\":\"en.wikipedia\",\"article\":\"Digital_euro\",\"granularity\":\"monthly\",\"timestamp\":\"2025030100\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":18932},{\"project\":\"en.wikipedia\",\"article\":\"Digital_euro\",\"granularity\":\"monthly\",\"timestamp\":\"2025040100\",\"access\":\"all-access\",\"agent\":\"user\""
+  "inizio": "{\"data\":[{\"id\":\"eli/dl/doc/E-10-2026-000002\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/QUESTION_WRITTEN\",\"identifier\":\"E-10-2026-000002\"},{\"id\":\"eli/dl/doc/E-10-2026-000003\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/QUESTION_WRITTEN\",\"identifier\":\"E-10-2026-000003\"},{\"id\":\"eli/dl/doc/E-10-2026-000005\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/QUESTION_WRITTEN\",\"identifier\":\"E-10-2026-000005\"}],\"@context\":[{\"data\":\"@graph\",\"@base\":\"https://data.europarl.europa.eu/\"},\"https://data.europarl.europa.eu/api/v2/context.jsonld\"]}"
  },
  {
-  "url": "https://api.openalex.org/works?search=%22digital%20euro%22&group_by=publication_year",
+  "url": "https://data.europarl.europa.eu/api/v2/speeches?year=2026&format=application%2Fld%2Bjson&limit=3",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 2129,
-  "secondi": 3.5,
+  "byte": 9499,
+  "secondi": 17.0,
   "captcha": false,
-  "inizio": "{\"meta\": {\"notice\": \"No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\\\"email\\\": \\\"<your user's email>\\\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt\", \"count\": 2362, \"db_response_time_ms\": 124, \"page\": 1, \"per_page\": 200, \"groups_count\": 18, \"x_query\": {\"oql\":"
+  "inizio": "{\"data\":[{\"id\":\"eli/dl/event/MTG-PL-2022-04-05-OTH-20720000\",\"type\":\"Activity\",\"activity_date\":\"2022-04-05\",\"activity_end_date\":\"2022-04-05T11:34:48+02:00\",\"activity_id\":\"MTG-PL-2022-04-05-OTH-20720000\",\"activity_label\":{\"es\":\"Infraestructuras energéticas transeuropeas (debate)\",\"fr\":\"Infrastructures énergétiques transeuropéennes (débat)\",\"en\":\"Trans-European energy infrastructure (debate)\",\"el\":\"Διευρωπαϊκές ενεργειακές υποδομές (συζήτηση)\",\"sl\":\"Vseevropska energetska infrastruktura (razprava)\",\"ro\":\"Infrastructurile energetice transeuropene (dezba"
  },
  {
-  "url": "https://api.crossref.org/works?query=%22digital+euro%22&rows=0&filter=from-pub-date:2026-01-01",
+  "url": "https://data.europarl.europa.eu/api/v2/plenary-documents?year=2026&format=application%2Fld%2Bjson&limit=3",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 205,
-  "secondi": 4.3,
+  "byte": 602,
+  "secondi": 20.2,
   "captcha": false,
-  "inizio": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":191783,\"items\":[],\"items-per-page\":0,\"query\":{\"start-index\":0,\"search-terms\":\"\\\"digital euro\\\"\"}}}"
+  "inizio": "{\"data\":[{\"id\":\"eli/dl/doc/A-10-2026-0001\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/REPORT_PLENARY\",\"identifier\":\"A-10-2026-0001\",\"label\":\"A10-0001/2026\"},{\"id\":\"eli/dl/doc/A-10-2026-0002\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/REPORT_PLENARY\",\"identifier\":\"A-10-2026-0002\",\"label\":\"A10-0002/2026\"},{\"id\":\"eli/dl/doc/A-10-2026-0003\",\"type\":\"Work\",\"work_type\":\"def/ep-document-types/REPORT_PLENARY\",\"identifier\":\"A-10-2026-0003\",\"label\":\"A10-0003/2026\"}],\"@context\":[{\"data\":\"@graph\",\"@base\":\"https://data.europarl.europa.eu/\"},\"https://data.europarl.europa.eu/api/v2/context.jsonld\""
  },
  {
-  "url": "https://emm.newsbrief.eu/rss/rss?type=search&mode=advanced&atLeast=euro+digitale&language=it",
+  "url": "https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed?timeframe=one-week",
+  "accept": "application/atom+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "errore": "TimeoutError: The read operation timed out",
+  "secondi": 63.3
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fc%20(COUNT(%3Fs)%20AS%20%3Fn)%20WHERE%20%7B%3Fs%20a%20%3Fc%7D%20GROUP%20BY%20%3Fc%20ORDER%20BY%20DESC(%3Fn)%20LIMIT%2040&format=application%2Fsparql-results%2Bjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 403,
-  "byte": 0,
+  "stato": 200,
+  "byte": 7811,
+  "secondi": 6.6,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"c\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Classificazione\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"884899\" }}, { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Iniziativa\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"852430\" }}, { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Emendamento\" } , \"n\": { \"type\": \"typed-"
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%7D%20LIMIT%201&format=application%2Fjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 202,
   "secondi": 3.6,
   "captcha": false,
-  "inizio": ""
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic.rdf/aic1_00431_17\" }} ] } }"
  },
  {
-  "url": "https://emm.newsbrief.eu/NewsBrief/clusteredition/it/latest.html",
+  "url": "https://data.europa.eu/api/hub/search/search?q=standard%20eurobarometer%20economic&limit=3",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 24180,
-  "secondi": 4.4,
+  "byte": 393524,
+  "secondi": 3.9,
   "captcha": false,
-  "inizio": "<!doctype html> <html lang=\"en\" data-beasties-container> <head> <meta charset=\"utf-8\"> <title>EMM Public Website</title> <base href=\"./\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\"> <script defer=\"defer\" src=\"https://webtools.europa.eu/load.js?spa=1\" type=\"text/javascript\"></script> <!-- Map --> <script type=\"application/json\">{\"service\": \"map\", \"version\": \"3.0\", \"map\": {\"epsg\" : 3035}, \"config\" : { \"menu\": false }}</script> <style>:root{--ecl-color-primary:#0046ff;"
+  "inizio": "{\"result\":{\"count\":257466,\"results\":[{\"identifier\":[\"S3378_104_1_STD104_ENG\"],\"country\":{\"resource\":\"http://publications.europa.eu/resource/authority/continent/EUROPE\",\"label\":\"Europe\",\"id\":\"EUROPE\"},\"corporate-body-classification\":{\"resource\":\"http://publications.europa.eu/resource/authority/corporate-body-classification/DIR_GEN\",\"label\":{\"de\":\"Generaldirektion\",\"fi\":\"Pääosasto\",\"sv\":\"Generaldirektorat\",\"pt\":\"Direção-geral\",\"bg\":\"Генерална дирекция\",\"mt\":\"Direttorat ġenerali\",\"el\":\"Γενική διεύθυνση\",\"lt\":\"Generalinis direktoratas\",\"en\":\"Directorate-general"
  },
  {
-  "url": "https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?text=payment&language=EN&size=3",
+  "url": "https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?text=digital%20euro&language=EN&size=3",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 15217,
+  "byte": 8752,
   "secondi": 4.0,
   "captcha": false,
-  "inizio": "{\"exactMatch\":true,\"initiativeResultDtoPage\":{\"content\":[{\"id\":14849.0,\"initiativeStatus\":\"ACTIVE\",\"reference\":\"Ares(2025)7559650\",\"foreseenActType\":\"REG_IMPL\",\"shortTitle\":\"Implementing act on the format for the submission of information to bank account registers and for their interconnection\",\"snippet\":\"Commission and will facilitate swift access to information on bank, <span class=\\\"highlight\\\">payment</span>, crypto-asset, securities accounts and safe-deposit boxes.<b>...</b>BARIS). BARIS will enable swift access to information on bank, <span class=\\\"highlight\\\">payment</span>, crypto-asse"
- },
- {
-  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_mfir_m?geo=IT&lastTimePeriod=2",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 4614,
-  "secondi": 4.2,
-  "captcha": false,
-  "inizio": "{\"version\":\"2.0\",\"class\":\"dataset\",\"label\":\"Interest rates - monthly data\",\"source\":\"ESTAT\",\"updated\":\"2026-10-13T11:00:00+0200\",\"value\":{\"10\":3.98600,\"11\":4.36200},\"id\":[\"freq\",\"s_adj\",\"p_adj\",\"indic\",\"geo\",\"time\"],\"size\":[1,1,1,6,1,2],\"dimension\":{\"freq\":{\"label\":\"Time frequency\",\"category\":{\"index\":{\"M\":0},\"label\":{\"M\":\"Monthly\"}}},\"s_adj\":{\"label\":\"Seasonal adjustment\",\"category\":{\"index\":{\"NSA\":0},\"label\":{\"NSA\":\"Unadjusted data (i.e. neither seasonally adjusted nor calendar adjusted data)\"}}},\"p_adj\":{\"label\":\"Price adjustment\",\"category\":{\"index\":{\"NAP\":0},\"label\":{\"NAP\":\"Not applicable"
- },
- {
-  "url": "https://www.bis.org/doclist/cbspeeches.rss",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 65128,
-  "secondi": 3.7,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rdf:RDF xmlns=\"http://purl.org/rss/1.0/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:cb=\"http://www.cbwiki.net/wiki/index.php/Specification_1.1\" xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\" xmlns:taxo=\"http://purl.org/rss/1.0/modules/taxonomy/\" xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:g-core=\"http://base.google.c"
- },
- {
-  "url": "https://www.ecb.europa.eu/press/key/shared/data/all_ECB_speeches.csv",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 58364672,
-  "secondi": 6.5,
-  "captcha": false,
-  "inizio": "date|speakers|title|subtitle|contents 2026-09-30|Isabel Schnabel|Monetary policy in a world of overlapping shocks|Speech by Isabel Schnabel, Member of the Executive Board of the ECB, at the 8th Annual EC-EIB-ESM Capital Markets Seminar| SPEECH Monetary policy in a world of overlapping shocks Speech by Isabel Schnabel, Member of the Executive Board of the ECB, at the 8th Annual EC-EIB-ESM Capital Markets Seminar Luxembourg, 30 September 2026 Inflation is back and weighing once again on people’s everyday lives. Just as the euro area was putting the post-pandemic inflation surge behind it,"
- },
- {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDdl%3E%7D%20LIMIT%201&format=application%2Fsparql-results%2Bjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 186,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/ddl/25597\" }} ] } }"
- },
- {
-  "url": "https://www.ansa.it/sito/notizie/economia/economia_rss.xml",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 44508,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": "<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\"> <channel> <atom:link rel=\"self\" type=\"application/rss+xml\" href=\"https://www.ansa.it/sito/notizie/economia/economia_rss.xml\"></atom:link> <title>RSS di Economia - ANSA.it</title> <link>https://www.ansa.it/economia/index.html</link> <description>Updated every day - FOR PERSONAL USE ONLY</description> <language>it</language> <copyright>Copyright: (C) ANSA, https://www.ansa.it/sito/static/disclaimer.html</copyright> <item> <title><![CDATA[Upb, Pil 2026 intorno all'1%, risente del"
- },
- {
-  "url": "https://www.ilsole24ore.com/rss/finanza.xml",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 10744,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <rss version=\"2.0\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:sy=\"http://purl.org/rss/1.0/modules/syndication/\" xmlns:admin=\"http://webns.net/mvcb/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\" xmlns:atom=\"http://www.w3.org/2005/Atom\"> <channel> <title>Il Sole 24 ORE - Finanza</title> <link>https://www.ilsole24ore.com</link> <description>Il Sole 24 ORE - Finanza</description> <copyright>Copyright 2019 - IlSole24ORE.com</copyright> <language>it-IT</language> "
- },
- {
-  "url": "https://data.europa.eu/api/hub/search/search?q=eurobarometer&limit=1",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 17989,
-  "secondi": 3.3,
-  "captcha": false,
-  "inizio": "{\"result\":{\"count\":1191,\"results\":[{\"country\":{\"resource\":\"http://publications.europa.eu/resource/authority/continent/EUROPE\",\"label\":\"Europe\",\"id\":\"EUROPE\"},\"keywords\":[{\"language\":\"en\",\"id\":\"social-identity\",\"label\":\"Social identity\"},{\"language\":\"en\",\"id\":\"identity-threat\",\"label\":\"Identity threat\"},{\"language\":\"en\",\"id\":\"values\",\"label\":\"Values\"},{\"language\":\"en\",\"id\":\"european-union\",\"label\":\"European Union\"},{\"language\":\"en\",\"id\":\"populism\",\"label\":\"Populism\"}],\"catalog\":{\"id\":\"jrc\",\"description\":{\"sv\":\"Gemensamma forskningscentrumet\",\"el\":\"Κοινό Κέντρο Ερευνών\",\"sk\":\"S"
- },
- {
-  "url": "https://esploradati.istat.it/SDMXWS/rest/dataflow/IT1/all/latest?detail=allstubs",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 2282377,
-  "secondi": 15.5,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!--NSI Web Service v9.11.0.0--> <message:Structure xmlns:message=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message\" xmlns:structure=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure\" xmlns:common=\"http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common\"> <message:Header> <message:ID>IDREF1682</message:ID> <message:Test>false</message:Test> <message:Prepared>2026-10-23T12:52:36.2050855+02:00</message:Prepared> <message:Sender id=\"Unknown\" /> <message:Receiver id=\"Unknown\" /> </message:Header> <messa"
- },
- {
-  "url": "https://api.openalex.org/works?search=%22MiCA%22%20crypto&filter=from_publication_date:2026-01-01&per-page=1",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 10009,
-  "secondi": 0.3,
-  "captcha": false,
-  "inizio": "{\"meta\": {\"notice\": \"No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\\\"email\\\": \\\"<your user's email>\\\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt\", \"count\": 1195, \"db_response_time_ms\": 67, \"page\": 1, \"per_page\": 1, \"groups_count\": null, \"x_query\": {\"oql\": "
- },
- {
-  "url": "https://www.europarl.europa.eu/legislative-train/api/ping",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 202,
-  "byte": 0,
-  "secondi": 3.1,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://oeil.secure.europarl.europa.eu/oeil/en/search-procedure?searchText=payment",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 404,
-  "byte": 0,
-  "secondi": 3.8,
-  "captcha": false,
-  "inizio": ""
+  "inizio": "{\"exactMatch\":true,\"initiativeResultDtoPage\":{\"content\":[{\"id\":13429.0,\"initiativeStatus\":\"ACTIVE\",\"reference\":\"Ares(2022)2272159\",\"foreseenActType\":\"PROP_REG\",\"shortTitle\":\"The scope and effects of legal tender of euro banknotes and coins\",\"snippet\":\"enshrine in secondary legislation the meaning of legal tender of <span class=\\\"highlight\\\">euro</span> cash. Currently this is only set out in a judgment of 2021 of<b>...</b>legal tender of <span class=\\\"highlight\\\">euro</span> banknotes and coins. The initiative will clarify the legal tender status of <span class=\\\"highlight\\\">euro</span> cash, "
  }
 ]
