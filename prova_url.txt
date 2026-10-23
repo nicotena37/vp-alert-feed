@@ -1,18 +1,8 @@
-https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%20digitale%22%20sourcecountry:IT&mode=timelinevol&format=json&timespan=6months
-https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Digital_euro/monthly/20250101/20261001
-https://api.openalex.org/works?search=%22digital%20euro%22&group_by=publication_year
-https://api.crossref.org/works?query=%22digital+euro%22&rows=0&filter=from-pub-date:2026-01-01
-https://emm.newsbrief.eu/rss/rss?type=search&mode=advanced&atLeast=euro+digitale&language=it
-https://emm.newsbrief.eu/NewsBrief/clusteredition/it/latest.html
-https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?text=payment&language=EN&size=3
-https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_mfir_m?geo=IT&lastTimePeriod=2
-https://www.bis.org/doclist/cbspeeches.rss
-https://www.ecb.europa.eu/press/key/shared/data/all_ECB_speeches.csv
-https://dati.senato.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDdl%3E%7D%20LIMIT%201&format=application%2Fsparql-results%2Bjson
-https://www.ansa.it/sito/notizie/economia/economia_rss.xml
-https://www.ilsole24ore.com/rss/finanza.xml
-https://data.europa.eu/api/hub/search/search?q=eurobarometer&limit=1
-https://esploradati.istat.it/SDMXWS/rest/dataflow/IT1/all/latest?detail=allstubs
-https://api.openalex.org/works?search=%22MiCA%22%20crypto&filter=from_publication_date:2026-01-01&per-page=1
-https://www.europarl.europa.eu/legislative-train/api/ping
-https://oeil.secure.europarl.europa.eu/oeil/en/search-procedure?searchText=payment
+https://data.europarl.europa.eu/api/v2/parliamentary-questions?year=2026&format=application%2Fld%2Bjson&limit=3
+https://data.europarl.europa.eu/api/v2/speeches?year=2026&format=application%2Fld%2Bjson&limit=3
+https://data.europarl.europa.eu/api/v2/plenary-documents?year=2026&format=application%2Fld%2Bjson&limit=3
+https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed?timeframe=one-week | application/atom+xml
+https://dati.senato.it/sparql?query=SELECT%20%3Fc%20(COUNT(%3Fs)%20AS%20%3Fn)%20WHERE%20%7B%3Fs%20a%20%3Fc%7D%20GROUP%20BY%20%3Fc%20ORDER%20BY%20DESC(%3Fn)%20LIMIT%2040&format=application%2Fsparql-results%2Bjson
+https://dati.camera.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%7D%20LIMIT%201&format=application%2Fjson
+https://data.europa.eu/api/hub/search/search?q=standard%20eurobarometer%20economic&limit=3
+https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?text=digital%20euro&language=EN&size=3
