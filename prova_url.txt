@@ -1,8 +1,11 @@
-https://data.europarl.europa.eu/api/v2/parliamentary-questions?year=2026&format=application%2Fld%2Bjson&limit=3
-https://data.europarl.europa.eu/api/v2/speeches?year=2026&format=application%2Fld%2Bjson&limit=3
-https://data.europarl.europa.eu/api/v2/plenary-documents?year=2026&format=application%2Fld%2Bjson&limit=3
-https://data.europarl.europa.eu/api/v2/parliamentary-questions/feed?timeframe=one-week | application/atom+xml
-https://dati.senato.it/sparql?query=SELECT%20%3Fc%20(COUNT(%3Fs)%20AS%20%3Fn)%20WHERE%20%7B%3Fs%20a%20%3Fc%7D%20GROUP%20BY%20%3Fc%20ORDER%20BY%20DESC(%3Fn)%20LIMIT%2040&format=application%2Fsparql-results%2Bjson
-https://dati.camera.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%7D%20LIMIT%201&format=application%2Fjson
-https://data.europa.eu/api/hub/search/search?q=standard%20eurobarometer%20economic&limit=3
-https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?text=digital%20euro&language=EN&size=3
+https://data.europarl.europa.eu/api/v2/parliamentary-questions/E-10-2026-000002?format=application%2Fld%2Bjson
+https://data.europarl.europa.eu/api/v2/parliamentary-questions?year=2026&format=application%2Fld%2Bjson&offset=4000&limit=2
+https://data.europarl.europa.eu/api/v2/speeches?sitting-date=2026-10-08&sitting-date-end=2026-10-09&format=application%2Fld%2Bjson&limit=5
+https://data.europarl.europa.eu/api/v2/meetings?year=2026&format=application%2Fld%2Bjson&limit=3&offset=0
+https://publications.europa.eu/webapi/rdf/sparql?query=PREFIX%20cdm%3A%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23%3E%0ASELECT%20%3Fw%20%3Fd%20%3Ft%20WHERE%20%7B%20%3Fw%20cdm%3Awork_date_document%20%3Fd%20.%20FILTER%28%3Fd%20%3E%3D%20%222026-10-12%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%20%26%26%20%3Fd%20%3C%3D%20%222026-10-18%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%29%0A%3Fe%20cdm%3Aexpression_belongs_to_work%20%3Fw%20%3B%20cdm%3Aexpression_uses_language%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Flanguage%2FITA%3E%20%3B%20cdm%3Aexpression_title%20%3Ft%20.%20%7D%20LIMIT%203000&format=application%2Fsparql-results%2Bjson
+https://dati.senato.it/sparql?query=SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FSindacatoIspettivo%3E%20.%20%3Fs%20%3Fp%20%3Fo%20%7D%20ORDER%20BY%20DESC%28%3Fs%29%20LIMIT%2060&format=application%2Fsparql-results%2Bjson
+https://dati.senato.it/sparql?query=SELECT%20%3Fc%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fc%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FClassificazione%3E%20.%20%3Fc%20%3Fp%20%3Fo%20%7D%20LIMIT%2020&format=application%2Fsparql-results%2Bjson
+https://dati.camera.it/sparql?query=SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic%3E%20%3B%20%3Fp%20%3Fo%20.%20FILTER%28CONTAINS%28STR%28%3Fs%29%2C%20%22_19%22%29%29%20%7D%20LIMIT%2060&format=application%2Fjson
+https://ec.europa.eu/info/law/better-regulation/brpapi/groupInitiatives/13429
+https://ec.europa.eu/info/law/better-regulation/brpapi/searchInitiatives?topic=FISMA&feedbackStatus=OPEN&language=EN&size=5
+https://api.openalex.org/works?search=%22digital%20euro%22&filter=from_publication_date:2026-09-01,to_publication_date:2026-10-18&per-page=1
