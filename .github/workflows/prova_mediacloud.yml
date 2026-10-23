@@ -1,0 +1,34 @@
+name: Prova Media Cloud
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["prova_mediacloud.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: leggi-feed
+  cancel-in-progress: false
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet mediacloud
+      - run: python prova_mediacloud.py
+        env:
+          MEDIACLOUD_API_KEY: ${{ secrets.MEDIACLOUD_API_KEY }}
+      - run: |
+          git config user.name "vp-alert-feed"
+          git config user.email "vp-alert-feed@users.noreply.github.com"
+          git add dati/prova_mediacloud.json
+          git diff --cached --quiet || git commit -m "Prova Media Cloud $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --quiet || true
+          git push
