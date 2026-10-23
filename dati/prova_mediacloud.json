@@ -2,10 +2,163 @@
  "chiave_presente": true,
  "lunghezza": 40,
  "solo_esadecimale": true,
- "spazi_o_a_capo": true,
+ "spazi_o_a_capo": false,
  "inizia_con_token": false,
- "impronta": "2d32ea730c71",
- "profilo_http": 401,
- "profilo_risposta": "{\"detail\":\"Invalid token.\"}",
- "errore": "APIResponseError: API Server Error 401. MESSAGE: None. PARAMS: None"
+ "impronta": "6a622ef625a9",
+ "profilo_http": 200,
+ "profilo_risposta": "ok",
+ "profilo_ok": true,
+ "collezioni_italia": [
+  {
+   "id": 39537792,
+   "nome": "Italy - 2018 election study",
+   "fonti": 1092
+  },
+  {
+   "id": 34412372,
+   "nome": "Italy - National",
+   "fonti": 144
+  },
+  {
+   "id": 38380117,
+   "nome": "Italy - State & Local",
+   "fonti": 110
+  },
+  {
+   "id": 38380118,
+   "nome": "Lombardia, Italy - State & Local",
+   "fonti": 46
+  },
+  {
+   "id": 38380136,
+   "nome": "Sardegna, Italy - State & Local",
+   "fonti": 16
+  },
+  {
+   "id": 38380120,
+   "nome": "Lazio, Italy - State & Local",
+   "fonti": 13
+  },
+  {
+   "id": 38380122,
+   "nome": "Piemonte, Italy - State & Local",
+   "fonti": 13
+  },
+  {
+   "id": 38380128,
+   "nome": "Campania, Italy - State & Local",
+   "fonti": 10
+  },
+  {
+   "id": 38380140,
+   "nome": "Toscana, Italy - State & Local",
+   "fonti": 8
+  },
+  {
+   "id": 38380146,
+   "nome": "Veneto, Italy - State & Local",
+   "fonti": 8
+  },
+  {
+   "id": 38380130,
+   "nome": "Liguria, Italy - State & Local",
+   "fonti": 5
+  },
+  {
+   "id": 38380134,
+   "nome": "Puglia, Italy - State & Local",
+   "fonti": 4
+  },
+  {
+   "id": 38380126,
+   "nome": "Calabria, Italy - State & Local",
+   "fonti": 4
+  },
+  {
+   "id": 38380138,
+   "nome": "Sicilia, Italy - State & Local",
+   "fonti": 4
+  },
+  {
+   "id": 38380132,
+   "nome": "Marche, Italy - State & Local",
+   "fonti": 2
+  },
+  {
+   "id": 38380142,
+   "nome": "Umbria, Italy - State & Local",
+   "fonti": 2
+  },
+  {
+   "id": 38380144,
+   "nome": "Valle d'Aosta, Italy - State & Local",
+   "fonti": 2
+  },
+  {
+   "id": 38380124,
+   "nome": "Abruzzo, Italy - State & Local",
+   "fonti": 1
+  }
+ ],
+ "collezione_usata": "Italy - National",
+ "conteggi": {
+  "\"euro digitale\"": {
+   "relevant": 38,
+   "total": 525492
+  },
+  "\"antiriciclaggio\"": {
+   "relevant": 165,
+   "total": 525492
+  },
+  "\"Basilea 3\" OR \"Basilea III\"": {
+   "relevant": 0,
+   "total": 525492
+  },
+  "\"MiCA\" OR \"cripto-attività\"": {
+   "relevant": 1046,
+   "total": 525492
+  }
+ },
+ "serie_euro_digitale_ultimi": [
+  {
+   "data": "2026-10-13",
+   "n": 0
+  },
+  {
+   "data": "2026-10-14",
+   "n": 3
+  },
+  {
+   "data": "2026-10-15",
+   "n": 0
+  },
+  {
+   "data": "2026-10-16",
+   "n": 0
+  },
+  {
+   "data": "2026-10-17",
+   "n": 0
+  },
+  {
+   "data": "2026-10-18",
+   "n": 0
+  },
+  {
+   "data": "2026-10-19",
+   "n": 0
+  },
+  {
+   "data": "2026-10-20",
+   "n": 0
+  },
+  {
+   "data": "2026-10-21",
+   "n": 1
+  },
+  {
+   "data": "2026-10-22",
+   "n": 0
+  }
+ ]
 }
