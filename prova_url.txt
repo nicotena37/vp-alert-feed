@@ -1,6 +1,10 @@
-https://www.eba.europa.eu/news-press/news/rss.xml
-https://eba.europa.eu/rss.xml
-https://www.eba.europa.eu/rss.xml
-https://www.esma.europa.eu/rss.xml
-https://www.esma.europa.eu/press-news/esma-news
-https://www.bancaditalia.it/util/index.rss.html?lingua=it
+https://api.gdeltproject.org/api/v2/doc/doc?query=%22digital%20euro%22&mode=timelinevol&format=json&timespan=3months
+https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%20digitale%22%20sourcelang:italian&mode=artlist&format=json&maxrecords=5&timespan=1month
+https://trends.google.com/trends/api/dailytrends?hl=it&tz=-120&geo=IT&ns=15
+https://trends.google.com/trends/explore?geo=IT&q=euro%20digitale
+https://news.google.com/rss/search?q=%22euro+digitale%22&hl=it&gl=IT&ceid=IT:it
+https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Euro_digitale/daily/20260901/20261022
+https://publications.europa.eu/webapi/rdf/sparql?query=SELECT%20(COUNT(*)%20AS%20%3Fn)%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23legislation_secondary%3E%7D%20LIMIT%201&format=application%2Fsparql-results%2Bjson
+https://data.europarl.europa.eu/api/v2/procedures?process-type=COD&year=2026&format=application%2Fld%2Bjson&limit=3
+https://dati.camera.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fatto%3E%7D%20LIMIT%201&format=application%2Fjson
+https://data-api.ecb.europa.eu/service/data/MIR/M.IT.B.A2C.AM.R.A.2250.EUR.N?lastNObservations=3&format=jsondata
