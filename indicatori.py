@@ -383,7 +383,7 @@ def calcola(tutti: dict[tuple, dict], conteggi: list[dict], oggi: date) -> None:
                 v = per_mis.get((k, tema, mis), 0)
                 attiva = any(per_mis.get((s, tema, mis), 0) for s in settimane)
                 if len(prec) >= 3 and attiva:
-                    r = (v + 1) / (sum(prec) / len(prec) + 1)
+                    r = (v + 3) / (sum(prec) / len(prec) + 3)          # +3: pochi casi non fanno impennare l indice
                     rapporti.append(r)
                     dett[mis] = f"{v} ({round(100 * r)})"
                 else:
