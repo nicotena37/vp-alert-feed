@@ -1,63 +1,102 @@
 [
  {
-  "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22digital%20euro%22&mode=timelinevol&format=json&timespan=3months",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 10083,
-  "secondi": 3.5,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description>Stay abreast of our work</description> <language>en</language> <item> <title>The ​EBA extends some consultation deadlines due to website maintenance​ </title> <link>https://www.eba.europa.eu/publications-and-media/press-releases/eba-extends-some-consultation-deadlines-due-website-maintenance</link> <description>On 2"
- },
- {
-  "url": "https://eba.europa.eu/rss.xml",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 20360,
-  "secondi": 3.7,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description/> <language>en</language> <item> <title>Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation</title> <link>https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation</link> <description> &lt;span&gt;Call for papers - 13th "
- },
- {
-  "url": "https://www.eba.europa.eu/rss.xml",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 20360,
-  "secondi": 0.8,
-  "captcha": false,
-  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.eba.europa.eu/\"> <channel> <title>European Banking Authority</title> <link>https://www.eba.europa.eu/</link> <description/> <language>en</language> <item> <title>Call for papers - 13th Annual Research Workshop - Boundaries of Banking Regulation</title> <link>https://www.eba.europa.eu/publications-and-media/events/call-papers-13th-annual-research-workshop-boundaries-banking-regulation</link> <description> &lt;span&gt;Call for papers - 13th "
- },
- {
-  "url": "https://www.esma.europa.eu/rss.xml",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 403,
+  "stato": 429,
   "byte": 0,
-  "secondi": 3.1,
+  "secondi": 14.5,
   "captcha": false,
   "inizio": ""
  },
  {
-  "url": "https://www.esma.europa.eu/press-news/esma-news",
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=%22euro%20digitale%22%20sourcelang:italian&mode=artlist&format=json&maxrecords=5&timespan=1month",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 403,
+  "stato": 429,
   "byte": 0,
-  "secondi": 3.0,
+  "secondi": 14.1,
   "captcha": false,
   "inizio": ""
  },
  {
-  "url": "https://www.bancaditalia.it/util/index.rss.html?lingua=it",
+  "url": "https://trends.google.com/trends/api/dailytrends?hl=it&tz=-120&geo=IT&ns=15",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 3.3,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://trends.google.com/trends/explore?geo=IT&q=euro%20digitale",
   "accept": "",
   "robots_ok": false,
   "motivo": "vietato dal robots.txt del sito"
+ },
+ {
+  "url": "https://news.google.com/rss/search?q=%22euro+digitale%22&hl=it&gl=IT&ceid=IT:it",
+  "accept": "",
+  "robots_ok": false,
+  "motivo": "vietato dal robots.txt del sito"
+ },
+ {
+  "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Euro_digitale/daily/20260901/20261022",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 7706,
+  "secondi": 3.1,
+  "captcha": false,
+  "inizio": "{\"items\":[{\"project\":\"it.wikipedia\",\"article\":\"Euro_digitale\",\"granularity\":\"daily\",\"timestamp\":\"2026090100\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":21},{\"project\":\"it.wikipedia\",\"article\":\"Euro_digitale\",\"granularity\":\"daily\",\"timestamp\":\"2026090200\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":25},{\"project\":\"it.wikipedia\",\"article\":\"Euro_digitale\",\"granularity\":\"daily\",\"timestamp\":\"2026090300\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":22},{\"project\":\"it.wikipedia\",\"article\":\"Euro_digitale\",\"granularity\":\"daily\",\"timestamp\":\"2026090400\",\"access\":\"all-access\",\"agent\":\"user\",\"views\":23"
+ },
+ {
+  "url": "https://publications.europa.eu/webapi/rdf/sparql?query=SELECT%20(COUNT(*)%20AS%20%3Fn)%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23legislation_secondary%3E%7D%20LIMIT%201&format=application%2Fsparql-results%2Bjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 221,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"n\": { \"type\": \"literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"177925\" }} ] } }"
+ },
+ {
+  "url": "https://data.europarl.europa.eu/api/v2/procedures?process-type=COD&year=2026&format=application%2Fld%2Bjson&limit=3",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 507,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": "{\"data\":[{\"id\":\"eli/dl/proc/2026-0010\",\"type\":\"Process\",\"process_id\":\"2026-0010\",\"process_type\":\"COD\",\"label\":\"2026/0010(COD)\"},{\"id\":\"eli/dl/proc/2026-0045\",\"type\":\"Process\",\"process_id\":\"2026-0045\",\"process_type\":\"COD\",\"label\":\"2026/0045(COD)\"},{\"id\":\"eli/dl/proc/2026-0165\",\"type\":\"Process\",\"process_id\":\"2026-0165\",\"process_type\":\"COD\",\"label\":\"2026/0165(COD)\"}],\"searchResults\":{\"hits\":[{\"id\":\"eli/dl/proc/2026-0010\"},{\"id\":\"eli/dl/proc/2026-0045\"},{\"id\":\"eli/dl/proc/2026-0165\"}]},\"meta\":{\"total\":54}}"
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fatto%3E%7D%20LIMIT%201&format=application%2Fjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 502,
+  "byte": 0,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://data-api.ecb.europa.eu/service/data/MIR/M.IT.B.A2C.AM.R.A.2250.EUR.N?lastNObservations=3&format=jsondata",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 4641,
+  "secondi": 5.9,
+  "captcha": false,
+  "inizio": "{\"header\":{\"id\":\"fb10930f-5220-4679-87be-17420dc876a4\",\"test\":false,\"prepared\":\"2026-10-23T11:42:06.851+02:00\",\"sender\":{\"id\":\"ECB\"}},\"dataSets\":[{\"action\":\"Replace\",\"validFrom\":\"2026-10-23T11:42:06.851+02:00\",\"series\":{\"0:0:0:0:0:0:0:0:0:0\":{\"attributes\":[0,null,0,null,null,null,null,null,null,null,null,null,0,null,0,0,0,0,0],\"observations\":{\"0\":[3.54,0,0,null,null],\"1\":[3.49,0,0,null,null],\"2\":[3.58,0,0,null,null]}}}}],\"structure\":{\"links\":[{\"title\":\"MFI Interest Rate Statistics\",\"rel\":\"dataflow\",\"href\":\"https://data-api.ecb.europa.eu:443/service/dataflow/ECB/MIR/1.0\"}],\"name\":\"MFI Interest "
  }
 ]
