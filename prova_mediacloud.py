@@ -11,7 +11,8 @@ import re, requests
 out = {"chiave_presente": bool(chiave), "lunghezza": len(chiave),
        "solo_esadecimale": bool(re.fullmatch(r"[0-9a-fA-F]+", chiave)),
        "spazi_o_a_capo": bool(re.search(r"\s", os.environ.get("MEDIACLOUD_API_KEY", ""))),
-       "inizia_con_token": chiave.lower().startswith("token")}
+       "inizia_con_token": chiave.lower().startswith("token"),
+       "impronta": __import__("hashlib").sha256(chiave.encode()).hexdigest()[:12]}
 r = requests.get("https://search.mediacloud.org/api/auth/profile", headers={"Authorization": f"Token {chiave}"}, timeout=30)
 out["profilo_http"] = r.status_code
 out["profilo_risposta"] = r.text[:200] if r.status_code != 200 else "ok"
