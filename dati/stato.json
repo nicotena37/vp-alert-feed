@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-26T10:47:05+00:00",
+ "letto_il": "2026-10-26T21:56:41+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,14 +26,20 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 11,
+   "notizie": 15,
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 6,
+   "feed_ok": 1,
    "feed_totali": 6,
-   "notizie": 96,
-   "allarmi": []
+   "notizie": 60,
+   "allarmi": [
+    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
+    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
+    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+    "Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
+    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
+   ]
   },
   "MEF": {
    "feed_ok": 2,
@@ -92,15 +98,15 @@
    "allarmi": []
   },
   "ACN": {
-   "feed_ok": 1,
-   "feed_totali": 1,
-   "notizie": 50,
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 80,
    "allarmi": []
   },
   "AGCM": {
-   "feed_ok": 1,
-   "feed_totali": 1,
-   "notizie": 14,
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 24,
    "allarmi": []
   },
   "COVIP": {
@@ -127,11 +133,13 @@
   },
   "ESMA": {
    "feed_ok": 0,
-   "feed_totali": 2,
+   "feed_totali": 4,
    "notizie": 0,
    "allarmi": [
     "ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
-    "ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library"
+    "ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library",
+    "ESMA - Q&A (ultime risposte): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all",
+    "ESMA - Q&A (pagina 2): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all?page=1"
    ]
   },
   "BCE - Vigilanza bancaria": {
@@ -159,12 +167,10 @@
    "allarmi": []
   },
   "Parlamento europeo": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "Parlamento UE - testi approvati (dati aperti): feed non leggibile (ValueError: HTTP 500) - https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week"
-   ]
+   "notizie": 137,
+   "allarmi": []
   },
   "Consiglio UE": {
    "feed_ok": 1,
@@ -195,7 +201,51 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 8,
+   "notizie": 23,
+   "allarmi": []
+  },
+  "AMLA": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 41,
+   "allarmi": []
+  },
+  "Commissione europea - FISMA": {
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 90,
+   "allarmi": []
+  },
+  "ABI": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 10,
+   "allarmi": []
+  },
+  "Assilea": {
+   "feed_ok": 0,
+   "feed_totali": 1,
+   "notizie": 0,
+   "allarmi": [
+    "Assilea - comunicati: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do"
+   ]
+  },
+  "ICMA": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 187,
+   "allarmi": []
+  },
+  "IFRS": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 28,
+   "allarmi": []
+  },
+  "ISDA": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 20,
    "allarmi": []
   }
  }

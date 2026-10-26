@@ -1,0 +1,19 @@
+{
+"nome_file": "vpalert_rss_Assilea_2026-10-26T22-02-07.json",
+"sito": "Assilea",
+"origine": "github-actions",
+"letto_il": "2026-10-26T22:02:07Z",
+"feed": [
+{
+"nome": "Assilea - comunicati",
+"url": "https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: nessuna voce trovata nella pagina (struttura cambiata?)"
+}
+],
+"allarmi": [
+"Assilea - comunicati: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do"
+],
+"notizie": []
+}

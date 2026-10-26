@@ -1,17 +1,67 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-26T10-48-46.json",
+"nome_file": "vpalert_rss_ACN_2026-10-26T21-58-23.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-26T10:48:46Z",
+"letto_il": "2026-10-26T21:58:23Z",
 "feed": [
 {
 "nome": "ACN - notizie",
 "url": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
 "voci": 50
+},
+{
+"nome": "ACN - comunicazione (notizie dell'Agenzia)",
+"url": "https://www.acn.gov.it/portale/comunicazione",
+"voci": 10
+},
+{
+"nome": "ACN - NIS notizie (FAQ, determine, modalità)",
+"url": "https://www.acn.gov.it/portale/nis/notizie-ed-eventi",
+"voci": 20
 }
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Siemens: risolta vulnerabilità in Mendix SAML",
+"link": "https://www.acn.gov.it/portale/w/siemens-risolta-vulnerabilita-in-mendix-saml-1",
+"data_originale": "Mon, 26 Oct 2026 14:29:42 GMT",
+"data": "2026-10-26",
+"descrizione": "Aggiornamenti di sicurezza Siemens sanano una vulnerabilità con gravità \"alta\" presente in Mendix SAML, modulo utilizzato per implementare l'autenticazione federata tramite SAML 2.0 e funzionalità di Single Sign-On (SSO) nelle applicazioni sviluppate con la piattaforma low-code Mendix. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "IceWarp Server: aggiornamenti e mitigazioni per le vulnerabilità \"PHP2Shell\"",
+"link": "https://www.acn.gov.it/portale/w/icewarp-server-aggiornamenti-e-mitigazioni-per-le-vulnerabilita-php2shell-",
+"data_originale": "Mon, 26 Oct 2026 14:20:18 GMT",
+"data": "2026-10-26",
+"descrizione": "Disponibili pacchetti di aggiornamento e istruzioni di mitigazione per IceWarp Server, suite di posta elettronica aziendale e collaborazione, al fine di fronteggiare le vulnerabilità critiche note come \"PHP2Shell\" (CVE-2026-109618, CVE-2026-109619 e CVE-2026-115560) presenti nell'interprete PHP integrato nel prodotto."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Node.js: risolte molteplici vulnerabilità",
+"link": "https://www.acn.gov.it/portale/w/node.js-risolte-molteplici-vulnerabilita-1",
+"data_originale": "Wed, 21 Oct 2026 13:23:38 GMT",
+"data": "2026-10-21",
+"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 10 vulnerabilità, di cui 4 con gravità “alta”, in Node.js, noto software open source per l’esecuzione di codice Javascript. Tra queste si evidenziano la CVE-2026-111497 e la CVE-2026-105482, per le quali risultano disponibili dei Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Google: disponibile PoC per lo sfruttamento della CVE-2026-111497",
+"link": "https://www.acn.gov.it/portale/w/google-disponibile-poc-per-lo-sfruttamento-della-cve-2026-111497",
+"data_originale": "Mon, 26 Oct 2026 13:10:24 GMT",
+"data": "2026-10-26",
+"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-111497, presente nel decoder di Google Brotli, libreria open source ampiamente impiegata per la compressione e decompressione dei contenuti web e incorporata in numerosi prodotti e framework software, tra cui Node.js, DuckDB, Apache Arrow, .NET e diverse librerie Python."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -246,16 +296,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Node.js: risolte molteplici vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/node.js-risolte-molteplici-vulnerabilita-1",
-"data_originale": "Wed, 21 Oct 2026 13:23:38 GMT",
-"data": "2026-10-21",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 10 vulnerabilità, di cui 4 con gravità “alta”, in Node.js, noto software open source per l’esecuzione di codice Javascript. Tali vulnerabilità, qualora sfruttate, potrebbero permettere ad un utente malintenzionato l'elusione dei meccanismi di sicurezza e/o la compromissione della disponibilità dei servizi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolte vulnerabilità in prodotti SolarWinds",
 "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-solarwinds",
 "data_originale": "Wed, 21 Oct 2026 10:44:13 GMT",
@@ -484,33 +524,303 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "BeyondTrust: rilevato sfruttamento in rete della CVE-2026-102764",
-"link": "https://www.acn.gov.it/portale/w/beyondtrust-rilevato-sfruttamento-in-rete-della-cve-2026-102764",
-"data_originale": "Fri, 16 Oct 2026 08:51:08 GMT",
-"data": "2026-10-16",
-"descrizione": "BeyondTrust ha rilevato lo sfruttamento in rete di una vulnerabilità con gravità “critica”, identificata tramite la CVE-2026-102764, in Remote Support, soluzione enterprise di assistenza remota."
+"titolo": "Online l’Operational summary di ACN con i dati e gli indicatori della minaccia cyber in Italia",
+"link": "https://www.acn.gov.it/portale/web/guest/-/online-l-operational-summary-di-acn-con-i-dati-e-gli-indicatori-della-minaccia-cyber-in-italia-1",
+"data_originale": "23/10/2026",
+"data": "2026-10-23",
+"descrizione": "News - 23 Ottobre 2026 Nel numero di settembre: in aumento eventi e incidenti cyber. DDoS, compromissione e-mail e phishing le minacce prevalenti CSIRT Italia Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti JetBrains",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-3",
-"data_originale": "Fri, 16 Oct 2026 10:05:19 GMT",
-"data": "2026-10-16",
-"descrizione": "JetBrains ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità di sicurezza, di cui 1 con gravità \"critica\" e 4 con gravità “alta”, in diversi prodotti. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere i meccanismi di sicurezza, accedere a informazioni sensibili ed eseguire codice arbitrario remoto sui sistemi interessati."
+"titolo": "ACN semplifica la registrazione NIS 2027",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-semplifica-la-registrazione-nis-2027",
+"data_originale": "23/10/2026",
+"data": "2026-10-23",
+"descrizione": "News - 23 Ottobre 2026 Aggiornata la determina che definisce il percorso di accreditamento alla piattaforma NIS Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-80",
-"data_originale": "Fri, 16 Oct 2026 09:59:24 GMT",
-"data": "2026-10-16",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 10 nuove vulnerabilità di sicurezza, di cui 1 con gravità “critica” e 6 con gravità “alta”."
+"titolo": "ACN partecipa al primo Dialogo cyber Italia-Albania",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-partecipa-al-primo-dialogo-cyber-italia-albania",
+"data_originale": "22/10/2026",
+"data": "2026-10-22",
+"descrizione": "News - 22 Ottobre 2026 Cooperazione digitale e sicurezza cibernetica europea: a Roma, Italia e Albania fanno il punto sull'attuale panorama cyber Cybercrime Resilienza cibernetica ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "Bruno Frattasi: «Vigileremo sui giochi»",
+"link": "https://www.acn.gov.it/portale/web/guest/-/bruno-frattasi-vigileremo-sui-giochi-",
+"data_originale": "09/03/2026",
+"data": "2026-03-09",
+"descrizione": "Intervista - 09 Marzo 2026 Paralimpiadi oggi al via. Il direttore di ACN tra sicurezza online e nuove applicazioni dell'AI anche nello sport: «Ora sappiamo reagire ai rischi digitali» Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "Così si difende l'Italia",
+"link": "https://www.acn.gov.it/portale/web/guest/-/cosi-si-difende-l-italia",
+"data_originale": "03/01/2026",
+"data": "2026-01-03",
+"descrizione": "Intervista - 03 Gennaio 2026 Dalla guerra ibrida alla nuova direttiva europea, nello spazio digitale sta crescendo il ruolo dei privati e dell'intelligenza artificiale. Parla Frattasi, direttore dell'Agenzia per la Cybersicurezza Nazionale Cybersicurezza ACN Intelligenza artificiale Sicurezza"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "La risposta dello Stato contro i rischi digitali",
+"link": "https://www.acn.gov.it/portale/web/guest/-/la-risposta-dello-stato-contro-i-rischi-digitali",
+"data_originale": "27/11/2025",
+"data": "2025-11-27",
+"descrizione": "Intervista - 27 Novembre 2025 Intervista al prefetto Bruno Frattasi, Direttore Generale dell'Acn, su investimenti, minacce (ransomware e DDos) e difesa nazionale, incluse le Pmi e l'integrazione civile-militare PMI Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "L’ACN invita la comunità digitale e gli hacker etici a segnalare tutte le vulnerabilità \"Zero Day\"",
+"link": "https://www.acn.gov.it/portale/web/guest/-/l-acn-invita-la-comunita-digitale-e-gli-hacker-etici-a-segnalare-tutte-le-vulnerabilita-zero-day-",
+"data_originale": "07/10/2026",
+"data": "2026-10-07",
+"descrizione": "Comunicato stampa - 07 Ottobre 2026 Il Direttore Generale Acn, Andrea Quacivi, ha adottato la “Politica Nazionale di divulgazione coordinata delle vulnerabilità (CVD)”: “Si consolida un modello di collaborazione tra istituzioni, ricercatori di sicurezza e operatori del settore per il rafforzamento complessivo della resilienza dell’ecosistema digitale nazionale” CSIRT Italia NIS Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "Le nuove strategie sull’intelligenza artificiale e la gestione delle vulnerabilità zero day Incontro a Roma tra Andrea Quacivi (ACN) e Juhan Lepassaar (ENISA)",
+"link": "https://www.acn.gov.it/portale/web/guest/-/le-nuove-strategie-sull-intelligenza-artificiale-e-la-gestione-delle-vulnerabilita-zero-day-incontro-a-roma-tra-andrea-quacivi-acn-e-juhan-lepassaar-enisa-",
+"data_originale": "02/10/2026",
+"data": "2026-10-02",
+"descrizione": "Comunicato stampa - 02 Ottobre 2026 ENISA NIS ACN Intelligenza artificiale"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "Transizione alla crittografia post-quantistica: call to action del Gruppo di lavoro G7 sulla cybersicurezza",
+"link": "https://www.acn.gov.it/portale/web/guest/-/transizione-alla-crittografia-post-quantistica-call-to-action-per-i-settori-pubblico-e-privato-dall-anssi-e-partner-g7",
+"data_originale": "03/09/2026",
+"data": "2026-09-03",
+"descrizione": "Comunicato stampa - 03 Settembre 2026 ACN G7 Cybersecurity"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
+"titolo": "Scopri di più su Presentazione dell'Agenda di Ricerca e Innovazione per la cybersicurezza",
+"link": "https://www.acn.gov.it/portale/web/guest/-/presentazione-dell-agenda-di-ricerca-e-innovazione-per-la-cybersicurezza",
+"data_originale": "23/01/2026",
+"data": "2026-01-23",
+"descrizione": "23 Gennaio 2026 - ore 11.00 - 12.00 Sede dell'Agenzia per la cybersicurezza nazionale Presentazione dell'Agenda di Ricerca e Innovazione per la cybersicurezza Aggiornamento 2026"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Le novità per i soggetti NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/le-novita-per-i-soggetti-nis",
+"data_originale": "18/09/2026",
+"data": "2026-09-18",
+"descrizione": "News - 18 Settembre 2026 Aggiornato l’elenco, si avvia la consultazione delle misure di sicurezza rafforzate Normativa NIS NIS ACN Cybersecurity"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Aggiornate le FAQ ACN sulle misure di sicurezza per la supply chain dei soggetti NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/aggiornate-le-faq-acn-sulle-misure-di-sicurezza-per-la-supply-chain-dei-soggetti-nis",
+"data_originale": "24/07/2026",
+"data": "2026-07-24",
+"descrizione": "News - 24 Luglio 2026 L'Agenzia per la Cybersicurezza Nazionale ha pubblicato nuovi chiarimenti interpretativi sul processo e i requisiti di sicurezza da implementare per proteggere la sicurezza della catena di approvvigionamento dei soggetti NIS 2, con l'obiettivo di agevolarne l'applicazione da parte dei soggetti interessati Normativa NIS NIS ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Aggiornate le FAQ ACN sugli obblighi degli organi di amministrazione e direttivi dei soggetti NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/aggiornate-le-faq-acn-sugli-obblighi-degli-organi-di-amministrazione-e-direttivi-dei-soggetti-nis",
+"data_originale": "14/07/2026",
+"data": "2026-07-14",
+"descrizione": "News - 14 Luglio 2026 L'Agenzia per la Cybersicurezza Nazionale ha pubblicato nuovi chiarimenti interpretativi sulla governance prevista dalla normativa NIS 2, con l'obiettivo di agevolarne l'applicazione da parte dei soggetti interessati Normativa NIS NIS ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS, pubblicate le modalità per l’elencazione e la categorizzazione delle attività e dei servizi",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-pubblicate-le-modalita-per-l-elencazione-e-la-categorizzazione-delle-attivita-e-dei-servizi",
+"data_originale": "24/04/2026",
+"data": "2026-04-24",
+"descrizione": "News - 24 Aprile 2026 Nell’avvio della nuova fase attuativa della disciplina NIS, i soggetti sono chiamati a svolgere un'analisi di impatto semplificata e armonizzata sulle proprie attività e sui propri servizi Normativa NIS NIS Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS: online le determine sugli adempimenti per i nuovi soggetti e sulle modalità di accesso alla piattaforma ACN",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-online-le-determine-sugli-adempimenti-per-i-nuovi-soggetti-e-sulle-modalita-di-accesso-alla-piattaforma-acn",
+"data_originale": "13/04/2026",
+"data": "2026-04-13",
+"descrizione": "News - 13 Aprile 2026 Conclusa la prima fase di applicazione con novità sugli obblighi di notifica degli incidenti significativi e le misure di sicurezza di base Normativa NIS NIS Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "ACN convoca il Tavolo per l’attuazione della disciplina NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-convoca-il-tavolo-per-l-attuazione-della-disciplina-nis",
+"data_originale": "09/04/2026",
+"data": "2026-04-09",
+"descrizione": "News - 09 Aprile 2026 Continua, con l’ottavo incontro, l’impegno sinergico tra ACN e le autorità di settore per l’attuazione della disciplina NIS Normativa NIS NIS ACN Cybersecurity"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS2, aggiornamenti dal Tavolo per l’attuazione",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis2-aggiornamenti-dal-tavolo-per-l-attuazione",
+"data_originale": "23/12/2025",
+"data": "2025-12-23",
+"descrizione": "News - 23 Dicembre 2025 Le novità introdotte Normativa NIS NIS Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS: i prossimi passi nell’attuazione della nuova disciplina",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-i-prossimi-passi-nell-attuazione-della-nuova-disciplina",
+"data_originale": "22/11/2025",
+"data": "2025-11-22",
+"descrizione": "News - 22 Novembre 2025 La nomina del Referente CSIRT e la registrazione 2026 Normativa NIS NIS"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "UNI/PdR 174:2025 – Pubblicata la nuova prassi di riferimento a supporto dei soggetti NIS certificati ISO 27001",
+"link": "https://www.acn.gov.it/portale/web/guest/-/uni/pdr-174-2025-pubblicata-la-nuova-prassi-di-riferimento-a-supporto-dei-soggetti-nis-certificati-iso-27001",
+"data_originale": "15/05/2025",
+"data": "2025-05-15",
+"descrizione": "News - 15 Maggio 2025 Dalla ISO/IEC 27001 al NIST CSF. Un supporto operativo che definisce i requisiti per un sistema di gestione per la cybersicurezza e la sicurezza delle informazioni armonizzati tra i due modelli Normativa NIS NIS Cybersicurezza"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Trieste ha ospitato la sesta tappa del roadshow nazionale sulla cybersicurezza per le PMI",
+"link": "https://www.acn.gov.it/portale/web/guest/-/trieste-ha-ospitato-la-sesta-tappa-del-roadshow-nazionale-sulla-cybersicurezza-per-le-pmi",
+"data_originale": "12/05/2025",
+"data": "2025-05-12",
+"descrizione": "News - 12 Maggio 2025 Imprese, istituzioni ed esperti a confronto per rafforzare la resilienza digitale delle PMI italiane contro le minacce informatiche Normativa NIS Consapevolezza NIS Strategia Nazionale di Cybersicurezza"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS, avviata la seconda fase",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-avviata-la-seconda-fase",
+"data_originale": "15/04/2025",
+"data": "2025-04-15",
+"descrizione": "News - 15 Aprile 2025 Il Tavolo per l'attuazione della nuova disciplina esamina misure e procedure per le oltre 20.000 organizzazioni interessate Normativa NIS Regolazione NIS Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NCC-IT: nuove opportunità di formazione",
+"link": "https://www.acn.gov.it/portale/web/guest/-/ncc-it-nuove-opportunita-di-formazione",
+"data_originale": "13/03/2025",
+"data": "2025-03-13",
+"descrizione": "News - 13 Marzo 2025 Il 26 marzo un webinar dedicato alla Direttiva NIS2 e alle nuove opportunità di finanziamento dell’UE Normativa NIS NIS ACN NCC-IT"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Cybersecurity, NIS 2 e Intelligenza artificiale: al via il ciclo di seminari DigiTalks",
+"link": "https://www.acn.gov.it/portale/web/guest/-/cybersecurity-nis-2-e-intelligenza-artificiale-al-via-il-ciclo-di-seminari-digitalks",
+"data_originale": "05/03/2025",
+"data": "2025-03-05",
+"descrizione": "News - 05 Marzo 2025 L’iniziativa dell’Università Bocconi prende il via il 21 marzo con la partecipazione del Direttore Bruno Frattasi Normativa NIS NIS Cybersicurezza Intelligenza artificiale Cybersecurity"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS, tempo scaduto! Ma c'è una possibilità",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-tempo-scaduto-ma-c-e-una-possibilita",
+"data_originale": "27/02/2025",
+"data": "2025-02-27",
+"descrizione": "News - 27 Febbraio 2025 Per i soggetti censiti si potrà terminare la registrazione fino al prossimo 10 marzo. Normativa NIS Cyber Risk NIS ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Registrazione NIS: mi raccomando! Il nuovo video di Marco Camisani Calzolari",
+"link": "https://www.acn.gov.it/portale/web/guest/-/registrazione-nis-mi-raccomando-il-nuovo-video-di-marco-camisani-calzolari",
+"data_originale": "21/02/2025",
+"data": "2025-02-21",
+"descrizione": "News - 21 Febbraio 2025 Nella quarta videopillola della serie, il noto divulgatore televisivo ci rammenta l'importanza di registrarsi sul sito ACN Normativa NIS PA NIS Innovazione"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Registrazione soggetti NIS, l'invito di ACN a rispettarne i termini temporali",
+"link": "https://www.acn.gov.it/portale/web/guest/-/registrazione-sogetti-nis-l-invito-di-acn-a-rispettarne-i-termini-temporali",
+"data_originale": "19/02/2025",
+"data": "2025-02-19",
+"descrizione": "News - 19 Febbraio 2025 Disponibile sul sito dell'Agenzia per la sicurezza nazionale la guida all’autovalutazione Normativa NIS Regolazione NIS Resilienza cibernetica"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "ACN a Cosenza: la cybersicurezza al centro della crescita delle PMI",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-a-cosenza-la-cybersicurezza-al-centro-della-crescita-delle-pmi",
+"data_originale": "17/02/2025",
+"data": "2025-02-17",
+"descrizione": "News - 17 Febbraio 2025 Al via la seconda tappa della campagna istituzionale per proteggere le piccole e medie imprese dai rischi informatici Normativa NIS Consapevolezza CSIRT Italia NIS ACN Awareness Formazione"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Gli obblighi NIS in dirittura d'arrivo, ecco la prossima scadenza",
+"link": "https://www.acn.gov.it/portale/web/guest/-/gli-obblighi-nis-in-dirittura-d-arrivo",
+"data_originale": "04/02/2025",
+"data": "2025-02-04",
+"descrizione": "News - 04 Febbraio 2025 Ancora un mese per adempiere agli obblighi della disciplina volta a rafforzare la postura informatica del Paese Normativa NIS NIS ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "NIS: riunito nella sede di ACN il tavolo per l’attuazione",
+"link": "https://www.acn.gov.it/portale/web/guest/-/nis-riunito-nella-sede-di-acn-il-tavolo-per-l-attuazione",
+"data_originale": "29/01/2025",
+"data": "2025-01-29",
+"descrizione": "News - 29 Gennaio 2025 Tra i temi affrontati, il percorso di registrazione che scade il 28 febbraio e le sanzioni se non viene effettuato Normativa NIS NIS"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "Normativa NIS: date e informazioni utili per un’implementazione efficace",
+"link": "https://www.acn.gov.it/portale/web/guest/-/normativa-nis-date-e-informazioni-utili-per-un-implementazione-efficace",
+"data_originale": "15/01/2025",
+"data": "2025-01-15",
+"descrizione": "News - 15 Gennaio 2025 Le principali scadenze del 2025, tra cui la registrazione alla piattaforma ACN Normativa NIS NIS"
 }
 ]
 }

@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ESMA_2026-10-26T10-49-32.json",
+"nome_file": "vpalert_rss_ESMA_2026-10-26T21-59-26.json",
 "sito": "ESMA",
 "origine": "github-actions",
-"letto_il": "2026-10-26T10:49:32Z",
+"letto_il": "2026-10-26T21:59:26Z",
 "feed": [
 {
 "nome": "ESMA - news",
@@ -17,11 +17,27 @@
 "voci": 0,
 "errore": true,
 "motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+},
+{
+"nome": "ESMA - Q&A (ultime risposte)",
+"url": "https://www.esma.europa.eu/esma-qa-search-page/all",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+},
+{
+"nome": "ESMA - Q&A (pagina 2)",
+"url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=1",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
 }
 ],
 "allarmi": [
 "ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
-"ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library"
+"ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library",
+"ESMA - Q&A (ultime risposte): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all",
+"ESMA - Q&A (pagina 2): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all?page=1"
 ],
 "notizie": []
 }
