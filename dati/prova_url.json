@@ -1,13 +1,35 @@
 [
  {
-  "url": "https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do",
+  "url": "https://dati.camera.it/sparql?query=PREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%20PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%20SELECT%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Fp%20%3Fo%20%7D&format=application%2Fjson",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 139463,
-  "secondi": 4.8,
+  "byte": 11314,
+  "secondi": 3.6,
   "captcha": false,
-  "inizio": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html> <head> <script nonce=\"null\" id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"1c7d86d3-185e-4fda-a632-777812197da8\" data-blockingmode=\"auto\" type=\"text/javascript\"></script> <!-- Matomo --> <script> var _paq = window._paq = window._paq || []; /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u=\"https://assile"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" } , \"o\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\","
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fo%20%3Fp2%20%3Fo2%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fsubject%3E%20%3Fo%20.%20OPTIONAL%20%7B%20%3Fo%20%3Fp2%20%3Fo2%20%7D%20%7D%20LIMIT%2040&format=application%2Fjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 922,
+  "secondi": 3.2,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"o\", \"p2\", \"o2\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/7135\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3885\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3525\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/1684\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/877\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/35\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://e"
+ },
+ {
+  "url": "https://publications.europa.eu/webapi/rdf/sparql?query=PREFIX%20cdm%3A%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23%3E%0ASELECT%20%3Fw%20%3Ft%20WHERE%20%7B%20%3Fw%20cdm%3Awork_date_document%20%3Fd%20.%20FILTER%28%3Fd%20%3E%3D%20%222026-09-10%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%20%26%26%20%3Fd%20%3C%3D%20%222026-09-11%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%29%0A%3Fe%20cdm%3Aexpression_belongs_to_work%20%3Fw%20%3B%20cdm%3Aexpression_uses_language%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Flanguage%2FITA%3E%20%3B%20cdm%3Aexpression_title%20%3Ft%20.%20FILTER%28CONTAINS%28%3Ft%2C%22Vondra%22%29%20%7C%7C%20CONTAINS%28%3Ft%2C%22applicazione%20a%20titolo%20provvisorio%22%29%29%20%7D%20LIMIT%205&format=application%2Fsparql-results%2Bjson",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 2397,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"w\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"w\": { \"type\": \"uri\", \"value\": \"http://publications.europa.eu/resource/cellar/53c21e3b-acfd-11f1-b9e5-01aa75ed71a1\" } , \"t\": { \"type\": \"literal\", \"xml:lang\": \"it\", \"value\": \"Proposta di DECISIONE DEL CONSIGLIO relativa alla firma e all'applicazione a titolo provvisorio di un accordo quadro tra l'Unione europea e gli Stati Uniti d'America sullo scambio reciproco di informazioni ai fini delle verifiche dell'identit\\u00E0, degli accertamenti e dei controlli, in relazione alle proc"
  }
 ]
