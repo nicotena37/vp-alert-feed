@@ -1,5 +1,5 @@
 {
- "verificati_il": "2026-10-19 (seconda prova completa alle 23:30)",
+ "verificati_il": "2026-10-26",
  "nota": "Feed RSS verificati aprendo ogni sito nel browser e leggendo il feed (numero di notizie e data dell'ultima). Ogni gruppo 'sito' si legge con leggi_rss.js aperto su una pagina di quel sito (il browser legge solo i feed del sito aperto). 'pagina_apertura' è la pagina da aprire prima di eseguire lo script. La pagina di apertura deve essere una pagina HTML del sito (non il feed stesso: sul feed visualizzato come XML il browser non permette le letture).",
  "siti": [
   {
@@ -309,6 +309,20 @@
      "nome": "ACN - notizie",
      "url": "https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "ACN - comunicazione (notizie dell'Agenzia)",
+     "url": "https://www.acn.gov.it/portale/comunicazione",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "acn\\.gov\\.it/(?:portale/)?(?:web/guest/)?-/"
+    },
+    {
+     "nome": "ACN - NIS notizie (FAQ, determine, modalità)",
+     "url": "https://www.acn.gov.it/portale/nis/notizie-ed-eventi",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "acn\\.gov\\.it/(?:portale/)?(?:web/guest/)?-/"
     }
    ],
    "ente": "Agenzia per la Cybersicurezza Nazionale (ACN)",
@@ -324,6 +338,14 @@
      "nome": "AGCM - notizie",
      "url": "https://www.agcm.it/rss/atom-feed",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "AGCM - bollettino settimanale",
+     "url": "https://www.agcm.it/pubblicazioni/bollettino-settimanale/",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "bollettino-settimanale/20\\d\\d/\\d+/",
+     "prefisso": "AGCM - "
     }
    ],
    "ente": "Autorità Garante della Concorrenza e del Mercato (AGCM)",
@@ -395,6 +417,24 @@
      "url": "https://www.esma.europa.eu/databases-library/esma-library",
      "categoria": "Vigilanza",
      "tipo": "esma_library"
+    },
+    {
+     "nome": "ESMA - Q&A (ultime risposte)",
+     "url": "https://www.esma.europa.eu/esma-qa-search-page/all",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "questions-answers/\\d+$",
+     "titolo": "riquadro",
+     "prefisso": "ESMA Q&A: "
+    },
+    {
+     "nome": "ESMA - Q&A (pagina 2)",
+     "url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=1",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "questions-answers/\\d+$",
+     "titolo": "riquadro",
+     "prefisso": "ESMA Q&A: "
     }
    ],
    "ente": "Autorità europea degli strumenti finanziari e dei mercati (ESMA)",
@@ -637,6 +677,142 @@
     }
    ],
    "frequenza": "settimanale"
+  },
+  {
+   "sito": "AMLA",
+   "pagina_apertura": "https://www.amla.europa.eu/news-media/news-articles_en",
+   "ente": "AMLA - Autorità europea antiriciclaggio",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS ufficiali del sito",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "AMLA - news",
+     "url": "https://www.amla.europa.eu/node/19/rss_en",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "AMLA - consultazioni",
+     "url": "https://www.amla.europa.eu/node/8/rss_en",
+     "categoria": "Vigilanza"
+    }
+   ]
+  },
+  {
+   "sito": "Commissione europea - FISMA",
+   "pagina_apertura": "https://finance.ec.europa.eu/finance-news_en",
+   "ente": "Commissione europea - DG FISMA (servizi finanziari)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS ufficiali del sito",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "FISMA - news",
+     "url": "https://finance.ec.europa.eu/node/1408/rss_en",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "FISMA - pubblicazioni e studi",
+     "url": "https://finance.ec.europa.eu/node/3/rss_en",
+     "categoria": "Iter"
+    },
+    {
+     "nome": "FISMA - consultazioni",
+     "url": "https://finance.ec.europa.eu/node/1066/rss_en",
+     "categoria": "Iter"
+    }
+   ]
+  },
+  {
+   "sito": "ABI",
+   "pagina_apertura": "https://www.abi.it/media/comunicati-stampa/",
+   "ente": "ABI - Associazione Bancaria Italiana",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "associazione di categoria: feed RSS del sito (comunicati, interviste, eventi)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "ABI - novità",
+     "url": "https://www.abi.it/feed/",
+     "categoria": "Notizie"
+    }
+   ]
+  },
+  {
+   "sito": "Assilea",
+   "pagina_apertura": "https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do",
+   "ente": "Assilea - Associazione Italiana Leasing",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: lettura dell'elenco comunicati",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "Assilea - comunicati",
+     "url": "https://www.assilea.it/jsp/informazione/comunicatistampa/comunicatiassilea.do",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "downloadFILE\\.do\\?doc_id=\\d+&serv=nws"
+    }
+   ]
+  },
+  {
+   "sito": "ICMA",
+   "pagina_apertura": "https://www.icmagroup.org/News/",
+   "ente": "ICMA - International Capital Market Association",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: lettura della pagina News",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "ICMA - news",
+     "url": "https://www.icmagroup.org/News/",
+     "categoria": "Resto del mondo",
+     "tipo": "elenco_link",
+     "schema": "/News/(?:news-in-brief|Press-Releases)/[^/]+/?$"
+    }
+   ]
+  },
+  {
+   "sito": "IFRS",
+   "pagina_apertura": "https://www.ifrs.org/news-and-events/news/",
+   "ente": "IFRS Foundation (IASB e ISSB)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: elenco news in JSON usato dalla pagina stessa",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "IFRS - news",
+     "url": "https://www.ifrs.org/content/ifrs/home/news-and-events/news/jcr:content/root/responsivegrid/mynewstile.model.json?filterYear=All&filterType=All&filterByFollowTag=false&style=listStyle",
+     "categoria": "Resto del mondo",
+     "tipo": "ifrs_json",
+     "salta": [
+      "Meeting",
+      "Webcast",
+      "Podcast",
+      "Event"
+     ]
+    }
+   ]
+  },
+  {
+   "sito": "ISDA",
+   "pagina_apertura": "https://www.isda.org/category/news/",
+   "ente": "ISDA - International Swaps and Derivatives Association",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS del sito (WordPress)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "ISDA - comunicati",
+     "url": "https://www.isda.org/category/news/press-releases/feed/",
+     "categoria": "Resto del mondo"
+    },
+    {
+     "nome": "ISDA - public policy (risposte e lettere)",
+     "url": "https://www.isda.org/category/public-policy/feed/",
+     "categoria": "Resto del mondo"
+    }
+   ]
   }
  ],
  "senza_rss": [

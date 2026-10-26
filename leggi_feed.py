@@ -145,9 +145,22 @@ def leggi_rss(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
 
 
 def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
-    """Pagine Consob senza RSS (stessa logica di leggi_rss.js)."""
-    d = BeautifulSoup(contenuto, "html.parser")
+    """Pagine senza RSS (stessa logica di leggi_rss.js)."""
     out = []
+    if f["tipo"] == "ifrs_json":                  # IFRS: l'elenco news è un JSON (resultList: title, date, description, uri)
+        mesi_en = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+        for v in json.loads(contenuto).get("resultList", []):
+            if v.get("title") in f.get("salta", []):
+                continue
+            m = re.search(r"(\d{1,2}) (\w{3}) (\d{4})", v.get("date") or "")
+            data = f"{m.group(3)}-{mesi_en.index(m.group(2).lower()) + 1:02d}-{int(m.group(1)):02d}" if m else ""
+            uri = v.get("uri") or ""
+            link = uri if uri.startswith("http") else "https://www.ifrs.org" + uri + ("" if re.search(r"\.\w+$", uri) else ".html")
+            out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"],
+                        "titolo": pulisci(f"{v.get('title')}: {v.get('description')}"), "link": link,
+                        "data_originale": v.get("date"), "data": data, "descrizione": pulisci(v.get("description"))[:700]})
+        return out
+    d = BeautifulSoup(contenuto, "html.parser")
 
     def metti(titolo, link, data, descr, **extra):
         out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"], "titolo": pulisci(titolo),
@@ -232,7 +245,61 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
             if m and m.group(2) in MESI:
                 data = f"{int(m.group(1)):02d}/{MESI.index(m.group(2)) + 1:02d}/{m.group(3) or anno}"
             metti(tit, a.get("href"), data, testo)
+    elif f["tipo"] == "elenco_link":               # pagina elenco: link che corrispondono a f["schema"], data nel riquadro
+        schema = re.compile(f["schema"], re.I)
+        assoluto = lambda h: re.sub(r"#.*$", "", urljoin(f["url"], h or ""))   # noqa: E731
+        radice = (d.select_one(f["dentro"]) if f.get("dentro") else None) or d
+        visti: set[str] = set()
+        for a in radice.find_all("a", href=True):
+            href = assoluto(a["href"])
+            if not schema.search(href) or href in visti:
+                continue
+            c, data = a, ""
+            for _ in range(6):                         # si sale finché il contenitore ha un solo link della lista
+                p = c.parent
+                if p is None or len({assoluto(x["href"]) for x in p.find_all("a", href=True)
+                                     if schema.search(assoluto(x["href"]))}) > 1:
+                    break
+                c = p
+                data = data or data_in_testo(pulisci(c.get_text(" ")))
+                if data and f.get("titolo") != "riquadro":
+                    break
+            if not data:
+                continue
+            tit = pulisci(a.get_text(" "))
+            if len(tit) < 15 or re.match(r"(read more|leggi|continua|scopri|dettagli|vai)", tit, re.I):
+                alt = sorted((pulisci(x.get_text(" ")) for x in c.find_all("a", href=True)
+                              if schema.search(assoluto(x["href"]))), key=len, reverse=True)
+                tit = alt[0] if alt and len(alt[0]) >= 15 else pulisci(a.get("title"))
+            txt = pulisci(c.get_text(" "))
+            if f.get("titolo") == "riquadro":
+                tit = re.sub(r"\s*read more\s*", " ", txt, flags=re.I)[:250]
+            if len(tit) < 10:
+                continue
+            descr = txt[250:850] if f.get("titolo") == "riquadro" else re.sub(r"\s*read more\s*", " ", txt.replace(tit, ""), flags=re.I).strip()[:600]
+            visti.add(href)
+            metti(f.get("prefisso", "") + tit, href, data, descr)
     return out
+
+
+MESI_EN = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+           "november", "december"]
+
+
+def data_in_testo(s: str) -> str:
+    """Prima data trovata nel testo, in gg/mm/aaaa (19 ottobre 2026, 19 October 2026, 19 Oct 2026, 19/10/2026, 2026-10-19)."""
+    m = re.search(r"\b(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-zÀ-ú]+)\.?,?\s+(\d{4})\b", s)
+    if m:
+        w = m.group(2).lower()
+        i = MESI.index(w) if w in MESI else MESI_EN.index(w) if w in MESI_EN else \
+            [x[:3] for x in MESI_EN].index(w[:3]) if w[:3] in [x[:3] for x in MESI_EN] else -1
+        if i >= 0:
+            return f"{int(m.group(1)):02d}/{i + 1:02d}/{m.group(3)}"
+    m = re.search(r"\b(\d{1,2})[/.](\d{1,2})[/.](20\d\d)\b", s)
+    if m:
+        return f"{int(m.group(1)):02d}/{int(m.group(2)):02d}/{m.group(3)}"
+    m = re.search(r"\b(20\d\d)-(\d{2})-(\d{2})\b", s)
+    return f"{m.group(3)}/{m.group(2)}/{m.group(1)}" if m else ""
 
 
 def leggi_sito(sito: dict) -> dict:
