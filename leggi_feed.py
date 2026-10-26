@@ -245,6 +245,23 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
             if m and m.group(2) in MESI:
                 data = f"{int(m.group(1)):02d}/{MESI.index(m.group(2)) + 1:02d}/{m.group(3) or anno}"
             metti(tit, a.get("href"), data, testo)
+    elif f["tipo"] == "assilea_circolari":         # home Assilea: ultime circolari (titolo pubblico, testo riservato ai soci)
+        oggi = datetime.now().strftime("%d/%m/%Y")
+        for blocco in d.select("div.hp-novita"):
+            h = blocco.find("h1")
+            sezione = pulisci(h.get_text(" ")) if h else ""
+            if sezione.lower() not in ("circolari", "pareri"):
+                continue
+            for t in blocco.select("div.testo"):
+                b = t.find("b")
+                num = pulisci(b.get_text(" ")) if b else ""
+                oggetto = pulisci(t.get_text(" ")).replace(num, "", 1).strip()
+                if not num:
+                    continue
+                tipo = "Circolare" if sezione.lower() == "circolari" else "Parere"
+                metti(f"{tipo} Assilea {num}: {oggetto}",
+                      f"https://www.assilea.it/jsp/servizi/{sezione.lower()}/index.do#{re.sub(r'[^A-Za-z0-9]+', '-', num)}",
+                      oggi, f"{tipo} Assilea {num} ({oggetto}). Testo riservato agli associati.")
     elif f["tipo"] == "elenco_link":               # pagina elenco: link che corrispondono a f["schema"], data nel riquadro
         schema = re.compile(f["schema"], re.I)
         assoluto = lambda h: re.sub(r"#.*$", "", urljoin(f["url"], h or ""))   # noqa: E731
