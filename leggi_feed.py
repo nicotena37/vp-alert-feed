@@ -279,6 +279,8 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
                 continue
             descr = txt[250:850] if f.get("titolo") == "riquadro" else re.sub(r"\s*read more\s*", " ", txt.replace(tit, ""), flags=re.I).strip()[:600]
             visti.add(href)
+            if f.get("data") == "lettura":             # es. ESMA Q&A: la data del sito è quella della risposta, pubblicata dopo
+                descr, data = f"Data indicata dal sito: {data}. {descr}", datetime.now().strftime("%d/%m/%Y")
             metti(f.get("prefisso", "") + tit, href, data, descr)
     return out
 
