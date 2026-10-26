@@ -261,16 +261,17 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
                                      if schema.search(assoluto(x["href"]))}) > 1:
                     break
                 c = p
-                data = data or data_in_testo(pulisci(c.get_text(" ")))
-                if data and f.get("titolo") != "riquadro":
-                    break
+                data = data or data_in_testo(pulisci(c.get_text(" ")))   # la prima data trovata salendo
             if not data:
                 continue
             tit = pulisci(a.get_text(" "))
             if len(tit) < 15 or re.match(r"(read more|leggi|continua|scopri|dettagli|vai)", tit, re.I):
                 alt = sorted((pulisci(x.get_text(" ")) for x in c.find_all("a", href=True)
                               if schema.search(assoluto(x["href"]))), key=len, reverse=True)
+                breve = tit
                 tit = alt[0] if alt and len(alt[0]) >= 15 else pulisci(a.get("title"))
+                if len(tit) < 15:                      # titolo non in un link (es. Assilea: il link è la data)
+                    tit = pulisci(c.get_text(" ")).replace(breve, "", 1).strip()[:200]
             txt = pulisci(c.get_text(" "))
             if f.get("titolo") == "riquadro":
                 tit = re.sub(r"\s*read more\s*", " ", txt, flags=re.I)[:250]
