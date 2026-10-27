@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-26T22-37-09.json",
+"nome_file": "vpalert_rss_ACN_2026-10-27T09-53-10.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-26T22:37:09Z",
+"letto_il": "2026-10-27T09:53:10Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,36 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Apple: rilevato sfruttamento in rete della CVE-2026-86950",
+"link": "https://www.acn.gov.it/portale/w/apple-rilevato-sfruttamento-in-rete-della-cve-2026-86950",
+"data_originale": "Tue, 29 Sep 2026 07:56:16 GMT",
+"data": "2026-09-29",
+"descrizione": "Rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-86950 – già sanata dal vendor - che interessa i prodotti Apple iOS, iPadOS, macOS Tahoe e macOS Sequoia. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato l'esecuzione di codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Apple",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
+"data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
+"data": "2026-10-27",
+"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 327 nuove vulnerabilità, di cui 20 con gravità “critica” e 231 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS e Safari."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Ubiquiti",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-ubiquiti-1",
+"data_originale": "Tue, 27 Oct 2026 07:53:16 GMT",
+"data": "2026-10-27",
+"descrizione": "Ubiquiti ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità con gravità “alta” in diversi prodotti. Tali vulnerabilità potrebbero consentire a un utente malintenzionato di eseguire codice arbitrario sui sistemi interessati, di ottenere privilegi elevati o di compromettere la disponibilità del servizio sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -491,36 +521,6 @@
 "data_originale": "Mon, 19 Oct 2026 07:27:58 GMT",
 "data": "2026-10-19",
 "descrizione": "Rilevate 3 vulnerabilità, di cui una con gravità \"critica\", in Drupal, noto Content Management System (CMS) open source. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Nextcloud: rilevato sfruttamento di una vulnerabilità nel componente Collabora Online Built-in CODE Server",
-"link": "https://www.acn.gov.it/portale/w/nextcloud-rilevato-sfruttamento-di-una-vulnerabilita-nel-componente-collabora-online-built-in-code-server",
-"data_originale": "Fri, 16 Oct 2026 13:37:42 GMT",
-"data": "2026-10-16",
-"descrizione": "Questo CSIRT ha rilevato, nel contesto nazionale, una compromissione di un server Nextcloud attraverso lo sfruttamento della vulnerabilità identificata tramite la CVE-2026-110447, con gravità “critica”, nel componente Collabora Online - Built-in CODE Server (richdocumentscode), impiegato per la modifica collaborativa di documenti."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "LangFlow: disponibili PoC per lo sfruttamento di 4 vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/langflow-disponibili-poc-per-lo-sfruttamento-di-4-vulnerabilita",
-"data_originale": "Tue, 06 Oct 2026 09:28:15 GMT",
-"data": "2026-10-06",
-"descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di 4 nuove vulnerabilità di sicurezza, di cui 2 con gravità “critica” e 2 con gravità “alta”, che interessano il software Langflow, nota piattaforma open-source che permette di costruire, testare e distribuire applicazioni e agenti basati su intelligenza artificiale. Tra queste si evidenzia la CVE-2026-105740 che risulta sfruttata attivamente in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Microsoft Entra ID: sfruttamento di tecniche di consent phishing per l'acquisizione di autorizzazioni applicative",
-"link": "https://www.acn.gov.it/portale/w/microsoft-entra-id-sfruttamento-di-tecniche-di-consent-phishing-per-l-acquisizione-di-autorizzazioni-applicative",
-"data_originale": "Fri, 16 Oct 2026 13:26:24 GMT",
-"data": "2026-10-16",
-"descrizione": "È stato recentemente documentato l’utilizzo sistematico di tecniche di “consent phishing” volto al rilascio di consensi illeciti (illicit consent grants) ai danni di infrastrutture basate su Microsoft Entra ID e suite Microsoft 365."
 },
 {
 "sito": "ACN",

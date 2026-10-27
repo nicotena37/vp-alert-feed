@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-26T22:35:27+00:00",
+ "letto_il": "2026-10-27T09:51:31+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -20,7 +20,7 @@
   "UIF": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 1,
+   "notizie": 2,
    "allarmi": []
   },
   "IVASS": {
@@ -30,10 +30,16 @@
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 6,
+   "feed_ok": 1,
    "feed_totali": 6,
-   "notizie": 96,
-   "allarmi": []
+   "notizie": 60,
+   "allarmi": [
+    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
+    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
+    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+    "Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
+    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
+   ]
   },
   "MEF": {
    "feed_ok": 2,
@@ -145,7 +151,7 @@
   "BCE": {
    "feed_ok": 11,
    "feed_totali": 11,
-   "notizie": 147,
+   "notizie": 146,
    "allarmi": []
   },
   "ESRB": {
@@ -163,7 +169,7 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 137,
+   "notizie": 183,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -195,7 +201,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 23,
+   "notizie": 7,
    "allarmi": []
   },
   "AMLA": {
@@ -235,10 +241,13 @@
    "allarmi": []
   },
   "ISDA": {
-   "feed_ok": 2,
+   "feed_ok": 0,
    "feed_totali": 2,
-   "notizie": 20,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "ISDA - comunicati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/news/press-releases/feed/",
+    "ISDA - public policy (risposte e lettere): feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/public-policy/feed/"
+   ]
   }
  }
 }
