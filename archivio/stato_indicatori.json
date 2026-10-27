@@ -1,31 +1,31 @@
 {
  "bce_discorsi_scaricato": "2026-10-25",
- "ultimo_giro": "2026-10-26T11:44:42+00:00",
+ "ultimo_giro": "2026-10-27T11:05:37+00:00",
  "dal": "2026-10-12",
- "voci_nuove": 133,
- "voci_in_archivio": 10035,
+ "voci_nuove": 916,
+ "voci_in_archivio": 10951,
  "fonti": {
   "Parlamento UE - interrogazioni": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 500"
+   "ok": true,
+   "voci": 462,
+   "con_tema": 23,
+   "secondi": 32
   },
   "Camera - interrogazioni": {
-   "ok": true,
-   "voci": 1847,
-   "con_tema": 81,
-   "secondi": 8
+   "ok": false,
+   "errore": "RuntimeError: HTTP 502"
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 127,
+   "voci": 133,
    "con_tema": 5,
-   "secondi": 7
+   "secondi": 6
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 747,
-   "con_tema": 53,
-   "secondi": 13
+   "voci": 800,
+   "con_tema": 62,
+   "secondi": 16
   },
   "BCE - discorsi": {
    "ok": true,
@@ -36,34 +36,34 @@
   "BIS - discorsi": {
    "ok": true,
    "voci": 50,
-   "con_tema": 16,
-   "secondi": 4
+   "con_tema": 12,
+   "secondi": 6
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 27,
-   "con_tema": 5,
+   "voci": 57,
+   "con_tema": 12,
    "secondi": 5
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
-   "voci": 7,
-   "con_tema": 0,
-   "secondi": 4
+   "voci": 8,
+   "con_tema": 1,
+   "secondi": 3
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 846,
-   "con_tema": 211,
-   "secondi": 0
+   "voci": 1582,
+   "con_tema": 387,
+   "secondi": 1
   },
   "Media Cloud": {
    "ok": true,
-   "righe": 50
+   "righe": 75
   },
   "OpenAlex": {
    "ok": true,
-   "righe": 50
+   "righe": 0
   }
  }
 }
