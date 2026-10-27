@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-27T09-53-10.json",
+"nome_file": "vpalert_rss_ACN_2026-10-27T14-28-14.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-27T09:53:10Z",
+"letto_il": "2026-10-27T14:28:14Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,36 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Nextcloud",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-nextcloud-1",
+"data_originale": "Tue, 27 Oct 2026 14:04:24 GMT",
+"data": "2026-10-27",
+"descrizione": "Rilevate 10 nuove vulnerabilità, di cui 1 con gravità “alta”, in Nextcloud Server, piattaforma di cloud storage open source. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in n8n",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-n8n-7",
+"data_originale": "Wed, 09 Sep 2026 07:30:10 GMT",
+"data": "2026-09-09",
+"descrizione": "Il team di sviluppo n8n-io ha rilevato nuove vulnerabilità, tra cui 5 con gravità “alta”, che interessano la piattaforma open source per l’automazione dei workflow n8n."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "HPE: rilevate vulnerabilità in ArubaOS",
+"link": "https://www.acn.gov.it/portale/w/hpe-rilevate-vulnerabilita-in-arubaos",
+"data_originale": "Tue, 27 Oct 2026 10:03:51 GMT",
+"data": "2026-10-27",
+"descrizione": "Rilasciati aggiornamenti di sicurezza che sanano molteplici vulnerabilità, di cui 32 con gravità “critica” e 31 con gravità “alta”, in HPE Aruba Networking AOS-8 e AOS-10, sistemi operativi di rete per la gestione delle infrastrutture Wi-Fi aziendali."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -491,36 +521,6 @@
 "data_originale": "Wed, 07 Oct 2026 06:30:08 GMT",
 "data": "2026-10-07",
 "descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 247 nuove vulnerabilità di sicurezza, di cui 12 con gravità “critica” e 42 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Sanate vulnerabilità in prodotti SonicWall",
-"link": "https://www.acn.gov.it/portale/w/sanate-vulnerabilita-in-prodotti-sonicwall",
-"data_originale": "Mon, 19 Oct 2026 08:39:57 GMT",
-"data": "2026-10-19",
-"descrizione": "SonicWall ha rilasciato aggiornamenti di sicurezza per sanare due vulnerabilità con gravità \"alta\" che interessano Network Security Manager (NSM). Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato remoto autenticato l'accesso ad informazioni sensibili, l'elevazione dei propri privilegi e l'esecuzione di codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-2",
-"data_originale": "Mon, 19 Oct 2026 08:17:42 GMT",
-"data": "2026-10-19",
-"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 5 nuove vulnerabilità, di cui 3 con gravità \"alta\", in MongoDB Server. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato, in determinate condizioni, di compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Drupal",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-drupal",
-"data_originale": "Mon, 19 Oct 2026 07:27:58 GMT",
-"data": "2026-10-19",
-"descrizione": "Rilevate 3 vulnerabilità, di cui una con gravità \"critica\", in Drupal, noto Content Management System (CMS) open source. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
 },
 {
 "sito": "ACN",
