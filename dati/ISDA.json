@@ -1,221 +1,27 @@
 {
-"nome_file": "vpalert_rss_ISDA_2026-10-27T14-32-17.json",
+"nome_file": "vpalert_rss_ISDA_2026-10-28T10-43-23.json",
 "sito": "ISDA",
 "origine": "github-actions",
-"letto_il": "2026-10-27T14:32:17Z",
+"letto_il": "2026-10-28T10:43:23Z",
 "feed": [
 {
 "nome": "ISDA - comunicati",
 "url": "https://www.isda.org/category/news/press-releases/feed/",
-"voci": 10
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: XML non valido (feed cambiato?)"
 },
 {
 "nome": "ISDA - public policy (risposte e lettere)",
 "url": "https://www.isda.org/category/public-policy/feed/",
-"voci": 10
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: XML non valido (feed cambiato?)"
 }
 ],
-"allarmi": [],
-"notizie": [
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Launches AI-driven Traceability Tool for its Digital Regulatory Reporting Solution",
-"link": "https://www.isda.org/2026/10/20/isda-launches-ai-driven-traceability-tool-for-its-digital-regulatory-reporting-solution/",
-"data_originale": "Tue, 20 Oct 2026 12:58:51 +0000",
-"data": "2026-10-20",
-"descrizione": "ISDA has launched an artificial intelligence (AI) agent for its Digital Regulatory Reporting (DRR) solution... Read more ISDA Launches AI-driven Traceability Tool for its Digital Regulatory Reporting Solution"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Wins GlobalCapital’s Digital Solution of the Year Award",
-"link": "https://www.isda.org/2026/10/01/isda-wins-globalcapitals-digital-solution-of-the-year-award/",
-"data_originale": "Thu, 01 Oct 2026 11:58:11 +0000",
-"data": "2026-10-01",
-"descrizione": "ISDA has won Digital Solution of the Year at the GlobalCapital Global Derivatives Awards 2026... Read more ISDA Wins GlobalCapital’s Digital Solution of the Year Award"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Launches Digital Emissions Transactions Definitions",
-"link": "https://www.isda.org/2026/10/01/isda-launches-digital-emissions-transactions-definitions/",
-"data_originale": "Thu, 01 Oct 2026 09:10:58 +0000",
-"data": "2026-10-01",
-"descrizione": "ISDA has launched a natively digital version of its documentation for emissions allowance transactions, enabling... Read more ISDA Launches Digital Emissions Transactions Definitions"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Expands SwapsInfo with US FX Derivatives Data",
-"link": "https://www.isda.org/2026/08/04/isda-expands-swapsinfo-with-us-fx-derivatives-data/",
-"data_originale": "Tue, 04 Aug 2026 13:04:36 +0000",
-"data": "2026-08-04",
-"descrizione": "ISDA has expanded its SwapsInfo website to include data on US-reported foreign exchange (FX) derivatives,... Read more ISDA Expands SwapsInfo with US FX Derivatives Data"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "IIF, ISDA and SIFMA Submit Comment Letter on Basel III Endgame Proposal",
-"link": "https://www.isda.org/2026/06/18/iif-isda-and-sifma-submit-comment-letter-on-basel-iii-endgame-proposal/",
-"data_originale": "Thu, 18 Jun 2026 15:30:31 +0000",
-"data": "2026-06-18",
-"descrizione": "The Institute of International Finance (IIF), the International Swaps and Derivatives Association, Inc. (ISDA) and... Read more IIF, ISDA and SIFMA Submit Comment Letter on Basel III Endgame Proposal"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Launches ISDA-Actrix US Treasury Repo Market Clearing Indicators",
-"link": "https://www.isda.org/2026/06/10/isda-launches-isda-actrix-us-treasury-repo-market-clearing-indicators/",
-"data_originale": "Wed, 10 Jun 2026 12:46:09 +0000",
-"data": "2026-06-10",
-"descrizione": "ISDA has launched the ISDA-Actrix US Treasury Repo Market Clearing Indicators in collaboration with Actrix.... Read more ISDA Launches ISDA-Actrix US Treasury Repo Market Clearing Indicators"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA and the Credit Derivatives Governance Committee Select S&P Global as DC Administrator",
-"link": "https://www.isda.org/2026/06/04/isda-and-the-credit-derivatives-governance-committee-select-sp-global-as-dc-administrator/",
-"data_originale": "Thu, 04 Jun 2026 14:21:32 +0000",
-"data": "2026-06-04",
-"descrizione": "ISDA and the Credit Derivatives Governance Committee have announced that S&#38;P Global Market Intelligence has... Read more ISDA and the Credit Derivatives Governance Committee Select S&#038;P Global as DC Administrator"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Margin Survey Shows Leading Derivatives Firms Collected Record $1.6 Trillion of Margin in 2025",
-"link": "https://www.isda.org/2026/04/29/isda-margin-survey-shows-leading-derivatives-firms-collected-record-1-6-trillion-of-margin-in-2025/",
-"data_originale": "Wed, 29 Apr 2026 12:29:26 +0000",
-"data": "2026-04-29",
-"descrizione": "ISDA has published its latest annual margin survey, which shows that initial margin (IM) and... Read more ISDA Margin Survey Shows Leading Derivatives Firms Collected Record $1.6 Trillion of Margin in 2025"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "Four Directors Join ISDA Board",
-"link": "https://www.isda.org/2026/04/28/four-directors-join-isda-board-3/",
-"data_originale": "Tue, 28 Apr 2026 13:38:36 +0000",
-"data": "2026-04-28",
-"descrizione": "ISDA has announced that two directors have been elected to the ISDA board and two... Read more Four Directors Join ISDA Board"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - comunicati",
-"categoria": "Resto del mondo",
-"titolo": "Natixis CIB Adopts ISDA’s Digital Regulatory Reporting Solution",
-"link": "https://www.isda.org/2026/04/08/natixis-cib-adopts-isdas-digital-regulatory-reporting-solution/",
-"data_originale": "Wed, 08 Apr 2026 13:04:12 +0000",
-"data": "2026-04-08",
-"descrizione": "ISDA has announced that Natixis CIB has adopted ISDA’s Digital Regulatory Reporting (DRR) solution, enabling... Read more Natixis CIB Adopts ISDA’s Digital Regulatory Reporting Solution"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Responds to FCA on Post-trade Transparency Back-reporting and Equity Swap Transparency",
-"link": "https://www.isda.org/2026/10/16/isda-responds-to-fca-on-post-trade-transparency-back-reporting-and-equity-swap-transparency/",
-"data_originale": "Fri, 16 Oct 2026 15:50:03 +0000",
-"data": "2026-10-16",
-"descrizione": "On October 16, ISDA responded to the Financial Conduct Authority’s (FCA) consultation CP26/30. While the... Read more ISDA Responds to FCA on Post-trade Transparency Back-reporting and Equity Swap Transparency"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "Updated OTC Derivatives Compliance Calendar",
-"link": "https://www.isda.org/2026/10/02/updated-otc-derivatives-compliance-calendar-92/",
-"data_originale": "Fri, 02 Oct 2026 10:04:17 +0000",
-"data": "2026-10-02",
-"descrizione": "ISDA has updated its global calendar of compliance deadlines and regulatory dates for the over-the-counter... Read more Updated OTC Derivatives Compliance Calendar"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA and FIA Respond to Bank of England on CCP Resolution",
-"link": "https://www.isda.org/2026/09/09/isda-and-fia-respond-to-bank-of-england-on-ccp-resolution/",
-"data_originale": "Wed, 09 Sep 2026 07:47:50 +0000",
-"data": "2026-09-09",
-"descrizione": "On September 7, ISDA and FIA responded to a Bank of England (BOE) discussion paper... Read more ISDA and FIA Respond to Bank of England on CCP Resolution"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Publishes Omnibus Canadian Representation Letter",
-"link": "https://www.isda.org/2026/09/02/isda-omnibus-canadian-representation-letter/",
-"data_originale": "Wed, 02 Sep 2026 13:28:56 +0000",
-"data": "2026-09-02",
-"descrizione": "On September 2, ISDA published the Omnibus Canadian Representation Letter, which combines previously published representation... Read more ISDA Publishes Omnibus Canadian Representation Letter"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA and FIA Respond to CFTC and SEC on Cross-margining",
-"link": "https://www.isda.org/2026/09/02/isda-and-fia-respond-to-cftc-and-sec-on-cross-margining/",
-"data_originale": "Wed, 02 Sep 2026 13:17:11 +0000",
-"data": "2026-09-02",
-"descrizione": "On August 31, ISDA and FIA submitted a letter to the US Commodity Futures and... Read more ISDA and FIA Respond to CFTC and SEC on Cross-margining"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "Korea – FSS published its Guidelines on Margin Requirements for Non-Centrally Cleared OTC Derivatives Transactions",
-"link": "https://www.isda.org/2026/09/02/fss-published-its-guidelines-on-margin-requirements-for-non-centrally-cleared-otc-derivatives-transactions/",
-"data_originale": "Wed, 02 Sep 2026 04:05:05 +0000",
-"data": "2026-09-02",
-"descrizione": "On September 1, the Financial Supervisory Service (FSS) of Korea published its Guidelines on Margin... Read more Korea - FSS published its Guidelines on Margin Requirements for Non-Centrally Cleared OTC Derivatives Transactions"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "Updated OTC Derivatives Compliance Calendar",
-"link": "https://www.isda.org/2026/09/01/updated-otc-derivatives-compliance-calendar-91/",
-"data_originale": "Tue, 01 Sep 2026 14:41:10 +0000",
-"data": "2026-09-01",
-"descrizione": "ISDA has updated its global calendar of compliance deadlines and regulatory dates for the over-the-counter... Read more Updated OTC Derivatives Compliance Calendar"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA, AFME Respond to EBA on Taxonomy Disclosures Delegated Act",
-"link": "https://www.isda.org/2026/08/13/isda-afme-respond-to-eba-on-taxonomy-disclosures-delegated-act/",
-"data_originale": "Thu, 13 Aug 2026 17:13:23 +0000",
-"data": "2026-08-13",
-"descrizione": "On August 12, ISDA and the Association for Financial Markets in Europe (AFME) responded to... Read more ISDA, AFME Respond to EBA on Taxonomy Disclosures Delegated Act"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Responds to JSCC Consultation on Clearing Fund Consolidation",
-"link": "https://www.isda.org/2026/08/12/isda-responds-to-jscc-consultation-on-clearing-fund-consolidation/",
-"data_originale": "Wed, 12 Aug 2026 08:44:24 +0000",
-"data": "2026-08-12",
-"descrizione": "On August 12, ISDA responded to the Japan Securities Clearing Corporation’s (JSCC) consultation on its... Read more ISDA Responds to JSCC Consultation on Clearing Fund Consolidation"
-},
-{
-"sito": "ISDA",
-"feed": "ISDA - public policy (risposte e lettere)",
-"categoria": "Resto del mondo",
-"titolo": "ISDA Responds to EC on CSDDD Due Diligence Guidelines",
-"link": "https://www.isda.org/2026/08/12/isda-responds-to-ec-on-csdd-due-diligence-guidelines/",
-"data_originale": "Wed, 12 Aug 2026 07:41:51 +0000",
-"data": "2026-08-12",
-"descrizione": "On August 6, ISDA responded to the European Commission’s (EC) consultation on due diligence guidelines... Read more ISDA Responds to EC on CSDDD Due Diligence Guidelines"
-}
-]
+"allarmi": [
+"ISDA - comunicati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/news/press-releases/feed/",
+"ISDA - public policy (risposte e lettere): feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/public-policy/feed/"
+],
+"notizie": []
 }

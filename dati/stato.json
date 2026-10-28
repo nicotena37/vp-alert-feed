@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-27T14:26:37+00:00",
+ "letto_il": "2026-10-28T10:37:52+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,7 +26,7 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 15,
+   "notizie": 12,
    "allarmi": []
   },
   "Consob": {
@@ -151,7 +151,7 @@
   "BCE": {
    "feed_ok": 11,
    "feed_totali": 11,
-   "notizie": 147,
+   "notizie": 148,
    "allarmi": []
   },
   "ESRB": {
@@ -169,7 +169,7 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 193,
+   "notizie": 201,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -201,7 +201,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 13,
+   "notizie": 11,
    "allarmi": []
   },
   "AMLA": {
@@ -241,10 +241,13 @@
    "allarmi": []
   },
   "ISDA": {
-   "feed_ok": 2,
+   "feed_ok": 0,
    "feed_totali": 2,
-   "notizie": 20,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "ISDA - comunicati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/news/press-releases/feed/",
+    "ISDA - public policy (risposte e lettere): feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/public-policy/feed/"
+   ]
   }
  }
 }
