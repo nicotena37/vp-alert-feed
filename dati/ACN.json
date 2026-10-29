@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-28T10-39-27.json",
+"nome_file": "vpalert_rss_ACN_2026-10-29T10-57-29.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-28T10:39:27Z",
+"letto_il": "2026-10-29T10:57:29Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,86 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Cisco: rilevato sfruttamento in rete della CVE-2026-76418",
+"link": "https://www.acn.gov.it/portale/w/cisco-rilevato-sfruttamento-in-rete-della-cve-2026-76418",
+"data_originale": "Thu, 29 Oct 2026 09:12:17 GMT",
+"data": "2026-10-29",
+"descrizione": "Cisco ha rilevato lo sfruttamento in rete di una vulnerabilità con gravità \"alta\", identificata tramite la CVE-2026-76418, in Secure Firewall Adaptive Security Appliance (ASA) e Secure Firewall Threat Defense (FTD). Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio sui sistemi interessati"
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Dell",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-2",
+"data_originale": "Wed, 28 Oct 2026 13:36:00 GMT",
+"data": "2026-10-28",
+"descrizione": "Aggiornamenti di sicurezza Dell Technologies sanano molteplici vulnerabilità, di cui 7 con gravità \"critica\" e 18 con gravità \"alta\" che interessano i prodotti PowerProtect Data Domain, Data Domain Virtual Edition e Dell APEX Protection Storage, soluzioni di storage per backup e protezione dei dati basate sulla tecnologia Data Domain."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Fragnesia: PoC per lo sfruttamento di una nuova vulnerabilità nel kernel Linux",
+"link": "https://www.acn.gov.it/portale/w/fragnesia-poc-per-lo-sfruttamento-di-una-nuova-vulnerabilita-nel-kernel-linux",
+"data_originale": "Thu, 14 May 2026 16:04:27 GMT",
+"data": "2026-05-14",
+"descrizione": "Disponibile un Proof of Concept (PoC) per “Fragnesia”, nuova vulnerabilità nel kernel Linux, identificata tramite la CVE-2026-46300. La vulnerabilità interessa il sottosistema XFRM ESP-in-TCP, parte dell’implementazione di IPsec in Linux, utilizzato per incapsulare il traffico IPsec ESP all’interno di una connessione TCP. La vulnerabilità, qualora sfruttata, potrebbe consentire a un utente non privilegiato l’ottenimento di privilegi di root sul sistema."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Critical Patch Update di Oracle",
+"link": "https://www.acn.gov.it/portale/w/critical-patch-update-di-oracle-12",
+"data_originale": "Wed, 21 Oct 2026 07:24:32 GMT",
+"data": "2026-10-21",
+"descrizione": "Oracle ha rilasciato il Critical Patch Update di ottobre che mira a correggere numerose vulnerabilità su più prodotti, di cui 64 con gravità “critica” e 383 con gravità “alta”."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "PHP2Shell: verificare i prodotti che Integrano PHP",
+"link": "https://www.acn.gov.it/portale/w/php2shell-verificare-i-prodotti-che-integrano-php",
+"data_originale": "Wed, 28 Oct 2026 12:41:36 GMT",
+"data": "2026-10-28",
+"descrizione": "Facendo seguito alle precedenti comunicazioni sulle vulnerabilità critiche note come “PHP2Shell”, si richiama l’attenzione sulla necessità di verificare sulle istanze dei propri servizi offerti la presenza di prodotti di terze parti che integrano PHP."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevata vulnerabilità in TianoCore EDK II",
+"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-tianocore-edk-ii",
+"data_originale": "Wed, 28 Oct 2026 12:20:04 GMT",
+"data": "2026-10-28",
+"descrizione": "Rilevata una vulnerabilità con gravità \"critica\" presente nel driver PXE (NetworkPkg/UefiPxeBcDxe) del progetto TianoCore EDK II, una delle implementazioni UEFI open source più diffuse e utilizzate come base da numerosi produttori di firmware. La vulnerabilità interessa le funzionalità di network boot PXE sia in ambiente IPv4 che IPv6."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Compromissione di chiavi private associate a certificati CA intermedi eMudhra",
+"link": "https://www.acn.gov.it/portale/w/compromissione-di-chiavi-private-associate-a-certificati-ca-intermedi-emudhra",
+"data_originale": "Fri, 23 Oct 2026 07:21:08 GMT",
+"data": "2026-10-23",
+"descrizione": "È stata resa pubblica la compromissione delle chiavi private associate ai certificati di otto autorità di certificazione (CA) intermedie di eMudhra , sei destinate all'emissione di certificati TLS e due alla firma del codice. Risultano interessate anche le corrispondenti versioni dei certificati intermedi oggetto di certificazione incrociata (cross-signing) da parte di Sectigo."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Acronis",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-acronis-2",
+"data_originale": "Wed, 28 Oct 2026 11:37:54 GMT",
+"data": "2026-10-28",
+"descrizione": "Rilevate 11 vulnerabilità, di cui 3 con gravità “alta”, nei prodotti Acronis Cyber Protect 17 e Cyber Protect Cloud Agent. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di accedere ad informazioni sensibili e manipolarle, nonché di elevare i propri privilegi sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -326,16 +406,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Compromissione di chiavi private associate a certificati CA intermedi eMudhra",
-"link": "https://www.acn.gov.it/portale/w/compromissione-di-chiavi-private-associate-a-certificati-ca-intermedi-emudhra",
-"data_originale": "Fri, 23 Oct 2026 07:21:08 GMT",
-"data": "2026-10-23",
-"descrizione": "È stata resa pubblica la compromissione delle chiavi private associate ai certificati di otto autorità di certificazione (CA) intermedie di eMudhra , sei destinate all'emissione di certificati TLS e due alla firma del codice. Risultano interessate anche le corrispondenti versioni dei certificati intermedi oggetto di certificazione incrociata (cross-signing) da parte di Sectigo."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolte vulnerabilità in prodotti WatchGuard",
 "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-watchguard-3",
 "data_originale": "Thu, 22 Oct 2026 10:15:05 GMT",
@@ -454,73 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Apache Tomcat",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-apache-tomcat",
-"data_originale": "Wed, 21 Oct 2026 08:03:32 GMT",
-"data": "2026-10-21",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 3 con gravità “critica”, in Apache Tomcat, noto server web open source sviluppato da Apache Software Foundation. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di autenticazione o di accedere a informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-81",
-"data_originale": "Wed, 21 Oct 2026 07:53:46 GMT",
-"data": "2026-10-21",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 353 nuove vulnerabilità di sicurezza, di cui 6 con gravità “critica” e 61 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Critical Patch Update di Oracle",
-"link": "https://www.acn.gov.it/portale/w/critical-patch-update-di-oracle-12",
-"data_originale": "Wed, 21 Oct 2026 07:24:32 GMT",
-"data": "2026-10-21",
-"descrizione": "Oracle ha rilasciato il Critical Patch Update di ottobre che mira a correggere numerose vulnerabilità su più prodotti, di cui 64 con gravità “critica” e 383 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Fortinet",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-fortinet-1",
-"data_originale": "Wed, 14 Oct 2026 10:19:05 GMT",
-"data": "2026-10-14",
-"descrizione": "Fortinet ha rilasciato aggiornamenti di sicurezza che sanano alcune vulnerabilità, di cui 2 con gravità \"critica\" e 2 con gravità \"alta\" in FortiSIEM, FortiMail, FortiSandbox, FortiAnalyzer e FortiManager. Tali vulnerabilità potrebbero consentire ad un attaccante remoto di eseguire codice o comandi non autorizzati, eludere i meccanismi di autenticazione, elevare i propri privilegi e scrivere/leggere file arbitrari sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Stormshield Network Security",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-stormshield-network-security",
-"data_originale": "Tue, 20 Oct 2026 13:42:13 GMT",
-"data": "2026-10-20",
-"descrizione": "Stormshield ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “alta”, nel prodotto Stormshield Network Security. Tali vulnerabilità potrebbero consentire a un attaccante non autenticato di eludere i meccanismi di autenticazione sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Apple",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-19",
-"data_originale": "Tue, 15 Sep 2026 16:14:58 GMT",
-"data": "2026-09-15",
-"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 275 nuove vulnerabilità nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS, Safari e Xcode."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in MongoDB",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-mongodb",
-"data_originale": "Tue, 20 Oct 2026 12:38:21 GMT",
-"data": "2026-10-20",
-"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza che sanano una vulnerabilità con gravità \"alta\" nella libreria PHP Driver. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un utente malintenzionato remoto di compromettere la disponibilità del servizio sui sistemi interessati."
+"titolo": "ACN e Assolombarda insieme per la resilienza delle aziende",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-e-assolombarda-insieme-per-la-resilienza-delle-aziende",
+"data_originale": "28/10/2026",
+"data": "2026-10-28",
+"descrizione": "News - 28 Ottobre 2026 Nei territori di Milano, Monza e Brianza, Lodi e Pavia attacchi, incidenti e violazioni della privacy: CRA e NIS 2 al centro del confronto tra istituzioni e imprese Normativa NIS NIS Cybersicurezza ACN Cybersecurity"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "23/10/2026",
 "data": "2026-10-23",
 "descrizione": "News - 23 Ottobre 2026 Aggiornata la determina che definisce il percorso di accreditamento alla piattaforma NIS Cybersicurezza ACN"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "ACN partecipa al primo Dialogo cyber Italia-Albania",
-"link": "https://www.acn.gov.it/portale/web/guest/-/acn-partecipa-al-primo-dialogo-cyber-italia-albania",
-"data_originale": "22/10/2026",
-"data": "2026-10-22",
-"descrizione": "News - 22 Ottobre 2026 Cooperazione digitale e sicurezza cibernetica europea: a Roma, Italia e Albania fanno il punto sull'attuale panorama cyber Cybercrime Resilienza cibernetica ACN"
 },
 {
 "sito": "ACN",
@@ -621,6 +621,16 @@
 "data_originale": "23/01/2026",
 "data": "2026-01-23",
 "descrizione": "23 Gennaio 2026 - ore 11.00 - 12.00 Sede dell'Agenzia per la cybersicurezza nazionale Presentazione dell'Agenda di Ricerca e Innovazione per la cybersicurezza Aggiornamento 2026"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "ACN e Assolombarda insieme per la resilienza delle aziende",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-e-assolombarda-insieme-per-la-resilienza-delle-aziende",
+"data_originale": "28/10/2026",
+"data": "2026-10-28",
+"descrizione": "News - 28 Ottobre 2026 Nei territori di Milano, Monza e Brianza, Lodi e Pavia attacchi, incidenti e violazioni della privacy: CRA e NIS 2 al centro del confronto tra istituzioni e imprese Normativa NIS NIS Cybersicurezza ACN Cybersecurity"
 },
 {
 "sito": "ACN",
@@ -811,16 +821,6 @@
 "data_originale": "29/01/2025",
 "data": "2025-01-29",
 "descrizione": "News - 29 Gennaio 2025 Tra i temi affrontati, il percorso di registrazione che scade il 28 febbraio e le sanzioni se non viene effettuato Normativa NIS NIS"
-},
-{
-"sito": "ACN",
-"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
-"categoria": "Vigilanza",
-"titolo": "Normativa NIS: date e informazioni utili per un’implementazione efficace",
-"link": "https://www.acn.gov.it/portale/web/guest/-/normativa-nis-date-e-informazioni-utili-per-un-implementazione-efficace",
-"data_originale": "15/01/2025",
-"data": "2025-01-15",
-"descrizione": "News - 15 Gennaio 2025 Le principali scadenze del 2025, tra cui la registrazione alla piattaforma ACN Normativa NIS NIS"
 }
 ]
 }

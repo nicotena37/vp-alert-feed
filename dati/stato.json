@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-28T10:37:52+00:00",
+ "letto_il": "2026-10-29T10:55:54+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -20,13 +20,13 @@
   "UIF": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 2,
+   "notizie": 3,
    "allarmi": []
   },
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 12,
+   "notizie": 11,
    "allarmi": []
   },
   "Consob": {
@@ -50,7 +50,7 @@
   "MEF - Ragioneria Generale dello Stato": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 51,
+   "notizie": 52,
    "allarmi": []
   },
   "MEF - Dipartimento Finanze": {
@@ -62,7 +62,7 @@
   "Agenzia delle Entrate": {
    "feed_ok": 3,
    "feed_totali": 3,
-   "notizie": 39,
+   "notizie": 38,
    "allarmi": []
   },
   "INPS": {
@@ -169,7 +169,7 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 201,
+   "notizie": 242,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -201,7 +201,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 11,
+   "notizie": 19,
    "allarmi": []
   },
   "AMLA": {
@@ -241,13 +241,10 @@
    "allarmi": []
   },
   "ISDA": {
-   "feed_ok": 0,
+   "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 0,
-   "allarmi": [
-    "ISDA - comunicati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/news/press-releases/feed/",
-    "ISDA - public policy (risposte e lettere): feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/public-policy/feed/"
-   ]
+   "notizie": 20,
+   "allarmi": []
   }
  }
 }
