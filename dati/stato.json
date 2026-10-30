@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-30T17:29:56+00:00",
+ "letto_il": "2026-10-30T18:41:48+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -186,7 +186,7 @@
   "BIS": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 30,
+   "notizie": 20,
    "allarmi": []
   },
   "FSB": {
@@ -198,7 +198,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 26,
+   "notizie": 32,
    "allarmi": []
   },
   "AMLA": {
@@ -214,10 +214,12 @@
    "allarmi": []
   },
   "ABI": {
-   "feed_ok": 1,
+   "feed_ok": 0,
    "feed_totali": 1,
-   "notizie": 10,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "ABI - novità: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.abi.it/feed/"
+   ]
   },
   "Assilea": {
    "feed_ok": 2,
@@ -241,6 +243,18 @@
    "feed_ok": 2,
    "feed_totali": 2,
    "notizie": 20,
+   "allarmi": []
+  },
+  "EIOPA": {
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 61,
+   "allarmi": []
+  },
+  "CSSF": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 30,
    "allarmi": []
   }
  }
