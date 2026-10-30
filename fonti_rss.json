@@ -53,8 +53,8 @@
     }
    ],
    "ente": "Banca d'Italia",
-   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
-   "nota_affidabilita": "Feed ufficiale del sito, notizie datate, aggiornato ogni giorno. Il 19/10 alle 23 il sito non si apriva (anche all'utente): da ricontrollare",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale del sito, notizie datate, aggiornato ogni giorno. Il 19/10 alle 23 il sito non si apriva (anche all'utente): da ricontrollare Affidabile, ma sito non raggiungibile la sera del 19/10",
    "frequenza": "ogni giro"
   },
   {
@@ -68,8 +68,8 @@
     }
    ],
    "ente": "Unità di Informazione Finanziaria per l'Italia (UIF)",
-   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
-   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia) Affidabile, ma sito non raggiungibile la sera del 19/10",
    "frequenza": "ogni giro"
   },
   {
@@ -83,8 +83,8 @@
     }
    ],
    "ente": "IVASS - Istituto per la Vigilanza sulle Assicurazioni",
-   "affidabilita": "Affidabile, ma sito non raggiungibile la sera del 19/10",
-   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed ufficiale (stessa piattaforma di Banca d'Italia) Affidabile, ma sito non raggiungibile la sera del 19/10",
    "frequenza": "ogni giro"
   },
   {
@@ -669,8 +669,8 @@
    "sito": "Teleborsa",
    "ente": "Teleborsa",
    "pagina_apertura": "https://news.teleborsa.it/NewsFeed.ashx?channel=banche",
-   "affidabilita": "Affidabile (fonte giornalistica, non ufficiale)",
-   "nota_affidabilita": "Feed RSS del canale Banche, aggiornato più volte al giorno; notizie di stampa: da verificare sulla fonte ufficiale prima di agire",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "Feed RSS del canale Banche, aggiornato più volte al giorno; notizie di stampa: da verificare sulla fonte ufficiale prima di agire Affidabile (fonte giornalistica, non ufficiale)",
    "feed": [
     {
      "nome": "Teleborsa - banche",
@@ -821,13 +821,54 @@
      "categoria": "Resto del mondo"
     }
    ]
+  },
+  {
+   "sito": "EIOPA",
+   "pagina_apertura": "https://www.eiopa.europa.eu/media/news_en",
+   "ente": "EIOPA - Autorità europea delle assicurazioni e delle pensioni aziendali",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS ufficiali del sito (news, pubblicazioni, consultazioni)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "EIOPA - news",
+     "url": "https://www.eiopa.europa.eu/node/4816/rss_en",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "EIOPA - pubblicazioni",
+     "url": "https://www.eiopa.europa.eu/node/3/rss_en",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "EIOPA - consultazioni",
+     "url": "https://www.eiopa.europa.eu/node/8/rss_en",
+     "categoria": "Vigilanza"
+    }
+   ]
+  },
+  {
+   "sito": "CSSF",
+   "pagina_apertura": "https://www.cssf.lu/en/",
+   "ente": "CSSF - Commission de Surveillance du Secteur Financier (Lussemburgo)",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS ufficiali del sito (novità e pubblicazioni); ne mostrano solo 10-20: leggere ogni giorno",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "CSSF - novità",
+     "url": "https://www.cssf.lu/en/feed/",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "CSSF - pubblicazioni",
+     "url": "https://www.cssf.lu/en/feed/publications",
+     "categoria": "Vigilanza"
+    }
+   ]
   }
  ],
  "senza_rss": [
-  {
-   "sito": "EIOPA",
-   "cosa_fare": "nessun feed trovato: leggere la pagina news"
-  },
   {
    "sito": "Senato",
    "cosa_fare": "il vecchio feed rss.xml non esiste più (pagina 404): usare i feed della Camera e la pagina dei disegni di legge"
