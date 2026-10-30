@@ -184,6 +184,21 @@
    "frequenza": "settimanale"
   },
   {
+   "sito": "MEF - Dipartimento del Tesoro",
+   "pagina_apertura": "https://www.dt.mef.gov.it/it/news/",
+   "feed": [
+    {
+     "nome": "Tesoro - notizie",
+     "url": "https://www.dt.mef.gov.it/it/news/index.html",
+     "categoria": "Normativa"
+    }
+   ],
+   "ente": "Ministero dell'Economia e delle Finanze - Dipartimento del Tesoro",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "La pagina news è un feed RSS con data (verificato il 30/10/2026); contiene anche aste e emissioni (escluse dai filtri)",
+   "frequenza": "ogni giro"
+  },
+  {
    "sito": "Agenzia delle Entrate",
    "pagina_apertura": "https://www.agenziaentrate.gov.it/portale/agenzia/agenzia-comunica/novita/news-rss",
    "feed": [
@@ -360,13 +375,14 @@
     {
      "nome": "COVIP - novità",
      "url": "https://www.covip.it/rss.xml",
-     "categoria": "Vigilanza"
+     "categoria": "Vigilanza",
+     "data_da_pagina": true
     }
    ],
    "ente": "COVIP - Commissione di Vigilanza sui Fondi Pensione",
    "affidabilita": "Affidabile",
    "nota_affidabilita": "Feed ufficiale sul sito dell'ente, risponde, notizie datate e aggiornate",
-   "frequenza": "settimanale"
+   "frequenza": "ogni giro"
   },
   {
    "sito": "MIMIT",
@@ -523,6 +539,13 @@
      "url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/html/index.en.html",
      "categoria": "Vigilanza",
      "tipo": "bce_wfs"
+    },
+    {
+     "nome": "BCE - Survey of Monetary Analysts (risultati)",
+     "url": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index.en.html",
+     "categoria": "Statistiche",
+     "tipo": "elenco_link",
+     "schema": "ecb\\.smar\\d+_\\w+\\.en\\.pdf"
     }
    ],
    "ente": "Banca Centrale Europea",

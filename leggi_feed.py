@@ -368,6 +368,17 @@ def leggi_sito(sito: dict) -> dict:
             if re.search(rb"<title>[^<]*captcha", contenuto[:20000], re.I):
                 raise ValueError("il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)")
             voci = leggi_pagina(sito, f, contenuto) if f.get("tipo") else leggi_rss(sito, f, contenuto)
+            if f.get("data_da_pagina"):          # feed senza data (COVIP): data dalla pagina della notizia (<time datetime>)
+                for v in voci:
+                    if v["data"] or not v["link"]:
+                        continue
+                    try:
+                        _, pg = scarica(v["link"])
+                        md = re.search(rb'<time[^>]*datetime=["\'](\d{4}-\d{2}-\d{2})', pg, re.I)
+                        if md:
+                            v["data"] = v["data_originale"] = md.group(1).decode()
+                    except Exception:  # noqa: BLE001
+                        pass
             if f.get("tipo") and not voci:
                 raise ValueError("nessuna voce trovata nella pagina (struttura cambiata?)")
             ris["notizie"] += voci
