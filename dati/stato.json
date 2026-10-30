@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-29T10:55:54+00:00",
+ "letto_il": "2026-10-30T10:53:37+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -20,13 +20,13 @@
   "UIF": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 3,
+   "notizie": 2,
    "allarmi": []
   },
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 11,
+   "notizie": 13,
    "allarmi": []
   },
   "Consob": {
@@ -132,14 +132,11 @@
    "allarmi": []
   },
   "ESMA": {
-   "feed_ok": 0,
+   "feed_ok": 3,
    "feed_totali": 4,
-   "notizie": 0,
+   "notizie": 20,
    "allarmi": [
-    "ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
-    "ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library",
-    "ESMA - Q&A (ultime risposte): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all",
-    "ESMA - Q&A (pagina 2): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all?page=1"
+    "ESMA - biblioteca documenti: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.esma.europa.eu/databases-library/esma-library"
    ]
   },
   "BCE - Vigilanza bancaria": {
@@ -201,7 +198,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 19,
+   "notizie": 8,
    "allarmi": []
   },
   "AMLA": {
@@ -225,7 +222,7 @@
   "Assilea": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 190,
+   "notizie": 193,
    "allarmi": []
   },
   "ICMA": {
@@ -237,7 +234,7 @@
   "IFRS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 28,
+   "notizie": 29,
    "allarmi": []
   },
   "ISDA": {

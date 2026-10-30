@@ -1,43 +1,235 @@
 {
-"nome_file": "vpalert_rss_ESMA_2026-10-29T10-58-26.json",
+"nome_file": "vpalert_rss_ESMA_2026-10-30T10-56-14.json",
 "sito": "ESMA",
 "origine": "github-actions",
-"letto_il": "2026-10-29T10:58:26Z",
+"letto_il": "2026-10-30T10:56:14Z",
 "feed": [
 {
 "nome": "ESMA - news",
 "url": "https://www.esma.europa.eu/rss.xml",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+"voci": 10
 },
 {
 "nome": "ESMA - biblioteca documenti",
 "url": "https://www.esma.europa.eu/databases-library/esma-library",
 "voci": 0,
 "errore": true,
-"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+"motivo": "ValueError: nessuna voce trovata nella pagina (struttura cambiata?)"
 },
 {
 "nome": "ESMA - Q&A (ultime risposte)",
 "url": "https://www.esma.europa.eu/esma-qa-search-page/all",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+"voci": 5
 },
 {
 "nome": "ESMA - Q&A (pagina 2)",
 "url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=1",
-"voci": 0,
-"errore": true,
-"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+"voci": 5
 }
 ],
 "allarmi": [
-"ESMA - news: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/rss.xml",
-"ESMA - biblioteca documenti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/databases-library/esma-library",
-"ESMA - Q&A (ultime risposte): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all",
-"ESMA - Q&A (pagina 2): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.esma.europa.eu/esma-qa-search-page/all?page=1"
+"ESMA - biblioteca documenti: feed non leggibile (ValueError: nessuna voce trovata nella pagina (struttura cambiata?)) - https://www.esma.europa.eu/databases-library/esma-library"
 ],
-"notizie": []
+"notizie": [
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA publishes latest edition of its newsletter",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-45",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA publishes latest edition of its newsletter 29 October 2026 ESMA newsletter The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published today the latest edition of its Spotlight on Markets newsletter , covering key activities and publications from September and October 2026. This edition opens with the appointment of Carlo Comporti as ESMA’s next Chair . His appointment was confirmed by the Council of the European Union, and he will take up his position on 1 November 2026. Top news highlights include ESMA’s 2027 Annual Work Programme , setting out priorities for stronger, simpler and more integrated EU capital markets; the new "
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA proposes simpler EU Taxonomy reporting",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-proposes-simpler-eu-taxonomy-reporting",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA proposes simpler EU Taxonomy reporting 29 October 2026 Issuer disclosure Sustainable finance The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has published its Final Report providing technical advice to the European Commission on simplifying key performance indicators under the Taxonomy Disclosures Delegated Act. ESMA recommends narrowing the mandatory operating expenditure (OpEx) KPI to non-capitalised research and development expenditure. It also proposes simpler group Taxonomy reporting, including removing the weighted-average KPI, and targeted measures to make disclosures more proportionate, clearer and easier to use. The Tec"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA streamlines several Q&As as part of simplification efforts",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-streamlines-several-qas-part-simplification-efforts",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA streamlines several Q&amp;As as part of simplification efforts 22 October 2026 Market Abuse MiFID - Secondary Markets Short Selling Simplification and Burden Reduction The European Securities and Markets Authority (ESMA), the EU regulator and supervisor, has updated its Questions and Answers (Q&amp;As) on market structure under MiFID II , the Market Abuse Regulation (MAR) and the Short Selling Regulation (SSR) , removing outdated, duplicative and no longer relevant guidance as part of its Simplification and Burden Reduction (SBR) initiative . The exercise focused on identifying Q&amp;As that are no longer relevant due to legislative amendments that are reflected in established market pr"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA specifies requirements to facilitate safe use of post-trade risk reduction services",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-specifies-requirements-facilitate-safe-use-post-trade-risk-reduction",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA specifies requirements to facilitate safe use of post-trade risk reduction services 20 October 2026 Guidelines and Technical standards Post Trading The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has outlined the conditions that providers and users of post-trade risk reduction (PTRR) services need to meet for certain OTC derivative transactions to be exempt from the clearing obligation under EMIR 3. The new rules, published in its latest final report, also establish safeguards for the provision of these services and the monitoring of the use of the exemption. With these new rules in place, the goal is to facilitate the use of PT"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "New Q&As available",
+"link": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
+"data_originale": "",
+"data": "",
+"descrizione": "New Q&amp;As available 16 October 2026 CCP Digital Finance and Innovation The European Securities and Markets Authority (ESMA), the EU's securities markets regulator, has published the following question and answer: European crowdfunding service providers for business Crowdfunding service providers that charge registration, membership, or other access fees (\"investment club\" crowdfunding platforms) (2950) Markets in Crypto-Assets Regulation (MiCA) Use by CASPs of payment accounts provided by non-bank payment service providers for holding clients’ funds (2949) OTC derivatives, central counterparties and trade repositories (EMIR) - CCPs AAR 85% exemption (2936) AAR thresholds calculation (2937"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA finalises the review of guidelines on the delay in disclosure of inside information",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-finalises-review-guidelines-delay-disclosure-inside-information",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA finalises the review of guidelines on the delay in disclosure of inside information 16 October 2026 Guidelines and Technical standards Market Abuse Market Integrity Simplification and Burden Reduction The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has updated and streamlined its Market Abuse Regulation (MAR) guidelines on the delay in the disclosure of inside information , completing the revised regulatory framework. Under MAR, issuers are required to disclose as soon as possible the inside information concerning them, to ensure that investors are informed and to prevent insider dealing. In specific circumstances, issuers may d"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "One year to go for T+1 settlement: the regulatory framework is complete, now let’s make it happen",
+"link": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
+"data_originale": "",
+"data": "",
+"descrizione": "One year to go for T+1 settlement: the regulatory framework is complete, now let’s make it happen 16 October 2026 Guidelines and Technical standards Post Trading Press Releases The European Union (EU) will switch to T+1 settlement on 11 October 2027. Ahead of the transition, the European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, calls on market participants to finalise technical preparations, assess readiness across their entire ecosystems and begin testing as soon as possible throughout the trading and settlement chain. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols , the regulatory f"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA updates its manual on transparency with new guidance for OTC derivatives and tick-size regime",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-updates-its-manual-transparency-new-guidance-otc-derivatives-and-tick",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA updates its manual on transparency with new guidance for OTC derivatives and tick-size regime 15 October 2026 Trading The European Securities and Markets Authority (ESMA), the EU regulator and supervisor, has updated its manual on transparency to provide further guidance on the identification of over-the-counter (OTC) derivatives subject to transparency requirements and to enhance supervisory convergence on the application of the tick-size regime. The update also clarifies how the identifying reference data for OTC derivatives should be provided for transparency purposes, supporting greater consistency in the data reported to and published through the consolidated tape. The manual final"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA's third Sanctions Report highlights the need for greater convergence in enforcement",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esmas-third-sanctions-report-highlights-need-greater-convergence-enforcement",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA's third Sanctions Report highlights the need for greater convergence in enforcement 15 October 2026 Market Abuse Supervisory convergence Transparency The European Securities and Markets Authority (ESMA), the EU's financial markets regulator and supervisor, published today its consolidated report on sanctions and measures imposed across the European Economic Area (EEA) in 2025, enhancing the transparency of sanctions data reported under EU financial acts within its remit. In 2025, national authorities across the EEA imposed more than 950 administrative sanctions and measures, a stable number compared with the past two years. The aggregated value of administrative fines amounted to almost"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - news",
+"categoria": "Vigilanza",
+"titolo": "ESMA analysis shows continued growth in cross-border investment services",
+"link": "https://www.esma.europa.eu/press-news/esma-news/esma-analysis-shows-continued-growth-cross-border-investment-services",
+"data_originale": "",
+"data": "",
+"descrizione": "ESMA analysis shows continued growth in cross-border investment services 14 October 2026 Investor protection The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, has completed its annual analysis of the cross-border provision of investment services , together with national competent authorities (NCAs). The exercise collected data from investment firms across 30 jurisdictions in the EU/EEA and found that cross-border investment activity continued to grow significantly in 2025. Key findings: A total of 379 financial firms provided cross-border services to retail clients. Approximately 15.5 million clients in the EU/EEA received investment s"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (ultime risposte)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2952 Topic Position reporting 20/10/2026 Subject Matter Position Reporting Question Where a position holder trades only or partly for hedging purposes, are there circumstances where all positions can be reported as being for non-hedging purpo",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2952",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 20/10/2026. ses? Level 1 Regulation Markets in Financial Instruments Directive II (MiFID II) Directive 2014/65/EU- Secondary Markets"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (ultime risposte)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2950 Topic Information to clients on topics other than costs and charges 16/10/2026 Subject Matter Crowdfunding service providers that charge registration, membership, or other access fees (\"investment club\" crowdfunding platforms) Question H",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2950",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 16/10/2026. ow does the ECSPR apply to crowdfunding service providers that charge registration, membership, or other access fees? Level 1 Regulation Regulation 2020/1503 - European crowdfunding service providers for business"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (ultime risposte)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2938 Topic EU-CCPs 08/10/2026 Subject Matter AAR representativeness obligation Question For the purpose of the AAR representativeness obligation, how should the maturity of trades be calculated, and how should the instruments be assigned to t",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2938",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 08/10/2026. he individual maturity buckets? Level 1 Regulation Regulation 648/2012 - OTC derivatives, central counterparties and trade repositories (EMIR) - CCPs"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (ultime risposte)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2937 Topic EU-CCPs 08/10/2026 Subject Matter AAR thresholds caclulation Question How should the “notional clearing volume outstanding”, as referred to in Article 7a, paragraph 4 and 8 of EMIR, be calculated? Level 1 Regulation Regulation 648/",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2937",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 08/10/2026. 2012 - OTC derivatives, central counterparties and trade repositories (EMIR) - CCPs"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (ultime risposte)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2936 Topic EU-CCPs 08/10/2026 Subject Matter AAR representativeness obligation Question Should the “one-half” rule set-out under Article 7a(4), subparagraph 5 of EMIR be applied at the level of the classes of derivatives, or across all classe",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2936",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 08/10/2026. s of derivatives? Level 1 Regulation Regulation 648/2012 - OTC derivatives, central counterparties and trade repositories (EMIR) - CCPs"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (pagina 2)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2933 Topic Crypto-Asset Service Provider (CASP) 02/10/2026 Subject Matter Technical roles of non-EU group entities in transaction signing and signing policies Question 1. Can a non-EU (group) entity co-sign transactions without being consider",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2933",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 02/10/2026. ed to exercise control over EU client assets or provide custody? 2. Can a non-EU (group) entity alter signing policies without being considered to exercise control over EU client assets or provide custody? Level 1 Regulation MiCA"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (pagina 2)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2932 Topic Crypto-Asset Service Provider (CASP) 01/10/2026 Subject Matter Transient exposure of EU client crypto-assets in a non-EU hot wallet during deposits, withdrawals and settlement Question In the context of in/out transfers (deposits/w",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2932",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 01/10/2026. ithdrawals) from an EU authorised CASP, can assets from EU clients temporarily be held in a (hot) wallet at an entity not authorised as a CASP under MiCA? Under what conditions, if any, would the temporary presence of EU client crypto-assets in that wallet be considered a purely technical/transient transfer step rather than custody, administration or transfer services being provided by the non-authorised entity? Level 1 Regulation MiCA"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (pagina 2)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2926 Topic CSD questions - Requirements for CSD services (reconciliation measures, asset segregation, settlement finality, participant default rules and procedures) 21/09/2026 Subject Matter CSDs settlement assets Question Under the current C",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2926",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 21/09/2026. SDR framework, are CSDs allowed to settle in: a) tokenised central bank money, b) tokenised commercial bank money, and c) e-money tokens? Level 1 Regulation Central Securities Depositories Regulation (CSDR) Regulation (EU) No 909/2014- PTR- CSDR"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (pagina 2)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2925 Topic CSD questions - Authorisation of CSDs 21/09/2026 Subject Matter Integration of DLT settlement solution in CSD security settlement system Question Does the integration of DLT components, or more specifically, of a DLT settlement sol",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2925",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 21/09/2026. ution, into a traditional securities settlement system operated by a CSD require the authorisation of a new securities settlement system in accordance with Article 19(1)(c) of CSDR? Level 1 Regulation Central Securities Depositories Regulation (CSDR) Regulation (EU) No 909/2014- PTR- CSDR"
+},
+{
+"sito": "ESMA",
+"feed": "ESMA - Q&A (pagina 2)",
+"categoria": "Vigilanza",
+"titolo": "ESMA Q&A: ESMA_QA_2924 Topic General questions - Book-entry form 21/09/2026 Subject Matter DLT and book-entry form definition Question Article 3 of CSDR refers to the requirement for transferable securities to be recorded in book-entry form. Does the use of di",
+"link": "https://www.esma.europa.eu/publications-data/questions-answers/2924",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": "Data indicata dal sito: 21/09/2026. stributed ledger technology (DLT) meet the definition of book-entry form? More broadly, can CSDs use DLT to provide CSD services under CSDR? Level 1 Regulation Central Securities Depositories Regulation (CSDR) Regulation (EU) No 909/2014- PTR- CSDR"
+}
+]
 }

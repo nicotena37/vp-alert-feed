@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-10-29T10-57-29.json",
+"nome_file": "vpalert_rss_ACN_2026-10-30T10-55-11.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-10-29T10:57:29Z",
+"letto_il": "2026-10-30T10:55:11Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,86 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Supermicro",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-supermicro",
+"data_originale": "Thu, 29 Oct 2026 15:31:35 GMT",
+"data": "2026-10-29",
+"descrizione": "Aggiornamenti di sicurezza sanano alcune vulnerabilità, di cui una con gravità “critica” e 4 con gravità “alta”, in vari prodotti Supermicro. Tali vulnerabilità potrebbero consentire a un attaccante di eseguire codice arbitrario, accedere a informazioni sensibili, elevare i propri privilegi ed eludere i meccanismi di sicurezza e autenticazione sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Jenkins",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-jenkins-1",
+"data_originale": "Thu, 29 Oct 2026 14:54:42 GMT",
+"data": "2026-10-29",
+"descrizione": "Jenkins Project ha rilasciato aggiornamenti di sicurezza per Jenkins, server open source per l’automazione delle attività di compilazione, verifica e distribuzione del software, che sanano molteplici vulnerabilità, di cui 13 con gravità \"alta\"."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-3",
+"data_originale": "Thu, 29 Oct 2026 14:21:34 GMT",
+"data": "2026-10-29",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Database Tools e Laravel. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di sicurezza e manipolare i dati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Elastic Cloud Enterprise",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-elastic-cloud-enterprise",
+"data_originale": "Thu, 29 Oct 2026 14:02:43 GMT",
+"data": "2026-10-29",
+"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per Elastic Cloud Enterprise (ECE), piattaforma per la gestione centralizzata di ambienti Elastic, che sanano alcune vulnerabilità, di cui 3 con gravità \"alta\". Tali vulnerabilità, riconducibili a una risoluzione non adeguata dei collegamenti prima dell'accesso ai file, potrebbero consentire a un attaccante locale di accedere a informazioni riservate, modificare o causare la perdita di dati ed eludere i meccanismi di autenticazione."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in n8n",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-n8n",
+"data_originale": "Thu, 29 Oct 2026 13:59:35 GMT",
+"data": "2026-10-29",
+"descrizione": "Risolte 15 vulnerabilità, di cui 13 con gravità “alta”, che interessano la piattaforma open-source per l'automazione dei workflow n8n."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Grafana",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-grafana-8",
+"data_originale": "Thu, 29 Oct 2026 13:42:22 GMT",
+"data": "2026-10-29",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui tre con gravità “alta”, presenti in Grafana, nota applicazione web per la visualizzazione e l’analisi interattiva di dati. Tali vulnerabilità, qualora sfruttate e in presenza di specifiche condizioni, potrebbero consentire a un utente malintenzionato l'elusione dei meccanismi di sicurezza, l'accesso a informazioni sensibili e la modifica non autorizzata di configurazioni sui sistemi target."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in prodotti Sophos",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-sophos-2",
+"data_originale": "Thu, 29 Oct 2026 11:28:28 GMT",
+"data": "2026-10-29",
+"descrizione": "Risolta una vulnerabilità con gravità “critica” in Sophos UTM. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di eseguire codice arbitrario con privilegi elevati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti Juniper Networks",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-juniper-networks-7",
+"data_originale": "Thu, 29 Oct 2026 11:27:02 GMT",
+"data": "2026-10-29",
+"descrizione": "Juniper Networks ha rilasciato aggiornamenti di sicurezza che sanano 18 vulnerabilità, di cui 2 con gravità \"critica\" e 8 con gravità \"alta\", nei prodotti Session Smart Router e Session Smart Conductor, soluzioni dedicate rispettivamente al routing e alla relativa gestione."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -444,86 +524,6 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Laravel: disponibile PoC per lo sfruttamento della CVE-2026-114509",
-"link": "https://www.acn.gov.it/portale/w/laravel-disponibile-poc-per-lo-sfruttamento-della-cve-2026-114509",
-"data_originale": "Thu, 22 Oct 2026 08:04:08 GMT",
-"data": "2026-10-22",
-"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento della CVE-2026-114509 presente in Laravel, noto framework open source per lo sviluppo di applicazioni web. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione sui sistemi interessati, consentendo di impersonare un altro utente."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in GitLab CE/EE",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-gitlab-ce/ee-1",
-"data_originale": "Thu, 22 Oct 2026 07:15:22 GMT",
-"data": "2026-10-22",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 12 vulnerabilità, di cui 1 con gravità “critica” e 2 con gravità “alta”, in GitLab Community Edition (CE) ed Enterprise Edition (EE). Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere le funzionalità di sicurezza, di impersonare un'entità legittima o di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Cisco",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-cisco-1",
-"data_originale": "Wed, 21 Oct 2026 16:15:05 GMT",
-"data": "2026-10-21",
-"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per risolvere 34 vulnerabilità nei propri prodotti, di cui 5 con gravità “critica” e 17 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in ISC BIND 9",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-isc-bind-9-1",
-"data_originale": "Wed, 21 Oct 2026 15:36:39 GMT",
-"data": "2026-10-21",
-"descrizione": "ISC ha rilasciato aggiornamenti di sicurezza per BIND 9 e BIND Supported Preview Edition, software per la gestione e la risoluzione delle richieste DNS, che sanano 4 vulnerabilità con gravità \"alta\". Tali vulnerabilità possono permettere l'esecuzione di codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Ollama: disponibile PoC per lo sfruttamento della CVE-2026-103663",
-"link": "https://www.acn.gov.it/portale/w/ollama-disponibile-poc-per-lo-sfruttamento-della-cve-2026-103663",
-"data_originale": "Wed, 21 Oct 2026 15:24:52 GMT",
-"data": "2026-10-21",
-"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-103663 presente in Ollama, noto motore di inferenza open source che consente di eseguire LLM in locale. Tale vulnerabilità potrebbe consentire a un utente malintenzionato remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Acronis",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-acronis-1",
-"data_originale": "Wed, 21 Oct 2026 14:20:49 GMT",
-"data": "2026-10-21",
-"descrizione": "Rilevate due vulnerabilità di sicurezza, di cui una con gravità \"alta\", in Acronis Cyber Infrastructure. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato l'accesso ad informazioni sensibili e la manipolazione di dati sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti SolarWinds",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-solarwinds",
-"data_originale": "Wed, 21 Oct 2026 10:44:13 GMT",
-"data": "2026-10-21",
-"descrizione": "Aggiornamenti di sicurezza risolvono 4 vulnerabilità, di cui 1 con gravità \"alta\", presenti in SolarWinds Observability Self-Hosted, piattaforma per il monitoraggio di reti, server, applicazioni e ambienti cloud ibridi. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato autenticato con bassi privilegi di accedere e modificare informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in MariaDB",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-mariadb",
-"data_originale": "Mon, 12 Oct 2026 10:10:36 GMT",
-"data": "2026-10-12",
-"descrizione": "Risolte molteplici vulnerabilità, di cui 3 con gravità \"critica\" e 8 con con gravità \"alta\", in MariaDB Server, noto database relazionale open source compatibile con MySQL, ampiamente impiegato per la gestione di dati strutturati in applicazioni web e ambienti enterprise."
-},
-{
-"sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
 "titolo": "ACN e Assolombarda insieme per la resilienza delle aziende",
@@ -586,6 +586,16 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
+"titolo": "Cyber Generation: ACN e ITS Academy insieme per formare i professionisti della cybersicurezza",
+"link": "https://www.acn.gov.it/portale/web/guest/-/cyber-generation-acn-e-its-academy-insieme-per-formare-i-professionisti-della-cybersicurezza",
+"data_originale": "29/10/2026",
+"data": "2026-10-29",
+"descrizione": "Comunicato stampa - 29 Ottobre 2026 A Roma la cerimonia di consegna delle borse di studio ACN per il biennio 2024-2026: assegnate 113 borse da 4.000 euro, in arrivo il nuovo bando Direttore Vice Direttore Generale Cybersicurezza ACN Formazione"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
 "titolo": "L’ACN invita la comunità digitale e gli hacker etici a segnalare tutte le vulnerabilità \"Zero Day\"",
 "link": "https://www.acn.gov.it/portale/web/guest/-/l-acn-invita-la-comunita-digitale-e-gli-hacker-etici-a-segnalare-tutte-le-vulnerabilita-zero-day-",
 "data_originale": "07/10/2026",
@@ -601,16 +611,6 @@
 "data_originale": "02/10/2026",
 "data": "2026-10-02",
 "descrizione": "Comunicato stampa - 02 Ottobre 2026 ENISA NIS ACN Intelligenza artificiale"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "Transizione alla crittografia post-quantistica: call to action del Gruppo di lavoro G7 sulla cybersicurezza",
-"link": "https://www.acn.gov.it/portale/web/guest/-/transizione-alla-crittografia-post-quantistica-call-to-action-per-i-settori-pubblico-e-privato-dall-anssi-e-partner-g7",
-"data_originale": "03/09/2026",
-"data": "2026-09-03",
-"descrizione": "Comunicato stampa - 03 Settembre 2026 ACN G7 Cybersecurity"
 },
 {
 "sito": "ACN",
