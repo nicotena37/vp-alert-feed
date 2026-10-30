@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-10-30T18:41:48+00:00",
+ "letto_il": "2026-10-30T19:04:01+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -30,15 +30,16 @@
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 1,
+   "feed_ok": 0,
    "feed_totali": 6,
-   "notizie": 60,
+   "notizie": 0,
    "allarmi": [
-    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-    "Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
-    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
+    "Consob - provvedimenti sanzionatori: non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/area-pubblica/sanzioni",
+    "Consob - Bollettino (ultima quindicina): non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
+    "Consob - Bollettino (quindicina precedente): non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
+    "Consob - consultazioni: non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
+    "Consob - newsletter Consob Informa: non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/area-pubblica/newsletter",
+    "Consob - comunicati stampa: non letto, sito non raggiungibile (TimeoutError: The read operation timed out) - https://www.consob.it/web/consob/comunicati-stampa"
    ]
   },
   "MEF": {
@@ -57,6 +58,12 @@
    "feed_ok": 1,
    "feed_totali": 1,
    "notizie": 10,
+   "allarmi": []
+  },
+  "MEF - Dipartimento del Tesoro": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 50,
    "allarmi": []
   },
   "Agenzia delle Entrate": {
@@ -146,9 +153,9 @@
    "allarmi": []
   },
   "BCE": {
-   "feed_ok": 11,
-   "feed_totali": 11,
-   "notizie": 149,
+   "feed_ok": 12,
+   "feed_totali": 12,
+   "notizie": 152,
    "allarmi": []
   },
   "ESRB": {
@@ -198,7 +205,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 32,
+   "notizie": 33,
    "allarmi": []
   },
   "AMLA": {
@@ -214,12 +221,10 @@
    "allarmi": []
   },
   "ABI": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "ABI - novità: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.abi.it/feed/"
-   ]
+   "notizie": 10,
+   "allarmi": []
   },
   "Assilea": {
    "feed_ok": 2,

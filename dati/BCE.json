@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BCE_2026-10-30T18-44-38.json",
+"nome_file": "vpalert_rss_BCE_2026-10-30T19-07-17.json",
 "sito": "BCE",
 "origine": "github-actions",
-"letto_il": "2026-10-30T18:44:38Z",
+"letto_il": "2026-10-30T19:07:17Z",
 "feed": [
 {
 "nome": "BCE - comunicati",
@@ -58,6 +58,11 @@
 "nome": "BCE - situazione contabile settimanale dell'Eurosistema",
 "url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/html/index.en.html",
 "voci": 2
+},
+{
+"nome": "BCE - Survey of Monetary Analysts (risultati)",
+"url": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index.en.html",
+"voci": 3
 }
 ],
 "allarmi": [],
@@ -1551,6 +1556,36 @@
 "data_originale": "2026-10-20",
 "data": "2026-10-20",
 "descrizione": "Consolidated financial statement of the Eurosystem 16 October 2026 Assets (EUR millions) Balance Difference compared with last week due to transactions Totals/sub-totals may not add up, due to rounding 1 Gold and gold receivables 1,286,240 1 2 Claims on non-euro area residents denominated in foreign currency 524,355 −111 2.1 Receivables from the IMF 233,292 0 2.2 Balances with banks and security investments, external loans and other external assets 291,062 −111 3 Claims on euro area residents denominated in foreign currency 21,271 −36 4 Claims on non-euro area residents denominated in euro 40,689 −898 4.1 Balances with banks, security investments and loans 40,689 −898 4.2 Claims arising from"
+},
+{
+"sito": "BCE",
+"feed": "BCE - Survey of Monetary Analysts (risultati)",
+"categoria": "Statistiche",
+"titolo": "30 October 2026 The ECB Survey of Monetary Analysts (SMA), October 2026, Aggregate Results",
+"link": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar261030_october.en.pdf?6ac7cbfe60209a3619000424a980b440",
+"data_originale": "30/10/2026",
+"data": "2026-10-30",
+"descrizione": ""
+},
+{
+"sito": "BCE",
+"feed": "BCE - Survey of Monetary Analysts (risultati)",
+"categoria": "Statistiche",
+"titolo": "11 September 2026 The ECB Survey of Monetary Analysts (SMA), September 2026, Aggregate Results",
+"link": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar260911_september.en.pdf?8d5d6f90c5eaa344bcfbf48038fd6f7a",
+"data_originale": "11/09/2026",
+"data": "2026-09-11",
+"descrizione": ""
+},
+{
+"sito": "BCE",
+"feed": "BCE - Survey of Monetary Analysts (risultati)",
+"categoria": "Statistiche",
+"titolo": "24 July 2026 The ECB Survey of Monetary Analysts (SMA), July 2026, Aggregate Results",
+"link": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar260727_july.en.pdf?1983a73e797c16e21ea495821764ee00",
+"data_originale": "24/07/2026",
+"data": "2026-07-24",
+"descrizione": ""
 }
 ]
 }
