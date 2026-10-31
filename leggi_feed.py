@@ -291,7 +291,7 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
                 alt = sorted((pulisci(x.get_text(" ")) for x in c.find_all("a", href=True)
                               if schema.search(assoluto(x["href"]))), key=len, reverse=True)
                 breve = tit
-                tit = alt[0] if alt and len(alt[0]) >= 15 else pulisci(a.get("title"))
+                tit = alt[0] if alt and len(alt[0]) >= 8 and not re.fullmatch(r"(?i)page|pdf|xlsx?|read more", alt[0]) else pulisci(a.get("title"))
                 if len(tit) < 15:                      # titolo non in un link (es. Assilea: il link è la data)
                     tit = pulisci(c.get_text(" ")).replace(breve, "", 1).strip()[:200]
             txt = pulisci(c.get_text(" "))
