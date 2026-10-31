@@ -278,7 +278,12 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
                                      if schema.search(assoluto(x["href"]))}) > 1:
                     break
                 c = p
-                data = data or data_in_testo(pulisci(c.get_text(" ")))   # la prima data trovata salendo
+                t_c = pulisci(c.get_text(" "))
+                if f.get("data_dopo"):                 # data dopo un'etichetta (es. CSSF «Published on», AE «Risposta n. 193 del»)
+                    m_d = re.search(f["data_dopo"] + r"\s*(.{0,30})", t_c, re.I)
+                    data = data or (data_in_testo(m_d.group(1)) if m_d else "")
+                else:
+                    data = data or data_in_testo(t_c)   # la prima data trovata salendo
             if not data:
                 continue
             tit = pulisci(a.get_text(" "))

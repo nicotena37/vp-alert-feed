@@ -219,6 +219,15 @@
      "tipo": "pagina_aggiornamenti",
      "titolo": "Modello F24 - aggiornamento tabelle dei codici tributo e altri codici (archivi del software di controllo per banche, Poste e agenti della riscossione)",
      "descrizione": "L'Agenzia delle Entrate aggiorna le tabelle dei codici tributo e degli altri codici del modello F24 negli archivi del software di controllo riservato a banche, Poste e agenti della riscossione."
+    },
+    {
+     "nome": "Agenzia Entrate - risposte agli interpelli (elenco)",
+     "url": "https://www.agenziaentrate.gov.it/portale/normativa-e-prassi/risposte-agli-interpelli/interpelli",
+     "categoria": "Normativa",
+     "tipo": "elenco_link",
+     "schema": "/Risposta\\+n\\.\\+\\d+_20\\d\\d\\.pdf",
+     "titolo": "riquadro",
+     "data_dopo": "Risposta n\\. \\d+ del"
     }
    ],
    "ente": "Agenzia delle Entrate",
@@ -447,6 +456,26 @@
     {
      "nome": "ESMA - Q&A (pagina 2)",
      "url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=1",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "questions-answers/\\d+$",
+     "titolo": "riquadro",
+     "prefisso": "ESMA Q&A: ",
+     "data": "lettura"
+    },
+    {
+     "nome": "ESMA - Q&A (pagina 3)",
+     "url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=2",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "questions-answers/\\d+$",
+     "titolo": "riquadro",
+     "prefisso": "ESMA Q&A: ",
+     "data": "lettura"
+    },
+    {
+     "nome": "ESMA - Q&A (pagina 4)",
+     "url": "https://www.esma.europa.eu/esma-qa-search-page/all?page=3",
      "categoria": "Vigilanza",
      "tipo": "elenco_link",
      "schema": "questions-answers/\\d+$",
@@ -887,6 +916,35 @@
      "nome": "CSSF - pubblicazioni",
      "url": "https://www.cssf.lu/en/feed/publications",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "CSSF - novità (pagina 2)",
+     "url": "https://www.cssf.lu/en/feed/?paged=2",
+     "categoria": "Vigilanza"
+    },
+    {
+     "nome": "CSSF - pubblicazioni e dati (elenco, pagina 1)",
+     "url": "https://www.cssf.lu/en/publication-data/",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/en/(?:Document|20\\d\\d/\\d\\d)/[^/]+/?$",
+     "data_dopo": "Published on"
+    },
+    {
+     "nome": "CSSF - pubblicazioni e dati (elenco, pagina 2)",
+     "url": "https://www.cssf.lu/en/publication-data/page/2/",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/en/(?:Document|20\\d\\d/\\d\\d)/[^/]+/?$",
+     "data_dopo": "Published on"
+    },
+    {
+     "nome": "CSSF - pubblicazioni e dati (elenco, pagina 3)",
+     "url": "https://www.cssf.lu/en/publication-data/page/3/",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/en/(?:Document|20\\d\\d/\\d\\d)/[^/]+/?$",
+     "data_dopo": "Published on"
     }
    ]
   }
