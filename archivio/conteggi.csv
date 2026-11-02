@@ -599,78 +599,103 @@ settimana,dal,fonte,misura,area,tema,valore,totale
 2026-W42,2026-10-12,OpenAlex - studi,studiosi,Mondo,Trasparenza e tutela della clientela,173,
 2026-W42,2026-10-12,OpenAlex - studi,studiosi,Mondo,Truffe e frodi ai clienti,68,
 2026-W42,2026-10-12,OpenAlex - studi,studiosi,Mondo,Vigilanza prudenziale e capitale,177,
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Antiriciclaggio e sanzioni finanziarie,197,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Assicurazioni e bancassicurazione,190,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Contratto, stipendio e rapporto di lavoro",230,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Credito e finanziamenti,144,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Cripto-attività e finanza digitale,90,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Crisi bancarie, risoluzione e garanzia dei depositi",3,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Cybersicurezza, ICT e DORA",122,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Economia, tassi e politica monetaria",191,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Educazione e inclusione finanziaria,18,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Finanza sostenibile ed ESG,36,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Fisco per banca e clienti,104,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Formazione e competenze del personale,12,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Governance, controlli e organizzazione",1,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Intelligenza artificiale e innovazione,877,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Pagamenti, conti e moneta",88,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Pensioni, previdenza e welfare",61,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Previdenza complementare,47,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Privacy e protezione dei dati,351,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Salute e sicurezza sul lavoro,204,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Segnalazioni e reporting di vigilanza,1,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Servizi di investimento e mercati,35,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Sistema bancario e vigilanza,53,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Trasparenza e tutela della clientela,46,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Truffe e frodi ai clienti,113,44780
-2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Vigilanza prudenziale e capitale,3,44780
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Antiriciclaggio e sanzioni finanziarie,147,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Assicurazioni e bancassicurazione,1704,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Contratto, stipendio e rapporto di lavoro",73,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Credito e finanziamenti,84,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Cripto-attività e finanza digitale,230,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Crisi bancarie, risoluzione e garanzia dei depositi",247,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Cybersicurezza, ICT e DORA",1015,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Economia, tassi e politica monetaria",258,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Educazione e inclusione finanziaria,679,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Finanza sostenibile ed ESG,321,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Fisco per banca e clienti,2,
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Antiriciclaggio e sanzioni finanziarie,197,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Assicurazioni e bancassicurazione,190,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Contratto, stipendio e rapporto di lavoro",230,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Credito e finanziamenti,144,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Cripto-attività e finanza digitale,90,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Crisi bancarie, risoluzione e garanzia dei depositi",3,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Cybersicurezza, ICT e DORA",122,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Economia, tassi e politica monetaria",191,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Educazione e inclusione finanziaria,18,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Finanza sostenibile ed ESG,36,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Fisco per banca e clienti,104,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Formazione e competenze del personale,12,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Governance, controlli e organizzazione",1,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Intelligenza artificiale e innovazione,877,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Pagamenti, conti e moneta",88,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,"Pensioni, previdenza e welfare",61,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Previdenza complementare,47,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Privacy e protezione dei dati,351,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Salute e sicurezza sul lavoro,204,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Segnalazioni e reporting di vigilanza,1,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Servizi di investimento e mercati,35,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Sistema bancario e vigilanza,53,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Trasparenza e tutela della clientela,46,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Truffe e frodi ai clienti,113,44784
+2026-W43,2026-10-19,Media Cloud - giornali italiani,media,Italia,Vigilanza prudenziale e capitale,3,44784
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Antiriciclaggio e sanzioni finanziarie,203,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Assicurazioni e bancassicurazione,2329,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Contratto, stipendio e rapporto di lavoro",96,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Credito e finanziamenti,118,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Cripto-attività e finanza digitale,322,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Crisi bancarie, risoluzione e garanzia dei depositi",355,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Cybersicurezza, ICT e DORA",1416,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Economia, tassi e politica monetaria",360,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Educazione e inclusione finanziaria,933,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Finanza sostenibile ed ESG,445,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Fisco per banca e clienti,8,
 2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Formazione e competenze del personale,0,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Governance, controlli e organizzazione",2,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Intelligenza artificiale e innovazione,5010,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Pagamenti, conti e moneta",467,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Pensioni, previdenza e welfare",57,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Previdenza complementare,44,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Privacy e protezione dei dati,448,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Salute e sicurezza sul lavoro,102,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Segnalazioni e reporting di vigilanza,75,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Servizi di investimento e mercati,91,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Sistema bancario e vigilanza,47,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Trasparenza e tutela della clientela,168,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Truffe e frodi ai clienti,42,
-2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Vigilanza prudenziale e capitale,148,
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Antiriciclaggio e sanzioni finanziarie,88,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Assicurazioni e bancassicurazione,260,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Contratto, stipendio e rapporto di lavoro",40,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Credito e finanziamenti,180,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Cripto-attività e finanza digitale,83,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Crisi bancarie, risoluzione e garanzia dei depositi",13,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Cybersicurezza, ICT e DORA",159,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Economia, tassi e politica monetaria",241,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Educazione e inclusione finanziaria,55,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Finanza sostenibile ed ESG,24,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Fisco per banca e clienti,139,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Formazione e competenze del personale,11,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Governance, controlli e organizzazione",1,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Intelligenza artificiale e innovazione,786,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Pagamenti, conti e moneta",105,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Pensioni, previdenza e welfare",64,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Previdenza complementare,94,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Privacy e protezione dei dati,295,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Salute e sicurezza sul lavoro,148,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Segnalazioni e reporting di vigilanza,0,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Servizi di investimento e mercati,57,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Sistema bancario e vigilanza,91,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Trasparenza e tutela della clientela,39,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Truffe e frodi ai clienti,75,38287
-2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Vigilanza prudenziale e capitale,6,38287
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Governance, controlli e organizzazione",4,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Intelligenza artificiale e innovazione,6382,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Pagamenti, conti e moneta",635,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,"Pensioni, previdenza e welfare",77,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Previdenza complementare,56,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Privacy e protezione dei dati,672,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Salute e sicurezza sul lavoro,149,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Segnalazioni e reporting di vigilanza,94,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Servizi di investimento e mercati,123,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Sistema bancario e vigilanza,73,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Trasparenza e tutela della clientela,226,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Truffe e frodi ai clienti,64,
+2026-W43,2026-10-19,OpenAlex - studi,studiosi,Mondo,Vigilanza prudenziale e capitale,205,
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Antiriciclaggio e sanzioni finanziarie,89,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Assicurazioni e bancassicurazione,273,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Contratto, stipendio e rapporto di lavoro",41,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Credito e finanziamenti,195,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Cripto-attività e finanza digitale,97,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Crisi bancarie, risoluzione e garanzia dei depositi",13,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Cybersicurezza, ICT e DORA",176,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Economia, tassi e politica monetaria",274,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Educazione e inclusione finanziaria,58,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Finanza sostenibile ed ESG,27,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Fisco per banca e clienti,149,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Formazione e competenze del personale,11,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Governance, controlli e organizzazione",1,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Intelligenza artificiale e innovazione,835,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Pagamenti, conti e moneta",119,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,"Pensioni, previdenza e welfare",68,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Previdenza complementare,107,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Privacy e protezione dei dati,317,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Salute e sicurezza sul lavoro,152,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Segnalazioni e reporting di vigilanza,0,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Servizi di investimento e mercati,68,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Sistema bancario e vigilanza,104,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Trasparenza e tutela della clientela,39,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Truffe e frodi ai clienti,85,42780
+2026-W44,2026-10-26,Media Cloud - giornali italiani,media,Italia,Vigilanza prudenziale e capitale,6,42780
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Antiriciclaggio e sanzioni finanziarie,192,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Assicurazioni e bancassicurazione,2322,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Contratto, stipendio e rapporto di lavoro",78,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Credito e finanziamenti,94,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Cripto-attività e finanza digitale,354,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Crisi bancarie, risoluzione e garanzia dei depositi",351,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Cybersicurezza, ICT e DORA",1556,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Economia, tassi e politica monetaria",316,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Educazione e inclusione finanziaria,831,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Finanza sostenibile ed ESG,426,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Fisco per banca e clienti,12,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Formazione e competenze del personale,0,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Governance, controlli e organizzazione",1,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Intelligenza artificiale e innovazione,6665,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Pagamenti, conti e moneta",480,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,"Pensioni, previdenza e welfare",82,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Previdenza complementare,36,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Privacy e protezione dei dati,663,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Salute e sicurezza sul lavoro,137,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Segnalazioni e reporting di vigilanza,71,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Servizi di investimento e mercati,88,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Sistema bancario e vigilanza,63,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Trasparenza e tutela della clientela,205,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Truffe e frodi ai clienti,64,
+2026-W44,2026-10-26,OpenAlex - studi,studiosi,Mondo,Vigilanza prudenziale e capitale,184,
