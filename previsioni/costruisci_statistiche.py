@@ -156,7 +156,7 @@ for r in sz:
 ris = json.loads(RIS.read_text(encoding="utf-8"))
 out = {"aggiornato": "2026-11-03", "mesi": MESI, "temi": [{"tema": t, "area": AREA[t]} for t in TEMI],
        "serie": S, "totali": TOT, "vp": {"settimane": settimane, "temi": vp, "totale": vp_tot, "nota": "Alert manuali della banca, settimane 2026 (mancano 32-41)"},
-       "sezioni": SEZ, "scadenze": scad, "sanzioni": sanz,
+       "sezioni": SEZ, "scadenze": scad, "sanzioni": sanz, "tematica": TEMATICA,
        "metodi": {"classifica": ris["classifica"], "risultati": ris["risultati"], "calibrazione": ris["calibrazione"],
                   "orizzonte": ris["orizzonte_mesi"], "origini": ris["origini"], "inizio_test": ris["inizio_test"],
                   "banco_vp": ris.get("banco_vp")},

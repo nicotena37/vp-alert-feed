@@ -1,0 +1,1696 @@
+{
+ "aggiornato": "2026-11-03",
+ "schede": [
+  {
+   "tema": "Vigilanza prudenziale e capitale",
+   "iter": [
+    "CRR3 / CRD6"
+   ],
+   "visione": "Le regole di capitale delle banche europee sono quelle di Basilea 3 nella versione finale (CRR3/CRD6), applicate dal 2025 con l'output floor che sale gradualmente fino al 2030 [8]. Dopo anni di irrigidimento, il 2026 segna un'inversione di rotta: Commissione e BCE hanno messo nero su bianco un programma di semplificazione che tocca riserve di capitale, leva finanziaria, MREL e segnalazioni [1][3].",
+   "contesto": "La spinta viene dal tema della competitività: le banche UE finanziano meno l'economia rispetto ai concorrenti e i costi di conformità sono alti. La Comunicazione della Commissione del 17 luglio 2026 parla di regole più proporzionate e di un mercato bancario più integrato [1][2]; la BCE, a dicembre 2025, ha proposto di accorpare le riserve di capitale e di semplificare la leva [3]. In Italia CRD6 è stata recepita con il D.Lgs. 208/2025 [9].",
+   "evoluzione": "CRR3 si applica dal 1° gennaio 2025 [8]; la parte sul rischio di mercato (FRTB) è stata rinviata e poi accompagnata da misure temporanee per tre anni dal 2027 [4]. A ottobre 2026 è arrivato l'accordo politico sulla riforma della cartolarizzazione, con requisiti di capitale più bassi per le operazioni meno rischiose [5][6].",
+   "attuale": "Oggi le regole in vigore non cambiano: fino a nuove leggi restano requisiti, riserve e limiti attuali [2]. Ma il calendario è chiaro: la Commissione presenterà le proposte legislative entro la fine del primo trimestre 2027 [2]. Nel frattempo la BCE insiste su integrazione e semplificazione della vigilanza [7].",
+   "possibili": "Le misure più probabili sono: meno riserve di capitale (da sei a due blocchi), eliminazione del Pillar 2 sulla leva, ricalibrazione dell'output floor per mutui e imprese senza rating, regole più leggere per le banche piccole [2][3]. Restano incerti tempi e portata, che dipenderanno dal negoziato con Parlamento e Consiglio [2].",
+   "previsioni": [
+    {
+     "titolo": "Riserve di capitale accorpate in due blocchi",
+     "direzione": "Allentamento",
+     "cosa": "Le attuali riserve (conservazione, anticiclica, rischio sistemico, G-SII/O-SII) verrebbero fuse in una riserva «non rilasciabile» e una «rilasciabile» che le autorità possono abbassare nelle fasi di crisi. Effetto atteso: struttura più semplice e capitale più utilizzabile, senza riduzione formale del livello complessivo.",
+     "quando": "Proposta attesa entro marzo 2027",
+     "data": "2027-03-31",
+     "probabilita": "Media",
+     "perche": "Lo chiede la BCE e la Commissione parla di «meno riserve»: due fonti istituzionali allineate, ma serve ancora il testo legislativo.",
+     "fonti": [
+      3,
+      1,
+      2
+     ],
+     "dati": [
+      {
+       "etichetta": "Riserve oggi / proposte",
+       "valore": "6 elementi → 2 blocchi",
+       "fonte": 3
+      }
+     ],
+     "funzioni": [
+      "Risk management",
+      "Vigilanza e segnalazioni"
+     ]
+    },
+    {
+     "titolo": "Leva finanziaria: niente più requisito di Pillar 2",
+     "direzione": "Allentamento",
+     "cosa": "Il quadro della leva passerebbe da quattro elementi a due: minimo del 3% più una sola riserva, che per le banche piccole potrebbe essere pari a zero; sparirebbe il requisito di Pillar 2 sulla leva.",
+     "quando": "Proposta attesa entro marzo 2027",
+     "data": "2027-03-31",
+     "probabilita": "Media",
+     "perche": "Misura indicata sia dalla BCE (dicembre 2025) sia dalla Commissione (luglio 2026).",
+     "fonti": [
+      3,
+      2
+     ],
+     "dati": [
+      {
+       "etichetta": "Minimo di leva",
+       "valore": "3% (invariato)",
+       "fonte": 3
+      }
+     ],
+     "funzioni": [
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Output floor ricalibrato per mutui e imprese senza rating",
+     "direzione": "Allentamento",
+     "cosa": "Il limite minimo ai risultati dei modelli interni (oggi in salita fino al 72,5% nel 2030) verrebbe ricalibrato, con regimi transitori per esposizioni verso imprese senza rating e mutui; possibile revisione anche delle deduzioni per il software.",
+     "quando": "Proposta attesa entro marzo 2027",
+     "data": "2027-03-31",
+     "probabilita": "Media",
+     "perche": "Annunciato nella Comunicazione sulla competitività; impatto maggiore per le banche con modelli interni.",
+     "fonti": [
+      2,
+      1,
+      8
+     ],
+     "dati": [
+      {
+       "etichetta": "Output floor a regime",
+       "valore": "72,5% nel 2030",
+       "fonte": 8
+      }
+     ],
+     "funzioni": [
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Requisiti più bassi sulle cartolarizzazioni meno rischiose",
+     "direzione": "Allentamento",
+     "cosa": "Ricalibrazione dei requisiti di capitale in base al rischio, con un floor di ponderazione del 5% per le classi più sicure e una nuova categoria di cartolarizzazioni «resilienti».",
+     "quando": "Dopo l'adozione formale (2027)",
+     "data": "2027-06-30",
+     "probabilita": "Alta",
+     "perche": "C'è già l'accordo politico del 21 ottobre 2026: resta solo l'adozione formale.",
+     "fonti": [
+      5,
+      6
+     ],
+     "dati": [
+      {
+       "etichetta": "Floor di ponderazione per le classi più sicure",
+       "valore": "5%",
+       "fonte": 5
+      }
+     ],
+     "funzioni": [
+      "Risk management",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Correttivi temporanei FRTB dal 2027",
+     "direzione": "Allentamento",
+     "cosa": "Dal 1° gennaio 2027, per tre anni, applicazione attenuata del nuovo rischio di mercato: test dei modelli interni meno severi e un moltiplicatore che riporta i requisiti FRTB a livelli pre-FRTB.",
+     "quando": "1 gennaio 2027",
+     "data": "2027-01-01",
+     "probabilita": "Alta",
+     "perche": "Regolamento delegato adottato il 4 giugno 2026; manca solo la fine dello scrutinio di Parlamento e Consiglio.",
+     "fonti": [
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "Risk management"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "Communication on the competitiveness of the EU banking sector, COM(2026) 615",
+     "editore": "Commissione europea",
+     "data": "2026-07-17",
+     "url": "https://finance.ec.europa.eu/document/download/ffc0d009-f49c-4b79-b100-93a2cd7a27eb_en?filename=260717-banking-sector-competitiveness-communication_en.pdf",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "European Commission Outlines Banking Reform Agenda",
+     "editore": "Sullivan & Cromwell",
+     "data": "2026-08-26",
+     "url": "https://www.sullcrom.com/insights/memo/2026/August/EU-Banking-Competitiveness-Cross-Border-MA",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Governing Council proposes simplification of EU banking rules",
+     "editore": "BCE",
+     "data": "2025-12-11",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251211~aa5c9271b8.en.html",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Commission adopts delegated regulation amending market risk requirements",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-06",
+     "url": "https://www.regulationtomorrow.com/2026/06/commission-adopts-delegated-regulation-amending-market-risk-requirements/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "European Parliament and Council reach agreement on securitisation framework review",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-10",
+     "url": "https://www.regulationtomorrow.com/2026/10/european-parliament-and-council-reach-agreement-on-securitisation-framework-review/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Commission welcomes political agreement on the review of the Securitisation Framework",
+     "editore": "Commissione europea",
+     "data": "2026-10-22",
+     "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Resilience, integration and competitiveness: building the future of European banking",
+     "editore": "BCE (discorso)",
+     "data": "2026-10-02",
+     "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Regolamento (UE) 2024/1623 (CRR3)",
+     "editore": "EUR-Lex",
+     "data": "2024-06-19",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1623",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "In GU il recepimento della CRD VI e l'adeguamento al CRR III (D.Lgs. 208/2025)",
+     "editore": "DirittoBancario",
+     "data": "2026-01-09",
+     "url": "https://www.dirittobancario.it/art/in-gu-il-decreto-di-recepimento-della-crd-vi-e-di-adeguamento-al-crr-iii/",
+     "tipo": "Stampa specializzata"
+    }
+   ],
+   "letture": [
+    2,
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "tema": "Segnalazioni e reporting di vigilanza",
+   "iter": [
+    "CRR3 / CRD6"
+   ],
+   "visione": "Le segnalazioni di vigilanza sono il punto in cui la semplificazione europea è più concreta: l'EBA ha messo in consultazione la revisione degli standard di reporting con meno dati e meno prospetti [1][2], e la Commissione punta a dimezzare i punti dati [3].",
+   "contesto": "Secondo l'EBA il reporting costa al settore circa 11,2 miliardi di euro l'anno [3]. La BCE propone di segnalare una volta sola per fini statistici, prudenziali e di risoluzione, di rivedere tutti gli obblighi ogni 3-5 anni e di ricavare l'informativa di Pillar 3 dalle segnalazioni [4].",
+   "evoluzione": "Dopo anni di aggiunte (CRR2, CRR3, ESG, IFRS 9) il 2026 è il primo anno di vera riduzione: due consultazioni EBA chiuse il 10 luglio 2026, con una parte FINREP legata all'IFRS 18 [1].",
+   "attuale": "In attesa della versione finale degli standard, gli obblighi attuali restano tutti in vigore; le banche devono comunque prepararsi ai cambi di tassonomia legati all'IFRS 18 [1][5].",
+   "possibili": "Riduzione dei punti dati e dei prospetti, soglie di materialità per le richieste di nuovo invio, segnalazione integrata BCE-EBA [3][4]. I tempi esatti di applicazione non sono ancora noti [1].",
+   "previsioni": [
+    {
+     "titolo": "Dimezzamento dei punti dati segnalati",
+     "direzione": "Semplificazione",
+     "cosa": "Obiettivo indicato dalla Commissione: circa metà dei punti dati in meno nelle segnalazioni di vigilanza; l'EBA ha già proposto di togliere prospetti e portafogli di benchmarking.",
+     "quando": "Standard finali attesi nel 2027",
+     "data": "2027-06-30",
+     "probabilita": "Media",
+     "perche": "Obiettivo politico dichiarato e consultazioni EBA già concluse; la percentuale finale dipende dagli standard definitivi.",
+     "fonti": [
+      3,
+      1,
+      2
+     ],
+     "dati": [
+      {
+       "etichetta": "Costo annuo del reporting (stima EBA)",
+       "valore": "11,2 mld €",
+       "fonte": 3
+      },
+      {
+       "etichetta": "Riduzione obiettivo dei punti dati",
+       "valore": "circa 50%",
+       "fonte": 3
+      }
+     ],
+     "funzioni": [
+      "Vigilanza e segnalazioni"
+     ]
+    },
+    {
+     "titolo": "Soglia di materialità per le richieste di nuovo invio",
+     "direzione": "Allentamento",
+     "cosa": "Le correzioni di dati poco rilevanti non dovrebbero più richiedere un nuovo invio completo delle segnalazioni.",
+     "quando": "2027-2028",
+     "data": "2027-12-31",
+     "probabilita": "Media",
+     "perche": "Proposta della BCE, coerente con la linea della Commissione.",
+     "fonti": [
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "Vigilanza e segnalazioni"
+     ]
+    },
+    {
+     "titolo": "Segnalazione unica per statistica, vigilanza e risoluzione",
+     "direzione": "Semplificazione",
+     "cosa": "Un sistema integrato in cui i dati si inviano una volta e vengono condivisi tra autorità europee, tramite il comitato congiunto sul reporting bancario.",
+     "quando": "Oltre il 2028",
+     "data": "2029-06-30",
+     "probabilita": "Bassa",
+     "perche": "Progetto di lungo periodo: richiede accordo tra più autorità e cambi normativi.",
+     "fonti": [
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "Vigilanza e segnalazioni"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EBA consults on simplifying supervisory reporting under CRR",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-04",
+     "url": "https://www.regulationtomorrow.com/2026/04/eba-consults-on-simplifying-supervisory-reporting-under-crr/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Consultation paper on revised ITS on supervisory reporting (EBA/CP/2026/07)",
+     "editore": "EBA",
+     "data": "2026-04",
+     "url": "https://www.eba.europa.eu/sites/default/files/2026-04/ec63db1e-39b5-4c78-9e20-71bdfb0eed85/EBA%20CP%202026%2007%20(Consultation%20paper%20on%20revised%20ITS%20on%20supervisory%20reporting).pdf",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "European Commission Outlines Banking Reform Agenda",
+     "editore": "Sullivan & Cromwell",
+     "data": "2026-08-26",
+     "url": "https://www.sullcrom.com/insights/memo/2026/August/EU-Banking-Competitiveness-Cross-Border-MA",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Governing Council proposes simplification of EU banking rules",
+     "editore": "BCE",
+     "data": "2025-12-11",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251211~aa5c9271b8.en.html",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Efficient reporting: simpler, smarter, proportionate",
+     "editore": "EBA",
+     "data": "2026",
+     "url": "https://www.eba.europa.eu/publications-and-media/publications/efficient-reporting-simpler-smarter-proportionate",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    5
+   ]
+  },
+  {
+   "tema": "Crisi bancarie, risoluzione e garanzia dei depositi",
+   "iter": [],
+   "visione": "La riforma CMDI (gestione delle crisi e garanzia dei depositi) è stata pubblicata in Gazzetta UE il 20 aprile 2026: estende gli strumenti di risoluzione anche alle banche piccole e medie e permette di usare i fondi del settore per «colmare il divario» [1].",
+   "contesto": "L'obiettivo è ridurre il ricorso a denaro pubblico quando una banca fallisce, usando prima le risorse della banca e poi le reti di sicurezza finanziate dal settore (fondi di risoluzione e fondo unico) [1][2].",
+   "evoluzione": "Dopo il varo del 2014 (BRRD, SRMR, DGSD), la revisione è stata adottata nel 2026 [1]; la Commissione ha poi annunciato un sistema europeo dei depositi semplificato al posto della proposta EDIS del 2015 [3].",
+   "attuale": "Il recepimento delle direttive va completato entro l'11 maggio 2028; le nuove regole si applicano da maggio 2028 [1]. La Banca d'Italia ne ha parlato al Parlamento il 29 ottobre 2026 [4].",
+   "possibili": "Nel 2027 sono attese le proposte per un quadro semplificato di garanzia dei depositi europea e per un MREL più vicino al TLAC e più automatico [3].",
+   "previsioni": [
+    {
+     "titolo": "Recepimento italiano della riforma CMDI",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Modifiche al TUB e ai decreti sulla risoluzione e sui sistemi di garanzia: uso dei fondi di garanzia per misure alternative, nuove condizioni per la risoluzione, trasparenza verso i depositanti.",
+     "quando": "Entro 11 maggio 2028",
+     "data": "2028-05-11",
+     "probabilita": "Alta",
+     "perche": "Termine fissato dalle direttive pubblicate in Gazzetta UE.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Legale e societario",
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "MREL più vicino al TLAC e più automatico",
+     "direzione": "Allentamento",
+     "cosa": "Calibrazione dell'MREL più automatica e allineata al TLAC, permessi di riacquisto più rapidi, piani di risoluzione più proporzionati.",
+     "quando": "Proposta attesa entro marzo 2027",
+     "data": "2027-03-31",
+     "probabilita": "Media",
+     "perche": "Annunciato nella Comunicazione sulla competitività del luglio 2026.",
+     "fonti": [
+      3
+     ],
+     "dati": [],
+     "funzioni": [
+      "Risk management"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EU reforms to the CMDI framework published in OJ",
+     "editore": "A&O Shearman",
+     "data": "2026-04",
+     "url": "https://finreg.aoshearman.com/eu-reforms-to-the-cmdi-framework-published-in-oj",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "EU resolution framework reform: key changes for banks under the CMDI package",
+     "editore": "Ashurst",
+     "data": "2026",
+     "url": "https://www.ashurst.com/en/insights/eu-resolution-framework-reform-key-changes-for-banks-under-the-cmdi-package/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "European Commission Outlines Banking Reform Agenda",
+     "editore": "Sullivan & Cromwell",
+     "data": "2026-08-26",
+     "url": "https://www.sullcrom.com/insights/memo/2026/August/EU-Banking-Competitiveness-Cross-Border-MA",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Memoria della Banca d'Italia del 29 ottobre 2026",
+     "editore": "Banca d'Italia",
+     "data": "2026-10-29",
+     "url": "https://www.bancaditalia.it/pubblicazioni/memorie/memorie-2026/Memoria-29.10.2026.pdf?language_id=1",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "tema": "Governance, controlli e organizzazione",
+   "iter": [
+    "CRR3 / CRD6"
+   ],
+   "visione": "La governance delle banche è al centro del recepimento di CRD6: il D.Lgs. 208/2025 ha riscritto le regole del TUB su idoneità di esponenti e responsabili delle funzioni chiave [3][4]. A livello europeo EBA ed ESMA stanno aggiornando le linee guida sull'idoneità [1][2].",
+   "contesto": "Le nuove regole chiedono valutazioni più strutturate di competenza, correttezza e indipendenza, estese ai responsabili delle funzioni chiave nelle banche grandi [1][4]. Insieme, la BCE chiede di armonizzare in Europa licenze, governance e operazioni con parti correlate [5].",
+   "evoluzione": "Il D.Lgs. 208/2025 è in Gazzetta dall'8 gennaio 2026, con regimi transitori [3]. Le linee guida congiunte EBA-ESMA sono state in consultazione fino al 25 maggio 2026 [1].",
+   "attuale": "Le banche stanno adeguando processi di nomina e autovalutazione; si attendono le disposizioni attuative della Banca d'Italia e la versione finale delle linee guida europee [1][3].",
+   "possibili": "Linee guida finali con alcune semplificazioni per ridurre gli oneri, ma con più attenzione ai responsabili delle funzioni chiave [1]; nel medio periodo, regole di governance armonizzate a livello UE [5].",
+   "previsioni": [
+    {
+     "titolo": "Linee guida EBA-ESMA finali sull'idoneità",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Testo definitivo delle linee guida per membri degli organi e responsabili delle funzioni chiave, con misure di semplificazione e regole per le succursali di paesi terzi.",
+     "quando": "2027",
+     "data": "2027-03-31",
+     "probabilita": "Alta",
+     "perche": "Consultazione conclusa a maggio 2026: la versione finale è il passo successivo.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Legale e societario",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Aggiornamento della Circolare 285 su governo societario e idoneità",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Disposizioni attuative della Banca d'Italia dopo il D.Lgs. 208/2025 (procedure di valutazione, ruolo dei responsabili delle funzioni chiave).",
+     "quando": "2026-2027",
+     "data": "2027-03-31",
+     "probabilita": "Media",
+     "perche": "Il decreto rinvia a norme attuative; le tempistiche non sono ancora note.",
+     "fonti": [
+      3,
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "Legale e societario"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EBA and ESMA consult on the revised suitability assessment framework",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-02",
+     "url": "https://www.regulationtomorrow.com/2026/02/eba-and-esma-consult-on-the-revised-suitability-assessment-framework-for-banks-and-investment-firms/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Consultation paper on joint guidelines on suitability",
+     "editore": "EBA - ESMA",
+     "data": "2026-02-25",
+     "url": "https://www.eba.europa.eu/sites/default/files/2026-02/cd383d03-0d19-49a6-81f0-3b5a554886fc/CP%20on%20Joint%20GLs%20on%20suitability.pdf",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "In GU il recepimento della CRD VI e l'adeguamento al CRR III (D.Lgs. 208/2025)",
+     "editore": "DirittoBancario",
+     "data": "2026-01-09",
+     "url": "https://www.dirittobancario.it/art/in-gu-il-decreto-di-recepimento-della-crd-vi-e-di-adeguamento-al-crr-iii/",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Revisione art. 26 TUB con il d.lgs. 208/2025",
+     "editore": "Fondazione Luzzatti",
+     "data": "2026-02",
+     "url": "https://www.luigiluzzatti.it/news/recepimento-della-direttiva-ue-2024-1619-crd-vi-modifiche-al-testo-unico-bancario-apportate-dal-d-lgs-31-dicembre-2025-n-208-02-2026/",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Governing Council proposes simplification of EU banking rules",
+     "editore": "BCE",
+     "data": "2025-12-11",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251211~aa5c9271b8.en.html",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "tema": "Antiriciclaggio e sanzioni finanziarie",
+   "iter": [
+    "Pacchetto antiriciclaggio (AMLR, AMLD6, AMLA)"
+   ],
+   "visione": "Il nuovo corpo unico europeo antiriciclaggio si applica dal 10 luglio 2027 [3]. Il 1° ottobre 2026 l'AMLA ha finalizzato i primi standard tecnici su adeguata verifica, soglie e requisiti di gruppo [2].",
+   "contesto": "Le regole diventano direttamente applicabili e uguali in tutta l'UE: adeguata verifica, titolare effettivo al 25%, limite al contante di 10.000 euro [3]. È anche l'area dove la Banca d'Italia sanziona di più dopo il governo dei rischi (dati della pagina Sanzioni) [4].",
+   "evoluzione": "Pacchetto adottato a maggio 2024; AMLA operativa dal 2025; 2026 dedicato al secondo livello con consultazioni e audizioni [1].",
+   "attuale": "Gli RTS finali su adeguata verifica, soglie e requisiti di gruppo sono stati inviati alla Commissione per l'adozione [2]. L'AMLA ha individuato i soggetti potenzialmente idonei alla vigilanza diretta entro fine settembre 2026 [1].",
+   "possibili": "Adozione degli RTS da parte della Commissione, revisione del D.Lgs. 231/2007 e delle disposizioni della Banca d'Italia, prima selezione dei soggetti vigilati direttamente nel 2027 [1][2].",
+   "previsioni": [
+    {
+     "titolo": "Nuove regole di adeguata verifica uguali in tutta l'UE",
+     "direzione": "Irrigidimento",
+     "cosa": "RTS AMLA: informazioni da raccogliere per verifica ordinaria, semplificata e rafforzata; requisiti per l'identità digitale; soglie più basse per settori ad alto rischio; regole di gruppo e per le filiali in paesi terzi.",
+     "quando": "10 luglio 2027",
+     "data": "2027-07-10",
+     "probabilita": "Alta",
+     "perche": "RTS finalizzati dall'AMLA e data di applicazione fissata dal regolamento.",
+     "fonti": [
+      2,
+      3,
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "Antiriciclaggio",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Prima selezione dei gruppi vigilati direttamente dall'AMLA",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Fino a 40 soggetti transfrontalieri ad alto rischio passeranno alla vigilanza diretta dell'AMLA dal 2028.",
+     "quando": "2027 (selezione), luglio 2028 (avvio)",
+     "data": "2027-06-30",
+     "probabilita": "Alta",
+     "perche": "Scadenze del regolamento AMLA e programma pubblicato.",
+     "fonti": [
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Soggetti selezionabili",
+       "valore": "fino a 40",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Antiriciclaggio"
+     ]
+    },
+    {
+     "titolo": "Revisione del D.Lgs. 231/2007",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Adeguamento della legge italiana al regolamento AMLR e recepimento degli articoli della AMLD6.",
+     "quando": "2027",
+     "data": "2027-06-30",
+     "probabilita": "Media",
+     "perche": "Necessaria prima dell'applicazione dell'AMLR; tempi italiani non ancora annunciati.",
+     "fonti": [
+      1,
+      3
+     ],
+     "dati": [],
+     "funzioni": [
+      "Antiriciclaggio",
+      "Legale e societario"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "What's done, what's due: the AML countdown",
+     "editore": "Herbert Smith Freehills Kramer",
+     "data": "2026-07-14",
+     "url": "https://www.hsfkramer.com/notes/fsrandcorpcrime/2026-posts/whats-done-whats-due-the-aml-countdown",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "AMLA finalises key standards for the private sector",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-10-01",
+     "url": "https://www.regulationtomorrow.com/2026/10/amla-finalises-key-standards-for-the-private-sector/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Regolamento (UE) 2024/1624 (AMLR)",
+     "editore": "EUR-Lex",
+     "data": "2024-06-19",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1624",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Provvedimenti sanzionatori (pagina Sanzioni del sito)",
+     "editore": "Banca d'Italia",
+     "data": "2026",
+     "url": "https://www.bancaditalia.it/compiti/vigilanza/provvedimenti-sanzionatori/",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    2
+   ]
+  },
+  {
+   "tema": "Misure restrittive e sanzioni internazionali",
+   "iter": [],
+   "visione": "Le sanzioni UE contro la Russia sono arrivate al 21° pacchetto (23 luglio 2026) e colpiscono sempre di più il settore finanziario: divieti di operazioni con banche russe e di paesi terzi, prestatori di cripto-attività e intermediari di pagamento [1][2].",
+   "contesto": "Per le banche il rischio è soprattutto di elusione: operazioni indirette tramite paesi terzi, sistemi di messaggistica alternativi (SPFS), cripto [1][2]. Il volume di atti UE su questo tema è il più alto di tutti (vedi grafico).",
+   "evoluzione": "Il 20° pacchetto (23 aprile 2026) ha aggiunto 20 banche russe ai divieti e ha usato per la prima volta lo strumento anti-elusione [2]; il 21° ha esteso i divieti a 33 banche russe e 14 prestatori di cripto [1].",
+   "attuale": "Divieto per cittadini russi di avere ruoli nei CASP autorizzati MiCAR dal 25 agosto 2026; possibilità di vietare operazioni con cripto di paesi terzi indicati [1].",
+   "possibili": "Nuovi pacchetti con altre banche di paesi terzi e attivazione del divieto sui prestatori cripto di paesi terzi [1].",
+   "previsioni": [
+    {
+     "titolo": "Altre banche di paesi terzi nella lista dei divieti",
+     "direzione": "Irrigidimento",
+     "cosa": "Estensione dei divieti di operazione a istituti di paesi terzi coinvolti nell'elusione o collegati a SPFS; aggiornamento dei controlli sui pagamenti e sulle banche corrispondenti.",
+     "quando": "Prossimo pacchetto (2026-2027)",
+     "data": "2027-01-31",
+     "probabilita": "Alta",
+     "perche": "Ogni pacchetto del 2026 ha aggiunto banche di paesi terzi.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [
+      {
+       "etichetta": "Banche russe con divieto (21° pacchetto)",
+       "valore": "33",
+       "fonte": 1
+      },
+      {
+       "etichetta": "Banche russe aggiunte (20° pacchetto)",
+       "valore": "20",
+       "fonte": 2
+      }
+     ],
+     "funzioni": [
+      "Antiriciclaggio",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Divieto di operare con cripto di paesi terzi indicati",
+     "direzione": "Irrigidimento",
+     "cosa": "Lo strumento già previsto dal 21° pacchetto verrebbe applicato a paesi specifici.",
+     "quando": "2027",
+     "data": "2027-06-30",
+     "probabilita": "Media",
+     "perche": "Base giuridica già adottata, ma nessun paese ancora indicato.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "Antiriciclaggio"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EU Council adopts 21st sanctions package against Russia",
+     "editore": "Steptoe",
+     "data": "2026-07-23",
+     "url": "https://www.steptoe.com/en/news-publications/international-compliance-blog/eu-council-adopts-21st-sanctions-package-against-russia.html",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "20th package of EU sanctions against Russia",
+     "editore": "DLA Piper",
+     "data": "2026-04",
+     "url": "https://www.dlapiper.com/en-pt/insights/publications/global-sanctions-alert/2026/20th-package-of-eu-sanctions-against-russia",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "EU's 21st sanctions package on Russia clamps down on energy, fisheries, defence trade",
+     "editore": "Brussels Times",
+     "data": "2026-07",
+     "url": "https://www.brusselstimes.com/2181224/eus-21st-sanctions-package-on-russia-clamps-down-on-energy-fisheries-defence-trade",
+     "tipo": "Stampa"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tema": "Servizi di investimento e mercati",
+   "iter": [
+    "MiFID II / MiFIR",
+    "Retail Investment Strategy",
+    "CSDR - disciplina di regolamento"
+   ],
+   "visione": "Tre cantieri insieme: la Retail Investment Strategy (accordo di dicembre 2025) che cambia incentivi e adeguatezza [1], il pacchetto sull'integrazione dei mercati che sposta parte della vigilanza all'ESMA [2], il passaggio al regolamento T+1 nell'ottobre 2027 [5].",
+   "contesto": "In Italia il TUF è stato adeguato alla revisione MiFID/MiFIR con il D.Lgs. 28/2026 [3] e la Consob ha in consultazione modifiche ai suoi regolamenti [4].",
+   "evoluzione": "MiFID II si applica dal 2018; la revisione 2024 ha introdotto nastro consolidato e divieto del pagamento per il flusso ordini; l'accordo RIS del 18 dicembre 2025 ha rinunciato al divieto degli incentivi a favore di benchmark di costo [1][3].",
+   "attuale": "Il Consiglio ha fissato il 9 ottobre 2026 la sua posizione sul pacchetto vigilanza: ESMA diretta su grandi sedi di negoziazione, depositari centrali, controparti centrali e grandi prestatori di cripto [2].",
+   "possibili": "Testo finale RIS e applicazione verso fine 2028; nuovi regolamenti Consob; negoziato con il Parlamento sul pacchetto ESMA entro il 2027 [1][2][4].",
+   "previsioni": [
+    {
+     "titolo": "Value for money: i prodotti troppo costosi non si potranno vendere ai clienti al dettaglio",
+     "direzione": "Irrigidimento",
+     "cosa": "Costi da quantificare e confrontare con gruppi di prodotti simili; se non giustificati, il prodotto non va approvato per la clientela al dettaglio. Incentivi ammessi solo se a beneficio del cliente e indicati a parte.",
+     "quando": "Pubblicazione 2027, applicazione circa fine 2028",
+     "data": "2028-12-31",
+     "probabilita": "Alta",
+     "perche": "C'è l'accordo politico; manca l'adozione formale.",
+     "fonti": [
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Recepimento",
+       "valore": "24 mesi dalla pubblicazione",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Compliance",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Adeguatezza semplificata per i prodotti semplici e poco costosi",
+     "direzione": "Allentamento",
+     "cosa": "Per prodotti non complessi ed efficienti nei costi non servirà più valutare conoscenza ed esperienza del cliente nella consulenza; soglie più basse per passare a cliente professionale (portafoglio da 500.000 a 250.000 euro).",
+     "quando": "Circa fine 2028",
+     "data": "2028-12-31",
+     "probabilita": "Alta",
+     "perche": "Contenuto dell'accordo RIS.",
+     "fonti": [
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Soglia portafoglio per cliente professionale",
+       "valore": "500.000 € → 250.000 €",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Compliance",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Regolamento delle operazioni in T+1",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Le operazioni in titoli si regoleranno un giorno dopo la negoziazione: da rivedere processi di post-trading, cambi e prestito titoli.",
+     "quando": "11 ottobre 2027",
+     "data": "2027-10-11",
+     "probabilita": "Alta",
+     "perche": "Data fissata dal Regolamento (UE) 2025/2075.",
+     "fonti": [
+      5
+     ],
+     "dati": [],
+     "funzioni": [
+      "Commerciale e prodotti",
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Vigilanza ESMA su grandi sedi e infrastrutture",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Passaggio all'ESMA della vigilanza su sedi di negoziazione, CSD e CCP più rilevanti e sui grandi prestatori di cripto; passaporto del depositario facoltativo.",
+     "quando": "Entro fine 2027 (obiettivo)",
+     "data": "2027-12-31",
+     "probabilita": "Media",
+     "perche": "Posizione del Consiglio fissata; manca quella del Parlamento.",
+     "fonti": [
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Compliance"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "Provisional agreement on the Retail Investment Strategy",
+     "editore": "Loyens & Loeff",
+     "data": "2025-12",
+     "url": "https://www.loyensloeff.com/insights/news--events/news/provisional-agreement-on-the-retail-investment-strategy---what-fund-managers-need-to-know/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Council position on the market integration and supervision package",
+     "editore": "Lovguiden",
+     "data": "2026-10-09",
+     "url": "https://www.lovguiden.dk/en/det-offentlige/raadet-for-den-europaeiske-union/2026-10-09-raadet-vil-flytte-tilsyn-med-store-handelspladser-til-esma",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "TUF: pubblicato il decreto di adeguamento alle riforme UE (D.Lgs. 28/2026)",
+     "editore": "Edotto",
+     "data": "2026-03",
+     "url": "https://www.edotto.com/articolo/tuf-pubblicato-il-decreto-di-adeguamento-alle-riforme-ue",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Consultazione Consob sulle modifiche ai regolamenti Mercati, Intermediari ed Emittenti",
+     "editore": "Consob",
+     "data": "2026-07-17",
+     "url": "https://www.consob.it/web/consob/w/consultazione-consob-sulle-modifiche-regolamentari-regolamenti-mercati-intermediari-ed-emittenti-17-luglio-2026",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Regulation to shorten settlement cycle to T+1 published in OJ",
+     "editore": "A&O Shearman",
+     "data": "2025-10",
+     "url": "https://finreg.aoshearman.com/Regulation-to-shorten-settlement-cycle-to-T1-publ",
+     "tipo": "Studio legale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "tema": "Trasparenza e tutela della clientela",
+   "iter": [
+    "Credito ai consumatori (CCD2)",
+    "Retail Investment Strategy",
+    "PSD3 e Regolamento servizi di pagamento (PSR)"
+   ],
+   "visione": "La tutela del cliente è il terreno dove arrivano più obblighi nuovi: credito ai consumatori dal 20 novembre 2026 [1][2], prodotti di investimento con la RIS [3], pagamenti con PSD3/PSR [4].",
+   "contesto": "Le sanzioni della Banca d'Italia per trasparenza riguardano spesso oneri non dovuti e carenze di organizzazione e controlli (vedi pagina Sanzioni) [5]. Il decreto CICR del 9 luglio 2026 ha riscritto pubblicità, informativa e contratti nel credito ai consumatori [1].",
+   "evoluzione": "D.Lgs. 212/2025 in vigore dal 10 gennaio 2026 [2]; decreto CICR in GU il 17 agosto 2026 [1].",
+   "attuale": "Mancano le disposizioni attuative della Banca d'Italia su pubblicità, informativa precontrattuale, merito creditizio e contratti [1].",
+   "possibili": "Nuove disposizioni di trasparenza della Banca d'Italia, rimborsi più ampi nelle frodi di pagamento con PSR, regole sul value for money [1][3][4].",
+   "previsioni": [
+    {
+     "titolo": "Pubblicità del credito con avviso obbligatorio e TAEG non in evidenza",
+     "direzione": "Irrigidimento",
+     "cosa": "Le pubblicità devono dire che «prendere denaro in prestito costa denaro»; se citano un costo devono riportare le informazioni base, senza dare al TAEG più risalto delle altre voci; vietate alcune affermazioni ingannevoli.",
+     "quando": "Con le disposizioni Banca d'Italia (fine 2026)",
+     "data": "2026-12-31",
+     "probabilita": "Alta",
+     "perche": "Già previsto dal decreto CICR in Gazzetta.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "Compliance",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Esenzioni per crediti sotto 200 euro e a interessi zero",
+     "direzione": "Allentamento",
+     "cosa": "Nuova esenzione per crediti sotto 200 euro, senza interessi o rimborsati entro tre mesi con commissioni non significative.",
+     "quando": "Con l'applicazione della CCD2",
+     "data": "2026-11-20",
+     "probabilita": "Alta",
+     "perche": "Previsto dal decreto CICR.",
+     "fonti": [
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Soglia di esenzione",
+       "valore": "200 €",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Banche responsabili nelle frodi da impersonificazione",
+     "direzione": "Irrigidimento",
+     "cosa": "Con il PSR la responsabilità si sposta verso il prestatore di pagamento, salvo dolo o colpa grave del cliente; verifica IBAN-nome prima di ogni bonifico.",
+     "quando": "Circa 2028",
+     "data": "2028-09-30",
+     "probabilita": "Alta",
+     "perche": "Testi finali del Consiglio pubblicati ad aprile 2026.",
+     "fonti": [
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "Compliance",
+      "IT, sicurezza e dati"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "CCD 2: in GU il decreto del CICR in materia di credito ai consumatori",
+     "editore": "DirittoBancario",
+     "data": "2026-08",
+     "url": "https://www.dirittobancario.it/art/ccd-2-in-gu-il-decreto-del-cicr-in-materia-di-credito-ai-consumatori/",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "DECRETO LEGISLATIVO 31 dicembre 2025, n. 212",
+     "editore": "Normattiva",
+     "data": "2026-01-09",
+     "url": "https://www.normattiva.it/eli/id/2026/01/09/26G00009/ORIGINAL",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Provisional agreement on the Retail Investment Strategy",
+     "editore": "Loyens & Loeff",
+     "data": "2025-12",
+     "url": "https://www.loyensloeff.com/insights/news--events/news/provisional-agreement-on-the-retail-investment-strategy---what-fund-managers-need-to-know/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "PSD3 e PSR, pagamenti UE verso la svolta",
+     "editore": "Jamma",
+     "data": "2026-08-18",
+     "url": "https://www.jamma.it/attualita/psd3-e-psr-pagamenti-ue-verso-la-svolta-nuove-regole-e-scadenza-nel-2028-357298",
+     "tipo": "Stampa"
+    },
+    {
+     "titolo": "Provvedimenti sanzionatori",
+     "editore": "Banca d'Italia",
+     "data": "2026",
+     "url": "https://www.bancaditalia.it/compiti/vigilanza/provvedimenti-sanzionatori/",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "tema": "Credito e finanziamenti",
+   "iter": [
+    "Credito ai consumatori (CCD2)"
+   ],
+   "visione": "Il credito alle famiglie cambia dal 20 novembre 2026 con la nuova direttiva sul credito ai consumatori [2]; il merito creditizio con IA diventa sistema ad alto rischio dal dicembre 2027 [5].",
+   "contesto": "Il decreto CICR chiede una valutazione del merito creditizio approfondita e rimanda alla Banca d'Italia i fattori da considerare [1]. Sul fronte prudenziale la Commissione vuole ricalibrare l'output floor per mutui e imprese senza rating [3].",
+   "evoluzione": "CCD2 pubblicata nel 2023, recepita con D.Lgs. 212/2025, attuata con decreto CICR del 9 luglio 2026 [1][2].",
+   "attuale": "Si attendono le disposizioni della Banca d'Italia su merito creditizio e scoperti «regolari» [1].",
+   "possibili": "Regole uniche UE sul merito creditizio, obblighi AI Act sui modelli di scoring, capitale più leggero su mutui con modelli interni [3][4][5].",
+   "previsioni": [
+    {
+     "titolo": "Merito creditizio: valutazione approfondita con fattori fissati dalla Banca d'Italia",
+     "direzione": "Irrigidimento",
+     "cosa": "Valutazione basata su informazioni pertinenti e accurate su reddito e spese; la Banca d'Italia indicherà i fattori; accesso non discriminatorio alle banche dati per i creditori di altri Paesi UE.",
+     "quando": "Fine 2026 - 2027",
+     "data": "2027-03-31",
+     "probabilita": "Alta",
+     "perche": "Previsto dal decreto CICR e dalla direttiva.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Commerciale e prodotti",
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Scoring creditizio con IA come sistema ad alto rischio",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Gestione dei rischi, qualità dei dati, documentazione, sorveglianza umana e registrazione per i modelli di IA che valutano il merito creditizio delle persone.",
+     "quando": "2 dicembre 2027",
+     "data": "2027-12-02",
+     "probabilita": "Alta",
+     "perche": "Data fissata dal Digital Omnibus; l'EBA ha mappato le sovrapposizioni con le regole bancarie.",
+     "fonti": [
+      5,
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati",
+      "Risk management"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "CCD 2: in GU il decreto del CICR in materia di credito ai consumatori",
+     "editore": "DirittoBancario",
+     "data": "2026-08",
+     "url": "https://www.dirittobancario.it/art/ccd-2-in-gu-il-decreto-del-cicr-in-materia-di-credito-ai-consumatori/",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Direttiva (UE) 2023/2225 (CCD2)",
+     "editore": "EUR-Lex",
+     "data": "2023-10-30",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32023L2225",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "European Commission Outlines Banking Reform Agenda",
+     "editore": "Sullivan & Cromwell",
+     "data": "2026-08-26",
+     "url": "https://www.sullcrom.com/insights/memo/2026/August/EU-Banking-Competitiveness-Cross-Border-MA",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "AI Act implications for the EU banking sector",
+     "editore": "EBA",
+     "data": "2025-11",
+     "url": "https://www.eba.europa.eu/sites/default/files/2025-11/d8b999ce-a1d9-4964-9606-971bbc2aaf89/AI%20Act%20implications%20for%20the%20EU%20banking%20sector.pdf",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "EU AI Omnibus enters into force, amending the AI Act",
+     "editore": "White & Case",
+     "data": "2026-07",
+     "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+     "tipo": "Studio legale"
+    }
+   ],
+   "letture": [
+    1,
+    4
+   ]
+  },
+  {
+   "tema": "Pagamenti, conti e moneta",
+   "iter": [
+    "PSD3 e Regolamento servizi di pagamento (PSR)",
+    "Instant Payments",
+    "Accesso ai dati finanziari (FiDA)"
+   ],
+   "visione": "I pagamenti vivono la riforma più ampia dai tempi della PSD2: PSD3 e PSR attese in Gazzetta UE [1][2], euro digitale in negoziato finale [3], bonifici istantanei già obbligatori nell'area euro [4].",
+   "contesto": "Le priorità sono frodi, open banking e parità di condizioni tra banche e operatori non bancari [1][2]. L'euro digitale è pensato con un limite di detenzione per persona (si discute tra 500 e 3.000 euro) per evitare fughe dai depositi [3].",
+   "evoluzione": "Accordo politico PSD3/PSR a fine 2025 e testi finali del Consiglio il 23 aprile 2026 [1]; bonifici istantanei e verifica del beneficiario dal 9 ottobre 2025 [4].",
+   "attuale": "Si attende la pubblicazione in Gazzetta di PSD3/PSR (attesa nel 2026) [2]; per l'euro digitale si è aperta la fase di trilogo dopo il voto della commissione ECON [3]; FiDA ha un nuovo non-paper della Commissione [5].",
+   "possibili": "Applicazione PSR circa 21 mesi dopo l'entrata in vigore (indicativamente 2028), euro digitale pronto dal 2029 se la legge arriva in tempo, FiDA ridimensionata e per fasi [2][3][5].",
+   "previsioni": [
+    {
+     "titolo": "Capitale minimo rivisto e salvaguardia dei fondi più severa per gli istituti di pagamento",
+     "direzione": "Irrigidimento",
+     "cosa": "Capitale iniziale per le rimesse da 20.000 a 40.000 euro e per gli altri servizi da 125.000 a 150.000 euro (IMEL invece da 350.000 a 250.000); i fondi dei clienti non possono stare tutti presso una sola banca.",
+     "quando": "Circa 2028",
+     "data": "2028-09-30",
+     "probabilita": "Alta",
+     "perche": "Testi finali pubblicati dal Consiglio.",
+     "fonti": [
+      2,
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Capitale per le rimesse",
+       "valore": "20.000 € → 40.000 €",
+       "fonte": 2
+      },
+      {
+       "etichetta": "Capitale IMEL",
+       "valore": "350.000 € → 250.000 €",
+       "fonte": 2
+      }
+     ],
+     "funzioni": [
+      "Commerciale e prodotti",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Euro digitale con limite di detenzione per persona",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Le banche dovranno distribuire l'euro digitale (online e offline) entro un limite per persona in discussione tra 500 e 3.000 euro; impatti su liquidità, sistemi e offerta.",
+     "quando": "Legge 2026-2027, emissione dal 2029",
+     "data": "2029-06-30",
+     "probabilita": "Media",
+     "perche": "Posizione del Consiglio (dicembre 2025) e voto ECON (2026); manca l'accordo finale.",
+     "fonti": [
+      3
+     ],
+     "dati": [
+      {
+       "etichetta": "Limite di detenzione in discussione",
+       "valore": "500-3.000 €",
+       "fonte": 3
+      }
+     ],
+     "funzioni": [
+      "Commerciale e prodotti",
+      "IT, sicurezza e dati",
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "FiDA ridimensionata e introdotta per fasi",
+     "direzione": "Allentamento",
+     "cosa": "Open finance in tre fasi in circa quattro anni, prima gli schemi di condivisione; possibili esclusioni di soggetti e dati e storico più breve.",
+     "quando": "Accordo possibile nel 2027",
+     "data": "2027-06-30",
+     "probabilita": "Bassa",
+     "perche": "Negoziato fermo da giugno 2025, rilanciato da un non-paper di luglio 2026.",
+     "fonti": [
+      5
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "PSD3 and PSR published: what's changing for EU payment services?",
+     "editore": "Matheson",
+     "data": "2026-04",
+     "url": "https://www.matheson.com/insights/psd3-and-psr-published-whats-changing-for-eu-payment-services/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "PSD3 e PSR, pagamenti UE verso la svolta",
+     "editore": "Jamma",
+     "data": "2026-08-18",
+     "url": "https://www.jamma.it/attualita/psd3-e-psr-pagamenti-ue-verso-la-svolta-nuove-regole-e-scadenza-nel-2028-357298",
+     "tipo": "Stampa"
+    },
+    {
+     "titolo": "European Parliament backs digital euro legislation",
+     "editore": "Brussels Signal",
+     "data": "2026-06-23",
+     "url": "https://brusselssignal.eu/2026/06/european-parliament-backs-digital-euro-legislation/",
+     "tipo": "Stampa"
+    },
+    {
+     "titolo": "Regolamento (UE) 2024/886 (Instant Payments)",
+     "editore": "EUR-Lex",
+     "data": "2024-03-19",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R0886",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "FiDA back in motion: from ambitious to workable",
+     "editore": "Thede Consulting",
+     "data": "2026-07-16",
+     "url": "https://thede-consulting.com/en/payment-en/fida-back-in-motion-from-ambitious-to-workable/",
+     "tipo": "Consulenza"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tema": "Cripto-attività e finanza digitale",
+   "iter": [
+    "MiCAR"
+   ],
+   "visione": "MiCAR è pienamente applicato e in Italia il regime transitorio è finito il 30 dicembre 2025 [5]. Ora si apre «MiCA 2»: la Commissione ha consultato il mercato fino al 31 agosto 2026 [1], ESMA ed EBA hanno indicato le loro priorità [2][3].",
+   "contesto": "Nel registro ESMA ci sono circa 227 prestatori di servizi su cripto in 25 Paesi [1]. Il Consiglio vuole la vigilanza ESMA diretta solo sui prestatori più grandi e transfrontalieri [4]. Le sanzioni UE colpiscono anche le cripto collegate alla Russia [6].",
+   "evoluzione": "Regolamento del 2023, stablecoin dal giugno 2024, tutto il resto dal dicembre 2024; consultazione sulla revisione aperta il 20 maggio 2026 [1].",
+   "attuale": "Temi aperti: stablecoin emesse in più giurisdizioni, divieto di remunerare le stablecoin, prestito e staking, DeFi [1]; l'EBA chiede regole più severe su stablecoin e prestiti in cripto [3].",
+   "possibili": "Proposta di revisione MiCA con regole più dure su stablecoin e nuove attività (prestito di cripto), passaggio dei grandi CASP all'ESMA [1][3][4].",
+   "previsioni": [
+    {
+     "titolo": "Regole più severe su stablecoin emesse in più Paesi",
+     "direzione": "Irrigidimento",
+     "cosa": "Diritti di rimborso più forti per chi detiene stablecoin nell'UE, requisiti di riserva e prudenziali rivisti, regime di equivalenza per emittenti di paesi terzi.",
+     "quando": "Proposta 2027",
+     "data": "2027-06-30",
+     "probabilita": "Media",
+     "perche": "Temi centrali della consultazione e priorità indicate dall'EBA.",
+     "fonti": [
+      1,
+      3
+     ],
+     "dati": [
+      {
+       "etichetta": "CASP nel registro ESMA",
+       "valore": "circa 227",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Compliance",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Prestito e staking di cripto dentro il perimetro regolato",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Possibile inclusione di prestito e indebitamento in cripto tra i servizi regolati e revisione del trattamento dello staking.",
+     "quando": "Proposta 2027",
+     "data": "2027-06-30",
+     "probabilita": "Media",
+     "perche": "Temi esplicitamente in consultazione.",
+     "fonti": [
+      1,
+      3
+     ],
+     "dati": [],
+     "funzioni": [
+      "Compliance"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "Fit for Purpose? European Commission Launches Review of MiCA",
+     "editore": "Skadden",
+     "data": "2026-06",
+     "url": "https://www.skadden.com/insights/publications/2026/06/fit-for-purpose",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "ESMA responds to Commission's consultation on the review of MiCA",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-09",
+     "url": "https://www.regulationtomorrow.com/2026/09/esma-responds-to-commissions-consultation-on-the-review-of-mica/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "EBA identifies priorities for the review of MiCA",
+     "editore": "Regulation Tomorrow (Eversheds Sutherland)",
+     "data": "2026-09",
+     "url": "https://www.regulationtomorrow.com/2026/09/eba-identifies-priorities-for-the-review-of-mica/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Council position on the market integration and supervision package",
+     "editore": "Lovguiden",
+     "data": "2026-10-09",
+     "url": "https://www.lovguiden.dk/en/det-offentlige/raadet-for-den-europaeiske-union/2026-10-09-raadet-vil-flytte-tilsyn-med-store-handelspladser-til-esma",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Comunicazione Consob n. 16/25 del 4 dicembre 2025",
+     "editore": "Consob",
+     "data": "2025-12-04",
+     "url": "https://www.consob.it/web/consob-and-its-activities/-/consob-communication-no.-16/25-of-4-december-2025",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "EU Council adopts 21st sanctions package against Russia",
+     "editore": "Steptoe",
+     "data": "2026-07-23",
+     "url": "https://www.steptoe.com/en/news-publications/international-compliance-blog/eu-council-adopts-21st-sanctions-package-against-russia.html",
+     "tipo": "Studio legale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tema": "Cybersicurezza, ICT e DORA",
+   "iter": [
+    "DORA",
+    "NIS2 (cibersicurezza)"
+   ],
+   "visione": "DORA si applica dal 17 gennaio 2025 [6] e il 2026 è il primo ciclo completo di sorveglianza sui fornitori ICT critici designati dalle autorità europee [2][3].",
+   "contesto": "La qualità dei dati è migliorata: le approvazioni del registro delle informazioni da parte dell'EBA sono passate dal 40% del 2025 al 94% del 2026 [1]. Le autorità segnalano però politiche non complete e meno notifiche di incidenti del previsto [1].",
+   "evoluzione": "Designazione dei fornitori critici il 18 novembre 2025 [2]; nel 2026 piani di sorveglianza e prime ispezioni [3]. Per NIS2, in Italia, notifica degli incidenti dal 2026 e misure di base entro ottobre 2026 [5].",
+   "attuale": "Le autorità controllano politiche ICT, documenti di gruppo e tempestività delle notifiche [1]; il Digital Omnibus propone un punto unico per notificare gli incidenti, ancora in discussione [4].",
+   "possibili": "Prime raccomandazioni ai fornitori critici con effetti sui contratti delle banche, notifica unica degli incidenti DORA/NIS2/GDPR, ispezioni sulle politiche [1][3][4].",
+   "previsioni": [
+    {
+     "titolo": "Più controlli su politiche ICT e notifica degli incidenti",
+     "direzione": "Irrigidimento",
+     "cosa": "Le autorità hanno trovato politiche incomplete e poche notifiche: attese verifiche su classificazione e tempi di notifica degli incidenti e su documenti di gruppo.",
+     "quando": "2027",
+     "data": "2027-03-31",
+     "probabilita": "Alta",
+     "perche": "Messaggio esplicito di un'autorità nazionale dopo le prime verifiche.",
+     "fonti": [
+      1
+     ],
+     "dati": [
+      {
+       "etichetta": "Registri approvati dall'EBA",
+       "valore": "40% (2025) → 94% (2026)",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "IT, sicurezza e dati",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Notifica unica degli incidenti (DORA, NIS2, GDPR)",
+     "direzione": "Semplificazione",
+     "cosa": "Un solo punto per notificare incidenti informatici e violazioni di dati, invece di canali separati.",
+     "quando": "Dopo il 2027",
+     "data": "2028-06-30",
+     "probabilita": "Bassa",
+     "perche": "Proposta nel Digital Omnibus ma contestata in Consiglio.",
+     "fonti": [
+      4
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "DORA update 7",
+     "editore": "AFM (autorità olandese)",
+     "data": "2026-08-06",
+     "url": "https://www.afm.nl/en/sector/actueel/2026/aug/sb-dora-update-7",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "ESAs designate critical ICT third-party providers under DORA",
+     "editore": "EIOPA",
+     "data": "2025-11-18",
+     "url": "https://www.eiopa.europa.eu/european-supervisory-authorities-designate-critical-ict-third-party-providers-under-digital-2025-11-18_it",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "ESAs Set Out 2026 Agenda with Focus on DORA Oversight",
+     "editore": "GRC Report",
+     "data": "2026",
+     "url": "https://www.grcreport.com/post/esas-set-out-2026-agenda-with-focus-on-dora-oversight-consumer-protection-sustainability-simplification",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "GDPR, AI and cookies: what the EU's data omnibus could change",
+     "editore": "Heuking",
+     "data": "2026-09-24",
+     "url": "https://www.heuking.de/en/news-events/newsletter-articles/detail/gdpr-ai-and-cookies-what-the-eus-data-omnibus-could-change-for-companies.html",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Scadenze NIS2: cosa devono fare le imprese entro ottobre 2026",
+     "editore": "Namirial",
+     "data": "2026",
+     "url": "https://focus.namirial.com/it/nis2-scadenze-e-obblighi-2026/",
+     "tipo": "Stampa specializzata"
+    },
+    {
+     "titolo": "Regolamento (UE) 2022/2554 (DORA)",
+     "editore": "EUR-Lex",
+     "data": "2022-12-27",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32022R2554",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    3,
+    2
+   ]
+  },
+  {
+   "tema": "Intelligenza artificiale e innovazione",
+   "iter": [
+    "AI Act e Digital Omnibus"
+   ],
+   "visione": "L'AI Act è in vigore dal 2024 [5], ma il Digital Omnibus (Reg. 2026/1744) ha spostato gli obblighi più pesanti: per i sistemi ad alto rischio come il merito creditizio si parte dal 2 dicembre 2027 [1].",
+   "contesto": "Per le banche l'EBA ha mappato l'AI Act rispetto alle regole bancarie esistenti [2]. In Italia la legge 132/2025 ha fissato principi e autorità nazionali [3].",
+   "evoluzione": "Divieti e alfabetizzazione dal febbraio 2025, modelli generali dall'agosto 2025, trasparenza dall'agosto 2026 [1][5].",
+   "attuale": "Dal 2 agosto 2026 valgono gli obblighi di trasparenza; per i sistemi già sul mercato la marcatura dei contenuti generati scatta il 2 dicembre 2026 [1]. Sull'uso dei dati personali per addestrare l'IA il negoziato del Digital Omnibus è ancora aperto [4].",
+   "possibili": "Linee guida della Commissione sulla classificazione dei sistemi ad alto rischio e possibili esclusioni dove le norme di settore coprono già il rischio [1].",
+   "previsioni": [
+    {
+     "titolo": "Alfabetizzazione sull'IA meno vincolante",
+     "direzione": "Allentamento",
+     "cosa": "Il Digital Omnibus chiede di «favorire» un livello sufficiente di alfabetizzazione invece di «garantirlo»: obbligo meno rigido per banche e fornitori.",
+     "quando": "Già in vigore (luglio 2026)",
+     "data": "2026-07-27",
+     "probabilita": "Alta",
+     "perche": "Modifica contenuta nel Reg. (UE) 2026/1744.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "Risorse umane",
+      "IT, sicurezza e dati"
+     ]
+    },
+    {
+     "titolo": "Possibili esclusioni settoriali per le banche",
+     "direzione": "Allentamento",
+     "cosa": "Atti delegati della Commissione potrebbero limitare l'applicazione dell'AI Act dove le norme di settore hanno requisiti equivalenti sull'IA (es. modelli di rischio già vigilati).",
+     "quando": "2027",
+     "data": "2027-06-30",
+     "probabilita": "Bassa",
+     "perche": "Possibilità prevista, senza tempi; l'EBA ha studiato le sovrapposizioni.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Obblighi alto rischio per scoring e assicurazioni vita e salute",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Sistema di gestione del rischio, governance dei dati, documentazione tecnica, sorveglianza umana, registrazione nella banca dati UE.",
+     "quando": "2 dicembre 2027",
+     "data": "2027-12-02",
+     "probabilita": "Alta",
+     "perche": "Data fissata dal Reg. (UE) 2026/1744.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati",
+      "Compliance",
+      "Risk management"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EU AI Omnibus enters into force, amending the AI Act",
+     "editore": "White & Case",
+     "data": "2026-07",
+     "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "AI Act implications for the EU banking sector",
+     "editore": "EBA",
+     "data": "2025-11",
+     "url": "https://www.eba.europa.eu/sites/default/files/2025-11/d8b999ce-a1d9-4964-9606-971bbc2aaf89/AI%20Act%20implications%20for%20the%20EU%20banking%20sector.pdf",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "Italy enacts Law No. 132/2025 on artificial intelligence",
+     "editore": "Norton Rose Fulbright",
+     "data": "2025-10",
+     "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/9bfedfea/italy-enacts-law-no-132-2025-on-artificial-intelligence-sector-rules-and-next-steps",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "GDPR, AI and cookies: what the EU's data omnibus could change",
+     "editore": "Heuking",
+     "data": "2026-09-24",
+     "url": "https://www.heuking.de/en/news-events/newsletter-articles/detail/gdpr-ai-and-cookies-what-the-eus-data-omnibus-could-change-for-companies.html",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Regolamento (UE) 2024/1689 (AI Act)",
+     "editore": "EUR-Lex",
+     "data": "2024-07-12",
+     "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689",
+     "tipo": "Ufficiale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "tema": "Privacy e protezione dei dati",
+   "iter": [],
+   "visione": "Il GDPR potrebbe cambiare per la prima volta dal 2018: il Digital Omnibus propone modifiche su dati pseudonimizzati, addestramento dell'IA, cookie e notifica delle violazioni [1].",
+   "contesto": "Le autorità europee per la protezione dei dati hanno espresso un parere critico su alcune modifiche [2]. In Consiglio gli Stati sono ancora divisi [1].",
+   "evoluzione": "Proposta della Commissione del 19 novembre 2025; testo rivisto della presidenza irlandese a settembre 2026 [1].",
+   "attuale": "Nessuna modifica adottata; Parlamento senza posizione e triloghi non iniziati; conclusione non prima del 2027 [1].",
+   "possibili": "Dati pseudonimizzati non personali per chi non può identificare la persona, interesse legittimo per l'addestramento dell'IA con diritto di opposizione, notifica delle violazioni solo se ad alto rischio [1].",
+   "previsioni": [
+    {
+     "titolo": "Notifica al Garante solo per violazioni ad alto rischio",
+     "direzione": "Allentamento",
+     "cosa": "Niente notifica all'autorità per le violazioni che probabilmente non comportano un rischio elevato (resta l'obbligo di documentarle).",
+     "quando": "Non prima del 2027",
+     "data": "2027-12-31",
+     "probabilita": "Media",
+     "perche": "Proposta nel Digital Omnibus; negoziato aperto.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati",
+      "Compliance"
+     ]
+    },
+    {
+     "titolo": "Consenso ai cookie tramite segnali del browser",
+     "direzione": "Semplificazione",
+     "cosa": "Le regole sui cookie passerebbero nel GDPR, con scelte trasmesse da browser o sistema operativo e un elenco di finalità senza consenso.",
+     "quando": "Non prima del 2027",
+     "data": "2027-12-31",
+     "probabilita": "Media",
+     "perche": "Uno dei punti meno contestati secondo le cronache del negoziato.",
+     "fonti": [
+      1
+     ],
+     "dati": [],
+     "funzioni": [
+      "IT, sicurezza e dati",
+      "Commerciale e prodotti"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "GDPR, AI and cookies: what the EU's data omnibus could change",
+     "editore": "Heuking",
+     "data": "2026-09-24",
+     "url": "https://www.heuking.de/en/news-events/newsletter-articles/detail/gdpr-ai-and-cookies-what-the-eus-data-omnibus-could-change-for-companies.html",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "EU regulators issue opinion on revisions of GDPR and other data laws",
+     "editore": "Inside Privacy (Covington)",
+     "data": "2026-02",
+     "url": "https://www.insideprivacy.com/eu-data-protection/eu-regulators-issue-opinion-on-revisions-of-gdpr-and-other-data-laws/",
+     "tipo": "Studio legale"
+    }
+   ],
+   "letture": [
+    1,
+    2
+   ]
+  },
+  {
+   "tema": "Finanza sostenibile ed ESG",
+   "iter": [
+    "CSRD e ESRS (rendicontazione di sostenibilità)"
+   ],
+   "visione": "La sostenibilità è il caso più netto di allentamento: l'Omnibus I ha ristretto la CSRD alle imprese con più di 1.000 dipendenti e 450 milioni di fatturato [1][3], e la SFDR 2.0 riscrive le regole per i prodotti finanziari [2].",
+   "contesto": "Per le banche cambia sia il proprio bilancio di sostenibilità sia ciò che possono chiedere ai clienti: il tetto alla catena del valore limita le richieste di dati alle imprese sotto i 1.000 dipendenti [1].",
+   "evoluzione": "Omnibus I in Gazzetta il 26 febbraio 2026, recepimento della parte CSRD entro il 19 marzo 2027 [1]. SFDR 2.0 proposta il 20 novembre 2025, posizione del Consiglio il 19 giugno 2026 [2].",
+   "attuale": "Si attendono gli ESRS semplificati e i triloghi sulla SFDR 2.0 (avvio nel quarto trimestre 2026) [2]; le ESA non pubblicano nel 2026 il rapporto annuale sui PAI [4].",
+   "possibili": "Accordo SFDR 2.0 verso metà 2027 con prime segnalazioni nel 2029-2030; recepimento italiano dell'Omnibus I entro marzo 2027 [1][2].",
+   "previsioni": [
+    {
+     "titolo": "Bilancio di sostenibilità solo per i grandi gruppi",
+     "direzione": "Allentamento",
+     "cosa": "CSRD solo per imprese/gruppi UE con più di 1.000 dipendenti e oltre 450 milioni di fatturato; tetto alle informazioni richieste alla catena del valore.",
+     "quando": "Recepimento entro 19 marzo 2027",
+     "data": "2027-03-19",
+     "probabilita": "Alta",
+     "perche": "Direttiva già pubblicata in Gazzetta UE.",
+     "fonti": [
+      1,
+      3
+     ],
+     "dati": [
+      {
+       "etichetta": "Nuove soglie CSRD",
+       "valore": ">1.000 dipendenti e >450 mln € di fatturato",
+       "fonte": 1
+      }
+     ],
+     "funzioni": [
+      "Sostenibilità",
+      "Commerciale e prodotti"
+     ]
+    },
+    {
+     "titolo": "Nuove categorie di prodotti sostenibili (SFDR 2.0)",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Categorie di prodotto con criteri minimi, esclusioni sui combustibili fossili e indicatori obbligatori secondo il Consiglio; disclaimer obbligatorio per i prodotti non categorizzati.",
+     "quando": "Accordo verso metà 2027, applicazione 2029",
+     "data": "2029-07-01",
+     "probabilita": "Media",
+     "perche": "Posizione del Consiglio fissata, Parlamento in ritardo.",
+     "fonti": [
+      2
+     ],
+     "dati": [
+      {
+       "etichetta": "Prima segnalazione con i nuovi modelli",
+       "valore": "30 giugno 2029 o 2030",
+       "fonte": 2
+      }
+     ],
+     "funzioni": [
+      "Sostenibilità",
+      "Compliance"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "EU Sustainability Omnibus Published in the Official Journal",
+     "editore": "Latham & Watkins",
+     "data": "2026-03",
+     "url": "https://www.lw.com/en/insights/eu-sustainability-omnibus-published-in-the-official-journal",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "SFDR 2.0 in trilogue: where the negotiations stand",
+     "editore": "Clarity AI",
+     "data": "2026",
+     "url": "https://clarity.ai/research-and-insights/regulatory-compliance/sfdr-2-0-in-trilogue-where-the-negotiations-stand-and-when-the-rules-will-apply/",
+     "tipo": "Ricerca"
+    },
+    {
+     "titolo": "Council signs off simplification of sustainability reporting and due diligence",
+     "editore": "Consiglio UE",
+     "data": "2026-02-24",
+     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/02/24/council-signs-off-simplification-of-sustainability-reporting-and-due-diligence-requirements-to-boost-eu-competitiveness/",
+     "tipo": "Ufficiale"
+    },
+    {
+     "titolo": "ESAs Set Out 2026 Agenda",
+     "editore": "GRC Report",
+     "data": "2026",
+     "url": "https://www.grcreport.com/post/esas-set-out-2026-agenda-with-focus-on-dora-oversight-consumer-protection-sustainability-simplification",
+     "tipo": "Stampa specializzata"
+    }
+   ],
+   "letture": [
+    1,
+    2
+   ]
+  },
+  {
+   "tema": "Assicurazioni e bancassicurazione",
+   "iter": [
+    "Retail Investment Strategy"
+   ],
+   "visione": "Per la bancassicurazione il 2027 è l'anno chiave: entrano in applicazione la revisione di Solvency II e la nuova direttiva su risanamento e risoluzione delle assicurazioni (IRRD) [1][2], mentre la RIS cambia la distribuzione dei prodotti di investimento assicurativi [3].",
+   "contesto": "La RIS modifica anche l'IDD: value for money e KID PRIIPs più semplice valgono per i prodotti assicurativi di investimento [3]. L'IA usata per prezzare polizze vita e salute diventa ad alto rischio dal dicembre 2027 [4].",
+   "evoluzione": "Revisione Solvency II e IRRD pubblicate in Gazzetta a gennaio 2025, con applicazione dal 2027 [1][2].",
+   "attuale": "Imprese e IVASS stanno preparando l'applicazione delle nuove regole; si attende il recepimento italiano [1][2].",
+   "possibili": "Piani di risanamento preventivi per più compagnie, requisiti di capitale ricalibrati, regole RIS sulla vendita di prodotti assicurativi di investimento [1][2][3].",
+   "previsioni": [
+    {
+     "titolo": "Revisione di Solvency II e piani di risanamento (IRRD)",
+     "direzione": "Nuovo obbligo",
+     "cosa": "Requisiti di capitale ricalibrati e più proporzionalità per le compagnie piccole; piani di risanamento preventivi e poteri di risoluzione dell'IVASS.",
+     "quando": "Gennaio 2027",
+     "data": "2027-01-30",
+     "probabilita": "Alta",
+     "perche": "Date fissate dalle direttive pubblicate a gennaio 2025.",
+     "fonti": [
+      1,
+      2
+     ],
+     "dati": [],
+     "funzioni": [
+      "Commerciale e prodotti",
+      "Risk management"
+     ]
+    },
+    {
+     "titolo": "Value for money anche per i prodotti assicurativi di investimento",
+     "direzione": "Irrigidimento",
+     "cosa": "Le regole RIS su costi, benchmark e incentivi si applicano anche ai prodotti venduti in bancassicurazione.",
+     "quando": "Circa fine 2028",
+     "data": "2028-12-31",
+     "probabilita": "Alta",
+     "perche": "Contenuto dell'accordo RIS.",
+     "fonti": [
+      3
+     ],
+     "dati": [],
+     "funzioni": [
+      "Compliance",
+      "Commerciale e prodotti"
+     ]
+    }
+   ],
+   "fonti": [
+    {
+     "titolo": "The new EU Insurance Recovery and Resolution Directive",
+     "editore": "Clifford Chance",
+     "data": "2025-01",
+     "url": "https://publisher-prod65.cliffordchance.com/content/dam/cliffordchance/briefings/2025/01/the-new-eu-insurance-recovery-and-resolution-directive-january-2025.pdf",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "New rules for the insurance sector: recovery and resolution planning and changes to Solvency II",
+     "editore": "Loyens & Loeff",
+     "data": "2025",
+     "url": "https://loyensloeff.com/insights/news--events/news/new-rules-for-the-insurance-sector-recovery-and-resolution-planning-and-changes-to-solvency-ii",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "Provisional agreement on the Retail Investment Strategy",
+     "editore": "Loyens & Loeff",
+     "data": "2025-12",
+     "url": "https://www.loyensloeff.com/insights/news--events/news/provisional-agreement-on-the-retail-investment-strategy---what-fund-managers-need-to-know/",
+     "tipo": "Studio legale"
+    },
+    {
+     "titolo": "EU AI Omnibus enters into force, amending the AI Act",
+     "editore": "White & Case",
+     "data": "2026-07",
+     "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+     "tipo": "Studio legale"
+    }
+   ],
+   "letture": [
+    1,
+    2,
+    3
+   ]
+  }
+ ]
+}
