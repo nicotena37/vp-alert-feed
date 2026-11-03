@@ -274,11 +274,17 @@ def openalex(lista: list[str]) -> None:
             url = (f"https://api.openalex.org/works?search={quote(t['oa'])}&per-page=1&select=id"
                    f"&filter=from_publication_date:{inizio},to_publication_date:{fine}"
                    + (f"&api_key={chiave}" if chiave else "&mailto=vp-alert-feed@users.noreply.github.com"))
-            s.val[(mese, t["tema"], "studio")] = json.loads(I.prendi(url, "application/json", 60))["meta"]["count"]
-            time.sleep(0.15)
+            for tentativo in range(5):
+                try:
+                    s.val[(mese, t["tema"], "studio")] = json.loads(I.prendi(url, "application/json", 60))["meta"]["count"]
+                    break
+                except RuntimeError as e:
+                    if "429" not in str(e) or tentativo == 4:
+                        raise
+                    time.sleep(120 * (tentativo + 1))     # limite di richieste: si aspetta e si riprova
+            time.sleep(1.0)
         s.tot[(mese, "studio")] = 0
-        if mese.endswith("12") or mese == lista[-1]:
-            s.salva()
+        s.salva()
         print(f"OpenAlex {mese}", flush=True)
     s.salva()
 
