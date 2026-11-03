@@ -31,13 +31,14 @@
   "Educazione e inclusione finanziaria"
  ],
  "fonti_segnali": {
-  "media": false,
-  "politica": false,
+  "media": true,
+  "politica": true,
   "ddl": true,
   "bce": true,
   "studi": false
  },
  "classifica": [
+  "Bayes empirico + attenzione dei giornali",
   "Bayes empirico (richiamo alla media)",
   "Insieme: Bayes empirico + TSB",
   "Bayes empirico, richiamo forte (k=12)",
@@ -58,27 +59,27 @@
   "Insieme: media di 3 classici",
   "Holt smorzato",
   "Theta",
-  "ETS scelto con AIC",
   "Croston",
   "Ridge su log + segnali",
   "Croston SBA",
+  "ETS scelto con AIC",
   "Media 6 mesi",
   "Foresta casuale + segnali",
-  "Mediana 12 mesi",
-  "Stagionale media 2 anni",
-  "Regressione di Poisson globale (storia e proposte)",
-  "Stagionale ingenuo",
-  "Livellamento esp. 0,3",
-  "Holt-Winters stagionale",
   "Bayes empirico + proposte UE",
-  "Holt lineare",
-  "Regressione di Poisson globale + segnali",
+  "Stagionale media 2 anni",
+  "Livellamento esp. 0,3",
+  "Regressione di Poisson globale (storia e proposte)",
+  "Mediana 12 mesi",
+  "Holt-Winters stagionale",
+  "Stagionale ingenuo",
   "Gradient boosting (storia e proposte)",
-  "Tendenza lineare 24 mesi",
   "Gradient boosting + segnali",
+  "Regressione di Poisson globale + segnali",
+  "Holt lineare",
+  "Tendenza lineare 24 mesi",
   "Livellamento esp. 0,5",
-  "Poisson con tendenza",
   "Media 3 mesi",
+  "Poisson con tendenza",
   "Tendenza lineare 12 mesi",
   "Poisson tendenza e stagione",
   "Ultimo mese",
@@ -91,11 +92,11 @@
    "Top5": 0.552808988764045,
    "ErroreLog": 0.6003857391051117,
    "origini": 89,
-   "rango_MASE": 42,
-   "rango_Spearman": 42,
-   "rango_Top5": 44,
-   "rango_ErroreLog": 44,
-   "rango_medio": 43.0
+   "rango_MASE": 43,
+   "rango_Spearman": 45,
+   "rango_Top5": 45,
+   "rango_ErroreLog": 45,
+   "rango_medio": 44.5
   },
   "Media 3 mesi": {
    "MASE": 1.418295039725145,
@@ -103,11 +104,11 @@
    "Top5": 0.6067415730337078,
    "ErroreLog": 0.4803785587854988,
    "origini": 89,
-   "rango_MASE": 39,
-   "rango_Spearman": 39,
-   "rango_Top5": 41,
-   "rango_ErroreLog": 40,
-   "rango_medio": 39.75
+   "rango_MASE": 40,
+   "rango_Spearman": 42,
+   "rango_Top5": 42,
+   "rango_ErroreLog": 41,
+   "rango_medio": 41.25
   },
   "Media 6 mesi": {
    "MASE": 1.1992699162551,
@@ -116,10 +117,10 @@
    "ErroreLog": 0.42470448042370273,
    "origini": 89,
    "rango_MASE": 30,
-   "rango_Spearman": 36,
-   "rango_Top5": 1,
-   "rango_ErroreLog": 30,
-   "rango_medio": 24.25
+   "rango_Spearman": 39,
+   "rango_Top5": 2,
+   "rango_ErroreLog": 31,
+   "rango_medio": 25.5
   },
   "Media 12 mesi": {
    "MASE": 1.0,
@@ -127,11 +128,11 @@
    "Top5": 0.6808988764044944,
    "ErroreLog": 0.37807153254432446,
    "origini": 89,
-   "rango_MASE": 6,
+   "rango_MASE": 7,
    "rango_Spearman": 19,
-   "rango_Top5": 4,
-   "rango_ErroreLog": 6,
-   "rango_medio": 8.75
+   "rango_Top5": 6,
+   "rango_ErroreLog": 7,
+   "rango_medio": 9.75
   },
   "Media 24 mesi": {
    "MASE": 1.059963495812755,
@@ -139,11 +140,11 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.38264619245686593,
    "origini": 89,
-   "rango_MASE": 12,
-   "rango_Spearman": 3,
-   "rango_Top5": 25,
-   "rango_ErroreLog": 10,
-   "rango_medio": 12.5
+   "rango_MASE": 13,
+   "rango_Spearman": 4,
+   "rango_Top5": 26,
+   "rango_ErroreLog": 11,
+   "rango_medio": 13.5
   },
   "Mediana 12 mesi": {
    "MASE": 1.1266910027914967,
@@ -151,11 +152,11 @@
    "Top5": 0.6786516853932584,
    "ErroreLog": 0.4701552018376726,
    "origini": 89,
-   "rango_MASE": 22,
-   "rango_Spearman": 40,
-   "rango_Top5": 7,
-   "rango_ErroreLog": 38,
-   "rango_medio": 26.75
+   "rango_MASE": 23,
+   "rango_Spearman": 43,
+   "rango_Top5": 9,
+   "rango_ErroreLog": 39,
+   "rango_medio": 28.5
   },
   "Stagionale ingenuo": {
    "MASE": 1.128408846897144,
@@ -163,11 +164,11 @@
    "Top5": 0.6494382022471911,
    "ErroreLog": 0.39640834968019095,
    "origini": 89,
-   "rango_MASE": 23,
-   "rango_Spearman": 34,
-   "rango_Top5": 34,
-   "rango_ErroreLog": 18,
-   "rango_medio": 27.25
+   "rango_MASE": 24,
+   "rango_Spearman": 37,
+   "rango_Top5": 36,
+   "rango_ErroreLog": 19,
+   "rango_medio": 29.0
   },
   "Stagionale media 2 anni": {
    "MASE": 1.145909383723427,
@@ -175,11 +176,11 @@
    "Top5": 0.649438202247191,
    "ErroreLog": 0.3940187101356453,
    "origini": 89,
-   "rango_MASE": 26,
-   "rango_Spearman": 28,
-   "rango_Top5": 36,
-   "rango_ErroreLog": 17,
-   "rango_medio": 26.75
+   "rango_MASE": 27,
+   "rango_Spearman": 29,
+   "rango_Top5": 38,
+   "rango_ErroreLog": 18,
+   "rango_medio": 28.0
   },
   "Deriva": {
    "MASE": 2.296365452661258,
@@ -187,11 +188,11 @@
    "Top5": 0.5325842696629214,
    "ErroreLog": 0.6210715280473826,
    "origini": 89,
-   "rango_MASE": 43,
-   "rango_Spearman": 43,
-   "rango_Top5": 45,
-   "rango_ErroreLog": 45,
-   "rango_medio": 44.0
+   "rango_MASE": 44,
+   "rango_Spearman": 46,
+   "rango_Top5": 46,
+   "rango_ErroreLog": 46,
+   "rango_medio": 45.5
   },
   "Tendenza lineare 24 mesi": {
    "MASE": 1.3295268459822058,
@@ -200,10 +201,10 @@
    "ErroreLog": 0.45311827368060204,
    "origini": 89,
    "rango_MASE": 37,
-   "rango_Spearman": 38,
-   "rango_Top5": 26,
-   "rango_ErroreLog": 35,
-   "rango_medio": 34.0
+   "rango_Spearman": 41,
+   "rango_Top5": 27,
+   "rango_ErroreLog": 36,
+   "rango_medio": 35.25
   },
   "Tendenza lineare 12 mesi": {
    "MASE": 1.7618788769744322,
@@ -211,11 +212,11 @@
    "Top5": 0.6,
    "ErroreLog": 0.5309483307279572,
    "origini": 89,
-   "rango_MASE": 41,
-   "rango_Spearman": 41,
-   "rango_Top5": 42,
-   "rango_ErroreLog": 42,
-   "rango_medio": 41.5
+   "rango_MASE": 42,
+   "rango_Spearman": 44,
+   "rango_Top5": 43,
+   "rango_ErroreLog": 43,
+   "rango_medio": 43.0
   },
   "Livellamento esp. 0,1": {
    "MASE": 1.0017165389721054,
@@ -223,11 +224,11 @@
    "Top5": 0.6629213483146067,
    "ErroreLog": 0.3796772893379784,
    "origini": 89,
-   "rango_MASE": 7,
-   "rango_Spearman": 13,
-   "rango_Top5": 21,
-   "rango_ErroreLog": 7,
-   "rango_medio": 12.0
+   "rango_MASE": 8,
+   "rango_Spearman": 14,
+   "rango_Top5": 22,
+   "rango_ErroreLog": 8,
+   "rango_medio": 13.0
   },
   "Livellamento esp. 0,2": {
    "MASE": 1.0853883323125573,
@@ -235,11 +236,11 @@
    "Top5": 0.6764044943820223,
    "ErroreLog": 0.39683548534601437,
    "origini": 89,
-   "rango_MASE": 14,
+   "rango_MASE": 15,
    "rango_Spearman": 25,
-   "rango_Top5": 9,
-   "rango_ErroreLog": 19,
-   "rango_medio": 16.75
+   "rango_Top5": 12,
+   "rango_ErroreLog": 20,
+   "rango_medio": 18.0
   },
   "Livellamento esp. 0,3": {
    "MASE": 1.1925050305377989,
@@ -248,10 +249,10 @@
    "ErroreLog": 0.4199702979575347,
    "origini": 89,
    "rango_MASE": 29,
-   "rango_Spearman": 31,
+   "rango_Spearman": 33,
    "rango_Top5": 20,
-   "rango_ErroreLog": 29,
-   "rango_medio": 27.25
+   "rango_ErroreLog": 30,
+   "rango_medio": 28.0
   },
   "Livellamento esp. 0,5": {
    "MASE": 1.4083840366908942,
@@ -259,11 +260,11 @@
    "Top5": 0.6292134831460673,
    "ErroreLog": 0.4621373848305581,
    "origini": 89,
-   "rango_MASE": 38,
-   "rango_Spearman": 32,
-   "rango_Top5": 39,
-   "rango_ErroreLog": 36,
-   "rango_medio": 36.25
+   "rango_MASE": 39,
+   "rango_Spearman": 35,
+   "rango_Top5": 41,
+   "rango_ErroreLog": 37,
+   "rango_medio": 38.0
   },
   "Livellamento esp. ottimizzato": {
    "MASE": 1.0468452750782877,
@@ -271,11 +272,11 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.38608077506043914,
    "origini": 89,
-   "rango_MASE": 10,
-   "rango_Spearman": 5,
-   "rango_Top5": 27,
-   "rango_ErroreLog": 12,
-   "rango_medio": 13.5
+   "rango_MASE": 11,
+   "rango_Spearman": 6,
+   "rango_Top5": 28,
+   "rango_ErroreLog": 13,
+   "rango_medio": 14.5
   },
   "Holt lineare": {
    "MASE": 1.2820933082758639,
@@ -283,11 +284,11 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.4275090402119334,
    "origini": 89,
-   "rango_MASE": 33,
-   "rango_Spearman": 33,
-   "rango_Top5": 28,
-   "rango_ErroreLog": 31,
-   "rango_medio": 31.25
+   "rango_MASE": 34,
+   "rango_Spearman": 36,
+   "rango_Top5": 29,
+   "rango_ErroreLog": 33,
+   "rango_medio": 33.0
   },
   "Holt smorzato": {
    "MASE": 1.1476923102328564,
@@ -295,11 +296,11 @@
    "Top5": 0.6741573033707864,
    "ErroreLog": 0.4069478113809693,
    "origini": 89,
-   "rango_MASE": 27,
+   "rango_MASE": 28,
    "rango_Spearman": 20,
-   "rango_Top5": 10,
+   "rango_Top5": 13,
    "rango_ErroreLog": 23,
-   "rango_medio": 20.0
+   "rango_medio": 21.0
   },
   "Holt-Winters stagionale": {
    "MASE": 1.1079751180756876,
@@ -307,11 +308,11 @@
    "Top5": 0.6494382022471911,
    "ErroreLog": 0.40970004261920884,
    "origini": 89,
-   "rango_MASE": 20,
-   "rango_Spearman": 30,
-   "rango_Top5": 35,
+   "rango_MASE": 21,
+   "rango_Spearman": 32,
+   "rango_Top5": 37,
    "rango_ErroreLog": 25,
-   "rango_medio": 27.5
+   "rango_medio": 28.75
   },
   "ETS scelto con AIC": {
    "MASE": 1.1343974407553263,
@@ -319,11 +320,11 @@
    "Top5": 0.6741573033707864,
    "ErroreLog": 0.4111480255762661,
    "origini": 89,
-   "rango_MASE": 24,
-   "rango_Spearman": 29,
-   "rango_Top5": 11,
+   "rango_MASE": 25,
+   "rango_Spearman": 31,
+   "rango_Top5": 14,
    "rango_ErroreLog": 27,
-   "rango_medio": 22.75
+   "rango_medio": 24.25
   },
   "Theta": {
    "MASE": 1.0955827229772093,
@@ -331,11 +332,11 @@
    "Top5": 0.6539325842696628,
    "ErroreLog": 0.3935352310769317,
    "origini": 89,
-   "rango_MASE": 17,
-   "rango_Spearman": 16,
-   "rango_Top5": 32,
-   "rango_ErroreLog": 16,
-   "rango_medio": 20.25
+   "rango_MASE": 18,
+   "rango_Spearman": 17,
+   "rango_Top5": 33,
+   "rango_ErroreLog": 17,
+   "rango_medio": 21.25
   },
   "ARIMA(1,0,0) su log": {
    "MASE": 1.29669944484339,
@@ -343,11 +344,11 @@
    "Top5": 0.6741573033707864,
    "ErroreLog": 0.39046232425597754,
    "origini": 89,
-   "rango_MASE": 35,
-   "rango_Spearman": 12,
-   "rango_Top5": 12,
-   "rango_ErroreLog": 15,
-   "rango_medio": 18.5
+   "rango_MASE": 36,
+   "rango_Spearman": 13,
+   "rango_Top5": 15,
+   "rango_ErroreLog": 16,
+   "rango_medio": 20.0
   },
   "ARIMA scelto con AIC": {
    "MASE": 1.0997256997875051,
@@ -355,11 +356,11 @@
    "Top5": 0.6876404494382021,
    "ErroreLog": 0.3803239095996531,
    "origini": 89,
-   "rango_MASE": 18,
-   "rango_Spearman": 11,
-   "rango_Top5": 2,
-   "rango_ErroreLog": 9,
-   "rango_medio": 10.0
+   "rango_MASE": 19,
+   "rango_Spearman": 12,
+   "rango_Top5": 3,
+   "rango_ErroreLog": 10,
+   "rango_medio": 11.0
   },
   "Croston": {
    "MASE": 1.0347456866889047,
@@ -367,11 +368,11 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.4145867508293015,
    "origini": 89,
-   "rango_MASE": 8,
+   "rango_MASE": 9,
    "rango_Spearman": 26,
-   "rango_Top5": 29,
-   "rango_ErroreLog": 28,
-   "rango_medio": 22.75
+   "rango_Top5": 30,
+   "rango_ErroreLog": 29,
+   "rango_medio": 23.5
   },
   "Croston SBA": {
    "MASE": 1.047753615465351,
@@ -379,11 +380,11 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.41083805112697,
    "origini": 89,
-   "rango_MASE": 11,
+   "rango_MASE": 12,
    "rango_Spearman": 27,
-   "rango_Top5": 30,
+   "rango_Top5": 31,
    "rango_ErroreLog": 26,
-   "rango_medio": 23.5
+   "rango_medio": 24.0
   },
   "TSB": {
    "MASE": 0.988106371221125,
@@ -392,10 +393,10 @@
    "ErroreLog": 0.37373503201007635,
    "origini": 89,
    "rango_MASE": 3,
-   "rango_Spearman": 7,
-   "rango_Top5": 13,
+   "rango_Spearman": 8,
+   "rango_Top5": 16,
    "rango_ErroreLog": 3,
-   "rango_medio": 6.5
+   "rango_medio": 7.5
   },
   "Poisson con tendenza": {
    "MASE": 2.5037354148585846,
@@ -403,11 +404,11 @@
    "Top5": 0.6314606741573033,
    "ErroreLog": 0.5093174387482631,
    "origini": 89,
-   "rango_MASE": 44,
-   "rango_Spearman": 35,
-   "rango_Top5": 38,
-   "rango_ErroreLog": 41,
-   "rango_medio": 39.5
+   "rango_MASE": 45,
+   "rango_Spearman": 38,
+   "rango_Top5": 40,
+   "rango_ErroreLog": 42,
+   "rango_medio": 41.25
   },
   "Poisson tendenza e stagione": {
    "MASE": 3.445438888023698,
@@ -415,11 +416,11 @@
    "Top5": 0.5955056179775281,
    "ErroreLog": 0.5470596970152065,
    "origini": 89,
-   "rango_MASE": 45,
-   "rango_Spearman": 37,
-   "rango_Top5": 43,
-   "rango_ErroreLog": 43,
-   "rango_medio": 42.0
+   "rango_MASE": 46,
+   "rango_Spearman": 40,
+   "rango_Top5": 44,
+   "rango_ErroreLog": 44,
+   "rango_medio": 43.5
   },
   "Bayes empirico (richiamo alla media)": {
    "MASE": 0.9937741682980492,
@@ -427,11 +428,11 @@
    "Top5": 0.6808988764044943,
    "ErroreLog": 0.3753777386545525,
    "origini": 89,
-   "rango_MASE": 4,
-   "rango_Spearman": 2,
-   "rango_Top5": 5,
-   "rango_ErroreLog": 5,
-   "rango_medio": 4.0
+   "rango_MASE": 5,
+   "rango_Spearman": 3,
+   "rango_Top5": 7,
+   "rango_ErroreLog": 6,
+   "rango_medio": 5.25
   },
   "Bayes empirico, richiamo debole (k=3)": {
    "MASE": 0.979027043832771,
@@ -440,10 +441,10 @@
    "ErroreLog": 0.3748886292291437,
    "origini": 89,
    "rango_MASE": 1,
-   "rango_Spearman": 10,
-   "rango_Top5": 16,
-   "rango_ErroreLog": 4,
-   "rango_medio": 7.75
+   "rango_Spearman": 11,
+   "rango_Top5": 18,
+   "rango_ErroreLog": 5,
+   "rango_medio": 8.75
   },
   "Bayes empirico, richiamo forte (k=12)": {
    "MASE": 1.0446329276899746,
@@ -451,11 +452,11 @@
    "Top5": 0.6831460674157303,
    "ErroreLog": 0.37982029192161765,
    "origini": 89,
-   "rango_MASE": 9,
-   "rango_Spearman": 1,
-   "rango_Top5": 3,
-   "rango_ErroreLog": 8,
-   "rango_medio": 5.25
+   "rango_MASE": 10,
+   "rango_Spearman": 2,
+   "rango_Top5": 4,
+   "rango_ErroreLog": 9,
+   "rango_medio": 6.25
   },
   "Bayes empirico, richiamo molto forte (k=24)": {
    "MASE": 1.1152194176889312,
@@ -463,11 +464,11 @@
    "Top5": 0.6629213483146067,
    "ErroreLog": 0.3878883231395695,
    "origini": 89,
-   "rango_MASE": 21,
-   "rango_Spearman": 4,
-   "rango_Top5": 22,
-   "rango_ErroreLog": 13,
-   "rango_medio": 15.0
+   "rango_MASE": 22,
+   "rango_Spearman": 5,
+   "rango_Top5": 23,
+   "rango_ErroreLog": 14,
+   "rango_medio": 16.0
   },
   "Bayes empirico su 6 mesi (k=6)": {
    "MASE": 1.0806619298022782,
@@ -475,11 +476,11 @@
    "Top5": 0.6808988764044943,
    "ErroreLog": 0.3888404030229463,
    "origini": 89,
-   "rango_MASE": 13,
-   "rango_Spearman": 17,
-   "rango_Top5": 6,
-   "rango_ErroreLog": 14,
-   "rango_medio": 12.5
+   "rango_MASE": 14,
+   "rango_Spearman": 18,
+   "rango_Top5": 8,
+   "rango_ErroreLog": 15,
+   "rango_medio": 13.75
   },
   "Insieme: Bayes empirico + TSB": {
    "MASE": 0.9830862164258691,
@@ -488,10 +489,10 @@
    "ErroreLog": 0.3733099203020042,
    "origini": 89,
    "rango_MASE": 2,
-   "rango_Spearman": 6,
-   "rango_Top5": 8,
+   "rango_Spearman": 7,
+   "rango_Top5": 10,
    "rango_ErroreLog": 2,
-   "rango_medio": 4.5
+   "rango_medio": 5.25
   },
   "Regressione di Poisson globale (storia e proposte)": {
    "MASE": 1.1351181718887597,
@@ -499,71 +500,71 @@
    "Top5": 0.6426966292134831,
    "ErroreLog": 0.4648726624014855,
    "origini": 89,
-   "rango_MASE": 25,
-   "rango_Spearman": 8,
-   "rango_Top5": 37,
-   "rango_ErroreLog": 37,
-   "rango_medio": 26.75
+   "rango_MASE": 26,
+   "rango_Spearman": 9,
+   "rango_Top5": 39,
+   "rango_ErroreLog": 38,
+   "rango_medio": 28.0
   },
   "Regressione di Poisson globale + segnali": {
-   "MASE": 1.1599496483175693,
-   "Spearman": 0.7545463922275593,
-   "Top5": 0.6269662921348315,
-   "ErroreLog": 0.47074805131788533,
+   "MASE": 1.2635573652840657,
+   "Spearman": 0.7494462813012484,
+   "Top5": 0.6516853932584269,
+   "ErroreLog": 0.4783250971283801,
    "origini": 89,
-   "rango_MASE": 28,
-   "rango_Spearman": 22,
-   "rango_Top5": 40,
-   "rango_ErroreLog": 39,
-   "rango_medio": 32.25
+   "rango_MASE": 33,
+   "rango_Spearman": 24,
+   "rango_Top5": 34,
+   "rango_ErroreLog": 40,
+   "rango_medio": 32.75
   },
   "Ridge su log + segnali": {
-   "MASE": 1.3058991649965455,
-   "Spearman": 0.7613657834278152,
-   "Top5": 0.6719101123595504,
-   "ErroreLog": 0.40149026144071465,
+   "MASE": 1.3329568465165036,
+   "Spearman": 0.7528500000114964,
+   "Top5": 0.6831460674157303,
+   "ErroreLog": 0.41247583569916,
    "origini": 89,
-   "rango_MASE": 36,
-   "rango_Spearman": 18,
-   "rango_Top5": 17,
-   "rango_ErroreLog": 21,
-   "rango_medio": 23.0
+   "rango_MASE": 38,
+   "rango_Spearman": 23,
+   "rango_Top5": 5,
+   "rango_ErroreLog": 28,
+   "rango_medio": 23.5
   },
   "Gradient boosting + segnali": {
-   "MASE": 1.2456882523214883,
-   "Spearman": NaN,
-   "Top5": 0.6539325842696628,
-   "ErroreLog": 0.4379122732740479,
+   "MASE": 1.2414343993658157,
+   "Spearman": 0.7436725085840091,
+   "Top5": 0.6516853932584269,
+   "ErroreLog": 0.4262182234804788,
    "origini": 89,
    "rango_MASE": 32,
-   "rango_Spearman": 44,
-   "rango_Top5": 33,
-   "rango_ErroreLog": 33,
-   "rango_medio": 35.5
+   "rango_Spearman": 30,
+   "rango_Top5": 35,
+   "rango_ErroreLog": 32,
+   "rango_medio": 32.25
   },
   "Foresta casuale + segnali": {
-   "MASE": 1.216597729760907,
-   "Spearman": 0.7486665972562105,
-   "Top5": 0.6719101123595506,
-   "ErroreLog": 0.4363824300043762,
+   "MASE": 1.2170895910270951,
+   "Spearman": 0.7467138455250742,
+   "Top5": 0.6764044943820224,
+   "ErroreLog": 0.4431072392033764,
    "origini": 89,
    "rango_MASE": 31,
-   "rango_Spearman": 24,
-   "rango_Top5": 15,
-   "rango_ErroreLog": 32,
-   "rango_medio": 25.5
+   "rango_Spearman": 28,
+   "rango_Top5": 11,
+   "rango_ErroreLog": 35,
+   "rango_medio": 26.25
   },
   "Gradient boosting (storia e proposte)": {
    "MASE": 1.2871963542011189,
-   "Spearman": NaN,
+   "Spearman": 0.730546914414277,
    "Top5": 0.6696629213483145,
    "ErroreLog": 0.4418582054436558,
    "origini": 89,
-   "rango_MASE": 34,
-   "rango_Spearman": 45,
-   "rango_Top5": 18,
+   "rango_MASE": 35,
+   "rango_Spearman": 34,
+   "rango_Top5": 19,
    "rango_ErroreLog": 34,
-   "rango_medio": 32.75
+   "rango_medio": 30.5
   },
   "Bayes empirico + proposte UE": {
    "MASE": 1.4284050855914017,
@@ -571,11 +572,11 @@
    "Top5": 0.6606741573033708,
    "ErroreLog": 0.40759371691952523,
    "origini": 89,
-   "rango_MASE": 40,
-   "rango_Spearman": 23,
-   "rango_Top5": 23,
+   "rango_MASE": 41,
+   "rango_Spearman": 22,
+   "rango_Top5": 24,
    "rango_ErroreLog": 24,
-   "rango_medio": 27.5
+   "rango_medio": 27.75
   },
   "Bayes empirico + proposte UE (peso leggero)": {
    "MASE": 1.0870831844012532,
@@ -583,11 +584,23 @@
    "Top5": 0.6584269662921348,
    "ErroreLog": 0.38322485804458095,
    "origini": 89,
-   "rango_MASE": 15,
-   "rango_Spearman": 9,
-   "rango_Top5": 31,
-   "rango_ErroreLog": 11,
-   "rango_medio": 16.5
+   "rango_MASE": 16,
+   "rango_Spearman": 10,
+   "rango_Top5": 32,
+   "rango_ErroreLog": 12,
+   "rango_medio": 17.5
+  },
+  "Bayes empirico + attenzione dei giornali": {
+   "MASE": 0.9906421202774693,
+   "Spearman": 0.775399920865285,
+   "Top5": 0.6876404494382022,
+   "ErroreLog": 0.37482900161023613,
+   "origini": 89,
+   "rango_MASE": 4,
+   "rango_Spearman": 1,
+   "rango_Top5": 1,
+   "rango_ErroreLog": 4,
+   "rango_medio": 2.5
   },
   "Insieme: media di 3 classici": {
    "MASE": 1.105256234662387,
@@ -595,11 +608,11 @@
    "Top5": 0.6741573033707864,
    "ErroreLog": 0.3973315815003161,
    "origini": 89,
-   "rango_MASE": 19,
+   "rango_MASE": 20,
    "rango_Spearman": 21,
-   "rango_Top5": 14,
-   "rango_ErroreLog": 20,
-   "rango_medio": 18.5
+   "rango_Top5": 17,
+   "rango_ErroreLog": 22,
+   "rango_medio": 20.0
   },
   "Insieme: mediana di tutti gli univariati": {
    "MASE": 0.9992931432628768,
@@ -607,36 +620,36 @@
    "Top5": 0.6606741573033706,
    "ErroreLog": 0.3721187940248159,
    "origini": 89,
-   "rango_MASE": 5,
-   "rango_Spearman": 14,
-   "rango_Top5": 24,
+   "rango_MASE": 6,
+   "rango_Spearman": 15,
+   "rango_Top5": 25,
    "rango_ErroreLog": 1,
-   "rango_medio": 11.0
+   "rango_medio": 11.75
   },
   "Insieme: Bayes empirico + gradient boosting": {
-   "MASE": 1.0939917286777485,
-   "Spearman": 0.7623590581374721,
-   "Top5": 0.6674157303370786,
-   "ErroreLog": 0.40279172643168853,
+   "MASE": 1.092806607545929,
+   "Spearman": 0.7656812355600497,
+   "Top5": 0.6651685393258425,
+   "ErroreLog": 0.3969374824811618,
    "origini": 89,
-   "rango_MASE": 16,
-   "rango_Spearman": 15,
-   "rango_Top5": 19,
-   "rango_ErroreLog": 22,
-   "rango_medio": 18.0
+   "rango_MASE": 17,
+   "rango_Spearman": 16,
+   "rango_Top5": 21,
+   "rango_ErroreLog": 21,
+   "rango_medio": 18.75
   }
  },
  "calibrazione": {
+  "Bayes empirico + attenzione dei giornali": {
+   "q10": -0.7619278401059801,
+   "q90": 0.6036448539179428
+  },
   "Bayes empirico (richiamo alla media)": {
    "q10": -0.7422415698885395,
    "q90": 0.6058485847834175
-  },
-  "Insieme: Bayes empirico + TSB": {
-   "q10": -0.7394493085421242,
-   "q90": 0.6436311074596773
   }
  },
- "banco_vp": "sui dati settimanali della banca (15 prove) Bayes empirico (richiamo alla media): 6° su 23; Insieme: Bayes empirico + TSB: 3° su 23",
+ "banco_vp": "sui dati settimanali della banca (15 prove) Bayes empirico (richiamo alla media): 6° su 23",
  "vp_dettaglio": {
   "risultati": {
    "Ultimo mese": {
@@ -784,26 +797,26 @@
  },
  "fuori_campione": {
   "scelti_sul_periodo_2019_2022": [
-   "TSB",
-   "Bayes empirico (richiamo alla media)"
+   "Bayes empirico + attenzione dei giornali",
+   "TSB"
   ],
   "posizione_nel_2023_2026": {
-   "TSB": 7,
-   "Bayes empirico (richiamo alla media)": 1,
-   "Bayes empirico, richiamo forte (k=12)": 5,
-   "Bayes empirico, richiamo molto forte (k=24)": 27,
-   "Insieme: Bayes empirico + TSB": 2
+   "Bayes empirico + attenzione dei giornali": 1,
+   "TSB": 12,
+   "Bayes empirico (richiamo alla media)": 4,
+   "Bayes empirico, richiamo forte (k=12)": 7,
+   "Bayes empirico, richiamo molto forte (k=24)": 30
   },
   "migliori_2023_2026": [
-   "Bayes empirico (richiamo alla media)",
+   "Bayes empirico + attenzione dei giornali",
    "Insieme: Bayes empirico + TSB",
-   "Bayes empirico, richiamo debole (k=3)",
    "ARIMA scelto con AIC",
-   "Bayes empirico, richiamo forte (k=12)"
+   "Bayes empirico (richiamo alla media)",
+   "Bayes empirico, richiamo debole (k=3)"
   ],
   "origini_prima": 48,
   "origini_dopo": 41,
-  "metodi": 45
+  "metodi": 46
  },
  "modello_globale": {
   "Regressione di Poisson globale (storia e proposte)": {
@@ -822,49 +835,49 @@
   },
   "Regressione di Poisson globale + segnali": {
    "coef": [
-    0.045234726509678476,
-    -0.18254651884327808,
-    0.6773403334816056,
-    0.2611088694478579,
-    0.26800883617206106,
-    0.18181028932150928,
-    -0.17504831390067524,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.014972897895676813,
-    0.13337731829021005,
-    0.0427593616149472,
-    -0.004850239739367928,
+    0.058299129330956795,
+    -0.15687103606354416,
+    0.6258852836298437,
+    0.1735496523988774,
+    0.3929289528206981,
+    0.1379150841447987,
+    -0.14457417001370187,
+    -0.6667461010349258,
+    2.0096927137398835,
+    0.12079356056168503,
+    -0.1509454295936703,
+    0.05633169410700373,
+    -0.07622568324455417,
+    0.025036969354243835,
+    -0.016307557552490533,
     0.0,
     0.0
    ],
-   "intercetta": -1.0168260645770804,
+   "intercetta": -1.0914700992320177,
    "segnali": true,
    "log": false
   },
   "Ridge su log + segnali": {
    "coef": [
-    0.15623047094152684,
-    -0.04427715294792643,
-    0.22496251079427737,
-    0.2464737936066413,
-    0.29897513771506423,
-    0.030208269079274288,
-    -0.19702305761331215,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    -0.004767109581023754,
-    0.10825393940420071,
-    0.0343489041554105,
-    -0.055659816263294665,
+    0.15833259911387082,
+    -0.041028031588111066,
+    0.22568668556991542,
+    0.19782829597622167,
+    0.34585106847750563,
+    0.019807142329469535,
+    -0.21113199784215983,
+    -0.13853780461762458,
+    0.8499091459732292,
+    0.06671940656299458,
+    -0.2188972476048395,
+    -0.012626118388179404,
+    0.10503293129768845,
+    0.02840891121981375,
+    -0.04973269558736261,
     0.0,
     0.0
    ],
-   "intercetta": 0.02457885455521036,
+   "intercetta": 0.011608101217622346,
    "segnali": true,
    "log": true
   }
@@ -1823,60 +1836,60 @@
    "Educazione e inclusione finanziaria": 0.08394830852606536
   },
   "Gradient boosting + segnali": {
-   "Antiriciclaggio e sanzioni finanziarie": 4.964009901876431,
-   "Misure restrittive e sanzioni internazionali": 116.31978371776637,
-   "Vigilanza prudenziale e capitale": 5.976812275635698,
-   "Segnalazioni e reporting di vigilanza": 0.08972526145482422,
-   "Governance, controlli e organizzazione": 0.05051193710623109,
-   "Crisi bancarie, risoluzione e garanzia dei depositi": 0.6103466218727428,
-   "Credito e finanziamenti": 4.734848515868473,
-   "Pagamenti, conti e moneta": 3.510806405840622,
-   "Trasparenza e tutela della clientela": 0.012180912183843668,
-   "Sistema bancario e vigilanza": 0.2702516518192279,
-   "Assicurazioni e bancassicurazione": 9.578724449564733,
-   "Previdenza complementare": 0.6170163148809954,
-   "Servizi di investimento e mercati": 2.8475937578107486,
-   "Cripto-attività e finanza digitale": 2.386118572199995,
-   "Finanza sostenibile ed ESG": 4.587934393260145,
-   "Fisco per banca e clienti": 2.97668463242699,
-   "Cybersicurezza, ICT e DORA": 4.79861290310946,
-   "Privacy e protezione dei dati": 5.334381206991389,
-   "Intelligenza artificiale e innovazione": 9.179422454526886,
-   "Truffe e frodi ai clienti": 0.04345892593827223,
-   "Contratto, stipendio e rapporto di lavoro": 0.3959638411052592,
-   "Pensioni, previdenza e welfare": 0.033155665933614395,
-   "Salute e sicurezza sul lavoro": 0.638170557696603,
-   "Formazione e competenze del personale": 0.010514007842532966,
-   "Economia, tassi e politica monetaria": 2.257454383133613,
-   "Educazione e inclusione finanziaria": 0.023211471013552334
+   "Antiriciclaggio e sanzioni finanziarie": 4.873805302424327,
+   "Misure restrittive e sanzioni internazionali": 116.2756129509556,
+   "Vigilanza prudenziale e capitale": 6.890488488528526,
+   "Segnalazioni e reporting di vigilanza": 0.061019498772131954,
+   "Governance, controlli e organizzazione": 0.11984324522968223,
+   "Crisi bancarie, risoluzione e garanzia dei depositi": 0.4198826445374809,
+   "Credito e finanziamenti": 4.3711842277923,
+   "Pagamenti, conti e moneta": 1.7111705792918763,
+   "Trasparenza e tutela della clientela": 0.008430496310876189,
+   "Sistema bancario e vigilanza": 0.4015044350069792,
+   "Assicurazioni e bancassicurazione": 6.920452631842471,
+   "Previdenza complementare": 0.3638518225892663,
+   "Servizi di investimento e mercati": 3.633893690396418,
+   "Cripto-attività e finanza digitale": 5.966016076396426,
+   "Finanza sostenibile ed ESG": 4.943562959369119,
+   "Fisco per banca e clienti": 2.213747984403578,
+   "Cybersicurezza, ICT e DORA": 4.072211475888867,
+   "Privacy e protezione dei dati": 6.894566841701491,
+   "Intelligenza artificiale e innovazione": 7.805960854992293,
+   "Truffe e frodi ai clienti": 0.03852607857843849,
+   "Contratto, stipendio e rapporto di lavoro": 0.2647316210088944,
+   "Pensioni, previdenza e welfare": 0.012892649055339885,
+   "Salute e sicurezza sul lavoro": 1.1810148016177695,
+   "Formazione e competenze del personale": 0.011792322256829982,
+   "Economia, tassi e politica monetaria": 2.6561171896186484,
+   "Educazione e inclusione finanziaria": 0.01714393497346787
   },
   "Foresta casuale + segnali": {
-   "Antiriciclaggio e sanzioni finanziarie": 5.004335510185548,
-   "Misure restrittive e sanzioni internazionali": 117.1164590224018,
-   "Vigilanza prudenziale e capitale": 5.79654437515099,
-   "Segnalazioni e reporting di vigilanza": 0.0846102239264004,
-   "Governance, controlli e organizzazione": 0.0020833333333333333,
-   "Crisi bancarie, risoluzione e garanzia dei depositi": 0.5711160209544497,
-   "Credito e finanziamenti": 5.756709882416348,
-   "Pagamenti, conti e moneta": 3.1843666447931143,
+   "Antiriciclaggio e sanzioni finanziarie": 4.567200342291866,
+   "Misure restrittive e sanzioni internazionali": 117.26628915060692,
+   "Vigilanza prudenziale e capitale": 6.175017493084832,
+   "Segnalazioni e reporting di vigilanza": 0.06263598166539343,
+   "Governance, controlli e organizzazione": 0.06788063982800825,
+   "Crisi bancarie, risoluzione e garanzia dei depositi": 0.398912002170516,
+   "Credito e finanziamenti": 5.144075794647388,
+   "Pagamenti, conti e moneta": 2.138744014821609,
    "Trasparenza e tutela della clientela": 0.0,
-   "Sistema bancario e vigilanza": 0.06396151479239714,
-   "Assicurazioni e bancassicurazione": 7.184983647737712,
-   "Previdenza complementare": 0.2959641991994933,
-   "Servizi di investimento e mercati": 3.71244899800492,
-   "Cripto-attività e finanza digitale": 3.0760596294830047,
-   "Finanza sostenibile ed ESG": 4.294788724347546,
-   "Fisco per banca e clienti": 2.579727719498424,
-   "Cybersicurezza, ICT e DORA": 5.022612256906357,
-   "Privacy e protezione dei dati": 4.93895349095349,
-   "Intelligenza artificiale e innovazione": 9.667999063543018,
-   "Truffe e frodi ai clienti": 0.016466450216450216,
-   "Contratto, stipendio e rapporto di lavoro": 0.6817068956370425,
-   "Pensioni, previdenza e welfare": 0.05169444444444443,
-   "Salute e sicurezza sul lavoro": 1.814422570828725,
+   "Sistema bancario e vigilanza": 0.19965417915417916,
+   "Assicurazioni e bancassicurazione": 6.647685102071134,
+   "Previdenza complementare": 0.6313860496228917,
+   "Servizi di investimento e mercati": 3.391091408612888,
+   "Cripto-attività e finanza digitale": 10.146860760562964,
+   "Finanza sostenibile ed ESG": 4.86680694554843,
+   "Fisco per banca e clienti": 2.2068370276953875,
+   "Cybersicurezza, ICT e DORA": 4.818227897510987,
+   "Privacy e protezione dei dati": 9.247789352331537,
+   "Intelligenza artificiale e innovazione": 11.11125494128764,
+   "Truffe e frodi ai clienti": 0.009962301587301587,
+   "Contratto, stipendio e rapporto di lavoro": 0.5194897339287822,
+   "Pensioni, previdenza e welfare": 0.001984126984126984,
+   "Salute e sicurezza sul lavoro": 4.660234275378044,
    "Formazione e competenze del personale": 0.0,
-   "Economia, tassi e politica monetaria": 3.4756699999347016,
-   "Educazione e inclusione finanziaria": 0.0012631578947368421
+   "Economia, tassi e politica monetaria": 3.5829643914092446,
+   "Educazione e inclusione finanziaria": 0.00862987012987013
   },
   "Gradient boosting (storia e proposte)": {
    "Antiriciclaggio e sanzioni finanziarie": 5.686642996400573,
