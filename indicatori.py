@@ -54,10 +54,8 @@ MEDIA_AFFIDABILI = [
     ("Corriere della Sera - Economia", "https://xml2.corriereobjects.it/rss/economia.xml", "Italia"),
     ("la Repubblica - Economia", "https://www.repubblica.it/rss/economia/rss2.0.xml", "Italia"),
     ("ANSA - Europa", "https://www.ansa.it/europa/notizie/rss.xml", "UE"),
-    ("FIRSTonline", "https://www.firstonline.info/feed/", "Italia"),
     ("Agenda Digitale", "https://www.agendadigitale.eu/feed/", "Italia"),
     ("DirittoBancario", "https://www.dirittobancario.it/feed/", "Italia"),
-    ("Euractiv - Economia", "https://www.euractiv.com/sections/economy-jobs/feed/", "UE"),
     ("Politico Europe - Servizi finanziari", "https://www.politico.eu/section/financial-services/feed/", "UE"),
 ]
 
