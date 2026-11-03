@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-02T12-32-39.json",
+"nome_file": "vpalert_rss_ACN_2026-11-03T12-01-15.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-02T12:32:39Z",
+"letto_il": "2026-11-03T12:01:15Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,86 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
+"link": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
+"data_originale": "Tue, 13 Oct 2026 10:44:39 GMT",
+"data": "2026-10-13",
+"descrizione": "L’Agenzia per la Cybersicurezza Nazionale richiama l’attenzione delle organizzazioni operanti nei settori della grande distribuzione organizzata (GDO), della logistica alimentare, della refrigerazione industriale e dei servizi di manutenzione connessi, alla luce del recente incidente informatico che ha colpito numerose catene di supermercati francesi."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in cPanel",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-cpanel",
+"data_originale": "Tue, 03 Nov 2026 11:37:48 GMT",
+"data": "2026-11-03",
+"descrizione": "Aggiornamenti di sicurezza sanano 2 vulnerabilità con gravità “alta” nel prodotto cPanel & WHM, nota piattaforma per la gestione di server e hosting. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di leggere gli eventi in calendario e la rubrica di account arbitrari senza autenticazione, o di scrivere file arbitrari sui sistemi interessati con privilegi elevati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Zyxel",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-zyxel-1",
+"data_originale": "Tue, 03 Nov 2026 11:33:27 GMT",
+"data": "2026-11-03",
+"descrizione": "Zyxel ha rilasciato aggiornamenti di sicurezza per risolvere due vulnerabilità con gravità “alta” presenti nei firmware di alcuni Access Point (AP), dispositivi FWA7, Security Router e switch della serie GS1900. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un attaccante, presente sulla rete locale o su una rete adiacente, di elevare i propri privilegi e, in determinate condizioni, di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità nei chipset MediaTek",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-nei-chipset-mediatek-2",
+"data_originale": "Tue, 03 Nov 2026 10:13:44 GMT",
+"data": "2026-11-03",
+"descrizione": "MediaTek ha pubblicato il bollettino di sicurezza di novembre 2026 contenente correzioni per 56 vulnerabilità, di cui 6 con gravità \"critica\" e 16 con gravità \"alta\", nei chipset MediaTek, componenti hardware impiegati in numerosi dispositivi mobili e sistemi embedded."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per dispositivi Android",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-dispositivi-android-1",
+"data_originale": "Tue, 03 Nov 2026 09:02:24 GMT",
+"data": "2026-11-03",
+"descrizione": "Google ha pubblicato il bollettino di sicurezza Android di novembre, contenente correzioni per 149 vulnerabilità, di cui 12 con gravità “critica” e 137 con gravità “alta”. Tra queste si evidenzia la CVE-2026-58882 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Magistra",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-magistra",
+"data_originale": "Tue, 03 Nov 2026 08:19:16 GMT",
+"data": "2026-11-03",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto di Galeno Sistemi Magistra, software per la gestione del laboratorio galenico di farmacia."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in SQLite",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-sqlite",
+"data_originale": "Mon, 02 Nov 2026 15:06:31 GMT",
+"data": "2026-11-02",
+"descrizione": "Rilevate alcune vulnerabilità, di cui 4 con gravità \"alta\", in SQLite, libreria open source per la gestione di basi di dati relazionali incorporata in numerose applicazioni. Tali vulnerabilità potrebbero consentire a un attaccante di iniettare comandi di sistema, alterare la memoria dei processi interessati e compromettere la disponibilità del servizio sui sistemi coinvolti."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Apple",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
+"data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
+"data": "2026-10-27",
+"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 327 nuove vulnerabilità, di cui 20 con gravità “critica” e 231 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS e Safari."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -444,86 +524,6 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Nextcloud",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-nextcloud-1",
-"data_originale": "Tue, 27 Oct 2026 14:04:24 GMT",
-"data": "2026-10-27",
-"descrizione": "Rilevate 10 nuove vulnerabilità, di cui 1 con gravità “alta”, in Nextcloud Server, piattaforma di cloud storage open source. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in n8n",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-n8n-7",
-"data_originale": "Wed, 09 Sep 2026 07:30:10 GMT",
-"data": "2026-09-09",
-"descrizione": "Il team di sviluppo n8n-io ha rilevato nuove vulnerabilità, tra cui 5 con gravità “alta”, che interessano la piattaforma open source per l’automazione dei workflow n8n."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "HPE: rilevate vulnerabilità in ArubaOS",
-"link": "https://www.acn.gov.it/portale/w/hpe-rilevate-vulnerabilita-in-arubaos",
-"data_originale": "Tue, 27 Oct 2026 10:03:51 GMT",
-"data": "2026-10-27",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che sanano molteplici vulnerabilità, di cui 32 con gravità “critica” e 31 con gravità “alta”, in HPE Aruba Networking AOS-8 e AOS-10, sistemi operativi di rete per la gestione delle infrastrutture Wi-Fi aziendali."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Apple: rilevato sfruttamento in rete della CVE-2026-86950",
-"link": "https://www.acn.gov.it/portale/w/apple-rilevato-sfruttamento-in-rete-della-cve-2026-86950",
-"data_originale": "Tue, 29 Sep 2026 07:56:16 GMT",
-"data": "2026-09-29",
-"descrizione": "Rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-86950 – già sanata dal vendor - che interessa i prodotti Apple iOS, iPadOS, macOS Tahoe e macOS Sequoia. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato l'esecuzione di codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Apple",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
-"data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
-"data": "2026-10-27",
-"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 327 nuove vulnerabilità, di cui 20 con gravità “critica” e 231 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS e Safari."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Ubiquiti",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-ubiquiti-1",
-"data_originale": "Tue, 27 Oct 2026 07:53:16 GMT",
-"data": "2026-10-27",
-"descrizione": "Ubiquiti ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità con gravità “alta” in diversi prodotti. Tali vulnerabilità potrebbero consentire a un utente malintenzionato di eseguire codice arbitrario sui sistemi interessati, di ottenere privilegi elevati o di compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Siemens: risolta vulnerabilità in Mendix SAML",
-"link": "https://www.acn.gov.it/portale/w/siemens-risolta-vulnerabilita-in-mendix-saml-1",
-"data_originale": "Mon, 26 Oct 2026 14:29:42 GMT",
-"data": "2026-10-26",
-"descrizione": "Aggiornamenti di sicurezza Siemens sanano una vulnerabilità con gravità \"alta\" presente in Mendix SAML, modulo utilizzato per implementare l'autenticazione federata tramite SAML 2.0 e funzionalità di Single Sign-On (SSO) nelle applicazioni sviluppate con la piattaforma low-code Mendix. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "IceWarp Server: aggiornamenti e mitigazioni per le vulnerabilità \"PHP2Shell\"",
-"link": "https://www.acn.gov.it/portale/w/icewarp-server-aggiornamenti-e-mitigazioni-per-le-vulnerabilita-php2shell-",
-"data_originale": "Mon, 26 Oct 2026 14:20:18 GMT",
-"data": "2026-10-26",
-"descrizione": "Disponibili pacchetti di aggiornamento e istruzioni di mitigazione per IceWarp Server, suite di posta elettronica aziendale e collaborazione, al fine di fronteggiare le vulnerabilità critiche note come \"PHP2Shell\" (CVE-2026-109618, CVE-2026-109619 e CVE-2026-115560) presenti nell'interprete PHP integrato nel prodotto."
-},
-{
-"sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
 "titolo": "ACN e Assolombarda insieme per la resilienza delle aziende",
@@ -586,6 +586,16 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
+"titolo": "Cybersicurezza, allerta sulla filiera alimentare e della catena del freddo: ACN richiama gli operatori della grande distribuzione e della logistica alimentare alle misure di sicurezza già indicate dopo gli incidenti in Francia",
+"link": "https://www.acn.gov.it/portale/web/guest/-/cybersicurezza-allerta-sulla-filiera-alimentare-e-della-catena-del-freddo-acn-richiama-gli-operatori-della-grande-distribuzione-e-della-logistica-alimentare-alle-misure-di-sicurezza-gia-indicate-dopo-gli-incidenti-in-francia",
+"data_originale": "03/11/2026",
+"data": "2026-11-03",
+"descrizione": "Comunicato stampa - 03 Novembre 2026 Ricevuta notifica di attacco di un’azienda toscana, rilevata un’ulteriore crisi in un’impresa emiliano-romagnola del settore CSIRT Italia Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
 "titolo": "Cyber Generation: ACN e ITS Academy insieme per formare i professionisti della cybersicurezza",
 "link": "https://www.acn.gov.it/portale/web/guest/-/cyber-generation-acn-e-its-academy-insieme-per-formare-i-professionisti-della-cybersicurezza",
 "data_originale": "29/10/2026",
@@ -601,16 +611,6 @@
 "data_originale": "07/10/2026",
 "data": "2026-10-07",
 "descrizione": "Comunicato stampa - 07 Ottobre 2026 Il Direttore Generale Acn, Andrea Quacivi, ha adottato la “Politica Nazionale di divulgazione coordinata delle vulnerabilità (CVD)”: “Si consolida un modello di collaborazione tra istituzioni, ricercatori di sicurezza e operatori del settore per il rafforzamento complessivo della resilienza dell’ecosistema digitale nazionale” CSIRT Italia NIS Cybersicurezza ACN"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "Le nuove strategie sull’intelligenza artificiale e la gestione delle vulnerabilità zero day Incontro a Roma tra Andrea Quacivi (ACN) e Juhan Lepassaar (ENISA)",
-"link": "https://www.acn.gov.it/portale/web/guest/-/le-nuove-strategie-sull-intelligenza-artificiale-e-la-gestione-delle-vulnerabilita-zero-day-incontro-a-roma-tra-andrea-quacivi-acn-e-juhan-lepassaar-enisa-",
-"data_originale": "02/10/2026",
-"data": "2026-10-02",
-"descrizione": "Comunicato stampa - 02 Ottobre 2026 ENISA NIS ACN Intelligenza artificiale"
 },
 {
 "sito": "ACN",
