@@ -41,8 +41,8 @@ def bce_vigilanza() -> list[dict]:
         if not any("imposed on" in h for h in intest):
             continue
         for tr in tab.find_all("tr"):
-            celle = tr.find_all("td")
-            if len(celle) < 4:
+            celle = tr.find_all(["th", "td"])
+            if len(celle) < 4 or not tr.find("td"):
                 continue
             v = [testo(td) for td in celle]
             link = ""
@@ -66,17 +66,29 @@ def bce_vigilanza() -> list[dict]:
     return righe
 
 
+MESI_IT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
+           "novembre", "dicembre"]
+
+
 def consob() -> list[dict]:
     url = "https://www.consob.it/web/area-pubblica/sanzioni"
     c = I.prendi(url, "text/html", 90)
     (OUT / "consob_pagina.html").write_bytes(c)
     s = BeautifulSoup(c, "lxml")
-    righe = []
-    for a in s.find_all("a", href=True):
-        t = testo(a)
-        if re.search(r"delibera|sanzion", t, re.I) and re.search(r"\d{4}", t):
-            m = re.search(r"(\d{1,2})[/.](\d{1,2})[/.](\d{4})", t)
-            righe.append({"titolo": t[:400], "link": a["href"], "data": f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else ""})
+    righe, mese, visti = [], "", set()
+    for el in s.find_all(["strong", "a"]):
+        t = testo(el)
+        m = re.fullmatch(r"(" + "|".join(MESI_IT) + r") (\d{4})", t.lower())
+        if el.name == "strong" and m:
+            mese = f"{m.group(2)}-{MESI_IT.index(m.group(1)) + 1:02d}"
+            continue
+        if el.name == "a" and "dettaglio-sanzione" in el.get("href", "") and el["href"] not in visti:
+            visti.add(el["href"])
+            tit = el.get("title") or t
+            n = re.search(r"Delibera n\.? ?(\d+)", tit)
+            righe.append({"mese": mese, "data": mese + "-15" if mese else "", "autorita": "Consob", "area": "Italia",
+                          "delibera": n.group(1) if n else "", "titolo": tit[:500],
+                          "link": "https://www.consob.it" + el["href"] if el["href"].startswith("/") else el["href"]})
     return righe
 
 
