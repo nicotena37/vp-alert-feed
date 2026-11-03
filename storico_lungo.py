@@ -142,14 +142,34 @@ SELECT ?w ?d ?t ?rt WHERE {{ ?w cdm:work_date_document ?d ; cdm:work_has_resourc
 # ---------------------------------------------------------------- Camera e Senato
 def camera(lista: list[str]) -> None:
     s = Serie("camera")
+    errori = 0
     for mese in da_rifare(s, lista):
         inizio, fine = limiti(mese)
-        if True:
+        voci, ok = [], True
+        d = inizio
+        while d <= fine:                      # settimana per settimana: la query sul mese intero va in errore (HTTP 502)
+            f = min(d + timedelta(days=6), fine)
             q = f"""PREFIX dc: <http://purl.org/dc/elements/1.1/>
-SELECT ?s ?t (SAMPLE(?ds) AS ?desc) WHERE {{
+SELECT ?s ?t ?ds WHERE {{
  ?s a <http://dati.camera.it/ocd/aic> ; dc:date ?d ; dc:title ?t . OPTIONAL {{ ?s dc:description ?ds }}
- FILTER(?d >= "{inizio:%Y%m%d}" && ?d <= "{fine:%Y%m%d}") }} GROUP BY ?s ?t LIMIT 20000"""
-            voci = [{"titolo": r["t"], "_testo": r.get("desc", "")[:2000]} for r in I.sparql("https://dati.camera.it/sparql", q, "application/json")]
+ FILTER(?d >= "{d:%Y%m%d}" && ?d <= "{f:%Y%m%d}") }} LIMIT 20000"""
+            try:
+                righe = I.sparql("https://dati.camera.it/sparql", q, "application/json", timeout=180)
+            except Exception as e:  # noqa: BLE001
+                print(f"Camera {d}: {e}", flush=True)
+                ok = False
+                break
+            visti = {}
+            for r in righe:
+                visti.setdefault(r["s"], {"titolo": r["t"], "_testo": r.get("ds", "")[:2000]})
+            voci += visti.values()
+            d = f + timedelta(days=1)
+            time.sleep(1)
+        if not ok:
+            errori += 1
+            if errori >= 15:
+                raise RuntimeError("troppi errori dalla Camera")
+            continue
         s.azzera(mese)
         for v in voci:
             for tema in I.temi_di(v["titolo"], v.get("_testo", "")):

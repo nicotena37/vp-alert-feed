@@ -2,6 +2,10 @@ name: Storico lungo per le previsioni
 
 on:
   workflow_dispatch:
+    inputs:
+      fonti:
+        description: 'Fonti da scaricare, in JSON (es. ["camera"])'
+        default: '["eurlex","bce","senato","camera","mediacloud","openalex"]'
   push:
     paths: ["storico_avvia.txt"]
 
@@ -15,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        fonte: [eurlex, bce, senato, camera, mediacloud, openalex]
+        fonte: ${{ fromJSON(github.event.inputs.fonti || '["eurlex","bce","senato","camera","mediacloud","openalex"]') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
