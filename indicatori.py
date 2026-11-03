@@ -47,6 +47,19 @@ SITI_UE = {"BCE", "BCE - Vigilanza bancaria", "EBA", "ESMA", "ESRB", "Commission
            "Parlamento europeo", "EDPB", "EIOPA"}
 SITI_MONDO = {"BIS", "FSB"}
 SITI_MEDIA = {"Teleborsa"}
+# testate giornalistiche e specializzate attendibili (solo feed RSS pubblici; robots.txt rispettato da prendi())
+MEDIA_AFFIDABILI = [
+    ("Il Sole 24 Ore - Economia", "https://www.ilsole24ore.com/rss/economia.xml", "Italia"),
+    ("Il Sole 24 Ore - Norme e tributi", "https://www.ilsole24ore.com/rss/norme-e-tributi.xml", "Italia"),
+    ("Corriere della Sera - Economia", "https://xml2.corriereobjects.it/rss/economia.xml", "Italia"),
+    ("la Repubblica - Economia", "https://www.repubblica.it/rss/economia/rss2.0.xml", "Italia"),
+    ("ANSA - Europa", "https://www.ansa.it/europa/notizie/rss.xml", "UE"),
+    ("FIRSTonline", "https://www.firstonline.info/feed/", "Italia"),
+    ("Agenda Digitale", "https://www.agendadigitale.eu/feed/", "Italia"),
+    ("DirittoBancario", "https://www.dirittobancario.it/feed/", "Italia"),
+    ("Euractiv - Economia", "https://www.euractiv.com/sections/economy-jobs/feed/", "UE"),
+    ("Politico Europe - Servizi finanziari", "https://www.politico.eu/section/financial-services/feed/", "UE"),
+]
 
 
 # ---------------------------------------------------------------- temi
@@ -457,6 +470,8 @@ def main() -> int:
                                           "media", "Italia"))
     raccogli("Sole 24 Ore Finanza", lambda: rss("Il Sole 24 Ore - Finanza", "https://www.ilsole24ore.com/rss/finanza.xml",
                                                 "media", "Italia"))
+    for nome, url, area in MEDIA_AFFIDABILI:                  # testate attendibili (economia, finanza, diritto, UE)
+        raccogli(nome, lambda nome=nome, url=url, area=area: rss(nome, url, "media", area))
     raccogli("Autorità (giro VP Alert)", lambda: feed_vpalert(dal, al))
 
     conteggi = []
