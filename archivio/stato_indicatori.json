@@ -1,33 +1,31 @@
 {
  "bce_discorsi_scaricato": "2026-11-01",
- "ultimo_giro": "2026-11-03T09:50:53+00:00",
+ "ultimo_giro": "2026-11-03T13:02:05+00:00",
  "dal": "2026-10-19",
- "voci_nuove": 203,
- "voci_in_archivio": 12894,
+ "voci_nuove": 140,
+ "voci_in_archivio": 13034,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 474,
+   "voci": 484,
    "con_tema": 25,
-   "secondi": 33
+   "secondi": 55
   },
   "Camera - interrogazioni": {
-   "ok": true,
-   "voci": 2146,
-   "con_tema": 96,
-   "secondi": 8
+   "ok": false,
+   "errore": "RuntimeError: HTTP 502"
   },
   "Senato - disegni di legge": {
    "ok": true,
    "voci": 140,
    "con_tema": 5,
-   "secondi": 6
+   "secondi": 8
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 642,
+   "voci": 665,
    "con_tema": 25,
-   "secondi": 13
+   "secondi": 14
   },
   "BCE - discorsi": {
    "ok": true,
@@ -43,20 +41,20 @@
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 48,
-   "con_tema": 5,
-   "secondi": 5
+   "voci": 60,
+   "con_tema": 4,
+   "secondi": 6
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
    "voci": 9,
    "con_tema": 4,
-   "secondi": 4
+   "secondi": 5
   },
   "Il Sole 24 Ore - Economia": {
    "ok": true,
    "voci": 12,
-   "con_tema": 0,
+   "con_tema": 1,
    "secondi": 3
   },
   "Il Sole 24 Ore - Norme e tributi": {
@@ -80,44 +78,36 @@
   "ANSA - Europa": {
    "ok": true,
    "voci": 12,
-   "con_tema": 0,
+   "con_tema": 1,
    "secondi": 1
-  },
-  "FIRSTonline": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 403"
   },
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 3,
+   "con_tema": 6,
    "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
    "con_tema": 3,
-   "secondi": 6
-  },
-  "Euractiv - Economia": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 403"
+   "secondi": 7
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
    "voci": 31,
    "con_tema": 3,
-   "secondi": 3
+   "secondi": 4
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1893,
-   "con_tema": 472,
-   "secondi": 0
+   "voci": 1757,
+   "con_tema": 465,
+   "secondi": 1
   },
   "Media Cloud": {
-   "ok": true,
-   "righe": 75
+   "ok": false,
+   "errore": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   },
   "OpenAlex": {
    "ok": true,
