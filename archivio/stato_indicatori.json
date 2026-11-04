@@ -1,60 +1,62 @@
 {
- "bce_discorsi_scaricato": "2026-11-01",
- "ultimo_giro": "2026-11-03T13:02:05+00:00",
+ "bce_discorsi_scaricato": "2026-11-04",
+ "ultimo_giro": "2026-11-04T13:28:25+00:00",
  "dal": "2026-10-19",
- "voci_nuove": 140,
- "voci_in_archivio": 13034,
+ "voci_nuove": 373,
+ "voci_in_archivio": 13407,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 484,
+   "voci": 502,
    "con_tema": 25,
-   "secondi": 55
+   "secondi": 67
   },
   "Camera - interrogazioni": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 502"
+   "ok": true,
+   "voci": 2214,
+   "con_tema": 102,
+   "secondi": 9
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 140,
+   "voci": 143,
    "con_tema": 5,
-   "secondi": 8
+   "secondi": 6
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 665,
-   "con_tema": 25,
+   "voci": 733,
+   "con_tema": 27,
    "secondi": 14
   },
   "BCE - discorsi": {
    "ok": true,
-   "voci": 0,
-   "con_tema": 0,
-   "secondi": 0
+   "voci": 6,
+   "con_tema": 5,
+   "secondi": 7
   },
   "BIS - discorsi": {
    "ok": true,
    "voci": 50,
-   "con_tema": 14,
-   "secondi": 5
+   "con_tema": 16,
+   "secondi": 4
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 60,
-   "con_tema": 4,
-   "secondi": 6
+   "voci": 66,
+   "con_tema": 8,
+   "secondi": 5
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
    "voci": 9,
-   "con_tema": 4,
-   "secondi": 5
+   "con_tema": 2,
+   "secondi": 4
   },
   "Il Sole 24 Ore - Economia": {
    "ok": true,
    "voci": 12,
-   "con_tema": 1,
+   "con_tema": 2,
    "secondi": 3
   },
   "Il Sole 24 Ore - Norme e tributi": {
@@ -72,42 +74,42 @@
   "la Repubblica - Economia": {
    "ok": true,
    "voci": 25,
-   "con_tema": 4,
+   "con_tema": 2,
    "secondi": 4
   },
   "ANSA - Europa": {
    "ok": true,
    "voci": 12,
-   "con_tema": 1,
+   "con_tema": 0,
    "secondi": 1
   },
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 6,
+   "con_tema": 8,
    "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
-   "con_tema": 3,
-   "secondi": 7
+   "con_tema": 6,
+   "secondi": 6
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
    "voci": 31,
    "con_tema": 3,
-   "secondi": 4
+   "secondi": 3
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1757,
-   "con_tema": 465,
+   "voci": 1802,
+   "con_tema": 468,
    "secondi": 1
   },
   "Media Cloud": {
-   "ok": false,
-   "errore": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+   "ok": true,
+   "righe": 75
   },
   "OpenAlex": {
    "ok": true,
