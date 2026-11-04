@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BCE_2026-11-03T12-02-49.json",
+"nome_file": "vpalert_rss_BCE_2026-11-04T12-16-47.json",
 "sito": "BCE",
 "origine": "github-actions",
-"letto_il": "2026-11-03T12:02:49Z",
+"letto_il": "2026-11-04T12:16:47Z",
 "feed": [
 {
 "nome": "BCE - comunicati",
@@ -32,7 +32,7 @@
 {
 "nome": "BCE - operazioni di mercato aperto e comunicazioni",
 "url": "https://www.ecb.europa.eu/rss/operations.html",
-"voci": 31
+"voci": 32
 },
 {
 "nome": "BCE - research bulletin",
@@ -57,7 +57,7 @@
 {
 "nome": "BCE - situazione contabile settimanale dell'Eurosistema",
 "url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/html/index.en.html",
-"voci": 1
+"voci": 2
 },
 {
 "nome": "BCE - Survey of Monetary Analysts (risultati)",
@@ -67,6 +67,16 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "BCE",
+"feed": "BCE - comunicati",
+"categoria": "Vigilanza",
+"titolo": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+"link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+"data_originale": "Wed, 04 Nov 2026 01:00:00 +0100",
+"data": "2026-11-04",
+"descrizione": ""
+},
 {
 "sito": "BCE",
 "feed": "BCE - comunicati",
@@ -209,13 +219,13 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - comunicati",
+"feed": "BCE - pubblicazioni",
 "categoria": "Vigilanza",
-"titolo": "Philip R. Lane: Euro liquidity lines and the international monetary system",
-"link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-"data_originale": "Wed, 21 Oct 2026 06:15:00 +0200",
-"data": "2026-10-21",
-"descrizione": ""
+"titolo": "Deep-π*: a neural network estimate of trend inflation",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3307~d3d2e0c5e4.en.pdf",
+"data_originale": "Wed, 04 Nov 2026 11:00:00 +0100",
+"data": "2026-11-04",
+"descrizione": "Most empirical models of trend inflation treat it as a latent random walk driven by unobserved shocks, so they cannot say which economic conditions move it. Deep- π*makes the innovations to the trend a possibly nonlinear function of a large number of macroeconomic indicators, estimated with neural networks, so that Shapley values can be used to attribute every movement of the trend to the indicators behind it. Two complementary loss functions define a current trend, which fits inflation today, and a forward-looking trend, which best predicts inflation over the next year. In US data, employment-related variables were the largest contributors to the post-pandemic rise of the current trend. How"
 },
 {
 "sito": "BCE",
@@ -359,13 +369,13 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - pubblicazioni",
+"feed": "BCE - post del blog",
 "categoria": "Vigilanza",
-"titolo": "The heterogeneous bank lending channel of monetary policy",
-"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3299~01776adb36.en.pdf",
-"data_originale": "Wed, 14 Oct 2026 11:00:00 +0200",
-"data": "2026-10-14",
-"descrizione": "How does heterogeneity in banks’ interest-rate risk exposure shape monetary policy transmission? We develop a quantitative macroeconomic model of heterogeneous banks to answer this question. We establish an irrelevance result: differences in interest-rate risk exposure between fixed- and variable-rate banking systems matter for transmission only when bank solvency concerns become relevant. Calibrating the model to the euro area, we show that idiosyncratic default risk pushes a substantial share of banks toward the solvency threshold, making heterogeneity quantitatively important. When policy rates rise, fixed-rate banks suffer net interest margin compression—funding costs increase while lega"
+"titolo": "Christine Lagarde: A warning from Europe's hot summer",
+"link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20261104~78299c3eaf.en.html",
+"data_originale": "Wed, 04 Nov 2026 12:00:00 +0100",
+"data": "2026-11-04",
+"descrizione": ""
 },
 {
 "sito": "BCE",
@@ -505,16 +515,6 @@
 "link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20260826~e1c1a89999.en.html",
 "data_originale": "Wed, 26 Aug 2026 11:00:00 +0200",
 "data": "2026-08-26",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - post del blog",
-"categoria": "Vigilanza",
-"titolo": "The AI boom: rational enthusiasm or the next dot-com bubble?",
-"link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20260817~754a8a4418.en.html",
-"data_originale": "Mon, 17 Aug 2026 11:00:00 +0200",
-"data": "2026-08-17",
 "descrizione": ""
 },
 {
@@ -671,6 +671,16 @@
 "sito": "BCE",
 "feed": "BCE - working paper",
 "categoria": "Vigilanza",
+"titolo": "Deep-π*: a neural network estimate of trend inflation",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3307~d3d2e0c5e4.en.pdf",
+"data_originale": "Wed, 04 Nov 2026 11:00:00 +0100",
+"data": "2026-11-04",
+"descrizione": "Most empirical models of trend inflation treat it as a latent random walk driven by unobserved shocks, so they cannot say which economic conditions move it. Deep- π*makes the innovations to the trend a possibly nonlinear function of a large number of macroeconomic indicators, estimated with neural networks, so that Shapley values can be used to attribute every movement of the trend to the indicators behind it. Two complementary loss functions define a current trend, which fits inflation today, and a forward-looking trend, which best predicts inflation over the next year. In US data, employment-related variables were the largest contributors to the post-pandemic rise of the current trend. How"
+},
+{
+"sito": "BCE",
+"feed": "BCE - working paper",
+"categoria": "Vigilanza",
 "titolo": "Debt maturity and government spending multipliers",
 "link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3306~028a82bc67.en.pdf",
 "data_originale": "Tue, 03 Nov 2026 11:00:00 +0100",
@@ -809,13 +819,13 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - working paper",
+"feed": "BCE - operazioni di mercato aperto e comunicazioni",
 "categoria": "Vigilanza",
-"titolo": "Monetary policy surprises with imperfect information",
-"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3292~76d878a0cf.en.pdf",
-"data_originale": "Thu, 01 Oct 2026 11:00:00 +0200",
-"data": "2026-10-01",
-"descrizione": "High-frequency interest rate surprises around Fed announcements do not identify monetary policy (MP) shocks if markets are imperfectly informed. Instead, they can also reflect central bank information (CBI) shocks, when the Fed assesses the economy differently, and Fed-response-to-news (FRN) shocks, when markets misperceive the policy rule. The literature treats these as competing explanations; we show they are distinct, and jointly identify all three from the co-movement of interest rate and equity surprises, their predictability from public news, and heteroskedasticity between FOMC and non-FOMC communication. CBI effects are robust at daily and monthly frequencies; FRN matters only daily. "
+"titolo": "20260098 (OT,liquidity providing):159.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
+"link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260098.en.html",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
+"descrizione": ""
 },
 {
 "sito": "BCE",
@@ -823,8 +833,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260097 (MRO,liquidity providing):16838.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260097.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -833,8 +843,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260096 (OT,liquidity providing):164.00 mn USD alloted (fixed 4.150000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260096.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -843,8 +853,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260095 (LTRO,liquidity providing):9350.00 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260095.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -853,8 +863,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260094 (MRO,liquidity providing):27048.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260094.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -863,8 +873,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260093 (OT,liquidity providing):154.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260093.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -873,8 +883,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260092 (MRO,liquidity providing):19252.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260092.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -883,8 +893,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260091 (OT,liquidity providing):170.10 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260091.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -893,8 +903,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260090 (MRO,liquidity providing):18510.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260090.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -903,8 +913,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260089 (OT,liquidity providing):205.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260089.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -913,8 +923,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260088 (MRO,liquidity providing):18083.60 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260088.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -923,8 +933,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260087 (OT,liquidity providing):207.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260087.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -933,8 +943,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260086 (LTRO,liquidity providing):8898.02 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260086.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -943,8 +953,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260085 (MRO,liquidity providing):21904.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260085.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -953,8 +963,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260084 (OT,liquidity providing):197.00 mn USD alloted (fixed 4.150000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260084.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -963,8 +973,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260083 (MRO,liquidity providing):14557.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260083.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -973,8 +983,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260082 (OT,liquidity providing):72.00 mn USD alloted (fixed 4.110000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260082.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -983,8 +993,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260081 (MRO,liquidity providing):14892.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260081.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -993,8 +1003,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260080 (OT,liquidity providing):90.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260080.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1003,8 +1013,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260079 (MRO,liquidity providing):12241.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260079.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1013,8 +1023,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260078 (OT,liquidity providing):101.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260078.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1023,8 +1033,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260077 (MRO,liquidity providing):13866.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260077.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1033,8 +1043,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260076 (OT,liquidity providing):131.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260076.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1043,8 +1053,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260075 (LTRO,liquidity providing):3276.35 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1053,8 +1063,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260074 (MRO,liquidity providing):18005.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1063,8 +1073,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260073 (OT,liquidity providing):119.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260073.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1073,8 +1083,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260072 (MRO,liquidity providing):16708.50 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260072.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1083,8 +1093,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260071 (OT,liquidity providing):112.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260071.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1093,8 +1103,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260070 (MRO,liquidity providing):16494.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260070.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1103,8 +1113,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260069 (OT,liquidity providing):132.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260069.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1113,8 +1123,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260068 (MRO,liquidity providing):15861.50 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260068.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1123,8 +1133,8 @@
 "categoria": "Vigilanza",
 "titolo": "Announcing 20100084 (,), for days deadline",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20100084.en.html",
-"data_originale": "Tue, 03 Nov 2026 11:30:30 +0100",
-"data": "2026-11-03",
+"data_originale": "Wed, 04 Nov 2026 10:50:26 +0100",
+"data": "2026-11-04",
 "descrizione": ""
 },
 {
@@ -1516,6 +1526,16 @@
 "data_originale": "Mon, 9 Jan 2017 12:00:00 +0100",
 "data": "2017-01-09",
 "descrizione": "The historical euro area government bond yield curve contains the spot rate, instantaneous forward and par yield curves for both AAA-rated euro-denominated bonds issued by euro area central governments and all euro area central government bonds. The maturity spectrum covers three months up to 30 years. Data are available from 29 December 2006 to 06 January 2017."
+},
+{
+"sito": "BCE",
+"feed": "BCE - situazione contabile settimanale dell'Eurosistema",
+"categoria": "Vigilanza",
+"titolo": "Consolidated financial statement of the Eurosystem as at 30 October 2026",
+"link": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/2026/html/ecb.fst261103.en.html",
+"data_originale": "2026-11-03",
+"data": "2026-11-03",
+"descrizione": "Consolidated financial statement of the Eurosystem 30 October 2026 Assets (EUR millions) Balance Difference compared with last week due to transactions Totals/sub-totals may not add up, due to rounding 1 Gold and gold receivables 1,286,241 1 2 Claims on non-euro area residents denominated in foreign currency 524,495 757 2.1 Receivables from the IMF 233,259 11 2.2 Balances with banks and security investments, external loans and other external assets 291,235 747 3 Claims on euro area residents denominated in foreign currency 19,668 −1,351 4 Claims on non-euro area residents denominated in euro 39,120 −259 4.1 Balances with banks, security investments and loans 39,120 −259 4.2 Claims arising fr"
 },
 {
 "sito": "BCE",

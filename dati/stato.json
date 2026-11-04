@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-03T11:59:10+00:00",
+ "letto_il": "2026-11-04T12:13:25+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -154,7 +154,7 @@
   "BCE": {
    "feed_ok": 12,
    "feed_totali": 12,
-   "notizie": 149,
+   "notizie": 151,
    "allarmi": []
   },
   "ESRB": {
@@ -164,15 +164,17 @@
    "allarmi": []
   },
   "EDPB": {
-   "feed_ok": 2,
+   "feed_ok": 1,
    "feed_totali": 2,
-   "notizie": 20,
-   "allarmi": []
+   "notizie": 10,
+   "allarmi": [
+    "EDPB - news: feed non leggibile (ValueError: HTTP 500) - https://www.edpb.europa.eu/feed/news_en"
+   ]
   },
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 94,
+   "notizie": 136,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -204,7 +206,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 4,
+   "notizie": 14,
    "allarmi": []
   },
   "AMLA": {
@@ -240,7 +242,7 @@
   "IFRS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 30,
+   "notizie": 31,
    "allarmi": []
   },
   "ISDA": {

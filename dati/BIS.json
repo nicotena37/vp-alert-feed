@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BIS_2026-11-03T12-04-26.json",
+"nome_file": "vpalert_rss_BIS_2026-11-04T12-18-25.json",
 "sito": "BIS",
 "origine": "github-actions",
-"letto_il": "2026-11-03T12:04:26Z",
+"letto_il": "2026-11-04T12:18:25Z",
 "feed": [
 {
 "nome": "BIS - comunicati",
@@ -17,6 +17,16 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "BIS",
+"feed": "BIS - FSI (sintesi regolamentari)",
+"categoria": "Resto del mondo",
+"titolo": "Prewar US business cycles under uncertainty: reconstructing quarterly GDP before 1947",
+"link": "https://www.bis.org/publications/working-paper-1390-prewar-us-business-cycles-under-uncertainty-reconstructing-quarterly-gdp-1947",
+"data_originale": "2026-11-03T00:00:00Z",
+"data": "2026-11-03",
+"descrizione": "Official quarterly US GDP estimates begin in 1947; earlier quarterly histories must be reconstructed using annual benchmarks and historical indicators. To investigate uncertainty in these reconstructions, this paper systematically compares specifications drawn from the literature for reconstructing quarterly GDP during 1919–1946. The comparison evaluates predictions on concealed postwar quarters and separates variation across specifications from coefficient uncertainty within a model."
+},
 {
 "sito": "BIS",
 "feed": "BIS - FSI (sintesi regolamentari)",
@@ -206,16 +216,6 @@
 "data_originale": "2026-09-28T00:00:00Z",
 "data": "2026-09-28",
 "descrizione": "This paper examines analytically and empirically whether the Basel III leverage ratio (LR) and output floor (OF) requirements act as substitutes for or complements to each other and how they interact with risk‑based regulatory requirements."
-},
-{
-"sito": "BIS",
-"feed": "BIS - FSI (sintesi regolamentari)",
-"categoria": "Resto del mondo",
-"titolo": "Trusted execution environments for central banks",
-"link": "https://www.bis.org/publications/paper-173-trusted-execution-environments-central-banks",
-"data_originale": "2026-09-25T00:00:00Z",
-"data": "2026-09-25",
-"descrizione": "This paper considers what TEEs can responsibly deliver for central banks, the conditions under which they are most effective and how they can be deployed without widening who must be trusted. It takes a balanced view, outlining core assurances and boundaries, highlighting implementation and governance dependencies and situating TEEs alongside alternative approaches to confidential computing."
 }
 ]
 }

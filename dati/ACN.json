@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-03T12-01-15.json",
+"nome_file": "vpalert_rss_ACN_2026-11-04T12-15-21.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-03T12:01:15Z",
+"letto_il": "2026-11-04T12:15:21Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -26,11 +26,131 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Github Enterprise server",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-github-enterprise-server-1",
+"data_originale": "Wed, 04 Nov 2026 11:35:54 GMT",
+"data": "2026-11-04",
+"descrizione": "GitHub ha rilasciato aggiornamenti di sicurezza che risolvono diverse vulnerabilità, di cui due con gravità “alta”, in GitHub Enterprise Server, edizione on‑premises della piattaforma GitHub, progettata per ambienti aziendali con requisiti avanzati di sicurezza e conformità."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti HPE",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-hpe",
+"data_originale": "Wed, 04 Nov 2026 11:16:32 GMT",
+"data": "2026-11-04",
+"descrizione": "Rilevate molteplici vulnerabilità, di cui 3 con gravità “critica” e 27 con gravità “alta”, nei prodotti HPE Fabric Composer e Virtual Intranet Access (VIA). Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di eludere i meccanismi di autenticazione, eseguire codice arbitrario, accedere a informazioni sensibili, ottenere privilegi elevati o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti per prodotti Siemens",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-per-prodotti-siemens-25",
+"data_originale": "Tue, 11 Aug 2026 14:03:30 GMT",
+"data": "2026-08-11",
+"descrizione": "Siemens ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità nei propri prodotti, di cui 1 con gravità “critica” e 13 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario e di leggere file arbitrari sul filesystem dei sistemi interessati. Tra queste si evidenzia la CVE-2026-58115 per la quale è stato rilevato lo sfruttamento attivo in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti ASUS",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-5",
+"data_originale": "Wed, 04 Nov 2026 10:01:20 GMT",
+"data": "2026-11-04",
+"descrizione": "Rilevate 4 nuove vulnerabilità, di cui 3 con gravità “alta”, in alcuni prodotti ASUS. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di elevare i propri privilegi, eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
+"data_originale": "Wed, 04 Nov 2026 08:15:58 GMT",
+"data": "2026-11-04",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a professionisti, farmacie e strutture sanitarie."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Docker",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-docker",
+"data_originale": "Wed, 04 Nov 2026 09:31:06 GMT",
+"data": "2026-11-04",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità “critica” e 3 con gravità “alta”, nei prodotti Docker Sandboxes, Docker Buildx e Docker Desktop. Tali vulnerabilità potrebbero consentire a un utente malintenzionato locale di eseguire codice arbitrario sul sistema host al di fuori dell'ambiente isolato ed eludere le restrizioni applicate ai container per accedere a servizi e file sul sistema host."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in SolarWinds Dameware",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-solarwinds-dameware",
+"data_originale": "Wed, 04 Nov 2026 09:21:15 GMT",
+"data": "2026-11-04",
+"descrizione": "Aggiornamenti di sicurezza risolvono tre vulnerabilità, di cui una con gravità \"critica\" e due con gravità \"alta\", presenti in SolarWinds Dameware, nota soluzione di amministrazione remota e supporto IT utilizzata per la gestione, il controllo e l'assistenza di sistemi informatici. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente autenticato malintenzionato, anche da remoto per due di esse, di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in Mozilla Firefox",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-mozilla-firefox",
+"data_originale": "Wed, 04 Nov 2026 09:17:15 GMT",
+"data": "2026-11-04",
+"descrizione": "Aggiornamenti di sicurezza risolvono una vulnerabilità con gravità “alta” in Mozilla Firefox. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eseguire codice arbitrario, compromettere la disponibilità del servizio e/o accedere ad informazioni sensibili sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Google Chrome",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-84",
+"data_originale": "Wed, 04 Nov 2026 08:06:48 GMT",
+"data": "2026-11-04",
+"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 213 nuove vulnerabilità di sicurezza, di cui 21 con gravità “critica” e 63 con gravità “alta”."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
 "titolo": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
 "link": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
 "data_originale": "Tue, 13 Oct 2026 10:44:39 GMT",
 "data": "2026-10-13",
 "descrizione": "L’Agenzia per la Cybersicurezza Nazionale richiama l’attenzione delle organizzazioni operanti nei settori della grande distribuzione organizzata (GDO), della logistica alimentare, della refrigerazione industriale e dei servizi di manutenzione connessi, alla luce del recente incidente informatico che ha colpito numerose catene di supermercati francesi."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in prodotti Grafana",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-grafana",
+"data_originale": "Tue, 03 Nov 2026 14:49:12 GMT",
+"data": "2026-11-03",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità “alta” presente in Grafana Enterprise Metrics (GEM) e Mimir, piattaforme impiegate per l'archiviazione e la gestione di metriche di monitoraggio. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante autenticato e dotato di specifici permessi di leggere file arbitrari e accedere a informazioni sensibili, quali credenziali e configurazioni, presenti sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Zohocorp: sanate vulnerabilità in prodotti ManageEngine",
+"link": "https://www.acn.gov.it/portale/w/zohocorp-sanate-vulnerabilita-in-prodotti-manageengine",
+"data_originale": "Mon, 02 Nov 2026 09:37:01 GMT",
+"data": "2026-11-02",
+"descrizione": "Aggiornamenti di sicurezza sanano 11 vulnerabilità, di cui una con gravità \"critica\" e 10 con gravità “alta”, che interessano i prodotti ManageEngine SharePoint Manager Plus, Password Manager Pro, PAM360, Eventlog Analyzer, Log360 e Key Manager Plus."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti PostgreSQL",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-postgresql",
+"data_originale": "Tue, 03 Nov 2026 13:24:17 GMT",
+"data": "2026-11-03",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 6 con gravità “alta”, in PostgreSQL psqlODBC. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di modificare dati o di eseguire codice arbitrario sui sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -161,16 +281,6 @@
 "data_originale": "Mon, 02 Nov 2026 10:12:58 GMT",
 "data": "2026-11-02",
 "descrizione": "Risolte due vulnerabilità con gravità \"alta\" in n8n, piattaforma open source per l'automazione dei flussi di lavoro."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Zohocorp: sanate vulnerabilità in prodotti ManageEngine",
-"link": "https://www.acn.gov.it/portale/w/zohocorp-sanate-vulnerabilita-in-prodotti-manageengine",
-"data_originale": "Mon, 02 Nov 2026 09:37:01 GMT",
-"data": "2026-11-02",
-"descrizione": "Aggiornamenti di sicurezza sanano tre vulnerabilità con gravità “alta” che interessano i prodotti ManageEngine SharePoint Manager Plus, soluzione per la gestione e il monitoraggio degli ambienti SharePoint, nonché ManageEngine Password Manager Pro e PAM360, piattaforme per la gestione di credenziali, account privilegiati e accessi amministrativi."
 },
 {
 "sito": "ACN",
@@ -411,116 +521,6 @@
 "data_originale": "Wed, 28 Oct 2026 12:41:36 GMT",
 "data": "2026-10-28",
 "descrizione": "Facendo seguito alle precedenti comunicazioni sulle vulnerabilità critiche note come “PHP2Shell”, si richiama l’attenzione sulla necessità di verificare sulle istanze dei propri servizi offerti la presenza di prodotti di terze parti che integrano PHP."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevata vulnerabilità in TianoCore EDK II",
-"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-tianocore-edk-ii",
-"data_originale": "Wed, 28 Oct 2026 12:20:04 GMT",
-"data": "2026-10-28",
-"descrizione": "Rilevata una vulnerabilità con gravità \"critica\" presente nel driver PXE (NetworkPkg/UefiPxeBcDxe) del progetto TianoCore EDK II, una delle implementazioni UEFI open source più diffuse e utilizzate come base da numerosi produttori di firmware. La vulnerabilità interessa le funzionalità di network boot PXE sia in ambiente IPv4 che IPv6."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Acronis",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-acronis-2",
-"data_originale": "Wed, 28 Oct 2026 11:37:54 GMT",
-"data": "2026-10-28",
-"descrizione": "Rilevate 11 vulnerabilità, di cui 3 con gravità “alta”, nei prodotti Acronis Cyber Protect 17 e Cyber Protect Cloud Agent. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di accedere ad informazioni sensibili e manipolarle, nonché di elevare i propri privilegi sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-82",
-"data_originale": "Wed, 28 Oct 2026 10:30:30 GMT",
-"data": "2026-10-28",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 52 nuove vulnerabilità di sicurezza, di cui 4 con gravità “critica” e 46 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "PHP2Shell: sanate vulnerabilità critiche in PHP",
-"link": "https://www.acn.gov.it/portale/w/php2shell-sanate-vulnerabilita-critiche-in-php",
-"data_originale": "Wed, 21 Oct 2026 14:21:31 GMT",
-"data": "2026-10-21",
-"descrizione": "Aggiornamenti di sicurezza sanano 2 nuove vulnerabilità con gravità \"critica\" in PHP, noto interprete del linguaggio di scripting per lo sviluppo web. Tali vulnerabilità interessano la componente php-src e, qualora sfruttate, potrebbero permettere a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Veeam",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-veeam-2",
-"data_originale": "Wed, 28 Oct 2026 09:59:07 GMT",
-"data": "2026-10-28",
-"descrizione": "Veeam ha rilasciato aggiornamenti di sicurezza per risolvere 9 vulnerabilità, di cui 2 con gravità “critica” e 3 con gravità “alta”, nei prodotti Backup and Replication, ONE, Agent per Linux e Backup per Microsoft 365."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Adobe: aggiornamenti di sicurezza",
-"link": "https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-18",
-"data_originale": "Wed, 15 Jul 2026 10:15:14 GMT",
-"data": "2026-07-15",
-"descrizione": "Adobe ha rilasciato aggiornamenti di sicurezza per risolvere molteplici vulnerabilità, di cui 13 con gravità “critica” e 50 con gravità “alta”, in molteplici prodotti."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in OAuthLib",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-oauthlib",
-"data_originale": "Wed, 28 Oct 2026 08:58:41 GMT",
-"data": "2026-10-28",
-"descrizione": "Aggiornamenti di sicurezza sanano una vulnerabilità con gravità \"alta\" in OAuthLib, libreria open source per Python ampiamente utilizzata per l'implementazione dei protocolli di autorizzazione OAuth 1.0 e OAuth 2.0. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "WatchGuard: risolte vulnerabilità in Fireware OS",
-"link": "https://www.acn.gov.it/portale/w/watchguard-risolte-vulnerabilita-in-fireware-os",
-"data_originale": "Wed, 28 Oct 2026 08:14:28 GMT",
-"data": "2026-10-28",
-"descrizione": "WatchGuard ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 7 con gravità “critica” e 7 con gravità “alta”, in Fireware OS, sistema operativo utilizzato nei dispositivi di sicurezza perimetrale e di protezione delle reti. Tali vulnerabilità potrebbero consentire a un utente malintenzionato, in determinate condizioni, di eseguire codice arbitrario, di eludere i meccanismi di autenticazione, di accedere a informazioni sensibili o di compromettere la disponibilit"
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Adobe: aggiornamenti di sicurezza",
-"link": "https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-26",
-"data_originale": "Wed, 28 Oct 2026 07:50:37 GMT",
-"data": "2026-10-28",
-"descrizione": "Adobe ha rilasciato aggiornamenti di sicurezza per risolvere 12 vulnerabilità, di cui 9 con gravità “critica” e 2 con gravità “alta”, nei prodotti Substance 3D Painter, Connect Desktop, Connect Mobile, Campaign Classic, Creative Cloud Desktop Application."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Google: disponibile PoC per lo sfruttamento della CVE-2026-111497",
-"link": "https://www.acn.gov.it/portale/w/google-disponibile-poc-per-lo-sfruttamento-della-cve-2026-111497",
-"data_originale": "Mon, 26 Oct 2026 13:10:24 GMT",
-"data": "2026-10-26",
-"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-111497, presente nel decoder di Google Brotli, libreria open source ampiamente impiegata per la compressione e decompressione dei contenuti web e incorporata in numerosi prodotti e framework software, tra cui Node.js, DuckDB, Apache Arrow, .NET e diverse librerie Python."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Mozilla",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-14",
-"data_originale": "Wed, 28 Oct 2026 07:23:52 GMT",
-"data": "2026-10-28",
-"descrizione": "Aggiornamenti di sicurezza sanano 180 vulnerabilità di sicurezza, di cui 3 con gravità “critica” e 113 con gravità “alta”, nei prodotti Firefox, Firefox ESR, Thunderbird."
 },
 {
 "sito": "ACN",
