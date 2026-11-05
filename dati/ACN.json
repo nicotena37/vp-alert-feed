@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-04T12-15-21.json",
+"nome_file": "vpalert_rss_ACN_2026-11-05T12-28-17.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-04T12:15:21Z",
+"letto_il": "2026-11-05T12:28:17Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,156 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Linux: disponibile PoC per lo sfruttamento della CVE-2026-98432",
+"link": "https://www.acn.gov.it/portale/w/linux-disponibile-poc-per-lo-sfruttamento-della-cve-2026-98432",
+"data_originale": "Thu, 05 Nov 2026 11:11:12 GMT",
+"data": "2026-11-05",
+"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-98432 - già sanata dal vendor - che interessa il kernel Linux. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante remoto non autenticato di compromettere la disponibilità del servizio e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti WatchGuard",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-watchguard-4",
+"data_originale": "Thu, 05 Nov 2026 10:08:54 GMT",
+"data": "2026-11-05",
+"descrizione": "WatchGuard ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità, 3 con gravità “critica” e una con gravità “alta”, nel prodotto AuthPoint Authentication Gateway, componente on-premise della piattaforma MFA AuthPoint che collega Active Directory/LDAP e gestisce l'autenticazione RADIUS."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti Cisco",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-cisco-2",
+"data_originale": "Thu, 05 Nov 2026 10:05:28 GMT",
+"data": "2026-11-05",
+"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per risolvere tre vulnerabilità nei propri prodotti, di cui una con gravità “alta” in Cisco Unified Computing System (UCS) Central Software, piattaforma di gestione centralizzata per infrastrutture server Cisco UCS. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto autenticato di eseguire comandi arbitrari, scrivere file sul filesystem e accedere ad informazioni sensibili sui sistemi target."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Drupal: rilevato sfruttamento in rete della CVE-2026-118539",
+"link": "https://www.acn.gov.it/portale/w/drupal-rilevato-sfruttamento-in-rete-della-cve-2026-118539",
+"data_originale": "Thu, 05 Nov 2026 08:38:37 GMT",
+"data": "2026-11-05",
+"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-118539 - già sanata dal vendor - presente in Drupal Commerce Core, modulo dedicato all'implementazione di funzionalità di commercio elettronico per la vendita di beni e servizi tramite carrello acquisti, checkout integrato e applicazioni basate su API."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti Mensili Microsoft",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-mensili-microsoft-25",
+"data_originale": "Wed, 14 Oct 2026 08:49:33 GMT",
+"data": "2026-10-14",
+"descrizione": "Microsoft ha rilasciato gli aggiornamenti di sicurezza mensili che risolvono un totale di 1416 nuove vulnerabilità, di cui una di tipo 0-day."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Apple",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-21",
+"data_originale": "Tue, 14 May 2024 12:41:03 GMT",
+"data": "2024-05-14",
+"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità presenti nei propri prodotti."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Sicurezza dei sistemi a supporto della catena del freddo e interfacce di management di sistemi connessi: richiamo urgente alle misure di verifica e mitigazione",
+"link": "https://www.acn.gov.it/portale/w/sicurezza-dei-sistemi-a-supporto-della-catena-del-freddo-e-interfacce-di-management-di-sistemi-connessi-richiamo-urgente-alle-misure-di-verifica-e-mitigazione",
+"data_originale": "Wed, 04 Nov 2026 17:38:53 GMT",
+"data": "2026-11-04",
+"descrizione": "Alla luce dei recenti accadimenti e delle evidenze rilevate, si richiamano i soggetti nazionali ad applicare con urgenza le raccomandazioni già formulate da questo CSIRT per gli operatori della distribuzione alimentare e della filiera del freddo."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
+"link": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
+"data_originale": "Tue, 13 Oct 2026 10:44:39 GMT",
+"data": "2026-10-13",
+"descrizione": "L’Agenzia per la Cybersicurezza Nazionale richiama l’attenzione delle organizzazioni operanti nei settori della grande distribuzione organizzata (GDO), della logistica alimentare, della refrigerazione industriale e dei servizi di manutenzione connessi, alla luce del recente incidente informatico che ha colpito numerose catene di supermercati francesi."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Dispositivi IoT e servizi di accesso remoto connessi ad Internet: rischi e mitigazioni",
+"link": "https://www.acn.gov.it/portale/w/dispositivi-iot-e-servizi-di-accesso-remoto-connessi-ad-internet-rischi-e-mitigazioni",
+"data_originale": "Thu, 26 Jun 2025 16:53:24 GMT",
+"data": "2025-06-26",
+"descrizione": "Nell'ambito delle proprie attività, volte ad individuare fattori di rischio a cui è esposto lo spazio digitale nazionale, lo CSIRT Italia registra costantemente un alto numero di dispositivi e servizi eterogenei (ad esempio IoT, router industriali, telecamere IP e controllori e sistemi SCADA) esposti su Internet in maniera insicura."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "WordPress: rilevato sfruttamento in rete della CVE-2026-119977",
+"link": "https://www.acn.gov.it/portale/w/wordpress-rilevato-sfruttamento-in-rete-della-cve-2026-119977",
+"data_originale": "Wed, 04 Nov 2026 16:27:58 GMT",
+"data": "2026-11-04",
+"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-119977 - già sanata dal vendor - presente in WordPress. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Supply Chain Attack: distribuzione di versioni malevole dell'estensione Claude Code sul Marketplace di Cursor",
+"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-distribuzione-di-versioni-malevole-dell-estensione-claude-code-sul-marketplace-di-cursor",
+"data_originale": "Wed, 04 Nov 2026 15:11:27 GMT",
+"data": "2026-11-04",
+"descrizione": "È stata recentemente rilevata la distribuzione di versioni malevole dell'estensione Anthropic.claude-code all'interno del \"Cursor VS Code Extension Marketplace\", che ha comportato la raccolta e l'esfiltrazione di informazioni di sistema e sull'ambiente di lavoro degli host e il tentativo di installazione di una backdoor SSH persistente sui dispositivi degli sviluppatori."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Zohocorp: sanate vulnerabilità in prodotti ManageEngine",
+"link": "https://www.acn.gov.it/portale/w/zohocorp-sanate-vulnerabilita-in-prodotti-manageengine",
+"data_originale": "Mon, 02 Nov 2026 09:37:01 GMT",
+"data": "2026-11-02",
+"descrizione": "Aggiornamenti di sicurezza sanano 13 vulnerabilità, di cui una con gravità \"critica\" e 12 con gravità “alta”, che interessano i prodotti ManageEngine SharePoint Manager Plus, Password Manager Pro, PAM360, Eventlog Analyzer, Log360 e Key Manager Plus."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità nei chipset Qualcomm",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-nei-chipset-qualcomm-1",
+"data_originale": "Wed, 04 Nov 2026 14:06:19 GMT",
+"data": "2026-11-04",
+"descrizione": "Rilevate molteplici vulnerabilità di sicurezza, di cui 2 con gravità \"critica\" e 13 con gravita \"alta\", nei chipset Qualcomm, componenti hardware impiegati in dispositivi mobili, sistemi embedded, apparati di rete, piattaforme automotive e altri sistemi basati sulle tecnologie Qualcomm Snapdragon e FastConnect."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-4",
+"data_originale": "Wed, 04 Nov 2026 14:04:41 GMT",
+"data": "2026-11-04",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 15 vulnerabilità, di cui 6 con gravità \"alta\" in Database Tools e nei driver C, Atlas SQL ODBC e Node.js."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Elastic",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-4",
+"data_originale": "Wed, 04 Nov 2026 13:40:49 GMT",
+"data": "2026-11-04",
+"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -116,31 +266,11 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
-"link": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
-"data_originale": "Tue, 13 Oct 2026 10:44:39 GMT",
-"data": "2026-10-13",
-"descrizione": "L’Agenzia per la Cybersicurezza Nazionale richiama l’attenzione delle organizzazioni operanti nei settori della grande distribuzione organizzata (GDO), della logistica alimentare, della refrigerazione industriale e dei servizi di manutenzione connessi, alla luce del recente incidente informatico che ha colpito numerose catene di supermercati francesi."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolta vulnerabilità in prodotti Grafana",
 "link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-grafana",
 "data_originale": "Tue, 03 Nov 2026 14:49:12 GMT",
 "data": "2026-11-03",
 "descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità “alta” presente in Grafana Enterprise Metrics (GEM) e Mimir, piattaforme impiegate per l'archiviazione e la gestione di metriche di monitoraggio. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante autenticato e dotato di specifici permessi di leggere file arbitrari e accedere a informazioni sensibili, quali credenziali e configurazioni, presenti sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Zohocorp: sanate vulnerabilità in prodotti ManageEngine",
-"link": "https://www.acn.gov.it/portale/w/zohocorp-sanate-vulnerabilita-in-prodotti-manageengine",
-"data_originale": "Mon, 02 Nov 2026 09:37:01 GMT",
-"data": "2026-11-02",
-"descrizione": "Aggiornamenti di sicurezza sanano 11 vulnerabilità, di cui una con gravità \"critica\" e 10 con gravità “alta”, che interessano i prodotti ManageEngine SharePoint Manager Plus, Password Manager Pro, PAM360, Eventlog Analyzer, Log360 e Key Manager Plus."
 },
 {
 "sito": "ACN",
@@ -391,136 +521,6 @@
 "data_originale": "Fri, 30 Oct 2026 11:32:10 GMT",
 "data": "2026-10-30",
 "descrizione": "Progress ha rilasciato aggiornamenti di sicurezza per sanare 6 vulnerabilità con gravità “alta” nel prodotto Telerik Document Processing Libraries. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di compromettere la disponibilità del servizio, eludere i meccanismi di sicurezza e leggere o scrivere file arbitrari sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Supermicro",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-supermicro",
-"data_originale": "Thu, 29 Oct 2026 15:31:35 GMT",
-"data": "2026-10-29",
-"descrizione": "Aggiornamenti di sicurezza sanano alcune vulnerabilità, di cui una con gravità “critica” e 4 con gravità “alta”, in vari prodotti Supermicro. Tali vulnerabilità potrebbero consentire a un attaccante di eseguire codice arbitrario, accedere a informazioni sensibili, elevare i propri privilegi ed eludere i meccanismi di sicurezza e autenticazione sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "VMware: rilevato sfruttamento in rete della CVE-2026-41709",
-"link": "https://www.acn.gov.it/portale/w/vmware-rilevato-sfruttamento-in-rete-della-cve-2026-41709",
-"data_originale": "Fri, 30 Oct 2026 11:26:40 GMT",
-"data": "2026-10-30",
-"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-41709 - già sanata dal vendor nel luglio 2026 - presente in VMware ESX, Cloud Foundation, vSphere Foundation e Telco Cloud Platform. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante con privilegi amministrativi di eseguire determinate operazioni senza che queste vengano registrate nei log di sistema."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Jenkins",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-jenkins-1",
-"data_originale": "Thu, 29 Oct 2026 14:54:42 GMT",
-"data": "2026-10-29",
-"descrizione": "Jenkins Project ha rilasciato aggiornamenti di sicurezza per Jenkins, server open source per l’automazione delle attività di compilazione, verifica e distribuzione del software, che sanano molteplici vulnerabilità, di cui 13 con gravità \"alta\"."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-3",
-"data_originale": "Thu, 29 Oct 2026 14:21:34 GMT",
-"data": "2026-10-29",
-"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Database Tools e Laravel. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di sicurezza e manipolare i dati sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Elastic Cloud Enterprise",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-elastic-cloud-enterprise",
-"data_originale": "Thu, 29 Oct 2026 14:02:43 GMT",
-"data": "2026-10-29",
-"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per Elastic Cloud Enterprise (ECE), piattaforma per la gestione centralizzata di ambienti Elastic, che sanano alcune vulnerabilità, di cui 3 con gravità \"alta\". Tali vulnerabilità, riconducibili a una risoluzione non adeguata dei collegamenti prima dell'accesso ai file, potrebbero consentire a un attaccante locale di accedere a informazioni riservate, modificare o causare la perdita di dati ed eludere i meccanismi di autenticazione."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in n8n",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-n8n",
-"data_originale": "Thu, 29 Oct 2026 13:59:35 GMT",
-"data": "2026-10-29",
-"descrizione": "Risolte 15 vulnerabilità, di cui 13 con gravità “alta”, che interessano la piattaforma open-source per l'automazione dei workflow n8n."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in prodotti Sophos",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-sophos-2",
-"data_originale": "Thu, 29 Oct 2026 11:28:28 GMT",
-"data": "2026-10-29",
-"descrizione": "Risolta una vulnerabilità con gravità “critica” in Sophos UTM. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di eseguire codice arbitrario con privilegi elevati sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Juniper Networks",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-juniper-networks-7",
-"data_originale": "Thu, 29 Oct 2026 11:27:02 GMT",
-"data": "2026-10-29",
-"descrizione": "Juniper Networks ha rilasciato aggiornamenti di sicurezza che sanano 18 vulnerabilità, di cui 2 con gravità \"critica\" e 8 con gravità \"alta\", nei prodotti Session Smart Router e Session Smart Conductor, soluzioni dedicate rispettivamente al routing e alla relativa gestione."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Cisco: rilevato sfruttamento in rete della CVE-2026-76418",
-"link": "https://www.acn.gov.it/portale/w/cisco-rilevato-sfruttamento-in-rete-della-cve-2026-76418",
-"data_originale": "Thu, 29 Oct 2026 09:12:17 GMT",
-"data": "2026-10-29",
-"descrizione": "Cisco ha rilevato lo sfruttamento in rete di una vulnerabilità con gravità \"alta\", identificata tramite la CVE-2026-76418, in Secure Firewall Adaptive Security Appliance (ASA) e Secure Firewall Threat Defense (FTD). Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio sui sistemi interessati"
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Dell",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-2",
-"data_originale": "Wed, 28 Oct 2026 13:36:00 GMT",
-"data": "2026-10-28",
-"descrizione": "Aggiornamenti di sicurezza Dell Technologies sanano molteplici vulnerabilità, di cui 7 con gravità \"critica\" e 18 con gravità \"alta\" che interessano i prodotti PowerProtect Data Domain, Data Domain Virtual Edition e Dell APEX Protection Storage, soluzioni di storage per backup e protezione dei dati basate sulla tecnologia Data Domain."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Fragnesia: PoC per lo sfruttamento di una nuova vulnerabilità nel kernel Linux",
-"link": "https://www.acn.gov.it/portale/w/fragnesia-poc-per-lo-sfruttamento-di-una-nuova-vulnerabilita-nel-kernel-linux",
-"data_originale": "Thu, 14 May 2026 16:04:27 GMT",
-"data": "2026-05-14",
-"descrizione": "Disponibile un Proof of Concept (PoC) per “Fragnesia”, nuova vulnerabilità nel kernel Linux, identificata tramite la CVE-2026-46300. La vulnerabilità interessa il sottosistema XFRM ESP-in-TCP, parte dell’implementazione di IPsec in Linux, utilizzato per incapsulare il traffico IPsec ESP all’interno di una connessione TCP. La vulnerabilità, qualora sfruttata, potrebbe consentire a un utente non privilegiato l’ottenimento di privilegi di root sul sistema."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Critical Patch Update di Oracle",
-"link": "https://www.acn.gov.it/portale/w/critical-patch-update-di-oracle-12",
-"data_originale": "Wed, 21 Oct 2026 07:24:32 GMT",
-"data": "2026-10-21",
-"descrizione": "Oracle ha rilasciato il Critical Patch Update di ottobre che mira a correggere numerose vulnerabilità su più prodotti, di cui 64 con gravità “critica” e 383 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "PHP2Shell: verificare i prodotti che Integrano PHP",
-"link": "https://www.acn.gov.it/portale/w/php2shell-verificare-i-prodotti-che-integrano-php",
-"data_originale": "Wed, 28 Oct 2026 12:41:36 GMT",
-"data": "2026-10-28",
-"descrizione": "Facendo seguito alle precedenti comunicazioni sulle vulnerabilità critiche note come “PHP2Shell”, si richiama l’attenzione sulla necessità di verificare sulle istanze dei propri servizi offerti la presenza di prodotti di terze parti che integrano PHP."
 },
 {
 "sito": "ACN",
