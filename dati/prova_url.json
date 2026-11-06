@@ -1,46 +1,46 @@
 [
  {
-  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20PREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%20SELECT%20%3Fp%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20osr%3ADocumento%20%3B%20%3Fp%20%3Fo%20%7D%20GROUP%20BY%20%3Fp%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FpropA%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDocumento%3E%20%3B%20%3FpropA%20%3Fo%20%7D%20GROUP%20BY%20%3FpropA&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 2399,
-  "secondi": 4.8,
+  "byte": 2451,
+  "secondi": 4.7,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"99944\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/dataPresentazione\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"49763\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/titolo\" } , \"n\": { \"type\": \""
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"propA\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"propA\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"99944\" }}, { \"propA\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/dataPresentazione\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"49763\" }}, { \"propA\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/titolo\" } , "
  },
  {
-  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20PREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%20SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%7B%20SELECT%20%3Fs%20WHERE%20%7B%20%3Fs%20a%20osr%3ADocumento%20%7D%20ORDER%20BY%20DESC%28xsd%3Ainteger%28STRAFTER%28STR%28%3Fs%29%2C%22documento%2F%22%29%29%29%20LIMIT%206%20%7D%20%3Fs%20%3Fp%20%3Fo%20%7D&format=application%2Fsparql-results%2Bjson",
-  "accept": "application/sparql-results+json",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 400,
-  "byte": 0,
-  "secondi": 3.2,
-  "captcha": false,
-  "inizio": ""
- },
- {
-  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20PREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%20SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20a%20osr%3ADocumento%20%3B%20%3Fq%20%3Fv%20.%20FILTER%28REGEX%28STR%28%3Fv%29%2C%22%5EAtto%20del%20Governo%7C%5EAtto%20Governo%7C447%22%29%29%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%2080&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FdocB%20%3Fp%20%3Fo%20WHERE%20%7B%20%3FdocB%20%3Fp%20%3Fo%20.%20FILTER%28%3FdocB%20IN%20%28%3Chttp%3A%2F%2Fdati.senato.it%2Fdocumento%2F19487%3E%2C%20%3Chttp%3A%2F%2Fdati.senato.it%2Fdocumento%2F19488%3E%29%29%20%7D&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 122,
-  "secondi": 23.2,
+  "byte": 6224,
+  "secondi": 3.7,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ ] } }"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"docB\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"docB\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/19488\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Documento\" }}, { \"docB\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/19488\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, "
  },
  {
-  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20PREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%20SELECT%20%3Ft%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20osr%3ADocumento%20%3B%20osr%3Atipo%20%3Ft%20%7D%20GROUP%20BY%20%3Ft%20ORDER%20BY%20DESC%28%3Fn%29%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FdocC%20%3Fp%20%3Fo%20WHERE%20%7B%20%7B%20SELECT%20%3FdocC%20WHERE%20%7B%20%3FdocC%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDocumento%3E%20%7D%20ORDER%20BY%20DESC%28STRLEN%28STR%28%3FdocC%29%29%29%20DESC%28STR%28%3FdocC%29%29%20LIMIT%205%20%7D%20%3FdocC%20%3Fp%20%3Fo%20%7D&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 117,
-  "secondi": 3.3,
+  "byte": 16812,
+  "secondi": 3.7,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"t\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ ] } }"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"docC\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"docC\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/55070\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Documento\" }}, { \"docC\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/55070\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, "
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FtipoD%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Ftipo%3E%20%3FtipoD%20%7D%20GROUP%20BY%20%3FtipoD%20ORDER%20BY%20DESC%28%3Fn%29%20LIMIT%2080&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 19730,
+  "secondi": 4.2,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"tipoD\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"tipoD\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"E\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"732050\" }}, { \"tipoD\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"Interrogazione con richiesta di risposta scritta\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"4"
  }
 ]

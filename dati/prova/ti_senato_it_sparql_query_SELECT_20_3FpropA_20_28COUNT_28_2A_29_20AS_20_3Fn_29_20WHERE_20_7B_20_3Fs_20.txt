@@ -1,0 +1,15 @@
+
+{ "head": { "link": [], "vars": ["propA", "n"] },
+  "results": { "distinct": false, "ordered": true, "bindings": [
+    { "propA": { "type": "uri", "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "99944" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/dataPresentazione" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49763" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/titolo" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49919" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/titoloBreve" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49920" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/iniziativa" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "54935" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/numeroRomano" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "21755" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/legislatura" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49930" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/statoDoc" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49925" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/tipoDoc" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49930" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/numeroDoc" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "49930" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/URLTesto" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "15959" }},
+    { "propA": { "type": "uri", "value": "http://dati.senato.it/osr/suffissoNumeroDoc" }	, "n": { "type": "typed-literal", "datatype": "http://www.w3.org/2001/XMLSchema#integer", "value": "164" }} ] } }
