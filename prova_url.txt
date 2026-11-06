@@ -1,2 +1,10 @@
-https://dati.camera.it/sparql?query=SELECT%20%3FdI%20%3Fdate%20%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%23%23%20%22%29%20AS%20%3Ftit%29%20%28SAMPLE%28%3Frel%29%20AS%20%3Fr%29%20WHERE%20%7B%20%3FdI%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fdiscussione%3E%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Fdate%3E%20%3Fdate%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E%20%3Ft%20.%20OPTIONAL%20%7B%20%3FdI%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Frelation%3E%20%3Frel%20%7D%20FILTER%28STR%28%3Fdate%29%20%3E%3D%20%2220261001%22%29%20%7D%20GROUP%20BY%20%3FdI%20%3Fdate%20HAVING%20%28REGEX%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%22%29%2C%20%22Atto%20n%5C%5C.%20%5B0-9%5D%2B%22%29%29%20ORDER%20BY%20%3Fdate%20LIMIT%20400&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
-https://dati.camera.it/sparql?query=SELECT%20%3FdJ%20%3Fdate%20%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%23%23%20%22%29%20AS%20%3Ftit%29%20WHERE%20%7B%20%3FdJ%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fdiscussione%3E%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Fdate%3E%20%3Fdate%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E%20%3Ft%20.%20FILTER%28STR%28%3Fdate%29%20%3E%3D%20%2220260201%22%20%26%26%20STR%28%3Fdate%29%20%3C%3D%20%2220260331%22%29%20%7D%20GROUP%20BY%20%3FdJ%20%3Fdate%20HAVING%20%28REGEX%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%22%29%2C%20%22Atto%20n%5C%5C.%20379%22%29%29%20ORDER%20BY%20%3Fdate&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
+https://www.senato.it/leggi-e-documenti/attivita-non-legislative/documenti-non-legislativi?documentoId=53132 | text/html
+https://www.senato.it/leg/19/BGT/Schede/docnonleg/53132.htm | text/html
+https://www.senato.it/service/PDF/PDFServer/BGT/001493959.pdf | application/pdf
+https://www.inail.it/portale/it/inail-comunica/news.html | text/html
+https://www.bis.org/doclist/bcbs_publications.rss | application/rss+xml
+https://www.bis.org/list/bcbs/index.htm | text/html
+https://www.esma.europa.eu/rss.xml | application/rss+xml
+https://www.normattiva.it/do/atto/vediAggiornamenti | text/html
+https://dati.gov.it/opendata/api/3/action/package_search?q=consob&rows=5 | application/json
+https://www.fatf-gafi.org/en/publications.html | text/html
