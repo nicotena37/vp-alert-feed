@@ -332,12 +332,16 @@ def data_in_testo(s: str) -> str:
 # www.senato.it risponde ai server di GitHub con HTTP 202 vuoto (filtro anti-robot) e non ha più un RSS: si usano i dati
 # aperti del Senato (dati.senato.it, licenza CC-BY). Si leggono gli ultimi f["giorni"] giorni (predefinito 14), perché
 # gli atti compaiono nei dati con qualche giorno di ritardo. «data» = giorno in cui la voce è stata vista la prima volta
-# (archivio/senato_visti.json), così un atto entrato tardi nei dati finisce nella settimana in cui lo vediamo;
+# (dati/senato_visti.json), così un atto entrato tardi nei dati finisce nella settimana in cui lo vediamo;
 # la data ufficiale resta in «data_originale» e nella descrizione.
 SENATO_ESCLUSI = re.compile(r"^(Petizione|Sentenze della Corte costituzionale|Determinazioni e relazioni della Corte dei "
                             r"conti sulla gestione degli enti|Risoluzioni e (?:raccomandazioni|dichiarazioni) dell'Assemblea|"
                             r"Risoluzioni e raccomandazioni di Assemblee|Voto regionale|Comunicazione nomina|Nomina sottoposta|"
-                            r"Raccomandazioni, direttive della NATO)", re.I)
+                            r"Raccomandazioni, direttive della NATO|Atto$|Atto dell'Unione europea|Risoluzioni e decisioni del "
+                            r"Parlamento europeo|Sentenze della Corte di giustizia|Documenti adottati dall?e? Commission[ei] "
+                            r"(?:Politiche|in sede di esame di atti)|Elenco delle procedure giurisdizionali|Procedur[ae] di infrazione)", re.I)
+# atti del Governo fuori perimetro (programmi d'armamento della Difesa)
+SENATO_AG_ESCLUSI = re.compile(r"programma pluriennale di A/R|\bSMD \d", re.I)
 STATI_DDL = {"approvato": "approvato dal Senato", "appr. definit. Legge": "approvato definitivamente, è legge",
              "appr. def. non pubbl": "approvato definitivamente, legge non ancora pubblicata",
              "appr. con modificaz": "approvato con modificazioni", "appr. in t.u.": "approvato in testo unificato",
@@ -365,7 +369,7 @@ def _sparql_senato(q: str) -> list[dict]:
 def leggi_senato(sito: dict, f: dict) -> list[dict]:
     from datetime import timedelta
     oggi = datetime.now(timezone.utc).date()
-    dal = (oggi - timedelta(days=int(f.get("giorni", 14)))).isoformat()
+    dal = (oggi - timedelta(days=int(f.get("giorni", 21)))).isoformat()
     O = "http://dati.senato.it/osr/"
     docs = _sparql_senato(
         f"SELECT ?s ?d ?tipo ?num ?rom ?tit ?tb ?url WHERE {{ ?s a <{O}Documento> ; <{O}tipoDoc> ?tipo ; "
@@ -374,14 +378,16 @@ def leggi_senato(sito: dict, f: dict) -> list[dict]:
         f"FILTER(STR(?d) >= \"{dal}\") }} ORDER BY DESC(?d) LIMIT 2000")
     ddl = _sparql_senato(
         f"SELECT ?s ?d ?id ?fase ?tit ?nat ?ini ?stato ?ds WHERE {{ ?s a <{O}Ddl> ; <{O}dataPresentazione> ?d ; "
-        f"<{O}idDdl> ?id ; <{O}fase> ?fase ; <{O}titolo> ?tit ; <{O}natura> ?nat ; <{O}ramo> \"S\" . "
+        f"<{O}idDdl> ?id ; <{O}fase> ?fase ; <{O}titolo> ?tit ; <{O}natura> ?nat ; <{O}ramo> ?ramo . "
         f"OPTIONAL {{ ?s <{O}descrIniziativa> ?ini }} OPTIONAL {{ ?s <{O}statoDdl> ?stato }} OPTIONAL {{ ?s <{O}dataStatoDdl> ?ds }} "
-        f"FILTER(STR(?d) >= \"{dal}\" || STR(?ds) >= \"{dal}\") }} ORDER BY DESC(?d) LIMIT 2000")
-    fv = QUI / "archivio" / "senato_visti.json"
+        f"FILTER(STR(?ramo) = \"S\" && (STR(?d) >= \"{dal}\" || (BOUND(?ds) && STR(?ds) >= \"{dal}\"))) }} ORDER BY DESC(?d) LIMIT 2000")
+    fv = DATI / "senato_visti.json"         # in dati/: il workflow salva solo questa cartella
     visti = json.loads(fv.read_text(encoding="utf-8")) if fv.exists() else {}
     voci, fatti = [], set()
 
     def metti(chiave, titolo, link, data_uff, descr):
+        if chiave in fatti or not data_uff or data_uff[:10] > oggi.isoformat():   # date sbagliate nei dati (es. anno 3201)
+            return
         if chiave in fatti:
             return
         fatti.add(chiave)
@@ -392,7 +398,7 @@ def leggi_senato(sito: dict, f: dict) -> list[dict]:
 
     for r in docs:
         tipo, num, tit = r["tipo"], r["num"], pulisci(r["tit"])
-        if SENATO_ESCLUSI.search(tipo):
+        if SENATO_ESCLUSI.search(tipo) or (tipo.startswith("Atto del Governo") and SENATO_AG_ESCLUSI.search(tit)):
             continue
         link = r.get("url") or r["s"].replace("http://", "https://")
         if tipo.startswith("Atto del Governo"):
