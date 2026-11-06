@@ -1,24 +1,112 @@
 [
  {
-  "url": "https://dati.camera.it/sparql?query=SELECT%20%3FdI%20%3Fdate%20%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%23%23%20%22%29%20AS%20%3Ftit%29%20%28SAMPLE%28%3Frel%29%20AS%20%3Fr%29%20WHERE%20%7B%20%3FdI%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fdiscussione%3E%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Fdate%3E%20%3Fdate%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E%20%3Ft%20.%20OPTIONAL%20%7B%20%3FdI%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Frelation%3E%20%3Frel%20%7D%20FILTER%28STR%28%3Fdate%29%20%3E%3D%20%2220261001%22%29%20%7D%20GROUP%20BY%20%3FdI%20%3Fdate%20HAVING%20%28REGEX%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%22%29%2C%20%22Atto%20n%5C%5C.%20%5B0-9%5D%2B%22%29%29%20ORDER%20BY%20%3Fdate%20LIMIT%20400&format=application%2Fsparql-results%2Bjson",
-  "accept": "application/sparql-results+json",
+  "url": "https://www.senato.it/leggi-e-documenti/attivita-non-legislative/documenti-non-legislativi?documentoId=53132",
+  "accept": "text/html",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 133,
-  "secondi": 5.1,
+  "stato": 202,
+  "byte": 2319,
+  "secondi": 3.2,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"dI\", \"date\", \"tit\", \"r\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ ] } }"
+  "inizio": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <title></title> <style> body { font-family: \"Arial\"; } </style> <script type=\"text/javascript\"> window.awsWafCookieDomainList = []; window.gokuProps = { \"key\":\"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AH5kM60HnRCph6XnfaVPOy7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAqdmcYtTnj1kOJGeAgEQgDutW7SWhhUYp/KKcFyPYGl53ao5lXxunZlL/pUTjAC4TkLAGA78HN6KQr0jOHOLsdArj9y39rAOcLv3fg=="
  },
  {
-  "url": "https://dati.camera.it/sparql?query=SELECT%20%3FdJ%20%3Fdate%20%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%23%23%20%22%29%20AS%20%3Ftit%29%20WHERE%20%7B%20%3FdJ%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Fdiscussione%3E%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Fdate%3E%20%3Fdate%20%3B%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E%20%3Ft%20.%20FILTER%28STR%28%3Fdate%29%20%3E%3D%20%2220260201%22%20%26%26%20STR%28%3Fdate%29%20%3C%3D%20%2220260331%22%29%20%7D%20GROUP%20BY%20%3FdJ%20%3Fdate%20HAVING%20%28REGEX%28GROUP_CONCAT%28DISTINCT%20%3Ft%3B%20separator%3D%22%20%22%29%2C%20%22Atto%20n%5C%5C.%20379%22%29%29%20ORDER%20BY%20%3Fdate&format=application%2Fsparql-results%2Bjson",
-  "accept": "application/sparql-results+json",
+  "url": "https://www.senato.it/leg/19/BGT/Schede/docnonleg/53132.htm",
+  "accept": "text/html",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 202,
+  "byte": 2319,
+  "secondi": 3.0,
+  "captcha": false,
+  "inizio": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <title></title> <style> body { font-family: \"Arial\"; } </style> <script type=\"text/javascript\"> window.awsWafCookieDomainList = []; window.gokuProps = { \"key\":\"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AH5kM60HnRCph6XnfaVPOy7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAqdmcYtTnj1kOJGeAgEQgDutW7SWhhUYp/KKcFyPYGl53ao5lXxunZlL/pUTjAC4TkLAGA78HN6KQr0jOHOLsdArj9y39rAOcLv3fg=="
+ },
+ {
+  "url": "https://www.senato.it/service/PDF/PDFServer/BGT/001493959.pdf",
+  "accept": "application/pdf",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 202,
+  "byte": 0,
+  "secondi": 3.2,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.inail.it/portale/it/inail-comunica/news.html",
+  "accept": "text/html",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 1993,
-  "secondi": 5.4,
+  "byte": 143339,
+  "secondi": 4.5,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"dJ\", \"date\", \"tit\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"dJ\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/discussione.rdf/disIdDib195453_19\" } , \"date\": { \"type\": \"literal\", \"value\": \"20260325\" } , \"tit\": { \"type\": \"literal\", \"value\": \"Seguito dell'esame, ai sensi dell'articolo 143, comma 4, del Regolamento, e conclusione - Parere favorevole con osservazioni - Schema di decreto legislativo recante attuazione della direttiva (UE) 2023/970, volta a rafforzare l'applicazione del principio della parit\\u00E0 di retrib"
+  "inizio": " <!DOCTYPE HTML> <html lang=\"it\"> <head> <meta charset=\"UTF-8\"/> <title>Inail | News</title> <meta name=\"title\" content=\"Inail | News\"/> <meta name=\"template\" content=\"hub_archivio\"/> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/> <!-- GoogleSiteVerification --> <!-- Dynatrace --> <meta name=\"content-page-ref\" content=\"QWHU4_XYK9w7f6s8IyNMYOW-TaUt-6xzjVBG9qiW5LmEma3Gn3KU-HhcDZpOcKqJOVGYq3yaL1g8tSgdO91YY01WRzkhvuHH-9D1siWbnyo\"> <script defer"
+ },
+ {
+  "url": "https://www.bis.org/doclist/bcbs_publications.rss",
+  "accept": "application/rss+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.bis.org/list/bcbs/index.htm",
+  "accept": "text/html",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 4.9,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.esma.europa.eu/rss.xml",
+  "accept": "application/rss+xml",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 61364,
+  "secondi": 3.2,
+  "captcha": false,
+  "inizio": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" version=\"2.0\" xml:base=\"https://www.esma.europa.eu/\"> <channel> <title>European Securities and Markets Authority</title> <link>https://www.esma.europa.eu/</link> <description/> <language>en</language> <item> <title>ESMA publishes latest edition of its newsletter</title> <link>https://www.esma.europa.eu/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-45</link> <description>&lt;span class=\"field field--name-title field--type-string field--label-hidden\"&gt;ES"
+ },
+ {
+  "url": "https://www.normattiva.it/do/atto/vediAggiornamenti",
+  "accept": "text/html",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 5.8,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://dati.gov.it/opendata/api/3/action/package_search?q=consob&rows=5",
+  "accept": "application/json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 224,
+  "secondi": 3.9,
+  "captcha": false,
+  "inizio": "{\"help\": \"https://www.dati.gov.it/opendata/api/3/action/help_show?name=package_search\", \"success\": true, \"result\": {\"count\": 0, \"facets\": {}, \"results\": [], \"sort\": \"score desc, metadata_modified desc\", \"search_facets\": {}}}"
+ },
+ {
+  "url": "https://www.fatf-gafi.org/en/publications.html",
+  "accept": "text/html",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.0,
+  "captcha": false,
+  "inizio": ""
  }
 ]

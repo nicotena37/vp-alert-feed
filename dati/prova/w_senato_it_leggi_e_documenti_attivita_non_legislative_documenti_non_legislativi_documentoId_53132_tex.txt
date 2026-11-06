@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AH5kM60HnRCph6XnfaVPOy7AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMAqdmcYtTnj1kOJGeAgEQgDutW7SWhhUYp/KKcFyPYGl53ao5lXxunZlL/pUTjAC4TkLAGA78HN6KQr0jOHOLsdArj9y39rAOcLv3fg==",
+          "iv":"EkQdKwG63AAAAD1K",
+          "context":"wW7gsC3ewGFoJ2RKAFVi2C8iBnXpw23gGlITXZTWottsTS5fQLJcnMrxWVgqMFj/qj5ARmQQR0G4DTHLTYskVXOgp7RmjvFrSIHDMtZ8wSnWpThG4V+l5FLx8Vfc4LAOK6moDCTleAMW1hnTGYoGuFtXnP8AM6gFWCPgMnx+YgK2AW4OKshT753/lmT6ukrMYA6Uziu9Umr253UD/JtojCvf6KkfHT8Ko0bJJrpuJxBnjFunEKd/hlk5LkHNjRLxGTZNe7e+kQUrEfFDk6WvGclEGtny3Y0eJUxrgK2bpY3DTO13XxIv+m8qSSeIFunZk30yOF/abuQUtb/z7/KKfYk8ZFRp+R8l0d8dCFQllgPWbJ/qNHl3tDW9u035XUd13iJZK12WUw5A0H7JpQgldlPfBh8eS2DsCpZHjm/BJnKrYtAbslX7zxGC36J3SCgt2YsshtY8V4VMKUzZlgAx22B/So4Ic3Jfg4XVHZRDHWn6ti1kVp7xn+apP4hxeXTr8hDqTuAqOD+2OEqB7qWs6hLtPt5Ot31Z+VQQfNneEpDeph+aK7TDFzjwJfB2jiNtlnrr3vhLOFcX3jJE3NVB43on/OUqiREqRBDGpm4lzY6Z79TFwf9nfzot59uUZn8rLofF1Pj8b3YvYBOtbLrsOk8IvE4BYwLJVCCSaiSS2Pd+4GwUor/sWKHConBVzWxt"
+};
+    </script>
+    <script src="https://f92e3446b0c3.a3fe018a.us-west-1.token.awswaf.com/f92e3446b0c3/a104fd3360d9/6d3f89e399ac/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>
