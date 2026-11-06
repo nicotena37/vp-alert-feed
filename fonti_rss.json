@@ -964,6 +964,75 @@
    "affidabilita": "Affidabile",
    "nota_affidabilita": "dati aperti ufficiali del Senato (dati.senato.it, CC-BY): atti del Governo sottoposti a parere, disegni di legge del Senato e loro passaggi, documenti e relazioni; ultimi 21 giorni (gli atti entrano nei dati con qualche giorno di ritardo; data = giorno in cui li vediamo, data ufficiale nella descrizione)",
    "frequenza": "ogni giro"
+  },
+  {
+   "sito": "INAIL",
+   "pagina_apertura": "https://www.inail.it/portale/it/inail-comunica/news.html",
+   "ente": "INAIL - Istituto nazionale Assicurazione Infortuni sul Lavoro",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: lettura delle pagine elenco (circolari, istruzioni operative, comunicati, news, avvisi); robots.txt consente; letto da GitHub",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "INAIL - circolari",
+     "url": "https://www.inail.it/portale/it/atti-e-documenti/note-provvedimenti-e-istruzioni-operative/normativa-circolari-inail.html",
+     "categoria": "Normativa",
+     "tipo": "elenco_link",
+     "schema": "/normativa-circolari-inail/dettaglio\\.20\\d\\d\\.\\d\\d\\."
+    },
+    {
+     "nome": "INAIL - istruzioni operative",
+     "url": "https://www.inail.it/portale/it/atti-e-documenti/note-provvedimenti-e-istruzioni-operative/istruzioni-operative.html",
+     "categoria": "Normativa",
+     "tipo": "elenco_link",
+     "schema": "/istruzioni-operative/istruzione-operativa\\.20\\d\\d\\.\\d\\d\\."
+    },
+    {
+     "nome": "INAIL - comunicati stampa",
+     "url": "https://www.inail.it/portale/it/inail-comunica/comunicati-stampa.html",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/comunicati-stampa/comunicato-stampa\\.20\\d\\d\\.\\d\\d\\."
+    },
+    {
+     "nome": "INAIL - news",
+     "url": "https://www.inail.it/portale/it/inail-comunica/news.html",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/news/notizia\\.20\\d\\d\\.\\d\\d\\."
+    },
+    {
+     "nome": "INAIL - avvisi",
+     "url": "https://www.inail.it/portale/it/inail-comunica/avvisi.html",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/avvisi/avviso\\.20\\d\\d\\.\\d\\d\\."
+    }
+   ]
+  },
+  {
+   "sito": "GAFI-FATF",
+   "pagina_apertura": "https://www.fatf-gafi.org/en/publications.html",
+   "ente": "GAFI-FATF - Financial Action Task Force",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "JSON ufficiale della ricerca pubblicazioni del sito (10 per pagina, le più recenti); il sito blocca GitHub (403): si legge col browser del PC; nessun robots.txt",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "GAFI - pubblicazioni (ultime 10)",
+     "url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json",
+     "categoria": "Resto del mondo",
+     "tipo": "fatf_json",
+     "accept": "application/json"
+    },
+    {
+     "nome": "GAFI - pubblicazioni (11-20)",
+     "url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json?offset=10",
+     "categoria": "Resto del mondo",
+     "tipo": "fatf_json",
+     "accept": "application/json"
+    }
+   ]
   }
  ],
  "senza_rss": [

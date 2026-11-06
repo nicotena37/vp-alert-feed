@@ -167,6 +167,15 @@ def leggi_pagina(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
                     "link": re.sub(r"\?redirect=.*$", "", urljoin(f["url"], link or "")), "data_originale": data,
                     "data": gma(data), "descrizione": pulisci(descr)[:700], **extra})
 
+    if f["tipo"] == "fatf_json":                  # GAFI-FATF: JSON della ricerca pubblicazioni (results: title, publicationDate ms, path)
+        from datetime import timedelta as _td
+        for v in json.loads(contenuto).get("results", []):
+            ms = v.get("publicationDate")
+            data = (datetime.fromtimestamp(ms / 1000, timezone.utc) + _td(hours=2)).date().isoformat() if ms else ""   # ora di Parigi (circa)
+            out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"], "titolo": pulisci(v.get("title") or "")[:400],
+                        "link": "https://www.fatf-gafi.org" + re.sub(r"^/content/fatf-gafi", "", v.get("path") or "") + ".html",
+                        "data_originale": data, "data": data, "descrizione": pulisci(v.get("description") or "")[:700]})
+        return out
     if f["tipo"] == "consob_sanzioni":
         for e in d.select("div.news-entry"):
             a = e.find("a")
