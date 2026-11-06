@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-06T14:15:03+00:00",
+ "letto_il": "2026-11-06T14:22:36+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -30,14 +30,10 @@
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 1,
+   "feed_ok": 5,
    "feed_totali": 6,
-   "notizie": 60,
+   "notizie": 81,
    "allarmi": [
-    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-    "Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
     "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
    ]
   },
@@ -206,7 +202,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 29,
+   "notizie": 30,
    "allarmi": []
   },
   "AMLA": {
@@ -266,7 +262,7 @@
   "Senato": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 90,
+   "notizie": 52,
    "allarmi": []
   }
  }
