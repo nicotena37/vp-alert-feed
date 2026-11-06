@@ -1,0 +1,27 @@
+{
+"nome_file": "vpalert_rss_GAFI-FATF_2026-11-06T16-10-51.json",
+"sito": "GAFI-FATF",
+"origine": "github-actions",
+"letto_il": "2026-11-06T16:10:51Z",
+"feed": [
+{
+"nome": "GAFI - pubblicazioni (ultime 10)",
+"url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+},
+{
+"nome": "GAFI - pubblicazioni (11-20)",
+"url": "https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json?offset=10",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+}
+],
+"allarmi": [
+"GAFI - pubblicazioni (ultime 10): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json",
+"GAFI - pubblicazioni (11-20): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json?offset=10"
+],
+"notizie": []
+}

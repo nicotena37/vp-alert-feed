@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-06T14:30:32+00:00",
+ "letto_il": "2026-11-06T16:03:21+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -104,10 +104,12 @@
    "allarmi": []
   },
   "ACN": {
-   "feed_ok": 3,
+   "feed_ok": 2,
    "feed_totali": 3,
-   "notizie": 80,
-   "allarmi": []
+   "notizie": 30,
+   "allarmi": [
+    "ACN - notizie: feed non leggibile (nessuna risposta in 25 s) - https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192"
+   ]
   },
   "AGCM": {
    "feed_ok": 2,
@@ -206,7 +208,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 31,
+   "notizie": 34,
    "allarmi": []
   },
   "AMLA": {
@@ -242,7 +244,7 @@
   "IFRS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 31,
+   "notizie": 30,
    "allarmi": []
   },
   "ISDA": {
@@ -268,6 +270,21 @@
    "feed_totali": 1,
    "notizie": 52,
    "allarmi": []
+  },
+  "INAIL": {
+   "feed_ok": 5,
+   "feed_totali": 5,
+   "notizie": 50,
+   "allarmi": []
+  },
+  "GAFI-FATF": {
+   "feed_ok": 0,
+   "feed_totali": 2,
+   "notizie": 0,
+   "allarmi": [
+    "GAFI - pubblicazioni (ultime 10): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json",
+    "GAFI - pubblicazioni (11-20): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json?offset=10"
+   ]
   }
  }
 }
