@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-06T12-12-56.json",
+"nome_file": "vpalert_rss_ACN_2026-11-06T14-09-21.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-06T12:12:56Z",
+"letto_il": "2026-11-06T14:09:21Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,26 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Apache OFBiz",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-apache-ofbiz",
+"data_originale": "Fri, 06 Nov 2026 13:16:46 GMT",
+"data": "2026-11-06",
+"descrizione": "Apache Software Foundation ha rilasciato aggiornamenti di sicurezza per risolvere numerose vulnerabilità, di cui 7 con gravità “critica” e 21 con gravità “alta”, nel prodotto OFBiz, piattaforma open source per la gestione aziendale."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Barracuda: disponibile PoC per lo sfruttamento delle CVE-2026-116606 e CVE-2026-111560",
+"link": "https://www.acn.gov.it/portale/w/barracuda-disponibile-poc-per-lo-sfruttamento-delle-cve-2026-116606-e-cve-2026-111560",
+"data_originale": "Fri, 06 Nov 2026 12:31:52 GMT",
+"data": "2026-11-06",
+"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento delle vulnerabilità identificate tramite le CVE-2026-116606 e CVE-2026-111560 che interessano vari prodotti Barracuda. Tali vulnerabilità, qualora sfruttate in combinazione, potrebbero consentire a un attaccante remoto, in grado di raggiungere l'interfaccia amministrativa del dispositivo, di eludere i meccanismi di autenticazione ed eseguire codice arbitrario sul dispositivo interessato."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -501,26 +521,6 @@
 "data_originale": "Fri, 30 Oct 2026 15:40:12 GMT",
 "data": "2026-10-30",
 "descrizione": "Tenable ha rilasciato aggiornamenti di sicurezza per risolvere 3 vulnerabilità, di cui una con gravità \"critica\", in Tenable Identity Exposure, piattaforma dedicata al rilevamento e alla gestione delle esposizioni negli ambienti Microsoft Active Directory. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un utente autenticato con privilegi limitati di eseguire codice arbitrario con privilegi elevati sul controller di dominio interessato."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Sanate vulnerabilità in prodotti Veeam",
-"link": "https://www.acn.gov.it/portale/w/sanate-vulnerabilita-in-prodotti-veeam",
-"data_originale": "Fri, 30 Oct 2026 14:42:22 GMT",
-"data": "2026-10-30",
-"descrizione": "Veeam ha rilasciato aggiornamenti di sicurezza per sanare 3 vulnerabilità, di cui una con gravità “critica” e 2 con gravità “alta”, in Veeam Management Pack for Microsoft System Center, componente utilizzato per il monitoraggio di infrastrutture virtualizzate e ambienti Veeam tramite Microsoft System Center. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-83",
-"data_originale": "Fri, 30 Oct 2026 14:05:11 GMT",
-"data": "2026-10-30",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 21 nuove vulnerabilità di sicurezza, di cui una con gravità “critica” e 19 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto di accedere a informazioni sensibili, compromettere la disponibilità del servizio, eludere i meccanismi di sicurezze ed eseguire codice arbitrario sui sistemi interessati."
 },
 {
 "sito": "ACN",
