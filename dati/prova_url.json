@@ -1,35 +1,90 @@
 [
  {
-  "url": "https://dati.camera.it/sparql?query=PREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%20PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%20SELECT%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Fp%20%3Fo%20%7D&format=application%2Fjson",
+  "url": "https://www.senato.it/robots.txt",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 11314,
-  "secondi": 3.6,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2000/01/rdf-schema#label\" } , \"o\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\","
- },
- {
-  "url": "https://dati.camera.it/sparql?query=SELECT%20%3Fo%20%3Fp2%20%3Fo2%20WHERE%20%7B%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2Faic.rdf%2Faic4_09392_19%3E%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fsubject%3E%20%3Fo%20.%20OPTIONAL%20%7B%20%3Fo%20%3Fp2%20%3Fo2%20%7D%20%7D%20LIMIT%2040&format=application%2Fjson",
-  "accept": "",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 922,
+  "stato": 202,
+  "byte": 0,
   "secondi": 3.2,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"o\", \"p2\", \"o2\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/7135\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3885\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/3525\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/1684\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/877\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://eurovoc.europa.eu/35\" }}, { \"o\": { \"type\": \"uri\", \"value\": \"http://e"
+  "inizio": ""
  },
  {
-  "url": "https://publications.europa.eu/webapi/rdf/sparql?query=PREFIX%20cdm%3A%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fontology%2Fcdm%23%3E%0ASELECT%20%3Fw%20%3Ft%20WHERE%20%7B%20%3Fw%20cdm%3Awork_date_document%20%3Fd%20.%20FILTER%28%3Fd%20%3E%3D%20%222026-09-10%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%20%26%26%20%3Fd%20%3C%3D%20%222026-09-11%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%3E%29%0A%3Fe%20cdm%3Aexpression_belongs_to_work%20%3Fw%20%3B%20cdm%3Aexpression_uses_language%20%3Chttp%3A%2F%2Fpublications.europa.eu%2Fresource%2Fauthority%2Flanguage%2FITA%3E%20%3B%20cdm%3Aexpression_title%20%3Ft%20.%20FILTER%28CONTAINS%28%3Ft%2C%22Vondra%22%29%20%7C%7C%20CONTAINS%28%3Ft%2C%22applicazione%20a%20titolo%20provvisorio%22%29%29%20%7D%20LIMIT%205&format=application%2Fsparql-results%2Bjson",
+  "url": "https://www.senato.it/",
   "accept": "",
   "robots_ok": true,
   "motivo": "",
-  "stato": 200,
-  "byte": 2397,
-  "secondi": 3.6,
+  "stato": 202,
+  "byte": 0,
+  "secondi": 3.0,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"w\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"w\": { \"type\": \"uri\", \"value\": \"http://publications.europa.eu/resource/cellar/53c21e3b-acfd-11f1-b9e5-01aa75ed71a1\" } , \"t\": { \"type\": \"literal\", \"xml:lang\": \"it\", \"value\": \"Proposta di DECISIONE DEL CONSIGLIO relativa alla firma e all'applicazione a titolo provvisorio di un accordo quadro tra l'Unione europea e gli Stati Uniti d'America sullo scambio reciproco di informazioni ai fini delle verifiche dell'identit\\u00E0, degli accertamenti e dei controlli, in relazione alle proc"
+  "inizio": ""
+ },
+ {
+  "url": "https://www.senato.it/rss",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 202,
+  "byte": 0,
+  "secondi": 3.0,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.senato.it/leg/19/BGT/Schede/AttiGoverno/00000000.htm",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 202,
+  "byte": 0,
+  "secondi": 3.0,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fc%20%28COUNT%28%3Fs%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20%3Fc%20%7D%20GROUP%20BY%20%3Fc%20ORDER%20BY%20DESC%28%3Fn%29%20LIMIT%2080&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 10619,
+  "secondi": 6.8,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"c\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Classificazione\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"885870\" }}, { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Iniziativa\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"853321\" }}, { \"c\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Emendamento\" } , \"n\": { \"type\": \"typed-"
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20SELECT%20%3Fp%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20osr%3ADdl%20%3B%20%3Fp%20%3Fo%20%7D%20GROUP%20BY%20%3Fp%20LIMIT%2080&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 5062,
+  "secondi": 8.1,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"p\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"117508\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/assegnazione\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"366004\" }}, { \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/statoDdl\" } , \"n\": { \"type\": \"t"
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=PREFIX%20osr%3A%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2F%3E%20SELECT%20%3Fs%20%3Fd%20%3Ft%20WHERE%20%7B%20%3Fs%20a%20osr%3ADdl%20%3B%20osr%3AdataPresentazione%20%3Fd%20%3B%20osr%3Atitolo%20%3Ft%20.%20FILTER%28STR%28%3Fd%29%20%3E%3D%20%222026-10-26%22%29%20%7D%20LIMIT%2050&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 13630,
+  "secondi": 3.4,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"d\", \"t\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/ddl/60560\" } , \"d\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"2026-10-27\" } , \"t\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"Riforma della fiscalit\\u00E0 delle grandi attivit\\u00E0 finanziarie e istituzione del Fondo taglia tasse su lavoro e imprese\" }}, { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/ddl/6055"
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3Fs%20%3Fp%20%3Fo%20WHERE%20%7B%20%3Fs%20%3Fp%20%3Fo%20.%20FILTER%28REGEX%28STR%28%3Fo%29%2C%22atto%20del%20governo%7Cschema%20di%20decreto%22%2C%22i%22%29%29%20%7D%20LIMIT%2030&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 15054,
+  "secondi": 18.2,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"s\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"s\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/19487\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/titolo\" } , \"o\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"Segnalazione relativa allo schema di decreto legislativo (Atto del Governo sottoposto a parere parlamentare n. 213) adottato dal Consiglio dei ministri in data 23 aprile 2010 ai sensi dell'articolo 30, commi 6 e 7, della legge 23 lugli"
  }
 ]
