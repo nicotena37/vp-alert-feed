@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-06T08:51:20+00:00",
+ "letto_il": "2026-11-06T12:10:55+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,7 +26,7 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 9,
+   "notizie": 12,
    "allarmi": []
   },
   "Consob": {
@@ -174,15 +174,14 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 134,
+   "notizie": 193,
    "allarmi": []
   },
   "Consiglio UE": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 2,
-   "notizie": 0,
+   "notizie": 20,
    "allarmi": [
-    "Consiglio UE - comunicati: feed non leggibile (nessuna risposta in 25 s) - https://www.consilium.europa.eu/it/rss/pressreleases.ashx",
     "Consiglio UE - riunioni ECOFIN: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.consilium.europa.eu/it/about-site/rss/rss-meetings-ecofin/"
    ]
   },
@@ -207,7 +206,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 14,
+   "notizie": 25,
    "allarmi": []
   },
   "AMLA": {

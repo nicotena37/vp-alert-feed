@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-06T08-53-17.json",
+"nome_file": "vpalert_rss_ACN_2026-11-06T12-12-56.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-06T08:53:17Z",
+"letto_il": "2026-11-06T12:12:56Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,56 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "OpenAI: risolta vulnerabilità in Codex",
+"link": "https://www.acn.gov.it/portale/w/openai-risolta-vulnerabilita-in-codex",
+"data_originale": "Fri, 06 Nov 2026 10:09:02 GMT",
+"data": "2026-11-06",
+"descrizione": "OpenAI ha rilasciato aggiornamenti di sicurezza per sanare una vulnerabilità con gravità “alta” in Codex Desktop. Tale vulnerabilità, in determinate condizioni, potrebbe consentire a un attaccante di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
+"data_originale": "Wed, 04 Nov 2026 08:15:58 GMT",
+"data": "2026-11-04",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a professionisti, farmacie e strutture sanitarie."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Magistra",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-magistra",
+"data_originale": "Tue, 03 Nov 2026 08:19:16 GMT",
+"data": "2026-11-03",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto di Galeno Sistemi Magistra, software per la gestione del laboratorio galenico di farmacia."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Elastic",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-4",
+"data_originale": "Wed, 04 Nov 2026 13:40:49 GMT",
+"data": "2026-11-04",
+"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto, in determinate condizioni, di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati. Tra queste si evidenzia la CVE-2026-115290 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevata campagna di smishing/phishing a tema PagoPA",
+"link": "https://www.acn.gov.it/portale/w/rilevata-campagna-di-smishing/phishing-a-tema-pagopa",
+"data_originale": "Fri, 06 Nov 2026 09:08:52 GMT",
+"data": "2026-11-06",
+"descrizione": "Questo CSIRT Italia ha rilevato il riacutizzarsi della campagna malevola a tema SEND (Servizio Notifiche Digitali) e PagoPA, già oggetto di precedente segnalazione, veicolata tramite messaggi SMS (smishing). L'attività malevola mira a indurre gli utenti a visitare risorse web opportunamente predisposte al fine di sottrarre dati personali, credenziali di accesso e informazioni relative a strumenti di pagamento."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -216,16 +266,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Elastic",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-4",
-"data_originale": "Wed, 04 Nov 2026 13:40:49 GMT",
-"data": "2026-11-04",
-"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolte vulnerabilità in Github Enterprise server",
 "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-github-enterprise-server-1",
 "data_originale": "Wed, 04 Nov 2026 11:35:54 GMT",
@@ -251,16 +291,6 @@
 "data_originale": "Wed, 04 Nov 2026 10:01:20 GMT",
 "data": "2026-11-04",
 "descrizione": "Rilevate 4 nuove vulnerabilità, di cui 3 con gravità “alta”, in alcuni prodotti ASUS. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di elevare i propri privilegi, eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
-"data_originale": "Wed, 04 Nov 2026 08:15:58 GMT",
-"data": "2026-11-04",
-"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a professionisti, farmacie e strutture sanitarie."
 },
 {
 "sito": "ACN",
@@ -361,16 +391,6 @@
 "data_originale": "Tue, 03 Nov 2026 09:02:24 GMT",
 "data": "2026-11-03",
 "descrizione": "Google ha pubblicato il bollettino di sicurezza Android di novembre, contenente correzioni per 149 vulnerabilità, di cui 12 con gravità “critica” e 137 con gravità “alta”. Tra queste si evidenzia la CVE-2026-58882 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Magistra",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-magistra",
-"data_originale": "Tue, 03 Nov 2026 08:19:16 GMT",
-"data": "2026-11-03",
-"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto di Galeno Sistemi Magistra, software per la gestione del laboratorio galenico di farmacia."
 },
 {
 "sito": "ACN",
@@ -501,26 +521,6 @@
 "data_originale": "Fri, 30 Oct 2026 14:05:11 GMT",
 "data": "2026-10-30",
 "descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 21 nuove vulnerabilità di sicurezza, di cui una con gravità “critica” e 19 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto di accedere a informazioni sensibili, compromettere la disponibilità del servizio, eludere i meccanismi di sicurezze ed eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in ServiceNow",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-servicenow-1",
-"data_originale": "Fri, 30 Oct 2026 13:47:12 GMT",
-"data": "2026-10-30",
-"descrizione": "Aggiornamenti di sicurezza risolvono tre vulnerabilità, di cui una con gravità \"critica\" e una con gravità \"alta\", in ServiceNow AI Platform, piattaforma di intelligenza artificiale e automazione di ServiceNow. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato autenticato di accedere ad informazioni sensibili e, in determinate condizioni, di eludere i meccanismi di isolamento della piattaforma ed eseguire codice arbitrario sul sistema host sottostante."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in prodotti ESET",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-eset-1",
-"data_originale": "Fri, 30 Oct 2026 11:43:18 GMT",
-"data": "2026-10-30",
-"descrizione": "Risolta una vulnerabilità di sicurezza con gravità \"alta\" nei prodotti ESET Endpoint Encryption e Full Disk Encryption. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato, autenticato con privilegi limitati, di eseguire operazioni con privilegi elevati, accedere a informazioni sensibili, indurre i sistemi target ad autenticarsi verso sistemi remoti controllati dall'attaccante e, in alcuni casi, causare il la perdita d'accesso ai volumi cifrati."
 },
 {
 "sito": "ACN",
