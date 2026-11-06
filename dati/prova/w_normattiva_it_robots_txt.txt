@@ -1,0 +1,14 @@
+
+# Group 1 Normattiva Pages
+User-agent: *
+Allow: /
+
+# Group 2 - MFR
+User-agent: *
+Disallow: /mfr/ricerca/
+
+# Group 3 Normattiva SearchPages
+User-agent: *
+Disallow: /ricerca/
+
+Sitemap: https://www.normattiva.it/sitemap.xml

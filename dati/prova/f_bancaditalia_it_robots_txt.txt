@@ -1,0 +1,31 @@
+# robots.txt for http://uif.bancaditalia.it/
+# ultima modifica: 26-04-2019
+# le regole successive si applicano a tutti i motori di ricerca pubblici
+# che aderiscono allo standard http://www.robotstxt.org/orig.html
+
+# advertising-related bots:
+User-agent: Mediapartners-Google
+Disallow: /
+
+# Some bots are known to be trouble.
+User-agent: BLP_bbot/0.1
+Disallow: /
+
+User-agent: BLP_bbot
+Disallow: /
+
+User-agent: ^Java
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+
+# Friendly, low-speed bots are welcome viewing article pages, but not
+# dynamically-generated pages please.
+User-agent: *
+Crawl-delay: 5
+Disallow: /ricerca/

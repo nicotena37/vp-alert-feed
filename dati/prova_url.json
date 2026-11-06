@@ -1,24 +1,195 @@
 [
  {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FdocS%20%3Fd%20%3Ftipo%20%3Fnum%20%3From%20%3Ftit%20%3Ftb%20%3Furl%20WHERE%20%7B%20%3FdocS%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDocumento%3E%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ftipo%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroDoc%3E%20%3Fnum%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FdataPresentazione%3E%20%3Fd%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Ftitolo%3E%20%3Ftit%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20.%20OPTIONAL%20%7B%20%3FdocS%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtitoloBreve%3E%20%3Ftb%20%7D%20OPTIONAL%20%7B%20%3FdocS%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroRomano%3E%20%3From%20%7D%20OPTIONAL%20%7B%20%3FdocS%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FURLTesto%3E%20%3Furl%20%7D%20FILTER%28STR%28%3Fd%29%20%3E%3D%20%222026-01-01%22%20%26%26%20%3Ftipo%20%21%3D%20%22Petizione%22%29%20%7D%20ORDER%20BY%20%3Fd%20LIMIT%205000&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FagA%20%3Fp%20%3Fo%20WHERE%20%7B%20%3FagA%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroDoc%3E%20%3Fn%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20.%20FILTER%28STR%28%3Fn%29%3D%22379%22%20%26%26%20STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3FagA%20%3Fp%20%3Fo%20%7D&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 2400922,
-  "secondi": 6.4,
+  "byte": 3659,
+  "secondi": 4.0,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"docS\", \"d\", \"tipo\", \"num\", \"rom\", \"tit\", \"tb\", \"url\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"docS\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/52887\" } , \"d\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#date\", \"value\": \"2026-01-02\" } , \"tipo\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"Relazione sull'attivit\\u00E0 svolta dalle fondazioni bancarie\" } , \"num\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#s"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"agA\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"agA\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/53132\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Documento\" }}, { \"agA\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/documento/53132\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Atto\" }}, "
  },
  {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FddlS%20%3Fd%20%3Fid%20%3Ffase%20%3Ftit%20%3Fnat%20%3Fini%20%3Fstato%20%3Framo%20WHERE%20%7B%20%3FddlS%20a%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FDdl%3E%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FdataPresentazione%3E%20%3Fd%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FidDdl%3E%20%3Fid%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Ffase%3E%20%3Ffase%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Ftitolo%3E%20%3Ftit%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Fnatura%3E%20%3Fnat%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Framo%3E%20%3Framo%20.%20OPTIONAL%20%7B%20%3FddlS%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FdescrIniziativa%3E%20%3Fini%20%7D%20OPTIONAL%20%7B%20%3FddlS%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FstatoDdl%3E%20%3Fstato%20%7D%20FILTER%28STR%28%3Fd%29%20%3E%3D%20%222026-01-01%22%29%20%7D%20ORDER%20BY%20%3Fd%20LIMIT%205000&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FinB%20%3Fp%20%3Fq%20%3Fo%20WHERE%20%7B%20%3Fag%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroDoc%3E%20%3Fn%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20.%20FILTER%28STR%28%3Fn%29%3D%22379%22%20%26%26%20STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3FinB%20%3Fp%20%3Fag%20.%20OPTIONAL%20%7B%20%3FinB%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20300&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 907053,
-  "secondi": 5.3,
+  "byte": 2085,
+  "secondi": 3.5,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"ddlS\", \"d\", \"id\", \"fase\", \"tit\", \"nat\", \"ini\", \"stato\", \"ramo\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"ddlS\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/ddl/59812\" } , \"d\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"2026-01-02\" } , \"id\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"55101\" } , \"fase\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#string\", \"value\": \"C.2756\" } , \"tit\": { \"type\": \"ty"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"inB\", \"p\", \"q\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"inB\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/procedura/55246\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/relativoA\" } , \"q\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Procedura\" }}, { \"inB\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/procedura/55246\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/relativoA\" } , \"q\": {"
+ },
+ {
+  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FcC%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fag%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20.%20FILTER%28STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3Fs%20%3Fp%20%3Fag%20.%20%3Fs%20a%20%3FcC%20%7D%20GROUP%20BY%20%3FcC&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 305,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"cC\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"cC\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Procedura\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"2710\" }} ] } }"
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3FcD%20%28COUNT%28%3Fs%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20%3FcD%20%7D%20GROUP%20BY%20%3FcD%20ORDER%20BY%20DESC%28%3Fn%29%20LIMIT%2060&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 11585,
+  "secondi": 7.1,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"cD\", \"n\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"cD\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/voto\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"60176836\" }}, { \"cD\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/intervento\" } , \"n\": { \"type\": \"typed-literal\", \"datatype\": \"http://www.w3.org/2001/XMLSchema#integer\", \"value\": \"1151001\" }}, { \"cD\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/aic\" } , \"n\": { \"type\": \"typed-literal\", \"d"
+ },
+ {
+  "url": "https://www.bis.org/doclist/bcbs.rss",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 3.6,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.bis.org/doclist/bcbs_publ.rss",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 3.7,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.bis.org/list/bcbs/index.htm",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 404,
+  "byte": 0,
+  "secondi": 3.5,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.fatf-gafi.org/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.1,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.fatf-gafi.org/en/publications.html",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.0,
+  "captcha": false,
+  "inizio": ""
+ },
+ {
+  "url": "https://www.inail.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 533,
+  "secondi": 5.6,
+  "captcha": false,
+  "inizio": "User-agent: * Disallow: /portale/it/amministrazione-trasparente.html Disallow: /portale/it/amministrazione-trasparente/ Disallow: /content/dam/ammtrasparente/documenti/ Sitemap: https://www.inail.it/portale/it.sitemap-index.xml Sitemap: https://www.inail.it/portale/prevenzione-e-sicurezza/it.sitemap-index.xml Sitemap: https://www.inail.it/portale/assicurazione/it.sitemap-index.xml Sitemap: https://www.inail.it/portale/formazione/it.sitemap-index.xml Sitemap: https://www.inail.it/portale/ricerca-e-tecnologia/it.sitemap-index.xml"
+ },
+ {
+  "url": "https://www.inail.it/portale/it/inail-comunica/comunicati-stampa.html",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 126508,
+  "secondi": 4.8,
+  "captcha": false,
+  "inizio": " <!DOCTYPE HTML> <html lang=\"it\"> <head> <meta charset=\"UTF-8\"/> <title>Inail | Comunicati stampa</title> <meta name=\"title\" content=\"Inail | Comunicati stampa\"/> <meta name=\"template\" content=\"hub_archivio\"/> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/> <!-- GoogleSiteVerification --> <!-- Dynatrace --> <meta name=\"content-page-ref\" content=\"QWHU4_XYK9w7f6s8IyNMYOW-TaUt-6xzjVBG9qiW5LmHhng52CdqcMUy0_aUmkEygsQxy1lAy8lJe6yA4io_Xp5rllpfz4g6k"
+ },
+ {
+  "url": "https://www.normattiva.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 234,
+  "secondi": 8.4,
+  "captcha": false,
+  "inizio": " # Group 1 Normattiva Pages User-agent: * Allow: / # Group 2 - MFR User-agent: * Disallow: /mfr/ricerca/ # Group 3 Normattiva SearchPages User-agent: * Disallow: /ricerca/ Sitemap: https://www.normattiva.it/sitemap.xml"
+ },
+ {
+  "url": "https://api.normattiva.it/",
+  "accept": "",
+  "robots_ok": false,
+  "motivo": "sito non raggiungibile (RemoteDisconnected: Remote end closed connection without response)"
+ },
+ {
+  "url": "https://www.consob.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 37,
+  "secondi": 3.5,
+  "captcha": false,
+  "inizio": "# Others User-agent: * Crawl-delay: 3"
+ },
+ {
+  "url": "https://www.bancaditalia.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 82986,
+  "secondi": 4.4,
+  "captcha": false,
+  "inizio": "# robots.txt for http://www.bancaditalia.it/ # Le regole successive si applicano a tutti i motori di ricerca pubblici # che aderiscono allo standard http://www.robotstxt.org/orig.html # advertising-related bots: User-agent: Mediapartners-Google Disallow: / # Some bots are known to be trouble. User-agent: BLP_bbot/0.1 Disallow: / User-agent: BLP_bbot Disallow: / User-agent: ^Java Disallow: / User-agent: libwww Disallow: / User-agent: wget Disallow: / # Friendly, low-speed bots are welcome viewing article pages, but not # dynamically-generated pages please. User-agent: * Crawl-delay: 5 #"
+ },
+ {
+  "url": "https://uif.bancaditalia.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 648,
+  "secondi": 3.8,
+  "captcha": false,
+  "inizio": "# robots.txt for http://uif.bancaditalia.it/ # ultima modifica: 26-04-2019 # le regole successive si applicano a tutti i motori di ricerca pubblici # che aderiscono allo standard http://www.robotstxt.org/orig.html # advertising-related bots: User-agent: Mediapartners-Google Disallow: / # Some bots are known to be trouble. User-agent: BLP_bbot/0.1 Disallow: / User-agent: BLP_bbot Disallow: / User-agent: ^Java Disallow: / User-agent: libwww Disallow: / User-agent: wget Disallow: / # Friendly, low-speed bots are welcome viewing article pages, but not # dynamically-generated pages please. "
+ },
+ {
+  "url": "https://www.ivass.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 4441,
+  "secondi": 4.5,
+  "captcha": false,
+  "inizio": "# robots.txt for https://www.ivass.it # Following rules apply to all public search engines subscribing to # standard http://www.robotstxt.org/orig.html # advertising-related bots: User-agent: Mediapartners-Google Disallow: / # Some bots are known to be trouble. User-agent: BLP_bbot/0.1 Disallow: / User-agent: BLP_bbot Disallow: / User-agent: ^Java Disallow: / User-agent: libwww Disallow: / User-agent: wget Disallow: / # Friendly, low-speed bots are welcome viewing article pages, but not # dynamically-generated pages please. User-agent: * Crawl-delay: 5 Dis"
+ },
+ {
+  "url": "https://www.covip.it/robots.txt",
+  "accept": "",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 403,
+  "byte": 0,
+  "secondi": 3.8,
+  "captcha": false,
+  "inizio": ""
  }
 ]

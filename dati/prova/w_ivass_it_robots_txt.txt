@@ -1,0 +1,83 @@
+# robots.txt for https://www.ivass.it
+# Following rules apply to all public search engines subscribing to 
+# standard http://www.robotstxt.org/orig.html
+
+# advertising-related bots:
+User-agent: Mediapartners-Google
+Disallow: /
+
+# Some bots are known to be trouble.
+User-agent: BLP_bbot/0.1
+Disallow: /
+
+User-agent: BLP_bbot
+Disallow: /
+
+User-agent: ^Java
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+
+# Friendly, low-speed bots are welcome viewing article pages, but not
+# dynamically-generated pages please.
+User-agent: *
+Crawl-delay: 5
+Disallow: /chi-siamo/in-sintesi/gare/avvisi-aggiudicazione/ricerca/
+Disallow: /chi-siamo/in-sintesi/gare/concluse/ricerca/
+Disallow: /chi-siamo/in-sintesi/gare/in-corso/ricerca/
+Disallow: /chi-siamo/in-sintesi/gare/indagini/ricerca/
+Disallow: /consumatori/azioni-tutela/indagini-tematiche/ricerca/
+Disallow: /consumatori/azioni-tutela/lettere-mercato/ricerca/
+Disallow: /media/avvisi/ricerca/
+Disallow: /media/comunicati/ricerca/
+Disallow: /media/eiopa/ricerca/
+Disallow: /media/interviste/ricerca/
+Disallow: /media/newsletter/
+Disallow: /media/streaming/
+Disallow: /normativa/focus/solvency/nue/decisioni-delegate/ricerca/
+Disallow: /normativa/focus/solvency/nue/direttiva/ricerca/
+Disallow: /normativa/focus/solvency/nue/its/ricerca/
+Disallow: /normativa/focus/solvency/nue/reg-del/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/decisione-delegate/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/direttive/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/its/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/linee-guida-eiopa/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/raccomandazioni/ricerca/
+Disallow: /normativa/internazionale/internazionale-ue/regolamenti-europei/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/amministrativi-provv/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/circolari/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/comunicazioni/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/esiti-pubb-cons/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/lettere/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/normativi-provv/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/pubb-cons/ricerca/
+Disallow: /normativa/nazionale/secondaria-ivass/regolamenti/ricerca/
+Disallow: /operatori/imprese/liquidazioni/immobili/ricerca/
+Disallow: /operatori/imprese/liquidazioni/liquid-coatta/ricerca/
+Disallow: /operatori/imprese/liquidazioni/liquid-volont/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/altre-pubblicazioni/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/att-sem-conv/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/bollettino-vigilanza/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/pubblicazioni-antifrode/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/quaderni/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/pubblicazioni/relazione-annuale/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/archivio-circolari-pre-2006/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/bollettino-statistico/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/aga/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/crca/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/csa/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/gr/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/imc/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/iprca/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/pldi/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/premi-lordi/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/pvpr/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/spl/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/elaborazioni-statistiche/ta/ricerca/
+# Disallow: /pubblicazioni-e-statistiche/statistiche/reportistica-sanzioni/ricerca/
+Disallow: /ricerca/
