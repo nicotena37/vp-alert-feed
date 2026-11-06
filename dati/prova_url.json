@@ -1,24 +1,24 @@
 [
  {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FinE%20%3Fp%20%3Fq%20%3Fo%20WHERE%20%7B%20%3FinE%20%3Fp%20%3Chttp%3A%2F%2Fdati.senato.it%2Fprocedura%2F55246%3E%20.%20OPTIONAL%20%7B%20%3FinE%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20400&format=application%2Fsparql-results%2Bjson",
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3FrpG%20%3Fp%20%3Fo%20WHERE%20%7B%20%7B%20SELECT%20%3FrpG%20WHERE%20%7B%20%3FrpG%20a%20%3Chttp%3A%2F%2Fdati.camera.it%2Focd%2FrichiestaParere%3E%20.%20FILTER%28CONTAINS%28STR%28%3FrpG%29%2C%27_19%27%29%29%20%7D%20LIMIT%203%20%7D%20%3FrpG%20%3Fp%20%3Fo%20%7D&format=application%2Fsparql-results%2Bjson",
   "accept": "application/sparql-results+json",
   "robots_ok": true,
   "motivo": "",
   "stato": 200,
-  "byte": 120375,
-  "secondi": 4.3,
-  "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"inE\", \"p\", \"q\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"inE\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/intervento/null\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/oggetto\" } , \"q\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/Intervento\" }}, { \"inE\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/intervento/null\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://dati.senato.it/osr/oggetto\" } , \"q\": { \"t"
- },
- {
-  "url": "https://dati.senato.it/sparql?query=SELECT%20%3FxF%20%3Fp%20%3Fy%20%3Fq%20%3Fo%20WHERE%20%7B%20%3FxF%20%3Fp%20%3Chttp%3A%2F%2Fdati.senato.it%2Fprocedura%2F55246%3E%20.%20%3Fy%20%3Fr%20%3FxF%20.%20OPTIONAL%20%7B%20%3Fy%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20400&format=application%2Fsparql-results%2Bjson",
-  "accept": "application/sparql-results+json",
-  "robots_ok": true,
-  "motivo": "",
-  "stato": 200,
-  "byte": 133,
+  "byte": 8137,
   "secondi": 3.7,
   "captcha": false,
-  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"xF\", \"p\", \"y\", \"q\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ ] } }"
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"rpG\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"rpG\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/richiestaParere.rdf/rp16_19002\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/richiestaParere\" }}, { \"rpG\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/richiestaParere.rdf/rp16_19002\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value"
+ },
+ {
+  "url": "https://dati.camera.it/sparql?query=SELECT%20%3FxH%20%3Fp%20%3Fo%20WHERE%20%7B%20%3FxH%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2Ftitle%3E%20%3Ft%20.%20FILTER%28CONTAINS%28%3Ft%2C%272023%2F970%27%29%29%20%3FxH%20%3Fp%20%3Fo%20%7D%20LIMIT%20120&format=application%2Fsparql-results%2Bjson",
+  "accept": "application/sparql-results+json",
+  "robots_ok": true,
+  "motivo": "",
+  "stato": 200,
+  "byte": 12162,
+  "secondi": 39.0,
+  "captcha": false,
+  "inizio": " { \"head\": { \"link\": [], \"vars\": [\"xH\", \"p\", \"o\"] }, \"results\": { \"distinct\": false, \"ordered\": true, \"bindings\": [ { \"xH\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/discussione.rdf/disIdDib195414_19\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/discussione\" }}, { \"xH\": { \"type\": \"uri\", \"value\": \"http://dati.camera.it/ocd/discussione.rdf/disIdDib195414_19\" } , \"p\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/1999/02/22-rdf-syntax-ns#type\" } , \"o\": { \"type\": \"uri\", \"value\""
  }
 ]
