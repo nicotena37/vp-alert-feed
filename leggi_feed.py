@@ -345,8 +345,7 @@ SENATO_AG_ESCLUSI = re.compile(r"programma pluriennale di A/R|\bSMD \d", re.I)
 STATI_DDL = {"approvato": "approvato dal Senato", "appr. definit. Legge": "approvato definitivamente, è legge",
              "appr. def. non pubbl": "approvato definitivamente, legge non ancora pubblicata",
              "appr. con modificaz": "approvato con modificazioni", "appr. in t.u.": "approvato in testo unificato",
-             "esame in comm.": "in esame in commissione", "all'esame assemblea": "all'esame dell'Assemblea",
-             "D-L decaduto": "decreto-legge decaduto"}
+             "D-L decaduto": "decreto-legge decaduto"}   # l'avvio dell'esame in commissione non fa notizia (troppi ddl)
 
 
 def _it(iso: str) -> str:
@@ -414,7 +413,7 @@ def leggi_senato(sito: dict, f: dict) -> list[dict]:
         metti(r["s"], titolo, link, r["d"],
               f"Senato della Repubblica, {tipo} n. {num}, presentato il {_it(r['d'])}. {tit}")
     for r in ddl:
-        num = re.sub(r"\D", "", r["fase"]) or r["id"]
+        num = r["fase"].split(".", 1)[-1].strip() or r["id"]          # es. S.2085 -> 2085; S.427-731 -> 427-731
         link = f"https://www.senato.it/leg/19/BGT/Schede/Ddliter/{r['id']}.htm"
         conv = "di conversione" in r["nat"]
         base = f"Disegno di legge S. {num} - {pulisci(r['tit'])}"
@@ -423,7 +422,7 @@ def leggi_senato(sito: dict, f: dict) -> list[dict]:
             metti(r["s"], base, link, r["d"], f"Senato della Repubblica: presentato il {_it(r['d'])} il disegno di legge S. {num}"
                   f"{' di conversione di decreto-legge' if conv else ''}: {pulisci(r['tit'])}.{ini}")
         st = r.get("stato", "")
-        if r.get("ds", "") >= dal and st in STATI_DDL and not (st.startswith("esame") and r["d"] >= dal):
+        if r.get("ds", "") >= dal and st in STATI_DDL:
             metti(f"{r['s']}#{st}", f"{base} ({STATI_DDL[st]})", link, r["ds"],
                   f"Senato della Repubblica: il disegno di legge S. {num} è {STATI_DDL[st]} ({_it(r['ds'])}). {pulisci(r['tit'])}.{ini}")
     fv.parent.mkdir(exist_ok=True)
