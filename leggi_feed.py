@@ -327,6 +327,104 @@ def data_in_testo(s: str) -> str:
     return f"{m.group(3)}/{m.group(2)}/{m.group(1)}" if m else ""
 
 
+
+# ---------------------------------------------------------------- Senato (dati aperti ufficiali, SPARQL)
+# www.senato.it risponde ai server di GitHub con HTTP 202 vuoto (filtro anti-robot) e non ha più un RSS: si usano i dati
+# aperti del Senato (dati.senato.it, licenza CC-BY). Si leggono gli ultimi f["giorni"] giorni (predefinito 14), perché
+# gli atti compaiono nei dati con qualche giorno di ritardo. «data» = giorno in cui la voce è stata vista la prima volta
+# (archivio/senato_visti.json), così un atto entrato tardi nei dati finisce nella settimana in cui lo vediamo;
+# la data ufficiale resta in «data_originale» e nella descrizione.
+SENATO_ESCLUSI = re.compile(r"^(Petizione|Sentenze della Corte costituzionale|Determinazioni e relazioni della Corte dei "
+                            r"conti sulla gestione degli enti|Risoluzioni e (?:raccomandazioni|dichiarazioni) dell'Assemblea|"
+                            r"Risoluzioni e raccomandazioni di Assemblee|Voto regionale|Comunicazione nomina|Nomina sottoposta|"
+                            r"Raccomandazioni, direttive della NATO)", re.I)
+STATI_DDL = {"approvato": "approvato dal Senato", "appr. definit. Legge": "approvato definitivamente, è legge",
+             "appr. def. non pubbl": "approvato definitivamente, legge non ancora pubblicata",
+             "appr. con modificaz": "approvato con modificazioni", "appr. in t.u.": "approvato in testo unificato",
+             "esame in comm.": "in esame in commissione", "all'esame assemblea": "all'esame dell'Assemblea",
+             "D-L decaduto": "decreto-legge decaduto"}
+
+
+def _it(iso: str) -> str:
+    try:
+        a, m, g = iso[:10].split("-")
+        return f"{int(g)} {['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'][int(m)-1]} {a}"
+    except Exception:  # noqa: BLE001
+        return iso
+
+
+def _sparql_senato(q: str) -> list[dict]:
+    from urllib.parse import quote
+    stato, c = scarica("https://dati.senato.it/sparql?query=" + quote(q, safe="") + "&format="
+                       + quote("application/sparql-results+json", safe=""), "application/sparql-results+json")
+    if stato != 200:
+        raise ValueError(f"HTTP {stato} da dati.senato.it")
+    return [{k: v["value"] for k, v in b.items()} for b in json.loads(c)["results"]["bindings"]]
+
+
+def leggi_senato(sito: dict, f: dict) -> list[dict]:
+    from datetime import timedelta
+    oggi = datetime.now(timezone.utc).date()
+    dal = (oggi - timedelta(days=int(f.get("giorni", 14)))).isoformat()
+    O = "http://dati.senato.it/osr/"
+    docs = _sparql_senato(
+        f"SELECT ?s ?d ?tipo ?num ?rom ?tit ?tb ?url WHERE {{ ?s a <{O}Documento> ; <{O}tipoDoc> ?tipo ; "
+        f"<{O}numeroDoc> ?num ; <{O}dataPresentazione> ?d ; <{O}titolo> ?tit ; <{O}legislatura> ?leg . "
+        f"OPTIONAL {{ ?s <{O}titoloBreve> ?tb }} OPTIONAL {{ ?s <{O}numeroRomano> ?rom }} OPTIONAL {{ ?s <{O}URLTesto> ?url }} "
+        f"FILTER(STR(?d) >= \"{dal}\") }} ORDER BY DESC(?d) LIMIT 2000")
+    ddl = _sparql_senato(
+        f"SELECT ?s ?d ?id ?fase ?tit ?nat ?ini ?stato ?ds WHERE {{ ?s a <{O}Ddl> ; <{O}dataPresentazione> ?d ; "
+        f"<{O}idDdl> ?id ; <{O}fase> ?fase ; <{O}titolo> ?tit ; <{O}natura> ?nat ; <{O}ramo> \"S\" . "
+        f"OPTIONAL {{ ?s <{O}descrIniziativa> ?ini }} OPTIONAL {{ ?s <{O}statoDdl> ?stato }} OPTIONAL {{ ?s <{O}dataStatoDdl> ?ds }} "
+        f"FILTER(STR(?d) >= \"{dal}\" || STR(?ds) >= \"{dal}\") }} ORDER BY DESC(?d) LIMIT 2000")
+    fv = QUI / "archivio" / "senato_visti.json"
+    visti = json.loads(fv.read_text(encoding="utf-8")) if fv.exists() else {}
+    voci, fatti = [], set()
+
+    def metti(chiave, titolo, link, data_uff, descr):
+        if chiave in fatti:
+            return
+        fatti.add(chiave)
+        primo = visti.setdefault(chiave, oggi.isoformat())
+        voci.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"], "titolo": pulisci(titolo)[:400],
+                     "link": link, "data_originale": data_uff, "data": max(primo, data_uff or primo),
+                     "descrizione": pulisci(descr)[:700]})
+
+    for r in docs:
+        tipo, num, tit = r["tipo"], r["num"], pulisci(r["tit"])
+        if SENATO_ESCLUSI.search(tipo):
+            continue
+        link = r.get("url") or r["s"].replace("http://", "https://")
+        if tipo.startswith("Atto del Governo"):
+            titolo = f"Atto del Governo n. {num} - {tit}"
+        elif tipo == "Atto dell'Unione europea":
+            titolo = f"Atto dell'Unione europea {num} - {tit}"
+        elif tipo == "Procedura di infrazione":
+            titolo = tit
+        elif r.get("rom"):
+            titolo = f"Doc. {r['rom'].strip()}, n. {num} - {r.get('tb') or tit}"
+        else:
+            titolo = f"{tipo} n. {num} - {r.get('tb') or tit}" if not tit.lower().startswith(tipo.lower()[:20]) else tit
+        metti(r["s"], titolo, link, r["d"],
+              f"Senato della Repubblica, {tipo} n. {num}, presentato il {_it(r['d'])}. {tit}")
+    for r in ddl:
+        num = re.sub(r"\D", "", r["fase"]) or r["id"]
+        link = f"https://www.senato.it/leg/19/BGT/Schede/Ddliter/{r['id']}.htm"
+        conv = "di conversione" in r["nat"]
+        base = f"Disegno di legge S. {num} - {pulisci(r['tit'])}"
+        ini = f" Iniziativa: {pulisci(r.get('ini', ''))}." if r.get("ini") else ""
+        if r["d"] >= dal:
+            metti(r["s"], base, link, r["d"], f"Senato della Repubblica: presentato il {_it(r['d'])} il disegno di legge S. {num}"
+                  f"{' di conversione di decreto-legge' if conv else ''}: {pulisci(r['tit'])}.{ini}")
+        st = r.get("stato", "")
+        if r.get("ds", "") >= dal and st in STATI_DDL and not (st.startswith("esame") and r["d"] >= dal):
+            metti(f"{r['s']}#{st}", f"{base} ({STATI_DDL[st]})", link, r["ds"],
+                  f"Senato della Repubblica: il disegno di legge S. {num} è {STATI_DDL[st]} ({_it(r['ds'])}). {pulisci(r['tit'])}.{ini}")
+    fv.parent.mkdir(exist_ok=True)
+    limite = (oggi - timedelta(days=120)).isoformat()
+    fv.write_text(json.dumps({k: v for k, v in visti.items() if v >= limite}, ensure_ascii=False, indent=0), encoding="utf-8")
+    return voci
+
 def leggi_sito(sito: dict) -> dict:
     ora = datetime.now(timezone.utc)
     slug = re.sub(r"[^A-Za-z0-9]+", "-", sito["sito"]).strip("-")
@@ -358,6 +456,15 @@ def leggi_sito(sito: dict) -> dict:
                                        "link": u, "data_originale": x.isoformat(), "data": x.isoformat(),
                                        "descrizione": corpo[:700]})
             ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(ris["notizie"]) - n0})
+            continue
+        if f.get("tipo") == "senato_sparql":    # dati aperti del Senato (SPARQL), vedi leggi_senato
+            try:
+                voci = leggi_senato(sito, f)
+                ris["notizie"] += voci
+                ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": len(voci)})
+            except Exception as e:  # noqa: BLE001
+                ris["allarmi"].append(f"{f['nome']}: dati non leggibili ({type(e).__name__}: {e}) - {f['url']}")
+                ris["feed"].append({"nome": f["nome"], "url": f["url"], "voci": 0, "errore": True, "motivo": str(e)[:200]})
             continue
         ok, motivo = robots(f["url"])
         if not ok:

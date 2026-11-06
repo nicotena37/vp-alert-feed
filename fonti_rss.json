@@ -947,13 +947,26 @@
      "data_dopo": "Published on"
     }
    ]
+  },
+  {
+   "sito": "Senato",
+   "pagina_apertura": "https://www.senato.it/",
+   "feed": [
+    {
+     "nome": "Senato - atti del Governo, disegni di legge e documenti (dati aperti)",
+     "url": "https://dati.senato.it/sparql",
+     "categoria": "Iter",
+     "tipo": "senato_sparql",
+     "giorni": 14
+    }
+   ],
+   "ente": "Senato della Repubblica",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "dati aperti ufficiali del Senato (dati.senato.it, CC-BY): atti del Governo sottoposti a parere, disegni di legge del Senato e loro passaggi, documenti e relazioni; ultimi 14 giorni",
+   "frequenza": "ogni giro"
   }
  ],
  "senza_rss": [
-  {
-   "sito": "Senato",
-   "cosa_fare": "il vecchio feed rss.xml non esiste più (pagina 404): usare i feed della Camera e la pagina dei disegni di legge"
-  },
   {
    "sito": "Commissione UE - Have your say",
    "cosa_fare": "nessun feed: iscrizione alle notifiche dal sito"
