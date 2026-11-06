@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-05T12-28-17.json",
+"nome_file": "vpalert_rss_ACN_2026-11-06T08-53-17.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-05T12:28:17Z",
+"letto_il": "2026-11-06T08:53:17Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,56 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "OpenSSH: potenziale bypass dell'autenticazione su sistemi Linux basati su musl libc",
+"link": "https://www.acn.gov.it/portale/w/openssh-potenziale-bypass-dell-autenticazione-su-sistemi-linux-basati-su-musl-libc",
+"data_originale": "Thu, 05 Nov 2026 19:36:57 GMT",
+"data": "2026-11-05",
+"descrizione": "Rilevata una vulnerabilità con gravità \"critica\" in OpenSSH che interessa specifiche configurazioni di sistemi Linux - tra cui Alpine Linux - basati su musl libc, libreria standard del linguaggio C per sistemi Linux, alternativa alla più diffusa glibc (GNU C Library). Tale vulnerabilità potrebbe consentire a un attaccante remoto non autenticato l’elusione dei meccanismi di autenticazione SSH e ottenere accesso non autorizzato ai sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti SonicWall",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-sonicwall-12",
+"data_originale": "Thu, 05 Nov 2026 15:46:31 GMT",
+"data": "2026-11-05",
+"descrizione": "Rilevate due nuove vulnerabilità, di cui una con gravità \"critica\", che interessano il prodotto SonicWall Global Management System (GMS), piattaforma utilizzata per la gestione centralizzata di firewall e altri dispositivi SonicWall. La vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante non autenticato di leggere file interni del sistema, ottenendo accesso a informazioni sensibili quali configurazioni, dati di gestione e altre informazioni riservate."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "FreeRDP: disponibili PoC per molteplici vulnerabilità",
+"link": "https://www.acn.gov.it/portale/w/freerdp-disponibili-poc-per-molteplici-vulnerabilita",
+"data_originale": "Thu, 05 Nov 2026 15:38:07 GMT",
+"data": "2026-11-05",
+"descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di molteplici vulnerabilità, di cui 3 con gravità \"critica\" e 24 con gravità “alta”, in FreeRDP, implementazione open source del protocollo Remote Desktop Protocol (RDP), utilizzato per collegarsi e controllare a distanza un computer."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti per prodotti Siemens",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-per-prodotti-siemens-25",
+"data_originale": "Tue, 11 Aug 2026 14:03:30 GMT",
+"data": "2026-08-11",
+"descrizione": "Siemens ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità nei propri prodotti, di cui 1 con gravità “critica” e 13 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario e di leggere file arbitrari sul filesystem dei sistemi interessati. Tra queste si evidenzia la CVE-2026-58115 per la quale è stato rilevato lo sfruttamento attivo in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in VeraCrypt",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-veracrypt",
+"data_originale": "Thu, 05 Nov 2026 14:27:00 GMT",
+"data": "2026-11-05",
+"descrizione": "Aggiornamenti di sicurezza sanano una vulnerabilità con gravità \"alta\" in VeraCrypt, noto software open source per la cifratura di dischi, partizioni e volumi virtuali. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di accedere ad informazioni sensibili o compromettere la disponibilità del servizio sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -191,16 +241,6 @@
 "data_originale": "Wed, 04 Nov 2026 11:16:32 GMT",
 "data": "2026-11-04",
 "descrizione": "Rilevate molteplici vulnerabilità, di cui 3 con gravità “critica” e 27 con gravità “alta”, nei prodotti HPE Fabric Composer e Virtual Intranet Access (VIA). Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di eludere i meccanismi di autenticazione, eseguire codice arbitrario, accedere a informazioni sensibili, ottenere privilegi elevati o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti per prodotti Siemens",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-per-prodotti-siemens-25",
-"data_originale": "Tue, 11 Aug 2026 14:03:30 GMT",
-"data": "2026-08-11",
-"descrizione": "Siemens ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità nei propri prodotti, di cui 1 con gravità “critica” e 13 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario e di leggere file arbitrari sul filesystem dei sistemi interessati. Tra queste si evidenzia la CVE-2026-58115 per la quale è stato rilevato lo sfruttamento attivo in rete."
 },
 {
 "sito": "ACN",
@@ -484,43 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità su GitLab CE/EE",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-su-gitlab-ce/ee-23",
-"data_originale": "Mon, 12 Oct 2026 08:22:06 GMT",
-"data": "2026-10-12",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 24 vulnerabilità, di cui 1 con gravità “critica” e 5 con gravità “alta”, in GitLab Community Edition (CE) ed Enterprise Edition (EE). Tra queste si evidenzia la CVE-2026-97229 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in Mattermost",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-mattermost-1",
-"data_originale": "Fri, 30 Oct 2026 11:37:27 GMT",
-"data": "2026-10-30",
-"descrizione": "Aggiornamenti di sicurezza sanano due vulnerabilità, di cui una con gravità \"alta\", in Mattermost. Tale vulnerabilità, qualora sfruttata da un utente malintenzionato autenticato e in determinate condizioni, potrebbe consentire la modifica non autorizzata di componenti applicativi e la conseguente esecuzione di codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "ESET: aggiornamenti e mitigazioni per le vulnerabilità \"PHP2Shell\"",
-"link": "https://www.acn.gov.it/portale/w/eset-aggiornamenti-e-mitigazioni-per-le-vulnerabilita-php2shell-",
-"data_originale": "Fri, 30 Oct 2026 11:32:51 GMT",
-"data": "2026-10-30",
-"descrizione": "Disponibili aggiornamenti e misure di mitigazione per ESET Endpoint Encryption Server, piattaforma di gestione centralizzata delle funzionalità di cifratura offerte dalla suite ESET Endpoint Encryption, al fine di fronteggiare le vulnerabilità critiche note come \"PHP2Shell\" (CVE-2026-109618 e CVE-2026-109619) presenti nell'interprete PHP integrato nel prodotto."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Progress Telerik",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-progress-telerik-1",
-"data_originale": "Fri, 30 Oct 2026 11:32:10 GMT",
-"data": "2026-10-30",
-"descrizione": "Progress ha rilasciato aggiornamenti di sicurezza per sanare 6 vulnerabilità con gravità “alta” nel prodotto Telerik Document Processing Libraries. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di compromettere la disponibilità del servizio, eludere i meccanismi di sicurezza e leggere o scrivere file arbitrari sui sistemi interessati."
+"titolo": "Il Direttore Andrea Quacivi in audizione presso la Commissione parlamentare di inchiesta sul sistema bancario, finanziario e assicurativo",
+"link": "https://www.acn.gov.it/portale/web/guest/-/il-direttore-andrea-quacivi-in-audizione-presso-la-commissione-parlamentare-di-inchiesta-sul-sistema-bancario-finanziario-e-assicurativo",
+"data_originale": "05/11/2026",
+"data": "2026-11-05",
+"descrizione": "News - 05 Novembre 2026 Attacchi cyber, criptovalute e prevenzione nell’intervento in commissione d’inchiesta su banche e servizi Direttore CSIRT Italia Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "23/10/2026",
 "data": "2026-10-23",
 "descrizione": "News - 23 Ottobre 2026 Nel numero di settembre: in aumento eventi e incidenti cyber. DDoS, compromissione e-mail e phishing le minacce prevalenti CSIRT Italia Cybersicurezza ACN"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "ACN semplifica la registrazione NIS 2027",
-"link": "https://www.acn.gov.it/portale/web/guest/-/acn-semplifica-la-registrazione-nis-2027",
-"data_originale": "23/10/2026",
-"data": "2026-10-23",
-"descrizione": "News - 23 Ottobre 2026 Aggiornata la determina che definisce il percorso di accreditamento alla piattaforma NIS Cybersicurezza ACN"
 },
 {
 "sito": "ACN",

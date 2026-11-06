@@ -1,15 +1,15 @@
 {
-"nome_file": "vpalert_rss_EDPB_2026-11-05T12-30-50.json",
+"nome_file": "vpalert_rss_EDPB_2026-11-06T08-55-58.json",
 "sito": "EDPB",
 "origine": "github-actions",
-"letto_il": "2026-11-05T12:30:50Z",
+"letto_il": "2026-11-06T08:55:58Z",
 "feed": [
 {
 "nome": "EDPB - news",
 "url": "https://www.edpb.europa.eu/feed/news_en",
 "voci": 0,
 "errore": true,
-"motivo": "ValueError: HTTP 500"
+"motivo": "ValueError: HTTP 503"
 },
 {
 "nome": "EDPB - pubblicazioni",
@@ -18,7 +18,7 @@
 }
 ],
 "allarmi": [
-"EDPB - news: feed non leggibile (ValueError: HTTP 500) - https://www.edpb.europa.eu/feed/news_en"
+"EDPB - news: feed non leggibile (ValueError: HTTP 503) - https://www.edpb.europa.eu/feed/news_en"
 ],
 "notizie": [
 {
