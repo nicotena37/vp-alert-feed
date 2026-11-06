@@ -1,18 +1,2 @@
-https://dati.senato.it/sparql?query=SELECT%20%3FagA%20%3Fp%20%3Fo%20WHERE%20%7B%20%3FagA%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroDoc%3E%20%3Fn%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20.%20FILTER%28STR%28%3Fn%29%3D%22379%22%20%26%26%20STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3FagA%20%3Fp%20%3Fo%20%7D&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
-https://dati.senato.it/sparql?query=SELECT%20%3FinB%20%3Fp%20%3Fq%20%3Fo%20WHERE%20%7B%20%3Fag%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FnumeroDoc%3E%20%3Fn%20%3B%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2Flegislatura%3E%2019%20.%20FILTER%28STR%28%3Fn%29%3D%22379%22%20%26%26%20STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3FinB%20%3Fp%20%3Fag%20.%20OPTIONAL%20%7B%20%3FinB%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20300&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
-https://dati.senato.it/sparql?query=SELECT%20%3FcC%20%28COUNT%28%2A%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fag%20%3Chttp%3A%2F%2Fdati.senato.it%2Fosr%2FtipoDoc%3E%20%3Ft%20.%20FILTER%28STRSTARTS%28STR%28%3Ft%29%2C%22Atto%20del%20Governo%22%29%29%20%3Fs%20%3Fp%20%3Fag%20.%20%3Fs%20a%20%3FcC%20%7D%20GROUP%20BY%20%3FcC&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
-https://dati.camera.it/sparql?query=SELECT%20%3FcD%20%28COUNT%28%3Fs%29%20AS%20%3Fn%29%20WHERE%20%7B%20%3Fs%20a%20%3FcD%20%7D%20GROUP%20BY%20%3FcD%20ORDER%20BY%20DESC%28%3Fn%29%20LIMIT%2060&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
-https://www.bis.org/doclist/bcbs.rss
-https://www.bis.org/doclist/bcbs_publ.rss
-https://www.bis.org/list/bcbs/index.htm
-https://www.fatf-gafi.org/robots.txt
-https://www.fatf-gafi.org/en/publications.html
-https://www.inail.it/robots.txt
-https://www.inail.it/portale/it/inail-comunica/comunicati-stampa.html
-https://www.normattiva.it/robots.txt
-https://api.normattiva.it/
-https://www.consob.it/robots.txt
-https://www.bancaditalia.it/robots.txt
-https://uif.bancaditalia.it/robots.txt
-https://www.ivass.it/robots.txt
-https://www.covip.it/robots.txt
+https://dati.senato.it/sparql?query=SELECT%20%3FinE%20%3Fp%20%3Fq%20%3Fo%20WHERE%20%7B%20%3FinE%20%3Fp%20%3Chttp%3A%2F%2Fdati.senato.it%2Fprocedura%2F55246%3E%20.%20OPTIONAL%20%7B%20%3FinE%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20400&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
+https://dati.senato.it/sparql?query=SELECT%20%3FxF%20%3Fp%20%3Fy%20%3Fq%20%3Fo%20WHERE%20%7B%20%3FxF%20%3Fp%20%3Chttp%3A%2F%2Fdati.senato.it%2Fprocedura%2F55246%3E%20.%20%3Fy%20%3Fr%20%3FxF%20.%20OPTIONAL%20%7B%20%3Fy%20%3Fq%20%3Fo%20%7D%20%7D%20LIMIT%20400&format=application%2Fsparql-results%2Bjson | application/sparql-results+json
