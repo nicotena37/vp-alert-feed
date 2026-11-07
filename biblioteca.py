@@ -87,8 +87,8 @@ def scarica_ue(voce):
     for cc in dict.fromkeys([c, celex]):                       # se il consolidato non ha l'HTML, usa il testo originale
         url = f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{cc}"
         r = requests.get(url, headers=UA, timeout=180)
-        if r.status_code == 200 and "Articolo 1" in r.text: c = cc; break
-        log(f"  {cc}: HTTP {r.status_code}")
+        if r.status_code == 200 and "Articolo 1" in pulisci(r.text): c = cc; break
+        log(f"  {cc}: HTTP {r.status_code}, {len(r.text)} caratteri, inizio: {pulisci(r.text)[:120]!r}")
     else:
         return None, []
     t = pulisci(r.text)
