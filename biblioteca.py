@@ -44,13 +44,19 @@ def art_na(urn, a):
 def scarica_na(voce):
     urn = voce["urn"]; arts = []; mancanti = 0; meta = None
     da, a_max = voce.get("da", 1), voce.get("a", 2000)
-    for u in [urn] + voce.get("urn_alt", []):                  # prova le varianti di URN sul primo articolo
-        if art_na(u, da): urn = u; break
+    for u in ([] if voce.get("_ripresa") else [urn] + voce.get("urn_alt", [])):   # prova le varianti di URN sui primi articoli
+        if any(art_na(u, x) for x in (da, da + 1, da + 2)): urn = u; break
     else:
-        log(f"  {voce['id']}: nessuna variante di URN risponde"); return None, []
+        if voce.get("_ripresa"): urn = voce["_ripresa"]["urn"]
+        else: log(f"  {voce['id']}: nessuna variante di URN risponde"); return None, []
+    voce["_urn"] = urn
     log(f"  {voce['id']}: uso {urn}")
     n = da
+    if voce.get("_ripresa"):                                    # ripresa di un atto interrotto
+        arts = voce["_ripresa"]["articoli"]; n = voce["_ripresa"]["da"]; meta = voce["_ripresa"].get("meta")
     while n <= a_max and mancanti < voce.get("stop", 15):
+        if voce.get("_scadenza") and time.time() > voce["_scadenza"]:
+            voce["_interrotto"] = n; break
         at = art_na(urn, n); time.sleep(0.12)
         if at:
             mancanti = 0; meta = meta or at
