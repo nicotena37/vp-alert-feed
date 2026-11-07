@@ -84,7 +84,7 @@ def q_codici(codici, nome):
     return sparql(q, nome)
 
 def q_celex(lista, nome):
-    vals = " ".join(f'"{c}"' for c in lista)
+    vals = " ".join(f'"{c}"^^xsd:string' for c in lista)
     q = PFX + f"""SELECT ?celex (SAMPLE(?tp) AS ?tipo) (SAMPLE(?d) AS ?data) (SAMPLE(?t) AS ?tit) (SAMPLE(?f) AS ?vigore) WHERE {{
       VALUES ?celex {{ {vals} }} ?w cdm:resource_legal_id_celex ?celex ; cdm:work_has_resource-type ?tp .
       OPTIONAL {{ ?w cdm:resource_legal_in-force ?f }} OPTIONAL {{ ?w cdm:work_date_document ?d }}
@@ -93,7 +93,7 @@ def q_celex(lista, nome):
     return sparql(q, nome)
 
 def q_basati(base, nome):
-    vals = " ".join(f'"{c}"' for c in base)
+    vals = " ".join(f'"{c}"^^xsd:string' for c in base)
     q = PFX + f"""SELECT DISTINCT ?celex ?base ?tipo ?data ?tit WHERE {{
       VALUES ?base {{ {vals} }} ?b cdm:resource_legal_id_celex ?base .
       ?w cdm:resource_legal_based_on_resource_legal ?b ; cdm:resource_legal_in-force "true"^^xsd:boolean ; cdm:resource_legal_id_celex ?celex ; cdm:work_has_resource-type ?tipo .
@@ -178,5 +178,6 @@ if __name__ == "__main__":
     log("modo:", modo)
     if modo == "prova": prova()
     if modo in ("ue", "tutto"): ue()
+    if modo == "ue2": q_basati(BASI, "ue_famiglie"); q_celex(INCLUDI, "ue_includi")
     if modo in ("it", "tutto"): it()
     (OUT / "log.txt").write_text("\n".join(LOG), encoding="utf-8")
