@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: biblioteca
@@ -37,3 +38,24 @@ jobs:
             git pull --rebase -X theirs --quiet && git push --quiet && break
             sleep $((RANDOM % 20 + 5))
           done
+
+  continua:
+    needs: scarica
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull --quiet || true
+          giro=$(cat biblioteca/giri.txt 2>/dev/null || echo 0); giro=$((giro+1))
+          resto=0
+          for k in 0 1 2 3; do m=$(grep "^BLOCCO $k" biblioteca/log_blocco$k.txt 2>/dev/null | tail -1 | sed -n 's/.*mancano \([0-9]*\).*/\1/p'); resto=$((resto+${m:-1})); done
+          echo "giro $giro, mancano $resto"
+          if [ "$resto" -gt 0 ] && [ "$giro" -lt 15 ]; then
+            echo $giro > biblioteca/giri.txt
+            git config user.name "vp-alert-feed"; git config user.email "vp-alert-feed@users.noreply.github.com"
+            git add biblioteca/giri.txt; git commit -q -m "Biblioteca: giro $giro" && git push --quiet || true
+            gh workflow run biblioteca.yml --ref main
+          fi
