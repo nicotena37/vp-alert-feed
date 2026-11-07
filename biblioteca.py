@@ -22,6 +22,7 @@ def pulisci(h):
     h = re.sub(r"<(br|/p|/div|/h\d|/li)[^>]*>", "\n", h or "", flags=re.I)
     t = html.unescape(re.sub(r"<[^>]+>", " ", h))
     t = re.sub(r"[ \t\xa0]+", " ", t)
+    t = "\n".join(l.strip() for l in t.splitlines())
     return re.sub(r"\n\s*\n+", "\n", t).strip()
 
 def impronta(t): return hashlib.sha256(t.encode("utf-8")).hexdigest()[:16]
@@ -43,6 +44,11 @@ def art_na(urn, a):
 def scarica_na(voce):
     urn = voce["urn"]; arts = []; mancanti = 0; meta = None
     da, a_max = voce.get("da", 1), voce.get("a", 2000)
+    for u in [urn] + voce.get("urn_alt", []):                  # prova le varianti di URN sul primo articolo
+        if art_na(u, da): urn = u; break
+    else:
+        log(f"  {voce['id']}: nessuna variante di URN risponde"); return None, []
+    log(f"  {voce['id']}: uso {urn}")
     n = da
     while n <= a_max and mancanti < voce.get("stop", 15):
         at = art_na(urn, n); time.sleep(0.12)
@@ -78,9 +84,13 @@ def consolidato(celex):
 
 def scarica_ue(voce):
     celex = voce["celex"]; c = consolidato(celex) or celex
-    url = f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{c}"
-    r = requests.get(url, headers=UA, timeout=180)
-    if r.status_code != 200: log(f"  {c}: HTTP {r.status_code}"); return None, []
+    for cc in dict.fromkeys([c, celex]):                       # se il consolidato non ha l'HTML, usa il testo originale
+        url = f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{cc}"
+        r = requests.get(url, headers=UA, timeout=180)
+        if r.status_code == 200 and "Articolo 1" in r.text: c = cc; break
+        log(f"  {cc}: HTTP {r.status_code}")
+    else:
+        return None, []
     t = pulisci(r.text)
     parti = re.split(r"\n(?=Articolo \d+(?: ?(?:bis|ter|quater|quinquies|sexies|[a-z]))?\n)", "\n" + t)
     arts = []
@@ -109,8 +119,9 @@ def salva(voce, meta, arts, fonte_url):
     p.write_text(json.dumps(rec, ensure_ascii=False, indent=0), encoding="utf-8")
     return rec
 
-def scarica(corpus_file="biblioteca/corpus_pilota.json"):
+def scarica(corpus_file="biblioteca/corpus_pilota.json", solo=None):
     corpus = json.loads(Path(corpus_file).read_text(encoding="utf-8"))
+    if solo: corpus = [v for v in corpus if any(v["id"].startswith(x) for x in solo)]
     idx_p = B / "indice.json"; indice = json.loads(idx_p.read_text(encoding="utf-8")) if idx_p.exists() else {}
     for v in corpus:
         t0 = time.time()

@@ -268,6 +268,10 @@ if __name__ == "__main__":
     if modo == "testi_prova": testi_prova()
     if modo in ("fase1", "fase1_testi"): fase1()
     if modo == "fase1b": fase1b()
+    if modo == "testi_parziale":                                 # avvia.txt: testi_parziale ID1 ID2 ... (prefissi)
+        arg = Path("catalogo/avvia.txt").read_text().split()[1:]
+        if "fase1b" in arg: fase1b()
+        import biblioteca; biblioteca.scarica(solo=[x for x in arg if x != "fase1b"])
     if modo in ("testi", "fase1_testi"):
         import biblioteca; biblioteca.scarica()
     if modo == "fase1_testi": pass
