@@ -197,6 +197,8 @@ if __name__ == "__main__":
     if modo == "prova": prova()
     if modo in ("ue", "tutto"): ue()
     if modo == "testi_prova": testi_prova()
+    if modo == "testi":
+        import biblioteca; biblioteca.scarica()
     if modo == "ue2": q_basati(BASI, "ue_famiglie"); q_celex(INCLUDI, "ue_includi")
     if modo in ("it", "tutto"): it()
     (OUT / "log.txt").write_text("\n".join(LOG), encoding="utf-8")

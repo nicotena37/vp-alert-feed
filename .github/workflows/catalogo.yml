@@ -26,7 +26,7 @@ jobs:
       - run: |
           git config user.name "vp-alert-feed"
           git config user.email "vp-alert-feed@users.noreply.github.com"
-          git add dati/catalogo
+          git add dati/catalogo biblioteca
           git diff --cached --quiet || git commit -m "Catalogo $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase --quiet || true
           git push
