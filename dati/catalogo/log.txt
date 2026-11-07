@@ -1,0 +1,8 @@
+modo: prova
+SPARQL prova_repertorio: 437 righe
+SPARQL prova_bce: 522 righe
+NORMATTIVA GET /tipologiche/denominazione-atto: HTTP 409, 189 byte
+NORMATTIVA GET /tipologiche/classe-provvedimento: HTTP 409, 189 byte
+NORMATTIVA GET /collections/collection-predefinite: HTTP 409, 189 byte
+NORMATTIVA POST /ricerca/avanzata: HTTP 200, 21974 byte
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 31497 byte
