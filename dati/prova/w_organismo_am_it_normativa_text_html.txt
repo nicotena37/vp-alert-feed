@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<!-- jsn_solid_pro 5.0.0 -->
+<html lang="it-it" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>NORMATIVA</title>
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link href="/media/mod_languages/css/template.min.css?e06e4e" rel="stylesheet">
+	<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<link href="/media/jui/css/bootstrap.min.css?ver=1794086297" rel="stylesheet">
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-responsive.min.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/legacy_j3/templates/system/css/system.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/legacy_j3/templates/system/css/general.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/template.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/template_pro.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/colors/green.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/styles/business.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/layouts/jsn_mobile.css?ver=1794086297" rel="stylesheet">
+	<link href="/templates/jsn_solid_pro/css/jsn_social_icons.css" rel="stylesheet">
+	<link href="https://www.organismo-am.it/modules/mod_ticker/tmpl/css/ticker-style.css?ver=1794086297" rel="stylesheet">
+	<style>	div.jsn-modulecontainer ul.menu-mainmenu ul,
+	div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-left: 199px;
+	}
+	#jsn-pos-toolbar div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-right: 199px;
+		margin-left : auto
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul,
+	div.jsn-modulecontainer ul.menu-sidemenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		right: -200px;
+	}
+	body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		left: -200px;
+		right: auto;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+		margin-left: 201px;
+	}
+	#jsn-mobileswitch {
+		position: absolute;
+		right: 10px;
+		top: -30px;
+	}</style>
+	<style>
+		#gticker-wrapper-553 { padding-bottom: 5px; padding-top: 5px; font-size:12px;}
+		#gticker-wrapper-553 div { position:relative; float: right; margin-left:5px; } 
+		#gticker-wrapper-553 div a, #gticker-wrapper-553 div a:hover, #gticker-wrapper-553 div a:active, #gticker-wrapper-553 div a:focus  { color: #4d4d4d; font-weight: normal; text-decoration:none; }
+	</style>
+<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script type="application/json" class="joomla-script-options new">{"bootstrap.dropdown":{"dropdown-toggle":{"flip":true,"boundary":"scrollParent","reference":"toggle","display":"dynamic","popperConfig":true}},"joomla.jtext":{"MOD_FINDER_SEARCH_VALUE":"Cerca &hellip;","ERROR":"Errore","MESSAGE":"Messaggio","NOTICE":"Avviso","WARNING":"Attenzione","SUCCESS":"Success","JCLOSE":"Chiudi","JOK":"OK","JOPEN":"Apri"},"system.paths":{"root":"","rootFull":"https:\/\/www.organismo-am.it\/","base":"","baseFull":"https:\/\/www.organismo-am.it\/"},"csrf.token":"86bd48ad8ff9c728c913928a3a69c573"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/vendor/bootstrap/js/dropdown.min.js?5.3.8" type="module"></script>
+	<script src="/media/com_finder/js/finder.min.js?755761" type="module"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js"></script>
+	<script src="/templates/jsn_solid_pro/js/jsn_template.js"></script>
+	<script src="/templates/jsn_solid_pro/js/oam_search_guard.js?e06e4e"></script>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+	<script src="https://www.organismo-am.it/modules/mod_ticker/tmpl/js/jquery.ticker.min.js?ver=2.0.0"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.organismo-am.it/#/schema/Organization/base","name":"OAM Portale Agenti e Mediatori","url":"https://www.organismo-am.it/"},{"@type":"WebSite","@id":"https://www.organismo-am.it/#/schema/WebSite/base","url":"https://www.organismo-am.it/","name":"OAM Portale Agenti e Mediatori","publisher":{"@id":"https://www.organismo-am.it/#/schema/Organization/base"},"potentialAction":{"@type":"SearchAction","target":"https://www.organismo-am.it/motore-di-ricerca-oam?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.organismo-am.it/#/schema/WebPage/base","url":"https://www.organismo-am.it/normativa","name":"NORMATIVA","isPartOf":{"@id":"https://www.organismo-am.it/#/schema/WebSite/base"},"about":{"@id":"https://www.organismo-am.it/#/schema/Organization/base"},"inLanguage":"it-IT"},{"@type":"Article","@id":"https://www.organismo-am.it/#/schema/com_content/article/202","name":"NORMATIVA","headline":"NORMATIVA","inLanguage":"it-IT","articleSection":"Uncategorised","isPartOf":{"@id":"https://www.organismo-am.it/#/schema/WebPage/base"}}]}</script>
+	<script>
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_solid_pro_",
+					templatePath			: "/templates/jsn_solid_pro",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 1,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: ["mobile"],
+					mobileMenuEffect		: ""
+				});
+			</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+
+	<style>
+		@font-face {
+			font-family: 'Glyphicons Halflings';
+			src: url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+			src: url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+		}
+
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		.glyphicon-asterisk:before {
+			content: "\2a";
+		}
+
+		.glyphicon-plus:before {
+			content: "\2b";
+		}
+
+		.glyphicon-euro:before {
+			content: "\20ac";
+		}
+
+		.glyphicon-minus:before {
+			content: "\2212";
+		}
+
+		.glyphicon-cloud:before {
+			content: "\2601";
+		}
+
+		.glyphicon-envelope:before {
+			content: "\2709";
+		}
+
+		.glyphicon-pencil:before {
+			content: "\270f";
+		}
+
+		.glyphicon-glass:before {
+			content: "\e001";
+		}
+
+		.glyphicon-music:before {
+			content: "\e002";
+		}
+
+		.glyphicon-search:before {
+			content: "\e003";
+		}
+
+		.glyphicon-heart:before {
+			content: "\e005";
+		}
+
+		.glyphicon-star:before {
+			content: "\e006";
+		}
+
+		.glyphicon-star-empty:before {
+			content: "\e007";
+		}
+
+		.glyphicon-user:before {
+			content: "\e008";
+		}
+
+		.glyphicon-film:before {
+			content: "\e009";
+		}
+
+		.glyphicon-th-large:before {
+			content: "\e010";
+		}
+
+		.glyphicon-th:before {
+			content: "\e011";
+		}
+
+		.glyphicon-th-list:before {
+			content: "\e012";
+		}
+
+		.glyphicon-ok:before {
+			content: "\e013";
+		}
+
+		.glyphicon-remove:before {
+			content: "\e014";
+		}
+
+		.glyphicon-zoom-in:before {
+			content: "\e015";
+		}
+
+		.glyphicon-zoom-out:before {
+			content: "\e016";
+		}
+
+		.glyphicon-off:before {
+			content: "\e017";
+		}
+
+		.glyphicon-signal:before {
+			content: "\e018";
+		}
+
+		.glyphicon-cog:before {
+			content: "\e019";
+		}
+
+		.glyphicon-trash:before {
+			content: "\e020";
+		}
+
+		.glyphicon-home:before {
+			content: "\e021";
+		}
+
+		.glyphicon-file:before {
+			content: "\e022";
+		}
+
+		.glyphicon-time:before {
+			content: "\e023";
+		}
+
+		.glyphicon-road:before {
+			content: "\e024";
+		}
+
+		.glyphicon-download-alt:before {
+			content: "\e025";
+		}
+
+		.glyphicon-download:before {
+			content: "\e026";
+		}
+
+		.glyphicon-upload:before {
+			content: "\e027";
+		}
+
+		.glyphicon-inbox:before {
+			content: "\e028";
+		}
+
+		.glyphicon-play-circle:before {
+			content: "\e029";
+		}
+
+		.glyphicon-repeat:before {
+			content: "\e030";
+		}
+
+		.glyphicon-refresh:before {
+			content: "\e031";
+		}
+
+		.glyphicon-list-alt:before {
+			content: "\e032";
+		}
+
+		.glyphicon-flag:before {
+			content: "\e034";
+		}
+
+		.glyphicon-headphones:before {
+			content: "\e035";
+		}
+
+		.glyphicon-volume-off:before {
+			content: "\e036";
+		}
+
+		.glyphicon-volume-down:before {
+			content: "\e037";
+		}
+
+		.glyphicon-volume-up:before {
+			content: "\e038";
+		}
+
+		.glyphicon-qrcode:before {
+			content: "\e039";
+		}
+
+		.glyphicon-barcode:before {
+			content: "\e040";
+		}
+
+		.glyphicon-tag:before {
+			content: "\e041";
+		}
+
+		.glyphicon-tags:before {
+			content: "\e042";
+		}
+
+		.glyphicon-book:before {
+			content: "\e043";
+		}
+
+		.glyphicon-print:before {
+			content: "\e045";
+		}
+
+		.glyphicon-font:before {
+			content: "\e047";
+		}
+
+		.glyphicon-bold:before {
+			content: "\e048";
+		}
+
+		.glyphicon-italic:before {
+			content: "\e049";
+		}
+
+		.glyphicon-text-height:before {
+			content: "\e050";
+		}
+
+		.glyphicon-text-width:before {
+			content: "\e051";
+		}
+
+		.glyphicon-align-left:before {
+			content: "\e052";
+		}
+
+		.glyphicon-align-center:before {
+			content: "\e053";
+		}
+
+		.glyphicon-align-right:before {
+			content: "\e054";
+		}
+
+		.glyphicon-align-justify:before {
+			content: "\e055";
+		}
+
+		.glyphicon-list:before {
+			content: "\e056";
+		}
+
+		.glyphicon-indent-left:before {
+			content: "\e057";
+		}
+
+		.glyphicon-indent-right:before {
+			content: "\e058";
+		}
+
+		.glyphicon-facetime-video:before {
+			content: "\e059";
+		}
+
+		.glyphicon-picture:before {
+			content: "\e060";
+		}
+
+		.glyphicon-map-marker:before {
+			content: "\e062";
+		}
+
+		.glyphicon-adjust:before {
+			content: "\e063";
+		}
+
+		.glyphicon-tint:before {
+			content: "\e064";
+		}
+
+		.glyphicon-edit:before {
+			content: "\e065";
+		}
+
+		.glyphicon-share:before {
+			content: "\e066";
+		}
+
+		.glyphicon-check:before {
+			content: "\e067";
+		}
+
+		.glyphicon-move:before {
+			content: "\e068";
+		}
+
+		.glyphicon-step-backward:before {
+			content: "\e069";
+		}
+
+		.glyphicon-fast-backward:before {
+			content: "\e070";
+		}
+
+		.glyphicon-backward:before {
+			content: "\e071";
+		}
+
+		.glyphicon-play:before {
+			content: "\e072";
+		}
+
+		.glyphicon-pause:before {
+			content: "\e073";
+		}
+
+		.glyphicon-stop:before {
+			content: "\e074";
+		}
+
+		.glyphicon-forward:before {
+			content: "\e075";
+		}
+
+		.glyphicon-fast-forward:before {
+			content: "\e076";
+		}
+
+		.glyphicon-step-forward:before {
+			content: "\e077";
+		}
+
+		.glyphicon-eject:before {
+			content: "\e078";
+		}
+
+		.glyphicon-chevron-left:before {
+			content: "\e079";
+		}
+
+		.glyphicon-chevron-right:before {
+			content: "\e080";
+		}
+
+		.glyphicon-plus-sign:before {
+			content: "\e081";
+		}
+
+		.glyphicon-minus-sign:before {
+			content: "\e082";
+		}
+
+		.glyphicon-remove-sign:before {
+			content: "\e083";
+		}
+
+		.glyphicon-ok-sign:before {
+			content: "\e084";
+		}
+
+		.glyphicon-question-sign:before {
+			content: "\e085";
+		}
+
+		.glyphicon-info-sign:before {
+			content: "\e086";
+		}
+
+		.glyphicon-screenshot:before {
+			content: "\e087";
+		}
+
+		.glyphicon-remove-circle:before {
+			content: "\e088";
+		}
+
+		.glyphicon-ok-circle:before {
+			content: "\e089";
+		}
+
+		.glyphicon-ban-circle:before {
+			content: "\e090";
+		}
+
+		.glyphicon-arrow-left:before {
+			content: "\e091";
+		}
+
+		.glyphicon-arrow-right:before {
+			content: "\e092";
+		}
+
+		.glyphicon-arrow-up:before {
+			content: "\e093";
+		}
+
+		.glyphicon-arrow-down:before {
+			content: "\e094";
+		}
+
+		.glyphicon-share-alt:before {
+			content: "\e095";
+		}
+
+		.glyphicon-resize-full:before {
+			content: "\e096";
+		}
+
+		.glyphicon-resize-small:before {
+			content: "\e097";
+		}
+
+		.glyphicon-exclamation-sign:before {
+			content: "\e101";
+		}
+
+		.glyphicon-gift:before {
+			content: "\e102";
+		}
+
+		.glyphicon-leaf:before {
+			content: "\e103";
+		}
+
+		.glyphicon-eye-open:before {
+			content: "\e105";
+		}
+
+		.glyphicon-eye-close:before {
+			content: "\e106";
+		}
+
+		.glyphicon-warning-sign:before {
+			content: "\e107";
+		}
+
+		.glyphicon-plane:before {
+			content: "\e108";
+		}
+
+		.glyphicon-random:before {
+			content: "\e110";
+		}
+
+		.glyphicon-comment:before {
+			content: "\e111";
+		}
+
+		.glyphicon-magnet:before {
+			content: "\e112";
+		}
+
+		.glyphicon-chevron-up:before {
+			content: "\e113";
+		}
+
+		.glyphicon-chevron-down:before {
+			content: "\e114";
+		}
+
+		.glyphicon-retweet:before {
+			content: "\e115";
+		}
+
+		.glyphicon-shopping-cart:before {
+			content: "\e116";
+		}
+
+		.glyphicon-folder-close:before {
+			content: "\e117";
+		}
+
+		.glyphicon-folder-open:before {
+			content: "\e118";
+		}
+
+		.glyphicon-resize-vertical:before {
+			content: "\e119";
+		}
+
+		.glyphicon-resize-horizontal:before {
+			content: "\e120";
+		}
+
+		.glyphicon-hdd:before {
+			content: "\e121";
+		}
+
+		.glyphicon-bullhorn:before {
+			content: "\e122";
+		}
+
+		.glyphicon-certificate:before {
+			content: "\e124";
+		}
+
+		.glyphicon-thumbs-up:before {
+			content: "\e125";
+		}
+
+		.glyphicon-thumbs-down:before {
+			content: "\e126";
+		}
+
+		.glyphicon-hand-right:before {
+			content: "\e127";
+		}
+
+		.glyphicon-hand-left:before {
+			content: "\e128";
+		}
+
+		.glyphicon-hand-up:before {
+			content: "\e129";
+		}
+
+		.glyphicon-hand-down:before {
+			content: "\e130";
+		}
+
+		.glyphicon-circle-arrow-right:before {
+			content: "\e131";
+		}
+
+		.glyphicon-circle-arrow-left:before {
+			content: "\e132";
+		}
+
+		.glyphicon-circle-arrow-up:before {
+			content: "\e133";
+		}
+
+		.glyphicon-circle-arrow-down:before {
+			content: "\e134";
+		}
+
+		.glyphicon-globe:before {
+			content: "\e135";
+		}
+
+		.glyphicon-tasks:before {
+			content: "\e137";
+		}
+
+		.glyphicon-filter:before {
+			content: "\e138";
+		}
+
+		.glyphicon-fullscreen:before {
+			content: "\e140";
+		}
+
+		.glyphicon-dashboard:before {
+			content: "\e141";
+		}
+
+		.glyphicon-heart-empty:before {
+			content: "\e143";
+		}
+
+		.glyphicon-link:before {
+			content: "\e144";
+		}
+
+		.glyphicon-phone:before {
+			content: "\e145";
+		}
+
+		.glyphicon-usd:before {
+			content: "\e148";
+		}
+
+		.glyphicon-gbp:before {
+			content: "\e149";
+		}
+
+		.glyphicon-sort:before {
+			content: "\e150";
+		}
+
+		.glyphicon-sort-by-alphabet:before {
+			content: "\e151";
+		}
+
+		.glyphicon-sort-by-alphabet-alt:before {
+			content: "\e152";
+		}
+
+		.glyphicon-sort-by-order:before {
+			content: "\e153";
+		}
+
+		.glyphicon-sort-by-order-alt:before {
+			content: "\e154";
+		}
+
+		.glyphicon-sort-by-attributes:before {
+			content: "\e155";
+		}
+
+		.glyphicon-sort-by-attributes-alt:before {
+			content: "\e156";
+		}
+
+		.glyphicon-unchecked:before {
+			content: "\e157";
+		}
+
+		.glyphicon-expand:before {
+			content: "\e158";
+		}
+
+		.glyphicon-collapse-down:before {
+			content: "\e159";
+		}
+
+		.glyphicon-collapse-up:before {
+			content: "\e160";
+		}
+
+		.glyphicon-log-in:before {
+			content: "\e161";
+		}
+
+		.glyphicon-flash:before {
+			content: "\e162";
+		}
+
+		.glyphicon-log-out:before {
+			content: "\e163";
+		}
+
+		.glyphicon-new-window:before {
+			content: "\e164";
+		}
+
+		.glyphicon-record:before {
+			content: "\e165";
+		}
+
+		.glyphicon-save:before {
+			content: "\e166";
+		}
+
+		.glyphicon-open:before {
+			content: "\e167";
+		}
+
+		.glyphicon-saved:before {
+			content: "\e168";
+		}
+
+		.glyphicon-import:before {
+			content: "\e169";
+		}
+
+		.glyphicon-export:before {
+			content: "\e170";
+		}
+
+		.glyphicon-send:before {
+			content: "\e171";
+		}
+
+		.glyphicon-floppy-disk:before {
+			content: "\e172";
+		}
+
+		.glyphicon-floppy-saved:before {
+			content: "\e173";
+		}
+
+		.glyphicon-floppy-remove:before {
+			content: "\e174";
+		}
+
+		.glyphicon-floppy-save:before {
+			content: "\e175";
+		}
+
+		.glyphicon-floppy-open:before {
+			content: "\e176";
+		}
+
+		.glyphicon-credit-card:before {
+			content: "\e177";
+		}
+
+		.glyphicon-transfer:before {
+			content: "\e178";
+		}
+
+		.glyphicon-cutlery:before {
+			content: "\e179";
+		}
+
+		.glyphicon-header:before {
+			content: "\e180";
+		}
+
+		.glyphicon-compressed:before {
+			content: "\e181";
+		}
+
+		.glyphicon-earphone:before {
+			content: "\e182";
+		}
+
+		.glyphicon-phone-alt:before {
+			content: "\e183";
+		}
+
+		.glyphicon-tower:before {
+			content: "\e184";
+		}
+
+		.glyphicon-stats:before {
+			content: "\e185";
+		}
+
+		.glyphicon-sd-video:before {
+			content: "\e186";
+		}
+
+		.glyphicon-hd-video:before {
+			content: "\e187";
+		}
+
+		.glyphicon-subtitles:before {
+			content: "\e188";
+		}
+
+		.glyphicon-sound-stereo:before {
+			content: "\e189";
+		}
+
+		.glyphicon-sound-dolby:before {
+			content: "\e190";
+		}
+
+		.glyphicon-sound-5-1:before {
+			content: "\e191";
+		}
+
+		.glyphicon-sound-6-1:before {
+			content: "\e192";
+		}
+
+		.glyphicon-sound-7-1:before {
+			content: "\e193";
+		}
+
+		.glyphicon-copyright-mark:before {
+			content: "\e194";
+		}
+
+		.glyphicon-registration-mark:before {
+			content: "\e195";
+		}
+
+		.glyphicon-cloud-download:before {
+			content: "\e197";
+		}
+
+		.glyphicon-cloud-upload:before {
+			content: "\e198";
+		}
+
+		.glyphicon-tree-conifer:before {
+			content: "\e199";
+		}
+
+		.glyphicon-tree-deciduous:before {
+			content: "\e200";
+		}
+
+		.glyphicon-briefcase:before {
+			content: "\1f4bc";
+		}
+
+		.glyphicon-calendar:before {
+			content: "\1f4c5";
+		}
+
+		.glyphicon-pushpin:before {
+			content: "\1f4cc";
+		}
+
+		.glyphicon-paperclip:before {
+			content: "\1f4ce";
+		}
+
+		.glyphicon-camera:before {
+			content: "\1f4f7";
+		}
+
+		.glyphicon-lock:before {
+			content: "\1f512";
+		}
+
+		.glyphicon-bell:before {
+			content: "\1f514";
+		}
+
+		.glyphicon-bookmark:before {
+			content: "\1f516";
+		}
+
+		.glyphicon-fire:before {
+			content: "\1f525";
+		}
+
+		.glyphicon-wrench:before {
+			content: "\1f527";
+		}
+	</style>
+
+
+	<!-- html5.js and respond.min.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="/plugins/system/jsntplframework/assets/3rd-party/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- START 	Custom Javascript by AUA Soft -->
+
+			<script src="/templates/jsn_solid_pro/js/jsn_equal_height_column.js?ver=1794086297"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="/templates/jsn_solid_pro/js/jsn_equal_new_box.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jsn_detect_mac.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jsn_slideshow_banner_link.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jsn_hide_page_element.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jquery.crypt.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jquery.media.js?ver=1794086297"></script>
+	<script src="/templates/jsn_solid_pro/js/jsn_link_profession_selected.js?ver=1794086297"></script>
+
+	<!-- jINTRO -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.js?ver=1794086297"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs-rtl.css?ver=1794086297" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.css?ver=1794086297" />
+	<script src="/templates/jsn_solid_pro/js/OAM_intro.js?ver=1794086297"></script>
+
+	<!-- <script src="/media/jui/js/bootstrap.min.js"></script> -->
+	<script src="/media/jui/js/bootstrap.bundle.min.js"></script>
+
+	<!-- END	Custom Javascript by AUA Soft -->
+
+	<link rel="stylesheet" type="text/css" href="/media/jui/css/bootstrap-theme.min.css?ver=1794086297">
+
+	<!-- JSON manifest OAM web app -->
+	<link rel="manifest" href="/manifest.json">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+
+	<!-- Browser Bar Color -->
+	<meta name="theme-color" content="#008c95" />
+
+	<!-- START cookie enabler -->
+	<script src="/js/cookies-enabler.js?ver=1794086297"></script>
+	<!-- END cookie enabler -->
+
+	<style>
+		.pagination>li>a:not(:has(span)) {
+			color: #008c95 !important;
+			border: none;
+			background: white !important;
+		}
+
+		/* .pagination>li>a:has(span) {
+            color: #999 !important;
+        } */
+
+		.dl::before {
+			content: "";
+		}
+
+		.dl::after {
+			font-size: 0.9em !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+			content: "Inizio" !important;
+			color: #999 !important;
+		}
+
+		.dr::before {
+			content: "";
+		}
+
+		.dr::after {
+			font-size: 0.9em !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+			content: "Fine" !important;
+			color: #999 !important;
+		}
+
+		.l::before {
+			content: "";
+		}
+
+		.l::after {
+			font-size: 0.9em !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+			content: "Indietro" !important;
+			color: #999 !important;
+		}
+
+		.r::before {
+			content: "";
+		}
+
+		.r::after {
+			font-size: 0.9em !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+			content: "Avanti" !important;
+			color: #999 !important;
+		}
+	</style>
+</head>
+
+<body id="jsn-master" class="jsn-textstyle-business jsn-color-green jsn-direction-ltr jsn-responsive jsn-mobile jsn-joomla-30  jsn-com-content jsn-view-article jsn-itemid-868">
+	<div id="jsn-master_inner">
+		<a name="top" id="top"></a>
+				<div id="jsn-page" class="container">
+						<div id="jsn-header" class="row-fluid">
+				<div id="jsn-logo" class="pull-left">
+					<a href="/index.php" title=""><img src="/templates/jsn_solid_pro/images/colors/green/logo.png" alt="" id="jsn-logo-desktop" /></a>				</div>
+				<div id="jsn-headerright" class="pull-right">
+											<div id="jsn-pos-top" class="pull-left">
+							<div class="top_circle_button_oam jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom631" class="mod-custom custom">
+    <!-- ============================================================
+     SNIPPET PER ARTICOLO / MODULO JOOMLA 5
+     Joomla 5 carica già: Bootstrap 5, jQuery, bootstrap.bundle.js
+     Aggiungere una volta nel template se non presente:
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     ============================================================ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<div class="dropdown top-menu-area-riservata">
+
+    <!-- Pulsante ricerca (apre modale) -->
+     <button type="button" class="btn btn-success btn-circle btn-xl btn-ricerca" data-bs-toggle="modal"
+        data-bs-target="#ModalSearch">
+        <i class="bi bi-search"></i>
+        <div class="text-lock-box"><span class="text-lock">Ricerca nel sito</span></div>
+    </button>
+
+    <!-- Pulsante area iscritti (apre dropdown) -->
+    <button type="button" id="btnAreaIscritti" class="btn btn-success btn-circle btn-menu-area btn-xl"
+        aria-expanded="false">
+        <i class="bi bi-person"></i>
+        <div class="text-lock-box"><span class="text-lock">Area iscritti</span></div>
+        <div class="text-lock-box-2"><span class="text-lock"></span></div>
+    </button>
+
+    <!--
+    Il menu è spostato nel <body> via JS (teleport) per sfuggire a qualsiasi
+    overflow:hidden impostato dal template Joomla sull'header.
+    L'elemento originale viene rimosso dal DOM e reinserito come figlio diretto di body.
+  -->
+    <ul id="menuAreaIscritti" class="dropdown-menu oam-dropdown-menu" style="display:none;">
+        <li><a class="dropdown-item" href="/home-agenti-mediatori">Agenti e Mediatori</a></li>
+        <li><a class="dropdown-item" href="/home-compro-oro">Compro Oro</a></li>
+        <li><a class="dropdown-item" href="/home-operatori-professionali-in-oro">Operatori Professionali in Oro</a></li>
+        <li><a class="dropdown-item" href="/home-cambiavalute">Cambiavalute</a></li>
+        <li><a class="dropdown-item" href="/home-punti-di-contatto-centrale">PSP/IMEL e Punti di contatto centrale</a></li>
+        <li><a class="dropdown-item" href="/home-merchant">Merchant</a></li>
+    </ul>
+
+</div>
+
+
+
+<script>
+    /*
+     * SOLUZIONE TELEPORT:
+     * Il problema più comune nei template Joomla è overflow:hidden sull'header,
+     * che taglia il dropdown-menu posizionato in absolute/fixed dentro il modulo.
+     *
+     * Strategia:
+     * 1. Spostiamo il <ul> come figlio diretto di <body> (sfugge a qualsiasi overflow)
+     * 2. Gestiamo manualmente posizionamento (fixed) e visibilità via JS
+     * 3. Chiudiamo il menu al click fuori
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('btnAreaIscritti');
+        var menu = document.getElementById('menuAreaIscritti');
+        if (!btn || !menu) return;
+
+        /* Teleport: sposta il menu come figlio diretto di body */
+        document.body.appendChild(menu);
+
+        var isOpen = false;
+
+        function openMenu() {
+            var rect = btn.getBoundingClientRect();
+            menu.style.top = (rect.bottom + 4) + 'px';
+            menu.style.left = rect.left + 'px';
+            menu.style.display = 'block';
+            menu.classList.add('show');
+            btn.setAttribute('aria-expanded', 'true');
+            isOpen = true;
+        }
+
+        function closeMenu() {
+            menu.style.display = 'none';
+            menu.classList.remove('show');
+            btn.setAttribute('aria-expanded', 'false');
+            isOpen = false;
+        }
+
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            isOpen ? closeMenu() : openMenu();
+        });
+
+        /* Chiudi al click fuori dal menu o dal pulsante */
+        document.addEventListener('click', function (e) {
+            if (isOpen && !menu.contains(e.target) && e.target !== btn) {
+                closeMenu();
+            }
+        });
+
+        /* Ricalcola posizione al resize/scroll */
+        window.addEventListener('resize', function () { if (isOpen) openMenu(); });
+        window.addEventListener('scroll', function () { if (isOpen) openMenu(); }, true);
+    });
+</script></div>
+<div class="clearbreak"></div></div></div></div><div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><div class="mod-languages">
+    <p class="visually-hidden" id="language_picker_des_519"></p>
+
+
+    <ul aria-labelledby="language_picker_des_519" class="mod-languages__list lang-inline">
+
+                                <li>
+                <a  href="/en/">
+                                                                        <img title="English (UK)" src="/media/mod_languages/images/en.gif" alt="English (UK)">                                                            </a>
+            </li>
+                                                    <li class="lang-active">
+                <a aria-current="true"  href="https://www.organismo-am.it/normativa">
+                                                                        <img title="Italiano IT" src="/media/mod_languages/images/it.gif" alt="Italiano IT">                                                            </a>
+            </li>
+                </ul>
+
+</div>
+<div class="clearbreak"></div></div></div></div>
+							<div class="clearbreak"></div>
+						</div>
+											<!-- <div id="jsn-social-icons" class="pull-right">
+					<ul>
+										<li class="facebook">
+							<a href="http://www.facebook.com/joomlashine" title="Facebook" target="_blank">
+								Facebook</a>
+						</li>
+										<li class="twitter">
+							<a href="http://www.twitter.com/joomlashine" title="X" target="_blank">
+								X</a>
+						</li>
+										<li class="youtube">
+							<a href="http://www.youtube.com/joomlashine" title="YouTube" target="_blank">
+								YouTube</a>
+						</li>
+									</ul>
+				</div> -->
+									</div>
+			</div>
+							<div id="jsn-menu">
+					<div id="jsn-menu_inner">
+						<div id="jsn-menu_inner1">
+															<div id="jsn-pos-mainmenu" >
+									<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle"><i class="fa fa-navicon"></i></span>
+<ul class="menu-mainmenu">
+	<li class="jsn-menu-mobile-control">Menu <span class="close-menu"></span></li>
+	<li  class="parent first"><a class="clearfix" href="/" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">HOME</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/cosa-fa-l-oam" title="COSA FA L'OAM" >
+		<span>
+		<span class="jsn-menutitle">COSA FA L'OAM</span><span class="jsn-menudescription">COSA FA L'OAM</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/struttura-organizzativa" title="STRUTTURA ORGANIZZATIVA DELL'OAM" >
+		<span>
+		<span class="jsn-menutitle">STRUTTURA ORGANIZZATIVA</span><span class="jsn-menudescription">STRUTTURA ORGANIZZATIVA DELL'OAM</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/partecipanti" title="TUTTE LE ASSOCIAZIONI E FEDERAZIONI DI CATEGORIA CHE COMPONGONO L'ORGANO OAM" >
+		<span>
+		<span class="jsn-menutitle">PARTECIPANTI</span><span class="jsn-menudescription">TUTTE LE ASSOCIAZIONI E FEDERAZIONI DI CATEGORIA CHE COMPONGONO L'ORGANO OAM</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/statuto" title="STATUTO E REGOLAMENTO DELL'OAM" >
+		<span>
+		<span class="jsn-menutitle">STATUTO E REGOLAMENTI</span><span class="jsn-menudescription">STATUTO E REGOLAMENTO DELL'OAM</span>		</span>
+	</a>
+	</li><li  class="parent">	<a  href="/elezioni-2024" >
+		<span>
+		ELEZIONI		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/elezioni-2024" >
+		<span>
+		ELEZIONI 2024		</span>
+	</a>
+	</li><li  class="last">	<a  href="/elezioni-2021" >
+		<span>
+		ELEZIONI 2021		</span>
+	</a>
+	</li></ul></li><li  class="">	<a  href="/normative-di-settore" >
+		<span>
+		NORMATIVA DI SETTORE		</span>
+	</a>
+	</li><li  class="">	<a  href="/accesso-atti" >
+		<span>
+		ACCESSO AGLI ATTI		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/home/audizione-personale" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">AUDIZIONE PERSONALE</span>	</span>
+</a></li><li  class="">		<a class="" href="/documenti/pubblicazioni/CODICE_ETICO_Osservatorio_Abusivismo.pdf" target="_blank" >
+			<span>
+			OSSERVATORIO ABUSIVISMO			</span>
+		</a>
+</li><li  class="">	<a  href="/sede-legale" title="COME CONTATTARE L'OAM" >
+		<span>
+		<span class="jsn-menutitle">SEDE LEGALE</span><span class="jsn-menudescription">COME CONTATTARE L'OAM</span>		</span>
+	</a>
+	</li><li  class="last"><a class="clearfix" href="/home/lavora-in-oam" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">LAVORA IN OAM</span>	</span>
+</a></li></ul></li><li  class="">	<a  href="/consultazione-elenchi-registri-oam" >
+		<span>
+		ELENCHI E REGISTRI		</span>
+	</a>
+	</li><li  class="parent">	<a  href="/profilo-professionale" >
+		<span>
+		FIGURE PROFESSIONALI		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/profilo-professionale" >
+		<span>
+		AGENTE IN ATTIVITÀ FINANZIARIA		</span>
+	</a>
+	</li><li  class="">	<a  href="/mediatore" >
+		<span>
+		MEDIATORE CREDITIZIO		</span>
+	</a>
+	</li><li  class="">	<a  href="/profilo-professionale-agente" >
+		<span>
+		AGENTE SERVIZI PAGAMENTO IMEL/IP ITALIANI		</span>
+	</a>
+	</li><li  class="">	<a  href="/compro-oro" >
+		<span>
+		COMPRO ORO		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/figure-professionali/operatore-professionale-in-oro" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">OPERATORE PROFESSIONALE IN ORO</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/figure-professionali/cambiavalute" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">CAMBIAVALUTE</span>	</span>
+</a></li><li  class="">	<a  href="/profilo-professionale-pspimel" >
+		<span>
+		AGENTI E CONVENZIONATI DI PSP/IMEL E PDC		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/figure-professionali/merchant-intermediari-del-credito" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">MERCHANT INTERMEDIARI DEL CREDITO</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/figure-professionali/merchant-creditori" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">MERCHANT CREDITORI</span>	</span>
+</a></li></ul></li><li  class="parent"><a class="clearfix" href="/vigilanza" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">VIGILANZA</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li  class="first"><a class="clearfix" href="/vigilanza/missione" title="OAM MISSION DELLA VIGILANZA" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">MISSIONE</span><span class="jsn-menudescription">OAM MISSION DELLA VIGILANZA</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/vigilanza/elementi-di-verifica-per-gli-agenti" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ELEMENTI DI VERIFICA PER GLI AGENTI</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/vigilanza/elementi-di-verifica-per-i-mediatori" title="OAM ELEMENI DI VERIFICA PER I MEDIATRI" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ELEMENTI DI VERIFICA PER I MEDIATORI</span><span class="jsn-menudescription">OAM ELEMENI DI VERIFICA PER I MEDIATRI</span>	</span>
+</a></li><li  class="">	<a  href="/vigilanza/segnalazioni-ed-esposti" >
+		<span>
+		TRASMETTI UN ESPOSTO		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/vigilanza/segnalazioni-vigilanza" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">SEGNALAZIONI DI VIGILANZA</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/vigilanza/protocollo-d-intesa-gdif" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">PROTOCOLLO D’INTESA GUARDIA DI FINANZA</span>	</span>
+</a></li></ul></li><li  class="parent">	<a  href="/regolamenti-integrativi" >
+		<span>
+		PUBBLICAZIONI		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/regolamenti-integrativi" title="PUBBLICAZIONI OAM - REGOLAMENTI" >
+		<span>
+		<span class="jsn-menutitle">REGOLAMENTI INTEGRATIVI</span><span class="jsn-menudescription">PUBBLICAZIONI OAM - REGOLAMENTI</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/circolari" >
+		<span>
+		CIRCOLARI		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/pubblicazioni-oam/linee-guida" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">LINEE GUIDA</span>	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		PROTOCOLLI D'INTESA		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/mediazione-offline" >
+		<span>
+		MEDIAZIONE OFFLINE		</span>
+	</a>
+	</li><li  class="last">	<a  href="/vigilanza/protocollo-d-intesa-gdif" >
+		<span>
+		PROTOCOLLO D’INTESA GUARDIA DI FINANZA		</span>
+	</a>
+	</li></ul></li><li  class="">	<a  href="/comunicazioni" title="PUBBLICAZIONI OAM - COMUNICAZIONI INTERPRETATIVE" >
+		<span>
+		<span class="jsn-menutitle">COMUNICAZIONI INTERPRETATIVE</span><span class="jsn-menudescription">PUBBLICAZIONI OAM - COMUNICAZIONI INTERPRETATIVE</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/consultazioni-pubbliche" title="PUBBLICAZIONI OAM - CONSULTAZIONI PUBBLICHE" >
+		<span>
+		<span class="jsn-menutitle">CONSULTAZIONI PUBBLICHE</span><span class="jsn-menudescription">PUBBLICAZIONI OAM - CONSULTAZIONI PUBBLICHE</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/bilanci" title="pubblicazioni OAM - BILANCI" >
+		<span>
+		<span class="jsn-menutitle">BILANCI</span><span class="jsn-menudescription">pubblicazioni OAM - BILANCI</span>		</span>
+	</a>
+	</li><li  class="">	<a  href="/relazione-annuale" title="RELAZIONI ANNUALI" >
+		<span>
+		<span class="jsn-menutitle">RELAZIONI ANNUALI</span><span class="jsn-menudescription">RELAZIONI ANNUALI</span>		</span>
+	</a>
+	</li><li  class="comunicati_stampa"><a class="clearfix" href="/pubblicazioni-oam/comunicati-stampa" >
+	<i class="comunicati_stampa "></i>
+	<span>
+		<span class="jsn-menutitle">COMUNICATI STAMPA</span>	</span>
+</a></li><li  class=""><a class=" clearfix" href="/pubblicazioni-oam/oamagazine" target="_blank" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">OAMAGAZINE</span>	</span>
+</a></li><li  class="parent"><a class="clearfix" href="/pubblicazioni-oam/comunicazione-istituzionale" title="COMUNICAZIONE ISTITUZIONALE" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">COMUNICAZIONE ISTITUZIONALE</span><span class="jsn-menudescription">COMUNICAZIONE ISTITUZIONALE</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/campagna-informativa-2023" >
+		<span>
+		CAMPAGNA INFORMATIVA 2023		</span>
+	</a>
+	</li><li  class="last">	<a  href="/campagna-informativa-2020" >
+		<span>
+		CAMPAGNA INFORMATIVA 2020		</span>
+	</a>
+	</li></ul></li><li  class="last">	<a  href="/analisi-e-ricerche" >
+		<span>
+		ANALISI E RICERCHE		</span>
+	</a>
+	</li></ul></li><li  class="parent"><a class="clearfix" href="/registrazione" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">REGISTRAZIONE</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li  class="first">	<a  href="/registrazione" title="OAM REQUISITI REGISTRAZIONE" >
+		<span>
+		<span class="jsn-menutitle">REQUISITI</span><span class="jsn-menudescription">OAM REQUISITI REGISTRAZIONE</span>		</span>
+	</a>
+	</li><li  class="">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" title="OAM REGISTRATI ALL'AREA PRIVATA" >
+			<span>
+			<span class="jsn-menutitle">REGISTRAZIONE AGENTI E MEDIATORI</span><span class="jsn-menudescription">OAM REGISTRATI ALL'AREA PRIVATA</span>			</span>
+		</a>
+</li><li  class="">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" >
+			<span>
+			REGISTRAZIONE PSP/IMEL E PUNTI DI CONTATTO CENTRALE			</span>
+		</a>
+</li><li  class="">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" >
+			<span>
+			REGISTRAZIONE CAMBIAVALUTE			</span>
+		</a>
+</li><li  class="">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" >
+			<span>
+			REGISTRAZIONE COMPRO ORO			</span>
+		</a>
+</li><li  class="">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" >
+			<span>
+			REGISTRAZIONE OPERATORE PROFESSIONALE IN ORO			</span>
+		</a>
+</li><li  class="last">		<a class="" href="https://areaprivata.organismo-am.it/Account/Register" target="_blank" >
+			<span>
+			REGISTRAZIONE REGISTRO MERCHANT			</span>
+		</a>
+</li></ul></li><li  class="parent">	<a  href="/bando-e-calendario-delle-sessioni" >
+		<span>
+		ESAME		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a class="clearfix" href="/esame/esame-o-prova-valutativa" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ESAME O PROVA VALUTATIVA?</span>	</span>
+</a></li><li  class="">	<a  href="/bando-e-calendario-delle-sessioni" >
+		<span>
+		BANDO E CALENDARIO DELLE SESSIONI		</span>
+	</a>
+	</li><li  class="">	<a  href="/simulatore/9/" >
+		<span>
+		SIMULATORE ESAME		</span>
+	</a>
+	</li><li  class="">	<a  href="/database-quesiti-esame" >
+		<span>
+		DATABASE QUESITI ESAME		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/esame/prenotazione-esame" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">PRENOTAZIONE ESAME</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/esame/requisiti-e-installazione-del-client" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">REQUISITI E INSTALLAZIONE DEL CLIENT</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/esame/esami" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ARCHIVIO SESSIONI</span>	</span>
+</a></li></ul></li><li  class="parent">	<a  href="/bando-prova-valutativa" >
+		<span>
+		PROVA VALUTATIVA		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a class="clearfix" href="/prova-valutativa/prova-valutativa-o-prova-d-esame" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">PROVA VALUTATIVA O ESAME?</span>	</span>
+</a></li><li  class="">	<a  href="/bando-prova-valutativa" >
+		<span>
+		BANDO E CALENDARIO DELLE SESSIONI		</span>
+	</a>
+	</li><li  class="">	<a  href="/simulatore/11/" >
+		<span>
+		SIMULATORE PROVA VALUTATIVA		</span>
+	</a>
+	</li><li  class="">	<a  href="/database-delle-domande-e-risposte-per-la-prova-valutativa" >
+		<span>
+		DATABASE QUESITI PROVA VALUTATIVA		</span>
+	</a>
+	</li><li  class=""><a class="clearfix" href="/prova-valutativa/guida-alla-prenotazione" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">PRENOTAZIONE PROVA VALUTATIVA</span>	</span>
+</a></li><li  class="">	<a  href="/requisiti-tecnico-informatici-prova-valutativa" >
+		<span>
+		REQUISITI E INSTALLAZIONE DEL CLIENT		</span>
+	</a>
+	</li><li  class="">	<a  href="/verifica-superamento-prova-valutativa" >
+		<span>
+		VERIFICA SUPERAMENTO PROVA VALUTATIVA		</span>
+	</a>
+	</li><li  class="last"><a class="clearfix" href="/prova-valutativa/archivio-sessioni" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ARCHIVIO SESSIONI</span>	</span>
+</a></li></ul></li><li  class="parent info-point-main-menu"><a class="clearfix" href="/info-point" >
+	<i class="info-point-main-menu "></i>
+	<span>
+		<span class="jsn-menutitle">INFO POINT</span>	</span>
+</a><span class="jsn-menu-toggle"></span><ul><li  class="first"><a class="clearfix" href="/info-point/in-primo-piano" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">CHIARIMENTI IN PRIMO PIANO</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/info-point/domande-frequenti" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">DOMANDE FREQUENTI</span>	</span>
+</a></li><li  class=""><a class="clearfix" href="/info-point/guide-operative" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">GUIDE E INFORMAZIONI UTILI</span>	</span>
+</a></li><li  class="last"><a class="clearfix" href="/info-point/assistenza" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">ASSISTENZA 24 ORE SU 24</span>	</span>
+</a></li></ul></li><li  class="last"><a class="clearfix" href="/amministrazione-trasparente" >
+	<i class=" "></i>
+	<span>
+		<span class="jsn-menutitle">AMMINISTRAZIONE TRASPARENTE</span>	</span>
+</a></li></ul>
+<div class="clearbreak"></div></div></div></div>
+																	</div>
+																						<!-- <div id="jsn-sitetoolspanel" class=" jsn-include-color pull-right">
+					<ul id="jsn-sitetools-menu">
+						<li class="clearafter jsn-sitetool-control jsn-color6">
+						<a href="javascript:void(0)"></a>
+							<ul>
+								<li class="clearafter jsn-selector-color">
+														<a id="jsn-selector-blue" title="Select color: Blu" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','blue'); return false;" ></a>
+														<a id="jsn-selector-red" title="Select color: Rosso" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','red'); return false;" ></a>
+														<a id="jsn-selector-green" title="Select color: Verde" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','green'); return false;"  class="current"></a>
+														<a id="jsn-selector-violet" title="Select color: Viola" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','violet'); return false;" ></a>
+														<a id="jsn-selector-orange" title="Select color: Arancio" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','orange'); return false;" ></a>
+														<a id="jsn-selector-grey" title="Select color: Grigio" href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','color','grey'); return false;" ></a>
+													</li>
+							</ul>
+						</li>
+					</ul>
+				</div> -->
+															<!-- <span id="jsn-desktopswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','mobile','no'); return false;"></a>
+				</span>
+				<span id="jsn-mobileswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_solid_pro_','mobile','yes'); return false;"></a>
+				</span> -->
+														<div class="clearbreak"></div>
+						</div>
+					</div>
+				</div>
+			
+			<div id="jsn-header" class="row-fluid" style="background-color: transparent; ">
+				
+					<div class="ticker">
+						
+	
+	<div class="alert alert-warning" role="alert">
+		<div id="gticker-wrapper-553" class="no-js " style="display: inline-block; word-wrap: break-word;">
+				<strong>Avviso</strong>				<ul id="js-news-553" class="gticker-hidden">
+						
+					<li class="gticker-item"><a href="/ticker-news-page/attenzione-alle-truffe-l-organismo-non-richiede-mai-somme-di-denaro-a-qualsiasi-titolo-agli-utenti-titolari-di-criptovalute"> ATTENZIONE alle TRUFFE: l’Organismo non richiede mai somme di denaro, a qualsiasi titolo, agli utenti titolari di criptovalute. </a></li>
+									</ul>
+		</div>
+	</div>
+	<script type='text/javascript'>
+	jQuery.noConflict();
+	jQuery(function () {
+		jQuery('#gticker-wrapper-553').ticker({
+			controls: false,
+			speed: '0.10',
+			fadeInSpeed: '600',
+			titleText: 'Avviso',
+			pauseOnItems: '2000',
+			fadeOutSpeed: '300',
+			direction: 'ltr'
+		});
+	});
+	
+	</script>
+	
+
+					</div>
+
+							</div>
+
+			<div id="jsn-body">
+								<div id="jsn-content" class="jsn-hasright ">
+					<div id="jsn-content_inner" class="row-fluid">
+														<div id="jsn-maincontent" class="span9 order1  row-fluid">
+																				<div id="jsn-centercol" class="span12 order1 ">
+																								<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+																											<div id="jsn-mainbody">
+															<div id="system-message-container" aria-live="polite"></div>
+
+															
+<div class="item-page" itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
+	<meta itemprop="inLanguage" content="it-IT" />
+	
+		<div class="page-header">
+		<h2 itemprop="headline">
+															<a href="/normativa" itemprop="url"> NORMATIVA</a>
+									</h2>
+			</div>
+			
+								<p style="text-align: justify;"><strong><a href="/documenti/Normativa/Decreto%20Ministeriale%2022%20gennaio%202014%20n.%2031_Requisiti%20Organizzativi%20Mediatori.pdf">Decreto Ministero dell'Economia e delle Finanze 22 gennaio 2014, n. 31</a><br /></strong>Regolamento recante attuazione dell'articolo 29 del decreto legislativo 13 agosto 2010, n. 141, concernente il contenuto dei requisiti organizzativi per l'iscrizione nell'elenco dei mediatori creditizi.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/D.Lgs_169_2012.pdf" target="_blank"><strong>Decreto Legislativo 19 settembre 2012, n. 169</strong></a><br />"Ulteriori modifiche ed integrazioni al decreto legislativo 13 agosto 2010, n. 141, recante attuazione della direttiva 2008/48/CE, relativa ai contratti di credito ai consumatori, nonché modifiche del titolo V del testo unico bancario in merito alla disciplina dei soggetti operanti nel settore finanziario, degli agenti in attività finanziaria e dei mediatori creditizi."</p>
+<p style="text-align: justify;"><span class="green"> </span></p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Regolamento_Agenti_IP%20(1).pdf" target="_blank"><span><strong><span>Pubblicazione del Regolamento concernente le condizioni e i requisiti per l'iscrizione nella Sezione speciale per gli agenti che prestano esclusivamente i servizi di pagamento.</span></strong></span></a></p>
+<p style="text-align: justify;"><span style="line-height: 1.3em;"><span style="background-color: #ffffff; color: #000000;"><span><span>Sulla Gazzetta Ufficiale della Repubblica Italiana - Serie Generale - n. 35 dell'11 febbraio 2013, è stato pubblicato il Decreto del Ministero dell'Economia e delle Finanze del 28 dicembre 2012, n. 256, recante "Regolamento concernente le condizioni e i requisiti per l'iscrizione nella sezione speciale dell'Elenco degli Agenti in attività finanziaria da parte degli Agenti che prestano esclusivamente i servizi di pagamento". Il suddetto Regolamento entrerà in vigore a decorrere dal 26 febbraio 2013; da tale data sarà disponibile sul sito il modulo per l'istanza di iscrizione nella sezione speciale prevista dall'art. 128-quater, comma 6, del decreto legislativo 1° settembre 1993, n. 385.</span></span></span></span><span style="line-height: 1.3em;">  </span></p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Dlgs_218_10.pdf" target="_blank"><strong>Decreto Legislativo 14 dicembre 2010, n.218</strong></a><br />"Modifiche ed integrazioni al decreto legislativo 13 agosto 2010, n. 141, recante attuazione della direttiva 2008/48/CE relativa ai contratti di credito ai consumatori, nonche' modifiche del titolo IV del testo unico bancario (decreto legislativo 1° settembre 1993, n. 385) in merito alla disciplina dei soggetti operanti nel settore finanziario, degli agenti in attività finanziaria e dei mediatori creditizi”. </p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Dlgs_141_10.pdf" target="_blank"><strong>Decreto Legislativo 13 agosto 2010, n. 141</strong></a><br />Attuazione della direttiva 2008/48/CE relativa ai contratti di credito ai consumatori, nonché modifiche del titolo VI del testo unico bancario (decreto legislativo n. 385 del 1993) in merito alla disciplina dei soggetti operanti nel settore finanziario, degli agenti in attività finanziaria e dei mediatori creditizi.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Legge_7_luglio_2009_n_88.pdf" target="_blank"><strong>Legge 7 luglio 2009, n. 88</strong></a> (Disposizioni per l'adempimento di obblighi derivanti dall'appartenenza dell'Italia alle Comunità europee - Legge comunitaria 2008), in particolare l’art. 33“.<br />Delega al Governo per l'attuazione della direttiva 2008/48/CE del Parlamento europeo e del Consiglio, del 23 aprile 2008, relativa ai contratti di credito ai consumatori e che abroga la direttiva 87/102/CEE e previsione di modifiche ed integrazioni alla disciplina relativa ai soggetti operanti nel settore finanziario di cui al decreto legislativo 1º settembre 1993, n. 385, ai mediatori creditizi ed agli agenti in attività finanziaria”. </p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><strong><a href="/documenti/Normativa/Direttiva_2008_48_CE.pdf" target="_blank">Direttiva 2008/48/CE del Parlamento Europeo e del Consiglio del 23 aprile 2008</a></strong>, relativa ai contratti di credito ai consumatori e che abroga la direttiva 87/102/CEE </p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/L262_2005.pdf" target="_blank"><strong>Legge 28 dicembre 2005, n. 262</strong></a> - “Disposizioni per la tutela del risparmio e la disciplina dei mercati finanziari”.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Dlgs_485_2001.pdf" target="_blank"><strong>Decreto Ministero Economia e Finanze 13 dicembre 2001, n.485</strong></a> - “Regolamento emanato ai sensi dell'articolo 3 del decreto legislativo 25 settembre 1999, n. 374, in materia di agenzia in attività finanziaria”.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/DPR_28_luglio_2000_n_287.pdf" target="_blank"><strong>D.P.R. 28 luglio 2000, n. 287</strong></a>- “Regolamento di attuazione dell'articolo 6 della legge 7 marzo 1996, n. 108, recante   disciplina dell'attività di mediazione creditizia”. </p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Dlgs_374_1999.pdf" target="_blank"><strong>Decreto Legislativo 25 settembre 1999, n. 374</strong></a><br />"Estensione delle disposizioni in materia di riciclaggio dei capitali di provenienza illecita ed attività finanziarie particolarmente suscettibili di utilizzazione a fini di riciclaggio, a norma dell'articolo 15 della legge 6 febbraio 1996, n. 52”.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/Dlgs_153_1997.pdf" target="_blank"><strong>Decreto legislativo 26 maggio 1997, n. 153</strong></a>, convertito con modificazioni, dalla legge 5 luglio 1991, n. 197 “Integrazione dell'attuazione della Direttiva 91/308/CEE in materia di riciclaggio dei capitali di provenienza illecita”.   </p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><a href="/documenti/Normativa/L108_1996.pdf" target="_blank"><strong>Legge 7 marzo 1996, n. 108</strong></a> - “Disposizioni in materia di usura”.</p> 
+	
+
+							 </div>
+
+														</div>
+																									</div>
+																							</div> <!-- end centercol -->
+																		</div> <!-- end jsn-maincontent -->
+															<div id="jsn-rightsidecontent" class="span3 order2 ">
+									<div id="jsn-rightsidecontent_inner">
+										<div id="jsn-pos-right">
+											<div class="solid-infopoint jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom594" class="mod-custom custom">
+    <a class="btn btn-success btn-lg" href="/info-point" style="width:100%" role="button">Serve aiuto? Consulta <b>INFO POINT</b></a></div>
+<div class="clearbreak"></div></div></div></div><div class="solid-newsletter jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom450" class="mod-custom custom">
+    <a class="btn btn-success btn-lg" href="/oam-magazine" style="width:100%" role="button">Sfoglia <b>OAMAGAZINE</b></a>
+<!--<a class="btn btn-success btn-lg" href="/oam-magazine" style="width:100%" role="button">Vuoi ricevere la nostra <b>NEWSLETTER</b>?</a>-->
+</div>
+<div class="clearbreak"></div></div></div></div><div class="solid-infopoint jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom638" class="mod-custom custom">
+    <a href="/vigilanza/segnalazioni-ed-esposti"><img src="/images/segnala_abusivo_home_270x270.jpg" class="img-responsive inf-fluid segnala_abusivo" Title="segnala un abusivo" /></a>
+
+<style>
+.segnala_abusivo {
+  border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  margin-left:auto;
+  margin-right:auto;
+  }
+</style></div>
+<div class="clearbreak"></div></div></div></div>
+										</div>
+									</div>
+								</div>
+											</div>
+				</div>
+			</div>
+							<div id="jsn-content-bottom">
+					<div id="jsn-content-bottom-inner">
+													<div id="jsn-usermodules3" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+																		<div id="jsn-pos-user5" class="span12 order1 ">
+											<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom1624" class="mod-custom custom">
+    <p style="text-align: center;">© OAM - <a href="/privacy-policy" target="_blank" rel="alternate">Privacy Policy</a> - <a href="/privacy-policy" target="_blank" rel="alternate">Cookie Policy</a> - <a href="/documenti/OAM_Social-Media-Policy.pdf" target="_blank" rel="alternate">Social Media Policy</a> - Organismo per la gestione degli Elenchi degli Agenti in attività finanziaria e dei Mediatori creditizi - C.F. 97678190584</p></div>
+<div class="clearbreak"></div></div></div></div>
+										</div>
+																								</div>
+											</div>
+				</div>
+										<div id="jsn-footer">
+					<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+													<div id="jsn-pos-bottom" class="span12">
+								<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div id="mod-custom440" class="mod-custom custom">
+    
+</div>
+<div class="clearbreak"></div></div></div></div>
+							</div>
+
+												<div class="clearbreak"></div>
+					</div>
+				</div>
+					</div>
+					<!-- Modal -->
+			<div id="ModalSearch" class="modal fade" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<h5 class="modal-title">Ricerca</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+
+						<div class="modal-body">
+							<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<form class="mod-finder js-finder-searchform form-search" action="/motore-di-ricerca-oam?f=1" method="get" role="search">
+    <label for="mod-finder-searchword759" class="visually-hidden finder">Cerca</label><div class="mod-finder__search input-group"><input type="text" name="q" id="mod-finder-searchword759" class="js-finder-search-query form-control" value="" data-min-length="4" placeholder="Cerca &hellip;"><div class="cf-turnstile w-100 mb-2" data-sitekey="0x4AAAAAAD8wn-Vk_Jl86S9D" data-action="site-search" data-callback="oamSearchGuardSync" data-expired-callback="oamSearchGuardSync" data-error-callback="oamSearchGuardSync" data-timeout-callback="oamSearchGuardSync"></div><button class="btn btn-primary" type="submit" disabled><span class="icon-search icon-white" aria-hidden="true"></span> Cerca</button></div>
+            <input type="hidden" name="f" value="1"></form>
+<div class="clearbreak"></div></div></div></div>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+								Chiudi							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+							<a id="jsn-gotoplink" href="https://www.organismo-am.it/normativa#top">
+				<span>Vai all'inizio della pagina</span>
+			</a>
+				
+			</div>
+	<script>
+		COOKIES_ENABLER.init({
+			scriptClass: 'ce-script',
+			iframeClass: 'ce-iframe',
+			acceptClass: 'ce-accept',
+			dismissClass: 'ce-dismiss',
+			disableClass: 'ce-disable',
+
+			bannerClass: 'ce-banner',
+			bannerHTML: '<div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">' +
+				'<div class="modal-dialog cookie-dialog modal-dialog-centered" role="document">' +
+				'<div class="modal-content">' +
+				'<div class="modal-header">' +
+				'<h5 class="modal-title cookie-policy-title">Cookie Policy</h5>' +
+				'</div>' +
+				'<div class="modal-body cookie-policy-text">' +
+				'<p>Il presente Sito web utilizza i cookie per rendere migliore la tua esperienza di navigazione. Il nostro sito utilizza solo cookie tecnici necessari. Potrai visualizzare le specifiche tecniche dei cookie accedendo alla <a href=\"https://www.organismo-am.it/cookie-policy\" target=\"_blank\">Cookie Policy</a>.</p>' +
+				'<p><a href="https://www.organismo-am.it/cookie-policy" class="btn btn-secondary" target="_blank">Cookie Policy</a></p>' +
+				'</div>' +
+				'<div class="modal-footer">' +
+				//'<button type="button" id="leaveSite" class="btn btn-danger ce-dismiss">Chiudi avviso</button>'+
+				'<button type="button" class="btn btn-success ce-accept" data-bs-dismiss="modal">Usa solo i cookie necessari</button>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>',
+			/*'<div class="cadre_alert_cookies" id="cadre_alert_cookies" style="opacity:1;text-align:center;position:fixed;z-index:10000;left: 0;right: 0; margin:0px;">'+
+			'<div class="cadre_inner_alert_cookies" style="display: inline-block;width: 100%;margin:auto;max-width:100%;background-color: #ffffff;border:3px solid #eeeeee; border-radius:5px">'+
+			'	<div class="cadre_inner_texte_alert_cookies" style="display: inline-block;padding:10px;color: #666666">'+
+			'		<div class="cadre_texte ">'+
+			'			<p>'+
+			'					L\'OAM utilizza cookie tecnici e di terze parti per il funzionamento del sito: per maggiori informazioni e per sapere come disabilitarli puoi leggere l\'informativa sulla <a href="https://www.organismo-am.it/documenti/OAM-Informativa_di_base.pdf" target="_blank">privacy</a> e la <a href="https://www.organismo-am.it/cookie-policy" target="_blank">cookie policy</a>. La prosecuzione della navigazione mediante accesso ad altra area del sito o selezione di un elemento dello stesso (ad esempio, di un\'immagine o di un link) comporta la prestazione del consenso all\'uso dei cookie.'+
+			'			</p>'+
+			'		</div>'+
+			'		<div class="cadre_bouton ">'+
+			'			<div class=" col-md-6 col-sm-6 btn_close" style="margin:0;text-align:center;position: relative;float: right;width: 50%;">'+
+			'				<button style="color:#eeeeee" class="btn btn-success  popup-modal-dismiss ce-accept">Chiudi e Accetta</button>'+
+			'			</div>'+
+			'			<div class=" col-md-6 col-sm-6 btn_readmore" style="margin:0;text-align:center">'+
+			'				<a style="color:#eeeeee" class="btn btn-inverse  read_more" href="https://www.organismo-am.it/cookie-policy">Cookie Policy</a>'+
+			'				<a style="color:#eeeeee" class="btn btn-inverse  read_more" href="https://www.organismo-am.it/documenti/OAM-Informativa_di_base.pdf">Privacy Policy</a>'+
+			'			</div>'+
+			'		</div>'+
+			'	</div>'+
+			'</div>'+
+			'</div>',*/
+
+			eventScroll: false,
+			scrollOffset: 200,
+
+			clickOutside: false,
+
+			cookieName: 'ce-cookie',
+			cookieDuration: '365',
+			wildcardDomain: false,
+
+			iframesPlaceholder: true,
+			iframesPlaceholderHTML: '<p>Per vedere questo contenuto devi ' +
+				'<a href="#" class="ce-accept">Abilitare i Cookie</a>' +
+				'</p>',
+			iframesPlaceholderClass: 'ce-iframe-placeholder',
+
+			// Callbacks
+			onEnable: function() {
+				/* controllo se devo fare partire la intro */
+				var first_view = localStorage.getItem("intro_home");
+				if ((jQuery("body.jsn-itemid-836").length > 0) && ((first_view <= 0) || isNaN(first_view))) {
+					if (!isNaN(first_view)) {
+						first_view++;
+					} else {
+						first_view = 0;
+					}
+					localStorage.setItem("intro_home", first_view);
+					console.log("Avvio INTRO dalla Callbacks presente nel cookieblock");
+					startIntro();
+				}
+			},
+			onDismiss: '',
+			onDisable: ''
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			setTimeout(function() {
+				const modalEl = document.getElementById('cookieModal');
+
+				if (modalEl) {
+					const modal = new bootstrap.Modal(modalEl, {
+						backdrop: 'static', // ❌ disabilita click fuori
+						keyboard: false // ❌ disabilita ESC
+					});
+					modal.show();
+				}
+			}, 300); // piccolo delay per sicurezza
+		});
+	</script>
+	<script>
+		document.addEventListener("click", function(e) {
+			if (e.target.classList.contains("ce-accept")) {
+
+				const modalEl = document.getElementById("cookieModal");
+
+				if (modalEl) {
+					const modalInstance = bootstrap.Modal.getInstance(modalEl);
+
+					if (modalInstance) {
+						modalInstance.hide();
+					}
+				}
+
+				// 🔥 Pulizia forzata (importantissima)
+				document.querySelectorAll(".modal-backdrop").forEach(el => el.remove());
+				document.body.classList.remove("modal-open");
+				document.body.style.overflow = "";
+				document.body.style.paddingRight = "";
+			}
+		});
+	</script>
+</body>
+
+</html>
