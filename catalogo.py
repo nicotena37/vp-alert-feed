@@ -148,7 +148,7 @@ CHIAVI_IT = ["bancario", "banche", "credito", "creditizi", "intermediari", "fina
     "deposito", "carte di pagamento", "cripto", "sostenibilita'", "direttiva (UE)", "direttiva 20", "regolamento (UE)"]
 TIPI_IT = ["LEGGE", "DECRETO LEGISLATIVO", "DECRETO-LEGGE", "DECRETO DEL PRESIDENTE DELLA REPUBBLICA", "DECRETO", "DECRETO MINISTERIALE", "REGIO DECRETO"]
 
-def it(max_pag=40):
+def it(max_pag=8):
     oggi = time.strftime("%Y-%m-%d"); atti = {}
     for k in CHIAVI_IT:
         for tipo in TIPI_IT:
@@ -167,8 +167,9 @@ def it(max_pag=40):
                         "annoProvvedimento", "dataGU", "numeroGU", "codiceRedazionale", "titoloAtto", "descrizioneEmettitore")})
                     x.setdefault("chiavi", []); x["chiavi"].append(k) if k not in x["chiavi"] else None
                 if pag >= (d.get("numeroPagine") or 0) or not la: break
-                time.sleep(0.3)
+                time.sleep(0.15)
         log(f"IT chiave {k}: totale atti {len(atti)}")
+        (OUT / "it_normattiva.json").write_text(json.dumps(list(atti.values()), ensure_ascii=False, indent=0), encoding="utf-8")
     (OUT / "it_normattiva.json").write_text(json.dumps(list(atti.values()), ensure_ascii=False, indent=0), encoding="utf-8")
     log(f"IT totale: {len(atti)}")
 
