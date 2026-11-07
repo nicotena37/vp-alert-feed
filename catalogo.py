@@ -173,11 +173,30 @@ def it(max_pag=8):
     (OUT / "it_normattiva.json").write_text(json.dumps(list(atti.values()), ensure_ascii=False, indent=0), encoding="utf-8")
     log(f"IT totale: {len(atti)}")
 
+def testi_prova():
+    for a in ["~art115", "~art120bis", "~art120-bis", "~art128bis", "~art999", "~art2"]:
+        d = na("POST", "/atto/dettaglio-atto-urn", {"urn": "urn:nir:stato:decreto.legislativo:1993-09-01;385" + a})
+        at = ((d or {}).get("data") or {}).get("atto") or {}
+        h = re.sub(r"<[^>]+>", " ", at.get("articoloHtml") or ""); h = re.sub(r"\s+", " ", h)
+        log(f"TUB{a}: success={ (d or {}).get('success')} msg={((d or {}).get('data') or {}).get('message')} vig={at.get('articoloDataInizioVigenza')} testo={h[:160]!r}")
+    # EUR-Lex: ultima versione consolidata della CCD (2008/48) e testo XHTML
+    r = sparql(PFX + """SELECT ?c ?d WHERE { ?w cdm:resource_legal_id_celex ?c . FILTER(STRSTARTS(STR(?c), "02008L0048")) OPTIONAL { ?w cdm:work_date_document ?d } } ORDER BY DESC(?c) LIMIT 5""", "prova_consolidati")
+    for c in [x["c"] for x in r[:1]] + ["32023L2225"]:
+        for url, h in [(f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{c}", {}),
+                       (f"http://publications.europa.eu/resource/celex/{c}", {"Accept": "application/xhtml+xml", "Accept-Language": "ita"})]:
+            try:
+                x = requests.get(url, headers={**UA, **h}, timeout=120, allow_redirects=True)
+                t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", x.text))
+                log(f"EURLEX {c} {url[:60]}: HTTP {x.status_code} {x.headers.get('content-type')} {len(x.content)} byte; Articolo 1: {t[t.find('Articolo 1'):t.find('Articolo 1')+120]!r}")
+            except Exception as e:
+                log(f"EURLEX {c} {url[:60]}: {e}")
+
 if __name__ == "__main__":
     modo = (Path("catalogo/avvia.txt").read_text().split() or ["prova"])[0]
     log("modo:", modo)
     if modo == "prova": prova()
     if modo in ("ue", "tutto"): ue()
+    if modo == "testi_prova": testi_prova()
     if modo == "ue2": q_basati(BASI, "ue_famiglie"); q_celex(INCLUDI, "ue_includi")
     if modo in ("it", "tutto"): it()
     (OUT / "log.txt").write_text("\n".join(LOG), encoding="utf-8")
