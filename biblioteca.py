@@ -21,7 +21,7 @@ def log(*a):
 def pulisci(h):
     h = re.sub(r"<(br|/p|/div|/h\d|/li)[^>]*>", "\n", h or "", flags=re.I)
     t = html.unescape(re.sub(r"<[^>]+>", " ", h))
-    t = re.sub(r"[ \t\xa0]+", " ", t)
+    t = re.sub(r"[ \t\xa0\u202f\u2009\u2007\u200b]+", " ", t)
     t = "\n".join(l.strip() for l in t.splitlines())
     return re.sub(r"\n\s*\n+", "\n", t).strip()
 
@@ -92,7 +92,10 @@ def scarica_ue(voce):
     else:
         return None, []
     t = pulisci(r.text)
+    t = re.sub(r"(?m)^(Articolo \d+(?: ?(?:bis|ter|quater|quinquies|sexies|[a-z]))?)[ .]*$", r"\1", t)
     parti = re.split(r"\n(?=Articolo \d+(?: ?(?:bis|ter|quater|quinquies|sexies|[a-z]))?\n)", "\n" + t)
+    if len(parti) < 2:                                      # struttura diversa: salva un campione per capire
+        i = t.find("Articolo 1"); (B / f"debug_{c}.txt").write_text(repr(t[max(0, i-300):i+1500]), encoding="utf-8")
     arts = []
     for p in parti[1:]:
         m = re.match(r"Articolo (\d+(?: ?(?:bis|ter|quater|quinquies|sexies|[a-z]))?)\n(.*?)\n", p)
