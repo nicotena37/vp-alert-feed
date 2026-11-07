@@ -251,6 +251,15 @@ def fase1():
         raccogli(f"ade_{sez}", f"https://www.agenziaentrate.gov.it/portale/normativa-e-prassi/{sez}",
                  r"/portale/(-/|web/guest/|documents/|normativa-e-prassi/" + sez + r"/)", r"normativa-e-prassi/" + sez + r"/(archivio|20\d\d|.*anno)", 40, filtro=AE)
 
+def fase1b():
+    """AGCM (tutela del consumatore, concorrenza, regolamenti) e un tentativo su COVIP."""
+    raccogli("agcm", ["https://www.agcm.it/competenze/tutela-del-consumatore/normativa/", "https://www.agcm.it/competenze/concorrenza/normativa/",
+                      "https://www.agcm.it/chi-siamo/normativa/", "https://www.agcm.it/competenze/rating-di-legalita/normativa/", "https://www.agcm.it/"],
+             r"\.pdf|dotcmsdoc|/normativa/|regolament|linee-guida|comunicazion",
+             r"agcm\.it/(competenze|chi-siamo)/[^?#]*(normativa|regolament|linee|comunicazion|rating)", 50)
+    raccogli("covip", ["https://www.covip.it/per-gli-operatori/fondi-pensione/normativa", "https://www.covip.it/"],
+             r"\.pdf|/normativa|deliberazion|regolament", r"covip\.it/[^?#]*(normativa|deliberazion|regolament)", 40)
+
 if __name__ == "__main__":
     modo = (Path("catalogo/avvia.txt").read_text().split() or ["prova"])[0]
     log("modo:", modo)
@@ -258,6 +267,7 @@ if __name__ == "__main__":
     if modo in ("ue", "tutto"): ue()
     if modo == "testi_prova": testi_prova()
     if modo in ("fase1", "fase1_testi"): fase1()
+    if modo == "fase1b": fase1b()
     if modo in ("testi", "fase1_testi"):
         import biblioteca; biblioteca.scarica()
     if modo == "fase1_testi": pass
