@@ -11,7 +11,7 @@ HDR = re.compile(r"^(?:(?:Articolo|Art\.)\s+(\d+(?:[- ]?(?:bis|ter|quater|quinqu
                  r"|(SEZIONE|Sezione)\s+([IVXL]+(?:-bis)?)\b\.?\s*(.*)"
                  r"|(?:Orientamento|Guideline|Linea guida)\s+(\d+)\b\.?\s*(.*))$")
 
-TESSDATA = "/home/claude/tesseract-ocr/tessdata_fast"
+TESSDATA = __import__("os").environ.get("TESSDATA", "/home/claude/tesseract-ocr/tessdata_fast")
 
 def ocr(p):
     """PDF scansionato: immagini delle pagine a 300 dpi e OCR in italiano."""

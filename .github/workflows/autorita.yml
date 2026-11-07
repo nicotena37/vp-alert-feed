@@ -1,0 +1,41 @@
+name: Biblioteca autorità
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["biblioteca/avvia_autorita.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autorita
+  cancel-in-progress: false
+
+jobs:
+  scarica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 130
+    strategy:
+      fail-fast: false
+      matrix:
+        domini: ["eba.europa.eu,eiopa.europa.eu", "consob.it", "agenziaentrate.gov.it,dt.mef.gov.it,agcm.it"]
+    env:
+      TESSDATA: /usr/share/tesseract-ocr/5/tessdata
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-ita >/dev/null
+      - run: pip install --quiet requests==2.32.3 lxml==5.3.0 beautifulsoup4==4.12.3
+      - run: python autorita.py "${{ matrix.domini }}" 100
+      - run: |
+          git config user.name "vp-alert-feed"
+          git config user.email "vp-alert-feed@users.noreply.github.com"
+          git add biblioteca
+          git diff --cached --quiet || git commit -q -m "Biblioteca autorità ${{ matrix.domini }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs --quiet && git push --quiet && break
+            sleep $((RANDOM % 20 + 5))
+          done
