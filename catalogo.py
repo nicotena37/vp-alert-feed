@@ -191,14 +191,76 @@ def testi_prova():
             except Exception as e:
                 log(f"EURLEX {c} {url[:60]}: {e}")
 
+# ------------------------------------------------------------------ fase 1: elenchi delle autorità (pagine HTML, rispettando robots.txt)
+from urllib.parse import urljoin, urlparse
+from urllib import robotparser
+_ROBOTS = {}
+def robots_ok(u):
+    h = urlparse(u); base = f"{h.scheme}://{h.netloc}"
+    if base not in _ROBOTS:
+        rp = robotparser.RobotFileParser()
+        try:
+            r = requests.get(base + "/robots.txt", headers=UA, timeout=30); rp.parse(r.text.splitlines() if r.status_code == 200 else [])
+        except Exception: rp.parse([])
+        _ROBOTS[base] = rp
+    return _ROBOTS[base].can_fetch(UA["User-Agent"], u)
+
+def raccogli(nome, start, item_rx, pag_rx, max_pag=60, filtro=None, escludi=None):
+    from bs4 import BeautifulSoup
+    vis, coda, out, seen = set(), list(start if isinstance(start, list) else [start]), [], set()
+    while coda and len(vis) < max_pag:
+        u = coda.pop(0)
+        if u in vis: continue
+        vis.add(u)
+        if not robots_ok(u): log(f"{nome}: robots vieta {u}"); continue
+        try:
+            r = requests.get(u, headers=UA, timeout=60)
+            if r.status_code != 200: log(f"{nome}: HTTP {r.status_code} {u}"); continue
+        except Exception as e:
+            log(f"{nome}: {e} {u}"); continue
+        so = BeautifulSoup(r.text, "lxml")
+        for a in so.find_all("a", href=True):
+            h = urljoin(u, a["href"]); t = " ".join(a.get_text(" ").split())
+            if re.search(pag_rx, h) and h not in vis and urlparse(h).netloc == urlparse(u).netloc: coda.append(h)
+            if not re.search(item_rx, h) or len(t) < 12 or h in seen: continue
+            b = a
+            for _ in range(4):
+                if b.parent is not None and len(" ".join(b.parent.get_text(" ").split())) < 700: b = b.parent
+            ctx = " ".join(b.get_text(" ").split())[:600]
+            if filtro and not re.search(filtro, t + " " + ctx, re.I): continue
+            if escludi and re.search(escludi, t, re.I): continue
+            seen.add(h); out.append({"titolo": t[:400], "link": h, "contesto": ctx})
+        time.sleep(0.6)
+    (OUT / f"f1_{nome}.json").write_text(json.dumps(out, ensure_ascii=False, indent=0), encoding="utf-8")
+    log(f"{nome}: {len(out)} voci da {len(vis)} pagine")
+
+def fase1():
+    raccogli("esma", "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+             r"/sites/default/files/|/document/|/publications-and-data/", r"guidelines-recommendations-and-technical-standards\?.*page=\d+", 40,
+             filtro=r"guideline|orientament|recommendation|Q&A|questions and answers")
+    raccogli("eiopa", "https://www.eiopa.europa.eu/document-library/guidelines_en", r"/publications/|/document/|/system/files/",
+             r"guidelines_en\?.*page=\d+", 40)
+    raccogli("mef_reati_finanziari", "https://www.dt.mef.gov.it/it/attivita_istituzionali/prevenzione_reati_finanziari/normativa/",
+             r"\.pdf|/normativa/", r"prevenzione_reati_finanziari/normativa/.+", 25)
+    raccogli("oam", "https://www.organismo-am.it/normativa", r"\.pdf|/normativa|/circolar|/documenti", r"organismo-am\.it/(normativa|circolari|disposizioni).*", 25)
+    AE = (r"intermediar|banch|operatori finanziari|archivio dei rapporti|comunicazioni.{0,40}(finanziar|rapporti)|FATCA|CRS|scambio automatico|DAC|"
+          r"imposta di bollo|bollo|ritenut|sostitut[io] d.imposta|redditi di capitale|redditi diversi|risparmio amministrato|risparmio gestito|"
+          r"conti correnti|depositi|mutui|interessi passivi|bonifici|pignorament|transazioni finanziarie|tobin|crediti d.imposta|cessione dei crediti|"
+          r"monitoraggio fiscale|quadro RW|antiriciclaggio|cripto|IVA.{0,30}(finanziar|banc)|split payment|F24|modello 770|certificazione unica|CU\b")
+    for sez in ["circolari", "provvedimenti", "risoluzioni"]:
+        raccogli(f"ade_{sez}", f"https://www.agenziaentrate.gov.it/portale/normativa-e-prassi/{sez}",
+                 r"/portale/(-/|web/guest/|documents/|normativa-e-prassi/" + sez + r"/)", r"normativa-e-prassi/" + sez + r"/(archivio|20\d\d|.*anno)", 40, filtro=AE)
+
 if __name__ == "__main__":
     modo = (Path("catalogo/avvia.txt").read_text().split() or ["prova"])[0]
     log("modo:", modo)
     if modo == "prova": prova()
     if modo in ("ue", "tutto"): ue()
     if modo == "testi_prova": testi_prova()
-    if modo == "testi":
+    if modo in ("fase1", "fase1_testi"): fase1()
+    if modo in ("testi", "fase1_testi"):
         import biblioteca; biblioteca.scarica()
+    if modo == "fase1_testi": pass
     if modo == "ue2": q_basati(BASI, "ue_famiglie"); q_celex(INCLUDI, "ue_includi")
     if modo in ("it", "tutto"): it()
     (OUT / "log.txt").write_text("\n".join(LOG), encoding="utf-8")
