@@ -1,3 +1,18 @@
-modo: ue2
-SPARQL ue_famiglie: 695 righe
-SPARQL ue_includi: 64 righe
+modo: testi_prova
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 4530 byte
+TUB~art115: success=True msg=ricerca effettuata con successo vig=20160604 testo=' Art. 115 Ambito di applicazione 1. Le norme del presente ((titolo)) si applicano alle attivit&agrave; svolte nel territorio della Repubblica dalle banche e dag'
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 2868 byte
+TUB~art120bis: success=True msg=ricerca effettuata con successo vig=20101203 testo=' Art. 120-bis ((Recesso)) 1. ((Il cliente ha diritto di recedere in ogni momento da un contratto a tempo indeterminato senza penalit&agrave; e senza spese. Il C'
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 400, 171 byte
+TUB~art120-bis: success=None msg=None vig=None testo=''
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 4485 byte
+TUB~art128bis: success=True msg=ricerca effettuata con successo vig=20170414 testo=" Art. 128-bis Risoluzione delle controversie 1. I soggetti di cui all'articolo 115 aderiscono a sistemi di risoluzione stragiudiziale delle controversie con la "
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 404, 169 byte
+TUB~art999: success=None msg=None vig=None testo=''
+NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 3917 byte
+TUB~art2: success=True msg=ricerca effettuata con successo vig=20070125 testo=" Art. 2 Comitato interministeriale per il credito e il risparmio 1. Il Comitato interministeriale per il credito e il risparmio ha l'alta vigilanza in materia d"
+SPARQL prova_consolidati: 5 righe
+EURLEX 02008L0048-20231230 https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CEL: HTTP 200 text/html; charset=UTF-8 270900 byte; Articolo 1: "Articolo 1 Oggetto La presente direttiva ha per obiettivo l'armonizzazione di taluni aspetti delle disposizioni legislat"
+EURLEX 02008L0048-20231230 http://publications.europa.eu/resource/celex/02008L0048-2023: HTTP 200 application/xhtml+xml;charset=UTF-8 268365 byte; Articolo 1: "Articolo 1 Oggetto La presente direttiva ha per obiettivo l'armonizzazione di taluni aspetti delle disposizioni legislat"
+EURLEX 32023L2225 https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CEL: HTTP 200 text/html; charset=UTF-8 670575 byte; Articolo 1: "Articolo 1 Oggetto La presente direttiva istituisce un quadro comune per l'armonizzazione di taluni aspetti delle dispos"
+EURLEX 32023L2225 http://publications.europa.eu/resource/celex/32023L2225: HTTP 200 application/xhtml+xml;charset=UTF-8 668387 byte; Articolo 1: "Articolo 1 Oggetto La presente direttiva istituisce un quadro comune per l'armonizzazione di taluni aspetti delle dispos"
