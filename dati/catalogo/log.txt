@@ -1,8 +1,78 @@
-modo: prova
-SPARQL prova_repertorio: 437 righe
-SPARQL prova_bce: 522 righe
-NORMATTIVA GET /tipologiche/denominazione-atto: HTTP 409, 189 byte
-NORMATTIVA GET /tipologiche/classe-provvedimento: HTTP 409, 189 byte
-NORMATTIVA GET /collections/collection-predefinite: HTTP 409, 189 byte
-NORMATTIVA POST /ricerca/avanzata: HTTP 200, 21974 byte
-NORMATTIVA POST /atto/dettaglio-atto-urn: HTTP 200, 31497 byte
+modo: tutto
+SPARQL ue_core: 1950 righe
+SPARQL ue_filtrati: 2660 righe
+SPARQL ue_bce: 522 righe
+SPARQL ue_famiglie: 0 righe
+SPARQL ue_includi: 0 righe
+SPARQL ue_sanzioni: 2513 righe
+IT chiave bancario: totale atti 29
+IT chiave banche: totale atti 92
+IT chiave credito: totale atti 1334
+IT chiave creditizi: totale atti 1355
+IT chiave intermediari: totale atti 1367
+IT chiave finanziari: totale atti 1739
+IT chiave finanza: totale atti 2640
+IT chiave risparmio: totale atti 3602
+IT chiave riciclaggio: totale atti 3623
+IT chiave terrorismo: totale atti 3674
+IT chiave usura: totale atti 3679
+IT chiave pagamento: totale atti 4330
+IT chiave moneta elettronica: totale atti 4389
+IT chiave assicurazioni: totale atti 4751
+IT chiave assicurativa: totale atti 4774
+IT chiave consumatori: totale atti 4805
+IT chiave consumo: totale atti 5820
+IT chiave trasparenza: totale atti 5858
+IT chiave valori mobiliari: totale atti 6085
+IT chiave strumenti finanziari: totale atti 6137
+IT chiave mercati: totale atti 6207
+IT chiave investimento: totale atti 6235
+IT chiave fondi: totale atti 6717
+IT chiave previdenza complementare: totale atti 8164
+IT chiave dati personali: totale atti 8418
+IT chiave cibernetica: totale atti 8420
+IT chiave cybersicurezza: totale atti 8423
+IT chiave intelligenza artificiale: totale atti 8446
+IT chiave sicurezza sul lavoro: totale atti 11333
+IT chiave salute e sicurezza: totale atti 15362
+IT chiave responsabilita' amministrativa: totale atti 15841
+IT chiave crisi d'impresa: totale atti 15916
+IT chiave insolvenza: totale atti 15925
+IT chiave sovraindebitamento: totale atti 15925
+IT chiave garanzia: totale atti 16054
+IT chiave cartolarizzazione: totale atti 16058
+IT chiave obbligazioni: totale atti 16333
+IT chiave assegno: totale atti 16473
+IT chiave cambiale: totale atti 16474
+IT chiave imposte sui redditi: totale atti 17836
+IT chiave imposta sul valore aggiunto: totale atti 18728
+IT chiave bollo: totale atti 18973
+IT chiave accertamento: totale atti 19026
+IT chiave riscossione: totale atti 19499
+IT chiave anagrafe tributaria: totale atti 19606
+IT chiave redditi di natura finanziaria: totale atti 21441
+IT chiave societa': totale atti 23345
+IT chiave concorrenza: totale atti 23368
+IT chiave lavoro: totale atti 24020
+IT chiave lavoratori: totale atti 24667
+IT chiave pari opportunita': totale atti 24697
+IT chiave disabili: totale atti 24701
+IT chiave previdenza: totale atti 24701
+IT chiave pensioni: totale atti 25186
+IT chiave mutui: totale atti 25340
+IT chiave fallimento: totale atti 25344
+IT chiave titolari effettivi: totale atti 25509
+IT chiave segnalazione: totale atti 25517
+IT chiave whistleblowing: totale atti 25517
+IT chiave appalti: totale atti 25559
+IT chiave amministrazione digitale: totale atti 26417
+IT chiave firma elettronica: totale atti 26487
+IT chiave conti correnti: totale atti 26826
+IT chiave deposito: totale atti 27061
+IT chiave carte di pagamento: totale atti 27068
+IT chiave cripto: totale atti 27068
+IT chiave sostenibilita': totale atti 27068
+IT chiave direttiva (UE): totale atti 27402
+IT chiave direttiva 20: totale atti 28394
+IT chiave regolamento (UE): totale atti 29241
+IT totale: 29241
