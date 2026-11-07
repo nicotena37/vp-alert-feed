@@ -1,0 +1,124 @@
+{
+"id": "UIF-8a951bdf29",
+"titolo": "Istruzioni tecniche per l'inoltro delle comunicazioni oggettive in formato XMLcomunicazioni relative a date contabili da gennaio 2026 in poi",
+"estremi": "UIF",
+"fonte": "UIF",
+"url": "https://uif.bancaditalia.it/adempimenti-operatori/comunicazioni-oggettive/Oggettive_IstruzioniTecniche.pdf",
+"pagina": "https://uif.bancaditalia.it/adempimenti-operatori/comunicazioni-oggettive/Oggettive_IstruzioniTecniche.pdf",
+"area": [
+"Antiriciclaggio"
+],
+"data": "",
+"scaricato_il": "2026-11-07T23:23:27+00:00",
+"n_articoli": 18,
+"articoli": [
+{
+"num": "Premessa",
+"rubrica": "Note tecniche per l’inoltro delle",
+"testo": "COMUNICAZIONI OGGETTIVE\nNote tecniche per l’inoltro delle\ncomunicazioni in formato XML\nSommario\n1 Introduzione .................................................................................................................. 2\n2 Schema XML da utilizzare per le Comunicazioni Oggettive ......................................... 2\n2.1 Modalità di descrizione degli elementi ................................................................... 2\n2.1.1 Elemento message ......................................................................................... 3\n2.1.2 Elemento header ............................................................................................ 4\n2.1.3 Elemento content ........................................................................................... 6\n2.1.4 Elemento dataSegment .................................................................................. 6\n2.1.5 Elemento cube ............................................................................................... 9\n2.1.6 Elemento obs ................................................................................................. 9\n2.1.7 Elemento dim ................................................................................................. 9\n2.1.8 Elemento confirmSegment ........................................................................... 10\n2.1.9 Elemento confirm ......................................................................................... 10\n3 Sistema delle codifiche ............................................................................................... 11\n3.1 Osservazione OPERAZIONE .............................................................................. 11\n3.2 Osservazione SOGGETTO ................................................................................. 12\n3.3 Osservazione SEGNALAZIONE NEGATIVA ....................................................... 12\n4 Esempio di un file XML ............................................................................................... 13",
+"hash": "388f9c62f2c28cfe"
+},
+{
+"num": "par. 1",
+"rubrica": "Introduzione",
+"testo": "1 Introduzione\nLe comunicazioni dovranno essere inviate all’Unità di Informazione Finanziaria tramite il\nportale Infostat-Uif (survey OGG, “Comunicazioni Oggettive”). Nel portale è consultabile un\nManuale on-line contenente le istruzioni per il corretto utilizzo delle funzionalità disponibili.\nPer l’inoltro dei dati dovrà essere utilizzato il formato XML il cui XSD di riferimento è\nriportato nel paragrafo successivo.",
+"hash": "cfcfe385903de3d3"
+},
+{
+"num": "par. 2",
+"rubrica": "Schema XML da utilizzare per le Comunicazioni Oggettive",
+"testo": "2 Schema XML da utilizzare per le Comunicazioni Oggettive\nIn questo paragrafo sono riportate le specifiche per la corretta compilazione del file XML\nrelativo alle Comunicazioni Oggettive.",
+"hash": "58d383015be9d425"
+},
+{
+"num": "par. 2.1",
+"rubrica": "Modalità di descrizione degli elementi",
+"testo": "2.1 Modalità di descrizione degli elementi\nOgni elemento contenuto nello schema XML sarà definito utilizzando i seguenti termini.\nOGGETTO DESCRIZIONE\nNome dell’elemento Il nome che deve essere utilizzato per indicare l’elemento\nNumero minimo/massimo Definisce il numero minimo e massimo di volte che\ndi occorrenze l’elemento può essere riportato all’interno dell’elemento\n(minOccurs/maxOccurs) padre\n• minOccurs: se è pari a zero indica che l’elemento è\nfacoltativo, se è pari a 1 vuol dire che deve esistere\nalmeno un’istanza dell’elemento;\n• maxOccurs: se è pari a 1 vuol dire che si può inserire\nal massimo un’istanza dell’elemento, se è pari a\n“unbounded” vuol dire che possono essere indicati\nun numero infinito di istanze dell’elemento\nDescrizione Descrive le caratteristiche dell’elemento\nAttributi Elenca gli attributi che devono essere specificati per\nl’elemento\nElemento padre Identifica l’elemento <Padre> che contiene l’elemento.\nL’elemento Padre è un elemento complex\nLimitazioni sull’elemento Specifica l’obbligatorietà o meno dell’elemento\n(OBBLIGATORIO – OPZIONALE).\nEsempio Riporta uno o più esempi di utilizzo dell’elemento\nLo schema XML è costituito da due file: message.xsd e cube.xsd.\nNello schema message.xsd sono presenti le caratteristiche delle informazioni generali\nrelative al file mentre nel cube.xsd è descritta la modalità di rappresentazione delle\ninformazioni da trasmettere. Lo schema cube.xsd viene richiamato all’interno dello schema\nmessage.xsd.",
+"hash": "4994fb55c3775894"
+},
+{
+"num": "par. 2.1.1",
+"rubrica": "Elemento message",
+"testo": "2.1.1 Elemento message\nL’elemento <message> è la radice di ogni file e deve riportare, al suo interno, gli elementi\n<header> e <content>.\nNome: message minOccurs: 1 maxOccurs: 1\nDescrizione Rappresenta il messaggio che il segnalante intende inviare alla UIF.\nContiene un’istanza dell’elemento <header> e un’istanza\ndell’elemento <content>\nAttributi Nessuno\nElemento padre Nessuno\nEsempio <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<msg:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:x4bisf=\"http://www.bancaditalia.it/bolina/common/vo/cube\"\nxmlns:msg=\"http://www.bancaditalia.it/bolina/common/vo/message\"\nxsi:schemaLocation=\"http://www.bancaditalia.it/bolina/common/vo/me\nssage message_bancaditalia.xsd\">\n<msg:header>…</msg:header>\n<msg:content>…</msg:content>\n</msg:message>",
+"hash": "1f1f9a509989d5c2"
+},
+{
+"num": "par. 2.1.2",
+"rubrica": "Elemento header",
+"testo": "2.1.2 Elemento header\nQuesta sezione contiene le informazioni generali della segnalazione, che non dipendono\ndalle singole osservazioni.\nNome: header minOccurs: 1 maxOccurs: 1\nDescrizione Contiene le informazioni di testata del messaggio\nAttributi • survey: nome della survey, in questo caso valorizzata\nsempre a “OGG”\n• partner: codice identificativo del segnalante\n• initialDate: data di riferimento ovvero l’ultimo giorno del mese\nsolare per il quale si stanno inviando i dati\n• timeProduction: timestamp che identifica l’istante di\nproduzione del file XML. Può essere inviato sia nel formato\n“yyyy-MM-dd HH:mi:ss” (es: “2016-03-04 11:20:00”), oppure\nnel formato UNIX (esteso, cioè comprensivo dei\nmillisecondi, es: 1457086800000)\n• type: questo attributo può assumere i valori SUBSTITUTION\ne INTEGRATION. Il primo valore è da utilizzare quando si\nintende spedire un invio completo, che eventualmente andrà\na sostituire i dati precedentemente inviati (dallo stesso partner\nper la stessa data di riferimento). Il secondo valore invece è\nda utilizzare per spedire delle rettifiche che andranno a\nmodificare i dati precedentemente inviati (dallo stesso partner\nper la stessa data di riferimento).\nElemento padre message\nEsempio <msg:header>\n<msg:survey>OGG</msg:survey>\n<msg:partner>012345</msg:partner>\n<msg:initialDate>2019-01-31</msg:initialDate>\n<msg:timeProduction>2019-03-14\n11:20:00</msg:timeProduction>\n<msg:type>SUBSTITUTION</msg:type>\n</msg:header>",
+"hash": "4ddfd07eae1a2c80"
+},
+{
+"num": "par. 2.1.3",
+"rubrica": "Elemento content",
+"testo": "2.1.3 Elemento content\nQuesta è la sezione che racchiude il contenuto informativo del messaggio.\nNome: content minOccurs: 1 maxOccurs: 1\nDescrizione Rappresenta il contenuto informativo veicolato dal messaggio.\nQuesto elemento può avere come elementi figli\n• dim\n• dataSegment\n• confirmSegment\nNota: gli elementi dataSegment e confirmSegment sono alternativi\ntra di loro e non possono essere segnalati contemporaneamente nel\nmedesimo file.\nAttributi Nessuno\nElemento padre message\nEsempio <msg:content>\n<msg:dim …/>\n<msg:dataSegment>…</msg:dataSegment>\n</msg:content>",
+"hash": "67493af58e6f8f34"
+},
+{
+"num": "par. 2.1.4",
+"rubrica": "Elemento dataSegment",
+"testo": "2.1.4 Elemento dataSegment\nIn questa sezione sono riportate le osservazioni in termini di “cubi” (cube) e osservazioni\n(obs).\nNome: dataSegment minOccurs: 0 maxOccurs: 3\nDescrizione Contiene le osservazioni (o le rettifiche) e ha sempre almeno un\nelemento figlio di tipo <cube>.\nPossono essere presenti fino a 3 occorrenze di questo elemento\nperché, nel caso di rettifiche (attributo type dell’elemento message\nuguale a INTEGRATION), può essere inserito un elemento con\nid=DELETE, un elemento con id=INSERT e un elemento con\nid=PARTIAL_KEY_DELETE.\nAttributi id: questo attributo determina la natura delle osservazioni che sono\ncontenute nel tag.\nOBSERVATION: deve essere utilizzato quando nell’attributo type\ndell’elemento messagge è presente il valore SUBSTITUTION; in\nquesto caso le osservazioni riportate all’interno del tag saranno\ninserite nei sistemi della UIF (eventualmente sostituendo quanto\ninviato in precedenza).\nINSERT: può essere utilizzato quando nell’attributo type\ndell’elemento message è presente il valore INTEGRATION; in questo\ncaso le osservazioni costituiscono delle rettifiche di inserimento e\nsaranno inserite nei sistemi della UIF (eventualmente aggiungendosi\na quanto inviato in precedenza).\nDELETE: può essere utilizzato quando nell’attributo type\ndell’elemento message è presente il valore INTEGRATION; in questo\ncaso le osservazioni costituiscono delle rettifiche di cancellazione e\nandranno a eliminare le medesime osservazioni precedentemente\ninviate alla UIF.\nPARTIAL_KEY_DELETE: può essere utilizzato quando nell’attributo\ntype dell’elemento message è presente il valore INTEGRATION; in\nquesto caso saranno specificate solo alcune dimensioni e saranno\neliminate tutte le osservazioni precedentemente inviate alla UIF che\npresentano tali valori.\nElemento padre content\nLimitazioni OPZIONALE\nEsempio <msg:dataSegment id=\"INSERT\">\n<x4bisf:cube>\n<x4bisf:obs>\n<x4bisf:dim/>\n</x4bisf:cube>\n</msg:dataSegment>",
+"hash": "d70e6b0de5be2e2d"
+},
+{
+"num": "par. 2.1.5",
+"rubrica": "Elemento cube",
+"testo": "2.1.5 Elemento cube\nQuesta è la sezione che rappresenta l’osservazione in termini di fenomeno osservato\n(attributo id) e di dimensioni (elementi obs).\nNome: cube minOccurs: 1 maxOccurs: unbounded\nDescrizione È l’elemento che rappresenta il fenomeno osservato. In ogni\noccorrenza possono essere presenti come elementi figli:\n• dim\n• obs\nAttributi id: questo attributo rappresenta la natura del fenomeno osservato.\nNel caso delle Comunicazioni Oggettive può rappresentare\nl’operazione oppure il soggetto collegato all’operazione.\nlastObsId: opzionale, deprecato. Valorizzare a 0\nElemento padre dataSegment\nEsempio <x4bisf:cube id=\"…\">\n<x4bisf:dim name=\"…\" value=\"…\"/>\n<x4bisf:obs id=\"…\">\n<x4bisf:dim name=\"…\" value=\"…\"/>\n</x4bisf:cube>",
+"hash": "bc40aef55fc00eb9"
+},
+{
+"num": "par. 2.1.6",
+"rubrica": "Elemento obs",
+"testo": "2.1.6 Elemento obs\nQuesta è il tag nel quale sono riportate le dimensioni (dim) che rappresentano\nl’osservazione del fenomeno rilevato.\nNome: cube minOccurs: 1 maxOccurs: unbounded\nDescrizione È l’elemento che contiene le dimensioni dell’osservazione in termini\nd dimensioni (elementi dim) rilevati.\nAttributi id: obbligatorio, progressivo delle obs all’interno del tag cube\nmodified: opzionale, non necessario per questa survey.\nerror: opzionale, non necessario per questa survey.\nerrorCode: opzionale, non necessario per questa survey.\nrowSelected: opzionale, non necessario per questa survey.\nElemento padre cube\nEsempio <x4bisf:obs id=\"…\">\n<x4bisf:dim name=\"…\" value=\"…\"/>",
+"hash": "3bc94a424c61257f"
+},
+{
+"num": "par. 2.1.7",
+"rubrica": "Elemento dim",
+"testo": "2.1.7 Elemento dim\nQuesta tag rappresenta una dimensione osservata e può essere inserito a diversi livelli nella\ngerarchia stabilita dallo schema XML. Se viene inserito sotto il tag obs (nel quale è\nobbligatoria almeno un’istanza) allora rappresenta il valore specifico della variabile\nnell’ambito di un’osservazione specifica. Se viene inserito in un tag che si trova a un livello\npiù elevato della gerarchia (<cube> o <content>) il valore della dimensione (o delle\ndimensioni) specificata viene ereditata da tutti gli elementi che si trovano allo stesso livello\n(le <obs> oppure i <dataSegment>).\nNome: dim minOccurs: 0-1 maxOccurs: unbounded\nDescrizione È l’elemento che rappresenta la dimensione osservata.\nAttributi name: nome della dimensione\nvalue: valore della dimensione\ndescr: opzionale, non necessario per questa survey.\nerrCode: opzionale, non necessario per questa survey.\nerrDescr: opzionale, non necessario per questa survey.\nElemento padre content, cube, obs\nLimitazioni Se l’elemento padre è obs allora è OBBLIGATORIO altrimenti è\nsull’elemento OPZIONALE.\nEsempio <x4bisf:dim name=\"…\" value=\"…\"/>",
+"hash": "73226194bb569dfa"
+},
+{
+"num": "par. 2.1.8",
+"rubrica": "Elemento confirmSegment",
+"testo": "2.1.8 Elemento confirmSegment\nIn questa sezione vanno inserite tutte le conferme da segnalare.\nNome: confirmSegment minOccurs: 0 maxOccurs: 1\nDescrizione È l’elemento che contiene le conferme.\nAttributi Nessuno\nElemento padre content\nLimitazioni OPZIONALE\nEsempio <msg:confirmSegment>\n<msg:confirm id=\"\" description=\"\"/>\n</msg:confirmSegment>",
+"hash": "1a6b889c28c978a2"
+},
+{
+"num": "par. 2.1.9",
+"rubrica": "Elemento confirm",
+"testo": "2.1.9 Elemento confirm\nIn questo tag sono riportati i rilievi da confermare.\nNome: confirm minOccurs: 1 maxOccurs: unbounded\nDescrizione È l’elemento che contiene le conferme.\nAttributi id: identificativo del rilievo segnalato da parte della UIF e che si\nintende confermare\ndescription: breve descrizione del motivo della conferma\nElemento padre confirmSegment\nEsempio <msg:confirm id=\"\" description=\"\"/>",
+"hash": "7ef88f970918fa9b"
+},
+{
+"num": "par. 3",
+"rubrica": "Sistema delle codifiche",
+"testo": "3 Sistema delle codifiche\nNella tabella seguente sono riportate le codifiche relative alle variabili di classificazioni da\nutilizzare per la survey OGG.",
+"hash": "5fa5223b6b3ddc1f"
+},
+{
+"num": "par. 3.1",
+"rubrica": "Osservazione OPERAZIONE",
+"testo": "3.1 Osservazione OPERAZIONE\nIdentificativo del cube: OGG_OPERAZIONE\nVARIABILE CODICE CAMPO\nEnte segnalante CODICE_SEGNALANTE\nData contabile DATA_CONTABILE\nIdentificativo operazione ID_OPERAZIONE\nData esecuzione operazione DATA_CONT_OPERAZ\nCausale analitica TIPO_OPERAZIONE\nSegno SEGNO_OPERAZ\nCodice valuta COD_VALUTA\nImporto euro IMPORTO_OPERAZ\nImporto euro – parte in contanti IMPORTO_CONT\nCod. Filiale/Punto operativo CODICE_FILIALE\nABI CAB filiale UL_BANCARIA_CAB\nCAB Comune Filiale/Punto operativo COMUNE_ESEC\nTipo rapporto CAT_RAPPORTO\nIdentificativo rapporto NUMERO_RAPPORTO\nABI CAB filiale del rapporto FILIALE",
+"hash": "55d6bea729d4451d"
+},
+{
+"num": "par. 3.2",
+"rubrica": "Osservazione SOGGETTO",
+"testo": "3.2 Osservazione SOGGETTO\nIdentificativo del cube: OGG_SOGGETTO\nVARIABILE CODICE CAMPO\nEnte segnalante CODICE_SEGNALANTE\nData contabile DATA_CONTABILE\nIdentificativo operazione ID_OPERAZIONE\nProgressivo soggetto PROG_SOGGETTO\nCodice tipo soggetto CODICE_TIPO_SOGGETTO\nNDG NDG\nNatura giuridica NATURA_GIURIDICA\nCodice fiscale CODICE_FISCALE\nSottogruppo Attività Economica (SAE) SGRP_ATTIVITA_EC\nCodice ATECO 2025 ATECO_2025\nNome PF_NOME\nCognome PF_COGNOME\nSesso PF_SESSO\nData di nascita PF_DATANASCITA\nComune di nascita PF_COMUNENASCITA\nStato di nascita PF_STATONASCITA\nComune di residenza PF_IND_COMUNE\nStato di residenza PF_IND_STATO\nPersona Politicamente Esposta (PEP) PF_POLITIC_ESPOSTA\nDenominazione NPF_DENOMINAZIONE\nComune sede legale NPF_SEDELEG_IND_COMUNE\nStato sede legale NPF_SEDELEG_IND_STATO",
+"hash": "438fd7360dd8b9e1"
+},
+{
+"num": "par. 3.3",
+"rubrica": "Osservazione SEGNALAZIONE NEGATIVA",
+"testo": "3.3 Osservazione SEGNALAZIONE NEGATIVA\nIdentificativo del cube: OGG_NEGATIVA\nVARIABILE CODICE CAMPO\nEnte segnalante CODICE_SEGNALANTE\nData contabile DATA_CONTABILE\nSegnalazione Negativa SEGN_NEG\nIl valore da inserire per la variabile SEGN_NEG è sempre 1.",
+"hash": "57abf8f6231a017b"
+},
+{
+"num": "par. 4",
+"rubrica": "Esempio di un file XML",
+"testo": "4 Esempio di un file XML\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<msg:message xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:x4bisf=\"http://www.bancaditalia.it/bolina/common/vo/cube\"\nxmlns:msg=\"http://www.bancaditalia.it/bolina/common/vo/message\"\nxsi:schemaLocation=\"http://www.bancaditalia.it/bolina/common/vo/message\nmessage_bancaditalia.xsd\">\n<msg:header>\n<msg:survey>OGG</msg:survey>\n<msg:partner>012345</msg:partner>\n<msg:initialDate>2019-01-31</msg:initialDate>\n<msg:timeProduction>2019-03-14 11:20:00</msg:timeProduction>\n<msg:type>SUBSTITUTION</msg:type>\n</msg:header>\n<msg:content>\n<msg:dataSegment id=\"OBSERVATION\">\n<x4bisf:cube lastObsId=\"0\" id=\"OGG_OPERAZIONE\">\n<x4bisf:obs id=\"0\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"1\"/>\n<x4bisf:dim name=\"DATA_CONT_OPERAZ\" value=\"20190111\"/>\n<!--VERSAMENTO DI CONTANTE-->\n<x4bisf:dim name=\"TIPO_OPERAZIONE\" value=\"U3\"/>\n<x4bisf:dim name=\"SEGNO_OPERAZ\" value=\"D\"/>\n<x4bisf:dim name=\"COD_VALUTA\" value=\"252\"/>\n<x4bisf:dim name=\"IMPORTO_OPERAZ\" value=\"11000\"/>\n<x4bisf:dim name=\"IMPORTO_CONT\" value=\"11000\"/>\n<x4bisf:dim name=\"CODICE_FILIALE\" value=\"12345\"/>\n<x4bisf:dim name=\"UL_BANCARIA_CAB\"\nvalue=\"98760001234\"/>\n<x4bisf:dim name=\"COMUNE_ESEC\" value=\"030007\"/>\n<x4bisf:dim name=\"CAT_RAPPORTO\" value=\"028\"/>\n<x4bisf:dim name=\"NUMERO_RAPPORTO\"\nvalue=\"IT00X0111122200000000123456\"/>\n<x4bisf:dim name=\"FILIALE\" value=\"98760001256\"/>\n<x4bisf:obs id=\"1\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"2\"/>\n<x4bisf:dim name=\"DATA_CONT_OPERAZ\" value=\"20190115\"/>\n<!--PRELEVAMENTO DI CONTANTE CON MODULI DI SPORTELLO-->\n<x4bisf:dim name=\"TIPO_OPERAZIONE\" value=\"52\"/>\n<x4bisf:dim name=\"SEGNO_OPERAZ\" value=\"A\"/>\n<x4bisf:dim name=\"COD_VALUTA\" value=\"252\"/>\n<x4bisf:dim name=\"IMPORTO_OPERAZ\" value=\"16000\"/>\n<x4bisf:dim name=\"IMPORTO_CONT\" value=\"16000\"/>\n<x4bisf:dim name=\"CODICE_FILIALE\" value=\"67890\"/>\n<x4bisf:dim name=\"UL_BANCARIA_CAB\"\nvalue=\"12340005678\"/>\n<x4bisf:dim name=\"COMUNE_ESEC\" value=\"030007\"/>\n<x4bisf:dim name=\"CAT_RAPPORTO\" value=\"028\"/>\n<x4bisf:dim name=\"NUMERO_RAPPORTO\"\nvalue=\"IT00X0111122200000000789012\"/>\n<x4bisf:dim name=\"FILIALE\" value=\"12340005678\"/>\n</x4bisf:cube>\n<x4bisf:cube lastObsId=\"0\" id=\"OGG_SOGGETTO\">\n<x4bisf:obs id=\"0\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"1\"/>\n<x4bisf:dim name=\"PROG_SOGGETTO\" value=\"1\"/>\n<!--CLIENTE ED ESECUTORE-->\n<x4bisf:dim name=\"CODICE_TIPO_SOGGETTO\" value=\"01\"/>\n<x4bisf:dim name=\"NATURA_GIURIDICA\" value=\"PF\"/>\n<x4bisf:dim name=\"CODICE_FISCALE\"\nvalue=\"XXXYYY11Z22W000Y\"/>\n<x4bisf:dim name=\"PF_NOME\" value=\"GIUSEPPE\"/>\n<x4bisf:dim name=\"PF_COGNOME\" value=\"ROSSI\"/>\n<x4bisf:dim name=\"PF_SESSO\" value=\"M\"/>\n<x4bisf:dim name=\"PF_DATANASCITA\" value=\"19000101\"/>\n<x4bisf:dim name=\"PF_COMUNENASCITA\" value=\"032003\"/>\n<x4bisf:dim name=\"PF_STATONASCITA\" value=\"086\"/>\n<x4bisf:dim name=\"PF_IND_COMUNE\" value=\"032003\"/>\n<x4bisf:dim name=\"PF_IND_STATO\" value=\"086\"/>\n<x4bisf:dim name=\"PF_POLITIC_ESPOSTA\" value=\"NO\"/>\n<x4bisf:obs id=\"1\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"1\"/>\n<x4bisf:dim name=\"PROG_SOGGETTO\" value=\"2\"/>\n<!—CLIENTE (COINTESTATARIO)→\n<x4bisf:dim name=\"CODICE_TIPO_SOGGETTO\" value=\"02\"/>\n<x4bisf:dim name=\"NATURA_GIURIDICA\" value=\"PF\"/>\n<x4bisf:dim name=\"CODICE_FISCALE\"\nvalue=\"WWWZZZ99Y88X7R7M\"/>\n<x4bisf:dim name=\"PF_NOME\" value=\"MARIA\"/>\n<x4bisf:dim name=\"PF_COGNOME\" value=\"VERDI\"/>\n<x4bisf:dim name=\"PF_SESSO\" value=\"F\"/>\n<x4bisf:dim name=\"PF_DATANASCITA\" value=\"19010102\"/>\n<x4bisf:dim name=\"PF_COMUNENASCITA\" value=\"032103\"/>\n<x4bisf:dim name=\"PF_STATONASCITA\" value=\"86\"/>\n<x4bisf:dim name=\"PF_IND_COMUNE\" value=\"032103\"/>\n<x4bisf:dim name=\"PF_IND_STATO\" value=\"86\"/>\n<x4bisf:dim name=\"PF_POLITIC_ESPOSTA\" value=\"NO\"/>\n<x4bisf:obs id=\"2\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"2\"/>\n<x4bisf:dim name=\"PROG_SOGGETTO\" value=\"1\"/>\n<!--ESECUTORE-->\n<x4bisf:dim name=\"CODICE_TIPO_SOGGETTO\" value=\"03\"/>\n<x4bisf:dim name=\"NATURA_GIURIDICA\" value=\"PF\"/>\n<x4bisf:dim name=\"CODICE_FISCALE\"\nvalue=\"YYYXXX99Z332Z555Y\"/>\n<x4bisf:dim name=\"PF_NOME\" value=\"MARIO\"/>\n<x4bisf:dim name=\"PF_COGNOME\" value=\"GIALLI\"/>\n<x4bisf:dim name=\"PF_SESSO\" value=\"M\"/>\n<x4bisf:dim name=\"PF_DATANASCITA\" value=\"19020304\"/>\n<x4bisf:dim name=\"PF_STATONASCITA\" value=\"036\"/>\n<x4bisf:dim name=\"PF_IND_COMUNE\" value=\"016006\"/>\n<x4bisf:dim name=\"PF_IND_STATO\" value=\"086\"/>\n<x4bisf:dim name=\"PF_POLITIC_ESPOSTA\" value=\"SI\"/>\n<x4bisf:obs id=\"3\">\n<x4bisf:dim name=\"ID_OPERAZIONE\" value=\"2\"/>\n<x4bisf:dim name=\"PROG_SOGGETTO\" value=\"2\"/>\n<!--CLIENTE (INTESTATARIO DEL CONTO)-->\n<x4bisf:dim name=\"CODICE_TIPO_SOGGETTO\" value=\"02\"/>\n<x4bisf:dim name=\"NATURA_GIURIDICA\" value=\"NPF\"/>\n<x4bisf:dim name=\"CODICE_FISCALE\"\nvalue=\"012345678901\"/>\n<x4bisf:dim name=\"NPF_DENOMINAZIONE\" value=\"ACME\nLTD.\"/>\n<x4bisf:dim name=\"NPF_SEDELEG_IND_COMUNE\"\nvalue=\"016006\"/>\n<x4bisf:dim name=\"NPF_SEDELEG_IND_STATO\" value=\"086\"/>\n</x4bisf:cube>\n</msg:dataSegment>\n</msg:content>\n</msg:message>",
+"hash": "701f215c00ad7e0b"
+}
+]
+}

@@ -1,0 +1,64 @@
+{
+"id": "IVASS-1099a68fe4",
+"titolo": "Provvedimento ISVAP n. 2826 del 10 agosto 2010 Modalità tecniche di trasmissione dei dati alla banca dati sinistri di cui all'articolo 135 del decreto legislativo 7 settembre 2005, N. 209 - Codice delle Assicurazioni private",
+"estremi": "Provvedimento IVASS (normativo)",
+"fonte": "IVASS",
+"url": "https://www.ivass.it/normativa/nazionale/secondaria-ivass/normativi-provv/2010/provv-2826/isvp2826.pdf",
+"pagina": "https://www.ivass.it/normativa/nazionale/secondaria-ivass/normativi-provv/2010/provv-2826/index.html",
+"area": [
+"Distribuzione assicurativa"
+],
+"data": "2010-08-10",
+"scaricato_il": "2026-11-07T23:20:03+00:00",
+"n_articoli": 8,
+"articoli": [
+{
+"num": "Premessa",
+"rubrica": "MODALITÀ TECNICHE DI TRASMISSIONE DEI DATI ALLA BANCA DATI SINISTRI DI",
+"testo": "PROVVEDIMENTO N. 2826 del 10 agosto 2010\nMODALITÀ TECNICHE DI TRASMISSIONE DEI DATI ALLA BANCA DATI SINISTRI DI\nCUI ALL'ARTICOLO 135 DEL DECRETO LEGISLATIVO 7 SETTEMBRE 2005, N. 209 –\nCODICE DELLE ASSICURAZIONI PRIVATE\nL’ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI PRIVATE\nE DI INTERESSE COLLETTIVO\nVISTA la legge 12 agosto 1982, n. 576 e successive modificazioni ed integrazioni,\nrecante la riforma della vigilanza sulle assicurazioni;\nVISTO il decreto legislativo 7 settembre 2005, n. 209 e successive modificazioni ed\nintegrazioni, recante il Codice delle Assicurazioni Private;\nVISTO il decreto legislativo 30 giugno 2003, n. 196 e successive modificazioni ed\nintegrazioni, recante il Codice in materia di protezione dei dati personali;\nVISTO il Regolamento ISVAP n. 31 del 1 giugno 2009 recante la disciplina della\nbanca dati sinistri e, in particolare, l’articolo 7, comma 1, secondo cui l’ISVAP stabilisce con\nProvvedimento le modalità tecniche di comunicazione dei dati relativi ai sinistri,\nadotta il seguente:\nPROVVEDIMENTO",
+"hash": "230c6bec63ee4fce"
+},
+{
+"num": "Art. 1",
+"rubrica": "(Definizioni)",
+"testo": "Art. 1\n(Definizioni)\n1. Ai fini del presente Provvedimento si intende per:\na) “banca dati sinistri”: la banca dati istituita ai sensi dell’articolo 135 del decreto\nlegislativo 7 settembre 2005, n. 209 per la prevenzione e il contrasto di\ncomportamenti fraudolenti nel settore delle assicurazioni obbligatorie per i veicoli a\nmotore immatricolati in Italia;\nb) “CONSAP”: la Concessionaria servizi assicurativi pubblici S.p.A. in qualità di gestore\ndel Fondo di garanzia per le vittime della strada;\nc) \"impresa di assicurazione\" o “impresa”: l'impresa di assicurazione avente sede legale\nin Italia e la sede secondaria in Italia di impresa di assicurazione avente sede legale\nin uno Stato terzo, autorizzate all'esercizio delle assicurazioni di cui all'articolo 2 del\ndecreto legislativo 7 settembre 2005, n. 209;\nd) \"ISVAP\": l'Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo;\nprovv 2826.docx 1\ne) \"Regolamento\": il Regolamento ISVAP n. 31 del 1° giugno 2009 recante la disciplina\ndella banca dati sinistri;\nf) “sinistro\": il sinistro relativo all'assicurazione obbligatoria della responsabilità civile\nderivante dalla circolazione dei veicoli a motore immatricolati in Italia.",
+"hash": "6537b5ff7003c6c2"
+},
+{
+"num": "Art. 2",
+"rubrica": "(Finalità)",
+"testo": "Art. 2\n(Finalità)\n1. Il presente Provvedimento stabilisce le modalità tecniche con cui le imprese comunicano\ni dati relativi ai sinistri alla banca dati sinistri a norma degli articoli 6 e 7 del\nRegolamento.",
+"hash": "6eb93d6203becb0f"
+},
+{
+"num": "Art. 3",
+"rubrica": "(Tracciato record)",
+"testo": "Art. 3\n(Tracciato record)\n1. Le imprese comunicano in via telematica per ciascun sinistro i dati di cui all’articolo 6 del\nRegolamento secondo il tracciato record così come definito dal presente Provvedimento\ne dall’Allegato che ne costituisce parte integrante.\n2. Sono previste le seguenti otto tipologie di record contraddistinte dai rispettivi nomi:\nTipologie di record Nome del record\nSinistro SINI\nVeicoli/Coinvolti/Danni COLL\nVeicoli VEIC\nCoinvolti ANAC\nAltre Figure ANFI\nPagamenti PAGA\nDettaglio Danni DEDA\nInvio 0001\n3. L’Allegato definisce la composizione dei singoli record e contiene per ciascun record\nl’elenco e l’ordine dei campi da alimentare, con la descrizione del relativo contenuto\ninformativo. Per le informazioni codificate sono definiti i valori consentiti.\n4. L'ordine di trasmissione dei record del sinistro non è predeterminato, purché in ogni\nrecord sia presente, oltre al codice identificativo del sinistro, la necessaria chiave di\ncollegamento quale l'identificativo del soggetto e/o del veicolo secondo le modalità di cui\nall’Allegato.\n5. Ogni trasmissione si conclude con il record di invio che attesta la data e l’ora dell’invio, il\ncodice identificativo dell’impresa ed il numero dei record trasmessi ad eccezione del\nrecord di invio stesso.\nprovv 2826.docx 2",
+"hash": "3fd9021628cbd0bb"
+},
+{
+"num": "Art. 4",
+"rubrica": "(Standard di codifica dei dati)",
+"testo": "Art. 4\n(Standard di codifica dei dati)\n1. La codifica dei caratteri contenuti nell’invio è quella ASCII.\n2. Non è ammesso alcun carattere di fine file.\n3. I caratteri ammessi, l'uso dei caratteri delimitatori di campo ed il carattere di controllo\ncon il quale ogni record deve terminare sono definiti nell'Appendice 1 dell'Allegato.\n4. L'ISVAP comunica a ciascuna impresa eventuali variazioni nello standard di codifica dei\ndati.",
+"hash": "8618258656d1d789"
+},
+{
+"num": "Art. 5",
+"rubrica": "(Integrazione, rettifica e cancellazione di dati relativi al sinistro)",
+"testo": "Art. 5\n(Integrazione, rettifica e cancellazione di dati relativi al sinistro)\n1. Nelle ipotesi di integrazione, rettifica o cancellazione di dati di cui ai commi 3 e 4\ndell'articolo 7 del Regolamento, l'impresa provvede alla ritrasmissione di tutti i record\nrelativi al sinistro. I dati ritrasmessi si sovrappongono a quelli già presenti nella banca\ndati sinistri.\n2. Nell'ipotesi di cancellazione di un sinistro erroneamente comunicato l'impresa provvede\ncon le modalità stabilite nell'Appendice 3 dell'Allegato.",
+"hash": "67fa707ce1b18e9b"
+},
+{
+"num": "Art. 6",
+"rubrica": "(Pubblicazione)",
+"testo": "Art. 6\n(Pubblicazione)\n1. Il presente Provvedimento è pubblicato nella Gazzetta Ufficiale della Repubblica italiana,\nnel Bollettino e nel sito internet dell’ISVAP.",
+"hash": "cc0743ac9ebee374"
+},
+{
+"num": "Art. 7",
+"rubrica": "(Entrata in vigore)",
+"testo": "Art. 7\n(Entrata in vigore)\n1. Il presente Provvedimento entra in vigore il 1° gennaio 2011.\nRoma, 10 agosto 2010\nIl Presidente\n(Giancarlo Giannini)\nprovv 2826.docx 3",
+"hash": "f4ecf320aca7d934"
+}
+]
+}

@@ -1,0 +1,28 @@
+{
+"id": "UIF-35ff467d58",
+"titolo": "Nuovi controlli automatici sulle Comunicazioni Oggettive",
+"estremi": "UIF",
+"fonte": "UIF",
+"url": "https://uif.bancaditalia.it/pubblicazioni/comunicati/documenti/Oggettive_nuovi_controlli_2024.pdf",
+"pagina": "https://uif.bancaditalia.it/pubblicazioni/comunicati/documenti/Oggettive_nuovi_controlli_2024.pdf",
+"area": [
+"Antiriciclaggio"
+],
+"data": "",
+"scaricato_il": "2026-11-07T23:23:27+00:00",
+"n_articoli": 2,
+"articoli": [
+{
+"num": "Premessa",
+"rubrica": "per l’Italia",
+"testo": "Unità di Informazione Finanziaria\nper l’Italia\nRoma, 14 maggio 2024\nCOMUNICATO\nNuovi controlli automatici sulle Comunicazioni Oggettive\nPer aumentare l’affidabilità delle informazioni e ridurre gli errori segnaletici è stato\nrevisionato il sistema di controlli automatici eseguiti in fase di acquisizione delle\nComunicazioni Oggettive.\nLe modifiche, puntualmente descritte nella seguente tabella, hanno l’obiettivo di\ngarantire una maggiore aderenza dei dati alle previsioni riportate nel documento\n“Informazioni e dati contenuti nelle comunicazioni oggettive” 1 e, al contempo, consentire una più\naccurata rappresentazione di alcune casistiche particolari.\nPer le osservazioni che non dovessero soddisfare tali controlli, che saranno\noperativi a partire dal 7 ottobre 2024, il sistema evidenzierà un rilievo e la comunicazione\nnon sarà acquisita.\nPer maggiori informazioni è possibile contattare la casella di supporto:\nVIT.Oggettive@bancaditalia.it.\n# Controllo Descrizione\nPer i soggetti con ruolo “Cliente” (codice tipo soggetto\n01 oppure 02) occorre obbligatoriamente valorizzare il\nObbligatorietà dei codici codice ATECO e il SAE - Sottogruppo di attività",
+"hash": "d7ac68e28dd3c548"
+},
+{
+"num": "par. 1",
+"rubrica": "ATECO e SAE per economica (campi CODICE_ATECO e",
+"testo": "1 ATECO e SAE per economica (campi CODICE_ATECO e\nsoggetti con ruolo cliente SGRP_ATTIVITA_EC). Il valore residuale ‘0000’ per\nil codice ATECO è ammissibile unicamente ove non\nprevisto dal SAE.\nPer le operazioni di tipo bonifico (tipo operazione 26,\nObbligatorietà della 48 oppure AA) occorre obbligatoriamente inserire un\n2 controparte per i soggetto con ruolo “Controparte” (codice tipo soggetto\nbonifici\n06 oppure 10).\n1 https://uif.bancaditalia.it/adempimenti-operatori/comunicazioni-oggettive/Oggettive_Contenuti.pdf.\n# Controllo Descrizione\nAffinamento del Per i soggetti di tipo Persona Fisica nati in Italia occorre\ncontrollo sul formato dei indicare un codice fiscale alfanumerico di lunghezza pari\ncodici fiscali delle a 16 caratteri.\npersone fisiche\nPer i soggetti di tipo Persona Non Fisica con sede legale\nAffinamento del\ncontrollo sul formato dei in Italia occorre indicare un codice fiscale numerico di\n4 lunghezza pari a 11 cifre. Tale codice, inoltre, non può\ncodici fiscali delle\npersone non fisiche essere composto da tutti zeri.\nI codici ABICAB inseriti nelle comunicazioni devono\nrisultare attivi per almeno un giorno nel mese di\nAmpliamento del riferimento. In caso di variazione del codice ABICAB\n5 controllo di validità dei nel corso del mese (ad es. a fronte dell’accorpamento di\nCodici ABICAB Filiale\npiù sportelli) occorre quindi indicare il codice ABICAB\nvalido alla data dell’operazione2.\nIn caso di bonifico in contanti verso paesi esteri non\nSEPA3 occorre indicare, quale identificativo del\nAmpliamento del\ncontrollo rapporto in alternativa al codice IBAN, il codice BIC e\n6 il numero del conto estero, secondo il seguente formato:\nsull’Identificativo\nRapporto BIC - numero BIC - numero di conto\n(es. BIC-BITAITRRB2B-0123456789).\n2 In precedenza il sistema verificava che il codice ABICAB fosse valido nell’ultimo giorno del mese. Quindi in caso di\nvariazione del codice ABICAB nel corso del mese (ad es. a fronte dell’accorpamento di più sportelli) occorreva indicare\nsempre il nuovo codice ABICAB.\n3 Sprovvisti, quindi, di codice IBAN.",
+"hash": "deab2fdecadd0243"
+}
+]
+}
