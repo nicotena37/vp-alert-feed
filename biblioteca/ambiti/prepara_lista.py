@@ -10,8 +10,8 @@ for i in ids:
     if not v or not p: continue
     arts = json.load(open(p)).get("articoli", [])
     voci.append({"id": i, "titolo": v["titolo"][:300], "estremi": v.get("estremi", "")[:100],
-                 "rubriche": "; ".join(f"{a['num']} {a.get('rubrica','')}"[:90] for a in arts)[:2500],
-                 "testo": " ".join(a["testo"] for a in arts)[:4000]})
+                 "rubriche": "; ".join(f"{a['num']} {a.get('rubrica','')}"[:90] for a in arts)[:int(os.environ.get("RUB", 2500))],
+                 "testo": " ".join(a["testo"] for a in arts)[:int(os.environ.get("TXT", 4000))]})
 for k in range(0, len(voci), n):
     open(f"{B}/ambiti/{pref}_{k//n+1:02d}_input.jsonl", "w").write("\n".join(json.dumps(x, ensure_ascii=False) for x in voci[k:k+n]) + "\n")
 print(len(voci), "atti in", (len(voci) + n - 1) // n, "blocchi")
