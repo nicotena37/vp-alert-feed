@@ -1,0 +1,120 @@
+{
+"id": "UE-32022O0971",
+"titolo": "Indirizzo (UE) 2022/971 della Banca centrale europea del 19 maggio 2022 relativo all’archivio centralizzato sui titoli e alla produzione di statistiche sulle emissioni di titoli e che abroga l’indirizzo BCE/2012/21 e l’indirizzo (UE) 2021/834 (BCE/2022/25)",
+"estremi": "CELEX 32022O0971",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022O0971",
+"area": [
+"Segnalazioni di Vigilanza"
+],
+"scaricato_il": "2026-11-07T23:42:13+00:00",
+"n_articoli": 17,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Definizioni",
+"testo": "Articolo 1\nDefinizioni\nAi fini del presente indirizzo, si applicano le seguenti definizioni:\n(1)\nper «archivio centralizzato sui titoli» (Centralised Securities Database, CSDB) si intende l’archivio centralizzato sui titoli costituito dal Sistema europeo di banche centrali (SEBC);\n(2)\nper «dati di input» si intendono i dati forniti al CSDB da una o più delle seguenti fonti di dati: a) banche centrali nazionali degli Stati membri la cui moneta è l’euro (di seguito: le «BCN») e banche centrali nazionali degli Stati membri la cui moneta non è l’euro (di seguito: le «BCN non appartenenti all’area dell’euro»); b) fonti interne alla Banca centrale europea; c) fornitori commerciali di dati; d) fonti amministrative; e) informazioni di dominio pubblico;\n(3)\nper «fascia di fornitura di dati di input» si intende un periodo di giorni lavorativi in ogni mese di calendario, definito dalla Banca centrale europea (BCE) e durante il quale le BCN possono fornire dati di input al CSDB;\n(4)\nper «dati di output» si intendono i dati voce per voce ricavati automaticamente dal CSDB combinando i dati di input in un unico record completo e di qualità elevata;\n(5)\nper «dati di output utilizzabili come feed» si intende il sottoinsieme voce per voce di caratteristiche e dati di output elencato all’allegato III del presente indirizzo per agevolare la produzione di statistiche o per altri fini;\n(6)\nper «statistiche aggregate CSEC» si intendono le statistiche aggregate sulle emissioni di titoli che comprendono gli aggregati di stock e di flusso delle emissioni di titoli prodotte a partire dai dati di output del CSDB voce per voce, come specificato nell’allegato IV al presente indirizzo;\n(7)\nper «gestione della qualità dei dati» (Data Quality Management, DQM) si intendono le attività intese a garantire, verificare e mantenere la qualità dei dati di output utilizzabili come feed e le statistiche aggregate CSEC attraverso l’uso e l’applicazione di obiettivi, metriche, soglie e specifici flussi di lavoro DQM;\n(8)\nper «gestione delle fonti dei dati» (Data Source Management, DSM) si intende l’individuazione e la correzione di errori ricorrenti e/o strutturali nei dati di input direttamente presso il fornitore degli stessi;\n(9)\nper «DQM iniziale» si intende la DQM dei dati di output voce per voce utilizzabili come feed e delle statistiche aggregate CSEC, riguardante l’anteprima di fine mese con riferimento al mese più recente, condotta su base mensile;\n(10)\nper «DQM periodica» si intende la DQM dei dati di output voce per voce utilizzabili come feed e delle statistiche aggregate CSEC, riguardante i mesi di riferimento precedenti al mese coperto dalla DQM iniziale, condotta su base mensile tenendo conto dei dati di riferimento diversi da quelli contenuti nel CSDB forniti da varie fonti di dati per assicurare che la qualità dei dati di output del CSDB soddisfi i requisiti previsti per i dati del CSDB utilizzabili come feed;\n(11)\nper «obiettivo DQM» si intende un benchmark per la valutazione della qualità dei dati di output utilizzabili come feed, secondo quanto specificato nell’allegato II al presente indirizzo;\n(12)\nper «metrica DQM» si intende un indicatore statistico che misura il livello al quale è stato raggiunto un determinato obiettivo DQM, come specificato nell’allegato II al presente indirizzo;\n(13)\nper «soglia DQM» si intende il livello minimo di verifiche da condurre allo scopo di soddisfare i requisiti del quadro di riferimento DQM per un determinato obiettivo DQM;\n(14)\nper «eccezione DQM» si intende un possibile problema di qualità dei dati individuato mediante una norma specifica e per il quale i dati devono essere confermati o corretti al fine di raggiungere la rispettiva soglia DQM;\n(15)\nper «flusso di lavoro DQM» si intende un processo tecnico applicato alla correzione dei dati di input con il fine di rispettare una determinata soglia DQM;\n(16)\nper «anteprima di fine mese» si intende un aggiornamento su base giornaliera dei dati di output e delle metriche DQM che produce un’approssimazione dei dati di output alla fine del mese in questione;\n(17)\nper «statistiche aggregate CSEC iniziali» si intendono le statistiche aggregate CSEC relative al mese di riferimento più recente;\n(18)\nper «statistiche aggregate CSEC periodiche» si intendono le statistiche aggregate CSEC relative ai mesi di riferimento precedenti il mese cui si riferiscono le statistiche aggregate CSEC iniziali;\n(19)\nper «serie prioritarie CSEC» si intendono le statistiche aggregate CSEC del livello più basso soggette ai requisiti DQM, come precisato nell’allegato II e nell’allegato IV al presente indirizzo;\n(20)\nper «mese di riferimento» si intende il mese di calendario al quale si riferiscono i dati o le statistiche pertinenti;\n(21)\nper «giornata lavorativa» si intende una giornata intera che non è un giorno festivo della BCE, così come pubblicato sul sito Internet della BCE;\n(22)\nper «verifica» si intende il processo di controllo dei dati di output del CSDB utilizzabili come feed e le statistiche aggregate CSEC e, se necessario, di correzione dei dati di input del CSDB, applicando a tale scopo il flusso di lavoro DQM;\n(23)\nper «residente» si intende quanto definito nel regolamento (UE) n. 549/2013 del Parlamento europeo e del Consiglio ( 4 ) ;\n(24)\nper «codice ISIN» si intende il numero internazionale di identificazione dei titoli come definito dall’International Standards Organization (ISO) nella norma ISO 6166;\n(25)\nper «identificativo di collegamento dell’entità» si intende un identificativo dell’entità che è incluso sia nel CSDB sia nel registro anagrafico delle istituzioni e delle entità affiliate (RIAD) del SEBC e che è un codice RIAD, un altro identificativo dell’entità nazionale utilizzato dalla BCN o BCN non appartenente all’area dell’euro competente, un Legal Entity Identifier (LEI) definito dalla norma ISO 17442 o un altro identificativo dell’entità comunemente accettato dalla BCE e dalla BCN o BCN non appartenente all’area dell’euro competente.",
+"hash": "bd8ad2b42a7e51b1"
+},
+{
+"num": "2",
+"rubrica": "-",
+"testo": "Articolo 2\n-\n-\nArticolo 3, paragrafo 1\nArticolo 3, paragrafo 1\n-\nArticolo 3, paragrafo 2\nArticolo 3, paragrafo 2\n-\nArticolo 3, paragrafo 3\n-\n-\nArticolo 4, paragrafi 1, 2, 3 e 4",
+"hash": "5105a1e4d8d0af46"
+},
+{
+"num": "3",
+"rubrica": "Ruolo della BCE e delle BCN",
+"testo": "Articolo 3\nRuolo della BCE e delle BCN\n1. La BCE, con l’assistenza delle BCN, definisce i processi operativi del CSDB, elabora le statistiche aggregate CSEC e produce dati di output, inclusi i dati di output utilizzabili come feed.\n2. In conformità al presente indirizzo, le BCN:\na)\nforniscono al CSDB i dati di input sui titoli emessi dai residenti nei rispettivi Stati membri, ove tali dati siano prontamente disponibili;\nb)\nconducono la DQM dei dati relativi agli emittenti residenti nei rispettivi Stati membri;\nc)\nverificano le statistiche aggregate CSEC relative agli emittenti residenti nei rispettivi Stati membri.\n3. La BCE:\na)\nconduce la DQM dei dati relativi agli emittenti che risiedono al di fuori dell’area dell’euro, a meno che una BCN non appartenente all’area dell’euro abbia accettato la responsabilità di condurre la DQM per i dati relativi agli emittenti residenti nel rispettivo Stato membro;\nb)\nverifica le statistiche aggregate CSEC relative agli emittenti residenti al di fuori dell’area dell’euro, a meno che una BCN non appartenente all’area dell’euro abbia accettato la responsabilità di verificare le statistiche aggregate CSEC relative agli emittenti che risiedono nel rispettivo Stato membro.",
+"hash": "05780dd67f814c1a"
+},
+{
+"num": "4",
+"rubrica": "Fornitura di dati di input da parte delle BCN",
+"testo": "Articolo 4\nFornitura di dati di input da parte delle BCN\n1. Qualora le BCN dispongano prontamente di dati voce per voce sui titoli emessi dai residenti nei rispettivi Stati membri, le BCN devono fornire periodicamente tali dati al CSDB.\n2. Qualora le BCN dispongano prontamente di dati voce per voce sui titoli emessi da residenti di altri paesi, le BCN possono fornire periodicamente tali dati al CSDB previo accordo con:\na)\nla BCN responsabile della DQM dei dati relativi al rispettivo emittente in conformità all’articolo 3 del presente indirizzo; e\nb)\nla BCE per i dati relativi agli emittenti che risiedono al di fuori dell’area dell’euro, a meno che una BCN non appartenente all’area dell’euro abbia accettato la responsabilità di condurre la DQM per i dati relativi agli emittenti che risiedono nel rispettivo Stato membro.\n3. Quando le BCN forniscono al CSDB i file contenenti dati di input, devono includere, come minimo, le informazioni per gli attributi di cui alla tabella 1 dell’allegato I del presente indirizzo.\n4. I dati di input sui titoli trasmessi al CSDB identificano i singoli titoli con i rispettivi codici ISIN.\n5. Se una BCN ha apportato correzioni migliorative ai propri dati di input, essa fornisce i file contenenti i dati di input rivisti al CSDB o utilizza il sistema CSDB per correggere eventuali errori e omissioni nei propri dati di input che non sono stati corretti nel corso della verifica dei dati come indicato all’articolo 5.\n6. Le BCN specificano annualmente le date di trasmissione dei dati di input che utilizzeranno per fornire al CSDB i file contenenti i dati di input conformemente alle fasce di trasmissione di dati di input definite dalla BCE.\n7. Conformemente all’articolo 26 dell’indirizzo BCE/2018/16 della Banca centrale europea ( 5 ) , le BCN assicurano che gli emittenti di titoli residenti siano registrati nelle serie di dati RIAD del SEBC. Le BCN che forniscono al CSDB i file contenenti dati di input vi includono almeno un identificativo dell’entità di collegamento già inserito nel RIAD.",
+"hash": "0c4ce53bc7b6eb1b"
+},
+{
+"num": "5",
+"rubrica": "Gestione della qualità dei dati",
+"testo": "Articolo 5\nGestione della qualità dei dati\n1. La BCE e le BCN effettuano la DQM iniziale e la DQM periodica. Nell’esercizio di tale funzione, esse verificano i dati di output utilizzabili come feed voce per voce e le statistiche aggregate CSEC, indipendentemente dalla fonte di tali dati o statistiche.\n2. La DQM si applica agli obiettivi DQM 1, 2, 3a e 3b e alle corrispondenti metriche DQM, come precisato nell’allegato II al presente indirizzo. Tali metriche si basano sui dati di fine mese che sono aggiornati dalla BCE su base giornaliera nel rispetto dei requisiti di servizio applicabili del SEBC.\n3. Per gli attributi di cui all’allegato II, la BCE e le BCN applicano le soglie DQM a un livello tale da assicurare la qualità dei dati di output utilizzabili come feed per agevolare l’utilizzo di tali attributi come indicato all’allegato III al presente indirizzo.\n4. La BCE e le BCN verificano i dati di output utilizzabili come feed nella misura in cui sia stato verificato che, conformemente alle metriche DQM, tutte le eccezioni DQM per gli obiettivi DQM 1, 3a e 3b raggiungano le soglie DQM.\n5. La BCE e le BCN verificano le statistiche aggregate CSEC iniziali e periodiche nella misura in cui sia stato verificato che tutte le eccezioni DQM per l’obiettivo DQM 2 raggiungano le soglie DQM.\n6. Le BCN correggono i dati di input conformemente al flusso di lavoro DQM concordato utilizzando il sistema CSDB oppure, se del caso, fornendo alla BCE i file contenenti i dati di input.",
+"hash": "9cb2ba4df200d687"
+},
+{
+"num": "6",
+"rubrica": "DQM iniziale",
+"testo": "Articolo 6\nDQM iniziale\n1. La DQM iniziale si applica ai dati contenuti nell’anteprima di fine mese per il mese di riferimento della fase di produzione corrente.\n2. La BCE e le BCN verificano le eccezioni DQM per assicurare che, dopo l’applicazione della DQM iniziale, i dati di output utilizzabili come feed e le statistiche aggregate CSEC iniziali riflettano gli andamenti più recenti.\n3. Nel condurre la DQM iniziale, la BCE e le BCN si basano esclusivamente sulle informazioni prontamente disponibili.",
+"hash": "1d0b0e6be34f665f"
+},
+{
+"num": "7",
+"rubrica": "Articolo 5, paragrafo 4 e articolo 6, paragrafo 2",
+"testo": "Articolo 7\nArticolo 5, paragrafo 4 e articolo 6, paragrafo 2\n-",
+"hash": "e62244b027f62d72"
+},
+{
+"num": "8",
+"rubrica": "Articolo 7, paragrafo 1",
+"testo": "Articolo 8\nArticolo 7, paragrafo 1\n-\nArticolo 9, paragrafo 1\nArticolo 7, paragrafo 2\n-\nArticolo 9, paragrafo 2\n-\n-\nArticolo 9, paragrafo 3\n-\n-",
+"hash": "475eac8432c4749d"
+},
+{
+"num": "9",
+"rubrica": "Gestione delle fonti dei dati",
+"testo": "Articolo 9\nGestione delle fonti dei dati\n1. Quando le BCN individuano problemi connessi alla DSM relativi a fonti di dati commerciali, segnalano tali problemi alla BCE indicandone la rilevanza con riferimento sia alla loro entità, in termini di consistenze o di capitalizzazione di mercato dei titoli interessati, sia agli specifici dati di output utilizzabili come feed interessati.\n2. La BCE segnala ai rispettivi fornitori di dati i problemi connessi alla DSM di grande rilevanza relativi a fonti di dati commerciali entro un mese dalla data di segnalazione di un problema di DSM alla BCE. Nei limiti del possibile, la BCE si adopera al meglio per affrontare i problemi connessi alla DSM di grande rilevanza in cooperazione con i fornitori di dati interessati.\n3. La BCE segnala i problemi connessi alla DSM relativi ai dati di input forniti dalle BCN indicandone la rilevanza con riferimento sia alla loro entità, in termini di consistenze o di capitalizzazione di mercato dei titoli interessati, sia agli specifici dati di output utilizzabili come feed interessati. Nei limiti dei propri mezzi, le BCN si adoperano al meglio per affrontare i problemi connessi alla DSM di grande rilevanza nei loro dati di input in cooperazione con la BCE.",
+"hash": "9355f008d0b2e6c0"
+},
+{
+"num": "10",
+"rubrica": "-",
+"testo": "Articolo 10\n-\n-",
+"hash": "b91dba93d550f8c2"
+},
+{
+"num": "11",
+"rubrica": "Fornitura dei dati di output",
+"testo": "Articolo 11\nFornitura dei dati di output\n1. La BCE mette a disposizione delle BCN:\na)\nun’istantanea dei dati di output utilizzabili come feed mensili, come specificato nell’allegato III al presente indirizzo, su base mensile;\nb)\nun’istantanea dei dati voce per voce sui quali si basano le statistiche aggregate CSEC e le statistiche aggregate CSEC per il mese di riferimento precedente, su base mensile;\nc)\nper il giorno di riferimento precedente e nei limiti della massima diligenza possibile, un’istantanea dei dati di output utilizzabili come feed giornalieri, come specificato nell’allegato III al presente indirizzo, su base giornaliera, riguardanti i titoli più rilevanti come approvato dal Comitato per le statistiche del SEBC.\n2. La BCE mette inoltre a disposizione delle BCN eventuali revisioni dei seguenti elementi:\na)\nistantanea dei dati di output utilizzabili come feed come specificato nell’allegato III al presente indirizzo;\nb)\nistantanea dei dati voce per voce alla base delle statistiche aggregate CSEC e delle statistiche aggregate CSEC per almeno gli ultimi 12 mesi di riferimento;\nc)\nistantanea dei dati voce per voce alla base delle statistiche aggregate CSEC e delle statistiche aggregate CSEC per almeno gli ultimi 36 mesi di riferimento, ma esclusi i periodi precedenti dicembre 2020, su base annua.\n3. I dati di cui ai paragrafi 1 e 2 devono essere utilizzati esclusivamente a fini statistici, compresa la produzione e la compilazione di statistiche. Per l’uso dei dati a fini non statistici, si applicano le norme e le procedure per la comunicazione di informazioni statistiche riservate approvate dal Consiglio direttivo.\n4. I dati di cui ai paragrafi 1 e 2 sono resi disponibili mediante trasmissione o altri mezzi comunemente accettati dalla BCE e dalle BCN.",
+"hash": "04d0357d974cd751"
+},
+{
+"num": "12",
+"rubrica": "Pubblicazione",
+"testo": "Articolo 12\nPubblicazione\n1. Le BCN non pubblicano aggregati nazionali o aggregati dell’area dell’euro delle statistiche sulle emissioni di titoli elaborate utilizzando i dati del CSDB prima della rispettiva pubblicazione delle statistiche aggregate CSEC da parte della BCE. Ciò non impedisce alle BCN di pubblicare gli aggregati nazionali delle statistiche sulle emissioni di titoli, la cui compilazione non si basa sui dati del CSDB, conformemente ai calendari di pubblicazione nazionali.\n2. Nel pubblicare gli aggregati delle statistiche sulle emissioni di titoli per l’area dell’euro, le BCN riproducono accuratamente gli aggregati pubblicati dalla BCE.",
+"hash": "068b884302eacaa0"
+},
+{
+"num": "13",
+"rubrica": "Obblighi di verifica di dati storici in caso di adozione dell’euro",
+"testo": "Articolo 13\nObblighi di verifica di dati storici in caso di adozione dell’euro\nQualora uno Stato membro la cui moneta non è l’euro adotti l’euro in seguito all’entrata in vigore del presente indirizzo, la banca centrale nazionale di tale Stato membro si adopera al massimo per verificare le statistiche aggregate CSEC per tale Stato membro almeno a partire dal mese di riferimento dicembre 2020 o, se posteriore, per i tre anni precedenti la data di adozione dell’euro.",
+"hash": "50019aa096e8ac52"
+},
+{
+"num": "14",
+"rubrica": "-",
+"testo": "Articolo 14\n-\n-",
+"hash": "36313bebe9a0277c"
+},
+{
+"num": "15",
+"rubrica": "Abrogazione",
+"testo": "Articolo 15\nAbrogazione\n1. L’indirizzo BCE/2012/21 e l’indirizzo (UE) 2021/834 (BCE/2021/15) sono abrogati.\n2. Qualunque riferimento agli indirizzi abrogati è da intendersi come effettuato al presente indirizzo ed è da interpretarsi in conformità della tavola di concordanza contenuta nell’allegato V.",
+"hash": "ebca7e62e1d777ab"
+},
+{
+"num": "16",
+"rubrica": "Efficacia e implementazione",
+"testo": "Articolo 16\nEfficacia e implementazione\n1. Gli effetti del presente indirizzo decorrono dal giorno della notifica alle banche centrali nazionali degli Stati membri la cui moneta è l’euro.\n2. Le banche centrali nazionali degli Stati membri la cui moneta è l’euro e la BCE si conformano al presente indirizzo a decorrere dal 1° giugno 2022.",
+"hash": "a5ce56dcb7258dde"
+},
+{
+"num": "17",
+"rubrica": "-",
+"testo": "Articolo 17\n-\n-",
+"hash": "64f22ceaa92f57e7"
+}
+],
+"meta": {
+"celex_consolidato": "32022O0971",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022O0971"
+}
+}
