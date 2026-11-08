@@ -1,0 +1,102 @@
+{
+"id": "UE-32017R0580",
+"titolo": "Regolamento delegato (UE) 2017/580 della Commissione, del 24 giugno 2016, che integra il regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione inerenti alla conservazione dei dati pertinenti agli ordini relativi a strumenti fina",
+"estremi": "CELEX 32017R0580",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32017R0580",
+"area": [
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T23:03:21+00:00",
+"n_articoli": 14,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Portata, standard e formato dei dati rilevanti dell'ordine",
+"testo": "Articolo 1\nPortata, standard e formato dei dati rilevanti dell'ordine\n1. I gestori delle sedi di negoziazione tengono a disposizione della rispettiva autorità competente i dettagli di ciascun ordine immesso nei propri sistemi di cui agli articoli da 2 a 13 specificati nella seconda e terza colonna della tabella 2 dell'allegato nella misura in cui si riferiscono all'ordine in questione.\n2. Ove le autorità competenti richiedano qualsivoglia dettaglio di cui al paragrafo 1 conformemente all'articolo 25, paragrafo 2, del regolamento (UE) n. 600/2014, i gestori delle sedi di negoziazione forniscono tali dettagli utilizzando gli standard e i formati prescritti nella quarta colonna della tabella 2 dell'allegato del presente regolamento.",
+"hash": "6ad65e9d223daaa3"
+},
+{
+"num": "2",
+"rubrica": "Identificazione delle parti rilevanti",
+"testo": "Articolo 2\nIdentificazione delle parti rilevanti\n1. Per tutti gli ordini, i gestori delle sedi di negoziazione conservano le registrazioni delle seguenti informazioni:\n(a)\nil membro o partecipante della sede di negoziazione che ha immesso l'ordine nella sede di negoziazione, identificato come specificato nel campo 1 della tabella 2 dell'allegato;\n(b)\nla persona o l'algoritmo informatico all'interno del membro o partecipante della sede di negoziazione nella quale è stato immesso un ordine che è responsabile della decisione di investimento relativa all'ordine, identificati come specificato nel campo 4 della tabella 2 dell'allegato;\n(c)\nla persona o l'algoritmo informatico all'interno del membro o partecipante della sede di negoziazione che è responsabile dell'esecuzione dell'ordine, identificati come specificato nel campo 5 della tabella 2 dell'allegato;\n(d)\nil membro o partecipante della sede di negoziazione che ha inoltrato l'ordine per conto e a nome di un altro membro o partecipante della sede di negoziazione, identificato come broker non esecutivo come specificato nel campo 6 della tabella 2 dell'allegato;\n(e)\nil cliente per conto del quale il membro o partecipante della sede di negoziazione ha immesso l'ordine nella sede di negoziazione, identificato come specificato nel campo 3 della tabella 2 dell'allegato.\n2. Qualora un membro o partecipante o cliente della sede di negoziazione sia autorizzato dalla legislazione di uno Stato membro ad assegnare un ordine al proprio cliente previa immissione dell'ordine nella sede di negoziazione e al momento dell'immissione dell'ordine nella sede di negoziazione non abbia ancora assegnato l'ordine al proprio cliente, tale ordine è identificato come specificato nel campo 3 della tabella 2 dell'allegato.\n3. Qualora diversi ordini siano immessi insieme nella sede di negoziazione come ordine aggregato, l'ordine aggregato è identificato come specificato nel campo 3 della tabella 2 dell'allegato.",
+"hash": "07ef8c8414c9eb6a"
+},
+{
+"num": "3",
+"rubrica": "Capacità di negoziazione dei membri o partecipanti della sede di negoziazione e attività di fornitura di liquidità",
+"testo": "Articolo 3\nCapacità di negoziazione dei membri o partecipanti della sede di negoziazione e attività di fornitura di liquidità\n1. La capacità di negoziazione nella quale il membro o partecipante della sede di negoziazione immette un ordine è descritta come specificato nel campo 7 della tabella 2 dell'allegato.\n2. Sono identificati come specificato nel campo 8 della tabella 2 dell'allegato gli ordini seguenti:\na)\nun ordine immesso in una sede di negoziazione da un membro o partecipante nell'ambito di una strategia di market making ai sensi degli articoli 17 e 48 della direttiva 2014/65/UE del Parlamento europeo e del Consiglio ( 3 ) ;\nb)\nun ordine immesso in una sede di negoziazione da un membro o partecipante nell'ambito di qualsivoglia altra attività di fornitura di liquidità svolta sulla base di condizioni prestabilite dall'emittente dello strumento oggetto dell'ordine o da tale sede di negoziazione.",
+"hash": "0a9dfd7a0367bc22"
+},
+{
+"num": "4",
+"rubrica": "Registrazione della data e dell'ora",
+"testo": "Articolo 4\nRegistrazione della data e dell'ora\n1. I gestori delle sedi di negoziazione conservano la registrazione della data e dell'ora del verificarsi di ciascun evento elencato nel campo 21 della tabella 2 dell'allegato del presente regolamento con il grado di precisione specificato dall'articolo 2 del regolamento delegato (UE) 2017/574 della Commissione ( 4 ) , come specificato nel campo 9 della tabella 2 dell'allegato del presente regolamento. Tranne che per la registrazione della data e dell'ora del rifiuto di ordini da parte dei sistemi della sede di negoziazione, tutti gli eventi di cui al campo 21 della tabella 2 dell'allegato del presente regolamento sono registrati utilizzando gli orologi utilizzati dai motori di confronto delle sedi di negoziazione.\n2. I gestori delle sedi di negoziazione conservano la registrazione della data e dell'ora per ciascun elemento dei dati elencato nei campi 49, 50 e 51 della tabella 2 dell'allegato del presente regolamento, con il grado di precisione specificato dall'articolo 2 del regolamento delegato (UE) 2017/574.",
+"hash": "c395df4b77e223d3"
+},
+{
+"num": "5",
+"rubrica": "Periodo di validità e restrizioni relative agli ordini",
+"testo": "Articolo 5\nPeriodo di validità e restrizioni relative agli ordini\n1. I gestori delle sedi di negoziazione tengono la registrazione dei periodi di validità e delle restrizioni relative agli ordini di cui ai campi 10 e 11 della tabella 2 dell'allegato.\n2. Le registrazioni delle date e delle ore dei periodi di validità sono conservate come specificato nel campo 12 della tabella 2 dell'allegato per ciascun periodo di validità.",
+"hash": "894cb231c638a75d"
+},
+{
+"num": "6",
+"rubrica": "Numero prioritario e sequenziale",
+"testo": "Articolo 6\nNumero prioritario e sequenziale\n1. I gestori delle sedi di negoziazione che gestiscono sistemi di negoziazione secondo l'ordine prioritario prezzo-visibilità-tempo conservano la registrazione della marcatura temporale prioritaria per tutti gli ordini come specificato nel campo 13 della tabella 2 dell'allegato. La marcatura temporale prioritaria è conservata con lo stesso grado di precisione specificato all'articolo 4, paragrafo 1.\n2. I gestori delle sedi di negoziazione che gestiscono sistemi di negoziazione secondo l'ordine prioritario dimensione-tempo conservano la registrazione dei quantitativi che determinano la priorità degli ordini come specificato nel campo 14 della tabella 2 dell'allegato nonché la marcatura temporale prioritaria di cui al paragrafo 1.\n3. I gestori delle sedi di negoziazione che utilizzano un sistema combinato di ordine prioritario prezzo-visibilità-tempo e dimensione-tempo ed espongono gli ordini nel loro book di negoziazione in ordine di priorità temporale si conformano al paragrafo 1.\n4. I gestori delle sedi di negoziazione che utilizzano un sistema combinato di ordine prioritario prezzo-visibilità-tempo e dimensione-tempo ed espongono gli ordini nel loro book di negoziazione in ordine di priorità dimensione-tempo si conformano al paragrafo 2.\n5. I gestori delle sedi di negoziazione assegnano e conservano un numero sequenziale per tutti gli eventi come specificato nel campo 15 della tabella 2 dell'allegato.",
+"hash": "8e0e416a7c9476f0"
+},
+{
+"num": "7",
+"rubrica": "Codice identificativo degli ordini relativi a strumenti finanziari",
+"testo": "Articolo 7\nCodice identificativo degli ordini relativi a strumenti finanziari\n1. I gestori delle sedi di negoziazione conservano un codice identificativo individuale per ciascun ordine come specificato nel campo 20 della tabella 2 dell'allegato. Il codice identificativo è unico per book di negoziazione, giorno di negoziazione e strumento finanziario. Esso si applica dal momento in cui il gestore della sede di negoziazione riceve l'ordine fino a quando l'ordine è rimosso dal book di negoziazione. Il codice identificativo si applica anche agli ordini respinti a prescindere dal motivo del rifiuto.\n2. Il gestore della sede di negoziazione conserva i dettagli rilevanti degli ordini strategici con funzionalità implicita (strategy orders with implied functionality — SOIF) che sono divulgati al pubblico come specificato nell'allegato. Il campo 33 della tabella 2 dell'allegato comprende l'indicazione che l'ordine è un ordine implicito.\nUna volta eseguito un SOIF, i relativi dettagli sono conservati dal gestore della sede di negoziazione come specificato nell'allegato.\nUna volta eseguito un SOIF, è indicato un codice identificativo dell'ordine collegato alla strategia utilizzando lo stesso codice identificativo per tutti gli ordini collegati a quella determinata strategia. Il codice identificativo dell'ordine collegato alla strategia è indicato come specificato nel campo 46 della tabella 2 dell'allegato.\n3. Gli ordini immessi in una sede di negoziazione con possibilità di strategia di inoltro ( routing ) sono contrassegnati da tale sede di negoziazione con l'indicazione « routed » come specificato nel campo 33 della tabella 2 dell'allegato allorché sono inoltrati verso un'altra sede di negoziazione. Gli ordini immessi in una sede di negoziazione con possibilità di strategia di inoltro conservano lo stesso codice identificativo per tutto il loro ciclo di vita, indipendentemente dal fatto che eventuali quantitativi residui vengano ricollocati sul book di negoziazione di inserimento.",
+"hash": "9c38682cbf009063"
+},
+{
+"num": "8",
+"rubrica": "Eventi che incidono sugli ordini relativi a strumenti finanziari",
+"testo": "Articolo 8\nEventi che incidono sugli ordini relativi a strumenti finanziari\nI gestori delle sedi di negoziazione conservano la registrazione dei dettagli di cui al campo 21 della tabella 2 dell'allegato in relazione ai nuovi ordini.",
+"hash": "6c7561257ebfe56d"
+},
+{
+"num": "9",
+"rubrica": "Tipo di ordine relativo a strumenti finanziari",
+"testo": "Articolo 9\nTipo di ordine relativo a strumenti finanziari\n1. I gestori delle sedi di negoziazione conservano per ciascun ordine ricevuto la registrazione del tipo di ordine secondo la propria classificazione come specificato nel campo 22 della tabella 2 dell'allegato.\n2. I gestori delle sedi di negoziazione classificano ciascun ordine ricevuto o come ordine con limite di prezzo o come ordine stop, come specificato nel campo 23 della tabella 2 dell'allegato.",
+"hash": "fc3a573f7225cd17"
+},
+{
+"num": "10",
+"rubrica": "Prezzi relativi agli ordini",
+"testo": "Articolo 10\nPrezzi relativi agli ordini\nI gestori delle sedi di negoziazione conservano la registrazione di tutti i dettagli del prezzo di cui alla sezione I della tabella 2 dell'allegato nella misura in cui si riferiscono agli ordini.",
+"hash": "6eb302fcd4258e53"
+},
+{
+"num": "11",
+"rubrica": "Istruzioni relative all'ordine",
+"testo": "Articolo 11\nIstruzioni relative all'ordine\nI gestori delle sedi di negoziazione conservano le registrazioni di tutte le istruzioni ricevute per ciascun ordine come specificato nella sezione J della tabella 2 dell'allegato.",
+"hash": "9a8d063426990e7e"
+},
+{
+"num": "12",
+"rubrica": "Codice identificativo dell'operazione della sede di negoziazione",
+"testo": "Articolo 12\nCodice identificativo dell'operazione della sede di negoziazione\nI gestori delle sedi di negoziazione conservano un codice identificativo individuale di ciascuna operazione risultante dall'esecuzione integrale o parziale di un ordine come specificato nel campo 48 della tabella 2 dell'allegato.",
+"hash": "d511cfa97142f604"
+},
+{
+"num": "13",
+"rubrica": "Fasi di negoziazione, prezzo e volume indicativo d'asta",
+"testo": "Articolo 13\nFasi di negoziazione, prezzo e volume indicativo d'asta\n1. I gestori delle sedi di negoziazione conservano la registrazione dei dettagli dell'ordine come specificato nella sezione K della tabella 2 dell'allegato.\n2. Qualora le autorità competenti richiedano i dettagli di cui alla sezione K ai sensi dell'articolo 1, i dettagli di cui al campo 9 e ai campi da 15 a 18 della tabella 2 dell'allegato sono anch'essi considerati dettagli riguardanti l'ordine oggetto di tale richiesta.",
+"hash": "3cf10bf89af4cc62"
+},
+{
+"num": "14",
+"rubrica": "Entrata in vigore e applicazione",
+"testo": "Articolo 14\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nEsso si applica a decorrere dalla data di cui all'articolo 55, secondo comma, del regolamento (UE) n. 600/2014.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "f3e1cdfdc67fecc5"
+}
+],
+"meta": {
+"celex_consolidato": "32017R0580",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32017R0580"
+}
+}

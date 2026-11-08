@@ -1,0 +1,54 @@
+{
+"id": "UE-32026R0881",
+"titolo": "Regolamento delegato (UE) 2026/881 della Commissione, dell'11 dicembre 2025, che integra il regolamento (UE) 2024/2847 del Parlamento europeo e del Consiglio specificando i termini e le condizioni per l'applicazione dei motivi connessi alla cibersicurezza relativamente al ritardo nella diffusione de",
+"estremi": "CELEX 32026R0881",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32026R0881",
+"area": [
+"IT e Digital"
+],
+"scaricato_il": "2026-11-07T22:50:58+00:00",
+"n_articoli": 6,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Oggetto",
+"testo": "Articolo 1\nOggetto\nIl presente regolamento specifica i termini e le condizioni per l'applicazione dei motivi connessi alla cibersicurezza di cui all'articolo 16, paragrafo 2, del regolamento (UE) 2024/2847 che consentono al CSIRT designato come coordinatore che ha ricevuto per primo una notifica a norma dell'articolo 14, paragrafi 1 e 3, nonché dell'articolo 15, paragrafi 1 e 2, di tale regolamento di ritardare la diffusione della notifica ai CSIRT designati come coordinatori sul cui territorio il fabbricante ha indicato che il prodotto con elementi digitali è stato messo a disposizione.",
+"hash": "4c2463509ea95acf"
+},
+{
+"num": "2",
+"rubrica": "Definizioni",
+"testo": "Articolo 2\nDefinizioni\nAi fini del presente regolamento si applicano le definizioni seguenti:\n1)\n«CSIRT che ha ricevuto per primo la notifica»: il CSIRT designato come coordinatore che ha ricevuto per primo la notifica a norma dell'articolo 14, paragrafi 1 e 3, e dell'articolo 15, paragrafi 1 e 2, del regolamento (UE) 2024/2847;\n2)\n«CSIRT pertinente»: il CSIRT designato come coordinatore sul cui territorio il fabbricante ha indicato che il prodotto con elementi digitali è stato messo a disposizione.",
+"hash": "3c67d0bc67ae1ad0"
+},
+{
+"num": "3",
+"rubrica": "Termini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza derivanti dalla natura delle informazioni comunicate",
+"testo": "Articolo 3\nTermini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza derivanti dalla natura delle informazioni comunicate\nIl CSIRT che ha ricevuto per primo la notifica può decidere di ritardare, per un periodo di tempo limitato allo stretto necessario, la diffusione delle notifiche o di parti di esse ai CSIRT pertinenti nei casi in cui, alla luce della sensibilità delle informazioni notificate, i rischi di cibersicurezza posti dalla diffusione siano superiori ai benefici in termini di sicurezza e tali rischi non possano essere attenuati applicando restrizioni al trattamento o all'ulteriore condivisione della notifica attraverso protocolli adeguati, quali il protocollo del semaforo ( Traffic Light Protocol , TLP) o il protocollo delle azioni consentite ( Permissible Actions Protocol , PAP), e qualora sia soddisfatta almeno una delle condizioni seguenti:\na)\nil fabbricante ha informato il CSIRT che ha ricevuto per primo la notifica che entro 72 ore è prevista la messa a disposizione di una misura efficace di attenuazione dei rischi, come un aggiornamento di sicurezza o orientamenti per gli utilizzatori; se entro tale termine non è messa a disposizione una misura efficace di attenuazione dei rischi, il CSIRT che ha ricevuto per primo la notifica la diffonde ai CSIRT pertinenti;\nb)\nle informazioni comprese nella notifica sono ritenute sufficienti, alla luce della natura della vulnerabilità attivamente sfruttata notificata, per creare una tecnica di sfruttamento, in particolare quando la vulnerabilità può essere facilmente individuata e sfruttata da soggetti con competenze e risorse limitate; una volta disponibile una misura efficace di attenuazione dei rischi, come un aggiornamento di sicurezza o orientamenti per gli utilizzatori, il CSIRT che ha ricevuto per primo la notifica la diffonde ai CSIRT pertinenti;\nc)\nil CSIRT che ha ricevuto per primo la notifica è in grado di condividere con i CSIRT pertinenti informazioni sufficienti a garantire che questi ultimi possano mettere in atto adeguate misure di attenuazione dei rischi; una volta disponibile una misura efficace di attenuazione dei rischi, come un aggiornamento di sicurezza o orientamenti per gli utilizzatori, il CSIRT che ha ricevuto per primo la notifica diffonde la notifica completa ai CSIRT pertinenti;\nd)\nil CSIRT che ha ricevuto per primo la notifica della vulnerabilità attivamente sfruttata ne è stato informato nell'ambito di una divulgazione coordinata delle vulnerabilità per la quale tale CSIRT agisce in qualità di intermediario di fiducia a norma dell'articolo 12, paragrafo 1, della direttiva (UE) 2022/2555; in tal caso, e conformemente all'articolo 16, paragrafo 6, del regolamento (UE) 2024/2847, il CSIRT che ha ricevuto per primo la notifica la diffonde ai CSIRT pertinenti quando ritardarne la diffusione non è più strettamente necessario ed è stato dato il consenso alla divulgazione dalle parti coinvolte nella divulgazione coordinata delle vulnerabilità.",
+"hash": "f9950ccbff5e67b5"
+},
+{
+"num": "4",
+"rubrica": "Termini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza in relazione a uno specifico CSIRT",
+"testo": "Articolo 4\nTermini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza in relazione a uno specifico CSIRT\nIl CSIRT che ha ricevuto per primo la notifica può decidere di ritardare per un periodo di tempo strettamente necessario la diffusione delle notifiche o di parti di esse a uno specifico CSIRT pertinente nei casi in cui:\na)\nil CSIRT pertinente è stato interessato da un incidente di cibersicurezza che ha messo in dubbio la sua capacità di garantire la riservatezza delle informazioni notificate;\nb)\nha motivi sufficienti di ritenere che le capacità del CSIRT pertinente siano inadeguate a garantire la riservatezza delle informazioni notificate.\nNei casi di cui al primo comma, lettera a), il CSIRT che ha ricevuto per primo la notifica può ritardare la diffusione fino a quando il CSIRT pertinente non abbia informato la rete di CSIRT di cui all'articolo 15 della direttiva (UE) 2022/2555 del ripristino della sua capacità di garantire la riservatezza delle notifiche.\nNei casi di cui al primo comma, lettera b), il CSIRT che ha ricevuto per primo la notifica può ritardare la diffusione al CSIRT pertinente fino a quando quest'ultimo non abbia fornito prove di aver affrontato le carenze individuate.",
+"hash": "e7dab3daef465236"
+},
+{
+"num": "5",
+"rubrica": "Termini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza in relazione alla piattaforma unica di segnalazione",
+"testo": "Articolo 5\nTermini e condizioni per l'applicazione dei motivi connessi alla cibersicurezza in relazione alla piattaforma unica di segnalazione\nIl CSIRT che ha ricevuto per primo la notifica può decidere di ritardare la diffusione delle notifiche attraverso la piattaforma unica di segnalazione istituita dall'articolo 16 del regolamento (UE) 2024/2847 qualora l'ENISA abbia informato la rete di CSIRT, a norma dell'articolo 16, paragrafo 4, di tale regolamento, che la piattaforma unica di segnalazione è stata interessata da un incidente di cibersicurezza che mette in dubbio la sua capacità di garantire la riservatezza delle informazioni notificate. In tali casi il CSIRT che ha ricevuto per primo la notifica può ritardare la diffusione attraverso la piattaforma unica di segnalazione fino a quando l'ENISA non abbia informato la rete di CSIRT che è stata ripristinata la capacità della piattaforma di garantire la riservatezza delle notifiche.",
+"hash": "76d6da4d87d989a0"
+},
+{
+"num": "6",
+"rubrica": "Il presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .",
+"testo": "Articolo 6\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "d3e1a54e105a7779"
+}
+],
+"meta": {
+"celex_consolidato": "32026R0881",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32026R0881"
+}
+}

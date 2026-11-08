@@ -1,0 +1,73 @@
+{
+"id": "UE-32022R1855",
+"titolo": "Regolamento delegato (UE) 2022/1855 della Commissione del 10 giugno 2022 che integra il regolamento (UE) n. 648/2012 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione che specificano le informazioni minime da segnalare al repertorio di dati sulle negozi",
+"estremi": "CELEX 32022R1855",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022R1855",
+"area": [
+"Segnalazioni di Vigilanza",
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T22:54:24+00:00",
+"n_articoli": 9,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Dati da fornire nelle segnalazioni ai sensi dell'articolo 9, paragrafi 1 e 3, del regolamento (UE) n. 648/2012",
+"testo": "Articolo 1\nDati da fornire nelle segnalazioni ai sensi dell'articolo 9, paragrafi 1 e 3, del regolamento (UE) n. 648/2012\n1. Le segnalazioni ai repertori di dati sulle negoziazioni effettuate ai sensi dell'articolo 9, paragrafi 1 e 3, del regolamento (UE) n. 648/2012 includono i dati completi e accurati di cui alle tabelle 1, 2 e 3 dell'allegato del presente regolamento relativi al derivato in questione.\nTali dati sono comunicati in un'unica segnalazione.\n2. Nel segnalare la conclusione, la modifica o la cessazione del derivato, la controparte specifica nella segnalazione i dati relativi al tipo di azione e al tipo di evento, come descritto nei campi 151 e 152 della tabella 2 dell'allegato, a cui tale conclusione, modifica o cessazione si riferisce.\n3. In deroga al paragrafo 1, se i campi delle tabelle 1, 2 e 3 dell'allegato non consentono l'effettiva segnalazione dei dati di cui al paragrafo 1, tali dati sono comunicati in segnalazioni separate, come nel caso in cui il contratto derivato è costituito da una combinazione di contratti derivati che sono negoziati insieme come prodotto di un unico accordo economico.\nPrima del termine della segnalazione, le controparti di un contratto derivato costituito da una combinazione di contratti derivati di cui al primo comma stabiliscono di comune accordo il numero di segnalazioni separate da trasmettere al repertorio di dati sulle negoziazioni in relazione al contratto derivato.\nLa controparte segnalante collega le segnalazioni separate al gruppo di segnalazioni del derivato mediante un identificativo unico a livello della controparte, conformemente al campo 6 della tabella 2 dell'allegato.\n4. La segnalazione unica effettuata per conto di entrambe le controparti contiene i dati di cui alle tabelle 1, 2 e 3 dell'allegato relative a ognuna delle controparti.\n5. Quando una controparte trasmette i dati relativi a un derivato ad un repertorio di dati sulle negoziazioni per conto dell'altra controparte, ovvero un terzo segnala un contratto ad un repertorio di dati sulle negoziazioni per conto di una o di entrambe le controparti, le informazioni trasmesse includono tutti i dati che sarebbero stati trasmessi se i derivati fossero stati segnalati al repertorio di dati sulle negoziazioni separatamente da ogni parte.",
+"hash": "857310b7c2f82c70"
+},
+{
+"num": "2",
+"rubrica": "Operazioni compensate",
+"testo": "Articolo 2\nOperazioni compensate\n1. Se un derivato di cui sono già stati comunicati i dati a norma dell'articolo 9 del regolamento (UE) n. 648/2012 è successivamente compensato da una controparte centrale (CCP), detto derivato è segnalato come cessato specificando nei campi 151 e 152 della tabella 2 dell'allegato del presente regolamento come tipo di azione «Cessazione» e come tipo di evento «Compensazione». I nuovi derivati risultanti dalla compensazione sono segnalati specificando nei campi 151 e 152 della tabella 2 dell'allegato del presente regolamento il tipo di azione «Nuovo» e il tipo di evento «Compensazione».\n2. Quando i derivati sono conclusi in una sede di negoziazione o su una piattaforma di negoziazione organizzata situata al di fuori dell'Unione e compensati da una CCP nello stesso giorno, sono segnalati solo i derivati risultanti dalla compensazione. Tali derivati sono segnalati specificando nei campi 151 e 152 della tabella 2 dell'allegato del presente regolamento o il tipo di azione «Nuovo» o il tipo di azione «Componente di posizione», conformemente all'articolo 3, paragrafo 2, e il tipo di evento «Compensazione».",
+"hash": "a97c4f7be651b626"
+},
+{
+"num": "3",
+"rubrica": "Segnalazione a livello di posizione",
+"testo": "Articolo 3\nSegnalazione a livello di posizione\n1. Dopo la segnalazione dei dati di un derivato che la controparte ha concluso e la cessazione di tale derivato dovuta all'inclusione in una posizione, la controparte è autorizzata a utilizzare la segnalazione a livello di posizione, purché siano soddisfatte tutte le seguenti condizioni:\na)\nil rischio è gestito a livello di posizione;\nb)\nle segnalazioni si riferiscono a derivati conclusi in una sede di negoziazione o su una piattaforma di negoziazione organizzata situata al di fuori dell'Unione o a derivati compensati da una CCP o a contratti differenziali che sono fungibili tra loro e che sono stati sostituiti dalla posizione;\nc)\ni derivati a livello di operazione di cui al campo 154 della tabella 2 dell'allegato sono stati correttamente segnalati prima della loro inclusione nella posizione;\nd)\naltri eventi che incidono sui campi comuni nella segnalazione della posizione sono comunicati separatamente;\ne)\ni derivati di cui alla lettera b) sono stati debitamente cessati indicando il tipo di azione «Cessazione» nel campo 151 della tabella 2 dell'allegato e il tipo di evento «Inclusione in una posizione» nel campo 152 della tabella 2 dell'allegato;\nf)\nla posizione risultante è stata debitamente segnalata come una nuova posizione o come un aggiornamento di una posizione esistente;\ng)\nla segnalazione della posizione è avvenuta compilando correttamente tutti i campi applicabili delle tabelle 1 e 2 dell'allegato e indicando che la segnalazione è effettuata a livello di posizione nel campo 154 della tabella 2 dell'allegato;\nh)\nle controparti del derivato concordano che il derivato debba essere segnalato a livello di posizione.\n2. Quando un derivato esistente deve essere incluso in una segnalazione a livello di posizione nello stesso giorno, tale derivato è segnalato con tipo di azione «Componente di posizione» nel campo 151 della tabella 2 dell'allegato.\n3. Gli aggiornamenti successivi, compresi gli aggiornamenti della valutazione, gli aggiornamenti delle garanzie e altre modifiche ed eventi del ciclo di vita sono segnalati a livello di posizione e non sono segnalati per i derivati originari a livello di operazione che sono stati cessati e inclusi in tale posizione.",
+"hash": "9858f0f52d84b159"
+},
+{
+"num": "4",
+"rubrica": "Segnalazione delle esposizioni",
+"testo": "Articolo 4\nSegnalazione delle esposizioni\n1. I dati sulle garanzie per i derivati tanto compensati quanto non compensati includono tutte le garanzie costituite e ricevute, conformemente ai campi da 1 a 29 della tabella 3 dell'allegato.\n2. Quando la controparte 1 costituisce garanzie sulla base di un portafoglio, la controparte 1 o il soggetto responsabile della segnalazione segnala al repertorio di dati sulle negoziazioni la garanzia costituita e ricevuta sul portafoglio conformemente ai campi da 1 a 29 della tabella 3 dell'allegato e specifica un codice identificativo del portafoglio conformemente al campo 9 della tabella 3 dell'allegato.\n3. Le controparti non finanziarie diverse da quelle di cui all'articolo 10 del regolamento (UE) n. 648/2012 o i soggetti responsabili della segnalazione per loro conto non sono tenuti a segnalare le garanzie e le valutazioni a prezzi correnti di mercato o in base ad un modello dei contratti di cui alle tabelle 2 e 3 dell'allegato del presente regolamento.\n4. Per i derivati compensati mediante CCP, la controparte 1 o il soggetto responsabile della segnalazione segnala la valutazione del derivato fornita dalla CCP, conformemente ai campi da 21 a 25 della tabella 2 dell'allegato.\n5. Per i derivati non compensati mediante CCP, la controparte 1 o il soggetto responsabile della segnalazione segnala, conformemente ai campi da 21 a 25 della tabella 2 dell'allegato del presente regolamento, la valutazione del derivato effettuata secondo la metodologia definita nell'International Financial Reporting Standard (IFRS) 13 Valutazione del fair value adottato con regolamento (CE) n. 1126/2008 della Commissione ( 3 ) , senza applicare alcuna rettifica al fair value .",
+"hash": "35b4bcd31391e8ac"
+},
+{
+"num": "5",
+"rubrica": "Importo nozionale",
+"testo": "Articolo 5\nImporto nozionale\n1. L'importo nozionale del derivato, di cui ai campi 55 e 64 della tabella 2 dell'allegato, è indicato come segue:\na)\nnel caso di swap , future , forward e opzioni negoziate in unità monetarie, l'importo di riferimento;\nb)\nnel caso di opzioni diverse da quelle di cui alla lettera a), calcolato utilizzando il prezzo strike ;\nc)\nnel caso di forward diversi da quelli di cui alla lettera a), il prodotto del prezzo forward e il quantitativo nozionale totale del sottostante;\nd)\nnel caso di equity dividend swap , il prodotto dello strike fissato per il periodo e il numero di azioni o unità dell'indice;\ne)\nnel caso di equity volatility swap , l'importo nozionale vega;\nf)\nnel caso di equity variance swap , l'importo della varianza;\ng)\nnel caso di contratti finanziari differenziali, l'importo risultante del prezzo iniziale e della quantità nozionale totale;\nh)\nnel caso di commodity fixed/float swap , il prodotto del prezzo fisso e del quantitativo nozionale totale;\ni)\nnel caso di commodity basis swap , il prodotto dell'ultimo prezzo a pronti disponibile al momento dell'operazione dell'attività sottostante della gamba senza differenziale e il quantitativo nozionale totale della gamba senza differenziale;\nj)\nnel caso di swaption , l'importo nozionale del contratto sottostante.\nk)\nnel caso di derivati diversi da quelli di cui alle lettere da a) a j), in cui l'importo nozionale è calcolato utilizzando il prezzo dell'attività sottostante e tale prezzo è disponibile solo al momento del regolamento, il prezzo di fine giornata dell'attività sottostante alla data di conclusione del contratto.\n2. La segnalazione iniziale del contratto derivato il cui importo nozionale varia nel tempo specifica l'importo nozionale applicabile alla data della conclusione del contratto derivato e la tabella dell'importo nozionale.\nNel segnalare la tabella dell'importo nozionale, le controparti indicano tutti i seguenti elementi:\ni)\nla data non rettificata in cui l'importo nozionale associato acquisisce validità;\nii)\nla data finale non rettificata dell'importo nozionale;\niii)\nl'importo nozionale che acquisisce validità alla data effettiva non rettificata associata.",
+"hash": "d4311dffa8572ea5"
+},
+{
+"num": "6",
+"rubrica": "Prezzo",
+"testo": "Articolo 6\nPrezzo\n1. Il prezzo del derivato di cui al campo 48 della tabella 2 dell'allegato, è indicato come segue:\na)\nnel caso di swap con pagamenti periodici relativi a merci, il prezzo fisso;\nb)\nnel caso di forward relativi a merci e azioni, il prezzo forward del sottostante;\nc)\nnel caso di swap relativi ad azioni e contratti differenziali, il prezzo iniziale del sottostante.\n2. Il prezzo di un derivato non è indicato nel campo 48 della tabella 2 dell'allegato quando è indicato in un altro campo della tabella 2 dell'allegato.",
+"hash": "cd7339d5ebb3583d"
+},
+{
+"num": "7",
+"rubrica": "Collegamento delle segnalazioni",
+"testo": "Articolo 7\nCollegamento delle segnalazioni\nLa controparte segnalante o il soggetto responsabile della segnalazione collega le segnalazioni relative ai derivati conclusi o cessati a seguito dello stesso evento di cui al campo 152 della tabella 2 dell'allegato come segue:\na)\nin caso di compensazione, subentro, allocazione ed esercizio, la controparte segnala l'identificativo unico dell'operazione (UTI) del derivato originario che è stato cessato a seguito dell'evento di cui al campo 152 della tabella 2 nel campo 3 della tabella 2 dell'allegato all'interno della segnalazione o delle segnalazioni relative al derivato o ai derivati derivanti da tale evento;\nb)\nin caso di inclusione di un derivato in una posizione, la controparte segnala l'UTI della posizione in cui quel derivato è stato incluso nel campo 4 della tabella 2 dell'allegato all'interno della segnalazione di quel derivato inviata con tipo di azione «Componente di posizione» o con una combinazione di tipo di azione «Cessazione» e tipo di evento «Inclusione in una posizione»;\nc)\nnel caso di un evento di riduzione del rischio post-negoziazione (PTRR) con un prestatore di servizi PTRR o una CCP che fornisce il servizio PTRR, la controparte indica un codice unico che identifica tale evento, fornito dal prestatore di servizi PTRR o dalla CCP, nel campo 5 della tabella 2 dell'allegato in tutte le segnalazioni relative ai derivati che sono stati cessati a causa o a seguito di tale evento.",
+"hash": "6e86bc78f0f36672"
+},
+{
+"num": "8",
+"rubrica": "Abrogazione",
+"testo": "Articolo 8\nAbrogazione\nIl regolamento delegato (UE) n. 148/2013 è abrogato.\nI riferimenti al regolamento abrogato si intendono fatti al presente regolamento.",
+"hash": "884e3a3275517e5f"
+},
+{
+"num": "9",
+"rubrica": "Entrata in vigore",
+"testo": "Articolo 9\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nEsso si applica a decorrere dal 29 aprile 2024.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "9a7c0240983c6593"
+}
+],
+"meta": {
+"celex_consolidato": "32022R1855",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022R1855"
+}
+}

@@ -1,0 +1,49 @@
+{
+"id": "UE-32019R0356",
+"titolo": "Regolamento delegato (UE) 2019/356 della Commissione, del 13 dicembre 2018, che integra il regolamento (UE) 2015/2365 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione che precisano le informazioni sulle operazioni di finanziamento tramite titoli da seg",
+"estremi": "CELEX 32019R0356",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32019R0356",
+"area": [
+"Credito",
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T22:59:22+00:00",
+"n_articoli": 5,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Informazioni sulle SFT da segnalare",
+"testo": "Articolo 1\nInformazioni sulle SFT da segnalare\n1. La segnalazione a norma dell'articolo 4, paragrafo 1, del regolamento (UE) 2015/2365 include le informazioni complete e precise indicate nelle tabelle 1, 2, 3 e 4 dell'allegato che riguardano la SFT in questione.\n2. Quando segnala la conclusione di una SFT, la controparte indica nella sua segnalazione l'azione «New» (Nuova) nel campo 98 (Tipo di azione) della tabella 2 di cui all'allegato. Eventuali successive segnalazioni delle informazioni riguardanti tale SFT indicano l'azione pertinente nel campo 98 della tabella 2 di cui all'allegato.",
+"hash": "eccc393635fdc920"
+},
+{
+"num": "2",
+"rubrica": "SFT compensate da controparti centrali",
+"testo": "Articolo 2\nSFT compensate da controparti centrali\n1. L'SFT di cui sono già state comunicate le informazioni a norma dell'articolo 4, paragrafo 1, del regolamento (UE) 2015/2365 che è successivamente compensata da una CCP è segnalata, una volta compensata, come cessata, specificando nel campo 98 della tabella 2 di cui all'allegato l'azione «Termination/Early Termination» (Cessazione/Cessazione anticipata), mentre sono segnalate le nuove SFT risultanti dalla compensazione.\n2. L'SFT che è conclusa in una sede di negoziazione ed è compensata lo stesso giorno da una controparte centrale è segnalata soltanto dopo la sua compensazione.\n3. La controparte segnala, per il margine fornito o ricevuto per una SFT compensata, le informazioni indicate nella tabella 3 di cui all'allegato e specifica la pertinente azione di cui al campo 20 di tale tabella.",
+"hash": "c15d698ba3524eac"
+},
+{
+"num": "3",
+"rubrica": "Segnalazione della garanzia reale",
+"testo": "Articolo 3\nSegnalazione della garanzia reale\n1. Le controparti di operazioni di assunzione di titoli o merci in prestito e di operazioni di concessione di titoli o merci in prestito che convengono di non fornire alcuna garanzia lo specificano nel campo 72 della tabella 2 di cui all'allegato.\n2. Se la garanzia reale di una SFT è collegata a un singolo prestito e le informazioni sulla garanzia sono note alla controparte entro il termine della segnalazione, la controparte specifica le informazioni complete e precise di tutti i singoli componenti della garanzia nei campi da 75 a 94 della tabella 2 di cui all'allegato quando segnala tale SFT per la prima volta con l'azione «New» (Nuova) nel campo 98 della tabella 2.\n3. Se la garanzia reale di una SFT è collegata a un singolo prestito ma le informazioni sulla garanzia non sono note alla controparte entro il termine della segnalazione, la controparte specifica, con l'azione «Collateral update» (Aggiornamento della garanzia reale) nel campo 98 della tabella 2 di cui all'allegato, le informazioni complete e precise relative a tutti i singoli componenti della garanzia di tale SFT nei campi da 75 a 94 della tabella 2 di cui all'allegato non appena note e comunque entro il giorno lavorativo seguente la data di valuta specificata nel campo 13 della tabella 2.\n4. La controparte che garantisce una o più SFT con un paniere di garanzie identificato da un codice ISIN specifica tale codice nel campo 96 della tabella 2 di cui all'allegato quando segnala l'SFT con l'azione «New» (Nuova) nel campo 98 della tabella 2.\n5. La controparte che garantisce una o più SFT con un paniere di garanzie non identificato da un codice ISIN specifica il codice «NTAV» nel campo 96 della tabella 2 di cui all'allegato quando segnala l'SFT con l'azione «New» (Nuova) nel campo 98 della tabella 2.\n6. Ai fini dei paragrafi 4 e 5, la controparte specifica altresì, con l'azione «Collateral update» (Aggiornamento della garanzia reale) nel campo 98 della tabella 2 di cui all'allegato, le informazioni complete e precise relative a tutti i singoli componenti della garanzia della SFT nei campi da 75 a 94 della tabella 2 non appena note e comunque entro il giorno lavorativo seguente la data di valuta specificata nel campo 13 della tabella 2.\n7. La controparte che garantisce diverse SFT sulla base dell'esposizione netta specifica il codice «True» (Vero) nel campo 73 della tabella 2 di cui all'allegato. Tale controparte specifica altresì, con l'azione «Collateral update» (Aggiornamento della garanzia reale) nel campo 98 della tabella 2 di cui all'allegato, le informazioni complete e precise relative a tutti i singoli componenti della garanzia delle SFT nei campi da 75 a 94 della tabella 2 non appena note e comunque entro il giorno lavorativo seguente la data di valuta specificata nel campo 13 della tabella 2.",
+"hash": "34e11a4be1b6df8c"
+},
+{
+"num": "4",
+"rubrica": "Segnalazione del riutilizzo delle garanzie reali",
+"testo": "Articolo 4\nSegnalazione del riutilizzo delle garanzie reali\n1. La controparte che riceve uno o più strumenti finanziari come garanzia in una SFT specifica le informazioni complete e precise in merito a qualsiasi riutilizzo di ciascuno di tali strumenti finanziari nei campi 7, 8 e 9 della tabella 4 di cui all'allegato.\n2. La controparte che riceve contante come garanzia in una SFT specifica le informazioni complete e precise in merito a qualsiasi reinvestimento di tale contante per ciascuna valuta nei campi 11, 12 e 13 della tabella 4 di cui all'allegato.",
+"hash": "f66ed44136eebc48"
+},
+{
+"num": "5",
+"rubrica": "Entrata in vigore",
+"testo": "Articolo 5\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "3dccdc51da3e0529"
+}
+],
+"meta": {
+"celex_consolidato": "32019R0356",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32019R0356"
+}
+}
