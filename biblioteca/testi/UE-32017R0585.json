@@ -1,0 +1,66 @@
+{
+"id": "UE-32017R0585",
+"titolo": "Regolamento delegato (UE) 2017/585 della Commissione, del 14 luglio 2016, che integra il regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione per gli standard e il formato dei dati di riferimento relativi agli strumenti finanzi",
+"estremi": "CELEX 32017R0585",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32017R0585",
+"area": [
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T23:04:12+00:00",
+"n_articoli": 8,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Contenuto, standard, forma e formato dei dati di riferimento",
+"testo": "Articolo 1\nContenuto, standard, forma e formato dei dati di riferimento\nLe sedi di negoziazione e gli internalizzatori sistematici forniscono alle autorità competenti tutte le informazioni dettagliate contenute nei dati di riferimento relativi agli strumenti finanziari (nel seguito «dati di riferimento») di cui alla tabella 3 dell'allegato riguardanti lo strumento finanziario in questione. Tutte le informazioni dettagliate fornite sono presentate conformemente agli standard e ai formati specificati nella tabella 3 dell'allegato, in forma elettronica e leggibile da dispositivo elettronico e in un modello XML uniforme secondo la metodologia ISO 20022.",
+"hash": "e4adefa4fbe5ca4e"
+},
+{
+"num": "2",
+"rubrica": "Tempistica per la trasmissione dei dati di riferimento alle autorità competenti",
+"testo": "Articolo 2\nTempistica per la trasmissione dei dati di riferimento alle autorità competenti\n1. Le sedi di negoziazione e gli internalizzatori sistematici trasmettono alle rispettive autorità competenti, entro le ore 21:00 CET di ogni giorno in cui sono aperti per le negoziazioni, i dati di riferimento per tutti gli strumenti finanziari che, prima delle ore 18:00 CET del giorno stesso, risultano ammessi alla negoziazione o negoziati, anche tramite inoltro di ordini o quotazioni nel loro sistema.\n2. Se, dopo le ore 18:00 CET di un giorno in cui la sede di negoziazione o l'internalizzatore sistematico sono aperti per le negoziazioni, uno strumento finanziario risulta ammesso alla negoziazione o negoziato, anche nei casi in cui un ordine o una quotazione sono immessi per la prima volta, i dati di riferimento per lo strumento finanziario interessato sono trasmessi entro le ore 21:00 CET del giorno successivo in cui la sede di negoziazione o l'internalizzatore sistematico di cui trattasi sono aperti per le negoziazioni.",
+"hash": "1151c1e2696e8e89"
+},
+{
+"num": "3",
+"rubrica": "Identificazione degli strumenti finanziari e dei soggetti giuridici",
+"testo": "Articolo 3\nIdentificazione degli strumenti finanziari e dei soggetti giuridici\n1. Prima di iniziare la negoziazione di uno strumento finanziario, la sede di negoziazione o l'internalizzatore sistematico si procurano il relativo codice ISIN secondo l'ISO 6166.\n2. Le sedi di negoziazione e gli internalizzatori sistematici garantiscono che i codici di identificazione dei soggetti giuridici inclusi nei dati di riferimento trasmessi siano conformi alla norma ISO 17442:2012, si riferiscano all'emittente interessato e siano elencati nella base dati degli identificativi internazionali dei soggetti giuridici gestita dall'unità operativa centrale nominata dal comitato di sorveglianza sulla regolamentazione per il sistema internazionale di identificazione dei soggetti giuridici.",
+"hash": "5e885433790dbebf"
+},
+{
+"num": "4",
+"rubrica": "Disposizioni per garantire l'effettivo ricevimento dei dati di riferimento",
+"testo": "Articolo 4\nDisposizioni per garantire l'effettivo ricevimento dei dati di riferimento\n1. Le autorità competenti provvedono a monitorare e valutare la completezza dei dati di riferimento ricevuti da una sede di negoziazione o internalizzatore sistematico e la loro conformità agli standard e ai formati specificati nella tabella 3 dell'allegato.\n2. Dopo aver ricevuto, dalle sedi di negoziazione e dagli internalizzatori sistematici, i dati di riferimento per ogni giorno di apertura delle negoziazioni, le autorità competenti notificano alle sedi di negoziazione e agli internalizzatori sistematici eventuali lacune di tali dati o la loro eventuale mancata trasmissione entro i termini di cui all'articolo 2.\n3. L'ESMA provvede a monitorare e valutare la completezza dei dati di riferimento ricevuti dalle autorità competenti e la loro conformità agli standard e ai formati specificati nella tabella 3 dell'allegato.\n4. Dopo aver ricevuto i dati di riferimento dalle autorità competenti, l'ESMA notifica a tali autorità le eventuali lacune di tali dati o la loro eventuale mancata trasmissione entro i termini di cui all'articolo 7, paragrafo 1.",
+"hash": "dd5c43bb1b74e973"
+},
+{
+"num": "5",
+"rubrica": "Disposizioni per garantire la qualità dei dati di riferimento",
+"testo": "Articolo 5\nDisposizioni per garantire la qualità dei dati di riferimento\nLe autorità competenti effettuano, almeno su base trimestrale, le valutazioni di qualità per quanto riguarda il contenuto e l'esattezza dei dati di riferimento ricevuti a norma dell'articolo 27, paragrafo 1, del regolamento (UE) n. 600/2014.",
+"hash": "1abd402ad5270e64"
+},
+{
+"num": "6",
+"rubrica": "Metodi e disposizioni per la trasmissione dei dati di riferimento",
+"testo": "Articolo 6\nMetodi e disposizioni per la trasmissione dei dati di riferimento\n1. Le sedi di negoziazione e gli internalizzatori sistematici provvedono a trasmettere dati di riferimento completi ed esatti alle loro autorità competenti a norma degli articoli 1 e 3.\n2. Le sedi di negoziazione e gli internalizzatori sistematici adottano metodi e disposizioni che consentono loro di individuare i dati di riferimento lacunosi o inesatti presentati in precedenza. Una sede di negoziazione o un internalizzatore sistematico che rileva lacune o inesattezze nei dati di riferimento presentati lo comunica prontamente alla propria autorità competente e le trasmette senza indebito ritardo i dati di riferimento pertinenti completi ed esatti.",
+"hash": "83b1608892542909"
+},
+{
+"num": "7",
+"rubrica": "Disposizioni per uno scambio e pubblicazione efficaci dei dati di riferimento",
+"testo": "Articolo 7\nDisposizioni per uno scambio e pubblicazione efficaci dei dati di riferimento\n1. Ogni giorno entro le ore 23:59 CET le autorità competenti trasmettono all'ESMA i dati di riferimento completi ed esatti utilizzando il canale di comunicazione elettronica sicuro previsto a tale scopo da autorità competenti e ESMA.\n2. Il giorno successivo al ricevimento dei dati di riferimento in conformità del paragrafo 1, l'ESMA consolida i dati ricevuti da ciascuna autorità competente.\n3. Entro le ore 08:00 CET del giorno successivo al ricevimento l'ESMA mette i dati consolidati a disposizione di tutte le autorità competenti utilizzando i canali di comunicazione elettronica sicuri di cui al paragrafo 1.\n4. Le autorità competenti utilizzano i dati consolidati relativi a un dato giorno per convalidare le segnalazioni delle operazioni eseguite tale giorno e segnalate a norma dell'articolo 26 del regolamento (UE) n. 600/2014.\n5. Le autorità competenti utilizzano i dati consolidati relativi a un dato giorno per scambiarsi le segnalazioni delle operazioni presentate tale giorno, conformemente all'articolo 26, paragrafo 1, secondo comma, del regolamento (UE) n. 600/2014.\n6. L'ESMA pubblica i dati di riferimento in un formato elettronico, scaricabile e leggibile da dispositivo elettronico.",
+"hash": "1ac716f41db2b5b2"
+},
+{
+"num": "8",
+"rubrica": "Entrata in vigore e applicazione",
+"testo": "Articolo 8\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nEsso si applica a decorrere dalla data di cui all'articolo 55, secondo comma, del regolamento (UE) n. 600/2014.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "a5b525a93cdbc1d4"
+}
+],
+"meta": {
+"celex_consolidato": "32017R0585",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32017R0585"
+}
+}

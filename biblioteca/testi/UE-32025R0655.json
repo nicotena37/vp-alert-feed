@@ -1,0 +1,48 @@
+{
+"id": "UE-32025R0655",
+"titolo": "Regolamento di esecuzione (UE) 2025/655 della Commissione, del 2 aprile 2025, recante modalità di applicazione del regolamento (UE) 2023/1804 del Parlamento europeo e del Consiglio per quanto riguarda le specifiche e le procedure relative alla disponibilità e all’accessibilità dei dati sull’infrastr",
+"estremi": "CELEX 32025R0655",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0655",
+"area": [
+"Trasparenza e tutela del consumatore"
+],
+"scaricato_il": "2026-11-07T23:07:56+00:00",
+"n_articoli": 5,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Specifiche relative al formato dei dati",
+"testo": "Articolo 1\nSpecifiche relative al formato dei dati\n1. I gestori dei punti di ricarica e di rifornimento per i combustibili alternativi accessibili al pubblico o, conformemente agli accordi presi tra di loro, i proprietari di tali punti, assicurano la disponibilità dei tipi di dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804 conformemente:\na)\nalle specifiche relative al formato dei tipi di dati per i punti di ricarica e di rifornimento accessibili al pubblico, con le descrizioni, fornite nelle tabelle di cui all’allegato del presente regolamento;\nb)\nal modello di dati previsto per i dati sui combustibili alternativi fornito in formato DATEX II, con inclusa almeno la CEN/TS 16157-10:2022 in aggiunta alle specifiche di cui alla lettera a), a decorrere dal 14 aprile 2026.\n2. I tipi di dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804 sono resi disponibili conformemente alle specifiche relative al formato di cui all’allegato del presente regolamento.",
+"hash": "c4ae9b2e29336438"
+},
+{
+"num": "2",
+"rubrica": "Specifiche relative alla frequenza dei dati",
+"testo": "Articolo 2\nSpecifiche relative alla frequenza dei dati\nI gestori dei punti di ricarica e di rifornimento per i combustibili alternativi accessibili al pubblico o, conformemente agli accordi presi tra di loro, i proprietari di tali punti, assicurano la disponibilità dei tipi di dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804 conformemente alle prescrizioni seguenti:\na)\ni dati statici devono essere aggiornati quando si verifica un cambiamento e, in ogni caso, entro ventiquattro ore dal cambiamento;\nb)\ni dati dinamici devono essere aggiornati quando si verifica un cambiamento e, in ogni caso, entro un minuto dal cambiamento.",
+"hash": "ab7630332388707e"
+},
+{
+"num": "3",
+"rubrica": "Specifiche relative alla qualità dei dati",
+"testo": "Articolo 3\nSpecifiche relative alla qualità dei dati\n1. Nel garantire la disponibilità dei dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804, i gestori dei punti di ricarica e di rifornimento per i combustibili alternativi accessibili al pubblico o, conformemente agli accordi presi tra di loro, i proprietari di tali punti, rispettano le prescrizioni seguenti:\na)\ncompletezza: sono resi disponibili tutti i tipi di dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804. I gestori o i proprietari dei punti di ricarica e di rifornimento per i combustibili alternativi accessibili al pubblico possono inoltre rendere disponibili a titolo volontario ulteriori tipi di dati qualora ritengano che possano apportare un valore aggiunto per lo sviluppo di servizi informativi per gli utenti finali dell’infrastruttura per i combustibili alternativi;\nb)\ncorrettezza: i tipi di dati riflettono correttamente le descrizioni di cui all’allegato;\nc)\ncoerenza: i tipi di dati sono resi disponibili conformemente all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804 e alle specifiche relative al formato dei dati di cui all’articolo 1 del presente regolamento. Sono eliminate le possibili duplicazioni o sovrapposizioni di dati;\nd)\ntempestività: i tipi di dati sono aggiornati conformemente alle specifiche relative alla frequenza di cui all’articolo 2 del presente regolamento. Sono messe in atto le misure tecniche necessarie per fare in modo che i tipi di dati sensibili al fattore tempo, come la disponibilità di punti di ricarica o di rifornimento, siano aggiornati conformemente alle presenti specifiche;\ne)\naffidabilità: i tipi di dati sono monitorati regolarmente per individuare eventuali incongruenze ed errori.\n2. I gestori dei punti di ricarica e di rifornimento per i combustibili alternativi accessibili al pubblico o, conformemente agli accordi presi tra di loro, i proprietari di tali punti, istituiscono meccanismi di controllo della qualità dei dati che assicurino che i dati alla fonte siano conformi alle prescrizioni di cui al paragrafo 1, prima che siano resi accessibili tramite i punti di accesso nazionali.\n3. Qualsiasi soggetto può istituire un’API che dia accesso ai dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804 agli utenti dei dati per conto dei gestori o dei proprietari di punti di ricarica e di rifornimento accessibili al pubblico e può trasmettere informazioni su tali API ai punti di accesso nazionali, conformemente agli accordi applicabili tra il soggetto e il gestore o il proprietario. Tali accordi di esternalizzazione non esonerano i gestori o i proprietari dall’obbligo di cui al presente articolo di garantire la qualità dei dati originali forniti.",
+"hash": "ccacd45514d42f82"
+},
+{
+"num": "4",
+"rubrica": "Procedure in riferimento all’accessibilità dei dati",
+"testo": "Articolo 4\nProcedure in riferimento all’accessibilità dei dati\nAl fine di rendere accessibili i dati di cui all’articolo 20, paragrafo 2, del regolamento (UE) 2023/1804, conformemente all’articolo 20, paragrafo 4, del regolamento (UE) 2023/1804, gli Stati membri predispongono le seguenti procedure per:\na)\nmonitorare regolarmente i tipi di dati, comprese le informazioni sulle API, resi accessibili attraverso i propri punti di accesso nazionali dai gestori dei punti di ricarica e di rifornimento accessibili al pubblico o, conformemente agli accordi presi tra di loro, dai proprietari di tali punti. Questo monitoraggio deve garantire che i dati resi accessibili attraverso i punti di accesso nazionali siano conformi alle prescrizioni di cui al regolamento (UE) 2023/1804 e al presente regolamento;\nb)\nagevolare lo scambio di informazioni tra i gestori o i proprietari dei punti di ricarica e di rifornimento accessibili al pubblico e i propri punti di accesso nazionali;\nc)\naffrontare i problemi diffusi e persistenti in relazione alla qualità dei dati, tra cui i problemi che incidono sullo scambio complessivo automatizzato e uniforme dei dati tramite le API attraverso i propri punti di accesso nazionali.",
+"hash": "a2981c078da127f4"
+},
+{
+"num": "5",
+"rubrica": "Entrata in vigore e applicazione",
+"testo": "Articolo 5\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nEsso si applica a decorrere dal 14 aprile 2025.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "f753d236a20e4245"
+}
+],
+"meta": {
+"celex_consolidato": "32025R0655",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0655"
+}
+}

@@ -1,0 +1,162 @@
+{
+"id": "UE-32012O0013",
+"titolo": "2012/473/UE: Indirizzo della Banca centrale europea, del 18 luglio 2012 , relativo a TARGET2-Securities (rifusione) (BCE/2012/13)",
+"estremi": "CELEX 32012O0013",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02012O0013-20190620",
+"area": [
+"Politica monetaria e BCE (fuori tassonomia)"
+],
+"scaricato_il": "2026-11-07T23:41:32+00:00",
+"n_articoli": 24,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Oggetto e campo d’applicazione",
+"testo": "Articolo 1\nOggetto e campo d’applicazione\n1. T2S è basato su una piattaforma tecnica unica integrata con i sistemi di regolamento lordo in tempo reale delle banche centrali. È un servizio fornito dall’Eurosistema ai CSD che rende possibile l’attività fondamentale, neutrale e transfrontaliera di regolamento delle operazioni in titoli con consegna contro pagamento in moneta di banca centrale.\n2. Il presente indirizzo detta le norme per la governance interna di T2S. Stabilisce altresì le caratteristiche principali di T2S definendo i rispettivi ruoli e responsabilità del\n►M2\nMIB ◄ e delle 4BC, nonché i rapporti tra tali soggetti durante la fase di definizione delle specifiche, di sviluppo e operativa. Esso specifica inoltre le principali decisioni che il Consiglio direttivo adotta in relazione a T2S. Ancora, il presente indirizzo stabilisce i principi fondamentali in relazione a T2S su tutti i seguenti aspetti: a) il regime finanziario, i diritti e le garanzie; b) le modalità di accesso a T2S per i CSD e la determinazione dei rapporti contrattuali con questi ultimi; c) le modalità attraverso cui le valute diverse dall’euro sono rese idonee a essere utilizzate in T2S; e d) lo sviluppo di T2S.",
+"hash": "afb49973b96063fb"
+},
+{
+"num": "2",
+"rubrica": "Definizioni",
+"testo": "Articolo 2\nDefinizioni\nAi fini del presente indirizzo:\n1) per «depositario centrale di titoli» ( central securities depository , CSD) s’intende un soggetto che: a) consente alle operazioni in titoli di essere elaborate e regolate mediante scrittura contabile e/o mantiene e amministra titoli per conto di altri attraverso la fornitura o il mantenimento di conti titoli; b) gestisce o fornisce un sistema di regolamento titoli ai sensi dell’articolo 2, lettera a) della direttiva 98/26/CE del Parlamento europeo e del Consiglio, del 19 maggio 1998, concernente il carattere definitivo del regolamento nei sistemi di pagamento e nei sistemi di regolamento titoli (\n1\n) o, per enti non situati nello Spazio economico europeo (SEE) ai sensi della relativa legislazione nazionale equivalente alla direttiva 98/26/CE e/o regolamentata da una banca centrale; e c) è riconosciuto come CSD dai regolamenti e/o dalla legislazione nazionali e/o è autorizzato o disciplinato come tale da un’autorità competente;\n2) per «consegna contro pagamento» s’intende un meccanismo di regolamento titoli che lega un trasferimento di titoli a un trasferimento del controvalore in modo tale da assicurare che la consegna dei titoli avvenga solo se ha luogo il pagamento del controvalore corrispondente;\n3) per «BCN dell’area dell’euro» s’intende la BCN di uno Stato membro la cui moneta è l’euro;\n4) per «banca centrale dell’Eurosistema» s’intende una BCN dell’area dell’euro o la BCE, a seconda del caso;\n5) per «contratto quadro» s’intende il quadro contrattuale che un CSD e l’Eurosistema stipulano per lo sviluppo e la fase operativa;\n6) per «specifiche funzionali generali» ( general functional specifications , GFS) s’intende una descrizione funzionale generale del software applicativo di T2S che deve essere sviluppata per essere conforme ai requisiti utente di T2S. Essa comprenderà elementi quali l’architettura funzionale (domini, moduli e interazioni), i modelli concettuali, il modello di dati o il processo di flusso di dati;\n7) per «contratto tra banche centrali utenti, Level 2 , e banche centrali fornitrici. Level 3 (contratto L2/L3)» s’intende l’accordo per la fornitura e la gestione negoziato tra il\n►M2\nMIB ◄ e le 4BC, approvato dal Consiglio direttivo e successivamente sottoscritto dalle banche centrali dell’Eurosistema e dalle 4BC, come modificato ove necessario. Esso contiene dettagli aggiuntivi relativi ai compiti e alle responsabilità delle 4BC, del\n►M2\nMIB ◄ e delle banche centrali dell’Eurosistema;\n8) per «BCN non appartenente all’area dell’euro» s’intende la BCN di uno Stato membro la cui moneta non è l’euro;\n9) per «fase operativa» s’intende il periodo che ha inizio una volta che il primo CSD è migrato a T2S;\n10) per «altra banca centrale» s’intende la banca centrale di un paese non appartenente all’Unione;\n11) per «piano di rimborso» s’intende il piano che indica la tempistica del rimborso alle 4BC;\n12) per «accordo sui livelli di servizio» s’intende sia l’accordo che definisce il livello di servizi che le 4BC devono fornire all’Eurosistema, sia l’accordo che definisce il livello di servizi che l’Eurosistema deve fornire ai CSD, in relazione a T2S;\n13) per «fase di definizione delle specifiche e di sviluppo» s’intende l’arco di tempo che ha inizio con l’approvazione dell’URD da parte del Consiglio direttivo e termina con l’avvio della fase operativa;\n14) per «software applicativo T2S» s’intende il software sviluppato e gestito dalle 4BC per conto dell’Eurosistema al fine di consentire allo stesso di fornire i sevizi di T2S sulla piattaforma T2S;\n15) per «Procedura per la gestione delle modifiche e degli aggiornamenti a T2S» s’intende un insieme di regole e procedure che si applica ogniqualvolta prende corpo una modifica ai servizi di T2S;\n16) per «piattaforma T2S», s’intende l’hardware e tutti i componenti del software, vale a dire tutto il software utilizzato, escluso il software applicativo, necessari per far funzionare e gestire il software applicativo T2S;\n17) per «programma T2S» s’intende l’insieme delle attività collegate e gli adempimenti necessari per sviluppare T2S fino alla completa migrazione di tutti i CSD che hanno sottoscritto il Contratto quadro e di tutte le banche centrali dell’Eurosistema, le BCN non appartenenti all’area dell’euro e le altre banche centrali;\n▼M2 —————\n▼B\n19) per «conto di bilancio T2S» s’intende il conto T2S utilizzato per raccogliere e distribuire rate, rimborsi e tariffe. Il conto di bilancio può avere sotto-conti per separare i diversi tipi di flussi di cassa. Esso non ha carattere di bilancio;\n20) per «servizi di T2S» s’intendono i servizi che l’Eurosistema fornisce ai CSD e alle banche centrali in base agli accordi contrattuali stipulati tra l’Eurosistema e i CSD, le BCN non appartenenti all’area dell’euro o altre banche centrali;\n21) per «utenti di T2S» s’intendono i CSD partecipanti, le persone giuridiche e le persone fisiche che hanno un rapporto contrattuale con i CSD per l’espletamento delle loro attività relative al regolamento titoli in T2S, o i membri appartenenti a una banca centrale la cui valuta sia disponibile per il trattamento relativo al regolamento in T2S, che abbiano un rapporto contrattuale con la banca centrale per il trattamento delle loro attività di gestione in contanti relative ai titoli in T2S;\n22) per «specifiche funzionali di dettaglio per gli utenti ( User detailed functional specifications , UDFS)» s’intende una descrizione dettagliata delle funzioni che gestiscono i flussi di dati esterni di T2S da applicazione a applicazione. In tale voce saranno incluse le informazioni necessarie affinché gli utenti possano adattare o sviluppare il proprio sistema informativo interno al fine di collegarlo a T2S;\n23) per «manuale dell’utente» s’intende il documento che descrive in che modo gli utenti possono utilizzare talune funzioni del software T2S disponibili nella modalità da utente a applicazione (su schermo);\n24) per «documento dei requisiti utente ( User requirements document , URD)» s’intende il documento che stabilisce i requisiti utente per T2S, pubblicato dalla BCE il 3 luglio 2008 e successivamente modificato mediante la Procedura per la gestione delle modifiche e degli aggiornamenti a T2S;\n▼M1\n25) per «Gruppo consultivo per le infrastrutture di mercato per titoli e garanzie» (Advisory group on Market Infrastructures for Securities and Collateral) o «AMI SeCo» s'intende l'organismo consultivo il cui compito è quello di fornire consulenza all'Eurosistema su materie relative al regolamento e alla compensazione titoli, alla gestione delle garanzie e a T2S, e il cui mandato è pubblicato sul sito internet della BCE;\n▼M2\n26) per «Comitato per le infrastrutture di mercato» o «MIB» si intende l'organo di governance dell'Eurosistema istituito ai sensi della decisione (UE) 2019/166 della Banca centrale europea (BCE/2019/3) (\n2\n);\n▼M1\n27) per «Comitato per le infrastrutture di mercato e i pagamenti» (Market Infrastructure and Payments Committee) o «MIPC» s'intende il comitato dell'Eurosistema incaricato di assistere gli organi decisionali dell'Eurosistema nell'adempimento del dovere statutario del SEBC di promuovere il regolare funzionamento dei sistemi di pagamento, ivi inclusi i profili di continuità operativa, o quello che ne è il successore.\n▼B\nSEZIONE II\nGOVERNANCE DI T2S",
+"hash": "1f7c4bc7b28aae27"
+},
+{
+"num": "3",
+"rubrica": "Livelli di governance interna",
+"testo": "Articolo 3\nLivelli di governance interna\nLa governance interna di T2S è basata su tre livelli. Il Level 1 è costituito dal Consiglio direttivo, il Level 2 è costituito dal\n►M2\nMIB ◄ e il Level 3 è costituito dalle 4BC.",
+"hash": "4ea69045cf48e949"
+},
+{
+"num": "4",
+"rubrica": "Il Consiglio direttivo",
+"testo": "Articolo 4\nIl Consiglio direttivo\n1. Il Consiglio direttivo è responsabile della direzione, della gestione complessiva e del controllo di T2S. È altresì responsabile di assumere le decisioni definitive in relazione al programma T2S e decide sull’attribuzione dei compiti non specificamente assegnati ai Level 2 e 3 .\n2. In particolare, il Consiglio direttivo ha le seguenti competenze:\na) è responsabile della governance di T2S attraverso tutte le attività di seguito elencate:\ni) decide su qualsiasi attività riguardante la governance di T2S; assume la responsabilità di T2S nel suo complesso e ha pertanto il potere ultimo decisionale in caso di controversie;\nii) assume, caso per caso, decisioni in merito ai compiti assegnati al\n►M2\nMIB ◄ e alle 4BC;\niii) assegna al\n►M2\nMIB ◄ e/o alle 4BC l’esecuzione di compiti specifici conseguenti o ulteriori riguardanti T2S, determinando al contempo quali decisioni in merito riserva a sé stesso;\niv) adotta qualsiasi decisione riguardante l’organizzazione del\n►M2\nMIB ◄ ;\nb) gestisce le richieste dei membri del gruppo consultivo T2S, del gruppo di direzione delle valute diverse dall’euro ( Non-euro Currencies Steering Group , NECSG) e del gruppo di direzione dei CSD (CSG) presentate in conformità del regolamento del rispettivo gruppo consultivo;\nc) decide in merito al regime finanziario di base per T2S, in particolare su:\ni) la politica di determinazione delle tariffe per i servizi di T2S;\nii) la metodologia dei costi per T2S;\niii) gli accordi finanziari si sensi dell’articolo 12;\nd) decide sui criteri di accesso dei CSD;\ne) ratifica e accetta la Sintesi del piano T2S; controlla l’avanzamento del programma T2S e decide sulle misure atte a ridurre ogni ritardo nella realizzazione di T2S;\nf) decide in merito agli aspetti operativi essenziali di T2S, in particolare in merito:\ni) al quadro operativo di T2S, ivi inclusa la strategia di gestione di incidenti e crisi;\nii) al quadro per la sicurezza delle informazioni di T2S;\niii) alla Procedura per la gestione delle modifiche e degli aggiornamenti a T2S;\niv) alla strategia per il collaudo di T2S;\nv) alla strategia di migrazione a T2S;\nvi) al quadro per la gestione dei rischi in T2S;\ng) approva il quadro contrattuale fondamentale, in particolare:\ni) gli accordi tra i Level 2 e 3 ;\nii) gli accordi sui livelli di servizio che sono negoziati dal\n►M2\nMIB ◄ con i CSD, le banche centrali dell’Eurosistema, nonché con le 4BC;\niii) i contratti con i CSD che sono negoziati dal\n►M2\nMIB ◄ insieme alle banche centrali dell’Eurosistema e con i CSD;\niv) i contratti con le BCN non appartenenti all’area dell’euro, le altre banche centrali o le altre autorità monetarie competenti, compresi i rispettivi accordi sui livelli di servizio;\nh) è responsabile dell’adozione di misure idonee ad assicurare l’esecuzione delle norme e dei principi di sorveglianza;\ni) decide in merito alla data di inizio della prima migrazione dei CSD a T2S.\n▼M2",
+"hash": "4636eb2961c73b66"
+},
+{
+"num": "5",
+"rubrica": "Comitato per le infrastrutture di mercato",
+"testo": "Articolo 5\nComitato per le infrastrutture di mercato\nLa composizione e il mandato del MIB sono stabiliti nella decisione (UE) 2019/166 (BCE/2019/3). Il MIB è responsabile dei compiti ad esso assegnati in conformità alla decisione (UE) 2019/166 (BCE/2019/3).\n▼B",
+"hash": "89a9b28d45d57b88"
+},
+{
+"num": "6",
+"rubrica": "Le 4CB",
+"testo": "Articolo 6\nLe 4CB\n1. Le 4BC sviluppano e gestiscono T2S e informano il\n►M2\nMIB ◄ circa la propria organizzazione interna e la distribuzione delle attività.\nLe 4BC, in particolare, svolgono tutti i seguenti compiti:\na) predispongono, sulla base dell’URD e secondo gli indirizzi del\n►M2\nMIB ◄ , le GFS, le UDFS e i manuali dell’utente secondo la Sintesi del piano T2S;\nb) sviluppano e istituiscono T2S per conto dell’Eurosistema e forniscono le componenti tecniche di T2S conformemente alla Sintesi del piano T2S e all’URD, alle GFS, alle UDFS e alle altre specifiche e ai livelli di servizio;\nc) mettono T2S a disposizione del\n►M2\nMIB ◄ secondo la tempistica, le specifiche e i livelli di servizio approvati;\nd) presentano quanto segue al\n►M2\nMIB ◄ ai fini degli accordi finanziari di T2S, ai sensi dell’articolo 12:\ni) una stima dei costi che verranno sostenuti per lo sviluppo e l’operatività di T2S, in una forma tale che possa essere valutata e/o sottoposta a revisione da parte del comitato competente del Sistema europeo di banche centrali (SEBC) o dell’Eurosistema e/o di revisori esterni;\nii) un’offerta finanziaria, che include il tipo, il piano di rimborso così come il periodo coperto;\ne) ottengono tutte le licenze necessarie per la creazione e la gestione di T2S e per porre l’Eurosistema in condizioni di fornire i servizi di T2S ai CSD;\nf) eseguono le modifiche di T2S secondo la Procedura per la gestione delle modifiche e degli aggiornamenti a T2S;\ng) danno risposta, nel rispettivo settore di competenza, alle richieste formulate dal Consiglio direttivo o dal\n►M2\nMIB ◄ ;\nh) erogano formazione, assistenza tecnica e gestionale per i collaudi e per la migrazione, con il coordinamento del\n►M2\nMIB ◄ ;\ni) negoziano ogni modifica del contratto L2/L3 con il\n►M2\nMIB ◄ .\n2. Le 4BC sono responsabili in solido nei confronti dell’Eurosistema dell’adempimento dei loro compiti. La responsabilità si estende a frode, condotta dolosa e colpa grave. Il regime di responsabilità è specificato ulteriormente nel contratto L2/L3.\n3. L’esternalizzazione o il subappalto dei compiti suindicati da parte delle 4BC a fornitori esterni non pregiudica la responsabilità delle 4BC nei confronti dell’Eurosistema e di altre parti interessate e sono improntati a criteri di trasparenza nei confronti del\n►M2\nMIB ◄ .",
+"hash": "b4393f16244ca819"
+},
+{
+"num": "7",
+"rubrica": "Rapporti con le parti interessate esterne",
+"testo": "Articolo 7\nRapporti con le parti interessate esterne\n1. Il\n►M1\nAMI SeCo ◄ costituisce lo spazio per la comunicazione e l’interazione tra l’Eurosistema e le parti interessate di T2S esterne. Il\n►M1\nAMI SeCo ◄ presta consulenza al\n►M2\nMIB ◄ e, in casi eccezionali, può sottoporre questioni all’attenzione del Consiglio direttivo.\n2. Il\n►M1\nAMI SeCo ◄ è presieduto dal presidente del\n►M2\nMIB ◄ . La composizione e il mandato del\n►M1\nAMI SeCo ◄ sono stabiliti nell’allegato del presente indirizzo.\n3. Il gruppo consultivo svolge la sua funzione secondo il proprio regolamento interno predisposto dallo stesso\n►M1\nAMI SeCo ◄ e approvato dal\n►M2\nMIB ◄ .\n4. Il CSG è l’organo di governance di T2S che, rispetto ad un insieme di questioni disciplinate dal contratto quadro, adotta risoluzioni e emette pareri per conto dei CSD che hanno sottoscritto il contratto quadro. Il mandato del CSG è allegato al contratto quadro.\n5. Il NECSG è l’organo di governance di T2S che, rispetto ad un insieme di questioni disciplinate dal contratto quadro, adotta risoluzioni e emette pareri per conto delle BCN non appartenenti all’area dell’euro e di altre banche centrali che hanno sottoscritto l’accordo di partecipazione di valuta. Il mandato del NECSG è allegato all’accordo di partecipazione di valuta.\n6. I gruppi nazionali utenti costituiscono lo spazio per la comunicazione e l’interazione con i fornitori e gli utenti dei servizi di regolamento titoli all’interno dei rispettivi mercati nazionali, al fine di supportare lo sviluppo e la realizzazione di T2S e valutare l’impatto di T2S sui mercati nazionali. Di regola, i gruppi nazionali utenti sono presieduti dalle rispettive BCN. La composizione e il mandato dei gruppi nazionali utenti sono stabiliti nell’allegato.",
+"hash": "6e7f6af2562e66a9"
+},
+{
+"num": "8",
+"rubrica": "Buona governance",
+"testo": "Articolo 8\nBuona governance\n▼M1\n1. Al fine di evitare conflitti di interesse tra la fornitura dei servizi di T2S da parte dell'Eurosistema e le funzioni di sorveglianza dell'Eurosistema, le banche centrali dell'Eurosistema assicurano che:\na) i membri del\n►M2\nMIB ◄ non siano coinvolti direttamente in attività di sorveglianza di T2S o di CSD che affidano a T2S lo svolgimento di operazioni di regolamento nella misura in cui tale coinvolgimento possa dar luogo a conflitti effettivi o potenziali con le loro funzioni di membri del\n►M2\nMIB ◄ . Sono messe in atto misure appropriate per individuare ed evitare tali conflitti;\nb) i membri del\n►M2\nMIB ◄ non possono far parte del comitato di revisione interna (IAC) né possono essere coinvolti quotidianamente in attività Level 3;\nc) le funzioni di sorveglianza di T2S sono separate dalle attività operative di T2S.\n▼B\n2. Il\n►M2\nMIB ◄ è soggetto a obblighi di segnalazione, controllo e revisione dei conti, come stabilito nel presente indirizzo. Le revisioni dei conti relative allo sviluppo, alla gestione e al costo di T2S sono avviate e condotte sulla base dei principi e delle misure stabiliti dal Consiglio direttivo nell’ambito della politica del SEBC in materia di revisione dei conti, in vigore al momento in cui la revisione in questione ha luogo.",
+"hash": "473955a03d515ca0"
+},
+{
+"num": "9",
+"rubrica": "Cooperazione e scambio di informazioni",
+"testo": "Articolo 9\nCooperazione e scambio di informazioni\n1. Le 4BC e il\n►M2\nMIB ◄ cooperano tra loro, si scambiano informazioni e forniscono reciprocamente assistenza tecnica e di altra natura durante lo sviluppo e il funzionamento di T2S.\n2. Le 4BC, le altre banche centrali dell’Eurosistema e il\n►M2\nMIB ◄ si informano reciprocamente senza indugio su ogni questione che possa influire materialmente sullo sviluppo o la creazione e il funzionamento di T2S e si adoperano per attenuare ogni rischio correlato.\n3. Il\n►M2\nMIB ◄ riferisce regolarmente al Consiglio direttivo in merito allo sviluppo del programma T2S e al funzionamento di T2S. Tali relazioni sono trasmesse all’EISC che può prestare consulenza agli organi decisionali della BCE. Le relazioni sono trasmesse al\n►M1\nComitato per le infrastrutture di mercato e i pagamenti (MIPC) ◄ a scopo informativo.\n4. Il\n►M2\nMIB ◄ condivide gli ordini del giorno, i resoconti e la documentazione pertinente delle proprie riunioni con i membri del\n►M1\nMIPC ◄ per consentire loro di fornire un contributo in caso di necessità.\n5. Il\n►M2\nMIB ◄ può consultare e può essere consultato da qualsiasi comitato del SEBC competente, laddove necessario.\n6. Le 4BC presentano regolarmente al\n►M2\nMIB ◄ relazioni in merito al programma T2S e al funzionamento di T2S.\n7. Il contenuto e la procedura dettagliata per gli obblighi di segnalazione del\n►M2\nMIB ◄ e delle 4BC sono descritti in dettaglio nel contratto L2/L3.\nSEZIONE III\nREGIME FINANZIARIO",
+"hash": "30fd867f81907f24"
+},
+{
+"num": "10",
+"rubrica": "Politica di determinazione delle tariffe",
+"testo": "Articolo 10\nPolitica di determinazione delle tariffe\nLa politica di determinazione delle tariffe per T2S è improntata ai principi fondamentali della finalità non lucrativa, dell’integrale recupero dei costi sostenuti e della non-discriminazione nei confronti dei CSD.",
+"hash": "9a8040c7016674fe"
+},
+{
+"num": "11",
+"rubrica": "Metodologia dei costi e contabilità",
+"testo": "Articolo 11\nMetodologia dei costi e contabilità\n1. T2S è soggetto alla metodologia dei costi comune all’Eurosistema e all’indirizzo BCE/2010/20 dell’11 novembre 2010 relativo al quadro giuridico per la rilevazione e rendicontazione contabile e finanziaria nel Sistema europeo di banche centrali (\n3\n), a meno che il Consiglio direttivo non decida altrimenti.\n2. Il\n►M2\nMIB ◄ , in una fase molto iniziale, coinvolge i comitati competenti del SEBC/Eurosistema nella valutazione della corretta attuazione:\na) della metodologia dei costi comune dell’Eurosistema nel contesto delle stime dei costi di T2S e del calcolo dei costi annuali di T2S; e\nb) dell’indirizzo BCE/2010/20 da parte della BCE e delle 4BC nel contesto della rilevazione delle voci di costo e di patrimonio di T2S.",
+"hash": "d4194653fa5745a6"
+},
+{
+"num": "12",
+"rubrica": "Accordi finanziari",
+"testo": "Articolo 12\nAccordi finanziari\n1. Il\n►M2\nMIB ◄ presenta al Consiglio direttivo proposte in merito all’adeguamento del regime finanziario di T2S, che comprende i costi di T2S, vale a dire i costi delle 4BC e della BCE per lo sviluppo, mantenimento e operatività di T2S.\n2. La proposta include altresì:\na) tipo di offerta;\nb) piano di rimborso;\nc) arco di tempo coperto;\nd) meccanismo di ripartizione dei costi;\ne) costo del capitale.\n3. Il Consiglio direttivo decide in merito al regime finanziario di T2S.",
+"hash": "fc3524277fdc3c63"
+},
+{
+"num": "13",
+"rubrica": "Pagamenti",
+"testo": "Articolo 13\nPagamenti\n1. La BCE detiene un conto di bilancio T2S per conto dell’Eurosistema. Il conto di bilancio T2S non ha carattere di bilancio ma è utilizzato per raccogliere e distribuire tutti i pagamenti preliminari connessi ai costi di T2S, le rate e i rimborsi, nonché le tariffe per l’utilizzo di T2S.\n2. Il\n►M2\nMIB ◄ gestisce il conto di bilancio T2S per conto dell’Eurosistema. Subordinatamente alla ratifica e all’accettazione degli adempimenti delle 4BC, il\n►M2\nMIB ◄ approva il pagamento delle rate alle 4BC secondo un piano di rimborso approvato dal Consiglio direttivo e messo a punto nel contratto L2/L3.",
+"hash": "840d304bd95a7c30"
+},
+{
+"num": "14",
+"rubrica": "I diritti dell’Eurosistema su T2S",
+"testo": "Articolo 14\nI diritti dell’Eurosistema su T2S\n1. Il software applicativo di T2S è interamente di proprietà dell’Eurosistema.\n2. A tale fine, le 4BC garantiscono all’Eurosistema le licenze relative ai diritti di proprietà intellettuale necessari per consentire all’Eurosistema di fornire l’intera gamma dei servizi di T2S ai CSD, in virtù delle norme applicabili e dei comuni livelli di servizio e su base paritaria. Le 4BC indennizzano l’Eurosistema per qualsiasi azione intentata da terzi in relazione a infrazioni di tali diritti di proprietà intellettuale.\n3. I dettagli riguardanti i diritti dell’Eurosistema su T2S sono concordati tra le 4BC e il\n►M2\nMIB ◄ nel contratto L2/L3. I diritti delle autorità che hanno sottoscritto un accordo di partecipazione di valuta come definito nell’articolo 18 saranno disciplinati in tale accordo.\nSEZIONE IV\nDEPOSITARI CENTRALI DI TITOLI",
+"hash": "08cc3d04c628d4ce"
+},
+{
+"num": "15",
+"rubrica": "Criteri di accesso per i CSD",
+"testo": "Articolo 15\nCriteri di accesso per i CSD\n1. I CSD sono considerati idonei ad accedere ai servizi di T2S a condizione che:\na) siano stati notificati conformemente all’articolo 10 della Direttiva 98/26/CE o, nel caso si tratti di CSD di un ordinamento giuridico non appartenente al SEE, operino secondo un quadro giuridico e regolamentare equivalente a quello in vigore nell’Unione;\n▼M2\nb) siano stati valutati positivamente dalle autorità competenti rispetto (i) al regolamento (UE) n. 909/2014 del Parlamento europeo e del Consiglio (\n4\n), per i CSD situati in un paese del SEE, ovvero (ii) ai Principi per le infrastrutture dei mercati finanziari del Comitato per i pagamenti e le infrastrutture di mercato e dell'Organizzazione internazionale delle commissioni dei valori mobiliari datati aprile 2012 o a un quadro giuridico che attua tali principi, per i CSD situati in un ordinamento giuridico non facente parte del SEE;\n▼B\nc) rendano disponibili agli altri CSD in T2S, su richiesta, ogni codice ISIN per il quale essi siano un CSD emittente (o emittente tecnico CSD);\nd) s’impegnino ad offrire ad altri CSD in T2S servizi basilari di custodia su base non discriminatoria;\ne) s’impegnino nei confronti di altri CSD in T2S ad effettuare per loro regolamenti in moneta di banca centrale in T2S, se la valuta è disponibile in T2S.\n2. Le norme relative ai criteri di accesso per i CSD sono stabilite nella decisione BCE/2011/20 del 16 novembre 2011 recante disposizioni e procedure dettagliate per l’applicazione dei criteri di idoneità dei depositari centrali di titoli all’accesso ai servizi di TARGET2-Securities (\n5\n), e ad esse è data attuazione negli accordi contrattuali tra le banche centrali dell’Eurosistema e i CSD.\n3. La BCE tiene aggiornato sul proprio sito Internet un elenco di CSD ammessi al regolamento nell’ambito di T2S.",
+"hash": "d756f4044da7a3fb"
+},
+{
+"num": "16",
+"rubrica": "Rapporti contrattuali con i CSD",
+"testo": "Articolo 16\nRapporti contrattuali con i CSD\n1. I contratti tra le banche centrali dell’Eurosistema e i CSD, compresi gli accordi sui livelli di servizio, sono interamente armonizzati.\n2. Il\n►M2\nMIB ◄ , congiuntamente alle banche centrali dell’Eurosistema, negozia gli emendamenti ai contratti con i CSD.\n3. I contratti con i CSD e i relativi emendamenti sono approvati dal Consiglio direttivo e successivamente sottoscritti dalla banca centrale dell’Eurosistema del paese in cui è situata la sede del CSD, o dalla BCE per i CSD situati al di fuori dell’area dell’euro, in ogni caso agendo in nome e per conto di tutte le banche centrali dell’Eurosistema. Per quanto attiene all’Irlanda, il contratto è sottoscritto dalla banca centrale dell’Eurosistema dello Stato membro che ha notificato il sistema di regolamento delle operazioni in titoli conformemente all’articolo 10 della direttiva 98/26/CE.",
+"hash": "5d22fe660aaab0fc"
+},
+{
+"num": "17",
+"rubrica": "Rispetto dei requisiti regolamentari",
+"testo": "Articolo 17\nRispetto dei requisiti regolamentari\n1. Il\n►M2\nMIB ◄ tende a supportare i CSD affinché si conformino costantemente ai relativi requisiti giuridici, regolamentari e di sorveglianza.\n2. Il\n►M2\nMIB ◄ considera se la BCE debba emanare raccomandazioni al fine di incoraggiare adeguamenti legislativi per assicurare pari diritti di accesso ai servizi di T2S da parte dei CSD e presenta al Consiglio direttivo proposte in materia.\nSEZIONE V\nVALUTE DIVERSE DALL’EURO",
+"hash": "5c879e3b0eed78c0"
+},
+{
+"num": "18",
+"rubrica": "Condizioni di idoneità per l’inserimento in T2S",
+"testo": "Articolo 18\nCondizioni di idoneità per l’inserimento in T2S\n1. Una valuta appartenente al SEE diversa dall’euro è idonea a essere utilizzata in T2S a condizione che la BCN non appartenente all’area dell’euro, un’altra banca centrale o un’altra autorità responsabile di tale valuta, stipuli con l’Eurosistema un accordo di partecipazione di valuta e che il Consiglio direttivo abbia approvato l’idoneità di tale valuta.\n2. Una valuta diversa dalle valute appartenenti al SEE è idonea a essere utilizzata in T2S, a condizione che il Consiglio direttivo abbia approvato l’idoneità di tale valuta, qualora:\na) il quadro giuridico, regolamentare e di sorveglianza applicabile al regolamento in tale valuta offra un livello di certezza del diritto sostanzialmente pari o superiore rispetto a quello in vigore nell’Unione;\nb) l’inserimento di tale valuta in T2S abbia un impatto positivo sul contributo che T2S dà al mercato del regolamento titoli dell’Unione;\nc) l’altra banca centrale o altra autorità responsabile di tale valuta stipuli con l’Eurosistema un accordo di partecipazione di valuta che sia soddisfacente per entrambe le parti.\n3. In conformità del mandato del\n►M2\nMIB ◄ , le BCN non appartenenti all’area dell’euro e altre banche centrali possono essere rappresentate nel\n►M2\nMIB ◄ .\nSEZIONE VI\nSVILUPPO DEL PROGRAMMA T2S",
+"hash": "29452ca32dabb9b9"
+},
+{
+"num": "19",
+"rubrica": "Sintesi del piano T2S",
+"testo": "Articolo 19\nSintesi del piano T2S\n1. Sulla base delle proposte formulate dal\n►M2\nMIB ◄ , il Consiglio direttivo valuta, ratifica e approva la Sintesi del piano T2S.\n2. Il\n►M2\nMIB ◄ stabilisce un piano operativo sulla base della Sintesi del piano T2S. Il piano operativo con i relativi aggiornamenti è pubblicato e comunicato alle pertinenti parti interessate di T2S.\n3. Se si profila un serio rischio che un elemento fondamentale della Sintesi del piano T2S possa non realizzarsi, il\n►M2\nMIB ◄ ne informa prontamente il Consiglio direttivo e propone le misure necessarie per ridurre ogni ritardo nella realizzazione di T2S.\nSEZIONE VII\nDISPOSIZIONI FINALI",
+"hash": "9d4b3ee185cc3bc4"
+},
+{
+"num": "20",
+"rubrica": "Contratto L2/L3",
+"testo": "Articolo 20\nContratto L2/L3\n1. Fatte salve le disposizioni di cui al presente indirizzo, un contratto L2/L3 stabilisce gli ulteriori dettagli relativi ai compiti e alle responsabilità delle 4BC, del\n►M2\nMIB ◄ e delle banche centrali dell’Eurosistema.\n2. Il contratto L2/L3 e la versione preliminare dei suoi emendamenti sono sottoposti per l’approvazione al Consiglio direttivo e successivamente sottoscritti dall’Eurosistema e dalle 4BC.",
+"hash": "e9a0c03ee6c55ca8"
+},
+{
+"num": "21",
+"rubrica": "Risoluzione delle controversie",
+"testo": "Articolo 21\nRisoluzione delle controversie\n1. Qualora una controversia relativa a una questione disciplinata dal presente indirizzo non possa essere composta attraverso un accordo tra le parti interessate, ciascuna parte interessata può sottoporre la questione al Consiglio direttivo per ottenere una decisione in merito.\n2. Il contratto L2/L3 dispone che il\n►M2\nMIB ◄ o le 4BC possano sottoporre all’attenzione del Consiglio direttivo ogni controversia che dovesse insorgere in relazione al contratto L2/L3 stesso.",
+"hash": "c0f75ec1b4cf0263"
+},
+{
+"num": "22",
+"rubrica": "Abrogazione",
+"testo": "Articolo 22\nAbrogazione\n1. L’indirizzo BCE/2010/2 è abrogato.\n2. I riferimenti all’indirizzo abrogato sono da interpretarsi come riferimenti al presente indirizzo.",
+"hash": "c563e5d72c393bc9"
+},
+{
+"num": "23",
+"rubrica": "Entrata in vigore",
+"testo": "Articolo 23\nEntrata in vigore\nIl presente indirizzo entra in vigore due giorni dopo l’adozione.",
+"hash": "98a84979f4b4b8ca"
+},
+{
+"num": "24",
+"rubrica": "Destinatari e misure di attuazione",
+"testo": "Articolo 24\nDestinatari e misure di attuazione\nTutte le banche centrali dell’Eurosistema sono destinatarie del presente indirizzo.\n▼M1",
+"hash": "20e00c6edb79fa94"
+}
+],
+"meta": {
+"celex_consolidato": "02012O0013-20190620",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02012O0013-20190620"
+}
+}

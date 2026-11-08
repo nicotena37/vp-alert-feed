@@ -1,0 +1,61 @@
+{
+"id": "UE-32022R1011",
+"titolo": "Regolamento delegato (UE) 2022/1011 della Commissione del 10 marzo 2022 che integra il regolamento (UE) n. 575/2013 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione che specificano le modalità di determinazione delle esposizioni indirette verso un clie",
+"estremi": "CELEX 32022R1011",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022R1011",
+"area": [
+"Credito",
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T22:54:25+00:00",
+"n_articoli": 7,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Regole generali per la determinazione del valore dell’esposizione indiretta verso un cliente derivante da contratti derivati e contratti derivati su crediti",
+"testo": "Articolo 1\nRegole generali per la determinazione del valore dell’esposizione indiretta verso un cliente derivante da contratti derivati e contratti derivati su crediti\n1. Gli enti calcolano il valore dell’esposizione indiretta verso un cliente derivante dai contratti derivati elencati all’allegato II del regolamento (UE) n. 575/2013 e dai contratti derivati su crediti, laddove i contratti derivati non siano stati stipulati direttamente con il cliente ma lo strumento di debito o di capitale sottostante sia stato emesso da tale cliente, conformemente alla metodologia di cui agli articoli da 2 a 5 del presente regolamento.\n2. In deroga al paragrafo 1, quando gli strumenti sottostanti fanno parte di un indice di debito o azionario, di un credit default swap index o di un organismo di investimento collettivo, oppure quando i contratti derivati hanno più nomi di riferimento come sottostante, gli enti calcolano i valori delle esposizioni indirette verso un cliente derivanti dai contratti derivati di cui al paragrafo 1 e il contributo di tale esposizione all’esposizione verso il cliente conformemente alla metodologia di cui all’articolo 6.\n3. Qualora i contratti derivati e i contratti derivati su crediti di cui al paragrafo 1 siano assegnati al portafoglio di negoziazione, una volta calcolati i valori delle esposizioni indirette verso un cliente derivanti da tali contratti, gli enti includono detti valori di esposizione nelle esposizioni verso tale cliente appartenenti al portafoglio di negoziazione. Dopo l’aggregazione, le esposizioni nette negative verso il cliente sono azzerate.\n4. In deroga ai paragrafi 1 e 2, se i contratti derivati e i contratti derivati su crediti di cui al paragrafo 1 sono assegnati all’esterno del portafoglio di negoziazione e se, una volta calcolati i valori delle esposizioni indirette verso un cliente derivanti da tali contratti, le esposizioni indirette hanno un valore negativo, gli enti azzerano tali valori di esposizione prima di conteggiarli nelle esposizioni verso tale cliente.",
+"hash": "9c54f16625ed722c"
+},
+{
+"num": "2",
+"rubrica": "Assegnazione delle esposizioni indirette alle categorie di contratti derivati",
+"testo": "Articolo 2\nAssegnazione delle esposizioni indirette alle categorie di contratti derivati\nGli enti assegnano le esposizioni indirette di cui all’articolo 1, paragrafo 1, a una delle categorie di contratti derivati seguenti:\na)\nopzioni su strumenti di debito e di capitale;\nb)\ncontratti derivati su crediti;\nc)\ntutti gli altri contratti derivati elencati all’allegato II del regolamento (UE) n. 575/2013 aventi come attività sottostante uno strumento di debito o di capitale e che non sono inclusi nelle categorie di cui alle lettere a) o b) del presente paragrafo.",
+"hash": "bd5b7f9390aa2860"
+},
+{
+"num": "3",
+"rubrica": "Calcolo del valore dell’esposizione indiretta per le opzioni su strumenti di debito e di capitale",
+"testo": "Articolo 3\nCalcolo del valore dell’esposizione indiretta per le opzioni su strumenti di debito e di capitale\n1. Fatti salvi i paragrafi 2, 3 e 4 del presente articolo, gli enti calcolano il valore dell’esposizione indiretta per le opzioni di cui all’articolo 2, lettera a), sommando il valore di mercato corrente dell’opzione e l’importo dovuto alla controparte dell’opzione a seguito di un potenziale default dell’emittente dello strumento sottostante, da cui è stato detratto l’importo dovuto all’ente da tale controparte in tale eventualità.\n2. Per le opzioni call, il valore dell’esposizione indiretta è pari al valore di mercato dell’opzione. Per una posizione lunga in un’opzione call, il valore dell’esposizione indiretta è positivo, mentre per una posizione corta in un’opzione call il valore dell’esposizione indiretta è negativo.\n3. Per le opzioni put, il valore dell’esposizione indiretta è pari alla differenza tra il valore di mercato dell’opzione e il suo prezzo strike. Per una posizione corta in un’opzione put, il valore dell’esposizione indiretta è positivo, mentre per una posizione lunga in un’opzione put il valore dell’esposizione indiretta è negativo.\n4. In deroga al paragrafo 3, per le opzioni put il cui prezzo strike non è disponibile alla data dell’operazione ma lo sarà in una fase successiva, gli enti utilizzano il prezzo strike atteso modellizzato che è impiegato per il calcolo del valore equo ( fair value ) dell’opzione.\n5. Se il valore di mercato dell’opzione non è disponibile a una determinata data, gli enti adottano il valore equo dell’opzione a tale data. Se non sono disponibili né il valore di mercato né il valore equo di un’opzione a una determinata data, gli enti adottano il valore di mercato o il valore equo più recente. Se non sono disponibili né il valore di mercato né il valore equo di un’opzione a qualsiasi data, gli enti adottano il valore al quale è misurata l’opzione a norma della disciplina contabile applicabile.",
+"hash": "96c556fc6f263f62"
+},
+{
+"num": "4",
+"rubrica": "Calcolo del valore dell’esposizione indiretta per i contratti derivati su crediti",
+"testo": "Articolo 4\nCalcolo del valore dell’esposizione indiretta per i contratti derivati su crediti\n1. Il valore dell’esposizione indiretta verso un cliente derivante dai contratti derivati su crediti di cui all’articolo 2, lettera b), è pari alla somma del valore di mercato corrente del contratto derivato su crediti e dell’importo dovuto alla controparte del contratto derivato su crediti a seguito di un potenziale default dell’emittente dello strumento sottostante, da cui è stato detratto l’importo dovuto all’ente da tale controparte in tale eventualità.\n2. Se il valore di mercato del derivato su crediti non è disponibile a una determinata data, gli enti adottano il valore equo del derivato su crediti a tale data. Se non sono disponibili né il valore di mercato né il valore equo del derivato su crediti a una determinata data, gli enti adottano il valore di mercato o il valore equo più recente. Se non sono disponibili né il valore di mercato né il valore equo di un contratto derivato su crediti a qualsiasi data, gli enti adottano il valore al quale è misurato il contratto derivato su crediti a norma della disciplina contabile applicabile.",
+"hash": "4f68e95230206c32"
+},
+{
+"num": "5",
+"rubrica": "Calcolo del valore dell’esposizione indiretta per altri contratti derivati elencati all’allegato II del regolamento (UE) n. 575/2013",
+"testo": "Articolo 5\nCalcolo del valore dell’esposizione indiretta per altri contratti derivati elencati all’allegato II del regolamento (UE) n. 575/2013\n1. Nel calcolare il valore dell’esposizione indiretta verso un cliente derivante da altri contratti derivati di cui all’articolo 2, lettera c), compresi swap, contratti a termine di tipo future o contratti a termine di tipo forward, gli enti scompongono le operazioni con componenti multiple in singole componenti di operazioni.\n2. Per le componenti delle operazioni di cui al paragrafo 1 che comportano un rischio di default dell’emittente dello strumento sottostante, gli enti calcolano il valore della loro esposizione indiretta come se si trattasse di posizioni in tali componenti.\n3. L’ente che non sia in grado di applicare il trattamento di cui ai paragrafi 1 e 2 determina il valore dell’esposizione indiretta verso l’emittente degli strumenti sottostanti come la perdita massima che esso stesso subirebbe in seguito al potenziale default dell’emittente degli strumenti sottostanti cui si riferisce il contratto derivato.",
+"hash": "4aafa559a0f5a9c7"
+},
+{
+"num": "6",
+"rubrica": "Calcolo dei valori delle esposizioni indirette derivanti da contratti derivati multi-sottostante",
+"testo": "Articolo 6\nCalcolo dei valori delle esposizioni indirette derivanti da contratti derivati multi-sottostante\n1. Nel determinare il valore dell’esposizione indiretta verso un cliente derivante da contratti derivati stipulati su indici di debito o azionari, credit default swap index o organismi di investimento collettivo, o aventi più nomi di riferimento come sottostante, gli enti tengono conto di tutti i singoli strumenti sottostanti e calcolano i valori delle esposizioni indirette come la variazione del prezzo del contratto derivato in caso di default di ciascuno dei nomi di riferimento sottostanti. Gli enti assegnano ciascun valore dell’esposizione indiretta a un cliente identificato, a un cliente distinto o al cliente ignoto a norma dell’articolo 6, paragrafi 1 e 2, del regolamento delegato (UE) n. 1187/2014.\n2. L’ente che non sia in grado di tenere conto di ogni singolo strumento sottostante del contratto derivato conformemente al paragrafo 1 o al quale ciò risulti indebitamente oneroso:\na)\ntiene conto dei singoli strumenti sottostanti che è in grado di considerare o per i quali il look-through non sia indebitamente oneroso e calcola il valore dell’esposizione indiretta conformemente al paragrafo 1;\nb)\nper gli strumenti sottostanti di cui non è in grado di tenere conto o per i quali il look-through sia indebitamente oneroso, calcola il valore dell’esposizione indiretta esaminando la variazione del prezzo del contratto derivato in caso di default di tutti i nomi di riferimento sottostanti.\nIl valore dell’esposizione indiretta di cui al primo comma, lettera b), del presente paragrafo è assegnato all’operazione su derivati in quanto cliente distinto o al cliente ignoto, conformemente all’articolo 6, paragrafo 3, del regolamento delegato (UE) n. 1187/2014.\n3. In deroga ai paragrafi 1 e 2 del presente articolo, se i valori delle esposizioni indirette devono essere assegnati al cliente ignoto conformemente all’articolo 6, paragrafi 2 e 3, del regolamento delegato (UE) n. 1187/2014 della Commissione e se i valori delle esposizioni indirette sono negativi, l’ente azzera detti valori delle esposizioni indirette prima di conteggiarli nelle esposizioni verso il cliente ignoto.",
+"hash": "66b4216b9cfbf2a4"
+},
+{
+"num": "7",
+"rubrica": "Il presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .",
+"testo": "Articolo 7\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "a79b2c33ce4abc3b"
+}
+],
+"meta": {
+"celex_consolidato": "32022R1011",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32022R1011"
+}
+}

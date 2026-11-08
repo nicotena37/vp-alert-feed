@@ -1,0 +1,115 @@
+{
+"id": "UE-32024R2690",
+"titolo": "Regolamento di esecuzione (UE) 2024/2690 della Commissione, del 17 ottobre 2024, recante modalità di applicazione della direttiva (UE) 2022/2555 per quanto riguarda i requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza e l’ulteriore specificazione dei casi in cui u",
+"estremi": "CELEX 32024R2690",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32024R2690",
+"area": [
+"Mercati finanziari",
+"IT e Digital"
+],
+"scaricato_il": "2026-11-07T23:09:33+00:00",
+"n_articoli": 16,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Oggetto",
+"testo": "Articolo 1\nOggetto\nIl presente regolamento stabilisce i requisiti tecnici e metodologici delle misure di cui all’articolo 21, paragrafo 2, della direttiva (UE) 2022/2555 e specifica ulteriormente i casi in cui un incidente è considerato significativo ai sensi dell’articolo 23, paragrafo 3, della medesima direttiva per quanto riguarda i fornitori di servizi DNS, i registri dei nomi di dominio di primo livello, i fornitori di servizi di cloud computing, i fornitori di servizi di data center, i fornitori di reti di distribuzione dei contenuti, i fornitori di servizi gestiti, i fornitori di servizi di sicurezza gestiti, i fornitori di mercati online, di motori di ricerca online e di piattaforme di servizi di social network, nonché i prestatori di servizi fiduciari (i soggetti pertinenti).",
+"hash": "269a2079041c2008"
+},
+{
+"num": "2",
+"rubrica": "Requisiti tecnici e metodologici",
+"testo": "Articolo 2\nRequisiti tecnici e metodologici\n1. Per i soggetti pertinenti i requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza di cui all’articolo 21, paragrafo 2, lettere da a) a j), della direttiva (UE) 2022/2555 sono stabiliti nell’allegato del presente regolamento.\n2. Nell’attuare e nell’applicare i requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza di cui all’allegato del presente regolamento, i soggetti pertinenti garantiscono un livello di sicurezza dei sistemi informativi e di rete adeguato ai rischi esistenti. A tal fine, nel conformarsi ai requisiti tecnici e metodologici delle misure di gestione dei rischi di cibersicurezza di cui all’allegato del presente regolamento, tali soggetti tengono debitamente conto del grado di esposizione ai rischi, delle proprie dimensioni, della probabilità che si verifichino incidenti e della relativa gravità, compreso l’impatto sociale ed economico.\nQualora l’allegato del presente regolamento preveda l’applicazione di un requisito tecnico o metodologico di una misura di gestione dei rischi di cibersicurezza «se opportuno», «se applicabile» o «nella misura del possibile», e qualora un soggetto pertinente ritenga che l’applicazione di determinati requisiti tecnici e metodologici non sia opportuna, applicabile o possibile, il soggetto pertinente documenta in modo comprensibile le ragioni di tale decisione.",
+"hash": "4b3c9834546d1add"
+},
+{
+"num": "3",
+"rubrica": "Incidenti significativi",
+"testo": "Articolo 3\nIncidenti significativi\n1. Un incidente è considerato significativo ai fini dell’articolo 23, paragrafo 3, della direttiva (UE) 2022/2555 per quanto riguarda i soggetti pertinenti se sono soddisfatti uno o più dei criteri seguenti:\na)\nl’incidente ha causato o è in grado di causare al soggetto pertinente una perdita finanziaria diretta superiore a 500 000 EUR o, se tale importo è inferiore, al 5 % del suo fatturato totale annuo dell’esercizio precedente;\nb)\nl’incidente ha causato o è in grado di causare l’esfiltrazione di segreti commerciali, quali definiti all’articolo 2, punto 1), della direttiva (UE) 2016/943, del soggetto pertinente;\nc)\nl’incidente ha causato o è in grado di causare il decesso di una persona fisica;\nd)\nl’incidente ha causato o è in grado di causare danni considerevoli alla salute di una persona fisica;\ne)\nsi è verificato un accesso non autorizzato ai sistemi informativi e di rete, che si sospetta essere malevolo ed è in grado di causare gravi perturbazioni operative;\nf)\nl’incidente soddisfa i criteri di cui all’articolo 4;\ng)\nl’incidente soddisfa uno o più criteri di cui agli articoli da 5 a 14.\n2. Le interruzioni programmate del servizio e le conseguenze previste delle operazioni di manutenzione programmata effettuate dai soggetti pertinenti o per loro conto non sono considerate incidenti significativi.\n3. Nel calcolare il numero di utenti interessati da un incidente ai fini degli articoli 7 e da 9 a 14, i soggetti pertinenti tengono conto di tutti gli elementi seguenti:\na)\nil numero di clienti che hanno un contratto con il soggetto pertinente che concede loro l’accesso ai sistemi informativi e di rete del soggetto pertinente o ai servizi offerti da tali sistemi o accessibili tramite tali sistemi;\nb)\nil numero di persone fisiche e giuridiche associate a clienti commerciali che utilizzano i sistemi informativi e di rete del soggetto o i servizi offerti da tali sistemi o accessibili tramite tali sistemi.",
+"hash": "a6cc422b1b91f96e"
+},
+{
+"num": "4",
+"rubrica": "Incidenti ricorrenti",
+"testo": "Articolo 4\nIncidenti ricorrenti\nGli incidenti che singolarmente non sono considerati un incidente significativo ai sensi dell’articolo 3 sono considerati collettivamente come un unico incidente significativo se soddisfano tutti i criteri seguenti:\na)\nsi sono verificati almeno due volte nell’arco di sei mesi;\nb)\npresentano la stessa causa di fondo apparente;\nc)\nsoddisfano collettivamente il criterio di cui all’articolo 3, paragrafo 1, lettera a).",
+"hash": "6a66f19f267f0273"
+},
+{
+"num": "5",
+"rubrica": "Incidenti significativi riguardanti i fornitori di servizi DNS",
+"testo": "Articolo 5\nIncidenti significativi riguardanti i fornitori di servizi DNS\nPer quanto riguarda i fornitori di servizi DNS, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio di risoluzione dei nomi di dominio ricorsivo o autorevole è completamente indisponibile per più di 30 minuti;\nb)\nper un periodo superiore a un’ora, il tempo di risposta medio di un servizio di risoluzione dei nomi di dominio ricorsivo o autorevole alle richieste di DNS è superiore a 10 secondi;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura del servizio di risoluzione dei nomi di dominio autorevole è compromessa, tranne nei casi in cui i dati relativi a meno di 1 000 nomi di dominio gestiti dal fornitore di servizi DNS, pari a non più dell’1 % dei nomi di dominio gestiti da detto fornitore, non siano corretti a causa di una configurazione errata.",
+"hash": "c8afa89b790dcc97"
+},
+{
+"num": "6",
+"rubrica": "Incidenti significativi riguardanti i registri dei nomi di dominio di primo livello",
+"testo": "Articolo 6\nIncidenti significativi riguardanti i registri dei nomi di dominio di primo livello\nPer quanto riguarda i registri dei nomi di dominio di primo livello, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio di risoluzione dei nomi di dominio autorevole è completamente indisponibile;\nb)\nper un periodo superiore a un’ora, il tempo di risposta medio di un servizio di risoluzione dei nomi di dominio autorevole alle richieste di DNS è superiore a 10 secondi;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi al funzionamento tecnico del dominio di primo livello è compromessa.",
+"hash": "74a7a6cf1f125eee"
+},
+{
+"num": "7",
+"rubrica": "Incidenti significativi riguardanti i fornitori di servizi di cloud computing",
+"testo": "Articolo 7\nIncidenti significativi riguardanti i fornitori di servizi di cloud computing\nPer quanto riguarda i fornitori di servizi di cloud computing, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio di cloud computing fornito è completamente indisponibile per più di 30 minuti;\nb)\nla disponibilità di un servizio di cloud computing di un fornitore è limitata per oltre il 5 % degli utenti di tale servizio nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, per un periodo di tempo superiore a un’ora;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio di cloud computing è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio di cloud computing è compromessa con un impatto su oltre il 5 % degli utenti di tale servizio nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "b716079a6367fbb8"
+},
+{
+"num": "8",
+"rubrica": "Incidenti significativi riguardanti i fornitori di servizi di data center",
+"testo": "Articolo 8\nIncidenti significativi riguardanti i fornitori di servizi di data center\nPer quanto riguarda i fornitori di servizi di data center, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio di data center di un data center gestito dal fornitore è completamente indisponibile;\nb)\nla disponibilità di un servizio di data center di un data center gestito dal fornitore è limitata per un periodo di tempo superiore a un’ora;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio di data center è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’accesso fisico a un data center gestito dal fornitore è compromesso.",
+"hash": "e586381c66b3573d"
+},
+{
+"num": "9",
+"rubrica": "Incidenti significativi riguardanti i fornitori di reti di distribuzione dei contenuti",
+"testo": "Articolo 9\nIncidenti significativi riguardanti i fornitori di reti di distribuzione dei contenuti\nPer quanto riguarda i fornitori di reti di distribuzione dei contenuti, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nuna rete di distribuzione dei contenuti è completamente indisponibile per più di 30 minuti;\nb)\nla disponibilità di una rete di distribuzione dei contenuti è limitata per oltre il 5 % degli utenti di tale rete nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, per un periodo di tempo superiore a un’ora;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di una rete di distribuzione dei contenuti è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di una rete di distribuzione dei contenuti è compromessa con un impatto su oltre il 5 % degli utenti di tale rete nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "6c07afb0866d9440"
+},
+{
+"num": "10",
+"rubrica": "Incidenti significativi riguardanti i fornitori di servizi gestiti e i fornitori di servizi di sicurezza gestiti",
+"testo": "Articolo 10\nIncidenti significativi riguardanti i fornitori di servizi gestiti e i fornitori di servizi di sicurezza gestiti\nPer quanto riguarda i fornitori di servizi gestiti e i fornitori di servizi di sicurezza gestiti, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio gestito o un servizio di sicurezza gestito è completamente indisponibile per più di 30 minuti;\nb)\nla disponibilità di un servizio gestito o di un servizio di sicurezza gestito è limitata per oltre il 5 % degli utenti di tale servizio nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, per un periodo di tempo superiore a un’ora;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio gestito o di un servizio di sicurezza gestito è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio gestito o di un servizio di sicurezza gestito è compromessa con un impatto su oltre il 5 % degli utenti del servizio gestito o del servizio di sicurezza gestito nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "1ee77f181b6a1e57"
+},
+{
+"num": "11",
+"rubrica": "Incidenti significativi riguardanti i fornitori di mercati online",
+"testo": "Articolo 11\nIncidenti significativi riguardanti i fornitori di mercati online\nPer quanto riguarda i fornitori di mercati online, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun mercato online è completamente indisponibile per oltre il 5 % degli utenti di tale mercato nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore;\nb)\noltre il 5 % degli utenti di un mercato online nell’Unione o oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, risente della disponibilità limitata del mercato online;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un mercato online è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un mercato online è compromessa con un impatto su oltre il 5 % degli utenti di tale mercato nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "4e10ad31141905ac"
+},
+{
+"num": "12",
+"rubrica": "Incidenti significativi riguardanti i fornitori di motori di ricerca online",
+"testo": "Articolo 12\nIncidenti significativi riguardanti i fornitori di motori di ricerca online\nPer quanto riguarda i fornitori di motori di ricerca online, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun motore di ricerca online è completamente indisponibile per oltre il 5 % degli utenti di tale motore di ricerca nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore;\nb)\noltre il 5 % degli utenti di un motore di ricerca online nell’Unione o oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, risente della disponibilità limitata del motore di ricerca online;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un motore di ricerca online è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un motore di ricerca online è compromessa con un impatto su oltre il 5 % degli utenti di tale motore di ricerca nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "4a65b63f9290b52b"
+},
+{
+"num": "13",
+"rubrica": "Incidenti significativi riguardanti i fornitori di piattaforme di servizi di social network",
+"testo": "Articolo 13\nIncidenti significativi riguardanti i fornitori di piattaforme di servizi di social network\nPer quanto riguarda i fornitori di piattaforme di servizi di social network, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nla piattaforma di servizi di social network è completamente indisponibile per oltre il 5 % degli utenti di tale piattaforma nell’Unione o per oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore;\nb)\noltre il 5 % degli utenti di una piattaforma di servizi di social network nell’Unione o oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore, risente della disponibilità limitata della piattaforma di servizi di social network;\nc)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di una piattaforma di servizi di social network è compromessa in ragione di un’azione che si sospetta essere malevola;\nd)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di una piattaforma di servizi di social network è compromessa con un impatto su oltre il 5 % degli utenti di tale piattaforma nell’Unione o su oltre 1 milione di tali utenti nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "8b6075bb2b8eacdf"
+},
+{
+"num": "14",
+"rubrica": "Incidenti significativi riguardanti i prestatori di servizi fiduciari",
+"testo": "Articolo 14\nIncidenti significativi riguardanti i prestatori di servizi fiduciari\nPer quanto riguarda i prestatori di servizi fiduciari, un incidente è considerato significativo a norma dell’articolo 3, paragrafo 1, lettera g), se soddisfa uno o più dei criteri seguenti:\na)\nun servizio fiduciario è completamente indisponibile per più di 20 minuti;\nb)\nun servizio fiduciario non è disponibile per gli utenti o per le parti facenti affidamento sulla certificazione per più di un’ora calcolata sulla base di una settimana di calendario;\nc)\noltre l’1 % degli utenti o delle parti facenti affidamento sulla certificazione nell’Unione o oltre 200 000 utenti o parti facenti affidamento sulla certificazione nell’Unione, a seconda di quale valore sia inferiore, risentono della disponibilità limitata di un servizio fiduciario;\nd)\nl’accesso fisico a un’area in cui sono ubicati i sistemi informativi e di rete e il cui accesso è limitato al personale di fiducia del prestatore di servizi fiduciari o la protezione di tale accesso fisico sono compromessi;\ne)\nl’integrità, la riservatezza o l’autenticità dei dati conservati, trasmessi o elaborati relativi alla fornitura di un servizio fiduciario è compromessa con un impatto su oltre lo 0,1 % degli utenti o delle parti facenti affidamento sulla certificazione o su oltre 100 utenti o parti facenti affidamento sulla certificazione del servizio fiduciario nell’Unione, a seconda di quale valore sia inferiore.",
+"hash": "992ad8db7e1c4c6d"
+},
+{
+"num": "15",
+"rubrica": "Abrogazione",
+"testo": "Articolo 15\nAbrogazione\nIl regolamento di esecuzione (UE) 2018/151 della Commissione ( 4 ) è abrogato.",
+"hash": "426daddca0a0ca95"
+},
+{
+"num": "16",
+"rubrica": "Entrata in vigore e applicazione",
+"testo": "Articolo 16\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "3db19a934fbc67f2"
+}
+],
+"meta": {
+"celex_consolidato": "32024R2690",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32024R2690"
+}
+}
