@@ -1,0 +1,30 @@
+{
+"id": "UE-32025R0855",
+"titolo": "Regolamento delegato (UE) 2025/855 della Commissione, del 28 gennaio 2025, che modifica le norme tecniche di regolamentazione di cui al regolamento delegato (UE) 2021/931 per quanto riguarda la specificazione della formula per calcolare il delta di vigilanza delle opzioni call e put associate alla c",
+"estremi": "CELEX 32025R0855",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0855",
+"area": [
+"Vigilanza prudenziale"
+],
+"scaricato_il": "2026-11-07T22:48:32+00:00",
+"n_articoli": 2,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Il regolamento delegato (UE) 2021/931 è così modificato:",
+"testo": "Articolo 1\nIl regolamento delegato (UE) 2021/931 è così modificato:\n1.\nall’articolo 4, paragrafo 4, la frase introduttiva è sostituita dalla seguente:\n«4. Nelle fasi iniziali dell’operazione e successivamente almeno trimestralmente, gli enti che soddisfano le condizioni di cui all’articolo 94, paragrafo 1, del regolamento (UE) n. 575/2013 o le condizioni di cui all’articolo 325 bis , paragrafo 1, di tale regolamento possono individuare il più significativo fattore di rischio procedendo nel seguente modo:»;\n2.\nl’articolo 5 è così modificato:\na)\nal paragrafo 1, la frase introduttiva è sostituita dalla seguente:\n«1. Gli enti calcolano il delta di vigilanza (δ) delle opzioni call e put associate alle categorie del rischio di tasso di interesse o del rischio di posizione in merci compatibile con le condizioni di mercato nelle quali i tassi di interesse o i prezzi delle merci possono essere negativi come segue:»;\nb)\nil paragrafo 2 è sostituito dal seguente:\n«2. Ai fini del paragrafo 1, gli enti calcolano il fattore di spostamento (λ) per le opzioni call e put come segue:\nλ\nj\n=\nmax{ soglia\nj\n– min{ P\nj\n, K\nj\n}, 0} se l ' opzione j è associata alla categoria del rischio di tasso di interesse;\nmax{ – (1 + soglia\nj\n)■min{ P\nj\n, K\nj\n}, 0} se l ' opzione j è associata alla categoria del rischio di posizione in merci.\ndove:\nP\nj\n=\nprezzo a pronti o a termine dello strumento sottostante l’opzione j ;\nK\nj\n=\nprezzo strike dell’opzione j ;\nsoglia\nj\n=\n0,10 % ,se l 'opzione j è associata alla categoria del rischio di tasso di interesse;\n0,1, se l ' opzione j è associata alla categoria del rischio di posizione in merci.\n;»\nc)\nal paragrafo 3, la tabella è sostituita dalla seguente:\n« Tabella\nCategoria di rischio\nStrumento sottostante\nVolatilità di vigilanza\nTasso di interesse\nTutti\n50 %\nPosizione in merci\nEnergia elettrica\n150 %\nAltre merci (esclusa l’energia elettrica)\n70 %»",
+"hash": "8d2a7d37c133f432"
+},
+{
+"num": "2",
+"rubrica": "Il presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .",
+"testo": "Articolo 2\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "83de451c89081c2e"
+}
+],
+"meta": {
+"celex_consolidato": "32025R0855",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0855"
+}
+}

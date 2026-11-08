@@ -1,0 +1,66 @@
+{
+"id": "UE-32019R0815",
+"titolo": "Regolamento delegato (UE) 2018/815 della Commissione, del 17 dicembre 2018, che integra la direttiva 2004/109/CE del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione relative alla specificazione del formato elettronico unico di comunicazione (Testo rilevan",
+"estremi": "CELEX 32019R0815",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02019R0815-20260407",
+"area": [
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T22:58:24+00:00",
+"n_articoli": 8,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Oggetto",
+"testo": "Articolo 1\nOggetto\nIl presente regolamento specifica il formato elettronico unico di comunicazione, di cui all’articolo 4, paragrafo 7, della direttiva 2004/109/CE, che gli emittenti sono tenuti ad utilizzare per redigere le relazioni finanziarie annuali.",
+"hash": "6c61c03c1e9c78eb"
+},
+{
+"num": "2",
+"rubrica": "Definizioni",
+"testo": "Articolo 2\nDefinizioni\nAi fini del presente regolamento si intende per:\n(1)\n«tassonomia di base» :\nl’insieme combinato degli elementi della tassonomia di cui all’allegato VI e la seguente raccolta di link:\na)\nlinkbase di presentazione, che raggruppa gli elementi della tassonomia;\nb)\nlinkbase di calcolo, che esprime le relazioni aritmetiche tra gli elementi della tassonomia;\nc)\nlinkbase delle etichette, che descrive il significato di ciascun elemento della tassonomia;\nd)\nlinkbase di definizione, che definisce le relazioni dimensionali degli elementi della tassonomia di base;\n(2)\n«tassonomia di estensione» :\nla serie combinata di elementi della tassonomia e la seguente raccolta di link, entrambi creati dall’emittente:\na)\nlinkbase di presentazione, che raggruppa gli elementi della tassonomia;\nb)\nlinkbase di calcolo, che esprime le relazioni aritmetiche tra gli elementi della tassonomia;\nc)\nlinkbase delle etichette, che descrive il significato di ciascun elemento della tassonomia;\nd)\nlinkbase di definizione, che assicura la validità dimensionale del risultante documento istanza XBRL rispetto alla tassonomia di estensione;\n(3)\n«bilanci consolidati IFRS» : bilanci consolidati redatti conformemente agli IFRS adottati a norma del regolamento (CE) n. 1606/2002 o agli IFRS di cui all’articolo 1, primo comma, lettera a), della decisione 2008/961/CE.",
+"hash": "310e3b69dd60a332"
+},
+{
+"num": "3",
+"rubrica": "Formato elettronico unico di comunicazione",
+"testo": "Articolo 3\nFormato elettronico unico di comunicazione\nGli emittenti redigono tutte le loro relazioni finanziarie annuali nel formato XHTML.",
+"hash": "e95972ebb1dfdc5a"
+},
+{
+"num": "4",
+"rubrica": "Marcatura dei bilanci consolidati IFRS",
+"testo": "Articolo 4\nMarcatura dei bilanci consolidati IFRS\n1.\nGli emittenti marcano i bilanci consolidati IFRS contenuti nelle relazioni finanziarie annuali.\n2.\nCome minimo, gli emittenti marcano le informazioni specificate nell’allegato II, se presenti nei bilanci consolidati IFRS.\n3.\nGli emittenti possono marcare le informazioni presentate nei bilanci consolidati IFRS diverse da quelle di cui al paragrafo 2.\n4.\nPer le marcature di cui ai paragrafi 1, 2 e 3, gli emittenti utilizzano il linguaggio di markup XBRL e una tassonomia i cui elementi sono quelli della tassonomia di base. Se, conformemente al punto 4 dell’allegato IV, non è opportuno utilizzare elementi della tassonomia di base, gli emittenti creano gli elementi della tassonomia di estensione di cui all’allegato IV.",
+"hash": "c05c701f5621da01"
+},
+{
+"num": "5",
+"rubrica": "Marcatura di altre parti delle relazioni finanziarie annuali",
+"testo": "Articolo 5\nMarcatura di altre parti delle relazioni finanziarie annuali\n1.\nGli emittenti registrati negli Stati membri possono marcare tutte le parti delle loro relazioni finanziarie annuali diverse da quelle di cui all’articolo 4 se utilizzano il linguaggio di markup XBRL e una tassonomia specifica per tali parti fornita dallo Stato membro in cui sono registrati.\n2.\nGli emittenti registrati in paesi terzi non marcano alcuna parte delle loro relazioni finanziarie annuali diversa dai bilanci consolidati IFRS.",
+"hash": "4540e3e848164dd0"
+},
+{
+"num": "6",
+"rubrica": "Regole comuni sulla marcatura",
+"testo": "Articolo 6\nRegole comuni sulla marcatura\nPer le marcature effettuate a norma degli articoli 4 e 5, gli emittenti rispettano le seguenti prescrizioni:\na)\ninserimento dei markup nelle relazioni finanziarie annuali in formato XHTML mediante le specifiche Inline XBRL di cui all’allegato III;\nb)\nprescrizioni sulla marcatura e regole di deposito di cui all’allegato IV.",
+"hash": "11311da2288d6475"
+},
+{
+"num": "7",
+"rubrica": "File della tassonomia XBRL",
+"testo": "Articolo 7\nFile della tassonomia XBRL\nL’ESMA può pubblicare file della tassonomia XBRL basati sulla tassonomia di base leggibili da un dispositivo automatico e scaricabili. Tali file sono conformi ai criteri fissati nell’allegato V.",
+"hash": "0f0406924a11766d"
+},
+{
+"num": "8",
+"rubrica": "Entrata in vigore ed applicazione",
+"testo": "Articolo 8\nEntrata in vigore ed applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nEsso si applica alle relazioni finanziarie annuali contenenti i bilanci per gli esercizi finanziari aventi inizio il 1 o gennaio 2020 o in data successiva.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.\n▼M6",
+"hash": "f9a466511e96593c"
+}
+],
+"meta": {
+"celex_consolidato": "02019R0815-20260407",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02019R0815-20260407"
+}
+}

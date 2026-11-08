@@ -1,0 +1,103 @@
+{
+"id": "UE-32015R1501",
+"titolo": "Regolamento di esecuzione (UE) 2015/1501 della Commissione, dell'8 settembre 2015, relativo al quadro di interoperabilità di cui all'articolo 12, paragrafo 8, del regolamento (UE) n. 910/2014 del Parlamento europeo e del Consiglio in materia di identificazione elettronica e servizi fiduciari per le ",
+"estremi": "CELEX 32015R1501",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02015R1501-20150909",
+"area": [
+"Mercati finanziari",
+"IT e Digital"
+],
+"scaricato_il": "2026-11-07T23:14:57+00:00",
+"n_articoli": 14,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Oggetto",
+"testo": "Articolo 1\nOggetto\nIl presente regolamento stabilisce i requisiti tecnici e operativi del quadro di interoperabilità al fine di garantire l'interoperabilità dei regimi di identificazione elettronica che gli Stati membri notificano alla Commissione.\nDetti requisiti comprendono in particolare:\na) i requisiti tecnici minimi relativi ai livelli di garanzia e alla mappatura dei livelli di garanzia nazionali dei mezzi di identificazione elettronica forniti nell'ambito dei regimi di identificazione elettronica notificati di cui all'articolo 8 del regolamento (UE) n. 910/2014, secondo quanto stabilito agli articoli 3 e 4;\nb) i requisiti tecnici minimi per l'interoperabilità, secondo quanto stabilito agli articoli 5 e 8;\nc) l'insieme minimo di dati di identificazione personale che rappresentano un'unica persona fisica o giuridica, come stabilito all'articolo 11 e nell'allegato;\nd) le norme di sicurezza operativa comuni di cui agli articoli 6, 7, 9 e 10;\ne) le disposizioni per la risoluzione delle controversie di cui all'articolo 13.",
+"hash": "b6aaf22f30d53496"
+},
+{
+"num": "2",
+"rubrica": "Definizioni",
+"testo": "Articolo 2\nDefinizioni\nAi fini del presente regolamento si intende per:\n1) «nodo», il punto di connessione facente parte di un'architettura di interoperabilità dell'identificazione elettronica, che interviene nell'autenticazione transfrontaliera delle persone ed è in grado di riconoscere ed elaborare le trasmissioni o di inoltrarle ad altri nodi attraverso l'abilitazione dell'interfacciamento dell'infrastruttura di identificazione elettronica nazionale di uno Stato membro con le infrastrutture di identificazione elettronica nazionale di altri Stati membri;\n2) «operatore di nodo», l'entità responsabile di assicurare che il nodo svolga le sue funzioni di punto di connessione in modo corretto e affidabile.",
+"hash": "17b17b6023de44c1"
+},
+{
+"num": "3",
+"rubrica": "Requisiti tecnici minimi relativi ai livelli di garanzia",
+"testo": "Articolo 3\nRequisiti tecnici minimi relativi ai livelli di garanzia\nI requisiti tecnici minimi relativi ai livelli di garanzia corrispondono a quelli definiti nel regolamento di esecuzione (UE) 2015/1502 della Commissione (\n4\n).",
+"hash": "d017992d642689fc"
+},
+{
+"num": "4",
+"rubrica": "Mappatura dei livelli di garanzia nazionali",
+"testo": "Articolo 4\nMappatura dei livelli di garanzia nazionali\nLa mappatura dei livelli di garanzia nazionali dei regimi di identificazione elettronica notificati è conforme ai requisiti stabiliti nel regolamento di esecuzione (UE) 2015/1502.\n►C1\nI risultati della mappatura sono comunicati alla Commissione utilizzando il modello di notifica stabilito nella decisione di esecuzione (UE) 2015/1984 della Commissione (\n5\n) ◄ della Commissione.",
+"hash": "d2887ffd6dae96d4"
+},
+{
+"num": "5",
+"rubrica": "Nodi",
+"testo": "Articolo 5\nNodi\n1. Un nodo in uno Stato membro è in grado di connettersi ai nodi di altri Stati membri.\n2. I nodi sono in grado di distinguere attraverso mezzi tecnici tra gli organismi del settore pubblico e le altre parti che fanno affidamento sulla certificazione.\n3. L'attuazione da parte di uno Stato membro dei requisiti tecnici di cui al presente regolamento non impone agli altri Stati membri requisiti tecnici o costi sproporzionati per poter interoperare con l'attuazione adottata dal primo Stato membro.",
+"hash": "42e916c9c4b9730e"
+},
+{
+"num": "6",
+"rubrica": "Protezione dei dati personali e riservatezza dei dati",
+"testo": "Articolo 6\nProtezione dei dati personali e riservatezza dei dati\n1. La tutela della vita privata, la riservatezza dei dati scambiati e il mantenimento dell'integrità dei dati tra i nodi sono assicurati grazie al ricorso alle migliori soluzioni tecniche e prassi di protezione disponibili.\n2. I nodi non conservano i dati personali tranne per i fini di cui all'articolo 9, paragrafo 3.",
+"hash": "0b9b7b0ec0e1c2b3"
+},
+{
+"num": "7",
+"rubrica": "Integrità e autenticità dei dati per la comunicazione",
+"testo": "Articolo 7\nIntegrità e autenticità dei dati per la comunicazione\nLa comunicazione tra i nodi garantisce l'integrità e l'autenticità dei dati al fine di assicurare che tutte le richieste e le risposte siano autentiche e che non siano manomesse. A tal fine, i nodi utilizzano soluzioni già impiegate con successo nel quadro di un uso operativo transfrontaliero.",
+"hash": "dba542eaee997e96"
+},
+{
+"num": "8",
+"rubrica": "Formato dei messaggi per la comunicazione",
+"testo": "Articolo 8\nFormato dei messaggi per la comunicazione\nI nodi utilizzano per la sintassi formati di messaggio comuni basati su norme già applicate più volte tra gli Stati membri e di cui è comprovato il funzionamento in ambiente operativo. La sintassi consente:\na) il trattamento corretto dell'insieme minimo di dati di identificazione personale che rappresentano un'unica persona fisica o giuridica;\nb) il trattamento corretto del livello di garanzia dei mezzi di identificazione elettronica;\nc) la distinzione tra organismi del settore pubblico e altre parti facenti affidamento sulla certificazione;\nd) la flessibilità per rispondere all'esigenza di attributi supplementari in relazione all'identificazione.",
+"hash": "04f1317d1b0049a1"
+},
+{
+"num": "9",
+"rubrica": "Gestione delle informazioni relative alla sicurezza e dei metadati",
+"testo": "Articolo 9\nGestione delle informazioni relative alla sicurezza e dei metadati\n1. L'operatore di nodo comunica i metadati della gestione del nodo secondo modalità standardizzate idonee al trattamento meccanizzato e in modo sicuro e affidabile.\n2. Almeno i parametri relativi alla sicurezza sono recuperati automaticamente.\n3. L'operatore di nodo conserva i dati che, in caso di incidente, permettano di ricostruire la sequenza dello scambio di messaggi al fine di stabilire il luogo e la natura dell'incidente. I dati sono conservati per il periodo di tempo prescritto dalle disposizioni nazionali e comprendono almeno i seguenti elementi:\na) identificazione del nodo;\nb) identificazione del messaggio;\nc) data e ora del messaggio.",
+"hash": "81f468e79164151d"
+},
+{
+"num": "10",
+"rubrica": "Norme in materia di garanzia di sicurezza delle informazioni",
+"testo": "Articolo 10\nNorme in materia di garanzia di sicurezza delle informazioni\n1. Gli operatori dei nodi che forniscono l'autenticazione provano che, per quanto riguarda i nodi partecipanti al quadro di interoperabilità, il nodo soddisfa i requisiti della norma ISO/CEI 27001 attraverso la certificazione o metodi di valutazione equivalenti ovvero attraverso il rispetto delle norme nazionali.\n2. Gli operatori di nodo distribuiscono aggiornamenti critici della sicurezza senza indebiti ritardi.",
+"hash": "9500aeea563e5ef2"
+},
+{
+"num": "11",
+"rubrica": "Dati di identificazione personale",
+"testo": "Articolo 11\nDati di identificazione personale\n1. Un insieme minimo di dati di identificazione personale che rappresentano un'unica persona fisica o giuridica soddisfa i requisiti elencati nell'allegato ove utilizzato in un contesto transfrontaliero.\n2. Un insieme minimo di dati per una persona fisica che rappresenta una persona giuridica contiene la combinazione di attributi elencata nell'allegato per le persone fisiche e le persone giuridiche ove utilizzato in un contesto transfrontaliero.\n3. I dati sono trasmessi sulla base dei caratteri originari e, se del caso, sono anche trascritti in caratteri latini.",
+"hash": "458dd3c48fae6243"
+},
+{
+"num": "12",
+"rubrica": "Specifiche tecniche",
+"testo": "Articolo 12\nSpecifiche tecniche\n1. Ove ciò sia giustificato dal processo di attuazione del quadro di interoperabilità, la rete di cooperazione istituita dalla decisione di esecuzione (UE) 2015/296 può adottare pareri a norma dell'articolo 14, lettera d), di detta decisione sulla necessità di elaborare specifiche tecniche. Tali specifiche forniscono ulteriori dettagli sui requisiti tecnici di cui al presente regolamento.\n2. Conformemente al parere di cui al paragrafo 1, la Commissione, in cooperazione con gli Stati membri, elabora le specifiche tecniche nel quadro delle infrastrutture di servizi digitali del regolamento (UE) n. 1316/2013.\n3. La rete di cooperazione adotta un parere a norma dell'articolo 14, lettera d), della decisione di esecuzione (UE) 2015/296 in cui valuta se e in quale misura le specifiche tecniche elaborate conformemente al paragrafo 2 corrispondono alla necessità individuata nel parere di cui al paragrafo 1 o sono conformi ai requisiti definiti nel presente regolamento. Essa può raccomandare che gli Stati membri tengano conto delle specifiche tecniche nell'attuazione del quadro di interoperabilità.\n4. La Commissione fornisce un'attuazione di riferimento come esempio di interpretazione delle specifiche tecniche. Gli Stati membri possono applicare tale attuazione di riferimento o utilizzarla come modello durante la prova di altre attuazioni delle specifiche tecniche.",
+"hash": "f4860d93251b954a"
+},
+{
+"num": "13",
+"rubrica": "Risoluzione di controversie",
+"testo": "Articolo 13\nRisoluzione di controversie\n1. Ove possibile, qualsiasi controversia riguardante il quadro di interoperabilità è risolta dagli Stati membri interessati mediante negoziazione.\n2. Se non si giunge ad alcuna soluzione in conformità con il paragrafo 1, la rete di cooperazione istituita a norma dell'articolo 12 della decisione di esecuzione (UE) 2015/296 è competente per la controversia in conformità con il suo regolamento interno.",
+"hash": "f06d50c9a81555f8"
+},
+{
+"num": "14",
+"rubrica": "Entrata in vigore",
+"testo": "Articolo 14\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "c700f7e0807192ab"
+}
+],
+"meta": {
+"celex_consolidato": "02015R1501-20150909",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02015R1501-20150909"
+}
+}

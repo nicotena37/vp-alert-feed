@@ -1,0 +1,114 @@
+{
+"id": "UE-32025R0416",
+"titolo": "Regolamento delegato (UE) 2025/416 della Commissione, del 29 novembre 2024, che integra il regolamento (UE) 2023/1114 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di regolamentazione che specificano il contenuto e il formato delle registrazioni nel book di negoziazion",
+"estremi": "CELEX 32025R0416",
+"fonte": "eurlex",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0416",
+"area": [
+"Mercati finanziari"
+],
+"scaricato_il": "2026-11-07T22:50:53+00:00",
+"n_articoli": 16,
+"articoli": [
+{
+"num": "1",
+"rubrica": "Contenuto, standard e formato dei dati relativi agli ordini in cripto-attività",
+"testo": "Articolo 1\nContenuto, standard e formato dei dati relativi agli ordini in cripto-attività\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività tengono a disposizione dell’autorità competente i dettagli di cui agli articoli da 2 a 15 in relazione a ciascun ordine in cripto-attività pubblicizzato attraverso i loro sistemi, o forniscono all’autorità competente l’accesso a tali dettagli, nel formato specificato alle tabelle 2 e 3 dell’allegato, nella misura in cui tali dettagli riguardano l’ordine in questione.\n2. I dati di cui al paragrafo 1 sono in formato JSON conformemente alla metodologia stabilita nella norma ISO 20022.",
+"hash": "1fb56d4985ed0dc3"
+},
+{
+"num": "2",
+"rubrica": "Identificazione delle parti coinvolte nell’ordine",
+"testo": "Articolo 2\nIdentificazione delle parti coinvolte nell’ordine\n1. Per tutti gli ordini in cripto-attività i prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano la documentazione necessaria per identificare i soggetti seguenti:\na)\nil partecipante alla piattaforma di negoziazione di cripto-attività che è una persona giuridica e immette l’ordine nella piattaforma di negoziazione di cripto-attività, identificato in conformità dell’articolo 4 e del campo 1 della tabella 2 dell’allegato;\nb)\nil partecipante alla piattaforma di negoziazione di cripto-attività che è una persona fisica e immette l’ordine nella piattaforma di negoziazione di cripto-attività, identificato in conformità del campo 2 della tabella 2 dell’allegato;\nc)\nil cliente per conto del quale il partecipante alla piattaforma di negoziazione di cripto-attività di cui alle lettere a) o b) immette l’ordine nella piattaforma di negoziazione di cripto-attività, identificato in conformità del campo 3 della tabella 2 dell’allegato;\nd)\nla persona o l’algoritmo informatico all’interno del partecipante alla piattaforma di negoziazione di cripto-attività di cui alle lettere a) e b), responsabile della decisione di investimento relativa all’ordine, identificato in conformità del campo 4 della tabella 2 dell’allegato;\ne)\nla persona o l’algoritmo informatico all’interno del partecipante alla piattaforma di negoziazione di cripto-attività di cui alle lettere a) e b), responsabile dell’esecuzione dell’ordine, identificato in conformità del campo 5 della tabella 2 dell’allegato.\nAi fini della lettera d), qualora una decisione di investimento sia adottata da più persone, il prestatore di servizi per le cripto-attività che gestisce una piattaforma di negoziazione di cripto-attività conserva la documentazione relativa alla persona che ha la responsabilità primaria della decisione. Il prestatore di servizi per le cripto-attività che gestisce la piattaforma di negoziazione di cripto-attività identifica tale persona o algoritmo informatico soltanto se la decisione di investimento è adottata per conto del partecipante o di un cliente conformemente al mandato conferitogli dal cliente su base discrezionale.\n2. Qualora un partecipante alla piattaforma di negoziazione di cripto-attività intenda assegnare un ordine al proprio cliente a seguito dell’immissione dell’ordine nella piattaforma di negoziazione di cripto-attività e, al momento dell’immissione dell’ordine, non abbia ancora assegnato l’ordine al proprio cliente, tale cliente è identificato come specificato nel campo 3 della tabella 2 dell’allegato.\n3. Se diversi ordini di clienti diversi sono immessi insieme nella piattaforma di negoziazione di cripto-attività come ordine aggregato, le informazioni di cui al campo 3 della tabella 2 dell’allegato sono registrate per ciascun cliente.",
+"hash": "0500a69ea5c247ad"
+},
+{
+"num": "3",
+"rubrica": "Elemento di identificazione delle persone fisiche",
+"testo": "Articolo 3\nElemento di identificazione delle persone fisiche\n1. Il prestatore di servizi per le cripto-attività che gestisce una piattaforma di negoziazione di cripto-attività identifica le persone fisiche nelle registrazioni del book di negoziazione utilizzando l’elemento risultante dalla concatenazione del codice alpha-2 dell’ISO 3166-1 specificato in ISO 3166 seguito dall’identificativo nazionale del cliente riportato nell’allegato II del regolamento delegato (UE) 2017/590 basato sulla cittadinanza della persona. Il codice del paese a due lettere deve corrispondere alla cittadinanza della persona fisica.\n2. L’identificativo nazionale del cliente di cui al paragrafo 1 è assegnato conformemente ai livelli di priorità stabiliti nell’allegato II del regolamento delegato (UE) 2017/590, utilizzando l’identificativo con la massima priorità della persona, indipendentemente dal fatto che esso sia già noto al prestatore di servizi per le cripto-attività che gestisce la piattaforma di negoziazione di cripto-attività.\n3. Se una persona fisica ha la cittadinanza di più di un paese dello Spazio economico europeo (SEE), sono utilizzati il codice del paese di cittadinanza che risulta primo nell’ordine alfabetico dei codici alpha-2 dell’ISO 3166-1 e l’identificativo di tale cittadinanza assegnato conformemente al paragrafo 2. Se una persona fisica ha la cittadinanza di un paese non appartenente al SEE, è utilizzato l’identificativo con la massima priorità secondo il campo «Tutti gli altri paesi» di cui all’allegato II del regolamento delegato (UE) 2017/590. Se una persona fisica ha la cittadinanza di un paese SEE e di un paese non appartenente al SEE, sono utilizzati il codice del paese della cittadinanza SEE e l’identificativo con la massima priorità di tale cittadinanza assegnato conformemente al paragrafo 2.\n4. Se una persona fisica è residente in un paese diverso da quello di cui ha la cittadinanza, i prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività identificano anche tale persona fisica sulla base del paese di residenza come specificato nel campo 50 della tabella 2 dell’allegato.\n5. Sono esclusi i titoli che precedono i nomi; ai nomi e cognomi di lunghezza inferiore a cinque caratteri è aggiunto «#». Tutti i caratteri sono in stampato maiuscolo. Non sono utilizzati apostrofi, accenti, trattini, segni di interpunzione o spazi.\n6. Se l’identificativo assegnato conformemente al paragrafo 2 si basa su CONCAT, la persona fisica è identificata dal prestatore di servizi per le cripto-attività che gestisce una piattaforma di negoziazione di cripto-attività utilizzando la concatenazione dei seguenti elementi nel seguente ordine:\na)\nla data di nascita di tale persona nel formato AAAAMMGG;\nb)\ni primi cinque caratteri del nome di tale persona;\nc)\ni primi cinque caratteri del cognome di tale persona.",
+"hash": "0c1c853a951a2a07"
+},
+{
+"num": "4",
+"rubrica": "Identificativi delle persone giuridiche e delle cripto-attività",
+"testo": "Articolo 4\nIdentificativi delle persone giuridiche e delle cripto-attività\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività identificano le persone giuridiche nelle registrazioni del book di negoziazione utilizzando l’identificativo della persona ai sensi dell’articolo 14 del regolamento delegato della Commissione che stabilisce le norme tecniche adottate a norma dell’articolo 68, paragrafo 10, primo comma, lettera b).\n2. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività identificano le cripto-attività nelle registrazioni del book di negoziazione utilizzando gli identificativi delle attività ai sensi dell’articolo 15 del regolamento delegato della Commissione che stabilisce le norme tecniche adottate a norma dell’articolo 68, paragrafo 10, primo comma, lettera b).\n3. Quando utilizza l’identificativo della persona giuridica (LEI) per identificare le persone giuridiche conformemente al paragrafo 1, il prestatore di servizi per le cripto-attività che gestisce una piattaforma di negoziazione di cripto-attività assicura che la lunghezza e la struttura del codice LEI registrato nelle registrazioni del book di negoziazione siano conformi alla norma ISO 17442 e che il codice LEI sia incluso nella base dati degli identificativi internazionali delle persone giuridiche gestita dall’unità operativa centrale nominata dal comitato di sorveglianza sulla regolamentazione e si riferisca alla persona interessata.",
+"hash": "81bc8687e46adf30"
+},
+{
+"num": "5",
+"rubrica": "Capacità di negoziare dei partecipanti alla piattaforma di negoziazione di cripto-attività",
+"testo": "Articolo 5\nCapacità di negoziare dei partecipanti alla piattaforma di negoziazione di cripto-attività\nLa capacità di negoziare in virtù della quale il partecipante alla piattaforma di negoziazione di cripto-attività immette un ordine è registrata come specificato nel campo 7 della tabella 2 dell’allegato.",
+"hash": "3a4d494af370c0f7"
+},
+{
+"num": "6",
+"rubrica": "Registrazione della data e dell’ora",
+"testo": "Articolo 6\nRegistrazione della data e dell’ora\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività tengono un registro della data e dell’ora del verificarsi di ciascun evento elencato nel campo 20 della tabella 2 dell’allegato, come specificato nel campo 8 della tabella 2 dell’allegato.\n2. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività tengono un registro della data e dell’ora per ciascun elemento di dati elencato nei campi 47, 48 e 49 della tabella 2 dell’allegato, come specificato nel campo 8 della tabella 2 dell’allegato.",
+"hash": "e90cafdb4e229864"
+},
+{
+"num": "7",
+"rubrica": "Periodo di validità e restrizioni relative agli ordini",
+"testo": "Articolo 7\nPeriodo di validità e restrizioni relative agli ordini\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività tengono una registrazione dei periodi di validità e delle restrizioni relative agli ordini di cui ai campi 9 e 10 della tabella 2 dell’allegato.\n2. Le registrazioni delle date e delle ore relative ai periodi di validità sono conservate per ciascun periodo di validità, come specificato nel campo 11 della tabella 2 dell’allegato.",
+"hash": "eca26e9a0e5426b1"
+},
+{
+"num": "8",
+"rubrica": "Numero prioritario e sequenziale",
+"testo": "Articolo 8\nNumero prioritario e sequenziale\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività e che gestiscono i sistemi di negoziazione secondo l’ordine prioritario prezzo-visibilità-tempo conservano la registrazione della marcatura temporale prioritaria per tutti gli ordini, come specificato nel campo 12 della tabella 2 dell’allegato.\n2. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività e che gestiscono i sistemi di negoziazione secondo l’ordine prioritario dimensione-tempo conservano la registrazione dei quantitativi che determinano la priorità degli ordini, come specificato nel campo 13 della tabella 2 dell’allegato, nonché la marcatura temporale prioritaria di cui al paragrafo 1.\n3. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività, che utilizzano un sistema combinato di ordine prioritario prezzo-visibilità-tempo e dimensione-tempo e che espongono gli ordini nel loro book di negoziazione in ordine di priorità temporale conservano la registrazione della marcatura temporale prioritaria per tutti gli ordini, come specificato nel campo 12 della tabella 2 dell’allegato.\n4. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività, che utilizzano un sistema combinato di ordine prioritario prezzo-visibilità-tempo e dimensione-tempo e che espongono gli ordini nel loro book di negoziazione in ordine di priorità dimensione-tempo conservano la registrazione dei quantitativi che determinano la priorità degli ordini, come specificato nel campo 13 della tabella 2 dell’allegato, nonché la marcatura temporale prioritaria di cui al paragrafo 1.\n5. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività assegnano e conservano un numero sequenziale per ciascun evento, come specificato nel campo 14 della tabella 2 dell’allegato.",
+"hash": "0ca7f583de7fbf37"
+},
+{
+"num": "9",
+"rubrica": "Codice identificativo degli ordini in cripto-attività",
+"testo": "Articolo 9\nCodice identificativo degli ordini in cripto-attività\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano un codice identificativo individuale per ciascun ordine, come specificato nel campo 19 della tabella 2 dell’allegato. Il codice identificativo è unico per gli elementi seguenti:\na)\nbook di negoziazione;\nb)\ngiorno di negoziazione;\nc)\ncripto-attività.\nIl codice è valido a partire dal momento in cui il gestore della piattaforma di negoziazione di cripto-attività riceve l’ordine fino a quando l’ordine è rimosso dal book di negoziazione. Il codice identificativo si applica agli ordini respinti a prescindere dal motivo del rifiuto.\n2. Il gestore della piattaforma di negoziazione di cripto-attività conserva i dettagli rilevanti degli ordini strategici con funzionalità implicita (SOIF) che sono divulgati al pubblico come specificato nel campo 31 della tabella 2 dell’allegato. Lo status dell’ordine indicato in tale campo specifica se l’ordine è un ordine implicito.\n3. Una volta eseguito un SOIF, i relativi dettagli sono conservati dal gestore della piattaforma di negoziazione di cripto-attività come specificato nei campi pertinenti della tabella 2 dell’allegato.\n4. Una volta eseguito un SOIF, è indicato un codice identificativo dell’ordine collegato alla strategia utilizzando lo stesso codice identificativo per tutti gli ordini collegati a quella determinata strategia. Il codice identificativo dell’ordine collegato alla strategia è specificato conformemente al campo 44 della tabella 2 dell’allegato.\n5. Gli ordini immessi in una piattaforma di negoziazione di cripto-attività con possibilità di strategia di inoltro (routing) sono contrassegnati da tale piattaforma di negoziazione di cripto-attività con l’indicazione «routed», come specificato nel campo 31 della tabella 2 dell’allegato, allorché sono inoltrati verso un’altra piattaforma di negoziazione di cripto-attività. Gli ordini immessi in una piattaforma di negoziazione di cripto-attività con possibilità di strategia di inoltro conservano lo stesso codice identificativo per tutto il loro ciclo di vita, indipendentemente dal fatto che eventuali quantitativi residui vengano ricollocati sul book di negoziazione.",
+"hash": "3206bd26ba1e3dfb"
+},
+{
+"num": "10",
+"rubrica": "Eventi che incidono sugli ordini in cripto-attività",
+"testo": "Articolo 10\nEventi che incidono sugli ordini in cripto-attività\nI prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano la registrazione dei dettagli di cui al campo 20 della tabella 2 dell’allegato in relazione a tutti i nuovi ordini.",
+"hash": "fd2b1558caa2ddfe"
+},
+{
+"num": "11",
+"rubrica": "Tipo di ordine in cripto-attività",
+"testo": "Articolo 11\nTipo di ordine in cripto-attività\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano per ciascun ordine ricevuto la registrazione del tipo di ordine secondo la propria specifica, come specificato nel campo 21 della tabella 2 dell’allegato.\n2. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività classificano ciascun ordine ricevuto o come ordine con limite di prezzo o come ordine stop, come specificato nel campo 22 della tabella 2 dell’allegato.",
+"hash": "3550fb387d1af78d"
+},
+{
+"num": "12",
+"rubrica": "Prezzi relativi agli ordini",
+"testo": "Articolo 12\nPrezzi relativi agli ordini\nI prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano la registrazione di tutti i dettagli del prezzo relativi ai rispettivi ordini, come specificato nella sezione I della tabella 2 dell’allegato.",
+"hash": "45604dddce1947ea"
+},
+{
+"num": "13",
+"rubrica": "Istruzioni relative all’ordine",
+"testo": "Articolo 13\nIstruzioni relative all’ordine\nI prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano le registrazioni di tutte le istruzioni ricevute per ciascun ordine come specificato nella sezione J della tabella 2 dell’allegato.",
+"hash": "73382816fb93593f"
+},
+{
+"num": "14",
+"rubrica": "Codice identificativo dell’operazione",
+"testo": "Articolo 14\nCodice identificativo dell’operazione\nI prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano un codice identificativo individuale di ciascuna operazione risultante dall’esecuzione integrale o parziale di un ordine, come specificato nel campo 46 della tabella 2 e nel campo 1 della tabella 3 dell’allegato, a seconda dei casi.",
+"hash": "470fbea2e66ff184"
+},
+{
+"num": "15",
+"rubrica": "Fasi di negoziazione, prezzo e volume indicativo d’asta",
+"testo": "Articolo 15\nFasi di negoziazione, prezzo e volume indicativo d’asta\n1. I prestatori di servizi per le cripto-attività che gestiscono una piattaforma di negoziazione di cripto-attività conservano la registrazione delle fasi di negoziazione nonché del prezzo e del volume indicativo d’asta, come specificato nella sezione K della tabella 2 dell’allegato.\n2. Qualora le autorità competenti richiedano i dettagli di cui alla sezione K, si ritiene che sulla base di tale richiesta debbano essere comunicati i dettagli di cui al campo 8 e ai campi da 14 a 17 della tabella 2 dell’allegato.",
+"hash": "47b0120c68138588"
+},
+{
+"num": "16",
+"rubrica": "Entrata in vigore",
+"testo": "Articolo 16\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
+"hash": "2e92c0989fcf2111"
+}
+],
+"meta": {
+"celex_consolidato": "32025R0416",
+"url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R0416"
+}
+}
