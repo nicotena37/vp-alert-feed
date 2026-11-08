@@ -1,31 +1,31 @@
 {
- "bce_discorsi_scaricato": "2026-11-07",
- "ultimo_giro": "2026-11-07T12:00:49+00:00",
+ "bce_discorsi_scaricato": "2026-11-08",
+ "ultimo_giro": "2026-11-08T20:34:15+00:00",
  "dal": "2026-10-19",
- "voci_nuove": 298,
- "voci_in_archivio": 14475,
+ "voci_nuove": 68,
+ "voci_in_archivio": 14543,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 522,
+   "voci": 477,
    "con_tema": 25,
-   "secondi": 49
+   "secondi": 41
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 2121,
-   "con_tema": 95,
+   "voci": 2105,
+   "con_tema": 86,
    "secondi": 8
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 152,
+   "voci": 150,
    "con_tema": 5,
    "secondi": 6
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 904,
+   "voci": 931,
    "con_tema": 45,
    "secondi": 13
   },
@@ -33,25 +33,25 @@
    "ok": true,
    "voci": 6,
    "con_tema": 5,
-   "secondi": 7
+   "secondi": 6
   },
   "BIS - discorsi": {
    "ok": true,
    "voci": 50,
-   "con_tema": 17,
+   "con_tema": 16,
    "secondi": 4
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 28,
-   "con_tema": 3,
-   "secondi": 5
+   "voci": 12,
+   "con_tema": 1,
+   "secondi": 4
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
    "voci": 9,
-   "con_tema": 2,
-   "secondi": 4
+   "con_tema": 1,
+   "secondi": 3
   },
   "Il Sole 24 Ore - Economia": {
    "ok": true,
@@ -74,7 +74,7 @@
   "la Repubblica - Economia": {
    "ok": true,
    "voci": 25,
-   "con_tema": 9,
+   "con_tema": 8,
    "secondi": 4
   },
   "ANSA - Europa": {
@@ -93,23 +93,23 @@
    "ok": true,
    "voci": 10,
    "con_tema": 5,
-   "secondi": 7
+   "secondi": 6
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
    "voci": 31,
    "con_tema": 5,
-   "secondi": 4
+   "secondi": 3
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
    "voci": 1986,
    "con_tema": 480,
-   "secondi": 0
+   "secondi": 1
   },
   "Media Cloud": {
-   "ok": false,
-   "errore": "ReadTimeout: HTTPSConnectionPool(host='search.mediacloud.org', port=443): Read timed out. (read timeout=60)"
+   "ok": true,
+   "righe": 75
   },
   "OpenAlex": {
    "ok": true,
