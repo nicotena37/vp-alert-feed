@@ -1,0 +1,31 @@
+name: Biblioteca riprova falliti
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["biblioteca/avvia_riprova.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: biblioteca
+  cancel-in-progress: false
+
+jobs:
+  riprova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests==2.32.3
+      - run: python biblioteca_tutto.py 0 1 75 riprova
+      - run: |
+          git config user.name "vp-alert-feed"
+          git config user.email "vp-alert-feed@users.noreply.github.com"
+          git add biblioteca
+          git diff --cached --quiet || git commit -q -m "Biblioteca: riprova degli atti non scaricati $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -X theirs --quiet && git push --quiet && break; sleep 10; done

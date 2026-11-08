@@ -34,6 +34,7 @@ def art_na(urn, a):
             r = requests.post(NA + "/atto/dettaglio-atto-urn", json={"urn": f"{urn}~art{a}"},
                               headers={**UA, "Content-Type": "application/json", "Accept": "application/json", "Origin": "https://dati.normattiva.it"}, timeout=60)
             if r.status_code == 404: return None
+            if r.status_code in (429, 500, 502, 503, 504): log(f"  {urn}~art{a}: HTTP {r.status_code}"); time.sleep(10 * (t + 1)); continue
             d = r.json(); at = ((d or {}).get("data") or {}).get("atto") or {}
             if not at.get("articoloHtml"): return None
             return at
@@ -57,14 +58,14 @@ def scarica_na(voce):
     while n <= a_max and mancanti < voce.get("stop", 15):
         if voce.get("_scadenza") and time.time() > voce["_scadenza"]:
             voce["_interrotto"] = n; break
-        at = art_na(urn, n); time.sleep(0.12)
+        at = art_na(urn, n); time.sleep(0.4)
         if at:
             mancanti = 0; meta = meta or at
             arts.append(_art(n, at))
         else:
             mancanti += 1
         for s in SUFF:                                      # 120-bis, 120-ter... (anche se l'articolo base è abrogato)
-            at2 = art_na(urn, f"{n}{s}"); time.sleep(0.12)
+            at2 = art_na(urn, f"{n}{s}"); time.sleep(0.4)
             if not at2: break
             mancanti = 0; arts.append(_art(f"{n}-{s}", at2))
         n += 1
@@ -93,7 +94,7 @@ def scarica_ue(voce):
     for cc in dict.fromkeys([c, celex]):                       # se il consolidato non ha l'HTML, usa il testo originale
         url = f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{cc}"
         r = requests.get(url, headers=UA, timeout=180)
-        if r.status_code == 200 and "Articolo 1" in pulisci(r.text): c = cc; break
+        if r.status_code == 200 and len(pulisci(r.text)) > 800: c = cc; break
         log(f"  {cc}: HTTP {r.status_code}, {len(r.text)} caratteri, inizio: {pulisci(r.text)[:120]!r}")
     else:
         return None, []
@@ -110,6 +111,8 @@ def scarica_ue(voce):
         fine = re.search(r"\n(ALLEGATO|Allegato [IVX]+\n|Fatto a )", testo)
         if fine: testo = testo[:fine.start()]
         arts.append({"num": m.group(1).replace(" ", "-"), "rubrica": m.group(2)[:200], "testo": testo, "hash": impronta(testo)})
+    if not arts and len(t) > 500:                           # raccomandazioni e decisioni senza articoli: testo intero
+        arts = [{"num": "Testo", "rubrica": "testo integrale (atto non diviso in articoli)", "testo": t, "hash": impronta(t)}]
     vista = {}
     for a in arts: vista[a["num"]] = a                     # in caso di doppioni tiene l'ultimo (testo consolidato)
     return {"celex_consolidato": c, "url": url}, list(vista.values())

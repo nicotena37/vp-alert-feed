@@ -6,17 +6,19 @@ import json, sys, time
 from pathlib import Path
 import biblioteca as b
 
-def main(k, n, minuti=100):
+def main(k, n, minuti=100, modo=""):
     k, n, t_fine = int(k), int(n), time.time() + float(minuti) * 60
+    riprova = modo == "riprova"                                  # riprova anche le voci fallite in precedenza
     corpus = json.loads(Path("biblioteca/corpus_completo.json").read_text(encoding="utf-8"))
     mie = [v for i, v in enumerate(corpus) if i % n == k]
-    idx_p = b.B / f"indice_blocco{k}.json"
+    idx_p = b.B / (f"indice_riprova.json" if modo == "riprova" else f"indice_blocco{k}.json")
     indice = json.loads(idx_p.read_text(encoding="utf-8")) if idx_p.exists() else {}
-    falliti_p = b.B / f"falliti_blocco{k}.json"
+    falliti_p = b.B / (f"falliti_riprova.json" if modo == "riprova" else f"falliti_blocco{k}.json")
     falliti = json.loads(falliti_p.read_text(encoding="utf-8")) if falliti_p.exists() else {}
     fatte = 0
     for v in mie:
-        if (b.T / f"{v['id']}.json").exists() or v["id"] in falliti: continue
+        if (b.T / f"{v['id']}.json").exists() or (v["id"] in falliti and not riprova): continue
+        falliti.pop(v["id"], None)
         if time.time() > t_fine: b.log(f"tempo esaurito: restano voci da scaricare"); break
         t0 = time.time()
         rp = b.T / f"{v['id']}.parziale.json"
