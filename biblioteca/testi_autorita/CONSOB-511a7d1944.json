@@ -1,0 +1,376 @@
+{
+"id": "CONSOB-511a7d1944",
+"titolo": "Guida Operativa n. 1/2020 - Transaction reporting MiFIR: guida alle segnalazioni alla Consob",
+"estremi": "Altro documento Consob",
+"fonte": "Consob",
+"url": "https://www.consob.it/documents/1912911/1979253/GO_Tansaction_Reporting_2020.pdf/2da79779-9ec9-9ea7-28cd-3e5e827c2142",
+"pagina": "https://www.consob.it/documents/1912911/1979253/GO_Tansaction_Reporting_2020.pdf/2da79779-9ec9-9ea7-28cd-3e5e827c2142",
+"area": [
+"Segnalazioni di Vigilanza"
+],
+"data": "",
+"scaricato_il": "2026-11-09T09:13:17+00:00",
+"n_articoli": 60,
+"articoli": [
+{
+"num": "Premessa",
+"rubrica": "Transaction reporting MiFIR:",
+"testo": "Guida Operativa\nTransaction reporting MiFIR:\nguida alle segnalazioni\nalla Consob\nGuida Operativa\nTransaction reporting MiFIR:\nguida alle segnalazioni\nalla Consob\nDestinatari: Imprese di investimento, gestori di una sede di negoziazione e\nmeccanismi di segnalazione autorizzati (ARM).\nOggetto: Il regime MiFIR di transaction reporting\nINDICE\nSEZIONE 1 PREMESSA",
+"hash": "e1ec258d9898ec6b"
+},
+{
+"num": "par. 1.4",
+"rubrica": "AGGIORNAMENTI",
+"testo": "1.4 AGGIORNAMENTI\nSEZIONE 2 L’AMBITO DI APPLICAZIONE",
+"hash": "91e73222bb9fad6a"
+},
+{
+"num": "par. 2.2",
+"rubrica": "OPERAZIONI OGGETTO DELL’OBBLIGO E ESENZIONI",
+"testo": "2.2 OPERAZIONI OGGETTO DELL’OBBLIGO E ESENZIONI",
+"hash": "004329cc1ddf52a1"
+},
+{
+"num": "par. 2.3",
+"rubrica": "TIPOLOGIA DI STRUMENTI SOGGETTI A OBBLIGO DI COMUNICAZIONE ALLA",
+"testo": "2.3 TIPOLOGIA DI STRUMENTI SOGGETTI A OBBLIGO DI COMUNICAZIONE ALLA\nCONSOB",
+"hash": "9d4d05214027d9a3"
+},
+{
+"num": "par. 2.4",
+"rubrica": "TEMPISTICA E MODALITÀ DI INVIO DELLE OPERAZIONI",
+"testo": "2.4 TEMPISTICA E MODALITÀ DI INVIO DELLE OPERAZIONI",
+"hash": "3f4d1acb74b33a4d"
+},
+{
+"num": "par. 2.5",
+"rubrica": "COMUNICAZIONI ALLA CONSOB",
+"testo": "2.5 COMUNICAZIONI ALLA CONSOB\nSEZIONE 3 I MECCANISMI DI SEGNALAZIONE AUTORIZZATI (ARM)",
+"hash": "1108bade2b62505c"
+},
+{
+"num": "par. 3.2",
+"rubrica": "PROCEDURA DI AUTORIZZAZIONE E REQUISITI",
+"testo": "3.2 PROCEDURA DI AUTORIZZAZIONE E REQUISITI\nSEZIONE 4 L’INVIO DEL FLUSSO DI TRANSACTION REPORTING ALLA CONSOB",
+"hash": "9a4f085eaec27372"
+},
+{
+"num": "par. 4.5",
+"rubrica": "ERRORI DI COMUNICAZIONE CON IL SERVER CONSOB",
+"testo": "4.5 ERRORI DI COMUNICAZIONE CON IL SERVER CONSOB",
+"hash": "21c5ce26fefa79fa"
+},
+{
+"num": "par. 4.6",
+"rubrica": "SEGNALAZIONE DI POSSIBILI ERRORI IN FIRDS",
+"testo": "4.6 SEGNALAZIONE DI POSSIBILI ERRORI IN FIRDS\nSEZIONE 5 I CAMPI DELLA TABELLA 2 DEL RD 2017/590 – FOCUS SU SPECIFICI CAMPI",
+"hash": "0c01a577607ca698"
+},
+{
+"num": "par. 5.1",
+"rubrica": "TRADING VENUE TRANSACTION IDENTIFICATION CODE (FIELD 3 - TVTIC)",
+"testo": "5.1 TRADING VENUE TRANSACTION IDENTIFICATION CODE (FIELD 3 - TVTIC)",
+"hash": "48f99c1b20489823"
+},
+{
+"num": "par. 5.2",
+"rubrica": "IL CODICE LEI DELL’ENTITÀ ESECUTIVA (FIELD 4)",
+"testo": "5.2 IL CODICE LEI DELL’ENTITÀ ESECUTIVA (FIELD 4)",
+"hash": "e20103cb216c10b4"
+},
+{
+"num": "par. 5.3",
+"rubrica": "DATA E ORA DI NEGOZIAZIONE (FIELD 28)",
+"testo": "5.3 DATA E ORA DI NEGOZIAZIONE (FIELD 28)",
+"hash": "bbd6f835125a0c6e"
+},
+{
+"num": "par. 5.4",
+"rubrica": "SEDE DI ESECUZIONE DELL’OPERAZIONE (FIELD 36)",
+"testo": "5.4 SEDE DI ESECUZIONE DELL’OPERAZIONE (FIELD 36)",
+"hash": "f072344b673ca035"
+},
+{
+"num": "par. 5.7",
+"rubrica": "IDENTIFICAZIONE DELLA PERSONA O DELL’ALGORITMO RESPONSABILE",
+"testo": "5.7 IDENTIFICAZIONE DELLA PERSONA O DELL’ALGORITMO RESPONSABILE\nDELLA DECISIONE DI INVESTIMENTO (FIELD 57)",
+"hash": "cf25f0b0507b554a"
+},
+{
+"num": "par. 5.8",
+"rubrica": "IL PREZZO DELLE OPERAZIONI ESEGUITE (FIELD 33)",
+"testo": "5.8 IL PREZZO DELLE OPERAZIONI ESEGUITE (FIELD 33)\nSEZIONE 6 ALLEGATI\nALLEGATO 1: COMUNICAZIONI ALLA CONSOB\nALLEGATO 2: INCIDENT REPORT\nALLEGATO 3: ANOMALIE NEL FIRDS\nSEZIONE 7 GLOSSARIO ED ELENCO ATTI NORMATIVI EUROPEI\nLegenda:\n- evidenziate in celeste le parole cui dovrebbero essere associati link o collegamenti ipertestuali\n- evidenziate in verde le parole definite nel Glossario posizionato alla fine della Guida\n- in corsivo le norme di Livello 1, 2, 3 (talora riprodotte in modo non letterale)\nSEZIONE 1 – PREMESSA",
+"hash": "79d972bc226f2c2f"
+},
+{
+"num": "par. 1.1",
+"rubrica": "DESTINATARI",
+"testo": "1.1 DESTINATARI\n1.1.1 Le presenti Linee Guida si rivolgono alle imprese di investimento come definite dall’articolo\n4(1)(1) MiFID II, ai gestori di una sede di negoziazione come definita dall’articolo 4(1)(24)\nMiFID II, e ai meccanismi di segnalazione autorizzati (ARM) come definiti dall’articolo\n4(1)(54) MiFID II.\nLe presenti Linee Guida possono risultare utili:\n ai soggetti che effettuano operazioni in strumenti finanziari per comprendere in quali\ncircostanze per questi ultimi vi è l’obbligo di segnalazione delle operazioni alla Consob;\n ai soggetti diversi dalle imprese di investimento come definite dall’articolo 4(1)(1)\nMiFID II, che effettuano operazioni su una sede di negoziazione come definita\ndall’articolo 4(1)(24) MiFID II (“non-Mifid firms”);\n ai gestori di una sede di negoziazione come definita dall’articolo 4(1)(24) MiFID II sulla\ncui piattaforma di negoziazione sono state eseguite operazioni da un’impresa diversa\ndalle imprese di investimento come definite dall’articolo 4(1)(1) MiFID II, i.e. da una\n“non-Mifid firms”;\n ai soggetti diversi dalle imprese di investimento come definite dall’articolo 4(1)(1)\nMiFID II, che si avvalgono di imprese di investimento come definite dall’articolo\n4(1)(1) MiFID II per la conclusione di operazioni;\n ai meccanismi di segnalazione autorizzati (ARM, Approved Reporting Mechanism)\ncome definiti dall’articolo 4(1)(54) MiFID II che effettuano le segnalazioni alla Consob\nper conto di una impresa di investimento come definita dall’articolo 4(1)(1) MiFID II o\nper conto di soggetti diversi dalle imprese di investimento come definite dall’articolo\n4(1)(1) MiFID II, che effettuano operazioni su una sede di negoziazione come definita\ndall’articolo 4(1)(24) MiFID II.",
+"hash": "d549129c00a39294"
+},
+{
+"num": "par. 1.2.1",
+"rubrica": "Le presenti Linee Guida riguardano la gestione degli obblighi di segnalazione delle",
+"testo": "1.2.1 Le presenti Linee Guida riguardano la gestione degli obblighi di segnalazione delle\noperazioni da parte delle imprese di investimento che effettuano operazioni in strumenti\nfinanziari, così come disciplinati dall’articolo 26 MiFIR.\n1.2.2 Nello specifico, le imprese di investimento sono tenute a comunicare in modo completo e\naccurato i dettagli di tali operazioni alla Consob il più rapidamente possibile, e al più tardi\nentro la fine del giorno lavorativo seguente. Le autorità competenti, a norma dell’articolo 85\nMiFID II, istituiscono i dispositivi necessari per assicurare che anche l’autorità competente\ndel mercato più rilevante in termini di liquidità per tali strumenti finanziari riceva tali\ninformazioni, nonché rendono accessibili all’ESMA, su richiesta, tutte le informazioni\ncomunicate a norma dell’articolo 26 MiFIR.",
+"hash": "a5155ae16a6da7d1"
+},
+{
+"num": "par. 1.3.1",
+"rubrica": "Le presenti Linee Guida costituiscono un ausilio alla sistematizzazione, organica e",
+"testo": "1.3.1 Le presenti Linee Guida costituiscono un ausilio alla sistematizzazione, organica e\ncompleta:\n degli obblighi previsti dalla disciplina europea di Livello 1, 2 e 3;\n delle indicazioni fornite dall’ESMA sotto forma di Q&A;\n dell’interazione degli obblighi previsti dalla normativa europea con quelli previsti dalla\ndisciplina nazionale.\n1.3.2 La Guida Operativa intende, altresì, offrire, in esito alle richieste degli operatori pervenute,\nalcune indicazioni operative di dettaglio, utili alla migliore attuazione della disciplina\neuropea, avuto riguardo alle specificità del quadro istituzionale ed operativo nazionale.\nAlcune indicazioni costituiscono rielaborazioni di chiarimenti forniti dalla Consob\nnell’ambito della disciplina preesistente, opportunamente riadattati nel nuovo contesto\nregolamentare.\n1.3.3 La presente Guida Operativa non intende alterare le disposizioni europee e le indicazioni\nfornite dall’ESMA.\nQualora una nuova indicazione fornita dall’ESMA dovesse confliggere con le indicazioni\nriportate nella presente Guida Operativa, quest’ultima deve essere considerata recessiva.",
+"hash": "2f53c65c3ca53b68"
+},
+{
+"num": "par. 1.4 (2)",
+"rubrica": "AGGIORNAMENTI",
+"testo": "1.4 AGGIORNAMENTI\n1.4.1 La Consob si impegna a monitorare l’adeguatezza della presente Guida Operativa e a\nintrodurre modifiche alla stessa ove ritenuto opportuno.\nSEZIONE 2 – L’AMBITO DI APPLICAZIONE DEL REGIME DI TRANSACTION\nREPORTING",
+"hash": "e434bf18be318b17"
+},
+{
+"num": "par. 2.1",
+"rubrica": "I SOGGETTI TENUTI",
+"testo": "2.1 I SOGGETTI TENUTI\n2.1.1 Le imprese di investimento come definite dall’articolo 4(1)(1) MiFID II sono i soggetti\ntenuti all’obbligo di invio alla Consob delle segnalazioni delle operazioni, ai sensi\ndell’articolo 26 MiFIR.\nAi sensi dell’articolo 26 MiFIR, le imprese di investimento sono responsabili della\ncompletezza, dell’esattezza e della tempestiva trasmissione delle comunicazioni alla\nConsob.",
+"hash": "e0ea8041583357a2"
+},
+{
+"num": "par. 2.1.2",
+"rubrica": "L’ambito di applicazione dell’obbligo di segnalazione delle operazioni è definito",
+"testo": "2.1.2 L’ambito di applicazione dell’obbligo di segnalazione delle operazioni è definito\npuntualmente in relazione alle specifiche attività o servizi prestati da un’impresa di\ninvestimento, che conducono a un’operazione e pertanto a un obbligo di segnalazione.\n2.1.3 Sebbene le società di gestione del risparmio (“SGR”) non siano imprese di investimento ai\nsensi dell’articolo 4(1)(1) MiFID II, il regime di transaction reporting vede coinvolte anche\nle SGR. Si evidenziano in particolare le seguenti casistiche di operatività e conseguenti\nobblighi di segnalazioni:\n operazioni effettuate direttamente da una SGR su una sede di negoziazione: ai sensi\ndell’articolo 26(5) MiFIR, la segnalazione dell’operazione deve essere effettuata dal\ngestore della sede di negoziazione su cui è stata eseguita l’operazione. La SGR è tenuta a\nfornire alla sede di negoziazione tutte le informazioni necessarie affinché quest’ultima\npossa adempiere agli obblighi di reporting;\n operazioni effettuate da un’impresa di investimento (“broker”) su una sede di\nnegoziazione a seguito di ordine trasmesso da una SGR (coinvolgimento indiretto della\nSGR): ai sensi dell’articolo 26(1) MiFIR, la segnalazione dell’operazione deve essere\neffettuata dall’impresa di investimento;\n operazioni effettuate da una SGR fuori mercato (“XOFF”): tali operazioni non sono\nsoggette all’obbligo di reporting.\n2.1.4 Relativamente alle operazioni eseguite dalle SGR che rientrano nell’ambito di applicazione\ndel regime di transaction reporting, si distinguono dunque le seguenti due fattispecie: a)\noperazioni effettuate direttamente da una SGR su una sede di negoziazione e b) operazioni\neffettuate da una SGR su una sede di negoziazione mediante un broker (coinvolgimento\nindiretto). La tabella sottostante riassume la modalità di valorizzazione di alcuni dei campi\ndi cui alla Tabella 2, Allegato I RD UE 2017/590.\nOperazioni effettuate direttamente Field 4 (Executing entity identification code): LEI code della\nda una SGR su una sede di SGR\nnegoziazione (membership della Field 7 o 16 (Buyer/Seller identification code): LEI code del\nsede di negoziazione): la fondo (Paragrafo 5.30.2, Guidelines, si applica sia alle\nsegnalazione viene effettuata dalla operazioni AOTC sia a quelle MTCH)\ntrading venue ai sensi Field 12 o 21 (Buyer/Seller decision maker code): LEI code\ndell’articolo 26(5) MiFIR della SGR (Paragrafo 5.9, Guidelines)\nField 57 (Investment decision within firm): ID della persona\no algoritmo della SGR\nField 59 (Execution within firm): ID della persona o\nalgoritmo della SGR\nOperazioni effettuate dalla SGR Field 4 (Executing entity identification code): LEI code\nsu una sede di negoziazione dell’impresa di investimento (“broker”)\nmediante un broker: quest’ultimo Field 7 o 16 (Buyer/Seller identification code): LEI code\neffettua la segnalazione della SGR (Paragrafo 5.3.1, Guidelines)\ndell’operazione Field 12 o 21 (Buyer/Seller decision maker code): non\nvalorizzare (Paragrafo 5.9, Guidelines)\nField 57 (Investment decision within firm): non valorizzare\n(Paragrafo 5.11.2, Guidelines)\nField 59 (Execution within firm): NORE (Paragrafo 5.12,\nGuidelines)\n2.1.5 Ai sensi dell’articolo 14(1) e 14(2) RD 2017/590, le imprese di investimento segnalano le\noperazioni eseguite integralmente o parzialmente tramite proprie succursali all’Autorità\ncompetente dello Stato membro d’origine, salvo diversi accordi fra le autorità competenti\ndello Stato membro d’origine e dello Stato membro ospitante. Se un’impresa di investimento\nesegue integralmente o parzialmente un’operazione tramite la sua succursale, essa segnala\nl’operazione una volta sola.\n2.1.6 Ai sensi dell’articolo 14(5) RD 2017/590, le succursali delle imprese di paesi terzi segnalano\nle operazioni all’Autorità competente che ha autorizzato la succursale. Pertanto, nel caso di\nuna succursale di una impresa di investimento extra-UE che opera nel territorio della\nRepubblica Italiana in regime di stabilimento, l’invio delle segnalazioni va effettuato alla\nConsob. Se un’impresa di un paese terzo è stata autorizzata all’apertura di succursali in più\ndi uno Stato membro all’interno dell’Unione, tali succursali scelgono congiuntamente una\ndelle Autorità competenti degli Stati membri a cui devono essere inviate le segnalazioni\ndelle operazioni. La succursale di un’impresa di un paese terzo completa i campi pertinenti\ndella Tabella 2, Allegato I RD 2017/590 con il codice ISO dello Stato membro dell’Autorità\ncompetente che ha rilasciato l’autorizzazione. Al riguardo, si rinvia alla Sezione 22\n“Transaction reporting”, Q&A n. 12 delle Q&A.",
+"hash": "65a6197da614bb83"
+},
+{
+"num": "par. 2.2 (2)",
+"rubrica": "OPERAZIONI OGGETTO DELL’OBBLIGO E ESENZIONI",
+"testo": "2.2 OPERAZIONI OGGETTO DELL’OBBLIGO E ESENZIONI\n2.2.1 Un’impresa di investimento esegue un’operazione quando effettua un servizio o un’attività\ndi cui all’Allegato I, sezione A, punti 1, 2 e 3, MiFID II, prende la decisione di investimento\nnell’ambito di un mandato discrezionale conferito da un cliente, o trasferisce strumenti\nfinanziari da o verso conti, purché in ciascun caso tali servizi o attività abbiano dato luogo a\nun’operazione. Specificamente, un’impresa di investimento esegue un’operazione, ai sensi\ndell’articolo 2 RD 2017/590, quando fornisce uno o più dei seguenti servizi, o effettui una o\npiù delle seguenti attività che determinano un’operazione:\n negoziazione per conto proprio,\n esecuzione di ordini per conto dei clienti,\n ricezione e trasmissione di ordini riguardanti uno o più strumenti finanziari,\n decisione di investimento nell’ambito di un mandato discrezionale conferito da un\ncliente,\n trasferimento di strumenti finanziari da o verso conti.\n2.2.2 La trasmissione di un ordine e i connessi obblighi di reporting sono definiti dall’articolo 4\nRD 2017/590.\n2.2.3 I collocamenti, facendo parte della definizione di acquisizioni o disposizioni, rientrano\nnell’ambito delle segnalazioni oggetto degli obblighi di cui all’articolo 26 MiFIR. L’obbligo\ndi segnalazione delle operazioni relative ai collocamenti è strettamente connesso alla\ncircostanza in cui gli strumenti oggetto dei collocamenti siano ammessi a negoziazione o\nsiano negoziati su una sede di negoziazione europea e pertanto censiti all’interno del\ndatabase FIRDS (Financial Instruments Reference Data System) gestito dall’ESMA,\naccessibile al seguente link\nhttps://registers.esma.europa.eu/publication/searchRegister?core=esma_registers_firds). In\nparticolare, se al momento del collocamento risulta una richiesta di ammissione a\nnegoziazione su una sede di negoziazione europea (request of admission to trading date o\nfirst trading date anteriori temporalmente alla data in cui l’operazione è stata eseguita),\nl’operazione si considera nell’ambito del perimetro di cui all’articolo 26 MiFIR.\n2.2.4 Le esenzioni dal reporting sono previste in specifici casi, i cui riferimenti normativi sono\nriportati nella tabella che segue.\nOperazioni  Articolo 2(5) RD 2017/590\n Paragrafo 5.6.2 Guidelines\nTrasmissione di ordini e di  Articolo 26(4) MIFIR\ninformazioni  Articolo 4 RD 2017/590\n Paragrafo 5.3.3 Guidelines\nTrasferimenti privi di cambio di  Paragrafo 5.6.2.3 Guidelines\nproprietà  Paragrafo 5.20.1 Guidelines\n2.2.5 Ai sensi dell’articolo 2(5) RD 2017/590 l’esenzione di cui alla lettera i) non si applica alle\nIPO, alle offerte pubbliche o collocamenti secondari, ed emissioni di debito.\n2.2.6 In relazione alla compilazione dei campi della Tabella 2, Allegato I RD 2017/590 per le\nIPO, si rinvia anche alla Sezione 22 “Transaction reporting”, Q&A n. 8 delle Q&A.\n2.2.7 Gli eventi societari sono considerati rientranti nell’ambito di applicazione del regime di\ntransaction reporting quando l’investitore o un soggetto da lui delegato è in grado di\neffettuare una decisione di investimento. Ad esempio, i casi di “default option” sono\nconsiderati in scope per il regime di cui all’articolo 26 MiFIR. Al riguardo, si veda la\nSezione 22 “Transaction reporting”, Q&A n. 9 delle Q&A.",
+"hash": "cff72b0e35df021a"
+},
+{
+"num": "par. 2.2.8",
+"rubrica": "In caso di operazioni connesse ad altre operazioni precedentemente non rientranti nel",
+"testo": "2.2.8 In caso di operazioni connesse ad altre operazioni precedentemente non rientranti nel\nperimetro di segnalazione di cui all’articolo 26 MiFIR, si fa riferimento alla Sezione 22\n“Transaction reporting”, Q&A n. 4 delle Q&A.",
+"hash": "0955947c6aa5d7b8"
+},
+{
+"num": "par. 2.3 (2)",
+"rubrica": "TIPOLOGIA DI STRUMENTI SOGGETTI A OBBLIGO DI COMUNICAZIONE ALLA CONSOB",
+"testo": "2.3 TIPOLOGIA DI STRUMENTI SOGGETTI A OBBLIGO DI COMUNICAZIONE ALLA CONSOB\n2.3.1 L’obbligo di segnalazione delle operazioni di cui all’articolo 26 MiFIR, si applica agli\nstrumenti finanziari:\n ammessi alla negoziazione o negoziati in una sede di negoziazione o per i quali è stata\npresentata una richiesta di ammissione alla negoziazione;\n il cui sottostante è uno strumento finanziario negoziato in una sede di negoziazione;\n il cui sottostante è un indice o un paniere composto da strumenti finanziari negoziati in\nuna sede di negoziazione.\nPer quanto attiene al concetto di sottostante, si fa inoltre riferimento alla Sezione 22\n“Transaction reporting”, Q&A n. 11 delle Q&A.\n2.3.2 Il FIRDS è il database anagrafico gestito e pubblicato dall’ESMA. Tale database è costituito\ndalle segnalazioni che devono essere effettuate dalle sedi di negoziazione e dagli\ninternalizzatori sistematici ai sensi dell’articolo 27(1) MiFIR e dell’articolo 1 RD 2017/585.\nLe segnalazioni al FIRDS devono contenere tutti i campi applicabili allo strumento\nfinanziario in oggetto, previsti dalla Tabella 3 del medesimo RD.\n2.3.3 Ciascuna segnalazione di transaction reporting di operazioni su strumenti (ammessi alla\nnegoziazione o negoziati in una sede di negoziazione o per i quali è stata presentata una\nrichiesta di ammissione alla negoziazione) deve essere validata alla luce del campo 41\n(“Codice identificativo dello strumento”) della Tabella 2, Allegato I RD 2017/590. In\nparticolare, al fine di validare il campo 41 della suddetta Tabella, occorre che almeno uno tra\ni campi 9, 10 o 11 della Tabella 3 RD 2017/585 (rispettivamente “Date of approval of the\nadmission to trading”, “Date of request of admission to trading”, “Date of admission to\ntrading or Date of first trade”) sia anteriore temporalmente rispetto alla data e orario cui è\nstata effettuata l’operazione oggetto di segnalazione. Pertanto, la segnalazione di transaction\nreporting è dovuta anche nel caso di eventuali segnalazioni tardive al FIRDS da parte delle\nsedi di negoziazione, in quanto ai fini della validazione è rilevante il valore (data e orario)\nriportato in corrispondenza di almeno uno tra i campi 9, 10 o 11 della Tabella 3 RD\n2017/585.\n2.3.4 Per quanto attiene alla compilazione dei suddetti campi 10 e 11 della Tabella 3 RD 2017/585\nda parte dei gestori di mercati regolamentati, sistemi multilaterali di negoziazione o\ninternalizzatori sistematici, si rinvia alla Sezione 3 “Date and time of the request of\nadmission and admission”, Q&A nn.1-6, delle Q&A. Relativamente ai campi da 8 a 11 della\nTabella 3 RD 2017/585, si fa riferimento alla Sezione 20 “FIRDS fields 8 to 11”, Q&A\nnn.1-6 delle Q&A. Qualora una sede di negoziazione operi in base ad un elenco definito di\nstrumenti finanziari, si veda la Sezione 21 “Defined List of Instruments”, Q&A n. 1 delle\nQ&A.\n2.3.5 Il fatto che uno strumento finanziario non sia censito nel FIRDS o risulti censito in FIRDS\nad una data successiva rispetto alla data e orario dell’operazione da segnalare (una delle tre\ndate e relativi orari di cui sopra sia posteriore alla data in cui è stata eseguita l’operazione)\nnon implica automaticamente che lo strumento sia out of scope e che dunque la segnalazione\nsia non dovuta. L’ESMA, infatti, cura e monitora su base continuativa la qualità delle\ninformazioni anagrafiche relative agli strumenti finanziari, e gli aggiornamenti di queste\nultime possono avere luogo su base ongoing, in ragione della complessità del sistema delle\nfonti informative e dell’acquisizione di maggiori informazioni nel tempo. Altresì, è compito\ndelle imprese di investimento monitorare l’aggiornamento del FIRDS, in relazione a\nstrumenti in precedenza non registrati. Al riguardo, giova ricordare che il FIRDS non\ncostituisce una golden source, come indicato nell’apposito disclaimer dell’ESMA sul sito\nweb del FIRDS.\n2.3.6 Qualora le imprese di investimento, gli ARM e le sedi di negoziazione ritengano che nel\nFIRDS vi siano informazioni non corrette relativamente a specifici ISIN, o a specifiche\ncombinazioni di ISIN-MIC, sono invitate a segnalare tempestivamente alla Consob la\npresenza di tali potenziali errori anagrafici, secondo quanto descritto nel paragrafo 4.6 della\npresente Guida Operativa.\n2.3.7 La Tabella 2, Allegato I RD 2017/590 definisce gli standard ed i formati per la\nrappresentazione delle informazioni dettagliate che devono essere inserite nelle segnalazioni\ndelle operazioni. Per i dettagli della valorizzazione per ciascuna tipologia di strumento\nfinanziario, si rinvia al Paragrafo 5.35 delle Guidelines.\n2.3.8 L’obbligo di segnalazione delle operazioni di cui all’articolo 26 MiFIR, si applica anche alle\noperazioni in strumenti finanziari derivati scambiati in una sede extra-UE e a quelle in\nstrumenti finanziari OTC qualora il sottostante, o almeno uno degli strumenti presenti nel\npaniere o nell’indice sottostante, è ammesso a negoziazione su una sede di negoziazione EU.\nIn tale caso, è prevista la valorizzazione di specifici campi, indicati nella Tabella 2, Allegato\nI RD 2017/590, nonché nell’Esempio 89 e nell’Esempio 90 delle Guidelines. Per quanto\nconcerne i derivati cartolarizzati e la loro valorizzazione, si rinvia al paragrafo 5.35.2 delle\nGuidelines.\n2.3.9 Il termine complex trade si riferisce a un’operazione posta in essere da un’impresa di\ninvestimento che coinvolge contestualmente due o più strumenti finanziari, caratterizzata da\nun unico prezzo per l’operazione. In tale caso, ai sensi dell’articolo 12 RD 2017/590,\nl’impresa di investimento segnala l’operazione separatamente per ciascuno strumento\nfinanziario, ed il collegamento delle segnalazioni appartenenti alla complex trade avviene\nmediante la valorizzazione del campo 40 della Tabella 2, Allegato I RD 2017/590 con un\nunico identificativo che contraddistingue l’impresa.",
+"hash": "5bbceb6a39ff8750"
+},
+{
+"num": "par. 2.3.10",
+"rubrica": "Le Guidelines contengono altresì due esempi sulla modalità di valorizzazione dei campi",
+"testo": "2.3.10 Le Guidelines contengono altresì due esempi sulla modalità di valorizzazione dei campi\ndella Tabella 2, Allegato I RD 2017/590 nel caso di complex trade (cfr. Esempio 117:\nreporting di una “short butterfly strategy” e Esempio 118: strategy con molteplici legs). La\nSezione 19, Q&A n. 1 delle Q&A fornisce ulteriori indicazioni in merito alla modalità di\nreporting delle complex trade.\n2.3.11 L’obbligo di segnalazione delle operazioni di cui all’articolo 26 MiFIR, si applica anche al\ntrasferimento di uno o più strumenti finanziari che comporta il cambiamento di proprietà\ndell’asset. In tal caso, occorre valorizzare il campo 33 della Tabella 2, Allegato I RD\n2017/590 con “NOAP”. Le Guidelines contengono altresì due esempi (cfr. Esempio 49:\ntrasferimento titoli tra clienti all’interno della stessa impresa di investimento e Esempio 50:\ntrasferimento titoli tra clienti di due diverse imprese di investimento).",
+"hash": "786385d245d8d76b"
+},
+{
+"num": "par. 2.4 (2)",
+"rubrica": "TEMPISTICA E MODALITÀ DI INVIO DELLE OPERAZIONI",
+"testo": "2.4 TEMPISTICA E MODALITÀ DI INVIO DELLE OPERAZIONI",
+"hash": "3f4d1acb74b33a4d"
+},
+{
+"num": "par. 2.4.1",
+"rubrica": "Ai sensi dell’articolo 70, comma 2 del Regolamento Mercati, un’impresa di investimento",
+"testo": "2.4.1 Ai sensi dell’articolo 70, comma 2 del Regolamento Mercati, un’impresa di investimento\nche ricade nell’ambito di applicazione del regime di transaction reporting è tenuta a\ncomunicare alla Consob in sede di avvio dell’operatività e successivamente entro almeno 15\ngiorni lavorativi prima di ogni cambiamento, se intende inviare le segnalazioni delle\noperazioni:\n direttamente,\n avvalendosi di un ARM e in tal caso specificando quale,\n se è esonerata dagli obblighi di transaction reporting, indicando la motivazione (ad\nesempio, per operatività solo su titoli non in scope o ai sensi dell’articolo 4 RD\n2017/590).\n2.4.2 L’articolo 26, paragrafo 1, MiFIR stabilisce che le operazioni rientranti nel perimetro di\nsegnalazione devono essere trasmesse al più tardi entro il giorno lavorativo successivo a\nquello in cui sono state eseguite.\n2.4.3 L’articolo 26, paragrafo 7, MiFIR stabilisce che in caso di errori o omissioni nelle\nsegnalazioni, le reporting entities (ARM, sede di negoziazione o le imprese stesse, se\ncomunicano direttamente alla Consob) correggono le informazioni e trasmettono le\ninformazioni corrette alla Consob tempestivamente, una volta individuato l’errore e rimosse\nle eventuali problematiche di natura tecnica riscontrate a monte.",
+"hash": "4252d037ba3de992"
+},
+{
+"num": "par. 2.4.4",
+"rubrica": "Le imprese di investimento sono responsabili della completezza, dell’esattezza e della",
+"testo": "2.4.4. Le imprese di investimento sono responsabili della completezza, dell’esattezza e della\ntempestiva trasmissione delle comunicazioni alla Consob, a meno di errori o omissioni\ncommessi dall’ARM o dalla sede di negoziazione nel caso di “non-MiFID firm”.",
+"hash": "b389999807375795"
+},
+{
+"num": "par. 2.4.5",
+"rubrica": "Ai fini della correzione di un’operazione errata è necessario dapprima effettuare la",
+"testo": "2.4.5 Ai fini della correzione di un’operazione errata è necessario dapprima effettuare la\ncancellazione della stessa, e poi procedere all’invio di una nuova operazione con i campi\ncorretti.",
+"hash": "4dd0264a2a0069a0"
+},
+{
+"num": "par. 2.5.1",
+"rubrica": "Tutte le comunicazioni alla Consob afferenti il regime di transaction reporting devono",
+"testo": "2.5.1 Tutte le comunicazioni alla Consob afferenti il regime di transaction reporting devono\nessere inviate all’indirizzo di posta certificata dme@pec.consob.it, all’attenzione\ndell’Ufficio Vigilanza Infrastrutture di Mercato, Divisione Mercati.",
+"hash": "1ce2e46e4e0802b5"
+},
+{
+"num": "par. 2.5.2",
+"rubrica": "Le imprese di investimento che ricadono nell’ambito di applicazione del regime di",
+"testo": "2.5.2 Le imprese di investimento che ricadono nell’ambito di applicazione del regime di\ntransaction reporting sono tenute a comunicare alla Consob le seguenti informazioni, in\nsede di avvio dell’operatività ed in occasione di ogni cambiamento (utilizzando l’apposito\nmodulo, in Allegato 1 della presente Guida Operativa):\n la modalità di invio delle operazioni (direttamente oppure avvalendosi di un ARM\nautorizzato, specificandone la ragione sociale ed il codice LEI),\n la data di avvio dell’operatività,\n il nominativo e dal recapito telefonico del responsabile della Funzione Compliance e\ndella persona responsabile per l’adempimento degli obblighi di transaction reporting\nall’interno dell’impresa di investimento,\n ogni altra informazione di tipo informatico, necessaria alla predisposizione del\ncollegamento informatico fra l’impresa di investimento e la Consob (si veda la Sezione 4\nper i dettagli).\n2.5.3 Le imprese di investimento che trasmettono gli ordini ad un’altra impresa di investimento\nper la loro esecuzione sono tenute a comunicare alla Consob in quale fattispecie ricadono\ncon riferimento all’articolo 4 RD 2017/590, in sede di avvio dell’operatività ed in occasione\ndi ogni cambiamento. Qualora decidano di non fornire le informazioni di cui all’articolo 4\nRD 2017/590 all’impresa ricevente, le imprese trasmittenti sono tenute ai medesimi\nobblighi di comunicazione e di reporting delle imprese di investimento che effettuano\noperazioni in strumenti finanziari.",
+"hash": "02c3601d0fcc17d3"
+},
+{
+"num": "par. 2.5.4",
+"rubrica": "Le imprese di investimento che ricadono nell’ambito di applicazione del regime di",
+"testo": "2.5.4 Le imprese di investimento che ricadono nell’ambito di applicazione del regime di\ntransaction reporting, ivi incluse le imprese di cui al precedente paragrafo, devono altresì\ncomunicare tempestivamente alla Consob ogni variazione delle informazioni sopra indicate,\ncon particolare riferimento alla modalità prescelta di invio delle operazioni (utilizzando\nl’apposito modulo, in Allegato 1 della presente Guida Operativa), entro la tempistica\nprevista nel precedente paragrafo 2.4.1.",
+"hash": "6a15d7fd856f0a5a"
+},
+{
+"num": "par. 2.5.5",
+"rubrica": "Le imprese di investimento che intendono inviare il flusso di transaction reporting",
+"testo": "2.5.5 Le imprese di investimento che intendono inviare il flusso di transaction reporting\ndirettamente sono preventivamente tenute a effettuare i test di connessione con la Consob.\n2.5.6 Le imprese di investimento che intendono avvalersi di un ARM sono tenute a effettuare i\ntest con l’ARM. L’ARM a sua volta è tenuto a effettuare i test di connettività con la Consob\nsolo se non ha mai inviato alcun file.\nSEZIONE 3 – GLI “APPROVED REPORTING MECHANISM” (ARM)",
+"hash": "ef50ddbbef10cb72"
+},
+{
+"num": "par. 3.1",
+"rubrica": "OGGETTO E AMBITO DI APPLICAZIONE",
+"testo": "3.1 OGGETTO E AMBITO DI APPLICAZIONE\n3.1.1 Un Approved Reporting Mechanism (ARM) è un soggetto autorizzato da una Autorità di\nvigilanza europea, ai sensi dell’articolo 59 MiFID II, a segnalare le operazioni concluse alle\nautorità competenti o all’ESMA per conto di una o più imprese di investimento1.\n3.1.2 I soggetti che intendono richiedere l’autorizzazione a fornire il servizio di ARM richiedono\nl’autorizzazione all’Autorità dello Stato membro di origine. Conseguentemente, i soggetti\nitaliani sono tenuti a presentare domanda di autorizzazione alla Consob, conformemente a\nquanto prescritto dal RD 2017/571 e dal Regolamento di Esecuzione UE 2017/1110. La\nConsob - verificati i requisiti organizzativi e tecnici - provvede al rilascio\ndell’autorizzazione ad esercitare il servizio di ARM. In base al principio della\npassaportazione dell’autorizzazione, con l’autorizzazione rilasciata dalla Consob si potrà\nesercitare il servizio di ARM anche negli altri Stati membri (e viceversa).\n3.1.3 Il procedimento di autorizzazione, la configurazione del soggetto nei sistemi della Consob e\ni necessari test di connessione con la Consob richiedono tempi istruttori e tecnici. I test\npossono essere effettuati soltanto una volta presentata istanza di autorizzazione alla Consob\n(o ad altra Autorità di vigilanza europea), e una volta effettuata la configurazione del\nsoggetto, che è consentita soltanto dopo aver fornito alla Consob le informazioni tecniche\nnecessarie.\n3.1.4 I trade repositories autorizzati ai sensi del Regolamento UE n. 648/2012 (EMIR) che\nintendono segnalare le operazioni di transaction reporting devono richiedere\nl’autorizzazione a esercitare come ARM e inviare le informazioni con modalità e contenuti\nrichieste previsti dall’articolo 26 MiFIR (che differiscono in parte da quelle dovute ai sensi\ndell’EMIR).\n3.1.5 Qualora un’impresa di investimento si avvalga di un ARM (ovvero una “non-MiFID firm”\nsi avvalga di una sede di negoziazione) per l’invio delle segnalazioni di transaction\nreporting, il soggetto delegante rimane responsabile della completezza, dell’accuratezza e\ndella tempestività delle segnalazioni. Il soggetto delegante non è responsabile di eventuali\nmancanze attribuibili all’ARM o alla sede di negoziazione, fermo restando l’obbligo per il\nsoggetto delegante di adottare misure per verificare continuativamente la completezza,\nl’esattezza e la puntualità delle segnalazioni effettuate per suo conto.",
+"hash": "c91552f7a23cf88a"
+},
+{
+"num": "par. 3.2 (2)",
+"rubrica": "PROCEDURA DI AUTORIZZAZIONE E REQUISITI",
+"testo": "3.2 PROCEDURA DI AUTORIZZAZIONE E REQUISITI\n3.2.1 La procedura di autorizzazione alla prestazione del servizio di ARM è disciplinata dal RD\n2017/571 e dal Regolamento di Esecuzione UE 2017/1110.\nLa disciplina dei “data reporting services providers”, ivi inclusa quella relativa agli ARM, è stata rivisitata dal\nRegolamento (EU) 2019/2175 del Parlamento europeo e del Consiglio del 18 dicembre 2019. Le modifiche si\napplicheranno a decorrere dal 1° gennaio 2022. La Guida Operativa sarà aggiornata in seguito per tenerne conto, una\nvolta definite anche le relative misure di livello 3.\n3.2.2 Ai fini della suddetta procedura, la domanda deve contenere le informazioni previste dagli\narticoli 2, 3 e 4 e dai capi II e III RD 2017/571, secondo le modalità previste dal\nRegolamento di Esecuzione UE 2017/1110, con particolare riferimento a:\n informazioni di cui ai paragrafi 2-3-4 RD 2017/571: informazioni sull’organizzazione\n(struttura organizzativa e procedure interne), governo societario e membri dell’organo di\ngestione,\n informazioni di cui ai capi II e III RD 2017/571: requisiti organizzativi e dispositivi di\npubblicazione.",
+"hash": "bc9b9329f4a85897"
+},
+{
+"num": "par. 3.2.3",
+"rubrica": "Ogni comunicazione relativa alla richiesta di autorizzazione, nonché sua successiva",
+"testo": "3.2.3 Ogni comunicazione relativa alla richiesta di autorizzazione, nonché sua successiva\nintegrazione o modifica, da comunicare tempestivamente, deve essere inviata all’indirizzo di\nposta certificata dme@pec.consob.it, all’attenzione dell’Ufficio Vigilanza Infrastrutture di\nMercato, Divisione Mercati.\nSEZIONE 4 – L’INVIO DEL FLUSSO DI TRANSACTION REPORTING ALLA CONSOB\n4. La presente sezione è volta a sintetizzare e chiarire gli aspetti di natura tecnica e di tipo\ninformatico relativi alla segnalazione delle operazioni che rientrano nell’ambito di\napplicazione del regime di transaction reporting.",
+"hash": "42eee73d5e05b4c3"
+},
+{
+"num": "par. 4.1",
+"rubrica": "NOMENCLATURA DEI FILE",
+"testo": "4.1 NOMENCLATURA DEI FILE\n4.1.1 I file scambiati con la Consob devono rispettare la seguente nomenclatura:\n <T_SubmittingEntityIdentification_ExecutingEntityIdentification_NrProg-\nVersion_Year>.xml (file di invio delle operazioni alla Consob da parte della reporting\nentity),\n <F_SubmittingEntityIdentification_ExecutingEntityIdentification_NrProg-\nVersion_Year>.xml (file di risposta inviato dalla Consob alla reporting entity).\n4.1.2 Il numero progressivo presente nel nome del file da spedire alla Consob è un numero di 6\ncifre ciclico, pertanto non deve essere azzerato ad inizio anno, ma soltanto quando arriva\nal numero massimo (999999).\n4.1.3 Quando viene effettuato il re-invio di un file, a seguito di un errore di tipo FIL-XXX,\noccorre mantenere inalterati i campi della nomenclatura, ad eccezione della “versione”,\nad indicare l’eventuale successiva versione di un file. Nel caso di re-invio, determinato da\nun invio parziale del file, occorre mantenere inalterati i campi della nomenclatura.",
+"hash": "1b9c815f10d363ae"
+},
+{
+"num": "par. 4.2",
+"rubrica": "FEEDBACK DEI FILE",
+"testo": "4.2 FEEDBACK DEI FILE\n4.2.1 I file di feedback predisposti dalla Consob indicano il numero totale delle operazioni\naccettate, il dettaglio di quelle rifiutate e di quelle in stato pending. Sarà cura della\nsingola reporting entity (imprese di investimento, ARM e trading venues) accertarsi di\nquali operazioni siano state accettate, utilizzando queste informazioni.\n4.2.2 I feedback files vengono comunicati dalla Consob subito dopo la loro elaborazione, che a\nsua volta subordinata alla ricezione da parte di ESMA dei file relativi alle anagrafiche\ndegli strumenti finanziari del FIRDS.",
+"hash": "55d5c5d90b951ecd"
+},
+{
+"num": "par. 4.3",
+"rubrica": "CANCELLAZIONE E RE-INVIO DEI FILE",
+"testo": "4.3 CANCELLAZIONE E RE-INVIO DEI FILE\n4.3.1 Nel caso in cui sia necessaria la correzione di una o più operazione segnalata, occorre\ndapprima cancellarla e, successivamente procedere con il nuovo della segnalazione\ncorretta. Si ricorda che due operazioni “NEW” non possono contenere lo stesso “TRN”\n(“transaction reference number”). Conseguentemente, qualora venga inviata\nun’operazione con un TRN già presente nel database Consob, essa verrà rifiutata.\n4.3.2 Qualora una cancellazione (CANC) e un nuovo invio (NEW) relativa ad uno stesso TRN\nvengano inviati nello stesso file (rispettando la corretta sequenza temporale), non è\npossibile che i feedback siano tali per cui il CANC venga rifiutato ed il NEW vada in\npending oppure venga anch’esso rifiutato.\n4.3.3 La richiesta di cancellazione di un’operazione viene rifiutata solo nel caso in cui il TRN\ncomunicato sia errato o non presente nel data base della Consob; negli altri casi è sempre\naccettata.",
+"hash": "8dcd5f10b1d7be8f"
+},
+{
+"num": "par. 4.4",
+"rubrica": "INCIDENT REPORT",
+"testo": "4.4 INCIDENT REPORT\n4.4.1 In caso di problematiche riscontrate nell’invio del flusso di transaction reporting, le\nreporting entities (ARM, sedi di negoziazione e imprese di investimento) devono inviare\ntempestivamente alla Consob un incident report contenente l’indicazione temporale\nriferita alla problematica intercorsa, il numero di operazioni potenzialmente impattate, il\nnumero di imprese di investimento e/o di clienti potenzialmente coinvolti (nel caso degli\nARM), l’indicazione delle sedi di negoziazione coinvolte (indicando il MIC), la\ntempistica stimata di ripristino della normale operatività e la descrizione delle possibili\ncause che hanno determinato il malfunzionamento. A tal fine, le reporting entities\nutilizzano il modello allegato alla presente Guida Operativa (Allegato 2). L’incident\nreport è dovuto per qualsiasi disfunzione di natura tecnico-informatica che comporti un\nblocco delle segnalazioni o un ritardo nelle stesse, fermo restando che, in caso di errori o\ninaccuratezza delle segnalazioni effettuate, le imprese di investimento sono tenute a\ncorreggerle tempestivamente, ai sensi dell’articolo 26, paragrafo 7, MiFIR, e a\ncomunicare questi ultimi alla Consob, sulla base del principio di proporzionalità,\naggregando le occorrenze di minore rilevanza o frequenza in un’unica comunicazione.",
+"hash": "72068ef21847dcf3"
+},
+{
+"num": "par. 4.5 (2)",
+"rubrica": "ERRORI DI COMUNICAZIONE CON IL SERVER CONSOB",
+"testo": "4.5 ERRORI DI COMUNICAZIONE CON IL SERVER CONSOB\n4.5.1 Qualora nella fase di invio dei file alla Consob da parte delle reporting entities si verifichi\nun errore di comunicazione con il server della Consob e conseguentemente i file risultino\nparziali, essi non vengono caricati e pertanto elaborati dalla Consob. In tali casi, il\npersonale tecnico IT della Consob contatta le reporting entities affinché procedano al\nreinvio del/i file.\n4.5.2 In caso di errori di tipo FIL, le elaborazioni dei file successivi sono sospese fino alla\nrisoluzione dell’errore FIL del primo file che ha interrotto il regolare flusso di ricezione e\nelaborazione dei file. Analogamente, un file mancante nella sequenza degli invii crea\nun’interruzione nella sequenza, e conseguentemente le elaborazioni non possono\nproseguire fintantoché non viene inviato e elaborato il file mancante. A seguire vengono\npoi elaborati i successivi file accodati.",
+"hash": "065128571eaab7ba"
+},
+{
+"num": "par. 4.6 (2)",
+"rubrica": "SEGNALAZIONE DI POSSIBILI ERRORI IN FIRDS",
+"testo": "4.6 SEGNALAZIONE DI POSSIBILI ERRORI IN FIRDS",
+"hash": "54083e7d130b04e8"
+},
+{
+"num": "par. 4.6.1",
+"rubrica": "I destinatari della presente Guida Operativa segnalano alla Consob le eventuali",
+"testo": "4.6.1 I destinatari della presente Guida Operativa segnalano alla Consob le eventuali\ninformazioni non corrette presenti nel FIRDS, utilizzando l’apposito modulo allegato\n(Allegato 3), che fornisce l’indicazione delle informazioni da inviare alla Consob.\nSEZIONE 5 – I CAMPI DELLA TABELLA DEL RD 2017/590\n5. Nella presente sezione, sono presentati alcuni degli elementi più importanti relativi alla\nmodalità di valorizzazione dei campi della Tabella 2, Allegato I RD 2017/590.",
+"hash": "165e56e0b68c0d37"
+},
+{
+"num": "par. 5.1 (2)",
+"rubrica": "TRADING VENUE TRANSACTION IDENTIFICATION CODE (FIELD 3 - TVTIC)",
+"testo": "5.1 TRADING VENUE TRANSACTION IDENTIFICATION CODE (FIELD 3 - TVTIC)\n5.1.1. Il TVTIC è un codice alfanumerico di massimo 52 caratteri, univoco per ciascuna\noperazione risultante dall’esecuzione integrale o parziale di un ordine, generato dalla sede\ndi negoziazione e divulgato alla parte acquirente e alla parte venditrice a norma\ndell’articolo 12 RD 2017/580.\n5.1.2 È necessario compilare il campo TVTIC solo nel caso di operazioni concluse su una sede\ndi negoziazione. Esso viceversa non è applicabile a operazioni tali per cui il campo 36\n(“Sede” di negoziazione) è valorizzato con ‘XXXX’ o ‘XOFF’, o con il MIC di una\nvenue non-UE.\n5.1.3 Le imprese di investimento sono tenute a valorizzare il campo TVTIC secondo le\nspecifiche indicate nell’articolo 12 RD 2017/580. I valori generati da Borsa Italiana\nS.p.A. per le operazioni concluse sulle proprie sedi di negoziazione devono essere\nconvertiti per renderli compatibili con le prescrizioni dell’articolo 12 RD 2017/580. Le\nregole di conversione in TVTIC dei valori generati dalle piattaforme di negoziazione\nMillennium e SOLA sono disponibili sul sito di Borsa Italiana S.p.A. al link\nhttps://www.borsaitaliana.it/borsaitaliana/gestione-mercati/altri-\nservizi/serviziregolamentari.en.htm.\nAlla data di pubblicazione della presente Guida Operativa, le altre sedi di negoziazione\nitaliane generano e diffondono direttamente il TVTIC, per cui non necessitano di\nconversione.\n5.1.4 Il codice contratto, in qualunque forma presentato, non corrisponde ad un TVTIC valido.\nLaddove il TVTIC segnalato non risulti conforme alle specifiche di cui sopra, le imprese\ndi investimento sono tenute alla tempestiva correzione delle segnalazioni delle operazioni\ne contestuale informativa alla Consob dell’avvenuta correzione (mediante invio di una\ncomunicazione all’email transaction.reporting2@consob.it).",
+"hash": "7c38ff6d91d0e71f"
+},
+{
+"num": "par. 5.2 (2)",
+"rubrica": "IL CODICE LEI DELL’ENTITÀ ESECUTIVA (FIELD 4)",
+"testo": "5.2 IL CODICE LEI DELL’ENTITÀ ESECUTIVA (FIELD 4)\n5.2.1 Ai fini dell’identificazione del soggetto responsabile dell’esecuzione delle operazioni,\noccorre compilare il campo 4 di cui alla Tabella 2, Allegato I RD 2017/590 con il LEI\n(“Legal Entity Identifier”) di tale soggetto. Il LEI è un codice di 20 caratteri alfanumerici\nrilasciato ai sensi dell’ISO 17442. Allo stesso modo occorre procedere per\nl’identificazione di tutti i soggetti “persona giuridica”, quali ad esempio il soggetto\ncompratore e di quello venditore dell’operazione, qualora questi ultimi non siano\nrappresentati da persone fisiche (Field 7 e Field 16).",
+"hash": "f871d5b443cf373d"
+},
+{
+"num": "par. 5.2.2",
+"rubrica": "Ai sensi dell’articolo 13(2) RD 2017/590, le imprese di investimento devono astenersi",
+"testo": "5.2.2 Ai sensi dell’articolo 13(2) RD 2017/590, le imprese di investimento devono astenersi\ndall’effettuare qualsiasi operazione dalla quale scaturisca un obbligo di cui all’articolo 26\nMiFIR, qualora il cliente (diverso da una persona fisica) non sia dotato di un proprio\ncodice LEI, in linea con lo standard ISO 17442 e presente nel Database del GLEIF\n(https://www.gleif.org/en/). Tutti i clienti “persona giuridica” delle imprese di\ninvestimento soggette agli obblighi di transaction reporting devono quindi esser dotati di\nun codice LEI.\n5.2.3 Devono essere dotati di un codice LEI attivo anche gli emittenti di strumenti finanziari\nammessi a negoziazione su una sede di negoziazione europea. Si rinvia all’“ESMA\nstatement on LEI requirements under MiFIR” per ulteriori indicazioni al riguardo,\ndisponibile al seguente link https://www.esma.europa.eu/document/public-statement-lei.\nAl riguardo, si rinvia alla Sezione 2 “LEI of the issuer”, Q&A nn.1-5, delle Q&A.",
+"hash": "c8dbe8741328f8dd"
+},
+{
+"num": "par. 5.3 (2)",
+"rubrica": "DATA E ORA DI NEGOZIAZIONE (FIELD 28)",
+"testo": "5.3 DATA E ORA DI NEGOZIAZIONE (FIELD 28)\n5.3.1 Nel caso di operazioni facenti parte di catene di ordini, ciascuna impresa di investimento\nall’interno della catena deve rispettare la granularità temporale prevista per la specifica\nattività svolta, indipendentemente dai requisiti di granularità previsti per le altre imprese\ndi investimento coinvolte nella catena.\n5.3.2 La tabella che segue riassume il livello di granularità da rispettare per ciascuna attività\nsvolta.\nOperazioni eseguite su una sede di negoziazione da parte Millisecondo\ndi membri o partecipanti\nOperazioni eseguite fuori mercato (“XOFF”) in caso di Millisecondo\ntrasmissione dell’ordine a una sede di negoziazione da\nparte di un’impresa di investimento\nOperazioni eseguite fuori mercato (“XOFF”) al di fuori Secondo\ndi una sede di negoziazione\n5.3.3 Per ulteriori delucidazioni ed esempi, si rinvia al Paragrafo 7.2 delle Guidelines.",
+"hash": "9b24e23905ddb017"
+},
+{
+"num": "par. 5.4 (2)",
+"rubrica": "SEDE DI ESECUZIONE DELL’OPERAZIONE (FIELD 36)",
+"testo": "5.4 SEDE DI ESECUZIONE DELL’OPERAZIONE (FIELD 36)\n5.4.1 La tabella che segue riassume i diversi scenari di valorizzazione del campo 36.\nScenario di trading Campo 36\nOperazioni eseguite su una sede di negoziazione EU, Segment MIC della sede su cui è\ninternalizzatori sistematici EU e trading platforms non- stata eseguita l’operazione. Il MIC\nEU deve essere valido e presente\nnell’elenco ISO 20022\n(https://www.iso20022.org/market-\nidentifier-codes).\nOperazioni eseguite al di fuori di una sede di “XOFF”.\nnegoziazione EU, internalizzatori sistematici EU e\ntrading platforms non-EU.\nOrdini trasmessi ad un’altra impresa di investimento che “XOFF”.\nè membro o partecipante della sede di negoziazione Un ordine si considera eseguito sulla\n(Paragrafo 5.3.3 delle Guidelines). sede di negoziazione solo se eseguito\nda un’impresa di investimento\nmembro o partecipante della sede di\nnegoziazione (Paragrafo 5.4\nGuidelines).\nOperazioni su strumenti finanziari non in scope, aventi “XXXX”\ncome sottostante almeno uno strumento in scope\n5.4.2 Nel caso in cui un’operazione venga effettuata nell’ambito di un accesso elettronico diretto\nal mercato (Direct Electronic Access, “DEA”), il DEA provider deve qualificarsi come\nexecuting entity, pertanto valorizzare il campo 36 con il segment MIC su cui è stata\neseguita l’operazione, mentre il DEA client (che dunque utilizza il servizio per inviare\nordini direttamente al mercato) deve valorizzare il campo 36 con “XOFF”. La tabella di\nseguito riportata fornisce le indicazioni ed i riferimenti alle Guidelines, ai fini della corretta\nvalorizzazione dei campi nel caso dell’accesso elettronico diretto.\nTipologia di (DEA) Obblighi di reporting Guidelines\nIl cliente del DEA opera Entrambi, cliente e provider, devono Paragrafo 5.28.1\nin conto proprio effettuare il reporting dell’operazione.\nLa decisione di investimento è stata\nintrapresa dal cliente e non dal provider,\npertanto il cliente dovrà compilare il\ncampo 57 con il proprio ID, mentre il\nprovider con “NORE”.\nIl cliente del DEA opera Sub-scenario A: i dettagli identificativi Paragrafo 5.28.2.1\nper conto clienti del cliente non sono trasmessi al DEA\nprovider. Entrambi, cliente e provider,\ndevono effettuare il reporting\ndell’operazione.\nSub-scenario B: i dettagli identificativi Paragrafo 5.28.2.2\ndel cliente sono trasmessi al DEA\nprovider. Solo il DEA provider dovrà\neffettuare il reporting dell’operazione.",
+"hash": "1095e614a167771f"
+},
+{
+"num": "par. 5.5",
+"rubrica": "CATENE DI ORDINI",
+"testo": "5.5 CATENE DI ORDINI\n5.5.1 La tabella che segue riassume le macro categorie di catene di ordini previste dalle\nGuidelines e la relativa modalità di valorizzazione del campo 25 (“Indicatore di\ntrasmissione dell’ordine”).\nTipologia catena di ordine Campo 25\nOrdini per i quali tutte le condizioni di cui all’articolo 4 Non si ritiene che l’impresa di\nRD 2017/590 sono rispettate investimento sia executing entity e\npertanto la segnalazione di\ntransaction reporting deve essere\neffettuata da parte della receiving\nfirm. L’impresa trasmittente deve\nfornire tutti i dettagli utili all’invio\ndella segnalazione per suo conto.\nOrdini eseguiti in conto proprio o in modalità ‘MTCH’, “FALSE”\ne per i quali le condizioni di cui all’articolo 4 RD\n2017/590 non sono rispettate\nOrdini trasmessi per conto della clientela o nell’ambito “TRUE”\ndi un mandato discrezionale da parte della clientela,\nsenza che tutte le condizioni di cui all’articolo 4 RD\n2017/590 siano rispettate, in modalità ‘AOTC’\nTutte le altre tipologie di ordini di tipo ‘AOTC’ “FALSE”\n5.5.2 Ai fini della definizione di trasmissione dell’ordine, qualora un’impresa di investimento\nagisca in conto proprio o in modalità matched principal, non viene considerata\ntransmitting (si veda sul punto il Paragrafo 5.3.2 Guidelines).\n5.5.3 La tabella che segue contiene una tassonomia delle catene di trasmissione di ordini\npresenti nelle Guidelines, con l’indicazione degli esempi utili ai fini della corretta\nvalorizzazione dei campi di cui alla Tabella 2 Allegato I RD 2017/590.\nTipologia catena di ordine Sub-definizione Guidelines\nCondizioni a) e b) articolo 4, Esempio 63\nRD 2017/590 non rispettate Esempio 64\nCondizioni a) e b) articolo 4, Simple chains Esempio 65\nRD 2017/590 rispettate, ma Longer chains Esempio 66\ncontestualmente almeno una Chains che includono “non-Mifid\ndelle restanti non è rispettata.firms”:\n1) invio di ordini a “non-Mifid Esempio 67\nfirms”,\n2) ricezione di ordini da parte di Esempio 68\n“non-Mifid firms”\nCondizioni di cui ai Esempio 70\nall’articolo 4, RD 2017/590\nrispettate da parte di tutte le\nimprese di investimento\n5.5.4 L’outsourcing dell’attività di gestione di portafoglio è oggetto della Sezione 22 “Transaction\nreporting”, Q&A n. 7 delle Q&A.",
+"hash": "63401f0d3591141c"
+},
+{
+"num": "par. 5.6",
+"rubrica": "AGGREGAZIONE DI ORDINI",
+"testo": "5.6 AGGREGAZIONE DI ORDINI\n5.6.1 Nel caso di aggregazione di ordini di diversi clienti, occorre inviare una segnalazione per\nciascuno strumento finanziario oggetto dell’operazione, in relazione a ciascun cliente. La\ntabella che segue indica le diverse fattispecie di aggregazioni di ordini e i relativi riferimenti\nnelle Guidelines.\nTipologia di aggregazione di ordini Guidelines\nOne market fill for several clients Paragrafo 5.23.1.1: trading capacity “DEAL”\nParagrafo 5.23.1.2: trading capacity “AOTC”\nSeveral market fills for several clients Paragrafo 5.23.2.1: trading capacity “DEAL”\nParagrafo 5.23.2.2: trading capacity “AOTC”\nParagrafo 5.23.2.4: ordini eseguiti “on a mixed\ntrading capacity basis”\nParagrafo 5.23.2.5: diverse operazioni eseguite\n“AOTC” in giorni differenti\nParagrafo 5.23.2.5.1: i clienti ricevono il prezzo\nmedio\nParagrafo 5.23.2.5.2: ordini eseguiti sulla base\ndel criterio “first come first served”\n5.6.2 Nel caso dell’aggregazione di più ordini eseguiti in differenti momenti temporali, non è\npossibile per le imprese di investimento utilizzare la trading capacity “MTCH” (Paragrafo\n5.23.2.3 Guidelines).",
+"hash": "5af3ed91f1678023"
+},
+{
+"num": "par. 5.7 (2)",
+"rubrica": "IDENTIFICAZIONE DELLA PERSONA O DELL'ALGORITMO RESPONSABILE DELLA DECISIONE",
+"testo": "5.7 IDENTIFICAZIONE DELLA PERSONA O DELL'ALGORITMO RESPONSABILE DELLA DECISIONE\nDI INVESTIMENTO (FIELD 57)\n5.7.1 L’articolo 8(1) RD 2017/590 stabilisce che occorre compilare sempre il campo 57 quando\nun’impresa di investimento esegue le operazioni in conto proprio, dunque solo laddove la\ndecisione di investimento in questione è presa per conto della stessa impresa di investimento\noppure per conto di un cliente nell’ambito di un mandato discrezionale conferitole dal\ncliente. L’unica eccezione a tale previsione si applica in caso di trasmissione degli ordini,\nquando un’impresa di investimento effettua il reporting come “receiving firm” ed effettua\nl’operazione in modalità “DEAL”. In tale caso, l’impresa di investimento deve compilare la\nsegnalazione per conto del cliente con le informazioni fornite dall’impresa di investimento\n(Paragrafo 5.26.3.1, 5.26.4.1, 5.26.4.2 e 5.27.2). La tabella che segue distingue le diverse\nmodalità di valorizzazione del campo 57 e i relativi riferimenti nelle Guidelines.\nTipologia di decisione di investimento Guidelines\nDecisione di investimento all’interno Paragrafo 5.11.1\ndell’impresa di investimento  NATIONAL_ID se decisione presa da una\npersona fisica\n codice dell’algoritmo responsabile della\ndecisione se decisione presa da un algoritmo:\nDecisione di investimento prese al di fuori Paragrafo 5.11.2\ndell’impresa (il cliente prende la decisione di  il campo 57 non deve essere compilato\ninvestimento e l’impresa di investimento\nagisce in modalità matched principal\n(“MTCH”) o “AOTC”",
+"hash": "0df1f5c57722b773"
+},
+{
+"num": "par. 5.8 (2)",
+"rubrica": "IL PREZZO DELLE OPERAZIONI ESEGUITE (FIELD 33)",
+"testo": "5.8 IL PREZZO DELLE OPERAZIONI ESEGUITE (FIELD 33)\n5.8.1 La valorizzazione del campo 33 è obbligatoria per tutte le tipologie di operazioni rientranti\nnell’ambito di applicazione del regime di transaction reporting. In particolare, la tabella che\nsegue riporta le modalità di valorizzazione del campo in relazione a ciascuna tipologia di\noperazioni, in accordo di quanto stabilito nella Tabella 2, Allegato I RD 2017/590.\nTipologia di prezzo Tipologia di valorizzazione\nPrezzo espresso in valore monetario Numero decimale fino a 18 cifre in totale, di cui\nfino a 13 possono essere decimali\nPrezzo espresso in percentuale o rendimento Numero decimale fino a 11 cifre in totale, di cui\nfino a 10 possono essere decimali\nPrezzo espresso in punti base Numero decimale fino a 18 cifre in totale, di cui\nfino a 17 possono essere decimali\nPrezzo non disponibile “PNDG”\nPrezzo non applicabile “NOAP”\n5.8.2 Quando il codice CFI dello strumento finanziario, riportato nel campo 43, è rappresentato da\nD***** (strumenti di debito) e la quantità è riportata in unità, il prezzo non può essere\nespresso in percentuale.\n5.8.3 Quando il prezzo dell’operazione (o il NAV nel caso di alcuni ETF) non è disponibile al\nmomento in cui questa viene eseguita, l’impresa di investimento o il soggetto che effettua la\nsegnalazione compila il campo 33 con “PNDG”. Quando il prezzo diviene disponibile, il\nsoggetto segnalante deve cancellare la precedente segnalazione con prezzo “PNDG” e\ninviarne una nuova con il prezzo effettivo dell’operazione. In merito, si veda la Sezione 22\n“Transaction reporting”, Q&A n. 1 delle Q&A.\nSEZIONE 6 – ALLEGATI\nALLEGATO 1\nMODULO PER L’INVIO DI COMUNICAZIONI ALLA CONSOB\nA) AVVIO DELL’INVIO DELLE OPERAZIONI\nNome dell’impresa di investimento _________________________________________\nLEI dell’impresa di investimento ___________________________________________\nData della comunicazione (formato ISO 8601: YYYY-MM-DD) __________________\nCanale di trasmissione scelto 󠆶Diretto, 󠆶 ARM (indicare il LEI dell’ARM ___________)\nData di avvio dell’operatività (formato ISO 8601: YYYY-MM-DD) _________________\nNominativo, email e recapito telefonico del responsabile della Funzione Compliance\n_______________________________________________________________________\nNominativo, email e recapito telefonico della persona responsabile per l’adempimento degli\nobblighi di transaction reporting all’interno dell’impresa di investimento ___________\nInformazioni di tipo informatico necessarie alla predisposizione del collegamento\ninformatico fra l’impresa di investimento e la Consob, quali indirizzo IP (le password\nsaranno scambiate a valle privatamente) e la porta di invio dei file di transazioni e quella di\nricezione dei file di feedback, qualora differenti.\nB) VARIAZIONE DELLA MODALITÀ DI INVIO DELLE OPERAZIONI\nNome dell’impresa di investimento ___________________________________________\nLEI dell’impresa di investimento _____________________________________________\nData della comunicazione (formato ISO 8601: YYYY-MM-DD)_____________________\nCanale di trasmissione attuale 󠆶Diretto, 󠆶 ARM (indicare il LEI dell’ARM ____________)\nData di variazione del canale di trasmissione (formato ISO 8601: YYYY-MM-DD)_______\nNuovo canale di trasmissione 󠆶Diretto, 󠆶 ARM (indicare il LEI dell’ARM ____________)\nNominativo, email e recapito telefonico del responsabile della Funzione Compliance\n(qualora varino) ____________________________________________________________\nNominativo, email e recapito telefonico della persona responsabile per l’adempimento degli\nobblighi di transaction reporting all’interno dell’impresa di investimento (qualora varino)\n__________________________________________________________________________\nInformazioni di tipo informatico necessarie alla predisposizione del nuovo collegamento\ninformatico fra l’impresa di investimento e la Consob, quali indirizzo IP (le password\nsaranno scambiate a valle privatamente) e la porta di invio dei file di transazioni e quella di\nricezione dei file di feedback, qualora differenti.\nC) ESONERO DALL’INVIO DELLE OPERAZIONI\nNome dell’impresa di investimento _________________________________________\nLEI dell’impresa di investimento ___________________________________________\nData della comunicazione (formato ISO 8601: YYYY-MM-DD) __________________\nMotivazione dell’esonero __________________________________________________\nALLEGATO 2\nMODULO PER L’INVIO DI INCIDENT REPORT\nNome della reporting entity___________________________________________\nLEI della reporting entity_____________________________________________\nData della comunicazione (formato ISO 8601: YYYY-MM-DD) ____________________\nTipologia di comunicazione: 󠆶 primo invio, follow-up di precedente comunicazione\nNumero dell’incident report (formato YYYY-numero-follow-up) da utilizzare anche in\nsuccessive integrazioni ______________________________________________________\nData dell’incident (formato ISO 8601: YYYY-MM-DD)\n____________________________Numero di operazioni coinvolte (stima in prima\ncomunicazione e conferma puntuale successivamente)\n__________________________________________________________\nNumero di clienti coinvolti (stima in prima comunicazione e conferma puntuale\nsuccessivamente) ___________________________________________________________\nNumero di operazioni coinvolte per ciascun cliente (stima in prima comunicazione e\nconferma puntuale successivamente) ___________________________________________\nIndicazione delle sedi di negoziazione coinvolte (MIC) o XOFF (stima in prima\ncomunicazione e conferma puntuale successivamente) _____________________________\nDescrizione dettagliata delle possibili cause dell’incidente (analisi prima facie e descrizione\npuntuale successivamente) ___________________________________________________\nData della risoluzione del problema (stima prima facie e conferma puntuale\nsuccessivamente) (formato ISO 8601: YYYY-MM-DD) ___________________________\nData del completamento del recupero delle segnalazioni coinvolte dall’incidente stima\nprima facie e conferma puntuale successivamente) (formato ISO 8601: YYYY-MM-DD)\n__________________________________________________________________________\nALLEGATO 3\nMODULO PER L’INVIO SEGNALAZIONI DI POTENZIALI ERRORI NEL FIRDS\nExcel da inviare all’indirizzo e-mail firds@consob.it\nDATA DATA CODICE FINANCIAL CAMPO DELLA TABELLA 3 MOTIVAZIONE /\nVERIFICA ESECUZION ISIN ISTRUMENT RD 2017/585 AFFETTO DA ELEMENTI\nSUL FIRDS E DELLA SHORT INCOMPLETEZZA/ERRORE OGGETTIVI PER\nTRANSAZI NAME NEL FIRDS CONFUTARE\nONE* (FISN) L’IPOTESI\n* Ove applicabile\nSEZIONE 7 – GLOSSARIO ED ELENCO ATTI NORMATIVI EUROPEI",
+"hash": "b007abd6d0385848"
+},
+{
+"num": "par. 9.1",
+"rubrica": "GLOSSARIO",
+"testo": "9.1 GLOSSARIO\nESMA European Securities and Markets Authority\nMiFID II Direttiva 2014/65/UE del Parlamento Europeo e del Consiglio del\n15 maggio 2014 relativa ai mercati degli strumenti finanziari e\nche modifica la direttiva 2002/92/CE e la direttiva 2011/61/UE\nMiFIR Regolamento (UE) N. 600/2014 del Parlamento Europeo e del\nConsiglio del 15 maggio 2014 sui mercati degli strumenti\nfinanziari e che modifica il regolamento (UE) n. 648/2012\nRD 2017/571 Regolamento Delegato (UE) 2017/571 della Commissione\nEuropea del 2 giugno 2016 che integra la direttiva 2014/65/UE\ndel Parlamento europeo e del Consiglio per quanto riguarda le\nnorme tecniche di regolamentazione sull’autorizzazione, i\nrequisiti organizzativi e la pubblicazione delle operazioni per i\nfornitori di servizi di comunicazione dati\nRD 2017/580 Regolamento Delegato (UE) 2017/580 della Commissione\nEuropea del 24 giugno 2016 che integra il regolamento (UE) n.\n600/2014 del Parlamento europeo e del Consiglio per quanto\nriguarda le norme tecniche di regolamentazione inerenti alla\nconservazione dei dati pertinenti agli ordini relativi a strumenti\nfinanziari\nRD 2017/585 Regolamento Delegato (UE) 2017/585 della Commissione\nEuropea del 14 luglio 2016 che integra il regolamento (UE) n.\n600/2014 del Parlamento europeo e del Consiglio per quanto\nriguarda le norme tecniche di regolamentazione per gli standard e\nil formato dei dati di riferimento relativi agli strumenti finanziari\ne le misure tecniche in relazione alle disposizioni che devono\nadottare l’Autorità europea degli strumenti finanziari e dei\nmercati e le autorità competenti\nRD 2017/590 Regolamento Delegato (UE) 2017/590 della Commissione\nEuropea del 28 luglio 2016 che integra il regolamento (UE) n.\n600/2014 del Parlamento europeo e del Consiglio per quanto\nriguarda le norme tecniche di regolamentazione relative alla\nsegnalazione delle operazioni alle autorità competenti\nTUF Decreto Legislativo n. 58/1998\nRegolamento Mercati Regolamento Consob n. 20249 del 28 dicembre 2017 in materia\n(RM) di mercati\nGuidelines Orientamenti forniti dall’ESMA al fine di promuovere la\nconvergenza della vigilanza, indirizzati alle autorità competenti e\nai partecipanti al mercato.\nQ&A ESMA Indicazioni fornite dall’ESMA in esito a quesiti posti da autorità\nnazionali o da partecipanti al mercato. Le indicazioni hanno il\nfine di assicurare una omogenea applicazione della disciplina da\nparte delle autorità nazionali e sono raccolte in una specifica\npubblicazione continuamente aggiornata\nOpinion Strumento a disposizione dell’ESMA al fine di contribuire alla\ncreazione di una cultura comune a livello di Unione e prassi\nuniformi in materia di vigilanza, nonché ad assicurare\nl’uniformità delle procedure e la coerenza degli approcci in tutta\nl’Unione.\nStatement Strumento di convergenza a disposizione dell’ESMA al fine di\nfornire richiami di attenzione su specifiche tematiche in materia\ndi vigilanza\nStrumento finanziario Strumento finanziario quale definito dall’articolo 4 (15) della\nMIFID II\nLEI LEI (“Legal Entity Identifier”), codice di 20 caratteri\nalfanumerici rilasciato ai sensi dell’ISO 17442.\nReporting entities Imprese di investimento, ARM e sedi di negoziazione.",
+"hash": "eb23d7f562c88c07"
+},
+{
+"num": "par. 9.2",
+"rubrica": "ATTI NORMATIVI EUROPEI",
+"testo": "9.2 ATTI NORMATIVI EUROPEI\n9.2.1 Gli atti di seguito indicati sono disponibili sul sito internet della Consob, all’indirizzo\nhttp://www.consob.it/web/area-pubblica/merc\nTabella di riepilogo delle misure di Livello 2\nMIFIDII\nMIFIR OGGETTO MISURE DI LIVELLO 2\n[ARTICOLO\nDELEGA]",
+"hash": "2cbf07b6d0b2bcbc"
+},
+{
+"num": "Art. 26",
+"rubrica": ", Obbligo di segnalare le operazioni Articolo 2, paragrafo 1 del",
+"testo": "Articolo 26, Obbligo di segnalare le operazioni Articolo 2, paragrafo 1 del\nparagrafo 1 Regolamento\nMiFIR Delegato (UE) n. 2017/590",
+"hash": "1b5a31f589614ce4"
+},
+{
+"num": "Art. 26 (2)",
+"rubrica": ", Strumenti finanziari oggetto delle Articolo 1, articolo 2,",
+"testo": "Articolo 26, Strumenti finanziari oggetto delle Articolo 1, articolo 2,\nparagrafi 2 e 3 segnalazioni paragrafi 2, 3 e 5, del\nMiFIR Regolamento\nDelegato (UE) n. 2017/590",
+"hash": "348d302be328b4fc"
+},
+{
+"num": "Art. 26 (3)",
+"rubrica": ", Trasmissione di un ordine Articolo 4 del",
+"testo": "Articolo 26, Trasmissione di un ordine Articolo 4 del\nparagrafo 4 Regolamento\nMiFIR Delegato (UE) n. 2017/590",
+"hash": "49c9aac64a5194a2"
+},
+{
+"num": "Art. 26 (4)",
+"rubrica": ", Soggetti responsabili della completezza, Articoli 5,6,7,8 e 9 del",
+"testo": "Articolo 26, Soggetti responsabili della completezza, Articoli 5,6,7,8 e 9 del\nparagrafi 5, 6 e dell’esattezza e della tempestività delle Regolamento\n7 MiFIR segnalazioni Delegato (UE) n. 2017/590",
+"hash": "ee0996f559cb694c"
+},
+{
+"num": "Art. 26 (5)",
+"rubrica": ", Segnalazione delle operazioni eseguite Articolo 14 del",
+"testo": "Articolo 26, Segnalazione delle operazioni eseguite Articolo 14 del\nparagrafo 8 dalle succursali Regolamento\nMiFIR Delegato (UE) n. 2017/590",
+"hash": "12a06520e5b40ac3"
+},
+{
+"num": "Art. 27",
+"rubrica": ", Obbligo di fornire dati di riferimento Articoli 1 e 2 del",
+"testo": "Articolo 27, Obbligo di fornire dati di riferimento Articoli 1 e 2 del\nparagrafo 1 relativi agli strumenti finanziari Regolamento\nMiFIR Delegato (UE) n. 2017/590\n9.3 GUIDELINES DELL’ESMA\n9.3.1 Le Guidelines prodotte dell’ESMA sono state pubblicate il 10 ottobre 2016. Il 7 agosto 2017\nl’ESMA ha pubblicato una versione rivista. Infine, il 2 ottobre 2017 è stata pubblicata\nl’ultima versione tradotta in italiano.\nGuidelines on “Transaction reporting, order ESMA/2016/1452\nkeeping and clock synchronization under MiFID Aggiornamento del 7 agosto 2017\nII”\nOrientamenti su “Segnalazione delle operazioni, ESMA/2016/1452\ntenuta dei registri degli ordini e sincronizzazione Traduzione ufficiale in italiano del 2\ndegli orologi ai sensi della MiFID II” ottobre 2017\n9.4 Q&A ESMA\n9.4.1 Le Q&A prodotte dell’ESMA sono raccolte in un documento che viene aggiornato in\noccasione di ogni nuova Q&A\nQuestions and Answers on “MiFIR data ESMA70-1861941480-56,\nreporting” Aggiornamento del 6 dicembre 2019\n9.5 DOCUMENTAZIONE TECNICA ESMA\n9.5.1 L’ESMA ha altresì predisposto un pacchetto di documentazione tecnica, che viene\naggiornata periodicamente, in merito alle modalità operative di transaction reporting.\nESMA Technical Reporting Instructions on ESMA/2016/1521 del 26 ottobre 2016\nMiFIR Transaction Reporting Ultimo aggiornamento del 17 luglio\n2017, versione 1.4 (al 9 ottobre 2017)\nData validation rules: list of syntax and content ESMA/2016/1521\nvalidation rules and relevant error codes (Annex Ultimo aggiornamento del 29 maggio\n1 dell’ESMA Technical Reporting Instructions) 2018, versione 1.5\nReporting message schemas: documentation and ESMA65-8-2356\nXSD files for messages to be used to report data Ultimo aggiornamento del 29 Maggio\n(Annex 2 dell’ESMA Technical Reporting 2018, versione 1.6\nInstructions) ESMA65-8-2598\nXML schema, versione 1.1.0\nFIRDS - Instructions on access and download of ESMA65-8-5014\nfull and delta reference data files del 6 ottobre 2017\n9.6 Altra documentazione ESMA\n9.6.1 L’ESMA ha altresì pubblicato diversa documentazione, sotto forma di Opinion, Briefing,\nPress release, etc., atte a fornire indicazioni utili in materia di transaction reporting.\nOPINION: OTC derivatives traded on a trading ESMA70-156-117 del 22 maggio\nvenue (TOTV) 2017\nBRIEFING AND PRESS RELEASE: ESMA ESMA70-145-238\nhighlights importance of LEI for MiFIDII/MiFIR ESMA71-99-61 del 9 ottobre 2017\ncompliance\nESMA Statement on LEI requirements under ESMA70-145-872 del 20 giugno 2018\nMiFIR",
+"hash": "003d9c8474fc2b4f"
+}
+]
+}
