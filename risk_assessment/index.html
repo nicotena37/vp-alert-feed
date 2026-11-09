@@ -1,0 +1,468 @@
+<title>compliAInce Risk Assessment</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: colonna di lavoro a passi numerati (il processo è davvero sequenziale), barra di avanzamento in alto */
+:root{
+  --bg:#f4f6f8; --panel:#ffffff; --ink:#14243a; --muted:#5b6a7d; --line:#d9dfe7; --accent:#1d6670; --accent-weak:#e2eff0;
+  --b:#2f7d4f; --mb:#8a7a12; --ma:#c26a14; --a:#b3261e;
+  --b-bg:#e6f2ea; --mb-bg:#f5f0d6; --ma-bg:#fbe9d8; --a-bg:#f9e1df;
+  --f-display:"Literata",Georgia,"Times New Roman",serif; --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1720; --panel:#16212d; --ink:#e5ebf2; --muted:#9aa8b8; --line:#2a3847; --accent:#5fb3bc; --accent-weak:#18343a;
+  --b:#6cc28f; --mb:#d6c55a; --ma:#f0a05a; --a:#f08077; --b-bg:#173226; --mb-bg:#33301a; --ma-bg:#3a2a19; --a-bg:#3d1f1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1720; --panel:#16212d; --ink:#e5ebf2; --muted:#9aa8b8; --line:#2a3847; --accent:#5fb3bc; --accent-weak:#18343a;
+  --b:#6cc28f; --mb:#d6c55a; --ma:#f0a05a; --a:#f08077; --b-bg:#173226; --mb-bg:#33301a; --ma-bg:#3a2a19; --a-bg:#3d1f1d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:1080px;margin:0 auto}
+header.top{padding-block:28px 12px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+h1{font-family:var(--f-display);font-weight:650;font-size:30px;margin:0;text-wrap:balance}
+h1 small{display:block;font-family:var(--f-body);font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 20px}
+.steps button{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:5px 12px;font:500 13px var(--f-body);cursor:pointer}
+.steps button[aria-current="step"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.steps button.done{color:var(--accent);border-color:var(--accent)}
+section.step{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px}
+section.step h2{font-family:var(--f-display);font-weight:650;font-size:21px;margin:0;display:flex;gap:10px;align-items:baseline}
+section.step h2 .n{font-family:var(--f-mono);font-size:13px;color:var(--accent);font-weight:500}
+p.hint{margin:0;color:var(--muted);max-width:70ch}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--panel);border-radius:7px;padding:8px 14px;font:600 14px var(--f-body);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,.steps button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=text],input[type=number],textarea,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:8px 10px}
+textarea{width:100%;min-height:90px;resize:vertical}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+details.tem{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--bg);min-width:0}
+details.tem summary{cursor:pointer;font-weight:600;display:flex;justify-content:space-between;gap:8px}
+details.tem summary .c{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:400}
+details.tem label{display:flex;gap:8px;align-items:flex-start;padding:3px 0;font-size:14px}
+details.tem label .c{margin-left:auto;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.new{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.status{font-size:13px;color:var(--muted);min-height:1.3em}
+.status.err{color:var(--a)}
+.list{display:grid;gap:8px}
+.act{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:start;min-width:0}
+.act .t{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.act .m{grid-column:2;color:var(--muted);font-size:13px;min-width:0;overflow-wrap:anywhere}
+.chip{display:inline-block;font-size:12px;border-radius:999px;padding:1px 8px;border:1px solid var(--line);color:var(--muted);margin-right:4px;white-space:nowrap}
+.chip.P{border-color:var(--accent);color:var(--accent)}
+.chip.ab{border-color:var(--ma);color:var(--ma)}
+.chip.si{background:var(--b-bg);color:var(--b);border-color:transparent}
+.chip.contorno{background:var(--mb-bg);color:var(--mb);border-color:transparent}
+.chip.no{background:var(--a-bg);color:var(--a);border-color:transparent}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.opt{border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:6px;cursor:pointer;background:var(--bg)}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-weak)}
+.opt b{font-size:15px}
+.opt span{font-size:13px;color:var(--muted)}
+.lvl{display:inline-block;font-size:12px;font-weight:700;border-radius:5px;padding:2px 8px;white-space:nowrap}
+.l0{background:var(--b-bg);color:var(--b)} .l1{background:var(--mb-bg);color:var(--mb)} .l2{background:var(--ma-bg);color:var(--ma)} .l3{background:var(--a-bg);color:var(--a)} .lx{background:var(--bg);color:var(--muted)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:600;color:var(--muted);background:var(--bg);position:sticky;top:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--f-mono)}
+.ad{border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:8px;min-width:0}
+.ad .h{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.ad .h b{font-size:15px;min-width:0;overflow-wrap:anywhere}
+.ad .src{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.ad q{display:block;font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:10px;quotes:none}
+.ad q.ok{border-left-color:var(--b)} .ad q.ko{border-left-color:var(--a)}
+.fx{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 10px;font-size:13px}
+.fx label{display:grid;gap:2px;color:var(--muted)}
+.fx select,.fx input{padding:4px 6px}
+.pres{display:grid;gap:6px}
+.pr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;border-top:1px dashed var(--line);padding-top:6px}
+.pr .nm{flex:1 1 200px;min-width:0}
+.res{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:13px}
+.groupt{font-family:var(--f-display);font-size:17px;font-weight:650;margin:10px 0 0}
+dialog{border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);max-width:min(760px,calc(100vw - 32px));width:100%;padding:18px}
+dialog::backdrop{background:rgb(0 0 0 / .35)}
+.small{font-size:12px;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1><small>compliAInce Dynamic · prova</small>Risk assessment normativo</h1>
+  <div class="row"><button class="btn ghost" id="bSet" type="button">Impostazioni pesi</button><button class="btn ghost" id="bReset" type="button">Nuovo risk assessment</button></div>
+</header>
+<nav class="steps" id="steps" aria-label="Passi"></nav>
+
+<section class="step" data-s="1" id="s1">
+  <h2><span class="n">1</span>Ambiti da analizzare</h2>
+  <p class="hint">Spunta uno o più ambiti. Claude leggerà solo le norme della biblioteca associate agli ambiti scelti. Il numero accanto è quanti atti in vigore hanno quell'ambito come principale.</p>
+  <div class="row"><input type="text" id="fAmb" placeholder="Filtra ambiti (es. outsourcing, DORA, reclami)" style="flex:1 1 260px"><span class="status" id="selAmb"></span></div>
+  <div class="tgrid" id="tem"><p class="status">Carico la biblioteca…</p></div>
+  <div class="row"><button class="btn" id="go2" type="button" disabled>Avanti</button></div>
+</section>
+
+<section class="step" data-s="2" id="s2" hidden>
+  <h2><span class="n">2</span>Cosa vuoi analizzare</h2>
+  <p class="hint">Descrivi in parole tue l'oggetto del risk assessment. Claude legge gli articoli pertinenti delle norme degli ambiti scelti e tiene solo quelli che toccano davvero il tema.</p>
+  <textarea id="ogg">Esternalizzazione di funzioni ICT essenziali a un fornitore cloud: contratto, registro delle informazioni, piano di uscita e controlli sul fornitore.</textarea>
+  <div class="row">
+    <label class="row small"><input type="checkbox" id="incS"> includi anche gli atti con ambito secondario</label>
+    <label class="row small"><input type="checkbox" id="incAb"> includi gli atti abrogati</label>
+  </div>
+  <div class="row"><button class="btn" id="bLeggi" type="button">Fai leggere gli articoli a Claude</button><button class="btn ghost" id="bStop1" type="button" hidden>Ferma</button><span class="status" id="st2"></span></div>
+</section>
+
+<section class="step" data-s="3" id="s3" hidden>
+  <h2><span class="n">3</span>Norme da analizzare</h2>
+  <p class="hint">Per ogni norma vedi gli articoli scelti e il motivo. Togli la spunta alle norme che non vuoi; aggiungine altre dall'elenco della tematica, cercandole per nome o caricando un PDF.</p>
+  <div class="row"><span class="status" id="st3"></span></div>
+  <div class="list" id="norme"></div>
+  <h3 class="groupt">Aggiungi norme</h3>
+  <div class="row"><input type="text" id="cerca" placeholder="Cerca: TUB, DORA, Circ. 285, D.Lgs. 231/2007, Reg. UE 2022/2554…" style="flex:1 1 320px"></div>
+  <div class="list" id="risCerca"></div>
+  <div id="tendine" class="list"></div>
+  <div class="row">
+    <label class="btn ghost" for="pdf">Carica un PDF</label><input type="file" id="pdf" accept="application/pdf" hidden>
+    <button class="btn ghost" type="button" disabled title="Non disponibile in questa prova">Ricerca web (in arrivo)</button>
+    <span class="status" id="stPdf"></span>
+  </div>
+  <div class="row"><button class="btn" id="go4" type="button">Avanti</button></div>
+</section>
+
+<section class="step" data-s="4" id="s4" hidden>
+  <h2><span class="n">4</span>Livello di dettaglio e metodologia</h2>
+  <div class="opts" id="livelli"></div>
+  <h3 class="groupt">Metodologia di valutazione</h3>
+  <div class="opts" id="metodi"></div>
+  <div class="row"><button class="btn" id="bGen" type="button">Crea gli adempimenti</button><button class="btn ghost" id="bStop2" type="button" hidden>Ferma</button><span class="status" id="st4"></span></div>
+</section>
+
+<section class="step" data-s="5" id="s5" hidden>
+  <h2><span class="n">5</span>Adempimenti e valutazione</h2>
+  <p class="hint">Ogni adempimento riporta la frase della norma: il bordo verde vuol dire che la citazione è stata ritrovata alla lettera nel testo, rosso che va verificata. I fattori proposti da Claude si possono cambiare; aggiungi i presidi dall'elenco, dalla tua libreria o a mano.</p>
+  <div class="row">
+    <label class="small">Fondi propri della banca (€) <input type="number" id="fp" min="0" step="1000000" placeholder="es. 250000000" style="width:170px"></label>
+    <span class="small">Servono solo alla metodologia 4.</span>
+  </div>
+  <div class="row"><span class="status" id="st5"></span></div>
+  <div class="list" id="adem"></div>
+  <div class="row"><button class="btn" id="go6" type="button">Vai al riepilogo</button></div>
+</section>
+
+<section class="step" data-s="6" id="s6" hidden>
+  <h2><span class="n">6</span>Riepilogo</h2>
+  <div class="row"><label class="row small"><input type="checkbox" id="conf"> Confronta le 5 metodologie</label><button class="btn ghost" id="bCsv" type="button">Copia la tabella (CSV)</button><span class="status" id="st6"></span></div>
+  <div id="riep"></div>
+</section>
+</div>
+
+<dialog id="dSet">
+  <h2 style="font-family:var(--f-display);margin:0 0 6px">Impostazioni pesi dei presidi</h2>
+  <p class="small">Ogni peso resta nella fascia della sua natura: sistema 0,65–1,00 · procedura 0,50–0,85 · persona 0,45–0,70. Le modifiche valgono per i prossimi calcoli in questo browser.</p>
+  <div class="tw" style="max-height:55vh"><table id="tSet"></table></div>
+  <div class="row" style="margin-top:12px"><input type="text" id="motSet" placeholder="Motivo della modifica" style="flex:1 1 240px"><button class="btn ghost" id="bStd" type="button">Ripristina standard</button><button class="btn" id="bSave" type="button">Salva</button><button class="btn ghost" id="bClose" type="button">Chiudi</button></div>
+</dialog>
+
+<dialog id="dPres">
+  <h2 style="font-family:var(--f-display);margin:0 0 6px">Aggiungi presidio</h2>
+  <div class="row" style="margin-bottom:8px"><select id="selPres" style="flex:1 1 300px"></select><button class="btn" id="bAddPres" type="button">Aggiungi</button></div>
+  <p class="small" style="margin:8px 0 4px">Oppure scrivi un presidio nuovo:</p>
+  <div class="row"><input type="text" id="npNome" placeholder="Nome del presidio" style="flex:1 1 220px">
+    <select id="npNat"><option value="Sistema">Sistema</option><option value="Procedura" selected>Procedura</option><option value="Persona">Persona</option></select>
+    <select id="npTipo"><option>Preventivo</option><option>Rilevativo</option></select>
+    <input type="number" id="npPeso" step="0.05" min="0.45" max="1" value="0.7" style="width:80px" aria-label="Peso">
+  </div>
+  <div class="row" style="margin-top:8px"><label class="row small"><input type="checkbox" id="npLib" checked> salva nella libreria della banca</label><button class="btn" id="bNewPres" type="button">Aggiungi presidio nuovo</button><button class="btn ghost" id="bClosePres" type="button">Chiudi</button></div>
+  <p class="status" id="stPres"></p>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LIV=["Basso","Medio-basso","Medio-alto","Alto"];
+const lv=i=>i==null?'<span class="lvl lx">n.d.</span>':`<span class="lvl l${i}">${LIV[i]}</span>`;
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const NUOVI=new Set(["Resilienza operativa digitale (DORA)","Intelligenza artificiale","Accessibilità dei servizi","Servizi di pagamento","Fondi propri e requisiti patrimoniali","Risanamento e risoluzione","Riserva obbligatoria","Riassicurazione e riserve tecniche","Sinistri e periti RC auto"]);
+
+/* ---------- costanti metodologia ---------- */
+const FATT=[ // chiave, nome, gruppo, peso, descrizioni 1..4
+ ["sanz","Sanzionatorio","I",.4,["nessuna o richiamo","fino a 500.000 €","fino a 5 mln € o % fatturato","oltre, penali o interdittive"]],
+ ["rep","Reputazionale","I",.2,["solo interno","noto alle autorità","tocca la clientela","pubblicazione o caso mediatico"]],
+ ["oper","Operativo","I",.2,["un ufficio","più uffici","processi core o IT","continuità operativa"]],
+ ["econ","Economico e di rimedio","I",.2,["trascurabile","fino a 100.000 €","fino a 1 mln €","oltre"]],
+ ["compl","Complessità","P",.3,["azione semplice","più azioni","più uffici o eccezioni","molti soggetti, soglie, rinvii"]],
+ ["freq","Frequenza e volumi","P",.2,["una tantum","annuale","mensile o per operazione","continua, volumi alti"]],
+ ["nov","Novità della norma","P",.2,["oltre 3 anni","modificata < 3 anni","nell'ultimo anno","nuova o in arrivo"]],
+ ["ctrl","Esiti controlli passati","P",.2,["nessun rilievo","rilievi minori","audit o reclami ricorrenti","rilievi ispettivi o sanzioni"]],
+ ["att","Attenzione dell'autorità","P",.1,["nessun segnale","Q&A o chiarimenti","priorità di vigilanza","indagine o richiamo in corso"]]];
+const FASCIA={Sistema:[.65,1],Procedura:[.5,.85],Persona:[.45,.7]};
+const PRES_STD=[
+ ["Blocco automatico dell'operazione","Sistema",1.00,"Preventivo"],["Controllo automatico di coerenza e quadratura","Sistema",.90,"Preventivo"],
+ ["Profilazione degli accessi e delle autorizzazioni","Sistema",.85,"Preventivo"],["Alert e monitoraggio automatico","Sistema",.80,"Rilevativo"],
+ ["Tracciabilità e conservazione dei log","Sistema",.65,"Rilevativo"],["Doppia firma e separazione dei compiti","Procedura",.85,"Preventivo"],
+ ["Procedura operativa scritta","Procedura",.75,"Preventivo"],["Checklist e modulistica obbligatoria","Procedura",.70,"Preventivo"],
+ ["Piano di continuità testato","Procedura",.70,"Preventivo"],["Contratto e SLA con il fornitore, monitorati","Procedura",.65,"Rilevativo"],
+ ["Policy o regolamento approvato dal CdA","Procedura",.60,"Preventivo"],["Reporting periodico agli organi","Procedura",.50,"Rilevativo"],
+ ["Controllo di secondo livello","Persona",.70,"Rilevativo"],["Revisione interna (terzo livello)","Persona",.60,"Rilevativo"],
+ ["Controllo manuale di primo livello","Persona",.55,"Rilevativo"],["Referente nominato","Persona",.50,"Preventivo"],["Formazione del personale","Persona",.45,"Preventivo"]];
+const ADEG=[["Adeguato",1],["Parzialmente adeguato",.6],["Debole",.3],["Inadeguato o assente",0]];
+const TEST=[["Testato, senza rilievi",1],["Non testato",.8],["Testato con rilievi",.5]];
+const LIVELLI=[
+ ["pilastri","Pilastri","Claude legge l'atto per intero e raggruppa gli obblighi per finalità (governo del rischio, informativa, segnalazioni): ogni pilastro unisce più articoli o un capo e dice cosa deve garantire la banca."],
+ ["obblighi","Obblighi","Per ogni articolo i comportamenti richiesti o vietati: uno o pochi obblighi per articolo, con riferimento e sintesi fedele."],
+ ["prescrizioni","Prescrizioni","Scende a comma e lettera: chi deve agire, cosa, entro quando o con quale frequenza, a quali condizioni. Legge anche le norme con ambito secondario."],
+ ["puntuali","Elementi puntuali","Scompone ogni prescrizione in soglie, eccezioni, termini, documenti e controlli verificabili; segue i rinvii e collega la sanzione. Livello da controllo ispettivo."]];
+const METODI=[
+ ["m1","1 · Matrice inerente × vulnerabilità","Tabella fissa 4×4, schema dell'autovalutazione antiriciclaggio Banca d'Italia."],
+ ["m2","2 · Riduzione percentuale","Residuo = inerente × (1 − efficacia dei presidi). Graduale."],
+ ["m3","3 · Fattori ponderati (predefinita)","Media ponderata dei 9 fattori, mostra il contributo di ognuno."],
+ ["m4","4 · Perdita attesa in euro","Probabilità annua × (sanzione + costi), soglie sui fondi propri."],
+ ["m5","5 · Regole a soglia","Stato di conformità: −2, −1 o nessun livello rispetto all'inerente."]];
+
+/* ---------- stato ---------- */
+let IDX={}, TAX={}, SHARDS={};
+const S=store.get("ra_bozza",null)||{};
+S.amb=new Set(S.amb||[]); S.norme=S.norme||{}; S.livello=S.livello||"obblighi"; S.metodo=S.metodo||"m3"; S.adem=S.adem||[]; S.extra=S.extra||{};
+let pesiOverride=store.get("ra_pesi",{}), libreria=store.get("ra_presidi_lib",[]);
+const salva=()=>store.set("ra_bozza",{...S,amb:[...S.amb]});
+let sample=null;
+(async()=>{try{sample=await window.claude?.use?.("sample")}catch{} if(!sample){$("#bLeggi").title="Claude non disponibile in questa vista";}})();
+
+/* ---------- passi ---------- */
+const NOMI=["Ambiti","Oggetto","Norme","Livello","Adempimenti","Riepilogo"];
+let cur=1;
+function vai(n){cur=n;$$("section.step").forEach(s=>s.hidden=+s.dataset.s>n);renderSteps();document.getElementById("s"+n).scrollIntoView({behavior:"smooth",block:"start"})}
+function renderSteps(){$("#steps").innerHTML=NOMI.map((t,i)=>`<button type="button" data-go="${i+1}" ${i+1===cur?'aria-current="step"':''} class="${i+1<cur?'done':''}" ${i+1>maxStep()?'disabled':''}>${i+1} · ${t}</button>`).join("")}
+function maxStep(){if(S.adem.length)return 6;if(Object.keys(S.norme).length)return 4;if(S.amb.size)return 2;return 1}
+$("#steps").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b&&!b.disabled)vai(+b.dataset.go)});
+
+/* ---------- dati ---------- */
+async function shard(s){if(SHARDS[s])return SHARDS[s];const r=await fetch(`data/t/${String(s).padStart(2,"0")}.b64.txt`);if(!r.ok)throw new Error("testo non trovato");
+  const bin=atob((await r.text()).trim()),buf=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)buf[i]=bin.charCodeAt(i);
+  const txt=await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+  return SHARDS[s]=JSON.parse(txt)}
+async function testoAtto(id){if(S.extra[id])return S.extra[id].arts;const a=IDX[id];const sh=await shard(a[5]);return sh[id]||[]}
+const att=id=>S.extra[id]?{tit:S.extra[id].tit,est:"PDF caricato",fonte:"pdf",ab:0,amb:[],n:S.extra[id].arts.length}:{tit:IDX[id][0],est:IDX[id][1],fonte:IDX[id][2],ab:IDX[id][3],amb:IDX[id][4],n:IDX[id][6],url:IDX[id][7]};
+
+async function init(){
+  try{[IDX,TAX]=await Promise.all([fetch("data/indice.json").then(r=>r.json()),fetch("data/tax.json").then(r=>r.json())])}
+  catch{ $("#tem").innerHTML='<p class="status err">Non riesco a caricare la biblioteca. Ricarica la pagina.</p>';return}
+  renderTem(); renderLivelli(); if(Object.keys(S.norme).length){renderNorme();} if(S.adem.length){renderAdem();renderRiep()}
+  renderSteps(); if(S.adem.length)vai(6); else if(Object.keys(S.norme).length) vai(3);
+}
+function conteggi(){const c={};for(const id in IDX){if(IDX[id][3])continue;for(const [t,a,r] of IDX[id][4]){if(r!=="P")continue;const k=t+"||"+a;c[k]=(c[k]||0)+1}}return c}
+function renderTem(){
+  const c=conteggi(), f=$("#fAmb").value.trim().toLowerCase();
+  const html=Object.keys(TAX).sort((a,b)=>a.localeCompare(b,"it")).map(t=>{
+    const am=TAX[t].filter(a=>!f||(t+" "+a).toLowerCase().includes(f)); if(!am.length)return"";
+    const tot=am.reduce((s,a)=>s+(c[t+"||"+a]||0),0), sel=am.some(a=>S.amb.has(t+"||"+a));
+    return `<details class="tem" ${f||sel?"open":""}><summary>${esc(t)} <span class="c">${tot}</span></summary>${am.map(a=>{const k=t+"||"+a;return `<label><input type="checkbox" data-amb="${esc(k)}" ${S.amb.has(k)?"checked":""}> <span>${esc(a)} ${NUOVI.has(a)?'<span class="new">nuovo</span>':''}</span><span class="c">${c[k]||0}</span></label>`}).join("")}</details>`}).join("");
+  $("#tem").innerHTML=html||'<p class="status">Nessun ambito con questo nome.</p>'; updAmb()}
+function updAmb(){$("#selAmb").textContent=S.amb.size?`${S.amb.size} ambiti scelti`:"";$("#go2").disabled=!S.amb.size;renderSteps()}
+$("#fAmb").addEventListener("input",renderTem);
+$("#tem").addEventListener("change",e=>{const k=e.target.dataset.amb;if(!k)return;e.target.checked?S.amb.add(k):S.amb.delete(k);salva();updAmb()});
+$("#go2").onclick=()=>vai(2);
+
+/* ---------- passo 2: lettura ---------- */
+function candidati(){const incS=$("#incS").checked||["prescrizioni","puntuali"].includes(S.livello), incAb=$("#incAb").checked, out=[];
+  for(const id in IDX){if(IDX[id][3]&&!incAb)continue;const hit=IDX[id][4].filter(([t,a,r])=>S.amb.has(t+"||"+a)&&(r==="P"||incS));
+    if(hit.length)out.push({id,ruolo:hit.some(h=>h[2]==="P")?"P":"S",art:[...new Set(hit.flatMap(h=>h[3]))]})}
+  return out.sort((a,b)=>(a.ruolo>b.ruolo)-(a.ruolo<b.ruolo))}
+function estratto(arts,lista,max){const set=new Set(lista.map(String));let sel=arts.filter(a=>set.has(String(a[0])));if(!sel.length)sel=arts.slice(0,3);
+  let s="";for(const a of sel){const t=`[Art. ${a[0]}${a[1]?" – "+a[1]:""}] ${a[2]}\n`;if(s.length+t.length>max){s+=t.slice(0,Math.max(0,max-s.length));break}s+=t}return s}
+let ctl1=null;
+$("#bLeggi").onclick=async()=>{
+  const C=candidati(), ogg=$("#ogg").value.trim(); S.oggetto=ogg; const st=$("#st2"); st.className="status";
+  if(!C.length){st.textContent="Nessuna norma associata a questi ambiti.";return}
+  S.norme={}; if(!ogg||!sample){for(const c of C.slice(0,60))S.norme[c.id]={sel:true,pert:"si",motivo:"associata all'ambito scelto",art:c.art,ruolo:c.ruolo};
+    st.textContent=sample?"":"Claude non è disponibile in questa vista: ho preso le prime 60 norme degli ambiti scelti, senza lettura.";salva();renderNorme();vai(3);return}
+  const lim=C.slice(0,320); if(C.length>320)st.textContent=`Gli atti sono ${C.length}: in questa prova ne leggo i primi 320 (prima i principali).`;
+  ctl1=new AbortController(); $("#bStop1").hidden=false; $("#bLeggi").disabled=true;
+  try{
+    for(let i=0;i<lim.length;i+=30){
+      const lotto=lim.slice(i,i+30), parti=[];
+      for(const c of lotto){const arts=await testoAtto(c.id);parti.push(`### ${c.id}\nTitolo: ${att(c.id).tit}\n${estratto(arts,c.art,1800)}`)}
+      st.textContent=`Claude legge gli articoli: ${Math.min(i+30,lim.length)} atti su ${lim.length}…`;
+      const prompt=`Sei un esperto di compliance bancaria italiana. Oggetto del risk assessment: "${ogg}".\nPer ogni atto qui sotto (estratto degli articoli pertinenti) decidi se tocca davvero l'oggetto: "si" (contiene obblighi sull'oggetto), "contorno" (lo tocca in modo collaterale), "no". Indica gli articoli che lo toccano.\nRispondi SOLO con un array JSON: [{"id":"...","pert":"si|contorno|no","motivo":"una frase in italiano","articoli":["5","6"]}], un elemento per ogni atto.\n\n${parti.join("\n\n")}`;
+      const res=await sample.json(prompt,{modelTier:"quick",signal:ctl1.signal});
+      for(const r of (Array.isArray(res)?res:[])){const c=lotto.find(x=>x.id===String(r.id));if(!c)continue;
+        if(r.pert==="no")continue; S.norme[c.id]={sel:r.pert==="si",pert:r.pert,motivo:String(r.motivo||""),art:(r.articoli||[]).map(String).length?(r.articoli||[]).map(String):c.art,ruolo:c.ruolo}}
+      salva(); renderNorme();
+    }
+    st.textContent=`Lettura finita: ${Object.keys(S.norme).length} norme pertinenti su ${lim.length} lette.`; vai(3);
+  }catch(e){st.className="status err";st.textContent=errMsg(e);if(Object.keys(S.norme).length)vai(3)}
+  finally{$("#bStop1").hidden=true;$("#bLeggi").disabled=false}
+};
+$("#bStop1").onclick=()=>ctl1?.abort();
+function errMsg(e){const m={cancelled:"Lettura fermata.",not_granted:"Non hai autorizzato la pagina a usare Claude.",rate_limited:"Troppe richieste o limite di utilizzo raggiunto: riprova più tardi.",prompt_too_large:"Testo troppo lungo per una richiesta.",invalid_json:"Risposta di Claude non leggibile: riprova.",sampling_disabled:"Claude non è disponibile per questo account."};return m[e?.code]||("Errore: "+(e?.message||e))}
+
+/* ---------- passo 3: norme ---------- */
+function renderNorme(){
+  const ids=Object.keys(S.norme).sort((a,b)=>{const o={si:0,contorno:1};return (o[S.norme[a].pert]??2)-(o[S.norme[b].pert]??2)});
+  $("#st3").textContent=`${ids.filter(i=>S.norme[i].sel).length} norme selezionate su ${ids.length} proposte.`;
+  $("#norme").innerHTML=ids.map(id=>{const n=S.norme[id],a=att(id);return `<label class="act"><input type="checkbox" data-nor="${esc(id)}" ${n.sel?"checked":""}>
+   <span class="t">${esc(a.tit)}</span><span class="m"><span class="chip ${esc(n.pert)}">${n.pert==="si"?"pertinente":n.pert==="contorno"?"di contorno":"aggiunta"}</span>${n.ruolo?`<span class="chip ${n.ruolo}">${n.ruolo==="P"?"ambito principale":"ambito secondario"}</span>`:""}${a.ab?'<span class="chip ab">abrogato</span>':""} ${esc(a.est)} · art. ${esc((n.art||[]).slice(0,12).join(", ")||"tutti")}<br>${esc(n.motivo)}</span></label>`}).join("")||'<p class="status">Nessuna norma ancora.</p>';
+  renderTendine(); renderSteps()}
+$("#norme").addEventListener("change",e=>{const id=e.target.dataset.nor;if(id){S.norme[id].sel=e.target.checked;salva();renderNorme()}});
+function aggiungi(id,motivo){if(!S.norme[id])S.norme[id]={sel:true,pert:"aggiunta",motivo,art:[],ruolo:""};else S.norme[id].sel=true;salva();renderNorme()}
+function renderTendine(){const tems=[...new Set([...S.amb].map(k=>k.split("||")[0]))];
+  $("#tendine").innerHTML=tems.map(t=>{const altri=Object.keys(IDX).filter(id=>!S.norme[id]&&!IDX[id][3]&&IDX[id][4].some(x=>x[0]===t));
+    return `<details class="tem"><summary>Norme mancanti · ${esc(t)} <span class="c">${altri.length}</span></summary>${altri.slice(0,200).map(id=>`<label><button class="btn ghost" type="button" data-add="${esc(id)}" style="padding:2px 8px;font-size:12px">+</button><span>${esc(IDX[id][0])}</span></label>`).join("")}</details>`}).join("")}
+$("#tendine").addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(b)aggiungi(b.dataset.add,"aggiunta dall'elenco della tematica")});
+const ALIAS={tub:"385/1993",tuf:"58/1998",cap:"209/2005",dora:"2022/2554",gdpr:"2016/679","ai act":"2024/1689",micar:"2023/1114",mica:"2023/1114",crr:"575/2013",crd:"2013/36",brrd:"2014/59",srmr:"806/2014",psd2:"2015/2366",mifid:"2014/65",mifir:"600/2014",emir:"648/2012",idd:"2016/97",solvency:"2009/138",antiriciclaggio:"231/2007",aml:"231/2007","231":"231/2001",priips:"1286/2014",sfdr:"2019/2088",csrd:"2022/2464",nis2:"2022/2555",mar:"596/2014",ucits:"2009/65",aifmd:"2011/61",ifr:"2019/2033",ifd:"2019/2034"};
+function cerca(q){q=q.toLowerCase().trim();if(q.length<2)return[];let num=null;const m=q.match(/(\d{1,4})\s*\/\s*(\d{2,4})/);if(m)num=m[1]+"/"+m[2];
+  for(const k in ALIAS)if(q===k||q.split(/\s+/).includes(k))num=ALIAS[k];
+  const circ=q.match(/circ\w*\.?\s*(\d+)/), toks=q.split(/[^a-zà-ù0-9]+/).filter(w=>w.length>2&&!/^\d+$/.test(w));
+  const out=[];for(const id in IDX){const t=(IDX[id][0]+" "+IDX[id][1]).toLowerCase();let s=0;
+    if(num){const [a,b]=num.split("/");if(new RegExp(`\\b${a}\\s*/\\s*${b}\\b`).test(t)||new RegExp(`\\b${b}\\s*/\\s*${a}\\b`).test(t)||t.includes(`n. ${a} del ${b}`))s+=10;
+      if(new RegExp(`[-.]${b}(-\\d\\d-\\d\\d)?-0*${a}$`).test(id.toLowerCase())||new RegExp(`${a}[rld]0*${b}$`,"i").test(id))s+=30; else if(new RegExp(`\\b${b}\\b`).test(t)&&new RegExp(`n\\.\\s*${a}\\b`).test(t))s+=8}
+    if(circ&&new RegExp(`circolare[^0-9]{0,15}${circ[1]}\\b`).test(t))s+=10;
+    for(const w of toks)if(t.includes(w))s+=1;
+    if(s>0)out.push([s,id])}
+  return out.sort((a,b)=>b[0]-a[0]).slice(0,10).map(x=>x[1])}
+$("#cerca").addEventListener("input",()=>{const r=cerca($("#cerca").value);$("#risCerca").innerHTML=r.map(id=>`<div class="act"><button class="btn ghost" type="button" data-add="${esc(id)}" style="padding:2px 8px">+</button><span class="t">${esc(IDX[id][0])}</span><span class="m">${esc(IDX[id][1])} ${S.norme[id]?"· già presente":""}</span></div>`).join("")||($("#cerca").value.length>1?'<p class="status">Nessuna norma trovata in biblioteca: puoi caricarla in PDF.</p>':"")});
+$("#risCerca").addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(b)aggiungi(b.dataset.add,"aggiunta con la ricerca")});
+$("#pdf").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;const st=$("#stPdf");st.className="status";
+  if(!window.pdfjsLib){st.className="status err";st.textContent="Lettore PDF non disponibile.";return}
+  try{st.textContent="Leggo il PDF…";const doc=await pdfjsLib.getDocument({data:await f.arrayBuffer()}).promise;let t="";
+    for(let p=1;p<=doc.numPages;p++){const c=await (await doc.getPage(p)).getTextContent();t+=c.items.map(i=>i.str+(i.hasEOL?"\n":" ")).join("")+"\n"}
+    if(t.replace(/\s/g,"").length<300){st.className="status err";st.textContent="Il PDF sembra una scansione senza testo: in questa prova non posso leggerlo.";return}
+    const parts=t.split(/\n(?=\s*(?:Articolo|Art\.)\s+\d+)/), arts=[];
+    parts.forEach((p,i)=>{const m=p.match(/^\s*(?:Articolo|Art\.)\s+(\d+[\w-]*)/);arts.push([m?m[1]:(i?String(i):"Premessa"),"",p.trim().slice(0,20000)])});
+    const id="PDF-"+Date.now(); S.extra[id]={tit:f.name.replace(/\.pdf$/i,""),arts}; aggiungi(id,`PDF caricato, ${arts.length} parti`); st.textContent=`Aggiunto: ${f.name} (${arts.length} parti).`;
+  }catch(err){st.className="status err";st.textContent="Non riesco a leggere questo PDF."}
+  e.target.value=""});
+$("#go4").onclick=()=>{if(!Object.values(S.norme).some(n=>n.sel)){$("#st3").textContent="Seleziona almeno una norma.";return}vai(4)};
+
+/* ---------- passo 4 ---------- */
+function renderLivelli(){
+  $("#livelli").innerHTML=LIVELLI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="liv" value="${k}" ${S.livello===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("");
+  $("#metodi").innerHTML=METODI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="met" value="${k}" ${S.metodo===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("")}
+document.addEventListener("change",e=>{if(e.target.name==="liv"){S.livello=e.target.value;salva()}if(e.target.name==="met"){S.metodo=e.target.value;salva();renderAdem();renderRiep()}});
+const ISTR={
+ pilastri:"Raggruppa gli obblighi per finalità: ogni adempimento è un PILASTRO che unisce più articoli o un intero capo e dice cosa deve garantire la banca, senza dettagli operativi. Pochi adempimenti per atto (di solito 2-6).",
+ obblighi:"Per ogni articolo che contiene obblighi ricava i comportamenti richiesti o vietati: uno o pochi adempimenti per articolo, con sintesi fedele.",
+ prescrizioni:"Scendi a comma e lettera: ogni adempimento indica chi deve agire, cosa deve fare, entro quando o con quale frequenza e a quali condizioni. I commi solo descrittivi non producono adempimenti.",
+ puntuali:"Scomponi ogni prescrizione nelle sue parti verificabili: ogni soglia, eccezione, termine, documento da produrre e controllo è un adempimento separato; indica i rinvii a norme attuative e la sanzione collegata se nel testo."};
+let ctl2=null;
+$("#bGen").onclick=async()=>{
+  const st=$("#st4"); st.className="status"; if(!sample){st.className="status err";st.textContent="Claude non è disponibile in questa vista.";return}
+  const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel); ctl2=new AbortController(); $("#bStop2").hidden=false; $("#bGen").disabled=true; S.adem=[];
+  try{
+    for(let k=0;k<ids.length;k++){const id=ids[k],a=att(id),arts=await testoAtto(id),n=S.norme[id];
+      let sel=arts; if(arts.length>40&&n.art?.length){const set=new Set(n.art.map(String));sel=arts.filter(x=>set.has(String(x[0])));if(!sel.length)sel=arts.slice(0,40)}
+      const blocchi=[];let cur="";for(const x of sel){const t=`[Art. ${x[0]}${x[1]?" – "+x[1]:""}]\n${x[2]}\n\n`;if(cur.length+t.length>70000&&cur){blocchi.push(cur);cur=""}cur+=t.slice(0,70000)}if(cur)blocchi.push(cur);
+      for(let b=0;b<blocchi.length;b++){
+        st.textContent=`Creo gli adempimenti: norma ${k+1} di ${ids.length}${blocchi.length>1?`, parte ${b+1} di ${blocchi.length}`:""} — ${a.tit.slice(0,70)}…`;
+        const prompt=`Sei un esperto di compliance bancaria italiana. Norma: "${a.tit}" (${a.est}).\nOggetto del risk assessment: "${S.oggetto||"intera norma"}". Considera solo ciò che riguarda l'oggetto.\nLivello di dettaglio: ${ISTR[S.livello]}\nMetodo per riconoscere un adempimento: c'è un soggetto obbligato che è la banca o una categoria che la comprende (un obbligo solo dell'autorità non è un adempimento); c'è un comportamento da fare o da non fare (non una definizione o descrizione); indica la natura: obbligatorio, condizionato ("se la banca...") o facoltà (da documentare).\nPer ogni adempimento proponi i fattori di rischio da 1 a 4: sanz (sanzione: 1 nessuna, 2 fino 500k€, 3 fino 5mln€ o % fatturato, 4 oltre/penali), rep (reputazionale), oper (operativo), econ (costi di rimedio), compl (complessità), freq (frequenza e volumi), nov (novità: 1 >3 anni, 4 nuova). Se conosci la sanzione massima prevista in euro mettila in sanz_euro, altrimenti null.\nLa "citazione" deve essere una frase copiata ALLA LETTERA dal testo (max 300 caratteri).\nRispondi SOLO con un oggetto JSON: {"adempimenti":[{"art":"5","comma":"2","titolo":"breve","descrizione":"cosa deve fare la banca","destinatario":"...","termine":"... o null","natura":"obbligatorio|condizionato|facoltà","citazione":"...","fattori":{"sanz":3,"rep":2,"oper":2,"econ":2,"compl":3,"freq":2,"nov":2},"sanz_euro":null}],"senza_obbligo":[{"art":"1","motivo":"definizioni"}]}\n\nTESTO:\n${blocchi[b]}`;
+        const r=await sample.json(prompt,{signal:ctl2.signal});
+        const norm=s=>String(s||"").toLowerCase().replace(/[^a-zà-ù0-9]+/g," ").trim(), testo=norm(blocchi[b]);
+        for(const x of (r?.adempimenti||[])){const f={};for(const [kk] of FATT)f[kk]=Math.min(4,Math.max(1,Math.round(+x.fattori?.[kk]||3)));f.ctrl=3;f.att=3;
+          const cit=String(x.citazione||""); S.adem.push({id:"a"+S.adem.length,norma:id,art:String(x.art||""),comma:String(x.comma||""),titolo:String(x.titolo||""),desc:String(x.descrizione||""),dest:String(x.destinatario||""),termine:x.termine?String(x.termine):"",natura:String(x.natura||""),cit,citOk:cit.length>15&&testo.includes(norm(cit).slice(0,160)),f,S:x.sanz_euro?+x.sanz_euro:0,C:0,pres:[],stato:null})}
+        n.senza=(n.senza||[]).concat(r?.senza_obbligo||[]);
+        salva(); renderAdem();
+      }
+    }
+    st.textContent=`Fatto: ${S.adem.length} adempimenti da ${ids.length} norme.`; vai(5);
+  }catch(e){st.className="status err";st.textContent=errMsg(e);if(S.adem.length)vai(5)}
+  finally{$("#bStop2").hidden=true;$("#bGen").disabled=false;renderSteps()}
+};
+$("#bStop2").onclick=()=>ctl2?.abort();
+
+/* ---------- calcoli ---------- */
+function pesoPres(nome,nat,base){const o=pesiOverride[nome];const [lo,hi]=FASCIA[nat];return Math.min(hi,Math.max(lo,o??base))}
+function eff(ad){let q=1;for(const p of ad.pres){const e=pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*TEST[p.test][1];q*=1-e}return Math.min(.9,1-q)}
+function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){g==="I"?I+=w*ad.f[k]:P+=w*ad.f[k]}return {I,P}}
+const lvRI=x=>x<4?0:x<7?1:x<12?2:3, lv3=x=>x<1.75?0:x<2.5?1:x<3.25?2:3;
+const MAT=[[0,0,0,0],[0,0,1,1],[1,1,2,2],[1,2,3,3]];
+function vuln(E){return E>=.75?0:E>=.5?1:E>=.25?2:3}
+function statoAuto(ad,E){if(E>=.75)return ad.pres.every(p=>p.test===0)?0:1;if(E>=.5)return 1;if(E>=.25)return 2;return 3}
+const STATI=["Conforme","Largamente conforme","Parzialmente conforme","Non conforme o non valutato"];
+function calc(ad){const {I,P}=IP(ad),RI=I*P,E=eff(ad),li=lvRI(RI),fp=+$("#fp").value||0;
+  const r={I,P,RI,E,inLv:li};
+  r.m1=Math.min(li,MAT[li][vuln(E)]);
+  r.m2v=RI*(1-E); r.m2=Math.min(li,lvRI(r.m2v));
+  const RI3=.5*I+.5*P; r.RI3=RI3; r.m3v=RI3-(RI3-1)*E; r.m3=Math.min(lv3(RI3),lv3(r.m3v)); r.in3=lv3(RI3);
+  const pmap=[0,.02,.10,.30,.60], pf=Math.floor(P), p=pmap[Math.min(4,pf)]+(pf<4?(pmap[pf+1]-pmap[pf])*(P-pf):0), imp=(ad.S||0)+(ad.C||0);
+  if(imp>0){r.m4in=p*imp;r.m4v=r.m4in*(1-E);const th=fp>0?[fp*.0001,fp*.001,fp*.01]:[1e4,1e5,1e6];const L=x=>x<th[0]?0:x<th[1]?1:x<th[2]?2:3;r.in4=L(r.m4in);r.m4=L(r.m4v)}else r.m4=null;
+  const st=ad.stato??statoAuto(ad,E); r.stato=st; const sysProc=ad.pres.some(x=>x.nat!=="Persona"&&ADEG[x.adeg][1]>0);
+  const red=st===0?2:st===1?1:st===2?(sysProc?1:0):0; r.m5=Math.max(0,li-red);
+  r.sel=r[S.metodo]; r.selIn=S.metodo==="m3"?r.in3:S.metodo==="m4"?(r.in4??null):li; return r}
+const f2=x=>x==null?"—":(+x).toLocaleString("it-IT",{maximumFractionDigits:2});
+const eur=x=>x==null?"—":Math.round(x).toLocaleString("it-IT")+" €";
+
+/* ---------- passo 5: adempimenti ---------- */
+function renderAdem(){if(!S.adem.length){$("#adem").innerHTML="";return}
+  const per={};for(const a of S.adem)(per[a.norma]=per[a.norma]||[]).push(a);
+  $("#st5").textContent=`${S.adem.length} adempimenti · citazioni ritrovate alla lettera: ${S.adem.filter(a=>a.citOk).length}. Metodologia: ${METODI.find(m=>m[0]===S.metodo)[1]}.`;
+  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>{const n=S.norme[nid]||{};const senza=(n.senza||[]).length?`<p class="small">Articoli letti senza obblighi: ${esc((n.senza||[]).map(s=>"art. "+s.art+" ("+s.motivo+")").join("; "))}</p>`:"";
+    return `<h3 class="groupt">${esc(att(nid).tit)}</h3>${senza}`+ads.map(cardAd).join("")}).join("")}
+function cardAd(a){const r=calc(a);
+  return `<div class="ad" data-ad="${a.id}"><div class="h"><b>${esc(a.titolo)}</b><span class="res">Inerente ${lv(r.selIn)} → Residuo ${lv(r.sel)}<span class="small mono">E ${Math.round(r.E*100)}%</span></span></div>
+  <div class="src">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura)}${a.dest?" · "+esc(a.dest):""}${a.termine?" · termine: "+esc(a.termine):""}</div>
+  <div>${esc(a.desc)}</div><q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>
+  <details><summary class="small">Fattori, presidi e importi</summary>
+   <div class="fx">${FATT.map(([k,n,g,,d])=>`<label>${n}<select data-f="${k}">${d.map((t,i)=>`<option value="${i+1}" ${a.f[k]===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`).join("")}
+    <label>Sanzione (€)<input type="number" data-v="S" value="${a.S||""}" min="0"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label>
+    <label>Stato di conformità (met. 5)<select data-v="stato"><option value="">automatico: ${STATI[statoAuto(a,r.E)]}</option>${STATI.map((s,i)=>`<option value="${i}" ${a.stato===i?"selected":""}>${s}</option>`).join("")}</select></label></div>
+   <div class="pres">${a.pres.map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
+     <select data-pa="${i}" aria-label="Adeguatezza">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
+     <select data-pt="${i}" aria-label="Test">${TEST.map((x,j)=>`<option value="${j}" ${p.test===j?"selected":""}>${x[0]}</option>`).join("")}</select>
+     <button class="btn ghost" type="button" data-pdel="${i}" style="padding:3px 8px">Togli</button></div>`).join("")}
+    <div class="row"><button class="btn ghost" type="button" data-padd="1" style="padding:4px 10px">+ Presidio</button><span class="small">I ${Math.round(r.I*100)/100} × P ${Math.round(r.P*100)/100} = ${f2(r.RI)} · met.2 ${f2(r.m2v)} · met.3 ${f2(r.m3v)} · met.4 ${eur(r.m4v)}</span></div></div>
+  </details></div>`}
+$("#adem").addEventListener("change",e=>{const c=e.target.closest("[data-ad]");if(!c)return;const a=S.adem.find(x=>x.id===c.dataset.ad),t=e.target;
+  if(t.dataset.f)a.f[t.dataset.f]=+t.value; else if(t.dataset.v==="stato")a.stato=t.value===""?null:+t.value; else if(t.dataset.v)a[t.dataset.v]=+t.value||0;
+  else if(t.dataset.pa!=null)a.pres[+t.dataset.pa].adeg=+t.value; else if(t.dataset.pt!=null)a.pres[+t.dataset.pt].test=+t.value;
+  salva();refreshCard(c,a);renderRiep()});
+function refreshCard(c,a){const open=c.querySelector("details").open;c.outerHTML=cardAd(a);const n=document.querySelector(`[data-ad="${a.id}"] details`);if(n)n.open=open}
+let adTarget=null;
+$("#adem").addEventListener("click",e=>{const c=e.target.closest("[data-ad]");if(!c)return;const a=S.adem.find(x=>x.id===c.dataset.ad);
+  if(e.target.dataset.pdel!=null){a.pres.splice(+e.target.dataset.pdel,1);salva();refreshCard(c,a);renderRiep()}
+  if(e.target.dataset.padd){adTarget=a;apriPres()}});
+function tuttiPresidi(){return PRES_STD.map(p=>({nome:p[0],nat:p[1],peso:p[2],tipo:p[3],lib:false})).concat(libreria.map(p=>({...p,lib:true})))}
+function apriPres(){$("#selPres").innerHTML=tuttiPresidi().map((p,i)=>`<option value="${i}">${esc(p.nome)} — ${p.nat}, ${f2(pesoPres(p.nome,p.nat,p.peso))}${p.lib?" (libreria)":""}</option>`).join("");$("#stPres").textContent="";$("#dPres").showModal()}
+$("#bAddPres").onclick=()=>{const p=tuttiPresidi()[+$("#selPres").value];adTarget.pres.push({nome:p.nome,nat:p.nat,peso:p.peso,tipo:p.tipo,adeg:0,test:1});salva();renderAdem();renderRiep();$("#stPres").textContent="Aggiunto: "+p.nome};
+$("#bNewPres").onclick=()=>{const nome=$("#npNome").value.trim();if(!nome){$("#stPres").textContent="Scrivi il nome del presidio.";return}
+  const nat=$("#npNat").value,[lo,hi]=FASCIA[nat],peso=Math.min(hi,Math.max(lo,+$("#npPeso").value||lo)),p={nome,nat,peso,tipo:$("#npTipo").value};
+  if($("#npLib").checked&&!libreria.some(x=>x.nome===nome)){libreria.push(p);store.set("ra_presidi_lib",libreria)}
+  adTarget.pres.push({...p,adeg:0,test:1});salva();renderAdem();renderRiep();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)}, dentro la fascia ${nat.toLowerCase()})`;$("#npNome").value=""};
+$("#bClosePres").onclick=()=>$("#dPres").close();
+$("#fp").addEventListener("input",()=>{S.fp=$("#fp").value;salva();renderAdem();renderRiep()});
+$("#go6").onclick=()=>{renderRiep();vai(6)};
+
+/* ---------- impostazioni ---------- */
+$("#bSet").onclick=()=>{const all=tuttiPresidi();$("#tSet").innerHTML=`<tr><th>Presidio</th><th>Natura</th><th class="num">Standard</th><th class="num">Peso</th></tr>`+all.map((p,i)=>`<tr><td>${esc(p.nome)}${p.lib?' <span class="chip">libreria</span>':''}</td><td>${p.nat}</td><td class="num">${f2(p.peso)}</td><td class="num"><input type="number" step="0.05" min="${FASCIA[p.nat][0]}" max="${FASCIA[p.nat][1]}" value="${pesoPres(p.nome,p.nat,p.peso)}" data-sw="${i}" style="width:80px"></td></tr>`).join("");$("#dSet").showModal()};
+$("#bSave").onclick=()=>{const all=tuttiPresidi();$$("[data-sw]").forEach(inp=>{const p=all[+inp.dataset.sw],v=+inp.value;if(Math.abs(v-p.peso)>1e-9)pesiOverride[p.nome]=v;else delete pesiOverride[p.nome]});
+  const log=store.get("ra_pesi_log",[]);log.push({quando:new Date().toISOString(),motivo:$("#motSet").value||"",pesi:{...pesiOverride}});store.set("ra_pesi_log",log);store.set("ra_pesi",pesiOverride);$("#dSet").close();renderAdem();renderRiep()};
+$("#bStd").onclick=()=>{pesiOverride={};store.set("ra_pesi",{});$("#dSet").close();renderAdem();renderRiep()};
+$("#bClose").onclick=()=>$("#dSet").close();
+$("#bReset").onclick=()=>{if($("#bReset").dataset.ok!=="1"){$("#bReset").dataset.ok="1";$("#bReset").textContent="Conferma: cancella la bozza";setTimeout(()=>{$("#bReset").dataset.ok="";$("#bReset").textContent="Nuovo risk assessment"},4000);return}
+  store.set("ra_bozza",null);location.reload()};
+
+/* ---------- riepilogo ---------- */
+function righe(){return S.adem.map(a=>({a,r:calc(a)}))}
+function renderRiep(){if(!S.adem.length){$("#riep").innerHTML="";return}const R=righe(),conf=$("#conf").checked;
+  const per={};for(const x of R)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
+  const sintesi=Object.entries(per).map(([nid,xs])=>{const vals=xs.map(x=>x.r.sel).filter(v=>v!=null),mx=vals.length?Math.max(...vals):null,cnt=[0,1,2,3].map(i=>vals.filter(v=>v===i).length);
+    return `<tr><td>${esc(att(nid).tit)}</td><td>${lv(mx)}</td>${cnt.map(c=>`<td class="num">${c}</td>`).join("")}<td>${mx>=3?"Piano di mitigazione + segnalazione al CdA":mx===2?"Piano di mitigazione obbligatorio":"—"}</td></tr>`}).join("");
+  const head=conf?METODI.map(m=>`<th>${m[1].split(" · ")[0]}</th>`).join(""):`<th>Residuo</th>`;
+  const det=R.map(({a,r})=>`<tr><td>${esc(att(a.norma).tit.slice(0,60))}</td><td class="mono">${esc(a.art)}${a.comma?"."+esc(a.comma):""}</td><td>${esc(a.titolo)}</td><td>${lv(r.selIn)}</td><td class="num">${Math.round(r.E*100)}%</td>${conf?["m1","m2","m3","m4","m5"].map(k=>`<td>${lv(r[k])}</td>`).join(""):`<td>${lv(r.sel)}</td>`}</tr>`).join("");
+  $("#riep").innerHTML=`<h3 class="groupt">Per norma</h3><p class="small">Il livello della norma è il più alto tra i suoi adempimenti; accanto, quanti adempimenti per livello.</p>
+  <div class="tw"><table><tr><th>Norma</th><th>Livello</th><th class="num">B</th><th class="num">MB</th><th class="num">MA</th><th class="num">A</th><th>Azione richiesta</th></tr>${sintesi}</table></div>
+  <h3 class="groupt">Adempimenti</h3><div class="tw"><table><tr><th>Norma</th><th>Art.</th><th>Adempimento</th><th>Inerente</th><th class="num">Presidi</th>${head}</tr>${det}</table></div>`;
+  $("#st6").textContent=`Metodologia scelta: ${METODI.find(m=>m[0]===S.metodo)[1]} · livello di dettaglio: ${LIVELLI.find(l=>l[0]===S.livello)[1]}.`}
+$("#conf").addEventListener("change",renderRiep);
+$("#bCsv").onclick=async()=>{const R=righe(),q=s=>'"'+String(s??"").replace(/"/g,'""')+'"';
+  const csv=["Norma;Articolo;Adempimento;Natura;Inerente;Efficacia presidi;Met1;Met2;Met3;Met4;Met5;Citazione verificata"].concat(R.map(({a,r})=>[att(a.norma).tit,a.art+(a.comma?"."+a.comma:""),a.titolo,a.natura,LIV[r.inLv],Math.round(r.E*100)+"%",...["m1","m2","m3","m4","m5"].map(k=>r[k]==null?"":LIV[r[k]]),a.citOk?"sì":"no"].map(q).join(";"))).join("\n");
+  try{await navigator.clipboard.writeText(csv);$("#st6").textContent="Tabella copiata: incollala in Excel."}catch{$("#st6").textContent="Copia non consentita in questa vista."}};
+
+if(S.fp)$("#fp").value=S.fp;
+init();
+</script>
