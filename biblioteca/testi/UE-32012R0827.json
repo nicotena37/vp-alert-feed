@@ -10,7 +10,7 @@
 "Emittenti"
 ],
 "scaricato_il": "2026-11-08T00:52:32+00:00",
-"n_articoli": 13,
+"n_articoli": 15,
 "articoli": [
 {
 "num": "1",
@@ -89,10 +89,23 @@
 "rubrica": "Entrata in vigore",
 "testo": "Articolo 13\nEntrata in vigore\nIl presente regolamento entra in vigore il giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nEsso si applica a decorrere dal 1 o novembre 2012, fatta eccezione per gli articoli 9, 10 e 11, i quali si applicano dalla data di cui al primo comma.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "9f9c47aa6a1ef281"
+},
+{
+"num": "Allegato I",
+"rubrica": "Comunicazione al pubblico di importanti posizioni corte nette (Articolo 2)",
+"testo": "ALLEGATO I\nComunicazione al pubblico di importanti posizioni corte nette (Articolo 2)\nTitolare della posizione\nNome dell'emittente\nCodice ISIN\nPosizione corta netta\n(%)\nData alla quale la posizione è stata creata o modificata o alla quale ha cessato di essere detenuta\n(aaaa-mm-gg)",
+"hash": "f92e3a493465607a"
+},
+{
+"num": "Allegato II",
+"rubrica": "Formato delle informazioni da fornire all'AESFEM su base trimestrale (Articolo 3)",
+"testo": "ALLEGATO II\nFormato delle informazioni da fornire all'AESFEM su base trimestrale (Articolo 3)\nInformazione\nFormato\n1.\nIdentità dell'emittente\nPer i titoli azionari: nome completo della società i cui titoli azionari sono ammessi alla negoziazione in una sede di negoziazione\nPer il debito sovrano: nome completo dell'emittente\nPer le posizioni scoperte in credit default swap su emittenti sovrani: nome completo dell'emittente sovrano\n2.\nCodice ISIN\nUnicamente per i titoli azionari: Codice ISIN della principale categoria di titoli azionari ordinari dell'emittente. Se non vi sono titoli azionari ordinari ammessi alla negoziazione, il codice ISIN della categoria di titoli azionari privilegiati (oppure, se esistono più categorie di tali titoli azionari, della principale categoria di titoli azionari privilegiati ammessi alla negoziazione).\n3.\nCodice identificativo del paese\nCodice a due lettere del paese dell'emittente sovrano secondo la norma ISO 3166-1\n4.\nData della posizione\nData per la quale la posizione è comunicata. Formato conforme alla norma ISO 8601:2004 (aaaa-mm-gg)\n5.\nPosizioni corte nette in titoli azionari del principale indice di borsa nazionale, aggregate quotidianamente\nPercentuale arrotondata alla seconda cifra decimale\n6.\nPosizioni corte nette in altri titoli azionari, aggregate a fine trimestre\nPercentuale arrotondata alla seconda cifra decimale\n7.\nPosizioni corte nette in debito sovrano, aggregate quotidianamente\nEquivalente nominale in euro\n8.\nPosizioni scoperte in credit default swap su emittenti sovrani, aggregate quotidianamente\nEquivalente nominale in euro",
+"hash": "dfd490b0f025687e"
 }
 ],
 "meta": {
 "celex_consolidato": "32012R0827",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32012R0827"
-}
+},
+"allegati": 2
 }

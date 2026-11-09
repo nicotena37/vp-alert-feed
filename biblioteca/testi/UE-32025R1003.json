@@ -9,7 +9,7 @@
 "Mercati finanziari"
 ],
 "scaricato_il": "2026-11-08T00:29:55+00:00",
-"n_articoli": 2,
+"n_articoli": 3,
 "articoli": [
 {
 "num": "1",
@@ -22,10 +22,17 @@
 "rubrica": "Entrata in vigore e applicazione",
 "testo": "Articolo 2\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "14e5a0f815b5e34c"
+},
+{
+"num": "Allegato",
+"rubrica": "Tabella 1",
+"testo": "ALLEGATO\nTabella 1\nDati di riferimento identificativi per gli swap su tassi di interesse OTC soggetti agli obblighi di trasparenza di cui all’articolo 8 bis, paragrafo 2, e agli articoli 10 e 21 del regolamento (UE) n. 600/2014\nDati di riferimento identificativi\nIstruzioni\n1\nClasse di attività\nPer determinare se un derivato OTC fa riferimento a un tasso, a un credito, a tassi di cambio, a strumenti di capitale, a merci o ad altre classi di attività non standard.\n2\nTipo di strumento\nPer determinare se un derivato OTC è uno swap, un’opzione o un forward.\n3\nTipo di attività sottostante\nPer determinare se uno swap su tassi di interesse OTC è uno swap fisso contro variabile, fisso contro fisso o variabile contro variabile (swap di basi).\n4\nValuta nozionale\nPer determinare se uno swap su tassi di interesse OTC è denominato in una delle quattro valute di cui all’articolo 8 bis , paragrafo 2, del regolamento (UE) n. 600/2014 e per identificare la valuta pertinente.\n5\nTipo di consegna\nPer determinare se uno swap su tassi di interesse OTC è consegnabile (fisico) o non consegnabile (contante).\n6\nStruttura del nozionale\nPer determinare se lo swap ha una struttura del nozionale costante, crescente, in ammortamento o personalizzata.\n7\nTasso di riferimento sottostante\nPer identificare il tasso e la durata del tasso cui fa riferimento lo swap su tassi di interesse OTC.\n8\nTermini operativi standard associati al tasso di riferimento sottostante\nPer identificare i termini operativi standard associati a ciascuno dei tassi di riferimento sottostanti. La tabella 2 specifica i termini operativi standard per i tassi di riferimento per gli swap su tassi di interesse OTC soggetti agli obblighi di trasparenza di cui all’articolo 8 bis , paragrafo 2, e agli articoli 10 e 21 del regolamento (UE) n. 600/2014.\n9\nDurata contrattuale\nPer determinare se la durata contrattuale di uno swap su tassi di interesse OTC è uno dei periodi annuali completi che rientrano nell’ambito di applicazione dell’articolo 8 bis , paragrafo 2, del regolamento (UE) n. 600/2014. Nel caso in cui uno swap su tassi di interesse OTC sia concluso per un periodo annuale completo, per determinare la durata del contratto espressa come numero intero e l’unità temporale applicabile.\n10\nData di efficacia\nPer determinare se uno swap su tassi di interesse OTC è spot-starting (di solito due giorni lavorativi dopo la conclusione) o forward-starting (qualsiasi altra data di inizio concordata).\n11\nConvenzione di rollover\nPer determinare se uno swap su tassi di interesse OTC utilizza la convenzione di rollover di calendario (calendar roll), la convenzione di rollover dei mercati monetari internazionali (IMM roll) o qualsiasi altra convenzione di rollover (non standard).\nTabella 2\nTermini operativi standard per i tassi di riferimento per gli swap su tassi di interesse OTC soggetti agli obblighi di trasparenza di cui all’articolo 8 bis, paragrafo 2, e agli articoli 10 e 21 del regolamento (UE) n. 600/2014\nFamiglia di tassi di riferimento\nEUR-EURIBOR\nEUR-EuroSTR\nUSD-SOFR\nGBP-SONIA\nJPY-TONA\nConvenzione di rettifica del giorno lavorativo\nGiorno successivo modificato (modified following)\nGiorno successivo modificato (modified following)\nGiorno successivo modificato (modified following)\nGiorno successivo modificato (modified following)\nGiorno successivo modificato (modified following)\nConvenzione per il conteggio dei giorni della gamba fissa\n30360 (ISDA)\nAct360\nAct360\nAct365.FIXED\nAct365.FIXED\nFrequenza del pagamento della gamba fissa\nAnnuale\nAnnuale\nAnnuale\nAnnuale\nAnnuale\nConvenzione per il conteggio dei giorni della gamba variabile\nAct360\nAct360\nAct360\nAct365.FIXED\nAct365.FIXED\nFrequenza del pagamento della gamba variabile\nSemestrale (6M RR)/ trimestrale (3M RR)\nAnnuale\nAnnuale\nAnnuale\nAnnuale\nFixing lag\n2BD\n0BD\n0BD\n0BD\n0BD\nCalendario di fixing\nEUTA\nEUTA\nUSGS\nGBLO\nJPTO\nCalendario dei pagamenti\nEUTA\nEUTA\nUSNY\nGBLO\nJPTO\nPagamenti supplementari\nNESSUNO\nNESSUNO\nNESSUNO\nNESSUNO\nNESSUNO\nConvenzione di rollover\nSTD\nIMM\nSTD\nIMM\nSTD\nIMM\nSTD\nIMM\nSTD\nIMM\nData di efficacia\n2BD\nData successiva\n2BD\nData successiva\n2BD\nData successiva\n0BD\nData successiva\n2BD\nData successiva\nELI: http://data.europa.eu/eli/reg_del/2025/1003/oj\nISSN 1977-0707 (electronic edition)",
+"hash": "31eb0a9c563b312b"
 }
 ],
 "meta": {
 "celex_consolidato": "32025R1003",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R1003"
-}
+},
+"allegati": 1
 }

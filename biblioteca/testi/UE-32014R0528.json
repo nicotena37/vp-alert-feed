@@ -8,7 +8,7 @@
 "Mercati finanziari"
 ],
 "scaricato_il": "2026-11-08T00:40:45+00:00",
-"n_articoli": 10,
+"n_articoli": 12,
 "articoli": [
 {
 "num": "1",
@@ -69,10 +69,23 @@
 "rubrica": "Entrata in vigore",
 "testo": "Articolo 10\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "b5d753c5942ef78a"
+},
+{
+"num": "Allegato I",
+"rubrica": "Formula da utilizzare ai fini dell'articolo 5, paragrafo 2",
+"testo": "ALLEGATO I\nFormula da utilizzare ai fini dell'articolo 5, paragrafo 2\nFormula da utilizzate ai fini dell'articolo 5, paragrafo 2:\n▼C1\nImpatto gamma =\n× Gamma × VU 2\n▼B\ndove VU:\n(a)\nper le opzioni e i warrants su tassi di interesse o obbligazioni, è pari alla variazione ipotizzata del rendimento indicato all'articolo 339, tabella 2, colonna 5, del regolamento (UE) n. 575/2013;\n(b)\nper le opzioni o i warrants su strumenti di capitale e gli indici azionari, è pari al valore di mercato del sottostante moltiplicato per i fattori di ponderazione di cui all'articolo 343 del regolamento (UE) n. 575/2013;\n(c)\nper le opzioni o i warrants sui cambi e sull'oro, è pari al valore di mercato del sottostante, calcolato nella valuta utilizzata per la segnalazione, moltiplicato per il fattore di ponderazione di cui all'articolo 351 del regolamento (UE) n. 575/2013 o, se opportuno, il fattore di ponderazione di cui all'articolo 354 del regolamento (UE) n. 575/2013;\n(d)\nper le opzioni o i warrants su merci, è pari al valore di mercato del sottostante moltiplicato per il fattore di ponderazione di cui all'articolo 360, paragrafo 1, lettera a), del regolamento (UE) n. 575/2013.",
+"hash": "bbe04bc7e47c4306"
+},
+{
+"num": "Allegato II",
+"rubrica": "Formula da utilizzare ai fini dell'articolo 9, lettera d)",
+"testo": "ALLEGATO II\nFormula da utilizzare ai fini dell'articolo 9, lettera d)\nFormula da utilizzare ai fini dell'articolo 9, lettera d):\nRequisito di fondi propri = – min (0,PC-DE)\ndove\n(a)\nPC (« price change ») è la somma delle variazioni di prezzo delle opzioni aventi lo stesso tipo distinto di sottostante intenso ai sensi dell'articolo 5, paragrafo 3, (segno negativo per le perdite e segno positivo per i guadagni) e corrispondente allo\n►C1\nscenario pertinente determinato nella fase c) di cui all'articolo 9; ◄\n(b)\nDE (« delta effect ») è l'effetto delta calcolato come segue:\nDE = ADEV × PPCU\ndove\ni)\nADEV (« aggregated delta equivalent value ») è la somma dei delta negativi o positivi moltiplicata per il valore di mercato del sottostante del contratto, di opzioni che hanno lo stesso tipo distinto di sottostante ai sensi dell'articolo 5, paragrafo 3;\nii)\nPPCU (« percentage price change of the underlying ») è la variazione di prezzo percentuale del sottostante inteso ai sensi dell'articolo 5, paragrafo 3, corrispondente allo\n►C1\nscenario pertinente determinato nella fase c) di cui all'articolo 9. ◄",
+"hash": "af53dbca867ab626"
 }
 ],
 "meta": {
 "celex_consolidato": "02014R0528-20160602",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02014R0528-20160602"
-}
+},
+"allegati": 2
 }

@@ -8,7 +8,7 @@
 "Credito"
 ],
 "scaricato_il": "2026-11-08T00:38:26+00:00",
-"n_articoli": 9,
+"n_articoli": 10,
 "articoli": [
 {
 "num": "1",
@@ -63,10 +63,17 @@
 "rubrica": "Entrata in vigore",
 "testo": "Articolo 9\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "9bd880a9f353d611"
+},
+{
+"num": "Allegato",
+"rubrica": "Matrice del punteggio di completezza dei dati e categorie di motivazione del rigetto",
+"testo": "ALLEGATO\nMatrice del punteggio di completezza dei dati e categorie di motivazione del rigetto\nTabella 1\nMatrice del punteggio di completezza dei dati\nInput 1: percentuale dei campi inseriti come «ND1»\nInput 1 = 0 %\n0 % < Input 1 ≤ 10 %\n10 % < Input 1 ≤ 30 %\nInput 1 > 30 %\nInput 2: percentuale dei campi inseriti come «ND2», «ND3» o «ND4-AAAA-MM-GG»\nInput 2 = 0 %\nA1\nB1\nC1\nD1\n0 % < Input 2 ≤ 20 %\nA2\nB2\nC2\nD2\n20 % < Input 2 ≤ 40 %\nA3\nB3\nC3\nD3\nInput 2 > 40 %\nA4\nB4\nC4\nD4\nTabella 2\nCategorie di motivazione del rigetto\nCategoria\nMotivo\nSchema\nLa comunicazione di informazioni è stata rigettata per non conformità dello schema.\nAutorizzazione\nLa comunicazione di informazioni è stata rigettata perché il soggetto segnalante non ha ricevuto l’autorizzazione a effettuare la segnalazione per conto del cedente, del promotore o della SSPE.\nLogica\nLa comunicazione di informazioni è stata rigettata perché il codice dell’elemento non corrisponde ai valori a disposizione nell’allegato 1, tabella 3, del regolamento delegato (UE) 2020/1224.\nAttività\nLa comunicazione di informazioni è stata rigettata perché la comunicazione di dati non è conforme a una o più norme di convalida.\nRappresentatività\nLa comunicazione di informazioni è stata rigettata ai sensi dell’articolo 4, paragrafo 6.",
+"hash": "f80ff529bc6b0971"
 }
 ],
 "meta": {
 "celex_consolidato": "32020R1229",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32020R1229"
-}
+},
+"allegati": 1
 }

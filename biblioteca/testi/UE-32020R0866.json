@@ -8,17 +8,24 @@
 "Vigilanza prudenziale"
 ],
 "scaricato_il": "2026-11-08T00:37:29+00:00",
-"n_articoli": 1,
+"n_articoli": 2,
 "articoli": [
 {
 "num": "2",
 "rubrica": "Il presente regolamento entra in vigore il giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .",
 "testo": "Articolo 2\nIl presente regolamento entra in vigore il giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "7e7e84e04e0f149a"
+},
+{
+"num": "Allegato",
+"rubrica": "Formule da utilizzare ai fini dell’aggregazione degli AVA a norma dell’articolo 9, paragrafo 6, dell’articolo 10, paragrafo 7, e dell’articolo 11, paragrafo 7",
+"testo": "ALLEGATO\nFormule da utilizzare ai fini dell’aggregazione degli AVA a norma dell’articolo 9, paragrafo 6, dell’articolo 10, paragrafo 7, e dell’articolo 11, paragrafo 7\nFormula per il metodo 1\nAPVA\n=\n(FV – PV) – α · (FV – PV)\n= (1 – α) · (FV – PV)\nAVA\n=\nΣ APVA\nFormula per il metodo 2\nAPVA\n=\nmax {0, (FV – PV) – α · (EV – PV)}\n= max {0, FV – α · EV – (1 – α) · PV}\nAVA\n=\nΣ APVA\ndove:\nFV\n=\nil valore equo a livello dell’esposizione oggetto di valutazione dopo gli aggiustamenti contabili applicati al valore equo dell’ente che risultano far fronte alla stessa fonte di incertezza della valutazione dell’AVA pertinente,\nPV\n=\nil valore prudente a livello dell’esposizione oggetto di valutazione determinato conformemente al presente regolamento,\nEV\n=\nil valore atteso a livello di esposizione oggetto di valutazione tratto da un range di valori possibili,\nα\n=\nil fattore di aggregazione,\nAPVA\n=\nl’AVA a livello di esposizione oggetto di valutazione dopo l’aggiustamento per aggregazione,\nAVA\n=\nl’AVA totale a livello di categoria dopo l’aggiustamento per aggregazione.\nGli enti fissano il fattore di aggregazione «α» al 66 % fino al 31 dicembre 2020 e successivamente lo fissano al 50 %.",
+"hash": "8cdfd1291597d748"
 }
 ],
 "meta": {
 "celex_consolidato": "32020R0866",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32020R0866"
-}
+},
+"allegati": 1
 }

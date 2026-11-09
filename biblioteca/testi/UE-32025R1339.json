@@ -8,7 +8,7 @@
 "Incassi e pagamenti"
 ],
 "scaricato_il": "2026-11-08T00:44:25+00:00",
-"n_articoli": 8,
+"n_articoli": 9,
 "articoli": [
 {
 "num": "1",
@@ -57,10 +57,17 @@
 "rubrica": "Entrata in vigore e applicazione",
 "testo": "Articolo 8\nEntrata in vigore e applicazione\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nEsso si applica a decorrere dal 10 luglio 2026.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "d8dd2998406152bc"
+},
+{
+"num": "Allegato",
+"rubrica": "Tabella",
+"testo": "ALLEGATO\nTabella\nMetadati\nNumero\nCampo\nFormato\n1.\nNomi o denominazioni del soggetto che ha trasmesso le informazioni\nCampo di testo libero, massimo 500 caratteri alfanumerici.\n2.\nNomi o denominazioni delle persone fisiche o giuridiche a cui le informazioni fanno riferimento\nCampo di testo libero, massimo 500 caratteri alfanumerici.\n3.\nIdentificativo della persona giuridica del soggetto che ha trasmesso le informazioni\nIdentificativo della persona giuridica (LEI) secondo ISO 17442, codice di 20 caratteri alfanumerici\n4.\nIdentificativo della persona giuridica riguardante la persona giuridica a cui le informazioni fanno riferimento\nIdentificativo della persona giuridica (LEI) secondo ISO 17442, codice di 20 caratteri alfanumerici\n5.\nTipo di informazioni presentate dal soggetto\nTassonomia secondo l’elenco comune dei tipi di informazioni stabilito nella tabella 1 di cui all’allegato del regolamento di esecuzione (UE) 2025/1338\n6.\nDimensioni, per categoria, del soggetto che ha trasmesso le informazioni\nTassonomia secondo l’elenco comune delle categorie di soggetti per dimensioni stabilito nella tabella 2 di cui all’allegato del regolamento di esecuzione (UE) 2025/1338\n7.\nDimensioni della persona giuridica cui si riferiscono le informazioni\nTassonomia secondo l’elenco comune delle categorie di soggetti per dimensioni stabilito nella tabella 2 di cui all’allegato del regolamento di esecuzione (UE) 2025/1338\n8.\nPaese della sede legale della persona giuridica cui si riferiscono le informazioni\nCodice paese ISO 3166 di 2 caratteri.\n9.\nSettore o settori industriali delle attività economiche della persona fisica o giuridica cui si riferiscono le informazioni\nTassonomia secondo l’elenco comune dei settori industriali stabilito nella tabella 3 di cui all’allegato del regolamento di esecuzione (UE) 2025/1338\n10.\nContrassegno per i dati personali\n«true» — le informazioni presentate contengono dati personali\n«false» — le informazioni presentate non contengono dati personali\n11.\nNatura volontaria o obbligatoria delle informazioni trasmesse\n«true» — volontaria\n«false» — obbligatoria\n12.\nData e ora in cui le informazioni sono state trasmesse dal soggetto all’organismo di raccolta\nData nel formato ISO 8601 con ora secondo il tempo universale coordinato (UTC) AAAA-MM-GGThh:mm:ssZ\n13.\nData iniziale o inizio del periodo cui si riferiscono le informazioni\nData nel formato ISO 8601 secondo il tempo universale coordinato (UTC) AAAA-MM-GG\n14.\nData finale o fine del periodo cui si riferiscono le informazioni\nData nel formato ISO 8601 secondo il tempo universale coordinato (UTC) AAAA-MM-GG\n15.\nOrganismo di raccolta responsabile della raccolta delle informazioni\nNome dell’organismo di raccolta designato per la raccolta dei dati, pubblicato sul sito web dell’ESMA a norma dell’articolo 4 del regolamento (UE) 2023/2859\n16.\nStato membro d’origine, se del caso\nCodice paese ISO 3166 di 2 caratteri.\n17.\nStato membro ospitante, se del caso\nCodice paese ISO 3166 di 2 caratteri.\n18.\nIdentificatore dello strumento o del prodotto, se del caso\nCodice ISIN o massimo 52 caratteri alfanumerici\n19.\nIdentificativo unico della registrazione dei dati\nCampo di testo libero, massimo 140 caratteri alfanumerici.\n20.\nRiferimento del file di dati\nCampo di testo libero, massimo 500 caratteri alfanumerici.\n21.\nRiferimento del file del sigillo elettronico qualificato, se del caso\nCampo di testo libero, massimo 500 caratteri alfanumerici.\n22.\nTipo di segnalazione\nNEWT = nuovo (da utilizzare per le informazioni nuove)\nMODI = modifica (da utilizzare per le modifiche alla luce delle nuove informazioni disponibili)\nEROR = errore (da utilizzare in caso di errori che comportano la rimozione dell’intera registrazione)\nCORR = correzione (da utilizzare quando le informazioni precedentemente segnalate risultano inesatte e devono essere corrette)\n23.\nVersione del set di dati (dati e metadati).\nNumero intero\n24.\nQuadro giuridico\nTassonomia secondo l’elenco degli atti legislativi dell’Unione di cui all’articolo 1, paragrafo 1, lettera a), del regolamento (UE) 2023/2859\n25.\nContrassegno per informazioni storiche\n«true» — sì\n«false» — no\n26.\nLingua in cui sono state trasmesse le informazioni.\nCodice lingua ISO 639-1 di 2 caratteri\nELI: http://data.europa.eu/eli/reg_impl/2025/1339/oj\nISSN 1977-0707 (electronic edition)",
+"hash": "4a4c1601548d4410"
 }
 ],
 "meta": {
 "celex_consolidato": "32025R1339",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R1339"
-}
+},
+"allegati": 1
 }

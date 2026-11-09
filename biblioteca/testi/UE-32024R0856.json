@@ -8,7 +8,7 @@
 "Vigilanza prudenziale"
 ],
 "scaricato_il": "2026-11-08T00:33:46+00:00",
-"n_articoli": 6,
+"n_articoli": 7,
 "articoli": [
 {
 "num": "1",
@@ -45,10 +45,17 @@
 "rubrica": "Entrata in vigore",
 "testo": "Articolo 6\nEntrata in vigore\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "c2ce47ff9e4e71b8"
+},
+{
+"num": "Allegato",
+"rubrica": "Parte A: Shock di tasso di interesse",
+"testo": "ALLEGATO\nParte A: Shock di tasso di interesse\nARS\nAUD\nBGN\nBRL\nCAD\nCHF\nCNY\nCZK\nDKK\nEUR\nGBP\nParallelo\n400\n300\n250\n400\n200\n100\n250\n200\n200\n200\n250\nA breve\n500\n450\n350\n500\n300\n150\n300\n250\n250\n250\n300\nA lungo\n300\n200\n150\n300\n150\n100\n150\n100\n150\n100\n150\nHKD\nHUF\nIDR\nINR\nJPY\nKRW\nMXN\nPLN\nRON\nRUB\nSAR\nParallelo\n200\n300\n400\n400\n100\n300\n400\n250\n350\n400\n200\nA breve\n250\n450\n500\n500\n100\n400\n500\n350\n500\n500\n300\nA lungo\n100\n200\n350\n300\n100\n200\n300\n150\n250\n300\n150\nSEK\nSGD\nTRY\nUSD\nZAR\nParallelo\n200\n150\n400\n200\n400\nA breve\n300\n200\n500\n300\n500\nA lungo\n150\n100\n300\n150\n300\nARS\nPeso argentino\nINR\nRupia indiana\nAUD\nDollaro australiano\nJPY\nYen\nBGN\nLev\nKRW\nWon sudcoreano\nBRL\nReal\nMXN\nPeso messicano\nCAD\nDollaro canadese\nPLN\nZloty\nCHF\nFranco svizzero\nRON\nLeu rumeno\nCNY\nRenminbi-yuan\nRUB\nRublo russo\nCZK\nCorona ceca\nSAR\nRiyal\nDKK\nCorona danese\nSEK\nCorona svedese\nEUR\nEuro\nSGD\nDollaro di Singapore\nGBP\nLira sterlina\nTRY\nLira turca\nHKD\nDollaro di Hong Kong\nUSD\nDollaro USA\nHUF\nFiorino ungherese\nZAR\nRand\nIDR\nRupia indonesiana\nParte B: Calibrazione degli shock di tasso di interesse per le valute non menzionate nella parte A\n1)\nGli enti calcolano innanzitutto il tasso di interesse medio giornaliero individuando una serie temporale di 16 anni di tassi di interesse giornalieri «privi di rischio», senza differenziali creditizi o differenziali di liquidità specifici dello strumento o dell’entità, per ogni valuta per le scadenze a 3 mesi, 6 mesi, 1 anno, 2 anni, 5 anni, 7 anni, 10 anni, 15 anni e 20 anni, quindi calcolano il tasso di interesse medio aritmetico per ciascuna valuta c in tutte le osservazioni nelle serie temporali e per tutte le scadenze. Il risultato è una singola misura per valuta.\n2)\nSe il tasso di interesse medio calcolato conformemente al punto (1) per i primi sette anni è superiore a 700 punti base, si considerano i dati degli ultimi 10 anni, nella misura in cui sono disponibili. Se il tasso di interesse medio calcolato conformemente al punto (1) per i primi sette anni è pari o inferiore a 700 punti base, si considera la serie temporale completa dei dati di 16 anni.\n3)\nLo shock parallelo, lo shock dei tassi a breve e lo shock dei tassi a lungo per ciascuna valuta è derivato applicando il pertinente parametro di shock globale di cui alla tabella 1 al tasso di interesse medio calcolato conformemente ai punti (1) e (2).\nTabella 1\nParametri per gli shock di tasso di interesse globali di riferimento\nParallelo\n60 %\nA breve\n85 %\nA lungo\n40 %\n4)\nGli enti applicano un minimo di 100 punti base e massimi variabili, pari rispettivamente a 500 punti base per lo shock a breve, 400 punti base per lo shock parallelo e 300 punti base per lo shock a lungo.\n5)\nL’insieme degli shock di tasso di interesse per valuta è quindi arrotondato ai 50 punti base più prossimi.\nELI: http://data.europa.eu/eli/reg_del/2024/856/oj\nISSN 1977-0707 (electronic edition)",
+"hash": "b89ac840444ca1ec"
 }
 ],
 "meta": {
 "celex_consolidato": "32024R0856",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32024R0856"
-}
+},
+"allegati": 1
 }

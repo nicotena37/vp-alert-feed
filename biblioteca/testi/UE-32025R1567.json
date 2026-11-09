@@ -9,7 +9,7 @@
 "IT e Digital"
 ],
 "scaricato_il": "2026-11-08T00:44:40+00:00",
-"n_articoli": 2,
+"n_articoli": 3,
 "articoli": [
 {
 "num": "1",
@@ -22,10 +22,17 @@
 "rubrica": "Entrata in vigore e applicabilità",
 "testo": "Articolo 2\nEntrata in vigore e applicabilità\nIl presente regolamento entra in vigore il ventesimo giorno successivo alla pubblicazione nella Gazzetta ufficiale dell'Unione europea .\nIl presente regolamento si applica a decorrere dal 19 agosto 2027.\nIl presente regolamento è obbligatorio in tutti i suoi elementi e direttamente applicabile in ciascuno degli Stati membri.",
 "hash": "6caea89b86e15090"
+},
+{
+"num": "Allegato",
+"rubrica": "Elenco delle norme di riferimento e delle specifiche per la gestione di dispositivi qualificati per la creazione di una firma elettronica a distanza e dispositivi qualificati per la creazione di un si",
+"testo": "ALLEGATO\nElenco delle norme di riferimento e delle specifiche per la gestione di dispositivi qualificati per la creazione di una firma elettronica a distanza e dispositivi qualificati per la creazione di un sigillo elettronico a distanza\nLa norma ETSI TS 119 431-1 V1.3.1 (2024-12) (\"ETSI TS 119 431-1\") si applica allo scopo di valutare la conformità al servizio applicativo EU Server Signing Application Service v2 Policy (SSASP) conformemente all'allegato A di tale norma, con i seguenti adeguamenti:\n1)\n2.1 Riferimenti normativi\n—\n[1] ETSI EN 319 401 V3.1.1 (2024-06): \"Firme elettroniche e infrastrutture fiduciarie (ESI); Requisiti di politica generale per i prestatori di servizi fiduciari\";\n—\n[7] Gruppo europeo per la certificazione della cibersicurezza, sottogruppo sulla crittografia: \"Agreed Cryptographic Mechanisms\" (meccanismi crittografici concordati) pubblicati dall'Agenzia dell'Unione europea per la cibersicurezza (ENISA) ( 1 ) .\n2)\n6.1 Responsabilità delle pubblicazioni e dell'archivio\n—\nOVR-6.1-04: Le informazioni individuate in OVR-6.1-01 sono disponibili al pubblico e a livello internazionale.\n3)\n6.4.4 Controlli del personale\n—\nOVR-6.4.4-02: Il servizio SSASP impiega personale in ruoli di fiducia e, se del caso, subappaltatori in ruoli di fiducia, che possiedono le conoscenze specialistiche, l'esperienza e le qualifiche necessarie sulla base di formazione e credenziali formali o dell'esperienza, o di una loro combinazione.\n—\nOVR-6.4.4-03: La conformità a OVR-6.4.4-02 comprende aggiornamenti periodici (almeno ogni 12 mesi) sulle nuove minacce e sulle pratiche di sicurezza vigenti.\n4)\n6.4.9 Cessazione del servizio SSASP\n—\nOVR-6.4.9-02: Il piano di cessazione del servizio SSASP è conforme agli atti di esecuzione adottati a norma dell'articolo 24, paragrafo 5, del regolamento (UE) n. 910/2014 [i.1].\n5)\n6.5.5 Controlli di sicurezza della rete\n—\nOVR-6.5.5-02: La scansione delle vulnerabilità richiesta da REQ-7.8-13 di ETSI EN 319 401 [1] deve essere eseguita almeno una volta al trimestre.\n—\nOVR-6.5.5-03: I firewall devono essere configurati in modo da impedire tutti i protocolli e gli accessi non necessari per il funzionamento del TSP.\n6)\n6.8.5 Controlli crittografici\n—\nOVR-6.8.5-01: Devono essere posti in essere adeguati controlli di sicurezza per la gestione di tutte le tecniche crittografiche del servizio SSASP durante tutto il loro ciclo di vita.\n—\nOVR-6.8.5-02: Per quanto riguarda OVR-6.8.5-01, il servizio SSASP seleziona e utilizza tecniche crittografiche adeguate conformi ai meccanismi crittografici concordati approvati dal gruppo europeo per la certificazione della cibersicurezza dell'ENISA [7].\n7)\nAllegato A, sezione A.3 Requisiti generali\n—\nOVR-A.3-02 [EUSPv2]: La dichiarazione sulla prassi del TSP include il riferimento alla certificazione del QSCD impiegato conformemente ai requisiti del regolamento (UE) n. 910/2014 [i.1], allegato II.\n( 1 )\nhttps://certification.enisa.europa.eu/publications/eucc-guidelines-cryptography_en .\nELI: http://data.europa.eu/eli/reg_impl/2025/1567/oj\nISSN 1977-0707 (electronic edition)",
+"hash": "04cc2a691dba60fb"
 }
 ],
 "meta": {
 "celex_consolidato": "32025R1567",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32025R1567"
-}
+},
+"allegati": 1
 }
