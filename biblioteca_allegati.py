@@ -33,12 +33,14 @@ def main(minuti=80):
         if time.time() > t_fine: break
         rec = json.loads(p.read_text(encoding="utf-8"))
         cx = (rec.get("meta") or {}).get("celex_consolidato") or v["celex"]
-        url = f"https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:{cx}"
+        url = f"https://publications.europa.eu/resource/celex/{cx}"      # CELLAR: servizio ufficiale per l'accesso automatico
         try:
-            r = requests.get(url, headers=b.UA, timeout=180)
+            r = requests.get(url, headers={**b.UA, "Accept": "application/xhtml+xml, text/html;q=0.9", "Accept-Language": "ita"}, timeout=180)
+            if r.status_code in (404, 406) and cx != v["celex"]:
+                r = requests.get(f"https://publications.europa.eu/resource/celex/{v['celex']}", headers={**b.UA, "Accept": "application/xhtml+xml, text/html;q=0.9", "Accept-Language": "ita"}, timeout=180)
         except Exception as e:
             b.log(f"{v['id']}: {e}"); time.sleep(5); continue
-        if r.status_code == 202 or (r.status_code == 200 and len(r.text) < 1000):
+        if r.status_code in (202, 429) or (r.status_code == 200 and len(r.text) < 1000):
             n202 += 1; b.log(f"{v['id']}: risposta vuota ({r.status_code})")
             if n202 >= 5: b.log("EUR-Lex filtra le richieste: mi fermo"); break
             time.sleep(30); continue
