@@ -147,7 +147,7 @@ dialog::backdrop{background:rgb(0 0 0 / .35)}
     <label class="small">Fondi propri della banca (€) <input type="number" id="fp" min="0" step="1000000" placeholder="es. 250000000" style="width:170px"></label>
     <span class="small">Servono solo alla metodologia 4.</span>
   </div>
-  <div class="row"><span class="status" id="st5"></span></div>
+  <div class="row"><label class="row small"><input type="checkbox" id="soloD"> mostra solo gli adempimenti della banca che toccano l'oggetto</label><span class="status" id="st5"></span></div>
   <div class="list" id="adem"></div>
   <div class="row"><button class="btn" id="go6" type="button">Vai al riepilogo</button></div>
 </section>
@@ -357,21 +357,23 @@ $("#bGen").onclick=async()=>{
   const st=$("#st4"); st.className="status"; if(!sample){st.className="status err";st.textContent="Claude non è disponibile in questa vista.";return}
   const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel); ctl2=new AbortController(); $("#bStop2").hidden=false; $("#bGen").disabled=true; S.adem=[];
   try{
+    for(const id of ids){S.norme[id].senza=[];S.norme[id].esito=null}
     for(let k=0;k<ids.length;k++){const id=ids[k],a=att(id),arts=await testoAtto(id),n=S.norme[id];
+      if(!arts.length){n.esito={art:0,trovati:0,err:"testo della norma non disponibile in biblioteca"};continue}
       let sel=arts; if(arts.length>40&&n.art?.length){const set=new Set(n.art.map(String));sel=arts.filter(x=>set.has(String(x[0])));if(!sel.length)sel=arts.slice(0,40)}
       const blocchi=[];let cur="";for(const x of sel){const t=`[Art. ${x[0]}${x[1]?" – "+x[1]:""}]\n${x[2]}\n\n`;if(cur.length+t.length>70000&&cur){blocchi.push(cur);cur=""}cur+=t.slice(0,70000)}if(cur)blocchi.push(cur);
       for(let b=0;b<blocchi.length;b++){
         st.textContent=`Creo gli adempimenti: norma ${k+1} di ${ids.length}${blocchi.length>1?`, parte ${b+1} di ${blocchi.length}`:""} — ${a.tit.slice(0,70)}…`;
-        const prompt=`Sei un esperto di compliance bancaria italiana. Norma: "${a.tit}" (${a.est}).\nOggetto del risk assessment: "${S.oggetto||"intera norma"}". Considera solo ciò che riguarda l'oggetto.\nLivello di dettaglio: ${ISTR[S.livello]}\nMetodo per riconoscere un adempimento: c'è un soggetto obbligato che è la banca o una categoria che la comprende (un obbligo solo dell'autorità non è un adempimento); c'è un comportamento da fare o da non fare (non una definizione o descrizione); indica la natura: obbligatorio, condizionato ("se la banca...") o facoltà (da documentare).\nPer ogni adempimento proponi i fattori di rischio da 1 a 4: sanz (sanzione: 1 nessuna, 2 fino 500k€, 3 fino 5mln€ o % fatturato, 4 oltre/penali), rep (reputazionale), oper (operativo), econ (costi di rimedio), compl (complessità), freq (frequenza e volumi), nov (novità: 1 >3 anni, 4 nuova). Se conosci la sanzione massima prevista in euro mettila in sanz_euro, altrimenti null.\nLa "citazione" deve essere una frase copiata ALLA LETTERA dal testo (max 300 caratteri).\nRispondi SOLO con un oggetto JSON: {"adempimenti":[{"art":"5","comma":"2","titolo":"breve","descrizione":"cosa deve fare la banca","destinatario":"...","termine":"... o null","natura":"obbligatorio|condizionato|facoltà","citazione":"...","fattori":{"sanz":3,"rep":2,"oper":2,"econ":2,"compl":3,"freq":2,"nov":2},"sanz_euro":null}],"senza_obbligo":[{"art":"1","motivo":"definizioni"}]}\n\nTESTO:\n${blocchi[b]}`;
+        const prompt=`Sei un esperto di compliance bancaria italiana. Norma: "${a.tit}" (${a.est}).\nOggetto del risk assessment: "${S.oggetto||"intera norma"}". Estrai TUTTI gli adempimenti del testo che riguardano una banca, e per ognuno indica se tocca l'oggetto ("pertinenza":"diretta") o no ("pertinenza":"altro"). Se un obbligo è a carico di un altro soggetto (fornitore, prestatore di servizi fiduciari, autorità) ma la banca ne è coinvolta come cliente o utente, includilo con "soggetto":"altro" e spiega nella descrizione cosa deve verificare o pretendere la banca. Non restituire una lista vuota se nel testo ci sono obblighi: in quel caso spiega in senza_obbligo perché nessuno riguarda la banca.\nLivello di dettaglio: ${ISTR[S.livello]}\nMetodo per riconoscere un adempimento: c'è un soggetto obbligato che è la banca o una categoria che la comprende (un obbligo solo dell'autorità non è un adempimento); c'è un comportamento da fare o da non fare (non una definizione o descrizione); indica la natura: obbligatorio, condizionato ("se la banca...") o facoltà (da documentare).\nPer ogni adempimento proponi i fattori di rischio da 1 a 4: sanz (sanzione: 1 nessuna, 2 fino 500k€, 3 fino 5mln€ o % fatturato, 4 oltre/penali), rep (reputazionale), oper (operativo), econ (costi di rimedio), compl (complessità), freq (frequenza e volumi), nov (novità: 1 >3 anni, 4 nuova). Se conosci la sanzione massima prevista in euro mettila in sanz_euro, altrimenti null.\nLa "citazione" deve essere una frase copiata ALLA LETTERA dal testo (max 300 caratteri).\nRispondi SOLO con un oggetto JSON: {"adempimenti":[{"art":"5","comma":"2","titolo":"breve","descrizione":"cosa deve fare la banca","destinatario":"...","termine":"... o null","natura":"obbligatorio|condizionato|facoltà","pertinenza":"diretta|altro","soggetto":"banca|altro","citazione":"...","fattori":{"sanz":3,"rep":2,"oper":2,"econ":2,"compl":3,"freq":2,"nov":2},"sanz_euro":null}],"senza_obbligo":[{"art":"1","motivo":"definizioni"}]}\n\nTESTO:\n${blocchi[b]}`;
         const r=await sample.json(prompt,{signal:ctl2.signal});
         const norm=s=>String(s||"").toLowerCase().replace(/[^a-zà-ù0-9]+/g," ").trim(), testo=norm(blocchi[b]);
         for(const x of (r?.adempimenti||[])){const f={};for(const [kk] of FATT)f[kk]=Math.min(4,Math.max(1,Math.round(+x.fattori?.[kk]||3)));f.ctrl=3;f.att=3;
-          const cit=String(x.citazione||""); S.adem.push({id:"a"+S.adem.length,norma:id,art:String(x.art||""),comma:String(x.comma||""),titolo:String(x.titolo||""),desc:String(x.descrizione||""),dest:String(x.destinatario||""),termine:x.termine?String(x.termine):"",natura:String(x.natura||""),cit,citOk:cit.length>15&&testo.includes(norm(cit).slice(0,160)),f,S:x.sanz_euro?+x.sanz_euro:0,C:0,pres:[],stato:null})}
-        n.senza=(n.senza||[]).concat(r?.senza_obbligo||[]);
+          const cit=String(x.citazione||""); S.adem.push({id:"a"+S.adem.length,norma:id,art:String(x.art||""),comma:String(x.comma||""),titolo:String(x.titolo||""),desc:String(x.descrizione||""),dest:String(x.destinatario||""),termine:x.termine?String(x.termine):"",natura:String(x.natura||""),pert:String(x.pertinenza||"diretta"),sogg:String(x.soggetto||"banca"),cit,citOk:cit.length>15&&testo.includes(norm(cit).slice(0,160)),f,S:x.sanz_euro?+x.sanz_euro:0,C:0,pres:[],stato:null})}
+        n.senza=(n.senza||[]).concat(r?.senza_obbligo||[]); n.esito={art:sel.length,trovati:(n.esito?.trovati||0)+(r?.adempimenti||[]).length};
         salva(); renderAdem();
       }
     }
-    st.textContent=`Fatto: ${S.adem.length} adempimenti da ${ids.length} norme.`; vai(5);
+    st.textContent=`Fatto: ${S.adem.length} adempimenti da ${ids.length} norme.`; renderAdem(); vai(5);
   }catch(e){st.className="status err";st.textContent=errMsg(e);if(S.adem.length)vai(5)}
   finally{$("#bStop2").hidden=true;$("#bGen").disabled=false;renderSteps()}
 };
@@ -400,14 +402,15 @@ const f2=x=>x==null?"—":(+x).toLocaleString("it-IT",{maximumFractionDigits:2})
 const eur=x=>x==null?"—":Math.round(x).toLocaleString("it-IT")+" €";
 
 /* ---------- passo 5: adempimenti ---------- */
-function renderAdem(){if(!S.adem.length){$("#adem").innerHTML="";return}
-  const per={};for(const a of S.adem)(per[a.norma]=per[a.norma]||[]).push(a);
+function renderAdem(){const sel=Object.keys(S.norme).filter(i=>S.norme[i].sel&&S.norme[i].esito);if(!S.adem.length&&!sel.length){$("#adem").innerHTML="";return}
+  const soloD=$("#soloD")?.checked;const per={};for(const i of sel)per[i]=[];for(const a of S.adem){if(soloD&&(a.pert==="altro"||a.sogg==="altro"))continue;(per[a.norma]=per[a.norma]||[]).push(a)}
   $("#st5").textContent=`${S.adem.length} adempimenti · citazioni ritrovate alla lettera: ${S.adem.filter(a=>a.citOk).length}. Metodologia: ${METODI.find(m=>m[0]===S.metodo)[1]}.`;
   $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>{const n=S.norme[nid]||{};const senza=(n.senza||[]).length?`<p class="small">Articoli letti senza obblighi: ${esc((n.senza||[]).map(s=>"art. "+s.art+" ("+s.motivo+")").join("; "))}</p>`:"";
-    return `<h3 class="groupt">${esc(att(nid).tit)}</h3>${senza}`+ads.map(cardAd).join("")}).join("")}
+    const es=n.esito?`<p class="small">${n.esito.err?esc(n.esito.err):`Articoli letti: ${n.esito.art} · adempimenti trovati: ${n.esito.trovati}`}</p>`:"";
+    return `<h3 class="groupt">${esc(att(nid).tit)}</h3>${es}${senza}`+(ads.length?ads.map(cardAd).join(""):`<p class="status">Nessun adempimento per la banca in questa norma${(n.senza||[]).length?": vedi il motivo sopra":""}.</p>`)}).join("")}
 function cardAd(a){const r=calc(a);
   return `<div class="ad" data-ad="${a.id}"><div class="h"><b>${esc(a.titolo)}</b><span class="res">Inerente ${lv(r.selIn)} → Residuo ${lv(r.sel)}<span class="small mono">E ${Math.round(r.E*100)}%</span></span></div>
-  <div class="src">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura)}${a.dest?" · "+esc(a.dest):""}${a.termine?" · termine: "+esc(a.termine):""}</div>
+  <div class="src">${a.sogg==="altro"?'<span class="chip ab">obbligo di altro soggetto</span>':""}${a.pert==="altro"?'<span class="chip">fuori oggetto</span>':""}Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura)}${a.dest?" · "+esc(a.dest):""}${a.termine?" · termine: "+esc(a.termine):""}</div>
   <div>${esc(a.desc)}</div><q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>
   <details><summary class="small">Fattori, presidi e importi</summary>
    <div class="fx">${FATT.map(([k,n,g,,d])=>`<label>${n}<select data-f="${k}">${d.map((t,i)=>`<option value="${i+1}" ${a.f[k]===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`).join("")}
@@ -436,6 +439,7 @@ $("#bNewPres").onclick=()=>{const nome=$("#npNome").value.trim();if(!nome){$("#s
   if($("#npLib").checked&&!libreria.some(x=>x.nome===nome)){libreria.push(p);store.set("ra_presidi_lib",libreria)}
   adTarget.pres.push({...p,adeg:0,test:1});salva();renderAdem();renderRiep();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)}, dentro la fascia ${nat.toLowerCase()})`;$("#npNome").value=""};
 $("#bClosePres").onclick=()=>$("#dPres").close();
+$("#soloD").addEventListener("change",renderAdem);
 $("#fp").addEventListener("input",()=>{S.fp=$("#fp").value;salva();renderAdem();renderRiep()});
 $("#go6").onclick=()=>{renderRiep();vai(6)};
 
