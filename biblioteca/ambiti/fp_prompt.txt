@@ -1,0 +1,15 @@
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Questi atti sono stati classificati "fuori perimetro" in un primo passaggio. Devi ricontrollarli.
+
+File:
+- Tassonomia: /home/claude/vp-alert-feed/biblioteca/ambiti/ambiti_elenco.txt ("Tematica > Ambito: argomenti"). Usa SOLO queste coppie, nomi esatti.
+- Atti: /home/claude/vp-alert-feed/biblioteca/ambiti/fp_NN_input.jsonl — un atto per riga (id, titolo, estremi, rubriche, testo). Leggilo con Read a pezzi di 25 righe.
+
+Regole:
+1. Un atto ABROGATO, decaduto o superato NON è fuori perimetro: se riguardava banche, intermediari, assicurazioni, emittenti, mercati, pagamenti, fisco degli intermediari, antiriciclaggio, Eurosistema/BCE (anche banconote e monete), assegna comunque gli ambiti e metti "abrogato": true.
+2. Fuori perimetro (lista vuota) SOLO se l'atto non riguarda in alcun modo quei soggetti (es. agricoltura, pesca, telecomunicazioni, statistiche generali, prestiti a Stati, istituzioni UE senza effetti sugli intermediari).
+3. Per ogni ambito: "P" principale o "S" secondario; articoli pertinenti (max 10).
+4. "abrogato": true se dal titolo/testo risulta abrogato, sostituito, scaduto, transitorio esaurito o se è chiaramente storico (es. regole di cambio pre-euro); altrimenti false.
+
+Scrivi in /home/claude/vp-alert-feed/biblioteca/ambiti/fp_NN_output.jsonl una riga JSON per OGNI atto (anche se resta fuori perimetro), appendendo con Bash dopo ogni pezzo (cat >> file <<'EOF2' ... EOF2):
+{"id":"...","ambiti":[{"t":"Tematica","a":"Ambito","r":"P","art":["5"],"m":"motivo breve"}],"abrogato":false,"incerto":false,"nota":""}
+Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", righe scritte, atti rientrati nel perimetro, abrogati.

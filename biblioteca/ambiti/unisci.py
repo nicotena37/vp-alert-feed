@@ -3,7 +3,7 @@ import json, glob, collections
 tax = json.load(open("../tassonomia_estesa.json"))
 err = {v["id"] for v in json.load(open("../corpus_completo.json")) if "celex_errato" in v}
 tutti = {}
-for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl", "rev_*_output.jsonl"):
+for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl", "rev_*_output.jsonl", "fp_*_output.jsonl"):
     for f in sorted(glob.glob(pat)):
         for l in open(f):
             if l.strip():
@@ -26,7 +26,7 @@ for i, o in tutti.items():
     if o["incerto"]: inc[i] = o.get("nota", ""); continue
     if not amb: fuori.append(i); continue
     res[i] = {"ambiti": [{"tematica": a["t"], "ambito": a["a"], "ruolo": "principale" if a["r"] == "P" else "secondario",
-                          "articoli": a.get("art", []), "motivo": a.get("m", "")} for a in amb], "fonte_classificazione": o["_da"]}
+                          "articoli": a.get("art", []), "motivo": a.get("m", "")} for a in amb], "fonte_classificazione": o["_da"], "abrogato": bool(o.get("abrogato"))}
 for i in err:
     if i not in tutti: inc[i] = "testo BCE da riscaricare"
 json.dump(res, open("../ambiti_atti.json", "w"), ensure_ascii=False, indent=0)
