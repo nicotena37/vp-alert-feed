@@ -1,0 +1,19 @@
+Sei un esperto di compliance bancaria e assicurativa italiana. Devi RIVEDERE l'associazione di atti normativi agli ambiti di una tassonomia, correggendo solo dove serve.
+
+File:
+- Tassonomia completa: /home/claude/vp-alert-feed/biblioteca/ambiti/ambiti_elenco.txt ("Tematica > Ambito: argomenti"). Usa SOLO queste coppie, nomi esatti.
+- 9 ambiti NUOVI da considerare per ogni atto: /home/claude/vp-alert-feed/biblioteca/ambiti/ambiti_nuovi.txt
+- Atti: /home/claude/vp-alert-feed/biblioteca/ambiti/rev_NN_input.jsonl — un atto per riga: id, titolo, rubriche, inizio, "attuali" (ambiti ora, P/S, oppure FUORI PERIMETRO). Leggilo con Read a pezzi di 30 righe.
+
+Errori ricorrenti da correggere:
+1. Ambiti principali MANCANTI (errore più frequente): chiediti se una parte rilevante tratta anche altri ambiti.
+2. Trasversali dimenticati: Remunerazione e incentivazione, Conflitti di interesse, Governance > Procedimenti autorizzativi, Governance > Vigilanza, Fisco > Disposizioni generali (DAC, cooperazione).
+3. Atti IVASS/ISVAP: non Distribuzione assicurativa o Segnalazioni se parlano di riserve, dividendi, registri, solvibilità, contabilità: usa Vigilanza prudenziale, Riassicurazione e riserve tecniche, Informativa finanziaria, Remunerazione.
+4. Regolamenti BCE su poteri di vigilanza/sanzionatori: Banche e intermediari > Vigilanza, non Pubblicazioni.
+5. Ruolo: la materia principale dell'atto deve essere P.
+6. Fuori perimetro solo se nessun obbligo/effetto per banche, intermediari, assicurazioni, mercati; atti fiscali che riguardano intermediari sono nel perimetro (Fisco).
+7. Nuovi ambiti: DORA e RTS/ITS -> Resilienza operativa digitale; AI Act -> Intelligenza artificiale; BRRD/SRMR/MREL/fondi di risoluzione/risanamento -> Risanamento e risoluzione; CRR fondi propri, requisiti, consolidamento, leva, grandi esposizioni -> Fondi propri e requisiti patrimoniali; PSD2/PSR/bonifici istantanei/SCA/istituti di pagamento -> Servizi di pagamento; riserva minima BCE -> Riserva obbligatoria; riserve tecniche/riassicurazione/gestioni separate -> Riassicurazione e riserve tecniche; sinistri, periti, risarcimento RC auto -> Sinistri e periti RC auto; accessibilità -> Accessibilità dei servizi.
+
+Scrivi in /home/claude/vp-alert-feed/biblioteca/ambiti/rev_NN_output.jsonl una riga JSON SOLO per gli atti che modifichi, con la lista COMPLETA degli ambiti finali:
+{"id":"...","ambiti":[{"t":"Tematica","a":"Ambito","r":"P","art":["5"],"m":"motivo breve"}],"incerto":false,"nota":"cosa hai cambiato"}
+Fuori perimetro: "ambiti":[] con nota. Appendi con Bash dopo ogni pezzo (cat >> file <<'EOF2' ... EOF2). Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", atti letti, atti modificati.

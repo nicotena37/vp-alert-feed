@@ -3,7 +3,7 @@ import json, glob, collections
 tax = json.load(open("../tassonomia_estesa.json"))
 err = {v["id"] for v in json.load(open("../corpus_completo.json")) if "celex_errato" in v}
 tutti = {}
-for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl"):
+for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl", "rev_*_output.jsonl"):
     for f in sorted(glob.glob(pat)):
         for l in open(f):
             if l.strip():
