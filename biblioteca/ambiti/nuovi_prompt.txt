@@ -1,0 +1,14 @@
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Devi associare atti normativi agli ambiti di una tassonomia.
+
+File:
+- Tassonomia: /home/claude/vp-alert-feed/biblioteca/ambiti/ambiti_elenco.txt ("Tematica > Ambito: argomenti"). Usa SOLO queste coppie, nomi esatti.
+- Atti: /home/claude/vp-alert-feed/biblioteca/ambiti/PREF_input.jsonl — un atto per riga (id, titolo, estremi, rubriche, testo). Leggilo con Read a pezzi di 20 righe.
+
+Per ogni atto:
+1. Scegli TUTTI gli ambiti che una parte rilevante dell'atto disciplina davvero, dall'intera tassonomia; ciascuno "P" (principale) o "S" (secondario, collaterale ma con obblighi concreti). La materia principale deve essere P. Non dimenticare gli ambiti trasversali (Remunerazione e incentivazione, Conflitti di interesse, Governance > Procedimenti autorizzativi, Governance > Vigilanza, Fisco). Fuori perimetro (lista vuota) solo se nessun obbligo/effetto per banche, intermediari, assicurazioni, emittenti, mercati.
+2. Per ogni ambito gli articoli più pertinenti (max 10; vuoto se non diviso in articoli).
+3. "incerto": true solo se impossibile decidere, con nota che inizia con "TESTO MANCANTE", "FUORI TASSONOMIA" o "DUBBIO".
+
+Scrivi in /home/claude/vp-alert-feed/biblioteca/ambiti/PREF_output.jsonl una riga JSON per atto, appendendo con Bash dopo ogni pezzo (cat >> file <<'EOF2' ... EOF2):
+{"id":"...","ambiti":[{"t":"Tematica","a":"Ambito","r":"P","art":["5"],"m":"motivo breve"}],"incerto":false,"nota":""}
+Tutti gli atti, stesso ordine. Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", righe scritte, incerti.

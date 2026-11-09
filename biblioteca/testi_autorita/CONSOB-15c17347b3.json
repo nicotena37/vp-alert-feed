@@ -1,0 +1,599 @@
+{
+"id": "CONSOB-15c17347b3",
+"titolo": "Documento ESMA80-634726060-1762 del 18 dicembre 2025 - Final Report - Guidelines on Internal Controls for Benchmark Administrators, Credit Rating Agencies and Market Transparency Infrastructures",
+"estremi": "Orientamenti ESMA/Consob",
+"fonte": "Consob",
+"url": "https://www.consob.it/documents/d/asset-library-1912910/esma80-634726060-1762",
+"pagina": "https://www.consob.it/documents/d/asset-library-1912910/esma80-634726060-1762",
+"area": [
+"Credito",
+"Benchmark finanziari"
+],
+"data": "2025-12-18",
+"scaricato_il": "2026-11-09T09:34:32+00:00",
+"n_articoli": 97,
+"articoli": [
+{
+"num": "par. 18",
+"rubrica": "December 2025",
+"testo": "18 December 2025\nESMA80-634726060-1762\nFinal Report\nGuidelines on Internal Controls for Benchmark Administrators, Credit\nRating Agencies and Market Transparency Infrastructures\nESMA - 201-203 rue de Bercy - CS 80910 - 75589 Paris Cedex 12 - France - Tel. +33 (0) 1 58 36 43 21 - www.esma.europa.eu 2\nTable of Contents\n1 Executive Summary ...................................................................................................... 5\n2 Overview of the Guidelines on internal controls ............................................................ 6\n3 Feedback statement...................................................................................................... 8\n3.1 General remarks on the proposed Guidelines ....................................................... 9\n3.1.1 Scope of the Guidelines .................................................................................. 9\n3.1.2 Costs and burden for supervised entities ..................................................... 10\n3.1.3 References to Management Body and Executive Senior Management ....... 10\n3.1.4 Interactions between the Guidelines and DORA .......................................... 12\n3.2 Internal Control Framework – Component Parts and Characteristics .................. 12\n3.2.1 General - Internal Control Framework .......................................................... 12\n3.2.2 Component 1.1 – Control Environment ........................................................ 13\n3.2.3 Component 1.2 – Risk Management ............................................................ 14\n3.2.4 Component 1.3 – Control Activities .............................................................. 15\n3.2.5 Component 1.4 – Information and Communication ...................................... 17\n3.2.6 Component 1.5 – Monitoring Activities ......................................................... 17\n3.3 Internal Control Functions - Component Parts and Characteristics ..................... 18\n3.3.1 General – Internal Control Functions ............................................................ 18\n3.3.2 Proportionality – Internal Control Functions .................................................. 19\n3.3.3 Component 2.1 - Compliance ....................................................................... 19\n3.3.4 Component 2.2 - Risk Management Function .............................................. 20\n3.3.5 Component 2.3 - Information Security Management Function (only for\nsupervised entities not subject to DORA) ................................................................... 21\n3.3.6 Component 2.4 - Internal Audit ..................................................................... 21\n3.3.7 Component 2.5 - Review (for CRAs) ............................................................ 22\n3.3.8 Component 2.6 - Oversight (for BMAs) ........................................................ 22\n4 Annexes ...................................................................................................................... 24\nAnnex I - Cost-benefit analysis ....................................................................................... 24\nAnnex II – Guidelines...................................................................................................... 26",
+"hash": "ade48785a774c494"
+},
+{
+"num": "par. 1",
+"rubrica": "Executive Summary",
+"testo": "1 Executive Summary\nReasons for publication\nESMA directly supervises all EU Credit Rating Agencies (CRAs), Securitisation Repositories\n(SRs) and Trade Repositories (TRs) as well as certain Benchmark Administrators (BMAs)1\nand certain Data Reporting Services Providers (DRSPs)2 in accordance with the relevant\nRegulations. These Regulations include requirements relating to the internal control system\nthat these entities must have in place.3\nOn 19 December 2024, ESMA published a Consultation Paper (CP) for Guidelines on the\nInternal Controls for BMAs, CRAs and Market Transparency Infrastructures (MTI).4 The CP\nproposed to build on and replace the Guidelines on Internal Control for CRAs 5 and set out\nESMA’s views for all entities it directly supervises (except third-country central\ncounterparties and consolidated tape providers). It also revised ESMA’s expectations\nconsidering the growing impact of technology on supervised entities’ operations. This\nincludes managing technology risk from external and internal sources, and the integration\nof new technologies into supervised entities’ internal controls.\nThis final report summarises the feedback received to the public Consultation and includes\nthe finalised Guidelines on Internal Controls. The finalised Guidelines will ensure that\nESMA’s expectations are shared with all supervised entities, as well as potential future\napplicants, in a comprehensive and cohesive way. These Guidelines will not only help\nensure a level playing field but will also facilitate the adoption of consistent good practices\nacross supervised entities, helping to strengthen the robustness of supervised entities’\ncontrol system.\nESMA will use the principle of proportionality in implementing these Guidelines. This means\nthat while all supervised entities are expected to demonstrate the characteristics of an\neffective internal control system, ESMA’s expectations on implementation will be\nproportionate to the supervised entity’s nature, scale and complexity.\nContents\nThis final report is split into three main sections. Section 2 explains ESMA’s overarching\nrationale for replacing the Guidelines, providing an overview of the main areas of revision\nand the reasons for any change in approach. Section 3 summarises the feedback received\nto the Consultation and explains how ESMA has taken this into account in the final\nGuidelines. Annex I includes the updated cost and benefit analysis, and Annex II contains\nthe final Guidelines on Internal Controls.\nNext Steps\nThe Guidelines in Annex II will be published on ESMA’s website. They will become effective\non 1 October 2026. The entry into force of these Guidelines will repeal and replace the\nGuidelines on Internal Control for CRAs.",
+"hash": "45660716ec4ad304"
+},
+{
+"num": "par. 2",
+"rubrica": "Overview of the Guidelines on internal controls",
+"testo": "2 Overview of the Guidelines on internal controls",
+"hash": "7188b7db0dc5fb29"
+},
+{
+"num": "par. 1 (2)",
+"rubrica": "The Benchmark Regulation (BMR), the Credit Rating Agencies Regulation (CRAR), the",
+"testo": "1. The Benchmark Regulation (BMR), the Credit Rating Agencies Regulation (CRAR), the\nEuropean Market Infrastructure Regulation (EMIR), the Market in Financial Instruments\nRegulation (MiFIR), the Securitisation Regulation (SecR) and the Securities Financing\nTransactions Regulation (SFTR) (hereinafter referred to as the Regulations) establish the\nminimum requirements for internal control systems applicable to the BMAs, CRAs, DRSPs,\nSRs and TRs directly supervised by ESMA (hereinafter referred to as supervised entities).\nThese regulations outline aspects such as governance, risk management, compliance, and\noperational controls, which the supervised entities must adhere to.\n2. The purpose of these Guidelines is to ensure that ESMA’s expectations are shared with all\nsupervised entities, as well as potential future applicants, in a comprehensive and cohesive\nway. These Guidelines will not only help ensure a level playing field but will also facilitate\nthe adoption of consistent good practices across supervised entities, helping to strengthen\nthe robustness of their internal control system. The Guidelines aim to ensure that ESMA\ntakes a consistent approach to its supervisory assessments of internal control practices\nacross the entities it supervises.",
+"hash": "a77312bb022d3485"
+},
+{
+"num": "par. 3",
+"rubrica": "ESMA developed the Guidelines taking into account the relevant Regulations’ provisions",
+"testo": "3. ESMA developed the Guidelines taking into account the relevant Regulations’ provisions\nrelevant to internal controls, as further specified in the respective RTS. ESMA also\nconsidered its existing guidelines 6 , supervisory experience and enforcement actions. 7\nESMA supervises administrators of EU critical benchmarks and recognised third-country administrators.\nMiFIR provides the following categories of data reporting services providers, namely approved reporting mechanisms (ARMs),\napproved publication arrangements (APAs), and consolidated tape providers (CTPs). ESMA does not supervise those APAs and\nARMs that, by way of derogation from MiFIR on account of their limited relevance for the European Union (EU) market, are subject\nto authorisation and supervision by a competent authority of a Member State. MiFIR anticipates that ESMA will be the sole\nsupervisor for CTPs, following the selection process for bond, equity and derivatives CTP.\nAn internal control system includes both the internal control framework and internal control functions.\nMarket Transparency Infrastructures (MTI) include Securitisation Repositories (SRs), Trade Repositories (TRs) and Data\nReporting Services Providers (DRSPs).\nGuidelines on Internal Control for CRAs, 30 September 2020 | ESMA33-9-371\nFor example, ESMA’s Guidelines on Internal Controls for CRAs (which these guidelines will replace) and Guidelines on non-\nsignificant benchmarks under the Benchmarks Regulation (which must be read in conjunction with these guidelines),\nSee Paragraphs 150 to 169 of the Scope enforcement decision of 22 March 2024; Paragraphs 101 to 166 of the S&P\nenforcement decision of 22 March 2023; Paragraphs 380 to 413 of the Moody’s enforcement decision of 23 March 2021;\nParagraphs 355 to 400 of the Fitch enforcement decision of 28 March 2019; Paragraphs 7 to 23 of the S&P enforcement decision\nof 20 May 2014; and pages 3 to 4 of the Fitch public notice of 21 July 2016. Please see Sanctions and Enforcement (europa.eu).\nFinally, ESMA accounted for existing industry practices in supervised entities, EU\napproaches and guidance on internal control8 as well as internationally recognised internal\ncontrol frameworks.9 This has enabled ESMA to define a set of practices that draw on\nexisting good practices while taking into account the specificities of the Regulations and\nthe business practices of supervised entities.\n4. ESMA has also taken the opportunity to expand and clarify some of its expectations related\nto technology given the risks and opportunities arising from its growing use. For example,\nwhere a company uses artificial intelligence (AI), its internal control framework should be\nmature enough to assess and manage the risks of AI and to be integral to the AI lifecycle\nwithin a company. This includes the establishment of a supervised entity’s AI strategy,\nethics and principles, an appropriate governance and risk management framework,\nsufficient disclosures and system documentation, and controls around the design criteria,\nmodelling, training, evaluation and deployment of AI systems.\n5. For supervised entities subject to the Digital Operational Resilience Act (DORA), these\nGuidelines should be read in conjunction with its requirements. DORA lays down\nrequirements on Information and Communication Technology (ICT) risk management, ICT\nthird-party risk management, digital operational resilience testing, and the reporting of ICT-\nrelated incidents. As part of this, supervised entities will be required to have an ICT risk\nmanagement framework as part of their overall risk management framework and to allocate\nthe responsibility for managing and overseeing ICT risk to a control function with an\nappropriate level of independence. Supervised entities not subject to DORA should meet\nthe expectations set out in the sections on ‘Information and Communication Technology\n(ICT) General Controls’ and ‘Information Security Management Function’ of these\nGuidelines.\n6. The Guidelines are structured in two parts, each dealing with one pilar of the internal control\nsystem. The first part focuses on a supervised entity’s overall framework for internal\ncontrols (IC Framework) while the second part focuses on the roles and responsibilities of\ndifferent internal control functions within this framework (IC Functions). Under each part,\nthe IC Framework and the IC Functions are then further split into different components.\n7. The guidance under the IC Framework is split into the following five components: (i) control\nenvironment; (ii) risk management; (iii) control activities; (iv) information and\ncommunication; and (v) monitoring activities.\n8. Under the IC Framework, ESMA sets out its expectations as to what steps supervised\nentities should take to evidence the presence of each component in its internal control\n8 European Commission’s ‘Internal Control Framework’: Communication to the Commission from Commissioner Oettinger,\nRevision of the Internal Control Framework, Brussels, 19.4.2017C(2017) 2373 final; European Banking Authority, Final Guidelines\non Internal Governance, EBA/GL/2017/11.\n9 COSO Internal Control – Integrated Framework, May 2013 © 2013, Committee of Sponsoring Organisations of the Treadway\nCommission (COSO), U.S.A.\nsystem. For example, with respect to the ‘control environment’, the guidance outlines the\nactions the supervised entity’s Management Body should take to establish a strong control\nenvironment and set the right tone at the top.\n9. The guidance on IC Functions is split into components which match specific IC Functions,\nnamely: (i) Compliance; (ii) risk management; (iii) information security management (only\nfor supervised entities not in remit of DORA); (iv) internal audit; (v) Review Function (for\nCRAs); (vi) Oversight Function (for BMAs). For these IC Functions, ESMA sets out what\nthe role of each function should be, what its reporting lines should be, and whether it can\nbe merged or combined with other functions.\n10. ESMA will apply proportionality in implementing these Guidelines. This means that while\nall supervised entities are expected to demonstrate the characteristics of an effective\ninternal control framework, ESMA’s expectations on implementation will be proportionate\nto the supervised entity’s nature, scale and complexity.",
+"hash": "c10d9c657da41f9d"
+},
+{
+"num": "par. 3 (2)",
+"rubrica": "Feedback statement",
+"testo": "3 Feedback statement\n11. This section provides a summary of the responses to the Consultation Paper (CP) on the\nGuidelines on Internal Controls for BMAs, CRAs and MTIs.\n12. In total, 21 responses were received to the Consultation with eight of these provided on\na confidential basis. Responses were received largely from market participants directly\n(six BMAs, seven CRAs, five MTIs) or via trade associations representing them.\nRespondents were mainly entities already supervised by ESMA but some entities that\nmay become supervised by ESMA in the future also responded. Non-confidential\nresponses are available on ESMA’s website.\n13. In providing this summary, ESMA explains the changes that it made in response to the\ncomments provided during the consultation process. Although ESMA reviewed all\nresponses to the Consultation, this feedback statement may not refer to all the comments\nmade by respondents. In particular, this feedback statement does not cover some\nrespondents’ suggestions to provide more details on certain expectations when ESMA\nwas of the view that the proposed Guidelines already provided sufficient details. In these\ncases, ESMA did not amend the proposed Guidelines to leave flexibility to the supervised\nentities on how to achieve the expected outcome. This ensures the Guidelines do not\nbecome overly prescriptive.",
+"hash": "86ea919439c89147"
+},
+{
+"num": "par. 14",
+"rubrica": "The feedback statement starts with a section addressing the general comments relevant",
+"testo": "14. The feedback statement starts with a section addressing the general comments relevant\nto the entire Guidelines. It then follows the order of the sections as they were presented\nin the CP and as summarised below.\n▪ General - Internal Control Framework\no Component – Control Environment\no Component – Risk Management\no Component – Control Activities\no Component – Information and Communication\no Component – Monitoring Activities\n▪ General – Internal Control Functions\no Proportionality – Internal Control Functions\no Component - Compliance\no Component - Risk Management\no Component - Information Security Management Function\no Component - Internal Audit\no Component - Review (for CRAs)\no Component - Oversight (for BMAs)",
+"hash": "eeb14ed9505d2a73"
+},
+{
+"num": "par. 3.1",
+"rubrica": "General remarks on the proposed Guidelines",
+"testo": "3.1 General remarks on the proposed Guidelines",
+"hash": "4df27dbfdd30d668"
+},
+{
+"num": "par. 3.1.1",
+"rubrica": "Scope of the Guidelines",
+"testo": "3.1.1 Scope of the Guidelines\n15. Some respondents commented on the types of supervised entities in scope of the draft\nGuidelines. One respondent mentioned that it was unclear how the draft Guidelines\nwould apply to the EU legal representatives of third country recognised BMAs. Another\nrespondent noted that ESMA did not comment on the application of the draft Guidelines\nto entities not yet supervised by ESMA but for which ESMA has been granted a\nsupervisory mandate, such as EU Green Bond External Reviewers or ESG Rating\nProviders. This respondent suggested that, before subjecting new industries or actors to\nthe Guidelines, ESMA should conduct a consultation so that the specifics of these\nactivities are appropriately considered. Finally, a third respondent argued that the\nexisting Guidelines for CRAs were not necessarily transferable or applicable to other\nsupervised entities.\n16. ESMA would like to emphasise that these guidelines are applicable to all benchmark\nadministrators which are authorised, registered or recognised with ESMA in accordance\nwith BMR. As regards the EU legal representative, these guidelines are mainly applicable\nto the extent of legal representative’s oversight function exercised together with the BMA\nand its duties under BMR . ESMA confirms that EU Green Bond External Reviewers or\nESG Rating Providers are not in scope of the Guidelines. However, ESMA considers\nthat these Guidelines provide a good indication of ESMA’s expectations to entities that it\nwill supervise under future mandates. ESMA will consult again if and when it intends to\nexpand the scope of these Guidelines to firms supervised under future mandates. In\nresponse to the comment about the transferability of the Guidelines applicable to CRAs\nto other supervised entities, ESMA stresses that, whilst the proposed Guidelines build\non the currently applicable to CRAs, several adaptations were made so that they are\nrelevant to all supervised entities in scope.",
+"hash": "342fef30341ff28b"
+},
+{
+"num": "par. 3.1.2",
+"rubrica": "Costs and burden for supervised entities",
+"testo": "3.1.2 Costs and burden for supervised entities\n17. Some respondents challenged the introduction of new guidelines on the basis that it\ncould create undue costs and administrative burden which are not specifically required\nby the underlying EU regulatory frameworks. More specifically, some respondents\nargued that applying the proposed Guidelines to some s was not in line with the recent\nBMR review “to reduce the administrative and regulatory burden imposed […] on EU\nbenchmark administrators”. Some also argued that the proposed Guidelines are created\nduring a period of significant regulatory and supervisory change for the BMA in scope.\nThey suggested that ESMA delays the entry into force of the Guidelines.",
+"hash": "35056c6002532104"
+},
+{
+"num": "par. 18 (2)",
+"rubrica": "ESMA acknowledges that these Guidelines are issued during a period of significant",
+"testo": "18. ESMA acknowledges that these Guidelines are issued during a period of significant\nregulatory and supervisory change for some of the supervised entities. However, ESMA\nnotes that the BMR review did not amend any of the existing requirements regarding\nInternal Controls. ESMA also notes that these Guidelines have been designed to provide\ngreater clarity on underlying EU regulatory frameworks and as such provide supervised\nfirms with legal certainty by specifying how firms can satisfy the expectations set out in\nLevel 1 texts. On that basis, ESMA does not believe these Guidelines introduce undue\ncosts and administrative burden to the supervised entities in scope. In addition, ESMA\nwould like to stress that the Guidelines also embed proportionality to ensure they work\nfor smaller and less complex firms. By calibrating its supervisory expectations according\nto the nature, scale and complexity of a supervised entity, ESMA is of the view that the\nproposed Guidelines contribute to the overall policy objective of burden reduction. On\nthat basis, ESMA confirms that the Guidelines will start to apply on 1 July 2026.",
+"hash": "0e4d9c054fe95706"
+},
+{
+"num": "par. 3.1.3",
+"rubrica": "References to Management Body and Executive Senior Management",
+"testo": "3.1.3 References to Management Body and Executive Senior Management",
+"hash": "b54380ffb713140b"
+},
+{
+"num": "par. 19",
+"rubrica": "Several respondents commented on the use of the designations ‘Management Body’",
+"testo": "19. Several respondents commented on the use of the designations ‘Management Body’\nand ‘Executive Senior Management’. One respondent noted that ‘Management Body’ is\nnot a concept within the CRAR so the use of this term in the Guidelines should not\ninadvertently restrict the governance structures CRAs operate. The respondent\nsuggested that the definition of Management Body should be wide enough to cater for\nsituations “where the management function of the Board of Directors is delegated to a\nmanagement committee” (i.e. not the Board itself). Another respondent stressed the\nimportance of ensuring consistency of terminology throughout ESMA’s regulatory\nrequirements and guidelines, notably with the Supervisory expectations for the\nManagement Body. 10 The respondent saw a potential contradiction between both\ndocuments as they interpreted the Consultation Paper in a way which implies that\nExecutive Senior Management is distinct from the Management Body.\n20. ESMA believes that, in line with the existing Guidelines for CRAs, it is important to\ncontinue to distinguish between the respective roles of the board and management. In\nparticular, the role of the board is to monitor and oversee the elements of the IC\nFramework, while the role of management is to develop and implement the framework.\n21. Considering the expanded group of firms the new Guidelines apply to, ESMA decided to\nreplace the concepts of board and management by concepts that are defined under the\nrelevant regulations or that are commonly accepted across industries. This is why ESMA\nuses the term ‘Management Body’ instead of ‘the board’. Similarly, ESMA uses the term\n‘Executive Senior Management’ instead of ‘management’. ESMA chose not to use the\nterm ‘senior management’ as this term is defined under Article 3(1)(n) of CRAR11 and\nincludes both management and members of ‘the board’. ESMA uses the term ‘Executive\nSenior Management’ to refer to the most senior persons directing the supervised entity\non a day-to-day basis. This is typically the Chief Executive Officer (CEO) or equivalent\nand his/her direct reports. To clarify this, ESMA added a definition of ‘Executive Senior\nManagement’ for the purpose of these Guidelines. ESMA also aligned the definition of\nManagement Body between the Guidelines and the Supervisory expectations for the\nManagement Body.",
+"hash": "a3d24f771e675e42"
+},
+{
+"num": "par. 22",
+"rubrica": "ESMA acknowledges that, some members of the Executive Senior Management will",
+"testo": "22. ESMA acknowledges that, some members of the Executive Senior Management will\ntypically be part of the Management Body. In particular, the Supervisory expectations for\nthe Management Body envisages the scenario whereby the ‘most senior executive\nmanagers’ are part of the Management Body together with the non-executive directors.\n23. Because of this potential overlap, it is important to specify the expectation set out in\nComponent 1.1, in particular that “The Executive Senior Management is responsible for\nthe development and performance of internal control and assessing the adequacy and\neffectiveness of the control environment” and that “The Management Body exercises\noversight of Executive Senior Management in these areas”. When some members of the\nExecutive Senior Management are part of the Management Body, it is the Management\nESMA84-2131909211-9912 - Supervisory expectations for the management body\n‘Senior Management’ means the person or persons who effectively direct the business of the CRA and the member or members\nof its administrative or supervisory board\nBody in its supervisory function that is expected to oversee the Executive Senior\nManagement.",
+"hash": "f35ea5b086ea3cdc"
+},
+{
+"num": "par. 3.1.4",
+"rubrica": "Interactions between the Guidelines and DORA",
+"testo": "3.1.4 Interactions between the Guidelines and DORA\n24. One respondent noted that it understood mentions to 'new technologies' (1.2 Risk\nManagement), 'information security' (1.4 Information and Communication), and 'relevant\nRegulations' (1.3 Control Activities) as referring to the implementation of DORA and that,\nas a result, the proposed Guidelines did not contain expectations stricter than those\nestablished in DORA.\n25. ESMA paid special attention to ensuring that the expectations set out in the Guidelines\ndo not overlap with those in DORA. For instance, it noted that “For supervised entities\nsubject to the Digital Operational Resilience Act (DORA), these guidelines should be\nread in conjunction with its requirements.” However, the references to 'new technologies'\n(1.2 Risk Management), 'information security' (1.4 Information and Communication), and\n'relevant Regulations' (1.3 Control Activities) go beyond the implementation of DORA.\nThey have been added to reflect the growing impact of technology on supervised entities’\noperations, including in terms of managing technology risk from external and internal\nsources, and the integration of new technologies into supervised entities’ internal\ncontrols.",
+"hash": "66b6edad7246601c"
+},
+{
+"num": "par. 3.2",
+"rubrica": "Internal Control Framework – Component Parts and",
+"testo": "3.2 Internal Control Framework – Component Parts and",
+"hash": "a603ae2a33e9e7d5"
+},
+{
+"num": "par. 3.2.1",
+"rubrica": "General - Internal Control Framework",
+"testo": "3.2.1 General - Internal Control Framework",
+"hash": "826c1368e6ea5f20"
+},
+{
+"num": "par. 26",
+"rubrica": "One respondent suggested specifying that the supervised entity’s Executive Senior",
+"testo": "26. One respondent suggested specifying that the supervised entity’s Executive Senior\nManagement’s responsibilities relate to the internal control policies and procedures “that\nsupport the components of the IC framework”. The respondent also suggested that the\nsupervised entity’s Executive Senior Management’s responsibilities should be limited to\n“policies and procedures” and not extend to “working practices” as they think this would\ngo beyond the scope of the internal control framework as set out in Paragraph 20 of\nESMA’s Consultation Paper.",
+"hash": "4d728feade990647"
+},
+{
+"num": "par. 27",
+"rubrica": "One respondent argued that making the Management Body accountable for the internal",
+"testo": "27. One respondent argued that making the Management Body accountable for the internal\ncontrol framework contradicts Article 5(3)(c) of the BMR which allocates such\nresponsibility to the BMA’s Oversight Function.\n28. One respondent pointed out that this section may be interpreted in a way that the\nManagement Body is required not only to approve internal policies and procedures but\nalso to approve and monitor the review cycle. They believe this may not be practical in\nmany entities, where this authority has been delegated to the Internal Control function.",
+"hash": "b52770d1f6690ccd"
+},
+{
+"num": "par. 29",
+"rubrica": "ESMA amended the Guidelines to clarify that the supervised entity’s Executive Senior",
+"testo": "29. ESMA amended the Guidelines to clarify that the supervised entity’s Executive Senior\nManagement’s responsibilities relate to the internal control policies and procedures “that\nsupport the components of the IC framework”. ESMA also aligned the scope of their\nresponsibilities with the scope of the internal control framework as set out in Paragraph\n20 in ESMA’s Consultation Paper (i.e. “policies, procedures and practices”).\n30. ESMA notes that the BMR mandates that BMAs establish and maintain an effective\nOversight Function to ensure the integrity and reliability of their benchmarks. While there\nare indeed, among others, some Internal Control Framework oversight elements\nattributed to the Oversight Function, ESMA is of the view that this does not conflict with\nthe Management Body’s accountability for the Internal Control framework.\n31. ESMA’s view is that the Management Body is accountable for the approval of internal\npolicies and procedures and the monitoring of the review cycle. The Management Body\ncan delegate the responsibility for this, including to Internal Control Functions. However,\nit remains accountable. On that basis, ESMA did not modify this section.\n3.2.2 Component 1.1 – Control Environment\n32. In relation to Characteristic 1.1.2, one respondent noted that there is no need for\nsupervised entities to repeat in all policies and procedures that “staff is expected to\nconduct themselves with honesty and integrity, perform their duties with due skill, care\nand diligence”.\n33. In relation to Characteristic 1.1.3, one respondent suggested that it would be more\naccurate to reflect that internal control functions are responsible for updating and\nreviewing the policies and procedures, whilst the Executive Senior Management should\napprove and be accountable for the reviews.\n34. In relation to Characteristic 1.1.2, ESMA would like to clarify that supervised entities are\nnot expected to repeat that “staff is expected to conduct themselves with honesty and\nintegrity, perform their duties with due skill, care and diligence” in all policies and\nprocedures. ESMA expects that these principles are covered in relevant policies and\nprocedures but not necessarily in all. ESMA is of the view that the paragraph is already\nsufficiently clear. As such, it did not make any change to this characteristic. Beyond the\ninclusion in the relevant policies and procedures, supervised entities are expected to put\nthese principles to life so that they become part of the firm’s day-to-day operations.\n35. In relation to the role of the Executive Senior Management set out in Characteristic 1.1.3,\nESMA would like to stress that updating and reviewing the policies and procedures is\nnot the sole responsibility of the internal control functions. Business functions, and more\ngenerally the first line of defence, may also be responsible for updating and reviewing\ncertain policies and procedures. On that basis, ESMA did not make changes to\nCharacteristic 1.1.3.\n3.2.3 Component 1.2 – Risk Management",
+"hash": "4bbd5267e67b6ba4"
+},
+{
+"num": "par. 36",
+"rubrica": "One respondent mentioned that the proposed Guidelines reflect a shift in supervisory",
+"testo": "36. One respondent mentioned that the proposed Guidelines reflect a shift in supervisory\napproach to risk management and the types of risks that are in scope. The respondent\nnoted that the proposed Guidelines appeared to capture all risks to a supervised entity’s\n“main objectives” regardless of whether the objectives have any bearing on its ability to\nmeet its obligations under the regulation. The respondent suggested keeping wording\nsimilar to that used in the existing Guidelines for CRAs and limit the scope to “all risks\nthat could materially impact the [supervised entity’s] ability to meet its obligations under\nthe [CRAR] or threaten its continued operation”.\n37. In relation to Characteristic 1.2.2, one respondent asked ESMA to clarify their\nunderstanding of “setting the risk appetite and identifying risk tolerance levels as part of\nthe risk assessment process”.\n38. In relation to Characteristic 1.2.3, one respondent suggested indicating that the\nsupervised entity’s risk assessment methodology should be informed by findings from\nthe IC Functions of the supervised entity.\n39. One respondent argued that Characteristics 1.2.3 and 1.2.4 place an excessive\nadministrative burden on smaller BMAs while not accounting for lower complexity of\noperations and would be disproportionately resource-intensive relative to the actual risks\nbeing managed. The same respondent suggested a tiered approach to risk assessment\nrequirements, where smaller firms with less complex operations could implement more\nstreamlined risk management processes focused on material risks specific to their\nbenchmark provision activities.\n40. ESMA agrees with the request to clarify and refine the types of risks that are in scope,\nand has therefore amended the relevant provision to clarify that supervised entities are\nexpected to have in place a dynamic and continuously evolving process for identifying,\nassessing and measuring “all risks that could impact a supervised entity’s ability to\nperform its obligations under the Regulation, or its continued operation”. While ESMA\nbelieves that all risks should be identified, assessed and measured, and therefore these\nactivities should not be limited to the risks that could “materially” impact the above\nobjectives, ESMA agrees that only those risks with a material impact should be\nmonitored, mitigated and reported on. Therefore, ESMA introduced a materiality\nthreshold for the types of risks that should be subject to these risk management activities\n(i.e. monitoring, mitigation, reporting). In making these amendments, ESMA ensured the\nfinal wording is aligned with that of Component 2.2 on the Risk Management Function.\n41. In relation to Characteristic 1.2.2, ESMA amended the sentence to clarify that the\nexpectation to “set risk appetite and identify risk tolerance” is independent from that of\nhaving a risk assessment process.\n42. In relation to Characteristic 1.2.3, ESMA decided not to proceed with the suggested\namendment. ESMA agrees with the respondent that the supervised entity’s risk\nassessment methodology should be informed by findings from the IC Functions.\nHowever, the purpose of Characteristic 1.2.3 is rather to specify that all functions should\nbe subject to the risk assessment, not only business lines. This is because risks can also\noriginate from IC functions.",
+"hash": "37c4ff103be4b44a"
+},
+{
+"num": "par. 43",
+"rubrica": "On the comment regarding administrative burden and a tiered approach for smaller",
+"testo": "43. On the comment regarding administrative burden and a tiered approach for smaller\nBMAs, ESMA believes that a comprehensive assessment of risks across all business\nlines is a pre-requisite to any risk-based approach, including to risk management\nactivities and the allocation of resources to areas where the risks are higher. On that\nbasis, ESMA is of the view that supervised entities of all sizes and complexity levels\nshould assess their risks across all their activities. This does not prevent firms from\nperforming a more refined risk assessment in areas they consider more critical or\ncomplex. On that basis, ESMA does not deem it necessary to introduce a tiered\napproach to risk assessment.\n3.2.4 Component 1.3 – Control Activities\n44. In relation to Characteristic 1.3.1 on the segregation of duties, respondents pointed out\nthat the Guidelines indicate a shift in the expectations for certain tasks within the scope\nof the CRA Regulation and that, more generally, they are excessively restrictive for staff\ninvolved in certain tasks whilst having a role in the approval, validation or review of those\ntasks unless it “cannot be avoided”. These respondents suggested keeping the wording\nused in the existing Guidelines for CRAs. One respondent also noted that ESMA should\nprovide alternative control measures for small firms with limited personnel that may\nstruggle with strict segregation. Some respondents argued that the examples provided\nin the footnotes illustrating this characteristic were too prescriptive, while some of the\nactivities described were too vague.\n45. In relation to Characteristic 1.3.3, one respondent stated that the expectations about the\ndocumentation of controls and testing were unnecessarily prescriptive.\n46. In relation to Characteristic 1.3.5, one respondent suggested focusing on ‘key’ rather\nthan ‘all’ business activities.\n47. In relation to Characteristics 1.3.6, two respondents suggested deleting the wording ‘inter\nalia’ from footnote 36 to avoid broadening the section’s scope of application.\n48. On the comments regarding the segregation of duties set out in Characteristic 1.3.1,\nESMA confirms that it did not intend to amend the existing guidance. The final Guidelines\nhave been amended to revert to the wording currently in place. ESMA has also provided\nan example of how smaller firms with limited personnel may ensure segregation of duties\nand refers to the section on proportionality where ESMA clarifies that its expectations on\nthe level of segregation for internal control functions may be calibrated to each firm's\nnature, scale and complexity. On that basis, ESMA does not deem it necessary to specify\nadditional alternatives to the segregation of duties. In relation to the footnotes illustrating\nCharacteristics 1.3.1, ESMA modified the wording to remove the content that was\nconsidered too vague and, instead, focused on illustrating how the segregation of duties\nmay be suitable for IT-related operations. ESMA also modified the examples specific to\nCRAs to align with the expectations in the Guidelines currently applicable to them.\n49. Regarding the control documentation set out in Characteristic 1.3.3, ESMA followed the\nrespondent’s suggestion and made the characteristics more principle-based by removing\nthe details of the control documentation. ESMA leaves it to each firm to decide on how\nto document their controls. Depending on their nature, scale and complexity, firms may\nconsider documenting the following points: (i) a description of the control; (ii) the\nassociated material risk(s); (iii) the role(s) or functions(s) responsible for performing the\ncontrol; (iv) the role(s) or functions(s) responsible for reviewing the control; (v) the\nevidence that the control has been executed; (vi) the frequency of execution of the\ncontrol; (vii) a description of the testing procedure.\n50. ESMA also agrees with a comment that the guidance set out in Section 1.3.3 may be\naddressed across multiple documents rather than consolidated into a single document.\n51. Regarding Characteristic 1.3.5, while the suggestion to add ‘mechanisms’ seems\nsensible as, indeed, ‘processes’ are not the only methods that can be used to ensure\nappropriate authorisation or approval authority, ESMA considers no further amendment\nis necessary since ESMA's aim is that such ‘processes’ and ‘mechanisms’ apply to all\nbusiness activities, not only key activities. Footnote 35 provides examples relevant to\nCRAs. It is not an exhaustive list of key business activities.\n52. Regarding Characteristic 1.3.6, ESMA agrees with the suggested deletion and has\nreflected that in the final Guidelines.\n3.2.5 Component 1.4 – Information and Communication\n53. In relation to Characteristic 1.4.2, one respondent suggested to reinstate the materiality\nprovision present in the existing Guidelines for CRAs for the escalation of internal control\nissues to the Management Body.\n54. In relation to Characteristic 1.4.3, one respondent mentioned that the Management Body\nshould not be involved in day-to-day operations, such as communications with staff. The\nrespondent suggested an amendment so that only Executive Senior Management and\nthe control functions should establish downward communication channels with staff.\n55. As regards Characteristic 1.4.2, ESMA followed the respondent’s suggestion and\namended the Guidelines to reinstate the materiality provision on the internal control\nissues that should be escalated to the Management Body and Executive Senior\nManagement. As to the suggestion to clarify when a 'disagreement' requires escalation,\nESMA agrees and added a materiality threshold.\n56. As regards Characteristic 1.4.3, ESMA notes that communication from the Management\nBody to staff may be appropriate for certain objectives, notably to provide the right tone\nfrom the top. On that basis, ESMA did not amend this characteristic.\n3.2.6 Component 1.5 – Monitoring Activities\n57. In relation to Characteristic 1.5.6, one respondent noted that the provision related to\noutsourcing is too vague. They also noted that the requirement to allocate a member of\nstaff with the specific task of monitoring that service should depend on the nature of the\nfirm. Similar comments suggested that the existing Guidelines for CRAs should be kept\nto ensure that the outsourcing monitoring requirement is subject to a materiality\nthreshold.",
+"hash": "ba96585bfc1ff053"
+},
+{
+"num": "par. 58",
+"rubrica": "ESMA expects supervised entities to implement monitoring controls for all outsourcing",
+"testo": "58. ESMA expects supervised entities to implement monitoring controls for all outsourcing\narrangements (i.e. not only important operational functions), including intragroup\noutsourcing. At the same time, ESMA recognises that the intensity of those monitoring\ncontrols should be commensurate to the risk and criticality of the outsourced activities.\nSupervised entities should consider ESMA’s Principles for Third Party Risk Supervision12\nin the implementation of their outsourcing arrangements and controls.\nESMA42-1710566791-6103 Principles on third-party risks supervision",
+"hash": "f5cd3a88b6fcd7b7"
+},
+{
+"num": "par. 3.3",
+"rubrica": "Internal Control Functions - Component Parts and",
+"testo": "3.3 Internal Control Functions - Component Parts and",
+"hash": "5448778af15e9302"
+},
+{
+"num": "par. 3.3.1",
+"rubrica": "General – Internal Control Functions",
+"testo": "3.3.1 General – Internal Control Functions\n59. In relation to Paragraph 18 of the proposed Guidelines, several respondents highlighted\nthat the expectation that staff members in charge of IC functions “should be directly\naccountable to the Management Body and their performance should be reviewed by the\nManagement Body” was somewhat vague, not proportionate and not in line with existing\npractices. One respondent suggested a clarification that this requirement pertains to the\nfunction, rather than any individual staff members.",
+"hash": "36dd95cf8d588192"
+},
+{
+"num": "par. 60",
+"rubrica": "In relation to Paragraph 18 and Paragraph 19, several respondents welcomed ESMA’s",
+"testo": "60. In relation to Paragraph 18 and Paragraph 19, several respondents welcomed ESMA’s\nacknowledgement that some supervised entities may “outsource the operational tasks\nof an IC function to group level”. They stressed the importance of such intragroup\noutsourcing arrangement to build a centralised framework, achieve synergies and\nefficiencies.",
+"hash": "de0cf3329c004fa2"
+},
+{
+"num": "par. 61",
+"rubrica": "Some respondents noted that ESMA’s expectation that the supervised entity retains full",
+"testo": "61. Some respondents noted that ESMA’s expectation that the supervised entity retains full\nresponsibility applies to the outsourcing of “operational tasks of an IC function” whereas\nthe corresponding expectations in the current Guidelines for CRAs only apply to the\noutsourcing of “important operational tasks of an IC function”. They suggested re-\nintroducing the materiality provision of “important” operational tasks.\n62. ESMA acknowledges that the expectation that staff members in charge of IC functions\nhave “their performance [….] reviewed by the Management Body” did not directly serve\nthe objective of this section which was to clarify the meaning of “appropriate seniority”\nand “necessary authority” for the staff in charge of IC functions. On that basis, ESMA\nremoved this part of the paragraph. Similarly, ESMA modified the paragraph to clarify\nthat it expects staff members in charge of IC functions to “have direct access and report\nto Management Body on a regular basis” rather than to “be directly accountable to the\nManagement Body”. ESMA confirms that these expectations, as amended, apply to the\nindividual staff members and not to the function. For the avoidance of doubt, ESMA\nconfirms that the IC Functions should also report to the Management Body, as stated in\nvarious sections of the document (e.g. Characteristics 2.1.1, 2.2.4, 2.3.4, 2.4.5, 2.5.1,\n2.6.4).\n63. Concerning the materiality criteria of “important” operational tasks, ESMA is of the view\nthat the change compared to the current Guidelines for CRAs is justified. This is because\nthe principle that supervised entities retain responsibility for outsourced activities is\nrelevant to all types of outsourced activities. This principle is also included in ESMA’s\nPrinciples for Third Party Risk Supervision.13 On that basis, ESMA does not deem it\nappropriate to re-introduce the materiality provision.",
+"hash": "7ee35c109c6236cf"
+},
+{
+"num": "par. 3.3.2",
+"rubrica": "Proportionality – Internal Control Functions",
+"testo": "3.3.2 Proportionality – Internal Control Functions\n64. Overall, a majority of respondents welcomed the clarification that ESMA provided on how\nit takes into account proportionality in its supervision of IC Functions. Several\nrespondents asked for further clarification on its practical application",
+"hash": "02cdca8dc450bf44"
+},
+{
+"num": "par. 65",
+"rubrica": "One respondent suggested that the assessment and calibration of relevant factors",
+"testo": "65. One respondent suggested that the assessment and calibration of relevant factors\nshould not be determined by ESMA but through a self-assessment conducted by each\nentity.",
+"hash": "08bb9cba39e64c0d"
+},
+{
+"num": "par. 66",
+"rubrica": "ESMA acknowledges the concerns expressed by respondents about proportionality and",
+"testo": "66. ESMA acknowledges the concerns expressed by respondents about proportionality and\nthe request to add more details on how it applies proportionality into the Guidelines.\nESMA will use its judgment based on its supervisory dialogue with supervised entities to\nunderstand each entity’s situation and define and explain how it calibrates its\nexpectations to their nature, scale, complexity and risks. As a result, ESMA did not make\nchanges to this section.\n67. ESMA agrees that firms should assess and calibrate their internal control framework and\nfunctions to their own risks. In line with Component 1.1, ESMA expects firms’ Executive\nSenior Management to be responsible for assessing the adequacy and effectiveness of\nthe firm’s control environment. However, ESMA does not believe that this contradicts the\nidea that ESMA has its own expectations on the specific maturity that each firm needs\nto achieve.\n3.3.3 Component 2.1 - Compliance\n68. In relation to Characteristic 2.1.1, one respondent suggested specifying that the INEDs\nshould receive the same information as the rest of the Board of Directors.\n69. In relation to Characteristic 2.1.3, two respondents questioned whether expecting the\nCompliance function to exert oversight over IT processes was proportionate. This is\nbecause smaller or less complex firms tend to have small Compliance Functions and\nrely on other second line functions or the third line function to oversee IT processes. This\ncomment was echoed by another respondent who argued that the Compliance Function\nis not the appropriate function to conduct monitoring activities on 'IT processes and\nsystems'. This respondent suggested that these activities sit more naturally with the Risk\nManagement Function, or, alternatively, with the ICT Risk Management Function as\nESMA42-1710566791-6103 Principles on third-party risks supervision\nestablished in DORA. Two other respondents argued that it is not appropriate to expect\nthe Compliance Officer to have a full technical knowledge to cover processes and\nsystems. The respondent would welcome a clarification in the final Guidelines that the\nscope of the Compliance programme may be based on risk-based assessments.\n70. One respondent mentioned that many non-EU BMAs operate as part of global financial\ngroups that have developed centralised governance, compliance, and risk management\nframeworks designed to ensure effective and consistent controls across jurisdictions.\nThe respondent argued that the Consultation Paper remains unclear whether ESMA will\nallow firms to rely on these group-wide processes in practice.\n71. In relation to Characteristic 2.1.1, ESMA agrees with the comment that INEDs should\nreceive at least the same information as other members of the Management Body.\nHowever, the INEDs may also require additional reports from the Compliance Function\nto fulfil their oversight responsibilities. ESMA amended Characteristic 2.1.1 to clarify that\nsuch additional reports may be provided directly to the INEDs when relevant.\n72. In relation to Characteristic 2.1.3, ESMA would like to clarify that the second sentence\ndoes not aim to expand the scope of the Compliance Function but rather to specify that\nthe existing scope includes IT processes and systems so long as they can affect the\nsupervised entity’s compliance. ESMA does not expect Compliance to be responsible\nfor IT supervision. Instead, ESMA expects Compliance's activities (e.g. controls, testing,\ntraining) to also cover IT processes and systems when the latter could affect the\nsupervised entity’s compliance with the relevant Regulation. The Compliance Function\nmay cooperate with other functions (including external ones) to carry out these tasks.\n73. On the comment related to group functions, ESMA would like to highlight that the\nmentioned activities may be carried out at group level provided that the group structure\ndoes not impede the ability of a supervised entity to provide oversight and effectively\nmanage its risks or ESMA’s ability to effectively supervise the entity. In all cases\nCharacteristic 1.1.4 applies. Moreover, ESMA would like to point out that all outsourcing\n(including intra-group) should be subject to monitoring and the intensity should be\ncommensurate to the risk and criticality of the outsourced activities. ESMA invites\nsupervised firms to also consider ESMA’s Principles for Third Party Risk Supervision14.\n3.3.4 Component 2.2 - Risk Management Function\n74. Following the comments made by some respondents on Component 1.2, ESMA\nremoved the list of activities expected to be performed by the Risk Management Function\nESMA42-1710566791-6103 Principles on third-party risks supervision\nas this duplicated the expectation about the risk management activities set out in\nComponent 1.2.\n75. ESMA amended Characteristic 2.2.2 to specify to which activities the materiality\nprovision applies. On the one hand, ESMA expects supervised entities to identify, assess\nand measure all risks that could materially impact their ability to perform their obligations\nunder the Regulations, or their continued operation. This is because, until these activities\nhave been performed, one cannot tell whether a risk may have material impact to the\nobjectives or not. On the other hand, ESMA expects firms to monitor, manage, mitigate\nand properly report the material risks to these objectives.\n3.3.5 Component 2.3 - Information Security Management Function (only for\nsupervised entities not subject to DORA)\n76. One respondent noted that it may not be proportionate to require all supervised entities\nto have a dedicated information security management function since information security\ncan be an activity outsourced to group functions.\n77. ESMA would like to highlight that information security activities may be carried out at\ngroup level provided that the group structure does not impede the ability of the\nsupervised entity to provide oversight and effectively manage its risks or ESMA’s ability\nto effectively supervise the entity.\n3.3.6 Component 2.4 - Internal Audit\n78. In relation to Characteristic 2.4.2, one respondent expressed its concern that the\nreference to “leading practices” is ambiguous and could create uncertainty.\n79. In relation to Characteristic 2.4.4, one respondent commented that the supervision over\naudit programs (i.e. approval, settlement of program, implementation) should be\nperformed by the Head of Audit not by the Management Body.",
+"hash": "a9d0f50e815e8581"
+},
+{
+"num": "par. 80",
+"rubrica": "Another respondent asked clarification on whether the proposed Guidelines precluded a",
+"testo": "80. Another respondent asked clarification on whether the proposed Guidelines precluded a\nmodel whereby the different internal control functions could rely upon each other’s\nfindings.\n81. In relation to Characteristic 2.4.2, ESMA removed the phrase \"leading practices\" to avoid\nambiguity.\n82. In response to the comment on Characteristic 2.4.4, ESMA amended the wording to\nclarify that it expects the Management Body to oversee the annual audit plan so that it\ncan steer the use of resources to address the most pressing risks and receive assurance\nwhere deemed necessary. ESMA removed the term “detailed audit programme” as the\nmeaning was unclear.\n83. As a third line of defence, the Internal Audit Function may evaluate the first line (i.e.\nbusiness lines) and second line (i.e. other internal control functions). As a result, internal\naudit must be in a position to perform its functions independently from other internal\ncontrol functions. This does not preclude an ‘aligned assurance’ model in which the lines\nof defence can rely upon each other’s findings, subject to satisfying themselves of the\nrobustness of the approach followed.\n3.3.7 Component 2.5 - Review (for CRAs)\n84. In relation to Paragraph 33, one respondent suggested specifying that a “CRA’s Review\nFunction is also responsible for the validation and review of new methodologies, and any\nchanges to existing methodologies”. The respondent also noted that this is how the\nexpectation is set out in the current Guidelines applicable to CRAs.\n85. In relation to Characteristic 2.5.4, one respondent noted that ESMA setting expectations\non “voting rights in a committee” is prescriptive and inappropriate. Instead, the\nrespondent believed that ESMA should leave CRAs free to decide how to produce and\nvalidate their methodologies according to the CRA Regulation.\n86. ESMA amended Paragraph 33 to specify that a “CRA’s Review Function is also\nresponsible for the validation and review of new methodologies, and any changes to\nexisting methodologies”, in line with the expectation set out in the current Guidelines\napplicable to CRAs.\n87. ESMA notes that Characteristic 2.5.4 does not mandate the use of committees for\napproving methodologies. Based on supervisory experience, ESMA is aware that\nseveral CRAs use committees to this end. ESMA used Characteristic 2.5.4 to clarify its\nexpectations when such a committee is being used. As a result, ESMA did not modify\nCharacteristic 2.5.4.\n3.3.8 Component 2.6 - Oversight (for BMAs)",
+"hash": "3cd8028df5720499"
+},
+{
+"num": "par. 88",
+"rubrica": "Several respondents expressed concerns that the requirement for the Oversight",
+"testo": "88. Several respondents expressed concerns that the requirement for the Oversight\nFunction to be independent from any function of the BMA would be overly burdensome\nand disproportionate and may conflict with the requirements of the Benchmark\nRegulation. One of these respondents mentioned that the Benchmark Regulation\nalready establishes requirements for benchmark oversight and that the Guidelines’\ncharacteristics may generate increased administrative costs.",
+"hash": "a65a05d758a436e1"
+},
+{
+"num": "par. 89",
+"rubrica": "While ESMA acknowledges that the Oversight Function’s composition and structure may",
+"testo": "89. While ESMA acknowledges that the Oversight Function’s composition and structure may\ndiffer depending on the size and complexity of the BMA, ESMA’s expectation for an\nOversight Function and its members is that potential conflicts of interest are mitigated.\nESMA amended the wording of Characteristic 2.6.1 to clarify that it expects BMAs to\nmaintain the independence of the Oversight Function and its members irrespective of\nthe size of and nature of the firm. The five characteristics in the Guidelines are set out to\nemphasise the above concept which is derives from the Benchmark Regulation and is\napplicable to all BMAs in scope of these Guidelines.",
+"hash": "a1942ac2f84675e1"
+},
+{
+"num": "par. 4",
+"rubrica": "Annexes",
+"testo": "4 Annexes\nAnnex I - Cost-benefit analysis\nIntroduction\n1. The need for supervised entities to have a robust and appropriately resourced system of\ninternal controls is provided for in Articles 4-10 of BMR, Article 6 and Annex I Section A of\nCRAR, Articles 27f, 27g and 27i of MiFIR, Article 5(2) of SFTR and Articles 78 and 79 of\nEMIR (also applicable to SRs via Article 10 of SecR). The motivation for providing such\nguidance arose as a result of the identification of deficiencies in supervised entities’\npractices during ESMA’s ongoing supervision.\n• The purpose of these Guidelines is to ensure that ESMA’s expectations are shared\nwith all registered entities and future applicants to ensure a level playing field and\nthe adoption of consistent good practices. The Guidelines will achieve this by\nmaking clear what components and characteristics ESMA considers should be\nevidenced within a supervised entity’s internal control system. Furthermore, the\nGuidelines clarify how ESMA’s expectations are proportionate to the nature, scale\nand complexity of a supervised entity.\n• Once implemented the Guidelines will be integrated into ESMA’s supervisory\nassessment practices and guide how ESMA interacts with supervised entities in\nrelation to their internal controls systems.\nImpact of ESMA Guidelines\n2. The approach of the Guidelines is to provide a framework of practices against which\nsupervised entities can compare and judge their own internal control systems and\nmechanisms. When firms identify that their internal control system falls short of the\nexpectations set out in the Guidelines, they are encouraged to remediate such gaps.\n3. The Guidelines have also been drafted in such a way that they do not recommend specific\norganisational structures. Rather they recommend principles that a supervised entity’s\ninternal control system should adhere to in order to demonstrate it meets the objectives of\nthe relevant Regulations. As such, it is not expected that the Guidelines will require any\nsupervised entity to fundamentally re-structure its internal organisation.\n4. However, given that the guidance has drawn upon a wide range of standards and best\npractices, it is expected that even for supervised entities who are currently implementing\nwell defined and sufficiently resourced internal control systems some revisions to current\npractices may be necessary. These revisions could entail changes to existing work\npractices or delegation of internal reporting lines and responsibilities.\nBenefits\n5. The benefits of these Guidelines to ESMA and supervised entities are numerous. For\nESMA, the Guidelines will help ensure consistency in how ESMA supervisors assess each\nsupervised entity’s internal control systems and mechanisms. For supervised entities, it will\nact as a resource against which they can assess the effectiveness and appropriateness of\ntheir existing internal control systems and mechanisms and provide clarity on ESMA’s\nexpectations as a supervisor. For any new entrants into the BMA, CRA, DRSP, SR and TR\nmarket, the Guidelines will likewise provide them with clarity on the practical application of\nthe internal control requirements in the relevant Regulations. For users of the supervisory\nentities’ services, these Guidelines will contribute to assuring more robust and effective\nservices from the supervised entities. More mature internal control systems will result in\ngreater operational efficiency as well as heightened capacity for error detection and\nprevention.\nCosts\n6. The expected costs arising from these Guidelines are potentially three-fold. First,\nsupervised entities should assess the provisions against their existing internal control\nsystems and mechanisms. Second, following this assessment, supervised entities may\nneed to review their internal policies and procedures or internal control processes. Third,\nfollowing any changes, supervised entities may need to inform and update all relevant staff\nas to the changes in the internal processes and provide training where necessary.\n7. For CRAs, these costs are expected to be minimal given that they are already subject to\nthe ESMA Internal Control Guidelines for CRAs and that most of the provisions in these\nGuidelines are the same.\nConclusions\n8. Ensuring that supervised entities’ activities are of a high quality and free from any conflicts\nof interest is one of the key objectives of the relevant Regulations. As such, ESMA\nGuidelines which provide a set of measures to ensure that supervised entities are better\nable to meet these objectives are justified on the basis that the costs of implementation will\nbe limited to compliance assessments, revisions to internal policies and procedures, and\ntraining for staff.\nAnnex II – Guidelines\nGuidelines on Internal Controls for Benchmark Administrators, Credit\nRating Agencies and Market Transparency Infrastructures",
+"hash": "ab12100091edc0cb"
+},
+{
+"num": "par. 1 (3)",
+"rubrica": "Scope",
+"testo": "1 Scope\nWho?\n1. These Guidelines apply to:\n(i) benchmark administrators authorised, registered or recognised with ESMA (together\n‘BMAs’) in accordance with BMR;\n(ii) credit rating agencies established in the Union and registered with ESMA (CRAs) in\naccordance with CRAR;\n(iii) data reporting services providers (excluding Consolidated Tape Providers (CTPs))\nestablished in the Union and authorised by ESMA (DRSPs) in accordance with MiFIR;\n(iv) securitisation repositories established in the Union and registered with ESMA (SRs) in\naccordance with SecR;\n(v) trade repositories established in the Union and registered with ESMA (TRs) in\naccordance with EMIR;\n(vi) trade repositories established in the Union and registered with ESMA in accordance\nwith SFTR (hereinafter together referred to as ‘Supervised Entities’).\nWhat?",
+"hash": "702133402cc02926"
+},
+{
+"num": "par. 2 (2)",
+"rubrica": "These Guidelines concern matters relating to the internal control structure and",
+"testo": "2. These Guidelines concern matters relating to the internal control structure and\nmechanisms necessary to ensure (i) a BMA’s effective compliance with Articles 4 to 10 of\nBMR; (ii) a CRAs’ effective compliance with Article 6(1),(2) and (4), Article 9 and Annex I,\nSection A, of CRAR; (iii) a DRSP’s effective compliance with Articles 27f, 27g, 27i of\nMiFIR; and (iv) a TR’s or SR’s effective compliance with Articles 78 and 79 of EMIR.\nWhen?\n3. These Guidelines apply from 1 October 2026.\n4. As of the date referred to in Paragraph 3, the Guidelines on Internal Control for CRAs\n(ESMA33-9-371) are repealed.",
+"hash": "6541a3a3bdc1ef73"
+},
+{
+"num": "par. 2 (3)",
+"rubrica": "References, abbreviations and definitions",
+"testo": "2 References, abbreviations and definitions\nLegislative references\nRegulation (EU) 2016/1011 of the European Parliament and of the\nCouncil of 8 June 2016 on indices used as benchmarks in\nBMR financial instruments and financial contracts or to measure the\nperformance of investment funds and amending Directives\n2008/48/EC and 2014/17/EU and Regulation (EU) No 596/201415\nRegulation (EC) No 1060/2009 of the European Parliament and of\nCRAR\nthe Council of 16 September 2009 on credit ratings agencies16\nRegulation (EU) 2022/2554 of the European Parliament and of the\nCouncil of 14 December 2022 on digital operational resilience for\nDORA the financial sector and amending Regulations (EC) No\n1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No\n909/2014 and (EU) 2016/101117\nRegulation (EU) No 648/2012 of the European Parliament and of\nEMIR the Council of 4 July 2012 on OTC derivatives, central\ncounterparties and trade repositories18\nRegulation (EU) No 600/2014 of the European Parliament and of\nMiFIR the Council of 15 May 2014 on markets in financial instruments\nand amending Regulation (EU) No 648/201219\nRegulation (EU) 2017/2402 of the European Parliament and of the\nCouncil of 12 December 2017 laying down a general framework\nfor securitisation and creating a specific framework for simple,\nSecR\ntransparent and standardised securitisation, and amending\nDirectives 2009/65/EC, 2009/138/EC and 2011/61/EU and\nRegulations (EC) No 1060/2009 and (EU) No 648/201220\nRegulation (EU) 2015/2365 of the European Parliament and of the\nCouncil of 25 November 2015 on transparency of securities\nSFTR\nfinancing transactions and of reuse and amending Regulation\n(EU) No 648/201221\nAbbreviations\nAI Artificial intelligence\nAPA Approved Publication Arrangement\nOJ L 171, 29.6.2016, p. 1.\nOJ L 302, 17.11.2009, p. 1.\nOJ L 333, 27.12.2022, p. 1.\nOJ L 201, 27.7.2012, p.1.\nOJ L 173, 12.6.2014, p.84.\nOJ L 347, 28.12.2017, p. 35.\nOJ L 337, 23.12.2015, p.1.\nARM Approved Reporting Mechanism\nBMA Benchmark Administrator\nCP Consultation Paper\nCRA Credit Rating Agency\nDORA Digital Operational Resilience Act\nDRSP Data Reporting Services Provider\nESMA European Securities and Markets Authority\nEU European Union\nIC Framework Internal Control Framework\nIC Function Internal Control Function\nICT Information and Communication Technology\nINED Independent Non-Executive Director\nMI Management Information\nRTS Regulatory Technical Standards\nSR Securitisation Repository\nTR Trade Repository\nDefinitions\nThis refers to the most senior persons directing the supervised\nExecutive Senior Management entity on a day-to-day basis. This is typically the Chief Executive\nOfficer (CEO) or equivalent and his/her direct reports.\nThe body or bodies which are appointed in accordance with\nnational law, which are empowered to set the entity’s strategy,\nobjectives and overall direction, and which oversee and monitor\nmanagement decision-making and include persons who\neffectively direct the business of the entity.\nThis refers to the most senior governing bodies within an\norganisation.\nManagement Body The term is defined in BMR, Article 3(1), point (20) and in MIFIR,\nArticle 2(1), point (22).\nIt covers the concepts of:\n▪ ‘administrative or supervisory board’, of a CRA, being part of\n‘senior management’, as defined in CRAR, Article 3(1), point\nn)]\n▪ ‘administrative or supervisory board, or both, in accordance\nwith national company law’, as defined in EMIR, Article 2(27)\nFor the purpose of these Guidelines, this refers to:\nMarket Transparency ▪ Data Reporting Services Providers,\nInfrastructures\n▪ Securitisation Repositories and\n▪ Trade Repositories\nFor the purpose of these Guidelines, this refers to:\n▪ BMR\n▪ CRAR\nRelevant Regulations ▪ EMIR\n▪ MiFIR\n▪ SecR\n▪ SFTR\nFor the purpose of these Guidelines, this refers to the entities\nunder ESMA’s supervisory remit, namely:\n▪ BMAs\nSupervised entities ▪ CRAs\n▪ DRSPs (excluding consolidated tape providers)\n▪ SRs\n▪ TRs",
+"hash": "4e2ed0e6b9e41f8e"
+},
+{
+"num": "par. 5",
+"rubrica": "These Guidelines set out ESMA’s expectations regarding the components and",
+"testo": "5. These Guidelines set out ESMA’s expectations regarding the components and\ncharacteristics of an effective internal control framework and the functions of different\ninternal controls within a supervised entity.",
+"hash": "da000bf6966af4de"
+},
+{
+"num": "par. 4 (2)",
+"rubrica": "Compliance and reporting obligations",
+"testo": "4 Compliance and reporting obligations\nStatus of the Guidelines\n6. This document contains Guidelines issued pursuant to Article 16 of the ESMA Regulation.\nIn accordance with Article 16(3) of the ESMA Regulation, supervised entities must make\nevery effort to comply with these Guidelines.\nReporting requirements\n7. Financial market participants to which these Guidelines apply are not required to report\nwhether they comply with these Guidelines. ESMA will assess the application of these\nGuidelines by the supervised entities through its ongoing supervision and monitoring of\nsupervised entities’ activities.\nProportionality\n8. ESMA will apply proportionality in the application of these Guidelines. While all supervised\nentities are expected to demonstrate the components and characteristics of an effective\ninternal control system outlined in these Guidelines, ESMA will calibrate its expectations\nunder Section 4.2 according to the nature, scale, complexity and overall risk profile of a\nsupervised entity and based how these characteristics may affect investor protection,\norderly functioning of the market and financial stability.\n9. When assessing the nature of a supervised entity, ESMA will consider the business and\ntype of operations of the supervised entity, including its market role/mission, type, diversity\nand criticality of products and services offered by the supervised entity.\n10. When assessing the scale of the business of a supervised entity, ESMA will have regard\nto relevant factors including headcount, revenue, number of clients and products, market\nshare, interconnections with other industries/infrastructures, ancillary services and their\nrelationship with core services and other factors specific to the size and market impact of\nthe supervised entity.\n11. When assessing the complexity of a supervised entity, ESMA will have regard to amongst\nother factors, its organisational structure and arrangements (group structure/relationships,\nshared services, outsourcing, etc.) as well as its operational characteristics in relation to\npeople, processes, technology, product offerings and interconnections.\n12. In calibrating its expectations, ESMA takes into account the conditions of a supervised\nentity’s registration or recognition. A supervised entity’s nature, scale and complexity may\nchange after it is registered or recognised, and it is its responsibility to ensure that its\ninternal controls stay commensurate with its nature, scale and complexity. ESMA will\ncommunicate through its supervision if it has a higher threshold of expectations under\nSection 5.1 and 5.2 than those established at registration or recognition.",
+"hash": "8466c8eeebc3c549"
+},
+{
+"num": "par. 5 (2)",
+"rubrica": "Guidelines",
+"testo": "5 Guidelines\n13. In order to demonstrate that supervised entities comply with Paragraph 2 of these\nGuidelines, supervised entities should demonstrate that their policies, procedures and\nworking practices achieve the objectives of Sections 5.1 (Internal Control Framework) and\n5.2 (Internal Control Functions) of these Guidelines.",
+"hash": "38c53d87ea2a95c2"
+},
+{
+"num": "par. 14 (2)",
+"rubrica": "To ensure an effective IC framework, supervised entities should have the following",
+"testo": "14. To ensure an effective IC framework, supervised entities should have the following\ncomponents and characteristics in their policies, procedures and working practices.\nGeneral Principles\n15. The Management Body of the supervised entity should be accountable for overseeing and\napproving all components of the IC Framework as well as overseeing that those\ncomponents are subject to monitoring and are regularly updated by the Executive Senior\nManagement. The supervised entity’s Executive Senior Management should be\nresponsible for establishing, implementing and updating the written internal control\npolicies, procedures and practices that support the components of the IC framework.\n16. As part of putting these policies and procedures in place, a supervised entity should have\na clear, transparent and documented decision-making process and a clear allocation of\nroles and responsibilities within its IC Framework, including its business lines and IC\nfunctions.\nComponent 1.1 Control Environment",
+"hash": "a99698e5be7e97c6"
+},
+{
+"num": "par. 17",
+"rubrica": "A supervised entity’s Management Body and Executive Senior Management both",
+"testo": "17. A supervised entity’s Management Body and Executive Senior Management both\ncontribute to establishing the tone at the top regarding the importance of internal control.\nThe Executive Senior Management is responsible for the development and performance\nof internal control and assessing the adequacy and effectiveness of the control\nenvironment. The Management Body should exercise oversight of Executive Senior\nManagement in these areas.",
+"hash": "d522e618f8fcc6c5"
+},
+{
+"num": "par. 1.1.1",
+"rubrica": "The supervised entity’s Executive Senior Management should be responsible",
+"testo": "1.1.1 The supervised entity’s Executive Senior Management should be responsible\nfor establishing a strong culture of ethics and compliance within the supervised\nentity through the implementation of policies and procedures that govern the\nconduct of the supervised entity’s staff.",
+"hash": "c847cc21f14b3a79"
+},
+{
+"num": "par. 1.1.2",
+"rubrica": "The supervised entity’s Executive Senior Management should be responsible",
+"testo": "1.1.2 The supervised entity’s Executive Senior Management should be responsible\nfor ensuring that the supervised entity’s policies and procedures:\ni. Specify that the supervised entity’s business should be conducted in\ncompliance with the relevant Regulations and with the supervised\nentity’s corporate values;\nii. Clarify that in addition to compliance with legal and regulatory\nrequirements and internal policies, staff are expected to conduct\nthemselves with honesty and integrity and perform their duties with due\nskill, care and diligence; and\niii. Ensure that staff are aware of the potential internal and external\ndisciplinary actions, legal actions and sanctions that may follow\nmisconduct.",
+"hash": "d09244f06fde34ee"
+},
+{
+"num": "par. 1.1.3",
+"rubrica": "The supervised entity’s Executive Senior Management should establish,",
+"testo": "1.1.3 The supervised entity’s Executive Senior Management should establish,\nmaintain and regularly update adequate written internal control policies,\nmechanisms and procedures.",
+"hash": "ab767e8310bbf593"
+},
+{
+"num": "par. 1.1.4",
+"rubrica": "The supervised entity’s Executive Senior Management should retain",
+"testo": "1.1.4 The supervised entity’s Executive Senior Management should retain\nresponsibility for activities outsourced to external service providers or delegated\nto business partners.\nComponent 1.2 Risk Management",
+"hash": "af1df990b9f8ce2f"
+},
+{
+"num": "par. 18 (3)",
+"rubrica": "For the purposes of effective risk management, supervised entities should ensure that",
+"testo": "18. For the purposes of effective risk management, supervised entities should ensure that\nthey have in place a dynamic and continuously evolving process for identifying, assessing\nand measuring all risks that could impact a supervised entity’s ability to perform its\nobligations under the relevant Regulations, or its continued operation. For example, this\nincludes risks resulting from the supervised entity’s use of new technologies and changes\nto its external risk landscape. The process should enable the supervised entity to monitor,\nmanage, mitigate and properly report material risks to these objectives.",
+"hash": "ddf0ad83bbd16894"
+},
+{
+"num": "par. 1.2.1",
+"rubrica": "The supervised entity should conduct its internal risk assessments in",
+"testo": "1.2.1 The supervised entity should conduct its internal risk assessments in\naccordance with a defined and comprehensive risk assessment methodology.",
+"hash": "a0d68454202db0f5"
+},
+{
+"num": "par. 1.2.2",
+"rubrica": "The supervised entity should set its risk appetite and identify risk tolerance",
+"testo": "1.2.2 The supervised entity should set its risk appetite and identify risk tolerance\nlevels.",
+"hash": "3272e26f301630a7"
+},
+{
+"num": "par. 1.2.3",
+"rubrica": "The supervised entity’s risk assessment methodology should encompass all",
+"testo": "1.2.3 The supervised entity’s risk assessment methodology should encompass all\nbusiness lines and IC Functions of the supervised entity.",
+"hash": "d279379779c66a1e"
+},
+{
+"num": "par. 1.2.4",
+"rubrica": "The supervised entity’s risk assessment process should identify and assess",
+"testo": "1.2.4 The supervised entity’s risk assessment process should identify and assess\nchanges that could significantly impact the system of internal control. This\nincludes changes to its environment, organisation, activities and operations.",
+"hash": "49d7b16a533293eb"
+},
+{
+"num": "par. 1.2.5",
+"rubrica": "The supervised entity’s risk assessment methodology should be subject to",
+"testo": "1.2.5 The supervised entity’s risk assessment methodology should be subject to\ncontinuous evolution and improvement.\nComponent 1.3 Control Activities\n19. The control activities should be preventative, detective, corrective or deterrent in nature.",
+"hash": "15301956a1b7caf6"
+},
+{
+"num": "par. 1.3.1",
+"rubrica": "Segregation of Duties – The supervised entity should ensure appropriate",
+"testo": "1.3.1 Segregation of Duties – The supervised entity should ensure appropriate\nsegregation of duties to manage risks of conflicts of interest, fraud and human\nerror. The segregation of duties should ensure that staff members responsible\nfor carrying out a task are not solely responsible for approving the outcome of\nits exercise. In particular, staff members responsible for the development,\nimplementation or approval of a task/work item are not solely responsible for\nvalidating, assessing and reviewing it. 22 Where this cannot be avoided, this\nshould be mitigated by staff members not being exclusively responsible for the\nactivity. 23",
+"hash": "5504285641e4c3dc"
+},
+{
+"num": "par. 1.3.2",
+"rubrica": "Documentation – The supervised entity should document its policies and",
+"testo": "1.3.2 Documentation – The supervised entity should document its policies and\nprocedures covering all areas of their business activities subject to the\nprovisions of the relevant Regulations.\nFor example, staff members responsible for system development activities should not be involved in database administration,\nIT operations, and IT systems and network administration and maintenance.For CRAs, (i) persons conducting the analysis of a\ncredit rating should not be solely responsible for the approval of the credit rating, (ii) persons responsible for the development of\ncredit rating methodologies should not be solely responsible for their approval; (iii) persons responsible for the validation,\nassessment or review of a credit rating methodology should not be solely responsible for the approval of the validation,\nassessment or review.\nFor instance, through a four-eyes check.",
+"hash": "14957686e12702f4"
+},
+{
+"num": "par. 1.3.3",
+"rubrica": "Documented Controls and Control Testing – The supervised entity should",
+"testo": "1.3.3 Documented Controls and Control Testing – The supervised entity should\ndocument the key controls in place to ensure adherence to its policies and\nprocedures established pursuant to the relevant Regulations.",
+"hash": "2fea583b44b498b2"
+},
+{
+"num": "par. 1.3.4",
+"rubrica": "Designation of Responsibilities – The supervised entity should designate in a",
+"testo": "1.3.4 Designation of Responsibilities – The supervised entity should designate in a\nclear and defined manner the roles or functions responsible for carrying out\ncontrols relating to the obligations under the relevant Regulations and specify\ntheir respective roles and responsibilities. In doing so, the supervised entity\nshould distinguish between day-to-day controls at the business level and those\ncarried out by specific control functions.",
+"hash": "7e0888fde5e1f4d5"
+},
+{
+"num": "par. 1.3.5",
+"rubrica": "Authorisations and Approvals – The supervised entity should have authorisation",
+"testo": "1.3.5 Authorisations and Approvals – The supervised entity should have authorisation\nprocesses or mechanisms to ensure that only authorised individuals have\naccess to information and tools on a need to know and least privilege basis.\nThe supervised entity should also have processes or mechanisms in all\nbusiness activities to ensure that activities are approved and executed only by\nstaff members acting within the scope of their authority.24",
+"hash": "ced9b07c87aa640f"
+},
+{
+"num": "par. 1.3.6",
+"rubrica": "Verifications, validations, reconciliations and reviews – The supervised entity",
+"testo": "1.3.6 Verifications, validations, reconciliations and reviews – The supervised entity\nshould take measures to detect and act upon inappropriate, non-authorised,\nerroneous or fraudulent activities in a timely manner.25",
+"hash": "3671f457aa073b61"
+},
+{
+"num": "par. 1.3.7",
+"rubrica": "Information and Communication Technology (ICT) General Controls (only for",
+"testo": "1.3.7 Information and Communication Technology (ICT) General Controls (only for\nsupervised entities not subject to DORA) – The supervised entity should\nimplement strategies, policies and procedures that ensure the digital\noperational resilience of the ICT systems of the supervised entity in supporting\nthe supervised entity’s business processes.\nThe supervised entity should design its ICT controls and solutions\nproportionately. Therefore, ICT controls will vary among organisations\ndepending on the nature, scale and complexity of the underlying business\nprocesses and of the relevant functions supported by those systems.\nSupervised entities should ensure that they have sufficient controls to ensure\ndata quality, in terms of availability, confidentiality and integrity of data, including\ndata validation, processing controls and data file control procedures.\nFor instance, for CRAs, only the persons designated as responsible for the respective tasks should carry out the credit rating\nprocess, the validation of methodologies and the review of the results of validation.\nThis includes data validation and input controls, reviews of lists for authorised access to confidential information. For CRAs,\nsuch controls apply to, credit rating activities and to processes underlying these activities such as credit methodology/model\nvalidation.\nThe supervised entity should establish relevant information security\nmanagement system and related control activities. As part of this, a supervised\nentity should determine the necessary controls to ensure the authenticity,\nconfidentiality, integrity and availability of information as it is processed from\nsource to ultimate user.\nThe supervised entity should establish and document all relevant ICT\nacquisition, development and maintenance processes control activities.\nComponent 1.4 Information and Communication",
+"hash": "cf125b08d040e485"
+},
+{
+"num": "par. 20",
+"rubrica": "Supervised entities should establish procedures for the downward sharing of accurate,",
+"testo": "20. Supervised entities should establish procedures for the downward sharing of accurate,\ncomplete and good quality information to staff and external stakeholders. Supervised\nentities should also establish procedures for the regular reporting of information about the\ninternal control system and activities to the Management Body and Executive Senior\nManagement including information relating to behaviour and adherence to internal\ncontrols.",
+"hash": "57e761287ae28222"
+},
+{
+"num": "par. 1.4.1",
+"rubrica": "The supervised entity should ensure appropriate internal and external",
+"testo": "1.4.1 The supervised entity should ensure appropriate internal and external\ncommunication, sharing accurate, complete and of good quality information in\na timely manner to the market, clients, users of its products and services and\nregulators.",
+"hash": "5dc611051ce5851d"
+},
+{
+"num": "par. 1.4.2",
+"rubrica": "The supervised entity should establish upward communication channels,",
+"testo": "1.4.2 The supervised entity should establish upward communication channels,\nincluding a whistleblowing procedure, to enable the escalation of material\ninternal control issues to the Management Body and Executive Senior\nManagement. The Management Body and Executive Senior Management\nshould also receive regular updates about the internal control system and\nactivities, including on information security. The supervised entity should have\nescalation procedures in case of material disagreement between IC Functions\nand operating units.",
+"hash": "c91b19b57790f256"
+},
+{
+"num": "par. 1.4.3",
+"rubrica": "The supervised entity should establish downward communication channels",
+"testo": "1.4.3 The supervised entity should establish downward communication channels\nfrom the Management Body, Executive Senior Management and control\nfunctions to the staff. This should encompass regular updates on the objectives\nand responsibilities for internal control, communication of identified compliance\nor information security issues and presentations and training on policies and\nprocedures.\nComponent 1.5 Monitoring Activities\n21. Supervised entities should ensure that they undertake monitoring activities that will help\nascertain whether the components of a supervised entity’s internal control system are\npresent and functioning effectively.",
+"hash": "794368482be0d4ed"
+},
+{
+"num": "par. 1.5.1",
+"rubrica": "The supervised entity should ensure evaluations of the internal control system",
+"testo": "1.5.1 The supervised entity should ensure evaluations of the internal control system\nare carried out at different business levels of the supervised entity such as\nbusiness lines, control functions and internal audit or independent assessment\nfunctions.\n1.5.2 Monitoring activities should be designed and carried out in a way that enables\nthe supervised entity to check whether the supervised entity meets its legal and\nregulatory requirements, including adhering to its internal codes of conduct,\npolicies and procedures. This includes the supervised entity’s information\nsecurity policies and procedures.\n1.5.3 The evaluations of internal control systems should be carried out on a regular\nor thematic basis or through a mix of both.",
+"hash": "197efb2d07d7a7de"
+},
+{
+"num": "par. 1.5.4",
+"rubrica": "The supervised entities should build ongoing evaluations into the business",
+"testo": "1.5.4 The supervised entities should build ongoing evaluations into the business\nprocesses and adjust them to changing conditions.",
+"hash": "baafd9f939150bdf"
+},
+{
+"num": "par. 1.5.5",
+"rubrica": "The supervised entities should ensure that deficiencies identified from",
+"testo": "1.5.5 The supervised entities should ensure that deficiencies identified from\nmonitoring evaluations and the required remediation actions are reported to the\nManagement Body and Executive Senior Management who should then\nmonitor the timely implementation of corrective action(s).\n1.5.6 In the case of outsourcing, the supervised entity should allocate the task for\nmonitoring outsourced business processes to a member of staff. Supervised\nentities should ensure that sufficient information concerning objectives and\ndelivery expectations is provided to the service provider, and that due diligence\nis conducted prior to the appointment of the provider.",
+"hash": "ce30909f7c81af52"
+},
+{
+"num": "par. 22 (2)",
+"rubrica": "To ensure effective IC Functions, supervised entities should include the following",
+"testo": "22. To ensure effective IC Functions, supervised entities should include the following\ncomponents and characteristics in their policies, procedures and working practices.\nGeneral Principles",
+"hash": "727f04fa4d8f5013"
+},
+{
+"num": "par. 23",
+"rubrica": "ESMA considers that supervised entities’ IC functions should have sufficient resources",
+"testo": "23. ESMA considers that supervised entities’ IC functions should have sufficient resources\nand be staffed with individuals with sufficient expertise to discharge their duties. Staff\nworking in IC Functions should have sufficient technical knowledge of the supervised\nentity’s activities and the associated risks. Where a supervised entity has outsourced the\noperational tasks of an IC function to group level or to an external party, ESMA considers\nthat the supervised entity retains full responsibility for the activities of the outsourced IC\nfunction. Supervised entities should ensure that staff in charge of IC functions should be\nof an appropriate seniority to have the necessary authority to fulfil their responsibilities.\nFor example, staff members in charge of the Compliance, Risk Management, Internal\nAudit, Information Security Management, Review (for CRAs) and Oversight (for BMAs)\nFunctions should have unfettered access and report to the Management Body on a regular\nbasis.\n24. Activities may be carried out at group level or by other legal entities within a corporate\nstructure provided that the group structure does not impede the ability of a supervised\nentity’s Management Body to provide oversight, and the ability of Executive Senior\nManagement to effectively manage its risks, or ESMA’s ability to effectively supervise the\nsupervised entity. In all cases Guideline 1.1.4 applies.",
+"hash": "43d70834f9964f52"
+},
+{
+"num": "par. 25",
+"rubrica": "To ensure the independence of a supervised entity’s IC functions, ESMA expects",
+"testo": "25. To ensure the independence of a supervised entity’s IC functions, ESMA expects\nsupervised entities to consider the following principles when establishing the roles and\nresponsibilities of their IC Functions:\ni. IC functions should be organisationally separate from the functions/activities they\nare assigned to monitor, audit or control;\nii. IC functions should not perform any operational tasks that fall within the scope of\nthe business activities they are intended to monitor, audit or control;\niii. The staff member in charge of an IC function should not report to a person who has\nresponsibility for managing the activities the IC function monitors, audits or controls;\n26. Staff performing responsibilities relating to IC functions should have access to relevant\ninternal or external training to ensure the adequacy of their skills for the performance of\nthe tasks.\nProportionality – Internal Control Functions\n27. While all supervised entities are expected to demonstrate the characteristics of effective\nIC Functions outlined in these Guidelines, ESMA calibrates its expectations according to\nthe nature, scale and complexity of a supervised entity, as described in Section 3.4 of\nthese Guidelines.\n28. This section sets out in more detail how ESMA takes into account proportionality in its\nsupervision of IC Functions.\nSegregation of duties\n29. Segregation of duties should be built into the development of control activities. There may\nhowever be some instances where Union law does not require segregation of duties and\nsuch segregation is not practical considering the supervised entity’s nature, scale and\ncomplexity. In this case, alternative controls may be more suitable. Where other controls\nare used, the supervised entities should document the rationale for the arrangement,\nidentify the possible risks, implement compensating controls to address them and\ndemonstrate that the arrangement does not impair the control environment.\nResources\n30. For some supervised entities, it may not be proportionate to have full time staff in all\nfunctions given their nature, scale and complexity. In these instances, a supervised entity\nmay choose to scale the hours of resource to match control activities or outsource the\nactivity.\nSpecialisation within Functions\n31. As a supervised entity grows, and its control environment matures, it should use staff\nspecialisation to benefit from staff expertise in key processes or risk areas. Supervised\nentities of a certain nature, scale and complexity should have in place dedicated\nmonitoring or investigation teams within their Compliance Function.\nMaturity of control activities\n32. The maturity of control activities (i.e. manual, hybrid, automated, and in some instances,\nincorporating Artificial Intelligence tools) should reflect the nature, scale and complexity\nand overall risk profile of a supervised entity. For supervised entities of a certain nature,\nscale and complexity, there should be a higher degree of automated controls as well as a\ngreater integration between the systems of control functions to optimise monitoring\nactivities and a supervised entity’s reporting of Management Information to Executive\nSenior Management and the Management Body.\nComponent 2.1 Compliance Function\n33. The Compliance Function of a supervised entity is responsible for monitoring and reporting\non compliance of the supervised entity and its employees with its obligations under the\nrelevant Regulation. The Compliance Function is responsible for following changes in the\nlaws and regulations applicable to its activities. The Compliance Function is also\nresponsible for advising the Management Body on laws, rules, regulations and standards\nthat the supervised entity needs to comply with and assess, in conjunction with other\nrelevant functions, the possible impact of any changes in the legal or regulatory\nenvironment on the supervised entity’s activities.",
+"hash": "d5b1cee133498027"
+},
+{
+"num": "par. 2.1.1",
+"rubrica": "The Compliance Function should perform its functions independently of the",
+"testo": "2.1.1 The Compliance Function should perform its functions independently of the\nbusiness lines and should provide regular reports to the supervised entity’s\nManagement Body and, where relevant, directly to the INEDs.",
+"hash": "f4d8f31c44f4804d"
+},
+{
+"num": "par. 2.1.2",
+"rubrica": "The Compliance Function should advise and assist staff members to comply",
+"testo": "2.1.2 The Compliance Function should advise and assist staff members to comply\nwith the obligations under the relevant Regulation. The Compliance Function\nshould be proactive in identifying risks and possible non-compliance through\nthe timely monitoring and assessment of activities, as well as follow-up on\nremediation.",
+"hash": "0be899052be94488"
+},
+{
+"num": "par. 2.1.3",
+"rubrica": "The Compliance Function should ensure that compliance monitoring is carried",
+"testo": "2.1.3 The Compliance Function should ensure that compliance monitoring is carried\nout through a structured and well-defined compliance-monitoring programme.\nThe scope of Compliance activities should cover all the business and IT\nprocesses and systems that could affect the supervised entity’s compliance with\nthe relevant Regulation.",
+"hash": "a2eb2a6aa3cfb2ed"
+},
+{
+"num": "par. 2.1.4",
+"rubrica": "The Compliance Function, where appropriate in conjunction with other relevant",
+"testo": "2.1.4 The Compliance Function, where appropriate in conjunction with other relevant\nfunctions, should assess the possible impact of any changes in the legal or\nregulatory environment on the supervised entity’s activities and communicate,\nas appropriate, with the Risk Management Function on the supervised entity’s\ncompliance risk in a timely manner.",
+"hash": "f4f3e290a2d8c7d5"
+},
+{
+"num": "par. 2.1.5",
+"rubrica": "The Compliance Function should ensure that compliance policies are followed",
+"testo": "2.1.5 The Compliance Function should ensure that compliance policies are followed\nand should report to the Management Body and Executive Senior Management\non the supervised entity’s compliance risk.",
+"hash": "305717094a9e4ee9"
+},
+{
+"num": "par. 2.1.6",
+"rubrica": "The Compliance Function should cooperate with the Risk Management",
+"testo": "2.1.6 The Compliance Function should cooperate with the Risk Management\nFunction to exchange information necessary for their respective tasks.\n2.1.7 The findings of the Compliance Function should be taken into account by the\nManagement Body and Executive Senior Management as well as by the Risk\nManagement Function within their risk-assessment processes.\nComponent 2.2 Risk Management Function\n34. The Risk Management Function of a supervised entity is responsible for the development\nand implementation of the risk management framework.",
+"hash": "21fb12b93b119b51"
+},
+{
+"num": "par. 2.2.1",
+"rubrica": "The Risk Management Function should perform its functions independently of",
+"testo": "2.2.1 The Risk Management Function should perform its functions independently of\nthe business lines and units whose risks it oversees but should not be prevented\nfrom interacting with them.\n2.2.2 The Risk Management Function should ensure that all risks that could impact a\nsupervised entity’s ability to perform its obligations under the relevant\nRegulations, or its continued operation, are identified, assessed and measured.\nMaterial risks to these objectives should then be monitored, managed, mitigated\nand properly reported by and to the relevant units within the supervised entity\nin a timely manner.",
+"hash": "2dbe782073f81c32"
+},
+{
+"num": "par. 2.2.3",
+"rubrica": "The Risk Management Function should monitor the risk profile of the supervised",
+"testo": "2.2.3 The Risk Management Function should monitor the risk profile of the supervised\nentity against the supervised entity’s risk appetite to enable decision-making.",
+"hash": "df6c7c86e80ac3f3"
+},
+{
+"num": "par. 2.2.4",
+"rubrica": "The Risk Management Function should provide advice on proposals and risk",
+"testo": "2.2.4 The Risk Management Function should provide advice on proposals and risk\ndecisions made by business lines and inform the Management Body as to\nwhether those decisions are consistent with the supervised entity’s risk appetite\nand objectives.",
+"hash": "c5798f11aed06ffd"
+},
+{
+"num": "par. 2.2.5",
+"rubrica": "The Risk Management Function should recommend improvements to the risk",
+"testo": "2.2.5 The Risk Management Function should recommend improvements to the risk\nmanagement framework and amendments to risk policies and procedures\nwhere necessary. The Risk Management Function should revisit risk thresholds\nin accordance with any changes in the organisation’s risk appetite.\nComponent 2.3 Information Security Management Function (only for\nsupervised entities not subject to DORA)\n35. The information security management function of a supervised entity is responsible for the\ndevelopment and implementation of information security within the supervised entity. A\nsupervised entity should establish a function that promotes an information security culture\nwithin the supervised entity.",
+"hash": "3e0a37a3d52f6b6e"
+},
+{
+"num": "par. 2.3.1",
+"rubrica": "The Information Security Management Function should be responsible for",
+"testo": "2.3.1 The Information Security Management Function should be responsible for\nreviewing and monitoring the supervised entity’s compliance with the\nsupervised entity’s information security policies and procedures.",
+"hash": "7e5d49c231e70be9"
+},
+{
+"num": "par. 2.3.2",
+"rubrica": "The Information Security Management Function should manage the supervised",
+"testo": "2.3.2 The Information Security Management Function should manage the supervised\nentity’s information security activities.",
+"hash": "3c80ea9a70efb0cc"
+},
+{
+"num": "par. 2.3.3",
+"rubrica": "The Information Security Management Function should develop and deploy an",
+"testo": "2.3.3 The Information Security Management Function should develop and deploy an\ninformation security awareness program for personnel to enhance the security\nculture and develop a broad understanding of the supervised entity’s\ninformation security framework.",
+"hash": "2d67b35a45b5d292"
+},
+{
+"num": "par. 2.3.4",
+"rubrica": "The Information Security Management Function should report to and advise the",
+"testo": "2.3.4 The Information Security Management Function should report to and advise the\nManagement Body and Executive Senior Management on the status of the\ninformation security management system and risks (e.g., information about\ninformation security projects, information security incidents and the results of\ninformation security reviews).\nComponent 2.4 Internal Audit Function\n36. An Internal Audit Function of a supervised entity is responsible for providing an\nindependent, objective assurance and advisory activity designed to improve the\norganisation’s operations. It helps the organisation to accomplish its objectives by bringing\na systematic, disciplined approach to evaluate and improve the effectiveness of the\ninternal control system.",
+"hash": "76c93981bbaab715"
+},
+{
+"num": "par. 2.4.1",
+"rubrica": "The Internal Audit Function should perform its functions independently of the",
+"testo": "2.4.1 The Internal Audit Function should perform its functions independently of the\nbusiness lines and other IC Functions. It should be governed by an internal\naudit charter that defines its role and responsibilities and is subject to oversight\nby the Management Body.",
+"hash": "2503e25ed844d2c4"
+},
+{
+"num": "par. 2.4.2",
+"rubrica": "The Internal Audit Function should follow a risk-based approach and adhere to",
+"testo": "2.4.2 The Internal Audit Function should follow a risk-based approach and adhere to\ninternational internal audit standards.",
+"hash": "8b1b817d345b2e25"
+},
+{
+"num": "par. 2.4.3",
+"rubrica": "The Internal Audit Function should independently review and provide objective",
+"testo": "2.4.3 The Internal Audit Function should independently review and provide objective\nassurance that the supervised entity’s activities, including outsourced activities,\ncomply with the supervised entity’s policies and procedures as well as with\napplicable legal and regulatory requirements.\n2.4.4 The Internal Audit Function should establish at least once a year, based on the\nannual internal audit control objectives, an audit plan which is subject to\noversight by the Management Body.",
+"hash": "87bc3b71aa63a8fa"
+},
+{
+"num": "par. 2.4.5",
+"rubrica": "The Internal Audit Function should provide regular reports to the independent",
+"testo": "2.4.5 The Internal Audit Function should provide regular reports to the independent\nmembers of the Management Body or to the Audit Committee, if in place.",
+"hash": "0a57d468d990e6ca"
+},
+{
+"num": "par. 2.4.6",
+"rubrica": "The Internal Audit Function should communicate its audit recommendations in",
+"testo": "2.4.6 The Internal Audit Function should communicate its audit recommendations in\na clear and consistent way that allows the Management Body and Executive\nSenior Management to understand the materiality of recommendations and\nprioritise accordingly.",
+"hash": "79f547f582804eab"
+},
+{
+"num": "par. 2.4.7",
+"rubrica": "Internal audit recommendations should be subject to a formal follow-up",
+"testo": "2.4.7 Internal audit recommendations should be subject to a formal follow-up\nprocedure by the appropriate levels of management to report on and ensure\ntheir effective and timely implementation.\nComponent 2.5 Review Function (for CRAs only)\n37. The Review Function of a CRA is responsible for reviewing credit rating methodologies on\nat least an annual basis. The CRA’s Review Function is also responsible for the validation\nand review of new methodologies, and any changes to existing methodologies.",
+"hash": "2a58aa9a93c766cb"
+},
+{
+"num": "par. 2.5.1",
+"rubrica": "The Review Function should perform its functions independently of the",
+"testo": "2.5.1 The Review Function should perform its functions independently of the\nbusiness lines that are responsible for credit rating activities and should provide\nregular reports to the CRA’s INEDs.",
+"hash": "1d26faeafa5eb635"
+},
+{
+"num": "par. 2.5.2",
+"rubrica": "The CRA’s shareholders or staff involved in business development should not",
+"testo": "2.5.2 The CRA’s shareholders or staff involved in business development should not\nperform the tasks of the Review Function.\n2.5.3 Analytical staff should not participate in the approval of new, or validation and\nreview of existing methodologies, models and key rating assumptions which\nthey have developed.\n2.5.4 Review function staff should either be solely responsible or have the majority of\nthe voting rights in the committees that are responsible for approving\nmethodologies, models and key rating assumptions.",
+"hash": "ac823b136e1cc800"
+},
+{
+"num": "par. 2.5.5",
+"rubrica": "The Review Function staff responsible for the validation and/or review of a",
+"testo": "2.5.5 The Review Function staff responsible for the validation and/or review of a\nmethodology, and that are also involved in its development phase, should not\nbe solely responsible or have the majority of voting rights in the methodology\napproval committees.\n2.5.6 In case of outsourcing of the Review Function, the CRA should take into\naccount Guideline 1.5.6. Additionally, the CRA should have suitable internal\ncontrol mechanisms to ensure that it consistently adheres to regulatory\nrequirements and maintains appropriate analytical quality standards.\nComponent 2.6 Oversight Function (for BMAs only)26\n38. The Oversight Function oversees the main aspects of the provision of benchmarks. This\nincludes, but is not limited to, the review of the benchmark's definition and methodology,\nthe management of third parties involved in the provision of the benchmark, assessing\ninternal and external audits or reviews of the administrator's control framework, and\nreporting to the relevant competent authorities any relevant misconduct.",
+"hash": "2ac527460d2e27b4"
+},
+{
+"num": "par. 2.6.1",
+"rubrica": "The BMA Oversight Function maintains its independence from any",
+"testo": "2.6.1 The BMA Oversight Function maintains its independence from any\nManagement Body or function of the BMA and any external party of the BMA.\nIndependence assumes that members of the Oversight Function are not subject\nto conflicts of interest between their activities as members of the Oversight\nFunction and their other activities. The BMA should implement an internal\ncontrol operating framework to prevent and mitigate any potential conflict of\ninterests.",
+"hash": "33a270fe7d4b2459"
+},
+{
+"num": "par. 2.6.2",
+"rubrica": "The BMA should have clear policies and procedures regarding the set-up and",
+"testo": "2.6.2 The BMA should have clear policies and procedures regarding the set-up and\nresponsibilities of the Oversight Function and its members, including policies\nand procedures for benchmarks methodology updates and data integrity\nreviews.",
+"hash": "85c1a25d9695d430"
+},
+{
+"num": "par. 2.6.3",
+"rubrica": "The BMA Oversight Function should regularly perform a self-assessment to",
+"testo": "2.6.3 The BMA Oversight Function should regularly perform a self-assessment to\nevaluate its effectiveness and the suitability of its members for the purpose of\nthe function and to identify potential conflicts of interest and propose areas of\nimprovement, if necessary.",
+"hash": "797111ddf91ecce8"
+},
+{
+"num": "par. 2.6.4",
+"rubrica": "The BMA Oversight Function should maintain a defined and regular",
+"testo": "2.6.4 The BMA Oversight Function should maintain a defined and regular\ncommunication channel with the Management Body, Executive Senior\nManagement, and other key functions. The BMA Oversight Function should be\nNon-significant BMAs who apply article 26 of the BMR are expected to apply these Guidelines proportionally to the requirements\nof the article 26.\nalso able to access and challenge Management Information and receive\nupdates regarding the status of remedial actions following internal and external\naudits, risk, and compliance reports.",
+"hash": "930e41a43fe952f2"
+},
+{
+"num": "par. 2.6.5",
+"rubrica": "The BMA Oversight Function should maintain a defined communication channel",
+"testo": "2.6.5 The BMA Oversight Function should maintain a defined communication channel\nwith the relevant competent authorities, including reporting any misconduct or\nviolation by administrators or contributors.",
+"hash": "4e2aebaeeecf32a6"
+}
+]
+}
