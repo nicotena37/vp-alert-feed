@@ -1,6 +1,6 @@
 """Unisce i risultati dell'associazione Tematica/Ambito: blocchi base, poi incerti e atti grandi (che li sostituiscono)."""
 import json, glob, collections
-tax = json.load(open("../tassonomia.json"))
+tax = json.load(open("../tassonomia_estesa.json"))
 err = {v["id"] for v in json.load(open("../corpus_completo.json")) if "celex_errato" in v}
 tutti = {}
 for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl"):
