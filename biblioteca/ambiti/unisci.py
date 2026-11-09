@@ -3,7 +3,7 @@ import json, glob, collections
 tax = json.load(open("../tassonomia_estesa.json"))
 err = {v["id"] for v in json.load(open("../corpus_completo.json")) if "celex_errato" in v}
 tutti = {}
-for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl", "rev_*_output.jsonl", "fp_*_output.jsonl"):
+for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.jsonl", "bce_*_output.jsonl", "consob_*_output.jsonl", "giganti_*_output.jsonl", "rev_*_output.jsonl", "fp_*_output.jsonl", "orfani_*_output.jsonl", "tesoreria_*_output.jsonl"):
     for f in sorted(glob.glob(pat)):
         for l in open(f):
             if l.strip():
@@ -22,6 +22,8 @@ for i in err:
     if tutti.get(i, {}).get("_da") != "bce": tutti.pop(i, None)
 res, inc, fuori = {}, {}, []
 for i, o in tutti.items():
+    for a in o["ambiti"]:
+        if a["t"] == "Mercati Finanziari": a["t"] = "Mercati finanziari"
     amb = [a for a in o["ambiti"] if a["a"] in tax.get(a["t"], {})]
     if o["incerto"]: inc[i] = o.get("nota", ""); continue
     if not amb: fuori.append(i); continue
