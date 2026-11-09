@@ -7,7 +7,9 @@ for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.
     for f in sorted(glob.glob(pat)):
         for l in open(f):
             if l.strip():
-                o = json.loads(l); o["_da"] = f.split("_")[0]; tutti[o["id"]] = o
+                o = json.loads(l); o["_da"] = f.split("_")[0]
+                if o["_da"] == "rev" and o.get("incerto") and o.get("ambiti"): o["incerto"] = False
+                tutti[o["id"]] = o
 for i in err:
     if tutti.get(i, {}).get("_da") != "bce": tutti.pop(i, None)
 res, inc, fuori = {}, {}, []
