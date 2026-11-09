@@ -256,18 +256,20 @@ async function init(){
   renderTem(); renderLivelli(); if(Object.keys(S.norme).length){renderNorme();} if(S.adem.length){renderAdem();renderRiep()}
   renderSteps(); if(S.adem.length)vai(6); else if(Object.keys(S.norme).length) vai(3);
 }
-function conteggi(){const c={};for(const id in IDX){if(IDX[id][3])continue;for(const [t,a,r] of IDX[id][4]){if(r!=="P")continue;const k=t+"||"+a;c[k]=(c[k]||0)+1}}return c}
+function conteggi(){const c={},tot={};for(const id in IDX){for(const [t,a,r] of IDX[id][4]){const k=t+"||"+a;tot[k]=(tot[k]||0)+1;if(r==="P"&&!IDX[id][3])c[k]=(c[k]||0)+1}}c.__tot=tot;return c}
 function renderTem(){
   const c=conteggi(), f=$("#fAmb").value.trim().toLowerCase();
   const html=Object.keys(TAX).sort((a,b)=>a.localeCompare(b,"it")).map(t=>{
     const am=TAX[t].filter(a=>!f||(t+" "+a).toLowerCase().includes(f)); if(!am.length)return"";
     const tot=am.reduce((s,a)=>s+(c[t+"||"+a]||0),0), sel=am.some(a=>S.amb.has(t+"||"+a));
-    return `<details class="tem" ${f||sel?"open":""}><summary>${esc(t)} <span class="c">${tot}</span></summary>${am.map(a=>{const k=t+"||"+a;return `<label><input type="checkbox" data-amb="${esc(k)}" ${S.amb.has(k)?"checked":""}> <span>${esc(a)} ${NUOVI.has(a)?'<span class="new">nuovo</span>':''}</span><span class="c">${c[k]||0}</span></label>`}).join("")}</details>`}).join("");
+    return `<details class="tem" ${f||sel?"open":""}><summary>${esc(t)} <span class="c">${tot}</span></summary>${am.map(a=>{const k=t+"||"+a;const vuoto=!c.__tot[k];return `<label ${vuoto?'title="Nessun atto in biblioteca per questo ambito" style="opacity:.5"':""}><input type="checkbox" data-amb="${esc(k)}" ${S.amb.has(k)?"checked":""} ${vuoto&&!S.amb.has(k)?"disabled":""}> <span>${esc(a)} ${NUOVI.has(a)?'<span class="new">nuovo</span>':''}</span><span class="c">${c[k]||0}</span></label>`}).join("")}</details>`}).join("");
   $("#tem").innerHTML=html||'<p class="status">Nessun ambito con questo nome.</p>'; updAmb()}
-function updAmb(){$("#selAmb").textContent=S.amb.size?`${S.amb.size} ambiti scelti`:"";$("#go2").disabled=!S.amb.size;renderSteps()}
+function updAmb(){$("#selAmb").textContent=S.amb.size?`${S.amb.size} ambiti scelti · ${candidati().length} norme candidate`:"";updCand();$("#go2").disabled=!S.amb.size;renderSteps()}
 $("#fAmb").addEventListener("input",renderTem);
 $("#tem").addEventListener("change",e=>{const k=e.target.dataset.amb;if(!k)return;e.target.checked?S.amb.add(k):S.amb.delete(k);salva();updAmb()});
-$("#go2").onclick=()=>vai(2);
+$("#go2").onclick=()=>{updCand();vai(2)};
+function updCand(){const n=candidati().length;$("#st2").className="status";$("#st2").textContent=`${n} norme candidate con le opzioni attuali.`}
+$("#incS").addEventListener("change",updCand);$("#incAb").addEventListener("change",updCand);
 
 /* ---------- passo 2: lettura ---------- */
 function candidati(){const incS=$("#incS").checked||["prescrizioni","puntuali"].includes(S.livello), incAb=$("#incAb").checked, out=[];
@@ -279,7 +281,7 @@ function estratto(arts,lista,max){const set=new Set(lista.map(String));let sel=a
 let ctl1=null;
 $("#bLeggi").onclick=async()=>{
   const C=candidati(), ogg=$("#ogg").value.trim(); S.oggetto=ogg; const st=$("#st2"); st.className="status";
-  if(!C.length){st.textContent="Nessuna norma associata a questi ambiti.";return}
+  if(!C.length){st.textContent="Nessuna norma in vigore con questi ambiti come principali: spunta \"includi anche gli atti con ambito secondario\" o \"gli abrogati\", oppure torna al passo 1 e scegli altri ambiti.";return}
   S.norme={}; if(!ogg||!sample){for(const c of C.slice(0,60))S.norme[c.id]={sel:true,pert:"si",motivo:"associata all'ambito scelto",art:c.art,ruolo:c.ruolo};
     st.textContent=sample?"":"Claude non è disponibile in questa vista: ho preso le prime 60 norme degli ambiti scelti, senza lettura.";salva();renderNorme();vai(3);return}
   const lim=C.slice(0,320); if(C.length>320)st.textContent=`Gli atti sono ${C.length}: in questa prova ne leggo i primi 320 (prima i principali).`;
