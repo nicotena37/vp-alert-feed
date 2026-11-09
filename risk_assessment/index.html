@@ -134,7 +134,7 @@ dialog::backdrop{background:rgb(0 0 0 / .35)}
 
 <section class="step" data-s="4" id="s4" hidden>
   <h2><span class="n">4</span>Parti di testo da analizzare</h2>
-  <p class="hint">Per ogni norma Claude legge l'indice degli articoli e degli allegati e sceglie le parti che toccano l'oggetto. Gli adempimenti saranno creati solo da queste parti: controlla e togli o aggiungi quello che serve.</p>
+  <p class="hint">Per ogni norma Claude legge il testo completo, articoli e allegati, e sceglie le parti con regole sull'oggetto (le definizioni sono escluse). Gli adempimenti saranno creati solo da queste parti: controlla e togli o aggiungi quello che serve.</p>
   <div class="row"><button class="btn" id="bParti" type="button">Individua le parti di testo</button><button class="btn ghost" id="bStop3" type="button" hidden>Ferma</button><span class="status" id="stParti"></span></div>
   <div class="list" id="parti"></div>
   <div class="row"><button class="btn" id="go5" type="button">Avanti</button></div>
@@ -362,10 +362,11 @@ $("#parti").addEventListener("change",e=>{const id=e.target.dataset.pn;if(!id)re
 $("#bParti").onclick=async()=>{const st=$("#stParti");st.className="status";const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel);
   ctl3=new AbortController();$("#bStop3").hidden=false;$("#bParti").disabled=true;
   try{for(let k=0;k<ids.length;k++){const id=ids[k],n=S.norme[id],arts=await testoAtto(id);
-      if(!S.oggetto||arts.length<=3||!sample){n.parti=arts.map(a=>String(a[0]));n.partiMotivo=!sample?"Claude non disponibile: prese tutte le parti.":"Norma breve: prese tutte le parti.";continue}
+      if(!S.oggetto||!sample){n.parti=arts.map(a=>String(a[0]));n.partiMotivo=!sample?"Claude non disponibile: prese tutte le parti.":"Nessun oggetto indicato: prese tutte le parti.";continue}
       st.textContent=`Leggo l'indice: norma ${k+1} di ${ids.length} — ${att(id).tit.slice(0,60)}…`;const scelte=[],motivi=[];
-      for(let i=0;i<arts.length;i+=150){const idx=arts.slice(i,i+150).map(a=>`[${a[0]}] ${a[1]||""} — ${a[2].replace(/\s+/g," ").slice(0,220)}`).join("\n");
-        const r=await sample.json(`Sei un esperto di compliance bancaria. Oggetto del risk assessment: "${S.oggetto}".\nNorma: "${att(id).tit}".\nQui sotto l'indice delle sue parti (articoli e allegati, con l'inizio del testo). Scegli SOLO le parti che contengono regole sull'oggetto, comprese definizioni e allegati indispensabili per capirle. Se nessuna parte tocca l'oggetto restituisci una lista vuota.\nRispondi SOLO con JSON: {"parti":["5","6","Allegato I"],"motivo":"una frase"}\n\n${idx}`,{modelTier:"quick",signal:ctl3.signal});
+      const lotti=[];let curL=[],len=0;for(const a of arts){const t=`[${a[0]}] ${a[1]||""}\n${a[2]}\n\n`;if(len+t.length>150000&&curL.length){lotti.push(curL);curL=[];len=0}curL.push(t.slice(0,150000));len+=Math.min(t.length,150000)}if(curL.length)lotti.push(curL);
+      for(let i=0;i<lotti.length;i++){st.textContent=`Claude legge il testo completo: norma ${k+1} di ${ids.length}${lotti.length>1?`, parte ${i+1} di ${lotti.length}`:""} — ${att(id).tit.slice(0,60)}…`;
+        const r=await sample.json(`Sei un esperto di compliance bancaria. Oggetto del risk assessment: "${S.oggetto}".\nNorma: "${att(id).tit}".\nLeggi per intero il testo qui sotto (articoli e allegati, ognuno preceduto dal suo numero tra parentesi quadre) e scegli SOLO le parti che contengono regole, obblighi o divieti sull'oggetto. Escludi le definizioni, l'ambito di applicazione generale, l'entrata in vigore e le parti che non toccano l'oggetto. Se nessuna parte tocca l'oggetto restituisci una lista vuota.\nRispondi SOLO con JSON: {"parti":["5","6","Allegato I"],"motivo":"una frase"}\n\n${lotti[i].join("")}`,{modelTier:"quick",signal:ctl3.signal});
         for(const p of (r?.parti||[]))scelte.push(String(p).replace(/^(art\.?|articolo)\s*/i,""));if(r?.motivo)motivi.push(String(r.motivo))}
       const valide=new Set(arts.map(a=>String(a[0])));n.parti=[...new Set(scelte)].filter(p=>valide.has(p));n.partiMotivo=motivi.join(" ");salva()}
     const vuote=ids.filter(i=>!S.norme[i].parti.length).length;
