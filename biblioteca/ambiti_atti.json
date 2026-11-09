@@ -5778,76 +5778,117 @@
 "ambito": "Gestione dei rischi",
 "ruolo": "principale",
 "articoli": [
-"27",
-"28",
-"29",
-"34",
-"44",
-"45",
-"45-bis",
-"49"
+"Art. 75-86 (valutazione attivita e passivita, riserve tecniche)",
+"Art. 87-99 (fondi propri)",
+"Art. 101-127 (requisito patrimoniale di solvibilita, modelli interni)",
+"Art. 128-143 (requisito patrimoniale minimo, deterioramento, risanamento)",
+"Art. 144-bis-144-quinquies (gestione del rischio di liquidita)",
+"Art. 45 (valutazione interna del rischio e della solvibilita)"
 ],
-"motivo": "Principi di vigilanza, gestione dei rischi e valutazione interna del rischio e della solvibilità (Solvency II)"
-},
-{
-"tematica": "Governance",
-"ambito": "Sistema dei controlli interni",
-"ruolo": "secondario",
-"articoli": [
-"46",
-"47",
-"48"
-],
-"motivo": "Controllo interno, audit interno e funzione attuariale"
+"motivo": "quadro Solvency II: requisiti patrimoniali, riserve, fondi propri e gestione dei rischi"
 },
 {
 "tematica": "Governance",
 "ambito": "Governo societario",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"40",
-"41",
-"42",
-"43"
+"Art. 40 (responsabilita dell'organo amministrativo)",
+"Art. 41 (requisiti generali di governance)",
+"Art. 42-43 (competenza, onorabilita)",
+"Art. 246 (governance a livello di gruppo)"
 ],
-"motivo": "Requisiti di governance, competenza e onorabilità degli esponenti aziendali"
+"motivo": "requisiti di governance e idoneita degli esponenti"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "principale",
+"articoli": [
+"Art. 44 (gestione dei rischi)",
+"Art. 46 (controllo interno)",
+"Art. 47 (audit interno)",
+"Art. 48 (funzione attuariale)"
+],
+"motivo": "sistema di gestione dei rischi e funzioni di controllo"
 },
 {
 "tematica": "Governance",
 "ambito": "Vigilanza",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"35",
-"36",
-"38"
+"Art. 27-37 (principi, poteri e riesame della vigilanza)",
+"Art. 61-71 (comunicazioni, partecipazioni qualificate, scambio di informazioni)"
 ],
-"motivo": "Poteri di vigilanza, informazioni alle autorità, esternalizzazione"
+"motivo": "poteri, principi e cooperazione della vigilanza"
 },
 {
 "tematica": "Governance",
 "ambito": "Procedimenti autorizzativi",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"14",
-"15",
-"18",
-"23",
-"24",
-"25"
+"Art. 14-25 (principio di autorizzazione, condizioni, rifiuto)"
 ],
-"motivo": "Autorizzazione all'accesso ed esercizio dell'attività assicurativa"
+"motivo": "autorizzazione all'accesso e all'esercizio dell'attivita assicurativa"
 },
 {
-"tematica": "ESG e Sostenibilità",
-"ambito": "Disposizioni in materia ambientale e sostenibilità",
+"tematica": "Governance",
+"ambito": "Outsourcing",
 "ruolo": "secondario",
 "articoli": [
-"45-bis"
+"Art. 38 (vigilanza su funzioni e attivita esternalizzate)",
+"Art. 49 (esternalizzazione)"
 ],
-"motivo": "Analisi degli scenari dei cambiamenti climatici"
+"motivo": "regole di esternalizzazione e vigilanza sui fornitori"
+},
+{
+"tematica": "Segnalazioni di Vigilanza",
+"ambito": "Segnalazione all'autorità di vigilanza competente",
+"ruolo": "secondario",
+"articoli": [
+"Art. 35 (informazioni da fornire a fini di vigilanza)",
+"Art. 51-56 (relazione relativa alla solvibilita e alla condizione finanziaria)"
+],
+"motivo": "obblighi informativi periodici verso le autorita"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
+"ruolo": "secondario",
+"articoli": [
+"Art. 245 (operazioni infragruppo)",
+"Art. 204 (conflitto di interessi nella tutela giudiziaria)"
+],
+"motivo": "vigilanza sulle operazioni infragruppo e conflitti"
+},
+{
+"tematica": "Distribuzione assicurativa",
+"ambito": "Trasparenza",
+"ruolo": "secondario",
+"articoli": [
+"Art. 183-187 (informazioni generali e per i contraenti, condizioni di polizza)"
+],
+"motivo": "informazioni precontrattuali e condizioni per i contraenti"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Art. 75 (valutazione delle attivita e delle passivita)"
+],
+"motivo": "criteri di valutazione di attivita e passivita ai fini di solvibilita"
+},
+{
+"tematica": "Fisco",
+"ambito": "Obblighi informativi e dichiarativi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 157 (imposte sui premi)"
+],
+"motivo": "imposte sui premi assicurativi"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "UE-32009L0148": {
 "ambiti": [
@@ -9818,6 +9859,155 @@
 }
 ],
 "fonte_classificazione": "blocco"
+},
+"UE-32013R0575": {
+"ambiti": [
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "principale",
+"articoli": [
+"Art. 92-108 (fondi propri e requisiti di capitale)",
+"Art. 111-141 (rischio di credito, metodo standardizzato)",
+"Art. 142-191 (metodi IRB, sistemi di rating)",
+"Art. 221-241 (tecniche di attenuazione del rischio di credito)",
+"Art. 325-377 (rischio di mercato)",
+"Art. 382-390 (rischio CVA)",
+"Art. 392-403 (grandi esposizioni)",
+"Art. 411-430 (requisiti di liquidita LCR e NSFR)",
+"Art. 429 (leva finanziaria)",
+"Art. 312-324 (rischio operativo)"
+],
+"motivo": "requisiti patrimoniali e di liquidita, rischi di credito, mercato, operativo, controparte, leva e grandi esposizioni"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "principale",
+"articoli": [
+"Art. 431-455 (informativa su fondi propri, rischi, remunerazione, liquidita, leva)",
+"Art. 449-bis (rischi ESG)",
+"Art. 451-ter (esposizioni a cripto-attivita)"
+],
+"motivo": "Parte Otto: informativa al pubblico (Pillar 3)"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "principale",
+"articoli": [
+"Art. 242-270-quinquies (cartolarizzazioni, STS, trattamento prudenziale)",
+"Art. 506-ter (cartolarizzazioni di esposizioni deteriorate)"
+],
+"motivo": "trattamento prudenziale delle cartolarizzazioni"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obbligazioni garantite",
+"ruolo": "secondario",
+"articoli": [
+"Art. 129 (esposizioni sotto forma di obbligazioni garantite)",
+"Art. 503 (requisiti per obbligazioni garantite)"
+],
+"motivo": "trattamento prudenziale delle obbligazioni garantite"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Rapporti con la clientela",
+"ruolo": "secondario",
+"articoli": [
+"Art. 127 (esposizioni in stato di default)"
+],
+"motivo": "definizione di default"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Vigilanza in materia di NPL",
+"ruolo": "secondario",
+"articoli": [
+"Art. 47-bis-47-quater (esposizioni deteriorate e misure di concessione)",
+"Art. 269-bis (cartolarizzazioni di esposizioni deteriorate)"
+],
+"motivo": "trattamento prudenziale delle esposizioni deteriorate"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "secondario",
+"articoli": [
+"Art. 43-49 (investimenti significativi e deduzioni da strumenti di capitale)"
+],
+"motivo": "deduzione e trattamento delle partecipazioni in soggetti finanziari"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "secondario",
+"articoli": [
+"Art. 189-191 (governo societario, controllo del rischio di credito, audit interno)"
+],
+"motivo": "presidi interni per il rischio di credito"
+},
+{
+"tematica": "Governance",
+"ambito": "Procedimenti autorizzativi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 143-144 (autorizzazione all'uso del metodo IRB)",
+"Art. 283 (autorizzazione modelli interni CCR)"
+],
+"motivo": "autorizzazione all'uso di metodi interni"
+},
+{
+"tematica": "Segnalazioni di Vigilanza",
+"ambito": "Segnalazione all'autorità di vigilanza competente",
+"ruolo": "secondario",
+"articoli": [
+"Art. 99-100 (segnalazioni), Art. 415-416 (segnalazioni liquidita), Art. 430 (obblighi specifici di segnalazione)"
+],
+"motivo": "obblighi di segnalazione prudenziale"
+},
+{
+"tematica": "Remunerazione e incentivazione",
+"ambito": "Disposizioni in materia di remunerazione e incentivazione",
+"ruolo": "secondario",
+"articoli": [
+"Art. 450 (informativa sulla politica di remunerazione)"
+],
+"motivo": "informativa sulla politica di remunerazione"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Art. 466 (prima applicazione IFRS)",
+"Art. 473 e 473-bis (IAS 19, IFRS 9)"
+],
+"motivo": "riferimenti ai principi contabili nei fondi propri"
+},
+{
+"tematica": "ESG e Sostenibilità",
+"ambito": "Disposizioni in materia ambientale e sostenibilità",
+"ruolo": "secondario",
+"articoli": [
+"Art. 449-bis (rischi ESG)",
+"Art. 501-quater (esposizioni a fattori ambientali o sociali)"
+],
+"motivo": "trattamento prudenziale dei rischi ambientali e sociali"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Disposizioni in materia di asset digitali e tecnologie",
+"ruolo": "secondario",
+"articoli": [
+"Art. 5-bis (definizioni cripto-attivita)",
+"Art. 501-quinquies (trattamento prudenziale cripto-attivita)"
+],
+"motivo": "trattamento prudenziale delle cripto-attivita"
+}
+],
+"fonte_classificazione": "giganti"
 },
 "UE-32013R0678": {
 "ambiti": [
@@ -34537,46 +34727,82 @@
 "ambito": "Fallimento",
 "ruolo": "principale",
 "articoli": [
-"12",
-"18",
-"25-decies",
-"25-novies",
-"40",
-"41",
-"47",
-"49",
-"84",
-"97",
-"121",
-"125",
-"211",
-"214",
-"216"
+"Art. 2-25-undecies (composizione negoziata, misure protettive, accordi di ristrutturazione)",
+"Art. 56-64-quater (accordi di ristrutturazione, piani attestati)",
+"Art. 65-83 (sovraindebitamento, liquidazione controllata)",
+"Art. 84-120-quinquies (concordato preventivo)",
+"Art. 121-277 (liquidazione giudiziale)",
+"Art. 322-334 (reati di bancarotta, ricorso abusivo al credito)"
 ],
-"motivo": "Codice della crisi: composizione negoziata, misure protettive, concordato, liquidazione; art. 25-decies obblighi delle banche"
+"motivo": "disciplina organica della crisi e insolvenza: composizione negoziata, concordato, liquidazione"
 },
 {
 "tematica": "Affari legali e societari",
 "ambito": "Contrattualistica",
 "ruolo": "secondario",
 "articoli": [
-"177",
-"183",
-"187"
+"Art. 166 (atti a titolo oneroso e garanzie)",
+"Art. 172-188 (rapporti pendenti, locazione finanziaria, conto corrente, mandato, appalto, assicurazione)"
 ],
-"motivo": "effetti dell'apertura delle procedure su locazione finanziaria, conto corrente e assicurazione"
+"motivo": "effetti della crisi sui contratti pendenti, incluso conto corrente e locazione finanziaria"
 },
 {
 "tematica": "Affari legali e societari",
 "ambito": "Obblighi di comunicazione alle Autorità Competenti",
 "ruolo": "secondario",
 "articoli": [
-"25-decies"
+"Art. 25-decies (obblighi di comunicazione per banche e intermediari finanziari)"
 ],
-"motivo": "obblighi di comunicazione per banche e intermediari finanziari nella crisi d'impresa"
+"motivo": "segnalazione obbligatoria di crisi per banche e intermediari"
+},
+{
+"tematica": "Affari legali e societari",
+"ambito": "Obbligazioni",
+"ruolo": "secondario",
+"articoli": [
+"Art. 1-2 (definizioni e doveri, inadempimento)"
+],
+"motivo": "richiami alla disciplina dell'inadempimento nelle procedure"
+},
+{
+"tematica": "Governance",
+"ambito": "Governo societario",
+"ruolo": "secondario",
+"articoli": [
+"Art. 375-380 (assetti organizzativi, responsabilita amministratori, organi di controllo)"
+],
+"motivo": "assetti organizzativi societari e doveri degli organi"
+},
+{
+"tematica": "Diritto del lavoro",
+"ambito": "Contributi e Fondi per i lavoratori",
+"ruolo": "secondario",
+"articoli": [
+"Art. 363 (certificazione debiti contributivi)",
+"Art. 368 (coordinamento con diritto del lavoro)"
+],
+"motivo": "debiti contributivi e rapporti di lavoro nelle procedure"
+},
+{
+"tematica": "Fisco",
+"ambito": "Obblighi informativi e dichiarativi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 364-365 (certificazione e informazioni sui debiti tributari)"
+],
+"motivo": "certificazione dei debiti fiscali nelle procedure"
+},
+{
+"tematica": "Affari legali e societari",
+"ambito": "Appalti",
+"ruolo": "secondario",
+"articoli": [
+"Art. 372 (modifiche al codice dei contratti pubblici)"
+],
+"motivo": "coordinamento con il codice dei contratti pubblici"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IT-decreto.legislativo-2019-02-13-19": {
 "ambiti": [
@@ -39483,142 +39709,177 @@
 "BDI-f915f40e44": {
 "ambiti": [
 {
-"tematica": "Governance",
-"ambito": "Governo societario",
-"ruolo": "principale",
-"articoli": [
-"Sezione II (10) Sistemi di amministrazione e controllo",
-"Sezione III (8) Compiti e poteri degli organi sociali",
-"Sezione IV (11) Composizione e nomina degli organi",
-"Sezione VI (4) Autovalutazione degli organi"
-],
-"motivo": "organi aziendali, composizione, poteri e autovalutazione"
-},
-{
-"tematica": "Governance",
-"ambito": "Sistema dei controlli interni",
-"ruolo": "principale",
-"articoli": [
-"Sezione II (12) Ruolo degli organi aziendali",
-"Sezione III (10) Funzioni aziendali di controllo",
-"Sezione V (13) Sistema dei controlli interni",
-"Sezione VIII (3) Sistemi interni di segnalazione delle violazioni"
-],
-"motivo": "funzioni di controllo, sistema dei controlli interni, whistleblowing"
-},
-{
-"tematica": "Governance",
-"ambito": "Outsourcing",
-"ruolo": "principale",
-"articoli": [
-"Sezione IV (13) Esternalizzazione di funzioni aziendali (outsourcing)"
-],
-"motivo": "requisiti e comunicazioni per l'esternalizzazione di funzioni aziendali"
-},
-{
-"tematica": "Governance",
-"ambito": "Procedimenti autorizzativi",
-"ruolo": "principale",
-"articoli": [
-"Sezione I (2) Autorizzazione all'attività bancaria",
-"Sezione II (16) Procedimenti amministrativi",
-"Sezione V (5) Decadenza e revoca dell'autorizzazione"
-],
-"motivo": "autorizzazione all'attività bancaria, procedimenti, decadenza e revoca"
-},
-{
-"tematica": "Remunerazione e incentivazione",
-"ambito": "Disposizioni in materia di remunerazione e incentivazione",
-"ruolo": "principale",
-"articoli": [
-"Sezione II (11) Ruolo e responsabilità dell'assemblea e degli organi",
-"Sezione III (9) La struttura dei sistemi di remunerazione e incentivazione",
-"Sezione IV (12) Politica di remunerazione per particolari categorie",
-"Sezione VI (5) Obblighi di informativa e di trasmissione dei dati"
-],
-"motivo": "politiche e struttura della remunerazione, personale più rilevante"
-},
-{
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Gestione dei rischi",
 "ruolo": "principale",
 "articoli": [
-"Sezione II (8) Processi di valutazione aziendale (ICAAP/ILAAP)",
-"Sezione III (6) Riserva di capitale anticiclica",
-"Sezione III (12) Processo di gestione del rischio di liquidità",
-"Sezione V (9) Processo di revisione e valutazione prudenziale (SREP)",
-"Sezione IV (9) Riserva di capitale per le G-SII e O-SII",
-"Sezione V (7) Riserva di capitale a fronte del rischio sistemico"
+"Parte Prima Tit. IV Cap. 1 (governo societario, ICAAP/ILAAP)",
+"Sez. III-V (liquidita, riserve di capitale, SREP, rischio sistemico)",
+"Sez. Liquidita (Processo di gestione rischio liquidita, CFRP)"
 ],
-"motivo": "adeguatezza patrimoniale e di liquidità, ICAAP/ILAAP, SREP, riserve di capitale"
+"motivo": "ICAAP/ILAAP, SREP, rischio di liquidita, riserve di capitale, G-SII/O-SII, misure macroprudenziali"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obbligazioni garantite",
+"ruolo": "principale",
+"articoli": [
+"Sez. II-VII (programmi di emissione, requisiti OBG, vigilanza)"
+],
+"motivo": "capitolo dedicato alle obbligazioni bancarie garantite"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Obblighi informativi",
 "ruolo": "principale",
 "articoli": [
-"Sezione II (9) Requisiti dell'informativa",
-"Sezione VII (4) Obblighi di informativa al pubblico"
+"Sez. II (Requisiti dell'informativa, Pillar 3)",
+"Sez. V cap. OBG (obblighi di informativa al pubblico)"
 ],
-"motivo": "informativa al pubblico (Pillar 3) su capitale, rischi e governo"
-},
-{
-"tematica": "IT e Digital",
-"ambito": "Business Continuity",
-"ruolo": "principale",
-"articoli": [
-"Sezione II (14) Requisiti per tutte le banche",
-"Sezione III (11) Requisiti particolari per i processi a rilevanza sistemica"
-],
-"motivo": "continuità operativa, BIA, piani di continuità e di risposta"
-},
-{
-"tematica": "Segnalazioni di Vigilanza",
-"ambito": "Segnalazione all'autorità di vigilanza competente",
-"ruolo": "secondario",
-"articoli": [
-"Sezione VI (2) Segnalazioni"
-],
-"motivo": "obblighi di trasmissione dati alla Banca d'Italia, collaterali alla disciplina"
+"motivo": "informativa al pubblico e segnalazioni prudenziali di riferimento"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Disposizioni in ambito di partecipazioni detenibili",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"Sezione III (3) Autorizzazione delle società di partecipazione finanziaria"
+"Sez. II-IX (limiti partecipazioni, investimenti indiretti in equity, BCC)"
 ],
-"motivo": "società di partecipazione finanziaria nell'ambito dei gruppi bancari"
+"motivo": "capitolo dedicato a partecipazioni detenibili e investimenti indiretti"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Rapporti con la clientela",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV (8) Definizione di default"
+"Sez. IV-V (definizione di default nel quadro IRB)"
 ],
-"motivo": "definizione di default della clientela"
+"motivo": "definizione di default come obbligo collaterale"
 },
 {
-"tematica": "Vigilanza prudenziale (Basilea)",
-"ambito": "Obbligazioni garantite",
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "principale",
+"articoli": [
+"Sez. V (significativo trasferimento del rischio di credito)",
+"Sez. VI (notifica delle operazioni di cartolarizzazione)",
+"Sez. II cap. cartolarizzazione (obblighi degli intermediari)"
+],
+"motivo": "capitolo dedicato alla disciplina prudenziale delle cartolarizzazioni"
+},
+{
+"tematica": "Credito",
+"ambito": "Gestione operativa crediti",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III (10) Obbligazioni garantite"
+"Allegato descrittivo politiche di credito e processo di erogazione"
 ],
-"motivo": "disciplina collaterale delle obbligazioni garantite"
+"motivo": "richiami alle politiche di concessione e monitoraggio del credito"
+},
+{
+"tematica": "Governance",
+"ambito": "Governo societario",
+"ruolo": "principale",
+"articoli": [
+"Parte Prima Tit. IV Cap. 1 Sez. I-VIII",
+"Sez. II (ruolo assemblea e organi)",
+"Sez. IV (composizione e nomina organi)",
+"Sez. V (funzionamento organi, flussi informativi)",
+"Sez. VI (autovalutazione organi)"
+],
+"motivo": "capitolo governo societario: organi, composizione, autovalutazione, informativa"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "principale",
+"articoli": [
+"Sez. II (ruolo organi aziendali)",
+"Sez. III (funzioni aziendali di controllo)",
+"Sez. V (RAF e sistema dei controlli interni nei gruppi)",
+"Sez. VIII (sistemi interni di segnalazione delle violazioni)"
+],
+"motivo": "funzioni di controllo, RAF e whistleblowing"
+},
+{
+"tematica": "Governance",
+"ambito": "Outsourcing",
+"ruolo": "principale",
+"articoli": [
+"Sez. IV (esternalizzazione di funzioni aziendali)"
+],
+"motivo": "capitolo dedicato all'esternalizzazione"
+},
+{
+"tematica": "Governance",
+"ambito": "Procedimenti autorizzativi",
+"ruolo": "principale",
+"articoli": [
+"Sez. II-VIII cap. 1-2 (autorizzazione attivita bancaria, succursali, LPS)",
+"Sez. VII (autorizzazione servizi di investimento)"
+],
+"motivo": "procedimenti di autorizzazione bancaria e succursali"
+},
+{
+"tematica": "Governance",
+"ambito": "Vigilanza",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II (disciplina accertamenti ispettivi)",
+"Sez. VIII (requisiti onorabilita e professionalita)"
+],
+"motivo": "vigilanza ispettiva e requisiti degli esponenti"
+},
+{
+"tematica": "Remunerazione e incentivazione",
+"ambito": "Disposizioni in materia di remunerazione e incentivazione",
+"ruolo": "principale",
+"articoli": [
+"Parte Prima Tit. IV Cap. 2 Sez. I-VII (politiche e strutture di remunerazione)"
+],
+"motivo": "capitolo dedicato alle politiche di remunerazione"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
+"ruolo": "principale",
+"articoli": [
+"Sez. III (procedure per operazioni con soggetti collegati)",
+"Sez. IX par. 13 (attivita di rischio verso soggetti collegati)"
+],
+"motivo": "disciplina parti correlate e soggetti collegati"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Business Continuity",
+"ruolo": "principale",
+"articoli": [
+"Sez. II (requisiti per tutte le banche, continuita operativa)",
+"Sez. III (processi a rilevanza sistemica)"
+],
+"motivo": "piani e presidi di continuita operativa"
 },
 {
 "tematica": "Incassi e pagamenti",
 "ambito": "Sistemi e mezzi di pagamento",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"Sezione II (13) Disposizioni specifiche in materia di prestazione di servizi di pagamento"
+"Sez. II (disposizioni specifiche servizi di pagamento, sicurezza, gestione utenti)"
 ],
-"motivo": "gestione del rapporto con gli utenti dei servizi di pagamento"
+"motivo": "capitolo dedicato alla prestazione di servizi di pagamento"
+},
+{
+"tematica": "Segnalazioni di Vigilanza",
+"ambito": "Segnalazione all'autorità di vigilanza competente",
+"ruolo": "principale",
+"articoli": [
+"Sez. II (matrice dei conti, segnalazioni prudenziali e statistiche, Centrale dei Rischi)",
+"Sez. V (bilancio d'impresa e consolidato)"
+],
+"motivo": "capitolo dedicato alle segnalazioni di vigilanza"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-9b8ce5ac83": {
 "ambiti": [
@@ -39661,118 +39922,212 @@
 "BDI-190018dc1e": {
 "ambiti": [
 {
-"tematica": "Governance",
-"ambito": "Procedimenti autorizzativi",
-"ruolo": "principale",
-"articoli": [
-"Sezione V Autorizzazione all'esercizio dell'attività di concessione di finanziamenti",
-"Sezione VI (4) Autorizzazione all'esercizio dell'attività di concessione",
-"Sezione VII (4) Autorizzazione alla prestazione dei servizi e delle attività di investimento",
-"Sezione IX (3) Decadenza e revoca dell'autorizzazione"
-],
-"motivo": "autorizzazioni degli intermediari finanziari (art. 106 e 110 TUB), decadenza e revoca"
-},
-{
-"tematica": "Governance",
-"ambito": "Sistema dei controlli interni",
-"ruolo": "principale",
-"articoli": [
-"Sezione III (3) Sistema dei controlli interni",
-"Sezione III (9) Poteri della capogruppo e obblighi delle controllate",
-"Sezione II (8) Composizione del gruppo"
-],
-"motivo": "sistema dei controlli interni, capogruppo e controllate nei gruppi finanziari"
-},
-{
-"tematica": "Governance",
-"ambito": "Outsourcing",
-"ruolo": "principale",
-"articoli": [
-"Sezione V (2) Esternalizzazione di funzioni aziendali e distribuzione",
-"Sezione VI (2) Il sistema dei controlli e l'esternalizzazione nei gruppi"
-],
-"motivo": "esternalizzazione di funzioni aziendali e controlli sugli outsourcer"
-},
-{
-"tematica": "Governance",
-"ambito": "Governo societario",
-"ruolo": "principale",
-"articoli": [
-"Sezione II - par. 2 (3) Composizione, compiti e poteri degli organi sociali"
-],
-"motivo": "organi sociali degli intermediari finanziari, composizione e compiti"
-},
-{
-"tematica": "Governance",
-"ambito": "Vigilanza",
-"ruolo": "secondario",
-"articoli": [
-"Sezione II (9) Disciplina degli accertamenti ispettivi"
-],
-"motivo": "accertamenti ispettivi della Banca d'Italia"
-},
-{
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Gestione dei rischi",
 "ruolo": "principale",
 "articoli": [
-"Sezione III (5) La valutazione aziendale dell'adeguatezza patrimoniale",
-"Sezione IV (5) Processo di revisione e valutazione prudenziale (SREP)",
-"Sezione III - par. 2 (4) Organizzazione e sistema dei controlli",
-"Sezione III - par. 7 Quantificazione dei parametri di rischio"
+"Sez. II (10) disciplina su base individuale",
+"Sez. III (4) disciplina su base consolidata",
+"Sez. III (5) ICAAP",
+"Sez. IV (5) SREP"
 ],
-"motivo": "ICAAP, SREP, rischi e requisiti prudenziali per gli intermediari finanziari"
+"motivo": "Disciplina prudenziale individuale e consolidata, ICAAP e SREP per gli intermediari finanziari"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Disposizioni in ambito di partecipazioni detenibili",
 "ruolo": "principale",
 "articoli": [
-"Sezione IV (9) Assunzione di partecipazioni",
-"Sezione IV - par. 3 Partecipazioni in imprese in temporanea difficoltà finanziaria",
-"Sezione IV - par. 4 Partecipazioni acquisite per recupero crediti"
+"Sez. IV (9)-(12) Assunzione di partecipazioni",
+"Sez. II (7) Partecipazioni qualificate",
+"Sez. IV (9)-(12) Partecipazioni acquisite per recupero crediti"
 ],
-"motivo": "limiti e condizioni per l'assunzione di partecipazioni"
+"motivo": "Limiti e regime autorizzativo dell'assunzione di partecipazioni"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II (7) Segnalazioni alla BdI",
+"Sez. II (8) Informativa operazioni rilevanti"
+],
+"motivo": "Obblighi informativi verso la BdI su capitale e operazioni rilevanti"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Rapporti con la clientela",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II (12) Gruppo di clienti connessi"
+],
+"motivo": "Clienti connessi nell'ambito dei limiti alle grandi esposizioni"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Vigilanza in materia di NPL",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II par. 4 (11) Esposizioni scadute e deteriorate"
+],
+"motivo": "Trattamento delle esposizioni deteriorate nella disciplina prudenziale"
 },
 {
 "tematica": "Credito",
 "ambito": "Cartolarizzazioni",
 "ruolo": "principale",
 "articoli": [
-"Sezione IV (4) Notifica delle operazioni di cartolarizzazione",
-"Sezione IV - par. 3 (2) Operazioni di cartolarizzazione con soggetti non vigilati"
+"Sez. IV (18)-(23) Notifica delle operazioni di cartolarizzazione",
+"Sez. VII par. 4 Rischi da cartolarizzazione",
+"Sez. VII par. 5 Rischi da servicing"
 ],
-"motivo": "notifica e disciplina delle operazioni di cartolarizzazione"
+"motivo": "Notifica e rischi delle operazioni di cartolarizzazione"
 },
 {
 "tematica": "Credito",
 "ambito": "Gestione operativa crediti",
 "ruolo": "secondario",
 "articoli": [
-"Sezione VII - par. 2 Rischi connessi con l'attività di concessione di finanziamenti"
+"Sez. VII par. 2 Concessione di finanziamenti",
+"Sez. VII par. 2.4 Valutazione del merito di credito",
+"Sez. VII par. 2.5 Valutazione immobili a garanzia"
 ],
-"motivo": "principi organizzativi per la concessione e il monitoraggio dei finanziamenti"
+"motivo": "Presidi organizzativi sulla concessione e il monitoraggio dei crediti"
+},
+{
+"tematica": "Credito",
+"ambito": "Factoring",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II par. 3 Crediti commerciali acquistati"
+],
+"motivo": "Metodo standardizzato per i crediti commerciali acquistati"
+},
+{
+"tematica": "Credito",
+"ambito": "Centrale Rischi",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II par. 2 (18) Centrale dei rischi"
+],
+"motivo": "Obblighi di segnalazione alla Centrale dei rischi"
+},
+{
+"tematica": "Governance",
+"ambito": "Governo societario",
+"ruolo": "principale",
+"articoli": [
+"Sez. II (30)-(35) Governo societario",
+"Sez. II par. 2 Composizione e compiti degli organi sociali"
+],
+"motivo": "Assetti di governo societario e organi sociali"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "principale",
+"articoli": [
+"Sez. III (16)-(22) Sistema dei controlli interni",
+"Sez. III par. 2 Funzioni aziendali di controllo"
+],
+"motivo": "Sistema dei controlli interni e funzioni di controllo"
+},
+{
+"tematica": "Governance",
+"ambito": "Outsourcing",
+"ruolo": "principale",
+"articoli": [
+"Sez. V (12)-(18) Esternalizzazione di funzioni aziendali",
+"Sez. VI (5)-(9) Controlli ed esternalizzazione nei gruppi"
+],
+"motivo": "Principi e requisiti dell'esternalizzazione di funzioni aziendali"
+},
+{
+"tematica": "Governance",
+"ambito": "Procedimenti autorizzativi",
+"ruolo": "principale",
+"articoli": [
+"Sez. I (4)-(10) Procedimenti amministrativi",
+"Sez. V (4)-(7) Autorizzazione all'attività di concessione di finanziamenti",
+"Sez. VI (4) Autorizzazione all'attività di concessione",
+"Sez. VII (4) Autorizzazione alla prestazione di servizi",
+"Sez. IX (3) Decadenza e revoca"
+],
+"motivo": "Procedimenti di autorizzazione all'esercizio dell'attività degli intermediari"
+},
+{
+"tematica": "Governance",
+"ambito": "Vigilanza",
+"ruolo": "principale",
+"articoli": [
+"Sez. I (44) Onorabilità",
+"Sez. II (29) Correttezza e competenza professionale",
+"Sez. III (15) Solidità finanziaria",
+"Sez. V Art. 1-6 Requisiti di professionalità e onorabilità"
+],
+"motivo": "Requisiti di idoneita e correttezza di partecipanti ed esponenti"
+},
+{
+"tematica": "Governance",
+"ambito": "Vigilanza",
+"ruolo": "secondario",
+"articoli": [
+"Sez. II (73)-(77) Accertamenti ispettivi"
+],
+"motivo": "Disciplina degli accertamenti ispettivi della Banca d'Italia"
 },
 {
 "tematica": "Segnalazioni di Vigilanza",
 "ambito": "Segnalazione all'autorità di vigilanza competente",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"Sezione II (7) Segnalazioni alla Banca d'Italia"
+"Sez. II (7) Segnalazioni alla BdI",
+"Sez. II par. 1.1-1.2 Segnalazioni individuali e consolidate",
+"Sez. II par. 2 Centrale dei rischi"
 ],
-"motivo": "obblighi di segnalazione alla Banca d'Italia"
+"motivo": "Segnalazioni di vigilanza individuali e su base consolidata"
 },
 {
 "tematica": "Informativa finanziaria (reporting)",
 "ambito": "Contabilità e bilancio",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III (6) Bilancio d'impresa e bilancio consolidato"
+"Sez. III (43)-(44) Bilancio d'impresa e consolidato",
+"Sez. IV (16)-(17) Sistema informativo contabile"
 ],
-"motivo": "regole di bilancio d'impresa e consolidato"
+"motivo": "Schemi e obblighi di bilancio d'impresa e consolidato"
+},
+{
+"tematica": "Antiriciclaggio",
+"ambito": "Gestione di adeguata verifica",
+"ruolo": "secondario",
+"articoli": [
+"Allegati RAA (Sez. II par. 2)",
+"Allegati RAA (Sez. III par. 2)"
+],
+"motivo": "Presidi antiriciclaggio e Responsabile Aziendale Antiriciclaggio"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Sistemi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sez. IV (16)-(17) Sistema informativo contabile",
+"Sez. III allegati procedure informatiche"
+],
+"motivo": "Sistemi informativi e procedure informatiche di controllo"
+},
+{
+"tematica": "Sviluppo commerciale",
+"ambito": "Gestione Rete Vendita",
+"ruolo": "secondario",
+"articoli": [
+"Sez. V par. 2 Promozione e collocamento di prodotti"
+],
+"motivo": "Promozione e collocamento tramite terzi"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-67a73c88eb": {
 "ambiti": [
@@ -39800,47 +40155,106 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"Sezione II - par. 1.1 Ambito di applicazione",
-"Sezione II - par. 1.2 Segnalazioni alla Banca d'Italia",
-"Sezione II - par. 1 Struttura del patrimonio",
-"Sezione II - par. 2 Fondi propri relativi ai mesi di dicembre e giugno",
-"Sezione II - par. 3 Variazioni patrimoniali trimestrali"
+"Parte II Premessa e par. 1.1-1.5 (ambito e modalità)",
+"Sezione II par. 1-5 Fondi propri e patrimonio di vigilanza",
+"Sezione II par. 7-8 Requisiti patrimoniali",
+"Sezione II par. 1.2 Segnalazioni alla BdI"
 ],
-"motivo": "intero manuale di compilazione delle segnalazioni prudenziali (fondi propri, requisiti, attivi)"
+"motivo": "Intero atto: istruzioni tecniche per la compilazione delle segnalazioni prudenziali"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Obblighi informativi",
+"ruolo": "principale",
+"articoli": [
+"Sezione II par. 1-4 Fondi propri e requisiti",
+"Sezione II par. 5-6 Requisiti patrimoniali e segnalazioni",
+"Sezione II par. 2 Segnalazioni di vigilanza"
+],
+"motivo": "Segnalazioni prudenziali su fondi propri e requisiti patrimoniali"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obbligazioni garantite",
 "ruolo": "secondario",
 "articoli": [
-"Sezione II - par. 1 Elementi costitutivi dei fondi propri",
-"Sezione II - par. 1.1 (3) Capitale primario di classe 1 (CET1)",
-"Sezione II - par. 5 Requisito patrimoniale totale"
+"Sezione II par. 1 Attivi idonei",
+"Sezione II par. 3 Obbligazioni bancarie garantite",
+"Sezione II par. 8-14 Coefficiente di copertura e liquidita"
 ],
-"motivo": "contenuto delle segnalazioni su requisiti patrimoniali e fondi propri"
+"motivo": "Segnalazioni su obbligazioni bancarie garantite e patrimonio separato"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 12 Riserva di liquidita",
+"Sezione II par. 10-11 Flussi di liquidita"
+],
+"motivo": "Segnalazioni di liquidita collegate ai programmi di emissione"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 7 Posizioni verso cartolarizzazioni",
+"Sezione II par. 2.5 Posizioni verso cartolarizzazioni"
+],
+"motivo": "Segnalazione delle posizioni verso cartolarizzazioni nel patrimonio"
 },
 {
 "tematica": "Conflitti di interesse",
 "ambito": "Conflitti di interesse",
+"ruolo": "principale",
+"articoli": [
+"Sezione 1 par. 1.1-1.6 Soggetti collegati su base individuale",
+"Sezione 1 par. 3.1.4 Operazioni di maggiore rilevanza"
+],
+"motivo": "Segnalazione di soggetti collegati e operazioni con parti correlate"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Obblighi informativi / comunicativi / segnaletici",
 "ruolo": "secondario",
 "articoli": [
-"par. 1 (5) Operazioni con parti correlate e relativi soggetti connessi",
-"par. 3.1.4 Operazioni di maggiore rilevanza"
+"Sezione 1 par. 1.3 Segnalazioni alla BdI sui soggetti collegati",
+"Sezione 1 par. 3.1.4 Operazioni di maggiore rilevanza"
 ],
-"motivo": "segnalazione di operazioni con parti correlate e di maggiore rilevanza"
+"motivo": "Obblighi segnaletici su operazioni con soggetti collegati"
+},
+{
+"tematica": "Incassi e pagamenti",
+"ambito": "Sistemi e mezzi di pagamento",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 35-40 Requisito patrimoniale per servizi di pagamento e moneta elettronica",
+"Sezione II par. 00 Media della moneta elettronica in circolazione"
+],
+"motivo": "Segnalazioni su requisiti per servizi di pagamento e moneta elettronica"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Fondi di investimento alternativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 1 Requisito relativo alla massa gestita",
+"Sezione II par. 3 Requisito relativo alla gestione di fondi"
+],
+"motivo": "Requisiti patrimoniali dei gestori di fondi"
 },
 {
 "tematica": "Mercati finanziari",
 "ambito": "Disposizioni in materia di gestione dei mercati",
 "ruolo": "secondario",
 "articoli": [
-"Sezione II - par. 1 (8) Informazioni sull'offerta di crowdfunding"
+"Sezione II par. 1 Informazioni sull'offerta di crowdfunding"
 ],
-"motivo": "segnalazioni relative all'offerta di crowdfunding"
+"motivo": "Segnalazioni sulle offerte di crowdfunding"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-20b7c7b8bc": {
 "ambiti": [
@@ -40015,49 +40429,126 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Sezione IV - par. 1 Destinatari",
-"Sezione IV - par. 2 Struttura della matrice dei conti",
-"Sezione IV - par. 3 Regole generali di compilazione",
-"Sezione IV - par. 1 (2) Responsabilità e termini d'invio delle segnalazioni",
-"Sezione I - par. 1 (6) Segnalazioni armonizzate",
-"Sezione I - par. 2 (8) Segnalazioni non armonizzate"
+"Sezione I - dati statistici mensili (Matrice dei conti)",
+"Sezione IV par. 1-10 Struttura e regole di compilazione della matrice",
+"Sezione IV par. 1-2 Responsabilita e termini d'invio",
+"Sezione III (2) Informazioni finanziarie armonizzate"
 ],
-"motivo": "matrice dei conti: struttura, destinatari e termini delle segnalazioni mensili"
+"motivo": "La matrice dei conti e il sistema di segnalazioni statistiche e di vigilanza alla BdI"
 },
 {
-"tematica": "Informativa finanziaria (reporting)",
-"ambito": "Contabilità e bilancio",
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV - par. 7 Classificazione delle operazioni per settori e gruppi",
-"Sezione IV - par. 9 Regole di cancellazione delle attività finanziarie",
-"Sezione I - par. 12 (3) Classificazione dei ricavi e dei costi"
+"Sezione I par. 1.2 Flussi e finanziamenti alla cartolarizzazione",
+"Sezione I par. 1.3 Auto-cartolarizzazione",
+"Sezione I par. 1.4 Covered bond",
+"Sezione I par. 1.5 Attivita di servicing"
 ],
-"motivo": "classificazione contabile delle voci segnaletiche"
+"motivo": "Trattamento contabile e segnaletico delle cartolarizzazioni"
 },
 {
-"tematica": "Vigilanza prudenziale (Basilea)",
-"ambito": "Obblighi informativi",
+"tematica": "Credito",
+"ambito": "Factoring",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV - par. 5 Classificazione delle informazioni rispetto alla",
-"Sezione I - par. 2.1 Esposizioni creditizie deteriorate"
+"Sezione I par. 1.3.2 Operativita di factoring",
+"Sezione I par. 8 Operazioni di factoring"
 ],
-"motivo": "informazioni segnaletiche su attivi, cartolarizzazioni e patrimonio"
+"motivo": "Classificazione segnaletica delle operazioni di factoring"
+},
+{
+"tematica": "Credito",
+"ambito": "Leasing",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 36 Leasing finanziario"
+],
+"motivo": "Voce segnaletica dei finanziamenti in leasing finanziario"
 },
 {
 "tematica": "Credito",
 "ambito": "Statistiche",
 "ruolo": "secondario",
 "articoli": [
-"Sezione I - par. 2.1 Esposizioni creditizie deteriorate",
-"Sezione I - par. 2.2 Esposizioni soggette a riduzione di valore per rischio di credito",
-"Sezione I - par. 3 (2) Classificazione del credito per destinazione"
+"Sezione I par. 2.1 Esposizioni creditizie deteriorate",
+"Sezione I par. 2.2 Esposizioni soggette a riduzione di valore"
 ],
-"motivo": "qualità del credito e classificazione dei finanziamenti nei dati statistici"
+"motivo": "Dati statistici sulla qualita del credito (deteriorati e sofferenze)"
+},
+{
+"tematica": "Credito",
+"ambito": "Cessione del quinto",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 34 Prestiti c/cessione stipendio"
+],
+"motivo": "Voci segnaletiche dei prestiti contro cessione dello stipendio"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 1.1 Durata residua delle attivita e passivita",
+"Sezione I par. 1.2 Ripricing del tasso di interesse"
+],
+"motivo": "Dati di vita residua e di riprezzamento utili alle informazioni prudenziali"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obbligazioni garantite",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 12 Covered bond",
+"Sezione I par. 1.4 Covered bond"
+],
+"motivo": "Segnalazione di operazioni di covered bond"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 5 Classificazione delle informazioni",
+"Sezione IV par. 7 Classificazione operazioni per settori e gruppi",
+"Sezione I par. 9-12 Costi e ricavi e classificazione"
+],
+"motivo": "Classificazione contabile dei conti nella matrice"
+},
+{
+"tematica": "Incassi e pagamenti",
+"ambito": "Sistemi e mezzi di pagamento",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 20 Carta di moneta elettronica",
+"Sezione I par. 22 Conto di moneta elettronica"
+],
+"motivo": "Segnalazione di moneta elettronica e strumenti di pagamento"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Investimenti",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 5 Servizi di investimento",
+"Sezione I par. 5.4 Derivati"
+],
+"motivo": "Segnalazione di servizi di investimento e titoli in portafoglio"
+},
+{
+"tematica": "Politica monetaria",
+"ambito": "Eurosistema",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 12 Operazioni di credito sull'Eurosistema",
+"Sezione I par. 4 Pronti contro termine"
+],
+"motivo": "Segnalazione delle operazioni con l'Eurosistema"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-983763df89": {
 "ambiti": [
@@ -40066,18 +40557,97 @@
 "ambito": "Contabilità e bilancio",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"par. 1 Destinatari delle disposizioni",
-"par. 2 Contenuto del bilancio",
-"par. 3 Schemi del bilancio",
-"par. 4 Collegamento fra contabilità e bilancio",
-"par. 5 Definizioni (sofferenze, inadempienze probabili, esposizioni deteriorate, fair value, leasing)",
-"par. 7 La nota integrativa"
+"Parte A Schemi di stato patrimoniale, conto economico, prospetti e rendiconto finanziario",
+"Parte B Informazioni sullo stato patrimoniale e conto economico",
+"Parte C-D-E-F-G-H-I-L Note integrative",
+"Par. 2 Lo stato patrimoniale",
+"Par. 3 Il conto economico",
+"Par. 6 Il rendiconto finanziario"
 ],
-"motivo": "schemi e regole di compilazione del bilancio bancario, nota integrativa, esposizioni deteriorate"
+"motivo": "Schemi e regole di compilazione del bilancio bancario individuale e consolidato"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Obblighi in materia di reporting",
+"ruolo": "secondario",
+"articoli": [
+"Par. 8 La relazione sulla gestione",
+"Par. 8 La relazione sulla gestione consolidata"
+],
+"motivo": "Contenuto della relazione sulla gestione"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Parte E Sez. 1 Rischio di credito",
+"Parte E Sez. 2 Rischi di mercato",
+"Parte E Sez. 3 Rischio di liquidita",
+"Parte E Sez. 3.3 Rischi operativi"
+],
+"motivo": "Informativa sui rischi di credito, mercato, liquidita e operativi nelle note"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Parte E Sez. 2 Rischi di mercato",
+"Parte E Sez. 3 Rischio di liquidita"
+],
+"motivo": "Presidi e metodologie di gestione dei rischi in nota integrativa"
+},
+{
+"tematica": "Credito",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Parte A.2 Politiche di gestione del rischio di credito",
+"Parte B Rettifiche di valore per deterioramento (deteriorate)",
+"Parte E Sez. 1 Esposizioni deteriorate"
+],
+"motivo": "Informativa sulla qualita del credito e sui deteriorati"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Parte A.4 Attivita finanziarie oggetto di rinegoziazioni commerciali",
+"Parte E Sez. 1 Operazioni di cartolarizzazione"
+],
+"motivo": "Informativa sulle operazioni di cartolarizzazione e sulle entita strutturate"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
+"ruolo": "secondario",
+"articoli": [
+"Par. 2 Informazioni sulle transazioni con parti correlate"
+],
+"motivo": "Informativa sulle transazioni con parti correlate"
+},
+{
+"tematica": "Remunerazione e incentivazione",
+"ambito": "Disposizioni in materia di remunerazione e incentivazione",
+"ruolo": "secondario",
+"articoli": [
+"Par. 1 Informazioni sui compensi dei dirigenti con responsabilita strategiche"
+],
+"motivo": "Informativa sui compensi dei dirigenti con responsabilita strategiche"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Disposizioni in materia di asset digitali e tecnologie",
+"ruolo": "secondario",
+"articoli": [
+"Par. 4 Prestazione di servizi per cripto-attivita"
+],
+"motivo": "Informativa sulla prestazione di servizi per cripto-attivita"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-f4387efa22": {
 "ambiti": [
@@ -40098,37 +40668,142 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"Sezione IV - par. 1 Premessa",
-"Sezione IV - par. 2 Termini e modalità di trasmissione delle segnalazioni",
-"Sezione IV - par. 3 Schemi delle segnalazioni",
-"Sezione I (2) Dati patrimoniali",
-"Sezione III (3) Dati di conto economico e altre informazioni"
+"Sezione IV par. 2 Termini e modalita di trasmissione",
+"Sezione IV par. 3 Schemi delle segnalazioni",
+"Sezione I Dati patrimoniali",
+"Sezione II Dati patrimoniali e altre informazioni",
+"Sezione III Dati di conto economico",
+"Sezione IV par. 12 Servizi di pagamento e moneta elettronica"
 ],
-"motivo": "manuale delle segnalazioni di vigilanza per gli intermediari finanziari (schemi, termini e modalità)"
+"motivo": "Manuale di compilazione delle segnalazioni di vigilanza per intermediari finanziari, istituti di pagamento e IMEL"
+},
+{
+"tematica": "Incassi e pagamenti",
+"ambito": "Sistemi e mezzi di pagamento",
+"ruolo": "principale",
+"articoli": [
+"Sezione IV par. 12.1-12.11 Carte, money transfer, conto di pagamento, moneta elettronica",
+"Sezione II (2) Operazioni di pagamento con carte e moneta elettronica"
+],
+"motivo": "Segnalazioni su servizi di pagamento, carte e moneta elettronica"
+},
+{
+"tematica": "Credito",
+"ambito": "Factoring",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 8 Factoring",
+"Sezione II par. 2 Crediti riferiti all'attivita di factoring"
+],
+"motivo": "Segnalazione delle operazioni di factoring"
+},
+{
+"tematica": "Credito",
+"ambito": "Leasing",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 10 Leasing finanziario"
+],
+"motivo": "Segnalazione delle operazioni di leasing finanziario"
+},
+{
+"tematica": "Credito",
+"ambito": "Credito al consumo",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 11 Credito al consumo"
+],
+"motivo": "Segnalazione del credito al consumo"
+},
+{
+"tematica": "Credito",
+"ambito": "Cessione del quinto",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (4) Finanziamenti contro cessione del quinto"
+],
+"motivo": "Segnalazione dei finanziamenti contro cessione del quinto"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 17 Codice operazione di cartolarizzazione",
+"Sezione II par. 2 Cessioni a veicoli per la cartolarizzazione"
+],
+"motivo": "Segnalazione delle operazioni di cartolarizzazione e cessioni a SPV"
 },
 {
 "tematica": "Credito",
 "ambito": "Statistiche",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV - par. 7.1 Esposizioni creditizie deteriorate",
-"Sezione IV - par. 10 Leasing finanziario",
-"Sezione IV - par. 11 Credito al consumo"
+"Sezione IV par. 7.1-7.2 Esposizioni creditizie deteriorate e soggette a riduzione di valore",
+"Sezione II par. 4 Variazioni delle esposizioni creditizie"
 ],
-"motivo": "segnalazioni su qualità del credito, leasing e credito al consumo"
+"motivo": "Dati statistici su qualita del credito e variazioni delle esposizioni"
 },
 {
-"tematica": "Incassi e pagamenti",
-"ambito": "Sistemi e mezzi di pagamento",
+"tematica": "Credito",
+"ambito": "Credito su pegno",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV - par. 12 Servizi di pagamento e moneta elettronica"
+"Sezione IV par. 2.4 Segnalazioni delle agenzie di prestito su pegno"
 ],
-"motivo": "segnalazioni su servizi di pagamento e moneta elettronica"
+"motivo": "Segnalazioni delle agenzie di prestito su pegno"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 6 Vita residua",
+"Sezione IV par. 19 Tipo approccio",
+"Sezione IV par. 16 Attivita proprie e cedute non cancellate"
+],
+"motivo": "Obblighi informativi su vita residua e attivita cedute"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Vigilanza in materia di NPL",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 4 Esposizioni deteriorate, inadempienze probabili e write-off",
+"Sezione IV par. 7.1 Esposizioni creditizie deteriorate"
+],
+"motivo": "Segnalazioni di esposizioni deteriorate e inadempienze probabili"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 11-13 Partecipazioni"
+],
+"motivo": "Segnalazione delle partecipazioni detenute"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (7)-(8) Dati patrimoniali e attivita e passivita finanziarie",
+"Sezione IV par. 20 Classificazione dei ricavi e dei costi"
+],
+"motivo": "Voci di bilancio e classificazione dei ricavi e costi"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Disposizioni in materia di asset digitali e tecnologie",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 46 Prestazioni di servizi per cripto-attivita"
+],
+"motivo": "Segnalazione dei servizi per cripto-attivita"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-21cc81f8a3": {
 "ambiti": [
@@ -40137,30 +40812,101 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Sezione VI - par. 2 Premessa",
-"Sezione VI - par. 3 Obblighi di segnalazione",
-"Sezione VI - par. 4 Termini e modalità di trasmissione",
-"Sezione VI - par. 4.1 Segnalazioni relative alle SGR",
-"Sezione III - par. 4.2 Segnalazioni dei fondi comuni aperti",
-"Sezione VI - par. 26 Classificazione dei ricavi e dei costi"
+"Sezione I-VI schemi di segnalazione SGR e SICAV/SICAF",
+"Sezione VI par. 3-4 Obblighi e modalita di trasmissione",
+"Sezione VI par. 6-26 Criteri di classificazione"
 ],
-"motivo": "manuale delle segnalazioni statistiche e di vigilanza per gli organismi di investimento collettivo"
+"motivo": "Manuale delle segnalazioni statistiche e di vigilanza delle SGR e degli OICR"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Organismi di investimento",
+"ruolo": "principale",
+"articoli": [
+"Sezione I par. 4.1-4.6 Segnalazioni relative a SGR, fondi aperti, chiusi, SICAV, SICAF",
+"Sezione II-V schemi di segnalazione OICR"
+],
+"motivo": "Segnalazioni periodiche di OICR aperti, chiusi, SICAV e SICAF"
 },
 {
 "tematica": "Gestione collettiva",
 "ambito": "Fondi di investimento",
-"ruolo": "principale",
+"ruolo": "secondario",
 "articoli": [
-"Sezione I (2) Situazione dei conti delle SGR",
-"Sezione II (2) Informazioni sulla composizione del portafoglio",
-"Sezione III (2) Situazione quote",
-"Sezione IV Valore delle quote",
-"Sezione V Relazione di gestione"
+"Sezione III (23)-(28) Informazioni statistiche delle SGR",
+"Sezione VI par. 15 Fondo/comparto"
 ],
-"motivo": "dati patrimoniali, portafoglio, quote e valore dei fondi gestiti dalle SGR"
+"motivo": "Dati patrimoniali, quote e valore dei fondi di investimento"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Fondi di investimento alternativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (20)-(21) Patrimonio di vigilanza e requisiti patrimoniali dei gestori"
+],
+"motivo": "Requisiti patrimoniali dei gestori di fondi"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I (15)-(20) Situazione dei conti delle SGR",
+"Sezione VI par. 26 Classificazione dei ricavi e costi IFRS"
+],
+"motivo": "Schemi di conto economico e situazione patrimoniale IFRS dei gestori"
+},
+{
+"tematica": "Governance",
+"ambito": "Outsourcing",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 14 (8)-(10) Spese per funzioni di controllo date in outsourcing",
+"Sezione II par. 14 Spese per altre funzioni in outsourcing"
+],
+"motivo": "Segnalazione di costi relativi a funzioni esternalizzate"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 2.5 Crediti acquistati per operazioni di cartolarizzazione",
+"Sezione II par. 4 Crediti acquistati per operazioni di cartolarizzazione"
+],
+"motivo": "Segnalazione dei crediti acquistati per operazioni di cartolarizzazione"
+},
+{
+"tematica": "Credito",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Sezione VI par. 14 Esposizioni creditizie deteriorate"
+],
+"motivo": "Dati statistici su fondi di investimento e qualita del credito"
+},
+{
+"tematica": "Fisco",
+"ambito": "Disposizioni generali in materia di fisco",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 2 Risparmio d'imposta",
+"Sezione I par. 4 Imposte"
+],
+"motivo": "Segnalazione di risparmio d'imposta e imposte del fondo"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II-III composizione del portafoglio (titoli, ISIN)"
+],
+"motivo": "Dati di mercato sul portafoglio titoli dei fondi"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-fd13f419b3": {
 "ambiti": [
@@ -40221,38 +40967,93 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"Sezione IV - par. 1 Destinatari",
-"Sezione IV - par. 2 Regole generali di compilazione",
-"Sezione IV - par. 3.1 Struttura delle segnalazioni",
-"Sezione IV - par. 3.4 Termini e modalità di trasmissione",
-"Sezione I (3) Dati patrimoniali",
-"Sezione II (3) Dati di conto economico e altre informazioni"
+"Premessa e Sezione IV par. 2-4 Regole generali e termini di trasmissione",
+"Sezione IV par. 1-3 Destinatari e obblighi di segnalazione",
+"Sezione V Segnalazioni prudenziali"
 ],
-"motivo": "manuale delle segnalazioni statistiche e di vigilanza per gli intermediari del mercato ristretto"
+"motivo": "Manuale delle segnalazioni statistiche e di vigilanza per gli intermediari del mercato mobiliare"
 },
 {
 "tematica": "Mercati finanziari",
 "ambito": "Investimenti",
+"ruolo": "principale",
+"articoli": [
+"Sezione III (4)-(6) Segnalazioni sui servizi di investimento",
+"Sezione IV (4) Segnalazioni sui servizi di investimento",
+"Sezione III par. 1-14 Negoziazione, collocamento, gestione, consulenza"
+],
+"motivo": "Segnalazione dei servizi di investimento prestati (negoziazione, collocamento, gestione, consulenza)"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Statistiche",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III (3) Strumenti finanziari in portafoglio e pronti contro termine",
-"Sezione IV (3) Segnalazioni sui servizi di investimento"
+"Sezione III (5) Strumenti finanziari in portafoglio e pronti contro termine",
+"Sezione IV par. 21-25 Volumi scambiati e numero di operazioni"
 ],
-"motivo": "segnalazioni sui servizi di investimento e sugli strumenti finanziari"
+"motivo": "Dati statistici su strumenti finanziari in portafoglio e volumi scambiati"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Disposizioni in materia di gestione dei mercati",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III par. 22-23 Gestione di sistemi multilaterali e organizzati di negoziazione"
+],
+"motivo": "Segnalazioni su sistemi multilaterali e organizzati di negoziazione"
 },
 {
 "tematica": "Informativa finanziaria (reporting)",
 "ambito": "Contabilità e bilancio",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV - par. 3.5 Dati di bilancio",
-"Sezione III - par. 7 Classificazione dei ricavi e dei costi nelle categorie IFRS"
+"Sezione I Dati patrimoniali",
+"Sezione II Dati di conto economico e altre informazioni",
+"Sezione III par. 4 Dati di bilancio"
 ],
-"motivo": "dati di bilancio e classificazione IFRS nelle segnalazioni"
+"motivo": "Dati patrimoniali e di conto economico delle SIM"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione V (2)-(4) Segnalazioni prudenziali",
+"Sezione IV (5)-(6) Segnalazioni prudenziali"
+],
+"motivo": "Segnalazioni prudenziali su patrimonio e requisiti"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III par. 4 Partecipazioni in imprese del gruppo",
+"Sezione V (14)-(16) Partecipazioni"
+],
+"motivo": "Segnalazione delle partecipazioni detenute"
+},
+{
+"tematica": "Governance",
+"ambito": "Outsourcing",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III par. 2-10 Spese per servizi e funzioni in outsourcing"
+],
+"motivo": "Segnalazione delle spese per funzioni esternalizzate"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Fondi di investimento",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 2-6 Patrimonio gestito e gestioni di portafogli"
+],
+"motivo": "Segnalazione del patrimonio gestito e delle gestioni di OICR"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-40c4fa8d1f": {
 "ambiti": [
@@ -40261,46 +41062,128 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"par. 1 Riproposizione dell'intera segnalazione",
-"par. 2 Invio delle segnalazioni di rettifica",
-"Sezione I - Dati statistici mensili",
-"Sezione II - Altri dati statistici",
-"Sezione IV - Segnalazioni prudenziali"
+"Sezione I - dati statistici mensili",
+"Sezione II - altri dati statistici",
+"Sezione III - informazioni finanziarie armonizzate",
+"Sezione IV - segnalazioni prudenziali",
+"Sezione I (27)-(29) FINREP e COREP"
 ],
-"motivo": "schemi di riferimento delle segnalazioni di vigilanza per istituzioni creditizie e finanziarie"
-},
-{
-"tematica": "Credito",
-"ambito": "Statistiche",
-"ruolo": "secondario",
-"articoli": [
-"Sezione I - Dati statistici mensili",
-"Sezione II - Altri dati statistici"
-],
-"motivo": "dati statistici mensili su crediti e operazioni"
+"motivo": "Schemi di rilevazione e istruzioni per l'inoltro dei flussi segnaletici di banche, SIM e SGR"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Obblighi informativi",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III - Informazioni finanziarie armonizzate per il Meccanismo di Vigilanza Unico",
-"Sezione IV - Segnalazioni prudenziali"
+"Sezione IV (20)-(30) Patrimonio di vigilanza e requisiti patrimoniali",
+"Sezione IV par. 5 Elementi transitori dei fondi propri"
 ],
-"motivo": "informazioni armonizzate e segnalazioni prudenziali"
+"motivo": "Segnalazioni COREP su fondi propri e requisiti patrimoniali"
+},
+{
+"tematica": "Credito",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 4 (2)-(25) Variazioni delle esposizioni e rettifiche di valore",
+"Sezione II par. 3 (44)-(50) Esposizioni deteriorate"
+],
+"motivo": "Segnalazioni di qualita del credito, rettifiche e deteriorati"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 3 (5)-(6) Crediti acquistati per cartolarizzazione",
+"Sezione II par. 3 (56) Garanzie rilasciate nell'ambito di cartolarizzazioni"
+],
+"motivo": "Segnalazioni su crediti e garanzie legati alle cartolarizzazioni"
+},
+{
+"tematica": "Credito",
+"ambito": "Factoring",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II par. 3 (15)-(18) Operazioni di factoring pro solvendo e pro soluto",
+"Sezione II par. 3 (25)-(26) Factoring verso PA"
+],
+"motivo": "Segnalazione delle operazioni di factoring"
+},
+{
+"tematica": "Credito",
+"ambito": "Cessione del quinto",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV par. 4.4 Caratteristiche dei prestiti contro cessione del quinto"
+],
+"motivo": "Segnalazione dei prestiti contro cessione del quinto dello stipendio"
+},
+{
+"tematica": "Incassi e pagamenti",
+"ambito": "Sistemi e mezzi di pagamento",
+"ruolo": "principale",
+"articoli": [
+"Sezione II par. 2.12 Servizi di pagamento e moneta elettronica",
+"Sezione II par. 3 (87)-(105) Operazioni con carte e moneta elettronica",
+"Sezione IV par. 4.3 Requisito patrimoniale per servizi di pagamento",
+"Sezione IV par. 5 (5) Requisito per moneta elettronica"
+],
+"motivo": "Segnalazioni su servizi di pagamento, carte e moneta elettronica"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III (51)-(55) Strumenti finanziari in portafoglio e pronti contro termine"
+],
+"motivo": "Segnalazione di strumenti finanziari in portafoglio"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Investimenti",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV (12)-(17) Segnalazioni sui servizi d'investimento",
+"Sezione III (56)-(58) Segnalazioni sui servizi d'investimento"
+],
+"motivo": "Segnalazioni dei servizi di investimento prestati dalle SIM e dalle banche"
 },
 {
 "tematica": "Mercati finanziari",
 "ambito": "Disposizioni in materia di gestione dei mercati",
+"ruolo": "principale",
+"articoli": [
+"Sezione V Segnalazioni sui servizi di crowdfunding",
+"Sezione IV par. 4.5-4.6 Equity e debt crowdfunding"
+],
+"motivo": "Segnalazioni dei fornitori di servizi di crowdfunding"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Organismi di investimento",
 "ruolo": "secondario",
 "articoli": [
-"Sezione V - Segnalazioni sui servizi di crowdfunding"
+"Sezione I (60)-(84) Situazione dei conti delle SGR",
+"Sezione II (297)-(321) Patrimonio di vigilanza dei gestori e composizione portafoglio",
+"Sezione III (74)-(88) Informazioni statistiche delle SGR e situazione quote"
 ],
-"motivo": "segnalazioni sui servizi di crowdfunding"
+"motivo": "Segnalazioni statistiche e di vigilanza delle SGR e dei fondi gestiti"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I (1)-(114) Dati patrimoniali e stato patrimoniale",
+"Sezione II (301)-(353) Dati di conto economico",
+"Sezione III (60)-(110) Dati integrativi e conto economico"
+],
+"motivo": "Schemi di stato patrimoniale e conto economico delle segnalazioni"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-6733a12a0c": {
 "ambiti": [
@@ -40309,27 +41192,78 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"par. 1.2 Segnalazioni alla Banca d'Italia",
-"par. 1.5 Variazioni patrimoniali trimestrali",
-"par. 1.4 Patrimonio relativo ai mesi di dicembre e di giugno",
-"par. 3.12 Patrimonio di vigilanza"
+"Premessa e par. 1.1-1.8 (ambito e segnalazioni alla BdI)",
+"Par. 3.1-3.17 Istruzioni per il patrimonio di vigilanza individuale",
+"Par. 4.2-4.4 Prospetti di raccordo"
 ],
-"motivo": "istruzioni di compilazione delle segnalazioni sul patrimonio di vigilanza"
+"motivo": "Istruzioni per le segnalazioni sul patrimonio di vigilanza e sui coefficienti prudenziali"
 },
 {
 "tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Obblighi informativi",
 "ruolo": "principale",
 "articoli": [
-"par. 1.3 Struttura del patrimonio di vigilanza individuale",
-"par. 3.5 Patrimonio di base",
-"par. 3.10 Patrimonio supplementare",
-"par. 3.15 Patrimonio di 3° livello"
+"Par. 1.3 Struttura del patrimonio di vigilanza",
+"Par. 1 (2)-(3) Esposizioni e rischio di credito standardizzato e IRB",
+"Par. 1.3 (2) Rischio di mercato e portafoglio di negoziazione",
+"Par. 1 (28)-(35) Rischio operativo"
 ],
-"motivo": "struttura e calcolo del patrimonio di vigilanza (requisiti patrimoniali) e deduzioni"
+"motivo": "Requisiti patrimoniali su rischio di credito, mercato e operativo"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Par. 1.3 Rischio di concentrazione",
+"Par. 1.4 Integrazione per floor"
+],
+"motivo": "Metodologie di calcolo dei rischi e dei requisiti aggiuntivi"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obbligazioni garantite",
+"ruolo": "secondario",
+"articoli": [
+"Par. 1 (2)-(3) Esposizioni sotto forma di obbligazioni bancarie garantite"
+],
+"motivo": "Trattamento delle obbligazioni bancarie garantite nel rischio di credito"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "principale",
+"articoli": [
+"Par. 1 (5) Posizioni verso la cartolarizzazione",
+"Par. 2 (6) Posizioni verso la ri-cartolarizzazione",
+"Par. 3 (6) Posizioni verso la cartolarizzazione (IRB)",
+"Par. 5 (3) Clausole di rimborso anticipato",
+"Par. 1 Posizioni lunghe e corte verso la cartolarizzazione"
+],
+"motivo": "Requisiti patrimoniali su posizioni verso cartolarizzazioni e ri-cartolarizzazioni"
+},
+{
+"tematica": "Credito",
+"ambito": "Factoring",
+"ruolo": "secondario",
+"articoli": [
+"Par. 5 (2) Crediti commerciali acquistati"
+],
+"motivo": "Requisito patrimoniale sui crediti commerciali acquistati"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
+"ruolo": "principale",
+"articoli": [
+"Par. 1 (31)-(34) Operazioni con parti correlate",
+"Par. 3.1.4 Operazioni di maggiore rilevanza",
+"Par. 1.3 (22) Altro soggetto con potere di nomina"
+],
+"motivo": "Operazioni con parti correlate e soggetti connessi e limiti relativi"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-a110d8a80f": {
 "ambiti": [
@@ -40338,26 +41272,71 @@
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "principale",
 "articoli": [
-"Premessa",
-"Sezione I - par. 1.5 Segnalazione statistica",
-"Sezione I - par. 1.7 Termini e modalità per la trasmissione delle segnalazioni consolidate",
-"Sezione II - par. 1.2 Obblighi informativi e correttezza delle segnalazioni su base consolidata",
-"Sezione II - par. 1.3 Area e metodi di consolidamento"
+"Sezione I par. 1.1-1.7 Termini e modalita di trasmissione delle segnalazioni consolidate",
+"Sezione I par. 4-6 Schemi FINREP e statistiche",
+"Sezione II par. 1.1-1.4 Obblighi informativi e area di consolidamento"
 ],
-"motivo": "istruzioni per le segnalazioni di vigilanza su base consolidata (termini, area di consolidamento)"
+"motivo": "Istruzioni per le segnalazioni di vigilanza su base consolidata"
+},
+{
+"tematica": "Credito",
+"ambito": "Statistiche",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 14-16 Esposizioni scadute e deteriorate",
+"Sezione I par. 18-22 Variazioni delle esposizioni deteriorate"
+],
+"motivo": "Segnalazioni sulla qualita del credito e sui deteriorati su base consolidata"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 12 Titoli derivanti da cartolarizzazioni",
+"Sezione I par. 46 Esposizioni connesse con operazioni di cartolarizzazione"
+],
+"motivo": "Segnalazioni su esposizioni connesse con cartolarizzazioni"
+},
+{
+"tematica": "Credito",
+"ambito": "Cessione del quinto",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 16 Carte di credito, prestiti personali e cessioni del quinto"
+],
+"motivo": "Segnalazione di prestiti personali e cessioni del quinto"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 1.5 Segnalazione statistica",
+"Sezione I par. 1.7 Termini consolidati"
+],
+"motivo": "Obblighi informativi prudenziali su base consolidata"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I par. 12-18 Partecipazioni non quotate e in imprese in difficolta"
+],
+"motivo": "Segnalazione delle partecipazioni del gruppo"
 },
 {
 "tematica": "Informativa finanziaria (reporting)",
 "ambito": "Contabilità e bilancio",
 "ruolo": "secondario",
 "articoli": [
-"Sezione I (FINREP) statistiche di bilancio consolidato",
-"Sezione II sottosezione 1 Informazioni per paese di controparte"
+"Sezione I par. 1-10 Voci FINREP consolidate"
 ],
-"motivo": "segnalazioni FINREP su base consolidata"
+"motivo": "Voci di bilancio consolidato (FINREP)"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-2df0e87bd2": {
 "ambiti": [
@@ -42696,71 +43675,160 @@
 "ambiti": [
 {
 "tematica": "Gestione collettiva",
-"ambito": "Fondi di investimento alternativi",
+"ambito": "Fondi di investimento",
 "ruolo": "principale",
 "articoli": [
-"Sezione I DISPOSIZIONI DI CARATTERE GENERALE",
-"Sezione II GESTIONE COLLETTIVA DEL RISPARMIO",
-"Sezione III (7) FIA aperti non riservati a investitori professionali",
-"Sezione IV (2) Gestione di FIA chiusi",
-"Sezione VI (2) FIA riservati"
+"Sezione II (30)-(31) Contenuto minimo del regolamento di gestione",
+"Sezione II (35) Criteri e modalita di valutazione dei beni",
+"Sezione III (8) Valore della quota",
+"Sezione II (11) OICVM",
+"Sezione III (7)-(8) FIA aperti e chiusi non riservati"
 ],
-"motivo": "disciplina della gestione collettiva del risparmio: gestori e fondi alternativi (FIA)"
+"motivo": "Regolamento di gestione, limiti di investimento e valore della quota dei fondi comuni"
 },
 {
 "tematica": "Gestione collettiva",
 "ambito": "Organismi di investimento",
 "ruolo": "principale",
 "articoli": [
-"Sezione II (6) Autorizzazione delle SICAV e delle SICAF in gestione interna",
-"Sezione IV (4) Società di investimento semplice (SIS)",
-"Sezione II (13) Fusione e scissione nazionale tra fondi comuni",
-"Sezione IV (6) Fusioni comunitarie di OICVM",
-"Sezione III (10) Strutture master-feeder di OICVM"
+"Sezione II (27) Autorizzazione di SICAV e SICAF in gestione interna",
+"Sezione III (18)-(19) SICAV e SICAF sotto soglia e SIS",
+"Sezione IV (13) Approvazione dello statuto di SICAV e SICAF"
 ],
-"motivo": "OICR, SICAV, SICAF e fusioni e strutture di fondi"
+"motivo": "Disciplina di SGR, SICAV e SICAF e relativa organizzazione"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Fondi di investimento alternativi",
+"ruolo": "principale",
+"articoli": [
+"Sezione III (20)-(21) FIA aperti non riservati a investitori professionali",
+"Sezione V (8) FIA chiusi non riservati a investitori professionali",
+"Sezione VI (2) FIA riservati",
+"Sezione IV (19) Strutture master feeder di FIA"
+],
+"motivo": "Regime dei FIA aperti, chiusi e riservati"
 },
 {
 "tematica": "Gestione collettiva",
 "ambito": "Fondi aperti",
 "ruolo": "secondario",
 "articoli": [
-"Sezione II - par. 3.3 Limiti agli investimenti in strumenti finanziari derivati OTC",
-"Sezione IV (5) OICR di mercato monetario"
+"Sezione II (30) Regolamento dei fondi aperti (liquidita)"
 ],
-"motivo": "regole su liquidità e investimenti dei fondi aperti"
+"motivo": "Gestione della liquidita dei fondi aperti"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Disposizione in materia di fondi di pensione",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III (28) Funzioni di depositario di fondi pensione e PEPP",
+"Sezione III (14) Funzioni di depositario di fondi pensione"
+],
+"motivo": "Funzioni del depositario per i fondi pensione"
 },
 {
 "tematica": "Governance",
 "ambito": "Procedimenti autorizzativi",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"Sezione VI PROCEDURA DI AUTORIZZAZIONE",
-"Sezione IX DECADENZA E RINUNCIA"
+"Sezione II (21)-(22) Autorizzazione SGR e capitale sociale",
+"Sezione VI Procedura di autorizzazione",
+"Sezione VII SGR sotto soglia",
+"Sezione IX Decadenza e rinuncia"
 ],
-"motivo": "autorizzazione e decadenza delle SGR"
+"motivo": "Procedure di autorizzazione e decadenza di SGR e SICAV/SICAF"
 },
 {
 "tematica": "Governance",
-"ambito": "Disposizioni in materia di azioni e partecipazioni",
+"ambito": "Governo societario",
 "ruolo": "secondario",
 "articoli": [
-"Sezione V CONTROLLI SULL'ASSETTO PROPRIETARIO DELLA SGR",
-"Sezione II (3) Disciplina delle partecipazioni detenibili"
+"Sezione IV (11) Requisiti degli esponenti aziendali",
+"Sezione V (5) Controlli sull'assetto proprietario della SGR"
 ],
-"motivo": "controlli sull'assetto proprietario delle SGR e delle SICAV"
+"motivo": "Requisiti di esponenti e controlli sull'assetto proprietario"
+},
+{
+"tematica": "Governance",
+"ambito": "Vigilanza",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (29) Disciplina degli accertamenti ispettivi",
+"Sezione II (28) Comunicazioni alla Banca d'Italia"
+],
+"motivo": "Vigilanza ispettiva e comunicazioni alla Banca d'Italia"
+},
+{
+"tematica": "Governance",
+"ambito": "Outsourcing",
+"ruolo": "secondario",
+"articoli": [
+"Sezione V (10) Delega delle funzioni di custodia e verifica",
+"Sezione IV (21) Altri obblighi del depositario"
+],
+"motivo": "Deleghe e funzioni di custodia esternalizzate"
 },
 {
 "tematica": "Segnalazioni di Vigilanza",
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III (5) Segnalazioni di vigilanza"
+"Sezione III (5) Segnalazioni di vigilanza",
+"Sezione III - par. 1 (7) Segnalazioni delle SGR e degli OICR"
 ],
-"motivo": "segnalazioni di vigilanza periodiche dei gestori"
+"motivo": "Segnalazioni di vigilanza delle SGR e degli OICR"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Sezione V (23) Verifica del modello interno",
+"Sezione III (42) Determinazione dei limiti per l'esposizione complessiva"
+],
+"motivo": "Sistema di gestione dei rischi e limiti di esposizione degli OICR"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (22) Disciplina delle partecipazioni detenibili"
+],
+"motivo": "Partecipazioni detenibili dalle SGR"
+},
+{
+"tematica": "Mercati finanziari",
+"ambito": "Investimenti",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV (13)-(19) Distribuzione transfrontaliera e libera prestazione di servizi"
+],
+"motivo": "Distribuzione transfrontaliera degli OICR"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV (14) Notifica delle operazioni di cartolarizzazione"
+],
+"motivo": "Notifica delle operazioni di cartolarizzazione"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "secondario",
+"articoli": [
+"Sezione I (46)-(58) Criteri di valutazione e prospetti contabili",
+"Sezione IX (1)-(6) Relazione semestrale e informazioni"
+],
+"motivo": "Criteri di valutazione e prospetti contabili dei fondi"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-7b2991ba7f": {
 "ambiti": [
@@ -42769,54 +43837,109 @@
 "ambito": "Gestione dei rischi",
 "ruolo": "principale",
 "articoli": [
-"Sezione II (3) ICARAP, ICAAP, ILAAP",
-"Sezione III (5) Processo di revisione e valutazione prudenziale (SREP)",
-"Sezione IV (4) Requisito relativo ai fattori K del rischio per il cliente",
-"Sezione VI (2) Liquidità"
+"Sezione II ICAAP, ICARAP, ILAAP",
+"Sezione III SREP",
+"Sezione III (7) Requisito spese fisse generali",
+"Sezione IV (4) Requisito fattori K per il rischio per il mercato",
+"Sezione V Requisito fattori K per l'impresa",
+"Sezione VI Liquidita"
 ],
-"motivo": "requisiti prudenziali delle SIM: capitale, processi interni e SREP"
+"motivo": "Requisiti patrimoniali SIM, processi ICAAP/ILAAP e SREP, liquidita"
 },
 {
-"tematica": "Governance",
-"ambito": "Disposizioni in materia di azioni e partecipazioni",
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Disposizioni in ambito di partecipazioni detenibili",
+"ruolo": "principale",
+"articoli": [
+"Sezione I (7) Acquisto di partecipazioni di natura finanziaria e strumentale",
+"Sezione IV (7)-(9) Partecipazioni di controllo in SIM",
+"Sezione II (7) Partecipazioni di natura non finanziaria detenibili"
+],
+"motivo": "Acquisto e detenzione di partecipazioni da parte delle SIM"
+},
+{
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Obblighi informativi",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IV Partecipazioni di controllo in SIM",
-"Sezione I (7) Acquisto di partecipazioni di natura finanziaria"
+"Sezione I (6) Contenuto e pubblicazione delle informazioni",
+"Sezione II par. 1 Informativa al pubblico"
 ],
-"motivo": "comunicazioni preventive e successive sull'acquisto di partecipazioni"
+"motivo": "Obblighi di informativa al pubblico delle SIM"
 },
 {
 "tematica": "Governance",
 "ambito": "Procedimenti autorizzativi",
+"ruolo": "principale",
+"articoli": [
+"Sezione I (15)-(21) Autorizzazione e capitale iniziale",
+"Sezione II (15)-(16) Prestazione di servizi tramite succursale",
+"Sezione IX (3)-(4) Autorizzazione ad istituire una seconda impresa madre UE",
+"Sezione II (8)-(11) Passaggi tra classe 2 e classe 1-minus",
+"Sezione III (8)-(10) Passaggi tra classe 2 e classe 3"
+],
+"motivo": "Procedimenti autorizzativi, capitale iniziale e succursali delle SIM"
+},
+{
+"tematica": "Governance",
+"ambito": "Governo societario",
 "ruolo": "secondario",
 "articoli": [
-"Sezione IX Autorizzazione all'istituzione di una seconda impresa",
-"Sezione IV Procedimenti amministrativi"
+"Sezione II (1) Relazione sulla struttura organizzativa",
+"Sezione II (4) Deliberazioni assembleari",
+"Sezione III (2)-(3) Organi sociali"
 ],
-"motivo": "procedimenti autorizzativi delle SIM e delle succursali"
+"motivo": "Obblighi organizzativi e di governo societario delle SIM"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione II (5) Relazioni delle funzioni di controllo",
+"Sezione II (2) Obblighi informativi dell'organo di controllo"
+],
+"motivo": "Relazioni e obblighi delle funzioni di controllo"
 },
 {
 "tematica": "Governance",
 "ambito": "Vigilanza",
 "ruolo": "secondario",
 "articoli": [
-"Sezione II (5) Disciplina degli accertamenti ispettivi",
-"Sezione III (3) Vigilanza della Banca d'Italia"
+"Sezione II (5)-(7) Disciplina degli accertamenti ispettivi",
+"Sezione III (13)-(14) Vigilanza della Banca d'Italia"
 ],
-"motivo": "poteri di vigilanza e accertamenti ispettivi sulle SIM"
+"motivo": "Vigilanza ispettiva e poteri della Banca d'Italia sulle SIM"
 },
 {
 "tematica": "Segnalazioni di Vigilanza",
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "secondario",
 "articoli": [
-"Sezione III - par. 2 Segnalazioni statistiche su base individuale e consolidata"
+"Sezione III (2) Segnalazioni statistiche su base individuale e consolidata"
 ],
-"motivo": "segnalazioni statistiche delle SIM"
+"motivo": "Segnalazioni statistiche delle SIM su base individuale e consolidata"
+},
+{
+"tematica": "Credito",
+"ambito": "Cartolarizzazioni",
+"ruolo": "secondario",
+"articoli": [
+"Sezione IV (10)-(16) Notifica delle operazioni di cartolarizzazione"
+],
+"motivo": "Notifica alla Banca d'Italia delle operazioni di cartolarizzazione"
+},
+{
+"tematica": "Gestione collettiva",
+"ambito": "Disposizione in materia di fondi di pensione",
+"ruolo": "secondario",
+"articoli": [
+"Sezione III (22)-(24) Gestione del patrimonio di fondi pensione da parte delle SIM"
+],
+"motivo": "Requisiti per la gestione del patrimonio dei fondi pensione"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "BDI-874db350d9": {
 "ambiti": [
@@ -46762,17 +47885,41 @@
 "ambito": "Contabilità e bilancio",
 "ruolo": "principale",
 "articoli": [
-"Premessa - Allegato 3 al Regolamento ISVAP n. 7/2007",
-"par. 4.1 Contratti di assicurazione emessi che costituiscono attività",
-"par. 5.3 Attività finanziarie valutate al costo ammortizzato",
-"par. 1 Ricavi assicurativi derivanti dai contratti di assicurazione emessi",
-"par. 19 Utile (Perdita) operativo",
-"par. 28 Utile (Perdita) d'esercizio consolidato"
+"Allegato 3 - schemi di stato patrimoniale e conto economico consolidato (par. 1-28)",
+"Note illustrative IFRS 17 e IFRS 9 (par. 3.x, 4.x, 5.x, 7.x)",
+"Prospetto delle altre componenti del conto economico complessivo (par. 1-5)"
 ],
-"motivo": "schemi di bilancio consolidato delle imprese assicurative: attivo, passivo e conto economico"
+"motivo": "modifiche agli schemi obbligatori del bilancio consolidato IFRS delle imprese di assicurazione"
+},
+{
+"tematica": "Vigilanza prudenziale",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Note: metodi di misurazione del rischio di sottoscrizione, credito, mercato, liquidita, concentrazione (par. 2 vari)"
+],
+"motivo": "informativa quantitativa e qualitativa sui rischi assunti"
+},
+{
+"tematica": "Gestione patrimonio immobiliare",
+"ambito": "Immobili di proprietà",
+"ruolo": "secondario",
+"articoli": [
+"Investimenti immobiliari e diritti d'uso da leasing (par. 5.1.1-5.1.2, par. 2 leasing)"
+],
+"motivo": "composizione e variazioni degli investimenti immobiliari"
+},
+{
+"tematica": "Fisco",
+"ambito": "Obblighi informativi e dichiarativi",
+"ruolo": "secondario",
+"articoli": [
+"Imposte sul reddito (par. 25.1-25.2, par. 7.2.1-7.2.6, Global Minimum Tax)"
+],
+"motivo": "informativa su imposte correnti, differite e Global Minimum Tax"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-662d42751d": {
 "ambiti": [
@@ -49881,81 +51028,83 @@
 "ambito": "Governo societario",
 "ruolo": "principale",
 "articoli": [
-"Art. 4 Obiettivi del sistema di governo societario",
-"Art. 6 Comitato per il controllo interno e i rischi",
-"Art. 9 Formalizzazione degli atti",
-"Art. 25 Requisiti di professionalità, onorabilità e indipendenza",
-"Art. 42 Ruolo del consiglio di amministrazione",
-"Art. 45 Sistema di amministrazione dualistico"
+"Art. 4-9 (obiettivi, organo amministrativo, comitato controllo e rischi, alta direzione, formalizzazione)",
+"Art. 42-45 (ruolo CdA, sistema dualistico)",
+"Art. 70-75 (governo societario di gruppo)"
 ],
-"motivo": "sistema di governo societario delle imprese assicurative: organi, esponenti e comitati"
+"motivo": "struttura e ruoli degli organi del sistema di governo societario"
 },
 {
 "tematica": "Governance",
 "ambito": "Sistema dei controlli interni",
 "ruolo": "principale",
 "articoli": [
-"Art. 10 Obiettivi del sistema di controllo interno",
-"Art. 26 Istituzione delle funzioni fondamentali",
-"Art. 32 Compiti della funzione di gestione dei rischi",
-"Art. 34 Compiti della funzione di verifica della conformità",
-"Art. 36 Compiti della funzione di revisione interna",
-"Art. 38 Compiti della funzione attuariale"
+"Art. 10-13 (sistema di controllo interno e flussi informativi)",
+"Art. 26-31 (funzioni fondamentali)",
+"Art. 32-38 (gestione dei rischi, verifica conformita, revisione interna, funzione attuariale)"
 ],
-"motivo": "funzioni fondamentali e sistema dei controlli interni, anche a livello di gruppo"
+"motivo": "funzioni fondamentali e sistema dei controlli interni"
 },
 {
 "tematica": "Governance",
 "ambito": "Outsourcing",
 "ruolo": "principale",
 "articoli": [
-"Art. 60 Esternalizzazione di attività o funzioni",
-"Art. 62 Esternalizzazione di funzioni o attività essenziali o importanti",
-"Art. 63 Esternalizzazione delle funzioni fondamentali",
-"Art. 64 Accordi di esternalizzazione",
-"Art. 65 Controllo sulle funzioni o attività esternalizzate"
+"Art. 60-69 (esternalizzazione di funzioni o attivita essenziali o importanti, controlli e comunicazioni)",
+"Art. 94 (esternalizzazione di gruppo)"
 ],
-"motivo": "condizioni e controlli sull'esternalizzazione di funzioni essenziali"
+"motivo": "condizioni, accordi e controlli dell'esternalizzazione"
 },
 {
 "tematica": "Remunerazione e incentivazione",
 "ambito": "Disposizioni in materia di remunerazione e incentivazione",
 "ruolo": "principale",
 "articoli": [
-"Art. 39 Ambito di applicazione delle politiche di remunerazione",
-"Art. 40 Principi generali delle politiche di remunerazione",
-"Art. 46 Bilanciamento delle componenti fisse e variabili",
-"Art. 47 Fissazione e misurazione dei risultati",
-"Art. 54 Struttura della politica di remunerazione del personale rilevante",
-"Art. 58 Verifica delle politiche di remunerazione"
+"Art. 39-40 (ambito e principi)",
+"Art. 46-51 (remunerazione amministratori e organi di controllo)",
+"Art. 54-58 (personale rilevante, funzioni fondamentali, altri soggetti, verifiche)"
 ],
-"motivo": "politiche di remunerazione e incentivazione degli organi e del personale"
+"motivo": "politiche di remunerazione per amministratori e personale rilevante"
 },
 {
-"tematica": "Vigilanza prudenziale",
+"tematica": "Vigilanza prudenziale (Basilea)",
 "ambito": "Gestione dei rischi",
 "ruolo": "principale",
 "articoli": [
-"Art. 17 Obiettivi del sistema di gestione dei rischi",
-"Art. 19 Individuazione e valutazione dei rischi",
-"Art. 20 Politica di riassicurazione",
-"Art. 23 Principi della politica di gestione del capitale",
-"Art. 24 Piano di gestione del capitale a medio termine"
+"Art. 17-24 (sistema di gestione dei rischi, riassicurazione, gestione del capitale)"
 ],
-"motivo": "gestione dei rischi, riassicurazione e gestione del capitale delle imprese assicurative"
+"motivo": "quadro di gestione dei rischi e politica del capitale"
 },
 {
 "tematica": "Governance",
-"ambito": "Disposizioni in materia di azioni e partecipazioni",
+"ambito": "Vigilanza",
 "ruolo": "secondario",
 "articoli": [
-"Art. 15 Produzione di dati e informazioni ai fini della vigilanza sul gruppo",
-"Art. 86 Principi della politica di gestione del capitale di gruppo"
+"Art. 25-25-octies (requisiti di professionalita, onorabilita, idoneita esponenti)"
 ],
-"motivo": "vigilanza di gruppo e gestione del capitale a livello di gruppo"
+"motivo": "requisiti e procedure di idoneita degli esponenti"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Sistemi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 16 (sistemi informatici e cyber security)",
+"Art. 14 (sistema di gestione dei dati)"
+],
+"motivo": "requisiti informatici e di sicurezza"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Business Continuity",
+"ruolo": "secondario",
+"articoli": [
+"Art. 83-84 (piano di emergenza rafforzato di gruppo)"
+],
+"motivo": "piano di emergenza per gruppi rilevanti"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-336ea90331": {
 "ambiti": [
@@ -49984,30 +51133,78 @@
 "ambito": "Servizi e Prodotti assicurativi",
 "ruolo": "principale",
 "articoli": [
-"Art. 4 Registro degli intermediari assicurativi",
-"Art. 9 Adempimenti per la gestione del Registro",
-"Art. 11 Contratto di assicurazione della responsabilità civile",
-"Art. 46 Politiche di organizzazione, gestione e controllo della distribuzione",
-"Art. 47 Condizioni per la distribuzione",
-"Art. 48 Requisiti per lo svolgimento dell'attività",
-"Art. 53 Limiti all'esercizio dell'attività di intermediazione"
+"Art. 4-9 (Registro degli intermediari)",
+"Art. 10-45 (requisiti e procedimenti di iscrizione, cancellazione, reiscrizione)",
+"Art. 46-54 (politiche di distribuzione, condizioni e requisiti)",
+"Art. 68-bis (prodotti di investimento assicurativi)",
+"Art. 84-96 (formazione e aggiornamento professionale)"
 ],
-"motivo": "disciplina della distribuzione assicurativa: registro, requisiti e condizioni per l'intermediazione"
+"motivo": "disciplina dell'accesso e dell'esercizio della distribuzione assicurativa, Registro e formazione"
 },
 {
 "tematica": "Distribuzione assicurativa",
 "ambito": "Trasparenza",
+"ruolo": "principale",
+"articoli": [
+"Art. 68-ter-68-quinquies (informativa precontrattuale, comunicazioni pubblicitarie)",
+"Art. 68-sexies-68-octies (incentivi)",
+"Art. 68-novies-68-terdecies (valutazione di adeguatezza e appropriatezza, consulenza)",
+"Art. 56-61 (informativa precontrattuale, remunerazioni, documentazione)"
+],
+"motivo": "obblighi di informativa e correttezza nella distribuzione"
+},
+{
+"tematica": "Sviluppo commerciale",
+"ambito": "Gestione Rete Vendita",
+"ruolo": "principale",
+"articoli": [
+"Art. 50 (reti multilevel marketing)",
+"Art. 70-83 (collocamento a distanza, call center, comunicazioni commerciali)",
+"Art. 53 (limiti all'intermediazione)"
+],
+"motivo": "governo della rete distributiva, fuori sede, call center, multilevel"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
 "ruolo": "secondario",
 "articoli": [
-"Art. 54 Regole generali di comportamento",
-"Art. 57 Informativa sulle remunerazioni",
-"Art. 58 Valutazione delle richieste ed esigenze del contraente",
-"Art. 60 Documentazione da consegnare ai contraenti"
+"Art. 55 (conflitti di interesse)"
 ],
-"motivo": "obblighi di comportamento e informativa verso i contraenti"
+"motivo": "obbligo di gestione dei conflitti nella distribuzione"
+},
+{
+"tematica": "Trasparenza e tutela del consumatore",
+"ambito": "Tutela del consumatore",
+"ruolo": "secondario",
+"articoli": [
+"Art. 56-61 (informativa precontrattuale e documentazione)",
+"Art. 72-75 (collocamento non richiesto, trasmissione documentazione)"
+],
+"motivo": "tutele del contraente nel collocamento"
+},
+{
+"tematica": "Governance",
+"ambito": "Sistema dei controlli interni",
+"ruolo": "secondario",
+"articoli": [
+"Art. 46 (politiche di organizzazione, gestione e controllo della distribuzione)",
+"Art. 43-45 (obblighi di comunicazione, adempimenti annuali, verifiche)"
+],
+"motivo": "presidi organizzativi e verifiche sulla distribuzione"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Obblighi di conservazione",
+"ruolo": "secondario",
+"articoli": [
+"Art. 62 (firma elettronica avanzata)",
+"Art. 67-68 (conservazione della documentazione)"
+],
+"motivo": "firma elettronica e conservazione documentale"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-75e764ee36": {
 "ambiti": [
@@ -50500,114 +51697,121 @@
 "ambito": "Procedimenti autorizzativi",
 "ruolo": "principale",
 "articoli": [
-"7",
-"8",
-"9",
-"12",
-"14",
-"15",
-"17",
-"18"
+"Art. 3-6 (nozione e accertamento requisiti)",
+"Art. 7-12 (istanza, capitale, soci)",
+"Art. 14-24 (programma di attivita, istruttoria, albo imprese locali)"
 ],
-"motivo": "Autorizzazione all'esercizio delle imprese di assicurazione locali, requisiti di capitale e istanze"
+"motivo": "autorizzazione e albo delle imprese di assicurazione locali"
 },
 {
 "tematica": "Governance",
 "ambito": "Sistema dei controlli interni",
 "ruolo": "principale",
 "articoli": [
-"25",
-"27",
-"32",
-"33",
-"36",
-"38",
-"40",
-"41",
-"42"
+"Art. 25-47 (sistema dei controlli interni, gestione dei rischi, verifica di conformita, revisione interna)"
 ],
-"motivo": "Sistema dei controlli interni, revisione interna e gestione dei rischi"
+"motivo": "funzioni di controllo, risk management, compliance e internal audit"
 },
 {
 "tematica": "Governance",
 "ambito": "Outsourcing",
 "ruolo": "principale",
 "articoli": [
-"49",
-"50",
-"51",
-"52",
-"53",
-"55",
-"56",
-"57"
+"Art. 48-58 (esternalizzazione attivita essenziali o importanti)"
 ],
-"motivo": "Esternalizzazione di attività essenziali e funzioni"
+"motivo": "politica di esternalizzazione, contratti e controllo"
 },
 {
 "tematica": "Governance",
 "ambito": "Investimento",
 "ruolo": "principale",
 "articoli": [
-"169",
-"175",
-"176",
-"182",
-"183",
-"186",
-"194",
-"200",
-"202"
+"Art. 169-181 (gestione degli investimenti, delibera quadro, controlli e derivati)"
 ],
-"motivo": "Investimenti e attivi a copertura delle riserve tecniche"
+"motivo": "gestione degli investimenti e presidi dell'area patrimoniale"
+},
+{
+"tematica": "Vigilanza prudenziale",
+"ambito": "Gestione dei rischi",
+"ruolo": "principale",
+"articoli": [
+"Art. 182-223 (copertura riserve tecniche, margine di solvibilita, fondi disponibili)",
+"Art. 64-79 (tariffe e garanzie)"
+],
+"motivo": "margine di solvibilita, copertura riserve e requisiti patrimoniali"
+},
+{
+"tematica": "Informativa finanziaria (reporting)",
+"ambito": "Contabilità e bilancio",
+"ruolo": "principale",
+"articoli": [
+"Art. 260-271 (bilancio di esercizio, relazione semestrale, piano dei conti)",
+"Art. 272-279 (criteri di valutazione di terreni e fabbricati)",
+"Art. 280-282 (revisori)"
+],
+"motivo": "bilancio, relazioni, piano dei conti e revisione"
 },
 {
 "tematica": "Governance",
-"ambito": "Product Oversight Governance - (POG)",
+"ambito": "Governo societario",
 "ruolo": "secondario",
 "articoli": [
-"64",
-"65",
-"66",
-"68",
-"69",
-"82",
-"83"
+"Art. 26-30 (organo amministrativo, alta direzione, organo di controllo)",
+"Art. 170-172 (organi sociali in materia di investimenti)"
 ],
-"motivo": "Basi tecniche e tariffe dei rami vita e relazione tecnica sulla tariffa"
+"motivo": "ruoli e responsabilita degli organi"
 },
 {
 "tematica": "Governance",
 "ambito": "Vigilanza",
 "ruolo": "secondario",
 "articoli": [
-"47-bis",
-"47-ter",
-"47-quater",
-"47-sexies",
-"47-septies"
+"Art. 47-bis-47-septies (idoneita e decadenza esponenti)",
+"Art. 283-286 (misure di salvaguardia e revoca)"
 ],
-"motivo": "Valutazione dell'idoneità degli esponenti aziendali"
+"motivo": "requisiti degli esponenti e poteri di intervento"
 },
 {
-"tematica": "Informativa finanziaria (reporting)",
-"ambito": "Contabilità e bilancio",
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
 "ruolo": "secondario",
 "articoli": [
-"84",
-"85",
-"86",
-"87",
-"124",
-"152",
-"154",
-"155",
-"158"
+"Art. 243-255 (operazioni infragruppo e comunicazioni)"
 ],
-"motivo": "Riserve tecniche e relazioni tecniche al bilancio (la tassonomia non ha un ambito dedicato alle riserve tecniche)"
+"motivo": "operazioni infragruppo soggette a comunicazione"
+},
+{
+"tematica": "Segnalazioni di Vigilanza",
+"ambito": "Segnalazione all'autorità di vigilanza competente",
+"ruolo": "secondario",
+"articoli": [
+"Art. 46 (comunicazioni IVASS)",
+"Art. 256-259 (elenco controparti)",
+"Art. 268-269 (informazioni di vigilanza)"
+],
+"motivo": "comunicazioni periodiche e informazioni di vigilanza verso IVASS"
+},
+{
+"tematica": "Gestione patrimonio immobiliare",
+"ambito": "Immobili di proprietà",
+"ruolo": "secondario",
+"articoli": [
+"Art. 272-277 (valore di mercato di terreni e fabbricati)"
+],
+"motivo": "valutazione e trasferimento degli immobili"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Sistemi informativi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 36 (sistemi informatici)",
+"Art. 34 (sistema di gestione dei dati)"
+],
+"motivo": "requisiti sui sistemi informatici e di gestione dati"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-916bcd34e4": {
 "ambiti": [
@@ -51970,49 +53174,65 @@
 "ambito": "Contabilità e bilancio",
 "ruolo": "principale",
 "articoli": [
-"4",
-"6",
-"7",
-"8",
-"9",
-"10",
-"12",
-"13",
-"14",
-"15",
-"16",
-"17",
-"18",
-"19",
-"20"
+"Art. 4-7 (bilancio di esercizio e trasmissione)",
+"Art. 14-15 (piano dei conti, modalita di redazione)",
+"Schemi conto economico e stato patrimoniale danni e vita (Sezione I-II)",
+"Art. 23-bis-23-septies (riserve tecniche e strumenti finanziari)"
 ],
-"motivo": "Schemi e disposizioni per la redazione del bilancio di esercizio e della relazione semestrale delle imprese di assicurazione"
+"motivo": "schemi obbligatori del bilancio di esercizio delle imprese di assicurazione"
 },
 {
 "tematica": "Informativa finanziaria (reporting)",
 "ambito": "Obblighi in materia di reporting",
+"ruolo": "principale",
+"articoli": [
+"Art. 9 (relazione semestrale)",
+"Art. 12-13 (informazioni aggiuntive e trasmissione relazione semestrale)"
+],
+"motivo": "relazione semestrale e obblighi di trasmissione"
+},
+{
+"tematica": "Gestione patrimonio immobiliare",
+"ambito": "Immobili di proprietà",
 "ruolo": "secondario",
 "articoli": [
-"9",
-"12",
-"13",
-"26",
-"27"
+"Art. 16-21 (valore di mercato di terreni e fabbricati, perizie, trasferimento)"
 ],
-"motivo": "Relazione semestrale e relazione del revisore"
+"motivo": "criteri di valutazione e relazione di stima degli immobili"
+},
+{
+"tematica": "Vigilanza prudenziale",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Art. 22-23 (quote di utile di investimenti)",
+"Sezione II par. 1-20 (riserve tecniche danni e vita e congruita)"
+],
+"motivo": "riserve tecniche e presidi di congruita attuariale"
 },
 {
 "tematica": "Segnalazioni di Vigilanza",
 "ambito": "Segnalazione all'autorità di vigilanza competente",
 "ruolo": "secondario",
 "articoli": [
-"7",
-"8"
+"Art. 7 (trasmissione bilancio all'IVASS)",
+"Art. 8 (trasmissione dati a CONSAP)",
+"Art. 13 (trasmissione relazione semestrale)"
 ],
-"motivo": "Trasmissione all'IVASS del bilancio e dei dati alla CONSAP"
+"motivo": "obblighi di trasmissione dei dati di bilancio all'autorita"
+},
+{
+"tematica": "Governance",
+"ambito": "Vigilanza",
+"ruolo": "secondario",
+"articoli": [
+"Art. 11 (osservazioni dell'organo di controllo)",
+"Art. 24-27 (relazione del revisore legale o della societa di revisione)"
+],
+"motivo": "ruolo dell'organo di controllo e del revisore"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-4965fa581b": {
 "ambiti": [
@@ -52186,23 +53406,42 @@
 "ambito": "Contabilità e bilancio",
 "ruolo": "principale",
 "articoli": [
-"Premessa - schemi del bilancio consolidato",
-"par. 4.1",
-"par. 5.2",
-"par. 8",
-"par. 19",
-"par. 21",
-"par. 27",
-"par. 1.4",
-"par. 2.1",
-"par. 7.1",
-"par. 7.2",
-"par. 8.1"
+"Schemi di stato patrimoniale e conto economico consolidato (Premessa, par. 1-28)",
+"Note di commento IFRS 4/17 (contratti di assicurazione, par. 1-15 e par. 3.x)",
+"Note illustrative (par. 1-5, par. 7-8, par. 29-30)",
+"Prospetto delle altre componenti del conto economico complessivo (par. 2-5)"
 ],
-"motivo": "Schemi di bilancio consolidato delle imprese di assicurazione secondo i principi contabili internazionali (IFRS 17, IFRS 9, IAS 7)"
+"motivo": "schemi obbligatori del bilancio consolidato e note illustrative per le imprese di assicurazione IFRS"
+},
+{
+"tematica": "Vigilanza prudenziale",
+"ambito": "Gestione dei rischi",
+"ruolo": "secondario",
+"articoli": [
+"Note: metodi di misurazione del rischio di sottoscrizione (vita e danni), credito, mercato, liquidita, concentrazione (par. 2 vari)"
+],
+"motivo": "informativa quantitativa e qualitativa sui rischi assunti"
+},
+{
+"tematica": "Gestione patrimonio immobiliare",
+"ambito": "Immobili di proprietà",
+"ruolo": "secondario",
+"articoli": [
+"Investimenti immobiliari e diritti d'uso da leasing (par. 5.1.1-5.1.2, par. 2 leasing)"
+],
+"motivo": "composizione e variazioni degli investimenti immobiliari"
+},
+{
+"tematica": "Fisco",
+"ambito": "Obblighi informativi e dichiarativi",
+"ruolo": "secondario",
+"articoli": [
+"Imposte sul reddito (par. 25.1-25.2, par. 7.2.1-7.2.6 attivita e passivita fiscali, Global Minimum Tax)"
+],
+"motivo": "informativa su imposte correnti, differite e Global Minimum Tax"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "IVASS-f08d285123": {
 "ambiti": [
@@ -55244,81 +56483,92 @@
 "ambito": "Governo societario",
 "ruolo": "principale",
 "articoli": [
-"1 (7)",
-"1 (8)",
-"1 (9)",
-"1 (11)",
-"1 (13)",
-"1 (14)",
-"1 (17)"
+"par. 1-7 Gestione (struttura e organizzazione, gruppo)",
+"par. 8-9 (responsabilita e valutazione del quadro di governo)",
+"par. 10-14 (funzione di gestione e supervisione, composizione, idoneita, funzionamento)",
+"par. 15 (valori e codice di condotta)"
 ],
-"motivo": "Ruolo, responsabilita, composizione e funzionamento dell'organo di gestione (GL 44)"
+"motivo": "capitolo dedicato all'organo di gestione, composizione, idoneita, funzionamento e struttura di gruppo"
 },
 {
 "tematica": "Governance",
 "ambito": "Sistema dei controlli interni",
 "ruolo": "principale",
 "articoli": [
-"par. 1 (27)",
-"par. 1 (28)",
-"par. 1 (29)",
-"par. 1 (30)",
-"par. 1 (31)"
+"par. 23-29 (cultura del rischio, controlli interni, funzione di controllo rischi, compliance, internal audit)",
+"par. 20 (procedure interne di segnalazione)"
 ],
-"motivo": "Sistema dei controlli interni, risk control, compliance e internal audit"
+"motivo": "funzioni di controllo (risk control, compliance, audit) e presidi interni"
 },
 {
 "tematica": "Governance",
 "ambito": "Outsourcing",
-"ruolo": "secondario",
+"ruolo": "principale",
 "articoli": [
-"par. 1 (21)",
-"par. 2 (17)"
+"par. 21-22 (politica di esternalizzazione)"
 ],
-"motivo": "Approvazione e revisione della politica di esternalizzazione"
+"motivo": "politica e responsabilita sull'esternalizzazione"
+},
+{
+"tematica": "Conflitti di interesse",
+"ambito": "Conflitti di interesse",
+"ruolo": "principale",
+"articoli": [
+"par. 16 (conflitti di interesse a livello di istituzione)",
+"par. 12 (impegno, indipendenza e gestione dei conflitti dell'organo)"
+],
+"motivo": "politica sui conflitti di interesse e loro gestione"
 },
 {
 "tematica": "Remunerazione e incentivazione",
 "ambito": "Disposizioni in materia di remunerazione e incentivazione",
 "ruolo": "secondario",
 "articoli": [
-"par. 1 (22)",
-"par. 2 (18)"
+"par. 22 (supervisione della politica di remunerazione)",
+"par. 24 (allineamento della remunerazione al profilo di rischio)"
 ],
-"motivo": "Supervisione dell'organo di gestione sulla politica di remunerazione"
+"motivo": "allineamento della remunerazione al rischio e supervisione dell'organo"
 },
 {
-"tematica": "Conflitti di interesse",
-"ambito": "Conflitti di interesse",
-"ruolo": "secondario",
+"tematica": "Vigilanza prudenziale (Basilea)",
+"ambito": "Gestione dei rischi",
+"ruolo": "principale",
 "articoli": [
-"16",
-"12"
+"par. 23-29 (cultura e quadro di gestione dei rischi)",
+"par. 26 (nuovi prodotti e processo di approvazione NPAP)",
+"par. 28-29 (Chief Risk Officer, funzione di controllo dei rischi)"
 ],
-"motivo": "Politica sui conflitti di interesse a livello istituzionale e per il personale"
+"motivo": "quadro di gestione dei rischi, risk culture, NPAP, CRO"
+},
+{
+"tematica": "IT e Digital",
+"ambito": "Business Continuity",
+"ruolo": "principale",
+"articoli": [
+"par. 33 (business continuity management)"
+],
+"motivo": "gestione della continuita operativa e piani di recovery"
 },
 {
 "tematica": "IT e Digital",
 "ambito": "Sistemi informativi",
 "ruolo": "secondario",
 "articoli": [
-"par. 1 (32)",
-"par. 2 (28)"
+"par. 32 (sistemi informativi e comunicazione)"
 ],
-"motivo": "Sistemi informativi e di comunicazione"
+"motivo": "requisiti generali sui sistemi informativi e di comunicazione"
 },
 {
-"tematica": "IT e Digital",
-"ambito": "Business Continuity",
+"tematica": "Governance",
+"ambito": "Vigilanza",
 "ruolo": "secondario",
 "articoli": [
-"par. 1 (33)",
-"par. 2 (29)"
+"Premessa e par. 1 (applicazione e revisione da parte delle autorita competenti)"
 ],
-"motivo": "Gestione della continuita operativa e piani di ripristino"
+"motivo": "ambito di applicazione e revisione delle linee guida da parte dell'autorita"
 }
 ],
-"fonte_classificazione": "grandi"
+"fonte_classificazione": "giganti"
 },
 "EBA-7080743add": {
 "ambiti": [
