@@ -1,0 +1,9 @@
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Controlli gli "intrecci" fra ambiti: una norma ampia spesso tocca più ambiti vicini, e se ne manca uno si crea un buco (chi analizza quell'ambito non trova la norma).
+
+File: /home/claude/vp-alert-feed/biblioteca/ambiti/intr_NN_input.jsonl — un atto per riga: id, titolo, rubriche degli articoli, "attuali" (ambiti già assegnati), "candidati" (ambiti vicini non assegnati). Leggilo con Read a pezzi di 30 righe.
+
+Per ogni atto guarda SOLO i "candidati": aggiungi quelli che una parte dell'atto disciplina davvero (con obblighi concreti), con ruolo "P" se una parte rilevante è dedicata a quell'ambito, "S" se lo tocca in modo collaterale, e gli articoli pertinenti presi dalle rubriche (max 10). Non aggiungere candidati solo vicini per tema ma non trattati nell'atto. Non togliere né cambiare gli ambiti attuali.
+
+Scrivi in /home/claude/vp-alert-feed/biblioteca/ambiti/intr_NN_output.jsonl una riga JSON SOLO per gli atti a cui aggiungi qualcosa, appendendo con Bash dopo ogni pezzo (cat >> file <<'EOF2' ... EOF2):
+{"id":"...","aggiunte":[{"t":"Tematica","a":"Ambito","r":"S","art":["5"],"m":"motivo breve"}]}
+Tematica e Ambito sono le due parti del candidato separate da " > ", scritte esattamente. Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", atti letti, atti con aggiunte.

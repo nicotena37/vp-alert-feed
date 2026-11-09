@@ -20,6 +20,14 @@ for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.
                 tutti[o["id"]] = o
 for i in err:
     if tutti.get(i, {}).get("_da") != "bce": tutti.pop(i, None)
+for f in sorted(glob.glob("intr_*_output.jsonl")):          # intrecci: ambiti vicini aggiunti, mai tolti
+    for l in open(f):
+        if not l.strip(): continue
+        o = json.loads(l); t0 = tutti.get(o["id"])
+        if not t0: continue
+        have = {(a["t"], a["a"]) for a in t0["ambiti"]}
+        for a in o.get("aggiunte", []):
+            if (a.get("t"), a.get("a")) not in have: t0["ambiti"].append(a); have.add((a.get("t"), a.get("a")))
 res, inc, fuori = {}, {}, []
 for i, o in tutti.items():
     for a in o["ambiti"]:
