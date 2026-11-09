@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-06T16:03:21+00:00",
+ "letto_il": "2026-11-09T12:56:38+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,20 +26,14 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 12,
+   "notizie": 10,
    "allarmi": []
   },
   "Consob": {
-   "feed_ok": 1,
+   "feed_ok": 6,
    "feed_totali": 6,
-   "notizie": 60,
-   "allarmi": [
-    "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
-    "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
-    "Consob - consultazioni: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/consultazioni-con-il-mercato",
-    "Consob - newsletter Consob Informa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/newsletter",
-    "Consob - comunicati stampa: feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/consob/comunicati-stampa"
-   ]
+   "notizie": 85,
+   "allarmi": []
   },
   "MEF": {
    "feed_ok": 2,
@@ -50,7 +44,7 @@
   "MEF - Ragioneria Generale dello Stato": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 54,
+   "notizie": 56,
    "allarmi": []
   },
   "MEF - Dipartimento Finanze": {
@@ -104,12 +98,10 @@
    "allarmi": []
   },
   "ACN": {
-   "feed_ok": 2,
+   "feed_ok": 3,
    "feed_totali": 3,
-   "notizie": 30,
-   "allarmi": [
-    "ACN - notizie: feed non leggibile (nessuna risposta in 25 s) - https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192"
-   ]
+   "notizie": 80,
+   "allarmi": []
   },
   "AGCM": {
    "feed_ok": 2,
@@ -188,10 +180,12 @@
    ]
   },
   "Commissione europea": {
-   "feed_ok": 1,
+   "feed_ok": 0,
    "feed_totali": 1,
-   "notizie": 10,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "Commissione UE - press corner: feed non leggibile (nessuna risposta in 25 s) - https://ec.europa.eu/commission/presscorner/api/rss?language=it"
+   ]
   },
   "BIS": {
    "feed_ok": 2,
@@ -208,7 +202,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 34,
+   "notizie": 30,
    "allarmi": []
   },
   "AMLA": {
@@ -244,7 +238,7 @@
   "IFRS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 30,
+   "notizie": 28,
    "allarmi": []
   },
   "ISDA": {
