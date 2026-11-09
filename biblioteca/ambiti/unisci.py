@@ -9,6 +9,14 @@ for pat in ("blocco_*_output.jsonl", "incerti_*_output.jsonl", "grandi_*_output.
             if l.strip():
                 o = json.loads(l); o["_da"] = f.split("_")[0]
                 if o["_da"] == "rev" and o.get("incerto") and o.get("ambiti"): o["incerto"] = False
+                prev = tutti.get(o["id"])
+                if o["_da"] == "rev" and prev and prev["_da"] in ("grandi", "giganti") and o.get("ambiti"):
+                    m = {(a["t"], a["a"]): dict(a) for a in prev["ambiti"]}
+                    for a in o["ambiti"]:
+                        k = (a["t"], a["a"])
+                        if k in m: m[k]["r"] = "P" if "P" in (a["r"], m[k]["r"]) else "S"
+                        else: m[k] = a
+                    o["ambiti"] = list(m.values())
                 tutti[o["id"]] = o
 for i in err:
     if tutti.get(i, {}).get("_da") != "bce": tutti.pop(i, None)
