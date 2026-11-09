@@ -1,0 +1,42 @@
+name: Biblioteca allegati UE
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: biblioteca
+  cancel-in-progress: false
+
+jobs:
+  allegati:
+    runs-on: ubuntu-latest
+    timeout-minutes: 95
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests==2.32.3
+      - run: python biblioteca_allegati.py 80
+      - run: |
+          git config user.name "vp-alert-feed"
+          git config user.email "vp-alert-feed@users.noreply.github.com"
+          git add biblioteca
+          git diff --cached --quiet || git commit -q -m "Biblioteca: allegati UE $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -X theirs --quiet && git push --quiet && break; sleep 10; done
+      - name: continua se restano atti e EUR-Lex non filtra
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tail -3 biblioteca/log_allegati.txt
+          if grep -q "restano 0" <(tail -1 biblioteca/log_allegati.txt); then exit 0; fi
+          if tail -5 biblioteca/log_allegati.txt | grep -q "mi fermo"; then exit 0; fi
+          N=$(cat biblioteca/giri_allegati.txt 2>/dev/null || echo 0); N=$((N+1))
+          if [ $N -gt 6 ]; then exit 0; fi
+          echo $N > biblioteca/giri_allegati.txt
+          git add biblioteca/giri_allegati.txt && git commit -q -m "giro allegati $N" && git pull --rebase -q && git push -q
+          gh workflow run allegati.yml
