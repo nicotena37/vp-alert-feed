@@ -8,7 +8,7 @@
 "Politica monetaria e BCE (fuori tassonomia)"
 ],
 "scaricato_il": "2026-11-08T01:01:56+00:00",
-"n_articoli": 2,
+"n_articoli": 3,
 "articoli": [
 {
 "num": "1",
@@ -21,10 +21,17 @@
 "rubrica": "Entrata in vigore",
 "testo": "Articolo 2\nEntrata in vigore\nLa presente decisione entra in vigore il quinto giorno successivo alla pubblicazione nella Gazzetta ufficiale dell’Unione europea .",
 "hash": "584e23a2d11f8fa2"
+},
+{
+"num": "Allegato",
+"rubrica": "«ALLEGATO",
+"testo": "ALLEGATO\n«ALLEGATO\nInformazioni relative all’ente certificatore del PKI-SEBC, ivi inclusa la sua identità, e le sue componenti tecniche\nL’ente certificatore del PKI-SEBC è identificato nel proprio certificato come l’emittente e la sua chiave privata è usata per firmare i certificati. L’ente certificatore del PKI-SEBC è incaricato di:\ni)\nemettere i certificati a chiave privata e pubblica;\nii)\nemettere le liste di revoca;\niii)\ngenerare coppie di chiavi associate a certificati specifici, quali quelli che richiedono una chiave di recupero;\niv)\nprovvedere alle responsabilità generali connesse al PKI-SEBC e garantire che tutti i requisiti necessari per gestirlo siano soddisfatti.\nL’ente certificatore del PKI-SEBC comprende tutte le persone, le politiche, le procedure e i sistemi informatici cui è affidata l’emissione di certificati elettronici e la loro assegnazione ai titolari di certificati.\nL’ente certificatore del PKI-SEBC comprende tre componenti tecniche:\n1.\nL’ente certificatore Root PKI-SEBC: Tale ente certificatore, di primo livello, emette solo certificati per se stesso e per gli enti certificatori ad esso subordinati. È operativo solo quando svolge i suoi compiti così strettamente definiti. I suoi dati più significativi sono i seguenti:\nDistinguished name (Nome caratteristico)\nCN = ESCB-PKI ROOT CA, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nSerial number (Codice seriale)\n4431 9C5F 91E8 162 F 4E00 73F6 6AB8 71D8\nDistinguished name of issuer (Nome caratteristico dell’emittente)\nCN = ESCB-PKI ROOT CA, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nValidity period (Periodo di validità)\nFrom 21-06-2011 12:35:34 to 21-06-2041 12:35:34\nMessage digest (Valore di hash) (SHA-1)\n3663 2FBA FB19 BDBC A202 3994 1926 ED48 4D72 DD4B\nMessage digest (Valore di hash) (SHA-256)\n7963 2A97 1D12 A889 9724 BB35 C37B 51D2 3E21 4DF9 20C3 2450 093E 0EA7 49FB AAEB\nCryptographic algorithms (Algoritmi crittografici)\nSHA-256/RSA 4096\n2.\nL’ente certificatore PKI-SEBC online: Tale ente certificatore, di secondo livello, è subordinato rispetto all’ente certificatore Root PKI-SEBC. È responsabile per l’emissione di certificati PKI-SEBC per gli utenti. Scade il 22 luglio 2026. I suoi dati più significativi sono i seguenti:\nDistinguished name (Nome caratteristico)\nCN = ESCB-PKI ONLINE CA, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nSerial number (Codice seriale)\n660C 9B12 9A0 A 6C21 5509 38DD 54A0 ED2D\nDistinguished name of issuer (Nome caratteristico dell’emittente)\nCN = ESCB-PKI ROOT CA, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nValidity period (Periodo di validità)\nFrom 22-07-2011 12:46:35 to 22-07-2026 12:46:35\nMessage digest (Valore di hash) (SHA-1)\nE976 D216 4A5F 62DA C058 6BE0 EC10 EF24 36B8 12AC\nMessage digest (Valore di hash) (SHA-256)\n1335 26DC 99E9 CC36 62F8 F5FA 2006 3005 BA90 E663 2BF3 4F18 A84B A39B 5FAA 5700\nCryptographic algorithms (Algoritmi crittografici)\nSHA-256/RSA 4096\n3.\nL’ente certificatore PKI-SEBC online V1.2: Tale ente certificatore, di secondo livello, è subordinato rispetto all’ente certificatore Root PKI-SEBC. È responsabile per l’emissione di certificati PKI-SEBC per gli utenti. Dopo il 22 luglio 2026 è l’unico ente certificatore PKI-SEBC online fino alla sua scadenza. I suoi dati più significativi sono i seguenti:\nDistinguished name (Nome caratteristico)\nCN = ESCB-PKI ONLINE CA V1.2, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nSerial number (Codice seriale)\n1121 4958 04E1 E706 695 D D1D1 2997 FAEF 6653\nDistinguished name of issuer (Nome caratteristico dell’emittente)\nCN = ESCB-PKI ROOT CA, O = EUROPEAN SYSTEM OF CENTRAL BANKS, C = EU\nValidity period (Periodo di validità)\nFrom 08-06-2023 17:07:00 to 08-06-2038 17:07:00\nMessage digest (Valore di hash) (SHA-1)\nDC92 042 E 6316 CB60 F8F6 109 B 8C43 F3C6 AF2F B2F3\nMessage digest (Valore di hash) (SHA-256)\n96B7 8E9C F914 ED4D 072D 93C8 C531 DEEF D102 7571 7218 A202 0924 3216 99D8 1C48\nCryptographic algorithms (Algoritmi crittografici)\nSHA-256/RSA 4096\n»\nELI: http://data.europa.eu/eli/dec/2024/2683/oj\nISSN 1977-0707 (electronic edition)",
+"hash": "1e1041510db9e9fd"
 }
 ],
 "meta": {
 "celex_consolidato": "32024D2683",
 "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32024D2683"
-}
+},
+"allegati": 1
 }
