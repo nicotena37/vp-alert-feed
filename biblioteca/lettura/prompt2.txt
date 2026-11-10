@@ -11,7 +11,12 @@ Per OGNI parte, nell'ordine del file:
 - "e": l'ETICHETTA copiata esattamente come appare tra parentesi quadre (es. "5", "12-bis", "Allegato I", "Sezione II - par. 3").
 - "a": codici degli ambiti che la parte disciplina con obblighi, divieti o regole concrete per una banca (o per intermediari/assicurazioni se la norma è di settore). Massimo 4 per parte, il primo è il più importante.
 - "p": codici dei sottoprocessi ABI su cui la parte impone adempimenti (massimo 4).
-- se la parte non contiene obblighi per la banca: "a":[] e "na" con UNA di queste etichette: "Definizioni", "Ambito di applicazione", "Disposizioni finali" (entrata in vigore, abrogazioni, transitorie), "Obblighi di altri soggetti" (autorità, Stato, altri), "Abrogato".
+- se la parte non contiene obblighi per la banca: "a":[] e "na" con UNA di queste etichette: "Definizioni", "Ambito di applicazione", "Disposizioni finali" (entrata in vigore, abrogazioni, transitorie), "Obblighi di altri soggetti" (autorità, Stato, altri), "Abrogato", "Indice" (solo titolo o sommario).
+- ERRORI DA EVITARE (emersi dal controllo):
+  * poteri e compiti di autorità (Banca d'Italia, IVASS, CONSOB, COVIP, Garante, Commissione, AEV), di fondi pubblici o di commissari: "a":[] e "na":"Obblighi di altri soggetti", anche se parlano di sanzioni o vigilanza;
+  * non dare ambiti per parola chiave: un titolo o una voce di segnalazione senza obblighi propri prende l'ambito della segnalazione ("Segnalazioni di Vigilanza > ...") o "na":"Indice" se è solo titolo/sommario;
+  * norme assicurative: usa gli ambiti assicurativi (Distribuzione assicurativa, Riserve tecniche e solvibilità assicurativa, Gestione sinistri RC auto), non quelli bancari (Sistemi di garanzia, Succursali di paesi terzi, Requisiti patrimoniali);
+  * voci di sommario e titoli di Capo/Sezione senza testo: "na":"Indice" (non saltarle).
 - "n": nuovo ambito proposto, solo se la parte tratta una materia che NESSUN ambito della tassonomia copre: "Tematica > Ambito nuovo". Usalo con parsimonia.
 
 Scrivi in /home/claude/vp-alert-feed/biblioteca/lettura/OUT una riga JSON per norma, appendendo con Bash appena finisci ogni norma (cat >> file <<'EOF2' ... EOF2):
