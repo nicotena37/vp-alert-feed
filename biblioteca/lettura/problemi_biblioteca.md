@@ -7,3 +7,5 @@
 - 2026-11-10: EIOPA risponde 429 alle richieste da GitHub anche con pausa di 6 s: 26 testi (elenco in lettura/testi_cirillico_resto.json, ancora da filtrare per quelli riusciti) da riprendere dal browser del PC. I vecchi testi in bulgaro sono in archivio_lingua.
 - 2026-11-10: biblioteca_estendi non salvava gli articoli aggiunti (lista condivisa): corretto.
 - 2026-11-10: EIOPA-18340b1de7 e EIOPA-00dd5da7ca (prova 50): riscaricati in inglese ma solo la pagina di presentazione (~2.000 caratteri), manca il PDF delle linee guida.
+- 2026-11-10: PSD2 (UE-DIR-2015-2366): 23 parti contengono solo la tavola di concordanza, art. 96 vuoto, Allegato I mancante: riscaricare.
+- 2026-11-10: IVASS-f4c0570fe5 (Reg. 44/2019): alcune lettere troncate (art. 2 gg/jj, art. 19 c.1 lett. c, art. 54 c.3 lett. f).
