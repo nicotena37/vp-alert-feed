@@ -17,6 +17,7 @@ def main(minuti=80, priorita=None):
         pri = json.loads(open(priorita, encoding="utf-8").read())
         for i in pri: fatti.pop(i, None)
         corpus.sort(key=lambda v: (v["id"] not in pri,))
+    for i in [k for k, x in fatti.items() if str(x).startswith("esteso a")]: fatti.pop(i)   # rifai quelli non salvati
     est = 0
     for v in corpus:
         p = b.T / f"{v['id']}.json"
@@ -35,7 +36,7 @@ def main(minuti=80, priorita=None):
             if at: trovato = k; break
         if not trovato: fatti[v["id"]] = f"completo ({ultimo})"; continue
         voce = dict(v); voce["stop"] = 60
-        voce["_ripresa"] = {"urn": urn if b.art_na(urn, trovato) else v["urn"], "da": ultimo + 1, "articoli": arts, "meta": None}
+        voce["_ripresa"] = {"urn": urn if b.art_na(urn, trovato) else v["urn"], "da": ultimo + 1, "articoli": list(arts), "meta": None}
         meta, nuovi = b.scarica_na(voce)
         if len(nuovi) > len(arts):
             rec["articoli"] = nuovi; rec["n_articoli"] = len(nuovi); rec["esteso_il"] = time.strftime("%Y-%m-%d")

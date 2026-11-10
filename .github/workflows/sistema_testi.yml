@@ -31,7 +31,7 @@ jobs:
         with: {python-version: "3.12"}
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-ita >/dev/null
       - run: pip install --quiet requests==2.32.3 lxml==5.3.0 beautifulsoup4==4.12.3
-      - run: PAUSA=6 python autorita.py rifai biblioteca/lettura/testi_cirillico_resto.json 80
+      - run: echo lingua gia fatta
       - run: |
           git config user.name "vp-alert-feed"; git config user.email "vp-alert-feed@users.noreply.github.com"
           git add biblioteca; git diff --cached --quiet || git commit -q -m "Biblioteca: testi EBA/EIOPA riscaricati in italiano o inglese $(date -u +%H:%MZ)"
