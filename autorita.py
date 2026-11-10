@@ -41,9 +41,12 @@ def testo_da(u, titolo):
     cand = []
     for a in main.find_all("a", href=True):
         h = urljoin(u, a["href"]); t = " ".join(a.get_text(" ").split())
-        if re.search(r"\.pdf($|\?)|/documents/.+\.pdf|dotcmsdoc", h, re.I) and not re.search(r"social|privacy|cookie|English|_EN\b|\bEN\.pdf|relazione illustrativa|esiti della consultazione|resoconto", t + h, re.I):
+        if re.search(r"\.pdf($|\?)|/documents/.+\.pdf|dotcmsdoc", h, re.I) and not re.search(r"social|privacy|cookie|relazione illustrativa|esiti della consultazione|resoconto", t + h, re.I):
             sim = len(set(re.findall(r"\w{5,}", t.lower())) & set(re.findall(r"\w{5,}", titolo.lower())))
-            cand.append((sim + (2 if re.search(r"testo|delibera|regolamento|provvedimento|circolare|risoluzione|guidelines|orientamenti", t, re.I) else 0), h))
+            lingua = 10 if re.search(r"(?<![a-z])(it|ita)(?![a-z])|italian", t + " " + h.rsplit("/", 1)[-1], re.I) else \
+                     4 if re.search(r"(?<![a-z])(en|eng)(?![a-z])|english", t + " " + h.rsplit("/", 1)[-1], re.I) else \
+                     -20 if re.search(r"(?<![a-z])(bg|cs|da|de|el|es|et|fi|fr|ga|hr|hu|lt|lv|mt|nl|pl|pt|ro|sk|sl|sv)(?![a-z])", t + " " + h.rsplit("/", 1)[-1], re.I) else 0
+            cand.append((sim + lingua + (2 if re.search(r"testo|delibera|regolamento|provvedimento|circolare|risoluzione|guidelines|orientamenti", t, re.I) else 0), h))
     if cand:
         cand.sort(key=lambda x: -x[0]); h = cand[0][1]
         try:
@@ -84,5 +87,19 @@ def main(domini, minuti=100):
     log(f"AUTORITA {','.join(domini)}: scaricati {n}; mancano {resto}; non riusciti {sum(1 for v in corpus if v['id'] in falliti)}")
     with open(B / "log_autorita.txt", "a", encoding="utf-8") as f: f.write("\n".join(LOG) + "\n")
 
+def rifai(lista_file, minuti=80):
+    """Riscarica gli atti di un elenco (es. testi in lingua sbagliata): sposta il vecchio testo in archivio e scarica di nuovo."""
+    ids = set(json.loads(Path(lista_file).read_text(encoding="utf-8")))
+    arch = B / "archivio_lingua"; arch.mkdir(exist_ok=True)
+    for i in ids:
+        p = T / f"{i}.json"
+        if p.exists(): p.rename(arch / p.name)
+    doms = sorted({v["dominio"] for v in json.loads((B / "corpus_autorita.json").read_text(encoding="utf-8")) if v["id"] in ids})
+    fp = B / "falliti_autorita.json"; f = json.loads(fp.read_text(encoding="utf-8")) if fp.exists() else {}
+    for i in ids: f.pop(i, None)
+    fp.write_text(json.dumps(f, ensure_ascii=False, indent=0), encoding="utf-8")
+    main(",".join(doms), minuti)
+
 if __name__ == "__main__":
-    main(*sys.argv[1:])
+    if sys.argv[1] == "rifai": rifai(*sys.argv[2:])
+    else: main(*sys.argv[1:])
