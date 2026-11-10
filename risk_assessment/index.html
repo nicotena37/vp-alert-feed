@@ -106,18 +106,18 @@ dialog::backdrop{background:rgb(0 0 0 / .35)}
 
 <section class="step" data-s="2" id="s2" hidden>
   <h2><span class="n">2</span>Cosa vuoi analizzare</h2>
-  <p class="hint">Descrivi in parole tue l'oggetto del risk assessment. Claude legge gli articoli pertinenti delle norme degli ambiti scelti e tiene solo quelli che toccano davvero il tema.</p>
+  <p class="hint">Descrivi in parole tue l'oggetto del risk assessment. Tutte le norme degli ambiti scelti vengono proposte; al passo 4 Claude legge ogni norma per intero e individua le parti che toccano l'oggetto.</p>
   <textarea id="ogg">Esternalizzazione di funzioni ICT essenziali a un fornitore cloud: contratto, registro delle informazioni, piano di uscita e controlli sul fornitore.</textarea>
   <div class="row">
     <label class="row small"><input type="checkbox" id="incS"> includi anche gli atti con ambito secondario</label>
     <label class="row small"><input type="checkbox" id="incAb"> includi gli atti abrogati</label>
   </div>
-  <div class="row"><button class="btn" id="bLeggi" type="button">Fai leggere gli articoli a Claude</button><button class="btn ghost" id="bStop1" type="button" hidden>Ferma</button><span class="status" id="st2"></span></div>
+  <div class="row"><button class="btn" id="bLeggi" type="button">Mostra le norme degli ambiti</button><button class="btn ghost" id="bStop1" type="button" hidden>Ferma</button><span class="status" id="st2"></span></div>
 </section>
 
 <section class="step" data-s="3" id="s3" hidden>
   <h2><span class="n">3</span>Norme da analizzare</h2>
-  <p class="hint">Per ogni norma vedi gli articoli scelti e il motivo. Togli la spunta alle norme che non vuoi; aggiungine altre dall'elenco della tematica, cercandole per nome o caricando un PDF.</p>
+  <p class="hint">Sono spuntate tutte le norme che hanno l'ambito scelto come principale; quelle con ambito secondario sono proposte senza spunta. Togli quelle che non vuoi e aggiungine altre dall'elenco della tematica, per nome o da PDF.</p>
   <div class="row"><span class="status" id="st3"></span></div>
   <div class="list" id="norme"></div>
   <h3 class="groupt">Aggiungi norme</h3>
@@ -287,27 +287,12 @@ function candidati(){const incS=$("#incS").checked||["prescrizioni","puntuali"].
 function estratto(arts,lista,max){const set=new Set(lista.map(String));let sel=arts.filter(a=>set.has(String(a[0])));if(!sel.length)sel=arts.slice(0,3);
   let s="";for(const a of sel){const t=`[Art. ${a[0]}${a[1]?" – "+a[1]:""}] ${a[2]}\n`;if(s.length+t.length>max){s+=t.slice(0,Math.max(0,max-s.length));break}s+=t}return s}
 let ctl1=null;
-$("#bLeggi").onclick=async()=>{
-  const C=candidati(), ogg=$("#ogg").value.trim(); S.oggetto=ogg; const st=$("#st2"); st.className="status";
+$("#bLeggi").onclick=()=>{
+  const C=candidati(); S.oggetto=$("#ogg").value.trim(); const st=$("#st2"); st.className="status";
   if(!C.length){st.textContent="Nessuna norma in vigore con questi ambiti come principali: spunta \"includi anche gli atti con ambito secondario\" o \"gli abrogati\", oppure torna al passo 1 e scegli altri ambiti.";return}
-  S.norme={}; if(!ogg||!sample){for(const c of C.slice(0,60))S.norme[c.id]={sel:true,pert:"si",motivo:"associata all'ambito scelto",art:c.art,ruolo:c.ruolo};
-    st.textContent=sample?"":"Claude non è disponibile in questa vista: ho preso le prime 60 norme degli ambiti scelti, senza lettura.";salva();renderNorme();vai(3);return}
-  const lim=C.slice(0,320); if(C.length>320)st.textContent=`Gli atti sono ${C.length}: in questa prova ne leggo i primi 320 (prima i principali).`;
-  ctl1=new AbortController(); $("#bStop1").hidden=false; $("#bLeggi").disabled=true;
-  try{
-    for(let i=0;i<lim.length;i+=30){
-      const lotto=lim.slice(i,i+30), parti=[];
-      for(const c of lotto){const arts=await testoAtto(c.id);parti.push(`### ${c.id}\nTitolo: ${att(c.id).tit}\n${estratto(arts,c.art,1800)}`)}
-      st.textContent=`Claude legge gli articoli: ${Math.min(i+30,lim.length)} atti su ${lim.length}…`;
-      const prompt=`Sei un esperto di compliance bancaria italiana. Oggetto del risk assessment: "${ogg}".\nPer ogni atto qui sotto (estratto degli articoli pertinenti) decidi se tocca davvero l'oggetto: "si" (contiene obblighi sull'oggetto), "contorno" (lo tocca in modo collaterale), "no". Indica gli articoli che lo toccano.\nRispondi SOLO con un array JSON: [{"id":"...","pert":"si|contorno|no","motivo":"una frase in italiano","articoli":["5","6"]}], un elemento per ogni atto.\n\n${parti.join("\n\n")}`;
-      const res=await sample.json(prompt,{modelTier:"quick",signal:ctl1.signal});
-      for(const r of (Array.isArray(res)?res:[])){const c=lotto.find(x=>x.id===String(r.id));if(!c)continue;
-        if(r.pert==="no")continue; S.norme[c.id]={sel:r.pert==="si",pert:r.pert,motivo:String(r.motivo||""),art:(r.articoli||[]).map(String).length?(r.articoli||[]).map(String):c.art,ruolo:c.ruolo}}
-      salva(); renderNorme();
-    }
-    st.textContent=`Lettura finita: ${Object.keys(S.norme).length} norme pertinenti su ${lim.length} lette.`; vai(3);
-  }catch(e){st.className="status err";st.textContent=errMsg(e);if(Object.keys(S.norme).length)vai(3)}
-  finally{$("#bStop1").hidden=true;$("#bLeggi").disabled=false}
+  S.norme={};
+  for(const c of C){const ab=IDX[c.id][3];S.norme[c.id]={sel:c.ruolo==="P"&&!ab,pert:c.ruolo==="P"?"si":"contorno",motivo:c.ruolo==="P"?"l'ambito scelto è un tema principale della norma":"la norma tocca l'ambito in modo secondario: spuntala se vuoi includerla",art:c.art,ruolo:c.ruolo}}
+  salva(); renderNorme(); vai(3);
 };
 $("#bStop1").onclick=()=>ctl1?.abort();
 function errMsg(e){const m={cancelled:"Lettura fermata.",not_granted:"Non hai autorizzato la pagina a usare Claude.",rate_limited:"Troppe richieste o limite di utilizzo raggiunto: riprova più tardi.",prompt_too_large:"Testo troppo lungo per una richiesta.",invalid_json:"Risposta di Claude non leggibile: riprova.",sampling_disabled:"Claude non è disponibile per questo account."};return m[e?.code]||("Errore: "+(e?.message||e))}
@@ -317,7 +302,7 @@ function renderNorme(){
   const ids=Object.keys(S.norme).sort((a,b)=>{const o={si:0,contorno:1};return (o[S.norme[a].pert]??2)-(o[S.norme[b].pert]??2)});
   $("#st3").textContent=`${ids.filter(i=>S.norme[i].sel).length} norme selezionate su ${ids.length} proposte.`;
   $("#norme").innerHTML=ids.map(id=>{const n=S.norme[id],a=att(id);return `<label class="act"><input type="checkbox" data-nor="${esc(id)}" ${n.sel?"checked":""}>
-   <span class="t">${esc(a.tit)}</span><span class="m"><span class="chip ${esc(n.pert)}">${n.pert==="si"?"pertinente":n.pert==="contorno"?"di contorno":"aggiunta"}</span>${n.ruolo?`<span class="chip ${n.ruolo}">${n.ruolo==="P"?"ambito principale":"ambito secondario"}</span>`:""}${a.ab?'<span class="chip ab">abrogato</span>':""} ${esc(a.est)} · art. ${esc((n.art||[]).slice(0,12).join(", ")||"tutti")}<br>${esc(n.motivo)}</span></label>`}).join("")||'<p class="status">Nessuna norma ancora.</p>';
+   <span class="t">${esc(a.tit)}</span><span class="m">${n.pert==="aggiunta"?'<span class="chip">aggiunta</span>':""}${n.ruolo?`<span class="chip ${n.ruolo}">${n.ruolo==="P"?"ambito principale":"ambito secondario"}</span>`:""}${a.ab?'<span class="chip ab">abrogato</span>':""} ${esc(a.est)} · art. ${esc((n.art||[]).slice(0,12).join(", ")||"tutti")}<br>${esc(n.motivo)}</span></label>`}).join("")||'<p class="status">Nessuna norma ancora.</p>';
   renderTendine(); renderSteps()}
 $("#norme").addEventListener("change",e=>{const id=e.target.dataset.nor;if(id){S.norme[id].sel=e.target.checked;salva();renderNorme()}});
 function aggiungi(id,motivo){if(!S.norme[id])S.norme[id]={sel:true,pert:"aggiunta",motivo,art:[],ruolo:""};else S.norme[id].sel=true;salva();renderNorme()}
