@@ -9,3 +9,4 @@
 - 2026-11-10: EIOPA-18340b1de7 e EIOPA-00dd5da7ca (prova 50): riscaricati in inglese ma solo la pagina di presentazione (~2.000 caratteri), manca il PDF delle linee guida.
 - 2026-11-10: PSD2 (UE-DIR-2015-2366): 23 parti contengono solo la tavola di concordanza, art. 96 vuoto, Allegato I mancante: riscaricare.
 - 2026-11-10: IVASS-f4c0570fe5 (Reg. 44/2019): alcune lettere troncate (art. 2 gg/jj, art. 19 c.1 lett. c, art. 54 c.3 lett. f).
+- 2026-11-10: UE-32017L0593: manca art. 15, art. 2 par. 1 senza lettere a)-c), art. 13 par. 8 assente.
