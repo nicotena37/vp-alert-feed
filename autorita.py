@@ -2,7 +2,7 @@
 Per ogni voce di biblioteca/corpus_autorita.json: se il link è un PDF lo scarica; se è una pagina cerca il PDF principale,
 altrimenti usa il testo della pagina. Divide in parti (biblioteca_pdf.dividi) e salva in biblioteca/testi_autorita/.
 Rispetta robots.txt. Uso: python autorita.py dominio1,dominio2 [minuti_max]"""
-import json, re, sys, time, tempfile, hashlib
+import os, json, re, sys, time, tempfile, hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -71,7 +71,7 @@ def main(domini, minuti=100):
         if (T / f"{v['id']}.json").exists() or v["id"] in falliti: continue
         if time.time() > fine: log("tempo esaurito"); break
         try:
-            t, src = testo_da(v["url"], v["titolo"]); time.sleep(1)
+            t, src = testo_da(v["url"], v["titolo"]); time.sleep(float(os.environ.get("PAUSA", "1")))
         except Exception as e:
             falliti[v["id"]] = str(e)[:200]; log(f"ERRORE {v['id']} {v['url']}: {e}"); continue
         arts = bp.dividi(t) if len(t) > 200 else []

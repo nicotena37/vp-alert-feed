@@ -9,10 +9,14 @@ FATTI = b.B / "estesi_fatti.json"
 def num(n):
     m = re.match(r"(\d+)", str(n)); return int(m.group(1)) if m else None
 
-def main(minuti=80):
+def main(minuti=80, priorita=None):
     fine = time.time() + float(minuti) * 60
     fatti = json.loads(FATTI.read_text(encoding="utf-8")) if FATTI.exists() else {}
     corpus = [v for v in json.loads((b.B / "corpus_completo.json").read_text(encoding="utf-8")) if v["fonte"] == "normattiva"]
+    if priorita:                                  # atti da fare per primi (es. le norme della prova)
+        pri = json.loads(open(priorita, encoding="utf-8").read())
+        for i in pri: fatti.pop(i, None)
+        corpus.sort(key=lambda v: (v["id"] not in pri,))
     est = 0
     for v in corpus:
         p = b.T / f"{v['id']}.json"
