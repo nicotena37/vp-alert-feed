@@ -1,0 +1,19 @@
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Devi LEGGERE PER INTERO alcune norme e, PER OGNI PARTE (articolo, sezione, paragrafo, allegato), indicare gli ambiti e i processi bancari che tratta.
+
+File di riferimento (leggili prima con Read):
+- /home/claude/vp-alert-feed/biblioteca/lettura/tassonomia.txt — una riga "CODICE | Tematica > Ambito" (codici A001...).
+- /home/claude/vp-alert-feed/biblioteca/lettura/processi.txt — una riga "CODICE | Macro > Processo > Sottoprocesso: descrizione" (codici P001...).
+
+Norme da leggere (una per file; ogni parte inizia con una riga "=== [ETICHETTA] rubrica"): ELENCO
+Leggi OGNI file dall'inizio alla fine con Read, a pezzi di 300 righe (offset/limit), senza saltare nulla.
+
+Per OGNI parte, nell'ordine del file:
+- "e": l'ETICHETTA copiata esattamente come appare tra parentesi quadre (es. "5", "12-bis", "Allegato I", "Sezione II - par. 3").
+- "a": codici degli ambiti che la parte disciplina con obblighi, divieti o regole concrete per una banca (o per intermediari/assicurazioni se la norma è di settore). Massimo 4 per parte, il primo è il più importante.
+- "p": codici dei sottoprocessi ABI su cui la parte impone adempimenti (massimo 4).
+- se la parte non contiene obblighi per la banca: "a":[] e "na" con UNA di queste etichette: "Definizioni", "Ambito di applicazione", "Disposizioni finali" (entrata in vigore, abrogazioni, transitorie), "Obblighi di altri soggetti" (autorità, Stato, altri), "Abrogato".
+- "n": nuovo ambito proposto, solo se la parte tratta una materia che NESSUN ambito della tassonomia copre: "Tematica > Ambito nuovo". Usalo con parsimonia.
+
+Scrivi in /home/claude/vp-alert-feed/biblioteca/lettura/OUT una riga JSON per norma, appendendo con Bash appena finisci ogni norma (cat >> file <<'EOF2' ... EOF2):
+{"id":"...","parti":[{"e":"1","a":[],"p":[],"na":"Definizioni"},{"e":"2","a":["A045","A012"],"p":["P031"]},{"e":"3","a":["A045"],"p":[],"n":"Credito > ..."}],"nota":"eventuali problemi del testo (incompleto, lingua, ecc.)"}
+Le parti devono essere TUTTE quelle del file, nello stesso ordine. Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", norme lette, parti totali, ambiti nuovi proposti.
