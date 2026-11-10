@@ -1,0 +1,2 @@
+- EIOPA-18340b1de7: testo scaricato in bulgaro (verificare lingua di tutti i testi EBA/EIOPA).
+- IT-decreto.legislativo-2005-09-07-209 (Codice assicurazioni): testo interrotto all'art. 64-bis; lo scarico Normattiva si ferma dopo 15 articoli mancanti di fila (vuoti di numerazione/abrogazioni). Verificare tutti gli atti IT lunghi.
