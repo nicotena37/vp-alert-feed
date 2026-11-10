@@ -3,3 +3,6 @@
 - AGCM-488af56b0c: il testo è il Reg. UE 2018/302 (geoblocking), non un atto AGCM.
 - UE-DIR-2015-2366 (PSD2): mancano i corpi degli artt. 4, 5, 14, 36, 87 e dell'Allegato I (presenti solo come tabelle di concordanza).
 - IT-decreto.legislativo-2005-12-05-252 (previdenza complementare): testo fermo all'art. 5-decies (manca dall'art. 6 in poi): stesso problema dello scarico Normattiva.
+
+- 2026-11-10: EIOPA risponde 429 alle richieste da GitHub anche con pausa di 6 s: 26 testi (elenco in lettura/testi_cirillico_resto.json, ancora da filtrare per quelli riusciti) da riprendere dal browser del PC. I vecchi testi in bulgaro sono in archivio_lingua.
+- 2026-11-10: biblioteca_estendi non salvava gli articoli aggiunti (lista condivisa): corretto.
