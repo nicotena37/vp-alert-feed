@@ -1,0 +1,18 @@
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Devi LEGGERE PER INTERO alcune norme e associarle a tematiche, ambiti e processi bancari.
+
+File di riferimento (leggili prima con Read):
+- /home/claude/vp-alert-feed/biblioteca/lettura/tassonomia.txt — tassonomia di partenza, una riga "Tematica > Ambito".
+- /home/claude/vp-alert-feed/biblioteca/lettura/processi.txt — tassonomia ABI Lab dei processi bancari: "Macro > Processo > Sottoprocesso: descrizione".
+
+Norme da leggere (una per file, ogni parte inizia con "=== [numero] rubrica"): ELENCO
+Leggi OGNI file dall'inizio alla fine con Read, a pezzi di 400 righe (offset/limit), senza saltare nulla. Mentre leggi prendi nota, parte per parte, dei temi trattati.
+
+Per ogni norma, alla fine della lettura:
+1. AMBITI: tutti gli ambiti della tassonomia che una parte della norma disciplina con obblighi, divieti o regole per una banca (o per un intermediario o assicurazione, se la norma è di settore). Per ciascuno: ruolo "P" (una parte rilevante della norma è dedicata a quell'ambito) o "S" (lo tocca in modo collaterale ma concreto), e le parti/articoli dove lo tratta (max 15). Non mettere ambiti solo citati.
+2. NUOVI AMBITI: se una parte rilevante della norma tratta una materia che NESSUN ambito della tassonomia copre bene, proponi un ambito nuovo (dentro una tematica esistente o, solo se serve davvero, una tematica nuova). Usalo anche nella lista ambiti con "nuovo": true. Non proporre doppioni o sinonimi di ambiti esistenti.
+3. PROCESSI: i sottoprocessi ABI (terzo livello, scritti esattamente come in processi.txt prima dei due punti) su cui la norma impone adempimenti, con le parti/articoli. Ruolo "P" o "S" come sopra.
+4. Se la norma non riguarda banche, intermediari, assicurazioni o mercati: liste vuote e nota.
+
+Scrivi il risultato in /home/claude/vp-alert-feed/biblioteca/lettura/OUT, una riga JSON per norma, appendendo con Bash appena finisci ogni norma (cat >> file <<'EOF2' ... EOF2):
+{"id":"...","ambiti":[{"t":"Tematica","a":"Ambito","r":"P","art":["5","Allegato I"],"m":"motivo breve","nuovo":false}],"processi":[{"p":"Macro > Processo > Sottoprocesso","r":"P","art":["5"]}],"nuovi_ambiti":[{"t":"Tematica","a":"Ambito nuovo","motivo":"perché nessun ambito esistente lo copre"}],"nota":""}
+Usa solo Read e Bash su questi file. Alla fine rispondi solo: "fatto", norme lette, ambiti nuovi proposti (elenco breve).
