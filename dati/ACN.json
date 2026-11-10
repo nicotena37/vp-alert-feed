@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-09T12-58-37.json",
+"nome_file": "vpalert_rss_ACN_2026-11-10T12-45-22.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-09T12:58:37Z",
+"letto_il": "2026-11-10T12:45:22Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -26,11 +26,141 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Farmasimplex",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-farmasimplex",
+"data_originale": "Tue, 10 Nov 2026 10:56:34 GMT",
+"data": "2026-11-10",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto Farmasimplex, software gestionale sviluppato da CIPCarbone, progettato specificamente per le esigenze di farmacie e parafarmacie."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Craft CMS",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
+"data_originale": "Mon, 09 Nov 2026 13:14:29 GMT",
+"data": "2026-11-09",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 7 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tra queste si evidenzia la CVE-2026-123488 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Synology DiskStation Manager (DSM)",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-synology-diskstation-manager-dsm-1",
+"data_originale": "Tue, 10 Nov 2026 10:19:13 GMT",
+"data": "2026-11-10",
+"descrizione": "Rilevate diverse vulnerabilità di sicurezza, di cui una con gravità “critica” e 9 con gravità “alta”, in Synology DiskStation Manager (DSM). Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di scrivere e/o leggere file arbitrari sul filesystem e compromettere la disponibilità dei sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Plex Media Server: rilevato sfruttamento in rete delle catena di attacco Plex2Shell",
+"link": "https://www.acn.gov.it/portale/w/plex-media-server-rilevato-sfruttamento-in-rete-delle-catena-di-attacco-plex2shell",
+"data_originale": "Tue, 20 Oct 2026 10:38:06 GMT",
+"data": "2026-10-20",
+"descrizione": "Rilevato lo sfruttamento attivo in rete delle vulnerabilità CVE-2026-96652 CVE-2026-96654 CVE-2026-96655 e CVE-2026-96656 - già sanate dal vendor - relative a Plex Media Server. Si evidenzia che risulta disponibile in rete un Proof of Concept (PoC) per lo sfruttamento concatenato di tali vulnerabilità."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Mozilla Firefox",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-mozilla-firefox",
+"data_originale": "Tue, 10 Nov 2026 09:20:37 GMT",
+"data": "2026-11-10",
+"descrizione": "Mozilla ha rilasciato aggiornamenti di sicurezza per risolvere tre vulnerabilità, di cui due con gravità “alta”, in Firefox per iOS. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di elevare i propri privilegi sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Google Chrome",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-85",
+"data_originale": "Tue, 10 Nov 2026 08:47:57 GMT",
+"data": "2026-11-10",
+"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 9 nuove vulnerabilità di sicurezza, di cui 7 con gravità “alta”. Tra queste si evidenzia la CVE-2026-125350 che risulta sfruttata attivamente in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "OpenSSH: potenziale bypass dell'autenticazione su sistemi Linux basati su musl libc",
+"link": "https://www.acn.gov.it/portale/w/openssh-potenziale-bypass-dell-autenticazione-su-sistemi-linux-basati-su-musl-libc",
+"data_originale": "Thu, 05 Nov 2026 19:36:57 GMT",
+"data": "2026-11-05",
+"descrizione": "Rilevata una vulnerabilità con gravità \"alta\" in OpenSSH - denominata \"SSHole\" e già sanata dal vendor - che interessa specifiche configurazioni di sistemi Linux - tra cui Alpine Linux - basati su musl libc, libreria standard del linguaggio C per sistemi Linux, alternativa alla più diffusa glibc (GNU C Library). Tale vulnerabilità potrebbe consentire a un attaccante remoto non autenticato di eludere i meccanismi di autenticazione SSH e ottenere accesso non autorizzato ai sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Apple",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-22",
+"data_originale": "Tue, 10 Nov 2026 08:17:53 GMT",
+"data": "2026-11-10",
+"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 9 nuove vulnerabilità, di cui 3 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, watchOS e visionOS."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti ASUS",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-6",
+"data_originale": "Tue, 10 Nov 2026 08:01:42 GMT",
+"data": "2026-11-10",
+"descrizione": "ASUS ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità, di cui 3 con gravità \"alta\", che interessano il firmware di diversi modelli di router. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in ModSecurity",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-modsecurity",
+"data_originale": "Mon, 09 Nov 2026 17:15:54 GMT",
+"data": "2026-11-09",
+"descrizione": "Rilevate due vulnerabilità con gravità \"alta\" in ModSecurity, Web Application Firewall (WAF) open source che si integra con server web come Apache, Nginx e IIS per analizzare e filtrare il traffico HTTP/HTTPS diretto alle applicazioni web. Tali vulnerabilità, per le quali risultano disponibili dei Proof of Concept (PoC), possono consentire a un attaccante remoto di eludere le funzionalità di sicurezza e accedere ad informazioni sensibili sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "PHP2Shell: aggiornare immediatamente i sistemi vulnerabili",
+"link": "https://www.acn.gov.it/portale/w/php2shell-aggiornare-immediatamente-i-sistemi-vulnerabili",
+"data_originale": "Sun, 25 Oct 2026 16:12:00 GMT",
+"data": "2026-10-25",
+"descrizione": "Dalle attività di monitoraggio del CSIRT Italia e dall'analisi dell'esposizione nazionale emerge che l'81,9% dei servizi PHP con versione identificata risulta potenzialmente vulnerabile a PHP2Shell. Si sollecita l'aggiornamento immediato e la disabilitazione di session.upload_progress.enabled per la CVE-2026-115560, ancora priva di patch. Ove disponibili regole specifiche, configurare i WAF in modalità blocco; in assenza di mitigazioni efficaci, valutare di porre offline i servizi."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Check Point: aggiornamenti e mitigazioni per le vulnerabilità \"PHP2Shell\"",
+"link": "https://www.acn.gov.it/portale/w/check-point-aggiornamenti-e-mitigazioni-per-le-vulnerabilita-php2shell-",
+"data_originale": "Mon, 09 Nov 2026 15:24:00 GMT",
+"data": "2026-11-09",
+"descrizione": "Disponibili hotfix e misure di mitigazione per Check Point Firewall, Cloud Firewall, Security Gateway e Spark Firewall al fine di fronteggiare le vulnerabilità critiche note come \"PHP2Shell\" (CVE-2026-109618 e CVE-2026-109619), che interessano il componente PHP utilizzato dalle interfacce web di alcuni servizi esposti dai dispositivi."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
 "titolo": "Wazuh: disponibili PoC per molteplici vulnerabilità",
 "link": "https://www.acn.gov.it/portale/w/wazuh-disponibili-poc-per-molteplici-vulnerabilita",
-"data_originale": "Mon, 09 Nov 2026 11:34:38 GMT",
+"data_originale": "Mon, 09 Nov 2026 10:34:00 GMT",
 "data": "2026-11-09",
 "descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di 8 vulnerabilità, di cui 5 con gravità \"alta\", che interessano Wazuh, piattaforma open source con funzionalità di Security Information and Event Management (SIEM) e Extended Detection and Response (XDR), e i relativi Wazuh Dashboard Plugins."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Progress: aggiornamenti di sicurezza",
+"link": "https://www.acn.gov.it/portale/w/progress-aggiornamenti-di-sicurezza",
+"data_originale": "Mon, 09 Nov 2026 13:33:25 GMT",
+"data": "2026-11-09",
+"descrizione": "Progress ha rilasciato aggiornamenti di sicurezza per sanare due vulnerabilità con gravità “alta” in Telerik Fiddler Everywhere e nella funzionalità Fiddler Download & Setup Skill. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eseguire codice arbitrario sui sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -121,16 +251,6 @@
 "data_originale": "Fri, 06 Nov 2026 09:08:52 GMT",
 "data": "2026-11-06",
 "descrizione": "Questo CSIRT Italia ha rilevato il riacutizzarsi della campagna malevola a tema SEND (Servizio Notifiche Digitali) e PagoPA, già oggetto di precedente segnalazione, veicolata tramite messaggi SMS (smishing). L'attività malevola mira a indurre gli utenti a visitare risorse web opportunamente predisposte al fine di sottrarre dati personali, credenziali di accesso e informazioni relative a strumenti di pagamento."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "OpenSSH: potenziale bypass dell'autenticazione su sistemi Linux basati su musl libc",
-"link": "https://www.acn.gov.it/portale/w/openssh-potenziale-bypass-dell-autenticazione-su-sistemi-linux-basati-su-musl-libc",
-"data_originale": "Thu, 05 Nov 2026 19:36:57 GMT",
-"data": "2026-11-05",
-"descrizione": "Rilevata una vulnerabilità con gravità \"critica\" in OpenSSH che interessa specifiche configurazioni di sistemi Linux - tra cui Alpine Linux - basati su musl libc, libreria standard del linguaggio C per sistemi Linux, alternativa alla più diffusa glibc (GNU C Library). Tale vulnerabilità potrebbe consentire a un attaccante remoto non autenticato l’elusione dei meccanismi di autenticazione SSH e ottenere accesso non autorizzato ai sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -401,126 +521,6 @@
 "data_originale": "Tue, 03 Nov 2026 13:24:17 GMT",
 "data": "2026-11-03",
 "descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 6 con gravità “alta”, in PostgreSQL psqlODBC. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di modificare dati o di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in cPanel",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-cpanel",
-"data_originale": "Tue, 03 Nov 2026 11:37:48 GMT",
-"data": "2026-11-03",
-"descrizione": "Aggiornamenti di sicurezza sanano 2 vulnerabilità con gravità “alta” nel prodotto cPanel & WHM, nota piattaforma per la gestione di server e hosting. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di leggere gli eventi in calendario e la rubrica di account arbitrari senza autenticazione, o di scrivere file arbitrari sui sistemi interessati con privilegi elevati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Zyxel",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-zyxel-1",
-"data_originale": "Tue, 03 Nov 2026 11:33:27 GMT",
-"data": "2026-11-03",
-"descrizione": "Zyxel ha rilasciato aggiornamenti di sicurezza per risolvere due vulnerabilità con gravità “alta” presenti nei firmware di alcuni Access Point (AP), dispositivi FWA7, Security Router e switch della serie GS1900. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un attaccante, presente sulla rete locale o su una rete adiacente, di elevare i propri privilegi e, in determinate condizioni, di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità nei chipset MediaTek",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-nei-chipset-mediatek-2",
-"data_originale": "Tue, 03 Nov 2026 10:13:44 GMT",
-"data": "2026-11-03",
-"descrizione": "MediaTek ha pubblicato il bollettino di sicurezza di novembre 2026 contenente correzioni per 56 vulnerabilità, di cui 6 con gravità \"critica\" e 16 con gravità \"alta\", nei chipset MediaTek, componenti hardware impiegati in numerosi dispositivi mobili e sistemi embedded."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per dispositivi Android",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-dispositivi-android-1",
-"data_originale": "Tue, 03 Nov 2026 09:02:24 GMT",
-"data": "2026-11-03",
-"descrizione": "Google ha pubblicato il bollettino di sicurezza Android di novembre, contenente correzioni per 149 vulnerabilità, di cui 12 con gravità “critica” e 137 con gravità “alta”. Tra queste si evidenzia la CVE-2026-58882 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in SQLite",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-sqlite",
-"data_originale": "Mon, 02 Nov 2026 15:06:31 GMT",
-"data": "2026-11-02",
-"descrizione": "Rilevate alcune vulnerabilità, di cui 4 con gravità \"alta\", in SQLite, libreria open source per la gestione di basi di dati relazionali incorporata in numerose applicazioni. Tali vulnerabilità potrebbero consentire a un attaccante di iniettare comandi di sistema, alterare la memoria dei processi interessati e compromettere la disponibilità del servizio sui sistemi coinvolti."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Apple",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
-"data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
-"data": "2026-10-27",
-"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 327 nuove vulnerabilità, di cui 20 con gravità “critica” e 231 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS e Safari."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti TeamViewer",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-teamviewer",
-"data_originale": "Wed, 28 Oct 2026 09:22:43 GMT",
-"data": "2026-10-28",
-"descrizione": "TeamViewer ha rilasciato aggiornamenti di sicurezza per sanare 9 vulnerabilità con gravità “alta” in vari prodotti. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di elevare i propri privilegi, compromettere la disponibilità del servizio o di eseguire codice arbitrario sui sistemi interessati. Tra queste si evidenzia la CVE-2026-111585, per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Grafana",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-grafana-8",
-"data_originale": "Thu, 29 Oct 2026 13:42:22 GMT",
-"data": "2026-10-29",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui tre con gravità “alta”, presenti in Grafana, nota applicazione web per la visualizzazione e l’analisi interattiva di dati. Tali vulnerabilità, qualora sfruttate e in presenza di specifiche condizioni, potrebbero consentire a un utente malintenzionato l'elusione dei meccanismi di sicurezza, l'accesso a informazioni sensibili e la modifica non autorizzata di configurazioni sui sistemi target."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Apache HTTP Server",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-apache-http-server",
-"data_originale": "Fri, 02 Oct 2026 09:16:17 GMT",
-"data": "2026-10-02",
-"descrizione": "Aggiornamenti di sicurezza sanano diverse vulnerabilità presenti in Apache HTTP Server, di cui 3 con gravità \"critica\" e 13 con gravità \"alta\". Tra queste si evidenzia la CVE-2026-63686, per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Compromissione di chiavi private associate a certificati CA intermedi eMudhra",
-"link": "https://www.acn.gov.it/portale/w/compromissione-di-chiavi-private-associate-a-certificati-ca-intermedi-emudhra",
-"data_originale": "Fri, 23 Oct 2026 07:21:08 GMT",
-"data": "2026-10-23",
-"descrizione": "È stata resa pubblica la compromissione delle chiavi private associate ai certificati di otto autorità di certificazione (CA) intermedie di eMudhra , sei destinate all'emissione di certificati TLS e due alla firma del codice. Risultano interessate anche le corrispondenti versioni dei certificati intermedi oggetto di certificazione incrociata (cross-signing) da parte di Sectigo."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Chamilo LMS",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-chamilo-lms",
-"data_originale": "Mon, 02 Nov 2026 10:47:36 GMT",
-"data": "2026-11-02",
-"descrizione": "Rilevate quattro vulnerabilità di sicurezza, di cui 2 con gravità “alta”, in Chamilo LMS, sistema di e-learning e gestione dei contenuti. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in determinate condizioni, di eseguire codice arbitrario o di compromettere un account esistente, anche amministrativo."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in n8n",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-n8n-10",
-"data_originale": "Mon, 02 Nov 2026 10:12:58 GMT",
-"data": "2026-11-02",
-"descrizione": "Risolte due vulnerabilità con gravità \"alta\" in n8n, piattaforma open source per l'automazione dei flussi di lavoro."
 },
 {
 "sito": "ACN",

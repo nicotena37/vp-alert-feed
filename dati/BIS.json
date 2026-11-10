@@ -1,13 +1,13 @@
 {
-"nome_file": "vpalert_rss_BIS_2026-11-09T13-02-09.json",
+"nome_file": "vpalert_rss_BIS_2026-11-10T12-48-22.json",
 "sito": "BIS",
 "origine": "github-actions",
-"letto_il": "2026-11-09T13:02:09Z",
+"letto_il": "2026-11-10T12:48:22Z",
 "feed": [
 {
 "nome": "BIS - comunicati",
 "url": "https://www.bis.org/doclist/all_pressrels.rss",
-"voci": 0
+"voci": 1
 },
 {
 "nome": "BIS - FSI (sintesi regolamentari)",
@@ -17,6 +17,16 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "BIS",
+"feed": "BIS - comunicati",
+"categoria": "Resto del mondo",
+"titolo": "Appointments to BIS global payments standard-setting body and Consultative Council for the Americas",
+"link": "https://www.bis.org/media-releases/20261110-appointments-bis-global-payments-standard-setting-body-and-consultative-council-americas",
+"data_originale": "2026-11-10T00:00:00Z",
+"data": "2026-11-10",
+"descrizione": "Bank of Korea Governor Hyun Song Shin appointed Chair of the Bank for International Settlements (BIS) Committee on Payments and Market Infrastructures (CPMI) for a three-year term from 1 November. In addition, the Board of Directors has extended the term of Tiff Macklem, Governor of the Bank of Canada, as Chair of the Consultative Council for the Americas (CCA) until 31 March 2027."
+},
 {
 "sito": "BIS",
 "feed": "BIS - FSI (sintesi regolamentari)",
