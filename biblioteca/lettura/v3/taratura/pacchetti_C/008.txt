@@ -1,0 +1,1059 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento delegato (UE) 2019/360 della Commissione, del 13 dicembre 2018, che integra il regolamento (UE) 2015/2365 del Parlamento europeo e del Consiglio per  (id UE-32019R0360)
+
+=== K228 | [Allegato] COMMISSIONI PROVVISORIE PER IL PRIMO ANNO
+ALLEGATO
+COMMISSIONI PROVVISORIE PER IL PRIMO ANNO
+Parte 1
+Commissione provvisoria di vigilanza per l'anno di registrazione di un repertorio di dati sulle negoziazioni laddove l'obbligo di segnalazione entri in vigore nell'anno successivo
+1. La commissione provvisoria di vigilanza applicata al repertorio di dati sulle negoziazioni è l'importo inferiore tra i seguenti:
+a)
+la commissione di registrazione a carico del repertorio di dati sulle negoziazioni a norma dell'articolo 5 del presente regolamento;
+b)
+la commissione di registrazione a carico del repertorio di dati sulle negoziazioni a norma dell'articolo 5 del presente regolamento moltiplicata per il rapporto tra i giorni lavorativi compresi tra la
+data di registrazione e la fine dell'anno e 150 giorni lavorativi.
+Questo calcolo è effettuato come segue:
+Commissione provvisoria di vigilanza del rep. dati = Min ( commissione di registrazione , commissione di registrazione * coefficiente )
+2. La commissione provvisoria di vigilanza è corrisposta per intero entro 60 giorni dall'entrata in vigore del presente regolamento o entro 30 giorni dalla notifica di cui all'articolo 8, paragrafo 1,
+del regolamento (UE) 2015/2365, se la seconda data è posteriore.
+Parte 2
+Commissione provvisoria di vigilanza per l'anno di registrazione di un repertorio di dati sulle negoziazioni laddove l'obbligo di segnalazione entri in vigore nei primi sei mesi dello stesso anno
+1. La commissione provvisoria di vigilanza a carico del repertorio di dati sulle negoziazioni è la commissione annuale di vigilanza totale calcolata in applicazione dell'articolo 6, paragrafo 2,
+lettera a), del presente regolamento ripartita tra tutti i repertori di dati sulle negoziazioni registrati in tale anno, in proporzione al fatturato applicabile calcolato a norma del paragrafo 2.
+2. Ai fini del calcolo della commissione provvisoria di vigilanza il fatturato applicabile di un repertorio di dati sulle negoziazioni è pari alla somma di:
+—
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni delle SFT nel periodo compreso tra il 1 o gennaio e il 30 giugno dell'anno in cui il
+repertorio di dati sulle negoziazioni è stato registrato e
+—
+i proventi applicabili dei servizi accessori del repertorio di dati sulle negoziazioni in conformità dell'articolo 2, paragrafi 1 e 2, del presente regolamento, a seconda dei casi, nel periodo
+compreso tra il 1 o gennaio e il 30 giugno dell'anno in cui il repertorio di dati sulle negoziazioni è stato registrato
+diviso per i proventi totali generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni delle SFT e i proventi applicabili dei servizi accessori di tutti i
+repertori di dati sulle negoziazioni registrati, in conformità dell'articolo 2, paragrafi 1 e 2, del presente regolamento, a seconda dei casi, nel periodo dal 1 o gennaio al 30 giugno di quell'anno.
+3. La commissione provvisoria di vigilanza è pagata in due rate.
+La prima rata è corrisposta entro 30 giorni dalla notifica di cui all'articolo 8, paragrafo 1, del regolamento (UE) 2015/2365 ed è pari all'importo della commissione di registrazione del repertorio di
+dati sulle negoziazioni in conformità dell'articolo 5 del presente regolamento.
+La seconda rata scade il 31 ottobre. L'importo della seconda rata è pari all'importo della commissione provvisoria di vigilanza calcolato conformemente al paragrafo 1 meno l'importo della prima rata.
+Nel caso in cui l'importo della prima rata pagata dal repertorio di dati sulle negoziazioni sia superiore all'importo della commissione provvisoria di vigilanza calcolata conformemente al paragrafo 1,
+l'ESMA rimborsa al repertorio di dati sulle negoziazioni la differenza tra l'importo della prima rata pagata e l'importo della commissione provvisoria di vigilanza calcolato conformemente al paragrafo
+1.
+4. Quando sono disponibili i conti sottoposti a revisione contabile dell'anno di registrazione, i repertori di dati sulle negoziazioni comunicano all'ESMA eventuali variazioni del fatturato
+applicabile calcolato a norma del paragrafo 1, dovute alla differenza tra i dati definitivi per il periodo dal 1 o gennaio al 30 giugno e i dati provvisori utilizzati per il calcolo a norma del
+paragrafo 1.
+I repertori di dati sulle negoziazioni sono tenuti a pagare la differenza fra la commissione annuale di vigilanza per l'anno di registrazione effettivamente pagata a norma del paragrafo 3 e la
+commissione annuale di vigilanza per l'anno di registrazione da pagare a seguito della variazione del fatturato applicabile di cui al primo comma.
+5. Fatti salvi i paragrafi 1 e 4, la commissione provvisoria di vigilanza non è inferiore a 15 000 EUR.
+Parte 3
+Commissione provvisoria di vigilanza per l'anno di registrazione di un repertorio di dati sulle negoziazioni laddove l'obbligo di segnalazione entri in vigore negli ultimi sei mesi dello stesso anno
+1. La commissione provvisoria di vigilanza a carico del repertorio di dati sulle negoziazioni è la commissione di vigilanza totale calcolata in applicazione dell'articolo 6, paragrafo 2, lettera a),
+del presente regolamento, ripartita tra tutti i repertori di dati sulle negoziazioni in proporzione al rapporto tra la commissione di registrazione corrisposta all'ESMA dal repertorio di dati sulle
+negoziazioni e il totale di tutte le commissioni di registrazione corrisposte all'ESMA dai repertori di dati sulle negoziazioni nell'anno in questione.
+2. La commissione calcolata in applicazione del paragrafo 1 è corrisposta entro 30 giorni dalla notifica di cui all'articolo 8, paragrafo 1, del regolamento (UE) 2015/2365.
+(
+1
+) Regolamento (UE, Euratom) 2018/1046 del Parlamento europeo e del Consiglio, del 18 luglio 2018, che stabilisce le regole finanziarie applicabili al bilancio generale dell’Unione, che modifica i
+regolamenti (UE) n. 1296/2013, (UE) n. 1301/2013, (UE) n. 1303/2013, (UE) n. 1304/2013, (UE) n. 1309/2013, (UE) n. 1316/2013, (UE) n. 223/2014, (UE) n. 283/2014 e la decisione n. 541/2014/UE e abroga
+il regolamento (UE, Euratom) n. 966/2012 (GU L 193 del 30.7.2018, pag. 1, ELI: http://data.europa.eu/eli/reg/2018/1046/oj ).
+
+
+######## NORMA: Regolamento delegato (UE) n. 918/2012 della Commissione, del 5 luglio 2012 , che integra il regolamento (UE) n. 236/2012 del Parlamento europeo e del Consiglio,  (id UE-32012R0918)
+
+=== K229 | [1] Oggetto
+Articolo 1
+Oggetto
+Il presente regolamento fissa disposizioni dettagliate ad integrazione dei seguenti articoli del regolamento (UE) n. 236/2012:
+— articolo 2, paragrafo 2, del regolamento (UE) n. 236/2012, per specificare ulteriormente le definizioni di proprietà e vendita allo scoperto,
+— articolo 3, paragrafo 7, del regolamento (UE) n. 236/2012, per specificare ulteriormente i casi di posizioni corte nette e il metodo per calcolarle, nonché la definizione di detenzione,
+— articolo 4, paragrafo 2, del regolamento (UE) n. 236/2012, per specificare ulteriormente le posizioni scoperte in credit default swap su emittenti sovrani e dei metodi di calcolo dei gruppi e delle
+attività di gestione di fondi,
+— articolo 7, paragrafo 3, del regolamento (UE) n. 236/2012 per specificare ulteriormente la soglia di notifica di importanti posizioni corte in debito sovrano,
+— articolo 13, paragrafo 4, del regolamento (UE) n. 236/2012, per specificare ulteriormente la soglia di liquidità per la sospensione delle restrizioni alle vendite allo scoperto di debito sovrano,
+— articolo 23, paragrafo 7, del regolamento (UE) n. 236/2012 per specificare ulteriormente il significato di diminuzione significativa del valore degli strumenti finanziari diversi dai titoli azionari
+liquidi,
+— articolo 30 del regolamento (UE) n. 236/2012 per specificare ulteriormente i criteri e i fattori di cui occorre tener conto nello stabilire in quali casi si verificano gli eventi o sviluppi
+sfavorevoli di cui agli articoli da 18 a 21 e all’articolo 27, e le minacce di cui all’articolo 28, paragrafo 2, lettera a), del regolamento (UE) n. 236/2012.
+
+=== K231 | [3] Specificazione del termine «proprietà» e definizione di vendita allo scoperto
+Articolo 3
+Specificazione del termine «proprietà» e definizione di vendita allo scoperto
+1. Ai fini della definizione di vendita allo scoperto, il fatto che una persona fisica o giuridica sia considerata, se del caso, proprietaria di uno strumento finanziario, quando tale strumento è
+oggetto di diritti di proprietà legale o abbia un beneficiario effettivo, è determinato in forza della legge applicabile alla vendita allo scoperto del titolo azionario o dello strumento di debito.
+Quando la persona fisica o giuridica è beneficiaria effettiva di un titolo azionario o di uno strumento di debito, il titolo azionario o lo strumento di debito è considerato di proprietà del suo
+beneficiario effettivo ultimo anche nei casi in cui il titolo azionario o lo strumento di debito è detenuto da un prestanome. Ai fini del presente articolo, il beneficiario effettivo è l’investitore
+che assume il rischio economico legato all’acquisizione dello strumento finanziario.
+2. Ai sensi dell’articolo 2, paragrafo 1, lettera b), punti i), ii) e iii), del regolamento (UE) n. 236/2012, la «vendita allo scoperto» ai sensi dell’articolo 2, paragrafo 1, lettera b), del
+regolamento (UE) n. 236/2012, non comprende:
+a) la vendita di strumenti finanziari che sono stati trasferiti nel quadro di un contratto di pronti contro termine o di un accordo di prestito di titoli, purché i titoli vengano restituiti o il
+cedente richiami gli strumenti finanziari in modo che il regolamento possa essere effettuato quando dovuto;
+b) la vendita dello strumento finanziario da parte di una persona fisica o giuridica che ha acquistato lo strumento finanziario prima della vendita ma non lo ha ancora preso in consegna al momento
+della vendita, purché lo strumento finanziario sia consegnato al momento opportuno per consentire che il regolamento sia effettuato quando dovuto;
+c) la vendita di uno strumento finanziario da parte di una persona fisica o giuridica che ha esercitato un’opzione o un diritto analogo sullo strumento finanziario, purché lo strumento finanziario
+venga consegnato al momento opportuno per consentire che il regolamento sia effettuato quando dovuto.
+
+=== K232 | [4] Detenzione
+Articolo 4
+Detenzione
+Si considera che una persona fisica o giuridica detiene un titolo azionario o uno strumento di debito ai fini dell’articolo 3, paragrafo 2, lettera a), del regolamento (UE) n. 236/2012, nei seguenti
+casi:
+a) la persona fisica o giuridica è proprietaria del titolo azionario o dello strumento di debito ai sensi dell’articolo 3, paragrafo 1;
+b) la persona fisica o giuridica ha un titolo esecutivo che le riconosce il diritto di farsi trasferire la proprietà del titolo azionario o dello strumento di debito conformemente al diritto che
+regola la vendita in questione.
+CAPO III
+POSIZIONI CORTE NETTE AI SENSI DELL’ARTICOLO 3, PARAGRAFO 7, LETTERA b)
+
+=== K233 | [5] Posizioni corte nette in titoli azionari — posizioni lunghe
+Articolo 5
+Posizioni corte nette in titoli azionari — posizioni lunghe
+1. È anche presa in considerazione la detenzione di un titolo azionario mediante una posizione lunga in un paniere di titoli azionari, in relazione al titolo, nella misura in cui esso è rappresentato
+nel paniere.
+2. Per esposizioni tramite strumenti finanziari diversi dai titoli azionari che conferiscono un vantaggio finanziario in caso di aumento del prezzo del titolo azionario, come previsto all’articolo 3,
+paragrafo 2, lettera b), del regolamento (UE) n. 236/2012 si intendono le esposizioni in capitale azionario mediante uno o più degli strumenti di cui all’allegato I, parte 1.
+L’esposizione di cui al primo comma dipende dal valore del titolo azionario per il quale deve essere calcolata una posizione corta netta e che conferisce un vantaggio finanziario in caso di aumento
+del prezzo o del valore del titolo azionario.
+
+=== K234 | [6] Posizioni corte nette in titoli azionari — posizioni corte
+Articolo 6
+Posizioni corte nette in titoli azionari — posizioni corte
+1. È anche presa in considerazione la vendita allo scoperto di un titolo azionario mediante la vendita allo scoperto di un paniere di titoli azionari, in relazione al titolo, nella misura in cui esso
+è rappresentato nel paniere.
+2. Ai fini dell’articolo 3, paragrafo 1, lettera a), e dell’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012 se una posizione in uno strumento finanziario, compresi quelli elencati
+nell’allegato I, parte 1, conferisce un vantaggio finanziario in caso di diminuzione del prezzo o del valore del titolo azionario, questa posizione è presa in considerazione per il calcolo della
+posizione corta.
+
+=== K235 | [7] — Contratti di opzione,
+Articolo 7
+— Contratti di opzione,
+— contratti finanziari a termine standardizzati ( future ),
+— strumenti legati a indici,
+— contratti differenziali,
+—
+swap ,
+— scommesse sul differenziale ( spread bets ),
+— strumenti derivati complessi,
+— certificati rappresentativi di debito sovrano.
+
+=== K236 | [8] Posizioni corte nette in debito sovrano — posizioni lunghe
+Articolo 8
+Posizioni corte nette in debito sovrano — posizioni lunghe
+1. Ai fini del presente articolo e dell’allegato II, per prezzo si intende il rendimento, ovvero nel caso in cui non vi sia rendimento per una delle pertinenti attività o passività o qualora il
+rendimento costituisca un elemento di confronto inappropriato tra le pertinenti attività o passività, si intende il prezzo. La detenzione di uno strumento di debito sovrano mediante una posizione
+lunga in un paniere di strumenti di debito sovrano di diversi emittenti sovrani è, in relazione a detto debito sovrano, altresì presa in considerazione nella misura in cui il debito sovrano è
+rappresentato nel paniere.
+2. Ai fini dell’articolo 3, paragrafo 2, lettera b), del regolamento (UE) n. 236/2012, per esposizione mediante uno strumento finanziario diverso dal debito sovrano che conferisce un vantaggio
+finanziario in caso di aumento del prezzo del debito sovrano si intende un’esposizione mediante uno o più degli strumenti di cui all’allegato I, parte 2, purché il loro valore dipenda sempre dal
+valore del debito sovrano per il quale deve essere calcolata la posizione corta netta e che conferisce un vantaggio finanziario in caso di un aumento del prezzo o del valore del debito sovrano.
+3. Sempre che siano strettamente correlate ai sensi dell’articolo 3, paragrafo 5, del regolamento (UE) n. 236/2012 e dei paragrafi 4 e 5, tutte le detenzioni nette di debito sovrano di un emittente
+sovrano che è strettamente correlato al prezzo del debito sovrano in qualsiasi posizione corta sono incluse nel calcolo della posizione lunga. Non sono inclusi gli strumenti di debito sovrano di
+emittenti situati al di fuori dell’Unione.
+4. Per le attività che hanno un prezzo su un mercato liquido, la stretta correlazione tra il prezzo dello strumento di debito di un altro emittente sovrano e il prezzo del debito dell’emittente
+sovrano in questione è misurata su base storica utilizzando dati quotidiani ponderati accumulati nel periodo di 12 mesi precedente la posizione sul debito sovrano. Per le attività che non hanno un
+mercato liquido o per le quali la cronologia del prezzo è inferiore a 12 mesi, si utilizza un appropriato parametro sostitutivo di durata analoga.
+5. Ai fini dell’articolo 3, paragrafo 5, del regolamento (UE) n. 236/2012, uno strumento di debito e un debito sovrano emesso sono considerati strettamente correlati se il coefficiente di correlazione
+di Pearson tra il prezzo dello strumento di debito di un altro emittente sovrano e il prezzo del debito sovrano in questione per il pertinente periodo è pari almeno all’80 %.
+6. Se in seguito, in un periodo di tempo di 12 mesi, la posizione cessa di essere strettamente correlata, il debito sovrano dell’emittente sovrano in precedenza strettamente correlato non è più preso
+in considerazione ai fini del calcolo della posizione lunga. Tuttavia, in caso di diminuzione temporanea del livello di correlazione del debito sovrano al di sotto del livello di cui al paragrafo 4
+per un periodo inferiore a tre mesi si ritiene che le posizioni non cessino di essere strettamente correlate, purché il coefficiente di correlazione sia almeno pari al 60 % per tutto il periodo di tre
+mesi.
+7. Per il calcolo delle posizioni corte nette è irrilevante se è stato concordato il regolamento in contanti o la consegna fisica delle attività sottostanti.
+
+=== K237 | [9] Posizioni corte nette in debito sovrano — posizioni corte
+Articolo 9
+Posizioni corte nette in debito sovrano — posizioni corte
+1. È anche presa in considerazione la vendita allo scoperto di un debito sovrano mediante la vendita di un paniere di debito sovrano, in relazione al debito sovrano, nella misura in cui esso è
+rappresentato nel paniere.
+2. Ai fini dell’articolo 3, paragrafo 1, lettera a), e dell’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012, se una posizione in uno strumento finanziario, compresi quelli elencati
+all’articolo 8, paragrafo 2, conferisce un vantaggio finanziario in caso di diminuzione del prezzo o del valore del debito sovrano, la posizione è presa in considerazione per il calcolo della
+posizione corta.
+3. Tutti i credit default swap riferiti ad un emittente sovrano sono inclusi nel calcolo delle posizioni corte nette nel debito di detto emittente sovrano. Le vendite di credit default swap su
+emittenti sovrani sono considerate posizioni lunghe e gli acquisti di credit default swap su emittenti sovrani sono considerati posizioni corte.
+4. Se la posizione in credit default swap su emittenti sovrani serve a coprire un rischio diverso dal debito sovrano di riferimento, il valore del rischio coperto non può essere considerato come una
+posizione lunga ai fini della determinazione se una persona fisica o giuridica detiene una posizione corta netta nel debito sovrano emesso di un emittente sovrano.
+5. Per il calcolo delle posizioni corte nette è irrilevante se è stato concordato il regolamento in contanti o la consegna fisica delle attività sottostanti.
+
+=== K238 | [10] 1. Gli strumenti derivati e le posizioni in contante sono presi in considerazione corretti per il delta, attribuendo all
+Articolo 10
+1. Gli strumenti derivati e le posizioni in contante sono presi in considerazione corretti per il delta, attribuendo alla posizione in contanti delta 1. Per il calcolo del delta dello strumento
+derivato, gli investitori tengono conto della volatilità implicita corrente dello strumento derivato e del prezzo di chiusura o dell’ultimo prezzo dello strumento sottostante. Per il calcolo della
+posizione corta netta che include investimenti in capitale proprio o collocamenti di tesoreria e prodotti derivati, le persone fisiche o giuridiche calcolano la posizione corretta per il delta di ogni
+strumento derivato detenuto nel portafoglio, aggiungendo o sottraendo tutte le posizioni in contanti, a seconda del caso.
+2. La posizione corta nominale in contante non può essere compensata da un’equivalente posizione lunga nominale in strumenti derivati. Le posizioni lunghe in strumenti derivati corrette per il delta
+non possono compensare identiche posizioni corte nominali assunte in altri strumenti finanziari a causa della correzione per il delta. Le persone fisiche o giuridiche che concludono contratti derivati
+che danno origine a posizioni corte nette che devono essere notificate o comunicate al pubblico ai sensi degli articoli da 5 a 11 del regolamento (UE) n. 236/2012 calcolano le variazioni delle
+posizioni corte nette del loro portafoglio dovute alle variazioni del delta.
+3. Le operazioni che conferiscono un vantaggio finanziario in caso di variazione del prezzo o del valore del titolo azionario detenuto in un paniere, indice o fondo negoziato in borsa [ Exchange
+Traded Fund (ETF)] sono incluse nel calcolo della posizione in ogni singolo titolo azionario. Le posizioni in tali strumenti finanziari sono calcolate tenendo conto del peso del titolo azionario nel
+paniere, indice o fondo sottostante. Le persone fisiche o giuridiche effettuano i calcoli per tali strumenti finanziari conformemente all’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012.
+4. La posizione corta netta è calcolata compensando le posizioni lunghe e corte su un dato emittente corrette per il delta.
+5. Per il capitale azionario emesso, se gli emittenti hanno diverse categorie di titoli azionari, si tiene conto della somma del numero complessivo di titoli azionari emessi per ciascuna categoria.
+6. Il calcolo delle posizioni corte nette tiene conto delle modifiche del capitale azionario dell’emittente che potrebbero far sorgere o annullare l’obbligo di notifica ai sensi dell’articolo 5 del
+regolamento (UE) n. 236/2012.
+7. I nuovi titoli azionari emessi in occasione di un aumento di capitale sono presi in considerazione nel calcolo del totale del capitale azionario emesso a decorrere dal giorno in cui sono ammessi
+alla negoziazione in una sede di negoziazione.
+8. La posizione corta netta espressa in percentuale del capitale azionario emesso della società è calcolata dividendo la posizione corta netta in titoli azionari equivalenti per il totale del capitale
+azionario emesso dalla società.
+PARTE 2
+Il modello corretto per il delta per il debito sovrano
+
+=== K239 | [11] 1. Le posizioni in contante sono prese in considerazione sulla base del loro valore nominale corretto per la durata. Le 
+Articolo 11
+1. Le posizioni in contante sono prese in considerazione sulla base del loro valore nominale corretto per la durata. Le opzioni e gli altri strumenti derivati sono corretti per il relativo delta
+calcolato ai sensi della parte 1. Per il calcolo delle posizioni corte nette contenenti sia investimenti in contanti che strumenti derivati si tiene conto della posizione corretta per il delta in ogni
+singolo strumento derivato detenuto nel portafoglio, a cui sono aggiunte o sottratte tutte le posizioni in contante ovvero le posizioni in contante aventi un delta pari a 1.
+2. Le posizioni nominali in obbligazioni emesse in valute diverse dall’euro sono convertite in euro utilizzando l’ultima quotazione a pronti disponibile, aggiornata e attendibile. Lo stesso principio
+si applica ad altri strumenti finanziari.
+3. Gli altri strumenti derivati, quali le obbligazioni forward , sono altresì aggiustati conformemente ai paragrafi 1, 2 e 3.
+4. Gli interessi economici o le posizioni che creano un vantaggio finanziario in debito sovrano detenuto in un paniere, indice o fondo negoziato in borsa [ Exchange Traded Fund (ETF)] sono inclusi nel
+calcolo della posizione in ogni singolo debito sovrano. Le posizioni in tali strumenti finanziari sono calcolate tenendo conto del peso dell’esposizione in debito sovrano nel paniere, indice o fondo
+sottostante. Gli investitori effettuano i calcoli per tali strumenti finanziari conformemente all’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012.
+5. Per gli strumenti di debito sovrano con una stretta correlazione il calcolo è effettuato secondo gli stessi metodi di calcolo delle posizioni lunghe in strumenti di debito di un emittente sovrano.
+Ai fini del calcolo si tiene conto delle posizioni lunghe in strumenti di debito di un emittente sovrano il cui prezzo è strettamente correlato al prezzo del dato debito sovrano. Quando non soddisfano
+più il test della stretta correlazione, queste posizioni non sono prese in considerazione per compensare posizioni corte.
+6. Le posizioni lunghe nominali in credit default swap sono incluse nel calcolo delle posizioni corte. Per il calcolo delle posizioni di un investitore in credit default swap su emittenti sovrani si
+usano le sue posizione nette. Le posizioni da coprire mediante l’acquisto di credit default swap che non sono obbligazioni sovrane non sono prese in considerazione come posizioni lunghe. Si considera
+che i credit default swap abbiano un delta pari a 1.
+7. La posizione corta netta è calcolata compensando le posizioni lunghe e corte nominali equivalenti corrette per il delta nel debito sovrano emesso di un emittente sovrano.
+8. La posizione corta netta è espressa come importo monetario in euro.
+9. Il calcolo delle posizioni tiene conto delle variazioni delle correlazioni e del totale del debito sovrano di un emittente sovrano.
+10. Per compensare le posizioni corte in debito sovrano sono prese in considerazione unicamente posizioni lunghe in strumenti di debito di un emittente sovrano il cui prezzo è strettamente correlato
+al prezzo del debito sovrano dell’emittente sovrano. Una determinata posizione lunga in un debito strettamente correlato è utilizzata solo una volta per compensare una posizione corta nei casi in cui
+l’investitore mantiene varie posizioni corte di diversi emittenti sovrani. La stessa posizione lunga non può essere utilizzata più volte per compensare varie posizioni corte assunte in debito sovrano
+altamente correlato.
+11. Le persone fisiche o giuridiche che detengono allocazioni multiple di posizioni lunghe di debito strettamente correlato di diversi emittenti sovrani conservano la documentazione relativa ai metodi
+di allocazione applicati.
+(
+1
+) GU L 86 del 24.3.2012, pag. 1.
+(
+2
+) GU L 302 del 17.11.2009, pag. 32.
+(
+3
+) GU L 331 del 15.12.2010, pag. 84.
+(
+4
+) Cfr. pag. 16 della presente Gazzetta ufficiale.
+(
+5
+) GU L 390 del 31.12.2004, pag. 38.
+// // // // // // // // // // // // $(document).ready(function(){generateTOC(true,'', 'In alto','true');scrollToCurrentUrlAnchor();}); //
+
+=== K240 | [12] Metodo di calcolo delle posizioni per le attività di gestione relative a vari fondi o portafogli gestiti
+Articolo 12
+Metodo di calcolo delle posizioni per le attività di gestione relative a vari fondi o portafogli gestiti
+1. Ai sensi dell’articolo 3, paragrafo 7, lettere a) e b), del regolamento (UE) n. 236/2012, il calcolo della posizione corta netta su un particolare emittente è effettuato per ogni singolo fondo, a
+prescindere dalla forma giuridica, e per ogni portafoglio gestito.
+2. Ai fini dell’articolo 12 e dell’articolo 13 si applicano le seguenti definizioni:
+a)
+«strategia di investimento» : strategia seguita dall’entità di gestione, per quanto riguarda un particolare emittente, mirante all’assunzione di una posizione corta netta o di una posizione lunga
+netta mediante operazioni in vari strumenti finanziari emessi dall’emittente o ad esso relativi;
+b)
+«attività di gestione» : gestione di fondi, a prescindere dalla forma giuridica, e gestione di portafogli su base discrezionale e individualizzata, secondo il mandato conferito dalla clientela, quando
+tali portafogli includono uno o più strumenti finanziari;
+c)
+«entità di gestione» : persona giuridica o entità, tra cui divisioni, unità o servizi, che gestisce, su base discrezionale, fondi o portafogli secondo un mandato.
+3. L’entità di gestione aggrega le posizioni corte nette dei fondi e dei portafogli che gestisce per i quali viene seguita la stessa strategia di investimento in relazione ad un particolare emittente.
+4. Se si applica il metodo sopra descritto, l’entità di gestione:
+a) tiene conto delle posizioni dei fondi e dei portafogli di cui un terzo le ha delegato la gestione;
+b) esclude le posizioni dei fondi e dei portafogli di cui ha delegato la gestione ad un terzo.
+L’entità di gestione segnala, e rende pubblica su richiesta, la posizione corta netta risultante dai paragrafi 3 e 4 quando raggiunge o supera una determinata soglia di notifica o di comunicazione ai
+sensi degli articoli da 5 a 11 del regolamento (UE) n. 236/2012.
+5. Se un’entità giuridica esercita attività di gestione accanto ad attività di altra natura, essa applica il metodo descritto ai paragrafi da 1 a 3 unicamente alle attività di gestione e notifica e
+comunica al pubblico le posizioni corte nette che ne risultano.
+6. Per le sue attività di altra natura che portano alla detenzione di posizioni corte per conto proprio, l’entità giuridica esegue il calcolo della posizione corta netta su un particolare emittente
+conformemente all’articolo 3, paragrafo 7, lettere a) e b), del regolamento (UE) n. 236/2012 e notifica e comunica al pubblico le posizioni corte nette che ne risultano.
+
+=== K241 | [13] Metodo di calcolo delle posizioni per le entità giuridiche di un gruppo che detengono posizioni lunghe o corte in relazi
+Articolo 13
+Metodo di calcolo delle posizioni per le entità giuridiche di un gruppo che detengono posizioni lunghe o corte in relazione ad un particolare emittente
+1. Il calcolo della posizione corta netta è effettuato a norma dell’articolo 3, paragrafo 7, lettere a) e b), del regolamento (UE) n. 236/2012 per ogni entità giuridica che costituisce il gruppo.
+L’entità giuridica pertinente o, per suo conto, il gruppo cui appartiene notifica e comunica al pubblico la posizione corta netta su un particolare emittente quando essa raggiunge o supera la soglia
+di notifica o di comunicazione. Se una o più entità giuridiche che costituiscono il gruppo sono entità di gestione, esse applicano il metodo descritto all’articolo 12, paragrafi da 1 a 4 per le
+attività di gestione di fondi e di portafogli.
+2. Le posizioni corte e lunghe nette di tutte le entità giuridiche che costituiscono il gruppo sono aggregate e compensate, ad eccezione delle posizioni delle entità di gestione che svolgono attività
+di gestione. Il gruppo notifica, e se del caso comunica al pubblico, la posizione corta netta su un particolare emittente quando essa raggiunge o supera una determinata soglia di notifica o di
+comunicazione.
+►M1
+3. Quando la posizione corta netta raggiunge o supera la soglia di notifica ai sensi degli articoli 5 e 7 o la soglia di comunicazione ai sensi dell'articolo 6 del regolamento (UE) n. 236/2012,
+un'entità giuridica di un gruppo notifica e comunica, ai sensi degli articoli da 5 a 11 del regolamento (UE) n. 236/2012, la posizione corta netta su un particolare emittente, calcolata ai sensi del
+paragrafo 1, purché nessuna posizione corta netta a livello di gruppo calcolata conformemente al paragrafo 2 raggiunga o superi la soglia di notifica o di comunicazione. ◄ L’entità giuridica designata
+a tal fine notifica e, se del caso, comunica al pubblico la posizione corta netta a livello di gruppo in un particolare emittente calcolata conformemente al paragrafo 2, quando:
+i) nessuna delle entità giuridiche del gruppo raggiunge o supera la soglia di notifica o la soglia di comunicazione;
+ii) sia il gruppo stesso che le entità giuridiche del gruppo raggiungono o superano simultaneamente la soglia di notifica o la soglia di comunicazione.
+CAPO V
+POSIZIONI COPERTE IN CREDIT DEFAULT SWAP SU EMITTENTI SOVRANI AI SENSI DELL’ARTICOLO 4, PARAGRAFO 2
+
+=== K242 | [14] Casi che non configurano posizioni scoperte in credit default swap su emittenti sovrani
+Articolo 14
+Casi che non configurano posizioni scoperte in credit default swap su emittenti sovrani
+1. Una posizione in credit default swap su emittenti sovrani non è considerata una posizione scoperta, ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012, nei seguenti casi:
+a) in relazione alla copertura, ai fini dell’articolo 4, paragrafo 1, lettera b), del regolamento (UE) n. 236/2012, il credit default swap su emittenti sovrani non è considerato una posizione scoperta
+ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012 e serve a coprire il rischio di diminuzione del valore delle attività e delle passività correlato con il rischio di diminuzione
+del valore del debito sovrano a cui il credit default swap si riferisce nei casi in cui le attività e passività si riferiscono a entità del settore pubblico o privato dello stesso Stato membro;
+b) la posizione in credit default swap su emittenti sovrani in cui le attività o passività si riferiscono a entità del settore pubblico o privato dello stesso Stato membro come debito sovrano di
+riferimento per il credit default swap non è considerata una posizione scoperta ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012, nei casi in cui detta posizione:
+i) si riferisce ad uno Stato membro, ivi compresi i relativi ministeri, agenzie o società veicolo, o, nel caso di Stati membri che sono Stati federali, a uno degli Stati che compongono la federazione;
+ii) è utilizzata a copertura di attività o passività che soddisfano il test di correlazione di cui all’articolo 18;
+c) la posizione in credit default swap su emittenti sovrani, quando le attività o passività si riferiscono ad un emittente sovrano in cui l’emittente sovrano di riferimento del credit default swap è
+un garante o un azionista, non è considerata una posizione scoperta ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012, nei casi in cui detta posizione:
+i) si riferisce ad uno Stato membro;
+ii) è utilizzata a copertura di attività o passività che soddisfano il test di correlazione di cui all’articolo 18.
+2. Ai fini del paragrafo 1, lettera a), vi è una correlazione tra il valore dell’attività o della passività coperta e il valore del debito sovrano di riferimento come previsto all’articolo 18.
+
+=== K243 | [15] Casi che non configurano posizioni scoperte in credit default swap su emittenti sovrani quando il debitore è stabilito o
+Articolo 15
+Casi che non configurano posizioni scoperte in credit default swap su emittenti sovrani quando il debitore è stabilito o le attività o passività sono situate in più di uno Stato membro
+1. Se il debitore o la controparte di un’attività o di una passività è stabilito in più di uno Stato membro la posizione in credit default swap su emittenti sovrani non è considerata una posizione
+scoperta nei seguenti casi, conformemente all’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012, purché in ogni caso sia soddisfatto il test di correlazione di cui all’articolo 18 del presente
+regolamento:
+a) se l’impresa madre è situata in uno Stato membro e la filiazione in un altro Stato membro e la filiazione ha ricevuto un prestito. Se vi è un sostegno al credito esplicito o implicito da parte
+dell’impresa madre a favore della filiazione, è permesso acquistare credit default swap su emittenti sovrani nello Stato membro dell’impresa madre piuttosto che in quello della filiazione;
+b) se vi è una società di partecipazione madre che possiede o controlla una filiazione operativa in un altro Stato membro. Se l’impresa madre è l’emittente dell’obbligazione, ma le attività e i
+redditi coperti sono di proprietà della filiazione, è permesso acquistare credit default swap su emittenti sovrani riferiti allo Stato membro della filiazione;
+c) a copertura di un’esposizione verso un’impresa di uno Stato membro che ha investito nel debito sovrano di un altro Stato membro, nella misura in cui tale impresa risentirebbe in misura
+significativa di una diminuzione significativa del valore del debito sovrano dell’altro Stato membro, purché l’impresa sia stabilità in entrambi gli Stati membri. Se la correlazione tra tale rischio e
+il debito dell’altro Stato membro è superiore alla correlazione tra tale rischio e il debito dello Stato membro in cui l’impresa è stabilita, è permesso acquistare credit default swap su emittenti
+sovrani che si riferiscono all’altro Stato membro.
+2. La posizione in credit default swap su emittenti sovrani non è considerata una posizione scoperta nei seguenti casi, conformemente all’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012,
+purché in ogni caso sia soddisfatto il test di correlazione di cui all’articolo 18 del presente regolamento:
+a) nei casi in cui il debitore o la controparte di un’attività o di una passività coperta è un’impresa operante in tutta l’Unione o nei casi in cui l’esposizione coperta si riferisce all’Unione o agli
+Stati membri la cui moneta è l’euro, è permesso provvedere alla copertura con un appropriato indice di credit default swap su titoli sovrani europeo o dell’area dell’euro;
+b) nei casi in cui la controparte di un’attività o di una passività coperta è un emittente sovranazionale, è permesso procedere alla copertura del rischio di controparte con un paniere di credit
+default swap su emittenti sovrani adeguatamente selezionato che si riferisce ai garanti o agli azionisti dell’entità.
+
+=== K244 | [16] Giustificazione delle posizioni scoperte in credit default swap su emittenti sovrani
+Articolo 16
+Giustificazione delle posizioni scoperte in credit default swap su emittenti sovrani
+Su richiesta dell’autorità competente le persone fisiche e giuridiche che assumono posizioni in credit default swap su emittenti sovrani
+a) riferiscono all’autorità competente quale delle condizioni di cui all’articolo 15 soddisfacevano al momento in cui hanno assunto la posizione;
+b) dimostrano all’autorità competente di rispettare il test di correlazione di cui all’articolo 18 e i requisiti di proporzionalità di cui all’articolo 19 per quanto riguarda la posizione in credit
+default swap su emittenti sovrani per tutto il periodo in cui detengono i credit default swap .
+
+=== K245 | [17] Attività e passività coperte
+Articolo 17
+Attività e passività coperte
+Si elencano di seguito i casi in cui le attività e le passività possono essere coperte mediante una posizione in credit default swap su emittenti sovrani, purché siano rispettate le condizioni di cui
+agli articoli 15 e 18 e al regolamento (UE) n. 236/2012:
+a) una posizione lunga nel debito sovrano dell’emittente in questione;
+b) le posizioni o i portafogli utilizzati per la copertura di esposizioni verso l’emittente sovrano a cui il credit default swap si riferisce;
+c) le attività o le passività che fanno riferimento a entità del settore pubblico nello Stato membro al cui debito sovrano il credit default swap fa riferimento. Vi rientrano le esposizioni verso
+l’amministrazione centrale, regionale e locale, gli enti del settore pubblico o le esposizioni garantite dall’entità cui fanno riferimento e possono comprendere i contratti finanziari, i portafogli di
+attività o obbligazioni finanziarie, le operazioni swap su tassi di interesse o valute per le quali il credit default swap su emittenti sovrani è utilizzato come strumento di gestione del rischio di
+controparte per coprire le esposizioni su contratti finanziari o su contratti commerciali internazionali;
+d) le esposizioni verso entità del settore privato stabilite nello Stato membro a cui si riferisce il credit default swap su emittenti sovrani. Le esposizioni in questione includono, tra l’altro, i
+prestiti, il rischio di credito di controparte (ivi inclusa l’esposizione potenziale quando vanno soddisfatti requisiti patrimoniali rispetto a tale esposizione), crediti esigibili e garanzie. Le
+attività e le passività comprendono, tra l’altro, i contratti finanziari, i portafogli di attività o di obbligazioni finanziarie, le operazioni swap su tassi di interesse o su valute per le quali il
+credit default swap su emittenti sovrani è utilizzato come strumento di gestione del rischio di controparte per coprire le esposizioni su contratti finanziari o su finanziamenti commerciali;
+e) le esposizioni indirette verso una delle summenzionate entità prodotte attraverso esposizioni verso indici, fondi o società veicolo.
+
+=== K246 | [18] Test di correlazione
+Articolo 18
+Test di correlazione
+1. Il test di correlazione di cui al presente capo è soddisfatto in entrambi i seguenti casi:
+a) il test di correlazione quantitativa è soddisfatto quando è pari ad almeno il 70 % il coefficiente di correlazione di Pearson tra il prezzo delle attività o delle passività e il prezzo del debito
+sovrano calcolato su base storica utilizzando dati relativi al periodo di almeno 12 mesi di negoziazione che precede immediatamente la data in cui è assunta la posizione in credit default swap su
+emittenti sovrani;
+b) la correlazione qualitativa è soddisfatta dimostrando una correlazione significativa, ossia una correlazione basata su dati appropriati e che non coincida con una semplice dipendenza temporanea. La
+correlazione è calcolata su base storica utilizzando dati relativi al periodo di 12 mesi di negoziazione precedenti l’assunzione della posizione in credit default swap su emittenti sovrani, ponderati
+per il periodo più recente. È utilizzato un periodo di tempo diverso se è dimostrato che le condizioni prevalenti in detto periodo sono simili a quelle esistenti alla data in cui deve essere assunta
+la posizione in credit default swap su emittenti sovrani o che potrebbero verificarsi nel periodo dell’esposizione da coprire. Per le attività che non hanno prezzo su un mercato liquido o per le quali
+la cronologia dei prezzi non è sufficientemente lunga, viene utilizzato un adeguato parametro sostitutivo.
+2. Il test di correlazione di cui al paragrafo 1 è considerato soddisfatto quando si può dimostrare che:
+a) l’esposizione che viene coperta si riferisce ad un’impresa di proprietà dell’emittente sovrano o in cui l’emittente sovrano possiede la maggioranza del capitale con diritto di voto o i cui debiti
+sono garantiti dall’emittente sovrano;
+b) l’esposizione che viene coperta si riferisce ad un’amministrazione regionale, locale o comunale dello Stato membro;
+c) l’esposizione che viene coperta si riferisce ad un’impresa i cui flussi finanziari dipendono in misura significativa da contratti con un emittente sovrano o da un progetto finanziato per intero o
+in misura significativa o sottoscritto da un emittente sovrano, quale un progetto infrastrutturale.
+3. Su richiesta dell’autorità competente interessata, la parte interessata illustra in che modo il test di correlazione era soddisfatto al momento dell’assunzione della posizione in credit default
+swap su emittenti sovrani.
+
+=== K247 | [19] Proporzionalità
+Articolo 19
+Proporzionalità
+1. Per determinare se le dimensioni della posizione in credit default swap su emittenti sovrani siano proporzionate alle dimensioni delle esposizioni coperte, qualora una copertura perfetta non sia
+possibile, non è necessaria una corrispondenza esatta ed è autorizzata un’eccedenza limitata ai sensi del paragrafo 2. Su richiesta, la parte interessata illustra all’autorità competente perché una
+corrispondenza esatta non è stata possibile.
+2. Se giustificato dalla natura delle attività e delle passività da coprire e dal loro rapporto con il valore delle obbligazioni dell’emittente sovrano che rientrano nell’ambito del credit default
+swap , può essere detenuto un valore più elevato di credit default swap su emittenti sovrani a copertura di un determinato valore delle esposizioni. Tuttavia, ciò è consentito solo ove si dimostri che
+un valore più elevato di credit default swap su emittenti sovrani è necessario per coprire la misura corrispondente del rischio associato al portafoglio di riferimento, tenendo conto dei seguenti
+fattori:
+a) le dimensioni della posizione nominale;
+b) il rapporto di sensibilità delle esposizioni rispetto alle obbligazioni dell’emittente sovrano che rientrano nell’ambito del credit default swap ;
+c) se la strategia di copertura in questione è dinamica o statica.
+3. È responsabilità del titolare della posizione garantire che la sua posizione in credit default swap su emittenti sovrani rimanga sempre proporzionata e che la durata della posizione sia allineata
+il più possibile, tenendo conto delle convenzioni e della liquidità prevalenti sul mercato, con la durata delle esposizioni da coprire o con il periodo durante il quale la persona intende detenere
+l’esposizione. Se le esposizioni da coprire con la posizione in credit default swap sono liquidate o riscattate, esse devono essere sostituite da esposizioni equivalenti ovvero la posizione in credit
+default swap deve essere ridotta o altrimenti ceduta.
+4. La posizione in credit default swap su emittenti sovrani che era coperta al momento in cui è stata assunta non viene considerata come una posizione che diventa scoperta se l’unica ragione di ciò è
+una fluttuazione del valore di mercato delle esposizioni coperte o del valore del credit default swap su emittenti sovrani.
+5. In tutti i casi in cui le parti accettano una posizione in credit default swap su emittenti sovrani in conseguenza delle obbligazioni cui sono tenuti in quanto membri di una controparte centrale
+che si occupa della compensazione di operazioni in credit default swap su emittenti sovrani e in conseguenza dell’applicazione delle regole di detta controparte centrale, tale posizione è trattata
+come involontaria e non come una posizione che la parte ha assunto, e pertanto non è considerata scoperta ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012.
+
+=== K248 | [20] Metodo di calcolo delle posizioni scoperte in credit default swap su emittenti sovrani
+Articolo 20
+Metodo di calcolo delle posizioni scoperte in credit default swap su emittenti sovrani
+1. La posizione in credit default swap su emittenti sovrani di una persona fisica o giuridica è la sua posizione netta.
+2. Nel calcolo del valore dei rischi ammissibili coperti o da coprire con una posizione in credit default swap su emittenti sovrani si distingue tra strategie di copertura statiche e dinamiche. Per la
+copertura statica, come le esposizioni dirette verso emittenti sovrani o verso entità del settore pubblico dell’emittente sovrano, la misura utilizzata è la misura della perdita in caso di
+inadempimento inatteso e improvviso ( jump to default ) se l’entità verso la quale il titolare della posizione è esposto diventa inadempiente. Il valore che ne risulta è quindi confrontato al valore
+nozionale netto del credit default swap .
+3. Il valore dei rischi aggiustati in funzione del valore di mercato per i quali è richiesta una strategia di copertura dinamica è calcolato su una base aggiustata per il rischio piuttosto che su una
+base nozionale, tenendo conto della misura in cui l’esposizione può aumentare o diminuire durante la sua durata e della relativa volatilità delle attività e delle passività da coprire o del debito
+sovrano di riferimento. Si usa l’aggiustamento al beta se l’attività o la passività coperta dalla posizione in credit default swap è diversa dall’attività di riferimento del credit default swap .
+4. Le esposizioni indirette ai rischi, ad esempio attraverso indici, fondi, società veicolo, e alle posizioni in credit default swap sono prese in considerazione in proporzione al peso dell’attività,
+della passività o del credit default swap di riferimento nell’indice, nel fondo o in altro meccanismo.
+5. Il valore del portafoglio ammissibile di attività o passività da coprire è detratto dal valore della posizione netta in credit default swap detenuta. Se il numero che ne risulta è positivo si
+considera che la posizione è una posizione in credit default swap scoperta ai sensi dell’articolo 4, paragrafo 1, del regolamento (UE) n. 236/2012.
+CAPO VI
+SOGLIE DI NOTIFICA PER LE POSIZIONI CORTE NETTE IN DEBITO SOVRANO AI SENSI DELL’ARTICOLO 7, PARAGRAFO 3
+
+=== K249 | [21] Soglie di notifica per le posizioni corte nette in relazione al debito sovrano emesso
+Articolo 21
+Soglie di notifica per le posizioni corte nette in relazione al debito sovrano emesso
+1. La misura pertinente per la soglia che fa scattare la notifica all’autorità competente pertinente di posizioni corte nette in debito sovrano emesso di un emittente sovrano è una percentuale
+dell’importo totale del debito sovrano emesso in essere per ogni emittente sovrano.
+2. La soglia di notifica è un importo monetario. L’importo monetario è fissato applicando la soglia percentuale al debito sovrano in essere dell’emittente sovrano e arrotondando al milione di EUR più
+prossimo.
+3. L’importo monetario derivante dall’applicazione della soglia percentuale è rivisto e aggiornato trimestralmente per tener conto delle variazioni dell’importo complessivo del debito sovrano emesso
+in essere di ogni emittente sovrano.
+4. L’importo monetario derivante dall’applicazione della soglia percentuale e l’importo complessivo del debito sovrano emesso in essere sono calcolati secondo il metodo di calcolo delle posizioni
+corte nette in debito sovrano.
+5. Gli importi iniziali e i livelli incrementali aggiuntivi per gli emittenti sovrani sono determinati tenendo conto dei seguenti fattori:
+a) il fatto che le soglie non devono determinare la notifica di posizioni corte nette in emittenti sovrani di valore minimo;
+b) l’importo complessivo del debito sovrano in essere per un emittente sovrano e la dimensione media delle posizioni detenute dai partecipanti al mercato relative al debito sovrano dell’emittente
+sovrano;
+c) la liquidità del mercato del debito sovrano di ciascun emittente sovrano, ivi compresa, se del caso, la liquidità del mercato dei future su tale debito sovrano.
+6. Tenendo conto dei fattori di cui al paragrafo 5, le pertinenti soglie di notifica per l’importo iniziale da prendere in considerazione per ciascun emittente sovrano sono pari ad una percentuale
+dello 0,1 % o dello 0,5 % dell’importo complessivo del debito sovrano emesso in essere. La percentuale pertinente da applicare a ciascun emittente è determinata applicando i criteri descritti al
+paragrafo 5, per cui a ciascun emittente sovrano è assegnata una delle due soglie percentuali utilizzate per calcolare gli importi monetari che saranno pertinenti per la notifica.
+7. Le due categorie di soglia iniziale alla data di entrata in vigore del presente regolamento sono:
+a) una soglia iniziale dello 0,1 % applicabile se l’importo complessivo del debito sovrano emesso in essere è compreso tra 0 e 500 miliardi di euro;
+b) una soglia dello 0,5 % applicabile se l’importo complessivo del debito sovrano emesso in essere è superiore a 500 miliardi di euro, o se esiste un mercato liquido dei future sul debito sovrano.
+8. I livelli incrementali aggiuntivi sono fissati al 50 % delle soglie iniziali e sono:
+a) ogni 0,05 % al di sopra della soglia iniziale di notifica dello 0,1 % a partire dallo 0,15 %;
+b) ogni 0,25 % al di sopra della soglia iniziale dello 0,5 % a partire dallo 0,75 %.
+9. L’emittente sovrano si sposta verso il tipo di soglia appropriato se vi è stato un cambiamento nel mercato del debito sovrano dell’emittente sovrano e, applicando i fattori specificati al paragrafo
+5, tale cambiamento sia perdurato per almeno un anno civile.
+CAPO VII
+PARAMETRI E METODI PER IL CALCOLO DELLE SOGLIE DI LIQUIDITÀ PER LA SOSPENSIONE DELLE RESTRIZIONI ALLE VENDITE ALLO SCOPERTO DI DEBITO SOVRANO AI SENSI DELL’ARTICOLO 13, PARAGRAFO 4
+
+=== K250 | [22] Metodi di calcolo e di determinazione delle soglie di liquidità per la sospensione delle restrizioni alle vendite allo s
+Articolo 22
+Metodi di calcolo e di determinazione delle soglie di liquidità per la sospensione delle restrizioni alle vendite allo scoperto di debito sovrano
+1. La misura della liquidità del debito sovrano emesso che le autorità competenti devono utilizzare è il volume degli scambi, definito come il valore nominale complessivo degli strumenti di debito
+negoziati, in relazione ad un paniere di titoli di riferimento con scadenze diverse.
+2. La sospensione temporanea delle restrizioni alle vendite allo scoperto in assenza della disponibilità dei titoli può essere concessa quando il volume degli scambi di un mese scende al di sotto del
+5° percentile del volume mensile degli scambi nei dodici mesi precedenti.
+3. Per effettuare i calcoli le autorità competenti utilizzano i dati rappresentativi immediatamente disponibili per una o più sedi di negoziazione, per gli scambi fuori borsa o per entrambi, e informa
+poi l’AESFEM sui dati utilizzati.
+4. Prima di esercitare il potere di sospendere le restrizioni sulle vendite allo scoperto relative a debito sovrano, le autorità competenti si assicurano che la diminuzione significativa di liquidità
+non sia il risultato di effetti stagionali sulla liquidità.
+CAPO VIII
+DIMINUZIONE SIGNIFICATIVA DI VALORE DEGLI STRUMENTI FINANZIARI DIVERSI DAI TITOLI AZIONARI LIQUIDI AI SENSI DELL’ARTICOLO 23
+
+=== K251 | [23] Diminuzione significativa del valore degli strumenti finanziari diversi dai titoli azionari liquidi
+Articolo 23
+Diminuzione significativa del valore degli strumenti finanziari diversi dai titoli azionari liquidi
+1. Per i titoli azionari diversi dai titoli azionari liquidi, una diminuzione significativa del valore nel corso di un solo giorno di negoziazione rispetto al prezzo di chiusura del precedente giorno
+di negoziazione significa:
+a) una diminuzione del prezzo del titolo azionario pari o superiore al 10 %, se il titolo azionario è incluso nel principale indice azionario nazionale e costituisce lo strumento finanziario
+sottostante di un contratto derivato ammesso alla negoziazione in una sede di negoziazione;
+b) una diminuzione del prezzo del titolo pari o superiore al 20 %, se il prezzo del titolo è pari o superiore a 0,50 EUR o all’importo equivalente in moneta locale;
+c) una diminuzione del prezzo del titolo pari o superiore al 40 % in tutti gli altri casi.
+2. Un aumento pari o superiore al 7 % del rendimento lungo la curva di rendimento nel corso di un solo giorno di negoziazione per l’emittente sovrano in questione è considerato una diminuzione
+significativa del valore dell’obbligazione sovrana.
+3. Un aumento pari o superiore al 10 % del rendimento di un’obbligazione societaria nel corso di un solo giorno di negoziazione è considerato una diminuzione significativa di valore dell’obbligazione
+societaria.
+4. Una diminuzione pari o superiore all’1,5 % del prezzo dello strumento del mercato monetario nel corso di un solo giorno di negoziazione è considerata una diminuzione significativa di valore dello
+strumento del mercato monetario.
+5. Una diminuzione pari o superiore al 10 % del prezzo di un fondo negoziato in borsa [ Exchange Traded Fund (ETF)] nel corso di un solo giorno di negoziazione è considerata una diminuzione
+significativa di valore di un ETF, compresi gli ETF che sono OICVM. Gli ETF con leva finanziaria sono corretti secondo il pertinente rapporto di leva finanziaria in modo da riflettere una diminuzione
+del 10 % del prezzo degli ETF diretti senza leva finanziaria equivalenti. Gli ETF reverse sono corretti secondo un fattore di - 1 in modo da riflettere una diminuzione del 10 % del prezzo di un ETF
+diretto equivalente senza leva finanziaria.
+6. Se uno strumento derivato, tra cui i contratti finanziari differenziali, è negoziato in una sede di negoziazione e ha come unico strumento finanziario sottostante uno strumento finanziario per il
+quale una diminuzione significativa di valore è specificata nel presente articolo e all’articolo 23, paragrafo 5, del regolamento (UE) n. 236/2012, si considera che vi è stata una diminuzione
+significativa di valore dello strumento derivato quando vi è stata una diminuzione significativa dello strumento finanziario sottostante.
+CAPO IX
+EVENTI O SVILUPPI SFAVOREVOLI AI SENSI DELL’ARTICOLO 30
+
+=== K252 | [24] Criteri e fattori di cui tener conto per determinare le condizioni in cui emergono eventi o sviluppi sfavorevoli o minac
+Articolo 24
+Criteri e fattori di cui tener conto per determinare le condizioni in cui emergono eventi o sviluppi sfavorevoli o minacce
+1. Ai fini degli articoli da 18 a 21 del regolamento (UE) n. 236/2012, tra gli eventi o gli sviluppi sfavorevoli che possono rappresentare una seria minaccia per la stabilità finanziaria o per la
+fiducia nel mercato negli Stati membri interessati o in uno o più altri Stati membri ai sensi dell’articolo 30 del regolamento (UE) n. 236/2012, figurano atti, risultati, fatti o eventi per i quali si
+presume o si può ragionevolmente presumere che provochino quanto segue:
+a) gravi problemi finanziari, monetari e di bilancio che possono causare l’instabilità finanziaria di uno Stato membro, di una banca o di altro istituto finanziario considerato importante per il
+sistema finanziario mondiale, quali imprese di assicurazione, gestori di infrastrutture di mercato, società di gestione di attività operanti nell’Unione, quando ciò rischia di compromettere il
+regolare funzionamento e l’integrità dei mercati finanziari o la stabilità del sistema finanziario dell’Unione;
+b) un’azione di rating o l’inadempimento di Stati membri o banche o altri enti finanziari considerati importanti per il sistema finanziario mondiale, quali imprese di assicurazione, gestori di
+infrastrutture di mercato e società di gestione di attività operanti nell’Unione, che causino o di cui si può ragionevolmente presumere che possano causare gravi incertezze sulla loro solvibilità;
+c) una forte pressione alla vendita o un’insolita volatilità che generi notevoli pressioni al ribasso degli strumenti finanziari relativi a banche e ad altri enti finanziari considerati importanti per
+il sistema finanziario complessivo, quali imprese di assicurazione, gestori di infrastrutture di mercato e società di gestione di attività operanti nell’Unione, e ad emittenti sovrani, a seconda del
+caso;
+d) eventuali danni alle strutture fisiche di importanti emittenti finanziari, alle infrastrutture del mercato, ai sistemi di compensazione e di regolamento, e alle autorità di vigilanza, che possano
+incidere negativamente sui mercati, in particolare quando i danni derivano da calamità naturale o attacco terroristico;
+e) eventuali perturbazioni del sistema di pagamento o dei processi di regolamento, in particolare di quelli relativi alle operazioni interbancarie, che causano o potrebbero causare gravi perturbazioni
+o ritardi dei pagamenti o dei regolamenti nei sistemi di pagamento dell’Unione, in particolare quando questi possono condurre alla propagazione di stress finanziario o economico nelle banche e in
+altri enti finanziari considerati importanti per il sistema finanziario mondiale, quali imprese di assicurazione, gestori di infrastrutture di mercato e società di gestione delle attività o in uno
+Stato membro.
+2. Ai fini dell’articolo 27, l’AESFEM tiene conto, nel valutare i criteri di cui al paragrafo 1, delle possibilità di ricadute negative o di contagio su altri sistemi o emittenti e, in particolare,
+dell’esistenza di qualsiasi tipo di fenomeno autoavverantesi.
+3. Ai fini dell’articolo 28, paragrafo 2, lettera a), per minaccia all’ordinato funzionamento e all’integrità dei mercati finanziari o alla stabilità di tutto o di parte del sistema finanziario
+dell’Unione si intende:
+a) ogni minaccia di grave instabilità finanziaria, monetaria o di bilancio di uno Stato membro o del sistema finanziario di uno Stato membro che possa gravemente minacciare l’ordinato funzionamento e
+l’integrità dei mercati finanziari o la stabilità di tutto o di parte del sistema finanziario dell’Unione;
+b) la possibilità che uno Stato membro o un emittente sovranazionale divenga inadempiente;
+c) ogni danno grave alle strutture fisiche di importanti emittenti finanziari, alle infrastrutture del mercato, ai sistemi di compensazione e di regolamento e alle autorità di vigilanza, che possano
+incidere negativamente sui mercati transfrontalieri, in particolare qualora i danni derivino da calamità naturale o attacco terroristico, quando tali danni possono gravemente minacciare l’ordinato
+funzionamento e l’integrità dei mercati finanziari o la stabilità di tutto o di parte del sistema finanziario dell’Unione;
+d) eventuali perturbazioni gravi dei sistemi di pagamento o dei processi di regolamento, in particolare di quelli relativi alle operazioni interbancarie, che causano o potrebbero causare gravi
+perturbazioni o ritardi dei pagamenti o dei regolamenti nei sistemi di pagamento transfrontalieri dell’Unione, in particolare quando questi possono condurre alla propagazione di stress finanziario o
+economico in tutto o in parte del sistema finanziario dell’Unione.
+
+=== K254 | [Allegato I] PARTE 1
+ALLEGATO I
+PARTE 1
+Articoli 5 e 6
+— Contratti di opzione,
+—
+covered warrants ,
+— contratti finanziari a termine standardizzati ( future ),
+— strumenti legati a indici,
+— contratti differenziali,
+— quote/azioni di fondi negoziati in borsa [ Exchange Traded Fund (ETF)],
+—
+swap ,
+— scommesse sul differenziale ( spread bets ),
+— prodotti di investimento preassemblati al dettaglio o professionali,
+— strumenti derivati complessi,
+— certificati collegati a titoli azionari,
+— certificati internazionali rappresentativi di azioni ( Global Depositary Receipts ).
+PARTE 2
+Articolo 7
+— Contratti di opzione,
+— contratti finanziari a termine standardizzati ( future ),
+— strumenti legati a indici,
+— contratti differenziali,
+—
+swap ,
+— scommesse sul differenziale ( spread bets ),
+— strumenti derivati complessi,
+— certificati rappresentativi di debito sovrano.
+
+=== K255 | [Allegato II] PARTE 1
+ALLEGATO II
+PARTE 1
+Il modello corretto per il delta per i titoli azionari
+Articolo 10
+1. Gli strumenti derivati e le posizioni in contante sono presi in considerazione corretti per il delta, attribuendo alla posizione in contanti delta 1. Per il calcolo del delta dello strumento
+derivato, gli investitori tengono conto della volatilità implicita corrente dello strumento derivato e del prezzo di chiusura o dell’ultimo prezzo dello strumento sottostante. Per il calcolo della
+posizione corta netta che include investimenti in capitale proprio o collocamenti di tesoreria e prodotti derivati, le persone fisiche o giuridiche calcolano la posizione corretta per il delta di ogni
+strumento derivato detenuto nel portafoglio, aggiungendo o sottraendo tutte le posizioni in contanti, a seconda del caso.
+2. La posizione corta nominale in contante non può essere compensata da un’equivalente posizione lunga nominale in strumenti derivati. Le posizioni lunghe in strumenti derivati corrette per il delta
+non possono compensare identiche posizioni corte nominali assunte in altri strumenti finanziari a causa della correzione per il delta. Le persone fisiche o giuridiche che concludono contratti derivati
+che danno origine a posizioni corte nette che devono essere notificate o comunicate al pubblico ai sensi degli articoli da 5 a 11 del regolamento (UE) n. 236/2012 calcolano le variazioni delle
+posizioni corte nette del loro portafoglio dovute alle variazioni del delta.
+3. Le operazioni che conferiscono un vantaggio finanziario in caso di variazione del prezzo o del valore del titolo azionario detenuto in un paniere, indice o fondo negoziato in borsa [ Exchange
+Traded Fund (ETF)] sono incluse nel calcolo della posizione in ogni singolo titolo azionario. Le posizioni in tali strumenti finanziari sono calcolate tenendo conto del peso del titolo azionario nel
+paniere, indice o fondo sottostante. Le persone fisiche o giuridiche effettuano i calcoli per tali strumenti finanziari conformemente all’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012.
+4. La posizione corta netta è calcolata compensando le posizioni lunghe e corte su un dato emittente corrette per il delta.
+5. Per il capitale azionario emesso, se gli emittenti hanno diverse categorie di titoli azionari, si tiene conto della somma del numero complessivo di titoli azionari emessi per ciascuna categoria.
+6. Il calcolo delle posizioni corte nette tiene conto delle modifiche del capitale azionario dell’emittente che potrebbero far sorgere o annullare l’obbligo di notifica ai sensi dell’articolo 5 del
+regolamento (UE) n. 236/2012.
+7. I nuovi titoli azionari emessi in occasione di un aumento di capitale sono presi in considerazione nel calcolo del totale del capitale azionario emesso a decorrere dal giorno in cui sono ammessi
+alla negoziazione in una sede di negoziazione.
+8. La posizione corta netta espressa in percentuale del capitale azionario emesso della società è calcolata dividendo la posizione corta netta in titoli azionari equivalenti per il totale del capitale
+azionario emesso dalla società.
+PARTE 2
+Il modello corretto per il delta per il debito sovrano
+Articolo 11
+1. Le posizioni in contante sono prese in considerazione sulla base del loro valore nominale corretto per la durata. Le opzioni e gli altri strumenti derivati sono corretti per il relativo delta
+calcolato ai sensi della parte 1. Per il calcolo delle posizioni corte nette contenenti sia investimenti in contanti che strumenti derivati si tiene conto della posizione corretta per il delta in ogni
+singolo strumento derivato detenuto nel portafoglio, a cui sono aggiunte o sottratte tutte le posizioni in contante ovvero le posizioni in contante aventi un delta pari a 1.
+2. Le posizioni nominali in obbligazioni emesse in valute diverse dall’euro sono convertite in euro utilizzando l’ultima quotazione a pronti disponibile, aggiornata e attendibile. Lo stesso principio
+si applica ad altri strumenti finanziari.
+3. Gli altri strumenti derivati, quali le obbligazioni forward , sono altresì aggiustati conformemente ai paragrafi 1, 2 e 3.
+4. Gli interessi economici o le posizioni che creano un vantaggio finanziario in debito sovrano detenuto in un paniere, indice o fondo negoziato in borsa [ Exchange Traded Fund (ETF)] sono inclusi nel
+calcolo della posizione in ogni singolo debito sovrano. Le posizioni in tali strumenti finanziari sono calcolate tenendo conto del peso dell’esposizione in debito sovrano nel paniere, indice o fondo
+sottostante. Gli investitori effettuano i calcoli per tali strumenti finanziari conformemente all’articolo 3, paragrafo 3, del regolamento (UE) n. 236/2012.
+5. Per gli strumenti di debito sovrano con una stretta correlazione il calcolo è effettuato secondo gli stessi metodi di calcolo delle posizioni lunghe in strumenti di debito di un emittente sovrano.
+Ai fini del calcolo si tiene conto delle posizioni lunghe in strumenti di debito di un emittente sovrano il cui prezzo è strettamente correlato al prezzo del dato debito sovrano. Quando non soddisfano
+più il test della stretta correlazione, queste posizioni non sono prese in considerazione per compensare posizioni corte.
+6. Le posizioni lunghe nominali in credit default swap sono incluse nel calcolo delle posizioni corte. Per il calcolo delle posizioni di un investitore in credit default swap su emittenti sovrani si
+usano le sue posizione nette. Le posizioni da coprire mediante l’acquisto di credit default swap che non sono obbligazioni sovrane non sono prese in considerazione come posizioni lunghe. Si considera
+che i credit default swap abbiano un delta pari a 1.
+7. La posizione corta netta è calcolata compensando le posizioni lunghe e corte nominali equivalenti corrette per il delta nel debito sovrano emesso di un emittente sovrano.
+8. La posizione corta netta è espressa come importo monetario in euro.
+9. Il calcolo delle posizioni tiene conto delle variazioni delle correlazioni e del totale del debito sovrano di un emittente sovrano.
+10. Per compensare le posizioni corte in debito sovrano sono prese in considerazione unicamente posizioni lunghe in strumenti di debito di un emittente sovrano il cui prezzo è strettamente correlato
+al prezzo del debito sovrano dell’emittente sovrano. Una determinata posizione lunga in un debito strettamente correlato è utilizzata solo una volta per compensare una posizione corta nei casi in cui
+l’investitore mantiene varie posizioni corte di diversi emittenti sovrani. La stessa posizione lunga non può essere utilizzata più volte per compensare varie posizioni corte assunte in debito sovrano
+altamente correlato.
+11. Le persone fisiche o giuridiche che detengono allocazioni multiple di posizioni lunghe di debito strettamente correlato di diversi emittenti sovrani conservano la documentazione relativa ai metodi
+di allocazione applicati.
+(
+1
+) GU L 86 del 24.3.2012, pag. 1.
+(
+2
+) GU L 302 del 17.11.2009, pag. 32.
+(
+3
+) GU L 331 del 15.12.2010, pag. 84.
+(
+4
+) Cfr. pag. 16 della presente Gazzetta ufficiale.
+(
+5
+) GU L 390 del 31.12.2004, pag. 38.
+
+
+######## NORMA: Regolamento (UE) 2021/379 della Banca centrale europea del 22 gennaio 2021 relativo alle voci di bilancio degli enti creditizi e del settore delle istituzioni f  (id UE-32021R0379)
+
+=== K256 | [1] Oggetto e ambito di applicazione
+Articolo 1
+Oggetto e ambito di applicazione
+Il presente regolamento stabilisce gli obblighi di segnalazione per i seguenti soggetti segnalanti che risiedono nel territorio degli Stati membri dell’area dell’euro con riferimento alle informazioni
+statistiche sulle voci di bilancio:
+a)
+istituzioni finanziarie monetarie (IFM) diverse dagli enti creditizi;
+b)
+enti creditizi che sono:
+i)
+autorizzati in conformità all’articolo 8 della direttiva 2013/36/UE del Parlamento europeo e del Consiglio ( 10 ) ; o
+ii)
+esenti da tale autorizzazione ai sensi dell’articolo 2, paragrafo 5, della direttiva 2013/36/UE;
+c)
+succursali di enti creditizi, comprese le succursali stabilite in uno Stato membro dell’area dell’euro di enti creditizi che non hanno né la sede legale né la sede centrale in uno Stato membro
+dell’area dell’euro; ma escluse le succursali stabilite al di fuori di uno Stato membro dell’area dell’euro di enti creditizi stabiliti in uno Stato membro dell’area dell’euro.
+
+=== K258 | [3] Operatori effettivamente soggetti agli obblighi di segnalazione
+Articolo 3
+Operatori effettivamente soggetti agli obblighi di segnalazione
+1. Gli operatori effettivamente soggetti agli obblighi di segnalazione consistono nelle IFM e negli enti creditizi diversi dalle IFM residenti nel territorio degli Stati membri dell’area dell’euro.
+2. Qualora le BCN raccolgano informazioni statistiche sulla residenza dei titolari delle quote/partecipazioni degli FCM da altri intermediari finanziari escluse le imprese di assicurazione e i fondi
+pensione (AIF), secondo la definizione di cui ai paragrafi da 2.86 a 2.94 dell’allegato A del regolamento (UE) n. 549/2013, ai sensi dell’articolo 5, paragrafo 4, del presente regolamento tali BCN
+possono includere tali AIF tra gli operatori effettivamente soggetti agli obblighi di segnalazione ai fini dell’articolo 5, paragrafo 4, del presente regolamento.
+
+=== K260 | [5] Obblighi di segnalazione statistica
+Articolo 5
+Obblighi di segnalazione statistica
+1. Le IFM segnalano tutte le seguenti informazioni statistiche alla BCN competente:
+a)
+le consistenze in essere alla fine del mese specificate nella tabella 1 contenuta nella parte 2 dell’allegato I;
+b)
+gli aggiustamenti da rivalutazione mensili specificati come requisiti minimi nella tabella 1 A contenuta nella parte 4 dell’allegato I e gli altri aggiustamenti da rivalutazione mensili in tale
+tabella qualora richiesto dalla BCN competente;
+c)
+le cessioni di crediti nette mensili specificate nella tabella 5a contenuta nella parte 5 dell’allegato I;
+d)
+le consistenze in essere alla fine del mese e gli aggiustamenti da rivalutazione mensili delle cessioni di crediti specificate nella tabella 5b contenuta nella parte 5 dell’allegato I;
+e)
+le consistenze in essere alla fine del trimestre specificate nelle tabelle 2, 3 e 4 contenute nella parte 3 dell’allegato I;
+f)
+gli aggiustamenti da rivalutazione trimestrali specificati come requisiti minimi nella tabella 2 A contenuta nella parte 4 dell’allegato I e gli altri aggiustamenti da rivalutazione trimestrali di cui
+a tale tabella qualora richiesto dalla BCN competente.
+Le BCN possono raccogliere le informazioni statistiche trimestrali specificate alle lettere e) e f) del primo sotto paragrafo su base mensile qualora tale raccolta agevoli il processo di produzione
+dei dati.
+2. Gli enti creditizi diversi dalle IFM segnalano alla BCN competente tutte le seguenti informazioni statistiche:
+a)
+le consistenze in essere alla fine del mese specificate nella tabella 1 contenuta nella parte 2 dell’allegato I, esclusi i seguenti elementi:
+i)
+posizioni di cash pooling nozionale;
+ii)
+quote/partecipazioni in FCM emesse;
+b)
+gli aggiustamenti da rivalutazione mensili specificati come requisiti minimi nella tabella 1 A contenuta nella parte 4 dell’allegato I e gli altri aggiustamenti da rivalutazione mensili di cui a tale
+tabella qualora richiesto dalla BCN competente, esclusi i seguenti elementi:
+i)
+posizioni di cash pooling nozionale;
+ii)
+quote/partecipazioni in FCM emesse;
+c)
+le consistenze in essere alla fine del trimestre specificate nella tabella 2 contenuta nella parte 3 dell’allegato I, esclusi gli elementi che si riferiscono alle disaggregazioni dei crediti per vita
+residua;
+d)
+le consistenze in essere alla fine del trimestre specificate nelle tabelle 3 e 4 contenute nella parte 3 dell’allegato I;
+e)
+gli aggiustamenti da rivalutazione trimestrali specificati come requisiti minimi nella tabella 2 A contenuta nella parte 4 dell’allegato I e gli altri aggiustamenti da rivalutazione trimestrali di cui
+a tale tabella qualora richiesto dalla BCN competente.
+Le BCN possono raccogliere le informazioni statistiche trimestrali specificate alle lettere c) ed e) del primo sotto paragrafo su base mensile qualora tale raccolta agevoli il processo di produzione
+dei dati.
+3. Le BCN possono raccogliere informazioni statistiche sui titoli emessi e detenuti titolo per titolo ai sensi dei paragrafi 1 e 2, qualora tali informazioni statistiche siano ricavate in conformità
+ai requisiti minimi di cui all’allegato IV.
+4. Le BCN possono raccogliere informazioni statistiche sulla residenza dei titolari di quote/partecipazioni in FCM emesse da IFM da altre fonti disponibili come stabilito nella sezione 5.7 contenuta
+nella parte 2 dell’allegato I, qualora tali informazioni siano conformi ai requisiti minimi definiti nell’allegato IV.
+
+=== K261 | [6] Allegato III, parte 2, sezione 2, paragrafo 2.1
+Articolo 6
+Allegato III, parte 2, sezione 2, paragrafo 2.1
+Articolo 2, paragrafo 24
+Allegato III, parte 2, sezione 2, paragrafi da 2.2. a 2.3 e tabella
+Allegato III, parte 2
+Allegato III, parte 2, sezione 2, paragrafo 2.4
+Articolo 11, paragrafi 3 e 4
+
+=== K263 | [8] Norme contabili ai fini di segnalazione statistica
+Articolo 8
+Norme contabili ai fini di segnalazione statistica
+1. A fini di segnalazione ai sensi del presente regolamento e salvo ove diversamente previsto, i soggetti segnalanti seguono le norme contabili stabilite nella direttiva del Consiglio 86/635/CEE ( 16
+) e in qualsiasi altra norma internazionale applicabile.
+Ai fini del presente regolamento i soggetti segnalanti segnalano le attività e le passività totali su base lorda.
+2. Nel caso in cui i soggetti segnalanti segnalino passività per depositi e prestiti, si applicano le seguenti condizioni:
+a)
+i soggetti segnalanti segnalano il capitale delle consistenze di depositi e prestiti in essere alla fine del mese.
+b)
+i soggetti segnalanti escludono le svalutazioni e le cancellazioni dall’importo di cui alla lettera a), come stabilito dalle pertinenti prassi contabili.
+c)
+i soggetti segnalanti non compensano depositi e prestiti con altre attività o passività.
+3. Le BCN possono consentire a tutti i soggetti segnalanti di segnalare prestiti al netto degli accantonamenti per perdite su crediti nel caso in cui lo abbiano consentito a tutti i soggetti
+segnalanti prima dell’adozione del presente regolamento ai sensi dell’articolo 8, paragrafo 4, del regolamento (UE) n. 1071/2013 (BCE/2013/33);
+4. Le IFM escludono dai rispettivi importi per attività e passività le disponibilità proprie in titoli di debito e strumenti di capitale che hanno emesso. Le BCN possono consentire alle IFM di
+segnalare le proprie disponibilità in titoli nell’ambito delle rispettive attività e passività, anche titolo per titolo, conformemente all’articolo 5, paragrafo 3, nella misura in cui la BCN possa
+ricavare le necessarie disaggregazioni di attività e passività specificate nell’allegato I, esclusi gli importi delle proprie disponibilità in titoli.
+
+=== K264 | [9] Deroghe
+Articolo 9
+Deroghe
+1. Le BCN possono concedere deroghe a IFM di piccole dimensioni dagli obblighi di segnalazione statistica di cui all’articolo 5, paragrafo 1, a condizione che sussistano entrambe le seguenti
+condizioni:
+a)
+il contributo complessivo di tutte le IFM di piccole dimensioni cui sia concessa una deroga non ecceda il 5 % delle consistenze in essere delle attività totali del bilancio delle IFM nazionale;
+b)
+il contributo complessivo di tutti i FCM cui sia concessa una deroga non ecceda una delle seguenti soglie:
+i)
+il 10 % delle consistenze in essere delle attività totali del bilancio degli FCM nazionale, qualora tale bilancio degli FCM nazionale sia superiore al 15 % del bilancio degli FCM totale dell’area
+dell’euro;
+ii)
+il 30 % delle consistenze in essere delle attività totali del bilancio degli FCM nazionale, qualora il bilancio degli FCM nazionale sia inferiore al 15 % del bilancio degli FCM totale dell’area
+dell’euro, fatto salvo il caso in cui il bilancio degli FCM nazionale sia inferiore all’1 % del bilancio degli FCM totale dell’area dell’euro, nel cui caso non si applica alcuna soglia.
+Nel caso in cui le BCN concedano deroghe ai sensi del primo sotto paragrafo, esse raccolgono almeno tutte le seguenti informazioni statistiche:
+a)
+le consistenze in essere delle attività totali su base annuale;
+b)
+le informazioni statistiche di cui all’allegato III necessarie per calcolare l’aggregato soggetto a riserva degli enti creditizi ai sensi dell’articolo 5 del regolamento (UE) 2021/378 (BCE/2021/1).
+2. Le BCN possono concedere deroghe alle IFM di piccole dimensioni che sono enti creditizi dagli obblighi di segnalazione statistica di cui all’allegato I, ai sensi della parte 6 di tale allegato, a
+condizione che sussistano entrambe le seguenti condizioni:
+a)
+il contributo complessivo di tutti gli enti creditizi cui siano concesse deroghe non ecceda il 10 % delle consistenze in essere delle attività totali del bilancio delle IFM nazionale; e
+b)
+il contributo complessivo di tutti gli enti creditizi cui siano concesse deroghe non ecceda l’1 % delle consistenze in essere delle attività totali del bilancio aggregato delle IFM dell’area dell’euro
+3. Gli enti nella coda possono applicare le deroghe che sono state loro concesse dalle BCN ai sensi dei paragrafi 1, 2 o 5, lettera a), o segnalare le informazioni statistiche ai sensi dell’articolo
+5.
+4. Le BCN possono concedere deroghe agli FCM dai seguenti obblighi di segnalazione statistica:
+a)
+gli obblighi di cui all’articolo 5, paragrafo 1, nel caso in cui sussistano tutte le seguenti condizioni:
+i)
+gli FCM segnalino informazioni statistiche su voci di bilancio ai sensi dell’articolo 5 del regolamento (UE) n. 1073/2013 della Banca centrale europea (BCE/2013/38) ( 17 ) ;
+ii)
+gli FCM segnalino le informazioni statistiche di cui al punto i) su base mensile ai sensi del paragrafo 1, contenuto nella parte 1 dell’allegato I del regolamento (UE) n. 1073/2013 (BCE/2013/38) ed
+entro i termini stabili dalle BCN ai sensi dell’articolo 9 di tale regolamento;
+iii)
+gli FCM segnalino le consistenze in essere alla fine del mese delle quote/partecipazioni in FCM emesse entro i termini stabiliti dalle BCN ai sensi dell’articolo 7 del presente regolamento;
+b)
+uno dei seguenti obblighi di segnalazione statistica di cui all’allegato I:
+i)
+la disaggregazione dei depositi e prestiti concessi a controparti diverse dalle IFM di cui alla sezione 5.1 contenuta nella parte 2 dell’allegato I e la disaggregazione delle posizioni nei confronti
+di IFM controparti di cui alla sezione 5.2 contenuta nella parte 2 dell’allegato I;
+ii)
+le informazioni sugli interessi maturati su prestiti e depositi di cui alla sezione 7 contenuta nella parte 2 dell’allegato I;
+iii)
+la disaggregazione per settore separato del settore delle imprese di assicurazione e del settore dei fondi pensione di cui alla sezione 5.1 contenuta nella parte 2 dell’allegato I;
+iv)
+le informazioni su prestiti e depositi infragruppo di cui alla sezione 5.3 contenuta nella parte 2 dell’allegato I;
+v)
+la disaggregazione per settore di cui alla sezione 3 contenuta nella parte 3 dell’allegato I;
+vi)
+la disaggregazione per paese di cui alla sezione 7 contenuta nella parte 3 dell’allegato I;
+vii)
+le informazioni sulle partecipazioni immobiliari di cui alla sezione 4 contenuta nella parte 3 dell’allegato I;
+viii)
+la disaggregazione del capitale proprio di cui alla sezione 6 contenuta nella parte 3 dell’allegato I;
+ix)
+le informazioni sulle cartolarizzazioni e sulle altre cessioni di crediti di cui alla parte 5 dell’allegato I.
+c)
+gli obblighi di segnalazione statistica sulla residenza dei detentori di quote o partecipazioni in FCM di cui alla sezione 5.7 contenuta nella parte 2 dell’allegato I, qualora sussista una delle
+seguenti condizioni:
+i)
+le quote/partecipazioni in FCM siano emesse per la prima volta;
+ii)
+le informazioni statistiche richieste sulla residenza dei detentori di quote/partecipazioni in FCM siano raccolte da altre fonti ai sensi alla sezione 5.7 contenuta nella parte 2 dell’allegato I;
+iii)
+le BCN, a causa degli sviluppi del mercato, non possano più raccogliere le informazioni richieste sulla residenza dei detentori di quote/partecipazioni in FCM di cui al punto ii).
+Qualora le BCN concedano deroghe ai FCM in conformità ai punti i), ii), v) o vi) della lettera b) del primo sotto paragrafo, esse assicurano che il contributo complessivo delle deroghe alle
+consistenze in essere totali corrispondenti per ciascuna voce nel bilancio degli FCM nazionale non ecceda il 5 %.
+Nel caso in cui le BCN concedano deroghe ai FCM ai sensi del punto iii) della lettera b) del primo sotto paragrafo, esse distinguono in blocchi separati le posizioni attive e passive e i residenti
+nazionali e i residenti di altri Stati membri dell’area dell’euro e assicurano che il contributo dei settori delle imprese di assicurazione e dei fondi pensione combinati all’interno di ciascun blocco
+cui si applica la deroga non ecceda il 5 % del relativo blocco del bilancio degli FCM nazionale.
+Qualora le BCN concedano deroghe agli FCM ai sensi dei punti i) e iii) della lettera c) del primo sotto paragrafo, tali deroghe si applicano per un periodo di 12 mesi.
+5. Le BCN possono concedere deroghe a enti creditizi diversi dalle IFM da uno dei seguenti obblighi di segnalazione statistica:
+a)
+gli obblighi di cui all’articolo 5, paragrafo 2, qualora le consistenze in essere delle attività totali del soggetto segnalante siano inferiori o pari a 350 milioni di EUR;
+b)
+uno dei seguenti obblighi di segnalazione statistica di cui all’allegato I:
+i)
+le informazioni sulla disaggregazione per scadenza dei prestiti denominati in euro a società non finanziarie;
+ii)
+le informazioni sulla disaggregazione per scadenza e finalità dei prestiti denominati in euro a famiglie e istituzioni senza scopo di lucro al servizio delle famiglie;
+iii)
+la disaggregazione del capitale e delle riserve di cui alla sezione 6 contenuta nella parte 2 dell’allegato I;
+iv)
+le informazioni sulle partecipazioni immobiliari di cui sezione 4 contenuta nella parte 3 dell’allegato I;
+v)
+la disaggregazione del capitale proprio di cui sezione 6 contenuta nella parte 3 dell’allegato I;
+vi)
+le informazioni sugli interessi maturati su prestiti e depositi di cui sezione 7 contenuta nella parte 2 dell’allegato I;
+vii)
+le informazioni sulle proprie disponibilità in titoli di cui alla tabella 1 contenuta nella parte 2 dell’allegato I.
+Nel caso in cui le BCN concedano deroghe ai sensi della lettera a) del primo sotto paragrafo, esse raccolgono almeno tutte le seguenti informazioni statistiche:
+a)
+le consistenze in essere delle attività totali su base annuale;
+b)
+le informazioni statistiche di cui all’allegato III necessarie per calcolare l’aggregato soggetto a riserva degli enti creditizi ai sensi dell’articolo 5 del regolamento (UE) 2021/378 (BCE/2021/1).
+6. Le BCN possono concedere alle IFM e agli enti creditizi diversi dalle IFM le seguenti deroghe dall’obbligo di segnalare gli aggiustamenti da rivalutazione ai sensi dell’articolo 5, paragrafi 1 e 2:
+a)
+una deroga agli FCM dall’obbligo di segnalare gli aggiustamenti da rivalutazione di cui alla parte 4 dell’allegato I;
+b)
+una deroga alle IFM e agli enti crediti diversi dalle IFM dall’obbligo di segnalare gli aggiustamenti da rivalutazione sui titoli di cui alla tabella 1 A contenuta nella parte 4 dell’allegato I, su
+base mensile. Nel caso in cui sia concessa una deroga ai sensi del presente punto, i soggetti segnalanti segnalano tali aggiustamenti da rivalutazione su base trimestrale e comunicano alle BCN, su
+richiesta, entrambi i seguenti elementi:
+i)
+i metodi di valutazione utilizzati per segnalare le informazioni statistiche sui titoli e le informazioni sulla quota delle loro partecipazioni cui si applicano i vari metodi di valutazione; e
+ii)
+il mese in cui accade una sostanziale rivalutazione del prezzo all’interno del trimestre.
+c)
+Le BCN possono concedere deroghe alle IFM e agli enti creditizi diversi dalle IFM dall’obbligo di segnalare gli aggiustamenti da rivalutazione di cui alla parte 4 dell’allegato I, nel caso in cui i
+soggetti segnalanti segnalino le consistenze in essere dei titoli alla fine del mese titolo per titolo. Nel caso in cui sia concessa una deroga ai sensi del presente punto, si applicano entrambe le
+seguenti condizioni:
+i)
+le informazioni segnalate includono, per ogni titolo, il valore con cui i titoli sono iscritti a bilancio; e
+ii)
+per i titoli senza codici di identificazione accessibili al pubblico, le segnalazioni includono informazioni sulla tipologia di strumento, la durata e l’emittente, che siano sufficienti per il calcolo
+delle disaggregazioni definite come «obblighi minimi» nelle tabelle 1 A e 2 A contenute nella parte 4 dell’allegato I.
+7. Le BCN possono concedere deroghe alle IFM dagli obblighi di segnalazione statistica di cui alle sezioni da 7 a 9 contenute nella parte 3 dell’allegato I con riferimento a uno Stato membro non
+appartenente all’area dell’euro qualora si applichi una delle seguenti circostanze:
+a)
+le informazioni statistiche raccolte a un più alto livello d’aggregazione mostrino che le posizioni con controparti residenti in tale Stato membro non appartenente all’area dell’euro sono irrilevanti;
+b)
+le informazioni statistiche raccolte a un più alto livello d’aggregazione mostrino che le posizioni in valuta di tale Stato membro non appartenente all’area dell’euro sono irrilevanti.
+Qualora una BCN conceda deroghe alle IFM ai sensi del primo sotto paragrafo con riferimento a un paese che aderisce all’Unione, la BCN può revocare tali deroghe 12 mesi dopo aver comunicato alle IFM
+la propria intenzione di revocare tali deroghe.
+Qualora le BCN concedano deroghe alle IFM ai sensi del primo sotto paragrafo, esse possono altresì concedere le medesime deroghe a enti creditizi diversi dalle IFM.
+8. Le BCN possono concedere deroghe alle IFM dagli obblighi di segnalazione statistica su cash pooling nozionale come indicato nella parte 2 dell’allegato I nei seguenti casi:
+a)
+qualora le consistenze in essere dei depositi o prestiti di cash pooling nozionale effettuati da o concessi a residenti dell’area dell’euro (escluse le IFM) nel bilancio delle IFM nazionale non
+superino i 2 miliardi di euro;
+b)
+in caso di superamento della soglia di cui alla lettera a), le BCN possono concedere deroghe a un’IFM qualora, nel proprio bilancio, le consistenze in essere di depositi o prestiti di cash pooling
+nozionale effettuati da o concessi a residenti nell’area dell’euro (escluse le IFM), non superino i 500 milioni di EUR.
+9. Le BCN possono concedere deroghe alle IFM riguardo all’obbligo di identificare separatamente i prestiti a imprese individuali/società di persone non riconosciute come entità giuridiche di cui alla
+sezione 3 contenuta nella parte 2 dell’allegato I, nei limiti in cui tali prestiti contribuiscano per meno del 5 % del totale dei prestiti alle famiglie al bilancio delle IFM nazionale.
+Qualora le BCN concedano deroghe alle IFM ai sensi del primo sotto paragrafo, esse possono altresì concedere le medesime deroghe a enti creditizi diversi dalle IFM.
+10. Qualora le BCN concedano deroghe ai sensi dei paragrafi 1, 2, 4, 5 e 9, esse verificano che non siano superate le soglie ivi indicate. Tale verifica è effettuata in tempo utile per concedere o
+revocare, se del caso, eventuali deroghe con decorrenza dall’inizio dell’anno successivo.
+Qualora le BCN concedano deroghe ai sensi del paragrafo 8, esse verificano che non siano superate le soglie ivi indicate. Tale verifica è effettuata almeno ogni due anni e in tempo utile per concedere
+o revocare, se del caso, eventuali deroghe con decorrenza dall’inizio dell’anno successivo.
+
+=== K265 | [10] Requisiti minimi e disposizioni nazionali in materia di segnalazione
+Articolo 10
+Requisiti minimi e disposizioni nazionali in materia di segnalazione
+1. I soggetti segnalanti adempiono gli obblighi di segnalazione statistica cui sono tenuti nel rispetto dei requisiti minimi di trasmissione, accuratezza, conformità concettuale e revisione, di cui
+all’allegato IV.
+2. Le BCN definiscono e attuano le disposizioni in materia di segnalazione cui devono attenersi gli operatori effettivamente soggetti agli obblighi di segnalazione in conformità agli obblighi
+stabiliti a livello nazionale. Le BCN assicurano che tali disposizioni forniscano le informazioni statistiche richieste e permettano un’accurata verifica di conformità ai requisiti minimi di
+trasmissione, accuratezza, conformità concettuale e revisione di cui all’allegato IV.
+
+=== K266 | [11] Fusioni, scissioni e riorganizzazioni
+Articolo 11
+Fusioni, scissioni e riorganizzazioni
+1. Un operatore effettivamente soggetto agli obblighi di segnalazione comunica alla BCN una fusione, scissione o qualunque altro tipo di riorganizzazione qualora:
+a)
+tale fusione, scissione o altro tipo di riorganizzazione sia suscettibile di incidere sull’adempimento degli obblighi di segnalazione da parte di un operatore effettivamente soggetto agli stessi; e
+b)
+l’intenzione di attuare l’operazione di cui alla lettera a) sia di dominio pubblico.
+2. La comunicazione di cui al paragrafo 1:
+a)
+è fornita entro un termine ragionevole prima che avvenga la fusione, scissione o altro tipo di riorganizzazione; e
+b)
+specifica le procedure da utilizzare per assolvere gli obblighi di segnalazione statistica di cui al presente regolamento.
+3. Qualora una fusione tra soggetti segnalanti avvenga tra la fine di un periodo di riferimento e la scadenza per segnalare le informazioni statistiche per tale periodo di riferimento stabilita dalla
+BCN competente ai sensi dell’articolo 7, paragrafo 1, l’istituzione incorporante assolve gli obblighi di segnalazione delle istituzioni incorporate per tale periodo di riferimento come se la fusione
+non fosse avvenuta.
+4. Nel caso in cui una fusione tra soggetti segnalanti avvenga durante un periodo di riferimento, le BCN possono consentire all’istituzione incorporante di segnalare le informazioni statistiche per le
+istituzioni incorporate separatamente rispetto alle proprie informazioni statistiche per tale periodo di riferimento e per i successivi periodi di riferimento.
+Ai fini del primo sotto paragrafo, le BCN possono impedire all’istituzione incorporante di segnalare le informazioni statistiche per le istituzioni incorporate separatamente rispetto alle proprie
+informazioni statistiche per un periodo superiore a sei mesi successivi alla fusione.
+
+=== K267 | [12] Segnalazione delle informazioni statistiche sull’aggregato soggetto a riserva
+Articolo 12
+Segnalazione delle informazioni statistiche sull’aggregato soggetto a riserva
+1. Gli enti creditizi segnalano alla BCN competente le informazioni statistiche di cui all’allegato III necessarie per calcolare l’aggregato soggetto a riserva degli enti creditizi ai sensi
+dell’articolo 5 del regolamento (UE) 2021/378 (BCE/2021/1).
+2. Gli enti creditizi segnalano almeno le informazioni statistiche di cui alla tabella 1 contenuta nella parte 1 dell’allegato III su base trimestrale qualora sussistano le seguenti condizioni:
+a)
+l’ente creditizio sia un ente nella coda;
+b)
+l’ente creditizio effettui la segnalazione per conto di un gruppo, ai sensi dell’articolo 6, costituito unicamente da enti nella coda.
+
+=== K268 | [13] Verifica e raccolta obbligatoria
+Articolo 13
+Verifica e raccolta obbligatoria
+Le BCN esercitano il diritto di verificare o raccogliere in modo coattivo le informazioni che i soggetti segnalanti sono tenuti a fornire in conformità al presente regolamento, salvo il diritto della
+BCE di esercitare essa stessa tali diritti. In particolare, le BCN esercitano tale diritto quando un ente incluso tra gli operatori effettivamente soggetti agli obblighi di segnalazione non soddisfa i
+requisiti minimi di trasmissione, accuratezza, conformità concettuale e revisione definiti nell’allegato IV.
+
+=== K270 | [15] Procedura di modifica semplificata
+Articolo 15
+Procedura di modifica semplificata
+Tenuto conto del parere del Comitato per le statistiche, il Comitato esecutivo della BCE apporta le necessarie modifiche di natura tecnica agli allegati, purché tali modifiche non siano tali da
+alterare l’impianto concettuale sottostante o da incidere sugli oneri di segnalazione dei soggetti segnalanti negli Stati membri. Il Comitato esecutivo informa senza indugio il Consiglio direttivo di
+tali modifiche.

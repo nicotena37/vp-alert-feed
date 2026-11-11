@@ -1,0 +1,1488 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento delegato (UE) 2017/2359 della Commissione, del 21 settembre 2017, che integra la direttiva (UE) 2016/97 del Parlamento europeo e del Consiglio per q  (id UE-32017R2359)
+
+=== K298 | [19] Conservazione delle registrazioni
+Articolo 19
+Conservazione delle registrazioni
+1.
+Fatta salva l'applicazione del regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio (
+4
+), gli intermediari assicurativi e le imprese di assicurazione conservano le registrazioni delle valutazioni di idoneità e adeguatezza effettuate in conformità all'articolo 30, paragrafi 1 e 2, della
+direttiva (UE) 2016/97. Le registrazioni includono le informazioni ottenute dal cliente e qualsiasi documento concordato con il cliente, inclusi i documenti che stabiliscono i diritti delle parti e
+gli altri termini sulla base dei quali l'intermediario assicurativo o l'impresa di assicurazione fornirà i servizi al cliente. Tali registrazioni vengono conservate almeno per tutto il tempo in cui
+sussiste la relazione tra l'intermediario assicurativo o l'impresa di assicurazione e il cliente.
+2.
+Nel caso di una valutazione di idoneità svolta in conformità all'articolo 30, paragrafo 1, della direttiva (UE) 2016/97, la registrazione include inoltre:
+a)
+il risultato della valutazione dell'idoneità;
+b)
+la raccomandazione fatta al cliente e la dichiarazione fornita in conformità all'articolo 14, paragrafo 1, del presente regolamento;
+c)
+le eventuali modifiche apportate dall'intermediario o dall'impresa di assicurazione rispetto alla valutazione di idoneità, in particolare eventuali modifiche della tolleranza al rischio del cliente;
+d)
+eventuali modifiche delle attività di investimento sottostanti.
+3.
+Nel caso di una valutazione di adeguatezza svolta in conformità all'articolo 30, paragrafo 2, della direttiva (UE) 2016/97, la registrazione include inoltre:
+a)
+il risultato della valutazione dell'adeguatezza;
+b)
+eventuali avvertenze al cliente laddove il prodotto di investimento assicurativo sia stato valutato come potenzialmente inadeguato per il cliente, qualora il cliente abbia chiesto di procedere alla
+stipula del contratto malgrado l'avvertenza e, se del caso, qualora l'intermediario assicurativo o l'impresa di assicurazione abbia accettato la richiesta di procedere alla stipula del contratto;
+c)
+eventuali avvertenze al cliente laddove il cliente non abbia fornito informazioni sufficienti per mettere in condizione l'intermediario assicurativo o l'impresa di assicurazione di valutare
+l'adeguatezza del prodotto di investimento assicurativo, qualora il cliente abbia chiesto di procedere alla stipula del contratto malgrado l'avvertenza e, se del caso, qualora l'intermediario
+assicurativo o l'impresa di assicurazione abbia accettato la richiesta di procedere alla stipula del contratto.
+4.
+Le registrazioni sono conservate su un supporto che consenta la memorizzazione delle informazioni in modo tale che siano accessibili all'autorità competente per futura consultazione. L'autorità
+competente è in grado di accedere facilmente a tali informazioni per poter ricostruire ogni elemento in modo chiaro e accurato e per identificare velocemente eventuali modifiche, correzioni o altri
+cambiamenti, nonché i contenuti delle registrazioni anteriori a tali modifiche.
+CAPO IV
+DISPOSIZIONI FINALI
+
+
+######## NORMA: Regolamento delegato (UE) 2017/590 della Commissione, del 28 luglio 2016, che integra il regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio per  (id UE-32017R0590)
+
+=== K300 | [1] Standard e formati relativi ai dati per la segnalazione delle operazioni
+Articolo 1
+Standard e formati relativi ai dati per la segnalazione delle operazioni
+La segnalazione di un'operazione comprende tutte le informazioni di cui alla tabella 2 dell'allegato I inerenti agli strumenti finanziari in questione. Tutte le informazioni dettagliate che devono
+essere inserite nelle segnalazioni delle operazioni sono presentate conformemente agli standard e ai formati specificati nella tabella 2 dell'allegato I, in forma elettronica e leggibile da
+dispositivo elettronico e in un modello XML uniforme secondo la metodologia ISO 20022.
+
+=== K303 | [4] Trasmissione di un ordine
+Articolo 4
+Trasmissione di un ordine
+1. Un'impresa di investimento che trasmette un ordine a norma dell'articolo 26, paragrafo 4, del regolamento (UE) n. 600/2014 (impresa trasmittente) è considerata come avente trasmesso tale ordine
+solo se sono soddisfatte le seguenti condizioni:
+a)
+l'ordine è pervenuto dal suo cliente o risulta dalla sua decisione di acquisire o cedere uno specifico strumento finanziario nell'ambito di un mandato discrezionale conferitole da uno o più clienti;
+b)
+l'impresa trasmittente ha trasmesso le informazioni sull'ordine di cui al paragrafo 2 a un'altra impresa di investimento (impresa ricevente);
+c)
+l'impresa ricevente è assoggettata all'articolo 26, paragrafo 1, del regolamento (UE) n. 600/2014 e accetta di segnalare l'operazione risultante dall'ordine in questione oppure di trasmettere le
+informazioni sull'ordine conformemente al presente articolo a un'altra impresa di investimento.
+Ai fini del primo comma, lettera c), l'accordo precisa il termine per la trasmissione da parte dell'impresa trasmittente delle informazioni sull'ordine all'impresa ricevente e stabilisce che l'impresa
+ricevente verifica se le informazioni sull'ordine ricevute contengono errori o omissioni palesi prima di presentare la segnalazione dell'operazione o trasmettere l'ordine conformemente al presente
+articolo.
+2. Sono trasmesse conformemente al paragrafo 1, nella misura pertinente per un determinato ordine, le seguenti informazioni sull'ordine:
+a)
+il codice identificativo dello strumento finanziario;
+b)
+se si tratta di un ordine di acquisizione o di cessione dello strumento finanziario;
+c)
+il prezzo e quantitativo indicato nell'ordine;
+d)
+l'elemento di identificazione e i dettagli del cliente dell'impresa trasmittente ai fini dell'ordine;
+e)
+l'elemento di identificazione e i dettagli dell'entità che decide per il cliente, ove la decisione di investimento sia presa nell'ambito di una procura a rappresentare;
+f)
+un elemento di identificazione di una vendita allo scoperto;
+g)
+un elemento di identificazione della persona o dell'algoritmo responsabile della decisione di investimento all'interno dell'impresa trasmittente;
+h)
+il paese della succursale dell'impresa di investimento che vigila sulla persona responsabile della decisione di investimento e il paese della succursale dell'impresa di investimento che ha ricevuto
+l'ordine dal cliente o ha preso una decisione di investimento per un cliente nell'ambito di un mandato discrezionale conferitole dal cliente;
+i)
+per un ordine in strumenti derivati su merci, l'indicazione se l'operazione ridurrà il rischio in modo oggettivamente misurabile conformemente all'articolo 57 della direttiva 2014/65/UE;
+j)
+il codice che identifica l'impresa trasmittente.
+Ai fini del primo comma, lettera d), se il cliente è una persona fisica, il cliente è identificato conformemente all'articolo 6.
+Ai fini del primo comma, lettera j), se l'ordine trasmesso è pervenuto da un'impresa precedente che non lo ha trasmesso conformemente alle condizioni stabilite al presente articolo, il codice è il
+codice che identifica l'impresa trasmittente. Se l'ordine trasmesso è pervenuto da un'impresa trasmittente precedente conformemente alle condizioni stabilite al presente articolo, il codice fornito ai
+sensi del primo comma, lettera j), è il codice che identifica l'impresa trasmittente precedente.
+3. Laddove vi sia più di un'impresa trasmittente in relazione a un determinato ordine, le informazioni sull'ordine di cui al paragrafo 2, primo comma, lettere da d) a i), sono trasmesse relativamente
+al cliente della prima impresa trasmittente.
+4. Se si tratta di un ordine aggregato per più clienti, le informazioni di cui al paragrafo 2 sono trasmesse per ciascun cliente.
+
+=== K304 | [5] Identificazione dell'impresa di investimento che esegue un'operazione
+Articolo 5
+Identificazione dell'impresa di investimento che esegue un'operazione
+1. Un'impresa di investimento che esegue un'operazione provvede a identificarsi nella segnalazione dell'operazione presentata ai sensi dell'articolo 26, paragrafo 1, del regolamento (UE) n. 600/2014
+con il codice identificativo del soggetto giuridico secondo ISO 17442 convalidato, rilasciato e debitamente rinnovato.
+2. Un'impresa di investimento che esegue un'operazione provvede a rinnovare i dati di riferimento relativi al proprio identificativo del soggetto giuridico secondo le condizioni di qualsivoglia unità
+operativa locale accreditata del sistema internazionale di identificazione dei soggetti giuridici.
+
+=== K305 | [6] Elemento di identificazione delle persone fisiche
+Articolo 6
+Elemento di identificazione delle persone fisiche
+1. Una persona fisica è identificata nella segnalazione di un'operazione con l'elemento risultante dalla concatenazione del codice alpha-2 dell'ISO 3166-1 (codice paese a 2 lettere) del paese di
+cittadinanza della persona, seguito dall'identificativo nazionale del cliente riportato nell'allegato II sulla base della cittadinanza della persona.
+2. L'identificativo nazionale del cliente di cui al paragrafo 1 è assegnato conformemente ai livelli di priorità stabiliti nell'allegato II, utilizzando l'identificativo con la massima priorità di una
+persona indipendentemente dal fatto che esso sia già noto all'impresa di investimento.
+3. Se una persona fisica ha la cittadinanza di più di un paese dello Spazio economico europeo (SEE), sono utilizzati il codice del paese di cittadinanza che risulta primo nell'ordine alfabetico dei
+codici alpha-2 dell'ISO 3166-1 e l'identificativo di tale cittadinanza assegnato conformemente al paragrafo 2. Se una persona fisica ha la cittadinanza di un paese non appartenente al SEE, è
+utilizzato l'identificativo con la massima priorità secondo il campo «Tutti gli altri paesi» di cui all'allegato II. Se una persona fisica ha la cittadinanza di un paese SEE e di un paese non
+appartenente al SEE, sono utilizzati il codice del paese della cittadinanza SEE e l'identificativo con la massima priorità di tale cittadinanza assegnato conformemente al paragrafo 2.
+4. Se l'identificativo assegnato conformemente al paragrafo 2 indica CONCAT, la persona fisica è identificata dall'impresa di investimento utilizzando la concatenazione dei seguenti elementi nel
+seguente ordine:
+a)
+la data di nascita della persona nel formato AAAAMMGG;
+b)
+i primi cinque caratteri del nome;
+c)
+i primi cinque caratteri del cognome.
+5. Ai fini del paragrafo 4, sono escluse le particelle e ai nomi e cognomi di lunghezza inferiore a cinque caratteri è aggiunto «#» in modo da garantire che i riferimenti ai nomi e cognomi in
+conformità del paragrafo 4 contengano cinque caratteri. Tutti i caratteri sono in stampato maiuscolo. Non sono utilizzati apostrofi, accenti, trattini, segni di interpunzione o spazi.
+
+=== K306 | [7] Dettagli dell'identità del cliente e identificativo e dettagli relativi all'entità che decide
+Articolo 7
+Dettagli dell'identità del cliente e identificativo e dettagli relativi all'entità che decide
+1. La segnalazione di un'operazione eseguita per conto di un cliente che è una persona fisica riporta il nome completo e la data di nascita del cliente come specificato nei campi 9, 10, 11, 18, 19 e
+20 della tabella 2 dell'allegato I.
+2. Se il cliente non è la persona che prende la decisione di investimento relativa a tale operazione, la segnalazione dell'operazione identifica la persona che prende tale decisione per conto del
+cliente come specificato per il compratore nei campi da 12 a 15 e per il venditore nei campi da 21 a 24 della tabella 2 dell'allegato I.
+
+=== K307 | [8] Identificazione della persona o dell'algoritmo informatico responsabile della decisione di investimento
+Articolo 8
+Identificazione della persona o dell'algoritmo informatico responsabile della decisione di investimento
+1. Se una persona o un algoritmo informatico all'interno di un'impresa di investimento prende la decisione di investimento di acquisire o cedere uno specifico strumento finanziario, tale persona o
+algoritmo informatico sono identificati come specificato nel campo 57 della tabella 2 dell'allegato I. L'impresa di investimento identifica tale persona o algoritmo informatico solo laddove la
+decisione di investimento in questione è presa per conto della stessa impresa di investimento oppure per conto di un cliente nell'ambito di un mandato discrezionale conferitole dal cliente.
+2. Se all'interno dell'impresa di investimento la decisione di investimento è presa da più di una persona, l'impresa di investimento determina quale persona assume la responsabilità primaria di detta
+decisione. La persona che assume la responsabilità primaria della decisione di investimento è determinata sulla base di criteri prestabiliti decisi dall'impresa di investimento.
+3. Se della decisione di investimento a norma del paragrafo 1 è responsabile un algoritmo informatico all'interno dell'impresa di investimento, quest'ultima assegna un elemento di identificazione per
+l'algoritmo informatico nella segnalazione dell'operazione. L'elemento di identificazione rispetta le seguenti condizioni:
+a)
+è unico per ciascun insieme di codici o di strategie di negoziazione che costituisce l'algoritmo, indipendentemente dagli strumenti finanziari o dai mercati cui si applica l'algoritmo;
+b)
+è utilizzato sistematicamente per riferirsi all'algoritmo o alla versione dell'algoritmo una volta assegnato;
+c)
+è unico nel tempo.
+
+=== K308 | [9] Identificazione della persona o dell'algoritmo informatico responsabile dell'esecuzione di un'operazione
+Articolo 9
+Identificazione della persona o dell'algoritmo informatico responsabile dell'esecuzione di un'operazione
+1. Se una persona o un algoritmo informatico all'interno dell'impresa di investimento che esegue un'operazione determina a quale sede di negoziazione, internalizzatore sistematico o piattaforma di
+negoziazione organizzata situata al di fuori dell'Unione accedere, a quali imprese trasmettere ordini o qualsivoglia condizione relativa all'esecuzione di un ordine, tale persona o algoritmo
+informatico sono identificati nel campo 59 della tabella 2 dell'allegato I.
+2. Se dell'esecuzione dell'operazione è responsabile una persona all'interno dell'impresa di investimento, quest'ultima assegna un elemento di identificazione per detta persona nella segnalazione
+dell'operazione conformemente all'articolo 6.
+3. Se dell'esecuzione dell'operazione è responsabile un algoritmo informatico all'interno dell'impresa di investimento, quest'ultima assegna un elemento di identificazione per l'algoritmo informatico
+conformemente all'articolo 8, paragrafo 3.
+4. Se all'esecuzione dell'operazione partecipano sia una persona che un algoritmo informatico, oppure più di una persona o di un algoritmo, l'impresa di investimento determina quale persona o
+algoritmo informatico ha la responsabilità primaria dell'esecuzione dell'operazione. La persona o l'algoritmo informatico che assume la responsabilità primaria dell'esecuzione sono determinati sulla
+base di criteri prestabiliti decisi dall'impresa di investimento.
+
+=== K309 | [10] Elemento di identificazione di una deroga applicabile
+Articolo 10
+Elemento di identificazione di una deroga applicabile
+Le segnalazioni delle operazioni identificano la deroga applicabile ai sensi dell'articolo 4 o dell'articolo 9 del regolamento (UE) n. 600/2014 in virtù della quale l'operazione eseguita ha avuto
+luogo conformemente al campo 61 della tabella 2 dell'allegato I del presente regolamento.
+
+=== K310 | [11] Elemento di identificazione di una vendita allo scoperto
+Articolo 11
+Elemento di identificazione di una vendita allo scoperto
+1. Le segnalazioni delle operazioni identificano le operazioni che, al momento della loro esecuzione, sono operazioni di vendita allo scoperto, o sono parzialmente operazioni di vendita allo scoperto,
+conformemente al campo 62 della tabella 2 dell'allegato I.
+2. Un'impresa di investimento determina con la massima diligenza possibile le operazioni di vendita allo scoperto nelle quali il suo cliente è il venditore, anche nei casi in cui l'impresa di
+investimento aggrega gli ordini di diversi clienti. L'impresa di investimento identifica le operazioni di vendita allo scoperto nella segnalazione dell'operazione conformemente al campo 62 della
+tabella 2 dell'allegato I.
+3. Laddove un'impresa di investimento esegue un'operazione di vendita allo scoperto per proprio conto, essa indica nella segnalazione dell'operazione se l'operazione di vendita allo scoperto è stata
+effettuata nell'ambito di attività di supporto agli scambi (market making) o in veste di operatore principale a titolo della deroga prevista dall'articolo 17 del regolamento (UE) n. 236/2012.
+
+=== K311 | [12] Segnalazione dell'esecuzione di un'operazione riguardante una combinazione di strumenti finanziari
+Articolo 12
+Segnalazione dell'esecuzione di un'operazione riguardante una combinazione di strumenti finanziari
+Se un'impresa di investimento esegue un'operazione che interessa due o più strumenti finanziari, l'impresa di investimento segnala l'operazione separatamente per ciascuno strumento finanziario e
+collega tali segnalazioni al gruppo delle segnalazioni delle operazioni inerenti a tale esecuzione tramite un identificativo unico a livello dell'impresa come specificato nel campo 40 della tabella 2
+dell'allegato I.
+
+=== K312 | [13] Condizioni di sviluppo, attribuzione e conservazione degli identificativi dei soggetti giuridici
+Articolo 13
+Condizioni di sviluppo, attribuzione e conservazione degli identificativi dei soggetti giuridici
+1. Gli Stati membri provvedono allo sviluppo, all'attribuzione e alla conservazione degli identificativi dei soggetti giuridici conformemente ai seguenti principi:
+a)
+unicità;
+b)
+precisione;
+c)
+coerenza;
+d)
+neutralità;
+e)
+affidabilità;
+f)
+open source;
+g)
+flessibilità;
+h)
+scalabilità;
+i)
+accessibilità.
+Gli Stati membri provvedono inoltre affinché gli identificativi dei soggetti giuridici vengano sviluppati, attribuiti e conservati avvalendosi di norme operative uniformi a livello mondiale, siano
+assoggettati al quadro di governance del comitato di sorveglianza sulla regolamentazione per il sistema internazionale di identificazione dei soggetti giuridici e siano disponibili a un costo
+ragionevole.
+2. Le imprese di investimento non forniscono un servizio che fa scattare l'obbligo di presentare una segnalazione per un'operazione realizzata per conto di un cliente che è ammissibile per il codice
+identificativo del soggetto giuridico, prima di acquisire da tale cliente il codice identificativo del soggetto giuridico.
+3. L'impresa di investimento assicura che la lunghezza e la struttura del codice siano conformi alla norma ISO 17442, che il codice sia inserito nella base dati degli identificativi internazionali dei
+soggetti giuridici gestita dall'unità operativa centrale nominata dal comitato di sorveglianza sulla regolamentazione per il sistema internazionale di identificazione dei soggetti giuridici e che si
+riferisca al cliente in questione.
+
+=== K313 | [14] Segnalazione delle operazioni eseguite dalle succursali
+Articolo 14
+Segnalazione delle operazioni eseguite dalle succursali
+1. Le imprese di investimento segnalano le operazioni eseguite integralmente o parzialmente tramite proprie succursali all'autorità competente dello Stato membro d'origine dell'impresa di
+investimento, se non diversamente convenuto dalle autorità competenti dello Stato membro d'origine e dello Stato membro ospitante.
+2. Se un'impresa di investimento esegue integralmente o parzialmente un'operazione tramite la sua succursale, essa segnala l'operazione una volta sola.
+3. Se nella segnalazione di un'operazione devono essere inseriti i codici paese relativi alla succursale dell'impresa di investimento conformemente ai campi 8, 17, 37, 58 o 60 della tabella 2
+dell'allegato I in ragione dell'esecuzione integrale o parziale di un'operazione tramite tale succursale, l'impresa di investimento riporta nella segnalazione dell'operazione il codice paese ISO 3166
+della succursale rilevante in tutti i seguenti casi:
+a)
+se la succursale ha ricevuto l'ordine da un cliente o ha preso una decisione di investimento per un cliente nell'ambito di un mandato discrezionale conferitole dal cliente;
+b)
+se la succursale ha responsabilità di vigilanza per la persona responsabile della decisione di investimento in questione;
+c)
+se la succursale ha responsabilità di vigilanza per la persona responsabile dell'esecuzione dell'operazione;
+d)
+se l'operazione è stata eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata situata al di fuori dell'Unione avvalendosi del fatto che la succursale sia membro di tale
+sede di negoziazione o piattaforma di negoziazione organizzata.
+4. Se uno o più casi di cui al paragrafo 3 non si applicano a una succursale dell'impresa di investimento, i campi pertinenti della tabella 2 dell'allegato I sono compilati con il codice ISO dello
+Stato membro d'origine dell'impresa di investimento, oppure, nel caso di un'impresa di un paese terzo, con il codice del paese in cui l'impresa ha stabilito la propria sede centrale o sede legale.
+5. La succursale di un'impresa di un paese terzo presenta la segnalazione dell'operazione all'autorità competente che ha autorizzato la succursale. La succursale di un'impresa di un paese terzo
+completa i campi pertinenti della tabella 2 dell'allegato I con il codice ISO dello Stato membro dell'autorità competente che ha rilasciato l'autorizzazione.
+Se un'impresa di un paese terzo ha aperto succursali in più di uno Stato membro all'interno dell'Unione, tali succursali scelgono congiuntamente una delle autorità competenti degli Stati membri a cui
+devono essere inviate le segnalazioni delle operazioni a norma dei paragrafi da 1 a 3.
+
+=== K314 | [15] Metodi e dispositivi di segnalazione delle operazioni finanziarie
+Articolo 15
+Metodi e dispositivi di segnalazione delle operazioni finanziarie
+1. I metodi e dispositivi di generazione e presentazione delle segnalazioni delle operazioni da parte delle sedi di negoziazione e delle imprese di investimento comprendono:
+a)
+sistemi a garanzia della sicurezza e della riservatezza dei dati comunicati;
+b)
+meccanismi di autenticazione della fonte della segnalazione dell'operazione;
+c)
+misure precauzionali che consentano di ripristinare tempestivamente la segnalazione in caso di malfunzionamento del sistema di segnalazione;
+d)
+meccanismi di individuazione di errori e omissioni nelle segnalazioni delle operazioni;
+e)
+meccanismi per evitare la doppia comunicazione delle segnalazioni delle operazioni, anche nel caso in cui un'impresa di investimento si affida a una sede di negoziazione per segnalare le informazioni
+sulle operazioni eseguite dall'impresa di investimento tramite i sistemi della sede di negoziazione conformemente all'articolo 26, paragrafo 7, del regolamento (UE) n. 600/2014;
+f)
+meccanismi per garantire che la sede di negoziazione presenti le segnalazioni soltanto per conto delle imprese di investimento che hanno scelto di affidarsi alla sede di negoziazione per trasmettere
+per loro conto le segnalazioni delle operazioni concluse tramite i sistemi della sede di negoziazione;
+g)
+meccanismi per evitare la segnalazione di operazioni per le quali non vigono obblighi di segnalazione ai sensi dell'articolo 26, paragrafo 1, del regolamento (UE) n. 600/2014, o perché non si
+configura un'operazione ai sensi dell'articolo 2 del presente regolamento oppure perché lo strumento oggetto dell'operazione in questione non rientra nell'ambito di applicazione dell'articolo 26,
+paragrafo 2, del regolamento (UE) n. 600/2014;
+h)
+meccanismi di individuazione di operazioni non segnalate per le quali vige l'obbligo di segnalazione ai sensi dell'articolo 26 del regolamento (UE) n. 600/2014, compresi i casi in cui non ha avuto
+buon esito la ripresentazione delle segnalazioni delle operazioni respinte dall'autorità competente interessata.
+2. Ove la sede di negoziazione o l'impresa di investimento venga a conoscenza di un errore od omissione nella segnalazione di un'operazione presentata a un'autorità competente, della mancata
+presentazione della segnalazione di un'operazione compresa la mancata ripresentazione della segnalazione di operazioni per le quali vige l'obbligo di segnalazione o della segnalazione di un'operazione
+per la quale non vigono obblighi di segnalazione, essa notifica senza indugio questo fatto all'autorità competente rilevante.
+3. Le imprese di investimento predispongono dispositivi atti a garantire che le segnalazioni delle loro operazioni siano complete e precise. Tali dispositivi comprendono la verifica del loro iter di
+segnalazione e la riconciliazione periodica del registro delle negoziazioni del front-office con campioni di dati forniti loro a tal fine dalle rispettive autorità competenti.
+4. Qualora le autorità competenti non forniscano i campioni di dati, le imprese di investimento riconciliano i loro registri delle negoziazioni del front-office con le informazioni contenute nelle
+segnalazioni delle operazioni che hanno presentato alle autorità competenti o in quelle che i meccanismi di segnalazione autorizzati o le sedi di negoziazione hanno presentato per loro conto. La
+riconciliazione comprende la verifica della puntualità della segnalazione, dell'esattezza e della completezza dei singoli campi di dati e della loro conformità agli standard e ai formati specificati
+nella tabella 2 dell'allegato I.
+5. Le imprese di investimento predispongono dispositivi atti a garantire che le segnalazioni delle loro operazioni, considerate nel loro insieme, rispecchino tutte le variazioni della loro posizione e
+di quella dei loro clienti negli strumenti finanziari interessati nel momento di esecuzione delle operazioni negli strumenti finanziari.
+6. Ove un meccanismo di segnalazione autorizzato, seguendo le istruzioni dell'impresa di investimento, annulli o rettifichi la segnalazione di un'operazione presentata per conto di un'impresa di
+investimento, quest'ultima conserva le informazioni relative alle rettifiche e agli annullamenti che il meccanismo di segnalazione autorizzato le ha fornito.
+7. Le segnalazioni di cui all'articolo 26, paragrafo 5, del regolamento (UE) n. 600/2014 sono trasmesse all'autorità competente dello Stato membro d'origine della sede di negoziazione.
+8. Per scambiarsi reciprocamente le segnalazioni delle operazioni le autorità competenti utilizzano canali di comunicazione elettronica sicuri.
+
+=== K315 | [16] Determinazione del mercato più rilevante in termini di liquidità
+Articolo 16
+Determinazione del mercato più rilevante in termini di liquidità
+1. Nel caso di un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera a), della direttiva 2014/65/UE, di una quota di emissione o di una quota di un organismo di investimento
+collettivo, il mercato più rilevante in termini di liquidità per tale strumento finanziario (il mercato più rilevante) è determinato una volta per anno civile, sulla base dei dati dell'anno civile
+precedente, purché lo strumento finanziario sia stato ammesso alla negoziazione o negoziato all'inizio dell'anno civile precedente, nel modo seguente:
+a)
+per gli strumenti ammessi alla negoziazione in uno o più mercati regolamentati, il mercato più rilevante è il mercato regolamentato in cui il volume degli scambi, quale definito all'articolo 17,
+paragrafo 4, del regolamento delegato (UE) 2017/587 della Commissione ( 8 ) , relativo a tale strumento finanziario per l'anno civile precedente è il più elevato;
+b)
+per gli strumenti non ammessi alla negoziazione nei mercati regolamentati, il mercato più rilevante è il sistema multilaterale di negoziazione in cui il volume degli scambi relativi a tale strumento
+per l'anno civile precedente è il più elevato;
+c)
+ai fini delle lettere a) e b), il volume degli scambi più elevato è calcolato escludendo tutte le operazioni che beneficiano di deroghe relative alla trasparenza pre-negoziazione a norma dell'articolo
+4, paragrafo 1, lettere a), b) o c), del regolamento (UE) n. 600/2014.
+2. In deroga al paragrafo 1 del presente articolo, se un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44, lettera a), della direttiva 2014/65/UE, una quota di emissione o una quota di
+un organismo di investimento collettivo non sono stati ammessi alla negoziazione o negoziati all'inizio dell'anno civile precedente o se mancano totalmente o parzialmente i dati per calcolare il
+volume degli scambi ovvero mancano totalmente o parzialmente i dati per calcolare il volume degli scambi conformemente al paragrafo 1, lettera c) del presente articolo, al fine di determinare il
+mercato più rilevante per tale strumento finanziario, il mercato più rilevante per lo strumento finanziario è il mercato dello Stato membro in cui è stata presentata la prima richiesta di ammissione
+alla negoziazione o lo strumento è stato negoziato per la prima volta.
+3. Nel caso di un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera b), della direttiva 2014/65/UE o di uno strumento del mercato monetario il cui emittente è stabilito
+nell'Unione, il mercato più rilevante è il mercato dello Stato membro in cui si trova la sede legale dell'emittente.
+4. Nel caso di un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera b), della direttiva 2014/65/UE o di uno strumento del mercato monetario il cui emittente è stabilito fuori
+dell'Unione, il mercato più rilevante è il mercato dello Stato membro in cui è stata presentata la prima richiesta di ammissione alla negoziazione di tale strumento finanziario o in cui lo strumento
+finanziario è stato negoziato per la prima volta in una sede di negoziazione.
+5. Nel caso di uno strumento finanziario che sia un contratto derivato o un contratto differenziale o un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera c), della direttiva
+2014/65/UE, il mercato più rilevante è determinato nel modo seguente:
+a)
+se il sottostante dello strumento finanziario è un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera a), della direttiva 2014/65/UE o una quota di emissione ammessi alla
+negoziazione in un mercato regolamentato o negoziati in un sistema multilaterale di negoziazione, il mercato più rilevante è quello considerato mercato più rilevante per il titolo sottostante
+conformemente al paragrafo 1 o 2 del presente articolo;
+b)
+se il sottostante dello strumento finanziario è un valore mobiliare ai sensi dell'articolo 4, paragrafo 1, punto 44), lettera b), della direttiva 2014/65/UE o uno strumento del mercato monetario
+ammessi alla negoziazione in un mercato regolamentato o negoziati in un sistema multilaterale di negoziazione ovvero un sistema organizzato di negoziazione, il mercato più rilevante è quello
+considerato mercato più rilevante per lo strumento finanziario sottostante conformemente al paragrafo 3 o 4 del presente articolo;
+c)
+se il sottostante dello strumento finanziario è un paniere di strumenti finanziari, il mercato più rilevante è il mercato dello Stato membro nel quale lo strumento finanziario è stato per la prima
+volta ammesso alla negoziazione o negoziato in una sede di negoziazione;
+d)
+se il sottostante dello strumento finanziario è un indice che sontiene strumenti finanziari, il mercato più rilevante è il mercato dello Stato membro nel quale lo strumento finanziario è stato per la
+prima volta ammesso alla negoziazione o negoziato in una sede di negoziazione;
+e)
+se il sottostante dello strumento finanziario è un derivato ammesso alla negoziazione o negoziato in una sede di negoziazione, il mercato più rilevante è il mercato dello Stato membro nel quale tale
+derivato è ammesso alla negoziazione o negoziato in una sede di negoziazione.
+6. Per gli strumenti finanziari non disciplinati dai paragrafi da 1 a 5, il mercato più rilevante è il mercato dello Stato membro della sede di negoziazione che per la prima volta ha ammesso alla
+negoziazione lo strumento finanziario o nella quale lo strumento finanziario è stato negoziato per la prima volta.
+
+=== K317 | [Allegato I] Tabella 1
+ALLEGATO I
+Tabella 1
+Legenda della tabella 2
+SIMBOLO
+TIPO DI DATI
+DEFINIZIONE
+{ALPHANUM-n}
+Fino a n caratteri alfanumerici
+Testo libero.
+{CFI_CODE}
+6 caratteri
+Codice CFI secondo l'ISO 10962.
+{COUNTRYCODE_2}
+2 caratteri alfanumerici
+Codice del paese a 2 lettere in base ai codici paese alpha-2 dell'ISO 3166-1.
+{CURRENCYCODE_3}
+3 caratteri alfanumerici
+Codice della valuta a 3 lettere secondo i codici valuta di ISO 4217.
+{DATE_TIME_FORMAT}
+Formato della data e dell'ora secondo ISO 8601
+Data e ora nel formato seguente:
+AAAA-MM-GGThh:mm:ss.ddddddZ.
+—
+«AAAÀ indica l'anno;
+—
+'MM» indica il mese;
+—
+«GG» indica il giorno;
+—
+«T» indica che va inserita la lettera «T» ;
+—
+«hh» indica l'ora;
+—
+«mm» indica il minuto;
+—
+«ss.dddddd» indica il secondo e la relativa frazione;
+—
+«Z» indica l'ora UTC.
+Le date e ore sono indicate al tempo universale coordinato (UTC).
+{DATEFORMAT}
+Formato della data secondo ISO 8601
+Le date sono indicate con il formato seguente:
+AAAA-MM-GG.
+{DECIMAL-n/m}
+Numero decimale fino a n cifre in totale, di cui fino a m possono essere decimali
+Campo numerico per valori sia positivi sia negativi.
+—
+il simbolo del decimale è «.» (punto);
+—
+i numeri negativi sono preceduti dal segno «-» (meno);
+I valori sono arrotondati e non troncati.
+{INDEX}
+4 caratteri alfabetici
+«EONÀ» – EONIA
+«EONS» — EONIA SWAP
+«EURÌ» — EURIBOR
+«EUUS» — EURODOLLAR
+«EUCH» — EuroSwiss
+«GCFR» — GCF REPO
+«ISDÀ» — ISDAFIX
+«LIBÌ» — LIBID
+«LIBO» — LIBOR
+«MAAÀ» — Muni AAA
+«PFAN» — Pfandbriefe
+«TIBO» — TIBOR
+«STBO» — STIBOR
+«BBSW» — BBSW
+«JIBÀ — JIBAR»
+«BUBO» — BUBOR
+«CDOR» — CDOR
+«CIBO» — CIBOR
+«MOSP» — MOSPRIM
+«NIBO» — NIBOR
+«PRBO» — PRIBOR
+«TLBO» — TELBOR
+«WIBO» — WIBOR
+«TREÀ» — Treasury
+«SWAP» — SWAP
+«FUSW» — Future SWAP
+{INTEGER-n}
+Numero intero fino a n cifre in totale
+Campo numerico per valori interi sia positivi sia negativi.
+{ISIN}
+12 caratteri alfanumerici
+Codice ISIN secondo ISO 6166.
+{LEI}
+20 caratteri alfanumerici
+Identificativo del soggetto giuridico secondo ISO 17442.
+{MIC}
+4 caratteri alfanumerici
+Identificativo del mercato secondo ISO 10383.
+{NATIONAL_ID}
+35 caratteri alfanumerici
+L'identificativo è derivato conformemente all'articolo 6 e alla tabella dell'allegato II.
+Tabella 2
+Informazioni da comunicare nelle segnalazioni delle operazioni
+Tutti i campi sono obbligatori, salvo indicazione contraria.
+N.
+CAMPO
+CONTENUTO
+FORMATO E STANDARD PER LE SEGNALAZIONI
+1
+Status della segnalazione
+Indica se si tratta della segnalazione di una nuova operazione (new) o di un annullamento (cancellation).
+Replace: «NEWT» — New
+Replace: «CANC» — Cancellation
+2
+Numero di riferimento dell'operazione
+Numero di identificazione unico caratteristico dell'impresa esecutiva per la segnalazione di ciascuna operazione.
+Ove, a norma dell'articolo 26, paragrafo 5, del regolamento (UE) n. 600/2014, una sede di negoziazione presenti la segnalazione di un'operazione per conto di un'impresa che non è soggetta al
+regolamento (UE) n. 600/2014, la sede di negoziazione compila questo campo con un numero che è stato generato all'interno della sede di negoziazione e che è unico per la segnalazione di ciascuna
+operazione presentata dalla sede di negoziazione.
+{ALPHANUM-52}
+3
+Codice identificativo dell'operazione della sede di negoziazione
+Numero generato dalle sedi di negoziazione e divulgato alla parte acquirente e alla parte venditrice a norma dell'articolo 12 del regolamento delegato (UE) 2017/580 della Commissione ( 1 ) .
+È necessario compilare questo campo solo per la parte relativa al mercato di un'operazione eseguita in una sede di negoziazione.
+{ALPHANUM-52}
+4
+Codice identificativo dell'entità esecutiva
+Codice utilizzato per identificare l'entità che esegue l'operazione.
+{LEI}
+5
+Impresa di investimento disciplinata dalla direttiva 2014/65/UE
+Indica se l'entità identificata nel campo 4 è un'impresa di investimento disciplinata dall'articolo 4, paragrafo 1, della direttiva 2014/65/UE.
+Replace: «true» - sì
+Replace: «false» - no
+6
+Codice identificativo dell'entità presentatrice
+Codice utilizzato per identificare l'entità che presenta la segnalazione dell'operazione all'autorità competente a norma dell'articolo 26, paragrafo 7, del regolamento (UE) n. 600/2014.
+Se l'impresa esecutiva presenta la segnalazione direttamente all'autorità competente, il campo è compilato con il LEI dell'impresa esecutiva (se l'impresa esecutiva è un soggetto giuridico).
+Se la segnalazione è presentata da una sede di negoziazione, il campo è compilato con il LEI del gestore della sede di negoziazione.
+Se la segnalazione è presentata da un meccanismo di segnalazione autorizzato (ARM), il campo è compilato con il LEI dell'ARM.
+{LEI}
+Informazioni sul compratore
+—
+Per i conti congiunti i campi da 7 a 11 sono ripetuti per ciascun compratore.
+—
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, i campi da 7 a 15 sono compilati dall'impresa ricevente nella sua segnalazione
+con le informazioni pervenute dall'impresa trasmittente.
+—
+Se la trasmissione riguarda un ordine trasmesso che non ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, l'impresa ricevente tratta l'impresa trasmittente come compratore.
+7
+Codice identificativo del compratore
+Codice utilizzato per identificare il compratore dello strumento finanziario.
+Se il compratore è un soggetto giuridico, si deve utilizzare il codice LEI del compratore.
+Se il compratore non è un soggetto giuridico, si deve utilizzare l'identificativo specificato all'articolo 6.
+Se l'operazione è stata eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata situata al di fuori dell'Unione che si avvale di una controparte centrale (CCP) e se
+l'identità del compratore non è divulgata, si deve utilizzare il codice LEI della CCP.
+Se l'operazione è stata eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata situata al di fuori dell'Unione che non si avvale di una CCP e se l'identità del compratore
+non è divulgata, si deve utilizzare il codice MIC della sede di negoziazione o della piattaforma di negoziazione organizzata situata al di fuori dell'Unione.
+Se il compratore è un'impresa di investimento che agisce come internalizzatore sistematico (systematic internaliser — SI), si deve utilizzare il codice LEI dell'SI.
+Replace: «INTC» è utilizzato per indicare un conto cliente aggregato all'interno dell'impresa di investimento per segnalare un trasferimento verso o da tale conto con un'assegnazione associata al o ai
+singoli clienti da o verso tale conto.
+Nel caso delle opzioni e swaption, il compratore è la controparte che detiene il diritto di esercitare l'opzione e il venditore è la controparte che vende l'opzione e riceve un premio.
+Nel caso dei future e forward diversi da quelli connessi alle valute, il compratore è la controparte che acquista lo strumento e il venditore è la controparte che vende lo strumento.
+Nel caso degli swap su titoli, il compratore è la controparte che si assume il rischio di variazione del prezzo del titolo sottostante e riceve l'importo del titolo. Il venditore è la controparte che
+versa l'importo del titolo.
+Nel caso degli swap connessi a tassi di interesse o indici d'inflazione, il compratore è la controparte che versa il tasso fisso. Il venditore è la controparte che riceve il tasso fisso. Nel caso dei
+basis swap (float-to-float interest rate swap), il compratore è la controparte che versa il differenziale e il venditore è la controparte che riceve il differenziale.
+Nel caso di swap e forward connessi a valute e su tassi di interesse in differenti valute ( cross currency swap ), il compratore è la controparte che riceve la valuta che risulta prima nell'ordine
+alfabetico secondo la norma ISO 4217 e il venditore è la controparte che fornisce tale valuta.
+Nel caso di swap connessi a dividendi, il compratore è la controparte che riceve il controvalore dei dividendi effettivamente versati. Il venditore è la controparte che versa il dividendo e che riceve
+il tasso fisso.
+Nel caso di strumenti finanziari derivati per il trasferimento del rischio di credito ad eccezione delle opzioni e swaption, il compratore è la controparte che acquista la protezione. Il venditore è
+la controparte che vende la protezione.
+Nel caso di contratto derivato connesso a materie prime, il compratore è la controparte che riceve la materia prima segnalata e il venditore è la controparte che fornisce questa materia prima.
+Nel caso di accordi per scambi futuri di tassi di interesse, il compratore è la controparte che versa il tasso fisso e il venditore la controparte che riceve il tasso fisso.
+Per un aumento del nozionale il compratore coincide con l'acquirente dello strumento finanziario nell'operazione iniziale e il venditore coincide con il cedente dello strumento finanziario
+nell'operazione iniziale.
+Per una diminuzione del nozionale il compratore coincide con il cedente dello strumento finanziario nell'operazione iniziale e il venditore coincide con l'acquirente dello strumento finanziario
+nell'operazione iniziale.
+{LEI}
+{MIC}
+{NATIONAL_ID}
+Replace: «INTC»
+Informazioni supplementari
+—
+I campi da 8 a 15 sono applicabili soltanto se il compratore è un cliente
+—
+I campi da 9 a 11 sono applicabili soltanto se il compratore è una persona fisica
+8
+Paese della succursale per il compratore
+Se il compratore è un cliente, questo campo identifica il paese della succursale che ha ricevuto l'ordine dal cliente o che ha preso una decisione di investimento per un cliente nell'ambito di un
+mandato discrezionale conferitole dal cliente, come imposto dall'articolo 14, paragrafo 3.
+Se tale attività non è stata condotta da una succursale, questo campo è compilato con il codice paese dello Stato membro d'origine dell'impresa di investimento o con il codice del paese in cui
+l'impresa di investimento ha stabilito la propria sede centrale o sede legale (nel caso di imprese di paesi terzi).
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, questo campo è compilato con le informazioni pervenute dall'impresa
+trasmittente.
+{COUNTRYCODE_2}
+9
+Compratore — nome(-i)
+Nome(-i) completo(-i) del compratore. In caso di più nomi, tutti devono essere riportati in questo campo, separati da una virgola.
+{ALPHANUM-140}
+10
+Compratore — cognome(-i)
+Cognome(-i) completo(-i) del compratore. In caso di più cognomi, tutti devono essere riportati in questo campo, separati da una virgola.
+{ALPHANUM-140}
+11
+Compratore — data di nascita
+Data di nascita del compratore.
+{DATEFORMAT}
+Entità con potere decisionale per il compratore
+—
+I campi da 12 a 15 sono applicabili soltanto se l'entità con potere decisionale agisce nell'ambito di una procura a rappresentare
+12
+Codice dell'entità con potere decisionale per il compratore
+Codice utilizzato per identificare la persona che prende la decisione di acquistare lo strumento finanziario.
+Se la decisione è presa da un'impresa di investimento, questo campo è compilato con l'identità dell'impresa di investimento piuttosto che della persona che prende la decisione di investimento.
+Se l'entità con potere decisionale è un soggetto giuridico, si deve utilizzare il codice LEI dell'entità.
+Se l'entità con potere decisionale non è un soggetto giuridico, si deve utilizzare l'identificativo specificato all'articolo 6.
+{LEI}
+{NATIONAL_ID}
+Informazioni sull'entità con potere decisionale per il compratore
+—
+I campi da 13 a 15 sono applicabili soltanto se l'entità con potere decisionale è una persona fisica
+13
+Entità con potere decisionale di acquisto — nome(-i)
+Nome(-i) completo(-i) dell'entità con potere decisionale per il compratore. In caso di più nomi, tutti devono essere riportati in questo campo, separati da una virgola.
+{ALPHANUM-140}
+14
+Entità con potere decisionale di acquisto — cognome(-i)
+Cognome(-i) completo(-i) dell'entità con potere decisionale per il compratore. In caso di più cognomi, tutti devono essere riportati in questo campo, separati da una virgola.
+{ALPHANUM-140}
+15
+Entità con potere decisionale di acquisto — data di nascita
+Data di nascita dell'entità con potere decisionale per il compratore.
+{DATEFORMAT}
+Informazioni sul venditore e relativa entità con potere decisionale
+—
+Per i conti congiunti i campi da 16 a 20 sono ripetuti per ciascun venditore.
+—
+Se l'operazione per un venditore riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, i campi da 16 a 24 sono compilati dall'impresa ricevente nella
+sua segnalazione con le informazioni pervenute dall'impresa trasmittente.
+—
+Se la trasmissione riguarda un ordine trasmesso che non ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, l'impresa ricevente tratta l'impresa trasmittente come venditore.
+16
+Codice identificativo del venditore
+Codice utilizzato per identificare chi cede lo strumento finanziario.
+Se il cedente è un soggetto giuridico, si deve utilizzare il codice LEI del cedente.
+Se il cedente non è un soggetto giuridico, si deve utilizzare l'identificativo specificato all'articolo 6.
+Se l'operazione è stata eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata situata al di fuori dell'Unione che si avvale di una CCP e se l'identità del cedente non è
+divulgata, si deve utilizzare il codice LEI della CCP.
+Se l'operazione è stata eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata situata al di fuori dell'Unione che non si avvale di una CCP e se l'identità del cedente non
+è divulgata, si deve utilizzare il codice MIC della sede di negoziazione o della piattaforma di negoziazione organizzata situata al di fuori dell'Unione.
+Se il cedente è un'impresa di investimento che agisce come SI, si deve utilizzare il codice LEI dell'SI.
+Replace: «INTC» è utilizzato per indicare un conto cliente aggregato all'interno dell'impresa di investimento per segnalare un trasferimento verso o da tale conto con un'assegnazione associata al o ai
+singoli clienti da o verso tale conto.
+Nel caso delle opzioni e swaption, il compratore è la controparte che detiene il diritto di esercitare l'opzione e il venditore è la controparte che vende l'opzione e riceve un premio.
+Nel caso dei future e forward diversi da quelli connessi alle valute, il compratore è la controparte che acquista lo strumento e il venditore è la controparte che vende lo strumento.
+Nel caso degli swap su titoli, il compratore è la controparte che si assume il rischio di variazione del prezzo del titolo sottostante e riceve l'importo del titolo. Il venditore è la controparte che
+versa l'importo del titolo.
+Nel caso degli swap connessi a tassi di interesse o indici d'inflazione, il compratore è la controparte che versa il tasso fisso. Il venditore è la controparte che riceve il tasso fisso. Nel caso dei
+basis swap (float-to-float interest rate swap), il compratore è la controparte che versa il differenziale e il venditore è la controparte che riceve il differenziale.
+Nel caso di swap e forward connessi a valute e su tassi di interesse in differenti valute ( cross currency swap ), il compratore è la controparte che riceve la valuta che risulta prima nell'ordine
+alfabetico secondo la norma ISO 4217 e il venditore è la controparte che fornisce tale valuta.
+Nel caso di swap connessi a dividendi, il compratore è la controparte che riceve il controvalore dei dividendi effettivamente versati. Il venditore è la controparte che versa il dividendo e che riceve
+il tasso fisso.
+Nel caso di strumenti finanziari derivati per il trasferimento del rischio di credito ad eccezione delle opzioni e swaption, il compratore è la controparte che acquista la protezione. Il venditore è
+la controparte che vende la protezione.
+Nel caso di contratti derivati connessi a materie prime, il compratore è la controparte che riceve la materia prima segnalata e il venditore è la controparte che fornisce questa materia prima.
+Nel caso di accordi per scambi futuri di tassi di interesse, il compratore è la controparte che versa il tasso fisso e il venditore la controparte che riceve il tasso fisso.
+Per un aumento del nozionale il venditore coincide con il cedente dell'operazione iniziale.
+Per una riduzione del nozionale il venditore coincide con l'acquirente dello strumento finanziario nell'operazione iniziale.
+{LEI}
+{MIC}
+{NATIONAL_ID}
+Replace: «INTC»
+17-24
+I campi da 17 a 24 rispecchiano per il venditore i campi da 8 a 15 relativi al compratore (informazioni relative al compratore e relativa entità con potere decisionale).
+Informazioni relative alla trasmissione
+—
+I campi 26 e 27 sono compilati per le segnalazioni delle operazioni da parte di un'impresa ricevente solo se sono state rispettate tutte le condizioni per la trasmissione di cui all'articolo 4.
+—
+Se un'impresa agisce sia come impresa ricevente sia come impresa trasmittente, compila il campo 25 per indicare che è un'impresa trasmittente e compila i campi 26 e 27 dal punto di vista di impresa
+ricevente.
+25
+Indicatore di trasmissione dell'ordine
+Replace: «true» (vero) è indicato dall'impresa trasmittente nella sua segnalazione nei casi in cui non sono soddisfatte le condizioni per la trasmissione specificate all'articolo 4.
+Replace: «false» (falso) — in tutti gli altri casi
+Replace: «true»
+Replace: «false»
+26
+Codice identificativo dell'impresa trasmittente per il compratore
+Codice utilizzato per identificare l'impresa che trasmette l'ordine.
+Questo campo è compilato dall'impresa ricevente nella sua segnalazione con il codice identificativo fornito dall'impresa trasmittente.
+{LEI}
+27
+Codice identificativo dell'impresa trasmittente per il venditore
+Codice utilizzato per identificare l'impresa che trasmette l'ordine.
+Questo campo è compilato dall'impresa ricevente nella sua segnalazione con il codice identificativo fornito dall'impresa trasmittente.
+{LEI}
+Informazioni sull'operazione
+28
+Data e ora di negoziazione
+Data e ora di esecuzione dell'operazione.
+Per le operazioni eseguite in una sede di negoziazione, il livello di granularità deve essere conforme ai requisiti stabiliti all'articolo 3 del documento delegato (UE) 2017/574 della Commissione ( 2
+) .
+Per le operazioni non eseguite in una sede di negoziazione, la data e l'ora sono il momento in cui le parti convengono il contenuto dei campi seguenti: quantitativo, prezzo, valute nei campi 31, 34 e
+44, codice identificativo dello strumento, classificazione dello strumento e codice dello strumento sottostante, se del caso. Per le operazioni non eseguite in una sede di negoziazione l'ora indicata
+deve essere approssimata almeno al secondo.
+Se l'operazione deriva da un ordine trasmesso a terzi dall'impresa esecutiva per conto di un cliente laddove le condizioni per la trasmissione stabilite all'articolo 4 non sono state soddisfatte, va
+indicata la data e l'ora dell'operazione invece dell'ora di trasmissione dell'ordine.
+{DATE_TIME_FORMAT}
+29
+Capacità di negoziazione
+Indica se l'operazione deriva dallo svolgimento da parte dell'impresa esecutiva di attività di negoziazione matched principal ai sensi dell'articolo 4, paragrafo 1, punto 38, della direttiva
+2014/65/UE o di negoziazione per conto proprio ai sensi dell'articolo 4, paragrafo 1, punto 6, della direttiva 2014/65/UE.
+Se l'operazione non deriva dallo svolgimento da parte dell'impresa esecutiva di attività di negoziazione matched principal o di negoziazione per conto proprio (dealing on own account), si deve
+indicare in questo campo che l'operazione è stata eseguita in altra veste (any other capacity).
+Replace: «DEAL» — Dealing on own account
+Replace: «MTCH» — Matched principal
+Replace: «AOTC» — Any other capacity
+30
+Quantitativo
+Il numero di unità dello strumento finanziario, o il numero di contratti derivati dell'operazione.
+Il valore nominale o monetario dello strumento finanziario.
+Per le scommesse sul differenziale (spread bets), il quantitativo è il valore monetario puntato per variazione di punto dello strumento finanziario sottostante.
+Per i credit default swap, il quantitativo è l'importo nozionale per il quale la protezione è acquisita o ceduta.
+Per l'aumento o la diminuzione dell'importo nozionale di contratti derivati, il numero rispecchia il valore assoluto della variazione ed è espresso come numero positivo.
+Le informazioni inserite in questo campo devono essere in linea con i valori indicati nei campi 33 e 46.
+{DECIMAL-18/17} se il quantitativo è espresso in numero di unità.
+{DECIMAL-18/5} se il quantitativo è espresso in valore monetario o nominale.
+31
+Valuta del quantitativo
+Valuta in cui è espresso il quantitativo.
+Applicabile solo se il quantitativo è espresso in valore nominale o monetario.
+{CURRENCYCODE_3}
+32
+Aumento/diminuzione del nozionale del derivato
+Indica se l'operazione è un aumento (increase) o una diminuzione (decrease) del nozionale di un contratto derivato.
+Il campo è pertinente solo in caso di variazione del nozionale di un contratto derivato.
+Replace: «INCR» — Increase
+Replace: «DECR» — Decrease
+33
+Prezzo
+Prezzo negoziato dell'operazione, esclusi, laddove applicabili, commissioni e interessi maturati.
+Nel caso di contratti di opzione, è il premio del contratto derivato per sottostante o punto dell'indice.
+Nel caso di scommesse sul differenziale (spread bets) è il prezzo di riferimento dello strumento sottostante.
+Per i credit default swap (CDS) è la cedola in punti base.
+Quando il prezzo è riportato in termini monetari, deve essere indicato nell'unità monetaria principale.
+Se il prezzo non è disponibile ma in procinto di esserlo, indicare Replace: «PNDG» .
+Se il prezzo non è applicabile, indicare Replace: «NOAP» . Le informazioni inserite in questo campo devono essere in linea con i valori indicati nei campi 30 e 46.
+Le informazioni inserite in questo campo devono essere in linea con i valori indicati nei campi 30 e 46.
+{DECIMAL-18/13} se il prezzo è espresso in valore monetario.
+{DECIMAL-11/10} se il prezzo è espresso in percentuale o rendimento.
+{DECIMAL-18/17} se il prezzo è espresso in punti base.
+Replace: «PNDG» se il prezzo non è disponibile.
+Replace: «NOAP» se il prezzo non è applicabile.
+34
+Valuta del prezzo
+Valuta nella quale è espresso il prezzo (applicabile se il prezzo è espresso in valore monetario).
+{CURRENCYCODE_3}
+35
+Importo netto
+L'importo netto dell'operazione è l'importo in denaro versato da chi compra lo strumento di debito al regolamento dell'operazione. Tale importo in denaro è pari a: (prezzo clean * valore
+nominale)+cedole maturate. Di conseguenza, l'importo netto dell'operazione esclude qualsiasi commissione od onorario a carico di chi compra lo strumento di debito.
+Il campo è pertinente solo quando lo strumento finanziario è un debito.
+{DECIMAL-18/5}
+36
+Sede
+Identifica la sede in cui è stata eseguita l'operazione.
+Utilizzare il MIC di segmento secondo ISO 10383 per le operazioni eseguite in una sede di negoziazione, un internalizzatore sistematico (SI) o una piattaforma di negoziazione organizzata situati al di
+fuori dell'Unione. Se il MIC di segmento non esiste, utilizzare il MIC operativo.
+Utilizzare il codice MIC Replace: «XOFF» per gli strumenti finanziari ammessi alla negoziazione o negoziati in una sede di negoziazione o per i quali è stata presentata una richiesta di ammissione, se
+l'operazione su tale strumento finanziario non è eseguita in una sede di negoziazione, un IS o una piattaforma di negoziazione organizzata situati al di fuori dell'Unione, o se un'impresa di
+investimento non sa che sta negoziando con un'altra impresa di investimento che agisce come SI.
+Utilizzare il codice MIC Replace: «XXXX» per gli strumenti finanziari che non sono ammessi alla negoziazione o non negoziati in una sede di negoziazione o per i quali non è stata presentata una
+richiesta di ammissione e che non sono negoziati su una piattaforma di negoziazione organizzata al di fuori dell'Unione ma il cui sottostante è ammesso alla negoziazione o è negoziato in una sede di
+negoziazione.
+{MIC}
+37
+Paese in cui la succursale è membro
+Codice utilizzato per identificare il paese di una succursale dell'impresa di investimento di cui è stata utilizzato lo status di membro del mercato per eseguire l'operazione.
+Se non è stata utilizzato lo status di membro del mercato di una succursale, questo campo è compilato con il codice paese dello Stato membro d'origine dell'impresa di investimento o con il codice del
+paese in cui l'impresa di investimento ha stabilito la propria sede centrale o sede legale (nel caso di imprese di paesi terzi).
+Questo campo è compilato solo per la parte relativa al mercato di un'operazione eseguita in una sede di negoziazione o una piattaforma di negoziazione organizzata al di fuori dell'Unione.
+{COUNTRYCODE_2}
+38
+Pagamento anticipato
+Valore monetario di eventuali pagamenti anticipati ricevuti o versati dal venditore.
+Nei casi in cui il venditore riceve il pagamento anticipato, il valore riportato è positivo. Nei casi in cui il venditore versa il pagamento anticipato, il valore riportato è negativo.
+{DECIMAL-18/5}
+39
+Valuta del pagamento anticipato
+Valuta del pagamento anticipato.
+{CURRENCYCODE_3}
+40
+Identificativo della componente di negoziazione complessa
+Identificativo, interno all'impresa che effettua la segnalazione, di tutte le segnalazioni riguardanti la stessa esecuzione di una combinazione di strumenti finanziari conformemente all'articolo 12.
+Il codice deve essere unico a livello dell'impresa per il gruppo di segnalazioni relative all'esecuzione.
+Il campo è pertinente solo quando si applicano le condizioni specificate all'articolo 12.
+{ALPHANUM-35}
+Informazioni sullo strumento
+41
+Codice identificativo dello strumento
+Codice usato per identificare lo strumento finanziario.
+Il campo è pertinente per gli strumenti finanziari per i quali è stata presentata una richiesta di ammissione alla negoziazione, che sono ammessi alla negoziazione o che sono negoziati in una sede di
+negoziazione o un internalizzatore sistematico. È inoltre pertinente per gli strumenti finanziari che hanno un codice ISIN e sono negoziati su una piattaforma di negoziazione organizzata al di fuori
+dell'Unione laddove il sottostante è uno strumento finanziario negoziato in una sede di negoziazione.
+{ISIN}
+I campi da 42 a 56 non sono applicabili se:
+le operazioni sono eseguite in una sede di negoziazione o con un'impresa di investimento che agisce come SI; oppure
+il campo 41 è compilato con un codice ISIN figurante sull'elenco di dati di riferimento dell'ESMA
+42
+Nome completo dello strumento
+Nome completo dello strumento finanziario.
+{ALPHANUM-350}
+43
+Classificazione dello strumento
+Tassonomia usata per classificare lo strumento finanziario.
+Indicare un codice CFI esatto e completo.
+{CFI_CODE}
+44
+Valuta nozionale 1
+Valuta in cui è denominato il nozionale.
+Per i contratti derivati su tassi di interesse o su valute corrisponde alla valuta nozionale della gamba 1 o alla valuta 1 della coppia.
+Per le swaption con swap sottostante monovaluta corrisponde alla valuta nozionale dello swap sottostante. Per le swaption con sottostante multivaluta corrisponde alla valuta nozionale della gamba 1
+dello swap.
+{CURRENCYCODE_3}
+45
+Valuta nozionale 2
+Per gli swap multivaluta o su tassi di interesse in differenti valute ( cross currency swap ), la valuta in cui è denominata la gamba 2 del contratto.
+Per le swaption in cui lo swap sottostante è multivaluta, la valuta in cui è denominata la gamba 2 dello swap.
+{CURRENCYCODE_3}
+46
+Moltiplicatore del prezzo
+Numero di unità dello strumento sottostante rappresentate da un unico contratto derivato.
+Valore monetario oggetto di un singolo contratto swap laddove il campo «Quantitativo» indica il numero di contratti swap dell'operazione. Per i future o le opzioni su indici, l'importo per punto
+dell'indice.
+Per le spreadbet, la variazione di prezzo dello strumento sottostante su cui si basano.
+Le informazioni inserite in questo campo devono essere in linea con i valori indicati nei campi 30 e 33.
+{DECIMAL-18/17}
+47
+Codice dello strumento sottostante
+Codice ISIN dello strumento sottostante.
+Per gli ADR, GDR e strumenti analoghi, il codice ISIN dello strumento finanziario su cui si basano.
+Per le obbligazioni convertibili, il codice ISIN dello strumento in cui l'obbligazione può essere convertita.
+Per i derivati o altri strumenti con sottostante, il codice ISIN dello strumento sottostante, allorché questo è ammesso alla negoziazione o negoziato in una sede di negoziazione. Se il sottostante è
+un dividendo azionario, il codice ISIN dell'azione che dà diritto al dividendo sottostante.
+Per i credit default swap, indicare il codice ISIN dell'obbligazione di riferimento.
+Se il sottostante è un indice che ha un codice ISIN, indicare il codice ISIN dell'indice.
+Se il sottostante è un paniere, indicare il codice ISIN di ciascuno dei componenti del paniere ammesso alla negoziazione o negoziato in una sede di negoziazione. Il campo 47 è compilato e ripetuto più
+volte fino a elencazione completa di tutti gli strumenti del paniere che devono essere segnalati.
+{ISIN}
+48
+Nome dell'indice sottostante
+Se il sottostante è un indice, il nome dell'indice.
+{INDEX}
+oppure
+ALPHANUM-25 — se il nome dell'indice non è compreso nell'elenco {INDEX}
+49
+Durata dell'indice sottostante
+Se il sottostante è un indice, indicare la durata dell'indice.
+{INTEGER-3}+Replace: «DAYS» — giorni
+{INTEGER-3}+Replace: «WEEK» — settimane
+{INTEGER-3}+Replace: «MNTH» — mesi
+{INTEGER-3}+Replace: «YEAR» — anni
+50
+Tipo di opzione
+Indica se il contratto derivato è call (diritto di acquistare una determinata attività sottostante) o put (diritto di vendere una determinata attività sottostante) o se al momento dell'esecuzione non
+è possibile stabilirlo.
+Per le swaption:
+—
+Replace: «PUTO» per le swaption «receiver», in cui il compratore ha diritto di entrare nello swap ricevendo un tasso fisso;
+—
+-Replace: «Call» per le swaption «payer», in cui il compratore ha diritto di entrare nello swap pagando un tasso fisso.
+Per le opzioni cap e le opzioni floor:
+—
+-Replace: «PUTO» per la floor;
+—
+-Replace: «Call» per la cap.
+Il campo è pertinente solo per i derivati che sono opzioni o warrant.
+Replace: «PUTO» — Put
+Replace: «CALL» — Call
+Replace: «OTHR» — se non è possibile stabilire se si tratta di call o di put
+51
+Prezzo di esercizio
+Prezzo prestabilito al quale il detentore dovrà acquistare o vendere lo strumento sottostante o indicazione del fatto che il prezzo non può essere determinato al momento dell'esecuzione.
+Il campo è pertinente solo per le opzioni o warrant, laddove il prezzo di esercizio può essere determinato al momento dell'esecuzione.
+Se il prezzo non è disponibile ma in procinto di esserlo, indicare Replace: «PNDG» .
+Lasciare in bianco se il prezzo di esercizio non è applicabile.
+{DECIMAL-18/13} se il prezzo è espresso in valore monetario.
+{DECIMAL-11/10} se il prezzo è espresso in percentuale o rendimento.
+{DECIMAL-18/17} se il prezzo è espresso in punti base.
+Replace: «PNDG» se il prezzo non è disponibile.
+52
+Valuta del prezzo di esercizio
+Valuta del prezzo di esercizio.
+{CURRENCYCODE_3}
+53
+Stile di esercizio dell'opzione
+Indica se l'opzione può essere esercitata soltanto ad una data fissa (stile europeo e stile asiatico), ad una serie di date prestabilite (stile bermudiano) o in qualsiasi momento nel corso del periodo
+di validità del contratto (stile americano).
+Il campo è pertinente solo per opzioni, warrant e certificati di diritto.
+Replace: «EURO» — europeo
+Replace: «AMER» — americano
+Replace: «ASIÀ» — asiatico
+«BERM» — bermudiano
+Replace: «OTHR» — altro
+54
+Data di scadenza ( maturity date )
+Data di scadenza dello strumento finanziario.
+Il campo è pertinente solo per gli strumenti di debito con scadenza definita.
+{DATEFORMAT}
+55
+Data di scadenza ( expiry date )
+Data di scadenza dello strumento finanziario. Il campo è pertinente solo per i derivati con data di scadenza definita.
+{DATEFORMAT}
+56
+Tipo di consegna
+Indica se l'operazione è regolata fisicamente (physically settled) o in contanti (cash settled).
+Se non è possibile stabilire il tipo di consegna al momento dell'esecuzione, indicare Replace: «OPTL» .
+Il campo è pertinente solo per i derivati.
+Replace: «PHYS» — Physically settled
+Replace: «CASH» — Cash settled
+Replace: «OPTL» — facoltativo per la controparte o quando stabilito da terzi
+Operatore, algoritmi, deroghe e indicatori
+57
+Decisione di investimento all'interno dell'impresa
+Codice utilizzato per identificare la persona o l'algoritmo all'interno dell'impresa di investimento che è responsabile della decisione di investimento.
+Per le persone fisiche si deve utilizzare l'identificativo specificato all'articolo 6.
+Se la decisione di investimento è stata presa da un algoritmo, il campo è compilato conformemente all'articolo 8.
+Il campo è pertinente solo per le decisioni di investimento all'interno dell'impresa.
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, questo campo è compilato dall'impresa ricevente nell'ambito della sua
+segnalazione utilizzando le informazioni pervenute dall'impresa trasmittente.
+{NATIONAL_ID} — Persone fisiche
+{ALPHANUM-50} — Algoritmi
+58
+Paese della succursale che vigila sulla persona responsabile della decisione di investimento
+Codice utilizzato per identificare il paese della succursale dell'impresa di investimento per la persona responsabile della decisione di investimento, conformemente all'articolo 14, paragrafo 3,
+lettera b).
+Se la persona responsabile della decisione di investimento non è stata oggetto di vigilanza da parte di una succursale, questo campo è compilato con il codice paese dello Stato membro d'origine
+dell'impresa di investimento o con il codice del paese in cui l'impresa di investimento ha stabilito la propria sede centrale o sede legale (nel caso di imprese di paesi terzi).
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, questo campo è compilato dall'impresa ricevente nell'ambito della sua
+segnalazione utilizzando le informazioni pervenute dall'impresa trasmittente.
+Il campo non è pertinente se la decisione di investimento è stata presa da un algoritmo.
+{COUNTRYCODE_2}
+59
+Esecuzione all'interno dell'impresa
+Codice utilizzato per identificare la persona o l'algoritmo all'interno dell'impresa di investimento che è responsabile dell'esecuzione.
+Per le persone fisiche si deve utilizzare l'identificativo specificato all'articolo 6. Se l'esecuzione è stata effettuata da un algoritmo, il campo è compilato conformemente all'articolo 9.
+{NATIONAL_ID} — Persone fisiche
+{ALPHANUM-50} — Algoritmi
+60
+Paese della succursale che vigila sulla persona responsabile dell'esecuzione
+Codice utilizzato per identificare il paese della succursale dell'impresa di investimento per la persona responsabile dell'esecuzione dell'operazione, conformemente all'articolo 14, paragrafo 3,
+lettera c).
+Se la persona responsabile non è stata oggetto di vigilanza da parte di una succursale, questo campo è compilato con il codice paese dello Stato membro d'origine dell'impresa di investimento o con il
+codice del paese in cui l'impresa di investimento ha stabilito la propria sede centrale o sede legale (nel caso di imprese di paesi terzi).
+Il campo non è pertinente se l'esecuzione è stata effettuata da un algoritmo.
+{COUNTRYCODE_2}
+61
+Indicatore di deroga
+Indica se l'operazione è stata eseguita nell'ambito di una deroga pre-negoziazione a norma degli articoli 4 e 9 del regolamento (UE) n. 600/2014.
+Per gli strumenti rappresentativi di capitale:
+Replace: «RFPT» = Operazione al prezzo di riferimento
+Replace: «NLIQ» = Operazioni negoziate in strumenti finanziari liquidi
+Replace: «OILQ» = Operazioni negoziate in strumenti finanziari illiquidi
+Replace: «PRIC» = Operazioni negoziate soggette a condizioni diverse dal prezzo corrente di mercato dello strumento rappresentativo di capitale in questione.
+Per gli strumenti non rappresentativi di capitale:
+Replace: «SIZE» = Operazione al di sopra di una dimensione specifica
+Replace: «ILQD» = Operazione su strumento illiquido
+Questo campo è compilato solo per la parte relativa al mercato di un'operazione eseguita nell'ambito di una deroga in una sede di negoziazione.
+Apporre uno o più dei seguenti contrassegni:
+Replace: «RFPT» — Reference price (prezzo di riferimento)
+Replace: «NLIQ» — Negotiated (liquid) (negoziate, strumenti liquidi)
+Replace: «OILQ» — Negotiated (illiquid) (negoziate, strumenti illiquidi)
+Replace: «PRIC» — Negotiated (conditions) (negoziate, condizionate)
+Replace: «SIZE» — Above specified size (al di sopra di una dimensione specifica)
+Replace: «ILQD» — Illiquid instrument (strumento illiquido)
+62
+Indicatore di vendita allo scoperto
+Indica una vendita allo scoperto conclusa da un'impresa di investimento per proprio conto o per conto di un cliente, come descritto all'articolo 11.
+Se un'impresa di investimento esegue un'operazione per conto di un cliente che sta vendendo e l'impresa di investimento, agendo con la massima diligenza possibile, non è in grado di determinare se si
+tratti di un'operazione di vendita allo scoperto, questo campo deve essere compilato con Replace: «UNDÌ».
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4 del presente regolamento, questo campo è compilato dall'impresa ricevente nelle
+sue segnalazioni utilizzando le informazioni pervenute dall'impresa trasmittente.
+Questo campo è pertinente solo quando lo strumento è disciplinato dal regolamento (UE) n. 236/2012 e il venditore è l'impresa di investimento o un suo cliente.
+«SESH» — vendita allo scoperto senza esenzione
+Replace: «SSEX» — vendita allo scoperto con esenzione
+Replace: «SELL» — non vendita allo scoperto
+Replace: «UNDÌ» — informazioni non disponibili
+63
+Indicatore di post-negoziazione OTC
+Indicatore del tipo di operazione a norma dell'articolo 20, paragrafo 3, lettera a), e dell'articolo 21, paragrafo 5, lettera a), del regolamento (UE) n. 600/2014.
+Per tutti gli strumenti:
+«BENC» = Operazioni con parametro di riferimento
+Replace: «ACTX» = Operazioni di tipo agency cross
+Replace: «LRGS» = Operazioni di post-negoziazione di dimensione elevata
+Replace: «ILQD» = Operazione su strumento illiquido
+Replace: «SIZE» = Operazione al di sopra di una dimensione specifica
+Replace: «CANC» = Annullamenti
+Replace: «AMND» = Modifiche.
+Per gli strumenti rappresentativi di capitale:
+Replace: «SDIV» = Operazioni speciali con dividendo
+Replace: «RPRÌ» = Operazioni che hanno ricevuto un miglioramento del prezzo
+«DUPL» = Segnalazioni doppie delle operazioni
+Replace: «TNCP» = Operazioni che non contribuiscono al processo di formazione del prezzo ai fini dell'articolo 23 del regolamento (UE) n. 600/2014.
+Per gli strumenti non rappresentativi di capitale:
+Replace: «TPAC» = Operazione a pacchetto
+Replace: «XFPH» = Operazione con scambio di sottostante fisico
+Apporre uno o più dei seguenti contrassegni:
+Replace: «BENC» — Benchmark (parametro di riferimento)
+Replace: «ACTX» — Agency cross
+Replace: «LRGS» — Large in scale (di dimensione elevata)
+Replace: «ILQD» — Illiquid instrument (strumento illiquido)
+Replace: «SIZE» — Above specified size (al di sopra di una dimensione specifica)
+Replace: «CANC» — Cancellations (annullamenti)
+Replace: «AMND» — Amendments (modifiche)
+Replace: «SDIV» — Special dividend (speciale con dividendo)
+Replace: «RPRÌ» — Price improvement (miglioramento del prezzo)
+«DUPL» — Duplicative (doppie)
+Replace: «TNCP» — Not contributing to the price discovery process (non contribuisce al processo di formazione del prezzo)
+Replace: «TPAC» — Package (pacchetto)
+Replace: «XFPH» — Exchange for Physical (scambio di sottostante fisico)
+64
+Indicatore di derivato su merci
+Indica se l'operazione riduce il rischio in modo oggettivamente misurabile conformemente all'articolo 57 della direttiva 2014/65/UE.
+Se l'operazione riguarda un ordine trasmesso che ha soddisfatto le condizioni per la trasmissione di cui all'articolo 4, questo campo è compilato dall'impresa ricevente nelle sue segnalazioni
+utilizzando le informazioni pervenute dall'impresa trasmittente. Questo campo è pertinente solo per le operazioni su derivati su merci.
+Replace: «true» - sì
+Replace: «false» - no
+65
+Indicatore di operazione di finanziamento tramite titoli
+Indicare Replace: «true» se l'operazione rientra nell'ambito di attività ma è esonerata dalla segnalazione ai sensi del regolamento (UE) 2015/2365.
+Replace: «false» in caso contrario.
+Replace: «true» - sì
+Replace: «false» - no
+( 1 ) Regolamento delegato (UE) 2017/580 della Commissione, del 24 giugno 2016, che integra il regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche
+di regolamentazione inerenti alla conservazione dei dati pertinenti agli ordini relativi a strumenti finanziari (cfr. pag. 193 della presente Gazzetta ufficiale).
+( 2 ) Regolamento delegato (UE) 2017/574 della Commissione, del 7 giugno 2016, che integra la direttiva 2014/65/UE del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di
+regolamentazione relative al grado di precisione degli orologi (cfr. pag. 148 della presente Gazzetta ufficiale).
+
+=== K318 | [Allegato II] Identificativi nazionali del cliente da utilizzare nelle segnalazioni delle operazioni per le persone fisiche
+ALLEGATO II
+Identificativi nazionali del cliente da utilizzare nelle segnalazioni delle operazioni per le persone fisiche
+Codice alpha-2 dell'ISO3166-1
+Nome del paese
+1 o identificativo in ordine di priorità
+2 o identificativo in ordine di priorità
+3 o identificativo in ordine di priorità
+AT
+Austria
+CONCAT
+BE
+Belgio
+Numero nazionale belga
+(Numéro de registre national — Rijksregisternummer)
+CONCAT
+BG
+Bulgaria
+Numero personale bulgaro
+CONCAT
+CY
+Cipro
+Numero di passaporto nazionale
+CONCAT
+CZ
+Repubblica ceca
+Numero di identificazione nazionale
+(Rodné číslo)
+Numero di passaporto
+CONCAT
+DE
+Germania
+CONCAT
+DK
+Danimarca
+Codice d'identità personale
+codice di 10 caratteri alfanumerici GGMMAAXXXX
+CONCAT
+EE
+Estonia
+Codice di identificazione personale estone
+(Isikukood)
+ES
+Spagna
+Numero di identificazione fiscale
+(Código de identificación fiscal)
+FI
+Finlandia
+Codice d'identità personale
+CONCAT
+FR
+Francia
+CONCAT
+GB
+Regno Unito
+Numero di assicurazione nazionale britannico (UK National Insurance number)
+CONCAT
+GR
+Grecia
+«10 DSS digit investor share»
+CONCAT
+HR
+Croazia
+Numero di identificazione personale
+(OIB — Osobni identifikacijski broj)
+CONCAT
+HU
+Ungheria
+CONCAT
+IE
+Irlanda
+CONCAT
+IS
+Islanda
+Codice d'identità personale (Kennitala)
+IT
+Italia
+Codice fiscale
+(Codice fiscale)
+LI
+Liechtenstein
+Numero di passaporto nazionale
+Numero della carta d'identità nazionale
+CONCAT
+LT
+Lituania
+Codice personale
+(Asmens kodas)
+Numero di passaporto nazionale
+CONCAT
+LU
+Lussemburgo
+CONCAT
+LV
+Lettonia
+Codice personale
+(Personas kods)
+CONCAT
+MT
+Malta
+Numero di identificazione nazionale
+Numero di passaporto nazionale
+NL
+Paesi Bassi
+Numero di passaporto nazionale
+Numero della carta d'identità nazionale
+CONCAT
+NO
+Norvegia
+Identificativo personale a 11 cifre
+(Foedselsnummer)
+CONCAT
+PL
+Polonia
+Numero di identificazione nazionale
+(PESEL)
+Numero fiscale
+(Numer identyfikacji podatkowej)
+PT
+Portogallo
+Numero fiscale
+(Número de Identificação Fiscal)
+Numero di passaporto nazionale
+CONCAT
+RO
+Romania
+Numero di identificazione nazionale
+(Cod Numeric Personal)
+Numero di passaporto nazionale
+CONCAT
+SE
+Svezia
+Numero d'identità personale
+CONCAT
+SI
+Slovenia
+Numero di identificazione personale
+(EMŠO: Enotna Matična Številka Občana)
+CONCAT
+SK
+Slovacchia
+Numero personale
+(Rodné číslo)
+Numero di passaporto nazionale
+CONCAT
+Tutti gli altri paesi
+Numero di passaporto nazionale
+CONCAT
+
+
+######## NORMA: Regolamento di esecuzione (UE) 2025/1157 della Commissione, del 12 giugno 2025, che stabilisce norme tecniche di attuazione per l’applicazione del regolamento (  (id UE-32025R1157)
+
+=== K319 | [1] Designazione di un punto di contatto per i richiedenti un’autorizzazione come APA o ARM
+Articolo 1
+Designazione di un punto di contatto per i richiedenti un’autorizzazione come APA o ARM
+L’ESMA e le autorità nazionali competenti designano un punto di contatto per il trattamento di tutte le informazioni ricevute dai richiedenti un’autorizzazione come APA o ARM. L’ESMA e le autorità
+nazionali competenti pubblicano e aggiornano regolarmente sul proprio sito Internet i recapiti del punto di contatto designato.
+
+=== K320 | [2] Modulo di domanda e modulo di comunicazione per i richiedenti un’autorizzazione come APA o ARM e modalità di presentazio
+Articolo 2
+Modulo di domanda e modulo di comunicazione per i richiedenti un’autorizzazione come APA o ARM e modalità di presentazione di tali moduli
+1. Il richiedente un’autorizzazione come APA o ARM fornisce all’ESMA o, se del caso, all’autorità nazionale competente tutte le informazioni di cui all’articolo 27 quinquies del regolamento (UE) n.
+600/2014 compilando il modulo di domanda di cui all’allegato I del presente regolamento.
+2. Il richiedente un’autorizzazione come APA o ARM fornisce all’ESMA o, se del caso, all’autorità nazionale competente le informazioni relative a tutti i membri del suo organo di gestione compilando
+il modulo di comunicazione di cui all’allegato II.
+3. Il richiedente un’autorizzazione come APA o ARM indica chiaramente nella sua domanda a quale obbligo o requisito specifico di cui agli articoli da 27 bis a 27 decies del regolamento (UE) n.
+600/2014 fa riferimento e in quale documento allegato alla domanda sono fornite tali informazioni.
+4. Il richiedente un’autorizzazione come APA o ARM indica nella domanda se i requisiti ed obblighi specifici di cui agli articoli da 27 bis a 27 decies del regolamento (UE) n. 600/2014 o al
+regolamento delegato (UE) 2025/1143 della Commissione ( 7 ) non sono applicabili al servizio di comunicazione dati per cui il richiedente presenta domanda.
+5. L’ESMA e le autorità nazionali competenti indicano nel proprio sito Internet se i moduli di domanda debitamente compilati, le comunicazioni e le relative informazioni supplementari debbano essere
+presentati in formato elettronico.
+
+=== K321 | [3] Conferma del ricevimento di una domanda di autorizzazione come APA o ARM
+Articolo 3
+Conferma del ricevimento di una domanda di autorizzazione come APA o ARM
+Entro 10 giorni lavorativi dal ricevimento della domanda, l’ESMA o, se del caso, l’autorità nazionale competente invia al richiedente un’autorizzazione come APA o ARM, in formato elettronico, un
+avviso di ricevimento che include i recapiti del punto di contatto designato di cui all’articolo 1.
+
+=== K322 | [4] Informazioni supplementari che devono essere fornite dal richiedente un’autorizzazione come APA o ARM
+Articolo 4
+Informazioni supplementari che devono essere fornite dal richiedente un’autorizzazione come APA o ARM
+Su richiesta dell’ESMA o, se del caso, dell’autorità nazionale competente, il richiedente un’autorizzazione come APA o ARM fornisce a tale autorità le informazioni supplementari di cui l’ESMA o, se
+del caso, l’autorità nazionale competente necessita per procedere alla valutazione della domanda di autorizzazione entro cinque giorni lavorativi dal ricevimento di tale richiesta.
+
+=== K323 | [5] Comunicazione delle modifiche concernenti i membri dell’organo di gestione da parte dell’APA o dell’ARM
+Articolo 5
+Comunicazione delle modifiche concernenti i membri dell’organo di gestione da parte dell’APA o dell’ARM
+L’APA o l’ARM fornisce all’ESMA o, se del caso, alla sua autorità nazionale competente informazioni su qualsiasi modifica concernente i membri del suo organo di gestione compilando il modulo di
+comunicazione di cui all’allegato III.
+
+=== K324 | [6] Comunicazione della decisione di rilasciare o rifiutare un’autorizzazione a operare come APA o ARM
+Articolo 6
+Comunicazione della decisione di rilasciare o rifiutare un’autorizzazione a operare come APA o ARM
+L’ESMA o, se del caso, l’autorità nazionale competente informa per via elettronica il richiedente un’autorizzazione come APA o ARM della sua decisione di rilasciare o rifiutare tale autorizzazione
+entro cinque giorni lavorativi dall’adozione di una decisione motivata di cui all’articolo 27 quinquies , paragrafo 3, del regolamento (UE) n. 600/2014.
+CAPO II
+FORMATI STANDARD, MODELLI E PROCEDURE PER L’AUTORIZZAZIONE DI CTP E PER LE RELATIVE COMUNICAZIONI
+
+=== K325 | [7] Designazione di un punto di contatto per i richiedenti un’autorizzazione come CTP
+Articolo 7
+Designazione di un punto di contatto per i richiedenti un’autorizzazione come CTP
+L’ESMA designa un punto di contatto per il trattamento di tutte le informazioni ricevute dai richiedenti un’autorizzazione a gestire un sistema consolidato di pubblicazione, che pubblica e aggiorna
+regolarmente sul proprio sito Internet.
+
+=== K326 | [8] Modulo di domanda e modulo di comunicazione per i richiedenti un’autorizzazione come CTP e modalità di presentazione di 
+Articolo 8
+Modulo di domanda e modulo di comunicazione per i richiedenti un’autorizzazione come CTP e modalità di presentazione di tali moduli
+1. Il richiedente un’autorizzazione come CTP fornisce all’ESMA tutte le informazioni di cui all’articolo 27 quinquies ter, paragrafo 1, del regolamento (UE) n. 600/2014 compilando il modulo di domanda
+di cui all’allegato IV.
+2. Il richiedente un’autorizzazione come CTP fornisce all’ESMA le informazioni relative a tutti i membri del suo organo di gestione compilando il modulo di comunicazione di cui all’allegato V.
+3. Il richiedente un’autorizzazione come CTP indica chiaramente nella sua domanda di autorizzazione a quale requisito od obbligo specifico di cui agli articoli da 27 bis a 27 decies del regolamento
+(UE) n. 600/2014 fa riferimento e in quale documento allegato alla domanda sono fornite tali informazioni.
+4. Il richiedente un’autorizzazione come CTP indica nella domanda se i requisiti ed obblighi specifici di cui agli articoli da 27 bis a 27 decies del regolamento (UE) n. 600/2014 o al regolamento
+delegato (UE) 2025/1143 non sono applicabili al servizio di CTP per cui il richiedente presenta domanda.
+5. L’ESMA indica nel proprio sito Internet se i moduli di domanda debitamente compilati, le comunicazioni e le relative informazioni supplementari debbano essere presentati in formato elettronico.
+
+=== K327 | [9] Conferma del ricevimento di una domanda di autorizzazione come CTP
+Articolo 9
+Conferma del ricevimento di una domanda di autorizzazione come CTP
+Entro 10 giorni lavorativi dal ricevimento della domanda, l’ESMA invia al richiedente un’autorizzazione come CTP, in formato elettronico, un avviso di ricevimento che include i recapiti del punto di
+contatto designato di cui all’articolo 7.
+
+=== K328 | [10] Informazioni supplementari che devono essere fornite dal richiedente un’autorizzazione come CTP
+Articolo 10
+Informazioni supplementari che devono essere fornite dal richiedente un’autorizzazione come CTP
+Su richiesta dell’ESMA, il richiedente un’autorizzazione come CTP fornisce a tale autorità le informazioni supplementari di cui l’ESMA necessita per procedere alla valutazione della domanda di
+autorizzazione entro cinque giorni lavorativi dal ricevimento della richiesta dell’ESMA.
+
+=== K329 | [11] Comunicazione delle modifiche concernenti i membri dell’organo di gestione da parte dei CTP
+Articolo 11
+Comunicazione delle modifiche concernenti i membri dell’organo di gestione da parte dei CTP
+Il CTP fornisce all’ESMA informazioni su qualsiasi modifica concernente i membri del suo organo di gestione compilando il modulo di comunicazione di cui all’allegato VI.
+
+=== K330 | [12] Comunicazione della decisione di rilasciare o rifiutare un’autorizzazione a operare come CTP
+Articolo 12
+Comunicazione della decisione di rilasciare o rifiutare un’autorizzazione a operare come CTP
+L’ESMA informa per via elettronica il richiedente un’autorizzazione come CTP della sua decisione di rilasciare o rifiutare tale autorizzazione entro cinque giorni lavorativi dall’adozione di una
+decisione motivata di cui all’articolo 27 quinquies ter, paragrafo 3, del regolamento (UE) n. 600/2014.
+CAPO III
+DISPOSIZIONI FINALI
+
+=== K333 | [Allegato I] Modulo per l’autorizzazione a fornire servizi di comunicazione dati in qualità di APA o ARM
+ALLEGATO I
+Modulo per l’autorizzazione a fornire servizi di comunicazione dati in qualità di APA o ARM
+Numero di riferimento:
+Data:
+Mittente:
+Nome del richiedente:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso il richiedente)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA/autorità nazionale competente:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA/l’autorità nazionale competente)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 2 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette la domanda di autorizzazione.
+—
+Persona presso il richiedente incaricata della preparazione della domanda:
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Tipo di domanda [ barrare le caselle pertinenti ]:
+☐
+Autorizzazione — Dispositivo di pubblicazione autorizzato (APA)
+☐
+Autorizzazione — Meccanismo di segnalazione autorizzato (ARM)
+CONTENUTO
+Inserire le informazioni di cui al regolamento delegato (UE) 2025/1143 della Commissione. Si prega di riportare tali informazioni nell’apposita sezione o di indicare il riferimento ai pertinenti
+allegati che contengono le informazioni.
+Informazioni sull’organizzazione [articolo 2 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla proprietà [articolo 3 del regolamento delegato (UE) 2025/1143]:
+Informazioni sul governo societario [articolo 4 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui membri dell’organo di gestione [articolo 5 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui controlli interni [articolo 6 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla resilienza operativa digitale [articolo 7 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui conflitti di interesse [articolo 8 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui requisiti organizzativi per l’esternalizzazione [articolo 9 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla gestione delle informazioni incomplete o potenzialmente errate da parte degli APA [articolo 10 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla gestione delle informazioni incomplete o potenzialmente errate da parte degli ARM
+[articolo 11 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla connettività degli ARM [articolo 12 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla pubblicazione in linguaggio macchina [articolo 13 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui dettagli che devono essere pubblicati dall’APA [articolo 14 del regolamento delegato (UE) 2025/1143]:
+Note:
+
+=== K334 | [Allegato II] Modulo per la comunicazione dell’elenco dei membri dell’organo di gestione di un APA o di un ARM
+ALLEGATO II
+Modulo per la comunicazione dell’elenco dei membri dell’organo di gestione di un APA o di un ARM
+Numero di riferimento:
+Data:
+Mittente:
+Nome del richiedente:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso il richiedente)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA/autorità nazionale competente:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA/l’autorità nazionale competente)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 2 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette in allegato la comunicazione relativa ai membri dell’organo di gestione.
+—
+Persona presso il richiedente incaricata della preparazione della comunicazione:
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Elenco dei membri dell’organo di gestione
+Membro 1
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a
+norma dell’articolo 5, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143 della Commissione:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a norma dell’articolo 5, paragrafo 1, lettera
+e), del regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso l’APA o l’ARM:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni, in conformità dell’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+Membro [N]
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a
+norma dell’articolo 5, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a norma dell’articolo 5, paragrafo 1, lettera
+e), del regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso l’APA o l’ARM:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni, in conformità dell’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]

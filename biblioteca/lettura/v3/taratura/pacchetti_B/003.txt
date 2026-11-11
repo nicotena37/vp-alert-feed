@@ -1,0 +1,1812 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Servizi di pagamento nel mercato interno  (id IT-DLGS-2010-11)
+
+=== K109 | [33] Disciplina degli istituti di pagamento
+Art. 33
+ (Disciplina degli istituti di pagamento)
+ 1. Al testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 , dopo il titolo V-bis è inserito il seguente:
+ "TITOLO V -ter
+ ISTITUTI DI PAGAMENTO
+ Art. 114-sexies
+ (Servizi di pagamento)
+ 1. La prestazione di servizi di pagamento è riservata alle banche, agli istituti di moneta elettronica e agli istituti di pagamento.
+ Possono prestare servizi di pagamento, nel rispetto delle disposizioni ad essi applicabili, la Banca centrale europea, le banche centrali comunitarie, lo Stato italiano e gli altri Stati comunitari,
+le pubbliche amministrazioni statali, regionali e locali, nonchè Poste Italiane.
+ Art. 114-septies
+ (Albo degli istituti di pagamento)
+ 1. La Banca d'Italia iscrive in un apposito albo, consultabile pubblicamente, accessibile sul sito internet ed aggiornato periodicamente, gli istituti di pagamento autorizzati in Italia, con
+indicazione della tipologia di servizi che sono autorizzati a prestare e i relativi agenti e succursali nonchè le succursali degli istituti di pagamento comunitari stabiliti nel territorio della
+Repubblica.
+ 2. Gli istituti di pagamento indicano negli atti e nella corrispondenza l'iscrizione nell'albo.
+ 3. Per la prestazione dei servizi di pagamento in Italia gli istituti di pagamento possono avvalersi soltanto degli agenti in attività finanziaria, di cui al decreto legislativo 25 settembre 1999, n.
+374 , nonchè degli altri soggetti autorizzati alla prestazione di servizi di pagamento di cui all'articolo 114—sexies.
+ Art. 114-octies
+ (Attività accessorie esercitabili)
+ 1. Gli istituti di pagamento possono esercitare le seguenti attività accessorie alla prestazione di servizi di pagamento:
+ a) concedere crediti in stretta relazione ai servizi di pagamento prestati e nei limiti e con le modalità stabilite dalla Banca d'Italia;
+ b) prestare servizi operativi o strettamente connessi, come la prestazione di garanzie per l'esecuzione di operazioni di pagamento, servizi di cambio, attività di custodia e registrazione e
+trattamento di dati;
+ c) gestire sistemi di pagamento.
+ 2. La Banca d'Italia detta specifiche disposizioni per la concessione di credito collegata all'emissione o alla gestione di carte di credito.
+ Art. 114-novies
+ (Autorizzazione)
+ 1. La Banca d'Italia autorizza gli istituti di pagamento quando ricorrano le seguenti condizioni:
+ a) sia adottata la forma di società di capitali;
+ b) la sede legale e la direzione generale siano situate nel territorio della Repubblica;
+ c) il capitale versato sia di ammontare non inferiore a quello determinato dalla Banca d'Italia in relazione al tipo di servizio di pagamento prestato;
+ d) venga presentato un programma concernente l'attività iniziale e la struttura organizzativa, unitamente all'atto costitutivo e allo statuto;
+ e) il possesso da parte dei titolari di partecipazioni di cui all'articolo 19, comma 1, e degli esponenti dei requisiti previsti ai sensi degli articoli 25 e 26;
+ f) non sussistano, tra gli istituti di pagamento o i soggetti del gruppo di appartenenza e altri soggetti, stretti legami che ostacolino l'effettivo esercizio delle funzioni di vigilanza.
+ 2. La Banca d'Italia nega l'autorizzazione quando dalla verifica delle condizioni indicate nel comma 1 non risulti garantita la sana e prudente gestione ovvero il regolare funzionamento del sistema
+dei pagamenti.
+ 3. La Banca d'Italia disciplina la procedura di autorizzazione, i casi di revoca e le ipotesi di decadenza quando l'istituto autorizzato non abbia iniziato l'esercizio dell'attività.
+ 4. La Banca d'Italia, al ricorrere delle condizioni di cui al comma 1, può autorizzare alla prestazione di servizi di pagamento soggetti che esercitino altre attività imprenditoriali, a condizione
+che per l'attività relativa ai servizi di pagamento sia costituito un patrimonio destinato con le modalità e agli effetti stabiliti dall'articolo 114–terdecies e siano individuati uno o più soggetti
+responsabili del patrimonio medesimo, ai quali trovano applicazione i requisiti di cui all'articolo 26, richiamati al comma 1, lettera e).
+ Nel caso in cui lo svolgimento di tali attività imprenditoriali rischi di danneggiare la solidità finanziaria dell'istituto di pagamento o l'esercizio effettivo della vigilanza, la Banca d'Italia può
+imporre la costituzione di una società che svolga esclusivamente l'attività di prestazione dei servizi di pagamento.
+ 5. La Banca d'Italia detta disposizioni attuative del presente articolo.
+ Art. 114-decies
+ (Operatività transfrontaliera)
+ 1. Gli istituti di pagamento italiani possono stabilire succursali nel territorio della Repubblica e degli altri Stati comunitari nel rispetto delle procedure fissate dalla Banca d'Italia.
+ 2. Gli istituti di pagamento comunitari possono stabilire succursali nel territorio della Repubblica. Il primo insediamento è preceduto da una comunicazione alla Banca d'Italia da parte dell'autorità
+competente dello Stato di appartenenza.
+ 3. Gli istituti di pagamento italiani possono prestare i servizi di pagamento ammessi al mutuo riconoscimento in uno Stato comunitario senza stabilirvi succursali, nel rispetto delle procedure
+fissate dalla Banca d'Italia.
+ 4. Gli istituti di pagamento comunitari possono prestare i servizi di pagamento nel territorio della Repubblica senza stabilirvi succursali dopo che la Banca d'Italia sia stata informata
+dall'autorità competente dello Stato di appartenenza.
+ 5. Gli istituti di pagamento italiani possono stabilire succursali o prestare servizi di pagamento in uno Stato extracomunitario senza stabilirvi succursali previa autorizzazione della Banca
+d'Italia.
+ 6. Il presente articolo si applica anche nel caso di operatività transfrontaliera mediante l'impiego di agenti.
+ Art. 114-undecies
+ (Rinvio)
+ 1. Agli istituti di pagamento si applicano, in quanto compatibili, le disposizioni contenute negli articoli 19, 20, 21, 22, 23, 24, 25, 26, 52, nonchè nel titolo VI.
+ 2. Con riferimento agli istituti di pagamento che non esercitino attività imprenditoriali diverse dalla prestazione dei servizi di pagamento ai sensi dell'articolo 114–novies, comma 4, si applicano
+le disposizioni del titolo IV, capo I, fatta eccezione per la sezione III-bis e IV. La Banca d'Italia detta disposizioni attuative ai fini dell'applicazione delle norme di cui al presente articolo
+agli istituti di pagamento.
+ Art. 114-duodecies
+ (Conti di pagamento e forme di tutela)
+ 1. Gli istituti di pagamento detengono, nel rispetto delle modalità stabilite dalla Banca d'Italia, le somme di denaro della clientela in conti di pagamento utilizzati esclusivamente per la
+prestazione dei servizi di pagamento. Le somme di denaro immesse nei conti di pagamento non costituiscono fondi con obbligo di rimborso ai sensi dell'articolo 11, nè moneta elettronica ai sensi
+dell'articolo 1, comma 2, lettera h-ter).
+ 2. Le somme di denaro detenute nei conti di pagamento costituiscono, per ciascun cliente, patrimonio distinto a tutti gli effetti da quello dell'istituto di pagamento e degli altri clienti dello
+stesso. Su tali patrimoni distinti non sono ammesse azioni dei creditori dell'intermediario o nell'interesse degli stessi, nè quelle dei creditori dell'eventuale soggetto ove tali somme di denaro sono
+depositate. Le azioni dei creditori dei singoli clienti degli istituti di pagamento sono ammesse nel limite del patrimonio di proprietà dei singoli clienti. Nel caso in cui le somme di denaro detenute
+nei conti di pagamento siano depositate presso terzi non operano le compensazioni legale e giudiziale e non può essere pattuita la compensazione convenzionale rispetto ai crediti vantati dal
+depositario nei confronti dell'istituto di pagamento.
+ 3. Ai fini dell'applicazione della disciplina della liquidazione coatta amministrativa i titolari dei conti di pagamento sono equiparati ai clienti aventi diritto alla restituzione di strumenti
+finanziari.
+ Art. 114-terdecies
+ (Patrimonio destinato)
+ 1. Gli istituti di pagamento che svolgano anche attività imprenditoriali diverse dalla prestazione dei servizi di pagamento, autorizzati ai sensi dell'articolo 114 – novies, comma 4, devono
+costituire un patrimonio destinato per la prestazione dei servizi di pagamento e per le relative attività accessorie e strumentali. A tal fine essi adottano apposita deliberazione contenente l'esatta
+descrizione dei beni e dei rapporti giuridici destinati e delle modalità con le quali è possibile disporre, integrare e sostituire elementi del patrimonio destinato. La deliberazione è depositata e
+iscritta a norma dell' articolo 2436 del codice civile . Si applica il secondo comma dell'articolo 2447-quater del codice civile .
+ 2. Decorso il termine di cui al secondo comma dell'articolo 2447 -quater del codice civile ovvero dopo l'iscrizione nel registro delle imprese del provvedimento del tribunale ivi previsto, i beni e i
+rapporti giuridici individuati sono destinati esclusivamente al soddisfacimento dei diritti degli utenti dei servizi di pagamento e di quanti vantino diritti derivanti dall'esercizio delle attività
+accessorie e strumentali e costituiscono patrimonio separato a tutti gli effetti da quello dell'istituto e dagli altri eventuali patrimoni destinati. Fino al completo soddisfacimento dei diritti dei
+soggetti a cui vantaggio la destinazione è effettuata, sul patrimonio destinato e sui frutti e proventi da esso derivanti sono ammesse azioni soltanto a tutela dei diritti dei predetti soggetti. Si
+applica l'articolo 114 – duodecies, comma 2.
+ 3. In caso di incapienza del patrimonio destinato l'istituto di pagamento risponde anche con il proprio patrimonio delle obbligazioni nei confronti degli utenti dei servizi di pagamento e di quanti
+vantino diritti derivanti dall'esercizio delle attività accessorie e strumentali.
+ 4. Con riferimento al patrimonio destinato l'istituto di pagamento tiene separatamente i libri e le scritture contabili prescritti dagli articoli 2214, e seguenti, del codice civile , nel rispetto
+dei principi contabili internazionali.
+ 5. In caso di sottoposizione a procedura concorsuale del soggetto autorizzato alla prestazione di servizi di pagamento ai sensi dell'articolo 114 – novies, comma 4, l'amministrazione del patrimonio
+destinato è attribuita agli organi della procedura, che provvedono con gestione separata alla liquidazione dello stesso secondo le regole ordinarie. Gli ordini di pagamento e le attività accessorie e
+strumentali a valere sul patrimonio destinato che siano state avviate prima dell'avvio della procedura continuano ad avere esecuzione e ad esso continuano ad applicarsi le previsioni contenute nel
+presente articolo. A decorrere dalla data di apertura della procedura non possono essere accettati nuovi ordini di pagamento nè stipulati nuovi contratti. Gli organi della procedura possono trasferire
+o affidare in gestione a banche o altri intermediari autorizzati alla prestazione di servizi di pagamento, i beni e i rapporti giuridici ricompresi nel patrimonio destinato e le relative passività. Ai
+fini della liquidazione del patrimonio destinato si applica l'articolo 91, commi 2 e 3, intendendosi equiparati gli utenti dei servizi di pagamento ai clienti aventi diritto alla restituzione di
+strumenti finanziari.
+ 6. La Banca d'Italia può nominare un liquidatore per gli adempimenti di cui al comma 5, in luogo degli organi della procedura, ove ciò sia necessario per l'ordinata liquidazione del patrimonio
+destinato.
+ 7. Il tribunale competente per l'avvio della procedura concorsuale del soggetto autorizzato alla prestazione di servizi di pagamento informa la Banca d'Italia della pendenza del procedimento.
+ Art. 114-quaterdecies
+ (Vigilanza)
+ 1. Gli istituti di pagamento inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, le segnalazioni periodiche nonchè ogni altro dato e documento richiesto. Essi trasmettono
+anche i bilanci con le modalità e nei termini stabiliti dalla Banca d'Italia.
+ 2. La Banca d'Italia emana disposizioni di carattere generale aventi a oggetto: l'adeguatezza patrimoniali il contenimento del rischio nelle sue diverse configurazioni e l'organizzazione
+amministrativa e contabile e i controlli interni.
+ 3. La Banca d'Italia può:
+ a) convocare gli amministratori, i sindaci e i dirigenti degli istituti di pagamento per esaminare la situazione degli stessi;
+ b) ordinare la convocazione degli organi collegiali degli istituti di pagamento, fissandone l'ordine del giorno, e proporre l'assunzione di determinate decisioni;
+ c) procedere direttamente alla convocazione degli organi collegiali degli istituti di pagamento quando gli organi competenti non abbiano ottemperato a quanto previsto dalla lettera b);
+ d) adottare per le materie indicate nel comma 2, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli istituti di pagamento, riguardanti anche la restrizione delle attività
+o della struttura territoriale, nonchè il divieto di effettuare determinate operazioni e di distribuire utili o altri elementi del patrimonio.
+ 4. La Banca d'Italia può effettuare ispezioni presso gli istituti di pagamento, i loro agenti o i soggetti a cui sono esternalizzate attività e richiedere a essi l'esibizione di documenti e gli atti
+che ritenga necessari. La Banca d'Italia notifica all'autorità competente dello Stato comunitario ospitante l'intenzione di effettuare ispezioni sul territorio di quest'ultimo nei confronti di
+istituti di pagamento, dei loro agenti o dei soggetti a cui sono esternalizzate attività ovvero richiede alle autorità competenti del medesimo Stato comunitario di effettuare tali accertamenti.
+ 5. Le autorità competenti di uno Stato comunitario, dopo aver informato la Banca d'Italia, possono ispezionare, anche tramite persone da esse incaricate, gli istituti di pagamento comunitari, i loro
+agenti o i soggetti a cui sono esternalizzate attività che operano nel territorio della Repubblica. Se le autorità competenti di uno Stato comunitario lo richiedono, la Banca d'Italia può procedere
+direttamente agli accertamenti.
+ 6. Nel confronti degli istituti di pagamento che svolgano anche attività imprenditoriali diverse dalla prestazione dei servizi di pagamento, autorizzati ai sensi dell'articolo 114 – novies, comma 4,
+la Banca d'Italia esercita i poteri di vigilanza indicati nel presente articolo sull'attività di prestazione dei servizi di pagamento e sulle attività connesse e strumentali, avendo a riferimento
+anche il responsabile della gestione dell'attività e il patrimonio destinato.
+ Art. 114 - quinquiesdecies
+ (Scambio di informazioni)
+ 1. Fermo restando quanto previsto nell'articolo 7, la Banca d'Italia scambia informazioni con:
+ a) la Banca centrale europea e le banche centrali nazionali degli Stati membri, in quanto autorità monetarie e di sorveglianza sul sistema dei pagamenti, e, se opportuno, altre autorità pubbliche
+responsabili della sorveglianza sui sistemi di pagamento e di regolamento;
+ b) altre autorità competenti ai sensi di disposizioni comunitarie applicabili ai prestatori di servizi di pagamento.
+ Art. 114 - sexiesdecies
+ (Deroghe)
+ 1. La Banca d'Italia può esentare i soggetti iscritti nell'albo degli istituti di pagamento dall'applicazione di alcune delle disposizioni previste dal presente titolo, quando ricorrono
+congiuntamente le seguenti condizioni:
+ a) la media mensile, calcolata sui precedenti dodici mesi, dell'importo complessivo delle operazioni di pagamento eseguite dal soggetto interessato, compreso qualsiasi agente di cui è responsabile,
+non superi i 3 milioni di euro; la Banca d'Italia valuta tale condizione in base al piano aziendale prodotto dal soggetto interessato;
+ b) nessuna delle persone fisiche responsabili della gestione o del funzionamento dell'impresa abbia subito condanne per riciclaggio di denaro o finanziamento del terrorismo o altri reati finanziari.
+ 2. La Banca d'Italia stabilisce quali tra i servizi di pagamento di cui all'articolo 1, comma 2, lettera f), possono essere prestati dai soggetti di cui al comma 1.
+ 3. Ai soggetti esentati ai sensi del comma 1 non si applica l'articolo 114–decies.
+ 4. La Banca d'Italia stabilisce le procedure che i soggetti di cui al comma 1 devono seguire per comunicare ogni variazione delle condizioni di cui al commi 1, 2 e 3.".
+
+=== K110 | [34] Trasparenza dei servizi di pagamento
+Art. 34
+ (Trasparenza dei servizi di pagamento)
+ 1. Al testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 sono apportate le seguenti modifiche:
+ a) all'articolo 115, dopo il comma 3, è aggiunto il seguente :
+ "3-bis. Le disposizioni del presente capo non si applicano ai servizi di pagamento disciplinati dal capo II-bis a meno che non siano espressamente richiamate da quest'ultimo.";
+ b) al titolo VI, dopo il capo II, è inserito il seguente:
+ "Capo II-bis
+ Servizi di pagamento
+ Art. 126-bis
+ (Disposizioni di carattere generale)
+ 1. Il presente capo si applica ai contratti quadro relativi a servizi di pagamento e alle operazioni di pagamento, anche se queste non rientrano in un contratto quadro, quando i servizi sono offerti
+sul territorio della Repubblica.
+ 2. Ai fini del presente capo, per servizi di pagamento si intende anche l'emissione di moneta elettronica.
+ 3. In deroga all'articolo 127, comma 1, le parti possono accordarsi nel senso che le previsioni del presente capo non si applicano, interamente o parzialmente, se l'utilizzatore di servizi di
+pagamento non è un consumatore, nè una micro-impresa.
+ 4. Spetta al prestatore dei servizi di pagamento l'onere della prova di aver correttamente adempiuto agli obblighi previsti dal presente capo.
+ 5. La Banca d'Italia adotta i provvedimenti previsti dal presente capo avendo riguardo, per i servizi di pagamento regolati in conto corrente o commercializzati unitamente a un conto corrente, alle
+disposizioni previste ai sensi del capo I.
+ 6. Nell'esercizio dei poteri regolamentari previsti dal presente capo, la Banca d'Italia tiene conto anche della finalità di garantire un adeguato livello di affidabilità ed efficienza dei servizi di
+pagamento.
+ Art. 126-ter
+ (Spese applicabili)
+ 1. Il prestatore dei servizi di pagamento non può addebitare all'utilizzatore spese inerenti all'informativa resa ai sensi di legge.
+ 2. Il prestatore di servizi di pagamento e l'utilizzatore possono concordare le spese relative a informazioni fornite su richiesta dell'utilizzatore se esse, rispetto a quanto previsto nel contratto
+quadro, sono supplementari o rese in modo più frequente o trasmesse con strumenti di comunicazione diversi. Le spese sono proporzionate ai costi effettivi sostenuti dal prestatore di servizi di
+pagamento.
+ Art. 126-quater
+ (Informazioni relative alle operazioni di pagamento e ai contratti)
+ 1. La Banca d'Italia disciplina:
+ a) contenuti e modalità delle informazioni e delle condizioni che il prestatore dei servizi di pagamento fornisce o rende disponibili all'utilizzatore di servizi di pagamento, al pagatore e al
+beneficiario. Le informazioni e le condizioni sono redatte in termini di facile comprensione e in forma chiara e leggibile. In particolare, l'utilizzatore dei servizi di pagamento è informato di tutte
+le spese dovute al prestatore di servizi di pagamento e della loro suddivisione. Sono previsti obblighi di trasparenza semplificati nel caso di utilizzo di strumenti di pagamento che riguardino
+operazioni o presentino limiti di spesa o avvaloramento inferiori a soglie fissate dalla stessa Banca d'Italia;
+ b) casi, contenuti e modalità delle comunicazioni periodiche sulle operazioni di pagamento.
+ 2. Non si applicano gli articoli 67 -quinquies, 67 -sexies, comma 1, lettere a), b) ed h), 67- septies, comma 1, lettere b), c), f) e g), 67 -octies, comma 1, lettera a), del decreto legislativo 6
+settembre 2005, n. 206 .
+ 3. Prima di disporre l'operazione di pagamento l'utilizzatore è informato:
+ a) dal beneficiario, di eventuali spese imposte o riduzioni proposte per l'utilizzo di un determinato strumento di pagamento;
+ b) dal prestatore di servizi di pagamento o da un terzo, di eventuali spese imposte per l'utilizzo di un determinato strumento di pagamento.
+ Art. 126-quinquies
+ (Contratto quadro)
+ 1. Ai contratti quadro si applica l'articolo 117, commi 1, 2, 3, 4, 6 e 7. Il potere previsto dall'articolo 117, comma 2, è esercitato dalla Banca d'Italia.
+ 2. In qualsiasi momento del rapporto, l'utilizzatore di servizi di pagamento che ha concluso un contratto quadro può richiedere le condizioni contrattuali del contratto quadro nonchè le informazioni
+relative al contratto quadro previste ai sensi dell'articolo126-quater, comma 1, lettera a), su supporto cartaceo o su altro supporto durevole.
+ Art. 126-sexies
+ (Modifica unilaterale delle condizioni)
+ 1. Ogni modifica del contratto quadro o delle condizioni e informazioni a esso relative fornite all'utilizzatore ai sensi dell'articolo 126-quater, comma 1, lettera a), è proposta dal prestatore dei
+servizi di pagamento secondo le modalità stabilite dalla Banca d'Italia, con almeno due mesi di anticipo rispetto alla data di applicazione prevista.
+ 2. Il contratto quadro può prevedere che la modifica delle condizioni contrattuali si ritiene accettata dall'utilizzatore a meno che questi non comunichi al prestatore dei servizi di pagamento, prima
+della data prevista per l'applicazione della modifica, che non intende accettarla. In questo caso, la comunicazione di cui al comma 1, contenente la proposta di modifica, specifica che in assenza di
+espresso rifiuto la proposta si intende accettata e che l'utilizzatore ha diritto di recedere senza spese prima della data prevista per l'applicazione della modifica.
+ 3. Le modifiche dei tassi di interesse o di cambio possono essere applicate con effetto immediato e senza preavviso; tuttavia, se sono sfavorevoli per l'utilizzatore, è necessario che ciò sia
+previsto nel contratto quadro e che la modifica sia la conseguenza della variazione dei tassi di interesse o di cambio di riferimento convenuti nel contratto. L'utilizzatore è informato della modifica
+dei tassi di interesse nei casi e secondo le modalità stabilite dalla Banca d'Italia.
+ 4. Le modifiche dei tassi di interesse o di cambio utilizzati nelle operazioni di pagamento sono applicate e calcolate in una forma neutra tale da non creare discriminazioni tra utilizzatori, secondo
+quanto stabilito dalla Banca d'Italia.
+ 5. Restano ferme, in quanto compatibili, le disposizioni di cui all' articolo 33, commi 3 e 4, del decreto legislativo 6 settembre 2005, n. 206 .
+ Art. 126-septies
+ (Recesso)
+ 1. L'utilizzatore di servizi di pagamento ha sempre la facoltà di recedere dal contratto quadro senza penalità e senza spese di chiusura.
+ 2. Il prestatore di servizi di pagamento può recedere da un contratto quadro a tempo indeterminato se ciò è previsto dal contratto e con un preavviso di almeno due mesi, secondo le modalità stabilite
+dalla Banca d'Italia.
+ 3. In caso di recesso dal contratto dell'utilizzatore o del prestatore di servizi di pagamento, le spese per i servizi fatturate periodicamente sono dovute dall'utilizzatore solo in misura
+proporzionale per il periodo precedente al recesso; se pagate anticipatamente, esse sono rimborsate in maniera proporzionale.
+ Art. 126-octies
+ (Denominazione valutaria dei pagamenti)
+ 1. I pagamenti sono effettuati nella valuta concordata dalle parti.
+ 2. Se al pagatore è offerto, prima di disporre un'operazione di pagamento, un servizio di conversione valutaria dal beneficiario ovvero presso il punto vendita da un venditore di merci o da un
+fornitore di servizi, colui che propone il servizio di conversione gli comunica tutte le spese e il tasso di cambio che sarà utilizzato per la conversione. Il pagatore accetta il servizio su tale
+base. ".
+ Note all'art. 34:
+ - Il testo dell'art. 115, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 115. (Ambito di applicazione). - 1. Le norme del presente capo si applicano alle attività svolte nel territorio della Repubblica dalle banche e dagli intermediari finanziari.
+ 2. Il Ministro dell'economia e delle finanze può individuare, in considerazione dell'attività svolta, altri soggetti da sottoporre alle norme del presente capo.
+ 3. Le disposizioni del presente capo si applicano alle operazioni previste dal capo II del presente titolo per gli aspetti non diversamente disciplinati.
+ 3-bis. Le disposizioni del presente capo non si applicano ai servizi di pagamento disciplinati dal capo II-bis a meno che non siano espressamente richiamate da quest'ultimo.».
+
+=== K111 | [34-bis] Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di debito ad
+Art. 34-bis
+ (Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di debito ad uso dei consumatori)
+ 1. Fino al 9 dicembre 2020, per le operazioni nazionali tramite carta di debito ad uso dei consumatori, i prestatori di servizi di pagamento possono applicare una commissione interbancaria media
+ponderata non superiore all'equivalente dello 0,2 % del valore medio annuo di tutte le operazioni nazionali effettuate tramite tali carte di debito all'interno dello stesso schema di carte di
+pagamento.
+ 2. Al fine di consentire ai prestatori di servizi di pagamento di avvalersi della possibilità prevista al comma 1, gli schemi di carte di pagamento:
+ a) definiscono una struttura della commissione interbancaria media ponderata improntata a criteri di trasparenza, semplicità, confrontabilità ed equità, anche tenuto conto delle specifiche
+caratteristiche dell'operazione di pagamento;
+ b) trasmettono alla Banca d'Italia, nel rispetto dei termini di cui all' articolo 3, paragrafo 5, del regolamento (UE) n. 751/2015 , una relazione illustrativa delle modalità di rispetto dei criteri
+di cui alla lettera a).
+ 3. Fatto salvo quanto previsto dai commi precedenti, per le operazioni nazionali tramite carta di debito ad uso dei consumatori, i prestatori di servizi di pagamento possono applicare una commissione
+interbancaria non superiore a 0,05 EUR per ciascuna operazione. Tale commissione interbancaria per operazione può anche essere combinata con una percentuale massima non superiore allo 0,2 % del valore
+di ciascuna operazione a condizione che la somma delle commissioni interbancarie dello schema di carte di pagamento non superi mai lo 0,2 % del valore totale annuo delle operazioni nazionali
+effettuate tramite tali carte di debito all'interno di ciascuno schema di carte di pagamento.
+ ((PERIODO SOPPRESSO DAL D.L.GS. 8 APRILE 2020, N. 36 ))
+ .
+ ((
+ 3-bis. Al fine di consentire ai prestatori di servizi di pagamento di avvalersi della possibilità prevista al comma 3, gli schemi di carte di pagamento trasmettono alla Banca d'Italia, nel rispetto
+dei termini di cui all' articolo 3, paragrafo 5 del regolamento (UE) n. 751/2015 , una relazione illustrativa delle modalità di rispetto dei criteri del comma 3.
+ ))
+ 4. In ogni caso, per le operazioni nazionali tramite carta di debito ad uso dei consumatori di importo inferiore a euro 5, i prestatori di servizi di pagamento applicano una commissione interbancaria
+di importo ridotto rispetto a quelle applicate alle operazioni di importo pari o superiore a euro
+ 5. (3)
+ 5. I commi precedenti si applicano anche alle operazioni nazionali effettuate tramite carte prepagate.
+ 6. La Banca d'Italia definisce le modalità e i termini per l'invio da parte degli schemi di carte di pagamento delle informazioni necessarie alla verifica del rispetto degli obblighi di cui ai commi
+precedenti. Tali informazioni devono essere certificate da un revisore indipendente.
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 7) che "Le disposizioni di cui al comma 4 dell'articolo 34-bis e al comma 1 dell'articolo 34-ter del decreto legislativo 27 gennaio
+2010, n. 11 , introdotte dall'articolo 3 del presente decreto legislativo, si applicano dal 1° aprile 201".
+
+=== K112 | [34-ter] Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di credito a
+Art. 34-ter
+ (Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di credito ad uso dei consumatori)
+ 1. Per le operazioni nazionali tramite carta di credito ad uso dei consumatori di importo inferiore a euro 5, i prestatori di servizi di pagamento applicano una commissione interbancaria di importo
+ridotto rispetto a quelle applicate alle operazioni di importo pari o superiore a euro 5. (3)
+ 2. La Banca d'Italia definisce le modalità e i termini per l'invio da parte degli schemi di carte di pagamento delle informazioni necessarie alla verifica del rispetto degli obblighi di cui al
+ ((comma 1))
+ . Tali informazioni devono essere certificate da un revisore indipendente.
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 7) che "Le disposizioni di cui al comma 4 dell'articolo 34-bis e al comma 1 dell'articolo 34-ter del decreto legislativo 27 gennaio
+2010, n. 11 , introdotte dall'articolo 3 del presente decreto legislativo, si applicano dal 1° aprile 201".
+
+=== K113 | [34-quater] Autorità competenti).
+Art. 34-quater
+ (( (Autorità competenti). ))
+ ((
+ 1. Fatto salvo quanto previsto al comma 2, la Banca d'Italia è designata quale autorità competente ai sensi dell' articolo 13 del Regolamento (UE) n. 751/2015 e adotta le proprie decisioni previo
+parere dell'Autorità Garante della Concorrenza e del Mercato.
+ 2. L'Autorità Garante della Concorrenza e del Mercato è designata quale autorità competente per l'inibizione della continuazione e la rimozione degli effetti delle pratiche commerciali scorrette
+nonchè degli illeciti posti in essere in violazione delle disposizioni contenute nelle Sezioni da I a IV del Capo I, Titolo III, Parte III del decreto legislativo 6 settembre 2005, n. 206 , derivanti
+dalla inosservanza degli obblighi posti dal Regolamento (UE) n. 751/2015 a carico dei beneficiari delle operazioni con carte di pagamento, applicando i poteri di cui all' articolo 27 del decreto
+legislativo n. 206 del 2005 . Nell'esercizio di questa competenza, l'Autorità Garante della Concorrenza e del Mercato, qualora la condotta illecita sia posta in essere da un soggetto sul quale la
+Banca d'Italia esercita i propri poteri di vigilanza o sorveglianza, adotta le proprie decisioni previo parere della Banca d'Italia.
+ 3. Le autorità, di cui ai commi 1 e 2, collaborano nell'esercizio delle rispettive funzioni anche attraverso lo scambio di informazioni al fine di agevolare le rispettive funzioni e possono adottare
+disposizioni di disciplina secondaria funzionali a garantire l'efficace applicazione del Regolamento.
+ 4. La Banca d'Italia e l'Autorità Garante della Concorrenza e del Mercato non possono opporsi, reciprocamente, il segreto d'ufficio.
+ 5. Alla Banca d'Italia sono attribuiti poteri sanzionatori, di indagine e di controllo. L'Autorità Garante della Concorrenza e del Mercato applica i poteri di cui all' articolo 27 del decreto
+legislativo 6 settembre 2005, n. 206 .
+ 6. Al fine di garantire l'efficace adempimento degli obblighi di cui al Regolamento (UE) n. 751/2015 e al presente Titolo, gli schemi di carte di pagamento individuano un ufficio di rappresentanza e
+ne danno comunicazione alla Banca d'Italia e all'Autorità Garante della Concorrenza e del Mercato.
+ ))
+
+=== K114 | [34-quinquies] Sanzioni in materia di commissioni interbancarie
+Art. 34-quinquies
+ ((Sanzioni in materia di commissioni interbancarie))
+ ((
+ 1. Si applica nei confronti dei prestatori di servizi di pagamento la sanzione amministrativa pecuniaria da euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale
+importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per l'inosservanza delle seguenti disposizioni:
+ a) articoli 3, paragrafo 1, e 4, del regolamento (UE) n. 751/2015 ;
+ b) articoli 34-bis, commi 1, 3, 4 e 5, e 34-ter, comma 1, del presente decreto.
+ ))
+ 2. Le sanzioni previste al comma 1 si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale, tenuto
+conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio.
+ 3. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di cui
+al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+ (3)
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K115 | [34-sexies] Altre sanzioni ai sensi del Regolamento (UE) n. 751/2015
+Art. 34-sexies
+ (Altre sanzioni ai sensi del Regolamento (UE) n. 751/2015 )
+ 1. Si applica nei confronti dei prestatori di servizi di pagamento e dei soggetti ai quali sono esternalizzate funzioni aziendali essenziali o importanti, la sanzione amministrativa pecuniaria da
+euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per l'inosservanza delle
+disposizioni di cui all' articolo 8, paragrafo 6 , articolo 9, paragrafo 1 , articolo 10, paragrafi 1 e 5 , articolo 11, paragrafi 1 e 2 del Regolamento (UE) n. 751/2015 . Nei casi in cui le
+violazioni siano commesse da schemi di carte di pagamento la sanzione si applica nei confronti degli organi decisionali, organizzazioni o entità responsabili del funzionamento degli schemi stessi.
+ 2. Qualora il prestatore di servizi di pagamento mandante rilevi nel comportamento dell'agente in servizi di pagamento violazioni alle disposizioni dell' articolo 8, paragrafo 6 , articolo 9,
+paragrafo 1 , articolo 10, paragrafo 1 , articolo 11, paragrafi 1 e 2 del Regolamento (UE) n. 751/2015 adotta immediatamente misure correttive e trasmette la documentazione relative alle violazioni
+riscontrate, anche ai fini dell'applicazione dell' articolo 128-duodecies del decreto legislativo 1° settembre 1993, n. 385 , all'Organismo di cui all' articolo 128-undecies, del decreto legislativo
+1° settembre 1993, n. 385 .
+ 3. Nei confronti degli organi decisionali, organizzazioni o entità responsabili del funzionamento degli schemi di carte di pagamento si applica la sanzione amministrativa pecuniaria da euro 30.000
+fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per la violazione degli obblighi di cui
+all'articolo 34-bis, commi 2
+ ((, 3-bis))
+ e 6 e all'articolo 34-ter, comma 2 del presente decreto e per le seguenti violazioni del Regolamento (UE) n. 751/2015 : inosservanza delle disposizioni di cui all'articolo 6, all'articolo 7,
+paragrafi 1, 3, e 4, e relative norme tecniche di regolamentazione emanate dalla Commissione europea, all'articolo 8, paragrafi 1, 4 e 6, all'articolo 10, paragrafo 1, all'articolo 11, paragrafi 1 e
+2.
+ 4. Le sanzioni previste dai commi 1, 2 e 3 si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale,
+tenuto conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio.
+ 5. Se il vantaggio ottenuto dall'autore della violazione, come conseguenza della violazione stessa, è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di
+cui al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+ (3)
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K116 | [34-septies] Altre sanzioni amministrative agli esponenti o al personale).
+Art. 34-septies
+ (( (Altre sanzioni amministrative agli esponenti o al personale). ))
+ ((
+ 1. Fermo restando quanto previsto per i prestatori di servizi di pagamento nei confronti dei quali sono accertate le violazioni, per l'inosservanza delle norme richiamate dagli articoli 34-quinquies
+e 34-sexies, si applica la sanzione amministrativa pecuniaria da euro 5.000 fino a euro 5 milioni nei confronti dei soggetti che svolgono funzioni di amministrazione, di direzione o di controllo,
+nonchè del personale, quando l'inosservanza è conseguenza della violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione
+aziendale o sui profili di rischio.
+ 2. Con il provvedimento di applicazione della sanzione, in ragione della gravità della violazione accertata e tenuto conto dei criteri per la determinazione delle sanzioni ai sensi dell'articolo
+34-octies, la Banca d'Italia può applicare la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di
+amministrazione, direzione e controllo presso i prestatore di servizi di pagamento autorizzati ai sensi del decreto legislativo 1° settembre 1993, n. 385 .
+ 3. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di cui
+al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K117 | [34-octies] Criteri per la determinazione delle sanzioni).
+Art. 34-octies
+ (( (Criteri per la determinazione delle sanzioni). ))
+ ((
+ 1. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie o della durata delle sanzioni accessorie previste dal presente Capo, si applica l' articolo 144-quater del decreto
+legislativo 1° settembre 1993, n. 385 .
+ 2. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie di cui all'articolo 34-quinquies o della durata delle relative sanzioni accessorie, è considerato indice di minore
+grado di responsabilità il fatto che la commissione interbancaria sia definita unilateralmente da uno schema di carte di pagamento.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K118 | [34-novies] Procedura sanzionatoria).
+Art. 34-novies
+ (( (Procedura sanzionatoria). ))
+ ((
+ 1. Nel caso di servizi offerti da prestatori di servizi di pagamento insediati in Italia e filiali di prestatori di servizi di pagamento comunitari che operano in regime di libero stabilimento in
+Italia le sanzioni di cui al presente Capo sono irrogate dalla Banca d'Italia e si applica il Capo VI, Titolo VIII del decreto legislativo 1° settembre 1993, n. 385 .
+ 2. Nel caso di servizi offerti da schemi di carte di pagamento la cui sede legale o operativa è ubicata nel territorio della Repubblica, le sanzioni di cui al presente Capo sono irrogate dalla Banca
+d'Italia; si applica il Capo VI, Titolo VIII, del decreto legislativo n. 385 del 1993 .
+ 3. Nel caso di servizi offerti da schemi di carte di pagamento la cui sede legale e operativa è ubicata in altri Stati membri, la Banca d'Italia informa la autorità competente di questi Stati membri
+delle riscontrate violazioni del Regolamento (UE) 751/2015 .
+ 4. Le sanzioni di cui al presente Capo si riscuotono secondo i termini e le modalità previsti dal Decreto del Presidente della Repubblica 29 settembre 1973, n. 602 e i relativi proventi affluiscono
+all'entrata del bilancio dello Stato.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K119 | [34-decies] Esposti).
+Art. 34-decies
+ (( (Esposti). ))
+ ((1. In caso di violazione da parte di un prestatore di servizi di pagamento delle disposizioni di cui al Regolamento (UE) 751/2015 e della relativa normativa di attuazione, gli utenti di servizi di
+pagamento, le associazioni che li rappresentano e le altre parti interessate possono presentare esposti alla Banca d'Italia. La proposizione dell'esposto non pregiudica il diritto di adire la
+competente autorità giudiziaria. La Banca d'Italia informa il proponente l'esposto dell'esistenza dei sistemi di risoluzione stragiudiziale delle controversie di cui all' articolo 128-bis del decreto
+legislativo 1° settembre 1993, n. 385 .))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K120 | [35] Altre modifiche al decreto legislativo 1° settembre 1993, n. 385
+Art. 35
+ (Altre modifiche al decreto legislativo 1° settembre 1993, n. 385 )
+ 1. All' articolo 1, comma 2, lettera f), del decreto legislativo 1° settembre 1993, n. 385, il numero 5 è sostituito dal seguente:
+ "5) emissione e gestione di mezzi di pagamento («travellers cheques», lettere di credito), nella misura in cui quest'attività non rientra nel punto 4;".
+ 2. All' articolo 1, comma 2, del decreto legislativo 1° settembre 1993, n. 385 , dopo la lettera h-quinquies) sono inserite le seguenti:
+ "h-sexies) 'istituti di pagamento: ' le imprese, diverse dalle banche e dagli istituti di moneta elettronica, autorizzate a prestare i servizi di pagamento di cui alla lettera f), n. 4);
+ h-septies) 'istituti di pagamento comunitarì: gli istituti di pagamento aventi sede legale e amministrazione centrale in uno stesso Stato comunitario diverso dall'Italia;
+ h-octies) `succursale di un istituto di pagamento ' : una sede che costituisce parte, sprovvista di personalità giuridica, di un istituto di pagamento e che effettua direttamente, in tutto o in
+parte, l'attività dell'istituto di pagamento."
+ 3. All' articolo 5, comma 2, del decreto legislativo 1° settembre 1993, n. 385 , le parole: "e degli intermediari finanziari" sono sostituite dalle seguenti: ", degli intermediari finanziari, degli
+istituti di moneta elettronica e degli istituti di pagamento".
+ 4. All' articolo 11 del decreto legislativo 1° settembre 1993, n. 385 , dopo il comma 2-bis è inserito il seguente: "2-ter. Non costituisce raccolta del risparmio tra il pubblico la ricezione di
+fondi da inserire in conti di pagamento utilizzati esclusivamente per la prestazione di servizi di pagamento.".
+ 5. All' articolo 106, comma 1, del decreto legislativo 1° settembre 1993, n. 385 , le parole: ", di prestazione di servizi di pagamento" sono soppresse.
+ 6. All' articolo 107 del decreto legislativo 1° settembre 1993, n. 385 , dopo il comma 7 è aggiunto il seguente: "7-bis. Gli intermediari finanziari iscritti nell'elenco previsto dal comma 1 possono
+prestare servizi di pagamento a condizione che siano autorizzati ai sensi dell'articolo 114 -novies, comma 4, e iscritti nel relativo albo. Con riferimento all'attività di prestazione dei servizi di
+pagamento si applicano le disposizioni previste nel titolo V-ter.".
+ 7. All' articolo 114-quater, comma 3, del decreto legislativo 1° settembre 1993, n. 385 , il secondo periodo è soppresso.
+ 8. All' articolo 128, comma 1, del decreto legislativo 1° settembre 1993, n. 385 , dopo le parole: "presso le banche" sono inserite le seguenti: , gli istituti di pagamento".
+ 9. All' articolo 128, comma 3, del decreto legislativo 1° settembre 1993, n. 385 , dopo le parole: "lettera c)" sono inserite le seguenti: "e ai beneficiari e ai terzi destinatari delle disposizioni
+previste dall'articolo 126-quater, comma 3,".
+ 10. All' articolo 128-bis del decreto legislativo 1° settembre 1993, n. 385 , dopo il comma 3 è aggiunto il seguente: "3-bis. La Banca d'Italia, quando riceve un reclamo da parte della clientela dei
+soggetti di cui al comma 1, indica al reclamante la possibilità di adire i sistemi previsti ai sensi del presente articolo.".
+ 11. Dopo l' articolo 131-bis del decreto legislativo 1° settembre 1993, n. 385 , è inserito il seguente: "Articolo 131-ter (Abusiva attività di prestazione di servizi di pagamento) 1. Chiunque presta
+servizi di pagamento senza essere autorizzato ai sensi dell'articolo 114 - novies è punito con la reclusione da sei mesi a quattro anni e con la multa da 2.066 euro a 10.329 euro.".
+ 12. All' articolo 132 - bis, comma 1, del decreto legislativo 1° settembre 1993, n. 385 , dopo le parole: "moneta elettronica" sono inserite le seguenti: ", prestazione di servizi di pagamento "e
+dopo le parole: "131 -bis" sono inserite le seguenti: ", 131- ter".
+ 13. All' articolo 133 del decreto legislativo 1° settembre 1993, n. 385 , dopo il comma 1-bis è inserito il seguente: "1-ter. L'uso, nella denominazione o in qualsivoglia segno distintivo o
+comunicazione rivolta al pubblico, dell'espressione «istituto di pagamento» ovvero di altre parole o locuzioni, anche in lingua straniera, idonee a trarre in inganno sulla legittimazione allo
+svolgimento dell'attività di prestazione di servizi di pagamento è vietato a soggetti diversi dagli istituti di pagamento.".
+ 14. All' articolo 133 del decreto legislativo 1° settembre 1993, n. 385 , il comma 2 è sostituito dal seguente: "2. La Banca d'Italia determina in via generale le ipotesi in cui, per l'esistenza di
+controlli amministrativi o in base a elementi di fatto, le parole o le locuzioni indicate nei commi 1, 1-bis e 1-ter possono essere utilizzate da soggetti diversi dalle banche, dagli istituti di
+moneta elettronica e dagli istituti di pagamento.".
+ 15. All'articolo 133, comma 3, primo periodo, del decreto legislativo 1° settembre 1993, n. 385 , le parole: "del comma 1" sono sostituite dalle seguenti: "dei commi 1, 1-bis e 1-ter".
+ 16. 16. All' articolo 144, comma 1, del decreto legislativo 1° settembre 1993, n. 385 , dopo la parola: "114-quater," sono inserite le seguenti: "114-octies, 114 - duodecies, 114 – terdecies, 114 –
+quaterdecies," e dopo le parole: "145, comma 3," sono inserite le seguenti: "146, comma 2,".
+ 17. All' articolo 144, comma 3, del decreto legislativo 1° settembre 1993, n. 385 , le parole: "negli articoli 116 e 123" sono sostituite dalle seguenti: "negli articoli 116, 123, 126-ter, 126-
+quater ,126-quinquies,126-sexies e 126-septies." .
+ 18. L' articolo 146 del decreto legislativo 1° settembre 1993, n. 385 , è sostituito dal seguente:
+ "Articolo 146 (Sorveglianza sul sistema dei pagamenti)
+ 1. La Banca d'Italia esercita la sorveglianza sul sistema dei pagamenti avendo riguardo al suo regolare funzionamento, alla sua affidabilità ed efficienza nonchè alla tutela degli utenti di servizi
+di pagamento.
+ 2. Per le finalità di cui al comma 1 la Banca d'Italia, nei confronti dei soggetti che emettono o gestiscono strumenti di pagamento, prestano servizi di pagamento, gestiscono sistemi di scambio, di
+compensazione e di regolamento o gestiscono infrastrutture strumentali tecnologiche o di rete, può:
+ a) richiedere la comunicazione, anche periodica, con le modalità e i termini da essa stabiliti, di dati, notizie, atti e documenti concernenti l'attività esercitata;
+ b) emanare disposizioni di carattere generale aventi a oggetto:
+ 1) il contenimento dei rischi che possono inficiare il regolare funzionamento, l'affidabilità e l'efficienza del sistema dei pagamenti;
+ 2) l'accesso dei prestatori di servizi di pagamento ai sistemi di scambio, di compensazione e di regolamento nonchè alle infrastrutture strumentali tecnologiche o di rete;
+ 3) il funzionamento, le caratteristiche e le modalità di prestazione dei servizi offerti;
+ 4) gli assetti organizzativi e di controllo relativi alle attività svolte nel sistema dei pagamenti;
+ c) disporre ispezioni, chiedere l'esibizione di documenti e prenderne copia al fine di verificare il rispetto delle norme disciplinanti la corretta esecuzione dei servizi di pagamento nonchè di ogni
+disposizione e provvedimento emanati ai sensi del presente articolo;
+ d) adottare per le materie indicate alla lettera b), ove la situazione lo richieda, provvedimenti specifici volti a far cessare le infrazioni accertate o a rimuoverne le cause, ivi inclusi il divieto
+di effettuare determinate operazioni e la restrizione delle attività dei soggetti sottoposti a sorveglianza nonchè, nei casi più gravi, la sospensione dell'attività.
+ 3. Nei confronti dei soggetti che emettono o gestiscono strumenti di pagamento e di quelli che prestano servizi di pagamento resta fermo quanto previsto ai sensi degli articoli 51, 53, 54, 66, 67,
+68, 78, 79, 114-quater, 114-quaterdecies e del titolo VI.
+ 4. La Banca d'Italia partecipa all'esercizio dei poteri conferiti al SEBC in materia di sistemi di pagamento.".
+ Note all'art. 35:
+ - Il testo vigente dell'art. 1 del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto così recita:
+ «Art. 1. (Definizioni). - 1. Nel presente decreto legislativo l'espressione:
+ a) «autorità creditizie» indica il Comitato interministeriale per il credito e il risparmio, il Ministro dell'economia e delle finanze e la Banca d'Italia;
+ b) «banca» indica l'impresa autorizzata all'esercizio dell'attività bancaria;
+ c) «CICR» indica il Comitato interministeriale per il credito e il risparmio;
+ d) «CONSOB» indica la Commissione nazionale per le società e la borsa;
+ d-bis) «COVIP» indica la commissione di vigilanza sui fondi pensione;
+ e) «ISVAP» indica l'Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo;
+ f) «UIC» indica l'Ufficio italiano dei cambi;
+ g) «Stato comunitario» indica lo Stato membro della Comunità Europea;
+ g-bis) «Stato d'origine» indica lo Stato comunitario in cui la banca è stata autorizzata all'esercizio dell'attività;
+ g-ter) «Stato ospitante» indica lo Stato comunitario nel quale la banca ha una succursale o presta servizi;
+ h) «Stato extracomunitario» indica lo Stato non membro della Comunità Europea;
+ i) « legge fallimentare » indica il regio decreto 16 marzo 1942, n. 267 ;
+ l) «autorità competenti» indica, a seconda dei casi, uno o più fra le autorità di vigilanza sulle banche, sulle imprese di investimento, sugli organismi di investimento collettivo del risparmio,
+sulle imprese di assicurazione e sui mercati finanziari;
+ m) «Ministro dell'economia e delle finanze » indica il Ministro dell'economia e delle finanze.
+ 2. Nel presente decreto legislativo si intendono per:
+ a) «banca italiana»: la banca avente sede legale in Italia;
+ b) «banca comunitaria»: la banca avente sede legale e amministrazione centrale in un medesimo Stato comunitario diverso dall'Italia;
+ c) «banca extracomunitaria»: la banca avente sede legale in uno Stato extracomunitario;
+ d) «banche autorizzate in Italia»: le banche italiane e le succursali in Italia di banche extracomunitarie;
+ e) «succursale»: una sede che costituisce parte, sprovvista di personalità giuridica, di una banca e che effettua direttamente, in tutto o in parte, l'attività della banca;
+ f) «attività ammesse al mutuo riconoscimento»: le attività di:
+ 1) raccolta di depositi o di altri fondi con obbligo di restituzione;
+ 2) operazioni di prestito (compreso in particolare il credito al consumo, il credito con garanzia ipotecaria, il factoring, le cessioni di credito pro soluto e pro solvendo, il credito commerciale
+incluso il «forfaiting»);
+ 3) leasing finanziario;
+ 4) servizi di pagamento;
+ 5) emissione e gestione di mezzi di pagamento («travellers cheques», lettere di credito), nella misura in cui quest'attività non rientra nel punto 4;
+ 6) rilascio di garanzie e di impegni di firma;
+ 7) operazioni per proprio conto o per conto della clientela in:
+ - strumenti di mercato monetario (assegni, cambiali, certificati di deposito, ecc.);
+ - cambi;
+ - strumenti finanziari a termine e opzioni;
+ - contratti su tassi di cambio e tassi d'interesse;
+ - valori mobiliari;
+ 8) partecipazione alle emissioni di titoli e prestazioni di servizi connessi;
+ 9) consulenza alle imprese in materia di struttura finanziaria, di strategia industriale e di questioni connesse, nonchè consulenza e servizi nel campo delle concentrazioni e del rilievo di imprese;
+ 10) servizi di intermediazione finanziaria del tipo «money broking»;
+ 11) gestione o consulenza nella gestione di patrimoni;
+ 12) custodia e amministrazione di valori mobiliari;
+ 13) servizi di informazione commerciale;
+ 14) locazione di cassette di sicurezza;
+ 15) altre attività che, in virtù delle misure di adattamento assunte dalle autorità comunitarie, sono aggiunte all'elenco allegato alla seconda direttiva in materia creditizia del Consiglio delle
+Comunità europee n. 89/646/CEE del 15 dicembre 1989;
+ g) «intermediari finanziari»: i soggetti iscritti nell'elenco previsto dall'art. 106;
+ h) «stretti legami»: i rapporti tra una banca e un soggetto italiano o estero che:
+ 1) controlla la banca;
+ 2) è controllato dalla banca;
+ 3) è controllato dallo stesso soggetto che controlla la banca;
+ 4) partecipa al capitale della banca in misura pari almeno al 20% del capitale con diritto di voto;
+ 5) è partecipato dalla banca in misura pari almeno al 20% del capitale con diritto di voto;
+ h-bis) «istituti di moneta elettronica»: le imprese, diverse dalle banche, che emettono moneta elettronica;
+ h-ter) «moneta elettronica»: un valore monetario rappresentato da un credito nei confronti dell'emittente che sia memorizzato su un dispositivo elettronico, emesso previa ricezione di fondi di valore
+non inferiore al valore monetario emesso e accettato come mezzo di pagamento da soggetti diversi dall'emittente;
+ h-quater) «partecipazioni»: le azioni, le quote e gli altri strumenti finanziari che attribuiscono diritti amministrativi o comunque i diritti previsti dall'art. 2351, ultimo comma, del codice civile
+;
+ h-quinquies) «partecipazioni rilevanti»: le partecipazioni che comportano il controllo della società e le partecipazioni individuate dalla Banca d'Italia in conformità alle deliberazioni del CICR,
+con riguardo alle diverse fattispecie disciplinate, tenendo conto dei diritti di voto e degli altri diritti che consentono di influire sulla società.
+ 3. La Banca d'Italia, può ulteriormente qualificare, in conformità delle deliberazioni del CICR, la definizione di stretti legami prevista dal comma 2, lettera h), al fine di evitare situazioni di
+ostacolo all'effettivo esercizio delle funzioni di vigilanza.
+ 3-bis. Se non diversamente disposto, le norme del presente decreto legislativo che fanno riferimento al consiglio di amministrazione, all'organo amministrativo e agli amministratori si applicano
+anche al consiglio di gestione ed ai suoi componenti.
+ 3-ter. Se non diversamente disposto, le norme del presente decreto legislativo che fanno riferimento al collegio sindacale, ai sindaci ed all'organo che svolge la funzione di controllo si applicano
+anche al consiglio di sorveglianza ed al comitato per il controllo sulla gestione e ai loro componenti.
+ h-sexies) «istituti di pagamento»: le imprese, diverse dalle banche e dagli istituti di moneta elettronica, autorizzate a prestare i servizi di pagamento di cui alla lettera f), n. 4);
+ h-septies) «istituti di pagamento comunitari»: gli istituti di pagamento aventi sede legale e amministrazione centrale in uno stesso Stato comunitario diverso dall'Italia;
+ h-octies) «succursale di un istituto di pagamento»: una sede che costituisce parte, sprovvista di personalità giuridica, di un istituto di pagamento e che effettua direttamente, in tutto o in parte,
+l'attività dell'istituto di pagamento.».
+ - Si riporta il testo dell'art. 5 del citato decreto legislativo n. 385 del 1993 , come modificato dal presente decreto:
+ «Art. 5. (Finalità e destinatari della vigilanza). - 1. Le autorità creditizie esercitano i poteri di vigilanza a esse attribuiti dal presente decreto legislativo, avendo riguardo alla sana e
+prudente gestione dei soggetti vigilati, alla stabilità complessiva, all'efficienza e alla competitività del sistema finanziario nonchè all'osservanza delle disposizioni in materia creditizia.
+ 2. La vigilanza si esercita nei confronti delle banche, dei gruppi bancari, degli intermediari finanziari, degli istituti di moneta elettronica e degli istituti di pagamento.
+ 3. Le autorità creditizie esercitano altresì gli altri poteri a esse attribuiti dalla legge.».
+ - Il testo dell'art. 11, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 11. (Raccolta del risparmio). - 1. Ai fini del presente decreto legislativo è raccolta del risparmio l'acquisizione di fondi con obbligo di rimborso, sia sotto forma di depositi sia sotto altra
+forma.
+ 2. La raccolta del risparmio tra il pubblico è vietata ai soggetti diversi dalle banche.
+ 2-bis. Non costituisce raccolta del risparmio tra il pubblico la ricezione di fondi connessa all'emissione di moneta elettronica.
+ 2-ter. Non costituisce raccolta del risparmio tra il pubblico la ricezione di fondi da inserire in conti di pagamento utilizzati esclusivamente per la prestazione di servizi di pagamento.».
+ 3. Il CICR stabilisce limiti e criteri, anche con riguardo all'attività ed alla forma giuridica del soggetto che acquisisce fondi, in base ai quali non costituisce raccolta del risparmio tra il
+pubblico quella effettuata presso specifiche categorie individuate in ragione di rapporti societari o di lavoro.
+ 4. Il divieto di raccolta del risparmio tra il pubblico non si applica:
+ a) agli Stati comunitari, agli organismi internazionali ai quali aderiscono uno o più Stati comunitari, agli enti pubblici territoriali ai quali la raccolta del risparmio è consentita in base agli
+ordinamenti nazionali degli Stati comunitari;
+ b) agli Stati extracomunitari ed ai soggetti esteri abilitati da speciali disposizioni del diritto italiano;
+ c) alle società, per la raccolta effettuata ai sensi del codice civile mediante obbligazioni, titoli di debito od altri strumenti finanziari;
+ d) alle altre ipotesi di raccolta espressamente consentite dalla legge, nel rispetto del principio di tutela del risparmio.
+ 4-bis. Il CICR determina i criteri per l'individuazione degli strumenti finanziari, comunque denominati, la cui emissione costituisce raccolta del risparmio.
+ 4-ter. Se non disciplinati dalla legge, il CICR fissa limiti all'emissione e, su proposta formulata dalla Banca d'Italia sentita la CONSOB, può determinare durata e taglio degli strumenti finanziari,
+diversi dalle obbligazioni, utilizzati per la raccolta tra il pubblico.
+ 4-quater. Il CICR, a fini di tutela della riserva dell'attività bancaria, stabilisce criteri e limiti, anche in deroga a quanto previsto dal codice civile , per la raccolta effettuata dai soggetti
+che esercitano nei confronti del pubblico attività di concessione di finanziamenti sotto qualsiasi forma.
+ 4-quinquies. A fini di tutela del risparmio, gli investitori professionali, che ai sensi del codice civile rispondono della solvenza della società per le obbligazioni, i titoli di debito e gli altri
+strumenti finanziari emessi dalla stessa, devono rispettare idonei requisiti patrimoniali stabiliti dalle competenti autorità di vigilanza.
+ 5. Nei casi previsti dal comma 4, lettere c) e d), sono comunque precluse la raccolta di fondi a vista ed ogni forma di raccolta collegata all'emissione od alla gestione di mezzi di pagamento a
+spendibilità generalizzata.».
+ - Il testo dell'art. 106, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 106. (Elenco generale). - 1. L'esercizio nei confronti del pubblico delle attività di assunzione di partecipazioni, di concessione di finanziamenti sotto qualsiasi forma, e di intermediazione
+in cambi è riservato a intermediari finanziari iscritti in un apposito elenco tenuto dall'UIC.
+ 2. Gli intermediari finanziari indicati nel comma 1 possono svolgere esclusivamente attività finanziarie, fatte salve le riserve di attività previste dalla legge.
+ 3. L'iscrizione nell'elenco è subordinata al ricorrere delle seguenti condizioni:
+ a) forma di società per azioni, di società in accomandita per azioni, di società a responsabilità limitata o di società cooperativa;
+ b) oggetto sociale conforme al disposto del comma 2;
+ c) capitale sociale versato non inferiore a cinque volte il capitale minimo previsto per la costituzione delle società per azioni;
+ d) possesso, da parte dei titolari di partecipazioni e degli esponenti aziendali, dei requisiti previsti dagli articoli 108 e 109.
+ 4. Il Ministro dell'economia e delle finanze, sentiti la Banca d'Italia e l'UIC:
+ a) specifica il contenuto delle attività indicate nel comma 1, nonchè in quali circostanze ricorra l'esercizio nei confronti del pubblico. Il credito al consumo si considera comunque esercitato nei
+confronti del pubblico anche quando sia limitato all'ambito dei soci;
+ b) per gli intermediari finanziari che svolgono determinati tipi di attività, può, in deroga a quanto previsto dal comma 3, vincolare la scelta della forma giuridica, consentire l'assunzione di altre
+forme giuridiche e stabilire diversi requisiti patrimoniali.
+ 5. L'UIC indica le modalità di iscrizione nell'elenco e dà comunicazione delle iscrizioni alla Banca d'Italia e alla CONSOB.
+ 6. Al fine di verificare il rispetto dei requisiti per l'iscrizione nell'elenco, l'UIC può chiedere agli intermediari finanziari dati, notizie, atti e documenti e, se necessario, può effettuare
+verifiche presso la sede degli intermediari stessi, anche con la collaborazione di altre autorità.
+ 7. I soggetti che svolgono funzioni di amministrazione, direzione e controllo presso gli intermediari finanziari comunicano all'UIC, con le modalità dallo stesso stabilite, le cariche analoghe
+ricoperte presso altre società ed enti di qualsiasi natura.».
+ - Il testo dell'art. 107 del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 107. (Elenco speciale). - 1. Il Ministro dell'economia e delle finanze, sentite la Banca d'Italia e la CONSOB, determina criteri oggettivi, riferibili all'attività svolta, alla dimensione e al
+rapporto tra indebitamento e patrimonio, in base ai quali sono individuati gli intermediari finanziari che si devono iscrivere in un elenco speciale tenuto dalla Banca d'Italia.
+ 2. La Banca d'Italia, in conformità alle deliberazioni del CICR, detta agli intermediari iscritti nell'elenco speciale disposizioni aventi ad oggetto l'adeguatezza patrimoniale e il contenimento del
+rischio nelle sue diverse configurazioni, l'organizzazione amministrativa e contabile e i controlli interni, nonchè l'informativa da rendere al pubblico sulle predette materie. La Banca d'Italia
+adotta, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli intermediari per le materie in precedenza indicate. Con riferimento a determinati tipi di attività la Banca
+d'Italia può inoltre dettare disposizioni volte ad assicurarne il regolare esercizio.
+ 2-bis. Le disposizioni emanate ai sensi del comma 2 prevedono che gli intermediari finanziari iscritti nell'elenco speciale possano utilizzare:
+ a) le valutazioni del rischio di credito rilasciate da società o enti esterni previsti dall'art. 53, comma 2-bis, lettera a);
+ b) sistemi interni di misurazione dei rischi per la determinazione dei requisiti patrimoniali, previa autorizzazione della Banca d'Italia.
+ 3. Gli intermediari inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, segnalazioni periodiche, nonchè ogni altro dato e documento richiesto.
+ 4. La Banca d'Italia può effettuare ispezioni con facoltà di richiedere l'esibizione di documenti e gli atti ritenuti necessari.
+ 4-bis. La Banca d'Italia può imporre agli intermediari il divieto di intraprendere nuove operazioni e disporre la riduzione delle attività, nonchè vietare la distribuzione di utili o di altri
+elementi del patrimonio per violazione di norme di legge o di disposizioni emanate ai sensi del presente decreto.
+ 5. Gli intermediari finanziari iscritti nell'elenco speciale restano iscritti anche nell'elenco generale; a essi non si applicano i commi 6 e 7 dell'art. 106.
+ 6. Gli intermediari finanziari iscritti nell'elenco speciale, quando siano stati autorizzati all'esercizio dei servizi di investimento ovvero abbiano acquisito fondi con obbligo di rimborso per un
+ammontare superiore al patrimonio, sono assoggettati alle disposizioni previste nel titolo IV, capo I, sezioni I e III, nonchè all'art. 97-bis in quanto compatibile; in luogo degli articoli 86, commi
+6 e 7, e 87, comma 1, si applica l' art. 57, commi 4 e 5, del decreto legislativo 24 febbraio 1998, n. 58 .
+ 7. Agli intermediari iscritti nell'elenco previsto dal comma 1 che esercitano l'attività di concessione di finanziamenti sotto qualsiasi forma si applicano le disposizioni dell'art. 47.
+ 7-bis. Gli intermediari finanziari iscritti nell'elenco previsto dal comma 1 possono prestare servizi di pagamento a condizione che siano autorizzati ai sensi dell'art. 114-novies, comma 4, e
+iscritti nel relativo albo. Con riferimento all'attività di prestazione dei servizi di pagamento si applicano le disposizioni previste nel titolo V-ter.».
+ - Il testo dell'art. 114-quater, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 114-quater. (Vigilanza). - 1. Agli istituti di moneta elettronica si applicano, in quanto compatibili, le disposizioni contenute nel Titolo II, Capi III, fatta eccezione per l'art. 19, commi 6
+e 7, e IV; nel Titolo III, fatta eccezione per l'art. 56; nel Titolo IV, Capo I, fatta eccezione per la Sezione IV; nel Titolo VI, Capi I e III; nel Titolo VIII, articoli 134, 139 e 140.
+ 2. Ai fini dell'applicazione del Titolo III, Capo II, gli istituti di moneta elettronica sono assimilati alle società finanziarie previste dall'art. 59, comma 1, lettera b). La Banca d'Italia può
+emanare disposizioni per sottoporre a vigilanza su base consolidata gli istituti e i soggetti che svolgono attività connesse o strumentali o altre attività finanziarie, non sottoposti a vigilanza su
+base consolidata ai sensi del Titolo III, Capo II, Sezione II.
+ 3. La Banca d'Italia può stabilire, a fini prudenziali, un limite massimo al valore nominale della moneta elettronica.».
+ - Il testo dell'art. 128, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 128. (Controlli). - 1. Al fine di verificare il rispetto delle disposizioni del presente titolo, la Banca d'Italia può acquisire informazioni, atti e documenti ed eseguire ispezioni presso le
+banche, gli istituti di pagamento e gli intermediari finanziari iscritti nell'elenco speciale previsto dall'art. 107.
+ 2. Nei confronti degli intermediari finanziari iscritti nel solo elenco generale previsto dall'art. 106 e nei confronti dei soggetti indicati nell'art. 155, comma 5, i controlli previsti dal comma 1
+sono effettuati dall'UIC che, a tal fine, può chiedere la collaborazione di altre autorità.
+ 3. Con riguardo ai soggetti indicati nell'art. 121, comma 2, lettera c) e ai beneficiari e ai terzi destinatari delle disposizioni previste dall'art. 126-quater, comma 3, i controlli previsti dal
+comma 1 sono demandati al Ministro dell'industria, del commercio e dell'artigianato al quale compete, inoltre, l'irrogazione delle sanzioni previste dagli articoli 144, commi 3 e 4, e 145, comma 3.
+ 4. Con riguardo ai soggetti individuati ai sensi dell'art. 115, comma 2, il CICR indica le autorità competenti a effettuare i controlli previsti dal comma 1 e a irrogare le sanzioni previste dagli
+articoli 144, commi 3 e 4, e 145, comma 3.
+ 5. In caso di ripetute violazioni delle disposizioni concernenti gli obblighi di pubblicità, il Ministro dell'economia e delle finanze, su proposta della Banca d'Italia o dell'UIC o delle altre
+autorità indicate dai CICR ai sensi del comma 4, nell'ambito delle rispettive competenze, può disporre la sospensione dell'attività, anche di singole sedi secondarie per un periodo non superiore a
+trenta giorni.».
+ - Il testo dell'art. 128-bis, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 128-bis. (Risoluzione delle controversie). - 1. I soggetti di cui all'art. 115 aderiscono a sistemi di risoluzione stragiudiziale delle controversie con la clientela.
+ 2. Con deliberazione del CICR, su proposta della Banca d'Italia, sono determinati i criteri di svolgimento delle procedure di risoluzione delle controversie e di composizione dell'organo decidente,
+in modo che risulti assicurata l'imparzialità dello stesso e la rappresentatività dei soggetti interessati. Le procedure devono in ogni caso assicurare la rapidità, l'economicità della soluzione delle
+controversie e l'effettività della tutela.
+ 3. Le disposizioni di cui ai commi 1 e 2 non pregiudicano per il cliente il ricorso, in qualunque momento, a ogni altro mezzo di tutela previsto dall'ordinamento.
+ 3-bis.La Banca d'Italia, quando riceve un reclamo da parte della clientela dei soggetti di cui al comma 1, indica al reclamante la possibilità di adire i sistemi previsti ai sensi del presente
+articolo.».
+ - Il testo dell'art. 132-bis, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 132-bis. (Denunzia al pubblico ministero ed al tribunale). - 1. Se vi è fondato sospetto che una società svolga attività di raccolta del risparmio, attività bancaria, attività di emissione di
+moneta elettronica, prestazione di servizi di pagamento o attività finanziaria in violazione degli articoli 130, 131, 131-bis, 131-ter e 132, la Banca d'Italia o l'UIC possono denunziare i fatti al
+pubblico ministero ai fini dell'adozione dei provvedimenti previsti dall' art. 2409 del codice civile , ovvero possono richiedere al tribunale l'adozione dei medesimi provvedimenti. Le spese per
+l'ispezione sono a carico della società.».
+ - Il testo dell'art. 133, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 133. (Abuso di denominazione). - 1. L'uso, nella denominazione o in qualsivoglia segno distintivo o comunicazione rivolta al pubblico, delle parole «banca», «banco», «credito», «risparmio»
+ovvero di altre parole o locuzioni, anche in lingua straniera, idonee a trarre in inganno sulla legittimazione allo svolgimento dell'attività bancaria è vietato a soggetti diversi dalle banche.
+ 1-bis. L'uso, nella denominazione o in qualsivoglia segno distintivo o comunicazione rivolta al pubblico, dell'espressione «moneta elettronica» ovvero di altre parole o locuzioni, anche in lingua
+straniera, idonee a trarre in inganno sulla legittimazione allo svolgimento dell'attività di emissione di moneta elettronica è vietato a soggetti diversi dagli istituti di moneta elettronica e dalle
+banche.
+ 1-ter. L'uso, nella denominazione o in qualsivoglia segno distintivo o comunicazione rivolta al pubblico, dell'espressione «istituto di pagamento» ovvero di altre parole o locuzioni, anche in lingua
+straniera, idonee a trarre in inganno sulla legittimazione allo svolgimento dell'attività di prestazione di servizi di pagamento è vietato a soggetti diversi dagli istituti di pagamento.
+ 2. La Banca d'Italia determina in via generale le ipotesi in cui, per l'esistenza di controlli amministrativi o in base a elementi di fatto, le parole o le locuzioni indicate nei commi 1, 1-bis e
+1-ter possono essere utilizzate da soggetti diversi dalle banche, dagli istituti di moneta elettronica e dagli istituti di pagamento.
+ 3. Chiunque contravviene al disposto dei commi 1, 1-bis e 1-ter è punito con la sanzione amministrativa pecuniaria da euro 5.164 a euro 51.645. La stessa sanzione si applica a chi, attraverso
+informazioni e comunicazioni in qualsiasi forma, induce in altri il falso convincimento di essere sottoposto alla vigilanza della Banca d'Italia ai sensi dell'art. 107.».
+ - Il testo dell'art. 144, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 144. (Altre sanzioni amministrative pecuniarie).
+ - 1. Nei confronti dei soggetti che svolgono funzioni di amministrazione o di direzione, nonchè dei dipendenti è applicabile la sanzione amministrativa pecuniaria da euro 2.582 a euro 129.114 per
+l'inosservanza delle norme degli articoli 18, comma 4, 26, commi 2 e 3, 34, comma 2, 35, 49, 51, 53, 54, 55, 64, commi 2 e 4, 66, 67, 68, 106, commi 6 e 7, 107, 109, commi 2 e 3, 114-quater,
+114-octies, 114-duodecies, 114-terdecies, 114-quaterdecies, 129, comma 1, 145, comma 3, 146, comma 2, 147 e 161, comma 5, o delle relative disposizioni generali o particolari impartite dalle autorità
+creditizie.
+ 2. Le sanzioni previste nel comma 1 si applicano anche ai soggetti che svolgono funzioni di controllo per la violazione delle norme e delle disposizioni indicate nel medesimo comma o per non aver
+vigilato affinchè le stesse fossero osservate da altri. Per la violazione degli articoli 52, 61, comma 5, e 112, è applicabile la sanzione prevista dal comma 1.
+ 3. Nei confronti dei soggetti che svolgono funzioni di amministrazione o di direzione, dei dipendenti, nonchè dei soggetti indicati nell'art. 121, comma 3, è applicabile la sanzione amministrativa
+pecuniaria da euro 5.164 a euro 64.557 per l'inosservanza delle norme contenute negli articoli 116, 123, 126-ter, 126-quater, 126-quinquies, 126-sexies e 126-septies o delle relative disposizioni
+generali o particolari impartite dalle autorità creditizie.
+ 4. Nei confronti dei soggetti che svolgono funzioni di amministrazione o di direzione, dei dipendenti, nonchè dei soggetti indicati nell'art. 121, comma 3, è applicabile la sanzione amministrativa
+pecuniaria fino a euro 258.228 per l'inosservanza delle norme contenute nell'art. 128, comma 1, ovvero nel caso di ostacolo all'esercizio delle funzioni di controllo previste dal medesimo art. 128. La
+stessa sanzione è applicabile nel caso di frazionamento artificioso di un unico contratto di credito al consumo in una pluralità di contratti dei quali almeno uno sia di importo inferiore al limite
+inferiore previsto dall'art. 121, comma 4, lettera a).
+ 5. Le sanzioni amministrative pecuniarie previste per i dipendenti dai commi 1, 3 e 4 si applicano anche a coloro che operano sulla base di rapporti che ne determinano l'inserimento
+nell'organizzazione della banca, anche in forma diversa dal rapporto di lavoro subordinato.
+ 6. -».
+
+=== K122 | [37] Disposizioni transitorie
+Art. 37
+ (Disposizioni transitorie)
+ 1. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 2. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 3. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 4. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 5. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 6.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ 7. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+
+=== K124 | [39] Esposti
+Art. 39
+ (Esposti)
+ 1.
+ ((In caso di violazione da parte di un prestatore di servizi di pagamento delle disposizioni di cui al titolo II e di quelle di cui all'articolo 115 e al capo II-bis del titolo VI del decreto
+legislativo 1° settembre 1993, n. 385 , e della relativa normativa di attuazione, gli utenti di servizi di pagamento, le associazioni che li rappresentano e le altre parti interessate possono
+presentare esposti alla Banca d'Italia.))
+ La proposizione dell'esposto non pregiudica il diritto di adire la competente autorità giudiziaria.
+ La Banca d'Italia informa il proponente l'esposto dell'esistenza dei sistemi di risoluzione stragiudiziale delle controversie di cui all' articolo 128-bis del decreto legislativo 1° settembre 1993,
+n. 385 .
+
+=== K125 | [40] Ricorso stragiudiziale
+Art. 40
+ (Ricorso stragiudiziale)
+ 1. Per le controversie concernenti i servizi di pagamento gli utilizzatori di tali servizi possono avvalersi di sistemi, organismi o procedure di risoluzione stragiudiziale; resta in ogni caso fermo
+il diritto degli utilizzatori di adire la competente autorità giudiziaria.
+ 2. Ai fini di cui al comma 1 i prestatori di servizi di pagamento aderiscono a sistemi, organismi o procedure costituiti ai sensi di norme di legge o con atto di autoregolamentazione delle
+associazioni di categoria. Le banche, gli istituti di moneta elettronica e gli istituti di pagamento aderiscono ai sistemi di risoluzione stragiudiziale delle controversie previsti dall' articolo
+128-bis del decreto legislativo 1° settembre 1993, n. 385 , per le controversie individuate dalle disposizioni attuative del medesimo articolo.
+ 3. Per la risoluzione delle controversie transfrontaliere i sistemi, organismi o procedure di cui ai commi 1 e 2 prevedono forme di collaborazione con quelli istituiti negli altri Stati Membri.
+ Nota agli articoli 39 e 40:
+ - Per l' art. 128-bis del decreto legislativo 1° settembre 1993, n. 385 , si veda nelle note all'art. 35.
+
+
+######## NORMA: Regolamento n. 45 IVASS del 4 agosto 2020 Regolamento IVASS recante disposizioni in materia di requisiti di governo e controllo dei prodotti assicurativi.  (id IVASS-f6eff6e4df)
+
+=== K128 | [Premessa] REGOLAMENTO IVASS RECANTE DISPOSIZIONI IN MATERIA DI REQUISITI DI
+REGOLAMENTO IVASS N. 45 DEL 4 AGOSTO 2020
+REGOLAMENTO IVASS RECANTE DISPOSIZIONI IN MATERIA DI REQUISITI DI
+GOVERNO E CONTROLLO DEI PRODOTTI ASSICURATIVI AI SENSI DEL DECRETO
+LEGISLATIVO 7 SETTEMBRE 2005, N. 209 – CODICE DELLE ASSICURAZIONI
+PRIVATE E SUCCESSIVE MODIFICHE E INTEGRAZIONI.1
+MODIFICATO E INTEGRATO DAL PROVVEDIMENTO IVASS N. 131 DEL 10 MAGGIO 2023. LE
+MODIFICHE E INTEGRAZIONI SONO RIPORTATE IN CORSIVO.
+L’ISTITUTO PER LA VIGILANZA SULLE ASSICURAZIONI
+VISTA la legge 12 agosto 1982, n. 576 e successive modifiche e integrazioni, concernente
+la riforma della vigilanza sulle assicurazioni;
+VISTO l’articolo 13 del decreto legge 6 luglio 2012, n. 95, convertito con modifiche nella
+legge n. 135 del 7 agosto 2012, concernente disposizioni urgenti per la revisione della spesa
+pubblica con invarianza dei servizi ai cittadini e recante l’istituzione dell’IVASS;
+VISTO il decreto del Presidente della Repubblica 12 dicembre 2012, pubblicato nella
+Gazzetta Ufficiale della Repubblica Italiana - Serie generale - n. 303 del 31 dicembre 2012,
+che ha approvato lo Statuto dell’IVASS, entrato in vigore il 1° gennaio 2013;
+VISTO il decreto legislativo 7 settembre 2005, n. 209, e successive modificazioni e
+integrazioni, recante il Codice delle Assicurazioni Private, e, in particolare, gli articoli 30-
+decies e 121-bis;
+VISTO il decreto legge 18 ottobre 2012, n. 179, convertito nella legge 17 dicembre 2012, n.
+221 recante “Ulteriori misure urgenti per la crescita del Paese”;
+VISTO il Regolamento IVASS n. 3 del 5 novembre 2013, sull’attuazione delle disposizioni
+di cui all’articolo 23 della legge 28 dicembre 2005, n. 262, in materia di procedimenti per
+l’adozione di atti regolamentari e generali dell’IVASS;
+VISTO il Regolamento Delegato (UE) 2017/2358 della Commissione del 21 settembre 2017
+che integra la Direttiva (UE) 2016/97 del Parlamento europeo e del Consiglio per quanto
+riguarda i requisiti in materia di governo e controllo del prodotto per le imprese di
+assicurazione e i distributori di prodotti assicurativi;
+VISTA la legge 25 ottobre 2017, n. 163, recante delega al Governo per il recepimento delle
+direttive europee e l'attuazione di altri atti dell'Unione europea - legge di delegazione
+europea 2016-2017 e, in particolare, l'articolo 5;
+VISTO il Regolamento IVASS n. 38 del 3 luglio 2018 recante disposizioni in materia di
+governo societario di cui al Titolo III (Esercizio dell’attività assicurativa) del decreto
+1 La presente versione consolidata del Regolamento n. 45/2020 è pubblicata a fini esclusivamente informativi.
+legislativo 7 settembre 2005, n. 209, e successive modificazioni e integrazioni recante il
+Codice delle Assicurazioni Private;
+VISTO il Regolamento IVASS n. 40 del 2 agosto 2018 recante disposizioni in materia di
+distribuzione assicurativa e riassicurativa di cui al Titolo IX (Disposizioni Generali in materia
+di distribuzione) del decreto legislativo 7 settembre 2005, n. 209 – Codice delle
+Assicurazioni Private;
+CONSIDERATA la necessità di dare attuazione alla normativa nazionale e dell’Unione
+europea;
+SENTITA la Consob, Commissione nazionale per le società e la borsa,
+adotta il seguente
+REGOLAMENTO
+INDICE
+Capo I – Disposizioni generali
+
+=== K140 | [Art. 1] (Fonti normative)
+Art. 1
+(Fonti normative)
+1. Il presente Regolamento è adottato ai sensi degli articoli 5, comma 2, 30-decies, comma
+7, 121-bis, comma 2, e 191 del decreto legislativo 7 settembre 2005, n. 209 e successive
+modifiche e integrazioni, recante il Codice delle Assicurazioni Private.
+
+=== K141 | [Art. 2] (Definizioni)
+Art. 2
+(Definizioni)
+1. Ove non diversamente specificato, ai fini del presente Regolamento valgono le
+definizioni dettate dal decreto legislativo 7 settembre 2005, n. 209 e successive
+modifiche e integrazioni. In aggiunta si intende per:
+a) “Codice”: il decreto legislativo 7 settembre 2005, n. 209, e successive
+modificazioni e integrazioni, recante il Codice delle Assicurazioni Private;
+b) “collaborazione orizzontale”: collaborazione tra intermediari operativi iscritti nelle
+sezioni A, B, D del Registro degli intermediari assicurativi, anche a titolo
+accessorio, e riassicurativi di cui all’articolo 109 del decreto legislativo 7
+settembre 2005, n. 209, o nell’Elenco annesso al Registro di cui all’articolo 116-
+quinquies del medesimo decreto, ai sensi dell’articolo 22, comma 10, del decreto
+legge 18 ottobre 2012, n. 179, convertito nella legge 17 dicembre 2012, n. 221;
+c) “contraente” o “cliente”: la persona fisica o giuridica in favore della quale un
+distributore svolge attività di distribuzione assicurativa;
+c-bis) “fattori di sostenibilità”: fattori di sostenibilità ai sensi dell’articolo 2, punto 24, del
+Regolamento (UE) 2019/2088;2
+d) “intermediario emittente”: nell’ambito della collaborazione orizzontale, con
+riferimento al prodotto distribuito, l’intermediario titolare dell’incarico di
+distribuzione da parte dell’impresa emittente o con la quale abbia rapporti d'affari;
+e) “intermediario produttore di fatto”: l’intermediario assicurativo che realizza
+prodotti assicurativi quando sussistono i presupposti e le condizioni di cui
+all’articolo 3 del Regolamento (UE) 2017/2358;
+f) “intermediario proponente”: nell’ambito della collaborazione orizzontale, con
+riferimento al prodotto distribuito, l’intermediario che entra in contatto con il
+contraente;
+g) “Regolamento (UE) 2017/2358”: il Regolamento Delegato (UE) 2017/2358 della
+Commissione del 21 settembre 2017 che integra la direttiva (UE) 2016/97 del
+Parlamento europeo e del Consiglio per quanto riguarda i requisiti in materia di
+governo e controllo del prodotto per le imprese di assicurazione e i distributori di
+prodotti assicurativi;
+2 Lettera inserita dall’art. 4, comma 1, del Provvedimento IVASS n. 131/2023.
+h) “soggetto che realizza prodotti assicurativi” o “produttore”: i) l’impresa di
+assicurazione; ii) l’intermediario produttore di fatto;
+i) “mercato di riferimento negativo”: le categorie di clienti per le cui esigenze,
+caratteristiche e obiettivi, il prodotto non può essere distribuito, secondo quanto
+previsto dall’articolo 30-decies, comma 4, del Codice.
+
+=== K142 | [Art. 3 (2)] (Ambito di applicazione)
+Art. 3
+(Ambito di applicazione)
+1. Il presente Regolamento disciplina l’elaborazione e l’attuazione dei processi di
+approvazione dei prodotti assicurativi nonché i relativi meccanismi di distribuzione.
+2. Le disposizioni del presente Regolamento si applicano:
+a) con specifico riferimento ai Capi II e III, alle imprese di assicurazione con sede
+legale nel territorio della Repubblica Italiana;
+b) con specifico riferimento ai Capi II e III, alle sedi secondarie nel territorio della
+Repubblica italiana di imprese di assicurazione con sede legale in uno Stato
+terzo;
+c) con specifico riferimento al Capo II, agli intermediari produttori di fatto;
+d) con specifico riferimento all’articolo 10 e al Capo III, agli intermediari assicurativi
+di cui al comma 2, lettere a), b), c), d), e) e f) dell’articolo 109 del Codice e agli
+intermediari con residenza o sede legale in un altro Stato membro dell’Unione
+europea che siano iscritti nell’Elenco annesso al Registro di cui all’articolo 116-
+quinques del Codice, inclusi gli addetti all’interno dei locali dell’intermediario per il
+quale operano, nonché alle imprese di assicurazione e relativi dipendenti, che
+distribuiscono prodotti assicurativi diversi dai prodotti di investimento assicurativo;
+e) con specifico riferimento all’articolo 10 e al Capo III, agli intermediari assicurativi
+di cui al comma 2, lettere a), b) e c) dell’articolo 109 del Codice e agli intermediari
+con residenza o sede legale in un altro Stato membro dell’Unione europea che
+siano iscritti nell’Elenco annesso al Registro di cui all’articolo 116-quinques del
+Codice, inclusi gli addetti all’interno dei locali dell’intermediario per il quale operano
+e i soggetti collaboratori di cui al comma 2, lettera e), dell’articolo 109 del Codice,
+nonché alle imprese di assicurazione e relativi dipendenti, che distribuiscono
+prodotti di investimento assicurativo.
+3. Ferma restando la responsabilità del singolo produttore sul governo e controllo dei
+prodotti assicurativi, quando i soggetti di cui al comma 2, lettere a) e b), appartengono
+a un gruppo, le disposizioni di cui all’articolo 5, commi 3 e 4, si applicano in modo
+proporzionato a livello di ultima società controllante italiana, secondo quanto previsto
+dal Regolamento IVASS n. 38 del 2018. A tal fine, l’ultima società controllante redige
+un’apposita politica recante le modalità di coordinamento dei processi di approvazione
+dei prodotti assicurativi dei produttori appartenenti al gruppo.
+4. I produttori e gli intermediari rispettano gli obblighi di cui al presente Regolamento in
+modo appropriato e proporzionato, tenendo conto del livello di complessità di ogni
+prodotto assicurativo e del correlato mercato di riferimento.
+5. In coerenza con quanto previsto dall’articolo 121-ter del Codice, le disposizioni del
+presente Regolamento non si applicano ai prodotti assicurativi che consistono
+nell’assicurazione dei grandi rischi.
+Capo II
+Requisiti di governo e controllo dei prodotti assicurativi applicabili ai produttori
+
+=== K143 | [Art. 4] (Principi generali)
+Art. 4
+(Principi generali)
+1. I produttori elaborano e attuano un processo di approvazione per ciascun nuovo
+prodotto assicurativo e per ogni modifica significativa di un prodotto assicurativo
+esistente, prima che sia commercializzato o distribuito, in coerenza con le disposizioni
+dell’articolo 30-decies del Codice e degli articoli 3, 4, 5, 6, 7, 8 e 9 del Regolamento
+(UE) 2017/2358.
+
+=== K144 | [Art. 5 (2)] (Ruolo dell’organo amministrativo e della funzione di verifica di conformità alle
+Art. 5
+(Ruolo dell’organo amministrativo e della funzione di verifica di conformità alle
+norme)
+1. L'organo amministrativo delle imprese di assicurazione ha la responsabilità ultima
+dell’osservanza delle norme sul processo di approvazione dei prodotti assicurativi.
+2. Ai fini di cui al comma 1, l’organo amministrativo approva e rivede, almeno una volta
+l’anno, la politica in materia di governo e controllo dei prodotti assicurativi di cui
+all’articolo 4 del Regolamento (UE) 2017/2358. La politica contiene almeno gli elementi
+di cui l’Allegato 1.
+3. La funzione di verifica di conformità alle norme delle imprese di assicurazione monitora
+lo sviluppo e la revisione periodica delle procedure e delle misure di governo dei prodotti
+assicurativi, al fine di individuare i rischi di mancato adempimento degli obblighi previsti
+dalla normativa vigente, inclusa la normativa europea direttamente applicabile, anche
+da parte dell’intermediario produttore di fatto.
+4. La relazione della funzione di verifica della conformità alle norme di cui all’articolo 30
+del Regolamento IVASS n. 38 del 2018 contiene gli elementi relativi alle verifiche e alle
+analisi effettuate sulla corretta definizione e sull’efficacia di tutte le fasi della procedura
+di approvazione e revisione di ciascun prodotto, incluse le informazioni sui prodotti
+assicurativi realizzati, sulla strategia di distribuzione, nonché sull’attività di distribuzione
+diretta svolta dall’impresa, evidenziando eventuali criticità.
+5. Le imprese di assicurazione mettono a disposizione dell’IVASS, su richiesta di
+quest’ultima, la politica di cui al comma 2, gli elementi di cui al comma 4, nonché la
+documentazione relativa al processo di approvazione di ciascun prodotto di cui
+all’articolo 30-decies, comma 3, del Codice.
+6. Nel caso degli intermediari produttori di fatto:
+a) l’organo amministrativo o il corrispondente organo dell’intermediario è
+responsabile del processo di approvazione dei prodotti assicurativi e applica la
+politica definita dall’impresa di assicurazione ai sensi del comma 2;
+b) l’intermediario monitora lo sviluppo e la revisione periodica delle procedure di
+governo dei prodotti assicurativi per le finalità di cui al comma 3 e fornisce
+all’impresa di assicurazione gli elementi necessari a redigere la relazione di cui
+al comma 4.
+
+=== K145 | [Art. 6] (Mercato di riferimento)
+Art. 6
+(Mercato di riferimento)
+1. In coerenza con quanto previsto dagli articoli 4, paragrafo 3, lettera a), punto i) e3 5,
+paragrafo 1, del Regolamento (UE) 2017/2358, nella definizione del mercato di
+riferimento con sufficiente grado di dettaglio i produttori considerano, ove appropriati,
+almeno i seguenti elementi:
+a) le tipologie di clienti cui è rivolto il prodotto;
+b) i rischi cui sono esposte le tipologie di clienti cui è rivolto il prodotto;
+c) le esigenze e gli obiettivi dei clienti cui è rivolto il prodotto, compresi gli eventuali
+obiettivi legati alla sostenibilità4;
+d) le caratteristiche del prodotto, con particolare riferimento alle garanzie e alle
+esclusioni e limitazioni delle garanzie;
+e) in relazione alla complessità del prodotto, il livello di conoscenza del cliente;
+f) l’età del cliente, il profilo occupazionale e la sua situazione familiare;
+f-bis) che, ove pertinente, i fattori di sostenibilità del prodotto siano coerenti con il
+mercato di riferimento.5
+2. Ai fini di cui al comma 1, con riferimento ai prodotti d’investimento assicurativi, i
+produttori considerano anche la conoscenza teorica e l'esperienza pregressa rispetto a
+tali prodotti e ai mercati finanziari e assicurativi, nonché alle esigenze, alle
+caratteristiche e agli obiettivi dei clienti.
+3. Con riferimento ai prodotti d’investimento assicurativi, i produttori stabiliscono se un
+prodotto risponde alle esigenze, alle caratteristiche e agli obiettivi del mercato di
+riferimento, esaminando, inoltre, i seguenti elementi:
+a) la coerenza del profilo di rischio/rendimento del prodotto con il mercato di
+riferimento;
+b) la rispondenza del prodotto all’interesse del cliente, prestando attenzione a
+eventuali conflitti determinati da un modello di business redditizio per il
+produttore e svantaggioso per il cliente;
+c) la situazione finanziaria del cliente, inclusa la capacità di sostenere perdite.
+3 Comma modificato dall’art. 4, comma 2, lett.a), del Provvedimento IVASS n. 131/2023.
+4 Lettera modificata dall’art. 4, comma 2, lett.b), del Provvedimento IVASS n. 131/2023.
+5 Lettera inserita dall’art. 4, comma 2, lett.c), del Provvedimento IVASS n. 131/2023.
+4. Sulla base degli elementi di cui ai commi precedenti, i produttori individuano anche i
+clienti che rientrano nel mercato di riferimento negativo, secondo quanto previsto
+dall’articolo 30-decies, comma 4, del Codice, considerando, a tal fine, anche le
+esclusioni e limitazioni delle garanzie del prodotto assicurativo, nonché tenendo conto
+degli obblighi a contrarre previsti dalla normativa. In coerenza con l’articolo 5, paragrafo
+2, del Regolamento (UE) 2017/2358, con riferimento ai soli fattori di sostenibilità, i
+produttori non sono tenuti ad effettuare l’individuazione di cui al presente comma per i
+prodotti che considerano fattori di sostenibilità.6
+5. I produttori adottano ogni misura ragionevole e procedure organizzative adeguate per
+assicurare che:
+a) il prodotto assicurativo sia distribuito, anche quando la distribuzione è effettuata
+mediante i soggetti di cui all’articolo 107, comma 4, del Codice, ai clienti
+all’interno del mercato di riferimento individuato e non sia distribuito a clienti che
+rientrano nel mercato di riferimento negativo;
+b) fatto salvo quanto previsto dalla lettera c), l’eventuale distribuzione a clienti che
+non rientrano nel mercato di riferimento individuato sia realizzata a condizione
+che il cliente non appartenga al mercato di riferimento negativo e il prodotto
+corrisponda alle richieste e alle esigenze assicurative del cliente e, sulla base
+della consulenza fornita prima della conclusione del contratto, sia adeguato.
+c) con riferimento ai prodotti d’investimento assicurativi non complessi di cui
+all’articolo 16 del Regolamento (UE) 2017/2359, l’eventuale distribuzione a clienti
+che non rientrano nel mercato di riferimento individuato sia realizzata a
+condizione che il cliente non appartenga al mercato di riferimento negativo e il
+prodotto corrisponda alle richieste e alle esigenze assicurative del cliente e sia
+adeguato o appropriato.
+6. Nell’ambito dell’attività di cui all’articolo 8, paragrafo 4 del Regolamento (UE)
+2017/2358, i produttori verificano periodicamente il rispetto da parte dei distributori degli
+obblighi previsti dal comma 5. Nel caso di collaborazione orizzontale, le verifiche sono
+svolte nei confronti dell’intermediario emittente e hanno ad oggetto anche il rispetto degli
+obblighi previsti dal comma 5 da parte degli intermediari proponenti. Nel caso in cui la
+verifica abbia dato esito negativo, si applica l’articolo 8, par. 5, del Regolamento (UE)
+2017/2358.
+7. I produttori verificano che il mercato di riferimento effettivo e il mercato di riferimento
+negativo effettivo individuati dal distributore siano coerenti con il mercato di riferimento
+e con il mercato di riferimento negativo individuati ai sensi del presente articolo. Nel
+caso in cui la verifica ha esito negativo, adottano ogni misura necessaria per assicurare
+tale coerenza.
+
+=== K146 | [Art. 7 (2)] (Processo di approvazione del prodotto)
+Art. 7
+(Processo di approvazione del prodotto)
+6 Comma modificato dall’art. 4, comma 2, lett.d), del Provvedimento IVASS n. 131/2023.
+1. In coerenza con l’articolo 4 del Regolamento (UE) 2017/2358, i produttori istituiscono,
+attuano e mantengono procedure e misure idonee a garantire che la realizzazione di
+prodotti assicurativi rispetti gli obblighi in materia di conflitto di interessi, anche per
+quanto riguarda i sistemi di remunerazione e incentivazione.
+2. Fermo restando quanto previsto dall’articolo 8, paragrafi 2 e 3, del Regolamento (UE)
+2017/2358 e dall’articolo 30-novies del Codice, prima di decidere se procedere alla
+commercializzazione di un prodotto assicurativo, i produttori:
+a) valutano l’adeguatezza dei singoli canali di vendita in relazione al mercato di
+riferimento e alla complessità del prodotto;
+b) individuano istruzioni relative all’attività di distribuzione assicurativa.
+
+=== K147 | [Art. 8] (Test del prodotto)
+Articolo 8
+(Test del prodotto)
+1. In coerenza con l’articolo 6 del Regolamento (UE) 2017/2358 e fermi restando gli
+obblighi informativi previsti dal Codice e dalle disposizioni di attuazione, i produttori
+valutano i costi e gli oneri da applicare al prodotto assicurativo, esaminando tra l'altro i
+seguenti elementi:
+a) che l’ammontare dei costi e degli oneri sia compatibile con le esigenze, gli
+obiettivi e le caratteristiche del mercato di riferimento, ivi compresi gli eventuali
+obiettivi legati alla sostenibilità,7 e tale da consentire un adeguato valore per il
+cliente;
+b) che la struttura dei costi e degli oneri sia adeguatamente trasparente per il
+mercato di riferimento, non occulti i costi e gli oneri e non risulti troppo complessa
+da comprendere.
+2. Con specifico riferimento ai prodotti di investimento assicurativi i produttori valutano,
+inoltre:
+a) che i costi e gli oneri non compromettano le aspettative di rendimento del prodotto
+di investimento assicurativo;
+b) se il prodotto di investimento assicurativo possa rappresentare una minaccia per
+il buon funzionamento o per la stabilità dei mercati finanziari e del mercato
+assicurativo o per la tutela degli assicurati o per l’integrità e l’ordinato
+funzionamento dei mercati.
+3. I produttori svolgono, ove rilevante in base alle caratteristiche del prodotto, un’analisi di
+scenario per valutare il rischio che il prodotto di investimento assicurativo produca
+risultati negativi per i clienti finali e in quali circostanze ciò può accadere. A tal fine, il
+prodotto di investimento assicurativo viene valutato almeno alla luce delle seguenti
+circostanze negative:
+a) un deterioramento del contesto di mercato;
+b) le difficoltà finanziarie del produttore o dei soggetti terzi coinvolti nella
+realizzazione e/o nel funzionamento del prodotto di investimento assicurativo o il
+verificarsi di un altro rischio di controparte;
+7 Lettera modificata dall’art. 4, comma 3, del Provvedimento IVASS n. 131/2023.
+c) la non sostenibilità del prodotto di investimento assicurativo sul piano
+commerciale.
+
+=== K148 | [Art. 9 (2)] (Monitoraggio e revisione del prodotto assicurativo)
+Articolo 9
+(Monitoraggio e revisione del prodotto assicurativo)
+1. L’attività di monitoraggio nel continuo e di revisione regolare del prodotto di cui
+all’articolo 7, del Regolamento (UE) 2017/2358:
+a) include la verifica della correttezza delle valutazioni effettuate prima della
+commercializzazione del prodotto ai sensi degli articoli 7 e 8;
+b) include la verifica sui canali di vendita al fine di valutarne la congruità, in
+particolare con riferimento alla vendita non effettuata in coerenza con quanto
+previsto ai sensi dall’articolo 6 e agli altri rischi collegati all’attività di distribuzione;
+c) comprende anche la distribuzione effettuata mediante i soggetti di cui all’articolo
+107, comma 4, del Codice;
+d) esamina anche il numero e la tipologia di reclami presentati.
+2. Nel processo di monitoraggio e revisione dei prodotti assicurativi immessi sul mercato
+effettuato ai sensi dell’articolo 7 del Regolamento (UE) 2017/2358, i produttori, con
+specifico riferimento ai prodotti di investimento assicurativi, identificano, altresì, gli
+eventi cruciali in grado di incidere sul rischio potenziale o sulle aspettative di rendimento
+del prodotto, in particolare i livelli di rendimento del prodotto assicurativo tali da rendere
+necessaria una revisione del prodotto, tenuto conto delle aspettative di rendimento dei
+clienti.
+3. In esito all’attività di monitoraggio e revisione del prodotto di cui all’articolo 7, del
+Regolamento (UE) 2017/2358, i produttori adottano misure appropriate e correttive,
+consistenti, tra l’altro:
+a) nella fornitura ai clienti e ai distributori di adeguate informazioni sugli eventi
+cruciali identificati, sui relativi effetti sul prodotto assicurativo e sulle misure
+correttive adottate;
+b) nella revisione del processo di approvazione del prodotto assicurativo;
+c) nella sospensione o interruzione dell’emissione di ulteriori contratti relativi al
+prodotto assicurativo;
+d) nella modifica del prodotto assicurativo;
+e) nel contattare l’intermediario per valutare modifiche riguardanti il processo di
+distribuzione;
+f) nei casi di maggiore gravità, nell’interruzione del rapporto di distribuzione con
+l’intermediario.
+4. I produttori informano prontamente l’IVASS nel caso in cui gli esiti del processo di
+revisione determinino l’adozione delle misure di cui al comma 3.
+
+=== K149 | [Art. 10 (2)] (Flussi informativi)
+Art. 10
+(Flussi informativi)
+1. Ai fini del pieno rispetto degli obblighi di cui al Regolamento (UE) 2017/2358 e al
+presente Regolamento, le imprese di assicurazione e i distributori identificano tramite
+accordo la direzione, il contenuto, la periodicità, le modalità di scambio delle
+informazioni relative allo svolgimento delle rispettive attività e necessarie per adempiere
+ai rispettivi obblighi.
+2. L’identificazione dei flussi informativi di cui al comma 1:
+a) è finalizzata a guidare il distributore nella conoscenza del prodotto e ad
+assicurare che la distribuzione sia rivolta a clienti appartenenti al mercato di
+riferimento di cui all’articolo 6;
+b) è finalizzata a favorire l’adempimento da parte del distributore dell’obbligo di cui
+all’articolo 11 del Regolamento (UE) 2017/2358;
+c) è soggetta a revisione periodica;
+d) favorisce l’esercizio dell’azione di vigilanza sul pieno rispetto degli obblighi di cui
+al Regolamento (UE) 2017/2358 e al presente Regolamento da parte delle
+Autorità di vigilanza competenti.
+3. In presenza di un intermediario produttore di fatto, l’identificazione di cui ai commi 1 e 2
+è effettuata dall’impresa di assicurazione congiuntamente con l’intermediario produttore
+di fatto.
+Capo III
+Requisiti di governo e controllo dei prodotti assicurativi applicabili ai distributori
+
+=== K150 | [Art. 11] (Meccanismi di distribuzione)
+Art. 11
+(Meccanismi di distribuzione)
+1. Fatto salvo quanto previsto dall’articolo 10 del Regolamento (UE) 2017/2358, i
+distributori conoscono i prodotti distribuiti, valutano la compatibilità con le esigenze e le
+richieste del cliente, distribuiscono il prodotto ai clienti rientranti nel mercato di
+riferimento individuato dal produttore ai sensi dell’articolo 6, e fanno in modo che i
+prodotti siano distribuiti solo quando ciò sia nell’interesse del cliente, tenuto anche conto
+degli eventuali obiettivi di sostenibilità di quest’ultimo, 8 anche quando la distribuzione è
+effettuata mediante i soggetti di cui all’articolo 107, comma 4, del Codice.
+2. Prima della sottoscrizione del contratto, i distributori acquisiscono dal contraente e, con
+riferimento alle polizze collettive, dall’aderente nelle modalità e nei limiti previsti
+dall’articolo 66 del Regolamento IVASS n. 40 del 2018, tutte le informazioni necessarie
+per valutarne l’appartenenza al mercato di riferimento o al mercato di riferimento
+negativo individuati dal produttore ai sensi dell’articolo 6.
+8 Comma modificato dall’art. 4, comma 4, lett. a), del Provvedimento IVASS n. 131/2023.
+3. Ai fini di cui all’articolo 11, del Regolamento (UE) 2017/2358, il distributore adotta
+procedure idonee a individuare il momento in cui il prodotto non risponda più agli
+interessi, agli obiettivi, compresi eventualmente quelli legati alla sostenibilità,9 e alle
+caratteristiche del mercato di riferimento individuato dal produttore ai sensi dell’articolo
+6, nonché alle altre circostanze relative al prodotto che aggravino il rischio di pregiudizio
+per il cliente. A tal fine effettua verifiche periodicamente, anche con riferimento alla
+distribuzione effettuata mediante i soggetti di cui all’articolo 107, comma 4, del Codice.
+4. Fermi restando gli obblighi di verifica e di monitoraggio del produttore previsti
+dall’articolo 9 e dell’articolo 8, paragrafo 4, del Regolamento (UE) 2017/2358 i
+distributori:
+a) non distribuiscono prodotti assicurativi ai clienti che appartengono al mercato di
+riferimento negativo individuato dal produttore;
+b) fatto salvo quanto previsto dalla lettera c), possono distribuire prodotti
+assicurativi a clienti che non rientrano nel mercato di riferimento individuato dal
+produttore, purché i clienti non appartengano al mercato di riferimento negativo
+e tali prodotti corrispondano alle richieste e alle esigenze assicurative di quei
+clienti e, sulla base della consulenza fornita prima della conclusione del contratto,
+siano adeguati.;
+c) possono distribuire prodotti d’investimento assicurativi non complessi di cui
+all’articolo 16 del Regolamento (UE) 2017/2359 a clienti che non rientrano nel
+mercato di riferimento individuato dal produttore, purché i clienti non
+appartengano al mercato di riferimento negativo e tali prodotti corrispondano alle
+richieste e alle esigenze assicurative di quei clienti e siano adeguati o appropriati.
+5. Fermi restando gli obblighi informativi precontrattuali, gli intermediari quando
+distribuiscono un prodotto assicurativo a clienti che non appartengono al mercato di
+riferimento comunicano al produttore se il prodotto assicurativo è distribuito al di fuori
+del mercato di riferimento ai sensi del comma 4, lettere b) e c).
+6. Gli intermediari che distribuiscono prodotti commercializzati da imprese di assicurazione
+con sede legale in uno Stato membro operanti in regime di stabilimento o di libera
+prestazione di servizi nel territorio della Repubblica italiana adottano tutti i presidi
+necessari per garantire che i prodotti assicurativi siano distribuiti in conformità al
+presente regolamento, siano conformi alle norme europee ed italiane e rispondano alle
+esigenze, alle caratteristiche e agli obiettivi, compresi eventualmente quelli legati alla
+sostenibilità,10 del mercato di riferimento effettivo individuato.
+
+=== K151 | [Art. 12 (2)] (Mercato di riferimento effettivo)
+Art. 12
+(Mercato di riferimento effettivo)
+1. Gli intermediari adottano adeguate misure e procedure per assicurare che i prodotti
+assicurativi che intendono distribuire siano coerenti con le esigenze, le caratteristiche e
+9 Comma modificato dall’art. 4, comma 4, lett. b), del Provvedimento IVASS n. 131/2023.
+10 Comma modificato dall’art. 4, comma 4, lett. c), del Provvedimento IVASS n. 131/2023.
+gli obiettivi, compresi eventualmente quelli legati alla sostenibilità,11 del mercato di
+riferimento e che la strategia di distribuzione prevista sia coerente con tale mercato,
+oltre che con la strategia distributiva individuata dall’impresa di assicurazione.
+2. Gli intermediari identificano e valutano in modo appropriato la situazione e le esigenze
+dei clienti, al fine di garantire che gli interessi di questi ultimi non siano compromessi da
+pressioni commerciali ovvero da interessi dell’intermediario.
+3. Gli intermediari individuano le ulteriori categorie di clienti ai quali il prodotto non può
+essere distribuito (mercato di riferimento negativo effettivo). Con riferimento ai soli fattori
+di sostenibilità, gli intermediari non sono tenuti ad effettuare l’individuazione di cui al
+presente comma per i prodotti che considerano i fattori di sostenibilità.12
+4. Il mercato di riferimento effettivo di cui al comma 1 e il mercato di riferimento negativo
+effettivo di cui al comma 3 sono una specificazione del mercato di riferimento e una
+estensione del mercato di riferimento negativo individuati dal produttore.
+5. Il mercato di riferimento effettivo di cui al comma 1 e il mercato di riferimento negativo
+effettivo di cui al comma 3 sono comunicati all’impresa di assicurazione, prima della
+relativa distribuzione.
+6. Gli intermediari riesaminano regolarmente i prodotti assicurativi distribuiti tenendo conto
+di qualsiasi evento che possa incidere significativamente sui rischi potenziali per il
+mercato di riferimento nonché della eventuale revisione del prodotto effettuata dal
+produttore, al fine di valutare almeno se il prodotto assicurativo resti coerente con le
+esigenze del mercato di riferimento effettivo di cui al comma 1 e se la prevista strategia
+distributiva continui a essere appropriata. A tal fine, effettuano verifiche regolari anche
+con riferimento alla distribuzione effettuata mediante i soggetti di cui all’articolo 107,
+comma 4, del Codice.
+7. Gli intermediari, anche a seguito delle indicazioni e valutazioni ricevute dal produttore,
+riconsiderano il mercato di riferimento effettivo e/o aggiornano le procedure e le misure
+adottate qualora rilevino di aver erroneamente identificato il mercato di riferimento
+effettivo per un prodotto assicurativo ovvero qualora il prodotto assicurativo non soddisfi
+più le condizioni del mercato di riferimento effettivo.
+8. Gli intermediari comunicano al produttore l’eventuale individuazione di un nuovo
+mercato di riferimento effettivo in esito alla riconsiderazione di cui al comma 7.
+9. A seguito delle valutazioni di cui ai commi 1, 2 e 3, il mercato di riferimento effettivo e il
+mercato di riferimento negativo effettivo possono coincidere con il mercato di riferimento
+e il mercato di riferimento negativo individuati dal produttore. In tal caso non si applicano
+i commi 6 e 8.
+10. In caso di collaborazione orizzontale, ciascun intermediario, tenuto conto della rispettiva
+clientela, definisce il proprio mercato di riferimento effettivo di cui ai commi 1 e 2 e il
+11 Comma modificato dall’art. 4, comma 5, lett. a), del Provvedimento IVASS n. 131/2023.
+12 Comma modificato dall’art. 4, comma 5, lett. b), del Provvedimento IVASS n. 131/2023.
+mercato di riferimento negativo effettivo di cui al comma 3, secondo quanto previsto dal
+comma 4.
+11. Il presente articolo non si applica all’intermediario di cui al comma 1 qualificabile come
+intermediario produttore di fatto.
+
+=== K152 | [Art. 13 (2)] (Scambio informativo con i produttori)
+Art. 13
+(Scambio informativo con i produttori)
+1. Nell’ambito dell’accordo relativo all’identificazione dei flussi informativi di cui all’articolo
+10, i distributori acquisiscono dai produttori le informazioni necessarie per comprendere
+e conoscere adeguatamente i prodotti che intendono distribuire, al fine di garantire che
+gli stessi siano distribuiti conformemente alle esigenze, alle caratteristiche e agli obiettivi
+del mercato di riferimento individuato ai sensi dell’articolo 6, tenuto conto anche degli
+eventuali obiettivi di sostenibilità.13
+2. I distributori utilizzano le informazioni ottenute ai sensi del comma 1, nonché quelle
+relative ai propri clienti, al fine di identificare la strategia di distribuzione, nonché, per gli
+intermediari di cui al comma 2, lettera d), dell’articolo 109, del Codice, anche al fine di
+identificare il mercato di riferimento effettivo di cui all’articolo 12.
+
+=== K153 | [Art. 14 (2)] (Ruolo degli organi sociali e delle funzioni aziendali di controllo degli intermediari
+Art. 14
+(Ruolo degli organi sociali e delle funzioni aziendali di controllo degli intermediari
+di cui al comma 2, lettera d), dell’articolo 109 del Codice)
+1. L'organo amministrativo degli intermediari di cui al comma 2, lettera d), dell’articolo 109
+del Codice, ha la responsabilità ultima dell’osservanza delle norme sui meccanismi di
+distribuzione e sulla definizione del mercato di riferimento effettivo e approva il
+documento scritto sui meccanismi di distribuzione di cui all’articolo 10 del Regolamento
+(UE) 2017/2358.
+2. La funzione di controllo di conformità alle norme degli intermediari di cui al comma 1
+monitora lo sviluppo e la revisione periodica delle procedure e delle misure adottate per
+la distribuzione dei prodotti assicurativi, al fine di individuare i rischi di mancato
+adempimento degli obblighi previsti dal Capo III del Regolamento (UE) 2017/2358 e dal
+presente Regolamento.
+3. La funzione di controllo di conformità alle norme degli intermediari di cui al comma 1
+redige annualmente una relazione relativa alle verifiche effettuate sulla corretta
+definizione del mercato di riferimento effettivo e della strategia di distribuzione, nonché
+sulla correttezza ed efficacia dei meccanismi di distribuzione, evidenziando eventuali
+criticità.
+13 Comma modificato dall’art. 4, comma 6, del Provvedimento IVASS n. 131/2023.
+4. Gli intermediari di cui al comma 1 mettono a disposizione dell’IVASS, su richiesta di
+quest’ultimo, il documento scritto sui meccanismi di distribuzione di cui all’articolo 10 del
+Regolamento (UE) 2017/2358 e la relazione di cui al comma 3.
+5. Gli intermediari di cui al comma 1 garantiscono che il personale e i collaboratori siano
+in possesso delle competenze necessarie per comprendere le caratteristiche e i rischi
+dei prodotti assicurativi che intendono distribuire, compresi gli eventuali fattori di
+sostenibilità,14 nonché le esigenze, le caratteristiche e gli obiettivi, compresi
+eventualmente quelli legati alla sostenibilità,15 del mercato di riferimento.
+
+=== K154 | [Art. 15 (2)] (Sistemi interni di controllo dell’attività di distribuzione assicurativa degli
+Art. 15
+(Sistemi interni di controllo dell’attività di distribuzione assicurativa degli
+intermediari di cui al comma 2, lettere a) b) e f), dell’articolo 109 del Codice)
+1. Gli intermediari di cui all’articolo 109, comma 2, lettere a), b) e f), del Codice:
+a) monitorano i rischi di mancato adempimento degli obblighi previsti dall’articolo
+121-bis del Codice, dal Capo III del Regolamento (UE) 2017/2358 e dal presente
+Regolamento, ivi compresa la verifica della correttezza ed efficacia dei
+meccanismi distributivi definiti dal documento scritto di cui dell’articolo 10, del
+medesimo Regolamento;
+b) evidenziano eventuali criticità derivanti dal monitoraggio di cui alla lettera a);
+c) assicurano la completezza dei flussi informativi previsti dalla normativa.
+2. Gli intermediari di cui al comma 1 mettono a disposizione dell’IVASS, su richiesta di
+quest’ultimo, il documento scritto sui meccanismi di distribuzione di cui all’articolo 10 del
+Regolamento (UE) 2017/2358 e la documentazione relativa alle verifiche di cui al
+comma 1.
+3. Negli intermediari di cui al comma 1, l'unità o la struttura di cui all’articolo 10, paragrafo
+5, del Regolamento (UE) 2017/2358 ha caratteristiche coerenti con la dimensione
+dell’intermediario e la complessità dell’attività svolta.
+
+=== K155 | [Art. 16 (2)] (Rapporti di collaborazione)
+Art. 16
+(Rapporti di collaborazione)
+1. Gli intermediari di cui al comma 2, lettere a), b), d) e f), dell’articolo 109 del Codice:
+a) forniscono agli intermediari di cui al comma 2, lettera e), dell’articolo 109 del
+Codice le informazioni relative al mercato di riferimento e alla strategia distributiva
+adottata dal produttore o dall’intermediario che ha conferito l’incarico di
+collaborazione;
+b) individuano le modalità di ricezione delle informazioni acquisite dagli addetti
+all’attività di intermediazione di cui al comma 2, lettera e), dell’articolo 109 del
+Codice o operanti all’interno dei locali di cui gli intermediari si avvalgono;
+14 Parole inserite dall’art. 4, comma 7, lett. a) del Provvedimento IVASS n. 131/2023.
+15 Parole inserite dall’art. 4, comma 7, lett. b), del Provvedimento IVASS n. 131/2023.
+c) verificano che l’attività di distribuzione effettuata dagli intermediari di cui al
+comma 2, lettera e), dell’articolo 109 del Codice sia coerente con il mercato di
+riferimento e con la strategia di distribuzione adottata dal produttore e
+dall’intermediario che ha conferito l’incarico di collaborazione.
+2. Gli intermediari effettuano le attività di cui al comma 1 quando distribuiscono i prodotti
+assicurativi tramite gli addetti operanti all’interno dei locali dell’intermediario medesimo.
+3. Le imprese di assicurazione effettuano le attività di cui al comma 1 quando
+distribuiscono i propri prodotti assicurativi tramite gli intermediari di cui al comma 2,
+lettera c), dell’articolo 109 del Codice.
+4. Gli intermediari operativi di cui al comma 2, lettere a), b) e d), dell’articolo 109 del Codice
+che svolgono attività di collaborazione orizzontale sono congiuntamente responsabili
+per la violazione degli obblighi previsti dal Capo III del Regolamento (UE) 2017/2358.
+5. In caso di collaborazione orizzontale, gli intermediari assicurano che:
+a) le informazioni relative ai prodotti assicurativi ricevute dal produttore siano
+trasmesse dall’intermediario emittente all’intermediario proponente;
+b) le definizioni del mercato di riferimento effettivo e del mercato di riferimento
+negativo effettivo di cui all’articolo 12 siano comunicate prima della relativa
+distribuzione:
+1) dall’intermediario emittente all’intermediario proponente;
+2) dall’intermediario proponente all’intermediario emittente;
+3) dall’intermediario emittente all’impresa di assicurazione;
+c) il produttore possa ottenere le informazioni sulla distribuzione dei prodotti
+assicurativi necessarie ad adempiere agli obblighi previsti dal Regolamento (UE)
+2017/2358 e dal presente regolamento, con particolare riferimento alle vendite ai
+clienti che non appartengono al mercato di riferimento.
+Capo IV
+Disposizioni finali
+
+=== K156 | [Art. 17 (2)] (Pubblicazione ed entrata in vigore)
+Art. 17
+(Pubblicazione ed entrata in vigore)
+1. II presente Regolamento è pubblicato nella Gazzetta Ufficiale della Repubblica italiana,
+nel Bollettino e sul sito internet dell'IVASS ed entra in vigore il 31 marzo 2021.
+Per il Direttorio Integrato
+Il Governatore della Banca d’Italia
+Allegato 1
+Politica in materia di governo e controllo dei prodotti assicurativi
+La politica in materia di governo e controllo dei prodotti assicurativi illustra con chiarezza
+almeno:
+- gli obiettivi della politica;
+- i compiti da svolgere e il responsabile di tali compiti;
+- i processi e le procedure di segnalazione da utilizzare, anche con riferimento ai flussi
+informativi con il distributore;
+- l’obbligo delle unità organizzative interessate di comunicare alle funzioni fondamentali,
+per gli aspetti di rispettiva competenza, qualsiasi fatto rilevante per l’adempimento dei
+rispettivi doveri.
+Di seguito vengono indicati i contenuti minimali richiesti nella politica in materia di governo
+e controllo dei prodotti assicurativi, da definirsi con un livello di dettaglio adeguato alla
+natura, alla portata e alla complessità dell’attività aziendale e proporzionato alla complessità
+dei prodotti realizzati dall’Impresa:
+a) gli obiettivi della politica, con particolare riferimento a:
+1) l’individuazione di adeguati presidi nelle fasi di progettazione, controllo, revisione,
+distribuzione e monitoraggio nel continuo dei prodotti, al fine di tutelare gli interessi
+dei clienti;
+2) l’individuazione delle modalità per gestire correttamente i conflitti di interesse che
+possono insorgere nella fase di progettazione del prodotto o sopravvenire nel corso
+dell’intera vita dello stesso, inclusi quelli che si possono generare nella fase di
+distribuzione del prodotto tra produttore e distributore, anche con riferimento al
+sistema remunerativo ed incentivante riconosciuto al distributore;
+3) la definizione dei presidi di produzione e conservazione della documentazione
+relativa al processo di approvazione dei prodotti assicurativi;
+4) la previsione di adeguate azioni di rimedio nel caso di prodotti suscettibili di arrecare
+pregiudizio ai clienti.
+b) la definizione di presidi organizzativi interni nonché dei ruoli e delle responsabilità degli
+organi e delle funzioni aziendali in grado di assicurare la corretta gestione del processo
+di approvazione dei prodotti assicurativi e l’attività distributiva, anche nel caso di attività
+affidate in regime di esternalizzazione;
+c) la definizione delle direttive e dei criteri per il presidio delle singole fasi del processo di
+approvazione dei prodotti assicurativi, in grado di assicurare l’identificazione di un
+adeguato livello di dettaglio del mercato di riferimento di ciascun prodotto, anche
+attraverso adeguati test in funzione della tipologia, natura e livello di rischio del prodotto,
+compresi gli eventuali fattori di sostenibilità16;
+d) i requisiti di un corretto governo e controllo dei prodotti, siano essi nuovi ovvero oggetto
+di revisione. Tali requisiti sono adeguati e proporzionati alle caratteristiche, rischiosità e
+dimensione del business e ai canali distributivi dell’impresa nonché tesi a perseguire gli
+interessi della clientela e prevedono:
+16 Lettera modificata dall’art. 4, comma 8, lett. a) del Provvedimento IVASS n. 131/2023.
+1) l’identificazione e revisione nel continuo del mercato di riferimento e del mercato di
+riferimento negativo;
+2) lo sviluppo e l’offerta di prodotti coerenti con le esigenze dei rispettivi mercati di
+riferimento;
+3) l’attività di monitoraggio finalizzata a comprendere e riesaminare regolarmente i
+prodotti distribuiti, al fine di valutare se gli stessi siano rimasti coerenti con i bisogni,
+gli obiettivi, ivi compresi eventualmente quelli legati alla sostenibilità,17 e le
+caratteristiche del mercato di riferimento e se la propria strategia distributiva
+permanga adeguata;
+4) la verifica periodica della corretta implementazione, efficacia e adeguatezza dei
+processi adottati, con l’adozione di strumenti di controllo idonei a consentire
+l’identificazione delle principali fonti di rischio di condotte non corrette e dei correttivi
+ritenuti necessari;
+5) i criteri per esaminare il numero e la tipologia di reclami presentati.
+e) la descrizione dei criteri e delle analisi in base ai quali l’impresa seleziona i distributori dei
+propri prodotti, valuta gli assetti organizzativi degli stessi e la loro coerenza con le
+caratteristiche dei prodotti e dei relativi mercati di riferimento;
+f) l’indicazione delle istruzioni relative all’attività di distribuzione e dei canali di
+comunicazione per guidare il distributore nella conoscenza del prodotto e per assicurare
+che:
+1) la distribuzione sia rivolta al mercato di riferimento individuato dall’impresa e non alle
+categorie di clienti che rientrano nel mercato di riferimento negativo;
+2) l’eventuale distribuzione a clienti che non rientrano nel mercato di riferimento sia
+realizzata a condizione che il cliente non appartenga al mercato di riferimento
+negativo e il prodotto corrisponda alle richieste e alle esigenze assicurative del cliente
+e, sulla base della consulenza fornita prima della conclusione del contratto, sia
+adeguato;
+g) l’individuazione dei flussi informativi tra strutture e funzioni interne all’impresa nonché tra
+produttore e distributore;
+h) in coerenza con le politiche di remunerazione adottate dall’impresa, l’indicazione dei
+criteri e dei principi sulla base dei quali l’impresa:
+1) remunera ed offre un compenso al distributore in misura e con modalità tali da non
+pregiudicare l’obbligo dello stesso di agire nel migliore interesse dei clienti;
+2) valuta se gli incentivi corrisposti o percepiti dal distributore abbiano ripercussioni
+negative sulla qualità del servizio offerto ai clienti.
+i) l’indicazione delle misure da adottare nel continuo per:
+1) assicurare necessaria formazione e sviluppo professionale del personale interno
+impegnato nella progettazione, nel controllo e nella distribuzione dei prodotti offerti,
+ivi compresi i prodotti che considerano i fattori di sostenibilità18 (inclusi i soggetti
+responsabili dell’attività di distribuzione e ogni altra persona che partecipi
+direttamente a tale attività);
+17 Parole inserite dall’art. 4, comma 8, lett. b) del Provvedimento IVASS n. 131/2023.
+18 Parole inserite dall’art. 4, comma 8, lett. c) del Provvedimento IVASS n. 131/2023.
+2) promuovere all’interno dell’impresa la diffusione di una cultura di business orientata
+alla tutela del consumatore;
+l) l’indicazione dei controlli e delle misure per monitorare che i distributori dei propri prodotti
+agiscano in conformità agli obiettivi individuati dalla propria politica e che:
+1) l’attività di distribuzione sia rivolta al mercato di riferimento individuato dall’impresa e
+non alle categorie di clienti che rientrano nel mercato di riferimento negativo;
+2) l’eventuale distribuzione a clienti che non rientrano nel mercato di riferimento sia
+realizzata a condizione che il cliente non appartenga al mercato di riferimento
+negativo e il prodotto corrisponda alle richieste e alle esigenze assicurative del cliente
+e, sulla base della consulenza fornita prima della conclusione del contratto, sia
+adeguato;
+3) l’eventuale distribuzione prodotti d’investimento assicurativi non complessi di cui
+all’articolo 16 del Regolamento (UE) 2017/2359 a clienti che non rientrano nel
+mercato di riferimento individuato dal produttore, sia realizzata purché i clienti non
+appartengano al mercato di riferimento negativo e tali prodotti corrispondano alle
+richieste e alle esigenze assicurative di quei clienti e siano adeguati o appropriati.
+m) l’indicazione delle modalità e dei criteri in base ai quali la politica in materia di governo e
+controllo dei prodotti è rivista con l’obiettivo di garantire, nel continuo, la sua conformità
+alla normativa vigente e la sua coerenza con la struttura organizzativa dell’impresa, la
+strategia commerciale e distributiva, le aree di attività.
+
+
+######## NORMA: Direttiva sul credito immobiliare ai consumatori (MCD)  (id UE-DIR-2014-17)
+
+=== K157 | [1] Oggetto
+Articolo 1
+Oggetto
+La presente direttiva definisce un quadro comune per alcuni aspetti delle disposizioni legislative, regolamentari e amministrative degli Stati membri concernenti contratti concernenti i crediti ai
+consumatori garantiti da un’ipoteca o altrimenti relativi a beni immobili residenziali, compreso l’obbligo di effettuare una valutazione del merito creditizio prima di concedere un credito, come base
+per lo sviluppo di standard efficaci per la stipula in relazione a beni immobili residenziali negli Stati membri, e per alcuni requisiti prudenziali e di vigilanza, anche per quanto riguarda lo
+stabilimento e la vigilanza di intermediari del credito, rappresentanti designati e enti non creditizi.
+
+=== K158 | [2] Livello di armonizzazione
+Articolo 2
+Livello di armonizzazione
+1.
+La presente direttiva non impedisce agli Stati membri di mantenere o introdurre disposizioni più stringenti per tutelare i consumatori, a condizione che tali disposizioni siano coerenti con i loro
+obblighi ai sensi del diritto dell’Unione.
+2.
+In deroga al paragrafo 1, gli Stati membri non mantengono né introducono nella legislazione nazionale disposizioni divergenti da quelle di cui all’articolo 14, paragrafo 2, e all’allegato II, parte A,
+con riguardo alle informazioni precontrattuali standard tramite un prospetto informativo europeo standardizzato (PIES), e all’articolo 17, paragrafi da 1 a 5, e all'articolo 17, paragrafi 7 e 8, e
+all’allegato I con riguardo a uno standard dell’Unione comune e coerente per il calcolo del tasso annuo effettivo globale (TAEG).
+
+=== K159 | [3] Ambito di applicazione
+Articolo 3
+Ambito di applicazione
+1.
+La presente direttiva si applica ai:
+a)
+contratti di credito garantiti da un’ipoteca o da un’altra garanzia analoga comunemente utilizzata in uno Stato membro sui beni immobili residenziali oppure da un diritto connesso ai beni immobili
+residenziali; e
+b)
+contratti di credito finalizzati all’acquisto o alla conservazione di diritti di proprietà su un terreno o su una costruzione edificata o progettata.
+2.
+La presente direttiva non si applica ai:
+a)
+contratti di credito della tipologia «equity release» in cui il creditore:
+i)
+versa una tantum o periodicamente una somma di denaro o effettua altre forme di erogazione creditizia in cambio di una somma derivante dalla futura vendita di un bene immobile residenziale o di un
+diritto relativo a un bene immobile residenziale; e
+ii)
+non chiederà il rimborso del credito fino al verificarsi di uno o più eventi specifici della vita del consumatore, come definiti dagli Stati membri, salvo in caso di violazione, da parte del
+consumatore, dei propri obblighi contrattuali che consenta al creditore di risolvere il contratto di credito;
+b)
+contratti di credito mediante i quali un datore di lavoro, al di fuori della sua attività principale, concede ai dipendenti crediti senza interessi o a un TAEG inferiore a quello prevalente sul
+mercato e non offerti al pubblico in genere;
+c)
+contratti di credito in cui il credito è concesso senza interessi o ulteriori oneri, a esclusione di quelli per il recupero dei costi direttamente connessi alla garanzia del credito;
+d)
+contratti di credito nella forma di concessione di scoperto, qualora il credito sia da rimborsare entro un mese;
+e)
+contratti di credito risultanti da un accordo raggiunto davanti a un giudice o altra autorità prevista dalla legge;
+f)
+contratti di credito relativi alla dilazione, senza spese, del pagamento di un debito esistente che non rientrano nell’ambito di applicazione del paragrafo 1, lettera a).
+3.
+Gli Stati membri possono decidere di non applicare:
+a)
+gli articoli 11 e14 e l’allegato II a contratti di credito per i consumatori, garantiti da ipoteca o altra garanzia simile comunemente usata in uno Stato membro per i beni immobili residenziali,
+ovvero garantiti da un diritto relativo a beni immobili residenziali, non finalizzati all’acquisto o alla conservazione di un diritto sul bene immobile residenziale, purché gli Stati membri applichino
+a tali contratti di credito gli articoli 4 e 5 e gli allegati II e III della direttiva 2008/48/CE;
+b)
+la presente direttiva ai contratti di credito relativi a un bene immobile ove il contratto preveda che detto bene non può mai essere occupato come abitazione, appartamento o altro luogo di residenza
+dal consumatore o da un familiare del consumatore ed è destinato ad essere occupato come abitazione, appartamento o altro luogo di residenza in base a un contratto di locazione;
+c)
+la presente direttiva ai contratti di credito relativi a crediti concessi a un pubblico ristretto in base a disposizioni di legge con finalità di interesse generale, concessi senza interessi o a tassi
+debitori inferiori a quelli prevalenti sul mercato, oppure ad altre condizioni più favorevoli per il consumatore rispetto a quelle prevalenti sul mercato e a tassi debitori non superiori a quelli
+prevalenti sul mercato;
+d)
+la presente direttiva ai prestiti ponte;
+e)
+la presente direttiva ai contratti di credito in cui il creditore è un’organizzazione che rientra nell’ambito di applicazione dell’articolo 2, paragrafo 5, della direttiva 2008/48/CE.
+4.
+Gli Stati membri che si avvalgono dell’opzione di cui al paragrafo 3, lettera b), garantiscono l’applicazione di un quadro adeguato a livello nazionale per questo tipo di crediti.
+5.
+Gli Stati membri che si avvalgono dell’opzione di cui al paragrafo 3, lettera c) o e), garantiscono l’applicazione di adeguate misure alternative per far sì che il consumatore riceva informazioni
+tempestive circa le caratteristiche, i rischi e i costi principali di tali contratti di credito nella fase precontrattuale e che la pubblicità di tali contratti di credito sia corretta, chiara e non
+ingannevole.
+
+=== K161 | [5] Autorità competenti
+Articolo 5
+Autorità competenti
+1.
+Gli Stati membri designano le autorità nazionali competenti abilitate a garantire l’applicazione e il rispetto della presente direttiva e assicurano che esse siano dotate dei poteri di indagine e di
+controllo nonché delle risorse adeguate necessari all’adempimento efficiente ed efficace delle loro funzioni.
+Le autorità di cui al primo comma sono pubbliche autorità o organismi riconosciuti dal diritto nazionale oppure da pubbliche autorità espressamente abilitate a tal fine dalla legislazione nazionale.
+Non sono creditori, né intermediari del credito o rappresentanti designati.
+2.
+Gli Stati membri assicurano che le autorità competenti, tutte le persone che esercitano o hanno esercitato un’attività per conto delle autorità competenti, nonché i revisori o esperti incaricati dalle
+autorità competenti, siano vincolati dal segreto d’ufficio. Nessuna informazione riservata ricevuta da tali persone nell’esercizio delle loro funzioni può in alcun modo essere divulgata ad alcuna
+persona o autorità, salvo in una forma sommaria o aggregata, fatti salvi i casi contemplati dal diritto penale o dalla presente direttiva. Tuttavia ciò non osta a che le autorità competenti scambino o
+trasmettano informazioni riservate ai sensi del diritto nazionale e dell’Unione.
+3.
+Gli Stati membri assicurano che le autorità designate in quanto competenti per garantire l’applicazione e il rispetto degli articoli 9, 29, 32, 33, 34 e 35 della presente direttiva siano
+alternativamente o congiuntamente:
+a)
+autorità competenti quali definite all’articolo 4, paragrafo 2, del regolamento (UE) n. 1093/2010;
+b)
+autorità diverse dalle autorità competenti di cui al punto a), purché le leggi, i regolamenti o le disposizioni amministrative nazionali dispongano che esse cooperino con le autorità competenti di cui
+al punto a) ogniqualvolta necessario per svolgere le loro funzioni ai sensi della presente direttiva, anche ai fini della cooperazione con l’Autorità europea di vigilanza (Autorità bancaria europea)
+(ABE), come richiesto dalla presente direttiva.
+4.
+Gli Stati membri informano la Commissione e l’ABE circa la designazione delle autorità competenti e le relative modifiche, indicando l’eventuale ripartizione delle funzioni tra le diverse autorità. La
+prima di tali notifiche va effettuata non appena possibile e comunque al più tardi il 21 marzo 2016.
+5.
+Le autorità competenti esercitano i loro poteri in conformità al diritto nazionale:
+a)
+direttamente in forza della la propria autorità o sotto la supervisione delle autorità giudiziarie; o
+b)
+mediante richiesta alle autorità giudiziarie che sono competenti a pronunciare le decisioni necessarie, eventualmente anche proponendo appello qualora la richiesta di pronuncia delle decisioni
+necessarie sia stata respinta, salvo per gli articoli 9, 29, 32, 33, 34 e 35.
+6.
+Qualora nel loro territorio esistano più autorità competenti, gli Stati membri provvedono a che le loro funzioni rispettive siano chiaramente definite e a far sì che dette autorità operino in stretta
+collaborazione per garantire l’efficace espletamento delle rispettive funzioni.
+7.
+La Commissione pubblica un elenco delle autorità competenti nella Gazzetta ufficiale dell’Unione europea almeno una volta all’anno e lo aggiorna costantemente sul suo sito web.
+CAPO 2
+EDUCAZIONE FINANZIARIA
+
+=== K162 | [6] Educazione finanziaria dei consumatori
+Articolo 6
+Educazione finanziaria dei consumatori
+1.
+Gli Stati membri promuovono misure atte a favorire l’educazione dei consumatori in merito a un indebitamento e a una gestione del debito responsabili, in particolare per quanto riguarda i contratti di
+credito ipotecario. Per guidare i consumatori, specialmente quelli che sottoscrivono un credito ipotecario per la prima volta, sono necessarie informazioni chiare e generali sulla procedura per la
+concessione del credito. Sono inoltre necessarie informazioni sulla guida che le organizzazioni di consumatori e le autorità nazionali possono fornire ai consumatori.
+2.
+La Commissione pubblica una valutazione degli strumenti di educazione finanziaria a disposizione dei consumatori negli Stati membri e individua gli esempi di migliori pratiche che potrebbero essere
+ulteriormente sviluppate al fine di accrescere la consapevolezza in materia finanziaria dei consumatori.
+CAPO 3
+CONDIZIONI APPLICABILI AI CREDITORI, AGLI INTERMEDIARI DEL CREDITO E AI RAPPRESENTANTI DESIGNATI
+
+=== K163 | [7] Norme di comportamento da rispettare quando si concedono crediti ai consumatori
+Articolo 7
+Norme di comportamento da rispettare quando si concedono crediti ai consumatori
+1.
+Gli Stati membri esigono che il creditore, l’intermediario del credito o il rappresentante designato, quando mettono a punto prodotti creditizi o concedono, fungono da intermediari o forniscono
+servizi di consulenza relativi a crediti e, se del caso, a servizi accessori ai consumatori o quando eseguono un contratto di credito, agiscano in maniera onesta, equa, trasparente e professionale,
+tenendo conto dei diritti e degli interessi dei consumatori. Nell’ambito della concessione, dello svolgimento di attività di intermediario o della fornitura di servizi di consulenza relativi a
+crediti, le attività si basano sulle informazioni circa la situazione del consumatore e su ogni bisogno particolare che questi ha comunicato e su ipotesi ragionevoli circa i rischi cui è esposta la
+situazione del consumatore per tutta la durata del contratto di credito. In relazione alla fornitura di servizi di consulenza relativi a crediti, l’attività si basa inoltre sulle informazioni
+richieste a norma dell’articolo 22, paragrafo 3, lettera a).
+2.
+Gli Stati membri provvedono affinché la maniera in cui i creditori remunerano il proprio personale e gli intermediari del credito, nonché la maniera in cui gli intermediari del credito remunerano il
+proprio personale e i loro rappresentanti designati non impediscano il rispetto dell’obbligo di cui al paragrafo 1.
+3.
+Gli Stati membri provvedono affinché, nello stabilire e applicare le politiche retributive per il personale responsabile della valutazione del merito creditizio, i creditori rispettino i seguenti
+principi in maniera e misura appropriata alle loro dimensioni, alla loro organizzazione interna e alla natura, portata e complessità delle loro attività:
+a)
+la politica retributiva promuove ed è coerente con una gestione sana ed efficace del rischio e non incoraggia un’assunzione di rischi superiore al livello di rischio tollerato del creditore;
+b)
+la politica retributiva è in linea con la strategia aziendale, gli obiettivi, i valori e gli interessi a lungo termine del creditore e comprende misure volte a evitare conflitti di interesse, in
+particolare facendo in modo che la retribuzione non dipenda dal numero o dalla percentuale di domande accolte.
+4.
+Gli Stati membri provvedono affinché, quando i creditori, gli intermediari del credito o i rappresentanti designati forniscono servizi di consulenza, la struttura remunerativa del personale
+interessato non ne pregiudichi la capacità di agire nel migliore interesse del consumatore e, in particolare, non dipenda dagli obiettivi di vendita. Al fine di conseguire tale obiettivo, gli Stati
+membri possono inoltre vietare le commissioni pagate dal creditore all’intermediario del credito.
+5.
+Gli Stati membri possono vietare o imporre restrizioni ai pagamenti da un consumatore a un creditore o a un intermediario del credito prima della conclusione di un contratto di credito.
+
+=== K164 | [8] Obbligo di fornire informazioni ai consumatori a titolo gratuito
+Articolo 8
+Obbligo di fornire informazioni ai consumatori a titolo gratuito
+Gli Stati membri provvedono affinché, ove ai consumatori siano fornite informazioni in conformità del disposto della presente direttiva, ciò avvenga a titolo gratuito per i consumatori.
+
+=== K165 | [9] Requisiti di conoscenza e competenza per il personale
+Articolo 9
+Requisiti di conoscenza e competenza per il personale
+1.
+Gli Stati membri provvedono affinché i creditori, gli intermediari del credito e i rappresentanti designati richiedano al loro personale di avere e mantenere un livello di conoscenza e di competenza
+adeguato per mettere a punto, offrire o concludere contratti di credito, svolgere attività di intermediazione del credito di cui all’articolo 4, punto 5, o fornire servizi di consulenza. Quando la
+conclusione di un contratto di credito include la prestazione di un servizio accessorio, è richiesto un livello di conoscenza e di competenza adeguato in relazione a tale servizio accessorio.
+2.
+Fatti salvi i casi di cui al paragrafo 3, gli Stati membri d’origine stabiliscono i requisiti di conoscenza e di competenza minimi per il personale dei creditori, degli intermediari del credito e dei
+rappresentanti designati conformemente ai principi di cui all’allegato III.
+3.
+Qualora un creditore o intermediario del credito fornisca i propri servizi nel territorio di uno o più altri Stati membri:
+i)
+attraverso una succursale, lo Stato membro ospitante è responsabile della determinazione dei requisiti di conoscenza e competenza minimi applicabili al personale di una succursale;
+ii)
+in regime di libera prestazione di servizi, lo Stato membro d’origine è responsabile della determinazione dei requisiti di conoscenza e competenza minimi applicabili al personale conformemente
+all’allegato III, tuttavia, gli Stati membri ospitanti possono stabilire i requisiti di conoscenza e competenza minimi per quanto riguarda i requisiti di cui all’allegato III, paragrafo 1, lettere b),
+c), e) e f).
+4.
+Gli Stati membri provvedono affinché la conformità ai requisiti fissati al paragrafo 1 sia soggetta alla vigilanza delle autorità competenti e affinché le autorità competenti abbiano il potere di
+imporre ai creditori, agli intermediari del credito o ai rappresentanti designati l’obbligo di fornire tutte le informazioni che l’autorità competente ritenga necessarie per consentire detta
+vigilanza.
+5.
+Per la vigilanza efficace dei creditori e degli intermediari del credito che forniscono i loro servizi nel territorio di altri Stati membri in regime di libera prestazione di servizi, le autorità
+competenti degli Stati membri ospitante e d’origine cooperano strettamente per la vigilanza e i controlli efficaci dei requisiti di conoscenza e competenza minimi dello Stato membro ospitante. A tal
+fine possono delegarsi a vicenda compiti e responsabilità.
+CAPO 4
+INFORMAZIONI E PRATICHE PRELIMINARI ALLA CONCLUSIONE DEL CONTRATTO DI CREDITO
+
+=== K166 | [10] Disposizioni generali in materia di pubblicità e marketing
+Articolo 10
+Disposizioni generali in materia di pubblicità e marketing
+Fatta salva la direttiva 2005/29/CE, gli Stati membri impongono che le comunicazioni di pubblicità e marketing relative ai contratti di credito siano corrette, chiare e non ingannevoli. In
+particolare, sono vietate formulazioni che possano indurre nel consumatore false aspettative circa la disponibilità o il costo di un credito.
+
+=== K167 | [11] Informazioni di base da includere nella pubblicità
+Articolo 11
+Informazioni di base da includere nella pubblicità
+1.
+Gli Stati membri garantiscono che qualsiasi pubblicità relativa ai contratti di credito che indichi un tasso d’interesse o qualunque altro dato numerico riguardante il costo del credito per il
+consumatore contenga le informazioni di base di cui al presente articolo.
+Gli Stati membri possono prevedere che il primo comma non si applichi nei casi in cui il diritto nazionale richieda l’indicazione del TAEG nella pubblicità relativa ai contratti di credito che non
+indichi un tasso di interesse o qualunque altro dato numerico riguardante il costo del credito per il consumatore ai sensi del primo comma.
+2.
+Le informazioni di base precisano, in maniera chiara, concisa ed evidenziata:
+a)
+l’identità del creditore o, se del caso, dell’intermediario del credito o del rappresentante designato;
+b)
+se del caso, il fatto che il contratto di credito sarà garantito da un’ipoteca o da un’altra garanzia analoga comunemente utilizzata in uno Stato membro sui beni immobili residenziali oppure da un
+diritto connesso ai beni immobili residenziali;
+c)
+il tasso debitore, precisando se fisso o variabile o una combinazione dei due tipi, corredato di informazioni dettagliate relative alle commissioni comprese nel costo totale del credito per il
+consumatore;
+d)
+l’importo totale del credito;
+e)
+il TAEG, che deve avere un’evidenza all’interno dell’annuncio almeno equivalente a quella di ogni tasso di interesse;
+f)
+se del caso, la durata del contratto di credito;
+g)
+se del caso, l’importo delle rate;
+h)
+se del caso, l’importo totale che il consumatore è tenuto a pagare;
+i)
+se del caso, il numero delle rate;
+j)
+se del caso, un’avvertenza relativa al fatto che eventuali fluttuazioni del tasso di cambio potrebbero incidere sull’importo che il consumatore è tenuto a pagare.
+3.
+Le informazioni elencate al paragrafo 2 diverse da quelle di cui alle lettere a), b) o j) sono specificate con l’impiego di un esempio rappresentativo e si attengono interamente a tale esempio
+rappresentativo. Gli Stati membri introducono criteri per la definizione di «esempio rappresentativo».
+4.
+Qualora la conclusione di un contratto riguardante un servizio accessorio, in particolare un’assicurazione, sia obbligatoria per ottenere il credito oppure per ottenerlo alle condizioni contrattuali
+offerte e qualora il costo di tale servizio non possa essere determinato in anticipo, anche l’obbligo di sottoscrivere detto contratto è indicato in forma chiara, concisa ed evidenziata, assieme al
+TAEG.
+5.
+Le informazioni di cui ai paragrafi 2 e 4 sono facilmente leggibili o chiaramente udibili, a seconda del mezzo utilizzato per la pubblicità.
+6.
+Gli Stati membri possono prescrivere l’inclusione di un’avvertenza concisa e proporzionata riguardante rischi specifici connessi ai contratti di credito. Essi notificano senza indugio tali
+prescrizioni alla Commissione.
+7.
+Il presente articolo fa salva la direttiva 2005/29/CE.
+
+=== K168 | [12] Pratiche di commercializzazione abbinata e aggregata
+Articolo 12
+Pratiche di commercializzazione abbinata e aggregata
+1.
+Gli Stati membri consentono le pratiche di commercializzazione aggregata, ma vietano le pratiche di commercializzazione abbinata.
+2.
+In deroga al paragrafo 1, gli Stati membri possono prevedere che i creditori possano chiedere al consumatore o a un familiare o parente stretto del consumatore:
+a)
+l’apertura o la tenuta di un conto di pagamento o di risparmio, il cui unico fine sia l’accumulo di capitale per rimborsare il credito in capitale o interessi, raccogliere risorse per ottenere il
+credito o fornire ulteriore garanzia per il creditore nell’eventualità di un inadempimento;
+b)
+l’acquisto o la tenuta di un prodotto di investimento o un prodotto pensionistico privato, laddove tale prodotto che principalmente offre all’investitore un reddito pensionistico serve anche a fornire
+ulteriore garanzia per il creditore nell’eventualità di un inadempimento o ad accumulare capitale per rimborsare il credito in capitale o interessi o a raccogliere risorse per ottenere il credito;
+c)
+la conclusione di un contratto di credito distinto legato a un contratto di credito in regime di condivisione per ottenere il credito.
+3.
+In deroga al paragrafo 1, gli Stati membri possono consentire pratiche di commercializzazione abbinata qualora il creditore possa dimostrare alla pertinente autorità competente che i prodotti o le
+categorie di prodotti abbinati offerti, a condizioni tra loro simili, che non sono messi a disposizione separatamente, comportano un chiaro vantaggio per i consumatori tenendo debitamente conto della
+disponibilità e dei prezzi di prodotti analoghi offerti sul mercato. Il presente paragrafo si applica soltanto ai prodotti immessi in commercio dopo il 20 marzo 2014.
+4.
+Gli Stati membri possono consentire ai creditori di richiedere al consumatore la sottoscrizione di una polizza assicurativa collegata al contratto di credito. In tali casi gli Stati membri provvedono
+affinché il creditore accetti la polizza assicurativa di un fornitore diverso dal suo fornitore preferito qualora detta polizza fornisca un livello di copertura equivalente a quello della polizza
+proposta dal creditore.

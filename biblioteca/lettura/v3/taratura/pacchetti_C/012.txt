@@ -1,0 +1,1030 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento di esecuzione (UE) 2025/1157 della Commissione, del 12 giugno 2025, che stabilisce norme tecniche di attuazione per l’applicazione del regolamento (  (id UE-32025R1157)
+
+=== K335 | [Allegato III] Modulo per la comunicazione delle modifiche concernenti i membri dell’organo di gestione di un APA o di un ARM
+ALLEGATO III
+Modulo per la comunicazione delle modifiche concernenti i membri dell’organo di gestione di un APA o di un ARM
+Numero di riferimento:
+Data:
+Mittente:
+Nome dell’APA o dell’ARM:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso l’APA o l’ARM)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA/autorità nazionale competente:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA/l’autorità nazionale competente)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 5 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette in allegato la comunicazione delle modifiche concernenti i membri dell’organo di gestione.
+—
+Persona presso l’APA o l’ARM incaricata della preparazione della comunicazione:
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Informazioni sui membri uscenti dell’organo di gestione:
+Membro 1
+Nome e cognome:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Data di decorrenza dell’uscita dall’organo di gestione:
+Motivi dell’uscita dall’organo di gestione:
+Membro [N]
+Nome e cognome:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Data di decorrenza dell’uscita dall’organo di gestione:
+Motivi dell’uscita dall’organo di gestione:
+—
+Informazioni sui nuovi membri dell’organo di gestione:
+Membro 1
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a
+norma dell’articolo 5, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143 della Commissione:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a norma dell’articolo 5, paragrafo 1, lettera
+e), del regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso l’APA o l’ARM:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni di cui all’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+Membro [N]
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Funzione:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a
+norma dell’articolo 5, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’autorità competente a chiedere informazioni a norma dell’articolo 5, paragrafo 1, lettera
+e), del regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso l’APA o l’ARM:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni di cui all’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+—
+Elenco completo aggiornato dei membri dell’organo di gestione:
+Nome
+Funzione
+Data di decorrenza
+Nome:
+Funzione:
+Data di decorrenza:
+
+=== K336 | [Allegato IV] Modulo per l’autorizzazione a fornire servizi di comunicazione dati in qualità di CTP
+ALLEGATO IV
+Modulo per l’autorizzazione a fornire servizi di comunicazione dati in qualità di CTP
+Numero di riferimento:
+Data:
+Mittente:
+Nome del richiedente:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso il richiedente)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 8 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette la domanda di autorizzazione.
+—
+Persona presso il richiedente incaricata della preparazione della domanda.
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Tipo di domanda
+☐
+Autorizzazione — Fornitore di un sistema consolidato di pubblicazione (CTP)
+CONTENUTO
+Inserire le informazioni di cui al regolamento delegato (UE) 2025/1143 della Commissione.. Si prega di riportare tali informazioni nell’apposita sezione o di indicare il riferimento ai pertinenti
+allegati che contengono le informazioni.
+Informazioni sulla proprietà [articolo 16 del regolamento delegato (UE) 2025/1143]:
+Informazioni sull’organizzazione [articolo 17 del regolamento delegato (UE) 2025/1143]:
+Informazioni sul governo societario [articolo 18 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui membri dell’organo di gestione [articolo 19 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui controlli interni [articolo 20 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui conflitti di interesse [articolo 21 del regolamento delegato (UE) 2025/1143]:
+Informazioni sull’operatività [articolo 22 del regolamento delegato (UE) 2025/1143]:
+Informazioni sull’esternalizzazione [articolo 23 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulle commissioni per i dati di mercato e sui modelli di licenze [articolo 24 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla resilienza operativa digitale [articolo 25 del regolamento delegato (UE) 2025/1143]:
+Informazioni sull’efficienza energetica [articolo 26 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulle modalità di tenuta delle registrazioni [articolo 27 del regolamento delegato (UE) 2025/1143]:
+Informazioni sui requisiti organizzativi [articolo 28 del regolamento delegato (UE) 2025/1143]:
+Informazioni sulla ricezione, sul consolidamento e sulla diffusione dei dati e sulla loro qualità [articolo 29 del regolamento delegato (UE) 2025/1143]:
+Informazioni fornite da richiedenti congiunti [articolo 30 del regolamento delegato (UE) 2025/1143]:
+Note:
+
+=== K337 | [Allegato V] Modulo per la comunicazione dell’elenco dei membri dell’organo di gestione di un CTP
+ALLEGATO V
+Modulo per la comunicazione dell’elenco dei membri dell’organo di gestione di un CTP
+Numero di riferimento:
+Data:
+Mittente:
+Nome del richiedente:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso il richiedente)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 8 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette in allegato la comunicazione relativa ai membri dell’organo di gestione.
+—
+Persona presso il richiedente incaricata della preparazione della comunicazione:
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Elenco dei membri dell’organo di gestione:
+Membro 1
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma
+dell’articolo 19, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143 della Commissione:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma dell’articolo 19, paragrafo 1, lettera e), del
+regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso il CTP:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni, in conformità dell’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+Membro [N]
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma
+dell’articolo 19, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma dell’articolo 19, paragrafo 1, lettera e), del
+regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso il CTP:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni, in conformità dell’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+
+=== K338 | [Allegato VI] Modulo per la comunicazione delle modifiche concernenti i membri dell’organo di gestione di un CTP
+ALLEGATO VI
+Modulo per la comunicazione delle modifiche concernenti i membri dell’organo di gestione di un CTP
+Numero di riferimento:
+Data:
+Mittente:
+Nome del CTP:
+Indirizzo:
+Identificativo della persona giuridica (se del caso):
+(Recapiti della persona di contatto designata presso il CTP)
+Cognome e nome:
+Telefono:
+Indirizzo e-mail:
+Destinatario:
+ESMA:
+Indirizzo:
+(Recapiti del punto di contatto designato presso l’ESMA)
+Indirizzo:
+Telefono:
+Indirizzo e-mail:
+Gentile signor/signora [ inserire il nome ],
+a norma dell’articolo 11 del regolamento di esecuzione (UE) 2025/1157 della Commissione si trasmette in allegato la comunicazione delle modifiche concernenti i membri dell’organo di gestione.
+—
+Persona presso il CTP incaricata della preparazione della comunicazione:
+Cognome e nome:
+Qualifica/funzione:
+Telefono:
+Indirizzo e-mail:
+Data:
+Firma:
+—
+Informazioni sui membri uscenti dell’organo di gestione:
+Membro 1
+Nome e cognome:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Data di decorrenza dell’uscita dall’organo di gestione:
+Motivi dell’uscita dall’organo di gestione:
+Membro [N]
+Nome e cognome:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Data di decorrenza dell’uscita dall’organo di gestione:
+Motivi dell’uscita dall’organo di gestione:
+—
+Informazioni sui nuovi membri dell’organo di gestione:
+Membro 1
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Recapiti (numero di telefono e indirizzo e-mail):
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma
+dell’articolo 19, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143 della Commissione:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma dell’articolo 19, paragrafo 1, lettera e), del
+regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso il CTP:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni di cui all’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+Membro [N]:
+Nome e cognome:
+Data e luogo di nascita:
+Numero di identificazione personale nazionale o codice equivalente:
+Indirizzo privato:
+Funzione:
+Curriculum vitae allegato alla domanda: sì/no
+Esperienza professionale e altre esperienze pertinenti:
+Titoli di studio e formazioni pertinenti:
+Conferma, se possibile accludendo l’estratto del casellario giudiziale, dell’assenza di precedenti penali per riciclaggio di denaro, finanziamento del terrorismo, servizi finanziari o di gestione di
+dati, frode o appropriazione indebita OPPURE autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma
+dell’articolo 19, paragrafo 1, lettera d), del regolamento delegato (UE) 2025/1143:
+Autocertificazione del possesso dei requisiti di onorabilità corredata di una dichiarazione che autorizza l’ESMA a chiedere informazioni a norma dell’articolo 19, paragrafo 1, lettera e), del
+regolamento delegato (UE) 2025/1143:
+Tempo minimo (approssimativo) che la persona dedicherà all’esercizio delle funzioni presso il CTP:
+Dichiarazione dei potenziali conflitti di interesse che esistono o possono sorgere nell’esercizio delle funzioni e indicazione del modo in cui sono gestiti:
+Informazioni supplementari pertinenti ai fini di valutare se la persona soddisfi i requisiti di onorabilità e possieda le conoscenze, le competenze e l’esperienza necessarie, e dedichi tempo
+sufficiente all’esercizio delle sue funzioni di cui all’articolo 27 septies , paragrafo 3, del regolamento (UE) n. 600/2014:
+Data di decorrenza:
+[ Si prega di riportare qui le informazioni o di spiegare in che modo saranno fornite, oppure di indicare il riferimento ai pertinenti allegati che le contengono ]
+—
+Elenco completo aggiornato dei membri dell’organo di gestione:
+Nome
+Funzione
+Data di decorrenza
+Nome:
+Funzione:
+Data di decorrenza:
+ELI: http://data.europa.eu/eli/reg_impl/2025/1157/oj
+ISSN 1977-0707 (electronic edition)
+
+
+######## NORMA: Regolamento recante le condizioni e le modalita' di prestazione della garanzia statale sui finanziamenti a favore delle grandi imprese in stato di insolvenza, a  (id IT-decreto-2004-12-23-319)
+
+=== K339 | [1] 
+IL MINISTRO DELL'ECONOMIA E DELLE FINANZE
+Visto il decreto-legge 30 gennaio 1979, n. 26 , convertito, con modificazioni, dalla legge 3 aprile 1979, n. 95 , recante provvedimenti urgenti per l'amministrazione straordinaria delle grandi imprese
+in crisi e, in particolare l'articolo 2-bis, come novellato dall' articolo 3 della legge 31 marzo 1982, n. 119 , il quale prevede che il Tesoro dello Stato può garantire in tutto o in parte i debiti
+che le società in amministrazione straordinaria contraggono con le istituzioni creditizie per il finanziamento della gestione corrente e per la riattivazione ed il completamento di impianti, immobili
+ed attrezzature industriali, fino ad un ammontare complessivo non eccedente, per il totale delle imprese assistite, i 700 miliardi di lire e che le condizioni e modalità della prestazione delle
+garanzie sono disciplinate con decreto del Ministro del tesoro su conforme delibera del CIPI;
+Visti i propri decreti in data 19 giugno 1979, del 7 febbraio 1980, del 31 luglio 1981, del 21 gennaio 1982 e del 3 novembre 1982, emanati in attuazione della predetta disposizione legislativa;
+Vista la legge 30 luglio 1998, n. 274 e, in particolare, l'articolo 1, in forza del quale il Governo è delegato ad emanare un decreto legislativo recante la nuova disciplina dell'istituto
+dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza, procedendo all'abrogazione della predetta legge n. 95 del 1979 , ad eccezione dell'articolo 2-bis;
+Visto il decreto legislativo 8 luglio 1999, n. 270 , il quale prevede, all'articolo 55, che, nel caso in cui sia prevista la garanzia dello Stato, il programma presentato dal Commissario straordinario
+deve conformarsi alle disposizioni ed agli orientamenti comunitari sugli aiuti di Stato per il salvataggio e la ristrutturazione di imprese in difficoltà e, all'articolo 101, che con regolamento del
+Ministro del tesoro, del bilancio e della programmazione economica le disposizioni recanti le condizioni e le modalità di prestazione della garanzia statale sono adeguate alla disciplina comunitaria
+in materia di aiuti di Stato per il salvataggio e la ristrutturazione di imprese in difficoltà e alle disposizioni del decreto medesimo;
+Visto il decreto-legge 23 dicembre 2003, n. 347 , convertito, con modificazioni, dalla legge 18 febbraio 2004, n. 39 , e, in particolare l'articolo 5, comma 2, il quale prevede che fino
+all'autorizzazione del programma il Commissario straordinario richiede al Ministro delle attività produttive l'autorizzazione al compimento delle operazioni necessarie per la salvaguardia della
+continuità dell'attività aziendale delle imprese;
+Vista la comunicazione della Commissione europea concernente «Orientamenti comunitari sugli aiuti di Stato per il salvataggio e la ristrutturazione di imprese in difficolta» (2004/C 244/02);
+Visto l' articolo 17, commi 3 e 4, della legge 23 agosto 1988, n. 400 ;
+Udito il parere del Consiglio di Stato espresso dalla Sezione consultiva per gli atti normativi nell'adunanza del 25 ottobre 2004 (parere n. 10911/04);
+Vista la comunicazione al Presidente del Consiglio dei Ministri a norma dell'articolo 17, comma 3, della citata legge n. 400 del 1988 (nota n. ACG/111/DGT/91844 del 16 dicembre 2004);
+D'intesa con il Ministro delle attività produttive (nota n. 0009613 del 2 dicembre 2004);
+Adotta
+il seguente regolamento:
+Art. 1
+Soggetti beneficiari
+1. La garanzia statale è concessa, nei limiti delle disponibilità esistenti a valere sull'ammontare stabilito dalla legge, a beneficio delle imprese ammesse alla procedura di amministrazione
+straordinaria, per le quali, a seguito della decisione favorevole della Commissione europea, sia stata autorizzata con provvedimento del Ministero delle attività produttive:
+a) l'attuazione del piano di intervento per il salvataggio, anche secondo quanto previsto dall' articolo 5 del decreto-legge n. 347 del 2003 , convertito con modificazioni dalla legge n. 39 del 2004 ;
+b) l'esecuzione del programma di ristrutturazione, ai sensi dell' articolo 54 e seguenti del decreto legislativo n. 270 del 1999 .
+2. La garanzia assiste le operazioni finanziarie poste in essere dal commissario straordinario con le banche per la realizzazione del piano o del programma di cui al comma 1.
+Avvertenza:
+Il testo delle note qui pubblicato è stato redatto dall'amministrazione competente per materia, ai sensi dell'art. 10, comma 3, del testo unico delle disposizioni sulla promulgazione delle leggi,
+sull'emanazione dei decreti del Presidente della Repubblica e sulle pubblicazioni ufficiali della Repubblica italiana, approvato con D.P.R. 28 dicembre 1985, n. 1092 , al solo fine di facilitare la
+lettura delle disposizioni di legge alle quali è operato il rinvio. Restano invariati il valore e l'efficacia degli atti legislativi qui trascritti.
+Note alle premesse:
+- Il testo dell' art. 2-bis della legge del 3 aprile 1979, n. 95 (Conversione in legge, con modificazioni, del decreto-legge 30 gennaio 1979, n. 26 , concernente provvedimenti urgenti per la
+amministrazione straordinaria delle grandi imprese in crisi), come novellato dall' art. 3 della legge 31 marzo 1982, n. 119 , è il seguente:
+«1. Il Tesoro dello Stato può garantire in tutto o in parte i debiti che le società in amministrazione straordinaria contraggono con istituzioni creditizie per il finanziamento della gestione corrente
+e per la riattivazione ed il completamento di impianti, immobili ed attrezzature industriali.
+2. L'ammontare complessivo delle garanzie prestate ai sensi del precedente comma non può eccedere, per il totale delle imprese garantite, i settecento miliardi di lire.
+3. Le condizioni e modalità della prestazione delle garanzie saranno disciplinate con decreto del Ministro del tesoro su conforme delibera del CIPI.
+4. Gli oneri derivanti dalle garanzie graveranno su apposito capitolo dello stato di previsione del Ministero del tesoro, da classificarsi tra le spese di carattere obbligatorio.».
+- Il testo dell' art. 1 della legge 30 luglio 1998, n. 274 (Disposizioni in materia di attività produttive), è il seguente:
+«Art. 1 (Disposizioni per il riordino della disciplina dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza). - 1. Il Governo è delegato ad emanare, su proposta del
+Presidente del Consiglio dei Ministri, del Ministro dell'industria, del commercio e dell'artigianato e del Ministro di grazia e giustizia, entro centottanta giorni dalla data di entrata in vigore
+della presente legge, un decreto legislativo recante la nuova disciplina dell'istituto dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza, procedendo all'abrogazione del
+decreto-legge 30 gennaio 1979, n. 26 , convertito, con modificazioni, dalla legge 3 aprile 1979, n. 95 , e successive modificazioni ed integrazioni, ad eccezione dell'art. 2-bis del citato decreto-
+legge n. 26 del 1979 .
+2. In sede di adozione del decreto legislativo di cui al comma 1, il Governo si attiene ai seguenti principi e criteri direttivi:
+a) definizione dell'amministrazione straordinaria quale procedura concorsuale della grande impresa commerciale insolvente, con finalità conservative delle attività aziendali, mediante prosecuzione,
+riattivazione o riconversione dell'esercizio;
+b) individuazione delle imprese soggette alla procedura avente come parametro un numero di dipendenti non inferiore a duecento da almeno un anno e un indebitamento complessivo non inferiore ai due
+terzi dell'attivo lordo e dei ricavi provenienti dalle vendite e dalle prestazioni;
+c) individuazione del presupposto oggettivo della procedura nell'esistenza di concrete prospettive di recupero dell'equilibrio economico delle attività aziendali nei modi indicati dalla lettera m);
+d) articolazione del procedimento in due fasi: la prima di dichiarazione dello stato di insolvenza, e la seconda, eventuale, di apertura della procedura di amministrazione straordinaria;
+e) attribuzione al tribunale del potere di dichiarare con sentenza lo stato di insolvenza delle imprese eventualmente da assoggettare ad amministrazione straordinaria, acquisito l'avviso del Ministro
+dell'industria, del commercio e dell'artigianato;
+f) nomina da parte del tribunale, con la sentenza dichiarativa dello stato di insolvenza, di uno o più commissari giudiziali, su indicazione vincolante del Ministro dell'industria, del commercio e
+dell'artigianato, ovvero in via autonoma, se l'indicazione non venga tempestivamente formulata;
+g) determinazione degli effetti immediati della dichiarazione dello stato di insolvenza sulla base di quelli stabiliti dal capo II del titolo III delle disposizioni approvate con regio decreto 16
+marzo 1942, n. 267 , con gli adattamenti opportuni alla particolarità del procedimento, e con previsione altresì del potere del tribunale di affidare al commissario giudiziale la gestione
+dell'impresa;
+h) previsione che il tribunale, sulla base di apposita relazione del commissario giudiziale, da depositare entro trenta giorni dalla nomina, e sentito il Ministro dell'industria, del commercio e
+dell'artigianato, dichiari con decreto, entro un termine non superiore a un mese dal deposito della relazione, l'apertura della procedura di amministrazione straordinaria ovvero il fallimento
+dell'impresa, a seconda che ricorra o meno il presupposto indicato nella lettera c);
+i) attribuzione al tribunale del potere di disporre, anche in via di conversione del fallimento, l'estensione della procedura alle imprese appartenenti al medesimo gruppo che si trovino in stato di
+insolvenza, qualora ricorra il presupposto indicato nella lettera c) o quando risulti comunque opportuna la gestione unitaria della procedura nell'ambito del gruppo;
+l) attribuzione al Ministro dell'industria, del commercio e dell'artigianato, nel caso di apertura della procedura, del potere di nomina di uno o più commissari straordinari e di un comitato di
+sorveglianza composto da creditori e da esperti, delle funzioni di vigilanza sulla procedura nonchè della fissazione dei criteri per la scelta dei commissari straordinari e dei consulenti degli organi
+della procedura;
+m) previsione di due alternativi indirizzi della procedura di amministrazione straordinaria, rispettivamente volti:
+1) alla cessione a terzi dei complessi aziendali, sulla base di un programma di prosecuzione dell'esercizio dell'impresa della durata di un anno che garantisca, per quanto possibile, la salvaguardia
+dei livelli occupazionali e dell'unità operativa dei complessi da trasferire;
+2) alla ristrutturazione economico-finanziaria dell'impresa, sulla base di un programma della durata di due anni volto al risanamento dell'impresa;
+n) conformazione della disciplina della prosecuzione dell'esercizio dell'impresa, in entrambi i casi indicati nella lettera m), alle disposizioni e agli orientamenti comunitari sugli aiuti di Stato
+per il salvataggio e la ristrutturazione di imprese in difficoltà e coordinamento della medesima con le norme vigenti in materia di finanziamenti e di altre agevolazioni pubbliche alle imprese;
+o) disciplina della procedura sulla base delle disposizioni della legge fallimentare relative alla liquidazione coatta amministrativa, in quanto compatibili con i principi e i criteri direttivi
+stabiliti nel presente comma e con le modificazioni ed integrazioni richieste da questi ultimi;
+p) determinazione dei poteri del commissario straordinario e della disciplina delle autorizzazioni al compimento dei relativi atti secondo criteri che privilegino la rapidità e l'efficacia dell'azione
+commissariale, limitando il controllo preventivo agli atti di maggiore rilevanza;
+q) previsione che sia assicurata, ai sensi delle disposizioni approvate con regio decreto 16 marzo 1942, n. 267 , la tutela dei crediti maturati dalle imprese fornitrici antecedentemente alla
+dichiarazione dello stato di insolvenza e che siano garantiti integralmente i crediti sorti durante la continuazione dell'esercizio dell'impresa;
+r) definizione della disciplina penale della procedura mediante estensione all'amministrazione straordinaria, nei limiti della compatibilità, delle disposizioni previste dai capi I, II e IV del titolo
+VI delle disposizioni approvate con regio decreto 16 marzo 1942, n. 267 , equiparando, ai fini della loro applicazione, la dichiarazione dello stato di insolvenza pronunciata a norma delle lettere e)
+ed i) alla dichiarazione di fallimento e apportando altresì alla vigente disciplina penale della liquidazione coatta amministrativa le modifiche necessarie ad assicurare l'omogeneità del trattamento
+sanzionatorio;
+s) previsione dell'obbligo del commissario straordinario, qualora in qualunque momento nel corso della procedura risulti che questa non può essere utilmente continuata, di riferirne all'autorità di
+vigilanza ed al tribunale affinchè si provveda a norma della lettera t);
+t) previsione del potere del tribunale di disporre la conversione della procedura in fallimento, sentito il parere del Ministro dell'industria, del commercio e dell'artigianato, qualora:
+1) nel caso previsto dal n. 1) della lettera m), alla scadenza del programma di prosecuzione delle attività non siano ancora maturate le condizioni per la cessione del complesso aziendale;
+2) nel caso previsto dal n. 2) della lettera m), al termine del programma di risanamento l'impresa non abbia recuperato la capacità di soddisfare regolarmente le proprie obbligazioni;
+u) definizione di norme transitorie da applicare alle imprese assoggettate ad amministrazione straordinaria anteriormente alla data di entrata in vigore del decreto legislativo di cui al presente
+articolo, salvaguardando i lavoratori dipendenti attraverso l'utilizzo della cassa integrazione guadagni straordinaria.
+3. Le determinazioni adottate in relazione agli adempimenti di cui alla lettera h) del comma 2 e alla apertura della procedura, nonchè alla nomina degli organi di cui alla lettera l) del medesimo
+comma 2 sono comunicate alle regioni interessate e ai comuni ove ha sede l'impresa.
+4. La cessione dei crediti in prededuzione ai sensi dell'art. 111, n. 1), delle disposizioni approvate con regio decreto 16 marzo 1942, n. 267 , vantati da imprese commerciali non appartenenti a
+settori oggetto di limitazioni o divieti sulla base della disciplina comunitaria degli aiuti di Stato nei confronti di imprese in amministrazione straordinaria per le quali l'autorizzazione
+all'esercizio dell'impresa sia cessata nei tre anni precedenti la data di entrata in vigore della presente legge, è garantita nei limiti e secondo i criteri degli aiuti de minimis definiti in sede
+comunitaria, ai sensi dell' art. 2-bis del decreto-legge 30 gennaio 1979, n. 26 , convertito, con modificazioni, dalla legge 3 aprile 1979, n. 95 , nei limiti di disponibilità dell'ammontare
+complessivo di cui all'articolo medesimo. Il Ministro dell'industria, del commercio e dell'artigianato, con proprio decreto, disciplina le condizioni e le modalità per l'attuazione della disposizione
+di cui al presente comma.».
+- Il testo dell' art. 55 del decreto legislativo 8 luglio 1999, n. 270 , (Nuova disciplina dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza, a norma dell' art. 1 della
+legge 30 luglio 1998, n. 274 ), è il seguente:
+«Art. 55 (Criteri di definizione del programma). - 1. Il programma è redatto sotto la vigilanza del Ministero dell'industria ed in conformità degli indirizzi di politica industriale dal medesimo
+adottati, in modo da salvaguardare l'unità operativa dei complessi aziendali, tenuto conto degli interessi dei creditori.
+2. Se il programma prevede il ricorso alla garanzia del Tesoro dello Stato di cui all' art. 2-bis del decreto-legge 30 gennaio 1979, n. 26 , convertito, con modificazioni, dalla legge 3 aprile 1979,
+n. 95 , o ad altre agevolazioni pubbliche non rientranti fra le misure autorizzate dalla Commissione europea, esso deve conformarsi alle disposizioni ed agli orientamenti comunitari sugli aiuti di
+Stato per il salvataggio e la ristrutturazione di imprese in difficoltà.».
+- Il testo dell' art. 101 del decreto legislativo 8 luglio 1999, n. 270 (Nuova disciplina dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza, a norma dell' art. 1 della
+legge 30 luglio 1998, n. 274 ), è il seguente:
+«Art. 101 (Adeguamento delle disposizioni attuative dell' art. 2-bis del decreto-legge 30 gennaio 1979, n. 26 ). - 1. Con regolamento emanato entro centoventi giorni dalla data di entrata in vigore
+del presente decreto, il Ministro del tesoro, del bilancio e della programmazione economica adegua le disposizioni attuative in ordine alle condizioni e modalità di prestazione della garanzia dello
+Stato per i debiti delle imprese in amministrazione straordinaria, previste dall' art. 2-bis, terzo comma, del decreto-legge 30 giugno 1979, n. 26 , convertito, con modificazioni, dalla legge 3 aprile
+1979, n. 95 , alla disciplina comunitaria in materia di aiuti di Stato per il salvataggio e la ristrutturazione di imprese in difficoltà e alle disposizioni del presente decreto.».
+- Il testo dell' art. 5, comma 2, del decreto-legge 23 dicembre 2003, n. 347 (Operazioni necessarie per la salvaguardia del gruppo), convertito in legge, con modificazioni, dalla legge 18 febbraio
+2004, n. 39 , è il seguente:
+«2. Fino all'autorizzazione del programma di cui all'art. 4, il commissario straordinario può richiedere al Ministro delle attività produttive l'autorizzazione al compimento delle operazioni o delle
+categorie di operazioni necessarie per la salvaguardia della continuità dell'attività aziendale delle imprese del gruppo.».
+- Il testo dell' art. 17, commi 3 e 4, della legge 23 agosto 1988, n. 400 (Disciplina dell'attività di Governo e ordinamento della Presidenza del Consiglio dei Ministri), è il seguente:
+«3. Con decreto ministeriale possono essere adottati regolamenti nelle materie di competenza del Ministro o di autorità sotto ordinate al Ministro, quando la legge espressamente conferisca tale
+potere. Tali regolamenti, per materie di competenza di più Ministri, possono essere adottati con decreti interministeriali, ferma restando la necessità di apposita autorizzazione da parte della legge.
+I regolamenti ministeriali ed interministeriali non possono dettare norme contrarie a quelle dei regolamenti emanati dal Governo, essi debbono essere comunicati al Presidente del Consiglio dei
+Ministri prima della loro emanazione.
+4. I regolamenti di cui al comma primo ed i regolamenti ministeriali ed interministeriali, che devono recare la denominazione di "regolamento", sono adottati previo parere del Consiglio di Stato,
+sottoposti al visto ed alla registrazione della Corte dei conti e pubblicati nella Gazzetta Ufficiale.».
+Note all'art. 1:
+- Il testo dell' art. 5 del decreto-legge 23 dicembre 2003, n. 347 (Misure urgenti per la ristrutturazione industriale di grandi imprese in stato di insolvenza), convertito con modificazioni dalla
+legge 18 febbraio 2004, n. 39 , è il seguente:
+«Art. 5 (Operazioni necessarie per la salvaguardia del gruppo). - 1. Il Ministro delle attività produttive, dopo la dichiarazione dello stato di insolvenza, può autorizzare operazioni di cessione e di
+utilizzo di beni, di aziende o di rami di aziende dell'impresa richieste dal commissario straordinario qualora siano finalizzate alla ristrutturazione dell'impresa o del gruppo.
+2. Fino all'autorizzazione del programma di cui all'art. 4, il commissario straordinario può richiedere al Ministro delle attività produttive l'autorizzazione al compimento delle operazioni o delle
+categorie di operazioni necessarie per la salvaguardia della continuità dell'attività aziendale delle imprese del gruppo.
+2-bis. L'autorizzazione di cui al comma 2 non è necessaria per gli atti non eccedenti l'ordinaria amministrazione o il cui valore individuale sia inferiore a 250.000 euro.».
+- Il testo degli articoli 57 e 58 del decreto legislativo 8 luglio 1999, n. 270 (Nuova disciplina dell'amministrazione straordinaria delle grandi imprese in stato di insolvenza, a norma dell' art. 1
+della legge 30 luglio 1998, n. 274 ), è il seguente:
+«Art. 57 (Autorizzazione all'esecuzione del programma). 1. L'esecuzione del programma è autorizzata dal Ministero dell'industria con decreto, sentito il comitato di sorveglianza, entro trenta giorni
+dalla sua presentazione.
+2. Salvo quanto previsto dall'art. 58, il programma si intende comunque autorizzato se il Ministero non si pronuncia entro novanta giorni dalla presentazione.
+3. Il termine previsto dal comma 2 è sospeso se il Ministero chiede chiarimenti, modifiche o integrazioni del programma; ad essi il commissario straordinario provvede entro trenta giorni dalla
+richiesta, a pena di revoca dall'incarico. Ulteriori richieste di chiarimenti, modifiche o integrazioni non hanno effetto sospensivo.
+4. I termini di durata del programma stabiliti a norma dell'art. 27, comma 2, decorrono dalla data dell'autorizzazione.».
+«Art. 58 (Autorizzazione all'esecuzione del programma in casi particolari). - 1. Se il programma prevede il ricorso a finanziamenti o agevolazioni pubbliche soggetti ad autorizzazione della
+Commissione europea in base alle disposizioni ed agli orientamenti comunitari sugli aiuti di Stato per il salvataggio e la ristrutturazione di imprese in difficoltà, i termini per l'autorizzazione del
+programma previsti dall'art. 57, commi 1 e 2, decorrono dalla data della decisione della Commissione stessa.
+2. Nel caso di diniego dell'autorizzazione della Commissione europea, o se questa non è concessa nei centoventi giorni successivi alla presentazione del programma, il commissario straordinario
+presenta al Ministero dell'industria un nuovo programma che non preveda il ricorso ai finanziamenti e alle agevolazioni.
+3. Il commissario straordinario provvede a norma del comma 2 entro trenta giorni, a pena di revoca dall'incarico. In rapporto al nuovo programma i termini previsti dall'art. 57, commi 2 e 3, sono
+ridotti della metà.».
+
+=== K340 | [2] Domanda di garanzia
+Art. 2
+Domanda di garanzia
+1. L'impresa che intende accedere alla garanzia presenta, a firma del commissario straordinario, apposita domanda al Ministero dell'economia e delle finanze - Dipartimento del tesoro (di seguito
+«Ministero») entro il termine di sessanta giorni dalla data di emanazione del provvedimento di cui all'articolo 1, comma 1, a pena di inammissibilità della domanda stessa. La domanda deve contenere
+l'indicazione dei termini essenziali delle operazioni finanziarie oggetto della garanzia statale e delle banche prescelte.
+2. Le banche prescelte dall'impresa debbono, a loro volta, comunicare al Ministero la propria disponibilità ad effettuare le operazioni finanziarie, precisandone la forma, l'importo, il tasso di
+interesse, la durata, le modalità di erogazione e di rimborso e tutte le altre eventuali condizioni previste.
+
+=== K341 | [3] Concessione della garanzia
+Art. 3
+Concessione della garanzia
+1. A seguito del ricevimento della domanda di garanzia il Ministero effettua l'istruttoria e, in caso di esito positivo, comunica all'impresa la sussistenza delle condizioni per la concessione della
+garanzia medesima, subordinatamente al pagamento di una commissione su base annua in misura pari alla differenza tra il tasso di riferimento determinato dalla Commissione europea e il tasso di
+interesse applicato all'operazione di finanziamento, che non può essere superiore a quello previsto per i mutui con onere a carico dello Stato dall' articolo 45, comma 32, della legge 23 dicembre
+1998, n. 448 .
+2. La garanzia viene accordata con decreto dirigenziale.
+Nota all'art. 3:
+- Il testo dell' art. 45, comma 32, della legge 23 dicembre 1998, n. 448 (Misure di finanza pubblica per la stabilizzazione e lo sviluppo ed ecologia), è il seguente:
+«32. In deroga a quanto eventualmente previsto da normative in vigore, anche a carattere speciale, per i mutui da stipulare con onere a totale carico dello Stato, di importo pari o inferiore a 100
+miliardi di lire, il tasso di interesse non può essere superiore a quello indicato periodicamente, sulla base delle condizioni di mercato, dal Ministero del tesoro, del bilancio e della programmazione
+economica con apposita comunicazione da pubblicare nella Gazzetta Ufficiale. Per i mutui di importo superiore a 100 miliardi di lire, il tasso di interesse massimo applicabile deve essere previamente
+concordato dai soggetti interessati con il Ministero del tesoro, del bilancio e della programmazione economica. Qualora le predette modalità non risultassero applicate, l'eventuale maggior costo
+graverà sui soggetti stessi.».
+
+=== K342 | [4] Oggetto e limiti della garanzia
+Art. 4
+Oggetto e limiti della garanzia
+1. La garanzia, di natura solidale ai sensi dell' articolo 1944 del codice civile , assiste il credito maturato a favore della banca per capitale, interessi ed ogni altro costo ed onere connesso con
+la tipologia dell'operazione garantita.
+2. Nel caso di crediti di firma la garanzia si estende anche alla commissione dovuta alla banca.
+3. Nel caso di finanziamenti in valuta diversa dall'euro la garanzia è commisurata al controvalore in euro del finanziamento, calcolato al cambio ufficiale in vigore alla data della sua concessione e
+può essere estesa alla commissione per la copertura del rischio di cambio.
+4. In deroga al disposto di cui al comma 3 ed esclusivamente in relazione a finanziamenti in valuta concessi ad imprese a fronte di crediti denominati nella stessa valuta del finanziamento nascenti da
+operazioni di esportazione di merci e di servizi ovvero da esecuzioni di impianti e di lavori all'estero, la garanzia può essere concessa nella stessa valuta del finanziamento sull'importo di
+capitale, interessi ed accessori.
+Nota all'art. 4:
+- Si riporta il testo dell' art. 1944 del codice civile :
+«Art. 1944 (Obbligazione del fideiussore). - Il fideiussore è obbligato in solido col debitore principale al pagamento del debito.
+Le parti però possono convenire che il fideiussore non sia tenuto a pagare prima dell'escussione del debitore principale. In tal caso, il fideiussore, che sia convenuto dal creditore e intenda valersi
+del beneficio dell'escussione, deve indicare i beni del debitore principale da sottoporre ad esecuzione.
+Salvo patto contrario, il fideiussore è tenuto ad anticipare le spese necessarie.».
+
+=== K343 | [5] Richiesta di operatività della garanzia
+Art. 5
+Richiesta di operatività della garanzia
+1. La garanzia diviene operante senza obbligo di preventiva escussione del debitore, su semplice comunicazione dell'inadempimento dell'obbligazione, nella quale la banca dichiara, sotto la propria
+responsabilità, di aver già richiesto infruttuosamente il pagamento al debitore e indica l'importo del credito vantato, distinto per capitale, interessi, spese ed altri oneri, allegando tutta la
+documentazione idonea a dimostrare la sussistenza e l'ammontare del credito medesimo.
+2. La richiesta di cui al comma 1 è inviata per conoscenza al commissario straordinario dell'impresa debitrice, il quale dovrà trasmettere immediatamente al Ministero eventuali osservazioni.
+3. Entro trenta giorni dal ricevimento della richiesta il Ministero versa alla banca la somma dovuta dall'impresa, nei limiti di cui all'articolo
+4. Durante tale periodo maturano a carico del Ministero gli interessi contrattuali, esclusi quelli moratori.
+4. Il termine di cui al comma 3 si interrompe nel caso in cui, per cause imputabili alla banca, si renda necessario il compimento di atti istruttori diretti ad accertare la sussistenza delle
+condizioni di operatività della garanzia, nonchè l'esistenza e l'ammontare del credito vantato dalla banca medesima.
+5. A seguito del pagamento il Ministero è surrogato nei diritti della banca creditrice, a norma dell' articolo 1203, primo comma, n. 3) del codice civile e concorre con gli altri crediti prededucibili
+alle ripartizioni effettuate dall'impresa debitrice.
+6. Sulla somma pagata dal Ministero maturano gli interessi al tasso legale vigente a decorrere dalla data di pagamento alla banca e fino alla data di rimborso da parte dell'impresa debitrice.
+Nota all'art. 5:
+- Il testo dell' art. 1203, n. 3, del codice civile è il seguente:
+«Art. 1203 (Surrogazione legale). - La surrogazione ha luogo di diritto nei seguenti casi:
+1) - 2) (omissis);
+3) a vantaggio di colui che, essendo tenuto con altri o per altri al pagamento del debito aveva interesse di soddisfarlo;».
+
+=== K344 | [6] Inserimento del credito statale nello stato passivo
+Art. 6
+Inserimento del credito statale nello stato passivo
+1. Effettuato il pagamento in dipendenza della garanzia, il Ministero notifica il relativo provvedimento al commissario dell'impresa debitrice e alla cancelleria del tribunale competente, ai fini
+dell'inserimento, senza ulteriori formalità, nell'elenco dei creditori della procedura, con diritto alla prededuzione del proprio credito dal ricavato dell'attivo.
+
+=== K345 | [7] Ulteriori disposizioni operative
+Art. 7
+Ulteriori disposizioni operative
+1. Con successivo decreto dirigenziale del Ministero - Dipartimento del tesoro, da pubblicarsi nella Gazzetta Ufficiale della Repubblica italiana, sono approvati i modelli della domanda di concessione
+della garanzia e della richiesta di operatività della garanzia medesima, nonchè le relative istruzioni.
+
+
+######## NORMA: Regolamento in materia di obblighi di identificazione e di conservazione delle informazioni per gli intermediari finanziari previsto dall'articolo 3, comma 2, d  (id IT-decreto-2006-02-03-142)
+
+=== K347 | [1] 
+IL MINISTRO DELL'ECONOMIA E DELLE FINANZE
+Visto l' articolo 1, comma 1, della legge 3 febbraio 2003, n. 14 , recante: «Disposizioni per l'adempimento di obblighi derivanti dall'appartenenza dell'Italia alle Comunità europee. Legge comunitaria
+2002»;
+Visto il decreto legislativo 20 febbraio 2004, n. 56 , concernente: «Attuazione della Direttiva 2001/97/CE del Parlamento europeo e del Consiglio del 4 dicembre 2001 in materia di prevenzione dell'uso
+del sistema finanziario a scopo di riciclaggio dei proventi da attività illecite»;
+Visto in particolare l'articolo 3, comma 2, del citato decreto legislativo 20 febbraio 2004, n. 56 ;
+Visto il decreto-legge 3 maggio 1991, n. 143 , recante «Provvedimenti urgenti per limitare l'uso del contante e dei titoli al portatore nelle transazioni e prevenire l'utilizzazione del sistema
+finanziario a scopo di riciclaggio», convertito, con modificazioni, dalla legge 5 luglio 1991, n. 197 , e successive modificazioni;
+Visto il decreto legislativo 30 giugno 2003, n. 196 , recante « Codice in materia di protezione dei dati personali »;
+Visto l' articolo 17, comma 3, della legge 23 agosto 1988, n. 400 ;
+Udito il parere del Comitato antiriciclaggio espresso nella seduta del 13 luglio 2004;
+Udito il parere delle competenti autorità di vigilanza di settore e le amministrazioni interessate;
+Udito il parere del Garante per la protezione dei dati personali espresso nella riunione del 12 maggio 2005;
+Udito il parere del Consiglio di Stato espresso dalla Sezione consultiva per gli atti normativi nell'adunanza del 29 agosto 2005;
+Vista la comunicazione della Presidenza del Consiglio dei Ministri, a norma dell' articolo 17, comma 3, della legge 23 agosto 1988, n. 400 , effettuata con nota n. DAGL-27419-10.2.2.l/2/2005 del 23
+dicembre 2005;
+Adotta
+il seguente regolamento:
+Art. 1
+Definizioni
+1. Nel presente regolamento si intendono per:
+a) «direttiva», la direttiva del Consiglio delle Comunità europee n. 91/308/CEE del 10 giugno 1991, modificata dalla direttiva del Parlamento europeo e del Consiglio dell'Unione europea n. 2001/97/CE
+del 4 dicembre 2001;
+b) «legge antiriciclaggio», il decreto-legge 3 maggio 1991, n. 143 , convertito in legge, con modificazioni, dalla legge 5 luglio 1991, n. 197 , e successive modificazioni;
+c) «decreto», il decreto legislativo 20 febbraio 2004, n. 56 , recante: «Attuazione della direttiva 2001/97/CE in materia di prevenzione dell'uso del sistema finanziario a scopo di riciclaggio dei
+proventi da attività illecite»;
+d) « codice in materia di protezione dei dati personali »: il decreto legislativo 30 giugno 2003, n. 196 ;
+e) «UIC», l'Ufficio italiano dei cambi;
+f) «intermediari», i soggetti indicati nell'articolo 2 del presente reolamento;
+g) «intermediari abilitati», i soggetti abilitati ai sensi dell'articolo 4 del decreto;
+h) «gruppo», il gruppo bancario di cui all' articolo 60 del decreto legislativo 1° settembre 1993, n. 385 (Testo unico de1le leggi in materia bancaria e creditizia) e disposizioni applicative, il
+gruppo di cui all' articolo 11 del decreto legislativo 24 febbraio 1998, n. 58 (Testo unico delle disposizioni in materia di intermediazione finanziaria) e disposizioni applicative e il gruppo
+individuato ai sensi del decreto legislativo 17 aprile 2001, n. 239 ;
+i) «personale incaricato», il personale dipendente, i promotori finanziari iscritti nell'albo previsto dall' articolo 31 del decreto legislativo 24 febbraio 1998, n. 58 , gli agenti in attività
+finanziaria iscritti nell'elenco previsto dall' articolo 3 del decreto legislativo 25 settembre 1999, n. 374 e gli agenti assicurativi iscritti, fino all'istituzione del registro degli intermediari
+assicurativi e riassicurativi previsto dall' art. 109 del decreto legislativo 7 settembre 2005, n. 209 , nell'albo previsto dall' articolo 1 della legge 7 febbraio 1979, n. 48 ;
+l) «cliente», il soggetto che compie operazioni o instaura rapporti con gli intermediari;
+m) «dati identificativi», il nome e il cognome, il luogo e la data di nascita, l'indirizzo, il codice fiscale e gli estremi del documento di identificazione o, nel caso di soggetti diversi da persona
+fisica, la denominazione, la sede legale ed il codice fiscale;
+n) «mezzi di pagamento», il denaro contante, gli assegni bancari e postali, gli assegni circolari e gli altri assegni a essi assimilabili o equiparabili, i vaglia postali, gli ordini di accreditamento
+o di pagamento, le carte di credito e le altre carte di pagamento, ogni altro strumento o disposizione che permetta di trasferire, movimentare o acquisire, anche per via telematica, fondi, valori o
+disponibilità finanziarie;
+o) «operazione frazionata», un'operazione unitaria sotto il profilo economico di valore superiore a 12.500 euro posta in essere attraverso più operazioni, effettuate in momenti diversi e in un
+circoscritto periodo di tempo, singolarmente di valore non superiore a 12.500 euro;
+p) «archivio unico informatico», un archivio, formato e gestito a mezzo di sistemi inforrnatici, nel quale gli intermediari conservano in modo accentrato tutte le informazioni acquisite
+nell'adempimento degli obblighi di identificazione e registrazione, secondo le modalità previste nel presente regolamento.
+Avvertenza:
+Il testo delle note qui pubblicato è stato redatto dall'amministrazione competente per materia, ai sensi dell'art. 10, comma 3, del testo unico delle disposizioni sulla promulgazione delle leggi,
+sull'emanazione dei decreti del Presidente della Repubblica e sulle pubblicazioni ufficiali della Repubblica italiana, approvato con D.P.R. 28 dicembre 1985, n. 1092 , al solo fine di facilitare la
+lettura delle disposizioni di legge alle quali è operato il rinvio. Restano invariati il valore e l'efficacia degli atti legislativi qui trascritti.
+- Per le direttive CEE vengono forniti gli estremi di pubblicazione nella Gazzetta Ufficiale delle Comunità europee (GUCE).
+Note alle premesse:
+- Il testo dell' art. 1, comma 1 della legge 3 febbraio 2003, n. 14 : (Disposizioni per l'adempimento di obblighi derivanti dall'appartenenza dell'Italia alle Comunità europee. Legge comunitaria
+2002), è il seguente:
+«Art. 1 (Delega al Governo per l'attuazione di direttive comunitarie). - 1. Il Governo è delegato ad adottare, entro il termine di un anno dalla data di entrata in vigore della presente legge, i
+decreti legislativi recanti le norme occorrenti per dare attuazione alle direttive comprese negli elenchi di cui agli allegati A e B.».
+- Il testo dell' art. 3, comma 2, del decreto legislativo 20 febbraio 2004, n. 56 : (Attuazione della direttiva 2001/97/CE in materia di prevenzione dell'uso del sistema finanziario a scopo di
+riciclaggio dei proventi da attività illecite), è il seguente:
+«2. Il Ministro dell'economia e delle finanze, sentiti l'UIC, le competenti autorità di vigilanza di settore e le amministrazioni interessate, avendo riguardo alle peculiarità operative dei soggetti
+obbligati, all'esigenza di contenere gli oneri gravanti sui medesimi e alla tenuta dell'archivio nell'ambito dei gruppi, stabilisce con regolamento, da adottarsi entro duecentoquaranta giorni dalla
+data di entrata in vigore del presente decreto legislativo, il contenuto e le modalità di esecuzione degli obblighi di cui al presente articolo e le modalità di identificazione in caso di
+instaurazione di rapporti o di effettuazione di operazioni a distanza.».
+- Il decreto-legge 3 maggio 1991, n. 143 : (Provvedimenti urgenti per limitare l'uso del contante e dei titoli al portatore nelle transazioni e prevenire l'utilizzazione del sistema finanziario a
+scopo di riciclaggio) è pubblicato nella Gazzetta Ufficiale 8 maggio 1991, n. 106, e convertito in legge, con modificazioni, dalla legge 5 luglio 1991, n. 197 (Gazzetta Ufficiale 6 luglio 1991, n.
+157).
+- Il decreto legislativo 30 giugno 2003, n. 196 : ( Codice in materia di protezione dei dati personali ) è pubblicato nella Gazzetta Ufficiale 29 luglio 2003, n. 174, supplemento ordinario.
+- Il testo dell' art. 17, comma 3, della legge 23 agosto 1988, n. 400 : (Disciplina dell'attività di Governo e ordinamento della Presidenza del Consiglio dei Ministri); è il seguente:
+«3. Con decreto ministeriale possono essere adottati regolamenti nelle materie di competenza del Ministro o di autorità sottordinate al Ministro, quando la legge espressamente conferisca tale potere.
+Tali regolamenti, per materie di competenza di più Ministri, possono essere adottati con decreti interministeriali, ferma restando la necessità di apposita autorizzazione da parte della legge.
+I regolamenti ministeriali ed interministeriali non possono dettare norme contrarie a quelle dei regolamenti emanati dal Governo. Essi debbono essere comunicati al Presidente del Consiglio dei
+Ministri prima della loro emanazione.».
+Note all'art. 1:
+- La direttiva del Consiglio delle Comunità europee n. 91/308/CEE, del 10 giugno 1991, relativa alla prevenzione dell'uso del sistema finanziario a scopo di riciclaggio dei proventi di attività
+illecite - Dichiarazione dei rappresentanti dei governi degli Stati membri riuniti in sede di Consiglio è pubblicata nel n. L 166 del 28 giugno 1991.
+- La direttiva 2001/97/CE del Parlamento europeo e del Consiglio, del 4 dicembre 2001 , recante modifica della direttiva 91/308/CEE del Consiglio relativa alla prevenzione dell'uso del sistema
+finanziario a scopo di riciclaggio dei proventi di attività illecite è pubblicata nel n. L 344 del 28 dicembre 2001.
+- Per il decreto-legge n. 143 del 1991 e per i decreti legislativi n. 56 del 2004 e n. 196 del 2003 si vedano le note alle premesse.
+- Il testo dell'art. 4 del citato decreto legislativo 20 febbraio 2004, n. 56 , è il seguente:
+«Art. 4 (Abilitazione). - 1. I soggetti indicati nell'art. 2, comma 1, dalla lettera a) alla lettera l), e le relative succursali italiane sono abilitati, nei limiti delle proprie attività
+istituzionali, ad effettuare le operazioni di trasferimento previste dall'art. 1 della legge antiriciclaggio.
+2. Il Ministero dell'economia e delle finanze, sentito l'UIC, determina con decreto le condizioni in presenza delle quali gli enti indicati nell'art. 2, comma 1, lettere m), n) e o) e le relative
+succursali italiane, possono essere abilitati dallo stesso Ministero dell'economia e delle fmanze ad effettuare le operazioni di trasferimento di cui al comma 1.».
+-Il testo dell' art. 60 del decreto legislativo 1° settembre 1993, n. 385 : (Testo unico delle disposizioni in materia bancaria e creditizia), è il seguente:
+«Art. 60 (Composizione). - 1. Il gruppo bancario è composto alternativamente:
+a) dalla banca italiana capogruppo e dalle società bancarie, finanziarie e strumentali da questa controllate;
+b) dalla società finanziaria capogruppo e dalle società bancarie, finanziarie e strumentali da questa controllate, quando nell'ambito del gruppo abbia rilevanza la componente bancaria, secondo quanto
+stabilito dalla Banca d'Italia, in conformità delle deliberazioni del CICR.».
+- Il testo dell' art. 11 del decreto legislativo 24 febbraio 1998, n. 58 : (Testo unico delle disposizioni in materia di intermediazionefinanziaria) ai sensi degli articoli 8 e 21 della legge 6
+febbraio 1996, n. 52 ), è il seguente:
+«Art. 11 (Composizione del gruppo). - 1. La Banca d'Italia, sentita la CONSOB:
+a) determina la nozione di gruppo rilevante ai fini della verifica dei requisiti previsti dagli articoli 19, comma 1, lettera h), e 34, comma 1, lettera f);
+b) può emanare disposizioni volte a individuare l'insieme dei soggetti da sottoporre a vigilanza sul gruppo tra quelli esercenti servizi di investimento o di gestione collettiva del risparmio nonchè
+attività connesse e strumentali o altre attività finanziarie, come individuate ai sensi dell'art. 59, comma 1, lettera b) del testo unico bancario. Tali soggetti sono individuati tra quelli che, non
+sottoposti a vigilanza consolidata ai sensi del testo unico bancario:
+1) sono controllati, direttamente o indirettamente, da una SIM o da una società di gestione del risparmio;
+2) controllano, direttamente o indirettamente, una SIM o una società di gestione del risparmio;
+3) sono controllati, direttamente o indirettamente, dagli stessi soggetti che controllano la SIM o la società di gestione del risparmio;
+4) sono partecipati almeno per il 20 per cento da uno dei soggetti indicati nei numeri 1), 2) e 3), dalla SIM o dalla società di gestione del risparmio.».
+- Il decreto legislativo 17 aprile 2001, n. 239 : (Attuazione della direttiva 98/78/CE relativa alla vigilanza supplementare sulle imprese di assicurazione appartenenti ad un gruppo assicurativo) è
+pubblicato nella Gazzetta Ufficiale 23 giugno 2001, n. 144.
+- Il testo dell'art. 31 del citato decreto legislativo 24 febbraio 1998, n. 58 , è il seguente;
+«Art. 31 (Promotori finanziari). - 1. Per l'offerta fuori sede, i soggetti abilitati si avvalgono di promotori finanziari.
+2. È promotore fmanziario la persona fisica che, in qualità di dipendente, agente o mandatario, esercita professionalmente l'offerta fuori sede. L'attività di promotore finanziario è svolta
+esclusivamente nell'interesse di un solo soggetto.
+3. Il soggetto abilitato che conferisce l'incarico è responsabile in solido dei danni arrecati a terzi dal promotore finanziario, anche se tali danni siano conseguenti a responsabilità accertata in
+sede penale.
+4. È istituito presso la CONSOB l'albo unico nazionale dei promotori finanziari. Per la tenuta dell'albo, la CONSOB può avvalersi della collaborazione di un organismo individuato dalle associazioni
+professionali dei promotori finanziari e dei soggetti abilitati.
+5. Il Ministro dell'economia e delle finanze, con regolamento adottato sentita la CONSOB, determina i requisiti di onorabilità e di professionalità per l'iscrizione all'albo previsto dal comma 4. I
+requisiti di professionalità per l'iscrizione all'albo sono accertati sulla base di rigorosi criteri valutativi che tengano conto della pregressa esperienza professionale, validamente documentata,
+ovvero sulla base di prove valutative indette dalla CONSOB.
+6. La CONSOB disciplina, con regolamento:
+a) l'istituzione e il funzionamento su base territoriale di commissioni per l'albo dei promotori finanziari. Le commissioni si avvalgono per il proprio funzionamento delle strutture delle Camere di
+commercio, industria e artigianato. Le commissioni deliberano le iscrizioni negli elenchi territoriali dei soggetti iscritti all'albo previsto dal comma 4, curano i relativi aggiornamenti, esercitano
+compiti di natura disciplinare e assolvono le altre funzioni a esse affidate;
+b) le modalità di formazione dell'albo previsto dal comma 4 e le relative forme di pubblicità;
+c) i compiti dell'organismo indicato nel comma 4 e gli obblighi cui lo stesso è soggetto;
+d) le attività incompatibili con l'esercizio dell'attività di promotore finanziario;
+e) le modalità per l'iscrizione all'albo previsto dal comma 4 dei soggetti che, alla data di entrata in vigore del presente decreto, sono iscritti all'albo previsto dall' art. 23, comma 4, del decreto
+legislativo 23 luglio 1996, n. 415 ;
+f) le regole di presentazione e di comportamento che i promotori finanziari devono osservare nei rapporti con la clientela;
+g) le modalità di tenuta della documentazione concernente l'attività svolta;
+h) le violazioni alle quali si applicano le sanzioni previste dall'art. 196, comma 1.
+7. La CONSOB può chiedere ai promotori finanziari o ai soggetti che si avvalgono di promotori finanziari la comunicazione di dati e notizie e la trasmissione di atti e documenti fissando i relativi
+termini. Essa può inoltre effettuare ispezioni e richiedere l'esibizione di documenti e il compimento degli atti ritenuti necessari.».
+- Il testo dell' art. 3 del decreto legislativo 25 settembre 1999, n. 374 (Estensione delle disposizioni in materia di riciclaggio dei capitali di provenienza illecita ed attività finanziarie
+particolarmente suscettibili di utilizzazione a fini di riciclaggio, a norma dell' art. 15 della legge 6 febbraio 1996, n. 52 ), è il seguente:
+«Art. 3 (Agenzia in attività finanziaria). - 1.
+L'esercizio professionale nei confronti del pubblico dell'agenzia in attività finanziaria, indicata nell'art. 1, comma 1, lettera n), è riservato ai soggetti iscritti in un elenco istituito presso
+l'UIC.
+2. Il Ministro del tesoro, del bilancio e della programmazione economica, con regolamento, adottato sentito l'UIC, specifica il contenuto dell'attività indicata al comma 1, stabilisce le condizioni di
+compatibilità con lo svolgimento di altre attività professionali, prevede in quali circostanze ricorra l'esercizio nei confronti del pubblico e ne disciplina l'esercizio nel territorio della
+Repubblica da parte di soggetti aventi sede legale all'estero.
+3. L'UIC procede all'iscrizione nell'elenco quando ricorrono le condizioni seguenti:
+a) per le persone fisiche:
+1) cittadinanza italiana o di uno Stato dell'Unione europea ovvero di Stato diverso secondo le disposizioni dell' art. 2 del decreto legislativo 25 luglio 1998, n. 286 ;
+2) domicilio nel territorio della Repubblica;
+3) diploma di scuola media superiore o titolo equipollente a tutti gli effetti di legge;
+4) possesso dei requisiti di onorabilità stabiliti nel regolamento emanato ai sensi dell'art. 109 del testo unico bancario;
+b) per i soggetti diversi dalle persone fisiche:
+1) previsione nell'oggetto sociale dello svolgimento dell'attività di agenzia in attività finanziaria;
+2) i partecipanti al capitale e i soggetti che svolgono funzioni di amministrazione, direzione e controllo abbiano i requisiti di onorabilità stabiliti nei regolamenti emanati rispettivamente ai sensi
+degli articoli 108 e 109 del testo unico bancario;
+3) la sede legale e la sede amministrativa siano situate nel territorio della Repubblica;
+4) siano rispettati i requisiti patrimoniali e di forma giuridica stabiliti dal Ministro del tesoro, del bilancio e della programmazione economica con regolamento adottato su proposta dell'UIC.
+4. Nei casi di perdita dei requisiti di onorabilità in capo ai soggetti indicati nella lettera b), numero 2), del comma 3, si applicano gli articoli 108, comma 3, e 109, comma 2, del testo unico
+bancario.
+5. I soggetti indicati nella lettera b) del comma 3 svolgono la propria attività esclusivamente per il tramite di persone fisiche iscritte nell'elenco.
+6. L'UIC esercita il controllo sui soggetti iscritti nell'elenco per verificare l'osservanza delle disposizioni del presente decreto. A tal fine, può richiedere la comunicazione di dati e notizie e la
+trasmissione di dati e documenti fissando i relativi termini. Esso può, altresì, chiedere la collaborazione del nucleo speciale di polizia valutaria della Guardia di finanza.
+7. L'UIC disciplina la procedura e i termini per l'iscrizione nell'elenco, nonchè le forme di pubblicità dell'elenco stesso.
+8. Il Ministro del tesoro, del bilancio e della programmazione economica, su proposta dell'UIC, dispone la cancellazione dall'elenco per gravi violazioni di norme di legge, delle norme del presente
+decreto legislativo o delle disposizioni emanate ai sensi di esso. Il Ministro del tesoro, del bilancio e della programmazione economica, sentito l'UIC, disciplina la procedura per la sospensione
+cautelare dall'elenco.».
+- Il testo dell' art. 109 del decreto legislativo 7 settembre 2005, n. 209 : ( Codice delle assicurazioni private ), è il seguente:
+«Art. 109 (Registro degli intermediari assicurativi e riassicurativi). - 1. L'ISVAP disciplina, con regolamento, la formazione e l'aggiornamento del registro unico elettronico nel quale sono iscritti
+gli intermediari assicurativi e riassicurativi che hanno residenza o sede legale nel territorio della Repubblica.
+2. Nel registro sono iscritti in sezioni distinte:
+a) gli agenti di assicurazione, in qualità di intermediari che agiscono in nome o per conto di una o più imprese di assicurazione o di riassicurazione;
+b) i mediatori di assicurazione o di riassicurazione, altresì denominati broker, in qualità di intermediari che agiscono su incarico del cliente e senza poteri di rappresentanza di imprese di
+assicurazione o di riassicurazione;
+c) i produttori diretti che, anche in via sussidiaria rispetto all'attività svolta a titolo principale, esercitano l'intermediazione assicurativa nei rami vita e nei rami infortuni e malattia per
+conto e sotto la piena responsabilità di un'impresa di assicurazione e che operano senza obblighi di orario o di risultato esclusivamente per l'impresa medesima;
+d) le banche autorizzate ai sensi dell'art. 14 del testo unico bancario, gli intermediari finanziari inseriti nell'elenco speciale di cui all'art. 107 del testo unico bancario, le società di
+intermediazione mobiliare autorizzate ai sensi dell'art. 19 del testo unico dell'intermediazione finanziaria, la società Poste Italiane - Divisione servizi di bancoposta, autorizzata ai sensi dell'
+art. 2 del decreto del Presidente della Repubblica 14 marzo 2001, n. 144 ;
+e) i soggetti addetti all'intermediazione, quali i dipendenti, i collaboratori, i produttori e gli altri incaricati degli intermediari iscritti alle sezioni di cui alle lettere a), b) e d) per
+l'attività di intermediazione svolta al di fuori dei locali dove l'intermediario opera.
+Non è consentita la contemporanea iscrizione dello stesso intermediario in più sezioni del registro.
+3. Nel registro sono altresì indicati gli intermediari persone fisiche, di cui al comma 2, lettere a) e b), abilitati ma temporaneamente non operanti, per i quali l'adempimento dell'obbligo di
+copertura assicurativa di cui all'art. 110, comma 3, è sospeso sino all'avvio dell'attività, che forma oggetto di tempestiva comunicazione all'ISVAP a pena di radiazione dal registro.
+4. L'intermediario di cui al comma 2, lettere a), b) e d), che si avvale di dipendenti, collaboratori, produttori o altri incaricati addetti all'intermediazione provvede, per conto dei medesimi,
+all'iscrizione nella sezione del registro di cui alla lettera e) del medesimo comma.
+L'intermediario di cui al comma 2, lettera a), che si avvale di dipendenti, collaboratori, produttori o altri incaricati addetti all'intermediazione è tenuto a dare all'impresa preponente contestuale
+notizia della richiesta di iscrizione dei soggetti che operano per suo conto fermo restando quanto previsto nel contratto di agenzia.
+L'impresa di assicurazione, che si avvale di produttori diretti, provvede ad effettuare la comunicazione all'ISVAP al fine dell'iscrizione nella sezione del registro di cui al comma 2, lettera c).
+5. L'ISVAP rilascia, a richiesta dell'impresa o dell'intermediario interessato, un'attestazione di avvenuta iscrizione nel registro, fermi restando gli adempimenti necessari alle procedure di verifica
+e di revisione delle iscrizioni effettuate.
+6. L'ISVAP, con regolamento, stabilisce gli obblighi di comunicazione a carico delle imprese e degli intermediari, nonchè le forme di pubblicità più idonee ad assicurare l'accesso pubblico al
+registro.».
+- La legge 7 febbraio 1979, n. 48 , abrogata dall' art. 354 del decreto legislativo 7 settembre 2005, n. 209 ,, recava: «Istituzione e funzionamento dell'albo nazionale degli agenti di assicurazione».
+
+=== K349 | [3] Obblighi applicabili
+Art. 3
+Obblighi applicabili
+1. Gli obblighi di identificazione, registrazione e conservazione si applicano in relazione alle operazioni e ai rapporti inerenti allo svolgimento dell'attività istituzionale o professionale degli
+intermediari.
+2. Gli intermediari devono:
+a) identificare i clienti in relazione ai rapporti e alle operazioni indicati negli articoli 4 e 5 del presente regolamento;
+b) istituire l'archivio unico informatico;
+c) registrare e conservare nell'archivio unico informatico i dati identificativi e le altre informazioni relative alle operazioni e ai rapporti.
+3. Gli intermediari, al fine di prevenire e impedire la realizzazione di operazioni di riciclaggio, devono istituire misure di controllo interno e assicurare un'adeguata formazione dei dipendenti e
+dei collaboratori, anche per approfondire la conoscenza dei propri clienti.
+4. L'attività dei clienti deve essere valutata con continuità nel corso del rapporto, sulla base di evidenze aggiornate, individuando eventuali incongruenze rispetto al profilo di rischio di
+riciclaggio.
+5. Gli intermediari non sono tenuti ad istituire l'archivio unito informatico qualora non vi siano dati da registrare.
+
+=== K350 | [4] Rapporti
+Art. 4
+Rapporti
+1. Gli obblighi di identificazione, registrazione e conservazione, sussistono in sede di accensione, variazione e chiusura di conti, depositi e altri rapporti continuativi, sia nominativi che al
+portatore.
+2. Il termine «conto» va inteso nel senso di conti movimentabili dal cliente, quali il conto corrente e conti analoghi, fra cui i depositi di risparmio. Sono, quindi, esclusi conti quali i conti di
+evidenza ed i conti transitori.
+3. Il termine «deposito» comprende la custodia e la amministrazione di strumenti finanziari anche in forma «dematerializzata», i depositi chiusi, la locazione delle cassette di sicurezza.
+4. L'espressione «altro rapporto continuativo» va intesa come rapporto di durata che rientra nell'esercizio di attività istituzionali, quali ad esempio:
+a) la concessione di finanziamenti sotto qualsiasi forma, compreso il leasing finanziario ed il rilascio di garanzie e di impegni di firma;
+b) la prestazione di servizi di pagamento;
+c) l'assunzione di partecipazioni;
+d) la prestazione di servizi di investimento;
+e) le assicurazioni sulla vita di cui all' art. 1, comma 1, lettera b), del decreto legislativo 7 settembre 2005, n. 209 ;
+f) l'amministrazione di beni.
+5. Costituisce altresì rapporto continuativo ogni rapporto che si instauri in relazione alla ricezione di un incarico o mandato, anche fiduciario.
+6. Non costituiscono rapporti continuativi le quote di organismi di investimento collettivo del risparmio (OICR), i contratti assicurativi contro i danni, gli strumenti finanziari derivati, i pronti
+contro termine, i certificatì di deposito e i titoli analoghi nonchè i rapporti che si sostanziano in una sola operazione.
+7. Il Ministero dell'economia e delle finanze, con propria circolare, potrà fornire indicazioni esplicative sul contenuto del presente articolo.
+Nota all'art. 4:
+- Il testo dell'art. 1, lettera b) del citato decreto legislativo 7 settembre 2005, n. 209 , è il seguente:
+«1. Agli effetti del codice delle assicurazioni private si intendono per:
+a) (omissis);
+b) assicurazione sulla vita: le assicurazioni e le operazioni indicate all'art. 2, comma 1;
+(omissis).».
+
+=== K351 | [5] Operazioni
+Art. 5
+Operazioni
+1. Gli obblighi di identificazione dei clienti, di registrazione e di conservazione sussistono altresì per ogni operazione, anche frazionata, disposta dai clienti che comporti la trasmissione o la
+movimentazione di mezzi di pagamento di importo superiore a 12.500 euro.
+2. Gli intermediari devono dotarsi di strumenti tecnici idonei a conoscere in tempo reale le operazioni eseguite dal cliente nel giorno dell'operazione e nei sette giorni precedenti, al fine di
+valutare se si tratti di parti di un'unica operazione. Nel caso di ordini di pagamento o di accreditamento, ciascun intermediario effettua le aggregazioni con riferimento al cliente per il quale
+interviene.
+3. Gli intermediari, nell'ambito della loro autonomia organizzativa, possono individuare classi di operazioni e di importo non significative ai fini della rilevazione delle operazioni frazionate.
+4. Gli obblighi sussistono altresì nei casi in cui gli intermediari abilitati agiscano da tramite ai sensi dell'articolo 1 della legge antiriciclaggio, o siano comunque parte nel trasferimento di
+denaro contante o titoli al portatore, in euro o valuta estera, effettuato a qualsiasi titolo tra soggetti diversi, di importo complessivamente superiore a 12.500 euro.
+5. Ai fini dell'individuazione del valore delle operazioni e della registrazione delle stesse nell'archivio unico informatico non deve procedersi alla compensazione di operazioni di segno contrario
+poste in essere dallo stesso cliente.
+
+=== K352 | [6] Identificazione diretta
+Art. 6
+Identificazione diretta
+1. Salvo quanto previsto negli articoli 7 e 8 del presente regolamento, l'identificazione deve essere effettuata dagli intermediari, anche attraverso il personale incaricato, volta per volta, in
+presenza del cliente, attraverso un documento valido per l'identificazione, non scaduto. Si considerano validi per l'identificazione, i documenti d'identità e di riconoscimento di cui agli articoli 1
+e 35 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445 .
+2. I clienti forniscono tutte le informazioni necessarie per l'identificazione. All'atto dell'identificazione i clienti forniscono per iscritto, sotto la propria personale responsabilità, tutte le
+informazioni necessarie per l'identificazione dei soggetti per conto dei quali operano.
+3. L'identificazione deve essere effettuata all'atto dell'operazione o dell'apertura del rapporto.
+4. Qualora cliente sia una società o un ente, ovvero qualora il cliente operi per conto di una società o di un ente, deve essere verificata l'effettiva esistenza del potere di rappresentanza e devono
+essere acquisite informazioni necessarie per individuare gli amministratori e i proprietari effettivi di tale società o ente.
+5. Nel caso di rapporti continuativi relativi all'erogazione di credito al consumo e ad altre tipologie operative indicate dall'UIC, l'identificazione può essere effettuata da collaboratori esterni
+legati all'intermediario da apposita convenzione, nella quale siano specificati gli obblighi previsti dal decreto e dal presente regolamento e ne siano conformemente regolate le modalità di
+adempimento.
+6. È in ogni caso necessario procedere all'identifi-cazione diretta qualora si abbia motivo di ritenere che l'identificazione effettuata ai sensi degli articoli 7 e 8 del presente regolamento non sia
+attendibile ovvero qualora essa non consenta l'acquisizione delle informazioni necessarie.
+Note all'art. 6:
+- Il testo degli articoli 1 e 35 del decreto del Presidente della Repubblica 28 dicembre 2000, n. 445 : ( Testo unico delle disposizioni legislative e regolamentari in materia di documentazione
+amministrativa . - Testo A), è il seguente:
+«Art. 1 (Definizioni). - 1. Ai fini del presente testo unico si intende per:
+a) documento amministrativo: ogni rappresentazione, comunque formata, del contenuto di atti, anche interni, delle pubbliche amministrazioni o, comunque, utilizzati ai fini dell'attività
+amministrativa. Le relative modalità di trasmissione sono quelle indicate al capo II, sezione III, del presente testo unico;
+b) documento informatico: la rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti;
+c) documento di riconoscimento: ogni documento munito di fotografia del titolare e rilasciato, su supporto cartaceo, magnetico o informatico, da una pubblica amministrazione italiana o di altri Stati,
+che consenta l'identificazione personale del titolare;
+d) documento d'identità: la carta d'identità ed ogni altro documento munito di fotografia del titolare e rilasciato, su supporto cartaceo, magnetico o informatico, da una pubblica amministrazione
+competente dello Stato italiano o di altri Stati, con la finalità prevalente di dimostrare l'identità personale del suo titolare;
+e) documento d'identità elettronico: il documento analogo alla carta d'identità elettronica rilasciato dal comune fino al compimento del quindicesimo anno di età;
+f) certificato: il documento rilasciato da una amministrazione pubblica avente funzione di ricognizione, riproduzione o partecipazione a terzi di stati, qualità personali e fatti contenuti in albi,
+elenchi o registri pubblici o comunque accertati da soggetti titolari di funzioni pubbliche;
+g) dichiarazione sostitutiva di certificazione: il documento, sottoscritto dall'interessato, prodotto in sostituzione del certificato di cui alla lettera f);
+h) dichiarazione sostitutiva di atto di notorietà: il documento sottoscritto dall'interessato, concernente stati, qualità personali e fatti, che siano a diretta conoscenza di questi, resa nelle forme
+previste dal presente testo unico;
+i) autenticazione di sottoscrizione: l'attestazione, da parte di un pubblico ufficiale, che la sottoscrizione è stata apposta in sua presenza, previo accertamento dell'identità della persona che
+sottoscrive;
+l) legalizzazione di firma: l'attestazione ufficiale della legale qualità di chi ha apposto la propria firma sopra atti, certificati, copie ed estratti, nonchè dell'autenticità della firma stessa;
+m) legalizzazione di fotografia: l'attestazione, da parte di una pubblica amministrazione competente, che un'immagine fotografica corrisponde alla persona dell'interessato;
+n) firma digitale: è un particolare tipo di firma elettronica qualificata basata su un sistema di chiavi asimmetriche a coppia, una pubblica e una privata, che consente al titolare tramite la chiave
+privata e al destinatario tramite la chiave pubblica, rispettivamente, di rendere manifesta e di verificare la provenienza e l'integrità di un documento informatico o di un insieme di documenti
+informatici;
+o) amministrazioni procedenti: le amministrazioni e, nei rapporti con l'utenza, i gestori di pubblici servizi che ricevono le dichiarazioni sostitutive di cui alle lettere g) e h) ovvero provvedono
+agli accertamenti d'ufficio ai sensi dell'art. 43;
+p) amministrazioni certificanti: le amministrazioni e i gestori di pubblici servizi che detengono nei propri archivi le informazioni e i dati contenuti nelle dichiarazioni sostitutive, o richiesti
+direttamente dalle amministrazioni procedenti ai sensi degli articoli 43 e 71;
+q) gestione dei documenti: l'insieme delle attività finalizzate alla registrazione di protocollo e alla classificazione, organizzazione, assegnazione e reperimento dei documenti amministrativi formati
+o acquisiti dalle amministrazioni, nell'ambito del sistema di classificazione d'archivio adottato; essa è effettuata mediante sistemi informativi automatizzati;
+r) sistema di gestione informatica dei documenti: l'insieme delle risorse di calcolo, degli apparati, delle reti di comunicazione e delle procedure informatiche utilizzati dalle amministrazioni per la
+gestione dei documenti;
+s) segnatura di protocollo: l'apposizione o l'associazione, all'originale del documento, in forma permanente e non modificabile delle informazioni riguardanti il documento stesso;
+t) certificati elettronici: ai sensi dell' art. 2, comma 1, lettera a), del decreto legislativo 23 gennaio 2002, n. 10 , gli attestati elettronici che collegano i dati utilizzati per verificare le
+firme elettroniche ai titolari e confermano l'identità dei titolari stessi;
+u) certificatore: ai sensi dell' art. 2, comma 1, lettera b), del decreto legislativo 23 gennaio 2002, n. 10 , il soggetto che presta servizi di certificazione delle firme elettroniche o che fornisce
+altri servizi connessi con queste ultime;
+v) certificatore qualificato: il certificatore che rilascia al pubblico certificati elettronici conformi ai requisiti indicati nel presente testo unico e nelle regole tecniche di cui all'art. 8, comma
+2;
+z) certificatore accreditato: ai sensi dell' art. 2, comma 1, lettera c), del decreto legislativo 23 gennaio 2002, n. 10 , il certificatore accreditato in Italia ovvero in altri Stati membri
+dell'Unione europea ai sensi dell' art. 3, paragrafo 2, della direttiva n. 1999/93/CE , nonchè ai sensi del presente testo unico;
+aa) certificati qualificati: ai sensi dell' art. 2, comma 1, lettera e), del decreto legislativo 23 gennaio 2002, n. 10 , i certificati elettronici conformi ai requisiti di cui all'allegato I della
+direttiva n. 1999/93/CE , rilasciati da certificatori che rispondono ai requisiti di cui all'allegato II della medesima direttiva;
+bb) carta nazionale dei servizi: il documento rilasciato su supporto informatico per consentire l'accesso per via telematica ai servizi erogati dalla pubblica amministrazione;
+cc) firma elettronica: ai sensi dell' art. 2, comma 1, lettera a), del decreto legislativo 23 gennaio 2002, n. 10 , l'insieme dei dati in forma elettronica, allegati oppure connessi tramite
+associazione logica ad altri dati elettronici, utilizzati come metodo di autenticazione informatica;
+dd) firma elettronica avanzata: ai sensi dell' art. 2, comma 1, lettera g), del decreto legislativo 23 gennaio 2002, n. 10 , la firma elettronica ottenuta attraverso una procedura informatica che
+garantisce la connessione univoca al firmatario e la sua univoca identificazione, creata con mezzi sui quali il firmatario può conservare un controllo esclusivo e collegata ai dati ai quali si
+riferisce in modo da consentire di rilevare se i dati stessi siano stati successivamente modificati;
+ee) firma elettronica qualificata: la firma elettronica avanzata che sia basata su un certificato qualificato e creata mediante un dispositivo sicuro per la creazione della firma;
+ff) titolare: la persona fisica cui è attribuita la firma elettronica e che ha accesso al dispositivo per la creazione della firma elettronica;
+gg) dati per la creazione di una firma: i dati peculiari, come codici o chiavi crittografiche private, utilizzati dal titolare per creare la firma elettronica;
+hh) dispositivo per la creazione della firma: il programma informatico adeguatamente configurato (software) o l'apparato strumentale (hardware) usati per la creazione della firma elettronica;
+ii) dispositivo sicuro per la creazione della firma: ai sensi dell' art. 2, comma 1, lettera f), del decreto legislativo 23 gennaio 2002, n. 10 , l'apparato strumentale usato per la creazione della
+firma elettronica, rispondente ai requisiti di cui all'art. 10 del citato decreto legislativo n. 10 del 2002 , nonchè del presente testo unico;
+ll) dati per la verifica della firma: i dati peculiari, come codici o chiavi crittografiche pubbliche, utilizzati per verificare la firma elettronica;
+mm) dispositivo di verifica della firma: il programma informatico (software) adeguatamente configurato o l'apparato strumentale (hardware) usati per effettuare la verifica della firma elettronica;
+nn) accreditamento facoltativo: ai sensi dell' art. 2, comma 1, lettera h), del decreto legislativo 23 gennaio 2002, n. 10 , il riconoscimento del possesso, da parte del certificatore che la richieda,
+dei requisiti del livello più elevato, in termini di qualità e di sicurezza;
+oo) prodotti di firma elettronica: i programmi informatici (software), gli apparati strumentali (hardware) e i componenti di tali sistemi informatici, destinati ad essere utilizzati per la creazione e
+la verifica di firme elettroniche o da un certificatore per altri servizi di firma elettronica.».
+«Art. 35 (Documenti di identità e di riconoscimento).
+- 1. In tutti i casi in cui nel presente testo unico viene richiesto un documento di identità, esso può sempre essere sostituito dal documento di riconoscimento equipollente ai sensi del comma 2.
+2. Sono equipollenti alla carta di identità il passaporto, la patente di guida, la patente nautica, il libretto di pensione, il patentino di abilitazione alla conduzione di impianti termici, il porto
+d'armi, le tessere di riconoscimento, purchè munite di fotografia e di timbro o di altra segnatura equivalente, rilasciate da un'amministrazione dello Stato.
+3. Nei documenti d'identità e di riconoscimento non è necessaria l'indicazione o l'attestazione dello stato civile, salvo specifica istanza del richiedente.».

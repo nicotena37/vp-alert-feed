@@ -1,0 +1,900 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Servizi di pagamento nel mercato interno  (id IT-DLGS-2010-11)
+
+=== K90 | [20] Operazioni di pagamento su un conto di pagamento
+Art. 20
+ (Operazioni di pagamento su un conto di pagamento)
+ ((
+ 1. Il prestatore di servizi di pagamento del pagatore assicura che dal momento della ricezione dell'ordine di pagamento l'importo dell'operazione venga accreditato sul conto del prestatore di servizi
+di pagamento del beneficiario entro la fine della giornata operativa successiva. Se convenuto tra le parti, per le operazioni di pagamento disposte su supporto cartaceo, tale termine massimo può
+essere prorogato di una ulteriore giornata operativa.
+ ))
+ 2. Il prestatore di servizi di pagamento del beneficiario applica la data valuta e rende disponibile l'importo dell'operazione di pagamento sul conto del beneficiario in conformità con quanto
+previsto dall'art. 23.
+ 3. Quando l'ordine di pagamento è disposto su iniziativa del beneficiario o per il suo tramite, il prestatore di servizi di pagamento di cui egli si avvale trasmette l'ordine al prestatore di servizi
+di pagamento del pagatore entro i limiti di tempo convenuti tra il beneficiario e il proprio prestatore di servizi di pagamento.
+ Nel caso degli addebiti diretti, l'ordine viene trasmesso entro limiti di tempo che consentano il regolamento dell'operazione alla data di scadenza convenuta.
+
+=== K91 | [21] Mancanza di un conto di pagamento dei beneficiari presso il prestatore di servizi di pagamento
+Art. 21
+ (Mancanza di un conto di pagamento dei beneficiari presso il prestatore di servizi di pagamento)
+ 1. Se il beneficiario non dispone di un conto di pagamento presso il prestatore di servizi di pagamento che riceve i fondi, quest'ultimo mette i fondi ricevuti a disposizione del beneficiario entro
+il termine specificato ai sensi dell'articolo
+ ((23, comma 2))
+ .
+
+=== K92 | [22] Depositi versati in un conto di pagamento
+Art. 22
+ (Depositi versati in un conto di pagamento)
+ 1. Quando un
+ ((consumatore))
+ versa
+ ((contanti))
+ su un conto di pagamento nella valuta in cui il conto è denominato, il prestatore di servizi di pagamento applica la data di ricezione dei fondi quale data valuta e rende disponibili i fondi
+immediatamente dopo la ricezione. Se l'
+ ((utente))
+ non è un consumatore, l'importo è reso disponibile e la valuta datata al più tardi la giornata operativa successiva alla ricezione dei fondi.
+
+=== K93 | [23] Data valuta e disponibilità dei fondi
+Art. 23
+ (Data valuta e disponibilità dei fondi)
+ 1. La data valuta dell'accredito sul conto di pagamento del beneficiario non può essere successiva alla giornata operativa in cui l'importo dell'operazione di pagamento viene accreditato sul conto
+del prestatore di servizi di pagamento del beneficiario.
+ ((
+ 2. Purchè non vi sia conversione valutaria o vi sia conversione valutaria tra euro e la valuta di uno Stato membro ovvero tra le valute di due Stati membri, il prestatore di servizi di pagamento del
+beneficiario assicura che l'importo dell'operazione di pagamento sia a disposizione del beneficiario non appena tale importo è accreditato sul conto del prestatore medesimo, ovvero nella stessa
+giornata operativa di ricezione dell'ordine di pagamento per i pagamenti gestiti da un unico prestatore di servizi di pagamento.
+ ))
+ 3. La data valuta dell'addebito sul conto di pagamento del pagatore non può precedere la giornata operativa in cui l'importo dell'operazione di pagamento è addebitato sul medesimo conto di pagamento.
+ 4.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+
+=== K94 | [24] Identificativi unici inesatti
+Art. 24
+ (Identificativi unici inesatti)
+ 1. Se un ordine di pagamento è eseguito conformemente all'identificativo unico, esso si ritiene eseguito correttamente per quanto concerne il beneficiario e/o il conto indicato dall'identificativo
+unico.
+ ((
+ 2. Se l'identificativo unico fornito dall'utente è inesatto, il prestatore di servizi di pagamento non è responsabile, ai sensi dell'articolo 25, della mancata o inesatta esecuzione dell'operazione
+di pagamento. Il prestatore di servizi di pagamento del pagatore compie tuttavia sforzi ragionevoli per recuperare i fondi oggetto dell'operazione di pagamento. Il prestatore di servizi di pagamento
+del beneficiario è tenuto a collaborare, anche comunicando al prestatore di servizi di pagamento del pagatore ogni informazione utile. Se non è possibile il recupero dei fondi, il prestatore di
+servizi di pagamento del pagatore, su richiesta scritta del pagatore, è tenuto a fornirgli ogni informazione disponibile che sia utile ai fini di un'azione di tutela. Ove previsto nel contratto
+quadro, il prestatore di servizi di pagamento addebita all'utente le spese sostenute per il recupero dei fondi.
+ ))
+ 3. Il prestatore di servizi di pagamento è responsabile solo dell'esecuzione dell'operazione di pagamento in conformità con l'identificativo unico fornito dall'
+ ((utente))
+ anche qualora quest'ultimo abbia fornito al suo prestatore di servizi di pagamento informazioni ulteriori rispetto all'identificativo unico.
+
+=== K95 | [25] Responsabilità dei prestatori di servizi di pagamento per la mancata, inesatta o tardiva esecuzione delle operazioni di 
+Art. 25
+ ((Responsabilità dei prestatori di servizi di pagamento per la mancata, inesatta o tardiva esecuzione delle operazioni di pagamento))
+ ((1. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28, quando l'operazione di pagamento è disposta dal pagatore, il prestatore di servizi di pagamento del pagatore è responsabile nei confronti di
+quest'ultimo della corretta esecuzione dell'ordine di pagamento ricevuto, a meno che non sia in grado di provare al pagatore ed eventualmente al prestatore di servizi di pagamento del beneficiario che
+quest'ultimo ha ricevuto l'importo dell'operazione conformemente all'articolo 20, comma 1.))
+ 2. Quando il prestatore di servizi di pagamento del pagatore è responsabile ai sensi del comma 1, rimborsa senza indugio al pagatore l'importo dell'operazione di pagamento non eseguita o eseguita in
+modo inesatto e, se l'operazione è stata eseguita a valere su un conto di pagamento, ne ripristina la situazione come se l'operazione di pagamento eseguita in modo inesatto non avesse avuto luogo.
+ ((La data valuta dell'accredito sul conto di pagamento del pagatore non deve essere successiva a quella di addebito dell'importo.))
+ 3.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ ((
+ 4. Qualora il prestatore di servizi di pagamento del beneficiario sia responsabile ai sensi del comma 1, mette senza indugio l'importo dell'operazione di pagamento a disposizione del beneficiario o
+accredita immediatamente l'importo corrispondente sul conto di pagamento del beneficiario medesimo. La data valuta dell'accredito sul conto di pagamento di quest'ultimo non deve essere successiva a
+quella che sarebbe stata attribuita al beneficiario in caso di esecuzione corretta dell'operazione di pagamento.
+ ))
+ ((
+ 5. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28, quando l'operazione di pagamento è disposta su iniziativa del beneficiario o per il suo tramite, il prestatore di servizi di pagamento del
+beneficiario è responsabile nei confronti del proprio utente della corretta trasmissione dell'ordine di pagamento al prestatore di servizi di pagamento del pagatore conformemente all'articolo 20,
+comma 3 ed è tenuto a trasmettere l'ordine di pagamento in questione senza indugio. In caso di trasmissione tardiva, la data valuta riconosciuta al beneficiario non può essere successiva a quella che
+gli sarebbe stata attribuita in caso di esecuzione corretta dell'operazione di pagamento.
+ ))
+ ((
+ 5-bis. Il prestatore di servizi di pagamento del beneficiario è responsabile nei confronti del beneficiario per il rispetto delle disposizioni di cui all'articolo 23 ed è tenuto a mettergli a
+disposizione l'importo dell'operazione di pagamento non appena esso sia accreditato sul proprio conto di pagamento, applicando una data valuta che non può essere successiva a quella che gli sarebbe
+stata attribuita in caso di esecuzione corretta.
+ ))
+ ((
+ 6. Nel caso in cui il prestatore di servizi di pagamento del beneficiario non sia responsabile della mancata o inesatta esecuzione di un'operazione di pagamento ai sensi dei commi precedenti, il
+prestatore di servizi di pagamento del pagatore è responsabile nei confronti del pagatore ed è tenuto a rimborsare al pagatore senza indugio l'importo dell'operazione non eseguita o eseguita in modo
+inesatto. Ove per l'esecuzione dell'operazione sia stato addebitato un conto di pagamento, il prestatore di servizi di pagamento riporta quest'ultimo allo stato in cui si sarebbe trovato se
+l'operazione non avesse avuto luogo. La data valuta dell'accredito sul conto di pagamento del pagatore non deve essere successiva a quella di addebito dell'importo.
+ ))
+ ((
+ 6-bis. L'obbligo di cui al comma 6 non si applica se il prestatore di servizi di pagamento del pagatore dimostra che il prestatore di servizi di pagamento del beneficiario ha ricevuto l'importo
+dell'operazione, anche se con lieve ritardo. In questo caso il prestatore di servizi di pagamento del beneficiario accredita l'importo al proprio utente con data valuta non successiva a quella che gli
+sarebbe stata attribuita in caso di esecuzione corretta.
+ ))
+ ((
+ 7. Indipendentemente dalla responsabilità di cui ai commi da 1 a 6, quando un'operazione di pagamento non è eseguita o è eseguita in modo inesatto, i prestatori di servizi di pagamento si adoperano
+senza indugio e senza spese, su richiesta dei rispettivi utenti, a rintracciare l'operazione di pagamento, e li informano del risultato.
+ ))
+ ((
+ 8. I prestatori di servizi di pagamento sono inoltre responsabili nei confronti dei rispettivi utenti di tutte le spese ed interessi loro imputati a seguito della mancata, inesatta o tardiva
+esecuzione dell'operazione di pagamento.
+ ))
+
+=== K96 | [25-bis] Responsabilità in caso di prestazione dei servizi di disposizione di ordine di pagamento per la mancata, inesatta o tard
+Art. 25-bis
+ (( (Responsabilità in caso di prestazione dei servizi di disposizione di ordine di pagamento per la mancata, inesatta o tardiva esecuzione dell'operazione di pagamento).))
+ ((
+ 1. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28 se l'ordine di pagamento è disposto mediante un prestatore di servizi di disposizione di ordine di pagamento il prestatore di servizi di pagamento
+di radicamento del conto rimborsa al pagatore l'importo dell'operazione di pagamento non eseguita o non correttamente eseguita e, se del caso, riporta il conto di pagamento addebitato nello stato in
+cui si sarebbe trovato se l'operazione non correttamente eseguita non avesse avuto luogo.
+ 2. In caso di operazione di pagamento non eseguita o non correttamente eseguita, se il relativo ordine di pagamento è disposto mediante un prestatore di servizi di disposizione di ordine di
+pagamento, quest'ultimo è tenuto a rimborsare, immediatamente e senza che sia necessaria la costituzione in mora, al prestatore di servizi di pagamento di radicamento del conto, su richiesta di
+quest'ultimo, gli importi rimborsati al pagatore. Se il prestatore di servizi di disposizione di ordine di pagamento è responsabile per la mancata, inesatta o tardiva esecuzione dell'operazione di
+pagamento, risarcisce, immediatamente e senza che sia necessaria la costituzione in mora, il prestatore di servizi di pagamento di radicamento del conto, su sua richiesta, anche per le perdite subite.
+In entrambi i casi è fatta salva la facoltà del prestatore di servizi di disposizione di ordine di pagamento di dimostrare, in conformità a quanto disposto dall'articolo 10, comma 1-bis, che l'ordine
+di pagamento è stato ricevuto dal prestatore di servizi di pagamento di radicamento del conto del pagatore conformemente all'articolo 15 e che, nell'ambito delle competenze del medesimo prestatore di
+servizi di disposizione di ordine di pagamento, l'operazione di pagamento è stata autenticata, correttamente registrata e non ha subito le conseguenze di guasti tecnici o altri inconvenienti correlati
+alla mancata, inesatta o tardiva esecuzione dell'operazione di pagamento, con conseguente diritto in questi casi alla restituzione delle somme da quest'ultimo versate al prestatore di servizi di
+pagamento di radicamento del conto ai sensi del presente comma.
+ ))
+
+=== K97 | [26] Risarcimento dei danni ulteriori
+Art. 26
+ (Risarcimento dei danni ulteriori)
+ 1. Qualsiasi risarcimento ulteriore rispetto a quelli previsti dalla presente sezione può essere determinato in conformità alla disciplina applicabile al contratto concluso tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento.
+
+=== K98 | [27] Diritto di regresso
+Art. 27
+ (Diritto di regresso)
+ ((
+ 1. Qualora la responsabilità di un prestatore di servizi di pagamento ai sensi degli articoli 11, 25 e 25-bis sia attribuibile ad un altro prestatore di servizi di pagamento coinvolto o ad un
+qualsiasi altro soggetto interposto nell'esecuzione dell'operazione, quest'ultimo risarcisce il primo prestatore di servizi di pagamento in caso di perdite o di importi versati ai sensi degli articoli
+11, 25 e 25-bis. È, altresì, prevista una compensazione degli importi qualora i prestatori di servizi di pagamento non si avvalgano dell'autenticazione forte del cliente.
+ ))
+ 2. Ulteriori compensazioni e risarcimenti possono essere determinati conformemente agli accordi tra prestatori di servizi di pagamento e alla disciplina ad essi applicabile.
+
+=== K99 | [28] Circostanze anormali e imprevedibili
+Art. 28
+ ((Circostanze anormali e imprevedibili))
+ 1. Le responsabilità di cui agli articoli da 5 a 27 non si applicano in caso di caso fortuito o forza maggiore e nei casi in cui il prestatore di servizi di pagamento abbia agito in conformità con i
+vincoli derivanti da altri obblighi di legge.
+
+=== K100 | [29] Protezione dei dati
+Art. 29
+ (Protezione dei dati)
+ ((
+ 1. I prestatori di servizi di pagamento e i gestori di sistemi di pagamento possono trattare dati personali ove ciò sia necessario a prevenire, individuare e indagare casi di frode nei pagamenti. La
+fornitura di informazioni a persone fisiche in merito al trattamento dei dati personali e ad altro trattamento ai fini del presente decreto avviene in conformità al decreto legislativo 30 giugno 2003,
+n. 196 e successive modificazioni.
+ ))
+ ((
+ 1-bis. I prestatori di servizi di pagamento hanno accesso, trattano e conservano i dati personali necessari alla prestazione dei propri servizi solo previo consenso esplicito dell'utente dei servizi
+di pagamento.
+ ))
+
+=== K101 | [30] Accesso ai sistemi di pagamento
+Art. 30
+ (Accesso ai sistemi di pagamento)
+ 1. Nell'esercizio del potere di cui all'articolo 146, comma 2, lettera b), numero 2), del testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n.
+385 , come modificato dal presente decreto, la Banca d'Italia verifica che le norme emanate dai gestori di sistemi di pagamento, al fine di disciplinare l'accesso delle persone giuridiche autorizzate
+a svolgere servizi di pagamento, siano obiettive, non discriminatorie, proporzionate e non limitino l'accesso se non nella misura necessaria a proteggere il sistema da rischi specifici quali il
+rischio di regolamento, il rischio operativo e il rischio d'impresa, e a tutelarne la stabilità finanziaria e operativa.
+ 2. Ai fini di cui al comma 1, le norme che disciplinano l'accesso ai sistemi di pagamento non possono imporre nessuno dei seguenti requisiti ai prestatori di servizi di pagamento, agli utenti di
+servizi di pagamento o ad altri sistemi di pagamento:
+ a) restrizioni all'effettiva partecipazione ad altri sistemi di pagamento;
+ b) discriminazioni tra prestatori di servizi di pagamento autorizzati o registrati in relazione ai diritti, agli obblighi e alle prerogative dei partecipanti;
+ c) LETTERA SOPPRESSA DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 3.
+ ((I commi 1 e 2 non si applicano ai sistemi di pagamento costituiti esclusivamente da prestatori di servizi di pagamento appartenenti a un medesimo gruppo))
+ .
+ 3-bis.
+ ((...))
+ qualora il partecipante a un sistema designato consenta a un prestatore di servizi di pagamento autorizzato o registrato che non è un partecipante al sistema di trasmettere ordini di trasferimento
+mediante il sistema stesso, tale partecipante fornisce, su richiesta, la stessa opportunità in maniera obiettiva, proporzionata e non discriminatoria, ad altri prestatori di servizi di pagamento
+autorizzati o registrati, conformemente ai commi 1 e 2.
+ In caso di rifiuto, il partecipante fornisce al prestatore di servizi di pagamento motivazioni circostanziate.
+
+=== K102 | [30-bis] Condizioni per richiedere la partecipazione a sistemi di pagamento designati).
+Art. 30-bis
+ (( (Condizioni per richiedere la partecipazione a sistemi di pagamento designati).))
+ 1.
+ ((Fermo restando quanto previsto dall'articolo 30, ai fini della partecipazione a un sistema di pagamento designato ai sensi del presente decreto gli istituti di pagamento e gli istituti di moneta
+elettronica predispongono:
+ a) una descrizione delle misure adottate per tutelare i fondi degli utenti di servizi di pagamento;
+ b) una descrizione dei dispositivi di governo societario e dei meccanismi di controllo interno per i servizi di pagamento o i servizi di moneta elettronica prestati, ivi comprese le procedure
+amministrative, di gestione del rischio e contabili, dell'istituto di pagamento o dell'istituto di moneta elettronica nonchè una descrizione delle modalità per l'uso dei servizi delle tecnologie
+dell'informazione e della comunicazione dell'istituto di pagamento o dell'istituto di moneta elettronica relativi agli articoli 6 e 7 del regolamento (UE) 2022/2554 del Parlamento europeo e del
+Consiglio, del 14 dicembre 2022 ;
+ c) un piano di liquidazione in caso di dissesto.))
+ 2.
+ ((Ai fini del comma 1, lettera a), la descrizione delle misure adottate comprende, a seconda dei casi:
+ a) se l'istituto di pagamento o l'istituto di moneta elettronica tutela i fondi degli utenti di servizi di pagamento depositando fondi su un conto distinto di un ente creditizio o investendo in
+attività sicure, liquide e a basso rischio quali definite dalle competenti autorità dello Stato membro di origine:
+ 1) una descrizione della politica di investimento per garantire che le attività scelte siano liquide, sicure e a basso rischio;
+ 2) il numero dei soggetti che hanno accesso al conto di tutela e le rispettive funzioni;
+ 3) una descrizione della gestione e del processo di riconciliazione per assicurare che i fondi degli utenti di servizi di pagamento siano isolati, nell'interesse dei medesimi, dalle richieste di
+pagamento di altri creditori dell'istituto di pagamento o dell'istituto di moneta elettronica, in particolare in caso di insolvenza;
+ 4) una copia del progetto di contratto con la banca italiana o la banca dell'Unione europea;
+ 5) una dichiarazione esplicita della conformità all' articolo 10 della direttiva (UE) 2015/2366 del Parlamento europeo e del Consiglio, del 25 novembre 2015 , da parte dell'istituto di pagamento o
+dell'istituto di moneta elettronica;
+ b) se l'istituto di pagamento o l'istituto di moneta elettronica tutela i fondi dell'utente di servizi di pagamento mediante una polizza assicurativa o garanzia comparabile ottenuta da un'impresa di
+assicurazione o da un ente creditizio:
+ 1) la conferma che la polizza assicurativa o la garanzia comparabile ottenuta da un'impresa di assicurazione o da una banca italiana o dell'Unione europea proviene da un'entità non appartenente allo
+stesso gruppo di imprese cui appartiene l'istituto di pagamento o l'istituto di moneta elettronica;
+ 2) informazioni dettagliate sul processo di riconciliazione previsto per garantire che la polizza assicurativa o la garanzia comparabile sia sufficiente a soddisfare in qualsiasi momento gli obblighi
+di tutela dell'istituto di pagamento o dell'istituto di moneta elettronica;
+ 3) la durata e le modalità di rinnovo della copertura;
+ 4) una copia del contratto di assicurazione o della garanzia comparabile o dei relativi progetti.))
+ 3.
+ ((Ai fini del comma 1, lettera b), la descrizione dei dispositivi di governo societario e dei meccanismi di controllo interno dimostra che i dispositivi di governo societario, i meccanismi di
+controllo interno e le modalità per l'uso delle tecnologie dell'informazione e della comunicazione di cui alla medesima lettera b) sono proporzionati, appropriati, validi e adeguati. I dispositivi di
+governo societario e i meccanismi di controllo interno comprendono inoltre:
+ a) una mappatura dei rischi individuati dall'istituto di pagamento o dall'istituto di moneta elettronica, compresi il tipo di rischi e le procedure che l'istituto di pagamento o l'istituto di moneta
+elettronica ha messo o metterà in atto per valutare e prevenire tali rischi;
+ b) le diverse procedure per svolgere controlli periodici e permanenti, comprese la frequenza e le risorse umane assegnate;
+ c) le procedure contabili mediante le quali l'istituto di pagamento o l'istituto di moneta elettronica registra e comunica le proprie informazioni finanziarie;
+ d) l'identità della persona o delle persone responsabili delle funzioni di controllo interno, compresi i controlli periodici, permanenti e di conformità, nonchè un curriculum vitae aggiornato di tale
+persona o di tali persone;
+ e) l'identità di tutti i revisori che non siano revisori legali ai sensi dell'articolo 2, punto 2), della direttiva 2006/43/CE del Parlamento europeo e del Consiglio, del 17 maggio 2006 ;
+ f) la composizione dell'organo di amministrazione e, se applicabile, di ogni altro organo o comitato di vigilanza;
+ g) una descrizione delle modalità di monitoraggio e controllo delle funzioni esternalizzate onde evitare di mettere a repentaglio la qualità del controllo interno dell'istituto di pagamento o
+dell'istituto di moneta elettronica;
+ h) una descrizione delle modalità di monitoraggio e controllo degli agenti e delle succursali nel quadro dei controlli interni dell'istituto di pagamento o dell'istituto di moneta elettronica;
+ i) se l'istituto di pagamento o l'istituto di moneta elettronica è una filiazione di un'entità regolamentata in un altro Stato membro, una descrizione della governance del gruppo.))
+ 4.
+ ((Ai fini del comma 1, lettera c), il piano di liquidazione è adattato alle dimensioni e al modello commerciale previsti dell'istituto di pagamento o dell'istituto di moneta elettronica e comprende
+una descrizione delle misure di mitigazione che l'istituto di pagamento o l'istituto di moneta elettronica deve adottare in caso di cessazione dei suoi servizi di pagamento, che garantirebbero
+l'esecuzione delle operazioni di pagamento pendenti e la risoluzione dei contratti esistenti.))
+ 5.
+ ((Gli istituti di pagamento e gli istituti di moneta elettronica trasmettono all'operatore del sistema italiano una dichiarazione firmata dal legale rappresentante, previa approvazione dell'organo di
+gestione competente, che confermi la sussistenza dei requisiti indicati nei commi da 1 a 4. Gli istituti di pagamento e gli istituti di moneta elettronica informano contestualmente la Banca d'Italia
+di aver richiesto la partecipazione a sistemi di pagamento designati.))
+ 6.
+ ((L'operatore del sistema italiano può chiedere ai soggetti di cui al comma 1 specifiche informazioni o ulteriori attestazioni, anche in forma di un parere legale, al fine di valutare la sussistenza
+dei requisiti del presente articolo))
+ .
+
+=== K103 | [31] ARTICOLO ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218
+Art. 31
+ ((ARTICOLO ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ((3))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K104 | [32] Sanzioni
+Art. 32
+ (Sanzioni)
+ 1. Nei confronti dei prestatori di servizi di pagamento e dei soggetti ai quali sono esternalizzate funzioni aziendali essenziali o importanti, nonchè di quelli incaricati della revisione legale dei
+conti, si applica la sanzione amministrativa pecuniaria da euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato
+è disponibile e determinabile, per le seguenti violazioni:
+ a) inosservanza dell'articolo 3, commi 1 e 2, dell'articolo 5-bis, commi 1, 2 e 3, dell'articolo 5-ter, dell'articolo 5-quater, dell'articolo 8, comma 1, dell'articolo 9, commi 1 e 2-bis,
+dell'articolo 10-bis, dell'articolo 11, commi 1, 2 e 2-bis, dell'articolo 12-bis, dell'articolo 16, commi 2, 3, 4 e 4-bis, dell'articolo 18, dell'articolo 20, dell'articolo 21, dell'articolo 22,
+dell'articolo 23, dell'articolo 25, commi 2, 4, 5, 5-bis, 6, 6-bis, 7
+ ((, dell'articolo 25-bis, commi 1 e 2, o delle relative norme tecniche di regolamentazione e di attuazione emanate dalla Commissione europea ai sensi degli articoli 10 e 15 del regolamento (UE) n.
+1093/2010 e dell'articolo 30-bis))
+ ;
+ b) inosservanza degli atti dell'ABE direttamente applicabili ai soggetti vigilati adottati ai sensi di quest'ultimo regolamento; (3)
+ 1-bis. Nel caso in cui il prestatore di servizi di pagamento mandante rilevi nel comportamento dell'agente in servizi di pagamento le violazioni previste dall'articolo 3, commi 1 e 2, dall'articolo
+8, comma 1, dall'articolo 9, commi 1 e 2-bis, dall'articolo 11, commi 1, 2 e 2-bis, dall'articolo 16, commi 2, 3, 4 e 4-bis, dall'articolo 18, dall'articolo 21, dall'articolo 25, commi 2, 4, 5, 5-bis,
+6, 6-bis e 7 adotta immediatamente misure correttive e trasmette la documentazione relativa alle violazioni riscontrate, anche ai fini dell'applicazione dell' articolo 128-duodecies del decreto
+legislativo 1° settembre 1993, n. 385 , all'Organismo di cui all'articolo 128-undecies. (3)
+ 1-ter. Le sanzioni previste al comma 1, si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale,
+tenuto conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio. (3)
+ 1-quater. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie
+di cui al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile. (3)
+ 2. Per la grave inosservanza degli obblighi previsti dagli articoli 8, 16, 20, 21 e 22 e dalle relative misure di attuazione, nei confronti dei soggetti che svolgono funzioni di amministrazione o di
+direzione, nonchè dei dipendenti dei prestatori di servizi di pagamento si applica la sanzione amministrativa pecuniaria da 10.000 euro a 100.000 euro.
+ 3. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 4. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 5. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 6. Nel caso di servizi offerti da prestatori di servizi di pagamento insediati in Italia e filiali di prestatori di servizi di pagamento comunitari che operano in regime di libero stabilimento in
+Italia, le sanzioni di cui al presente articolo sono irrogate dalla Banca d'Italia. (3)
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K105 | [32-bis] Altre sanzioni amministrative agli esponenti o al personale).
+Art. 32-bis
+ (( (Altre sanzioni amministrative agli esponenti o al personale). ))
+ ((
+ 1. Fermo restando quanto previsto per i prestatori di servizi di pagamento e per gli enti nei confronti dei quali sono accertate le violazioni, per l'inosservanza delle norme richiamate dall'articolo
+32, comma 1, si applica la sanzione amministrativa pecuniaria da euro 5.000 a euro 5 milioni di euro nei confronti dei soggetti che svolgono funzioni di amministrazione, di direzione o di controllo,
+nonchè del personale, quando l'inosservanza è conseguenza della violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione
+aziendale o sui profili di rischio.
+ 2. Con il provvedimento di applicazione della sanzione, in ragione della gravità della violazione accertata e tenuto conto dei criteri per la determinazione delle sanzioni stabiliti dall'articolo
+32-ter, la Banca d'Italia può applicare la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di
+amministrazione, direzione e controllo presso i prestatori di servizi di pagamento autorizzati ai sensi del decreto legislativo 1° settembre 1993, n. 385 .
+ 3. Si applica l'articolo 32, comma 1-quater.
+ ))
+
+=== K106 | [32-ter] Criteri per la determinazione delle sanzioni e procedura sanzionatoria).
+Art. 32-ter
+ (( (Criteri per la determinazione delle sanzioni e procedura sanzionatoria). ))
+ ((
+ 1. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie o della durata delle sanzioni accessorie previste dal presente Capo, si applica l' articolo 144-quater, del decreto
+legislativo 1 settembre 1993, n. 385 .
+ 2. Si applica il Capo VI, Titolo VIII del citato decreto legislativo n. 385 del 1993 .
+ ))
+
+=== K107 | [32-quater] Controlli sui servizi di prelievo di contante tramite sportelli automatici).
+Art. 32-quater
+ (( (Controlli sui servizi di prelievo di contante tramite sportelli automatici). ))
+ ((
+ 1. Fatta salva l'applicazione dell' articolo 62 del decreto legislativo 6 settembre 2005, n. 206 , i prestatori dei servizi di cui all'articolo 2, comma 2, lettera q), forniscono agli utenti le
+informazioni di cui agli articoli 126-quater e 126-octies del decreto legislativo 1° settembre 1993, n. 385 , in merito a qualsiasi commissione sui prelievi di contante.
+ 2. I controlli sull'osservanza dell'obbligo previsto dal comma 1 sono esercitati dall'Autorità garante della concorrenza e del mercato la quale li effettua sulla base dei poteri istruttori e
+sanzionatori di cui all' articolo 27 del decreto legislativo 6 settembre 2005, n. 206 .
+ ))
+
+=== K108 | [32-quinquies] Procedura di riscossione).
+Art. 32-quinquies
+ (( (Procedura di riscossione). ))
+ ((
+ 1. Le sanzioni di cui al presente Capo si riscuotono secondo i termini e le modalità previsti dal decreto del Presidente della Repubblica 29 settembre 1973, n. 602 , e i relativi proventi affluiscono
+all'entrata del bilancio dello Stato.
+ ))
+
+=== K109 | [33] Disciplina degli istituti di pagamento
+Art. 33
+ (Disciplina degli istituti di pagamento)
+ 1. Al testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 , dopo il titolo V-bis è inserito il seguente:
+ "TITOLO V -ter
+ ISTITUTI DI PAGAMENTO
+ Art. 114-sexies
+ (Servizi di pagamento)
+ 1. La prestazione di servizi di pagamento è riservata alle banche, agli istituti di moneta elettronica e agli istituti di pagamento.
+ Possono prestare servizi di pagamento, nel rispetto delle disposizioni ad essi applicabili, la Banca centrale europea, le banche centrali comunitarie, lo Stato italiano e gli altri Stati comunitari,
+le pubbliche amministrazioni statali, regionali e locali, nonchè Poste Italiane.
+ Art. 114-septies
+ (Albo degli istituti di pagamento)
+ 1. La Banca d'Italia iscrive in un apposito albo, consultabile pubblicamente, accessibile sul sito internet ed aggiornato periodicamente, gli istituti di pagamento autorizzati in Italia, con
+indicazione della tipologia di servizi che sono autorizzati a prestare e i relativi agenti e succursali nonchè le succursali degli istituti di pagamento comunitari stabiliti nel territorio della
+Repubblica.
+ 2. Gli istituti di pagamento indicano negli atti e nella corrispondenza l'iscrizione nell'albo.
+ 3. Per la prestazione dei servizi di pagamento in Italia gli istituti di pagamento possono avvalersi soltanto degli agenti in attività finanziaria, di cui al decreto legislativo 25 settembre 1999, n.
+374 , nonchè degli altri soggetti autorizzati alla prestazione di servizi di pagamento di cui all'articolo 114—sexies.
+ Art. 114-octies
+ (Attività accessorie esercitabili)
+ 1. Gli istituti di pagamento possono esercitare le seguenti attività accessorie alla prestazione di servizi di pagamento:
+ a) concedere crediti in stretta relazione ai servizi di pagamento prestati e nei limiti e con le modalità stabilite dalla Banca d'Italia;
+ b) prestare servizi operativi o strettamente connessi, come la prestazione di garanzie per l'esecuzione di operazioni di pagamento, servizi di cambio, attività di custodia e registrazione e
+trattamento di dati;
+ c) gestire sistemi di pagamento.
+ 2. La Banca d'Italia detta specifiche disposizioni per la concessione di credito collegata all'emissione o alla gestione di carte di credito.
+ Art. 114-novies
+ (Autorizzazione)
+ 1. La Banca d'Italia autorizza gli istituti di pagamento quando ricorrano le seguenti condizioni:
+ a) sia adottata la forma di società di capitali;
+ b) la sede legale e la direzione generale siano situate nel territorio della Repubblica;
+ c) il capitale versato sia di ammontare non inferiore a quello determinato dalla Banca d'Italia in relazione al tipo di servizio di pagamento prestato;
+ d) venga presentato un programma concernente l'attività iniziale e la struttura organizzativa, unitamente all'atto costitutivo e allo statuto;
+ e) il possesso da parte dei titolari di partecipazioni di cui all'articolo 19, comma 1, e degli esponenti dei requisiti previsti ai sensi degli articoli 25 e 26;
+ f) non sussistano, tra gli istituti di pagamento o i soggetti del gruppo di appartenenza e altri soggetti, stretti legami che ostacolino l'effettivo esercizio delle funzioni di vigilanza.
+ 2. La Banca d'Italia nega l'autorizzazione quando dalla verifica delle condizioni indicate nel comma 1 non risulti garantita la sana e prudente gestione ovvero il regolare funzionamento del sistema
+dei pagamenti.
+ 3. La Banca d'Italia disciplina la procedura di autorizzazione, i casi di revoca e le ipotesi di decadenza quando l'istituto autorizzato non abbia iniziato l'esercizio dell'attività.
+ 4. La Banca d'Italia, al ricorrere delle condizioni di cui al comma 1, può autorizzare alla prestazione di servizi di pagamento soggetti che esercitino altre attività imprenditoriali, a condizione
+che per l'attività relativa ai servizi di pagamento sia costituito un patrimonio destinato con le modalità e agli effetti stabiliti dall'articolo 114–terdecies e siano individuati uno o più soggetti
+responsabili del patrimonio medesimo, ai quali trovano applicazione i requisiti di cui all'articolo 26, richiamati al comma 1, lettera e).
+ Nel caso in cui lo svolgimento di tali attività imprenditoriali rischi di danneggiare la solidità finanziaria dell'istituto di pagamento o l'esercizio effettivo della vigilanza, la Banca d'Italia può
+imporre la costituzione di una società che svolga esclusivamente l'attività di prestazione dei servizi di pagamento.
+ 5. La Banca d'Italia detta disposizioni attuative del presente articolo.
+ Art. 114-decies
+ (Operatività transfrontaliera)
+ 1. Gli istituti di pagamento italiani possono stabilire succursali nel territorio della Repubblica e degli altri Stati comunitari nel rispetto delle procedure fissate dalla Banca d'Italia.
+ 2. Gli istituti di pagamento comunitari possono stabilire succursali nel territorio della Repubblica. Il primo insediamento è preceduto da una comunicazione alla Banca d'Italia da parte dell'autorità
+competente dello Stato di appartenenza.
+ 3. Gli istituti di pagamento italiani possono prestare i servizi di pagamento ammessi al mutuo riconoscimento in uno Stato comunitario senza stabilirvi succursali, nel rispetto delle procedure
+fissate dalla Banca d'Italia.
+ 4. Gli istituti di pagamento comunitari possono prestare i servizi di pagamento nel territorio della Repubblica senza stabilirvi succursali dopo che la Banca d'Italia sia stata informata
+dall'autorità competente dello Stato di appartenenza.
+ 5. Gli istituti di pagamento italiani possono stabilire succursali o prestare servizi di pagamento in uno Stato extracomunitario senza stabilirvi succursali previa autorizzazione della Banca
+d'Italia.
+ 6. Il presente articolo si applica anche nel caso di operatività transfrontaliera mediante l'impiego di agenti.
+ Art. 114-undecies
+ (Rinvio)
+ 1. Agli istituti di pagamento si applicano, in quanto compatibili, le disposizioni contenute negli articoli 19, 20, 21, 22, 23, 24, 25, 26, 52, nonchè nel titolo VI.
+ 2. Con riferimento agli istituti di pagamento che non esercitino attività imprenditoriali diverse dalla prestazione dei servizi di pagamento ai sensi dell'articolo 114–novies, comma 4, si applicano
+le disposizioni del titolo IV, capo I, fatta eccezione per la sezione III-bis e IV. La Banca d'Italia detta disposizioni attuative ai fini dell'applicazione delle norme di cui al presente articolo
+agli istituti di pagamento.
+ Art. 114-duodecies
+ (Conti di pagamento e forme di tutela)
+ 1. Gli istituti di pagamento detengono, nel rispetto delle modalità stabilite dalla Banca d'Italia, le somme di denaro della clientela in conti di pagamento utilizzati esclusivamente per la
+prestazione dei servizi di pagamento. Le somme di denaro immesse nei conti di pagamento non costituiscono fondi con obbligo di rimborso ai sensi dell'articolo 11, nè moneta elettronica ai sensi
+dell'articolo 1, comma 2, lettera h-ter).
+ 2. Le somme di denaro detenute nei conti di pagamento costituiscono, per ciascun cliente, patrimonio distinto a tutti gli effetti da quello dell'istituto di pagamento e degli altri clienti dello
+stesso. Su tali patrimoni distinti non sono ammesse azioni dei creditori dell'intermediario o nell'interesse degli stessi, nè quelle dei creditori dell'eventuale soggetto ove tali somme di denaro sono
+depositate. Le azioni dei creditori dei singoli clienti degli istituti di pagamento sono ammesse nel limite del patrimonio di proprietà dei singoli clienti. Nel caso in cui le somme di denaro detenute
+nei conti di pagamento siano depositate presso terzi non operano le compensazioni legale e giudiziale e non può essere pattuita la compensazione convenzionale rispetto ai crediti vantati dal
+depositario nei confronti dell'istituto di pagamento.
+ 3. Ai fini dell'applicazione della disciplina della liquidazione coatta amministrativa i titolari dei conti di pagamento sono equiparati ai clienti aventi diritto alla restituzione di strumenti
+finanziari.
+ Art. 114-terdecies
+ (Patrimonio destinato)
+ 1. Gli istituti di pagamento che svolgano anche attività imprenditoriali diverse dalla prestazione dei servizi di pagamento, autorizzati ai sensi dell'articolo 114 – novies, comma 4, devono
+costituire un patrimonio destinato per la prestazione dei servizi di pagamento e per le relative attività accessorie e strumentali. A tal fine essi adottano apposita deliberazione contenente l'esatta
+descrizione dei beni e dei rapporti giuridici destinati e delle modalità con le quali è possibile disporre, integrare e sostituire elementi del patrimonio destinato. La deliberazione è depositata e
+iscritta a norma dell' articolo 2436 del codice civile . Si applica il secondo comma dell'articolo 2447-quater del codice civile .
+ 2. Decorso il termine di cui al secondo comma dell'articolo 2447 -quater del codice civile ovvero dopo l'iscrizione nel registro delle imprese del provvedimento del tribunale ivi previsto, i beni e i
+rapporti giuridici individuati sono destinati esclusivamente al soddisfacimento dei diritti degli utenti dei servizi di pagamento e di quanti vantino diritti derivanti dall'esercizio delle attività
+accessorie e strumentali e costituiscono patrimonio separato a tutti gli effetti da quello dell'istituto e dagli altri eventuali patrimoni destinati. Fino al completo soddisfacimento dei diritti dei
+soggetti a cui vantaggio la destinazione è effettuata, sul patrimonio destinato e sui frutti e proventi da esso derivanti sono ammesse azioni soltanto a tutela dei diritti dei predetti soggetti. Si
+applica l'articolo 114 – duodecies, comma 2.
+ 3. In caso di incapienza del patrimonio destinato l'istituto di pagamento risponde anche con il proprio patrimonio delle obbligazioni nei confronti degli utenti dei servizi di pagamento e di quanti
+vantino diritti derivanti dall'esercizio delle attività accessorie e strumentali.
+ 4. Con riferimento al patrimonio destinato l'istituto di pagamento tiene separatamente i libri e le scritture contabili prescritti dagli articoli 2214, e seguenti, del codice civile , nel rispetto
+dei principi contabili internazionali.
+ 5. In caso di sottoposizione a procedura concorsuale del soggetto autorizzato alla prestazione di servizi di pagamento ai sensi dell'articolo 114 – novies, comma 4, l'amministrazione del patrimonio
+destinato è attribuita agli organi della procedura, che provvedono con gestione separata alla liquidazione dello stesso secondo le regole ordinarie. Gli ordini di pagamento e le attività accessorie e
+strumentali a valere sul patrimonio destinato che siano state avviate prima dell'avvio della procedura continuano ad avere esecuzione e ad esso continuano ad applicarsi le previsioni contenute nel
+presente articolo. A decorrere dalla data di apertura della procedura non possono essere accettati nuovi ordini di pagamento nè stipulati nuovi contratti. Gli organi della procedura possono trasferire
+o affidare in gestione a banche o altri intermediari autorizzati alla prestazione di servizi di pagamento, i beni e i rapporti giuridici ricompresi nel patrimonio destinato e le relative passività. Ai
+fini della liquidazione del patrimonio destinato si applica l'articolo 91, commi 2 e 3, intendendosi equiparati gli utenti dei servizi di pagamento ai clienti aventi diritto alla restituzione di
+strumenti finanziari.
+ 6. La Banca d'Italia può nominare un liquidatore per gli adempimenti di cui al comma 5, in luogo degli organi della procedura, ove ciò sia necessario per l'ordinata liquidazione del patrimonio
+destinato.
+ 7. Il tribunale competente per l'avvio della procedura concorsuale del soggetto autorizzato alla prestazione di servizi di pagamento informa la Banca d'Italia della pendenza del procedimento.
+ Art. 114-quaterdecies
+ (Vigilanza)
+ 1. Gli istituti di pagamento inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, le segnalazioni periodiche nonchè ogni altro dato e documento richiesto. Essi trasmettono
+anche i bilanci con le modalità e nei termini stabiliti dalla Banca d'Italia.
+ 2. La Banca d'Italia emana disposizioni di carattere generale aventi a oggetto: l'adeguatezza patrimoniali il contenimento del rischio nelle sue diverse configurazioni e l'organizzazione
+amministrativa e contabile e i controlli interni.
+ 3. La Banca d'Italia può:
+ a) convocare gli amministratori, i sindaci e i dirigenti degli istituti di pagamento per esaminare la situazione degli stessi;
+ b) ordinare la convocazione degli organi collegiali degli istituti di pagamento, fissandone l'ordine del giorno, e proporre l'assunzione di determinate decisioni;
+ c) procedere direttamente alla convocazione degli organi collegiali degli istituti di pagamento quando gli organi competenti non abbiano ottemperato a quanto previsto dalla lettera b);
+ d) adottare per le materie indicate nel comma 2, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli istituti di pagamento, riguardanti anche la restrizione delle attività
+o della struttura territoriale, nonchè il divieto di effettuare determinate operazioni e di distribuire utili o altri elementi del patrimonio.
+ 4. La Banca d'Italia può effettuare ispezioni presso gli istituti di pagamento, i loro agenti o i soggetti a cui sono esternalizzate attività e richiedere a essi l'esibizione di documenti e gli atti
+che ritenga necessari. La Banca d'Italia notifica all'autorità competente dello Stato comunitario ospitante l'intenzione di effettuare ispezioni sul territorio di quest'ultimo nei confronti di
+istituti di pagamento, dei loro agenti o dei soggetti a cui sono esternalizzate attività ovvero richiede alle autorità competenti del medesimo Stato comunitario di effettuare tali accertamenti.
+ 5. Le autorità competenti di uno Stato comunitario, dopo aver informato la Banca d'Italia, possono ispezionare, anche tramite persone da esse incaricate, gli istituti di pagamento comunitari, i loro
+agenti o i soggetti a cui sono esternalizzate attività che operano nel territorio della Repubblica. Se le autorità competenti di uno Stato comunitario lo richiedono, la Banca d'Italia può procedere
+direttamente agli accertamenti.
+ 6. Nel confronti degli istituti di pagamento che svolgano anche attività imprenditoriali diverse dalla prestazione dei servizi di pagamento, autorizzati ai sensi dell'articolo 114 – novies, comma 4,
+la Banca d'Italia esercita i poteri di vigilanza indicati nel presente articolo sull'attività di prestazione dei servizi di pagamento e sulle attività connesse e strumentali, avendo a riferimento
+anche il responsabile della gestione dell'attività e il patrimonio destinato.
+ Art. 114 - quinquiesdecies
+ (Scambio di informazioni)
+ 1. Fermo restando quanto previsto nell'articolo 7, la Banca d'Italia scambia informazioni con:
+ a) la Banca centrale europea e le banche centrali nazionali degli Stati membri, in quanto autorità monetarie e di sorveglianza sul sistema dei pagamenti, e, se opportuno, altre autorità pubbliche
+responsabili della sorveglianza sui sistemi di pagamento e di regolamento;
+ b) altre autorità competenti ai sensi di disposizioni comunitarie applicabili ai prestatori di servizi di pagamento.
+ Art. 114 - sexiesdecies
+ (Deroghe)
+ 1. La Banca d'Italia può esentare i soggetti iscritti nell'albo degli istituti di pagamento dall'applicazione di alcune delle disposizioni previste dal presente titolo, quando ricorrono
+congiuntamente le seguenti condizioni:
+ a) la media mensile, calcolata sui precedenti dodici mesi, dell'importo complessivo delle operazioni di pagamento eseguite dal soggetto interessato, compreso qualsiasi agente di cui è responsabile,
+non superi i 3 milioni di euro; la Banca d'Italia valuta tale condizione in base al piano aziendale prodotto dal soggetto interessato;
+ b) nessuna delle persone fisiche responsabili della gestione o del funzionamento dell'impresa abbia subito condanne per riciclaggio di denaro o finanziamento del terrorismo o altri reati finanziari.
+ 2. La Banca d'Italia stabilisce quali tra i servizi di pagamento di cui all'articolo 1, comma 2, lettera f), possono essere prestati dai soggetti di cui al comma 1.
+ 3. Ai soggetti esentati ai sensi del comma 1 non si applica l'articolo 114–decies.
+ 4. La Banca d'Italia stabilisce le procedure che i soggetti di cui al comma 1 devono seguire per comunicare ogni variazione delle condizioni di cui al commi 1, 2 e 3.".
+
+=== K110 | [34] Trasparenza dei servizi di pagamento
+Art. 34
+ (Trasparenza dei servizi di pagamento)
+ 1. Al testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 sono apportate le seguenti modifiche:
+ a) all'articolo 115, dopo il comma 3, è aggiunto il seguente :
+ "3-bis. Le disposizioni del presente capo non si applicano ai servizi di pagamento disciplinati dal capo II-bis a meno che non siano espressamente richiamate da quest'ultimo.";
+ b) al titolo VI, dopo il capo II, è inserito il seguente:
+ "Capo II-bis
+ Servizi di pagamento
+ Art. 126-bis
+ (Disposizioni di carattere generale)
+ 1. Il presente capo si applica ai contratti quadro relativi a servizi di pagamento e alle operazioni di pagamento, anche se queste non rientrano in un contratto quadro, quando i servizi sono offerti
+sul territorio della Repubblica.
+ 2. Ai fini del presente capo, per servizi di pagamento si intende anche l'emissione di moneta elettronica.
+ 3. In deroga all'articolo 127, comma 1, le parti possono accordarsi nel senso che le previsioni del presente capo non si applicano, interamente o parzialmente, se l'utilizzatore di servizi di
+pagamento non è un consumatore, nè una micro-impresa.
+ 4. Spetta al prestatore dei servizi di pagamento l'onere della prova di aver correttamente adempiuto agli obblighi previsti dal presente capo.
+ 5. La Banca d'Italia adotta i provvedimenti previsti dal presente capo avendo riguardo, per i servizi di pagamento regolati in conto corrente o commercializzati unitamente a un conto corrente, alle
+disposizioni previste ai sensi del capo I.
+ 6. Nell'esercizio dei poteri regolamentari previsti dal presente capo, la Banca d'Italia tiene conto anche della finalità di garantire un adeguato livello di affidabilità ed efficienza dei servizi di
+pagamento.
+ Art. 126-ter
+ (Spese applicabili)
+ 1. Il prestatore dei servizi di pagamento non può addebitare all'utilizzatore spese inerenti all'informativa resa ai sensi di legge.
+ 2. Il prestatore di servizi di pagamento e l'utilizzatore possono concordare le spese relative a informazioni fornite su richiesta dell'utilizzatore se esse, rispetto a quanto previsto nel contratto
+quadro, sono supplementari o rese in modo più frequente o trasmesse con strumenti di comunicazione diversi. Le spese sono proporzionate ai costi effettivi sostenuti dal prestatore di servizi di
+pagamento.
+ Art. 126-quater
+ (Informazioni relative alle operazioni di pagamento e ai contratti)
+ 1. La Banca d'Italia disciplina:
+ a) contenuti e modalità delle informazioni e delle condizioni che il prestatore dei servizi di pagamento fornisce o rende disponibili all'utilizzatore di servizi di pagamento, al pagatore e al
+beneficiario. Le informazioni e le condizioni sono redatte in termini di facile comprensione e in forma chiara e leggibile. In particolare, l'utilizzatore dei servizi di pagamento è informato di tutte
+le spese dovute al prestatore di servizi di pagamento e della loro suddivisione. Sono previsti obblighi di trasparenza semplificati nel caso di utilizzo di strumenti di pagamento che riguardino
+operazioni o presentino limiti di spesa o avvaloramento inferiori a soglie fissate dalla stessa Banca d'Italia;
+ b) casi, contenuti e modalità delle comunicazioni periodiche sulle operazioni di pagamento.
+ 2. Non si applicano gli articoli 67 -quinquies, 67 -sexies, comma 1, lettere a), b) ed h), 67- septies, comma 1, lettere b), c), f) e g), 67 -octies, comma 1, lettera a), del decreto legislativo 6
+settembre 2005, n. 206 .
+ 3. Prima di disporre l'operazione di pagamento l'utilizzatore è informato:
+ a) dal beneficiario, di eventuali spese imposte o riduzioni proposte per l'utilizzo di un determinato strumento di pagamento;
+ b) dal prestatore di servizi di pagamento o da un terzo, di eventuali spese imposte per l'utilizzo di un determinato strumento di pagamento.
+ Art. 126-quinquies
+ (Contratto quadro)
+ 1. Ai contratti quadro si applica l'articolo 117, commi 1, 2, 3, 4, 6 e 7. Il potere previsto dall'articolo 117, comma 2, è esercitato dalla Banca d'Italia.
+ 2. In qualsiasi momento del rapporto, l'utilizzatore di servizi di pagamento che ha concluso un contratto quadro può richiedere le condizioni contrattuali del contratto quadro nonchè le informazioni
+relative al contratto quadro previste ai sensi dell'articolo126-quater, comma 1, lettera a), su supporto cartaceo o su altro supporto durevole.
+ Art. 126-sexies
+ (Modifica unilaterale delle condizioni)
+ 1. Ogni modifica del contratto quadro o delle condizioni e informazioni a esso relative fornite all'utilizzatore ai sensi dell'articolo 126-quater, comma 1, lettera a), è proposta dal prestatore dei
+servizi di pagamento secondo le modalità stabilite dalla Banca d'Italia, con almeno due mesi di anticipo rispetto alla data di applicazione prevista.
+ 2. Il contratto quadro può prevedere che la modifica delle condizioni contrattuali si ritiene accettata dall'utilizzatore a meno che questi non comunichi al prestatore dei servizi di pagamento, prima
+della data prevista per l'applicazione della modifica, che non intende accettarla. In questo caso, la comunicazione di cui al comma 1, contenente la proposta di modifica, specifica che in assenza di
+espresso rifiuto la proposta si intende accettata e che l'utilizzatore ha diritto di recedere senza spese prima della data prevista per l'applicazione della modifica.
+ 3. Le modifiche dei tassi di interesse o di cambio possono essere applicate con effetto immediato e senza preavviso; tuttavia, se sono sfavorevoli per l'utilizzatore, è necessario che ciò sia
+previsto nel contratto quadro e che la modifica sia la conseguenza della variazione dei tassi di interesse o di cambio di riferimento convenuti nel contratto. L'utilizzatore è informato della modifica
+dei tassi di interesse nei casi e secondo le modalità stabilite dalla Banca d'Italia.
+ 4. Le modifiche dei tassi di interesse o di cambio utilizzati nelle operazioni di pagamento sono applicate e calcolate in una forma neutra tale da non creare discriminazioni tra utilizzatori, secondo
+quanto stabilito dalla Banca d'Italia.
+ 5. Restano ferme, in quanto compatibili, le disposizioni di cui all' articolo 33, commi 3 e 4, del decreto legislativo 6 settembre 2005, n. 206 .
+ Art. 126-septies
+ (Recesso)
+ 1. L'utilizzatore di servizi di pagamento ha sempre la facoltà di recedere dal contratto quadro senza penalità e senza spese di chiusura.
+ 2. Il prestatore di servizi di pagamento può recedere da un contratto quadro a tempo indeterminato se ciò è previsto dal contratto e con un preavviso di almeno due mesi, secondo le modalità stabilite
+dalla Banca d'Italia.
+ 3. In caso di recesso dal contratto dell'utilizzatore o del prestatore di servizi di pagamento, le spese per i servizi fatturate periodicamente sono dovute dall'utilizzatore solo in misura
+proporzionale per il periodo precedente al recesso; se pagate anticipatamente, esse sono rimborsate in maniera proporzionale.
+ Art. 126-octies
+ (Denominazione valutaria dei pagamenti)
+ 1. I pagamenti sono effettuati nella valuta concordata dalle parti.
+ 2. Se al pagatore è offerto, prima di disporre un'operazione di pagamento, un servizio di conversione valutaria dal beneficiario ovvero presso il punto vendita da un venditore di merci o da un
+fornitore di servizi, colui che propone il servizio di conversione gli comunica tutte le spese e il tasso di cambio che sarà utilizzato per la conversione. Il pagatore accetta il servizio su tale
+base. ".
+ Note all'art. 34:
+ - Il testo dell'art. 115, del citato decreto legislativo 1° settembre 1993, n. 385 , come modificato dal presente decreto, così recita:
+ «Art. 115. (Ambito di applicazione). - 1. Le norme del presente capo si applicano alle attività svolte nel territorio della Repubblica dalle banche e dagli intermediari finanziari.
+ 2. Il Ministro dell'economia e delle finanze può individuare, in considerazione dell'attività svolta, altri soggetti da sottoporre alle norme del presente capo.
+ 3. Le disposizioni del presente capo si applicano alle operazioni previste dal capo II del presente titolo per gli aspetti non diversamente disciplinati.
+ 3-bis. Le disposizioni del presente capo non si applicano ai servizi di pagamento disciplinati dal capo II-bis a meno che non siano espressamente richiamate da quest'ultimo.».
+
+=== K111 | [34-bis] Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di debito ad
+Art. 34-bis
+ (Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di debito ad uso dei consumatori)
+ 1. Fino al 9 dicembre 2020, per le operazioni nazionali tramite carta di debito ad uso dei consumatori, i prestatori di servizi di pagamento possono applicare una commissione interbancaria media
+ponderata non superiore all'equivalente dello 0,2 % del valore medio annuo di tutte le operazioni nazionali effettuate tramite tali carte di debito all'interno dello stesso schema di carte di
+pagamento.
+ 2. Al fine di consentire ai prestatori di servizi di pagamento di avvalersi della possibilità prevista al comma 1, gli schemi di carte di pagamento:
+ a) definiscono una struttura della commissione interbancaria media ponderata improntata a criteri di trasparenza, semplicità, confrontabilità ed equità, anche tenuto conto delle specifiche
+caratteristiche dell'operazione di pagamento;
+ b) trasmettono alla Banca d'Italia, nel rispetto dei termini di cui all' articolo 3, paragrafo 5, del regolamento (UE) n. 751/2015 , una relazione illustrativa delle modalità di rispetto dei criteri
+di cui alla lettera a).
+ 3. Fatto salvo quanto previsto dai commi precedenti, per le operazioni nazionali tramite carta di debito ad uso dei consumatori, i prestatori di servizi di pagamento possono applicare una commissione
+interbancaria non superiore a 0,05 EUR per ciascuna operazione. Tale commissione interbancaria per operazione può anche essere combinata con una percentuale massima non superiore allo 0,2 % del valore
+di ciascuna operazione a condizione che la somma delle commissioni interbancarie dello schema di carte di pagamento non superi mai lo 0,2 % del valore totale annuo delle operazioni nazionali
+effettuate tramite tali carte di debito all'interno di ciascuno schema di carte di pagamento.
+ ((PERIODO SOPPRESSO DAL D.L.GS. 8 APRILE 2020, N. 36 ))
+ .
+ ((
+ 3-bis. Al fine di consentire ai prestatori di servizi di pagamento di avvalersi della possibilità prevista al comma 3, gli schemi di carte di pagamento trasmettono alla Banca d'Italia, nel rispetto
+dei termini di cui all' articolo 3, paragrafo 5 del regolamento (UE) n. 751/2015 , una relazione illustrativa delle modalità di rispetto dei criteri del comma 3.
+ ))
+ 4. In ogni caso, per le operazioni nazionali tramite carta di debito ad uso dei consumatori di importo inferiore a euro 5, i prestatori di servizi di pagamento applicano una commissione interbancaria
+di importo ridotto rispetto a quelle applicate alle operazioni di importo pari o superiore a euro
+ 5. (3)
+ 5. I commi precedenti si applicano anche alle operazioni nazionali effettuate tramite carte prepagate.
+ 6. La Banca d'Italia definisce le modalità e i termini per l'invio da parte degli schemi di carte di pagamento delle informazioni necessarie alla verifica del rispetto degli obblighi di cui ai commi
+precedenti. Tali informazioni devono essere certificate da un revisore indipendente.
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 7) che "Le disposizioni di cui al comma 4 dell'articolo 34-bis e al comma 1 dell'articolo 34-ter del decreto legislativo 27 gennaio
+2010, n. 11 , introdotte dall'articolo 3 del presente decreto legislativo, si applicano dal 1° aprile 201".
+
+=== K112 | [34-ter] Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di credito a
+Art. 34-ter
+ (Limite alle commissioni interbancarie applicate alle operazioni di pagamento nazionali effettuate con carta di credito ad uso dei consumatori)
+ 1. Per le operazioni nazionali tramite carta di credito ad uso dei consumatori di importo inferiore a euro 5, i prestatori di servizi di pagamento applicano una commissione interbancaria di importo
+ridotto rispetto a quelle applicate alle operazioni di importo pari o superiore a euro 5. (3)
+ 2. La Banca d'Italia definisce le modalità e i termini per l'invio da parte degli schemi di carte di pagamento delle informazioni necessarie alla verifica del rispetto degli obblighi di cui al
+ ((comma 1))
+ . Tali informazioni devono essere certificate da un revisore indipendente.
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 7) che "Le disposizioni di cui al comma 4 dell'articolo 34-bis e al comma 1 dell'articolo 34-ter del decreto legislativo 27 gennaio
+2010, n. 11 , introdotte dall'articolo 3 del presente decreto legislativo, si applicano dal 1° aprile 201".
+
+=== K113 | [34-quater] Autorità competenti).
+Art. 34-quater
+ (( (Autorità competenti). ))
+ ((
+ 1. Fatto salvo quanto previsto al comma 2, la Banca d'Italia è designata quale autorità competente ai sensi dell' articolo 13 del Regolamento (UE) n. 751/2015 e adotta le proprie decisioni previo
+parere dell'Autorità Garante della Concorrenza e del Mercato.
+ 2. L'Autorità Garante della Concorrenza e del Mercato è designata quale autorità competente per l'inibizione della continuazione e la rimozione degli effetti delle pratiche commerciali scorrette
+nonchè degli illeciti posti in essere in violazione delle disposizioni contenute nelle Sezioni da I a IV del Capo I, Titolo III, Parte III del decreto legislativo 6 settembre 2005, n. 206 , derivanti
+dalla inosservanza degli obblighi posti dal Regolamento (UE) n. 751/2015 a carico dei beneficiari delle operazioni con carte di pagamento, applicando i poteri di cui all' articolo 27 del decreto
+legislativo n. 206 del 2005 . Nell'esercizio di questa competenza, l'Autorità Garante della Concorrenza e del Mercato, qualora la condotta illecita sia posta in essere da un soggetto sul quale la
+Banca d'Italia esercita i propri poteri di vigilanza o sorveglianza, adotta le proprie decisioni previo parere della Banca d'Italia.
+ 3. Le autorità, di cui ai commi 1 e 2, collaborano nell'esercizio delle rispettive funzioni anche attraverso lo scambio di informazioni al fine di agevolare le rispettive funzioni e possono adottare
+disposizioni di disciplina secondaria funzionali a garantire l'efficace applicazione del Regolamento.
+ 4. La Banca d'Italia e l'Autorità Garante della Concorrenza e del Mercato non possono opporsi, reciprocamente, il segreto d'ufficio.
+ 5. Alla Banca d'Italia sono attribuiti poteri sanzionatori, di indagine e di controllo. L'Autorità Garante della Concorrenza e del Mercato applica i poteri di cui all' articolo 27 del decreto
+legislativo 6 settembre 2005, n. 206 .
+ 6. Al fine di garantire l'efficace adempimento degli obblighi di cui al Regolamento (UE) n. 751/2015 e al presente Titolo, gli schemi di carte di pagamento individuano un ufficio di rappresentanza e
+ne danno comunicazione alla Banca d'Italia e all'Autorità Garante della Concorrenza e del Mercato.
+ ))
+
+=== K114 | [34-quinquies] Sanzioni in materia di commissioni interbancarie
+Art. 34-quinquies
+ ((Sanzioni in materia di commissioni interbancarie))
+ ((
+ 1. Si applica nei confronti dei prestatori di servizi di pagamento la sanzione amministrativa pecuniaria da euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale
+importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per l'inosservanza delle seguenti disposizioni:
+ a) articoli 3, paragrafo 1, e 4, del regolamento (UE) n. 751/2015 ;
+ b) articoli 34-bis, commi 1, 3, 4 e 5, e 34-ter, comma 1, del presente decreto.
+ ))
+ 2. Le sanzioni previste al comma 1 si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale, tenuto
+conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio.
+ 3. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di cui
+al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+ (3)
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K115 | [34-sexies] Altre sanzioni ai sensi del Regolamento (UE) n. 751/2015
+Art. 34-sexies
+ (Altre sanzioni ai sensi del Regolamento (UE) n. 751/2015 )
+ 1. Si applica nei confronti dei prestatori di servizi di pagamento e dei soggetti ai quali sono esternalizzate funzioni aziendali essenziali o importanti, la sanzione amministrativa pecuniaria da
+euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per l'inosservanza delle
+disposizioni di cui all' articolo 8, paragrafo 6 , articolo 9, paragrafo 1 , articolo 10, paragrafi 1 e 5 , articolo 11, paragrafi 1 e 2 del Regolamento (UE) n. 751/2015 . Nei casi in cui le
+violazioni siano commesse da schemi di carte di pagamento la sanzione si applica nei confronti degli organi decisionali, organizzazioni o entità responsabili del funzionamento degli schemi stessi.
+ 2. Qualora il prestatore di servizi di pagamento mandante rilevi nel comportamento dell'agente in servizi di pagamento violazioni alle disposizioni dell' articolo 8, paragrafo 6 , articolo 9,
+paragrafo 1 , articolo 10, paragrafo 1 , articolo 11, paragrafi 1 e 2 del Regolamento (UE) n. 751/2015 adotta immediatamente misure correttive e trasmette la documentazione relative alle violazioni
+riscontrate, anche ai fini dell'applicazione dell' articolo 128-duodecies del decreto legislativo 1° settembre 1993, n. 385 , all'Organismo di cui all' articolo 128-undecies, del decreto legislativo
+1° settembre 1993, n. 385 .
+ 3. Nei confronti degli organi decisionali, organizzazioni o entità responsabili del funzionamento degli schemi di carte di pagamento si applica la sanzione amministrativa pecuniaria da euro 30.000
+fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato è disponibile e determinabile, per la violazione degli obblighi di cui
+all'articolo 34-bis, commi 2
+ ((, 3-bis))
+ e 6 e all'articolo 34-ter, comma 2 del presente decreto e per le seguenti violazioni del Regolamento (UE) n. 751/2015 : inosservanza delle disposizioni di cui all'articolo 6, all'articolo 7,
+paragrafi 1, 3, e 4, e relative norme tecniche di regolamentazione emanate dalla Commissione europea, all'articolo 8, paragrafi 1, 4 e 6, all'articolo 10, paragrafo 1, all'articolo 11, paragrafi 1 e
+2.
+ 4. Le sanzioni previste dai commi 1, 2 e 3 si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale,
+tenuto conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio.
+ 5. Se il vantaggio ottenuto dall'autore della violazione, come conseguenza della violazione stessa, è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di
+cui al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+ (3)
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K116 | [34-septies] Altre sanzioni amministrative agli esponenti o al personale).
+Art. 34-septies
+ (( (Altre sanzioni amministrative agli esponenti o al personale). ))
+ ((
+ 1. Fermo restando quanto previsto per i prestatori di servizi di pagamento nei confronti dei quali sono accertate le violazioni, per l'inosservanza delle norme richiamate dagli articoli 34-quinquies
+e 34-sexies, si applica la sanzione amministrativa pecuniaria da euro 5.000 fino a euro 5 milioni nei confronti dei soggetti che svolgono funzioni di amministrazione, di direzione o di controllo,
+nonchè del personale, quando l'inosservanza è conseguenza della violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione
+aziendale o sui profili di rischio.
+ 2. Con il provvedimento di applicazione della sanzione, in ragione della gravità della violazione accertata e tenuto conto dei criteri per la determinazione delle sanzioni ai sensi dell'articolo
+34-octies, la Banca d'Italia può applicare la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di
+amministrazione, direzione e controllo presso i prestatore di servizi di pagamento autorizzati ai sensi del decreto legislativo 1° settembre 1993, n. 385 .
+ 3. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie di cui
+al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K117 | [34-octies] Criteri per la determinazione delle sanzioni).
+Art. 34-octies
+ (( (Criteri per la determinazione delle sanzioni). ))
+ ((
+ 1. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie o della durata delle sanzioni accessorie previste dal presente Capo, si applica l' articolo 144-quater del decreto
+legislativo 1° settembre 1993, n. 385 .
+ 2. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie di cui all'articolo 34-quinquies o della durata delle relative sanzioni accessorie, è considerato indice di minore
+grado di responsabilità il fatto che la commissione interbancaria sia definita unilateralmente da uno schema di carte di pagamento.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K118 | [34-novies] Procedura sanzionatoria).
+Art. 34-novies
+ (( (Procedura sanzionatoria). ))
+ ((
+ 1. Nel caso di servizi offerti da prestatori di servizi di pagamento insediati in Italia e filiali di prestatori di servizi di pagamento comunitari che operano in regime di libero stabilimento in
+Italia le sanzioni di cui al presente Capo sono irrogate dalla Banca d'Italia e si applica il Capo VI, Titolo VIII del decreto legislativo 1° settembre 1993, n. 385 .
+ 2. Nel caso di servizi offerti da schemi di carte di pagamento la cui sede legale o operativa è ubicata nel territorio della Repubblica, le sanzioni di cui al presente Capo sono irrogate dalla Banca
+d'Italia; si applica il Capo VI, Titolo VIII, del decreto legislativo n. 385 del 1993 .
+ 3. Nel caso di servizi offerti da schemi di carte di pagamento la cui sede legale e operativa è ubicata in altri Stati membri, la Banca d'Italia informa la autorità competente di questi Stati membri
+delle riscontrate violazioni del Regolamento (UE) 751/2015 .
+ 4. Le sanzioni di cui al presente Capo si riscuotono secondo i termini e le modalità previsti dal Decreto del Presidente della Repubblica 29 settembre 1973, n. 602 e i relativi proventi affluiscono
+all'entrata del bilancio dello Stato.))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K119 | [34-decies] Esposti).
+Art. 34-decies
+ (( (Esposti). ))
+ ((1. In caso di violazione da parte di un prestatore di servizi di pagamento delle disposizioni di cui al Regolamento (UE) 751/2015 e della relativa normativa di attuazione, gli utenti di servizi di
+pagamento, le associazioni che li rappresentano e le altre parti interessate possono presentare esposti alla Banca d'Italia. La proposizione dell'esposto non pregiudica il diritto di adire la
+competente autorità giudiziaria. La Banca d'Italia informa il proponente l'esposto dell'esistenza dei sistemi di risoluzione stragiudiziale delle controversie di cui all' articolo 128-bis del decreto
+legislativo 1° settembre 1993, n. 385 .))
+ ((3))
+ --------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".

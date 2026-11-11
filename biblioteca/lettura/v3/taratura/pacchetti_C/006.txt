@@ -1,0 +1,1186 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Direttiva sul credito immobiliare ai consumatori (MCD)  (id UE-DIR-2014-17)
+
+=== K161 | [5] Autorità competenti
+Articolo 5
+Autorità competenti
+1.
+Gli Stati membri designano le autorità nazionali competenti abilitate a garantire l’applicazione e il rispetto della presente direttiva e assicurano che esse siano dotate dei poteri di indagine e di
+controllo nonché delle risorse adeguate necessari all’adempimento efficiente ed efficace delle loro funzioni.
+Le autorità di cui al primo comma sono pubbliche autorità o organismi riconosciuti dal diritto nazionale oppure da pubbliche autorità espressamente abilitate a tal fine dalla legislazione nazionale.
+Non sono creditori, né intermediari del credito o rappresentanti designati.
+2.
+Gli Stati membri assicurano che le autorità competenti, tutte le persone che esercitano o hanno esercitato un’attività per conto delle autorità competenti, nonché i revisori o esperti incaricati dalle
+autorità competenti, siano vincolati dal segreto d’ufficio. Nessuna informazione riservata ricevuta da tali persone nell’esercizio delle loro funzioni può in alcun modo essere divulgata ad alcuna
+persona o autorità, salvo in una forma sommaria o aggregata, fatti salvi i casi contemplati dal diritto penale o dalla presente direttiva. Tuttavia ciò non osta a che le autorità competenti scambino o
+trasmettano informazioni riservate ai sensi del diritto nazionale e dell’Unione.
+3.
+Gli Stati membri assicurano che le autorità designate in quanto competenti per garantire l’applicazione e il rispetto degli articoli 9, 29, 32, 33, 34 e 35 della presente direttiva siano
+alternativamente o congiuntamente:
+a)
+autorità competenti quali definite all’articolo 4, paragrafo 2, del regolamento (UE) n. 1093/2010;
+b)
+autorità diverse dalle autorità competenti di cui al punto a), purché le leggi, i regolamenti o le disposizioni amministrative nazionali dispongano che esse cooperino con le autorità competenti di cui
+al punto a) ogniqualvolta necessario per svolgere le loro funzioni ai sensi della presente direttiva, anche ai fini della cooperazione con l’Autorità europea di vigilanza (Autorità bancaria europea)
+(ABE), come richiesto dalla presente direttiva.
+4.
+Gli Stati membri informano la Commissione e l’ABE circa la designazione delle autorità competenti e le relative modifiche, indicando l’eventuale ripartizione delle funzioni tra le diverse autorità. La
+prima di tali notifiche va effettuata non appena possibile e comunque al più tardi il 21 marzo 2016.
+5.
+Le autorità competenti esercitano i loro poteri in conformità al diritto nazionale:
+a)
+direttamente in forza della la propria autorità o sotto la supervisione delle autorità giudiziarie; o
+b)
+mediante richiesta alle autorità giudiziarie che sono competenti a pronunciare le decisioni necessarie, eventualmente anche proponendo appello qualora la richiesta di pronuncia delle decisioni
+necessarie sia stata respinta, salvo per gli articoli 9, 29, 32, 33, 34 e 35.
+6.
+Qualora nel loro territorio esistano più autorità competenti, gli Stati membri provvedono a che le loro funzioni rispettive siano chiaramente definite e a far sì che dette autorità operino in stretta
+collaborazione per garantire l’efficace espletamento delle rispettive funzioni.
+7.
+La Commissione pubblica un elenco delle autorità competenti nella Gazzetta ufficiale dell’Unione europea almeno una volta all’anno e lo aggiorna costantemente sul suo sito web.
+CAPO 2
+EDUCAZIONE FINANZIARIA
+
+=== K162 | [6] Educazione finanziaria dei consumatori
+Articolo 6
+Educazione finanziaria dei consumatori
+1.
+Gli Stati membri promuovono misure atte a favorire l’educazione dei consumatori in merito a un indebitamento e a una gestione del debito responsabili, in particolare per quanto riguarda i contratti di
+credito ipotecario. Per guidare i consumatori, specialmente quelli che sottoscrivono un credito ipotecario per la prima volta, sono necessarie informazioni chiare e generali sulla procedura per la
+concessione del credito. Sono inoltre necessarie informazioni sulla guida che le organizzazioni di consumatori e le autorità nazionali possono fornire ai consumatori.
+2.
+La Commissione pubblica una valutazione degli strumenti di educazione finanziaria a disposizione dei consumatori negli Stati membri e individua gli esempi di migliori pratiche che potrebbero essere
+ulteriormente sviluppate al fine di accrescere la consapevolezza in materia finanziaria dei consumatori.
+CAPO 3
+CONDIZIONI APPLICABILI AI CREDITORI, AGLI INTERMEDIARI DEL CREDITO E AI RAPPRESENTANTI DESIGNATI
+
+=== K163 | [7] Norme di comportamento da rispettare quando si concedono crediti ai consumatori
+Articolo 7
+Norme di comportamento da rispettare quando si concedono crediti ai consumatori
+1.
+Gli Stati membri esigono che il creditore, l’intermediario del credito o il rappresentante designato, quando mettono a punto prodotti creditizi o concedono, fungono da intermediari o forniscono
+servizi di consulenza relativi a crediti e, se del caso, a servizi accessori ai consumatori o quando eseguono un contratto di credito, agiscano in maniera onesta, equa, trasparente e professionale,
+tenendo conto dei diritti e degli interessi dei consumatori. Nell’ambito della concessione, dello svolgimento di attività di intermediario o della fornitura di servizi di consulenza relativi a
+crediti, le attività si basano sulle informazioni circa la situazione del consumatore e su ogni bisogno particolare che questi ha comunicato e su ipotesi ragionevoli circa i rischi cui è esposta la
+situazione del consumatore per tutta la durata del contratto di credito. In relazione alla fornitura di servizi di consulenza relativi a crediti, l’attività si basa inoltre sulle informazioni
+richieste a norma dell’articolo 22, paragrafo 3, lettera a).
+2.
+Gli Stati membri provvedono affinché la maniera in cui i creditori remunerano il proprio personale e gli intermediari del credito, nonché la maniera in cui gli intermediari del credito remunerano il
+proprio personale e i loro rappresentanti designati non impediscano il rispetto dell’obbligo di cui al paragrafo 1.
+3.
+Gli Stati membri provvedono affinché, nello stabilire e applicare le politiche retributive per il personale responsabile della valutazione del merito creditizio, i creditori rispettino i seguenti
+principi in maniera e misura appropriata alle loro dimensioni, alla loro organizzazione interna e alla natura, portata e complessità delle loro attività:
+a)
+la politica retributiva promuove ed è coerente con una gestione sana ed efficace del rischio e non incoraggia un’assunzione di rischi superiore al livello di rischio tollerato del creditore;
+b)
+la politica retributiva è in linea con la strategia aziendale, gli obiettivi, i valori e gli interessi a lungo termine del creditore e comprende misure volte a evitare conflitti di interesse, in
+particolare facendo in modo che la retribuzione non dipenda dal numero o dalla percentuale di domande accolte.
+4.
+Gli Stati membri provvedono affinché, quando i creditori, gli intermediari del credito o i rappresentanti designati forniscono servizi di consulenza, la struttura remunerativa del personale
+interessato non ne pregiudichi la capacità di agire nel migliore interesse del consumatore e, in particolare, non dipenda dagli obiettivi di vendita. Al fine di conseguire tale obiettivo, gli Stati
+membri possono inoltre vietare le commissioni pagate dal creditore all’intermediario del credito.
+5.
+Gli Stati membri possono vietare o imporre restrizioni ai pagamenti da un consumatore a un creditore o a un intermediario del credito prima della conclusione di un contratto di credito.
+
+=== K164 | [8] Obbligo di fornire informazioni ai consumatori a titolo gratuito
+Articolo 8
+Obbligo di fornire informazioni ai consumatori a titolo gratuito
+Gli Stati membri provvedono affinché, ove ai consumatori siano fornite informazioni in conformità del disposto della presente direttiva, ciò avvenga a titolo gratuito per i consumatori.
+
+=== K165 | [9] Requisiti di conoscenza e competenza per il personale
+Articolo 9
+Requisiti di conoscenza e competenza per il personale
+1.
+Gli Stati membri provvedono affinché i creditori, gli intermediari del credito e i rappresentanti designati richiedano al loro personale di avere e mantenere un livello di conoscenza e di competenza
+adeguato per mettere a punto, offrire o concludere contratti di credito, svolgere attività di intermediazione del credito di cui all’articolo 4, punto 5, o fornire servizi di consulenza. Quando la
+conclusione di un contratto di credito include la prestazione di un servizio accessorio, è richiesto un livello di conoscenza e di competenza adeguato in relazione a tale servizio accessorio.
+2.
+Fatti salvi i casi di cui al paragrafo 3, gli Stati membri d’origine stabiliscono i requisiti di conoscenza e di competenza minimi per il personale dei creditori, degli intermediari del credito e dei
+rappresentanti designati conformemente ai principi di cui all’allegato III.
+3.
+Qualora un creditore o intermediario del credito fornisca i propri servizi nel territorio di uno o più altri Stati membri:
+i)
+attraverso una succursale, lo Stato membro ospitante è responsabile della determinazione dei requisiti di conoscenza e competenza minimi applicabili al personale di una succursale;
+ii)
+in regime di libera prestazione di servizi, lo Stato membro d’origine è responsabile della determinazione dei requisiti di conoscenza e competenza minimi applicabili al personale conformemente
+all’allegato III, tuttavia, gli Stati membri ospitanti possono stabilire i requisiti di conoscenza e competenza minimi per quanto riguarda i requisiti di cui all’allegato III, paragrafo 1, lettere b),
+c), e) e f).
+4.
+Gli Stati membri provvedono affinché la conformità ai requisiti fissati al paragrafo 1 sia soggetta alla vigilanza delle autorità competenti e affinché le autorità competenti abbiano il potere di
+imporre ai creditori, agli intermediari del credito o ai rappresentanti designati l’obbligo di fornire tutte le informazioni che l’autorità competente ritenga necessarie per consentire detta
+vigilanza.
+5.
+Per la vigilanza efficace dei creditori e degli intermediari del credito che forniscono i loro servizi nel territorio di altri Stati membri in regime di libera prestazione di servizi, le autorità
+competenti degli Stati membri ospitante e d’origine cooperano strettamente per la vigilanza e i controlli efficaci dei requisiti di conoscenza e competenza minimi dello Stato membro ospitante. A tal
+fine possono delegarsi a vicenda compiti e responsabilità.
+CAPO 4
+INFORMAZIONI E PRATICHE PRELIMINARI ALLA CONCLUSIONE DEL CONTRATTO DI CREDITO
+
+=== K166 | [10] Disposizioni generali in materia di pubblicità e marketing
+Articolo 10
+Disposizioni generali in materia di pubblicità e marketing
+Fatta salva la direttiva 2005/29/CE, gli Stati membri impongono che le comunicazioni di pubblicità e marketing relative ai contratti di credito siano corrette, chiare e non ingannevoli. In
+particolare, sono vietate formulazioni che possano indurre nel consumatore false aspettative circa la disponibilità o il costo di un credito.
+
+=== K167 | [11] Informazioni di base da includere nella pubblicità
+Articolo 11
+Informazioni di base da includere nella pubblicità
+1.
+Gli Stati membri garantiscono che qualsiasi pubblicità relativa ai contratti di credito che indichi un tasso d’interesse o qualunque altro dato numerico riguardante il costo del credito per il
+consumatore contenga le informazioni di base di cui al presente articolo.
+Gli Stati membri possono prevedere che il primo comma non si applichi nei casi in cui il diritto nazionale richieda l’indicazione del TAEG nella pubblicità relativa ai contratti di credito che non
+indichi un tasso di interesse o qualunque altro dato numerico riguardante il costo del credito per il consumatore ai sensi del primo comma.
+2.
+Le informazioni di base precisano, in maniera chiara, concisa ed evidenziata:
+a)
+l’identità del creditore o, se del caso, dell’intermediario del credito o del rappresentante designato;
+b)
+se del caso, il fatto che il contratto di credito sarà garantito da un’ipoteca o da un’altra garanzia analoga comunemente utilizzata in uno Stato membro sui beni immobili residenziali oppure da un
+diritto connesso ai beni immobili residenziali;
+c)
+il tasso debitore, precisando se fisso o variabile o una combinazione dei due tipi, corredato di informazioni dettagliate relative alle commissioni comprese nel costo totale del credito per il
+consumatore;
+d)
+l’importo totale del credito;
+e)
+il TAEG, che deve avere un’evidenza all’interno dell’annuncio almeno equivalente a quella di ogni tasso di interesse;
+f)
+se del caso, la durata del contratto di credito;
+g)
+se del caso, l’importo delle rate;
+h)
+se del caso, l’importo totale che il consumatore è tenuto a pagare;
+i)
+se del caso, il numero delle rate;
+j)
+se del caso, un’avvertenza relativa al fatto che eventuali fluttuazioni del tasso di cambio potrebbero incidere sull’importo che il consumatore è tenuto a pagare.
+3.
+Le informazioni elencate al paragrafo 2 diverse da quelle di cui alle lettere a), b) o j) sono specificate con l’impiego di un esempio rappresentativo e si attengono interamente a tale esempio
+rappresentativo. Gli Stati membri introducono criteri per la definizione di «esempio rappresentativo».
+4.
+Qualora la conclusione di un contratto riguardante un servizio accessorio, in particolare un’assicurazione, sia obbligatoria per ottenere il credito oppure per ottenerlo alle condizioni contrattuali
+offerte e qualora il costo di tale servizio non possa essere determinato in anticipo, anche l’obbligo di sottoscrivere detto contratto è indicato in forma chiara, concisa ed evidenziata, assieme al
+TAEG.
+5.
+Le informazioni di cui ai paragrafi 2 e 4 sono facilmente leggibili o chiaramente udibili, a seconda del mezzo utilizzato per la pubblicità.
+6.
+Gli Stati membri possono prescrivere l’inclusione di un’avvertenza concisa e proporzionata riguardante rischi specifici connessi ai contratti di credito. Essi notificano senza indugio tali
+prescrizioni alla Commissione.
+7.
+Il presente articolo fa salva la direttiva 2005/29/CE.
+
+=== K168 | [12] Pratiche di commercializzazione abbinata e aggregata
+Articolo 12
+Pratiche di commercializzazione abbinata e aggregata
+1.
+Gli Stati membri consentono le pratiche di commercializzazione aggregata, ma vietano le pratiche di commercializzazione abbinata.
+2.
+In deroga al paragrafo 1, gli Stati membri possono prevedere che i creditori possano chiedere al consumatore o a un familiare o parente stretto del consumatore:
+a)
+l’apertura o la tenuta di un conto di pagamento o di risparmio, il cui unico fine sia l’accumulo di capitale per rimborsare il credito in capitale o interessi, raccogliere risorse per ottenere il
+credito o fornire ulteriore garanzia per il creditore nell’eventualità di un inadempimento;
+b)
+l’acquisto o la tenuta di un prodotto di investimento o un prodotto pensionistico privato, laddove tale prodotto che principalmente offre all’investitore un reddito pensionistico serve anche a fornire
+ulteriore garanzia per il creditore nell’eventualità di un inadempimento o ad accumulare capitale per rimborsare il credito in capitale o interessi o a raccogliere risorse per ottenere il credito;
+c)
+la conclusione di un contratto di credito distinto legato a un contratto di credito in regime di condivisione per ottenere il credito.
+3.
+In deroga al paragrafo 1, gli Stati membri possono consentire pratiche di commercializzazione abbinata qualora il creditore possa dimostrare alla pertinente autorità competente che i prodotti o le
+categorie di prodotti abbinati offerti, a condizioni tra loro simili, che non sono messi a disposizione separatamente, comportano un chiaro vantaggio per i consumatori tenendo debitamente conto della
+disponibilità e dei prezzi di prodotti analoghi offerti sul mercato. Il presente paragrafo si applica soltanto ai prodotti immessi in commercio dopo il 20 marzo 2014.
+4.
+Gli Stati membri possono consentire ai creditori di richiedere al consumatore la sottoscrizione di una polizza assicurativa collegata al contratto di credito. In tali casi gli Stati membri provvedono
+affinché il creditore accetti la polizza assicurativa di un fornitore diverso dal suo fornitore preferito qualora detta polizza fornisca un livello di copertura equivalente a quello della polizza
+proposta dal creditore.
+
+=== K169 | [13] Informazioni generali
+Articolo 13
+Informazioni generali
+1.
+Gli Stati membri garantiscono che i creditori o, se del caso, gli intermediari del credito con vincolo di mandato o i loro rappresentanti designati rendano disponibili in qualsiasi momento
+informazioni generali chiare e comprensibili relative ai contratti di credito, su supporto cartaceo o su altro supporto durevole o sotto forma elettronica. Inoltre, gli Stati membri possono prevedere
+che gli intermediari del credito senza vincolo di mandato rendano disponibili le informazioni generali.
+Le informazioni generali comprendono almeno i seguenti elementi:
+a)
+l’identità e l’indirizzo geografico dell’emittente delle informazioni;
+b)
+gli scopi per i quali il credito può essere utilizzato;
+c)
+le forme di garanzia, con indicazione, ove applicabile, della possibilità che il bene sia ubicato in un diverso Stato membro;
+d)
+la possibile durata dei contratti di credito;
+e)
+i tipi di tassi debitore disponibili, precisando se fissi o variabili o di entrambe le tipologie, con una breve descrizione delle caratteristiche di un tasso fisso e di un tasso variabile, comprese le
+relative implicazioni per il consumatore;
+▼M1
+e bis )
+qualora siano disponibili contratti che si riferiscano a un indice di riferimento quale definito all'articolo 3, paragrafo 1, punto 3), del regolamento (UE) 2016/1011 del Parlamento europeo e del
+Consiglio (
+2
+) la denominazione dell'indice di riferimento e il nome dei loro amministratori nonché le potenziali implicazioni per i consumatori;
+▼B
+f)
+qualora siano disponibili crediti in valuta estera, un’indicazione della valuta o delle valute estere, compresa una spiegazione delle implicazioni per il consumatore quando il credito è denominato in
+una valuta estera;
+g)
+un esempio rappresentativo dell’importo totale del credito, del costo totale del credito per il consumatore, dell’importo totale che il consumatore deve pagare e del TAEG;
+h)
+un’indicazione degli eventuali ulteriori costi, non inclusi nel costo totale del credito per il consumatore, da pagare in relazione a un contratto di credito;
+i)
+la gamma delle diverse opzioni disponibili per rimborsare il credito al creditore (compresi numero, frequenza e importo delle rate periodiche di rimborso);
+j)
+se del caso, una dichiarazione chiara e concisa che affermi che il rispetto delle condizioni contrattuali dei contratti di credito non garantisce il rimborso dell’importo totale del credito, in base
+al contratto di credito;
+k)
+una descrizione delle condizioni direttamente connesse al rimborso anticipato;
+l)
+l’eventuale necessità di una perizia sul valore dell’immobile e, in tal caso, chi sia responsabile di provvedere alla sua esecuzione, e gli eventuali costi che ne derivano per il consumatore;
+m)
+un’indicazione dei servizi accessori che il consumatore è obbligato ad acquistare al fine di ottenere il credito, oppure di ottenerlo alle condizioni offerte, e, se del caso, la precisazione che i
+servizi accessori possono essere acquistati da un fornitore diverso dal creditore; e
+n)
+un’avvertenza generale relativa alle possibili conseguenze dell’inosservanza degli impegni legati al contratto di credito.
+2.
+gli Stati membri possono prescrivere ai creditori di includere altri tipi di avvertenze rilevanti nello Stato membro. Essi notificano senza indugio tali prescrizioni alla Commissione.
+
+=== K170 | [14] Informazioni precontrattuali
+Articolo 14
+Informazioni precontrattuali
+1.
+Gli Stati membri provvedono affinché il creditore e, se del caso, l’intermediario del credito o il rappresentante designato forniscano al consumatore le informazioni personalizzate necessarie a
+confrontare i crediti disponibili sul mercato, valutarne le implicazioni e prendere una decisione informata sull’opportunità di concludere un contratto di credito:
+a)
+senza indebito ritardo, dopo che il consumatore ha fornito le informazioni necessarie circa le sue esigenze, la sua situazione finanziaria e le sue preferenze in conformità con l’articolo 20; e
+b)
+in tempo utile, prima che il consumatore sia vincolato da un contratto di credito o da un’offerta.
+2.
+Le informazioni personalizzate di cui al paragrafo 1, su supporto cartaceo o su altro supporto durevole, sono fornite mediante il PIES di cui all’allegato II.
+3.
+Gli Stati membri garantiscono che quando al consumatore è proposta un’offerta vincolante per il creditore, tale offerta sia fornita su supporto cartaceo o su altro supporto durevole e sia accompagnata
+da un PIES se:
+a)
+non è stato fornito alcun PIES in precedenza al consumatore; o
+b)
+le caratteristiche dell’offerta sono diverse dalle informazioni contenute nel PIES precedentemente fornito.
+4.
+Gli Stati membri possono prevedere la fornitura obbligatoria del PIES prima della proposta di qualsiasi offerta vincolante per il creditore. Qualora uno Stato membro disponga in tal senso, impone
+l’obbligo di fornire nuovamente il PIES solo se ricorrono le condizioni del paragrafo 3, lettera b).
+5.
+Gli Stati membri che prima del 20 marzo 2014 hanno predisposto un prospetto informativo che adempie ad obblighi di informazione equivalenti a quelli previsti all’allegato II possono continuare ad
+utilizzarlo ai fini del presente articolo fino al 21 marzo 2019.
+6.
+Gli Stati membri precisano il periodo, di almeno sette giorni, durante il quale il consumatore ha il tempo sufficiente per confrontare le offerte, valutarne le implicazioni e prendere una decisione
+informata.
+Gli Stati membri precisano se il periodo di cui al primo comma è un periodo di riflessione prima della conclusione del contratto di credito oppure un periodo per l’esercizio del diritto di recesso
+dopo la conclusione del contratto di credito oppure una combinazione dei due.
+Se uno Stato membro prevede un periodo di riflessione prima della conclusione di un contratto di credito:
+a)
+l’offerta è vincolante per il creditore per la durata del periodo di riflessione; e
+b)
+il consumatore può accettare l’offerta in qualunque momento durante il periodo di riflessione.
+Gli Stati membri possono prevedere che i consumatori non possano accettare l’offerta per un periodo non superiore ai primi dieci giorni del periodo di riflessione.
+Se il tasso debitore o altri costi applicabili all’offerta sono determinati sulla base della vendita di obbligazioni sottostanti o di altri strumenti di raccolta a lungo termine, gli Stati membri
+possono prevedere che il tasso debitore o altri costi possano variare rispetto a quanto riportato nell’offerta a seconda del valore dell’obbligazione sottostante o dell’altro strumento di raccolta a
+lungo termine.
+Se il consumatore gode del diritto di recesso a norma del secondo comma del presente paragrafo, l’articolo 6 della direttiva 2002/65/CE non si applica.
+7.
+Solo una volta fornito almeno il PIES prima della conclusione del contratto, si ritiene che il creditore e, se del caso, l’intermediario del credito o il rappresentante designato che hanno fornito il
+PIES al consumatore abbiano soddisfatto i requisiti relativi alle informazioni da fornire al consumatore prima della conclusione del contratto a distanza di cui all’articolo 3, paragrafo 1, della
+direttiva 2002/65/CE e i requisiti di cui all’articolo 5, paragrafo 1, di tale direttiva.
+8.
+Gli Stati membri non modificano il modello PIES salvo per quanto previsto nell’allegato II. Qualsiasi informazione aggiuntiva che il creditore o, se del caso, l’intermediario del credito o il
+rappresentante designato forniscano al consumatore o siano tenuti, in base al diritto nazionale, a fornire al consumatore è fornita in un documento distinto che può essere allegato al PIES.
+9.
+Alla Commissione è conferito il potere di adottare atti delegati conformemente all’articolo 40 riguardo alla modifica della formulazione standard dell’allegato II, parte A, o delle istruzioni
+contenute nella parte B per tenere conto della necessità di informazioni o avvertenze riguardo a nuovi prodotti che non erano offerti prima del 20 marzo 2014. Tali atti delegati non modificano
+tuttavia la struttura o il formato del PIES.
+10.
+Per le comunicazioni mediante telefonia vocale di cui all’articolo 3, paragrafo 3, della direttiva 2002/65/CE, la descrizione delle principali caratteristiche del servizio finanziario da fornire ai
+sensi dell’articolo 3, paragrafo 3, lettera b), secondo trattino, di tale direttiva comprende almeno gli elementi di cui all’allegato II, parte A, sezioni da 3 a 6, della presente direttiva.
+11.
+Gli Stati membri assicurano che, almeno nei casi in cui non sussiste il diritto di recesso, il creditore o, se del caso, l’intermediario del credito o il rappresentante designato fornisca al
+consumatore una copia della bozza del contratto di credito all’atto della presentazione dell’offerta vincolante per il creditore. Nei casi in cui sussiste il diritto di recesso, gli Stati membri
+assicurano che il creditore o, se del caso, l’intermediario del credito o il rappresentante designato proponga al consumatore di fornire una copia della bozza del contratto di credito all’atto della
+presentazione dell’offerta vincolante per il creditore.
+
+=== K171 | [15] Obblighi di informazione relativi agli intermediari del credito e ai rappresentanti designati
+Articolo 15
+Obblighi di informazione relativi agli intermediari del credito e ai rappresentanti designati
+1.
+Gli Stati membri assicurano che, in tempo utile prima dello svolgimento di una delle attività di intermediazione del credito di cui all’articolo 4, punto 5, l’intermediario del credito o il
+rappresentante designato fornisca al consumatore almeno le informazioni seguenti su supporto cartaceo o su altro supporto durevole:
+a)
+l’identità e l’indirizzo geografico dell’intermediario del credito;
+b)
+il registro in cui è iscritto, il numero di registrazione, se del caso, e i mezzi esperibili per verificare la registrazione;
+c)
+se l’intermediario del credito sia soggetto a vincolo di mandato o lavori a titolo esclusivo con uno o più creditori. Qualora sia soggetto a vincolo di mandato o lavori a titolo esclusivo con uno o
+più creditori, l’intermediario del credito fornisce il nome del creditore o dei creditori per i quali opera. L’intermediario del credito può comunicare che è indipendente se soddisfa le condizioni
+stabilite in conformità all’articolo 22, paragrafo 4;
+d)
+se l’intermediario del credito offra servizi di consulenza;
+e)
+il compenso che il consumatore deve versare, se del caso, all’intermediario del credito per i suoi servizi o, qualora ciò non sia possibile, il metodo per il calcolo del compenso;
+f)
+le procedure che consentono ai consumatori o alle altre parti interessate di presentare reclami internamente circa gli intermediari del credito e, ove opportuno, le modalità con le quali si può
+ricorrere alle procedure di reclamo e ricorso extragiudiziali;
+g)
+se del caso, l’esistenza e, se noto, l’importo di commissioni o altri incentivi che il creditore o terzi devono versare all’intermediario del credito per i suoi servizi in relazione al contratto di
+credito. Qualora l’importo non sia noto al momento della comunicazione, l’intermediario del credito informa il consumatore che l’importo effettivo sarà comunicato in una fase successiva nel PIES.
+2.
+Su richiesta del consumatore, gli intermediari del credito senza vincolo di mandato ma che ricevono commissioni da uno o più creditori forniscono informazioni circa i diversi livelli delle commissioni
+che devono essere versate dai diversi creditori che erogano i contratti di credito proposti ai consumatori. Il consumatore è informato di avere il diritto di richiedere tali informazioni.
+3.
+Se l’intermediario del credito chiede un compenso al consumatore e riceve in aggiunta una commissione dal creditore o da un terzo, spiega al consumatore se la commissione sarà o meno detratta dal
+compenso, in tutto o in parte.
+4.
+Gli Stati membri dispongono che l’intermediario del credito comunichi al creditore l’eventuale compenso che il consumatore deve versargli per i suoi servizi, ai fini del calcolo del TAEG.
+5.
+Gli Stati membri prescrivono agli intermediari del credito di garantire che, oltre alle informazioni prescritte dal presente articolo, il loro rappresentante designato comunichi al consumatore, al
+momento di contattarlo o prima di trattare con lo stesso, in che veste opera e quale intermediario del credito rappresenta.
+
+=== K172 | [16] Spiegazioni adeguate
+Articolo 16
+Spiegazioni adeguate
+1.
+Gli Stati membri provvedono affinché i creditori e, se del caso, gli intermediari del credito o i rappresentanti designati forniscano al consumatore spiegazioni adeguate sui contratti di credito ed
+eventuali servizi accessori proposti, in modo che questi possa valutare se il contratto di credito e i servizi accessori proposti siano adatti alle sue esigenze e alla sua situazione finanziaria.
+Le spiegazioni, se del caso, comprendono in particolare:
+a)
+le informazioni precontrattuali che devono essere fornite ai sensi:
+i)
+dell’articolo 14 nel caso dei creditori;
+ii)
+degli articoli 14 e 15 nel caso degli intermediari del credito o dei rappresentanti designati;
+b)
+le caratteristiche essenziali dei prodotti proposti;
+c)
+gli effetti specifici che i prodotti proposti possono avere per il consumatore, incluse le conseguenze del mancato pagamento da parte del consumatore; e
+d)
+quando servizi accessori sono aggregati a un contratto di credito, la precisazione se per ciascuno dei componenti del pacchetto è possibile recedere separatamente e con quali implicazioni per il
+consumatore.
+2.
+Gli Stati membri possono adattare le modalità e la portata delle spiegazioni di cui al paragrafo 1 e il soggetto che le fornisce al contesto nel quale il contratto di credito è offerto, al
+destinatario e alla natura del credito offerto.
+CAPO 5
+TASSO ANNUO EFFETTIVO GLOBALE
+
+=== K173 | [17] Calcolo del TAEG
+Articolo 17
+Calcolo del TAEG
+1.
+Il TAEG è calcolato conformemente alla formula matematica che figura nell’allegato I.
+2.
+I costi di apertura e tenuta di uno specifico conto, i costi relativi all’utilizzazione di un mezzo di pagamento che permetta di effettuare operazioni e prelievi su quel conto e gli altri costi
+relativi alle operazioni di pagamento sono inclusi nel costo totale del credito per il consumatore qualora sia obbligatorio aprire o mantenere un conto per ottenere il credito o per ottenerlo alle
+condizioni offerte.
+3.
+Il calcolo del TAEG è fondato sull’ipotesi che il contratto di credito rimarrà valido per il periodo di tempo convenuto e che il creditore e il consumatore adempiranno ai loro obblighi nei termini ed
+entro le date convenuti nel contratto di credito.
+4.
+Nel caso dei contratti di credito contenenti clausole che permettono di modificare il tasso debitore e, se del caso, le spese computate nel TAEG ma non quantificabili al momento del calcolo, il TAEG è
+calcolato muovendo dall’ipotesi che il tasso debitore e le altre spese rimarranno fissi rispetto al livello stabilito alla conclusione del contratto.
+5.
+Per i contratti di credito per i quali è concordato un tasso debitore fisso in relazione al periodo iniziale di almeno cinque anni, al termine del quale il tasso debitore è negoziato per concordare un
+nuovo tasso fisso per un ulteriore periodo di riferimento, il calcolo dell’ulteriore TAEG esemplificativo comunicato nel PIES copre solo il periodo iniziale a tasso fisso ed è fondato sull’ipotesi
+che, al termine del periodo per il quale è stabilito il tasso debitore fisso, il capitale residuo sia rimborsato.
+6.
+Se il contratto di credito consente variazioni del tasso debitore, gli Stati membri fanno sì che il consumatore sia informato almeno tramite il PIES delle possibili conseguenze delle variazioni sugli
+importi da pagare e sul TAEG. A tal fine forniscono al consumatore un ulteriore TAEG che illustra i possibili rischi legati a un aumento significativo del tasso debitore. Se il tasso debitore non è
+assoggettato a massimali, tale informazione è corredata di un’avvertenza che sottolinea la possibilità che il costo totale del credito al consumatore, indicato dal TAEG, subisca variazioni. Questa
+disposizione non si applica ai contratti di credito il cui tasso debitore è fisso per un periodo iniziale di almeno cinque anni, al termine del quale il tasso debitore è negoziato al fine di
+concordare un nuovo tasso fisso per un ulteriore periodo di riferimento, per il quale è previsto nel PIES un ulteriore TAEG esemplificativo.
+7.
+Se del caso, le ulteriori ipotesi di cui all’allegato I sono utilizzate per il calcolo del TAEG.
+8.
+Alla Commissione è conferito il potere di adottare atti delegati conformemente all’articolo 40 per modificare le indicazioni o aggiornare le ipotesi utilizzate per il calcolo del TAEG di cui
+all’allegato I, in particolare nei casi in cui le indicazioni o ipotesi di cui al presente articolo e all’allegato I non siano sufficienti per calcolare in modo uniforme il TAEG o non siano più
+adeguate alla situazione commerciale esistente sul mercato.
+CAPO 6
+VALUTAZIONE DEL MERITO CREDITIZIO
+
+=== K174 | [18] Obbligo di verifica del merito creditizio del consumatore
+Articolo 18
+Obbligo di verifica del merito creditizio del consumatore
+1.
+Gli Stati membri provvedono affinché, prima della conclusione di un contratto di credito, il creditore svolga una valutazione approfondita del merito creditizio del consumatore. Tale valutazione tiene
+adeguatamente conto dei fattori pertinenti ai fini della verifica delle prospettive di adempimento da parte del consumatore degli obblighi stabiliti dal contratto di credito.
+2.
+Gli Stati membri assicurano che le procedure e le informazioni su cui è basata la valutazione siano messe a punto, documentate e tenute aggiornate.
+3.
+La valutazione del merito creditizio non si basa prevalentemente sul fatto che il valore del bene immobile residenziale sia superiore all’importo del credito né sull’assunto che il bene immobile
+residenziale si apprezzerà, a meno che il fine del contratto di credito non sia costruire o ristrutturare il bene immobile residenziale.
+4.
+Gli Stati membri assicurano che, se un creditore conclude un contratto di credito con un consumatore, il creditore non risolva né modifichi in un secondo tempo il contratto di credito a danno del
+consumatore a motivo del fatto che la valutazione del merito creditizio era stata condotta scorrettamente. Il presente paragrafo non si applica se è comprovato che il consumatore ha intenzionalmente
+omesso di fornire o ha falsificato le informazioni ai sensi dell’articolo 20.
+5.
+Gli Stati membri assicurano che:
+a)
+il creditore eroghi il credito al consumatore solo quando i risultati della valutazione del merito creditizio indicano che gli obblighi derivanti dal contratto di credito saranno verosimilmente
+adempiuti secondo le modalità prescritte dal contratto di credito;
+b)
+conformemente all’articolo 10 della direttiva 95/46/CE, il creditore informa in anticipo il consumatore che sarà consultata una banca dati;
+c)
+quando la richiesta di credito è respinta il creditore informa il consumatore senza indugio del rifiuto e, se del caso, del fatto che la decisione è basata sul trattamento automatico di dati. Se il
+rifiuto è basato sul risultato della consultazione di una banca dati, il creditore informa il consumatore dei risultati di detta consultazione e indica gli estremi della banca dati consultata.
+6.
+Gli Stati membri provvedono affinché il merito creditizio del consumatore venga rivalutato sulla base di informazioni aggiornate prima di procedere ad un aumento significativo dell’importo totale del
+credito dopo la conclusione del contratto di credito, a meno che tale credito supplementare fosse previsto e incluso nella valutazione del merito creditizio originaria.
+7.
+Il presente articolo fa salva la direttiva 95/46/CE.
+
+=== K175 | [19] Valutazione dei beni immobili
+Articolo 19
+Valutazione dei beni immobili
+1.
+Gli Stati membri provvedono affinché siano elaborate nel proprio territorio standard per la valutazione dei beni immobili residenziali affidabili ai fini della concessione dei crediti ipotecari. Gli
+Stati membri impongono ai creditori di assicurare il rispetto di tali standard quando effettuano la valutazione di un immobile o di prendere misure ragionevoli per assicurare l’applicazione di tali
+standard quando la valutazione è condotta da terzi. Se le autorità nazionali sono responsabili della disciplina dei periti indipendenti che effettuano le valutazioni dei beni immobili, devono
+provvedere affinché tali periti rispettino la normativa nazionale vigente.
+2.
+Gli Stati membri provvedono affinché i periti interni ed esterni che conducono valutazioni di beni immobili siano competenti sotto il profilo professionale e sufficientemente indipendenti dal processo
+di sottoscrizione del credito in modo da poter fornire una valutazione imparziale ed obiettiva, che deve essere documentata su supporto durevole e della quale deve essere conservato un esemplare dal
+creditore.
+
+=== K176 | [20] Informativa e verifica delle informazioni sul consumatore
+Articolo 20
+Informativa e verifica delle informazioni sul consumatore
+1.
+La valutazione del merito creditizio di cui all’articolo 18 è effettuata sulla base delle informazioni sul reddito e le spese del consumatore e altre informazioni sulla situazione economica e
+finanziaria necessarie, sufficienti e proporzionate. Le informazioni sono ottenute dal creditore da pertinenti fonti interne o esterne, incluso il consumatore, e comprendono le informazioni fornite
+all’intermediario del credito o al rappresentante designato nel corso della richiesta di credito. Le informazioni sono opportunamente verificate, anche attingendo, se necessario, a documentazione
+indipendente verificabile.
+2.
+Gli Stati membri assicurano che gli intermediari del credito o i rappresentanti designati abbiano cura di fornire le necessarie informazioni ottenute dal consumatore al pertinente creditore per
+consentire l’esecuzione della valutazione del merito creditizio.
+3.
+Gli Stati membri assicurano che i creditori precisino in modo chiaro e diretto già nella fase precontrattuale le informazioni e le evidenze documentali necessarie provenienti da fonti indipendenti
+verificabili che il consumatore deve fornire e il termine entro il quale devono essere fornite. Tale richiesta di informazioni è proporzionata e limitata a quanto necessario per eseguire un’adeguata
+valutazione del merito creditizio. Gli Stati membri consentono ai creditori di chiedere chiarimenti sulle informazioni ricevute in risposta a tale richiesta, se necessario per consentire la
+valutazione del merito creditizio.
+Gli Stati membri non consentono a un creditore di risolvere il contratto di credito a motivo del fatto che le informazioni fornite dal consumatore prima della conclusione del contratto di credito
+erano incomplete.
+Il secondo comma non osta a che gli Stati membri consentano la risoluzione del contratto di credito da parte del creditore qualora sia comprovato che il consumatore ha intenzionalmente omesso di
+fornire o ha falsificato le informazioni.
+4.
+Gli Stati membri pongono in essere misure per assicurare che i consumatori siano consapevoli della necessità di fornire informazioni corrette in risposta alla richiesta di cui al paragrafo 3, primo
+comma, e che tali informazioni siano sufficientemente complete per condurre un’adeguata valutazione del merito creditizio. Il creditore, l’intermediario del credito o il rappresentante designato
+avverte il consumatore che, se il creditore non può effettuare la valutazione del merito creditizio in quanto il consumatore sceglie di non fornire le informazioni o gli elementi di verifica necessari
+alla valutazione del merito creditizio, il credito non può essere accordato. Tale avvertenza può essere fornita utilizzando un formato standardizzato.
+5.
+Il presente articolo fa salva la direttiva 95/46/CE, in particolare l’articolo 6.
+CAPO 7
+ACCESSO ALLE BANCHE DATI
+
+=== K177 | [21] Accesso alle banche dati
+Articolo 21
+Accesso alle banche dati
+1.
+Ciascuno Stato membro garantisce a tutti i creditori l’accesso di tutti gli Stati membri alle banche dati utilizzate nello Stato membro in questione per valutare il merito creditizio dei consumatori e
+al solo scopo di verificare che i consumatori rispettino gli obblighi di credito per tutta la durata del contratto di credito. Le condizioni di tale accesso non sono discriminatorie.
+2.
+Il paragrafo 1 si applica sia alle banche dati gestite da credit bureau privati o da sistemi di informazione creditizia privati sia ai registri pubblici.
+3.
+Il presente articolo fa salva la direttiva 95/46/CE.
+CAPO 8
+SERVIZI DI CONSULENZA
+
+=== K178 | [22] Standard in materia di servizi di consulenza
+Articolo 22
+Standard in materia di servizi di consulenza
+1.
+Gli Stati membri garantiscono che, nel contesto di una determinata operazione, il creditore, l’intermediario del credito o il rappresentante designato indichino esplicitamente al consumatore se i
+servizi di consulenza vengono prestati o possono essere prestati al consumatore.
+2.
+Gli Stati membri garantiscono che, prima della fornitura di servizi di consulenza o, se del caso, prima della conclusione di un contratto per la prestazione di servizi di consulenza, il creditore,
+l’intermediario del credito o il rappresentante designato forniscano al consumatore le seguenti informazioni su supporto cartaceo o su altro supporto durevole:
+a)
+se la raccomandazione prenderà in considerazione solo la gamma dei propri prodotti ai sensi del paragrafo 3, lettera b), o un’ampia gamma di prodotti fra quelli reperibili sul mercato come previsto
+dal paragrafo 3, lettera c), in modo che il consumatore possa comprendere su che base la raccomandazione è effettuata;
+b)
+se del caso, il compenso dovuto dal consumatore per i servizi di consulenza o, qualora al momento della comunicazione l’importo non possa essere accertato, il metodo utilizzato per calcolarlo.
+Le informazioni di cui alle lettere a) e b) del primo comma possono essere fornite al consumatore sotto forma di informazioni precontrattuali.
+3.
+Qualora ai consumatori vengano forniti servizi di consulenza, oltre ai requisiti di cui agli articoli 7 e 9, gli Stati membri provvedono affinché:
+a)
+i creditori, gli intermediari del credito o i rappresentanti designati ottengano le informazioni necessarie circa la situazione personale e finanziaria del consumatore, le sue preferenze ed i suoi
+obiettivi, in modo da poter raccomandare contratti di credito adeguati. Tale valutazione si fonda su informazioni aggiornate e tiene conto di ipotesi ragionevoli circa i rischi per la situazione del
+consumatore per tutta la durata del contratto di credito proposto;
+b)
+i creditori, gli intermediari del credito con vincolo di mandato o i rappresentanti di intermediari del credito con vincolo di mandato prendano in considerazione un numero sufficiente di contratti di
+credito nella loro gamma di prodotti e raccomandino da tale gamma di prodotti un contratto di credito adeguato o più contratti di credito adeguati ai bisogni e alla situazione finanziaria e personale
+del consumatore;
+c)
+gli intermediari del credito senza vincolo di mandato o i rappresentanti di intermediari del credito senza vincolo di mandato prendano in considerazione un numero sufficiente di contratti di credito
+disponibili sul mercato e raccomandino un contratto di credito adeguato o più contratti di credito disponibili sul mercato adeguati ai bisogni e alla situazione finanziaria e personale del
+consumatore;
+d)
+i creditori, gli intermediari del credito o i rappresentanti designati agiscano nel migliore interesse del consumatore:
+i)
+informandosi in merito ai bisogni e alla situazione del consumatore; e
+ii)
+raccomandando contratti di credito adeguati conformemente alle lettere a), b) e c); e
+e)
+i creditori, gli intermediari del credito o i rappresentanti designati forniscano al consumatore un documento cartaceo o su altro supporto durevole contenente la raccomandazione formulata.
+4.
+Gli Stati membri possono vietare l’utilizzo dei termini «consulenza» e «consulente» o simili quando i servizi di consulenza sono forniti ai consumatori dai creditori, dagli intermediari del credito
+con vincolo di mandato o dai rappresentanti designati di intermediari del credito con vincolo di mandato.
+Se non vietano l’utilizzo dei termini «consulenza» e «consulente», gli Stati membri impongono le seguenti condizioni per l’utilizzo della menzione «consulenza indipendente» o «consulente indipendente»
+da parte dei creditori, degli intermediari del credito o dei rappresentanti designati che prestano servizi di consulenza:
+a)
+i creditori, gli intermediari del credito o i rappresentanti designati prendono in considerazione un numero sufficientemente ampio di contratti di credito disponibili sul mercato; e
+b)
+i creditori, gli intermediari del credito o i rappresentanti designati non sono remunerati per tali servizi di consulenza da uno o più creditori.
+Il secondo comma, punto b), si applica solo se il numero di creditori presi in considerazione è inferiore alla maggioranza del mercato,
+Gli Stati membri possono imporre condizioni più rigorose per l’utilizzo della menzione «consulenza indipendente» o «consulente indipendente» da parte dei creditori, degli intermediari del credito o
+dei rappresentanti designati, compreso un divieto di ricevere una remunerazione da un creditore.
+5.
+Gli Stati membri possono prevedere l’obbligo per i creditori, gli intermediari del credito e i rappresentanti designati di avvisare il consumatore quando, considerando la sua situazione finanziaria,
+un contratto di credito possa comportare un rischio specifico a suo carico.
+6.
+Gli Stati membri assicurano che i servizi di consulenza siano prestati soltanto da creditori, intermediari del credito o rappresentanti designati.
+Gli Stati membri possono decidere di non applicare il primo comma per le persone che:
+a)
+svolgono le attività di intermediazione del credito di cui all’articolo 4, punto 5, o forniscono servizi di consulenza se tali attività sono svolte o i servizi sono prestati a titolo accessorio
+nell’ambito di un’attività professionale e se quest’ultima è disciplinata da disposizioni legislative o regolamentari o da un codice di deontologia professionale che non escludono lo svolgimento di
+tali attività o la prestazione di tali servizi;
+b)
+prestano servizi di consulenza nel contesto della gestione del debito esistente e svolgono professionalmente attività per la soluzione di situazioni di insolvenza, se tale attività è disciplinata da
+disposizioni legislative o regolamentari o servizi pubblici o volontari di consulenza sul debito che non operano su base commerciale; o
+c)
+prestano servizi di consulenza e non sono creditori, intermediari del credito o rappresentanti designati, se tali persone sono abilitate e sottoposte alla vigilanza delle autorità competenti
+conformemente ai requisiti per gli intermediari del credito di cui alla presente direttiva.
+Le persone che beneficiano della deroga di cui al secondo comma non beneficiano del diritto di cui all’articolo 32, paragrafo 1, di prestare servizi nell’intero territorio dell’Unione.
+7.
+Il presente articolo fa salvi l’articolo 16 e la competenza degli Stati membri ad assicurare che siano messi a disposizione dei consumatori servizi di assistenza per aiutarli a comprendere le proprie
+esigenze finanziarie e a individuare le tipologie di prodotti potenzialmente in grado di soddisfarle.
+CAPO 9
+PRESTITI IN VALUTA ESTERA E TASSI DI INTERESSE VARIABILI
+
+=== K179 | [23] Prestiti in valuta estera
+Articolo 23
+Prestiti in valuta estera
+1.
+Gli Stati membri provvedono affinché, se il contratto di credito si riferisce a un prestito in valuta estera, sia messo a punto un quadro regolamentare adeguato nel momento in cui è concluso il
+contratto di credito, in modo da assicurare almeno che:
+a)
+il consumatore abbia il diritto di convertire il contratto di credito in una valuta alternativa a determinate condizioni; o
+b)
+esistano altri meccanismi volti a limitare il rischio di cambio a cui il consumatore è esposto in forza del contratto di credito.
+2.
+La valuta alternativa di cui al paragrafo 1, lettera a), è:
+a)
+quella in cui il consumatore percepisce principalmente il reddito o detiene gli attivi con i quali dovrà rimborsare il credito, come indicato al momento della più recente valutazione di merito
+creditizio condotta in relazione al contratto di credito; o
+b)
+quella dello Stato membro in cui il consumatore era residente al momento della conclusione del contratto di credito o è attualmente residente.
+Gli Stati membri possono precisare se sono a disposizione del consumatore entrambe le scelte di cui al primo comma, lettere a) e b), o solo una di esse o possono consentire ai creditori di precisare
+se sono a disposizione del consumatore entrambe le scelte di cui al primo comma, lettere a) e b), o solo una di esse.
+3.
+Se un consumatore ha il diritto di convertire il contratto di credito in una valuta alternativa conformemente al paragrafo 1, lettera a), gli Stati membri garantiscono che il tasso di cambio al quale
+avviene la conversione sia il tasso di mercato applicabile il giorno della domanda di conversione, salvo se diversamente precisato nel contratto di credito.
+4.
+Gli Stati membri provvedono affinché, se un consumatore ha un prestito in valuta estera, il creditore avvisi il consumatore regolarmente su carta o mediante un altro supporto durevole almeno laddove
+il valore dell’importo totale o delle rate periodiche residui a carico del consumatore vari di oltre il 20 % rispetto a quello che si avrebbe se si applicasse il tasso di cambio tra la valuta del
+contratto di credito e la valuta dello Stato membro applicabile al momento della conclusione del contratto di credito. L’avvertenza informa il consumatore dell’aumento dell’importo totale dovuto dal
+consumatore, indica, se del caso, il diritto di convertirlo in una valuta alternativa e le condizioni per farlo e illustra altri eventuali meccanismi applicabili per limitare il rischio di cambio cui
+è esposto il consumatore.
+5.
+Gli Stati membri possono disciplinare ulteriormente i prestiti in valuta estera, a condizione che tale regolamentazione non sia applicata retroattivamente.
+6.
+Le disposizioni applicabili a norma del presente articolo sono comunicate al consumatore nel PIES e nel contratto di credito. Se nel contratto di credito non esiste alcuna disposizione volta a
+limitare il rischio di cambio a cui il consumatore è esposto nel caso di una fluttuazione del tasso di cambio inferiore al 20 %, il PIES include un esempio illustrativo dell’impatto di una
+fluttuazione del 20 % sul tasso di cambio.
+
+=== K180 | [24] Crediti a tasso variabile
+Articolo 24
+Crediti a tasso variabile
+Se il contratto di credito è un credito a tasso variabile, gli Stati membri assicurano che:
+a)
+ogni indice o tasso di riferimento utilizzato per calcolare il tasso debitore sia chiaro, accessibile, obiettivo e verificabile dalle parti contrattuali e dalle autorità competenti; e
+b)
+gli archivi storici degli indici per il calcolo dei tassi debitori siano mantenuti dai fornitori di tali indici o dai creditori.
+CAPO 10
+BUONA ESECUZIONE DEI CONTRATTI DI CREDITO E DIRITTI CONNESSI
+
+=== K181 | [25] Estinzione anticipata
+Articolo 25
+Estinzione anticipata
+1.
+Gli Stati membri assicurano che il consumatore abbia il diritto di adempiere in tutto o in parte agli obblighi che gli derivano da un contratto di credito prima della scadenza di tale contratto. In
+tal caso, il consumatore ha diritto ad una riduzione del costo totale del credito al consumatore, che riguarda gli interessi e i costi dovuti per la restante durata del contratto.
+2.
+Gli Stati membri possono provvedere affinché l’esercizio del diritto di cui al paragrafo 1 sia soggetto a determinate condizioni. Tra queste condizioni possono figurare restrizioni temporali
+sull’esercizio del diritto, un trattamento diverso a seconda del tipo di tasso debitore o del momento in cui il consumatore esercita il diritto, o restrizioni relative alle condizioni alle quali il
+diritto può essere esercitato.
+3.
+►C2
+Gli Stati membri possono prevedere che il creditore abbia diritto, laddove giustificato, ad un indennizzo equo e obiettivo per gli eventuali costi direttamente connessi al rimborso anticipato, ma non
+può imporre una penale al consumatore. ◄ A tale riguardo, l’indennizzo non è superiore alla perdita economica sofferta dal creditore. Nel rispetto di tali condizioni, gli Stati membri possono
+prevedere che l’indennizzo non possa superare un determinato livello o sia consentito soltanto per un certo periodo.
+4.
+Se un consumatore intende adempiere agli obblighi che gli derivano da un contratto di credito prima della scadenza di tale contratto, il creditore fornisce al consumatore, senza indugio dopo la
+ricezione della richiesta, su supporto cartaceo o su altro supporto durevole, le informazioni necessarie per prendere in considerazione tale opzione. Le informazioni quantificano almeno le
+implicazioni per il consumatore in caso di adempimento dei suoi obblighi prima della scadenza del contratto di credito e indicano chiaramente le ipotesi utilizzate. Le ipotesi utilizzate sono
+ragionevoli e giustificabili.
+5.
+Se il rimborso anticipato cade in un periodo per il quale il tasso debitore è fisso, gli Stati membri possono prevedere che l’esercizio del diritto di cui al paragrafo 1 sia subordinato all’esistenza
+di un interesse legittimo del consumatore.
+
+=== K182 | [26] Mercati flessibili e affidabili
+Articolo 26
+Mercati flessibili e affidabili
+1.
+Gli Stati membri mettono a punto meccanismi adeguati per assicurare che il diritto sulla garanzia reale sia esigibile da parte o a nome dei creditori. Gli Stati membri assicurano che i creditori
+mantengano idonei registri riguardanti i tipi di beni immobili accettati come garanzia reale, nonché le relative politiche di sottoscrizione di mutui ipotecari utilizzate.
+2.
+Gli Stati membri adottano le misure necessarie onde assicurare un controllo statistico adeguato del mercato immobiliare residenziale, anche a fini di vigilanza del mercato, ove opportuno incoraggiando
+lo sviluppo e l’utilizzo di specifici indici dei prezzi, che possono essere pubblici, privati o entrambi.
+
+=== K183 | [27] Informazioni relative alle modifiche del tasso debitore
+Articolo 27
+Informazioni relative alle modifiche del tasso debitore
+1.
+Gli Stati membri provvedono affinché il creditore informi il consumatore di eventuali modifiche del tasso debitore dandone comunicazione su supporto cartaceo o altro supporto durevole prima che
+decorrano gli effetti della modifica. L’informazione comprende almeno l’importo dei pagamenti da effettuare dopo che il nuovo tasso debitore sia divenuto applicabile e, se il numero o la frequenza dei
+pagamenti sono modificati, i relativi dettagli.
+2.
+Gli Stati membri possono tuttavia consentire alle parti di convenire nel contratto di credito che l’informazione di cui al paragrafo 1 sia fornita al consumatore periodicamente nel caso in cui la
+modifica del tasso debitore sia correlata a una modifica di un tasso di riferimento, che il nuovo tasso di riferimento sia reso pubblico con mezzi appropriati e che l’informazione relativa al nuovo
+tasso di riferimento sia altresì disponibile presso i locali del creditore e comunicata personalmente al consumatore unitamente all’importo delle nuove rate periodiche.
+3.
+I creditori possono continuare a informare i consumatori periodicamente qualora la modifica del tasso debitore non sia correlata a una modifica di un tasso di riferimento, ove ciò fosse già consentito
+a norma del diritto nazionale prima del 20 marzo 2014.
+4.
+Qualora le variazioni del tasso debitore siano determinate tramite asta sui mercati dei capitali e, di conseguenza, il creditore non sia in grado di comunicare la variazione al consumatore prima che
+essa divenga applicabile, il creditore provvede, in tempo utile prima dell’asta, a informare il consumatore su carta o mediante un altro supporto durevole dell’imminente procedura e a fornire
+un’indicazione delle possibili conseguenze per il tasso debitore.
+▼M2
+
+=== K184 | [27-bis] Informazioni relative alla modifica dei termini e delle condizioni di un contratto di credito
+Articolo 27 bis
+Informazioni relative alla modifica dei termini e delle condizioni di un contratto di credito
+Fatti salvi altri obblighi di cui alla presente direttiva, gli Stati membri provvedono affinché, prima di modificare i termini e le condizioni di un contratto di credito, il creditore comunichi al
+consumatore le informazioni seguenti:
+a)
+una descrizione chiara delle modifiche proposte e, se del caso, della necessità del consenso del consumatore o delle modifiche introdotte per legge;
+b)
+il calendario per l’attuazione delle modifiche di cui alla lettera a);
+c)
+i mezzi di reclamo a disposizione del consumatore a fronte delle modifiche di cui alla lettera a);
+d)
+il periodo di tempo a disposizione per presentare un reclamo;
+e)
+il nome e l’indirizzo dell’autorità competente alla quale il consumatore può presentare il reclamo.
+▼B
+
+=== K185 | [28] Morosità e pignoramenti
+Articolo 28
+Morosità e pignoramenti
+▼M2
+1.
+Gli Stati membri prescrivono ai creditori di dotarsi di politiche e procedure adeguate affinché si adoperino per esercitare, se del caso, un ragionevole grado di tolleranza prima dell’avvio di
+procedure di escussione. Tali misure di tolleranza tengono conto, tra l’altro, della situazione del consumatore e possono consistere, tra l’altro, in:
+a)
+un rifinanziamento integrale o parziale di un contratto di credito;
+b)
+una modifica dei termini e delle condizioni esistenti di un contratto di credito, che può includere, tra l’altro:
+i)
+l’estensione della durata del contratto di credito;
+ii)
+il cambiamento della tipologia del contratto di credito;
+iii)
+il differimento totale o parziale del pagamento delle rate da rimborsare per un determinato periodo;
+iv)
+la modifica del tasso di interesse;
+v)
+la concessione di una sospensione temporanea dei pagamenti;
+vi)
+rimborsi parziali;
+vii)
+conversioni valutarie;
+viii)
+la remissione parziale e il consolidamento del debito.
+▼M2
+1 bis .
+L’elenco delle potenziali misure di tolleranza di cui al paragrafo 1, lettera b), non pregiudica le norme stabilite dal diritto nazionale e non impone agli Stati membri di prevedere tutte queste
+misure nel loro diritto nazionale.
+▼B
+2.
+Gli Stati membri possono imporre che, qualora al creditore sia consentito definire e imporre al consumatore oneri derivanti dall’inadempimento, tali oneri non siano superiori a quanto necessario per
+compensare il creditore dei costi sostenuti a causa dell’inadempimento.
+3.
+Gli Stati membri possono consentire ai creditori di imporre oneri aggiuntivi al consumatore in caso di inadempimento. In tal caso, gli Stati membri fissano un limite massimo per tali oneri.
+4.
+Gli Stati membri non impediscono alle parti di un contratto di credito di convenire espressamente che la restituzione o il trasferimento della garanzia reale o dei proventi della vendita della
+garanzia reale è sufficiente a rimborsare il credito.
+5.
+Se il prezzo ottenuto per il bene immobile influisce sull’importo dovuto dal consumatore, gli Stati membri predispongono procedure o misure intese a consentire di ottenere il miglior prezzo possibile
+per la vendita del bene immobile in garanzia.
+Se a seguito di una procedura esecutiva rimane un debito residuo, gli Stati membri assicurano che siano poste in essere misure intese a facilitare il rimborso al fine di proteggere i consumatori.
+▼M2
+
+=== K186 | [28-bis] Cessione dei diritti acquisiti dal creditore o del contratto di credito stesso
+Articolo 28 bis
+Cessione dei diritti acquisiti dal creditore o del contratto di credito stesso
+1.
+In caso di cessione a terzi dei diritti del creditore derivanti da un contratto di credito o del contratto di credito stesso, il consumatore ha il diritto di far valere nei confronti del cessionario
+gli stessi mezzi di difesa di cui poteva avvalersi nei confronti del creditore originario, ivi compreso il diritto all’indennizzo ove questo sia ammesso nello Stato membro in questione.
+2.
+Il consumatore è informato della cessione di cui al paragrafo 1, a meno che il creditore originario, in accordo con il cessionario, continui a gestire il credito nei confronti del consumatore.
+▼B
+CAPO 11
+REQUISITI PER LO STABILIMENTO E LA VIGILANZA DI INTERMEDIARI DEL CREDITO E RAPPRESENTANTI DESIGNATI
+
+=== K187 | [29] Abilitazione degli intermediari del credito
+Articolo 29
+Abilitazione degli intermediari del credito
+1.
+Gli intermediari del credito sono debitamente abilitati per l’esercizio di tutte o una parte delle attività di intermediazione del credito di cui all’articolo 4, punto 5, o per la prestazione di
+servizi di consulenza da un’autorità competente nel loro Stato membro d’origine. Se uno Stato membro consente di designare i rappresentanti di cui all’articolo 31, tale rappresentante designato non
+necessita di un’abilitazione come intermediario del credito ai sensi del presente articolo.
+2.
+Gli Stati membri provvedono affinché l’abilitazione degli intermediari del credito sia subordinata al possesso almeno dei seguenti requisiti professionali, oltre ai requisiti di cui all’articolo 9:
+a)
+gli intermediari del credito sono in possesso di un’assicurazione per la responsabilità civile professionale valida in tutto il territorio dei paesi nei quali offrono i propri servizi, oppure di
+analoga garanzia per i danni derivanti da negligenza nell’esercizio della loro professione. Tuttavia, per gli intermediari del credito con vincolo di mandato, lo Stato membro di origine può prevedere
+che tale assicurazione o analoga garanzia possa essere fornita da un creditore per conto del quale l’intermediario del credito è delegato ad operare.
+Alla Commissione è delegato il potere di adottare e, qualora necessario, modificare norme tecniche di regolamentazione che determinano l’importo monetario minimo dell’assicurazione della
+responsabilità civile professionale o di garanzie analoghe di cui al primo comma della presente lettera. Tali norme tecniche di regolamentazione sono adottate conformemente agli articoli da 10 a 14
+del regolamento (UE) n. 1093/2010.
+L’ABE elabora progetti di norme tecniche di regolamentazione che stabiliscono l’importo monetario minimo dell’assicurazione della responsabilità civile professionale o della garanzia analoga di cui al
+primo comma della presente lettera e li presenta alla Commissione entro il 21 settembre 2014. L’ABE riesamina e, se necessario, elabora progetti di norme tecniche di regolamentazione che modificano
+l’importo monetario minimo dell’assicurazione della responsabilità civile professionale o della garanzia analoga di cui al primo comma della presente lettera e li presenta alla Commissione per la
+prima volta entro il 21 marzo 2018 e successivamente ogni due anni;
+b)
+una persona fisica abilitata come intermediario del credito, coloro che ricoprono cariche presso un intermediario del credito costituito come persona giuridica e le persone fisiche che svolgono
+compiti equivalenti all’interno di un intermediario del credito che è una persona giuridica ma non ha organi societari possiedono il requisito dell’onorabilità. Essi devono almeno possedere un
+certificato penale che non riporta condanne o un documento avente funzione analoga a livello nazionale in riferimento a gravi illeciti penali connessi con reati contro il patrimonio o altri reati in
+relazione ad attività finanziarie e non devono essere stati dichiarati falliti, salvo che sia intervenuta la riabilitazione a norma del diritto nazionale;
+c)
+una persona fisica abilitata in qualità di intermediario del credito, coloro che ricoprono cariche di un intermediario del credito costituito come persona giuridica e le persone fisiche che svolgono
+compiti equivalenti all’interno di un intermediario del credito che è una persona giuridica ma non ha organi societari hanno un livello di conoscenza e di competenza adeguato in relazione ai contratti
+di credito. Lo Stato membro di origine stabilisce il livello adeguato di conoscenza e competenza conformemente ai principi di cui all’allegato III.
+3.
+Gli Stati membri assicurano che siano resi pubblici i criteri stabiliti per assicurare che il personale degli intermediari del credito o dei creditori rispetti i requisiti di competenza professionale
+ad esso richiesti.
+4.
+Gli Stati membri assicurano che tutti gli intermediari del credito abilitati, indipendentemente dal fatto che siano stabiliti in qualità di persone fisiche o giuridiche, siano iscritti in un registro
+tenuto da un’autorità competente nei loro Stati membri di origine. Gli Stati membri assicurano che il registro degli intermediari del credito sia aggiornato e pubblicamente disponibile in linea.
+Il registro degli intermediari del credito contiene almeno le seguenti informazioni:
+a)
+i nomi delle persone che fanno parte del personale dirigente e che sono responsabili dell’attività di intermediazione. Gli Stati membri possono esigere la registrazione di tutte le persone fisiche che
+svolgono una funzione a contatto con la clientela in un’impresa che esercita l’attività di intermediario del credito;
+b)
+gli Stati membri in cui l’intermediario del credito esercita l’attività in regime di libertà di stabilimento o di libera prestazione di servizi e di cui l’intermediario del credito ha informato
+l’autorità competente dello Stato membro d’origine, conformemente all’articolo 32, paragrafo 3;
+c)
+se l’intermediario del credito sia soggetto a vincolo di mandato o meno.
+Gli Stati membri che decidono di avvalersi dell’opzione di cui all’articolo 30 garantiscono che il registro indichi il creditore a nome del quale agisce l’intermediario del credito con vincolo di
+mandato.
+Gli Stati membri che decidono di avvalersi dell’opzione di cui all’articolo 31 garantiscono che il registro indichi l’intermediario del credito o, nel caso di un rappresentante designato di un
+intermediario del credito con vincolo di mandato, il creditore a nome del quale agisce il rappresentante designato.
+5.
+Gli Stati assicurano che:
+a)
+ogni intermediario del credito che sia una persona giuridica abbia la sua sede principale nello stesso Stato membro nel quale è situata la sua sede legale (se ha una sede legale in base alla
+legislazione nazionale);
+b)
+un intermediario del credito che non è una persona giuridica o un intermediario del credito che è una persona giuridica ma che in base alla legislazione nazionale non ha una sede legale, abbia la sede
+principale nello Stato membro in cui esercita effettivamente la sua attività principale.
+6.
+Ogni Stato membro istituisce uno sportello unico che consenta di accedere agevolmente e rapidamente alle informazioni provenienti dal registro nazionale, istituito elettronicamente e aggiornato
+costantemente. Lo sportello unico consente di identificare le autorità competenti di ciascuno Stato membro.
+L’ABE pubblica sul suo sito web riferimenti o collegamenti ipertestuali a tale sportello.
+7.
+Gli Stati membri d’origine garantiscono che tutti gli intermediari del credito abilitati e i loro rappresentanti designati rispettino in via permanente i requisiti di cui al paragrafo 2. Il presente
+paragrafo lascia impregiudicati gli articoli 30 e 31.
+8.
+Gli Stati membri possono decidere di non applicare il presente articolo per quanto riguarda le persone che svolgono le attività di intermediazione del credito di cui all’articolo 4, punto 5, se
+svolgono tali attività a titolo accessorio nell’ambito di un’attività professionale e se quest’ultima è disciplinata da disposizioni legislative o regolamentari o da un codice di deontologia
+professionale che non escludono lo svolgimento di tali attività.
+9.
+Il presente articolo non si applica agli enti creditizi titolari di un’autorizzazione in conformità alla direttiva 2013/36/UE né ad altri enti finanziari che, a norma del proprio diritto nazionale,
+sono soggetti a un regime di autorizzazione e vigilanza equivalente.
+
+=== K188 | [30] Intermediari del credito con vincolo di mandato verso un solo creditore
+Articolo 30
+Intermediari del credito con vincolo di mandato verso un solo creditore
+1.
+Fatto salvo l’articolo 31, paragrafo 1, gli Stati membri possono consentire agli intermediari del credito con vincolo di mandato indicati nell’articolo 4, punto 7, lettera a), di essere abilitati
+dalle autorità competenti attraverso il creditore a nome del quale agiscono a titolo esclusivo.
+In tali casi il creditore mantiene la responsabilità piena e incondizionata per qualunque azione o omissione compiuta dall’intermediario del credito con vincolo di mandato che agisce per conto del
+creditore nei settori disciplinati dalla presente direttiva. Gli Stati membri esigono che il creditore assicuri che gli intermediari del credito con vincolo di mandato rispondano almeno ai requisiti
+professionali di cui all’articolo 29, paragrafo 2.
+2.
+Fatto salvo l’articolo 34, i creditori controllano le attività esercitate dagli intermediari del credito con vincolo di mandato specificati all’articolo 4, punto 7, lettera a), in modo che continuino
+a rispettare la presente direttiva. In particolare il creditore è responsabile del controllo del rispetto dei requisiti di conoscenza e di competenza dell’intermediario del credito con vincolo di
+mandato e del suo personale.
+
+=== K189 | [31] Rappresentanti designati
+Articolo 31
+Rappresentanti designati
+1.
+Gli Stati membri possono decidere di permettere a un intermediario del credito di nominare rappresentanti designati.
+Se un rappresentante designato è nominato da un intermediario del credito con vincolo di mandato specificato all’articolo 4, punto 7, lettera a), il creditore mantiene la responsabilità piena e
+incondizionata per qualunque azione o omissione compiuta dal rappresentante designato che agisce per conto di tale intermediario del credito in settori disciplinati dalla presente direttiva. Negli
+altri casi l’intermediario del credito mantiene la responsabilità piena e incondizionata per qualunque azione o omissione compiuta dal rappresentante designato che agisce per conto dell’intermediario
+del credito nei settori disciplinati dalla presente direttiva.
+2.
+Gli intermediari del credito assicurano che i loro rappresentanti designati siano in possesso almeno dei requisiti di cui all’articolo 29, paragrafo 2. Tuttavia lo Stato membro di origine può
+prevedere che l’assicurazione della responsabilità civile professionale o l’analoga garanzia possa essere fornita da un intermediario del credito per conto del quale il rappresentante designato è
+autorizzato ad agire.
+3.
+Fatto salvo l’articolo 34, gli intermediari del credito controllano le attività esercitate dai loro rappresentanti designati in modo da garantire il pieno rispetto della presente direttiva. In
+particolare gli intermediari del credito sono responsabili del controllo del rispetto dei requisiti di conoscenza e di competenza dei rappresentanti designati e del loro personale.
+4.
+Gli Stati membri che decidono di permettere agli intermediari del credito di nominare rappresentanti istituiscono un registro pubblico che contiene almeno le informazioni di cui all’articolo 29,
+paragrafo 4. I rappresentanti designati sono iscritti nel registro pubblico dello Stato membro in cui sono stabiliti. Il registro è aggiornato regolarmente. Esso può essere consultato in linea dal
+pubblico.
+
+=== K190 | [32] Libertà di stabilimento e libertà di prestazione di servizi da parte di intermediari del credito
+Articolo 32
+Libertà di stabilimento e libertà di prestazione di servizi da parte di intermediari del credito
+1.
+L’abilitazione di un intermediario del credito da parte dell’autorità competente del suo Stato membro d’origine di cui all’articolo 29, paragrafo 1, è valida per l’intero territorio dell’Unione senza
+che sia necessaria alcuna abilitazione supplementare da parte delle autorità competenti degli Stati membri ospitanti per svolgere le attività e fornire i servizi contemplati dall’abilitazione, a
+condizione che le attività che un intermediario del credito intende svolgere nello Stato membro ospitante siano coperte dall’abilitazione. Tuttavia agli intermediari del credito non è permesso fornire
+i loro servizi in relazione a contratti di credito offerti da enti e non creditizi ai consumatori in uno Stato membro in cui a tale ente non creditizio non è permesso operare.
+2.
+Ai rappresentanti designati negli Stati membri che si avvalgono dell’opzione di cui all’articolo 31 non è permesso svolgere le attività di intermediazione del credito di cui all’articolo 4, punto 5,
+in tutto o in parte, o di fornire servizi di consulenza negli Stati membri in cui a tali rappresentanti designati non è permesso operare.
+3.
+Qualsiasi intermediario del credito abilitato che intenda esercitare per la prima volta in uno o più Stati membri la propria attività in regime di libera prestazione di servizi o al momento di
+stabilire una succursale informa le autorità competenti del proprio Stato membro d’origine.
+Entro un mese a decorrere da tale comunicazione le suddette autorità competenti notificano alle autorità competenti degli Stati membri ospitanti interessati l’intenzione dell’intermediario del credito
+e, contestualmente, informano della notificazione l’intermediario interessato. Esse notificano alle autorità competenti degli Stati membri ospitanti interessati i creditori a cui l’intermediario del
+credito è vincolato da un vincolo di mandato e se i creditori assumano la responsabilità piena e incondizionata per le attività dell’intermediario del credito. Lo Stato membro ospitante utilizza le
+informazioni ricevute dallo Stato membro di origine per inserire le informazioni necessarie nel suo registro.
+L’intermediario del credito può iniziare l’attività un mese dopo la data alla quale è stato informato dalle autorità competenti dello Stato membro d’origine della notificazione di cui al secondo
+comma.
+4.
+Prima che la succursale dell’intermediario del credito avvii le attività o entro due mesi a decorrere dalla data di ricevimento della notificazione di cui al paragrafo 3, secondo comma, le autorità
+competenti dello Stato membro ospitante predispongono la vigilanza sull’intermediario del credito in conformità all’articolo 34 e indicano all’intermediario del credito, se del caso, le condizioni
+alle quali, in settori non armonizzati nel diritto dell’Unione, tali attività devono essere esercitate nello Stato membro ospitante.
+
+=== K191 | [33] Revoca dell’abilitazione degli intermediari del credito
+Articolo 33
+Revoca dell’abilitazione degli intermediari del credito
+1.
+L’autorità competente dello Stato membro di origine può revocare l’abilitazione concessa a un intermediario del credito conformemente all’articolo 29 se tale intermediario del credito:
+a)
+rinuncia espressamente all’abilitazione o non ha né svolto attività di intermediazione del credito di cui all’articolo 4, punto 5, né prestato servizi da sei mesi, a meno che lo Stato membro
+interessato non abbia disposto, per tali casi, la decadenza dall’abilitazione;
+b)
+ha ottenuto l’abilitazione presentando dichiarazioni false o ingannevoli o con qualsiasi altro mezzo irregolare;
+c)
+non risponde più ai requisiti necessari per ottenere l’abilitazione;
+d)
+rientra in uno dei casi in cui la revoca è prevista dalla legislazione nazionale, per questioni che esulano dall’ambito di applicazione della presente direttiva;
+e)
+ha violato in modo grave o sistematico le disposizioni adottate in applicazione della presente direttiva che disciplinano le condizioni di esercizio dell’attività degli intermediari del credito.
+2.
+Qualora l’abilitazione di un intermediario del credito venga ritirata dalle autorità competenti dello Stato membro di origine, questo ne informa le autorità competenti degli Stati membri ospitanti
+appena possibile e al più tardi entro quattordici giorni, con tutti i mezzi adeguati.
+3.
+Gli Stati membri provvedono affinché gli intermediari del credito la cui abilitazione è stata ritirata siano cancellati dal registro senza indebito ritardo.
+
+=== K192 | [34] Vigilanza degli intermediari del credito e dei rappresentanti designati
+Articolo 34
+Vigilanza degli intermediari del credito e dei rappresentanti designati
+1.
+Gli Stati membri provvedono affinché le attività svolte nel continuo dagli intermediari del credito siano soggette alla vigilanza delle autorità competenti dello Stato membro d’origine.
+Gli Stati membri d’origine stabiliscono che gli intermediari del credito con vincolo di mandato siano soggetti a vigilanza direttamente o nell’ambito della vigilanza del creditore per conto del quale
+agiscono se il creditore è un ente creditizio titolare di un’autorizzazione in conformità alla direttiva 2013/36/UE o altro ente finanziario che, a norma del diritto nazionale, è soggetto a un regime
+di autorizzazione e vigilanza equivalente. Tuttavia, se presta servizi in uno Stato membro diverso dallo Stato membro di origine, l’intermediario del credito con vincolo di mandato è direttamente
+soggetto a vigilanza.
+Gli Stati membri di origine che consentono agli intermediari del credito di designare rappresentanti conformemente all’articolo 31 assicurano che tali rappresentanti designati siano soggetti a
+vigilanza esercitata direttamente o nel quadro della vigilanza condotta sull’intermediario del credito per conto del quale agiscono.
+2.
+Le autorità competenti degli Stati membri in cui un intermediario del credito ha una succursale hanno la responsabilità di accertarsi che i servizi prestati dall’intermediario del credito nel loro
+territorio soddisfino gli obblighi previsti dall’articolo 7, paragrafo 1, e dagli articoli 8, 9, 10, 11, 13, 14, 15, 16, 17, 20, 22 e 39 e dalle misure adottate in applicazione di tali disposizioni.
+Se le autorità competenti di uno Stato membro ospitante accertano che un intermediario del credito con una succursale nel territorio di tale Stato membro viola le disposizioni adottate nello Stato
+membro stesso in attuazione dell’articolo 7, paragrafo 1, e dagli articoli 8, 9, 10, 11, 13, 14, 15, 16, 17, 20, 22 e 39, tali autorità esigono che l’intermediario del credito interessato ponga fine
+alla sua situazione irregolare.
+Se l’intermediario del credito interessato non adotta i provvedimenti necessari, le autorità competenti dello Stato membro ospitante adottano tutte le misure appropriate per assicurare che esso ponga
+fine alla sua situazione irregolare. La natura di tali misure è comunicata alle autorità competenti dello Stato membro di origine.
+Se, nonostante le misure adottate dallo Stato membro ospitante, l’intermediario del credito persiste nel violare le disposizioni di cui al primo comma vigenti nello Stato membro ospitante,
+quest’ultimo può, dopo aver informato le autorità competenti dello Stato membro d’origine, adottare misure appropriate per impedire o sanzionare ulteriori irregolarità e, nella misura necessaria, per
+impedire a detto intermediario del credito di avviare ulteriori operazioni nel suo territorio. La Commissione è informata di tali eventuali misure senza indebito ritardo.
+Se l’autorità competente dello Stato membro di origine è in disaccordo con le misure adottate dallo Stato membro ospitante, può rinviare la questione all’ABE e richiederne l’assistenza conformemente
+all’articolo 19 del regolamento (UE) n. 1093/2010. In tal caso l’ABE può agire conformemente ai poteri che le conferisce tale articolo.
+3.
+Le autorità competenti degli Stati membri in cui la succursale è ubicata hanno il diritto di esaminare l’organizzazione della succursale e di richiedere di apportarvi le modifiche strettamente
+necessarie per adempiere alle sue responsabilità di cui al paragrafo 2 e per consentire alle autorità competenti dello Stato membro di origine di far rispettare gli obblighi previsti dall’articolo 7,
+paragrafi 2, 3 e 4, e dalle misure adottate in applicazione di tali disposizioni per quanto riguarda i servizi prestati dalla succursale.
+4.
+Se l’autorità competente dello Stato membro ospitante ha motivi chiari e dimostrabili per ritenere che un intermediario del credito operante nel suo territorio in regime di libera prestazione di
+servizi non ottemperi agli obblighi derivanti dalle disposizioni adottate a norma della presente direttiva, o che un intermediario del credito con una succursale nel suo territorio non ottemperi agli
+obblighi derivanti dalle disposizioni adottate a norma della presente direttiva diversi da quelli indicati nel paragrafo 2, ne informa l’autorità competente dello Stato membro di origine, che adotta
+le misure adeguate.
+Se l’autorità competente dello Stato membro di origine non adotta misure entro un mese dalla ricezione di tali elementi o se, nonostante le misure adottate dall’autorità competente dello Stato membro
+di origine, un intermediario del credito persiste nell’agire in modo tale da mettere chiaramente a repentaglio gli interessi dei consumatori dello Stato membro ospitante o il funzionamento ordinato
+dei mercati, l’autorità competente dello Stato membro ospitante:
+a)
+dopo aver informato l’autorità competente dello Stato membro di origine, adotta tutte le misure adeguate necessarie per proteggere i consumatori e garantire il corretto funzionamento dei mercati,
+anche impedendo all’intermediario del credito in questione di avviare nuove operazioni nel suo territorio. La Commissione e l’EBA sono informate di tali misure senza indebito ritardo;
+b)
+può portare la questione all’attenzione dell’ABE e richiederne l’assistenza conformemente all’articolo 19 del regolamento (UE) n. 1093/2010. In tal caso l’ABE può agire conformemente ai poteri che le
+conferisce tale articolo.
+5.
+Gli Stati membri prevedono che, se un intermediario del credito abilitato in un altro Stato membro ha stabilito una succursale nel suo territorio, le autorità competenti dello Stato membro di origine
+possano, nell’esercizio delle loro competenze e dopo aver informato le autorità competenti dello Stato membro ospitante, effettuare ispezioni presso tale succursale.
+6.
+La ripartizione dei compiti tra Stati membri indicata nel presente articolo fa salve le competenze degli Stati membri in relazione agli ambiti non contemplati dalla presente direttiva conformemente ai
+loro obblighi ai sensi del diritto dell’Unione.
+CAPO 12
+ABILITAZIONE E VIGILANZA DEGLI ENTI NON CREDITIZI
+
+=== K193 | [35] Abilitazione e vigilanza degli enti non creditizi
+Articolo 35
+Abilitazione e vigilanza degli enti non creditizi
+Gli Stati membri assicurano che gli enti non creditizi siano soggetti ad un’adeguata procedura di abilitazione, che comprenda l’iscrizione dell’ente non creditizio in un registro, nonché alla
+vigilanza da parte di un’autorità competente.
+CAPO 13
+COOPERAZIONE TRA LE AUTORITÀ COMPETENTI DEI DIVERSI STATI MEMBRI
+
+=== K194 | [36] Obbligo di cooperazione
+Articolo 36
+Obbligo di cooperazione
+1.
+Le autorità competenti dei diversi Stati membri collaborano tra loro ogni qualvolta ciò si renda necessario per l’espletamento delle mansioni loro assegnate dalla presente direttiva, avvalendosi dei
+poteri loro conferiti dalla presente direttiva o dal diritto nazionale.
+Le autorità competenti prestano assistenza alle autorità competenti degli altri Stati membri. In particolare si scambiano informazioni e collaborano nell’ambito delle indagini o in relazione alle
+attività di vigilanza.
+Al fine di agevolare ed accelerare la collaborazione e più particolarmente lo scambio di informazioni, gli Stati membri designano un’unica autorità competente quale punto di contatto ai fini della
+presente direttiva. Gli Stati membri comunicano alla Commissione e agli altri Stati membri i nomi delle autorità designate a ricevere le richieste di scambi di informazioni o di collaborazione a norma
+del presente paragrafo.
+2.
+Gli Stati membri adottano le misure amministrative e organizzative necessarie per facilitare l’assistenza prevista al paragrafo 1.
+3.
+Le autorità competenti degli Stati membri che sono state designate quali punti di contatto ai fini della presente direttiva a norma del paragrafo 1 si scambiano senza indebito ritardo le informazioni
+richieste per lo svolgimento dei compiti delle autorità competenti designate in conformità all’articolo 5, previste dalle disposizioni adottate a norma della presente direttiva.
+Le autorità competenti che scambiano informazioni con altre autorità competenti ai sensi della presente direttiva possono indicare, al momento della comunicazione, che tali informazioni non devono
+essere divulgate senza il loro esplicito consenso; in tal caso, dette informazioni possono essere scambiate unicamente per le finalità per le quali le predette autorità hanno espresso il loro accordo.
+L’autorità competente designata quale punto di contatto può trasmettere le informazioni ricevute alle altre autorità competenti, ma non trasmette le informazioni ad altri organismi o persone fisiche o
+giuridiche senza il consenso esplicito delle autorità competenti che le hanno fornite ed esclusivamente per i fini per i quali tali autorità hanno espresso il loro consenso, tranne in circostanze
+debitamente giustificate, nel qual caso informa immediatamente il punto di contatto che ha fornito le informazioni.
+4.
+Un’autorità competente può rifiutare di adempiere a una richiesta di collaborazione in un’indagine o in un’attività di vigilanza, ovvero di scambiare informazioni come previsto al paragrafo 3 solo
+qualora:
+a)
+l’indagine, l’ispezione, l’attività di vigilanza o lo scambio di informazioni rischi di pregiudicare la sovranità, la sicurezza o l’ordine pubblico dello Stato membro interessato;
+b)
+sia già stato avviato un procedimento giudiziario per gli stessi atti e contro le stesse persone dinanzi alle autorità dello Stato membro interessato;
+c)
+le stesse persone siano già state oggetto di una sentenza passata in giudicato nello Stato membro in questione per gli stessi atti.
+In caso di rifiuto per uno dei predetti motivi, l’autorità competente informa l’autorità competente richiedente, fornendo spiegazioni il più dettagliate possibile.
+
+=== K195 | [37] Risoluzione delle controversie tra autorità competenti di Stati membri diversi
+Articolo 37
+Risoluzione delle controversie tra autorità competenti di Stati membri diversi
+Le autorità competenti possono portare all’attenzione dell’ABE la situazione in cui la richiesta di cooperazione, in particolare lo scambio di informazioni, è stata respinta o non ha ricevuto seguito
+entro un periodo di tempo ragionevole, e chiedere l’assistenza dell’ABE ai sensi dell’articolo 19 del regolamento (UE) n. 1093/2010. In questi casi l’ABE può agire conformemente ai poteri che le
+conferisce tale articolo e qualsiasi decisione vincolante adottata dall’ABE conformemente con tale articolo è vincolante per le autorità competenti interessate, che siano o meno membri dell’ABE.
+CAPO 14
+DISPOSIZIONI FINALI
+
+=== K196 | [38] Sanzioni
+Articolo 38
+Sanzioni
+1.
+Gli Stati membri stabiliscono le norme riguardanti le sanzioni applicabili alle violazioni delle disposizioni di diritto interno adottate sulla base della presente direttiva e adottano tutte le misure
+necessarie per garantirne l’applicazione. Tali sanzioni sono efficaci, proporzionate e dissuasive.
+2.
+Gli Stati membri prevedono che l’autorità competente possa rendere al pubblico qualsiasi sanzione amministrativa applicata per il mancato rispetto delle misure adottate nel recepimento della presente
+direttiva, salvo il caso in cui tale divulgazione possa mettere gravemente a rischio i mercati finanziari, o arrecare un danno sproporzionato alle parti coinvolte.
+
+=== K197 | [39] Meccanismi di risoluzione delle controversie
+Articolo 39
+Meccanismi di risoluzione delle controversie
+1.
+Gli Stati membri garantiscono l’istituzione di procedure di reclamo e risoluzione adeguate ed efficaci per la composizione extragiudiziale di controversie tra consumatori e creditori, intermediari del
+credito e rappresentanti designati in relazione a contratti di credito, avvalendosi, se del caso, di organi già esistenti. Gli Stati membri assicurano che tali procedure siano applicabili ai creditori
+e agli intermediari del credito e coprano le attività dei rappresentanti designati.
+2.
+Gli Stati membri impongono agli organi responsabili delle composizioni extragiudiziali di controversie riguardanti i consumatori di collaborare affinché possano essere risolte controversie
+transfrontaliere in materia di contratti di credito.
+
+=== K199 | [41] Natura vincolante della presente direttiva
+Articolo 41
+Natura vincolante della presente direttiva
+Gli Stati membri assicurano che:
+a)
+i consumatori non possano rinunciare ai diritti loro conferiti dalla normativa nazionale di recepimento della presente direttiva;
+b)
+le disposizioni adottate per il recepimento della presente direttiva non possano essere eluse in un modo che possa determinare la perdita della protezione concessa ai consumatori dalla presente
+direttiva attraverso particolari formulazioni dei contratti, in particolare includendo contratti di credito che rientrano nell’ambito di applicazione della presente direttiva in contratti di credito
+la cui natura o finalità consenta di evitare l’applicazione di tali disposizioni.
+
+=== K201 | [43] Disposizioni transitorie
+Articolo 43
+Disposizioni transitorie
+1.
+La presente direttiva non si applica ai contratti di credito in essere prima del 21 marzo 2016.
+▼M1
+L'articolo 13, paragrafo 1, secondo comma, lettera e bis ), non si applica ai contratti di credito esistenti prima del 1 o luglio 2018.
+▼B
+2.
+Gli intermediari del credito che già svolgono le attività di intermediazione del credito di cui all’articolo 4, punto 5, prima del 21 marzo 2016 e che non sono stati ancora abilitati conformemente
+alle condizioni stabilite nel diritto nazionale dello Stato membro di origine che recepisce la presente direttiva possono continuare a svolgere tali attività conformemente al diritto nazionale fino al
+21 marzo 2017. Se un intermediario del credito invoca tale deroga, può svolgere le attività soltanto all’interno del suo Stato membro d’origine a meno che non soddisfi anche i necessari requisiti
+giuridici degli Stati membri ospitanti.
+3.
+I creditori, gli intermediari del credito o i rappresentanti designati che svolgono attività disciplinate dalla presente direttiva prima del 20 marzo 2014 si conformano alla normativa nazionale che
+recepisce l’articolo 9 entro il 21 marzo 2017.

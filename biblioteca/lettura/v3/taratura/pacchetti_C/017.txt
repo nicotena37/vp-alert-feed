@@ -1,0 +1,1490 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Trasparenza delle operazioni e dei servizi bancari e finanziari; correttezza delle relazioni tra intermediari e clienti  (id BDI-e1d607dd5f)
+
+=== K484 | [Sezione I - par. 2] Fonti normative
+2. Fonti normative
+La materia è regolata dalle seguenti disposizioni:
+— titolo VI del T.U., concernente la trasparenza delle condizioni contrattuali e
+dei rapporti con i clienti;
+— articolo 114-quinquies 3, comma 1, del T.U., il quale dichiara applicabili agli
+Imel le disposizioni contenute nel titolo VI del medesimo T.U., in quanto
+compatibili;
+— articolo 114-quinquies 2, comma 2, del T.U., il quale prevede che la Banca
+d’Italia emani disposizioni di carattere generale aventi a oggetto
+l’organizzazione amministrativa e contabile e i controlli interni degli Imel;
+— articolo 114-undecies del T.U., il quale estende agli istituti di pagamento
+l’applicazione del titolo VI del medesimo T.U.;
+— articolo 114-quaterdecies, comma 2, del T.U., il quale prevede che la Banca
+d’Italia emani disposizioni di carattere generale aventi a oggetto
+l’organizzazione amministrativa e contabile e i controlli interni degli istituti
+di pagamento;
+— articolo 114.8 del T.U., concernente i principi generali che gli acquirenti di
+crediti in sofferenza e i gestori di crediti in sofferenza sono tenuti a rispettare
+nei rapporti con i debitori;
+— articolo 114.10 del T.U., il quale disciplina l’informativa al debitore in caso
+di cessione di un credito o di un contratto, attribuendo alla Banca d’Italia il
+compito di dettare disposizioni attuative;
+— articolo 114.11 del T.U., il quale attribuisce alla Banca d’Italia poteri di
+vigilanza nei confronti dei gestori di crediti in sofferenza e dei soggetti a cui
+sono esternalizzate funzioni aziendali;
+— articolo 114.13 del T.U., il quale dichiara applicabili ai gestori di crediti in
+sofferenza le disposizioni contenute nel titolo VI del medesimo T.U., in
+quanto compatibili, e prevede che la Banca d’Italia possa dettare disposizioni
+attuative;
+— articolo 114.14 del T.U., il quale prevede che la Banca d’Italia disciplini le
+procedure che i gestori di crediti in sofferenza adottano per la gestione dei
+reclami presentati dai debitori;
+— articolo 128-decies del T.U., il quale dichiara applicabili agli agenti in attività
+finanziaria, agli agenti che prestano servizi di pagamento per conto di Imel o
+istituti di pagamento comunitari e ai mediatori creditizi le norme del titolo VI
+del medesimo T.U., in quanto compatibili, e attribuisce alla Banca d’Italia la
+facoltà di stabilire ulteriori regole per garantire trasparenza e correttezza nei
+rapporti con la clientela;
+— deliberazione del CICR del 2 agosto 1996, recante attuazione dell’articolo 53,
+comma 1, lett. d) del T.U. in materia di organizzazione amministrativa e
+  3
+contabile e controlli interni delle banche, come modificata dalla deliberazione
+del 23 marzo 2004, n. 692;
+— deliberazione del CICR del 9 febbraio 2000, recante Credito fondiario.
+Disciplina dell’estinzione anticipata dei mutui;
+— deliberazione del CICR del 4 marzo 2003, recante Disciplina della
+trasparenza delle condizioni contrattuali delle operazioni e dei servizi bancari
+e finanziari, come modificata dal decreto d’urgenza del Ministro
+dell’economia e delle finanze – Presidente del CICR del 3 febbraio 2011,
+recante Disposizioni sul credito ai consumatori e modifiche alla
+deliberazione del 4 marzo 2003 in materia di trasparenza delle condizioni
+contrattuali delle operazioni e dei servizi bancari e finanziari;
+— decreto d’urgenza del Ministro dell’economia e delle finanze – Presidente del
+CICR del 3 febbraio 2011, recante Disposizioni sul credito ai consumatori e
+modifiche alla deliberazione del 4 marzo 2003 in materia di trasparenza delle
+condizioni contrattuali delle operazioni e dei servizi bancari e finanziari;
+— decreto d’urgenza del Ministro dell’economia e delle finanze – Presidente del
+CICR del 30 giugno 2012, recante Disciplina della remunerazione degli
+affidamenti e degli sconfinamenti in attuazione dell’articolo 117-bis del Testo
+unico bancario;
+— decreto d’urgenza del Ministro dell’economia e delle finanze – Presidente del
+CICR del 29 settembre 2016, recante Disposizioni sul credito immobiliare ai
+consumatori.
+Si richiamano, inoltre:
+— Regolamento (UE) 2015/751 del Parlamento europeo e del Consiglio del 29
+aprile 2015 relativo alle commissioni interbancarie sulle operazioni di
+pagamento basate su carta;
+— Regolamento (UE) 2016/1011 del Parlamento europeo e del Consiglio dell’8
+giugno 2016, sugli indici usati come indici di riferimento negli strumenti
+finanziari e nei contratti finanziari o per misurare la performance di fondi di
+investimento e recante modifiche delle direttive 2008/48/CE e 2014/17/UE e
+del regolamento (UE) n. 596/2014;
+— Regolamento delegato (UE) 2018/32 della Commissione, del 28 settembre
+2017, che integra la direttiva 2014/92/UE del Parlamento europeo e del
+Consiglio con riguardo alle norme tecniche di regolamentazione per la
+terminologia standardizzata dell’Unione per i servizi più rappresentativi
+collegati a un conto di pagamento;
+— Regolamento di esecuzione (UE) 2018/33 della Commissione, del 28
+settembre 2017, che stabilisce le norme tecniche di attuazione con riguardo al
+formato di presentazione standardizzato del riepilogo delle spese e del suo
+simbolo comune a norma della direttiva 2014/92/UE del Parlamento europeo
+e del Consiglio;
+— Regolamento di esecuzione (UE) 2018/34 della Commissione, del 28
+settembre 2017, che stabilisce le norme tecniche di attuazione con riguardo al
+formato di presentazione standardizzato del documento informativo sulle
+  4
+spese e del suo simbolo comune a norma della direttiva 2014/92/UE del
+Parlamento europeo e del Consiglio;
+— Regolamento (UE) 2021/1230 del Parlamento europeo e del Consiglio del 14
+luglio 2021 relativo ai pagamenti transfrontalieri nell’Unione (codificazione);
+— articolo 144 del T.U., che prevede l’applicazione di una sanzione
+amministrativa pecuniaria per l’inosservanza di norme contenute nel T.U.;
+— articolo 23, comma 4, del T.U.F., secondo cui le disposizioni del titolo VI
+del T.U. non si applicano ai servizi e alle attività di investimento, al
+collocamento di prodotti finanziari nonché alle operazioni e ai servizi che
+siano componenti di prodotti finanziari assoggettati alla disciplina
+dell’articolo 25-bis e 25-ter ovvero della parte IV, titolo II, capo I, del T.U.F.;
+in ogni caso, alle operazioni di credito nonché ai servizi e conti di pagamento
+disciplinati dai capi I-bis, II, II-bis e II-ter del T.U. si applicano le pertinenti
+disposizioni del titolo VI del T.U.;
+— decreto del Presidente della Repubblica 5 gennaio 1950, n. 180, e successive
+modificazioni, recante Approvazione del testo unico delle leggi concernenti il
+sequestro, il pignoramento e la cessione degli stipendi, salari e pensioni dei
+dipendenti dalle Pubbliche Amministrazioni e, in particolare, l’articolo 6-bis
+(Trasparenza delle condizioni contrattuali e dei rapporti con i clienti);
+— decreto legislativo 9 aprile 2003, n. 70, in materia di commercio elettronico;
+— decreto legislativo 6 settembre 2005, n. 206, e successive modificazioni,
+recante il Codice del Consumo;
+— decreto legislativo 27 gennaio 2010, n. 11, recante Attuazione della direttiva
+2007/64/CE, relativa ai servizi di pagamento nel mercato interno, recante
+modifica delle direttive 97/7/CE, 2002/65/CE, 2005/60/CE, 2006/48/CE, e
+che abroga la direttiva 97/5/CE;
+— decreto legislativo 16 aprile 2012, n. 45, recante Attuazione della direttiva
+2009/110/CE, concernente l’avvio, l’esercizio e la vigilanza prudenziale
+dell’attività degli istituti di moneta elettronica, che modifica le direttive
+2005/60/CE e 2006/48/CE e che abroga la direttiva 2000/46/CE;
+— decreto legislativo 15 febbraio 2016, n. 30, recante Attuazione della direttiva
+2014/49/UE del Parlamento europeo e del Consiglio, del 16 aprile 2014,
+relativa ai sistemi di garanzia dei depositi, e, in particolare, l’articolo 3, secondo
+cui, in tempo utile prima che il contratto sia concluso o che il depositante sia
+vincolato da un’offerta, al depositante è consegnato, opportunamente compilato,
+il “Modulo standard per le informazioni da fornire ai depositanti” di cui
+all’Allegato I della direttiva 2014/49/UE; l’avvenuta acquisizione del modulo
+da parte del depositante è attestata per iscritto o attraverso altro supporto
+durevole;
+— decreto legge 29 novembre 2008, n. 185, (convertito, con modificazioni, nella
+legge 28 gennaio 2009, n. 2), e in particolare, l’articolo 2, comma 5, in materia
+di mutui garantiti da ipoteca per l’acquisto dell’abitazione principale;
+— decreto legge 6 dicembre 2011, n. 201, convertito con modificazioni dalla
+legge 22 dicembre 2011, n. 214 e, in particolare, l’articolo 36-bis;
+  5
+— decreto legge 24 gennaio 2012, n. 1, convertito, con modificazioni, dalla legge
+24 marzo 2012, n. 27 e, in particolare, gli articoli 27, 27-bis e 28;
+— decreto legge 24 marzo 2012, n. 29, convertito, con modificazioni, dalla legge
+18 maggio 2012, n. 62, e, in particolare, l’articolo 1, comma 1-ter;
+— decreto legge 30 settembre 2005, n. 203, convertito con modificazioni dalla legge
+2 dicembre 2005, n. 248, come modificato dall’articolo 1, comma 1, della legge
+2 aprile 2015, n. 44, e, in particolare, l’articolo 11-quaterdecies in materia di
+prestito vitalizio ipotecario;
+— decreto del Ministro dello Sviluppo Economico del 22 dicembre 2015, n. 226;
+— decreto del Presidente della Repubblica 14 marzo 2001, n. 144, Regolamento
+recante norme sui servizi di bancoposta;
+— deliberazione del CICR del 29 luglio 2008, n. 275, e successive modificazioni,
+recante Disciplina dei sistemi di risoluzione stragiudiziale delle controversie
+con la clientela ai sensi dell’articolo 128-bis del decreto legislativo 1°
+settembre 1993, n. 385, e successive modificazioni;
+— decreto del Ministro dell’economia e delle finanze del 15 gennaio 2015, in
+materia di trasparenza nel collocamento dei titoli di Stato;
+— decreto del Ministro dell’economia e delle finanze del 3 maggio 2018, n. 70,
+in materia di conto di pagamento con caratteristiche di base;
+— provvedimento della Banca d’Italia del 18 dicembre 2012, recante Disposizioni
+di vigilanza in materia di sanzioni e procedura sanzionatoria amministrativa,
+e successive modifiche e integrazioni;
+— provvedimento della Banca d’Italia del 21 dicembre 2007, recante Disposizioni
+relative al trasferimento alla Banca d’Italia delle competenze e dei poteri
+dell’Ufficio italiano dei cambi;
+— provvedimento della Banca d’Italia del 18 giugno 2009, recante Disposizioni
+sui sistemi di risoluzione stragiudiziale delle controversie in materia di
+operazioni e servizi bancari e finanziari e successive modificazioni;
+— regolamento dell’Isvap del 3 maggio 2012, n. 40, recante la definizione dei
+contenuti minimi del contratto di assicurazione sulla vita di cui all’articolo 28,
+comma 1, del decreto legge 24 gennaio 2012 n. 1, convertito dalla legge 24
+marzo 2012, n. 27.
+
+=== K485 | [Sezione I - par. 4] Destinatari della disciplina
+4. Destinatari della disciplina
+Le sezioni da I a V e X si applicano a:
+— le banche italiane, comunitarie ed extracomunitarie;
+  6
+— i soggetti iscritti nell’albo previsto dall’articolo 106 T.U. (1);
+— Poste Italiane S.p.A., per le attività di bancoposta di cui al D.P.R. 14 marzo
+2001, n. 144.
+La sezione VI e le altre disposizioni ivi richiamate si applicano ai prestatori
+di servizi di pagamento italiani, comunitari ed extracomunitari, per i servizi di
+pagamento da essi prestati.
+I soggetti indicati nella sezione VII-ter applicano, per l’acquisto e la gestione
+di crediti in sofferenza, la sezione VII-ter e le altre disposizioni ivi richiamate.
+I soggetti indicati nella sezione VI-bis applicano, per le operazioni di credito
+immobiliare ai consumatori, la sezione VI-bis e le altre disposizioni ivi richiamate.
+I soggetti indicati nella sezione VII applicano, per le operazioni di credito ai
+consumatori, la sezione VII e le altre disposizioni ivi richiamate. La sezione VII-
+bis si applica a tutti i soggetti abilitati a erogare finanziamenti sotto forma di
+cessione del quinto dello stipendio, del salario o della pensione, ai sensi degli
+articoli 1 e 15 del D.P.R. n. 180/1950.
+Ai servizi di mediazione creditizia il presente provvedimento si applica
+secondo quanto previsto nella sezione VIII.
+Ai confidi iscritti nell’elenco previsto dall’articolo 112 del T.U., le presenti
+disposizioni si applicano secondo quanto stabilito dalla sezione IX.
+La sezione XI si applica ai soggetti indicati nel paragrafo 1 della stessa sezione.
+(1) Le sezioni da I a V e X si applicano anche agli intermediari finanziari iscritti nell’elenco generale di cui
+all’articolo 106 del T.U. o nell’elenco speciale di cui all’articolo 107 del T.U. vigenti alla data del 4 settembre 2010,
+nel periodo transitorio previsto dall’articolo 10 del decreto legislativo 13 agosto 2010, n. 141.
+  7
+
+=== K486 | [Sezione IV - par. 1] Premessa
+1. Premessa
+La presente sezione riguarda le comunicazioni che gli intermediari sono
+tenuti a fornire durante i rapporti intrattenuti con i clienti.
+Il responsabile per il corretto adempimento delle previsioni di questa sezione
+è la controparte contrattuale del cliente. Ne consegue che:
+ in caso di cessione del contratto, il responsabile è il soggetto cessionario;
+ in caso di cessione del credito, il responsabile continua a essere il cedente,
+titolare del contratto, salvo diversa pattuizione tra il cedente e il cessionario.
+In caso di operazioni di cartolarizzazione dei crediti disciplinate ai sensi
+della legge 30 aprile 1999, n. 130, il responsabile può essere in alternativa
+il soggetto individuato contrattualmente nell’ambito dell’operazione di
+cartolarizzazione. Al cliente va comunque comunicato il responsabile.
+Ove non segua procedure analoghe a quelle previste dal paragrafo 2-ter della
+sezione XI, nei rapporti con soggetti diversi dai consumatori, in caso di cessione di
+rapporti giuridici cui si applichi l’articolo 58 del T.U. o di altre operazioni che
+comportino successione nei rapporti giuridici e cambio del codice IBAN (es.
+operazioni straordinarie quali la fusione) (1), il cessionario comunica con congruo
+anticipo, almeno 30 giorni prima, ai titolari dei conti correnti e dei conti di
+pagamento le informazioni necessarie per assicurare che il cliente possa fruire
+senza soluzione di continuità dei servizi connessi al conto (es. servizi di
+pagamento) (2).
+In caso di cessione di crediti in sofferenza, resta fermo quanto previsto dal
+paragrafo 4 della sezione VII-ter.
+
+=== K487 | [Sezione IV - par. 2] Variazioni contrattuali
+2. Variazioni contrattuali
+Le condizioni e i limiti alla facoltà per l’intermediario di modificare
+unilateralmente le condizioni del contratto sono disciplinate dall’articolo 118 del
+T.U. (3).
+(1) Ai fini del presente paragrafo per “cessionario” si intende anche l’intermediario presso il quale, a
+seguito di queste operazioni, risulta incardinato il conto di pagamento.
+(2) Con riferimento alle cessioni effettuate nell’ambito di procedure di risoluzione delle crisi, il
+cessionario comunica - non appena possibile e, comunque non oltre 20 giorni lavorativi dalla realizzazione della
+operazione di cessione - ai titolari dei conti correnti e dei conti di pagamento trasferiti le informazioni necessarie
+per fruire senza soluzione di continuità dei servizi connessi al conto.
+(3) Non rilevano ai fini dell’articolo 118 del T.U. le modifiche conseguenti a variazioni di specifici
+parametri prescelti dalle parti e la cui determinazione è sottratta alla volontà delle medesime.
+  8
+Secondo il Ministero dello sviluppo economico le “modifiche” di cui
+all’articolo 118 del T.U., riguardando soltanto le fattispecie di variazioni previste
+dal contratto, non possono comportare l’introduzione di nuove clausole (1).
+Nei rapporti al portatore, le modifiche unilaterali delle condizioni
+contrattuali sono comunicate alla clientela, rispettando il medesimo termine, con
+strumenti di comunicazione impersonale facilmente accessibili presso le
+dipendenze dell’intermediario (es. cartello esposto nei locali aperti al pubblico) e,
+contestualmente, pubblicando la notizia sul sito internet, ove esistente.
+Nei contratti di credito immobiliare ai consumatori e di credito ai
+consumatori, la comunicazione delle modifiche unilaterali delle condizioni
+contrattuali è integrata con gli elementi previsti dagli articoli 120-noviesdecies,
+comma 2-bis, e 125-bis, comma 3-bis del T.U.
+Le comunicazioni relative alle modifiche unilaterali sono sempre gratuite per
+il cliente.
+(1) Cfr. la nota del 21 febbraio 2007 del Ministero dello sviluppo economico.
+  9
+
+=== K488 | [Sezione VI-bis] CREDITO IMMOBILIARE AI CONSUMATORI
+SEZIONE VI-bis
+CREDITO IMMOBILIARE AI CONSUMATORI
+3. Disposizioni di carattere generale: ambito di applicazione e disposizioni
+applicabili
+Le disposizioni della presente sezione si applicano ai contratti di credito,
+comunque denominati, tra un finanziatore e un consumatore.
+In base all’articolo 120-sexies del T.U., sono esclusi dall’ambito di
+applicazione della presente sezione:
+– i contratti di credito in cui il finanziatore:
+i. concede una tantum o periodicamente una somma di denaro o eroga credito
+sotto altre forme in cambio di una somma derivante dalla vendita futura di
+un bene immobile residenziale o di un diritto reale su un bene immobile
+residenziale; e
+ii. non chiede il rimborso del credito fino al verificarsi di uno o più eventi
+specifici afferenti la vita del consumatore, salvo in caso di violazione, da
+parte del consumatore, dei propri obblighi contrattuali che consenta al
+finanziatore di domandare la risoluzione del contratto di credito;
+– i contratti di credito mediate i quali un datore di lavoro, al di fuori della sua
+attività principale, concede ai dipendenti crediti senza interessi o a un TAEG
+inferiore a quello prevalente sul mercato e non offerti al pubblico in genere;
+– i contratti di credito, individuati dalla legge, relativi a prestiti concessi a un
+pubblico ristretto, con finalità di interesse generale, che non prevedono il
+pagamento di interessi o prevedono tassi inferiori a quelli prevalenti sul
+mercato oppure ad altre condizioni più favorevoli per il consumatore rispetto a
+quelle prevalenti sul mercato e a tassi debitori non superiori a quelli prevalenti
+sul mercato;
+– i contratti di credito in cui è escluso il pagamento di interessi o di altri oneri, a
+esclusione di quelli per il recupero dei costi direttamente connessi all’ipoteca;
+– i contratti di credito nella forma dell’apertura di credito, qualora il credito sia
+da rimborsare entro un mese;
+– i contratti di credito risultanti da un accordo raggiunto dinanzi all’autorità
+giudiziaria o a un’altra autorità prevista dalla legge;
+– i contratti di credito relativi alla dilazione del pagamento di un debito
+preesistente concessa gratuitamente dal finanziatore, se non comportano
+l’iscrizione di un’ipoteca;
+– i contratti di credito non garantiti finalizzati alla ristrutturazione di un bene
+immobile residenziale;
+  10
+– i contratti di credito in cui la durata non è determinata o in cui il credito deve
+essere rimborsato entro dodici mesi ed è destinato ad essere utilizzato come
+finanziamento temporaneo in vista di altre soluzioni per finanziarie l’acquisto
+della proprietà di un bene immobile.
+Per quanto non diversamente disposto dalla presente sezione, ai contratti di
+credito si applicano le disposizioni contenute nelle sezioni I (disposizioni di
+carattere generale), II (pubblicità e informazione precontrattuale), paragrafo 2 (1),
+III (contratti), paragrafi 1, 2, 3 e 6, IV (comunicazioni alla clientela) (2), V (tecniche
+di comunicazione a distanza), eccetto il paragrafo 2.2 (che va applicato secondo
+quanto stabilito nella presente sezione), VII-ter (acquisto e gestione di crediti in
+sofferenza), VIII (mediatori creditizi), X (controlli) e XI (requisiti organizzativi). I
+finanziatori e gli intermediari del credito mettono a disposizione della propria
+clientela la Guida concernente l’accesso all’Arbitro Bancario Finanziario secondo
+quanto previsto dalla sezione II, paragrafo 2.
+Resta fermo quanto previsto dall’articolo 120-octiesdecies, comma 1, del T.U.,
+dall’articolo 21, comma 3-bis, del Codice del Consumo, dall’articolo 28 del decreto
+legge n. 1/2012, dal regolamento dell’Isvap n. 40/2012 per la commercializzazione
+di polizze assicurative o altri contratti insieme a un finanziamento, nonché dall’art.
+48 del regolamento dell’Isvap n. 5/2006.
+
+=== K489 | [Sezione VI-bis - par. 5] Pubblicità e informazioni precontrattuali
+5. Pubblicità e informazioni precontrattuali
+
+=== K490 | [Sezione VI-bis - par. 5.2.1] Informazioni generali relative ai contratti di credito
+5.2.1 Informazioni generali relative ai contratti di credito
+Il finanziatore mette a disposizione del consumatore, in qualsiasi momento, un
+documento contenente informazioni generali sui contratti di credito offerti. Le
+informazioni sono riportate in modo chiaro e comprensibile, su supporto cartaceo o
+altro supporto durevole.
+Le informazioni generali includono almeno:
+a) la denominazione del finanziatore e l'indirizzo della sua sede
+amministrativa o della succursale con sede in Italia; nel caso di offerta
+attraverso intermediari del credito, vanno indicati anche il nome e il
+cognome o la denominazione dell’intermediario del credito e, se del caso,
+(1) La Guida “Comprare una casa. Il mutuo ipotecario in parole semplici” è messa a disposizione solo dai
+finanziatori che offrono mutui ipotecari ai consumatori.
+(2) Le comunicazioni periodiche non includono il documento di sintesi.
+  11
+del collaboratore di cui si avvale e il numero di iscrizione nell’elenco in cui
+l’intermediario del credito è eventualmente iscritto, l’indirizzo
+dell’intermediario del credito e del soggetto che entra in rapporto con il
+consumatore;
+b) le finalità per le quali il credito può essere utilizzato;
+c) la tipologia di garanzie accettate; in caso di ipoteca, va indicata la necessità
+di una valutazione del bene immobile, la parte che è responsabile della sua
+esecuzione e i relativi costi per il consumatore; è inoltre indicata la
+possibilità o meno che il bene immobile sia ubicato in un altro Stato
+membro dell’Unione europea;
+d) la possibile durata del contratto;
+e) le tipologie di tasso d'interesse disponibili, con la precisazione della natura
+fissa o variabile ovvero derivante dalla combinazione dei due tipi di tasso,
+e una breve descrizione delle caratteristiche del tasso fisso e del tasso
+variabile e dei relativi effetti per il consumatore (1);
+e-bis) per i contratti di credito che prevedono un indice di riferimento
+(benchmark), la denominazione dell’indice, il nome o la denominazione del
+suo amministratore e le possibili implicazioni per il consumatore derivanti
+dall’utilizzo dell’indice;
+f) per i finanziamenti in valuta estera, la valuta o le valute estere disponibili,
+con la spiegazione degli effetti che questi finanziamenti possono avere per
+il consumatore;
+g) l’importo totale del credito, il costo totale del credito, l’importo totale
+dovuto dal consumatore e il TAEG, illustrati mediante un esempio
+rappresentativo;
+h) tutte le spese, non incluse nel costo totale del credito, derivanti dal contratto
+di credito;
+i) se del caso, la necessità di sottoscrivere contratti relativi a uno o più servizi
+accessori connessi con il contratto di credito (ad esempio una polizza
+assicurativa), con la precisazione che questi contratti possono essere
+acquistati da un fornitore diverso dal finanziatore;
+j) la possibilità di ricevere servizi di consulenza ai sensi dell’articolo 120-
+terdecies del T.U.;
+k) le possibili modalità di rimborso del credito, l’importo, il numero e la
+periodicità delle rate (2);
+l) le condizioni per il rimborso anticipato del credito, secondo quanto previsto
+dagli articoli 120-ter e 120-quaterdecies.1 del T.U.;
+(1) Per i mutui a tasso variabile o misto, è specificato se il contratto contiene clausole che comportano
+l’applicazione di un limite massimo (cap) o minimo (floor) alle oscillazioni del tasso, con una breve illustrazione
+dei relativi effetti per il consumatore.
+(2) Per i contratti di credito che prevedono il rimborso periodico dei soli interessi, è inserito l’avvertimento
+chiaro e conciso che il pagamento delle rate nel rispetto delle condizioni contrattuali non implica il rimborso
+dell’importo totale del credito.
+  12
+m) le informazioni e le evidenze documentali che il consumatore deve fornire
+al finanziatore ai fini della valutazione del merito di credito ai sensi
+dell’articolo 120-undecies, comma 1, del T.U., e il termine entro il quale
+esse devono essere fornite, con l’avvertimento che il credito non può essere
+concesso se il consumatore non fornisce le informazioni o gli elementi di
+verifica necessari alla valutazione del merito di credito;
+n) se verrà consultata una banca dati, in conformità dell’articolo 13 del decreto
+legislativo 30 giugno 2003, n. 196;
+o) un avvertimento generale circa le possibili conseguenze connesse con
+l’inadempimento degli obblighi derivanti dal contratto di credito.
+I finanziatori che hanno un sito internet pubblicano sul sito le Guide previste
+dalla sezione II e le informazioni generali previste dal presente paragrafo.
+Il finanziatore assolve agli obblighi previsti dal presente paragrafo attraverso
+il foglio contenente le informazioni generali sul credito immobiliare offerto ai
+consumatori, redatto in conformità del modello previsto nell’Allegato 3.
+Il foglio contenente le informazioni generali riporta l’indicazione che il
+consumatore potrà consultare lo specifico Tasso Effettivo Globale Medio
+(TEGM) previsto dall’articolo 2 della legge n. 108/1996 (c.d. “legge antiusura”)
+sul cartello affisso ai sensi del comma 3 del medesimo articolo, nonché sul sito
+internet, qualora il finanziatore se ne avvalga secondo quanto stabilito dalla
+sezione V.
+
+=== K491 | [Sezione VI-bis - par. 5.3] Valutazione del merito creditizio del consumatore
+5.3 Valutazione del merito creditizio del consumatore
+Ai sensi dell’articolo 120-undecies del T.U. il finanziatore, prima della
+conclusione del contratto di credito o di essere vincolato da un’offerta, svolge una
+valutazione approfondita del merito creditizio del consumatore, tenendo conto dei
+fattori pertinenti per verificare le prospettive di adempimento da parte del
+consumatore degli obblighi stabiliti dal contratto di credito. La valutazione del
+merito creditizio è effettuata sulla base delle informazioni sulla situazione
+economica e finanziaria del consumatore necessarie, sufficienti, proporzionate e
+opportunamente verificate. Le informazioni su cui si basa la valutazione del merito
+di credito comprendono quelle fornite dal consumatore, anche mediante
+l’intermediario del credito; il finanziatore può chiedere chiarimenti al consumatore
+sulle informazioni ricevute, se necessario per consentire la valutazione del merito di
+credito.
+Le banche assolvono all’obbligo previsto dall’articolo 120-undecies, comma
+1, applicando le disposizioni relative alla valutazione del merito creditizio previste
+dalla Circolare della Banca d’Italia n. 285 del 17 dicembre 2013 (Istruzioni di
+vigilanza per le banche), Parte I, Titolo IV, Capitolo 3, Allegato A, paragrafo 2. I
+finanziatori disciplinati dal titolo V del T.U. vi assolvono applicando le disposizioni
+relative alla valutazione del merito creditizio previste dalla Circolare della Banca
+d’Italia n. 288 del 3 aprile 2015, Titolo III, Capitolo I, Sezione VII, paragrafo 2.
+  13
+I finanziatori di Stati dell’Unione Europea diversi dall’Italia ai quali non si
+applicano le disposizioni sopra indicate svolgono la valutazione del merito di credito
+ai sensi dell’articolo 120-undecies del T.U. conformemente alla disciplina del paese
+di appartenenza.
+Prima di concedere al consumatore un aumento significativo dell’importo
+totale del credito, il finanziatore effettua una nuova valutazione del merito creditizio
+sulla base di informazioni aggiornate, se l’aumento non era previsto e non era
+incluso nella originaria valutazione del merito creditizio.
+Il finanziatore non risolve il contratto di credito né vi apporta modifiche
+svantaggiose per il consumatore, ai sensi dell’articolo 118, come richiamato dall’art.
+120-noviesdecies, comma 2-ter del T.U., in ragione del fatto che la valutazione del
+merito creditizio è stata condotta scorrettamente o che le informazioni fornite dal
+consumatore prima della conclusione del contratto erano incomplete, salvo che il
+consumatore abbia intenzionalmente omesso di fornire o abbia fornito informazioni
+false.
+Se la valutazione del merito creditizio è effettuata sulla base di informazioni
+ottenute consultando una banca dati, il finanziatore ne informa in anticipo il
+consumatore. Se la domanda di credito è stata rifiutata il creditore informa il
+consumatore immediatamente e gratuitamente del rifiuto della domanda e, se del
+caso, del fatto che la decisione è basata sul trattamento automatico di dati. Si applica
+il paragrafo 4.4.1 della sezione VII.
+6-bis. Rimborso anticipato
+Ai sensi dell’articolo 120-quaterdecies.1 del T.U., il consumatore può
+rimborsare anticipatamente in qualsiasi momento, in tutto o in parte, l’importo
+dovuto al finanziatore e ha diritto a una riduzione del costo totale del credito, in
+misura pari all’importo degli interessi e dei costi dovuti per la vita residua del
+contratto.
+
+=== K492 | [Sezione VI-bis - par. 7] Comunicazioni alla clientela
+7. Comunicazioni alla clientela
+Nei contratti di credito il consumatore ha il diritto di chiedere e ottenere
+gratuitamente dal finanziatore, in qualsiasi momento del rapporto, una versione
+aggiornata della tabella di ammortamento prevista dal paragrafo 5.2.2. In ogni caso,
+la tabella di ammortamento aggiornata è fornita al consumatore almeno una volta
+l’anno; a tal fine, il finanziatore si avvale delle comunicazioni periodiche previste
+dalla sezione IV (1).
+(1) Questi obblighi si applicano solo nei casi in cui è stata inserita la tabella di ammortamento nel PIES ai
+sensi del paragrafo 5.2.2.
+  14
+In caso di modifiche delle condizioni contrattuali, anche quando esse
+costituiscono adeguamento a disposizioni normative o richiedono il consenso del
+consumatore, il finanziatore effettua la comunicazione disciplinata dall’articolo
+120-noviesdecies del T.U., con la quale illustra chiaramente il contenuto della
+modifica, i tempi previsti per la sua applicazione, le procedure di reclamo disponibili
+per il consumatore e i relativi termini. La comunicazione menziona altresì la facoltà
+di inviare un esposto alla Banca d’Italia e i relativi recapiti (1). La comunicazione è
+effettuata su supporto cartaceo o altro supporto durevole prima che la modifica delle
+condizioni contrattuali abbia effetto.
+Secondo quanto previsto dall’articolo 120-noviesdecies, comma 2-ter, del
+T.U., qualora si tratti di modifiche unilaterali delle condizioni contrattuali, ove
+consentite ai sensi dell’articolo 118 del T.U., si applica quest’ultimo articolo e la
+relativa comunicazione al cliente, da effettuarsi con preavviso minimo di due mesi,
+è integrata con l’indicazione delle procedure di reclamo disponibili per il
+consumatore, i relativi termini, nonché la facoltà di inviare un esposto alla Banca
+d’Italia e i relativi recapiti (2).
+Fermo restando quanto previsto dall’articolo 118 del T.U., per le variazioni del
+tasso di interesse che discendono direttamente da variazioni del valore del tasso di
+riferimento, il contratto può prevedere che – se il nuovo valore del tasso di
+riferimento è reso pubblico con mezzi appropriati ed è disponibile presso le
+dipendenze del finanziatore – le informazioni sulle variazioni del tasso di interesse
+siano fornite periodicamente in forma scritta, su supporto cartaceo o altro supporto
+durevole preventivamente accettato, in conformità di quanto previsto dalla sezione
+IV.
+7-bis. Cessione del credito e del contratto di credito
+7-bis.1 Eccezioni opponibili
+Ai sensi dell’articolo 125-septies del T.U., come richiamato dall’articolo 120-
+noviesdecies, comma 1, del T.U., in caso di cessione del credito o del contratto di
+credito, il consumatore può sempre opporre al cessionario tutte le eccezioni che
+poteva far valere nei confronti del cedente, ivi inclusa la compensazione, anche in
+deroga all’articolo 1248 del codice civile.
+7-bis.2 Comunicazioni al debitore ceduto
+Il finanziatore notifica individualmente al consumatore la cessione attraverso
+un supporto cartaceo o altro supporto durevole in maniera tempestiva. Con riguardo
+(1) L’autorità da menzionare è la Banca d'Italia, Servizio Tutela individuale dei clienti, Via del Traforo, 146,
+00187 Roma, indirizzo di posta elettronica email@bancaditalia.it e/o di posta elettronica certificata
+TUC@pec.bancaditalia.it. Gli esposti possono essere presentati alla Banca d’Italia anche tramite la piattaforma
+Servizi Online: https://servizionline.bancaditalia.it/home.
+(2) Cfr. nota precedente.
+  15
+all’efficacia della cessione, resta fermo quanto previsto dagli articoli 1264, 1265 e
+1407 del codice civile. Le comunicazioni previste ai sensi del presente paragrafo
+sono effettuate secondo quanto previsto ai sensi dell’articolo 58 del T.U., in caso di
+cessione di rapporti giuridici ai sensi del medesimo articolo 58 del T.U., e
+dell’articolo 4 della legge n. 130/1999, in caso di cartolarizzazione dei crediti.
+La comunicazione individuale della cessione non è necessaria se il creditore
+originario, in forza di un accordo con il cessionario, continua a gestire il credito nei
+confronti del consumatore.
+Per le operazioni di acquisto di crediti in sofferenza previste dalla Sezione VII-
+ter, in luogo del presente sottoparagrafo, si applica il paragrafo 4 di tale Sezione.
+
+=== K493 | [Sezione VI-bis - par. 8] Inadempimento del consumatore
+8. Inadempimento del consumatore
+Il presente paragrafo disciplina le politiche e le procedure interne che il
+finanziatore è tenuto ad adottare per gestire i rapporti con i consumatori in difficoltà
+nel pagamento (in tutto o in parte) delle rate di rimborso del credito, ai sensi
+dell’articolo 120-quinquiesdecies, comma 1, del T.U. Esso dà attuazione anche agli
+Orientamenti dell’Autorità Bancaria Europea su morosità e pignoramenti del 19
+agosto 2015, e successive modifiche (1).
+Fermo restando quanto previsto ai sensi dell’articolo 40, comma 2, del T.U., il
+finanziatore adotta, conformemente a quanto previsto ai sensi della sezione XI,
+procedure interne idonee ad assicurare che:
+– i consumatori che si trovano in difficoltà nel rispettare i termini di pagamento
+siano tempestivamente individuati;
+– le modalità di interazione con i consumatori in difficoltà prevedano
+comunicazioni chiare e con un linguaggio comprensibile (secondo quanto
+indicato nella sezione I, paragrafo 1.3), siano proporzionate agli obblighi di
+informazione e non eccessive e avvengano nel rispetto del principio di
+riservatezza; le comunicazioni avvengono in forma elettronica o cartacea;
+– il finanziatore collabori con il consumatore per individuare i motivi delle
+difficoltà incontrate e le più adeguate misure da adottare per il rimborso del
+credito;
+– sia fornita adeguata assistenza ai consumatori in difficoltà nel rispettare i
+termini di pagamento, con particolare riguardo ai casi di stato di bisogno o di
+particolare debolezza (ad esempio a seguito di eventi quali la perdita del posto
+di lavoro, la sopravvenuta invalidità o grave malattia, la morte di un prossimo
+congiunto, la separazione o il divorzio, calamità naturali che hanno interessato
+la persona, il luogo di residenza, il patrimonio o la capacità di reddito del
+consumatore); a questo fine, il finanziatore richiama l’attenzione del
+consumatore sull’importanza della cooperazione per trovare una soluzione alla
+situazione di difficoltà e gli fornisce almeno le seguenti informazioni:
+(1) Gli Orientamenti dell’Autorità Bancaria Europea su morosità e pignoramenti sono consultabili al sito:
+https://www.eba.europa.eu/sites/default/files/2024-10/78ad9b83-1d52-4e59-be3a-
+865045fb8a68/GLs%20on%20arrears%20%28GL%202015%2012%20and%20GL%202024%2010_CONSOLID
+ATED%29_IT_COR.pdf
+  16
+i. il numero e l’importo complessivo dei pagamenti omessi o parziali;
+ii. gli oneri dovuti per i pagamenti omessi o parziali.
+In caso di ritardato pagamento (totale o parziale) di una rata per oltre 30 giorni
+e, comunque, con congruo anticipo rispetto all’avvio di procedure di recupero
+giudiziale del credito, il finanziatore informa – con apposita e tempestiva
+comunicazione scritta – il consumatore circa: a) le conseguenze degli omessi
+pagamenti (ad esempio, l’applicazione degli interessi di mora, la possibilità di
+perdere il diritto di proprietà sul bene costituito in garanzia); b) le misure di
+sostegno eventualmente disponibili (ad esempio, le misure pubbliche o quelle
+messe a punto in sede di autoregolamentazione);
+– il personale preposto all’interazione con i consumatori in difficoltà nel
+rispettare i termini di pagamento riceva una formazione specifica ed adeguata
+rispetto ai compiti svolti.
+Il finanziatore si adopera per adottare, ove opportuno, ragionevoli iniziative
+per venire incontro alle esigenze dei consumatori in difficoltà nel rispettare i termini
+di pagamento. Nel valutare tali iniziative, il finanziatore tiene conto delle
+circostanze personali, degli interessi, dei diritti e della capacità di rimborso del
+consumatore. Le iniziative possono prevedere:
+1) il rifinanziamento totale o parziale del credito;
+2) la modifica delle condizioni del contratto di credito, che possono includere:
+a) l’estensione della durata del contratto;
+b) la modifica della tipologia del credito; ad esempio, un contratto che
+prevede il rimborso contestuale, con ciascuna rata, di capitale e interessi
+può essere modificato convenendo, per un arco temporale predefinito, il
+solo pagamento degli interessi;
+c) il differimento totale o parziale del pagamento delle rate;
+d) la rinegoziazione del tasso di interesse;
+e) la sospensione temporanea del pagamento delle rate;
+f) rimborsi parziali;
+g) conversioni valutarie;
+h) la remissione parziale e il consolidamento del debito.
+Il finanziatore documenta le ragioni alla base della valutazione
+dell’adeguatezza delle iniziative assunte rispetto alle circostanze individuali del
+consumatore e conserva per almeno 5 anni dall’estinzione del rapporto adeguata
+documentazione dei rapporti intrattenuti con i consumatori in difficoltà nel
+rispettare i termini di pagamento.
+Resta fermo per il finanziatore quanto previsto, ai fini della classificazione per
+qualità del credito delle esposizioni in argomento, dalla Circolare della Banca
+d’Italia n. 217 del 5 agosto 1996 (Manuale per la compilazione delle Segnalazioni
+di Vigilanza per gli Intermediari Finanziari, per gli Istituti di pagamento e per gli
+IMEL) e dalla Circolare della Banca d’Italia, n. 272 del 30 luglio 2008 (Matrice dei
+conti).
+  17
+  18
+
+=== K494 | [Sezione VII - par. 1] Premessa
+1. Premessa
+La presente sezione disciplina i servizi e le operazioni previsti dal titolo VI,
+capo II, del T.U., come sostituito dal decreto legislativo 13 agosto 2010, n. 141, e
+successive modificazioni, recante attuazione della direttiva del Parlamento europeo
+e del Consiglio n. 2008/48/CE del 23 aprile 2008, relativa ai contratti di credito ai
+consumatori e che abroga la direttiva 87/102/CEE, tenuto conto delle modifiche
+successivamente apportate.
+Essa attua il decreto del Ministro dell’economia e delle finanze 3 febbraio
+2011, recante Determinazioni in materia di credito ai consumatori.
+3. Disposizioni di carattere generale: ambito di applicazione e disposizioni
+applicabili
+Le disposizioni della presente sezione si applicano ai contratti di credito,
+comunque denominati, tra un finanziatore e un consumatore.
+In base all’articolo 122 del T.U., sono esclusi dall’ambito di applicazione della
+presente sezione:
+- i finanziamenti di importo inferiore a 200 euro o superiore a 75.000 euro,
+salvo che si tratti di contratti di credito non garantiti finalizzati alla
+ristrutturazione di un bene immobile residenziale, ai quali si applicano le
+disposizioni della presente sezione anche se il finanziamento ha un importo
+superiore a 75.000 euro. Ai fini del computo della soglia minima si prendono
+in considerazione anche i crediti frazionati concessi attraverso più contratti,
+se questi sono riconducibili a una medesima operazione economica (1);
+- i contratti di somministrazione previsti dagli articoli 1559 e seguenti del
+codice civile e i contratti di appalto di cui all’articolo 1677 del codice civile;
+- i finanziamenti nei quali è escluso il pagamento di interessi o di altri oneri;
+- i finanziamenti a fronte dei quali il consumatore è tenuto a corrispondere
+esclusivamente commissioni per un importo non significativo, qualora il
+rimborso del credito debba avvenire entro tre mesi dall’utilizzo delle somme;
+- i finanziamenti destinati all’acquisto o alla conservazione di un diritto di
+proprietà su un terreno o su un immobile edificato o progettato;
+(1) La Banca d’Italia, nell’esercizio delle proprie funzioni, ritiene che nei contratti di locazione finanziaria
+(leasing), ai fini del computo delle soglie: i) non si include l’eventuale canone iniziale versato dal consumatore
+contestualmente alla stipula del contratto; ii) si include l’IVA sull’acquisto del bene oggetto del contratto.
+  19
+- i finanziamenti garantiti da ipoteca su beni immobili;
+- i finanziamenti, concessi da banche o da imprese di investimento, finalizzati
+a effettuare un’operazione avente a oggetto strumenti finanziari quali definiti
+dall’articolo 1, comma 2, del decreto legislativo 24 febbraio 1998, n. 58, e
+successive modificazioni, purché il finanziatore partecipi all’operazione;
+- i finanziamenti concessi in base a un accordo raggiunto dinanzi all’autorità
+giudiziaria o a un’altra autorità prevista dalla legge;
+- le dilazioni del pagamento di un debito preesistente concesse gratuitamente
+dal finanziatore;
+- i finanziamenti garantiti da pegno su un bene mobile, se il consumatore non
+è obbligato per un ammontare eccedente il valore del bene;
+- i contratti di locazione, a condizione che in essi sia prevista l’espressa
+clausola che in nessun momento la proprietà della cosa locata possa
+trasferirsi, con o senza corrispettivo, al locatario;
+- i contratti di credito che rientrano nell’ambito del microcredito disciplinato
+ai sensi dell’articolo 111 del T.U. e altri contratti di credito individuati dalla
+legge relativi a prestiti concessi a un pubblico ristretto, con finalità di
+interesse generale, che non prevedono il pagamento di interessi o prevedono
+tassi inferiori a quelli prevalenti sul mercato oppure ad altre condizioni più
+favorevoli per il consumatore rispetto a quelle prevalenti sul mercato e a tassi
+di interesse non superiori a quelli prevalenti sul mercato;
+- i contratti aventi a oggetto lo sconfinamento, salvo quanto previsto dal
+paragrafo 6.3. Ai sensi dell’articolo 125-octies, comma 1, del T.U., ai
+contratti di conto corrente in cui è prevista la possibilità che al consumatore
+sia concesso uno sconfinamento si applicano, oltre al paragrafo 6.3, le
+disposizioni contenute nelle sezioni I (disposizioni di carattere generale), II
+(pubblicità e informazione precontrattuale), III (contratti), IV (comunicazioni
+alla clientela), V (tecniche di comunicazione a distanza), X (controlli) e XI
+(requisiti organizzativi).
+La presente sezione si applica alle carte di credito secondo quanto previsto
+dal paragrafo 7.
+Secondo quanto previsto dall’articolo 122, comma 2, del T.U., alle aperture
+di credito regolate in conto corrente, in cui il rimborso delle somme prelevate deve
+avvenire su richiesta della banca ovvero entro tre mesi dal loro utilizzo, non si
+applicano i paragrafi 4.2.2, 5.2.1, 6.3 e 9 (ferma restando l’applicazione dell’articolo
+125-quinquies del T.U.); il paragrafo 4.1 si applica entro i limiti ivi stabiliti.
+Il decreto del Ministro dell’economia e delle finanze 30 giugno 2012,
+recante Disciplina della remunerazione degli affidamenti e degli sconfinamenti in
+attuazione dell’articolo 117-bis del Testo unico bancario, si applica – anche nei
+rapporti con un consumatore – ai seguenti contratti (articolo 2):
+- aperture di credito in conto corrente;
+- sconfinamenti nei contratti di conto corrente in assenza di apertura di credito;
+- sconfinamenti in presenza di apertura di credito regolata in conto corrente;
+  20
+- affidamenti e sconfinamenti a valere su conti di pagamento, concessi
+conformemente a quanto previsto ai sensi dell’art. 114-octies, comma 1,
+lettera a), del T.U., con l’esclusione degli affidamenti a valere su carte di
+credito;
+- sconfinamenti a valere su carte di credito.
+Ai sensi dell’articolo 122, comma 5, del T.U., i venditori di beni e servizi
+possono concludere contratti di credito nella sola forma della dilazione del prezzo
+con esclusione del pagamento degli interessi e di altri oneri. In tale ipotesi non si
+applicano le disposizioni contenute nella presente sezione.
+Per quanto non diversamente disciplinato dalla presente sezione, ai contratti di
+credito si applicano, inoltre, le disposizioni contenute nelle sezioni I (disposizioni
+di carattere generale), V (tecniche di comunicazione a distanza), eccetto il paragrafo
+2.2 (1), VII-ter (acquisto e gestione di crediti in sofferenza), VIII (mediatori
+creditizi), X (controlli) e XI (requisiti organizzativi). I finanziatori e gli intermediari
+del credito mettono a disposizione della propria clientela la Guida concernente
+l’accesso all’Arbitro Bancario Finanziario secondo quanto previsto dalla sezione
+II, paragrafo 2.
+Resta fermo quanto previsto dall’articolo 21, comma 3-bis, del Codice del
+Consumo, dall’articolo 28 del decreto legge n. 1/2012, dal regolamento dell’Isvap
+n. 40/2012 per la commercializzazione di polizze assicurative o altri contratti
+insieme a un finanziamento nonché dall’art. 48 del regolamento dell’Isvap n.
+5/2006.
+
+=== K495 | [Sezione VII - par. 5.2.1] Contratti di credito
+5.2.1 Contratti di credito
+I contratti di credito indicano in modo chiaro e conciso:
+a) il tipo di credito;
+(1) Per le aperture di credito in conto corrente da rimborsare su richiesta della banca o entro tre mesi dal
+prelievo, si veda tuttavia quanto previsto dal paragrafo 4.2.3.
+  21
+b) il nome, il cognome e l’indirizzo del consumatore, la denominazione del
+finanziatore e l’indirizzo della sua sede amministrativa o della succursale
+con sede in Italia; nel caso di offerta attraverso intermediari del credito,
+vanno indicati anche il nome e il cognome o la denominazione e l’indirizzo
+del soggetto che entra in rapporto con il consumatore;
+c) la durata del contratto di credito;
+d) l’importo totale del credito e le condizioni di utilizzo;
+e) nel caso di contratti di credito collegati, l’indicazione del bene o del servizio
+oggetto del contratto e il relativo prezzo in contanti;
+f) il tasso di interesse, le condizioni che ne disciplinano l’applicazione e, se
+disponibile, ogni indice o tasso di riferimento applicabile al tasso iniziale,
+nonché le condizioni temporali e le modalità per l’eventuale modifica del
+tasso di interesse, ove consentita ai sensi dell’articolo 118 del T.U. Qualora
+il contratto preveda l’applicazione di tassi di interesse diversi al variare di
+determinate circostanze, le informazioni previste dalla presente lettera
+vanno fornite con riferimento a ciascuno dei tassi applicabili;
+g) il TAEG e l’importo totale dovuto dal consumatore, calcolati al momento
+della conclusione del contratto, con l’indicazione delle ipotesi sulle quali si
+basa il calcolo del TAEG;
+h) l’importo, il numero e la periodicità delle rate e, ove previsto dal contratto,
+l’ordine con cui vengono imputati i pagamenti finalizzati al rimborso di
+saldi negativi ai quali sono applicati diversi tassi debitori;
+i) per i pagamenti di spese e interessi senza ammortamento del capitale, un
+estratto dei periodi e delle condizioni di pagamento degli interessi e delle
+spese correlate, ricorrenti e non ricorrenti;
+j) tutte le spese derivanti dal contratto di credito, ivi incluse: quando per la
+stipulazione del contratto è obbligatoria l’apertura di un conto sul quale
+regolare i rimborsi e i prelievi effettuati dal consumatore, le spese di
+gestione di questo conto (1); le spese connesse all’utilizzazione dei mezzi
+di pagamento che consentono di effettuare rimborsi e prelievi (2); le
+condizioni in presenza delle quali è possibile una modifica delle spese, nel
+rispetto delle disposizioni di legge sulla modifica unilaterale delle
+condizioni contrattuali;
+k) il tasso degli interessi di mora applicabile al momento della conclusione del
+contratto, le condizioni in presenza delle quali questo tasso può essere
+modificato, nel rispetto delle disposizioni di legge sulla modifica unilaterale
+delle condizioni contrattuali, e le eventuali penali previste per
+l’inadempimento;
+(1) Sul punto si richiama la circostanza che l’articolo 21, comma 3-bis, del Codice del Consumo qualifica
+come pratica commerciale scorretta il caso in cui, ai fini della stipula di un contratto di mutuo, il consumatore
+sia obbligato alla sottoscrizione di una polizza assicurativa erogata dal medesimo finanziatore ovvero all’apertura
+di un conto corrente presso il medesimo finanziatore.
+(2) Per le aperture di credito in conto corrente questa voce riporta anche il tasso di interesse e la commissione
+di istruttoria veloce relativi allo sconfinamento extra-fido.
+  22
+l) una chiara avvertenza delle conseguenze alle quali il consumatore può
+andare incontro in caso di mancato pagamento di una o più rate;
+m) se necessarie, l’esistenza di spese notarili;
+n) le garanzie e le assicurazioni, ove previste (fermo restando l’obbligo di
+sottoscrivere documenti separati ai sensi dell’articolo 125-bis, comma 3,
+del T.U.);
+o) l’esistenza del diritto di recesso e i termini e le condizioni per esercitarlo
+(secondo una delle modalità previste dall’articolo 64, comma 2, del Codice
+del Consumo), ivi incluse le informazioni sull’obbligo del consumatore di
+rimborsare il capitale prelevato e di corrispondere gli interessi, secondo
+quanto previsto dall’articolo 125-ter del T.U., nonché l’importo giornaliero
+degli interessi da corrispondere in caso di recesso; se si tratta di un contratto
+di credito al quale non si applicano le disposizioni in materia di recesso, va
+indicata l’inesistenza di questo diritto;
+p) in caso di contratti di credito collegati, l’indicazione dei diritti spettanti al
+consumatore ai sensi dell’articolo 125-quinquies del T.U. e le condizioni
+per esercitarli;
+q) il diritto del consumatore al rimborso anticipato previsto dall’articolo 125-
+sexies, comma 1, del T.U. e la procedura per effettuarlo nonché, in presenza
+delle condizioni ivi stabilite, il diritto del finanziatore a ottenere, ai sensi
+dell’articolo 125-sexies, comma 4, del T.U., un indennizzo a fronte del
+rimborso anticipato e le relative modalità di calcolo (1);
+r) la procedura per l’esercizio del diritto di recesso previsto dall’articolo 125-
+quater del T.U., da altre norme di legge o dal contratto;
+s) le modalità per presentare reclami e i mezzi di tutela stragiudiziale (ricorsi)
+di cui il consumatore può avvalersi, ivi compresi i sistemi di risoluzione
+delle controversie ai sensi dell’articolo 128-bis del T.U. (Arbitro Bancario
+Finanziario), e le modalità per accedervi;
+t) le ulteriori condizioni eventualmente previste nel contratto;
+u) l’indicazione che il finanziatore è soggetto ai controlli esercitati dalla Banca
+d’Italia, con sede in Via Nazionale, 91 - 00184 Roma.
+In caso di ammortamento del capitale di un contratto di credito a durata
+determinata, il contratto indica, oltre alle informazioni precedentemente elencate, il
+diritto del consumatore di ricevere in qualsiasi momento del rapporto, su sua
+richiesta e senza spese, una tabella di ammortamento. La tabella di ammortamento
+riporta:
+— gli importi dovuti, le relative scadenze e le condizioni di pagamento;
+— il piano di ammortamento del capitale, che rappresenta la ripartizione di
+ciascun rimborso periodico;
+(1) Nei contratti di credito con cessione del quinto dello stipendio o della pensione e nelle fattispecie
+assimilate, le modalità di calcolo della riduzione del costo totale del credito a cui il consumatore ha diritto in caso di
+estinzione anticipata includono l’indicazione degli oneri che devono essere restituiti, dal finanziatore o da terzi, al
+consumatore, se questi li ha corrisposti anticipatamente al finanziatore (cfr. altresì, sezione XI, paragrafo 2).
+  23
+— gli interessi e gli eventuali costi aggiuntivi; se il tasso non è fisso ovvero se
+i costi aggiuntivi possono essere modificati nel corso del rapporto, è
+indicata in modo chiaro e conciso la circostanza che i dati riportati nella
+tabella sono validi fino alla successiva modifica del tasso di interesse o dei
+costi aggiuntivi, conformemente a quanto previsto nel contratto.
+Nel caso di un contratto di credito in base al quale i pagamenti effettuati dal
+consumatore non comportano un immediato e corrispondente ammortamento
+dell’importo totale del credito, ma servono a costituire un capitale da investire
+secondo quanto stabilito dal contratto di credito o da un contratto accessorio, il
+contratto riporta una dichiarazione chiara e concisa da cui risulti che, salvo diverso
+accordo tra le parti, non vi è una garanzia di rimborso dell’importo totale del credito
+prelevato in base al contratto di credito, anche quando siano state integralmente
+pagate le rate; ciò in quanto l’entità del rimborso dipende dal valore del capitale
+investito alla scadenza del termine previsto nel contratto. Resta ferma la disciplina
+sui prodotti finanziari prevista ai sensi del T.U.F.
+
+=== K496 | [Sezione VII - par. 5.3] Cessione del credito e del contratto di credito
+5.3 Cessione del credito e del contratto di credito
+
+=== K497 | [Sezione VII - par. 5.3.1] Eccezioni opponibili
+5.3.1 Eccezioni opponibili
+Ai sensi dell’articolo 125-septies del T.U., in caso di cessione del credito o del
+contratto di credito, il consumatore può sempre opporre al cessionario tutte le
+eccezioni che poteva far valere nei confronti del cedente, ivi inclusa la
+compensazione, anche in deroga all’articolo 1248 del codice civile.
+
+=== K498 | [Sezione VII - par. 5.3.2] Comunicazioni al debitore ceduto
+5.3.2 Comunicazioni al debitore ceduto
+Il finanziatore notifica individualmente al consumatore la cessione attraverso
+un supporto cartaceo o altro supporto durevole in maniera tempestiva. Con riguardo
+all’efficacia della cessione, resta fermo quanto previsto dagli articoli 1264, 1265 e
+1407 del codice civile. Le comunicazioni previste ai sensi del presente paragrafo
+sono effettuate secondo quanto previsto ai sensi dell’articolo 58 del T.U., in caso di
+cessione di rapporti giuridici ai sensi del medesimo articolo 58 del T.U., e
+dell’articolo 4 della legge n. 130/1999, in caso di cartolarizzazione dei crediti.
+La comunicazione individuale della cessione non è necessaria se il creditore
+originario, in forza di un accordo con il cessionario, continua a gestire il credito nei
+confronti del consumatore.
+Per le operazioni di acquisto di crediti in sofferenza previste dalla Sezione VII-
+ter, in luogo del presente sottoparagrafo, si applica il paragrafo 4 di tale Sezione.
+  24
+
+=== K499 | [Sezione VII - par. 6.1] Modifiche delle condizioni contrattuali
+6.1 Modifiche delle condizioni contrattuali
+In caso di modifiche delle condizioni contrattuali, anche quando esse
+costituiscono adeguamento a disposizioni normative o richiedono il consenso del
+consumatore, il finanziatore effettua la comunicazione disciplinata dall’articolo
+125-bis del T.U., con la quale illustra chiaramente il contenuto della modifica, i
+tempi previsti per la sua applicazione, le procedure di reclamo disponibili per il
+consumatore e i relativi termini. La comunicazione menziona altresì la facoltà di
+inviare un esposto alla Banca d’Italia e i relativi recapiti (1). La comunicazione è
+effettuata su supporto cartaceo o altro supporto durevole prima che la modifica delle
+condizioni contrattuali abbia effetto.
+Secondo quanto previsto dall’articolo 125-bis, comma 3-ter, del T.U., qualora
+si tratti di modifiche unilaterali delle condizioni contrattuali, ove consentite ai sensi
+dell’articolo 118 del T.U., si applica quest’ultimo articolo e la relativa
+comunicazione al cliente, da effettuarsi con preavviso minimo di due mesi, è
+integrata con l’indicazione delle procedure di reclamo disponibili per il
+consumatore, i relativi termini, nonché la facoltà di inviare un esposto alla Banca
+d’Italia e i relativi recapiti (2).
+Se la modifica unilaterale delle condizioni contrattuali ha a oggetto il tasso di
+interesse, la relativa comunicazione al consumatore indica altresì le eventuali
+conseguenze della modifica sull’importo e sulla periodicità delle rate.
+Per le modifiche del tasso di interesse connesse a variazioni di tassi di
+riferimento, il contratto può prevedere che - se il nuovo tasso di riferimento è reso
+pubblico con mezzi appropriati ed è disponibile presso le dipendenze del
+finanziatore - le informazioni sulle modifiche del tasso di interesse siano fornite
+periodicamente in forma scritta, su supporto cartaceo o altro supporto durevole
+preventivamente accettato.
+6.bis. Inadempimento del consumatore
+Ai sensi dell’articolo 125-decies del T.U., il finanziatore adotta procedure per
+gestire i rapporti con i consumatori in difficoltà nei pagamenti.
+Si applica quanto previsto dal paragrafo 8 della sezione VI-bis.
+(1) L’autorità da menzionare è la Banca d'Italia, Servizio Tutela individuale dei clienti, Via del Traforo, 146,
+00187 Roma, indirizzo di posta elettronica email@bancaditalia.it e/o di posta elettronica certificata
+TUC@pec.bancaditalia.it. Gli esposti possono essere presentati alla Banca d’Italia anche tramite la piattaforma
+Servizi Online: https://servizionline.bancaditalia.it/home.
+(2) Cfr. nota precedente.
+  25
+  26
+
+=== K500 | [Sezione VII-bis] CESSIONE DI QUOTE DELLO STIPENDIO, DEL SALARIO O DELLA
+SEZIONE VII-bis
+CESSIONE DI QUOTE DELLO STIPENDIO, DEL SALARIO O DELLA
+PENSIONE
+A tutti i finanziamenti nella forma della cessione di quote dello stipendio o
+salario o pensione ai sensi del D.P.R. 5 gennaio 1950, n. 180, e successive
+modificazioni, si applicano, oltre alle disposizioni contenute nel citato D.P.R., anche
+le disposizioni del capo II del titolo VI del T.U. e quelle previste ai sensi della
+sezione VII.
+I soggetti abilitati alla concessione di prestiti verso la cessione di quote dello
+stipendio o salario o pensione si avvalgono, per la distribuzione di tali servizi, oltre
+che del proprio personale, dei propri agenti in attività finanziaria o dei mediatori
+creditizi iscritti nell’elenco di cui all’articolo 128-sexies del T.U., esclusivamente di
+soggetti terzi che siano banche, intermediari finanziari, Poste italiane S.p.A., nonché
+delle rispettive strutture distributive. Per la valutazione e la remunerazione degli
+addetti alla propria rete vendita gli intermediari adottano politiche che non
+costituiscano un incentivo a commercializzare prodotti non adeguati rispetto alle
+esigenze finanziarie dei clienti, con particolare riguardo alle procedure di rinnovo
+dei contratti in essere, secondo quanto stabilito dalla sezione XI, paragrafo 2 (1).
+Sempre ai sensi della sezione XI, paragrafo 2, le procedure interne
+dell’intermediario quantificano in maniera chiara, dettagliata e inequivoca gli oneri
+che, in caso di estinzione anticipata, sono restituiti, dal finanziatore o da terzi, al
+consumatore, se questi li ha corrisposti anticipatamente al finanziatore, in
+conformità all’articolo 125-sexies del T.U.
+Prima che i clienti siano vincolati dal contratto di finanziamento, gli
+intermediari forniscono loro le informazioni sul contratto secondo quanto previsto
+dalla sezione VII. Le componenti di costo dovute a soggetti terzi (ad es. a titolo di
+imposta, quale corrispettivo di altri contratti o della mediazione), che vanno
+riportate nel documento standard denominato “Informazioni europee di base sul
+credito ai consumatori”, sono contraddistinte secondo una delle seguenti
+alternative:
+a. sono graficamente distinte (ad es. usando colori diversi) all’interno delle
+“Informazioni europee di base sul credito ai consumatori”;
+b. sono riportate anche in un documento distinto allegato alle “Informazioni
+europee di base sul credito ai consumatori”.
+(1) Con riguardo all’applicabilità della Sezione XI agli intermediari finanziari iscritti all’elenco generale di
+cui all’art. 106 o all’elenco speciale di cui all’art. 107 T.U. anteriori alla riforma del Titolo V del T.U. resta fermo
+quanto previsto alla sezione XI, paragrafo 1, nota 1.
+  27
+
+=== K501 | [Sezione VII] -ter
+SEZIONE VII-ter
+ACQUISTO E GESTIONE DI CREDITI IN SOFFERENZA
+
+=== K502 | [Sezione VII - par. 1 (2)] Premessa
+1. Premessa
+La presente sezione attua le disposizioni a tutela del debitore ceduto contenute nel
+Titolo V, Capo II, del T.U., introdotto per recepire nell’ordinamento italiano la
+Direttiva (UE) 2021/2167 del Parlamento europeo e del Consiglio del 24 novembre
+2021 relativa ai gestori di crediti e agli acquirenti di crediti e che modifica le
+direttive 2008/48/CE e 2014/17/UE.
+
+=== K504 | [Sezione VII - par. 3] Principi generali e disposizioni applicabili
+3. Principi generali e disposizioni applicabili
+Ai sensi dell’art. 114.8 del T.U., gli acquirenti di crediti in sofferenza e i
+gestori di crediti in sofferenza, nei loro rapporti con i debitori:
+a) si comportano secondo correttezza, diligenza e trasparenza;
+b) forniscono informazioni corrette, chiare e non ingannevoli;
+c) garantiscono la riservatezza dei dati personali;
+d) nelle comunicazioni con i debitori agiscono senza molestia, coercizione o
+indebito condizionamento.
+Il gestore dei crediti in sofferenza assicura che la gestione dei crediti avvenga
+nel rispetto delle norme a tutela dei debitori ceduti.
+  28
+Ai sensi dell’art. 114.7, comma 2, del T.U., i gestori di crediti in sofferenza per
+ciascun pagamento ricevuto rilasciano ai debitori quietanza. La quietanza è
+rilasciata, con funzione liberatoria, su supporto cartaceo o altro supporto durevole
+e attesta l’importo ricevuto, la data di estinzione dell’obbligazione e i dati
+identificativi della stessa.
+Nel caso in cui l'acquirente di crediti in sofferenza abbia affidato a una banca o a
+un intermediario iscritto nell'albo previsto dall’articolo 106 la gestione dei crediti
+in sofferenza acquistati, la quietanza viene rilasciata dalla banca o
+dall’intermediario iscritto nell’albo previsto dall’articolo 106 T.U.
+Per quanto non diversamente disciplinato dalla presente sezione, ai gestori di
+crediti in sofferenza si applicano, inoltre, le disposizioni contenute nella sezione I
+(disposizioni di carattere generale) e nella sezione X (controlli); nella misura in
+cui sono rilevanti in relazione all’attività svolta e tenuto conto della tipologia dei
+crediti ceduti, si applicano, inoltre, le disposizioni contenute nella sezione III
+(contratti), paragrafi 1, 2, 3, 5 e 6; sezione IV (comunicazioni alla clientela);
+sezione VI-bis (credito immobiliare ai consumatori); sezione VII (credito ai
+consumatori); sezione VII-bis (cessione di quote dello stipendio, del salario o della
+pensione). La sezione XI (requisiti organizzativi) si applica secondo quanto
+previsto dal paragrafo 1 della stessa sezione.
+La presente sezione e le altre disposizioni ivi richiamate si applicano anche ai
+gestori di crediti dell’Unione europea che svolgono in Italia attività di gestione di
+crediti in sofferenza.
+Ai soggetti ai quali i gestori di crediti in sofferenza esternalizzano funzioni aziendali
+si applica la sezione IV della Parte prima, Capitolo 5, del Provvedimento della
+Banca d’Italia recante le Disposizioni di vigilanza per la gestione di crediti in
+sofferenza. Anche in caso di esternalizzazione, resta ferma la responsabilità del
+gestore di crediti in sofferenza per il rispetto, da parte dei soggetti terzi cui ha
+esternalizzato le attività, delle disposizioni di tutela dei debitori ceduti previste dal
+presente provvedimento.
+
+=== K505 | [Sezione VII - par. 4] Informativa ai debitori ceduti
+4. Informativa ai debitori ceduti
+Ai sensi dell’art. 114.10 del T.U., in caso di acquisto di crediti in sofferenza,
+il gestore di crediti in sofferenza, la banca o l’intermediario iscritto nell’albo
+previsto dall’articolo 106 T.U. di cui si avvale l’acquirente di crediti in sofferenza
+per la gestione di tali crediti, dà notizia individualmente al debitore ceduto
+dell’avvenuta cessione su supporto cartaceo o altro supporto durevole, dopo la
+cessione e in ogni caso prima dell’avvio di azioni di recupero del credito
+successive alla cessione (1).
+La comunicazione contiene almeno le seguenti informazioni:
+a) la notizia dell’avvenuta cessione, compresa la data dell’operazione e quella di
+efficacia della stessa;
+(1) Ai fini della presente Sezione, per azioni di recupero del credito si intendono sia quelle di natura
+giudiziaria sia quelle extragiudiziali.
+  29
+b) il nome e il cognome o la denominazione, l’indirizzo o la sede e i recapiti
+dell’acquirente di crediti in sofferenza;
+c) la denominazione, la sede e i recapiti del gestore di crediti in sofferenza o della
+banca o dell’intermediario iscritto nell’albo previsto dall’articolo 106 T.U., di cui
+si avvale l’acquirente di crediti in sofferenza per la gestione di tali crediti;
+d) se la comunicazione è effettuata da un gestore di crediti in sofferenza, i
+riferimenti all’autorizzazione rilasciata ai sensi dell’articolo 114.6 T.U., ivi
+compresi gli estremi dell’iscrizione nell’albo di cui all’art. 114.5 del T.U.;
+e) ove pertinente, il nome e il cognome o la denominazione, l’indirizzo o la sede
+e i recapiti dei soggetti ai quali siano state esternalizzate funzioni aziendali;
+f) un punto di contatto al quale il debitore può rivolgersi se necessario per ricevere
+informazioni presso il gestore di crediti in sofferenza, la banca o l’intermediario
+iscritto nell’albo previsto dall’articolo 106 T.U. di cui si avvale l’acquirente di
+crediti in sofferenza per la gestione di tali crediti, e, se del caso, presso i soggetti
+ai quali siano state esternalizzate funzioni aziendali. L’informazione sul punto di
+contatto è riportata nella comunicazione in modo chiaro ed evidenziato rispetto
+alle altre informazioni;
+g) l’importo dovuto dal debitore al momento della comunicazione, con il dettaglio
+di quanto dovuto a titolo di capitale, interessi, commissioni e altri oneri;
+h) una dichiarazione attestante che al rapporto oggetto di cessione continua ad
+applicarsi tutta la normativa europea e nazionale riguardante in particolare
+l’esecuzione dei contratti, la tutela dei consumatori, i diritti del debitore e il diritto
+penale;
+i) il nome, l’indirizzo e i recapiti delle autorità competenti alle quali il debitore può
+presentare un esposto; il riferimento è all’autorità dello Stato membro in cui il
+debitore risiede o nel quale è situata la sua sede legale oppure, qualora a norma
+del suo diritto nazionale non abbia una sede legale, lo Stato membro nel quale è
+situata la sua sede principale (1).
+La comunicazione al debitore è redatta in un linguaggio chiaro e
+comprensibile, tenendo conto delle caratteristiche delle categorie di clientela alle
+quali è destinata.
+Il soggetto tenuto a effettuare la comunicazione la invia anche ogni qualvolta
+ciò sia richiesto dal debitore ceduto, se del caso apportandovi gli aggiornamenti
+necessari.
+In tutte le successive comunicazioni con il debitore deve essere sempre
+indicato il punto di contatto di cui alla lettera f), a cui il debitore ceduto può
+rivolgersi per ricevere informazioni. Inoltre, nel caso in cui sia stato nominato un
+(1) Qualora il debitore risieda o abbia sede in Italia, l’autorità da menzionare è la Banca d'Italia, Servizio Tutela
+individuale dei clienti, Via del Traforo, 146, 00187 Roma, indirizzo di posta elettronica email@bancaditalia.it e/o
+di posta elettronica certificata TUC@pec.bancaditalia.it. Gli esposti possono essere presentati alla Banca d’Italia
+anche tramite la piattaforma Servizi Online: https://servizionline.bancaditalia.it/home.
+  30
+nuovo soggetto per la gestione dei crediti in sofferenza, la prima comunicazione
+successiva alla nomina deve indicare, oltre al punto di contatto di cui alla lettera f),
+anche i dati identificativi e i recapiti di tale nuovo soggetto e, se si tratta di un gestore
+di crediti in sofferenza, i riferimenti all’autorizzazione rilasciata ai sensi
+dell’articolo 114.6 del T.U., ivi compresi gli estremi dell’iscrizione nell’albo di cui
+all’art. 114.5 del T.U.
+Quando l’acquisto di crediti in sofferenza è effettuato da banche, intermediari
+iscritti nell’albo di cui all’articolo 106 T.U. o da organismi di investimento collettivo
+del risparmio, la comunicazione è effettuata rispettivamente dalla banca o
+dall’intermediario finanziario acquirente, oppure dal gestore di cui all’articolo 1,
+comma 1, lettera q-bis), del T.U.F. Per le operazioni di acquisto di crediti in
+sofferenza effettuate nell’ambito di operazioni di cartolarizzazione ai sensi della
+legge 30 aprile 1999, n. 130, la comunicazione è effettuata dal soggetto incaricato
+della riscossione dei crediti ceduti e dei servizi di cassa e pagamento ai sensi
+dell’articolo 2, comma 6, della medesima legge.
+La comunicazione è effettuata ferma restando l’applicazione delle disposizioni
+dell’articolo 58 del T.U. e della relativa disciplina di attuazione, per quanto riguarda
+le forme di pubblicità e l’efficacia delle cessioni ivi previste. Con riferimento alle
+comunicazioni individuali al debitore ceduto, si applica in ogni caso il presente
+paragrafo quando la cessione ha ad oggetto crediti in sofferenza.
+Restano ferme, inoltre, le disposizioni in materia di efficacia della cessione del
+contratto e di efficacia della cessione dei crediti nei confronti del debitore ceduto e
+dei terzi previste dal codice civile e da leggi speciali.
+  31
+
+=== K506 | [Sezione X] CONTROLLI
+SEZIONE X
+CONTROLLI
+Ai sensi dell’articolo 128 del T.U., la Banca d’Italia, al fine di verificare il
+rispetto delle disposizioni previste ai sensi del titolo VI del T.U., può acquisire
+informazioni, atti e documenti ed eseguire ispezioni presso le banche, gli
+intermediari finanziari iscritti nell’albo previsto dall’articolo 106 del T.U., gli istituti
+di moneta elettronica, gli istituti di pagamento e i gestori di crediti in sofferenza.
+Tali poteri, se del caso, possono essere esercitati anche ai fini della verifica del
+rispetto delle disposizioni di tutela del debitore ceduto previste dal Titolo V, Capo
+II, del T.U. e delle relative disposizioni attuative della Banca d'Italia. Nei confronti
+dei soggetti ai quali i gestori di crediti in sofferenza abbiano esternalizzato funzioni
+aziendali, possono essere esercitati i poteri previsti dall’articolo 114.11 del T.U.,
+anche al fine di verificare il rispetto delle disposizioni di tutela del debitore ceduto
+sopra richiamate.
+I medesimi controlli di cui all’art. 128 del T.U. sono esercitati nei confronti
+di Poste Italiane S.p.A. per l’attività di bancoposta (D.P.R. n. 144/2001).
+Per gli agenti in attività finanziaria, i controlli della Banca d’Italia sono
+esercitati nei confronti dell’intermediario mandante, che è responsabile per il
+rispetto delle disposizioni previste ai sensi del Titolo VI del T.U. da parte degli
+agenti di cui si avvale (articolo 128-decies, comma 2, del T.U.). A questi fini, la
+Banca d’Italia può altresì effettuare ispezioni presso l’agente in attività
+finanziaria, anche avvalendosi del Corpo della guardia di finanza.
+La Banca d’Italia può chiedere la collaborazione del Corpo della guardia di
+finanza (articolo 22 della legge n. 262/2005, e successive modificazioni).
+Al fine di consentire il controllo sulle disposizioni relative all’utilizzo di
+tecniche di comunicazione a distanza, gli intermediari comunicano alla Banca
+d’Italia l’indirizzo dei siti internet eventualmente utilizzati ai sensi della sezione
+V.
+L’articolo 144 del T.U. prevede i casi in cui possono essere applicate sanzioni
+amministrative pecuniarie per il mancato rispetto delle disposizioni previste ai
+sensi del titolo VI del medesimo T.U. e delle disposizioni di tutela del debitore
+ceduto previste dal Titolo V, Capo II, del T.U.; in tali ipotesi, trovano applicazione
+le procedure previste dal titolo VIII del T.U. e dalle disposizioni attuative della
+Banca d’Italia.
+Ai sensi dell’articolo 128-ter del T.U., qualora nell’esercizio dei controlli
+emergano irregolarità, la Banca d’Italia può:
+a) inibire ai soggetti che prestano le operazioni e i servizi disciplinati dal
+titolo VI del T.U. la continuazione dell’attività, anche di singole aree o
+sedi secondarie, e ordinare la restituzione delle somme indebitamente
+percepite e altri comportamenti conseguenti;
+b) inibire specifiche forme di offerta, promozione o conclusione di contratti
+disciplinati dal titolo VI del T.U.;
+ 32 
+c) disporre in via provvisoria la sospensione, per un periodo non superiore a
+novanta giorni, delle attività di cui alle lettere a) e b), laddove sussista
+particolare urgenza;
+d) pubblicare i provvedimenti di cui al medesimo articolo 128-ter nel sito
+web della Banca d’Italia e disporre altre forme di pubblicazione,
+eventualmente a cura e a spese dell’intermediario.
+I provvedimenti indicati dall’articolo 128-ter del T.U. sono adottati dalla
+Banca d’Italia a fronte di violazioni delle disposizioni previste ai sensi del titolo
+VI o delle disposizioni di tutela del debitore ceduto previste dal Titolo V, Capo II,
+del medesimo T.U.; la pubblicazione stabilita dalla lettera d) è effettuata o disposta
+quando vi siano particolari esigenze conoscitive per il pubblico.
+Ai sensi dell’articolo 67-septiesdecies del Codice del Consumo, la Banca
+d’Italia, nell’ambito delle proprie competenze, accerta le violazioni delle
+disposizioni contenute nella parte III, titolo III, capo I, sezione IV-bis del
+medesimo Codice in materia di commercializzazione a distanza ai consumatori di
+servizi finanziari disciplinati dal presente provvedimento e irroga le relative
+sanzioni, applicando le procedure sopra menzionate.
+La Banca d’Italia, nell’esercizio dei propri poteri, può ordinare ai soggetti
+vigilati la cessazione o vietare l’inizio di pratiche non conformi alle disposizioni
+sulla commercializzazione a distanza di servizi finanziari ai consumatori (articolo
+67-noviesdecies del Codice del Consumo).
+Ai sensi degli articoli 14, 15 e 16 del decreto legislativo n. 70/2003, la Banca
+d’Italia può esigere, anche in via d’urgenza, che i fornitori di servizi della società
+dell’informazione (“mere conduit”, “caching” e “hosting”) impediscano o
+pongano fine alle violazioni commesse dagli intermediari attraverso strumenti
+telematici.
+ 33 
+
+=== K507 | [Sezione XI - par. 1] Premessa
+1. Premessa
+Il puntuale rispetto della disciplina contenuta nel presente provvedimento,
+così come un efficace presidio dei rischi di natura legale e reputazionale connessi
+ai rapporti con la clientela, richiedono che gli intermediari pongano in essere
+accorgimenti di carattere organizzativo idonei ad assicurare che in ogni fase
+dell’attività di intermediazione sia prestata costante e specifica attenzione alla
+trasparenza delle condizioni contrattuali e alla correttezza dei comportamenti.
+La presente sezione disciplina le procedure e le iniziative organizzative,
+nonché le politiche e prassi di remunerazione per il personale e per i terzi addetti
+alla rete di vendita, che gli intermediari debbono porre in essere in relazione
+all’attività avente a oggetto le operazioni e i servizi disciplinati ai sensi del titolo
+VI del T.U.; i paragrafi 1-bis, 2, 2-bis e 2-quater si applicano solo quando tale
+attività è svolta nei confronti della clientela al dettaglio; il paragrafo 2-ter si
+applica solo quando tale attività è svolta nei confronti di consumatori. Le
+disposizioni sono complementari alle discipline concernenti la funzione di
+conformità nonché l’organizzazione e i controlli interni.
+Le disposizioni della presente sezione riguardano le operazioni e i servizi che
+ricadono nell’ambito di applicazione del titolo VI del T.U., nonché l’acquisto e la
+gestione di crediti in sofferenza ai sensi del titolo V, capo II, del T.U.
+I paragrafi 1-bis, 2, 2-bis, 2-quater e 3 della presente sezione si applicano
+alle banche autorizzate in Italia, alle succursali italiane di banche comunitarie, agli
+intermediari finanziari iscritti nell’albo previsto dall’articolo 106 del T.U. (ivi
+inclusi i confidi iscritti in tale elenco) (1), a Poste Italiane S.p.A. per le attività di
+bancoposta, agli istituti di moneta elettronica italiani, agli istituti di pagamento
+autorizzati in Italia, alle succursali italiane di istituti di pagamento e di istituti di
+moneta elettronica comunitari; il paragrafo 3 si applica – oltre che a tali soggetti
+– anche ai confidi di cui all’articolo 112, comma 1, T.U.
+Ai gestori di crediti in sofferenza e ai gestori di crediti dell’Unione europea
+di cui alla sezione VII-ter si applicano i paragrafi 2, 2-quater e 3 della presente
+sezione.
+Le funzioni di controllo interno dei gruppi bancari italiani, delle banche
+autorizzate in Italia, degli intermediari iscritti nell’albo dell’articolo 106 del T.U.,
+degli istituti di moneta elettronica e degli istituti di pagamento autorizzati in Italia,
+nonché dei gestori di crediti in sofferenza considerano il rispetto delle procedure
+previste dalla presente sezione nell’ambito delle valutazioni sul presidio dei rischi
+operativi e reputazionali richieste dalla disciplina prudenziale di vigilanza.
+(1) Nel periodo transitorio previsto dall’articolo 10 del decreto legislativo 13 agosto 2010, n. 141., la presente
+sezione si applica: i) integralmente, agli intermediari finanziari iscritti nell’elenco speciale previsto dall’articolo 107
+del T.U. vigente alla data del 4 settembre 2010; ii) limitatamente ai paragrafi 2-bis e 3, agli intermediari iscritti nel
+solo elenco generale previsto dall’articolo 106 del T.U. vigente alla data del 4 settembre 2010 (ivi inclusi i confidi
+iscritti nell’apposita sezione di tale elenco).
+ 34 
+La Banca d’Italia prende in considerazione il rispetto delle disposizioni
+contenute nella presente sezione anche ai fini dei controlli sull’adeguatezza
+patrimoniale a fronte dei rischi legali e di reputazione.
+Le procedure previste dalla presente sezione sono:
+— informate a principi di proporzionalità, avendo riguardo alla natura, alla
+dimensione e alla complessità dell’operatività degli intermediari, alla
+complessità e alla rischiosità dei prodotti, alle tecniche di
+commercializzazione impiegate, alle diverse tipologie di clienti;
+— adeguatamente formalizzate. A tal fine gli intermediari conservano la
+documentazione relativa all’adozione e all’applicazione delle procedure;
+— periodicamente valutate per verificarne l’adeguatezza e l’efficacia e per
+rimediare alle carenze eventualmente riscontrate, tenendo anche conto dei
+reclami pervenuti (1). A tal fine è previsto un coinvolgimento della
+funzione di conformità o, in sua assenza, dell’internal audit, che svolgono
+gli opportuni accertamenti e riferiscono agli organi aziendali con
+periodicità almeno annuale e, comunque, ogni qual volta siano state
+accertate gravi carenze (2). Per i gestori di crediti in sofferenza, è previsto
+il coinvolgimento della funzione di controllo di secondo livello o, se
+istituito, dell’internal audit.
+
+=== K508 | [Sezione XI - par. 2] Procedure interne
+2. Procedure interne
+Fermo restando quanto previsto dal paragrafo 1-bis, gli intermediari adottano
+e applicano procedure interne volte ad assicurare:
+— una valutazione – anche con il coinvolgimento delle funzioni di controllo
+e, nelle realtà più complesse, la costituzione di comitati interfunzionali –
+della struttura dei prodotti offerti con riferimento a:
+i) la comprensibilità, da parte della clientela, della loro struttura,
+delle loro caratteristiche e dei rischi tipicamente connessi ai
+medesimi (3);
+(1) Si richiamano, inoltre, le previsioni che impongono una valutazione dei reclami pervenuti anche alla
+luce degli orientamenti dell’Arbitro Bancario Finanziario, contenute nelle disposizioni della Banca d'Italia del
+18 giugno 2009, e successive modificazioni.
+(2) Nelle succursali italiane di banche comunitarie, di istituti di pagamento comunitari e di istituti di moneta
+elettronica comunitari è individuato un soggetto responsabile che riferisce al legale rappresentante.
+(3) Con riferimento ai prodotti ai quali non si applicano le disposizioni del paragrafo 1-bis della presente
+sezione, le procedure assicurano in ogni caso che il cliente non sia indirizzato verso prodotti evidentemente inadatti
+rispetto alle proprie esigenze finanziarie; ciò non richiede agli intermediari di assicurare assistenza al cliente fino al
+punto di individuare, in ogni caso, l’offerta più adeguata, bensì di adottare procedure organizzative che evitino
+modalità di commercializzazione oggettivamente idonee a indurre il cliente a selezionare prodotti manifestamente
+non adatti. A questi fini, gli intermediari valutano l’introduzione di strumenti, anche informatici, che consentano di
+verificare la coerenza tra il profilo del cliente e i prodotti allo stesso offerti.
+ 35 
+ii) la loro conformità a prescrizioni imperative di legge; in caso di
+prodotti composti, è individuata la normativa applicabile secondo
+quanto previsto dalla sezione I, paragrafo 1.1.;
+— la trasparenza e la correttezza nella commercializzazione dei prodotti. In
+tale ambito, le procedure includono almeno accorgimenti atti a far sì che:
+i) la documentazione informativa sia completa, chiara, accessibile
+da parte della clientela, utilizzata attivamente da parte degli
+addetti alla rete di vendita e adeguatamente pubblicizzata sul sito
+internet;
+ii) nel caso di intermediari che offrono il “conto di base” o un conto
+di pagamento avente le caratteristiche previste dalla sezione III,
+paragrafo 4, questo conto sia sempre prospettato, eventualmente
+assieme ad altri, ai clienti con esigenze di base che intendono aprire
+o cambiare un conto. In caso di commercializzazione di
+finanziamenti in valuta diversa dall’euro, le procedure assicurano
+che ai clienti vengano offerti finanziamenti in euro per le stesse
+finalità dei finanziamenti in valuta diversa dall’euro ovvero
+strumenti per la copertura del rischio di cambio;
+iii) gli addetti alla rete di vendita: abbiano un’adeguata e aggiornata
+conoscenza della normativa applicabile e delle procedure adottate
+in base alla presente sezione; illustrino le caratteristiche, i rischi
+e i costi dei prodotti e forniscano chiarimenti sui diritti dei clienti,
+sulla base della documentazione informativa prevista dalla
+normativa applicabile, delle informazioni fornite dagli
+intermediari e, se necessario, di ulteriori documenti; assicurino
+che i clienti, prima di essere vincolati da un contratto o da una
+proposta, abbiano avuto modo di valutare adeguatamente la
+documentazione informativa messa a loro disposizione;
+— che la quantificazione dei corrispettivi richiesti alla clientela ogni
+qualvolta la normativa vigente richieda che essi non possano superare o
+siano comunque adeguati e proporzionati rispetto alle spese sostenute sia
+attestata per iscritto e formalmente approvata (1);
+— il rispetto puntuale delle iniziative di autoregolamentazione cui hanno
+aderito;
+— la possibilità per il cliente di ottenere in qualsiasi momento e in tempi
+ragionevoli il testo aggiornato del contratto, a sua scelta in formato
+elettronico o cartaceo, qualora siano state apportate modifiche unilaterali;
+— la tempestiva restituzione delle somme indebitamente addebitate al
+cliente;
+(1) In relazione ai contratti di finanziamento con cessione del quinto dello stipendio o della pensione e a
+fattispecie assimilate, le procedure quantificano altresì in maniera chiara, dettagliata e inequivoca gli oneri che, in
+caso di estinzione anticipata, sono restituiti, dal finanziatore o da terzi, al consumatore, se questi li ha corrisposti
+anticipatamente al finanziatore, in conformità all’art. 125-sexies del T.U.
+ 36 
+— standard di trasparenza e correttezza adeguati anche quando, in una o più
+fasi della commercializzazione, intervengono soggetti terzi estranei alla
+loro organizzazione;
+— che, in caso di cessione di rapporti giuridici cui si applica l’articolo 58 del
+T.U., i titolari dei conti correnti e dei conti di pagamento ceduti godano
+di un’adeguata assistenza per poter fruire senza soluzione di continuità
+dei servizi connessi al conto (es. servizi di pagamento) (1).
+
+=== K509 | [Sezione XI - par. 3] Reclami
+3. Reclami
+Gli intermediari adottano e applicano procedure per la trattazione dei reclami
+che garantiscano risposte sollecite ed esaustive, promuovano il superamento delle
+criticità riscontrate sulla base dei reclami ricevuti e salvaguardino la qualità delle
+relazioni con i clienti. A questi fini, gli intermediari si dotano di una politica di
+trattazione dei reclami, approvata e sottoposta a riesame periodico da parte
+dell’organo con funzione di supervisione strategica, che è anche responsabile della
+sua corretta attuazione (e di eventuali modifiche alla stessa) (2). La politica è
+adeguatamente formalizzata e resa facilmente accessibile al personale preposto alla
+gestione dei reclami.
+Le procedure per la trattazione dei reclami prevedono:
+— l’individuazione di un responsabile e/o di un ufficio, in grado di gestire i
+reclami in modo indipendente rispetto alle funzioni aziendali preposte alla
+commercializzazione dei servizi;
+— le forme di inoltro dei reclami da parte della clientela e di conferma
+dell’avvenuta ricezione e risposta da parte degli intermediari, che
+includono, in ogni caso, la posta ordinaria, la posta elettronica e la posta
+elettronica certificata;
+— la pubblicizzazione sul sito dell’intermediario delle informazioni previste
+ai due precedenti alinea;
+— la gratuità per il cliente dell’interazione con il personale preposto alla
+gestione dei reclami e agli eventuali call center, fatte salve le spese
+normalmente connesse al mezzo di comunicazione adottato se consentite
+dalla legge (ad esempio, costo della telefonata a tariffazione non
+maggiorata);
+— le modalità di interazione tra il responsabile e/o l’ufficio incaricato della
+trattazione dei reclami, le funzioni preposte alla commercializzazione dei
+(1) In caso di operazioni che comportino la cessione di rapporti di conti di pagamento con consumatori, si
+applica quanto previsto dal paragrafo 2-ter.
+(2) Se la regolamentazione applicabile non prevede una distinzione tra la funzione di supervisione strategica
+e la funzione di gestione, si fa riferimento all’organo di amministrazione.
+ 37 
+prodotti e altre funzioni aziendali coinvolte nella gestione del reclamo,
+nonché i presidi atti a mitigare i possibili conflitti di interesse;
+— la formazione del personale preposto alla gestione dei reclami e agli
+eventuali call center, adeguata in relazione ai rispettivi compiti;
+— le modalità di trattazione dei reclami; esse sono rese note al cliente su sua
+richiesta o, in ogni caso, al momento della conferma dell’avvenuta
+ricezione del reclamo;
+— l’acquisizione di ogni elemento utile per una adeguata trattazione dei
+reclami e la documentazione del processo di definizione del reclamo, ivi
+incluse le interazioni tra le diverse funzioni coinvolte;
+— i tempi massimi di risposta, comunque non superiori a 60 giorni dalla
+ricezione del reclamo (1);
+— la registrazione degli elementi essenziali di ogni reclamo pervenuto,
+nonché delle eventuali misure adottate a favore del cliente per risolvere il
+problema sollevato;
+— la pubblicazione annuale, sul sito internet dell’intermediario, o – in
+mancanza – in altra forma adeguata, di un rendiconto sull’attività di
+gestione dei reclami con i relativi dati.
+Le risposte, da redigere in un linguaggio chiaro e comprensibile, contengono
+almeno:
+— se il reclamo è ritenuto fondato, le iniziative che l’intermediario si
+impegna ad assumere e i tempi entro i quali le stesse verranno realizzate;
+— se il reclamo è ritenuto infondato, un’illustrazione chiara ed esauriente
+delle motivazioni del rigetto, nonché le necessarie indicazioni circa la
+possibilità di adire l’Arbitro Bancario Finanziario o altre forme di
+soluzione stragiudiziale delle controversie.
+Gli intermediari svolgono nel continuo un’attività di analisi dei dati relativi
+ai reclami pervenuti, per individuare eventuali criticità ricorrenti e assumere le
+iniziative necessarie per il loro superamento. In questo ambito, gli intermediari
+valutano se le criticità riguardano anche prodotti diversi da quelli oggetto di
+reclamo.
+Il responsabile e/o l’ufficio incaricato della trattazione dei reclami predispone
+una relazione annuale in cui dà conto dell’attività svolta, con particolare riguardo al
+numero dei reclami ritenuti fondati e di quelli ritenuti infondati. La funzione di
+conformità o, in sua assenza, dell’internal audit, riferiscono agli organi aziendali,
+anche sulla base della relazione predisposta dal responsabile e con periodicità
+almeno annuale, su: i) la situazione complessiva dei reclami ricevuti, con i relativi
+(1) Per i servizi di pagamento, i tempi massimi di risposta non sono superiori a 15 giornate lavorative dalla
+ricezione del reclamo. Se, in situazioni eccezionali, l’intermediario non può rispondere entro 15 giornate lavorative,
+invia al cliente una risposta interlocutoria, in cui indica in modo chiaro le ragioni del ritardo e specifica il termine
+entro il quale il cliente riceverà la risposta definitiva, comunque non superiore a 35 giornate lavorative.
+L’intermediario individua nell’ambito delle procedure interne le situazioni eccezionali, allo stesso non imputabili,
+al ricorrere delle quali è possibile rispondere oltre il termine delle 15 giornate lavorative. È fatto salvo quanto previsto
+dall’articolo 14, comma 2 del decreto legislativo 27 gennaio 2010, n. 11.
+ 38 
+esiti; ii) le pronunce dell’Arbitro Bancario Finanziario e dell’autorità giudiziaria che
+hanno definito in senso favorevole ai clienti questioni oggetto di precedente
+reclamo, ritenuto infondato; iii) le principali criticità che emergono dai reclami
+ricevuti; iv) l’adeguatezza delle procedure e delle soluzioni organizzative adottate.
+(1)
+(1) Nelle succursali italiane di banche comunitarie, di istituti di pagamento comunitari e di istituti di moneta
+elettronica comunitari è individuato un soggetto responsabile che riferisce al legale rappresentante.
+ 39 

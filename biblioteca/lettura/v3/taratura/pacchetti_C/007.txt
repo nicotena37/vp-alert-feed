@@ -1,0 +1,1062 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Direttiva sul credito immobiliare ai consumatori (MCD)  (id UE-DIR-2014-17)
+
+=== K202 | [44] Clausola di riesame
+Articolo 44
+Clausola di riesame
+La Commissione procede ad un riesame della presente direttiva entro il 21 marzo 2019. Il riesame valuta l’adeguatezza e l’efficacia delle disposizioni sui consumatori e sul mercato interno.
+Il riesame comprende almeno i seguenti aspetti:
+a)
+una valutazione dell’uso del PIES, della sua comprensione da parte dei consumatori e della loro soddisfazione rispetto ad esso;
+b)
+un’analisi delle altre informazioni precontrattuali;
+c)
+un’analisi dell’attività transfrontaliera da parte di intermediari del credito e creditori;
+d)
+un’analisi dell’evoluzione del mercato per gli enti non creditizi che offrono contratti di credito per beni immobili residenziali;
+e)
+una valutazione della necessità di ulteriori misure, tra cui un regime di passaporto per gli enti non creditizi che offrono contratti di credito per beni immobili residenziali;
+f)
+una valutazione della necessità di introdurre diritti e obblighi aggiuntivi rispetto alla fase post-contrattuale dei contratti di credito;
+g)
+una valutazione dell’attualità dell’ambito di applicazione della presente direttiva, tenendo conto del suo impatto su altre forme di credito alternative;
+h)
+una valutazione della necessità di ulteriori misure per assicurare la tracciabilità dei contratti di credito garantiti da beni immobili residenziali;
+i)
+una valutazione della disponibilità di dati sull’andamento dei prezzi dei beni immobili residenziali e sul grado di comparabilità dei dati;
+j)
+una valutazione della questione se continui ad essere opportuno applicare la direttiva 2008/48/CE ai crediti non garantiti finalizzati alla ristrutturazione di un bene immobile residenziale, con un
+importo totale del credito superiore all’importo massimo precisato nell’articolo 2, paragrafo 2, lettera c), di tale direttiva;
+k)
+una valutazione dell’adeguatezza della trasparenza delle modalità di pubblicazione delle sanzioni ai sensi dell’articolo 38, paragrafo 2;
+l)
+una valutazione della proporzionalità delle avvertenze di cui all’articolo 11, paragrafo 6, e all’articolo 13, paragrafo 2, e del potenziale di ulteriore armonizzazione delle avvertenze sui rischi.
+
+=== K203 | [45] Ulteriori iniziative in materia di concessione e accensione responsabili di mutui
+Articolo 45
+Ulteriori iniziative in materia di concessione e accensione responsabili di mutui
+Entro il 21 marzo 2019 la Commissione presenta una relazione esauriente intesa a valutare le sfide più generali poste dal sovraindebitamento privato direttamente connesso all’attività creditizia. Tale
+relazione esaminerà altresì la necessità della vigilanza sui registri dei crediti e la possibilità di sviluppare mercati più flessibili e affidabili. Essa è corredata, se del caso, di proposte
+legislative.
+
+=== K204 | [46] Modifica della direttiva 2008/48/CE
+Articolo 46
+Modifica della direttiva 2008/48/CE
+All’articolo 2 della direttiva 2008/48/CE è inserito il paragrafo seguente:
+«2 bis .
+In deroga al paragrafo 2, lettera c), la presente direttiva si applica a contratti di credito non garantiti finalizzati alla ristrutturazione di un bene immobile residenziale, con un importo totale
+del credito superiore a 75 000 EUR.»
+
+=== K205 | [47] Modifica della direttiva 2013/36/UE
+Articolo 47
+Modifica della direttiva 2013/36/UE
+Nella direttiva 2013/36/UE è inserito l’articolo seguente:
+«Articolo 54 bis
+Gli articoli 53 e 54 lasciano impregiudicati i poteri d’inchiesta conferiti al Parlamento europeo dall’articolo 226 TFUE.»
+
+=== K206 | [48] Modifica del regolamento (UE) n. 1093/2010
+Articolo 48
+Modifica del regolamento (UE) n. 1093/2010
+Il regolamento (UE) n. 1093/2010 è così modificato:
+1)
+l’articolo 13, paragrafo 1, secondo comma, è sostituito dal seguente:
+«Quando la Commissione adotta una norma tecnica di regolamentazione invariata rispetto al progetto di norma tecnica di regolamentazione presentato dall’Autorità, il termine entro il quale il
+Parlamento europeo e il Consiglio possono sollevare obiezioni è di un mese dalla data di notifica. Su iniziativa del Parlamento europeo o del Consiglio, tale termine è prorogato per un periodo inziale
+di un mese ed è prorogabile per un ulteriore periodo di un mese.»;
+2)
+l’articolo 17, paragrafo 2, secondo comma, è sostituito dal seguente:
+«Fatti salvi i poteri di cui all’articolo 35, l’autorità competente fornisce senza indugio all’Autorità tutte le informazioni che l’Autorità considera necessarie per le sue indagini, incluse le
+modalità di applicazione degli atti di cui all’articolo 1, paragrafo 2, in conformità al diritto dell’Unione.»
+
+=== K209 | [Allegato I] CALCOLO DEL TASSO ANNUO EFFETTIVO GLOBALE (TAEG)
+ALLEGATO I
+CALCOLO DEL TASSO ANNUO EFFETTIVO GLOBALE (TAEG)
+I.
+Equazione di base che esprime l’equivalenza dei prelievi, da un lato, e dei rimborsi e delle spese, dall’altro.
+L’equazione di base, da cui risulta il tasso annuo effettivo globale (TAEG), esprime su base annua l’equivalenza tra, da un lato, la somma dei valori attualizzati dei prelievi e, dall’altro, la somma
+dei valori attualizzati dei rimborsi e dei pagamenti delle spese, vale a dire:
+dove
+X
+è il TAEG
+m
+è il numero d’ordine dell’ultimo prelievo
+k
+è il numero d’ordine di un prelievo, sicché 1 ≤ k ≤ m
+C k
+è l’importo del prelievo numero k
+t k
+è l’intervallo di tempo, espresso in anni e frazioni di anno, compreso tra la data del primo prelievo e la data di ciascun prelievo successivo, sicché t
+1 = 0
+m’
+è il numero d’ordine dell’ultimo rimborso o pagamento di spese
+l
+è il numero d’ordine di un rimborso o pagamento di spese
+D l
+è l’importo di un rimborso o pagamento di spese
+s 1
+designa l’intervallo di tempo, espresso in anni e frazioni di anno, compreso tra la data del primo prelievo e la data di ciascun rimborso o pagamento di spese.
+Osservazioni:
+a)
+Le somme versate da entrambe le parti in momenti diversi non sono necessariamente dello stesso importo, né sono versate necessariamente ad intervalli eguali.
+b)
+La data iniziale è quella del primo prelievo.
+c)
+Gli intervalli di tempo intercorrenti tra le date utilizzate nei calcoli sono espressi in anni o frazioni di anno. Un anno si presume composto da 365 giorni (366 giorni per gli anni bisestili), 52
+settimane o dodici mesi identici, ciascuno dei quali si presume costituito da 30,41666 giorni (vale a dire 365/12), a prescindere dal fatto che l’anno sia bisestile o meno.
+Nel caso in cui gli intervalli tra le date usate nei calcoli non possono essere espressi con un numero intero di settimane, mesi o anni, sono espressi con un numero intero di uno di questi periodi in
+combinazione con un numero di giorni. Se si utilizzano i giorni:
+i)
+è contato ogni giorno, compresi i fine settimana e i festivi;
+ii)
+i periodi uguali e poi i giorni sono contati a ritroso fino alla data del prelievo iniziale;
+iii)
+la lunghezza del periodo in giorni si ottiene escludendo il primo giorno e includendo l’ultimo ed è espressa in anni dividendo tale periodo per il numero di giorni (365 o 366) dell’anno completo
+contati a ritroso dall’ultimo giorno allo stesso giorno dell’anno precedente.
+d)
+Il risultato del calcolo è espresso con un’accuratezza pari alla prima cifra decimale. Se la cifra decimale seguente è superiore o uguale a 5, la cifra del decimale precedente è aumentata di uno.
+e)
+È possibile riscrivere l’equazione ricorrendo ad una sola sommatoria e utilizzando la nozione di flussi (A k ) che saranno positivi o negativi, ossia rispettivamente pagati o percepiti nei periodi da
+1 a n, ed espressi in anni, vale a dire:
+dove S è il saldo dei flussi attualizzati e il cui valore sarà pari a zero se si desidera conservare l’equivalenza dei flussi.
+II.
+Ulteriori ipotesi per il calcolo del TAEG
+a) Se un contratto di credito lascia al consumatore libertà di prelievo, si presuppone che l’importo totale del credito sia prelevato immediatamente e per intero.
+b) Se un contratto di credito prevede diverse modalità di prelievo con spese o tassi debitori diversi, si presuppone che l’importo totale del credito sia prelevato con la spesa e il tasso debitore più
+elevati applicati alla modalità più comunemente utilizzata per questo tipo di contratto di credito.
+c) Se un contratto di credito lascia al consumatore libertà di prelievo in generale ma prescrive tra le diverse modalità di prelievo una limitazione per quanto riguarda l’importo del credito e il
+periodo di tempo, si presuppone che l’importo del credito sia prelevato alla data più vicina tra quelle previste nel contratto di credito e conformemente a detti limiti di prelievo.
+d) Se sono offerti tassi debitori e spese diversi per un periodo o importo limitato, si presuppone che il tasso debitore e le spese più elevati siano il tasso debitore e le spese per l’intera durata
+del contratto di credito.
+e) Nel caso dei contratti di credito per i quali è pattuito un tasso debitore fisso per il periodo iniziale, al termine del quale è fissato un nuovo tasso debitore, successivamente adeguato
+periodicamente in base ad un indicatore convenuto o a un tasso di riferimento interno, il calcolo del TAEG si basa sull’assunto che, al termine del periodo di applicazione del tasso debitore fisso, il
+tasso debitore sia identico a quello vigente al momento del calcolo del TAEG, in base al valore dell’indicatore o del tasso di riferimento interno convenuto in quel momento, ma non inferiore al tasso
+debitore fisso.
+f) Se il limite massimo del credito non è stato ancora convenuto, si considera che sia fissato a 170 000 EUR. Nel caso dei contratti di credito, diversi da fideiussioni o garanzie, la cui finalità non
+è l’acquisto o la conservazione di diritti di proprietà su un bene immobile residenziale o un terreno, scoperti, carte di debito differito o carte di credito, tale limite massimo si considera fissato
+a 1 500 EUR.
+g) Nel caso di contratti di credito diversi da scoperti, prestiti ponte, contratti di credito con regime di comproprietà su bene, responsabilità o garanzie eventuali e contratti di credito a durata
+indeterminata indicati nelle ipotesi di cui alle lettere i), j), k), l) e m):
+i)
+se la data o l’importo del rimborso del capitale che il consumatore deve effettuare non possono essere determinati, il rimborso si considera effettuato alla data più vicina nel tempo tra quelle
+previste nel contratto di credito e per l’importo più basso tra quelli previsti dal contratto di credito;
+ii)
+se l’intervallo tra la data del primo prelievo e la data del primo pagamento che deve essere effettuato dal consumatore non può essere determinato, si assume che sia l’intervallo più breve.
+h) Se la data o l’importo di un pagamento che il consumatore deve effettuare non possono essere determinati in base al contratto di credito o alle ipotesi di cui alle lettere g), i), j), k), l) e m)
+si considera che il pagamento sia effettuato conformemente alle date e alle condizioni stabilite dal creditore e, se queste non sono note:
+i)
+gli interessi sono pagati insieme ai rimborsi del capitale;
+ii)
+le spese diverse dagli interessi espresse come somma unica sono pagate alla data di conclusione dell’accordo di credito;
+iii)
+le spese diverse dagli interessi espresse come più pagamenti sono pagate a intervalli regolari, iniziando dalla data del primo rimborso del capitale e, se l’importo di tali pagamenti non è noto, si
+considera che siano di uguale importo;
+iv)
+il pagamento finale estingue il saldo per capitale, interessi e altri eventuali oneri.
+i) In caso di scoperto, si considera che l’importo totale del credito sia prelevato per intero e per l’intera durata del contratto di credito. Se la durata dello scoperto non è nota, il TAEG è
+calcolato in base all’assunto che la durata del credito sia di tre mesi.
+j) In caso di prestito ponte, si presuppone che l’importo totale del credito sia prelevato per intero e per l’intera durata del contratto di credito. Se la durata del contratto di credito non è nota,
+il TAEG è calcolato in base all’assunto che la durata del credito sia di dodici mesi.
+k) Nel caso di un contratto di credito a durata indeterminata diverso da uno scoperto e da un prestito ponte, si presume:
+i)
+nel caso di contratti di credito finalizzati all’acquisto o alla conservazione di diritti di proprietà su un bene immobile residenziale, che il credito sia fornito per un periodo di venti anni a
+decorrere dalla data del primo prelievo e che il pagamento finale da parte del consumatore estingua il saldo per capitale, interessi e altri eventuali oneri; nel caso di contratti di credito non
+finalizzati all’acquisto o alla conservazione di diritti di proprietà su beni immobili residenziali o che sono prelevati mediante carte di debito differito o carte di credito, che tale periodo sia di
+un anno;
+ii)
+che il capitale sia rimborsato dal consumatore in rate mensili di uguale importo, a partire da un mese dalla data del primo prelievo. Tuttavia, nei casi in cui il capitale può essere rimborsato solo
+per intero, in un unico versamento, entro ogni termine di pagamento, si presume che i successivi prelievi e rimborsi dell’intero capitale da parte del consumatore siano effettuati nel corso di un
+anno. Gli interessi e gli altri oneri sono applicati in conformità a tali prelievi e rimborsi del capitale e secondo quanto stabilito dal contratto di credito.
+Ai fini della presente lettera, un contratto di credito a durata indeterminata è un contratto di credito senza durata fissa comprendente crediti che devono essere rimborsati per intero entro o dopo un
+dato termine ma, una volta rimborsati, sono disponibili per un altro prelievo.
+l) Nel caso di responsabilità o garanzia eventuale, si presume che l’importo totale del credito sia prelevato per intero in un unico importo alla data antecedente tra:
+a)
+la data dell’ultimo prelievo consentita dal contratto di credito che costituisce la fonte potenziale della responsabilità o garanzia eventuale; o
+b)
+nel caso di un contratto di credito rotativo, al termine del periodo iniziale precedente al rinnovo.
+m) Nel caso di contratti di credito con regime di comproprietà sul bene:
+i)
+i pagamenti dei consumatori si considerano avvenuti nell’ultima data o nelle ultime date consentite dal contratto di credito;
+ii)
+gli aumenti percentuali del valore del bene immobile residenziale che garantisce il contratto di credito con regime di comproprietà, e il tasso di qualsiasi indice dell’inflazione cui si faccia
+riferimento nel contratto, si ritengono pari alla percentuale più alta tra l’attuale tasso target di inflazione della banca centrale e il livello di inflazione dello Stato membro in cui il bene
+immobile residenziale si trova al momento della conclusione del contratto di credito o 0 % se tali percentuali sono negative.
+
+=== K210 | [Allegato II] PROSPETTO INFORMATIVO EUROPEO STANDARDIZZATO (PIES)
+ALLEGATO II
+PROSPETTO INFORMATIVO EUROPEO STANDARDIZZATO (PIES)
+PARTE A
+Il testo contenuto in questo modello è riportato nel PIES. Le indicazioni tra parentesi quadre sono sostituite con le informazioni pertinenti. Le istruzioni per la compilazione del PIES da parte del
+creditore o, se del caso, dell’intermediario del credito sono contenute nella parte B.
+Ogniqualvolta ricorrono i termini «se applicabile», il creditore fornisce le informazioni richieste se pertinenti al contratto di credito. Se le informazioni non sono pertinenti al contratto di
+credito, il creditore cancella le informazioni corrispondenti o l’intera sezione (per esempio, nei casi in cui la sezione non è applicabile). Se è cancellata l’intera sezione, la numerazione delle
+sezioni del prospetto PIES è adattata di conseguenza.
+Le informazioni che seguono sono fornite in un documento unico. Il carattere tipografico utilizzato è chiaramente leggibile. Le informazioni che si desidera evidenziare compaiono in grassetto, in
+ombreggiato o in caratteri tipografici più grandi. Tutte le avvertenze sui rischi applicabili sono messe in evidenza.
+Modello PIES
+(Testo introduttivo)
+Il presente documento è stato redatto per [nome del consumatore] in data [data odierna].
+Il presente documento è stato redatto in base alle informazioni da Lei fornite finora e alle condizioni attuali del mercato finanziario.
+Le informazioni di seguito fornite sono valide fino al [data di scadenza] (se applicabile) ad eccezione di quelle relative al tasso di interesse e agli altri costi. Dopo tale data le informazioni
+potrebbero variare in linea con le condizioni di mercato.
+(se applicabile) Il presente documento non implica alcun obbligo da parte del [nome del creditore] di concedere un mutuo.
+1. Soggetto erogante
+[nome]
+[numero telefonico]
+[indirizzo geografico]
+(facoltativo) [indirizzo di posta elettronica]
+(facoltativo) [numero di fax]
+(facoltativo) [indirizzo del sito web]
+(facoltativo)[persona/punto di contatto]
+(se applicabile, informazioni relative all’eventuale fornitura di servizi di consulenza:) [(Avendo valutato le Sue esigenze e la Sua situazione, raccomandiamo la scelta di questo mutuo./Non Le
+raccomandiamo un mutuo in particolare. Tuttavia, in funzione delle risposte da Lei fornite ad alcune domande, Le forniamo informazioni su questo mutuo affinché possa fare una scelta.)]
+2. (se applicabile) Intermediario del credito
+[nome]
+[numero telefonico]
+[indirizzo geografico]
+(facoltativo) [indirizzo di posta elettronica]
+(facoltativo) [numero di fax]
+(facoltativo) [indirizzo del sito web]
+(facoltativo)[persona/punto di contatto]
+(se applicabile [informazioni relative all’eventuale fornitura di servizi di consulenza]) [(Avendo valutato le Sue esigenze e la Sua situazione, raccomandiamo la scelta di questo mutuo./Non Le
+raccomandiamo un mutuo in particolare. Tuttavia, in funzione delle risposte da Lei fornite ad alcune domande, Le forniamo informazioni su questo mutuo affinché possa fare una scelta.)]
+[Remunerazione]
+3. Principali caratteristiche del mutuo
+Importo e valuta del mutuo da concedere: [importo][valuta]
+(se applicabile) Il mutuo non è in [valuta nazionale del mutuatario].
+(se applicabile) L’ammontare del Suo mutuo in [valuta nazionale del mutuatario] potrebbe cambiare.
+(se applicabile) Ad esempio, se [valuta nazionale del mutuatario] si svalutasse del 20 % rispetto a [valuta del credito], l’ammontare del Suo mutuo aumenterebbe di [inserire importo nella valuta
+nazionale del mutuatario]. L’importo potrebbe tuttavia essere superiore se il valore di [valuta nazionale del mutuatario] scendesse più del 20 %.
+(se applicabile) L’ammontare massimo del Suo mutuo sarà [inserire importo nella valuta nazionale del mutuatario].(se applicabile). Se l’importo del credito raggiunge [inserire importo nella valuta
+nazionale del mutuatario] riceverà un’avvertenza. (se applicabile) Le sarà possibile [inserire il diritto di rinegoziare il mutuo in valuta estera o il diritto di convertire il mutuo in [valuta
+pertinente] e le condizioni].
+Durata del mutuo: [durata]
+[tipo di mutuo]
+[tipo di tasso di interesse applicabile]
+Importo totale da rimborsare:
+Ciò vuol dire che Lei rimborserà [importo] per ogni [unità della valuta] preso in prestito.
+(se applicabile) [Il mutuo in oggetto/Parte del mutuo in oggetto] è un mutuo che prevede il pagamento dei soli interessi. Al termine della durata del mutuo dovranno ancora essere rimborsati/e
+[inserire l’importo del mutuo che prevede il pagamento dei soli interessi].
+(se applicabile) Valore stimato del bene ai fini della predisposizione del presente prospetto informativo: [inserire importo]
+(se applicabile) Importo massimo possibile del mutuo in relazione al valore dell’immobile [inserire percentuale] o valore minimo dell’immobile per ottenere un prestito dell’importo indicato [inserire
+importo]
+(se applicabile) [Garanzia]
+4. Tasso d’interesse e altri costi
+Il tasso annuo effettivo globale (TAEG) rappresenta il costo totale del mutuo espresso in percentuale annua. Il TAEG risulta utile per confrontare offerte diverse.
+Il TAEG applicabile al Suo mutuo è [TAEG].
+Comprende:
+Tasso di interesse [valore in percentuale o, se applicabile, indicazione di un tasso di riferimento e valore percentuale dello spread a favore del creditore]
+[altre componenti del TAEG]
+Spese una tantum
+(se applicabile) Per registrare l’ipoteca dovrà sostenere alcune spese. [Inserire, se noto, l’importo delle spese ovvero una base di calcolo.]
+Spese periodiche
+(se applicabile) Questo TAEG è calcolato sulla base di ipotesi relative al tasso di interesse.
+(se applicabile) Poiché il tasso di interesse [di parte] del suo mutuo è variabile l’effettivo TAEG potrà risultare essere diverso da quello indicato qualora il tasso di interesse del suo mutuo cambi.
+Ad esempio se il tasso di interesse aumentasse a [scenario descritto nella parte B] il TAEG potrebbe aumentare a [inserire un TAEG esemplificativo corrispondente allo scenario].
+(se applicabile) Si noti che questo TAEG è calcolato nell’ipotesi che il tasso di interesse si mantenga per tutta la durata del contratto al livello pattuito per il periodo iniziale.
+(se applicabile) I seguenti costi non sono noti all’istituto che eroga il mutuo e pertanto non sono inclusi nel TAEG: [Costi]
+(se applicabile) Per registrare l’ipoteca dovrà sostenere alcune spese.
+La preghiamo di accertarsi di essere a conoscenza di tutti gli ulteriori oneri e imposte associati al mutuo.
+5. Frequenza e numero dei pagamenti
+Frequenza di rimborso: [frequenza]
+Numero dei pagamenti: [numero]
+6. Importo di ciascuna rata
+[importo] [valuta]
+Il Suo reddito potrebbe variare. La preghiamo di considerare se potrà ancora far fronte alle rate di ammortamento [frequenza delle rate] qualora il Suo reddito diminuisca.
+(se applicabile) Poiché [il Suo mutuo/parte del Suo mutuo] prevede rate per il pagamento dei soli interessi, dovrà adottare misure separate per [inserire l’importo del mutuo che prevede il pagamento
+dei soli interessi] da rimborsare al termine della durata del mutuo. Si ricordi di aggiungere eventuali altri pagamenti che dovrà effettuare all’importo della rata qui indicato.
+(se applicabile) Il tasso di interesse su [parte di] questo mutuo può cambiare. Ciò significa che l’importo delle rate potrebbe aumentare o diminuire. Ad esempio se il tasso di interesse aumenta a
+[scenario descritto nella parte B] i pagamenti potrebbero aumentare a [inserire l’importo della rata corrispondente allo scenario].
+(se applicabile) Il valore dell’importo che dovrà versare in [valuta nazionale del mutuatario] ogni [frequenza della rata] potrebbe cambiare. (se applicabile) I pagamenti potrebbero aumentare a
+[inserire importo massimo nella valuta nazionale del mutuatario] ogni [inserire periodo] (se applicabile). Ad esempio se [valuta nazionale del mutuatario] si svaluta del 20 % rispetto a [valuta del
+credito] Lei dovrà pagare un importo aggiuntivo [inserire importo nella valuta nazionale del mutuatario] ogni [inserire periodo]. Le rate da rimborsare potrebbero essere superiori a quanto indicato.
+(se applicabile) Il tasso di cambio utilizzato per convertire il Suo rimborso da [valuta del credito] a [valuta nazionale del mutuatario] sarà quello pubblicato da [nome dell’ente che pubblica il
+tasso di cambio] il [data], o sarà calcolato il [data] utilizzando [inserire l’indice di riferimento o il metodo di calcolo].
+(se applicabile) [Particolari sui prodotti di risparmio abbinati, mutui con pagamento degli interessi differito]
+7. (se applicabile) Tabella di ammortamento esemplificativa
+La tabella mostra l’importo delle rate da corrispondere ogni [frequenza].
+Le rate (colonna [n. della colonna]) rappresentano la somma degli interessi da versare (colonna [n. della colonna]), eventualmente del capitale rimborsato (colonna [n. della colonna]) e, se
+applicabile, altre spese (colonna [n. della colonna]). (se applicabile) Le spese nella colonna relativa alle altre spese sono inerenti a [elenco delle spese]. Il capitale residuo (colonna [numero
+della colonna]) è l’importo che rimane da rimborsare dopo il pagamento di ciascuna rata.
+[tabella]
+8. Obblighi supplementari
+Per beneficiare delle condizioni descritte nel presente documento, il mutuatario deve attenersi ai seguenti obblighi:
+[obblighi]
+(se applicabile) Si sottolinea che le condizioni di prestito descritte nel presente documento (compreso il tasso di interesse) potrebbero variare in caso di inadempienza di questi obblighi.
+(se applicabile) La preghiamo di prendere nota delle conseguenze che potrebbero derivare dal disdire in una fase successiva i servizi accessori al mutuo:
+[Conseguenze]
+9. Estinzione anticipata
+È possibile estinguere anticipatamente il mutuo in oggetto in forma totale o parziale.
+(se applicabile) [condizioni]
+(se applicabile) Penale per l’estinzione: [inserire importo o, se applicabile, metodo di calcolo]
+(se applicabile) Nel caso in cui scegliesse di estinguere anticipatamente il mutuo, La preghiamo di contattarci per determinare l’esatto ammontare della penale.
+10. Opzioni flessibili
+(se applicabile) [Informazioni su portabilità/surrogazione] Avrà la possibilità di trasferire il mutuo ad un altro [soggetto erogante][o][immobile]. [Inserire condizioni]
+(se applicabile) Non è possibile trasferire il mutuo a un altro[soggetto erogante][o][immobile]
+(se applicabile) Opzioni supplementari: [inserire spiegazione delle opzioni supplementari elencate nella parte B e, in via facoltativa, ogni altra opzione offerta dal soggetto erogante con il
+contratto di credito e non menzionata nelle sezioni precedenti].
+11. Altri diritti del mutuatario
+(se applicabile) Lei dispone di [durata del periodo di riflessione] dopo [inizio del periodo di riflessione] per riflettere prima di impegnarsi con la stipula del mutuo. (se applicabile) Una volta
+ricevuto il testo del contratto di credito dall’istituto che eroga il mutuo, potrà decidere di non sottoscriverlo prima della fine di [durata del periodo di riflessione].
+(se applicabile) Per [durata del periodo di recesso] dopo [inizio del periodo di recesso] Lei può esercitare il diritto di recedere dal contratto. [Condizioni] [Inserire procedura]
+(se applicabile) Lei può perdere il diritto di recedere dal contratto se, durante il periodo a Sua disposizione, compra o vende un immobile collegato al presente contratto di credito.
+(se applicabile) Prima di decidere se esercitare il diritto di recesso [dal contratto di credito], dovrebbe verificare se rimarrà vincolato dagli altri obblighi relativi al mutuo [compresi i servizi
+accessori in relazione al contratto di credito, di cui alla sezione 8].
+12. Reclami
+Per eventuali reclami si potrà rivolgere a [inserire punto di contatto e fonte di informazione interni sulla procedura].
+(se applicabile) Tempo massimo per il trattamento del reclamo [periodo]
+(se applicabile) [Se non è soddisfatto dell’esito del reclamo] può rivolgersi a: [inserire nome dell’organismo esterno per il trattamento e la risoluzione extragiudiziale dei reclami] (se applicabile)
+o prendere contatto con FIN-NET per ricevere informazioni sull’organismo equivalente nel Suo paese.
+13. Inosservanza degli obblighi previsti dal mutuo: conseguenze per il debitore
+[tipo di inosservanza]
+[conseguenze finanziarie e/o legali]
+Se dovesse incontrare difficoltà nell’effettuare i pagamenti [frequenza], La invitiamo a mettersi in contatto con noi al più presto per vagliare possibili soluzioni.
+(se applicabile) Come soluzione estrema, il Suo immobile potrebbe essere soggetto ad espropriazione nel caso in cui Lei non pagasse regolarmente le rate.
+(se applicabile) 14. Informazioni supplementari
+(se applicabile) [Individuazione della legge applicabile al contratto di credito].
+(se la lingua che il soggetto erogante intende usare è diversa da quella del PIES) Le informazioni e le condizioni contrattuali saranno comunicate in [precisare la lingua]. Con il Suo accordo,
+intendiamo comunicare in [precisare la lingua o le lingue] per tutta la durata del contratto di credito.
+[Inserire la dichiarazione attestante il diritto di ricevere una bozza del contratto di credito o, se applicabile, di ricevere un’offerta in tal senso]
+15. Autorità di vigilanza
+L’istituto che eroga il mutuo è soggetto alla vigilanza di [Nome/nomi, indirizzo/indirizzi web della/delle autorità di vigilanza]
+(se applicabile) Il presente intermediario del credito è soggetto alla vigilanza di [Nome, indirizzo web dell’autorità di vigilanza].
+PARTE B
+Istruzioni per la compilazione del PIES
+Il PIES è compilato almeno sulla base delle seguenti istruzioni: gli Stati membri possono tuttavia elaborare o precisare ulteriormente le istruzioni per la compilazione.
+Sezione «Testo introduttivo»
+1) La data di scadenza della validità è debitamente messa in evidenza. Ai fini della presente sezione, si intende con «data di scadenza della validità» il periodo di tempo in cui le informazioni
+contenute nel PIES, per esempio il tasso debitore, rimarranno invariate e si applicheranno qualora il creditore decidesse di concedere il credito entro tale periodo di tempo. Se la determinazione del
+tasso debitore applicabile e di altri costi dipende dai risultati della vendita di obbligazioni sottostanti, il tasso di interesse finale e gli altri costi potrebbero differire da quelli indicati.
+Soltanto in queste circostanze dovrebbe essere previsto che la data di scadenza della validità non si applica al tasso debitore e agli altri costi mediante l’indicazione: «a parte il tasso di
+interesse e altri costi».
+Sezione «1. Soggetto erogante»
+1) Nome, numero telefonico e indirizzo geografico del creditore si riferiscono alle informazioni di contatto che il consumatore può utilizzare per la corrispondenza futura.
+2) Le informazioni sull’indirizzo di posta elettronica, il numero di fax, l’indirizzo del sito web e la persona/il punto di contatto sono facoltative.
+3) In linea con l’articolo 3 della direttiva 2002/65/CE, quando l’operazione è offerta a distanza il creditore indica, se applicabile, il nome e l’indirizzo geografico del suo rappresentante nello
+Stato membro di residenza del consumatore. L’indicazione del numero telefonico, dell’indirizzo di posta elettronica e del sito web del rappresentante del creditore è opzionale.
+4) Se la sezione 2 non è applicabile, i creditori comunicano al consumatore se sono forniti servizi di consulenza e su quale base utilizzando la formulazione di cui alla parte A.
+(se applicabile) Sezione «2. Intermediario del credito»
+Se l’informazione sul prodotto è fornita al consumatore dall’intermediario del credito, quest’ultimo comunica tra l’altro:
+1)
+che nome, numero telefonico e indirizzo geografico dell’intermediario del credito riguardano le informazioni di contatto che il consumatore può utilizzare per la corrispondenza futura;
+2)
+che le informazioni sull’indirizzo di posta elettronica, sul numero di fax, sull’indirizzo del sito web e sulla persona/punto di contatto sono facoltative;
+3)
+che l’intermediario del credito comunica al consumatore se sono forniti servizi di consulenza e su quale base utilizzando la formulazione di cui alla parte A;
+4)
+una spiegazione del modo in cui è remunerato l’intermediario del credito. Se riceve una commissione da un creditore, sono precisati l’importo e - se diverso dal nome di cui alla sezione 1 - il nome
+del creditore che la corrisponde.
+Sezione «3. Principali caratteristiche del mutuo»
+1) La presente sezione illustra chiaramente le caratteristiche principali del credito, compresi l’ammontare e la valuta nonché i rischi potenziali connessi al tasso debitore — tra cui quelli
+menzionati al punto 8 — e alla struttura di ammortamento.
+2) Se la valuta del credito è diversa dalla valuta nazionale del consumatore il creditore indica che il consumatore riceverà puntualmente un avviso almeno in caso di fluttuazione del tasso di cambio
+superiore al 20 % e, se applicabile, gli sarà comunicato il diritto di convertire la valuta del contratto o la possibilità di rinegoziare le condizioni, nonché altri strumenti di cui il consumatore
+potrà avvalersi per limitare l’esposizione al rischio di cambio. Se nel contratto di credito esiste una disposizione volta a limitare il rischio di cambio, il creditore indica l’importo massimo che il
+consumatore potrebbe essere tenuto a corrispondere. Se nel contratto di credito non esiste alcuna previsione volta a limitare il rischio di cambio a cui il consumatore è esposto nel caso di una
+fluttuazione monetaria inferiore al 20 %, il creditore indica un esempio illustrativo dell’effetto sull’ammontare del mutuo di una svalutazione del 20 % della valuta nazionale del consumatore rispetto
+alla valuta del credito.
+3) La durata del mutuo è espressa in anni e in mesi, a seconda di quale delle due opzioni sia la più adeguata. Se la durata del credito è soggetta a variazioni nel corso del contratto, il creditore
+spiega quando e a quali condizioni ciò può avvenire. Se il credito è a durata indeterminata, per esempio, per una carta di credito garantita, il creditore lo indica chiaramente.
+4) Il tipo di credito è chiaramente indicato (per esempio credito ipotecario, mutuo per la casa d’abitazione, carta di credito garantita ecc.). La descrizione del tipo di credito indica chiaramente
+come saranno rimborsati capitale e interessi nel corso del contratto (cioè la struttura dell’ammortamento), precisando se il contratto di credito si basa sul rimborso del solo capitale, dei soli
+interessi o di entrambi.
+5) Se il credito prevede che siano pagati solo interessi, integralmente o parzialmente, una dichiarazione in tal senso è inserita in modo ben visibile alla fine della presente sezione con la
+formulazione di cui alla parte A.
+6) Questa sezione spiega inoltre se il tasso debitore è fisso o variabile e, se applicabile, i periodi nei quali rimane fisso; specifica la frequenza delle successive revisioni e l’esistenza di limiti
+(massimi o minimi) alla variabilità del tasso debitore.
+La formula utilizzata per rivedere il tasso debitore e le sue varie componenti (per esempio tasso di riferimento, differenziale del tasso) è spiegata. Il creditore indica, per esempio mediante un
+indirizzo web, dove possono essere reperite ulteriori informazioni relative agli indici o ai tassi usati nella formula, per esempio Euribor o tasso di riferimento della Banca centrale.
+7) Qualora si applichino tassi debitori diversi in circostanze diverse, le informazioni sono fornite in merito a tutti i tassi applicabili.
+8) L’«importo totale da rimborsare» corrisponde all’importo totale che il consumatore deve pagare. È indicato come la somma dell’importo del credito e del costo totale del credito al consumatore. Se
+il tasso debitore non è fissato per la durata del contratto, si sottolinea che l’importo è indicativo e può variare, in particolare in relazione alla variazione del tasso debitore.
+9) Nei casi in cui il credito sia garantito da un’ipoteca sul bene immobile o da una garanzia analoga o da un diritto legato al bene immobile, il creditore richiama l’attenzione del consumatore su
+questo aspetto. Se applicabile, il creditore indica il valore presunto del bene immobile o dell’altra garanzia usata per la preparazione del presente prospetto informativo.
+10) Il creditore indica, se applicabile:
+a)
+l’«importo massimo disponibile del mutuo in relazione al valore dell’immobile» specificando il rapporto mutuo concesso/valore dell’immobile. Questo rapporto è accompagnato da un esempio in termini
+assoluti dell’importo massimo che può essere preso in prestito per un determinato valore dell’immobile; o
+b)
+il «valore minimo dell’immobile richiesto dal creditore per concedere un prestito dell’importo indicato».
+11) Se i crediti sono costituiti da diverse parti (ad esempio una parte a tasso variabile e una parte a tasso fisso) quest’informazione figura nell’indicazione relativa al tipo di crediti e i dati
+necessari sono riportati per ciascuna parte dello stesso.
+Sezione «4. Tasso d’interesse e altri costi»
+1) Il riferimento al «tasso di interesse» corrisponde al/ai tasso/i debitore/i.
+2) Il tasso debitore è indicato in valore percentuale. Se il tasso debitore è variabile e si basa su un tasso di riferimento, il creditore può indicare il tasso debitore riportando un tasso di
+riferimento e un valore percentuale del margine a suo favore. Il creditore indica comunque il valore del tasso di riferimento valido nel giorno di rilascio del PIES.
+Se il tasso debitore è variabile sono riportate tra l’altro le informazioni seguenti: a) le ipotesi sulle quali è stato calcolato il TAEG; b) se del caso, i limiti massimi e minimi applicabili; e c)
+un’avvertenza da cui risulti che la variabilità potrebbe incidere sul livello effettivo del TAEG. Onde richiamare l’attenzione del consumatore il carattere tipografico usato per l’avvertenza è più
+grande e risalta all’interno del PIES. L’avvertenza è corredata di un esempio illustrativo sul TAEG. Se si applica un limite massimo al tasso debitore l’esempio si fonda sull’ipotesi che il tasso
+salga nel più breve tempo possibile al massimo livello previsto nel contratto di credito. Se non si applica un limite massimo l’esempio illustrerà il TAEG al tasso debitore massimo almeno per gli
+ultimi vent’anni o, qualora si disponga di dati sottostanti al calcolo del tasso debitore per meno di vent’anni, per il periodo più lungo in cui questi dati sono disponibili, in base al valore più
+elevato di tassi di riferimento esterni usati nel calcolo del tasso debitore, se applicabile, o al valore più elevato di un tasso di riferimento specificato da un’autorità competente o dall’ABE
+laddove il creditore non si serva di un tasso di riferimento esterno. Questo requisito non si applica a contratti di credito il cui tasso debitore è fisso per un periodo rilevante iniziale di alcuni
+anni e può successivamente essere fissato per un ulteriore periodo a seguito di contrattazione tra il creditore e il consumatore. Per i contratti di credito il cui tasso debitore è fissato per un
+periodo rilevante iniziale di alcuni anni e può successivamente essere fissato per un ulteriore periodo a seguito di contrattazione tra il creditore e il consumatore, le informazioni fornite
+comprendono un’avvertenza da cui risulta che il TAEG è calcolato in base al tasso debitore per il periodo iniziale.
+►C1
+L'avvertenza è corredata dell'indicazione ulteriore ed esemplificativa di un TAEG calcolato conformemente all'articolo 17, paragrafo 5. ◄ Quando i crediti sono composti da diverse parti (ad esempio
+una parte a tasso fisso e una a tasso variabile), le informazioni devono essere fornite per ciascuna parte del credito.
+3) Alla voce «altre componenti del TAEG» sono elencati tutti gli altri costi contenuti nel TAEG, comprese le spese una tantum come diritti amministrativi e le spese periodiche come i diritti
+amministrativi annui. Il creditore elenca ciascuno dei costi per categoria (spese una tantum, spese periodiche e comprese nelle rate, spese periodiche ma non comprese nelle rate), indicando l’importo,
+a chi devono essere pagati e quando. L’elenco non deve includere i costi sostenuti per violazioni di obblighi contrattuali. Se l’importo non è noto, il creditore ne fornisce, se possibile, ammontare
+indicativo o, in caso contrario, precisa in che modo l’importo sarà calcolato e avverte che l’importo fornito è solo indicativo. Se taluni costi non sono inclusi nel TAEG perché non sono noti al
+creditore, questa circostanza è posta in evidenza.
+Se il consumatore ha indicato al creditore uno o più caratteristiche del credito che preferisce, quali la durata del contratto di credito e l’importo totale del credito, il creditore deve impiegare
+queste caratteristiche laddove possibile. Se un contratto di credito prevede diverse modalità di prelievo con oneri o tassi debitori diversi e il creditore si avvale delle ipotesi di cui all’allegato
+I, parte II, indica quali altri meccanismi di prelievo per detto tipo di contratto di credito possono comportare un TAEG più elevato. Se le condizioni di prelievo sono utilizzate per il calcolo del
+TAEG, il creditore evidenzia gli oneri connessi ad altri meccanismi di prelievo che non sono necessariamente quelli utilizzati nel calcolo del TAEG.
+4) Qualora sia previsto il pagamento di spese per la registrazione dell’ipoteca o di altra garanzia analoga questa informazione è indicata nella presente sezione specificandone l’importo, se noto, o,
+se ciò non è possibile, la base di calcolo per determinarlo. Se l’ammontare delle spese è noto e compreso nel TAEG, le spese e il relativo importo sono elencati alla voce «Spese una tantum». Se
+l’ammontare delle spese non è noto al creditore e pertanto non è incluso nel TAEG, le spese sono espressamente menzionate nell’elenco dei costi che non sono noti al creditore. Nell’uno o nell’altro
+caso è utilizzata la formulazione di cui alla parte A alla voce pertinente.
+Sezione «5. Frequenza e numero dei pagamenti»
+1) Nei casi in cui i pagamenti debbano essere effettuati a intervalli regolari, se ne indica la frequenza (ad esempio mensile). Nei casi in cui la frequenza dei pagamenti non sia regolare, ciò è
+chiaramente spiegato al consumatore.
+2) Il numero dei pagamenti indicato copre l’intera durata del credito.
+Sezione «6. Importo di ciascuna rata»
+1) La valuta del credito e la valuta delle rate sono chiaramente indicate.
+2) Quando — nel corso del contratto di credito — l’importo delle rate può variare, il creditore specifica il periodo durante il quale l’importo della rata iniziale resta invariato e precisa quando e
+con quale frequenza varierà.
+3) Se il credito prevede il solo pagamento di interessi, integralmente o parzialmente, una dichiarazione in tal senso è inserita in modo ben visibile alla fine della presente sezione con la
+formulazione di cui alla parte A.
+Se il consumatore è tenuto ad acquistare prodotti di risparmio abbinati per poter ottenere un credito con il solo pagamento di interessi garantito da ipoteca o da altra garanzia analoga, sono indicati
+l’importo e la frequenza dei pagamenti di questi prodotti.
+4) Se il tasso debitore è variabile, tra le informazioni figura una dichiarazione in tal senso con la formulazione di cui alla parte A e un esempio di importo massimo della rata. Se è previsto un
+limite massimo, l’esempio indicherà l’importo delle rate nel caso in cui il tasso debitore aumenti fino a tale limite. Se non è previsto un limite massimo lo scenario peggiore indicherà il livello
+delle rate a fronte del tasso debitore più elevato degli ultimi vent’anni o, qualora si disponga di dati sottostanti al calcolo del tasso debitore per un periodo inferiore a vent’anni, per il periodo
+più lungo in cui questi dati sono disponibili, in base al valore più elevato di tassi di riferimento esterni usati nel calcolo del tasso debitore, se applicabile, o al valore più elevato di un tasso
+di riferimento specificato da un’autorità competente o dall’ABE laddove il creditore non si serva di un tasso di riferimento esterno. Il requisito di fornire un esempio illustrativo non si applica a
+contratti di credito in cui il tasso debitore è fisso per un periodo rilevante iniziale di alcuni anni e può successivamente essere fissato per un ulteriore periodo a seguito di accordi tra il
+creditore e il consumatore. Quando i crediti sono composti da diverse parti (ad esempio una parte a tasso fisso e una parte a tasso variabile), le informazioni sono fornite per ciascuna parte del
+credito e per il totale.
+5) (Se applicabile) Nei casi in cui la valuta del credito sia diversa dalla valuta nazionale del consumatore o il credito sia indicizzato a una valuta diversa dalla valuta nazionale del consumatore,
+il creditore include un esempio corredato di cifre che mostrino chiaramente come le variazioni del tasso di cambio possono incidere sull’importo delle rate, utilizzando la formulazione di cui alla
+parte A. Tale esempio si basa su una svalutazione del 20 % della valuta nazionale del consumatore corredata dall’avvertenza ben visibile che le rate potrebbero aumentare più di quanto ipotizzato in
+tale esempio. Se è previsto un limite massimo di tale variazione inferiore al 20 %, è indicato invece il valore massimo dei pagamenti nella valuta del consumatore ed è omessa l’avvertenza sulla
+possibilità di ulteriori aumenti.
+6) Se il credito è, integralmente o parzialmente, a tasso variabile e si applica altresì il punto 3, l’esempio di cui al punto 5 è fornito sulla base dell’importo della rata di cui al punto 1.
+7) Qualora la valuta utilizzata per il pagamento delle rate sia differente dalla valuta del credito o qualora l’importo di ogni rata espresso nella valuta nazionale del consumatore dipenda
+dall’importo corrispondente in una valuta diversa, questa sezione indica la data alla quale è calcolato il tasso di cambio applicabile e il tasso di cambio o la relativa base di calcolo, nonché la
+frequenza di aggiustamento Se applicabile, è inoltre specificato il nome dell’ente che pubblica il tasso di cambio.
+8) Qualora il credito sia a rimborso differito degli interessi, ossia quando gli interessi non sono interamente rimborsati con le rate e sono invece aggiunti all’importo totale del credito residuo, è
+illustrato: come e quando l’interesse differito è imputato al credito come importo in contanti; quali sono le conseguenze per il consumatore circa il debito residuo.
+Sezione «7. Tabella di ammortamento esemplificativa»
+1) Questa sezione è prevista qualora il credito sia a rimborso differito degli interessi, in base al quale gli interessi dovuti non sono integralmente rimborsati con le rate e sono invece aggiunti
+all’importo totale del credito residuo o qualora il tasso debitore sia fisso per tutta la durata del contratto di credito. Gli Stati membri possono prevedere l’obbligatorietà di una tabella di
+ammortamento esemplificativa in altri casi.
+Se il consumatore ha diritto di ricevere una tabella di ammortamento riveduta lo si deve indicare, precisando le condizioni alle quali è soggetto tale diritto del consumatore.
+2) Gli Stati membri possono richiedere che, qualora il tasso debitore possa variare nel corso del contratto di credito, il creditore indichi il periodo nel quale il tasso debitore iniziale rimarrà
+invariato.
+3) La tabella da includere in questa sezione contiene le seguenti colonne: «piano di rimborso» (per esempio mese 1, mese 2, mese 3), importo della ratà, «interesse da pagare per ciascuna ratà», «altre
+spese comprese nella rata» (se applicabile), «capitale rimborsato per ciascuna rata», e «capitale residuo dopo ciascuna rata».
+4) Per il primo anno di rimborso le informazioni sono fornite per ciascuna rata e alla fine del primo anno per ciascuna delle colonne è indicato un totale parziale. Per gli anni successivi, il
+dettaglio può essere indicato su base annuale. Alla fine della tabella è aggiunta una riga per il totale generale, che contiene gli importi totali per ciascuna colonna. Il costo totale del credito
+pagato dal consumatore (cioè la somma totale della colonna «importo della rata») è chiaramente messo in evidenza e presentato come tale.
+5) Nei casi in cui il tasso debitore sia soggetto a revisione e l’importo della rata dopo ciascuna revisione sia ignoto, il creditore può indicare nella tabella di ammortamento un importo della rata
+identico per l’intera durata del credito. In tal caso, il creditore richiama l’attenzione del consumatore su questo aspetto differenziando visivamente gli importi noti da quelli ipotetici (es. con un
+carattere tipografico diverso, riquadri o ombreggiature). In aggiunta, un testo chiaramente leggibile spiega per quali periodi e per quali motivi gli importi riportati nella tabella possono variare.
+Sezione «8. Obblighi supplementari»
+1) In questa sezione il creditore menziona obblighi quali l’obbligo di assicurare il bene immobile, di acquistare un’assicurazione sulla vita, di far versare lo stipendio su un conto presso il
+creditore o di acquistare un altro prodotto o servizio. Per ciascun obbligo il creditore specifica nei confronti di chi ed entro quando l’obbligo deve essere soddisfatto.
+2) Il creditore precisa la durata dell’obbligo, per esempio fino al termine del contratto di credito. Per ciascun obbligo il credito specifica i costi a carico del consumatore non compresi nel TAEG.
+3) Il creditore indica l’eventuale obbligo per il consumatore di sottoscrivere servizi accessori per ottenere il mutuo alle condizioni indicate e, in caso affermativo, se il consumatore ha l’obbligo
+di acquistarli dal fornitore prescelto dal creditore o se può invece acquistarli da un fornitore di sua scelta. Se tale possibilità è subordinata alla condizione che i servizi accessori rispondano a
+determinate caratteristiche minime, queste ultime sono descritte nella sezione.
+Se il contratto di credito è offerto in pacchetto con altri prodotti il creditore indica le caratteristiche essenziali di questi prodotti e precisa con chiarezza se il consumatore abbia diritto di
+risolvere il contratto di credito o i prodotti in pacchetto separatamente, indicando le condizioni e le implicazioni di tale opzione e, se applicabile, le eventuali conseguenze che comporta disdire i
+servizi accessori richiesti in relazione al contratto di credito.
+Sezione «9. Estinzione anticipata»
+1) Il creditore indica a quali condizioni il consumatore può rimborsare anticipatamente il credito per intero o in parte.
+2) Nella sezione relativa alle penali per l’estinzione il creditore richiama l’attenzione del consumatore su eventuali penali o altri costi derivanti dall’estinzione anticipata a indennizzo del
+creditore medesimo, precisandone se possibile l’importo. Nei casi in cui l’importo dell’indennizzo dipenda da diversi fattori, quali l’importo già rimborsato o il tasso di interesse vigente al momento
+dell’estinzione anticipata, il creditore precisa come l’indennizzo sarà calcolato e ne indica l’importo massimo probabile o, se ciò non sia possibile, fornisce un esempio illustrativo per dimostrare
+al consumatore il livello dell’indennizzo in possibili scenari diversi.
+Sezione «10 Opzioni flessibili»
+1) Se applicabile, il creditore illustra la possibilità e le condizioni di trasferimento del credito ad altro creditore o per un diverso bene immobile.
+2) (Se applicabile) Opzioni supplementari: Quando il prodotto contiene una delle opzioni di cui al punto 5, questa sezione deve elencare tali opzioni e spiegare brevemente: le circostanze nelle quali
+il consumatore può fare ricorso a un’opzione; eventuali condizioni connesse all’opzione; se il fatto che l’opzione faccia parte integrante del credito garantito da ipoteca o da garanzia equivalente
+implica per il consumatore la perdita di una protezione derivante dalla legge o di altro tipo di tutela solitamente associata all’opzione; l’impresa che fornisce l’opzione (ove diversa dal creditore).
+3) Se l’esercizio dell’opzione comporta un credito supplementare, questa sezione deve indicare al consumatore: l’importo totale del credito (incluso il credito garantito da ipoteca o da garanzia
+equivalente); se il credito supplementare è garantito o meno; i relativi tassi debitori; se il credito è regolamentato o meno. L’importo del credito supplementare è incluso nella valutazione del
+merito creditizio iniziale o, in caso contrario, in questa sezione si precisa che la disponibilità di tale credito dipende da un’ulteriore valutazione della capacità di rimborso del consumatore.
+4) Se l’opzione implica un meccanismo di risparmio, il relativo tasso di interesse deve essere spiegato.
+5) Le possibili opzioni supplementari sono: «Pagamenti in eccesso/Pagamenti in difetto» [versamenti superiori o inferiori alla rata ordinaria in base alla struttura di ammortamento]; «Sospensione dei
+pagamenti» [periodi in cui il consumatore è esentato dai pagamenti]; «Rinnovamento del prestito» [possibilità che il consumatore prenda nuovamente a prestito fondi già prelevati e rimborsati];
+«Prestito supplementare disponibile senza ulteriore approvazione»; «Prestito supplementare garantito o non garantito» [conformemente al precedente punto 3]; «Carta di credito»«Conto corrente
+collegato» e «Conto di risparmio collegato».
+6) Il creditore può includere altre opzioni da lui offerte con il contratto di mutuo e non menzionate nelle sezioni precedenti
+Sezione «11. Altri diritti del mutuatario»
+1) Il creditore illustra il diritto o i diritti riconosciuti, ad esempio il recesso o il periodo di riflessione e, se applicabili, altri diritti quali la portabilità — surrogazione compresa —,
+specifica le condizioni alle quali questo/i diritto/i è/sono subordinato/i, la procedura che il consumatore deve seguire per esercitare tale/i diritto/i, tra cui l’indirizzo al quale la notifica di
+recesso deve essere inviata, e le spese corrispondenti (se applicabile).
+2) Se previsti, il periodo di riflessione o il diritto di recesso del consumatore sono espressamente menzionati.
+3) In linea con l’articolo 3 della direttiva 2002/65/CE, quando l’operazione è offerta a distanza il consumatore è informato dell’esistenza o della mancanza del diritto di recesso.
+Sezione «12. Reclami»
+1) La presente sezione indica il punto di contatto interno [nome del servizio competente] e un mezzo di contatto per i reclami [indirizzo geografico] o [numero di telefono] o [persona di contatto]:
+[estremi] e un indirizzo per la procedura di reclamo sulla pertinente pagina del sito web o fonte di informazione simile.
+2) È indicato il nome dell’organismo esterno per il trattamento e la risoluzione extragiudiziale dei reclami e, qualora il ricorso alla procedura di reclamo interna sia un prerequisito per l’accesso a
+tale organismo, ciò è precisato utilizzando la formulazione di cui alla parte A.
+3) Nel caso di contratti di credito in cui il consumatore è residente in un altro Stato membro il creditore fa riferimento all’esistenza di FIN-NET (http://ec.europa.eu/internal_market/fin-net/).
+Sezione «13. Inosservanza degli obblighi previsti dal mutuo: conseguenze per il mutuatario»
+1) Nei casi in cui l’inosservanza di uno qualsiasi degli obblighi del consumatore legati al credito possa avere conseguenze finanziarie o legali per il consumatore, il creditore descrive in questa
+sezione i diversi casi principali (es.: ritardi di pagamento/inadempimenti, mancato rispetto degli obblighi di cui alla sezione 8 «Obblighi supplementari») e indica dove si possono ottenere ulteriori
+informazioni.
+2) Per ciascuno di questi casi, il creditore specifica, in termini chiari e facilmente comprensibili, le sanzioni o le conseguenze nelle quali si può incorrere. I riferimenti alle conseguenze più
+gravi sono messi in evidenza.
+3) Qualora il bene immobile a garanzia del credito possa essere restituito o trasferito al creditore, se il consumatore non rispetta gli obblighi, questa sezione contempla un’avvertenza in tal senso
+che utilizza la formulazione di cui alla parte A.
+Sezione «14. Informazioni supplementari»
+1) In caso di commercializzazione a distanza questa sezione include le clausole sulla legge applicabile al contratto di credito o sul foro competente.
+2) Il creditore che nel corso della durata del contratto intenda comunicare con il consumatore in una lingua diversa da quella del PIES, lo indica e precisa la lingua di comunicazione. Ciò non
+pregiudica l’articolo 3, paragrafo 1, punto 3, lettera g), della direttiva 2002/65/CE.
+3) Il creditore o l’intermediario del credito dichiara che il consumatore ha diritto a ricevere o, se del caso, a vedersi proporre, una copia della bozza del contratto di credito almeno nel momento in
+cui è stata fatta un’offerta vincolante per il creditore.
+Sezione «15. Autorità di vigilanza»
+1) Sono indicate l’autorità o le autorità competenti per la vigilanza della fase precontrattuale della concessione del mutuo.
+
+=== K211 | [Allegato III] REQUISITI DI CONOSCENZA E COMPETENZA MINIMI
+ALLEGATO III
+REQUISITI DI CONOSCENZA E COMPETENZA MINIMI
+1. I requisiti di conoscenza e competenza minimi per il personale dei creditori, degli intermediari del credito e dei rappresentanti designati di cui all’articolo 9 e per le persone coinvolte nella
+direzione degli intermediari del credito o dei rappresentanti designati di cui all’articolo 29, paragrafo 2, lettera c), e all’articolo 31, paragrafo 2, devono comprendere almeno:
+a)
+conoscenza adeguata dei prodotti di credito che rientrano nell’ambito d’applicazione dell’articolo 3 e dei servizi accessori solitamente offerti congiuntamente;
+b)
+conoscenza adeguata delle disposizioni di legge relative ai contratti di credito per i consumatori e in materia di tutela dei consumatori;
+c)
+conoscenza e comprensione adeguate della procedura di acquisto del bene immobile;
+d)
+conoscenza adeguata della valutazione delle garanzie;
+e)
+conoscenza adeguata dell’organizzazione e del funzionamento dei registri immobiliari;
+f)
+conoscenza adeguata del mercato nello Stato membro interessato;
+g)
+conoscenza adeguata degli standard di etica professionale;
+h)
+conoscenza adeguata della procedura di valutazione del merito di credito del consumatore o, se del caso, competenza nella valutazione del merito di credito dei consumatori;
+i)
+competenza adeguata in materia economica e finanziaria.
+2. Nella definizione dei requisiti di conoscenza e competenza minimi, gli Stati membri possono differenziare tra i livelli e i tipi di requisiti applicabili al personale dei creditori, al personale
+degli intermediari del credito o dei rappresentanti designati e ai dirigenti degli intermediari del credito o dei rappresentanti designati.
+3. Gli Stati membri determinano l’adeguatezza del livello di conoscenza e competenza sulla base di:
+a)
+qualifiche professionali, ad esempio diplomi, lauree, formazione professionale, prove di competenza; o
+b)
+esperienza professionale, che può definirsi come un numero minimo di anni di lavoro in settori riguardanti l’erogazione, la distribuzione o l’intermediazione di prodotti creditizi.
+Dopo il 21 marzo 2019, la determinazione circa la sussistenza di un livello adeguato di conoscenza e competenza non è basata unicamente sui metodi di cui al primo comma, lettera b).
+(
+1
+)
+GU L 182 del 29.6.2013, pag. 19.
+(
+2
+) Regolamento (UE) 2016/1011 del Parlamento europeo e del Consiglio, dell'8 giugno 2016, sugli indici usati come indici di riferimento negli strumenti finanziari e nei contratti finanziari o per
+misurare la performance di fondi di investimento e recante modifica delle direttive 2008/48/CE e 2014/17/UE e del regolamento (UE) n. 596/2014 (GU L 171 del 29.6.2016, pag. 1).
+
+
+######## NORMA: Regolamento delegato (UE) 2019/360 della Commissione, del 13 dicembre 2018, che integra il regolamento (UE) 2015/2365 del Parlamento europeo e del Consiglio per  (id UE-32019R0360)
+
+=== K212 | [1] Recupero integrale dei costi di vigilanza
+Articolo 1
+Recupero integrale dei costi di vigilanza
+Le commissioni imposte ai repertori di dati sulle negoziazioni coprono:
+a)
+tutti i costi diretti e indiretti connessi alla registrazione dei repertori di dati sulle negoziazioni e alla vigilanza esercitata dall’ESMA su questi ultimi in conformità del regolamento (UE)
+2015/2365, compresi i costi derivanti dal riconoscimento dei repertori di dati sulle negoziazioni, nonché i costi derivanti dall’estensione della registrazione o dall’estensione del riconoscimento per
+i repertori di dati sulle negoziazioni che sono già registrati o riconosciuti a norma del regolamento (UE) n. 648/2012;
+b)
+tutti i costi legati al rimborso dei costi diretti e indiretti sostenuti dalle autorità competenti che abbiano svolto compiti ai sensi del regolamento (UE) 2015/2365 e a seguito di deleghe di compiti
+a norma dell’articolo 74 del regolamento (UE) n. 648/2012 e conformemente all’articolo 9 del regolamento (UE) 2015/2365.
+▼B
+
+=== K213 | [2] Fatturato applicabile
+Articolo 2
+Fatturato applicabile
+1.
+I repertori di dati sulle negoziazioni registrati a norma del regolamento (UE) 2015/2365 tengono soltanto conti sottoposti a revisione contabile ai fini del presente regolamento che operino una
+distinzione almeno tra i seguenti elementi:
+a)
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle operazioni di finanziamento tramite titoli (SFT) a norma del regolamento (UE)
+2015/2365;
+b)
+i proventi generati dai servizi accessori che sono direttamente connessi alla raccolta e alla conservazione in modo centralizzato delle registrazioni sulle SFT a norma del regolamento (UE) 2015/2365.
+I proventi applicabili dei servizi accessori del repertorio di dati sulle negoziazioni per un determinato anno (n) sono costituiti dai proventi dei servizi determinati ai sensi della lettera b).
+2.
+I repertori di dati sulle negoziazioni registrati sia a norma del regolamento (UE) 2015/2365 che a norma del regolamento (UE) n. 648/2012 tengono conti sottoposti a revisione contabile ai fini del
+presente regolamento che operino una distinzione almeno tra i seguenti elementi:
+a)
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT a norma del regolamento (UE) 2015/2365;
+b)
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sui derivati a norma del regolamento (UE) n. 648/2012;
+c)
+i proventi generati dai servizi accessori che sono direttamente connessi alla raccolta e alla conservazione in modo centralizzato delle registrazioni sulle SFT a norma del regolamento (UE) 2015/2365;
+d)
+i proventi generati dai servizi accessori che sono direttamente connessi sia alla raccolta e alla conservazione in modo centralizzato delle registrazioni sulle SFT a norma del regolamento (UE)
+2015/2365 che alla raccolta e alla conservazione in modo centralizzato delle registrazioni sui derivati a norma del regolamento (UE) n. 648/2012.
+I proventi applicabili dei servizi accessori del repertorio di dati sulle negoziazioni per un determinato anno (n) sono costituiti dalla somma dei seguenti elementi:
+—
+i proventi di cui alla lettera c) e
+—
+una quota dei proventi di cui alla lettera d).
+La quota dei proventi di cui alla lettera d) è pari alle entrate di cui alla lettera a), divise per la somma dei seguenti elementi:
+—
+i proventi di cui alla lettera a) e
+—
+i proventi di cui alla lettera b).
+▼M2
+3.
+Il fatturato applicabile di un determinato repertorio di dati sulle negoziazioni per un determinato anno (n) è costituito dalla somma degli importi di cui alle lettere a) e b), divisa per la somma
+degli importi di cui alle lettere c) e d):
+a)
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT a norma del regolamento (UE) 2015/2365 sulla base dei conti sottoposti a
+revisione contabile dell’anno (n–2);
+b)
+i proventi applicabili dei servizi accessori, determinati conformemente ai paragrafi 1 e 2, a seconda dei casi, sulla base dei conti sottoposti a revisione contabile dell’anno (n–2);
+c)
+i proventi totali di tutti i repertori di dati sulle negoziazioni registrati, generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT a norma
+del regolamento (UE) 2015/2365 sulla base dei conti sottoposti a revisione contabile dell’anno (n–2);
+d)
+i proventi applicabili totali dei servizi accessori di tutti i repertori di dati sulle negoziazioni registrati, determinati conformemente ai paragrafi 1 e 2, a seconda dei casi, sulla base dei conti
+sottoposti a revisione contabile dell’anno (n–2).
+▼M2
+3 bis .
+I repertori di dati sulle negoziazioni trasmettono all’ESMA, su base annua, i conti sottoposti a revisione contabile di cui ai paragrafi 1 e 2. Tale trasmissione avviene per via elettronica entro il
+30 settembre di ogni anno (n–1).
+▼M2
+4.
+Se il repertorio di dati sulle negoziazioni non ha svolto attività per l’intero anno (n – 2), l’ESMA stima il suo fatturato applicabile conformemente al paragrafo 3 ed estrapolando all’intero anno (n
+– 2) il valore calcolato per il numero di mesi nei quali il repertorio di dati sulle negoziazioni ha svolto attività nell’anno (n–2).
+▼M2
+5.
+Se per l’anno (n–2) non sono disponibili conti sottoposti a revisione contabile, l’ESMA utilizza i conti sottoposti a revisione contabile per l’anno (n–1).
+6.
+Se i proventi di cui al paragrafo 3 sono segnalati in una valuta diversa dall’euro, l’ESMA li converte in euro utilizzando il tasso medio di cambio dell’euro applicabile al periodo nel quale sono
+stati registrati i proventi. A tal fine l’Autorità utilizza il tasso di cambio di riferimento dell’euro pubblicato dalla Banca centrale europea.
+▼M2 —————
+▼B
+CAPO II
+COMMISSIONI
+
+=== K214 | [4] Tipo di commissioni
+Articolo 4
+Tipo di commissioni
+1.
+I repertori di dati sulle negoziazioni stabiliti nell'Unione che presentano domanda di registrazione ai sensi dell'articolo 5, paragrafo 1, del regolamento (UE) 2015/2365 sono tenuti al pagamento dei
+seguenti tipi di commissioni:
+a)
+le commissioni per la registrazione e l'estensione della registrazione a norma dell'articolo 5;
+b)
+la commissione annuale di vigilanza ai sensi dell'articolo 6.
+2.
+I repertori di dati sulle negoziazioni stabiliti in paesi terzi che chiedono il riconoscimento ai sensi dell'articolo 19, paragrafo 4, del regolamento (UE) 2015/2365 sono tenuti al pagamento dei
+seguenti tipi di commissioni:
+a)
+la commissione per il riconoscimento o per l'estensione della registrazione ai sensi dell'articolo 7, paragrafi 1 e 2;
+b)
+la commissione annuale di vigilanza a carico dei repertori di dati sulle negoziazioni riconosciuti ai sensi dell'articolo 7, paragrafo 3.
+
+=== K215 | [5] Commissione di registrazione e commissione per l'estensione della registrazione
+Articolo 5
+Commissione di registrazione e commissione per l'estensione della registrazione
+1.
+La commissione di registrazione a carico del singolo repertorio di dati sulle negoziazioni richiedente rispecchia le spese necessarie per esaminare e valutare attentamente la domanda di registrazione
+o di estensione della registrazione, tenendo conto dei servizi che il repertorio di dati sulle negoziazioni deve fornire, compresi eventuali servizi accessori.
+2.
+Si ritiene che il repertorio di dati sulle negoziazioni offra servizi accessori in ciascuna delle seguenti situazioni:
+a)
+quando presta direttamente servizi accessori;
+b)
+quando un'entità appartenente allo stesso gruppo del repertorio di dati sulle negoziazioni presta servizi accessori;
+c)
+quando i servizi accessori sono forniti da un'entità con la quale il repertorio di dati sulle negoziazioni ha concluso un accordo nel quadro della catena o della linea di attività di negoziazione o di
+post-negoziazione per cooperare alla prestazione di servizi.
+3.
+Il repertorio di dati sulle negoziazioni che non fornisce i servizi accessori secondo quanto stabilito al paragrafo 2, e che pertanto si ritiene abbia un fatturato totale atteso basso, è tenuto a
+pagare una commissione di registrazione di 65 000 EUR.
+4.
+Il repertorio di dati sulle negoziazioni che fornisce i servizi accessori secondo quanto stabilito al paragrafo 2, e che pertanto si ritiene abbia un fatturato totale atteso alto, è tenuto a pagare
+una commissione di registrazione di 100 000 EUR.
+5.
+Qualora il repertorio di dati sulle negoziazioni che presenta domanda di registrazione sia già stato registrato a norma del titolo VI, capo 1, del regolamento (UE) n. 648/2012, il repertorio di dati
+sulle negoziazioni è tenuto a pagare una commissione per l'estensione della registrazione pari a:
+a)
+50 000 EUR per i repertori di dati sulle negoziazioni che forniscono servizi accessori secondo quanto stabilito al paragrafo 2;
+b)
+32 500 EUR per i repertori di dati sulle negoziazioni con fatturato atteso basso che non forniscono servizi accessori secondo quanto stabilito al paragrafo 2.
+6.
+Qualora un repertorio di dati sulle negoziazioni che non è già registrato a norma del regolamento (UE) n. 648/2012 presenti contemporaneamente una domanda di registrazione a norma del regolamento (UE)
+n. 648/2012 e una domanda di registrazione a norma del regolamento (UE) 2015/2365, il repertorio di dati sulle negoziazioni paga la commissione di registrazione dovuta a norma del regolamento (UE) n.
+648/2012 per intero e la commissione per l'estensione della registrazione a norma del paragrafo 5.
+7.
+In caso di cambiamento sostanziale delle condizioni per la registrazione di cui all'articolo 5, paragrafo 4, del regolamento (UE) 2015/2365, in conseguenza del quale il repertorio di dati sulle
+negoziazioni sia tenuto, ai sensi dei paragrafi 3, 4 e 5, al pagamento di una commissione di registrazione più elevata della commissione di registrazione pagata inizialmente, il repertorio di dati
+sulle negoziazioni è tenuto a pagare la differenza fra la commissione di registrazione pagata inizialmente e la commissione di registrazione più elevata applicabile a seguito del cambiamento
+sostanziale.
+
+=== K216 | [6] Commissioni annuali di vigilanza per i repertori di dati sulle negoziazioni registrati e i repertori di dati sulle negoz
+Articolo 6
+Commissioni annuali di vigilanza per i repertori di dati sulle negoziazioni registrati e i repertori di dati sulle negoziazioni che hanno esteso la registrazione
+1.
+Il repertorio di dati sulle negoziazioni registrato è tenuto al pagamento di una commissione annuale di vigilanza.
+2.
+La commissione annuale di vigilanza totale e la commissione annuale di vigilanza a carico di un dato repertorio di dati sulle negoziazioni per un determinato anno (n) sono calcolate come segue:
+▼M2
+a)
+la commissione annuale di vigilanza totale per un determinato anno (n) è la stima delle spese relative alla vigilanza delle attività dei repertori di dati sulle negoziazioni registrati a norma del
+regolamento (UE) 2015/2365, inserita nel bilancio dell’ESMA per il medesimo anno;
+▼B
+b)
+la commissione annuale di vigilanza a carico di un dato repertorio di dati sulle negoziazioni per un determinato anno (n) è la commissione annuale di vigilanza totale calcolata in applicazione della
+lettera a), ripartita tra tutti i repertori di dati sulle negoziazioni registrati nell'anno (n – 1), in proporzione al loro fatturato applicabile calcolato a norma dell'articolo 2, paragrafo 3.
+▼M2
+3.
+In nessun caso il repertorio di dati sulle negoziazioni registrato ai sensi dell’articolo 5, paragrafo 5, del regolamento (UE) 2015/2365 può pagare una commissione annuale di vigilanza inferiore a 30
+000 EUR.
+▼M2
+4.
+In deroga ai paragrafi 1, 2 e 3, nell’anno della registrazione («anno (n)») il repertorio di dati sulle negoziazioni registrato è tenuto al pagamento di una commissione di vigilanza iniziale («SF(n)»)
+pari a:
+dove:
+RF
+=
+la commissione di registrazione calcolata conformemente all’articolo 5;
+k =
+. Il repertorio di dati sulle negoziazioni paga la commissione di vigilanza per il primo anno dopo aver ricevuto notifica dall’ESMA dell’esito positivo della sua domanda ed entro 30 giorni di
+calendario dalla data di emissione della fattura dell’ESMA. Tuttavia un repertorio di dati sulle negoziazioni registrato durante il mese di dicembre non è tenuto al pagamento di una commissione
+annuale di vigilanza per l’anno in cui è stato registrato.
+▼B
+
+=== K217 | [7] Commissioni a carico dei repertori di dati sulle negoziazioni di paesi terzi
+Articolo 7
+Commissioni a carico dei repertori di dati sulle negoziazioni di paesi terzi
+1.
+Il repertorio di dati sulle negoziazioni che presenta domanda di riconoscimento a norma dell'articolo 19, paragrafo 4, lettera a), del regolamento (UE) 2015/2365 è tenuto al pagamento di una
+commissione di riconoscimento calcolata sommando i seguenti elementi:
+a)
+20 000 EUR;
+b)
+l'importo derivante dalla divisione di 35 000 EUR per il numero totale dei repertori di dati sulle negoziazioni dello stesso paese terzo riconosciuti dall'ESMA o che hanno presentato domanda di
+riconoscimento ma non sono stati ancora riconosciuti.
+2.
+Il repertorio di dati sulle negoziazioni che presenta domanda di estensione della registrazione a norma dell'articolo 19, paragrafo 4, lettera b), del regolamento (UE) 2015/2365 è tenuto al pagamento
+di una commissione di riconoscimento calcolata sommando 10 000 EUR e l'importo calcolato conformemente al paragrafo 1, lettera b).
+3.
+Il repertorio di dati sulle negoziazioni riconosciuto ai sensi dell'articolo 19, paragrafo 3, del regolamento (UE) 2015/2365 è tenuto al pagamento di una commissione annuale di vigilanza di 5 000 EUR.
+CAPO III
+MODALITÀ DI PAGAMENTO E DI RIMBORSO
+
+=== K218 | [8] Modalità generali di pagamento
+Articolo 8
+Modalità generali di pagamento
+1.
+Tutte le commissioni sono pagate in euro. Le modalità di pagamento sono specificate agli articoli 9, 10 e 11.
+▼M2
+2.
+I ritardi di pagamento sono maggiorati degli interessi di mora di cui all’articolo 99 del regolamento (UE, Euratom) 2018/1046 del Parlamento europeo e del Consiglio (
+1
+).
+▼B
+
+=== K219 | [9] Pagamento della commissione di registrazione
+Articolo 9
+Pagamento della commissione di registrazione
+▼M2
+1.
+La commissione di registrazione di cui all’articolo 5 è dovuta all’atto della presentazione della domanda di registrazione da parte del repertorio di dati sulle negoziazioni a norma dell’articolo 5,
+paragrafo 5, del regolamento (UE) 2015/2365 ed è pagata per intero entro 30 giorni di calendario dalla data di emissione della fattura dell’ESMA.
+▼B
+2.
+La commissione di registrazione non viene rimborsata se il repertorio di dati sulle negoziazioni ritira la domanda di registrazione prima che l'ESMA abbia adottato la decisione motivata di
+registrazione o di rifiuto della registrazione, o in caso di rifiuto della registrazione.
+
+=== K220 | [10] Pagamento della commissione annuale di vigilanza
+Articolo 10
+Pagamento della commissione annuale di vigilanza
+▼M2
+1.
+La commissione annuale di vigilanza di cui all’articolo 6 per un determinato anno (n) è pagata in un’unica rata entro la fine del mese di marzo dell’anno al quale essa si riferisce. La commissione
+annuale di vigilanza non è rimborsata.
+2.
+L’ESMA invia ai repertori di dati sulle negoziazioni la fattura che specifica l’importo della commissione annuale di vigilanza almeno 30 giorni di calendario prima della data del pagamento.
+▼B
+
+=== K221 | [11] Pagamento delle commissioni a carico dei repertori di dati sulle negoziazioni di paesi terzi
+Articolo 11
+Pagamento delle commissioni a carico dei repertori di dati sulle negoziazioni di paesi terzi
+▼M2
+1.
+La commissione di riconoscimento di cui all’articolo 7, paragrafi 1 e 2, è dovuta all’atto della presentazione della domanda di registrazione da parte del repertorio di dati sulle negoziazioni a norma
+dell’articolo 19, paragrafo 4, del regolamento (UE) 2015/2365 ed è pagata per intero entro 30 giorni di calendario dalla data di emissione della fattura dell’ESMA.
+L’ESMA non rimborsa la commissione di riconoscimento.
+2.
+I repertori di dati sulle negoziazioni riconosciuti sono tenuti al pagamento della commissione annuale di vigilanza per un determinato anno (n) entro la fine del terzo mese dell’anno civile per il
+quale è dovuta tale commissione. L’ESMA invia ai repertori di dati sulle negoziazioni riconosciuti la fattura che specifica l’importo della commissione annuale di vigilanza almeno 30 giorni di
+calendario prima della data del pagamento.
+▼M2 —————
+▼B
+
+=== K222 | [12] Rimborso alle autorità competenti
+Articolo 12
+Rimborso alle autorità competenti
+1.
+Soltanto l'ESMA impone ai repertori di dati sulle negoziazioni commissioni di registrazione, estensione della registrazione, vigilanza e riconoscimento a norma del presente regolamento.
+2.
+L'ESMA rimborsa alle autorità competenti i costi effettivamente sostenuti per lo svolgimento dei compiti ai sensi del regolamento (UE) 2015/2365 e a seguito di deleghe di compiti ai sensi
+dell'articolo 74 del regolamento (UE) n. 648/2012 e conformemente all'articolo 9, paragrafo 1, del regolamento (UE) 2015/2365.
+CAPO IV
+DISPOSIZIONI TRANSITORIE E FINALI
+
+=== K223 | [13] Calcolo delle commissioni provvisorie di vigilanza
+Articolo 13
+Calcolo delle commissioni provvisorie di vigilanza
+1.
+Se l'obbligo di segnalazione di cui all'articolo 4, paragrafo 1, del regolamento (UE) 2015/2365, conformemente all'articolo 33, paragrafo 2, lettera a), di detto regolamento, ha inizio nell'anno che
+segue la registrazione del repertorio di dati sulle negoziazioni a norma dell'articolo 5, paragrafo 5, del regolamento (UE) 2015/2365, il repertorio di dati sulle negoziazioni è tenuto, nell'anno
+della sua registrazione, al pagamento di una commissione provvisoria di vigilanza calcolata conformemente alla parte 1 dell'allegato.
+2.
+Se l'obbligo di segnalazione di cui all'articolo 4, paragrafo 1, del regolamento (UE) 2015/2365, conformemente all'articolo 33, paragrafo 2, lettera a), di detto regolamento, ha inizio nel primo
+semestre dell'anno di registrazione del repertorio di dati sulle negoziazioni a norma dell'articolo 5, paragrafo 5, del regolamento (UE) 2015/2365, il repertorio di dati sulle negoziazioni è tenuto,
+nell'anno della sua registrazione, al pagamento di una commissione provvisoria di vigilanza calcolata conformemente alla parte 2 dell'allegato.
+3.
+Se l'obbligo di segnalazione di cui all'articolo 4, paragrafo 1, del regolamento (UE) 2015/2365, conformemente all'articolo 33, paragrafo 2, lettera a), di detto regolamento, ha inizio nel secondo
+semestre dell'anno di registrazione del repertorio di dati sulle negoziazioni a norma dell'articolo 5, paragrafo 5, del regolamento (UE) 2015/2365, il repertorio di dati sulle negoziazioni è tenuto,
+nell'anno della sua registrazione, al pagamento di una commissione provvisoria di vigilanza calcolata conformemente alla parte 3 dell'allegato.
+
+=== K224 | [14] Pagamento delle commissioni di registrazione e delle commissioni per i repertori di dati sulle negoziazioni di paesi ter
+Articolo 14
+Pagamento delle commissioni di registrazione e delle commissioni per i repertori di dati sulle negoziazioni di paesi terzi nel 2019
+1.
+I repertori di dati sulle negoziazioni che presentano domanda di registrazione a norma dell'articolo 5, paragrafo 5, del regolamento (UE) 2015/2365 nel 2019 sono tenuti al pagamento integrale della
+commissione di registrazione di cui all'articolo 6 entro 30 giorni dall'entrata in vigore del presente regolamento o alla data di presentazione della domanda di registrazione, se successiva.
+2.
+I repertori di dati sulle negoziazioni di paesi terzi che presentano domanda di riconoscimento a norma dell'articolo 19, paragrafo 4, del regolamento (UE) 2015/2365 nel 2019 sono tenuti al pagamento
+integrale della commissione di riconoscimento di cui all'articolo 7, paragrafo 1, o all'articolo 7, paragrafo 2, a seconda dei casi, entro 30 giorni dall'entrata in vigore del presente regolamento o
+alla data di presentazione della domanda, se successiva.
+3.
+I repertori di dati sulle negoziazioni di paesi terzi riconosciuti nel 2019 a norma dell'articolo 19, paragrafo 3, del regolamento (UE) 2015/2365 sono tenuti, per il 2019, al pagamento integrale di
+una commissione annuale di vigilanza calcolata conformemente all'articolo 7, paragrafo 3, entro 60 giorni dall'entrata in vigore del presente regolamento o entro 30 giorni dalla data in cui l'ESMA
+informa il repertorio di dati sulle negoziazioni della decisione sul riconoscimento di cui all'articolo 19, paragrafo 7, del regolamento (UE) 2015/2365, se la seconda data è successiva.
+
+=== K225 | [15] Commissione annuale di vigilanza per il 2020 a carico dei repertori di dati sulle negoziazioni registrati, o che hanno o
+Articolo 15
+Commissione annuale di vigilanza per il 2020 a carico dei repertori di dati sulle negoziazioni registrati, o che hanno ottenuto un'estensione della registrazione, nel 2019
+1.
+La commissione di vigilanza a carico dei repertori di dati sulle negoziazioni per il 2020 è la commissione annuale di vigilanza totale calcolata in applicazione dell'articolo 6, paragrafo 2, lettera
+a), ripartita tra tutti i repertori di dati sulle negoziazioni registrati nel 2019, in proporzione al fatturato applicabile calcolato a norma del paragrafo 2.
+2.
+Ai fini del calcolo della commissione annuale di vigilanza per il 2020 conformemente all'articolo 6 per i repertori di dati sulle negoziazioni registrati nel 2019 a norma dell'articolo 5, paragrafo 5,
+del regolamento (UE) 2015/2365, il fatturato applicabile del repertorio di dati sulle negoziazioni è pari alla somma dei seguenti elementi:
+—
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT durante il periodo dal 1 o gennaio 2020 al 30 giugno 2020 e
+—
+i proventi applicabili dei servizi accessori del repertorio di dati sulle negoziazioni in conformità dell'articolo 2, paragrafi 1 e 2, durante il periodo dal 1 o gennaio 2020 al 30 giugno 2020,
+divisa per la somma dei seguenti elementi:
+—
+i proventi totali generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT durante il periodo dal 1 o gennaio 2020 al 30 giugno 2020 di tutti i
+repertori di dati sulle negoziazioni registrati e
+—
+i proventi applicabili dei servizi accessori in conformità dell'articolo 2, paragrafi 1 e 2, durante il periodo dal 1 o gennaio 2020 al 30 giugno 2020, di tutti i repertori di dati sulle negoziazioni
+registrati.
+3.
+La commissione annuale di vigilanza per il 2020 a carico dei repertori di dati sulle negoziazioni registrati nel 2019 è pagata in due rate.
+La prima rata scade il 28 febbraio 2020 e corrisponde alla commissione di registrazione pagata dal repertorio di dati sulle negoziazioni nel 2019 ai sensi dell'articolo 5.
+La seconda rata scade il 31 ottobre 2020. L'importo della seconda rata è pari all'importo della commissione annuale di vigilanza calcolato conformemente al paragrafo 1 meno l'importo della prima rata.
+Nel caso in cui l'importo della prima rata pagata dal repertorio di dati sulle negoziazioni sia superiore all'importo della commissione annuale di vigilanza calcolata conformemente al paragrafo 1,
+l'ESMA rimborsa al repertorio di dati sulle negoziazioni la differenza tra l'importo della prima rata pagata e l'importo della commissione annuale di vigilanza calcolato conformemente al paragrafo 1.
+4.
+L'ESMA invia le fatture relative alle rate della commissione annuale di vigilanza per il 2020 ai repertori di dati sulle negoziazioni registrati nel 2019 almeno 30 giorni prima della data del
+pagamento.
+5.
+Quando sono disponibili i conti 2020 sottoposti a revisione contabile, i repertori di dati sulle negoziazioni registrati nel 2019 comunicano all'ESMA eventuali variazioni del fatturato applicabile
+calcolato in conformità del paragrafo 2, dovute alla differenza tra i dati definitivi per il periodo dal 1 o gennaio 2020 al 30 giugno 2020 e i dati provvisori utilizzati per il calcolo a norma del
+paragrafo 2.
+I repertori di dati sulle negoziazioni sono tenuti a pagare la differenza fra la commissione annuale di vigilanza per il 2020 effettivamente pagata a norma del paragrafo 1 e la commissione annuale di
+vigilanza per il 2020 da pagare a seguito della variazione del fatturato applicabile di cui al primo comma.
+L'ESMA invia ai repertori di dati sulle negoziazioni la fattura relativa agli eventuali pagamenti supplementari di cui al comma precedente almeno 30 giorni prima della rispettiva data di pagamento.
+▼M1
+
+=== K226 | [15-bis] Commissione annuale di vigilanza per il 2021 a carico dei repertori di dati sulle negoziazioni registrati a partire dal 
+Articolo 15 bis
+Commissione annuale di vigilanza per il 2021 a carico dei repertori di dati sulle negoziazioni registrati a partire dal 31 dicembre 2020
+1.
+I repertori di dati sulle negoziazioni già registrati presso l’ESMA al 31 dicembre 2020 pagano una commissione annuale di vigilanza per il 2021 calcolata conformemente all’articolo 6. Tuttavia, ai
+fini dell’articolo 6, paragrafo 2, lettera b), il fatturato applicabile dei repertori di dati sulle negoziazioni è calcolato conformemente al paragrafo 2.
+2.
+Ai fini del paragrafo 1, il fatturato applicabile del repertorio di dati sulle negoziazioni è pari alla somma degli elementi seguenti:
+—
+i proventi generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT durante il periodo dal 1 o gennaio 2021 al 30 giugno 2021 e
+—
+i proventi applicabili dei servizi accessori del repertorio di dati sulle negoziazioni in conformità dell’articolo 2, paragrafi 1 e 2, durante il periodo dal 1 o gennaio 2021 al 30 giugno 2021,
+divisa per la somma degli elementi seguenti:
+—
+i proventi totali generati dalle funzioni di base di raccolta e conservazione in modo centralizzato delle registrazioni sulle SFT durante il periodo dal 1 o gennaio 2021 al 30 giugno 2021 di tutti i
+repertori di dati sulle negoziazioni registrati e
+—
+i proventi applicabili dei servizi accessori in conformità dell’articolo 2, paragrafi 1 e 2, durante il periodo dal 1 o gennaio 2021 al 30 giugno 2021, di tutti i repertori di dati sulle negoziazioni
+registrati.
+3.
+Dall’importo della commissione annuale di vigilanza di cui al paragrafo 1 sono dedotti gli importi già pagati dal repertorio di dati sulle negoziazioni a norma dell’articolo 10, paragrafo 1, prima del
+26 maggio 2021.
+Se l’importo già pagato dal repertorio di dati sulle negoziazioni a norma dell’articolo 10, paragrafo 1, prima del 26 maggio 2021 è superiore alla commissione annuale di vigilanza calcolata in
+conformità del paragrafo 1, l’ESMA rimborsa la differenza al repertorio di dati sulle negoziazioni.
+4.
+In deroga all’articolo 10, paragrafo 1, la commissione annuale di vigilanza per il 2021 a carico dei repertori di dati sulle negoziazioni di cui al paragrafo 1 è dovuta il 31 ottobre 2021.
+5.
+L’ESMA invia le fatture relative alla commissione annuale di vigilanza per il 2021 ai repertori di dati sulle negoziazioni di cui al paragrafo 1 almeno 30 giorni prima della data del pagamento.
+6.
+Quando i bilanci certificati per il 2021 diventano disponibili, i repertori di dati sulle negoziazioni di cui al paragrafo 1 comunicano all’ESMA gli indicatori di cui all’articolo 2, paragrafo 3, per
+il 2021.
+L’eventuale differenza tra la commissione annuale di vigilanza per il 2021 effettivamente pagata e la commissione annuale di vigilanza che sarebbe stata dovuta per il 2021 se il calcolo del fatturato
+applicabile fosse stato basato sugli indicatori segnalati a norma del primo comma è a carico dei repertori di dati sulle negoziazioni.
+L’ESMA invia ai repertori di dati sulle negoziazioni la fattura relativa agli eventuali pagamenti supplementari di cui al secondo comma almeno 30 giorni prima della rispettiva data di pagamento.
+▼B

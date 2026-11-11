@@ -1,0 +1,2257 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Comunicazione Consob n. 13/25 del 4 luglio 2025 - Operazioni di rafforzamento patrimoniale riservate ad un unico investitore: POC non standard, SEDA, SEF e altr  (id CONSOB-3ba528e8f7)
+
+=== K510 | [Premessa] Oggetto: Operazioni di rafforzamento patrimoniale riservate ad un unico investitore: POC
+Comunicazione n. 13/25 del 4 luglio 2025
+Oggetto: Operazioni di rafforzamento patrimoniale riservate ad un unico investitore: POC
+non standard, SEDA, SEF e altre operazioni aventi caratteristiche analoghe - Richieste ai sensi
+dell’art. 114, comma 5, del d.lgs. n. 58/1998 e raccomandazioni
+ATTENZIONE: La Consob evidenzia che la concreta esperienza operativa consente di rilevare
+che l’emissione di un POC non standard può comportare un effetto di deprezzamento delle
+azioni delle società che ricorrono a tale strumento, nonché effetti fortemente diluitivi sulla
+compagine azionaria delle medesime società.
+I. Premessa
+Con la Comunicazione n. DME/6083801 del 20 ottobre 2006 e con la Comunicazione n.
+DEM/DME/DSG/8065325 del 10 luglio 2008 sono state fornite alle società quotate nei mercati
+regolamentati indicazioni funzionali agli adempimenti informativi nei confronti del pubblico in
+relazione ad alcune operazioni di aumento di capitale riservate ad un unico investitore denominate
+Stand-by Equity Distribution Agreement (“SEDA”) e Step-Up Equity Financing (“SEF”)1. Con le
+medesime Comunicazioni sono state altresì fornite indicazioni anche agli investitori, sottoscrittori
+unici dei medesimi accordi.
+Dalla pubblicazione delle due menzionate Comunicazioni sono sopravvenuti alcuni cambiamenti del
+contesto operativo, primariamente determinati dalla diffusione di talune operazioni caratterizzate
+dall’emissione di prestiti obbligazionari convertibili, di regola associati a un warrant, riservati ad un
+unico investitore (“POC non standard”).
+Nello specifico, con l’operazione di POC non standard l’investitore si impegna a sottoscrivere, in
+una o più tranche, a seguito di specifiche richieste della società, un predeterminato numero di
+obbligazioni convertibili in azioni, ricevendo - a fronte di tale impegno - una commitment fee. La
+società, a sua volta, incassa le risorse finanziarie nel momento della sottoscrizione della tranche di
+obbligazioni convertibili e le medesime risorse divengono permanenti nel momento della conversione
+delle obbligazioni in azioni da parte dell’investitore. Una volta sottoscritta una tranche del POC
+non standard, l’investitore può chiedere la conversione anche solo di una parte delle obbligazioni
+della tranche sottoscritta e può farlo in momenti diversi, nei limiti del numero di obbligazioni
+costituenti la tranche.
+In particolare, il SEDA è uno strumento che consente alle società di reperire in tempi brevi e da un unico investitore
+mezzi propri, attuato generalmente secondo uno schema che prevede, tra l’altro: i) un investitore che assume
+irrevocabilmente l'impegno a sottoscrivere un controvalore definito, corrispondente ad un numero di azioni che
+saranno emesse in singoli lotti (“tranche”) in un determinato periodo di tempo; ii) un meccanismo di determinazione
+del prezzo di sottoscrizione delle azioni emesse nelle varie tranche che prevede uno sconto prefissato rispetto al
+minore dei prezzi di riferimento rilevati in un intervallo di giorni di Borsa aperta successivi alla richiesta di
+sottoscrizione effettuata dall'emittente; iii) l’assenza di vincoli alla successiva rivendita delle azioni agli
+investitori retail (vincoli di lock-up). Anche le operazioni di SEF consentono all’emittente con titoli quotati di reperire
+in tempi brevi e da un unico investitore mezzi finanziari e sono caratterizzate dalle condizioni sub ii) e iii) sopra citate
+per i SEDA. Le specifiche peculiarità dei SEF sono ravvisabili: a) nella possibilità, da parte di entrambi i soggetti,
+durante il periodo di determinazione del prezzo, in relazione a ciascuna tranche, di posticipare ovvero di cancellare
+l'emissione in caso di andamento non soddisfacente delle quotazioni del titolo (clausola di stop-loss); e b)
+nell’impegno delle parti a non compiere, durante il periodo di determinazione del prezzo, operazioni aventi ad oggetto
+azioni dell'emittente quotato.
+Ad esito della richiesta di conversione da parte dell’investitore, la società consegna le azioni emesse
+al servizio del POC non standard, per la parte corrispondente alla richiesta di conversione.
+I POC non standard si caratterizzano, quindi, per i seguenti elementi: i) sono rivolti ad un unico
+investitore; ii) le società che li emettono sono, solitamente, in difficoltà finanziarie; iii) l’investitore si
+impegna a sottoscrivere in una o più tranche, a seguito di specifiche richieste della società, un
+predeterminato numero di obbligazioni convertibili in azioni (di regola, cum warrant) e, a fronte di
+tale impegno, l’investitore riceve una commitment fee; iv) la società procede, a seguito della
+conversione, a consegnare le azioni emesse a servizio del POC non standard e il numero di azioni
+oggetto di ciascuna conversione viene determinato sulla base di un prezzo di conversione pari a una
+determinata percentuale (tra il 90%-95% circa) del prezzo medio ponderato per i volumi delle
+transazioni sul titolo della società, determinato in un periodo precedente la ricezione di una
+comunicazione di conversione (su un orizzonte di circa 10-15 giorni di borsa aperta); v) il
+meccanismo di conversione è tale da essere a sconto sin dall’inizio dell’operazione e, quindi, da far
+risultare conveniente, per il finanziatore, convertire le obbligazioni in azioni.
+Il “POC non standard” si distingue, pertanto, da un’emissione obbligazionaria tradizionale
+o standard; quest’ultima può essere destinata, previa decisione assembleare, tanto ai soci quanto a
+uno o più investitori terzi ed è caratterizzata da un rapporto di conversione, predefinito ex ante tale
+che, affinché divenga conveniente per il sottoscrittore l’esercizio della conversione, il prezzo
+dell’azione sul mercato deve aumentare in modo significativo (maggiore del prezzo teorico
+dell’azione).
+La concreta esperienza operativa consente di rilevare che, in ragione delle caratteristiche operative
+dello strumento, l’emissione di un POC non standard può comportare un effetto di deprezzamento
+delle azioni delle società che ricorrono a tale strumento, nonché effetti fortemente diluitivi sulla
+compagine azionaria delle medesime società.
+Le caratteristiche dei “POC non standard” appaiano molto simili a quelle individuate per i SEDA e
+per i SEF, fatta salva, principalmente, l’iniziale emissione obbligazionaria e la successiva
+conversione in azioni, caratteristica peculiare dei POC non standard.
+II. Ambito applicativo e modalità di comunicazione al pubblico
+1. A prescindere dalle indicazioni fornite dalla presente Comunicazione, restano fermi gli eventuali
+ulteriori obblighi informativi a cui sono tenute le società e i relativi azionisti. Un particolare richiamo
+va operato agli obblighi previsti dall’art. 17 del regolamento (UE) n. 596/2014 (“MAR”) in materia
+di comunicazione al pubblico di informazioni privilegiate e dall’art. 120 del d.lgs. n. 58/1998
+(“TUF”) in materia di comunicazione delle partecipazioni rilevanti.
+Ciò posto, con la presente Comunicazione si forniscono alle società con azioni quotate nei mercati
+regolamentati e/o negoziate su MTF (di seguito, congiuntamente denominate solo “la società” o “le
+società”) indicazioni volte a disciplinare in modo organico la disclosure da fornire in occasione di
+POC non standard, di SEDA, di SEF e di tutte le altre tipologie di operazioni aventi caratteristiche
+analoghe quali, ad esempio, quelle realizzate mediante assegnazione di warrant ad unico investitore.
+Inoltre, la presente Comunicazione fornisce indicazioni agli investitori-sottoscrittori unici degli
+accordi in esame, avuto riguardo alle operazioni di compravendita effettuate dagli stessi sulle azioni
+delle società interessate dalle citate operazioni e sugli strumenti ad esse collegati (denominati, di
+seguito, anche “investitori unici” o solo “investitori” e, singolarmente, “investitore unico” o solo
+“investitore”).
+Nella presente Comunicazione con il termine “operazione” (e, congiuntamente, “operazioni”) si
+intendono: i POC non standard (denominati, di seguito, anche solo “POC”), i SEDA, i SEF e le altre
+tipologie di operazioni aventi caratteristiche analoghe (quali, ad esempio, quelle realizzate mediante
+assegnazione di warrant ad un unico investitore).
+Alle citate operazioni aventi caratteristiche analoghe ai POC, ai SEDA ovvero ai SEF le indicazioni
+fornite con la presente Comunicazione si applicano in quanto compatibili.
+2. Ai fini della presente Comunicazione, anche laddove non espressamente precisato, nel caso in cui
+sia prevista (richiesta o raccomandata) la diffusione al pubblico di un comunicato, la stessa deve
+avvenire con le modalità individuate dalla Parte III, Titolo II, Capo I, del Regolamento Consob n.
+11971/1999 e successive modifiche (“Regolamento Emittenti”)2.
+Le società sono tenute a riservare, nell’ambito del proprio sito internet, una specifica pagina o
+sezione di agevole individuazione volta a includere tutta l’informativa relativa alle operazioni. In tale
+specifica pagina o sezione, sono altresì riportati i comunicati e i documenti societari che, secondo la
+disciplina vigente, devono essere pubblicati anche in altre pagine e/o sezioni del medesimo sito
+internet della società pur sempre relativi alle operazioni oggetto della presente Comunicazione.
+Inoltre, la pubblicazione delle informazioni sui siti internet ai sensi della Parte III, Sezione A,
+paragrafo 3.1.3., e della Sezione B, paragrafo 1.1., è richiesta anche in un formato elettronico
+comunemente utilizzato idoneo a consentire l’estrazione dei dati (es., formato excel).
+III. Gli elementi oggetto di informativa3
+Nella presente Comunicazione sono fornite indicazioni in merito a: (A) il contenuto delle
+informazioni che le società, a seconda della fase, dovranno rendere pubbliche con riferimento alle
+operazioni in oggetto, nonché le relative modalità; (B) il contenuto delle informazioni che gli
+investitori unici dovranno pubblicare; (C) le informazioni che dovranno essere rese dagli emittenti
+già assoggettati ad obblighi informativi supplementari mensili o trimestrali ex art. 114, comma 5, del
+TUF; (D) le informazioni rilevanti da rendere nelle relazioni finanziarie periodiche.
+****
+Quanto sopra premesso, nei casi in cui ricorra un’operazione, si formulano le seguenti richieste ai
+sensi dell’art. 114, comma 5, del TUF e si forniscono le seguenti raccomandazioni.
+A. Informazioni da rendere pubbliche
+Gli elementi di informativa oggetto della presente Comunicazione sono distinti in funzione delle
+diverse fasi nelle quali è strutturata l’operazione, come di seguito indicate:
+Con riferimento alle modalità di diffusione del comunicato, si rammenta che le società che non utilizzano uno SDIR
+(Sistema per la Diffusione delle Informazioni Regolamentate) ai sensi dell’art. 65-octies del Regolamento Emittenti,
+inviano il medesimo comunicato ad almeno due agenzie di stampa e lo pubblicano sul proprio sito internet.
+Analogamente a quanto riportato nelle Linee Guida per la Gestione delle Informazioni Privilegiate della Consob (cfr.
+paragrafo 7.3.3.) si raccomanda, in tali casi, di inviare, comunque, detto comunicato a un numero adeguato di media,
+almeno tre, di cui due con diffusione nazionale.
+Si rammenta che, nel caso di eventuale obbligo di pubblicazione di un prospetto informativo, troverà applicazione la
+pertinente disciplina di riferimento.
+1. il momento della sottoscrizione dell’accordo con l’investitore;
+2. il momento in cui l’operazione è deliberata (ad esempio, assunzione della delibera
+assembleare di approvazione dell’aumento di capitale al servizio del POC);
+3. lo svolgimento e il termine dell’operazione;
+4. l’eventuale fase di modifica, di sospensione o di risoluzione dell’accordo sottostante
+l’operazione.
+
+=== K511 | [par. 1] Sottoscrizione dell’accordo da parte della società con l’investitore
+1. Sottoscrizione dell’accordo da parte della società con l’investitore
+1.1. La società, al momento della sottoscrizione dell’accordo con l’investitore, diffonde un
+comunicato recante la complessiva descrizione dell’operazione, nonché l’indicazione analitica delle
+relative caratteristiche e di tutti gli elementi e delle clausole dell’accordo. Il comunicato in parola
+contiene almeno le informazioni relative ai seguenti aspetti:
+i. motivazioni sottostanti alla sottoscrizione dell’accordo (con specifica evidenza delle ragioni
+dell’esclusione del diritto di opzione) e destinazione delle risorse finanziarie rivenienti
+dall’operazione.
+Laddove la conclusione dell’accordo con l’investitore rappresenti la principale o l’unica
+modalità per il reperimento delle risorse finanziarie necessarie alla prosecuzione dell’attività
+e/o per l’implementazione del piano aziendale, anche tenuto conto dell’assenza di merito
+creditizio, è fornita specifica evidenza di tale circostanza;
+ii. controparte, controvalore nominale ed effettivo, clausole contrattuali (quali, ad esempio, di
+lock-up, di selling restriction, di cool down period e covenant), con particolare riferimento a
+quelle che possono condizionare il buon esito dell’operazione, garanzie ed eventuale esistenza
+di ulteriori accordi sottoscritti dall’investitore unico aventi ad oggetto le azioni della società
+(quali, ad esempio, di prestito titoli, di permuta e accordi a questi similari);
+iii. informazioni sui criteri per la determinazione del prezzo di emissione delle nuove azioni e sui
+costi dell’operazione, con riferimento a tutte le componenti (quali, ad esempio, commissioni,
+emissione sotto la pari, sconto sul prezzo dell’azione al momento della conversione), nonché
+sui costi a carico della società in relazione a eventuali ulteriori accordi sottoscritti
+dall’investitore unico aventi ad oggetto le relative azioni (quali, ad esempio, di prestito titoli,
+di permuta e accordi a questi similari);
+iv. rischi dell’operazione (quali, ad esempio, effetti diluitivi sulla compagine azionaria e di
+deprezzamento sul titolo azionario nel caso di vendita sul mercato, da parte dell’investitore
+unico, sia delle azioni della società sottoscritte o ricevute in conversione in esecuzione
+dell’operazione, sia delle azioni della società rivenienti da eventuali ulteriori accordi
+sottoscritti dal medesimo investitore unico quali, ad esempio, di prestito titoli, di permuta e
+accordi a questi similari).
+In ogni caso, laddove l’accordo consti in un POC, il comunicato in parola reca la seguente
+informativa: “L’emissione di un POC non standard può comportare un effetto di
+deprezzamento delle azioni, nonché effetti fortemente diluitivi sulla compagine azionaria
+della società.”;
+v. informazioni in merito all’eventuale previsione di modifiche nella composizione dei propri
+organi sociali e ad eventuali accordi relativi a tali modifiche, nonché alla sussistenza di
+eventuali previsioni riguardanti la nomina e/o la cessazione di figure dirigenziali aventi
+responsabilità strategiche per la società, indicando, in particolare, se sia prevista la presenza
+di Chief Restructuring Officer (“CRO”) o di figure analoghe e, in tali ipotesi, quali siano i
+poteri e le funzioni loro attribuiti;
+vi. eventuali accordi con l’investitore per la rivendita delle azioni sul mercato, fornendo specifica
+evidenza del fatto che, in caso di successiva rivendita, si applicano le disposizioni dell’art. 5
+del regolamento (UE) 2017/1129 (“Regolamento Prospetto”) e dell’art. 100-bis del TUF e
+che, con riferimento all’obbligo di pubblicazione di un prospetto di offerta, ai sensi dell’art.
+205 del TUF, tale obbligo è da escludersi nei casi di offerte di prodotti finanziari effettuate in
+mercati regolamentati, nei sistemi multilaterali di negoziazione e, se ricorrono le condizioni
+indicate dalla Consob con regolamento, da internalizzatori sistematici.
+1.2. Inoltre, con il medesimo comunicato di cui sopra, la società fornisce - ove note e per quanto le
+constino anche alla luce delle previsioni dell’accordo - le informazioni relative all’investitore unico
+inerenti ai seguenti aspetti:
+i. le motivazioni dell’investitore sottostanti alla sottoscrizione dell’accordo;
+ii. nel caso in cui l’investitore abbia sottoscritto ulteriori accordi aventi ad oggetto le azioni della
+società (quali, ad esempio, di prestito titoli, di permuta e accordi a questi similari), la
+motivazione sottostante alla relativa sottoscrizione, la tempistica di attuazione degli stessi (ivi
+inclusa quella relativa alla richiesta dei titoli che ne sono oggetto rispetto alla tempistica di
+sottoscrizione delle azioni o conversione delle tranche del POC), la sussistenza di eventuali
+clausole di selling restriction, l’indicazione dell’eventuale circostanza che tali accordi
+riguardano un quantitativo di azioni maggiore rispetto al controvalore di ciascuna tranche
+sottoscritta o convertita nel contesto dell’operazione.
+Laddove la società acquisisca le informazioni relative all’investitore unico di cui al presente
+paragrafo in una fase successiva a quella di sottoscrizione dell’accordo, la stessa provvede a
+diffonderle con il primo comunicato utile da pubblicarsi ai sensi della presente Comunicazione.
+
+=== K512 | [par. 2] Informativa da rendere in occasione della delibera dell’operazione
+2. Informativa da rendere in occasione della delibera dell’operazione
+2.1. Con riferimento alle società con azioni quotate nei mercati regolamentati, nei casi in cui
+l’operazione è oggetto di delibera assembleare, assume rilevanza, ai fini dell’esercizio consapevole
+del diritto di voto da parte degli azionisti, che sia fornito un set di informazioni inerenti
+all’operazione ulteriore rispetto a quello già previsto dalle applicabili disposizioni del codice civile e
+dall’Allegato 3A al Regolamento Emittenti. Al riguardo, la relazione illustrativa del consiglio di
+amministrazione della medesima società fornisce, oltre alle informazioni di cui al paragrafo 1:
+a) la stima del fabbisogno finanziario netto complessivo dell’emittente (o del gruppo ad esso
+facente capo), determinata considerando debiti di qualunque natura, per i dodici mesi successivi
+dalla data dell’assemblea e, in raffronto, l’indicazione dell’ammontare delle risorse attese
+derivanti dall’operazione in tale arco temporale, nonché i rischi sull’implementazione dei piani
+aziendali e sulla continuità aziendale dell’emittente (o del gruppo ad esso facente capo)
+derivanti dall’eventuale mancato buon esito dell’operazione secondo le misure e i tempi attesi.
+Per il caso in cui l’accordo preveda una clausola che possa condizionare il buon esito
+dell’operazione (quale, ad esempio, di cool down period), è specificato se l’ammontare
+stimato di risorse reperibili nei dodici mesi successivi alla delibera dell’assemblea attraverso
+l’esecuzione dell’operazione sia subordinato o meno alla rinuncia, anche parziale, da parte
+dell’investitore alla medesima clausola.
+Per il caso in cui l’accordo preveda il rimborso in denaro, sono indicati gli effetti sulla
+liquidità dell’emittente nel caso di rimborso in denaro dello stesso;
+b) informazioni circa l’eventuale inserimento dell’investitore unico nell’elenco delle parti
+correlate dell’emittente ai sensi del regolamento Consob n. 17221/2010 (“Regolamento
+OPC”) ovvero circa l’assoggettamento, in tutto o in parte, in via volontaria dei futuri rapporti
+tra l’emittente e l’investitore unico alla disciplina sulle operazioni con parti correlate ai sensi
+dell’art. 4, comma 2, del Regolamento OPC.
+2.2. Con riferimento alle società:
+i. le informazioni indicate nel precedente paragrafo 2.1., lett. a), sono riportate nell’apposito
+comunicato da diffondersi a seguito dell’approvazione dell’aumento di capitale da parte
+dell’assemblea;
+ii. qualora ricorra l’ipotesi della delega agli amministratori per l’aumento di capitale ai sensi
+dell’art. 2443 del codice civile - il quale prevede che lo statuto possa attribuire agli
+amministratori la facoltà di aumentare in una o più volte il capitale sociale - le medesime
+informazioni sono riportate in un apposito comunicato da diffondersi contestualmente alla
+delibera del consiglio di amministrazione che approva l’aumento di capitale.
+
+=== K514 | [par. 3.1] Obblighi
+3.1. Obblighi
+3.1.1. In occasione della sottoscrizione di ciascuna tranche, la società diffonde un comunicato
+contenente un riepilogo, in forma tabellare, dei seguenti elementi informativi:
+a) per il caso di SEDA/SEF, la data dell’operazione di sottoscrizione, i prezzi, il numero di
+azioni sottoscritte, i controvalori e la variazione del capitale sociale a seguito dell’emissione
+delle azioni;
+b) per il caso di POC, la data dell’operazione di sottoscrizione, il numero di obbligazioni
+sottoscritte, il valore nominale di ogni singola obbligazione, il controvalore totale sottoscritto,
+il numero di obbligazioni della tranche eventualmente ancora da sottoscrivere, il numero di
+warrant eventualmente emessi contestualmente alla sottoscrizione delle obbligazioni e le
+informazioni relative alle tranche ancora da sottoscrivere (ad esempio, numero di tranche e
+quantitativo residuo).
+Per tutte le operazioni, con il suddetto comunicato, l’emittente con azioni quotate nei mercati
+regolamentati fornisce un aggiornamento circa:
+i. le eventuali variazioni in merito alle informazioni indicate nel precedente paragrafo 2.1., lett. b);
+ii. l’utilizzo e la congruità delle risorse derivanti dalla tranche rispetto al proprio fabbisogno
+finanziario netto complessivo (o del gruppo ad esso facente capo), inclusivo di debiti di
+qualunque natura, per i dodici mesi successivi alla data dell’assemblea o, nel caso in cui sia
+richiesta la pubblicazione di un prospetto informativo, rispetto al dato sul fabbisogno
+finanziario più aggiornato ivi riportato. Tale informativa deve essere oggetto di particolare
+evidenza nell’ambito della sezione o pagina del sito internet dell’emittente dedicata alle
+operazioni, anche attraverso l’utilizzo di enfasi aggiunte.
+Le società con azioni negoziate su MTF forniscono l’informazione di cui al precedente punto ii. con
+comunicato da diffondere in occasione della pubblicazione delle rendicontazioni finanziarie annuali
+e, ove previste, semestrali.
+Nel comunicato reso in occasione della sottoscrizione della prima tranche, nel caso in cui l’accordo
+preveda una clausola di cool down period, tutte le società forniscono, altresì, l’informazione del
+numero delle tranche effettivamente sottoscrivibili fino alla scadenza dell’accordo e dell’ammontare
+massimo di risorse finanziarie effettivamente reperibili fino alla medesima scadenza, informazione da
+rendere assumendo che l’investitore non rinunci, nemmeno parzialmente, alla clausola di cool down
+period.
+3.1.2. In occasione di ciascuna conversione delle obbligazioni in azioni, nel caso di POC, la società
+diffonde un comunicato contenente i seguenti elementi informativi: la data dell’operazione di
+conversione, il numero di obbligazioni convertite appartenenti a ciascuna tranche, il controvalore
+nominale delle obbligazioni convertite, il prezzo di conversione, il numero di azioni rivenienti dalla
+conversione e la variazione del capitale sociale a seguito dell’emissione delle azioni rivenienti dalla
+conversione.
+3.1.3. Su base mensile (fine al termine dell’operazione), la società, entro il quinto giorno di borsa
+aperta successivo al termine di ogni mese solare, pubblica, sul proprio sito internet, un riepilogo che,
+in forma tabellare, ricostruisce le informazioni inerenti all’operazione dall’inizio della stessa,
+indicando:
+1. la data dell’operazione di sottoscrizione, il numero e il controvalore dei titoli sottoscritti
+appartenenti a ciascuna tranche;
+2. la data dell’operazione di conversione, il numero e il controvalore delle obbligazioni
+convertite con informazioni relative al prezzo di conversione, al numero di azioni emesse a
+seguito della conversione e alla conseguente variazione di capitale sociale;
+3. l’effetto diluitivo sulla compagine azionaria preesistente per effetto dell’emissione delle
+azioni derivanti dall’operazione, avuto riguardo al capitale sociale da ultimo attestato nel
+mese di riferimento, nonché l’effetto diluitivo cumulato dalla data di inizio dell’operazione;
+4. se nota, la quota di partecipazione detenuta dall’investitore unico ove rilevante o significativa,
+in quanto detentore di una partecipazione almeno pari alle soglie indicate nella Sezione B,
+paragrafi 1.1. e 2.1.
+Tale riepilogo non è richiesto qualora non vi siano state modifiche e/o aggiornamenti rispetto alle
+informazioni mensili precedentemente fornite.
+3.1.4. Inoltre, la società aggiorna il pubblico, quanto prima possibile, con relativo comunicato, circa
+un’eventuale modifica/cambiamento della finalità iniziale per la quale aveva deliberato di procedere
+all’operazione (a titolo esemplificativo: copertura del fabbisogno finanziario, supporto del piano
+industriale o di risanamento della società o del gruppo ad essa facente capo) anche alla luce del
+fabbisogno finanziario indicato nella relazione illustrativa degli amministratori ai sensi del
+precedente paragrafo 2.1. (per quanto concerne le società con azioni quotate in mercati
+regolamentati) o nel comunicato da diffondere ai sensi del precedente paragrafo 2.2. (per quanto
+concerne le società con azioni negoziate su MTF) o, nel caso in cui sia richiesta la pubblicazione di
+un prospetto informativo, rispetto all’informazione sul fabbisogno finanziario più aggiornata ivi
+riportata.
+
+=== K515 | [par. 3.2] Raccomandazioni
+3.2. Raccomandazioni
+Nel caso in cui sia in corso un’operazione, con riferimento agli adempimenti richiesti ai sensi dell’art.
+2444 del codice civile4 inerenti all’attestazione delle modifiche del capitale sociale rivenienti
+dall’emissione di nuove azioni connessa all’operazione medesima e ai conseguenti adempimenti ai
+sensi dell’art. 85-bis del Regolamento Emittenti - tenuto conto della circostanza che l’investitore
+potrebbe chiedere la sottoscrizione dell’aumento di capitale o la conversione delle obbligazioni in
+azioni in più date anche nel corso dello stesso mese - si raccomanda alle società di depositare le
+attestazioni di avvenuto aumento di capitale il prima possibile rispetto alla richiesta di sottoscrizione
+o di conversione e, in caso di emissioni ripetute che comportino una variazione del capitale sociale
+superiore al 10% del numero delle azioni emesse, almeno entro 7 giorni dalle stesse, senza attendere
+lo scadere del termine di trenta giorni dalla prima sottoscrizione a cui l’attestazione si riferisce. Ciò al
+fine di consentire sia all’investitore unico, sia agli altri azionisti della società di adempiere agli
+obblighi di comunicazione delle partecipazioni rilevanti, ai sensi dell’art. 120 del TUF, alla luce del
+capitale sociale effettivo, come di volta in volta attestato, vale a dire delle variazioni del capitale
+sociale rivenienti dall’emissione di nuove azioni5.
+Inoltre, si raccomanda alle società, in caso di emissione di nuove azioni al servizio dell’operazione
+prima dello svolgimento di un’assemblea dei soci già convocata, di effettuare il citato deposito
+dell’attestazione dell’aumento di capitale prima del relativo svolgimento e non oltre il giorno della
+c.d. record date di cui all’art. 83-sexies, comma 2, del TUF (il settimo giorno di mercato aperto
+precedente la data fissata per l’assemblea)6.
+Ai sensi dell’art. 2444 del codice civile, in occasione di aumenti di capitale delle società per azioni, è previsto che
+“Nei trenta giorni dall’avvenuta sottoscrizione delle azioni di nuova emissione gli amministratori devono depositare
+per l'iscrizione nel registro delle imprese un'attestazione che l'aumento del capitale è stato eseguito. Fino a che
+l’iscrizione nel registro non sia avvenuta, l'aumento del capitale non può essere menzionato negli atti della società.”.
+Qualora l’aumento di capitale derivi dalla conversione di obbligazioni convertibili in azioni, l’art. 2420-bis, comma 3,
+del codice civile prevede che “Nel primo mese di ciascun semestre gli amministratori provvedono all’emissione delle
+azioni spettanti agli obbligazionisti che hanno chiesto la conversione nel semestre precedente. Entro il mese
+successivo gli amministratori devono depositare per l'iscrizione nel registro delle imprese un’attestazione
+dell'aumento del capitale sociale in misura corrispondente al valore nominale delle azioni emesse. Si applica la
+disposizione del secondo comma dell’articolo 2444.”.
+In tal senso, si ricorda che, ai sensi dell’art. 116-terdecies del Regolamento Emittenti, il “capitale sociale” che rileva
+ai fini degli obblighi di comunicazione delle partecipazioni di cui all’art. 120 del TUF e degli artt. 117 e 119 del
+medesimo regolamento è “il capitale sottoscritto, quale risulta dallo statuto pubblicato ai sensi della normativa
+vigente, rappresentato da azioni che conferiscono diritto di voto, anche qualora tale diritto sia sospeso;(… )” ovvero
+il capitale sociale “attestato” presso il registro delle imprese.
+Si rammenta, infine, che, a seguito dei predetti adempimenti inerenti al deposito per attestazione del capitale sociale,
+ai fini della maggior conoscibilità delle variazioni del medesimo capitale, ai sensi dell’art. 85-bis del Regolamento
+Emittenti, gli emittenti sono altresì tenuti a comunicare l'ammontare del capitale, il numero e le categorie di azioni in
+4. Informativa da rendere in caso di modifica, di sospensione o di risoluzione dell’accordo
+sottostante l’operazione
+In caso di modifica, di sospensione o di risoluzione dell’accordo sottostante l’operazione, la società
+diffonde un comunicato contenente i seguenti elementi informativi:
+• la descrizione delle modifiche all’accordo originariamente sottoscritto;
+• la descrizione della motivazione relativa alle modifiche, alla sospensione o alla risoluzione
+dell’accordo sottostante l’operazione;
+• la descrizione degli impatti della modifica/sospensione/risoluzione dell’accordo su: i)
+l’implementazione dei piani aziendali e/o la continuità aziendale della società e del gruppo ad
+essa facente capo; ii) la copertura del fabbisogno finanziario netto complessivo della società
+(e del gruppo ad essa facente capo), inclusivo di debiti di qualunque natura, riferito ai dodici
+mesi successivi alla data dell’assemblea o, nel caso in cui sia richiesta la pubblicazione di un
+prospetto informativo, del fabbisogno finanziario riferito ai dodici mesi successivi alla data
+del prospetto; iii) l’assunzione del piano aziendale inerente alle fonti di finanziamento del
+piano medesimo.
+B. Informativa dell’investitore unico
+
+=== K516 | [par. 1 (2)] Obblighi
+1. Obblighi
+1.1. L’investitore che detiene, anche in qualità di prestatario titolare del diritto di voto, una
+partecipazione in un emittente con azioni quotate nei mercati regolamentati almeno pari alle soglie
+rispettivamente individuate dall’art. 120, comma 2, del TUF (per gli emittenti che non sono PMI e
+per gli emittenti che sono PMI) pubblica le informazioni relative alle compravendite effettuate su
+tutte le azioni del medesimo emittente e sugli strumenti ad esse collegati, come definiti dall’art. 152-
+sexies, comma 1, lett. b), del Regolamento Emittenti, nonché le informazioni relative all’effettivo
+esercizio dei diritti derivanti da eventuali accordi, ulteriori rispetto all’accordo sottostante
+l’operazione, aventi ad oggetto le azioni dell’emittente (quali, ad esempio, di prestito titoli, di
+permuta e accordi a questi similari).
+Le suddette informazioni, da rendere in forma tabellare, riportano in ciascuna riga l’operatività su
+base giornaliera, indicando i seguenti elementi: data di esecuzione, segno dell’operazione,
+quantitativo compravenduto, prezzo medio ponderato di acquisto/sottoscrizione/conversione, prezzo
+medio ponderato di vendita, controvalore e sede di esecuzione.
+Dette informazioni sono pubblicate - nel periodo compreso tra la data di conclusione del contratto e il
+mese successivo alla data di sottoscrizione e/o di conversione dell’ultima tranche - in una specifica
+pagina e/o sezione di agevole individuazione del sito internet dell’investitore, ove esistente, e, in ogni
+caso, dell’emittente, mediante accordo con quest’ultimo, entro il quinto giorno di borsa aperta
+successivo al termine di ogni mese solare. Tale pubblicazione non è richiesta qualora non vi siano
+state modifiche e/o aggiornamenti rispetto alle informazioni mensili precedentemente pubblicate.
+In considerazione di quanto sopra, l’investitore unico è tenuto a trasmettere all’emittente le
+cui questo è suddiviso, sia al pubblico, mediante un comunicato da pubblicarsi con le modalità indicate dagli artt. 65-
+quinquies, 65-sexies e 65-septies del Regolamento Emittenti, sia alla Consob, mediante il sistema di Teleraccolta.
+informazioni da pubblicare ai sensi del presente paragrafo in modo tempestivo e completo.
+1.2. L’investitore, nella prima informativa mensile resa ai sensi del paragrafo 1.1., fornisce evidenza:
+a) della partecipazione rilevante nel capitale sociale dell’emittente eventualmente già detenuta
+prima dell’avvio dell’operazione e delle relative intenzioni in ordine all’eventuale
+superamento delle soglie rilevanti a fini OPA;
+b) delle relative motivazioni sottostanti alla sottoscrizione dell’accordo, anche avuto riguardo al
+ritorno economico atteso dall’operazione.
+
+=== K517 | [par. 2 (2)] Raccomandazioni e richiami di attenzione
+2. Raccomandazioni e richiami di attenzione
+2.1. Gli adempimenti previsti nei precedenti paragrafi 1.1. e 1.2., lett. b), sono raccomandati
+all’investitore che detiene una partecipazione inferiore alle soglie rilevanti sopra indicate in società le
+cui azioni sono quotate nei mercati regolamentati. I medesimi adempimenti sono altresì raccomandati
+all’investitore che detiene una partecipazione significativa in una società le cui azioni sono negoziate
+su MTF, vale a dire, almeno pari al 5% del relativo capitale sociale.
+2.2. Si richiama l’attenzione in ordine alla circostanza che, ove a seguito delle richieste di
+sottoscrizione di azioni o di conversione in azioni dell’emittente quotato nei mercati regolamentati
+che sono al servizio dell’operazione (e di eventuali successive vendite delle azioni), vi sia una
+variazione della partecipazione rilevante - ai sensi dell’art. 120 del TUF e della relativa disciplina
+attuativa, anche con riferimento alla c.d. “dichiarazione di intenzioni” di cui al comma 4-bis del
+medesimo articolo - detenuta dall’investitore unico nell’emittente, il medesimo investitore deve darne
+comunicazione alla Consob e alla società partecipata ai sensi delle citate disposizioni.
+In tal senso, l’investitore unico deve adempiere al suddetto obbligo di comunicazione delle
+partecipazioni rilevanti tenuto conto delle attestazioni di variazione del capitale sociale di volta in
+volta depositate dall’emittente e che tengano conto delle variazioni di capitale sociale intervenute per
+effetto delle suddette sottoscrizioni/conversioni, a decorrere dalla data della nuova attestazione7.
+Nello stesso senso, con riferimento agli obblighi di comunicazione delle partecipazioni rilevanti
+detenute in emittenti con azioni quotate nei mercati regolamentati in cui siano in corso le operazioni
+oggetto della presente Comunicazione, si rammenta agli altri soggetti che effettuano operazioni di
+compravendita delle azioni di tali emittenti di adempiere agli eventuali obblighi di cui al citato art.
+120 del TUF avendo cura di verificare le nuove attestazioni del capitale sociale di volta in volta
+effettuate dai medesimi emittenti in occasione dell’emissione di nuove azioni a servizio
+dell’operazione8.
+Come sopra riferito, ai sensi dell’art. 116-terdecies del Regolamento Emittenti, il “capitale sociale” che rileva ai fini
+degli obblighi di comunicazione delle partecipazioni di cui all’art. 120 del TUF e degli artt. 117 e 119 del medesimo
+regolamento è il capitale sociale “attestato”. Inoltre, come specificato nelle “Linee guida per l’assolvimento degli
+obblighi informativi ai sensi dell’articolo 120 del Decreto Legislativo n. 58/1998” (paragrafo 1.13), in ipotesi di
+variazioni rilevanti della partecipazione per effetto di modifiche del capitale sociale dell’emittente partecipato, gli
+obblighi di notifica per gli azionisti decorrono dalla data del comunicato dell’emittente previsto dall’art. 85-bis del
+Regolamento Emittenti, fermo restando che la “data dell’operazione” da indicare sul modello è quella del deposito
+dell’attestazione del nuovo capitale presso il registro delle imprese richiamata nel medesimo articolo.
+In tale prospettiva, tali soggetti sono invitati a consultare il sito internet dell’emittente con riferimento ai comunicati
+dallo stesso diffusi, segnatamente con riferimento alle tranche emesse e sottoscritte, di quelle convertite e del capitale
+conseguentemente aggiornato.
+2.3. Nel corso di alcune delle operazioni oggetto della presente Comunicazione, fermi restando i
+divieti di abusi di mercato previsti dagli artt. 14 e 15 del MAR, è possibile che l’investitore effettui
+vendite allo scoperto su azioni quotate nei mercati regolamentati o negoziate su MTF, eventualmente
+a fronte del diritto a sottoscrivere azioni di nuova emissione (ad esempio, tramite accordo con
+l’emittente o possesso di warrant e/o obbligazioni convertibili).
+Tali vendite allo scoperto generano una posizione netta corta (“PNC”)9 in capo all’investitore che, ai
+sensi dell’art. 5 del Regolamento (UE) n. 236/2012 relativo alle vendite allo scoperto, deve essere
+notificata all'Autorità competente (la Consob per le azioni italiane) al raggiungimento di una soglia
+rilevante (costituiscono soglie rilevanti lo 0,1% del capitale sociale emesso dell'emittente e ogni 0,1%
+superiore a tale soglia). Ai sensi dell’art. 9 del predetto regolamento, la notifica va effettuata entro le
+ore 15.30 del giorno di negoziazione successivo al raggiungimento di una soglia rilevante.
+Come già raccomandato con riguardo alle PNC assunte nel corso di aumenti di capitale, si
+raccomanda agli investitori, nel notificare alla Consob le PNC detenute a seguito della partecipazione
+nelle operazioni oggetto della presente Comunicazione, di indicare, nel campo “Commenti” della
+PNC, l’eventuale diritto a sottoscrivere azioni di nuova emissione.
+Si rammenta, infine, che, quando la PNC raggiunge lo 0,5% del capitale sociale emesso, essa è resa
+pubblica dalla Consob.
+C. Emittenti assoggettati ad obblighi informativi supplementari mensili o trimestrali ai sensi
+dell’art. 114, comma 5, del TUF
+Gli emittenti con azioni quotate nei mercati regolamentati assoggettati dalla Consob, ai sensi dell’art.
+114, comma 5, del TUF, ad obblighi informativi su base mensile o trimestrale sulla situazione
+economico-finanziaria dovranno fornire, inoltre, elementi informativi sugli strumenti finanziari
+emessi nell’ambito delle operazioni. In particolare, nell’ambito delle comunicazioni che sono tenuti a
+diffondere (con cadenza mensile o trimestrale), i suddetti emittenti dovranno riportare un riepilogo: i)
+del numero complessivo degli strumenti sottoscritti (con indicazione del controvalore totale
+sottoscritto) e del quantitativo residuo da sottoscrivere; ii) del numero di strumenti convertiti con
+indicazione del prezzo di conversione, del numero di azioni rivenienti dalla conversione e della
+variazione di capitale sociale conseguente a tale conversione; iii) delle commissioni
+complessivamente sostenute.
+Inoltre, posto che per i suddetti emittenti già sussiste l’obbligo di diffondere trimestralmente le
+informazioni sullo stato di implementazione del piano industriale e finanziario, laddove le operazioni
+siano state avviate a supporto dei piani finanziari, industriali e/o di risanamento, i medesimi emittenti
+dovranno, altresì, fornire informazioni di dettaglio su: i) la validità strategica dei citati piani,
+precisando se e in che misura questi ultimi possono essere ritenuti ancora attuali e se il modello di
+business è rimasto invariato; ii) l’eventuale circostanza per cui la conclusione dell’operazione
+rappresenta la principale o l’unica modalità per il reperimento delle risorse finanziarie necessarie alla
+prosecuzione dell’attività e/o per l’implementazione del medesimo piano; iii) l’impatto di eventuali
+clausole che possono condizionare il buon esito dell’operazione (quali, ad esempio, di cool down
+period) contenute nell’accordo da cui la stessa deriva sul mantenimento dei presupposti per la
+prosecuzione dell’attività aziendale dell’emittente e del gruppo ad esso facente capo; iv) la
+Si fa presente, al contrario, che gli strumenti finanziari che permettono di ricevere azioni già emesse sono inclusi nel
+calcolo delle PNC e, pertanto, eventuali vendite allo scoperto supportate dal possesso, per quantità corrispondenti, di
+tali strumenti finanziari non genereranno alcuna PNC.
+descrizione degli impatti dell’eventuale modifica/sospensione/risoluzione dell’accordo
+sull’implementazione dei medesimi piani e/o sul mantenimento dei presupposti per la prosecuzione
+dell’attività aziendale dell’emittente e del gruppo ad esso facente capo. Tali informazioni dovranno
+essere riferite alla data di chiusura del trimestre di riferimento e comunicate con le medesime
+modalità già previste per gli emittenti assoggettati agli obblighi informativi supplementari ex art. 114,
+comma 5, del TUF.
+D. Informazioni nelle relazioni finanziarie
+1. Al fine di rappresentare correttamente in bilancio le operazioni in oggetto, assume rilievo la
+valutazione caso per caso delle caratteristiche degli accordi sottostanti alle stesse.
+In particolare, in considerazione dei profili connessi al presupposto della continuità aziendale e alla
+rilevanza che, in linea generale, le operazioni possono assumere a sostegno dei piani industriali e/o di
+risanamento delle società, risultano particolarmente rilevanti, alla luce dei principi contabili
+applicabili10, alcuni elementi informativi da rendere nelle relative relazioni finanziarie periodiche
+pubblicate a conclusione degli accordi sottostanti alle operazioni e durante lo svolgimento delle stesse.
+Nello specifico, nell’ambito delle relazioni finanziarie di periodo, dovrebbero trovare un’adeguata
+descrizione le seguenti informazioni: i) l’eventuale circostanza per cui la conclusione dell’operazione
+rappresenta la principale o l’unica modalità per il reperimento delle risorse finanziarie necessarie alla
+prosecuzione dell’attività e/o per l’implementazione del piano aziendale della società; ii) gli eventi
+(quali, modifiche, sospensione e risoluzione dell’accordo da cui deriva l’operazione) e i rischi
+connessi al verificarsi di condizioni sospensive o risolutive del medesimo accordo, nonché l’esistenza
+di clausole contrattuali (quali, ad esempio, di cool down period) o di vincoli normativi che potrebbero
+compromettere l’ottenimento delle risorse finanziarie contrattualmente pattuite.
+Da ultimo, gli strumenti emessi che conferiscono al possessore il diritto di ottenere azioni ordinarie
+vanno considerati ai fini del calcolo del Diluted Earning per Share11.
+2. Inoltre, con specifico riferimento ai POC, si rappresenta che gli stessi trovano il loro
+inquadramento, ai fini dei principi contabili internazionali, nell’ambito degli strumenti finanziari
+composti, disciplinati dallo IAS 32, paragrafi da 28 a 3212.
+Sulla base del principio in oggetto, le società tenute ad applicare i suddetti principi contabili devono
+rilevare separatamente la componente obbligazionaria pura dello strumento dalla componente
+derivativa, relativa all’opzione call detenuta dall'investitore che, in caso di esercizio, consente la
+conversione dello strumento in azioni alle condizioni contrattualmente stabilite.
+Le disposizioni dello IAS 1 § 25-26 richiedono all’emittente di effettuare una valutazione circa le proprie capacità di
+continuare ad operare come un’entità in funzionamento tenendo conto di tutte le informazioni disponibili sul futuro,
+comprensive e non limitate a quelle relative ai dodici mesi successivi alla chiusura dell'esercizio. Anche il principio
+OIC 11, paragrafo 22, richiede una valutazione prospettica della capacità dell'azienda di continuare a costituire un
+complesso economico funzionante per un prevedibile arco temporale futuro.
+Sulla base di quanto indicato dallo IAS 33 § 5 si definiscono come “potenziali azioni ordinarie” quegli strumenti che
+conferiscono al possessore il diritto di ottenere azioni ordinarie, tra i quali rientrano gli strumenti di debito convertibili
+in azioni ordinarie. Accanto alla misura del Basic Earning per Share, lo IAS 33 definisce la configurazione di Diluted
+Earning per Share al fine di tenere conto del potenziale impatto diluitivo derivante dalla conversione in azioni degli
+strumenti che attribuiscono un diritto di conversione al possessore.
+Per gli emittenti che redigono il bilancio sulla base dei principi contabili nazionali, il trattamento contabile risulta
+sostanzialmente allineato alle prescrizioni dello IAS 32. Al riguardo, si veda il principio OIC 32 § 49.
+****
+La presente Comunicazione entra in vigore a far data dalla sua pubblicazione sul sito internet della
+Consob.
+La presente Comunicazione si applica agli accordi di SEDA, di SEF, di POC non standard e agli altri
+accordi aventi caratteristiche a questi analoghe sottoscritti successivamente alla data di entrata in
+vigore della stessa.
+La presente Comunicazione si applica, altresì, agli accordi di SEDA, di SEF, di POC non standard e
+agli altri accordi aventi caratteristiche a questi analoghe sottoscritti anteriormente alla data di entrata
+in vigore della stessa e ancora in corso alla medesima data, con le seguenti precisazioni:
+a) le società sono tenute ad assolvere l’obbligo di dotarsi di una specifica pagina o sezione del
+proprio sito internet volta a includere tutta l’informativa relativa alle operazioni secondo
+quanto previsto nella Parte II, paragrafo 2, entro 30 giorni dalla data di entrata in vigore della
+presente Comunicazione.
+In tale pagina o sezione del medesimo sito internet, devono essere tempestivamente
+pubblicate le informazioni già richieste ai sensi della Comunicazione n. 1/23. A tal fine, gli
+investitori unici sono tenuti a trasmettere alle società le informazioni alla cui pubblicazione
+gli stessi sono già tenuti ai sensi della Comunicazione n. 1/23 entro 20 giorni dalla data di
+entrata in vigore della presente Comunicazione;
+b) le società devono attenersi alle indicazioni contenute nella presente Comunicazione e non già
+contenute nella Comunicazione n. 1/23 alla prima occasione utile, da individuarsi,
+relativamente a quelle fornite nella Parte III, Sezione A, a seconda della fase in cui si trova
+l’operazione al momento dell’entrata in vigore della presente Comunicazione;
+c) gli investitori unici devono attenersi alle indicazioni contenute nella Parte III, Sezione B,
+paragrafo 1, della presente Comunicazione e non già contenute nella Comunicazione n. 1/23
+in relazione alle compravendite effettuate successivamente alla data di entrata in vigore della
+presente Comunicazione sulle azioni e sugli strumenti ad esse collegati delle società le cui
+operazioni sono ancora in corso alla medesima data, nonché in relazione all’effettivo esercizio
+dei diritti derivanti dagli ulteriori accordi indicati nel medesimo paragrafo avvenuto dopo
+l’entrata in vigore della presente Comunicazione.
+Per effetto dell’entrata in vigore della presente Comunicazione, la Comunicazione n. 1/23 del 3
+maggio 2023 è abrogata.
+IL PRESIDENTE
+Paolo Savona
+SCHEMA RIEPILOGATIVO
+Salvo che non sia diversamente specificato, la diffusione al pubblico dei comunicati deve avvenire con le modalità previste nella Parte III, Titolo II, Capo I, del Regolamento Emittenti
+Le società sono tenute a riservare, nell’ambito del proprio sito internet, una specifica pagina o sezione di agevole individuazione volta a includere tutta l’informativa relativa alle operazioni
+SEZIONE A
+Società con azioni quotate nei mercati regolamentati Società con azioni negoziate su MTF
+Informazioni da rendere pubbliche
+1. Fase sottoscrizione dell’accordo ➢ obbligo di comunicato su tutti gli elementi ed aspetti dell’operazione e, per ➢ obbligo di comunicato su tutti gli elementi ed aspetti dell’operazione e, per
+quanto consti, su ulteriori aspetti riguardanti l’investitore unico quanto consti, su ulteriori aspetti riguardanti l’investitore unico
+2. Fase delibera dell’operazione ➢ obbligo d’informativa nella relazione illustrativa all’assemblea ➢ obbligo di comunicato a seguito dell’approvazione dell’aumento di capitale
+➢ obbligo di comunicato a seguito dell’approvazione dell’aumento di capitale
+
+=== K518 | [par. 3 (2)] Fase svolgimento dell’operazione Obblighi Obblighi
+3. Fase svolgimento dell’operazione Obblighi Obblighi
+➢ in occasione di ciascuna sottoscrizione delle tranche di azioni/obbligazioni - ➢ in occasione di ciascuna sottoscrizione delle tranche di azioni/obbligazioni -
+obbligo di comunicato recante: obbligo di comunicato recante solo il riepilogo dell’operatività
+• il riepilogo dell’operatività
+➢ solo in occasione della pubblicazione delle rendicontazioni finanziarie
+• l’aggiornamento su eventuali cambiamenti delle informazioni sulla annuali e (ove previste) semestrali: obbligo di comunicato su aggiornamento
+disciplina OPC fornite nella relazione illustrativa all’assemblea dei dati relativi a utilizzo risorse/fabbisogno
+• l’aggiornamento dei dati relativi a utilizzo risorse/fabbisogno
+➢ in occasione di ciascuna conversione delle obbligazioni (solo per i POC): ➢ in occasione di ciascuna conversione delle obbligazioni (solo per i POC):
+obbligo di comunicato recante riepilogo dell’operatività obbligo di comunicato recante riepilogo dell’operatività
+➢ fino al termine dell’operazione: obbligo mensile di pubblicazione del ➢ fino al termine dell’operazione: obbligo mensile di pubblicazione del
+riepilogo operatività sul sito internet (non previsto nel caso in cui non ci
+riepilogo operatività sul sito internet (non previsto nel caso in cui non ci
+siano state modifiche e/o aggiornamenti rispetto alle informazioni mensili siano state modifiche e/o aggiornamenti rispetto alle informazioni mensili
+precedentemente fornite)
+precedentemente fornite)
+➢ in occasione di eventuale modifica/cambiamento della finalità iniziale ➢ in occasione di eventuale modifica/cambiamento della finalità iniziale
+dell’operazione: obbligo di comunicato dell’operazione: obbligo di comunicato
+Raccomandazioni Raccomandazioni
+➢ deposito tempestivo delle attestazioni di avvenuto aumento di capitale ➢ deposito tempestivo delle attestazioni di avvenuto aumento di capitale
+sociale presso il Registro delle Imprese; in caso di ripetute emissioni di sociale presso il Registro delle Imprese e, in caso di ripetute emissioni di
+azioni che comportino una variazione del capitale sociale superiore al 10% azioni che comportino una variazione del capitale sociale superiore al 10%
+del numero delle azioni emesse, almeno entro 7 giorni da tale emissione del numero delle azioni emesse, almeno entro 7 giorni da tale emissione
+➢ deposito delle attestazioni di avvenuto aumento di capitale entro la record ➢ deposito delle attestazioni di avvenuto aumento di capitale entro la record
+date in caso di emissione di nuove azioni prima di un’assemblea dei soci già date in caso di emissione di nuove azioni prima di un’assemblea dei soci già
+convocata convocata
+4. Fase eventuale: modifica ➢ obbligo di comunicato ➢ obbligo di comunicato
+sospensione/risoluzione dell’accordo
+SEZIONE B Investitori Investitori
+Informazioni relative all’investitore in società con azioni quotate nei mercati regolamentati in società con azioni negoziate su MTF
+Nel periodo compreso tra la data di Obblighi
+conclusione del contratto e il mese • ≥ soglie 120 TUF: pubblicazione mensile (entro il 5°giorno di borsa aperta
+successivo alla data di sottoscrizione successivo al termine di ogni mese solare) delle informazioni su
+e/o di conversione dell’ultima tranche. compravendite ed eventuale esercizio di diritti (nella prima informativa
+di sottoscrizione dell’ultima tranche
+mensile: fornire evidenza anche della partecipazione rilevante nel capitale
+sociale dell’emittente eventualmente già detenuta prima dell’avvio
+dell’operazione, delle intenzioni in ordine all’eventuale superamento delle
+soglie OPA e delle motivazioni sottostanti alla sottoscrizione dell’accordo)
+Non previsti nel caso in cui non ci siano state modifiche e/o aggiornamenti
+rispetto alle informazioni precedentemente fornite
+Raccomandazioni Raccomandazioni
+• ‹ soglie 120 TUF: pubblicazione mensile (entro il 5°giorno di borsa aperta • ≥ soglia del 5%: pubblicazione mensile (entro il 5°giorno di borsa aperta
+successivo al termine di ogni mese solare) delle informazioni su successivo al termine di ogni mese solare) delle informazioni su
+compravendite ed eventuale esercizio di diritti (nella prima informativa compravendite ed eventuale esercizio di diritti (nella prima informativa
+mensile: fornire evidenza anche delle motivazioni sottostanti alla mensile: fornire evidenza anche delle motivazioni sottostanti alla
+sottoscrizione dell’accordo) sottoscrizione dell’accordo)
+Non prevista nel caso in cui non ci siano state modifiche e/o aggiornamenti Non prevista nel caso in cui non ci siano state modifiche e/o aggiornamenti
+rispetto alle informazioni precedentemente fornite rispetto alle informazioni precedentemente fornite
+• raccomandazione conseguente alla possibile effettuazione di vendite allo • raccomandazione conseguente alla possibile effettuazione di vendite allo
+scoperto su azioni che sono oggetto delle operazioni scoperto su azioni che sono oggetto delle operazioni
+Richiamo di attenzione sul corretto adempimento degli obblighi ex art. 120 del
+TUF
+SEZIONE C
+Emittenti assoggettati ad obblighi Società con azioni quotate nei mercati regolamentati X
+informativi supplementari
+Alle medesime scadenze e modalità ➢ obbligo di introdurre elementi informativi di dettaglio sull’operazione e sui
+previste per la diffusione delle relativi impatti sui piani strategici e sulla prosecuzione dell’attività aziendale
+informazioni alla quale tali emittenti
+sono già tenuti ai sensi dell’art. 114,
+comma 5, del TUF
+SEZIONE D
+Informazioni nelle relazioni Società con azioni quotate nei mercati regolamentati Società con azioni negoziate su MTF
+finanziarie
+In occasione della rendicontazione ➢ richiamo di attenzione sulle informazioni richieste dai principi contabili ➢ richiamo di attenzione sulle informazioni richieste dai principi contabili
+contabile adottati adottati
+
+
+######## NORMA: Documento ESMA35-36-2848 dell'11 luglio 2023 - Final Report - Review of the technical standards under Article 34 of MiFID II  (id CONSOB-7387549f7d)
+
+=== K519 | [par. 11] July 2023
+11 July 2023
+ESMA35-36-2848
+Final Report
+Review of the technical standards under Article 34 of
+MiFID II
+Table of Contents
+1 Executive Summary .................................................................................................... 3
+2 Background and legal basis ........................................................................................ 5
+3 Feedback statement .................................................................................................... 7
+4 Annexes .................................................................................................................... 17
+4.1 Annex I ............................................................................................................... 17
+4.2 Annex II .............................................................................................................. 20
+4.3 Annex III: Draft RTS ........................................................................................... 21
+4.4 Annex IV: Draft ITS ............................................................................................ 26
+
+=== K520 | [par. 1] Executive Summary
+1 Executive Summary
+Reasons for publication
+Article 34 of MiFID II1 requires ESMA to develop draft regulatory (RTS) and implementing
+technical standards (ITS) to (i) specify the information to be notified by, inter alia, investment
+firms wishing to provide cross-border services without the establishment of a branch and (ii)
+establish standard forms, templates and procedures for the transmission of information in
+this respect.
+ESMA delivered its Final Report on 29 June 20152. Following endorsement and publication
+in the Official Journal of the EU, Commission Delegated Regulation (EU) 2017/10183 (the
+‘existing RTS’) and Commission Implementing Regulation (EU) 2017/23824 (the ‘existing
+ITS’) applied from 3 January 2018.
+ESMA has worked on ensuring the consistent application of MiFID II and the existing RTS
+and ITS. The practical implementation of the freedom to provide services under Article 34
+of MiFID II (FPS) showed some shortcomings and highlighted instances where
+improvements could usefully be made to the existing RTS and ITS to better help home
+national competent authorities (NCAs) to fulfil their supervisory objectives.
+On 17 November 2022, ESMA published a Consultation Paper (CP) to seek stakeholders’
+views on ESMA’s proposals for the review of the existing RTS and ITS. The consultation
+period closed on 17 February 2023. ESMA received 4 responses. The answers received
+are available on ESMA’s website.
+ESMA also sought the advice of the ESMA Securities and Markets Stakeholder Group’s
+(SMSG) established under Regulation (EU) No 1095/2010.
+Contents
+This Final Report contains draft technical standards (i) specifying the information to be
+notified by, inter alia, investment firms wishing to provide cross-border services without the
+establishment of a branch and (ii) establishing standard forms, templates and procedures
+for the transmission of information in this respect.
+Section 2 below explains the background and legal basis to our proposal for the draft
+technical standards. Section 3 summarises the feedback received to the consultation and
+explains how ESMA has taken this feedback into account.
+Annex I sets out the cost-benefit analysis related to the draft ITS and RTS. Annex II contains
+the legislative mandates to develop the draft RTS and ITS. Annex III contains the full text of
+the draft RTS. Annex IV contains the full text of the draft ITS.
+Next Steps
+The draft technical standards are submitted to the European Commission for adoption, in
+accordance with Articles 10 and 15 of Regulation (EU) 1095/2010.
+Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014 on markets in financial instruments and
+amending Directive 2002/92/EC and Directive 2011/61/EU (OJ L 173, 12.6.2014, p. 349).
+ESMA/2015/1006.
+Commission Delegated Regulation (EU) 2017/1018 of 29 June 2016 supplementing Directive 2014/65/EU of the European
+Parliament and of the Council on markets in financial instruments with regard to regulatory technical standards specifying
+information to be notified by investment firms, market operators and credit institutions (OJ L 155, 17.6.2017, p. 1).
+Commission Implementing Regulation (EU) 2017/2382 of 14 December 2017 laying down implementing technical standards
+with regard to standard forms, templates and procedures for the transmission of information in accordance with Directive
+2014/65/EU of the European Parliament and of the Council (OJ L 340, 20.12.2017, p. 6).
+
+=== K521 | [par. 2] Background and legal basis
+2 Background and legal basis
+Article 34(8) and (9) of MiFID II
+8. ESMA shall develop draft regulatory technical standards to specify the information to be
+notified in accordance with paragraphs 2, 4, 5 and 7.
+ESMA shall submit those draft regulatory technical standards to the Commission by 3 July
+2015.
+Power is delegated to the Commission to adopt the regulatory technical standards referred to
+in the first subparagraph in accordance with Articles 10 to 14 of Regulation (EU) No
+1095/2010.
+
+=== K522 | [par. 9] ESMA shall develop draft implementing technical standards to establish standard forms,
+9. ESMA shall develop draft implementing technical standards to establish standard forms,
+templates and procedures for the transmission of information in accordance with paragraphs
+3, 4, 5 and 7.
+ESMA shall submit those draft implementing technical standards to the Commission by 31
+December 2016.
+Power is conferred on the Commission to adopt the implementing technical standards referred
+to in the first subparagraph in accordance with Article 15 of Regulation (EU) No 1095/2010
+1. MiFID II and its delegated and implementing measures were adopted to offer a higher
+level of protection to investors and ensure the uniform application of the requirements in
+the European Union (EU). In this context, MiFID II recognises the importance of allowing
+the provision of investment services across the EU through the FPS regime. This is a
+key element of the single market of financial services as it fosters competition and
+expands the offer available to clients who can choose among a broader number of
+investment firms and investment opportunities.
+2. Article 34 of MiFID II provides a mandate for ESMA to draft RTS and ITS to (i) specify
+the information to be notified by investment firms wishing to provide cross-border
+services without the establishment of a branch and (ii) establish standard forms,
+templates and procedures for the transmission of information in this respect. In 2015,
+ESMA fulfilled its mandate and submitted those drafts to the Commission5.
+ESMA/2015/1006.
+3. In monitoring the provision of investment services across the EU to retail clients, ESMA
+and NCAs have noted the continued increase in cross-border activities provided under
+the MiFID II FPS regime. This increase results from several factors, including the
+development of the single market and the digitalisation of financial services, which further
+facilitates investment firms to provide services across borders. The pandemic has also
+created conditions that contributed to an increase in retail investors’ exposure to
+securities markets, including cross border.
+
+=== K523 | [par. 4] The increase in cross-border services has clear benefits for consumers and investment
+4. The increase in cross-border services has clear benefits for consumers and investment
+firms, as it fosters competition, expands the offer available to consumers and the market
+for investment firms. This is a welcome development, consistent with the objective to
+develop the single market for financial services in the EU. At the same time, these
+developments clearly require NCAs to increase their focus on the supervision of cross-
+border activities and on cooperation. A development of cross-border activities which is
+not accompanied by increased supervisory focus risks undermining investors’ trust and
+backfiring on the achievement of the single market.
+
+=== K524 | [par. 5] Effective supervision by NCAs of entities providing investment services on a cross-
+5. Effective supervision by NCAs of entities providing investment services on a cross-
+border basis is therefore of key importance to ensure that clients, especially retail, are
+given the adequate level of protection regardless of the Member State of origin of the
+entities offering these services.
+6. Under MiFID II, the FPS in the EU (without establishment in host Member States) rests
+on the supervision of the home NCA and on the cooperation between home and host
+NCAs.6 Any investment firm wishing to provide services or activities within the territory of
+a Member State other than its home Member State for the first time, or which wishes to
+change the range of services or activities so provided, shall notify its home NCA of its
+intention to do so through an investment services and activities passport notification (as
+defined in Article 2(a) of the existing RTS).
+
+=== K525 | [par. 7] The information the home NCA receives through the investment services and activities
+7. The information the home NCA receives through the investment services and activities
+passport notification may thus play a key role in raising the NCA’s scrutiny on an
+investment firm’s cross-border activities or plans of cross-border activities.
+8. The CP introduced a number of changes to the existing RTS and ITS by adding the
+following items to the information that investment firms are required to provide at the
+passporting stage:
+ the marketing means the investment firm will use in host Member States;
+The direct intervention of host NCAs is a last resort tool, through the possibility to adopt precautionary measures under Article
+86 of MiFID II.
+ the language(s) for which the investment firm has the necessary arrangements to
+deal with complaints from clients from each of the host Member States in which it
+provides services;
+ in which Member States the investment firm will actively use its passport as well
+as the categories of clients targeted;
+ the investment firm’s internal organisation in relation to the cross-border activities
+of the investment firm.
+9. We set out below the feedback received from stakeholders.
+
+=== K526 | [par. 3] Feedback statement
+3 Feedback statement
+10. Out of the four responses received, three were supportive of the changes made to the
+existing RTS and ITS. ESMA welcomes the support and the recognition that, in order to
+ensure the protection of market participants and maintain the confidence in the financial
+markets, it is of key importance to ensure that NCAs are efficient in their supervision of
+cross-border activities.
+11. The fourth answer received opposed the amendments made to the existing RTS and
+ITS, on the basis that, in the opinion of the respondent, this was “a first step to undermine
+the EU passporting process and to remove the distinction between freedom to provide
+services (which is mainly governed by the home NCA) and the freedom of establishment
+(which is governed by requirements of the host NCA)”.
+12. ESMA takes note of this position but would like to specify that the review of the existing
+RTS and ITS is in no way an attempt to undermine or call into question the FPS regime
+and the allocation of responsibilities between home and host NCAs. To the contrary, the
+changes to the existing RTS and ITS aim at bolstering the FPS regime, which is a key
+element of the single market of financial services. Indeed, by ensuring that NCAs are
+able to effectively supervise cross-border activities, ESMA aims to ensure the smooth
+functioning of the single market and that the allocation of supervisory responsibilities
+under the FPS regime is not questioned.
+13. The changes to the existing RTS and ITS only aim at making sure that the home NCA
+gets, at the passporting stage, necessary information to better decide on the allocation
+of its supervisory resources and focus. Given that the passporting notifications are also
+provided to host NCAs, this information will also help host NCAs know which investment
+firms are actively targeting clients in their jurisdiction and how. However, the review of
+the existing RTS and ITS does not, in any way, alter the allocation of supervisory
+responsibilities between home and host NCAs.
+14. Thus, the FPS regime in the EU will continue to rest on the supervision of the home NCA
+(primarily) and on the cooperation between home and host NCAs. Precautionary
+measures by the host NCA (under Article 86 of MiFID II) remain a last resort tool.
+Host Member States where the investment firm will actively target clients
+
+=== K527 | [par. 15] To allow for the home NCA to appropriately supervise investment firms’ cross-border
+15. To allow for the home NCA to appropriately supervise investment firms’ cross-border
+activities, it is key for the home NCA to be aware of the actual cross-border activities
+carried out by the investment firms it supervises.
+16. Newly added point (c) of Article 3(1) of the draft RTS and Part 3 of Annex I of the draft
+ITS require investment firms to specify whether they will actively target clients (whatever
+the means of marketing and reaching out to prospective clients) in the relevant host
+Member State.
+Q1: Do you believe that newly added point (c) of Article 3(1) of the draft RTS and Part 3
+of Annex I of the draft ITS are missing any information?
+17. None of the responses received mentioned any information missing from point (c) of
+Article 3(1) of the draft RTS and Part 3 of Annex I of the draft ITS.
+
+=== K528 | [par. 18] One respondent welcomed the distinction between i) the situation where investment
+18. One respondent welcomed the distinction between i) the situation where investment
+firms actively target clients (in which case, they have to notify their home NCA by filling
+in Part 3 of Annex I of the draft ITS) and ii) the situation where investment firms request
+a passport on a precautionary basis only. However, the respondent asked that the
+expression “actively target clients” be defined to avoid uncertainty for investment firms
+as to whether they are actively targeting clients in a specific jurisdiction.
+19. Investment firms would be considered as actively targeting clients in a jurisdiction in
+circumstances where they are engaging with clients, potential clients and/or new
+audiences to raise awareness of specific investment products, services or activities, or
+to raise awareness of the investment firm’s or group’s brand in general, whatever the
+means of engagement. The draft RTS and ITS have been amended accordingly to
+provide guidance. If in doubt, it would be preferable for the investment firm to tick the box
+of the relevant Member State. This is because this information requirement does not
+trigger any additional obligation for the investment firm but allows the supervising NCA
+to finetune its monitoring and supervision.
+20. In addition, one respondent deemed that newly required information in point (c) of Article
+3(1) of the draft RTS and Part 3 of Annex I of the draft ITS was unnecessarily adding
+bureaucratic burden for supervised entities and NCAs, with no added value, because of
+the uncertainties surrounding the date an investment firm goes live in a specific
+jurisdiction. In case ESMA would not consider deleting the newly required information,
+the respondent asked that Part 3 of Annex I of the draft ITS makes clear that only an
+intended date should be indicated (as specified in point (c) of Article 3(1) of the draft
+RTS).
+21. ESMA would like to remind investment firms that Article 34(3) of MiFID II provides that
+“the competent authority of the home Member State shall, within one month of receiving
+the information, forward it to the competent authority of the host Member State
+designated as contact point in accordance with Article 79(1), The investment firm may
+then start to provide the investment services and activities concerned in the host Member
+State”. Therefore, ESMA deems that the maximum period needed for a passport
+notification to be effective and acted upon is not so long as to render planning of the go-
+live date difficult to schedule.
+22. In addition, point (c) of Article 3(1) of the draft RTS provides that the investment firm
+should indicate “the date the investment firm intends to start actively targeting clients in
+the relevant host Member States”. Part 3 of Annex I of the draft ITS should indeed be
+read in conjunction with point (c) of Article 3(1) of the draft RTS and, as such, the
+investment firm should be able (subject to Article 34(3) of MiFID II) to start actively
+targeting clients in the relevant jurisdiction(s) shortly after (but not before) the date
+indicated in Part 3 of Annex I of the ITS.
+23. To clarify, Part 3 has been amended so that the investment firm should indicate the
+intended date it will start actively targeting clients.
+24. In addition, in the draft ITS in the CP, investment firms had to fill in, in each passporting
+notification, an overview of all the EU jurisdictions where they would be actively targeting
+clients. The home NCA would have had to forward any update to the overview (Part 3 of
+Annex I of the draft ITS) to the NCAs of all host Member States where the investment
+firm has passported. To ease the administrative burden in the relationship between home
+and host NCAs, Part 3 of Annex I of the draft ITS has been further amended so that the
+investment firm should now indicate whether it will actively target clients in the jurisdiction
+relevant to the passporting notification only; as a result no overview table will be
+circulated to each host NCAs and this will not require updates by home NCAs when the
+same firm target new host jurisdictions.
+Q2: Do you agree that investment firms should notify their home NCA in case of any
+change to the list of host Member States where they actively target retail clients and/or
+professional clients under Annex II of MiFID II?
+25. Three (out of four) respondents agreed with the proposal to require investment firms to
+notify their home NCA in case of any change to the list of host Member States where
+they actively target clients.
+26. One respondent disagreed, for the following reasons:
+ such notification requirement in case an investment firm starts to actively target
+clients in new EU markets would be expected to be part of the reporting
+requirements of the home NCA rather than the ESMA notification requirements for
+passporting; and
+ this additional reporting requirement (i) is an unnecessary burden on top of the
+existing annual information request of the home NCAs, (ii) misplaced as part of this
+regulation and (iii) increases the burden upon both the supervisory authorities and
+the investment firms to keep track of reporting and notification requirements.
+27. ESMA would like to remind investment firms that passporting notifications should be sent
+to the home NCA, not ESMA. As the home NCA is in charge of the supervision of an
+investment firm’s cross-border activities, it is essential that such NCA is informed, on an
+ex-ante basis, of the intention of investment firms subject to supervision to start actively
+targeting clients in new markets.
+28. In addition, ESMA has indeed been promoting convergence with respect to the collection
+of data relating to cross-border activities (as data availability is a necessary pre-condition
+for effective supervision). 7 However, reporting requirements relating to cross-border
+activities of investment firms to the home NCA must be differentiated from the ex-ante
+notification requirement introduced by the review of the existing RTS and ITS. There may
+be an appreciable time lag between the moment an investment firm starts actively
+targeting clients and the moment the home NCA learns about it if the home NCA is only
+relying on ex-post reporting requirements.
+29. As the information required under point (c) of Article 3(1) of the draft RTS and Part 3 of
+Annex I of the draft ITS is crucial to a home NCA’s planning of its supervisory focus on
+cross-border activities and/or a specific investment firm (as it may be a sign that an
+investment firm is changing its profile to a more EU-wide business model), investment
+firms should notify their home NCA of any changes to Part 3 of Annex I of the draft ITS.
+30. However, as described in paragraph 24 above, Part 3 of Annex I of the draft ITS now
+requires that the investment firm indicates whether it will actively target clients in the
+jurisdiction relevant to the passporting notification only.
+In recent years, ESMA has facilitated a common approach to data collection on the provision of cross-border services to retail
+clients in the EEA. On this basis, a coordinated data collection exercise took place in 2020 and 2021, with voluntary participation
+by NCAs. This exercise has improved NCAs’ and ESMA’s awareness of the actual provision of cross-border activities to retail
+clients. It has been decided to roll out this data collection exercise on an annual basis going forward.
+Marketing means used by the investment firm to actively target clients in host Member
+States
+31. Some NCAs reported instances of investment firms providing services in their jurisdiction
+on a cross-border basis through the use of aggressive marketing means.
+32. To allow home NCAs to supervise the marketing activities of investment firms that target
+clients in other Member States, it is crucial that home NCAs get information on the means
+of marketing that the investment firm will use to target clients in such jurisdiction(s).
+33. Newly added point (d) of Article 3(1) of the draft RTS and Part 4 of Annex I of the draft
+ITS require investment firms to specify which marketing means they intend to use in the
+host Member State(s) where they are actively targeting clients, as well as the following
+details:
+ in relation to social media campaigns, which social media platform(s) and/or
+network(s) the investment firm will use;
+ in relation to mobile apps, whether the investment firm will use a dedicated mobile
+app;
+ in relation to calls, whether the investment firm will use a call centre, tied agents or
+whether calls will be placed by employees of the investment firm;
+ in relation to dedicated websites, the domain names of such websites;
+ what language(s) the investment firm will use to actively target clients in host
+Member States.
+Q3: Do you believe that newly added point (d) of Article 3(1) of the draft RTS and Part 4
+of Annex I of the draft ITS are missing any information?
+34. Of the four respondents, three had no objection to the list of information added in point
+(d) of Article 3(1) of the draft RTS and Part 4 of Annex I of the draft ITS and answered
+that no information was missing.
+35. One of them, however, was of the view that the information requested in relation to
+marketing means should remain general and not go into the details of the technical
+means and channels used for marketing purposes, as these may often change.
+36. The fourth respondent called for information on marketing means to be deleted from
+point (d) of Article 3(1) of the draft RTS and Part 4 of Annex I of the draft ITS, for the
+following reasons:
+ this is in contradiction with the principle set out in Article 34 of MiFID II whereby, in
+respect of the matters covered by this Directive, Member States shall not impose
+any additional requirements on investment firms or credit institutions passporting
+their investment services and activities under the FPS regime;
+ such information would not be valuable for the NCA, nor practical, to be provided
+at the passporting notification stage as it changes over time; and
+ the level of detail requested is not proportional to the benefits this information may
+bring to improving the supervision of cross-border activities.
+37. For investor protection purposes, it is essential that NCAs know the means whereby an
+investment firm is reaching out to clients or potential clients. Indeed, as noted by one of
+the respondents, some investment firms have been or may be using aggressive
+marketing means. Also, with the development of digitalisation, marketing has become
+more difficult to monitor as it has taken many new forms and has become more
+personalised, therefore potentially reaching clients throughout the day and in many ways.
+Therefore, having such information at the passporting stage will give supervising NCAs
+information on the marketing means used by the investment firm to reach out to clients
+and whether this would need further focus/monitoring.
+38. This information may change over time but, at the passporting stage, this information
+would nonetheless give the supervising NCA indications as to the methods used by the
+investment firm for marketing purposes and whether they may be indicative of any risks
+for the protection of investors and thus call for closer monitoring and supervision.
+39. Regarding a potential breach of the principle of Article 34 of MiFID II that Member States
+shall not impose any additional requirements on investment firms or credit institutions
+passporting their investment services and activities under the FPS regime, ESMA
+regards this information as very basic to calibrate supervision and readily available to
+investment firms. In addition, this information is also required from investment firms at
+the authorisation stage. ESMA thus considers that the above-mentioned principle is not
+breached.
+40. However, ESMA took into account the comments made on the proportionality and level
+of details of the information requested on marketing means. Therefore, the requested
+information has been simplified and requests of information about more technical details
+have been deleted.
+Complaints
+41. Newly added point (e) of Article 3(1) of the draft RTS and Part 5 of Annex I of the draft
+ITS require investment firms to indicate the language(s) for which the investment firm
+has the necessary arrangements to deal with complaints from clients from the host
+Member State.
+42. In order to understand the complexity of the investment firm’s cross-border activities, it
+is crucial for the home NCA to understand in which language(s) the investment firm is
+communicating with prospective clients when targeting them and when clients need to
+submit a complaint to the investment firm, as well as whether there exists any
+discrepancy between the two.
+Q4: Do you believe that newly added point (e) of Article 3(1) of the draft RTS and Part 5
+of Annex I of the draft ITS are missing any information?
+43. Three respondents were of the view that no elements were missing from point (e) of
+Article 3(1) of the draft RTS and Part 5 of Annex I of the draft ITS. However, one
+respondent requested that ESMA delete newly added point (e) of Article 3(1) of the draft
+RTS and Part 5 of Annex I of the draft ITS on the basis that this would be part of the
+checks carried out by the internal control functions of the investment firms, external audit
+and ongoing supervision by the supervising NCA.
+44. However, experience has shown that this information may not be part of general
+reporting requirements or collected as part of the ongoing supervision by NCAs. Yet,
+ESMA is of the view that it is beneficial for supervising NCAs to know, at the passporting
+stage, in which language the investment firm is marketing to clients in host Member
+States and whether this matches (or not) the language(s) for which it has the necessary
+arrangements to deal with complaints from clients.
+45. In addition, a number of respondents asked ESMA to address for which languages
+investment firms should have necessary arrangements to deal with complaints from
+clients from the host Member State. ESMA’s mandate solely relates to the information to
+be notified in the passporting notification and so ESMA, by amending the information
+requested in the passporting notification, is not imposing any requirement in this respect.
+Q5: Do you believe that newly added point (f) of Article 3(1) of the draft RTS and Part 6
+of Annex I of the draft ITS are missing any information?
+46. No respondent indicated that any information was missing under point (f) of Article 3(1)
+of the RTS and Part 6 of Annex I of the ITS. One respondent requested that this point be
+deleted as, according to them, such information would be very extensive and have the
+effect of aligning information requirements for cross-border activities with those for
+setting up a branch in a host Member State.
+47. ESMA would like to clarify that the information requested in point (f) of Article 3(1) of the
+draft RTS and Part 6 of Annex I of the draft ITS in no way tries to replicate information
+requirements requested when setting up a branch in a host Member State. Indeed, Part 6
+only requires investment firms to describe i) the main functional and legal reporting lines
+relating to their cross-border activities, ii) the main arrangements put in place to ensure
+that internal control functions are able to control cross-border activities and iii) the
+procedure for complaints resulting from cross-border activities.
+48. In order to make this clear, ESMA clarified that the information requested under point (f)
+of Article 3 of the draft RTS and Part 6 of Annex I of the draft ITS should be a summary.
+This means that the description provided should be brief and give a concise overview of
+the main points related to the internal organisation in relation to the cross-border
+activities of the investment firm, thereby allowing the NCA to get a broad understanding
+of how the cross-border activities of the investment firm integrate in the overall business
+operationally, legally and from an internal control point of view.
+49. ESMA would also like to clarify that the term “complaint” used in the draft RTS and draft
+ITS is not limited to cases coming before the courts and alternative dispute resolution
+but instead refers to any statement of dissatisfaction addressed to the investment firm
+by a natural or legal person relating to the provision of an investment service or activity
+or an ancillary service under MiFID II, as defined in the joint ESMA-European Banking
+Authority Guidelines on complaints handling for the securities and banking sectors.8
+Q6: Do you agree that investment firms should notify their home NCA in case of any
+change to the internal organisation of the investment firm in relation to cross-border
+activities?
+50. Two respondents agreed. One noted that such information was not requested in the first
+place (please see paragraph 46 and 47 above) and thus also disagreed with the
+requirement to update such information. One respondent also requested ESMA to clarify
+that the information required under point (f) of Article 3 of the draft RTS and Part 6 of
+Annex I of the draft ITS did not have to be provided by the investment firm where such
+information was already submitted to the NCA.
+51. From experience, such information is rarely submitted to the NCA as part of the
+authorisation process. Whilst Article 6 of Commission Delegated Regulation (EU)
+2017/1943 9 requires that investment firms provide general information on their
+organisational structure and internal control systems, the draft RTS and draft ITS require
+Available here.
+Commission Delegated Regulation (EU) 2017/1943 of 14 July 2016 supplementing Directive 2014/65/EU of the European
+Parliament and of the Council with regard to regulatory technical standards on information and requirements for the authorisation
+of investment firms.
+cross-border specific information, as a summary, and thus do not cover the same type
+of information.
+Q7: Do you believe that any other information should be requested within the scope of
+the draft RTS/ITS?
+52. All respondents provided a negative answer to this question.
+Q8: Do you have any comments on the changes made to Article 4 of the draft RTS and
+Annex III of the draft ITS?
+53. Three respondents did not provide any comment. The fourth respondent requested that
+all newly required information be deleted. They thus also requested that no changes be
+made to Article 4 of the draft RTS.
+Q9: Do you have any other comment or input on the draft RTS and/or draft ITS?
+54. One respondent did not answer Q9. One respondent asked that the information required
+under the draft RTS and draft ITS not be too detailed as the burden imposed on
+investment firms would not be offset by the value added to the supervision of cross-
+border activities. The respondent also insisted on the provision of a definition for the term
+“actively targeting clients”. Please refer to paragraphs 40 and 19 for ESMA’s response
+to these two points.
+
+=== K529 | [par. 55] Finally, one respondent advocated for entities subject to similar regimes but not
+55. Finally, one respondent advocated for entities subject to similar regimes but not
+authorised under MiFID II, to also benefit from the FPS regime, as exist for investment
+firms under Article 34 of MiFID II.
+Q10. What level of resources (financial and other) would be required to implement and
+comply with the amendments made to the draft RTS and draft ITS? When answering this
+question, please also provide information about the size, internal organisation and the
+nature, scale and complexity of the activities of your institution, where relevant.
+56. Two respondents did not provide any answer to Q10. One respondent answered that the
+cost would likely be reasonable except for the handling of complaints and mediations
+and provided that the host NCA does not charge a regulatory cost.
+57. Regarding information requirements relating to complaints in the draft RTS and draft ITS,
+as this only relates to languages for which investment firms have necessary
+arrangements to deal with complaints from clients from the host Member State, ESMA
+understand that this will not be burdensome for investment firms to fill in such information.
+Regarding any fee charged by host NCAs when an investment firm uses the FPS under
+MiFID II, the new information requirements of the draft RTS and draft ITS do not touch
+on that aspect.
+
+=== K530 | [par. 58] Lastly, the fourth respondent estimated that the new information requirements would
+58. Lastly, the fourth respondent estimated that the new information requirements would
+require at least 1 to 2 additional full-time equivalents (‘FTEs’) per host Member State
+making it to a grand total of 30 additional FTEs necessary for a medium-sized investment
+firm passporting its services in all Member States of the EU. This would translate to a
+total additional cost of 3 million EUR per year. According to the respondent, additional
+cost would also be incurred through implementation cost, training cost, internal and
+external audit costs, as well as counsel costs. Thus, according to this respondent, the
+costs incurred by investment firms due to the new information requirements would be
+completely disproportionate to the value added by the new information requirements to
+the supervision of cross-border activities.
+59. However, ESMA disagrees with the above estimates. Even if taking the highest estimate
+of the costs incurred by investment firms when implementing the new information
+requirements, ESMA’s estimates fall below those of the respective respondent. More
+details are provided in the cost-benefit analysis in Annex I.
+
+=== K531 | [par. 4.1] Annex I
+4.1 Annex I
+Cost-benefit analysis
+1. The FPS regime is a key element of the single market of financial services as it fosters
+competition and expands the offer available to consumers who can choose among a
+broader number of financial institutions and investment opportunities.
+2. In monitoring the provision of investment services across the EU to retail clients, ESMA
+and NCAs have noted the continued increase in cross-border activities provided under
+the MiFID II FPS regime. The increase in cross-border services has clear benefits for
+consumers and investment firms, as it fosters competition, expands the offer available
+to consumers and the market for investment firms.
+3. At the same time, these developments clearly require NCAs to increase their focus on
+the supervision of cross-border activities and on cooperation. A development of cross-
+border activities which is not accompanied by increased supervisory focus risks
+undermining investors’ trust and backfiring on the achievement of the single market.
+
+=== K532 | [par. 4 (2)] Effective supervision by NCAs of entities providing investment services on a cross-
+4. Effective supervision by NCAs of entities providing investment services on a cross-
+border basis is therefore of key importance to ensure that clients, especially retail clients,
+are given an adequate level of protection regardless of the jurisdiction of origin of the
+entities offering these services.
+5. The information provided by an investment firm at the passporting stage may play a key
+role in raising the NCA’s scrutiny of the investment firm’s cross-border activities or plans
+of cross-border activities.
+6. The purpose of the amendments to the list of information to be provided by investment
+firms at the passporting stage and to the list of notification of changes that are required
+afterwards in case of a change to the information initially notified aim at improving the
+range of information that home and host NCAs receive under Article 34 of MiFID II, thus
+improving their awareness and supervision of investment firms’ cross-border activities.
+7. Based on its initial cost-benefit analysis and the responses to the CP, ESMA is trying to
+achieve a balance between i) acceptable additional cost for investment firms passporting
+their services and NCAs and ii) the benefits brought about by the new information
+requirements.
+Benefits
+8. The main benefits linked to the review of the existing RTS and ITS are the following:
+ better awareness of an investment firm’s cross-border activities across the EU and
+which categories of clients such investment firm is targeting;
+ better awareness of an investment firm’s organisational set-up and arrangements
+(including regarding complaints handling) to provide services on a cross-border
+basis;
+ better awareness of an investment firm’s ways of marketing its investment services
+and activities in host Member States;
+ consequently, improved supervision by the home NCA of the cross-border services
+provided and activities performed by the investment firms it supervises and better
+investor protection;
+ host NCAs are also kept informed of incoming cross-border activities in their
+jurisdictions and are therefore able to also better monitor potential investor
+protection issues.
+Costs
+9. With reference to the costs, ESMA considers that investment firms intending to provide
+investment services and activities on a cross-border basis will incur slightly higher costs
+in i) gathering the necessary information at the passporting stage as well as in ii) keeping
+track of the changes that may affect the information provided at the passporting stage
+for any future notification of changes.
+10. However, ESMA believes that it is in the interest of the investment firm itself as well as
+its clients that the investment firm keeps track of such information as, ultimately, this
+should result in better supervision of cross-border activities and better investor
+protection.
+11. Similarly, home and host NCAS will incur higher costs caused by the collection and
+processing of the additional information that investment firms have to provide. However,
+ESMA is of the view that the higher costs incurred will be reasonable and wholly
+compensated by the benefits brought on by bolstered supervision and, ultimately, better
+investor protection, made possible due to the changes made.
+12. ESMA, however, took into account the comments made by some of the respondents
+regarding proportionality. As a result, i) the information requested regarding marketing
+means was simplified and ii) ESMA clarified that the information requested in relation to
+investment firms’ internal organisation in relation to cross-border activities should be high
+level.
+13. On this basis, ESMA believes that the proposed options in this area provide the most
+cost-efficient solution to achieving the general objectives of the changes made to the
+existing RTS and ITS. This is especially true as the amendments made to the technical
+standards will only apply to new passporting notifications and new notifications of
+changes and investment firms will thus not be required to resubmit all passporting
+notifications previously submitted.
+Conclusions
+In light of what has been illustrated above, ESMA believes that the overall costs associated
+with the implementation of the changes to the existing RTS and ITS will be fully compensated
+by the benefits from a strengthened supervision of cross-border activities. These benefits will
+interest all the market participants contributing to the consolidation of the fundamental trust in
+the financial markets.
+
+=== K533 | [par. 4.2] Annex II
+4.2 Annex II
+Legislative mandate to develop implementing technical standards
+Article 34(8) of MiFID II
+ESMA shall develop draft regulatory technical standards to specify the information to be
+notified in accordance with paragraphs 2, 4, 5 and 7.
+Article 34(9) of MiFID II
+ESMA shall develop draft implementing technical standards to establish standard forms,
+templates and procedures for the transmission of information in accordance with paragraphs
+3, 4, 5 and 7.
+4.3 Annex III: Draft RTS
+COMMISSION DELEGATED REGULATION (EU) …/…
+of [•]
+amending Commission Delegated Regulation (EU) 2017/1018 of 29 June 2016
+supplementing Directive 2014/65/EU of the European Parliament and of the Council on
+markets in financial instruments with regard to regulatory technical standards
+specifying information to be notified by investment firms, market operators and credit
+institutions
+(Text with EEA relevance)
+THE EUROPEAN COMMISSION,
+Having regard to the Treaty on the Functioning of the European Union,
+Having regard to Directive 2014/65/EU of the European Parliament and of the Council of 15
+May 2014 on markets in financial instruments and amending Directive 2002/92/EC and
+Directive 2011/61/EU10, and in particular the third subparagraph of Article 34(8) thereof,
+Whereas:
+(1) Commission Delegated Regulation (EU) 2017/1018 of 29 June 2016 supplementing
+Directive 2014/65/EU of the European Parliament and of the Council on markets in
+financial instruments with regard to regulatory technical standards specifying information
+to be notified by investment firms, market operators and credit institutions11 specifies the
+information that investment firms, market operators, and, where required by Directive
+2014/65/EU, credit institutions should notify to the competent authorities of their home
+Member State when they wish to provide investment services or perform investment
+activities as well as ancillary services in another Member State, in order to establish
+uniform information requirements and to benefit from the possibility to provide such
+cross-border services throughout the Union.
+OJ L 173, 12.6.2014, p. 349.
+OJ L 155, 17.6.2017, p. 1.
+(2) Since the adoption of Commission Delegated Regulation (EU) 2017/1018, cross-border
+services have increased due in part to market conditions resulting from the COVID-19
+pandemic and the trend towards the digitalisation of financial services. The increased
+volume of cross-border services has given competent authorities additional experience
+of the supervision of those services as well as the cooperation between home and host
+authorities.
+(3) In view of this experience, to ensure that the home national competent authority receives
+adequate information on the cross-border plans of an investment firm, it is necessary to
+further specify certain particulars of the information referred to in Article 34(2) of Directive
+2014/65/EU and of the changes to those particulars that must be notified in accordance
+with Article 34(4) thereof.
+(4) In particular, home national competent authorities should receive information on the
+Member States where an investment firm is actively targeting clients, how it is targeting
+clients and how the investment firm is organised to carry out its cross-border activities.
+(5) In accordance with Article 34(5) of Directive 2014/65/EU, credit institutions wishing to
+provide investment services or activities as well as ancillary services on a cross-border
+basis through tied agents established in their home Member States should notify the
+home national competent authorities with the identity of the tied agent as well as the
+investment services or activities, ancillary services and financial instruments to be
+provided by the latter. Other information required to be notified by investment firms
+wishing to provide investment services and activities on a cross-border basis are not
+required from credit institutions. The further information required from investment firms
+will therefore not affect credit institutions.
+(6) Commission Delegated Regulation (EU) 2017/1018 should therefore be amended
+accordingly.
+(7) This Regulation is based on the draft regulatory technical standards submitted to the
+Commission by the European Securities and Markets Authority (ESMA).
+(8) ESMA has conducted open public consultations on the draft regulatory technical
+standards on which this Regulation is based, analysed the potential related costs and
+benefits and requested the advice of the ESMA Securities and Markets Stakeholder
+Group established in accordance with Article 37 of Regulation (EU) No 1095/201012,
+Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European
+Supervisory Authority (European Securities and Markets Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/77/EC (OJ L 331, 15.12.2010, p. 84).
+HAS ADOPTED THIS REGULATION:
+Article 1
+Amendments to Commission Delegated Regulation (EU) 2017/1018
+Commission Delegated Regulation (EU) 2017/1018 is amended as follows:
+(1) in Article 3, paragraph (1) is replaced by the following:
+‘1. Investment firms shall ensure that the investment services and activities
+passport notification submitted pursuant to Article 34(2) of Directive 2014/65/EU includes
+the following information:
+(a) the name, address and contact details of the investment firm along with the name
+of a specified contact person at the investment firm;
+(b) a programme of operations which includes the following items:
+(i) details of the particular investment services, activities and ancillary services
+to be provided in the host Member State and the financial instruments to be
+used;
+(ii) confirmation as to whether the investment firm wishes to use tied agents,
+established in its home Member State, to provide services or promote
+investment and/or ancillary services in the host Member State and, if so the
+name, address, contact details of such tied agents and the investment
+services or activities, ancillary services and financial instruments to be
+provided by the latter;
+(c) whether the investment firm will be actively targeting clients in the host Member
+State, the date the investment firm intends to do so and whether the targeted
+clients are retail clients or professional clients;
+(d) details of the marketing means the investment firm will use in the host Member
+State;
+(e) details of the languages for which the investment firm has the necessary
+arrangements to deal with complaints from clients from the host Member State;
+(f) a summary of the internal organisation in relation to the cross-border activities of
+the investment firm, including:
+(i) the main functional and legal reporting lines relating to the cross-border
+activities of the investment firm;
+(ii) the main arrangements put in place by the investment firm to ensure that the
+internal control functions have the capacity to control the cross-border
+activities, including those provided in a language other than English or the
+official languages of the home Member State;
+(iii) the procedure for cross-border clients to submit and for the investment firm
+to deal with complaints resulting from the cross-border activities of the
+investment firm.
+For the purpose of this Article, ‘actively targeting clients’ means any circumstances
+where the investment firm engages with clients or potential clients to raise awareness of
+specific investment products, services or activities, or to raise awareness of the
+investment firm’s brand in general, or the brand of any member of its group that carries
+out investment services or activities, whatever the means of engagement.’
+(2) Article 4 is replaced by the following:
+‘Article 4
+Information to be notified concerning the change of investment services and
+activities particulars
+
+=== K534 | [par. 1 (2)] Investment firms shall ensure that a notification to communicate a change in
+1. Investment firms shall ensure that a notification to communicate a change in
+particulars, pursuant to Article 34(4) of Directive 2014/65/EU, includes details of any
+change to the information previously notified in accordance with points (a), (b), (c) and
+(f) of Article 3(1).
+2. Credit institutions referred to in Article 1(2)(a) shall ensure that a notification to
+communicate a change in particulars, pursuant to Article 34(4) of Directive 2014/65/EU,
+includes details of any change to the information previously notified in accordance with
+this Regulation.’.
+Article 2
+Entry into force
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union.
+This Regulation shall be binding in its entirety and directly applicable in all Member States.
+Done at Brussels, […]
+[For the Commission
+The President]
+[On behalf of the President]
+4.4 Annex IV: Draft ITS
+COMMISSION IMPLEMENTING REGULATION (EU) …/…
+of [•]
+amending Commission Implementing Regulation (EU) 2017/2382 of 14 December 2017
+laying down implementing technical standards with regard to standard forms,
+templates and procedures for the transmission of information in accordance with
+Directive 2014/65/EU of the European Parliament and of the Council
+(Text with EEA relevance)
+THE EUROPEAN COMMISSION,
+Having regard to the Treaty on the Functioning of the European Union,
+Having regard to Directive 2014/65/EU of the European Parliament and of the Council of 15
+May 2014 on markets in financial instruments and amending Directive 2002/92/EC and
+Directive 2011/61/EU13, and in particular the third subparagraph of Article 34(9) thereof,
+Whereas:
+(1) Commission Implementing Regulation (EU) 2017/2382 of 14 December 2017 laying
+down implementing technical standards with regard to standard forms, templates and
+procedures for the transmission of information in accordance with Directive 2014/65/EU
+of the European Parliament and of the Council 14 provides for the common standard
+forms, procedures and templates for the submission of information required when
+investment firms, market operators, and, where required by Directive 2014/65/EU, credit
+institutions wish to provide investment services and perform activities in another Member
+State under the freedom to provide services.
+(2) Since the adoption of Commission Delegated Regulation (EU) 2017/1018, cross-border
+services have increased due in part to market conditions resulting from the COVID-19
+OJ L 173, 12.6.2014, p. 349.
+OJ L 340, 20.12.2017, p. 6.
+pandemic and the trend towards the digitalisation of financial services. The increased
+volume of cross-border services has given competent authorities additional experience
+of the supervision of those services as well as the cooperation between home and host
+authorities.
+(3) In view of this experience, to ensure that the home national competent authority receives
+adequate information on the cross-border plans of an investment firm, Commission
+Delegated Regulation (EU) …/… amended Commission Delegated Regulation (EU)
+2017/1018. Commission Implementing Regulation (EU) 2017/2382 should also be
+amended to ensure coherence. In particular, it is appropriate to update the common
+standard forms, procedures and templates for the submission of information required
+when investment firms wish to provide investment services and perform activities in
+another Member State under the freedom to provide services.
+(4) This Regulation is based on the draft implementing technical standards submitted to the
+Commission by the European Securities and Markets Authority (ESMA).
+(5) ESMA has conducted open public consultations on the draft implementing technical
+standards on which this Regulation is based, analysed the potential related costs and
+benefits and requested the advice of the ESMA Securities and Markets Stakeholder
+Group established in accordance with Article 37 of Regulation (EU) No 1095/201015,
+Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European
+Supervisory Authority (European Securities and Markets Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/77/EC (OJ L 331, 15.12.2010, p. 84).
+HAS ADOPTED THIS REGULATION:
+Article 1
+Amendments to Commission Implementing Regulation (EU) 2017/2382
+Commission Implementing Regulation (EU) 2017/2382 is amended as follows:
+1. in Article 6, paragraph 1 is replaced by the following:
+‘1. In the event of a change in any of the particulars of Parts 1 to 3 and Part 6 of an
+investment services and activities passport notification, the investment firm or credit
+institution referred to in Article 1(2)(a) shall submit a notification to the competent
+authority of the home Member State using the form set out in Annex I.’;
+
+=== K535 | [par. 2 (2)] Annex I of Commission Implementing Regulation (EU) 2017/2382 is replaced with Annex
+2. Annex I of Commission Implementing Regulation (EU) 2017/2382 is replaced with Annex
+I of this Regulation;
+
+=== K536 | [par. 3 (2)] Annex III of Commission Implementing Regulation (EU) 2017/2382 is replaced with
+3. Annex III of Commission Implementing Regulation (EU) 2017/2382 is replaced with
+Annex II of this Regulation.
+Article 2
+Entry into force
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union. This Regulation shall be binding in its entirety and
+directly applicable in all Member States.
+Done at Brussels, […]
+[For the Commission
+The President]
+[On behalf of the President]
+ANNEX I
+ANNEX I
+Form for the investment services and activities passport notification and the change of
+investment services and activities particulars notification per Member State (16)
+Articles 3 and 6 of Commission Implementing Regulation (EU) 2017/2382
+Reference number: ………..
+Date: ………….
+Part 1 – Contact information
+Type of notification: Investment services and activities passport notification
+/ change of investment services and activities
+particulars notification
+Member State in which the investment firm/credit
+institution intends to operate
+Name of investment firm/credit institution:
+Trading name(s):
+Address:
+Telephone number:
+Email:
+Name of the contact person at the investment
+firm/credit institution:
+Home Member State:
+Authorisation status: Authorised by [Home Member State Competent
+Authority]
+Authorisation date:
+Part 2 – Programme of operations
+Intended investment services, activities and ancillary services for which the passport notification is sought
+(*)
+For the purposes of a change of investment services and activities particulars notification please complete only the parts of the
+form which are relevant to the notified changes. If the intention is to make changes to the investment services, activities, ancillary
+services or financial instruments, please list all the investment services, activities, ancillary services or financial instruments the
+firm will provide.
+Investment services and activities Ancillary services
+A1 A2 A3 A4 A5 A6 A7 A8 A9 B1 B2 B3 B4 B5 B6 B7
+C1 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C2 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C3 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C4 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+Financial instruments
+C5 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C6 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C7 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C8 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C9 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C10 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C11 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+(*) Please place an (x) in the appropriate boxes.
+Details of tied agent located in the Home Member State (*)
+Name of the Address Telephone Email Contact Promotion of
+tied agent investment
+and/or
+ancillary
+services (**)
+☐
+☐
+☐
+(*) Please provide separate matrices with the intended investment services for each tied agent the investment
+firm intends to use.
+(**) Please place an (x) in the appropriate boxes.
+Intended investment services to be provided by the tied agent (*)(**)
+Investment services and activities Ancillary services
+A1 A2 A3 A4 A5 A6 A7 A8 A9 B1 B2 B3 B4 B5 B6 B7
+C1 ☐ ☐ ☐
+C2 ☐ ☐ ☐
+C3 ☐ ☐ ☐
+C4 ☐ ☐ ☐
+Financial instruments
+C5 ☐ ☐ ☐
+C6 ☐ ☐ ☐
+C7 ☐ ☐ ☐
+C8 ☐ ☐ ☐
+C9 ☐ ☐ ☐
+C10 ☐ ☐ ☐
+C11 ☐ ☐ ☐
+(*) Please place an (x) in the appropriate box(es). If you intend to make changes to the investment services,
+activities or financial instruments provided by the tied agent, please list all investment services, activities or
+financial instruments the tied agent will provide.
+(**) Please do not fill in this table if the tied agent does not intend to provide any investment services or activities
+but only, for example, intends to provide promotional activities.
+Part 3 – Whether the investment firm will be actively targeting clients in the host Member State
+Will the investment firm be From (intended date): Whether the investment firm Whether the investment
+actively targeting clients will be actively targeting retail firm will be actively
+(*) clients (**) targeting professional
+clients
+Yes ☐ dd/mm/yyyy ☐ ☐
+No ☐
+(*) Please place an (x) in the appropriate boxes. Only place an (x) in the boxes relating to the Member States where
+the firm will be actively targeting clients as referred to in Article 3(1) of Commission Delegated Regulation (EU)
+2017/1018 of 29 June 2016 supplementing Directive 2014/65/EU of the European Parliament and of the Council on
+markets in financial instruments with regard to regulatory technical standards specifying information to be notified by
+investment firms, market operators and credit institutions17. Any other Member State where the firm intends to start
+its activities at a later stage shall be notified by means of a change to the initial notification.
+(**) Please place an (x) in the appropriate box(es) if the firm intends to actively target the relevant category of clients
+in the Member State.
+OJ L 155, 17.6.2017, p. 1.
+Part 4 – Marketing means of the investment firm in the host Member State (*)
+Means of ☐ Social media campaign (**) (please specify on
+marketing for the which social media
+purposes of platform(s) and/or
+actively targeting network(s), including
+clients the number of
+influencers used by
+the firm, if any)
+☐ Mobile app (please specify which
+app)
+☐ Roadshows
+☐ Post
+☐ Calls (please specify
+whether you will be
+using a call centre,
+tied agents or
+whether calls will be
+placed by employees
+of the firm)
+☐ Dedicated website (please specify the
+domain names)
+☐ Dedicated marketing material
+☐ Webinars
+☐ Educational material
+☐ Others (please specify)
+Languages used ☐ English
+for marketing
+purposes ☐ Official language(s) of the home Member State
+☐ Official language(s) of the host Member State
+☐ Others:_________________________________________
+(*) Please place an (x) in the appropriate boxes. This includes any marketing means used by tied agents on
+behalf of the firm.
+(**) Social media campaigns are online marketing campaigns whereby a firm is creating and publishing online
+content, engaging with clients and potential clients. They may be conducted on one or more social media
+channels at the same time to increase awareness of specific products or firms. Social media channels are all
+online platforms, networks or websites allowing users and creators to reach out and/or interact with each other,
+such as social networks, blogs and vlogs, media sharing sites, content communities, discussion forums and
+bookmarking networks.
+Part 5 – Complaints
+Language(s) for which the investment ☐ English
+firm has the necessary arrangements
+to deal with complaints from clients ☐ Official language(s) of the home Member State
+from the host Member State
+☐ Official language(s) of the host Member State
+☐ Others: ___________________________________________
+Part 6 – Summary of the internal organisation in relation to the cross-border activities of the investment
+firm
+Please provide a summary explanation of: (*)
+(1) The main functional and legal reporting lines relating to the cross-border activities of the investment firm.
+(2) The main arrangements which have been put in place to ensure that the internal control functions have
+the capacity to control the cross-border activities (including those provided in a language other than
+English or the official language(s) of the home Member State).
+(3) The procedure for cross-border clients to submit and for the firm to deal with complaints resulting from
+the cross-border activities of the investment firm.
+(*) The summary description shall provide a concise overview of the main points related to (1), (2) and (3) above.
+The summary description shall provide a broad understanding of how the cross-border activities of the firm
+integrate in the overall business operationally, legally and from an internal control point of view.
+ANNEX II
+ANNEX III
+Form for the communication of a change in the particulars of an investment services and activities
+passport notification or in a notification for the provision of arrangements to facilitate access to an MTF
+or OTF by the competent authority of the home Member State to the competent authority of the host
+Member State
+Articles 7 and 8 of Commission Implementing Regulation (EU) 2017/2382
+Reference number: ………..
+Date: ………….
+Communication in accordance with Article 34(4) or Article 34(7) of Directive 2014/65/EU (1)
+FROM:
+Member State:
+Competent authority of the home Member State:
+Address:
+Designated contact point:
+Telephone number:
+Email:
+TO:
+Member State:
+Competent authority of the host Member State:
+Address:
+Designated contact point:
+Telephone number:
+Email:
+In accordance with Article 34(4) of the Directive 2014/65/EU, we wish to inform you that [name of firm], an
+investment firm/credit institution/ market operator authorised/supervised by [name of the competent authority of the
+home Member State], has:
+(a) amended the investment services and activities/ancillary services/financial instruments that it intends to carry
+on in your territory on a cross-border basis
+(b) changed its name from [previous name] to [new name] with effect from [date of change]
+(c) moved to the following address with effect from [date of change]: [new address]
+(d) changed its other contact information with effect from [date of change] to the following: [add any changes
+made to the contact information of Part 1 in Annex I]
+(e) engaged an additional registered tied agent in [name of the home Member State] to provide its investment
+services and activities in your territory on a cross-border basis
+(f) amended the list of Member States where the firm is actively targeting clients and/or the type of clients in
+such Member States
+(g) changed its internal organisation in relation to the provision of cross-border activities
+(h) amended the arrangements provided in [name of the host Member State] in order to facilitate the access to
+and trading of the [name of the MTF or OTF]
+(i) ceased to provide investment services and/or perform investment activities due to the
+withdrawal/cancellation of its authorisation with effect [date of withdrawal/cancellation];
+(j) decided to cease providing investment services and/or perform investment activities with effect [date of
+withdrawal of passporting notification].
+Please find attached a copy of the change of [investment services and activities particulars notification/particulars
+for the provision of arrangements to facilitate access to an MTF or OTF notification] with the relevant changes. If
+you have any queries, please do not hesitate to contact us.
+Yours sincerely,
+[signature]
+________________
+(1) Please amend as appropriate in accordance with the changes to be notified.
+
+
+######## NORMA: Regolamento ISVAP n. 10 del 2 gennaio 2008 Regolamento concernente le procedure di accesso all'attività assicurativa e l'albo delle imprese di assicurazione.  (id IVASS-faaa7cccad)
+
+=== K537 | [Premessa] REGOLAMENTO CONCERNENTE LA PROCEDURA DI ACCESSO ALL’ATTIVITÀ ASSICURATIVA E
+REGOLAMENTO N. 10 DEL 2 GENNAIO 2008
+REGOLAMENTO CONCERNENTE LA PROCEDURA DI ACCESSO ALL’ATTIVITÀ ASSICURATIVA E
+L’ALBO DELLE IMPRESE DI ASSICURAZIONE DI CUI AL TITOLO II DEL DECRETO LEGISLATIVO 7
+SETTEMBRE 2005, N. 209 – CODICE DELLE ASSICURAZIONI PRIVATE.
+MODIFICATO ED INTEGRATO DAL REGOLAMENTO ISVAP N. 33 DEL 10 MARZO 2010, DAL PROVVEDIMENTO
+IVASS N. 5 DEL 4 GIUGNO 2013 E DAL PROVVEDIMENTO IVASS N. 23 DEL 18 NOVEMBRE 2014. LE MODIFICHE
+SONO RIPORTATE IN CORSIVO.
+L’ISVAP
+(Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo)
+VISTA la legge 12 agosto 1982, n. 576 e le successive modificazioni ed integrazioni,
+concernente la riforma della vigilanza sulle assicurazioni;
+VISTO il decreto legislativo 7 settembre 2005, n. 209 e le successive modificazioni ed
+integrazioni, recante il Codice delle Assicurazioni Private;
+VISTO il decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, recante il Testo
+Unico delle disposizioni legislative e regolamentari in materia di documentazione
+amministrativa;
+adotta il seguente:
+REGOLAMENTO
+INDICE
+TITOLO I - Disposizioni di carattere generale
+
+=== K538 | [Art. 3] (Ambito di applicazione)
+Art. 3 (Ambito di applicazione)
+TITOLO II – Accesso all’esercizio dell’attività assicurativa da parte di imprese con
+sede legale nel territorio della Repubblica
+Capo I – Procedura di autorizzazione all’esercizio dell’attività assicurativa e
+riassicurativa
+
+=== K558 | [Sezione II (2)] – Esercizio dell’attività nel territorio di Stati terzi
+Sezione II – Esercizio dell’attività nel territorio di Stati terzi
+
+=== K571 | [Sezione III - Art. 47] (Entrata in vigore)
+Art. 47 (Entrata in vigore)
+Elenco degli allegati:
+A1 Documentazione per la verifica dei requisiti degli esponenti aziendali
+B.12 Documentazione riguardante i requisiti di onorabilità dei soggetti che detengono,
+direttamente o indirettamente, il controllo dell’impresa o una partecipazione
+superiore al dieci per cento
+B.23 Documentazione per la verifica della sana e prudente gestione dei soggetti che
+detengono, direttamente o indirettamente, il controllo dell’impresa o una
+partecipazione superiore al dieci per cento
+B.3 Documentazione riguardante gli stretti legami
+Allegato sostituito dall’articolo 8, comma 1, del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Allegato sostituito dall’articolo 8, comma 2, del Provvedimento IVASS n. 23 del 18 novembre 2014
+Allegato sostituito dall’articolo 8, comma 3, del Provvedimento IVASS n. 23 del 18 novembre 2014.
+TITOLO I
+Disposizioni di carattere generale
+
+=== K572 | [Sezione III - Art. 1] (Fonti normative)
+Art. 1
+(Fonti normative)
+1. Il presente Regolamento è adottato ai sensi degli articoli 14, comma 1, lettera c) e comma
+5, 15, comma 4, 28, commi 5 e 6 e 349, comma 1, del decreto legislativo 7 settembre
+2005, n. 209.
+
+=== K573 | [Sezione III - Art. 2] (Definizioni)
+Art. 2
+(Definizioni)
+1. Ai fini del presente Regolamento si intende per:
+a) “albo delle imprese”: l’albo nel quale sono iscritte le imprese autorizzate dall’ISVAP
+all’esercizio dell’attività assicurativa e riassicurativa nel territorio della Repubblica;
+b) “alta Direzione”: l’amministratore delegato, il direttore generale, nonché l’alta
+dirigenza che svolge compiti di sovrintendenza gestionale;
+c) “attività in regime di libertà di prestazione di servizi”: l’attività che un’impresa di
+assicurazione svolge, da uno stabilimento situato nel territorio di uno Stato membro,
+assumendo obbligazioni con contraenti aventi il domicilio, o, se persone giuridiche, la
+sede in un altro Stato membro, ovvero assumendo rischi da uno stabilimento situato
+nel territorio di uno Stato membro diverso da quello in cui sono ubicati i rischi stessi;
+d) “attività in regime di stabilimento”: l’attività che un’impresa di assicurazione svolge, da
+uno stabilimento situato nel territorio di uno Stato membro, assumendo obbligazioni
+con contraenti aventi il domicilio, o, se persone giuridiche, la sede in un altro Stato
+membro, ovvero assumendo rischi da uno stabilimento situato nel territorio dello
+stesso Stato membro in cui sono ubicati i rischi;
+e) “decreto“: decreto legislativo 7 settembre 2005, n. 209, recante il Codice delle
+Assicurazioni Private;
+f) “impresa di assicurazione”: l’impresa autorizzata secondo quanto previsto nelle
+direttive comunitarie sull’assicurazione diretta;
+g) “impresa di riassicurazione”: l’impresa autorizzata all’esercizio della sola
+riassicurazione, diversa da una impresa di assicurazione o da una impresa di
+assicurazione extracomunitaria, la cui attività principale consiste nell’accettare i rischi
+ceduti da una impresa di assicurazione, da una impresa di assicurazione avente sede
+legale in uno Stato terzo, o da altre imprese di riassicurazione;
+h) “ISVAP” o “Autorità” ovvero “IVASS”: l’Istituto per la vigilanza sulle assicurazioni
+private e di interesse collettivo cui è succeduto l’IVASS, Istituto per la vigilanza sulle
+assicurazioni, ai sensi dell’art. 13 del decreto legge 6 luglio 2012, n. 95 convertito con
+legge 7 agosto 2012, n. 1354;
+i) “organo amministrativo”: il consiglio di amministrazione o, nelle imprese che hanno
+adottato il sistema di cui all’articolo 2409 octies del codice civile, il consiglio di
+gestione, per le imprese con sede legale in Stati terzi, l’organo sociale
+corrispondente;
+j) “particolari mutue assicuratrici”: le società di mutua assicurazione di cui all’articolo 52
+del decreto costituite ai sensi dell’articolo 2546 del codice civile;
+k) “partecipazioni rilevanti”: le partecipazioni che comportano il controllo dell’impresa di
+assicurazione e le partecipazioni individuate dall’ISVAP con regolamento, in conformità
+ai principi stabiliti nel regolamento adottato dal Ministro dello Sviluppo Economico;
+Comma modificato dall’articolo 1 del Provvedimento IVASS n. 23 del 18 novembre 2014. La precedente versione recitava:
+““ISVAP” o ‘Autorità’: l’Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo”.
+l) “quota di garanzia”: la quota del margine di solvibilità come determinata ai sensi
+dell’articolo 46 del decreto legislativo 7 settembre 2005 n. 209;
+m) “rappresentante per la gestione dei sinistri": il rappresentante nominato dalle imprese
+esercenti l'attività assicurativa in un altro Stato membro in regime di libera
+prestazione di servizi, residente o stabilito nel proprio territorio e dotato dei poteri
+indicati nell’articolo 12 bis, paragrafo 4, della direttiva 88/357/CEE;
+n) “sede secondaria o succursale”: una sede che costituisce parte, sprovvista di
+personalità giuridica, di un’impresa di assicurazione e che effettua direttamente, in
+tutto o in parte, l’attività assicurativa;
+o) “Stato di origine”: lo Stato in cui è situata la sede legale dell’impresa che assume
+l’obbligazione o il rischio;
+p) “Stato membro”: uno Stato membro dell’Unione europea o uno Stato aderente allo
+Spazio economico europeo, come tale equiparato allo Stato membro dell’Unione
+europea;
+q) “Stato membro di prestazione di servizi”: lo Stato membro dell’obbligazione o in cui è
+ubicato il rischio, quando l’obbligazione o il rischio è assunto da uno stabilimento
+situato in altro Stato membro;
+r) “Stato membro di stabilimento”: lo Stato membro in cui è situato lo stabilimento dal
+quale l’impresa opera;
+s) “Stato terzo”: uno Stato che non è membro dell’Unione europea o non è aderente allo
+Spazio economico europeo;
+t) “stretti legami”: il rapporto tra due o più persone fisiche o giuridiche nei casi in cui
+sussiste:
+1) un legame di controllo ai sensi dell’articolo 72 del decreto legislativo 7 settembre
+2005 n. 209;
+2) una partecipazione, detenuta direttamente o per il tramite di società controllate,
+società fiduciarie o per interposta persona, almeno pari al dieci per cento del
+capitale o dei diritti di voto, ovvero una partecipazione che, pur restando al di
+sotto di tale limite, dà comunque la possibilità di esercitare un’influenza notevole
+ancorché non dominante;
+3) un legame in base al quale le stesse persone sono sottoposte al controllo del
+medesimo soggetto, o comunque sono sottoposte a direzione unitaria in virtù di
+un contratto o di una clausola statutaria, oppure quando gli organi di
+amministrazione sono composti in maggioranza dalle medesime persone, oppure
+quando esistono legami importanti e durevoli di riassicurazione;
+4) un rapporto di carattere tecnico, organizzativo giuridico e familiare che possa
+influire in misura rilevante sulla gestione dell’impresa;
+u) "Ufficio nazionale di assicurazione": l’organizzazione professionale che è costituita,
+conformemente alla raccomandazione n. 5 adottata il 25 gennaio 1949 dal
+sottocomitato dei trasporti stradali del comitato dei trasporti interni della Commissione
+economica per l'Europa dell'Organizzazione delle Nazioni Unite, e che raggruppa
+imprese di assicurazione che hanno ottenuto in uno Stato l'autorizzazione ad
+esercitare il ramo responsabilità civile autoveicoli.
+2. La numerazione dei rami vita e danni richiamati nel presente Regolamento è riferita alla
+classificazione di cui all’articolo 2, commi 1 e 3, del decreto.
+
+=== K574 | [Sezione III - Art. 3] (Ambito di applicazione)
+Art. 3
+(Ambito di applicazione)
+1. Il presente Regolamento disciplina:
+a) le procedure di autorizzazione all’esercizio dell’attività assicurativa e riassicurativa
+delle imprese aventi sede legale nel territorio della Repubblica e delle imprese aventi
+sede legale in uno Stato terzo che intendono operare nel territorio della Repubblica in
+regime di stabilimento;
+b) l’abilitazione delle imprese aventi sede legale nel territorio della Repubblica ad
+esercitare l’attività assicurativa in regime di stabilimento o di libera prestazione di
+servizi nel territorio di altri Stati membri o di Stati terzi;
+c) l’istituzione e il funzionamento dell’albo delle imprese.
+TITOLO II
+Accesso all’esercizio dell’attività assicurativa da parte di imprese con sede legale nel
+territorio della Repubblica
+Capo I
+Procedura di autorizzazione all’esercizio dell’attività assicurativa e riassicurativa
+
+=== K575 | [Sezione I - Art. 4 (2)] (Presentazione dell’istanza di autorizzazione)
+Art. 4
+(Presentazione dell’istanza di autorizzazione)
+1. L’impresa che intende esercitare l’attività assicurativa e riassicurativa nel territorio della
+Repubblica presenta all’IVASS istanza di autorizzazione5.
+2. All’istanza sono allegati:
+a) copia autentica dell’atto costitutivo e dello statuto sociale contenente le indicazioni
+relative ai limiti dell’oggetto sociale in conformità alle disposizioni di cui all’articolo 11
+del decreto. Lo statuto dell’impresa che intende esercitare congiuntamente i rami
+vita e i rami danni 1 e 2 reca l’indicazione della parte del capitale sociale o del fondo
+di garanzia, nonché delle riserve patrimoniali destinate rispettivamente alla gestione
+vita e alla gestione danni, secondo quanto previsto dalle disposizioni di attuazione
+dell’articolo 348, comma 2, del decreto;
+b) documentazione comprovante l’avvenuto versamento del capitale sociale o del
+fondo di garanzia adeguato alle previsioni formulate nel programma di attività di cui
+all’articolo 7 e, comunque, non inferiore alla misura minima prevista dall’articolo 5;
+c) documentazione comprovante l’ammontare dei mezzi finanziari disponibili a
+copertura delle spese di impianto, secondo quanto indicato nell’articolo 6;
+d) elenco dei componenti degli organi sociali, con indicazione del sistema e del
+contenuto delle deleghe dell’organo amministrativo e dell’Alta direzione;
+e) documentazione necessaria ai fini della verifica dei requisiti di onorabilità,
+professionalità e indipendenza delle persone alle quali sono attribuite funzioni di
+amministrazione, di direzione e di controllo, ai sensi dell’articolo 76 del decreto e
+delle relative disposizioni di attuazione. La documentazione per la verifica dei requisiti
+è indicata nell’allegato A6;
+e bis) a partire dal 1° gennaio 2015, attestazione della sussistenza, in base alla politica
+adottata dall’organo amministrativo, dei requisiti di idoneità alla carica dei soggetti
+indicati nell’art. 5, comma 2, lett. e) del Regolamento ISVAP n. 20 del 26 marzo
+20087;
+f) relazione sulla struttura organizzativa, comprensiva dell’organigramma aziendale e
+della descrizione delle funzioni attribuite alle singole unità aziendali ed ai relativi
+responsabili;
+g) programma di attività contenente le informazioni indicate nell’articolo 7 ed ogni altro
+elemento utile ad illustrare compiutamente le caratteristiche operative della impresa;
+Comma modificato dall’articolo 2, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 2, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Lettera inserita dall’articolo 2, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+h) relazione tecnica di cui all’articolo 8;
+i) elenco dei soggetti che partecipano direttamente o indirettamente al capitale
+dell’impresa, con l’indicazione delle rispettive quote di partecipazione in valore
+assoluto e in termini percentuali; per le partecipazioni indirette è specificato il
+soggetto tramite il quale è detenuta la partecipazione, ai sensi dell’articolo 73 del
+decreto;
+j) documentazione di cui all’articolo 9 relativa ai soggetti partecipanti al capitale;
+k) documentazione necessaria ai fini della verifica dell’insussistenza di fattispecie di
+stretti legami, secondo quanto indicato nell’articolo 10.
+3. L’impresa che intende esercitare anche l’attività riassicurativa può chiedere
+l’autorizzazione esclusivamente per i rami per i quali richiede l’autorizzazione ad
+esercitare l’attività assicurativa.
+4. Non sono tenuti a comprovare il possesso dei requisiti di onorabilità di cui alla lettera e) i
+soggetti che svolgono funzioni di amministrazione, di direzione e di controllo presso
+imprese di assicurazione o di riassicurazione.
+5. (abrogato)8
+
+=== K576 | [Sezione I - Art. 5 (2)] (Requisiti di capitale o del fondo di garanzia)
+Art. 5
+(Requisiti di capitale o del fondo di garanzia)
+1. Ai fini del rilascio dell’autorizzazione, l’ammontare minimo iniziale del capitale sociale o
+del fondo di garanzia è stabilito in misura non inferiore a:
+a) 5 milioni di euro, per l’esercizio di uno dei rami vita I, II, III, IV, V e VI;
+b) 5 milioni di euro, per l’esercizio dei rami danni 10, 11, 12, 13, 14 e 15;
+c) 2,5 milioni di euro, per l’esercizio dei rami danni 1, 2, 3, 4, 5, 6, 7, 8, 16 e 18;
+d) 1,5 milioni di euro, per l’esercizio dei rami danni 9 e 17;
+e) 7,5 milioni di euro, per l’esercizio congiunto dei rami vita e dei rami danni 1 e 2. Di
+tale importo, 5 milioni di euro sono destinati alla gestione dei rami vita e 2,5 milioni
+di euro alla gestione dei rami danni 1 e 2.
+2. Se l’autorizzazione riguarda più rami di assicurazione, per la determinazione dell’importo
+minimo del capitale iniziale o del fondo di garanzia, si ha riguardo al solo ramo per il
+quale, ai sensi del comma 1, è richiesta la misura più elevata.
+
+=== K577 | [Sezione I - Art. 6 (2)] (Fondo a copertura delle spese di impianto)
+Art. 6
+(Fondo a copertura delle spese di impianto)
+1. L’impresa, in aggiunta al capitale sociale o al fondo di garanzia di cui all’articolo 5, deve
+disporre di mezzi finanziari adeguati alla copertura delle spese di impianto, relative alla
+costituzione dei servizi amministrativi e tecnici, centrali e periferici, e per
+l’organizzazione agenziale e produttiva, come risultanti dal programma di attività.
+2. I mezzi di cui al comma 1 confluiscono in un fondo patrimoniale specificamente
+destinato alle finalità indicate al medesimo comma, che non può essere computato ai fini
+del margine di solvibilità disponibile.
+3. Il fondo deve restare integro nel periodo intercorrente tra la presentazione dell’istanza ed
+il rilascio dell’autorizzazione. I soci effettuano ulteriori versamenti commisurati alle spese
+eventualmente sostenute dall’impresa in tale periodo, qualora non coperte dai redditi
+derivanti dalle attività patrimoniali.
+Comma abrogato dall’articolo 2, comma 1, lettera d), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 5
+disponeva: “Con riguardo alla documentazione di cui al comma 1, lettera e) fino all’entrata in vigore delle disposizioni di
+attuazione dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1”.
+4. Decorso un triennio dal rilascio dell’autorizzazione le disponibilità residue del fondo sono
+imputabili, con le dovute procedure, a capitale sociale.
+
+=== K578 | [Sezione I - Art. 7] (Programma di attività)
+Art. 7
+(Programma di attività)
+1. Il programma di attività, approvato dall’organo amministrativo, illustra con riferimento al
+primo triennio:
+a) per ciascun ramo per cui viene richiesta l’autorizzazione, le obbligazioni ed i rischi
+che l’impresa intende assumere;
+b) gli elementi patrimoniali che costituiscono il capitale sociale o il fondo di garanzia;
+c) le previsioni relative alle spese di impianto dei servizi amministrativi e tecnici,
+centrali e periferici, e dell’organizzazione agenziale e produttiva;
+d) i criteri che l’impresa intende seguire per la riassicurazione dei rischi assunti e il
+piano di riassicurazione, a cui vanno allegate le bozze dei trattati di riassicurazione
+e le lettere di impegno dei riassicuratori a sottoscriverli;
+e) la struttura della rete di vendita e le modalità operative della distribuzione, in
+conformità al Regolamento ISVAP n. 5 del 16 ottobre 2006;
+f) le procedure di assunzione e di valutazione dei rischi da sottoscrivere;
+g) le procedure di emissione delle polizze e di incasso dei premi. In caso di vendita
+tramite sportelli bancari, sono indicati anche gli aspetti organizzativi ed informatici e i
+presidi tesi a garantire la sicurezza e riservatezza dei dati, escludendo la possibilità
+di modifiche da parte dell’operatore bancario;
+h) la struttura liquidativa, direzionale e periferica;
+i) le procedure di liquidazione dei sinistri e delle somme da pagare;
+j) le procedure di controllo interno e di gestione dei rischi che l’impresa intende
+adottare;
+k) l’assetto e la composizione delle funzioni di revisione interna, di risk management e
+di compliance;
+l) le procedure per il rispetto della normativa antiriciclaggio di cui al decreto legislativo
+21 novembre 2007, n. 2319;
+m) per ciascun soggetto terzo a cui l’impresa intende esternalizzare proprie attività, le
+indicazioni richieste dal Regolamento ISVAP di attuazione degli articoli 87 e 191,
+comma 1, lettera c) del decreto in materia di adeguatezza del sistema dei controlli
+interni e di gestione dei rischi delle imprese e dei gruppi assicurativi.
+2. Il programma contiene, oltre a quanto previsto al comma 1, con riferimento al primo
+triennio:
+a) la prevedibile situazione di tesoreria;
+b) le previsioni relative ai mezzi finanziari necessari per la copertura delle riserve
+tecniche e del margine di solvibilità, tenendo conto che i mezzi finanziari a copertura
+del margine di solvibilità devono essere tali da garantire almeno la copertura della
+quota di garanzia;
+c) le previsioni relative all’ammontare dei premi, coerenti con le possibilità operative
+offerte dal mercato;
+d) le previsioni relative alle spese di gestione, diverse dalle spese di impianto e, in
+particolare, quelle relative alle spese generali correnti e all’ammontare delle
+provvigioni riconosciute alle reti di vendita;
+e) le previsioni relative all’ammontare delle prestazioni dovute per i rami vita e
+all’ammontare dei sinistri da pagare per i rami danni, comprese le spese di
+liquidazione, da iscrivere a riserva;
+f) il dettaglio delle previsioni dei costi e dei ricavi riferibili a ciascun ramo, tenuto conto
+delle operazioni di assicurazione, delle operazioni di riassicurazione passiva e delle
+Lettera modificata dall’articolo 3 del Provvedimento IVASS n. 23 del 18 novembre 2014.
+operazioni di riassicurazione attiva, se l’impresa intende essere autorizzata anche
+all’esercizio di quest’ultima.
+Le previsioni sono rappresentate utilizzando i modelli di bilancio (stato patrimoniale,
+conto economico, prospetto delle attività a copertura delle riserve tecniche, prospetto del
+margine di solvibilità) e la modulistica di vigilanza (conti tecnici di ramo) previsti dalla
+vigente normativa.
+3. Il programma di attività dell’impresa che presenta istanza di autorizzazione all’esercizio
+dell’attività nei rami danni 10, 12, 14, 15, 17 e 18 è integrato dalle informazioni e dalla
+documentazione previsti dalla Sezione II del presente Capo.
+4. L’impresa che richiede l’autorizzazione all’esercizio congiunto dei rami vita e dei rami
+danni 1 e 2, fornisce le informazioni richiamate per il programma di attività e la relazione
+tecnica in maniera distinta per le due gestioni.
+5. Nel caso in cui l’impresa richieda l’autorizzazione anche all’esercizio dell’attività
+riassicurativa, il programma di attività illustra la natura dei rischi che l’impresa si propone
+di garantire, il tipo di accordi di riassicurazione che l’impresa intende concludere con le
+imprese cedenti, la politica di retrocessione, nonché i dati di cui al comma 2 riferiti
+all’attività riassicurativa.
+
+=== K579 | [Sezione I - Art. 8] (Relazione tecnica)
+Art. 8
+(Relazione tecnica)
+1. La relazione tecnica contiene l’esposizione dei criteri in base ai quali il programma di
+attività è stato redatto e sono state determinate le previsioni relative ai ricavi, ai costi ed
+ai flussi di tesoreria.
+2. La relazione tecnica è sottoscritta da un attuario iscritto all’albo professionale.
+3. La relazione tecnica delle imprese che presentano istanza di autorizzazione all’esercizio
+dell’attività nei rami danni 10 e 12, è integrato dalle informazioni previste dalla Sezione II
+del presente Capo.
+
+=== K580 | [Sezione I - Art. 9 (2)] (Soggetti partecipanti al capitale)
+Art. 9
+(Soggetti partecipanti al capitale)
+1. L’impresa, unitamente all’istanza di autorizzazione di cui all’articolo 4, trasmette
+all’IVASS la documentazione necessaria alla verifica della sussistenza dei requisiti di
+onorabilità in capo ai soggetti che detengono, direttamente o indirettamente, il controllo o
+una partecipazione rilevante nell’impresa, secondo quanto previsto dall’articolo 77 del
+decreto e dal relativo regolamento di attuazione del Ministro dello Sviluppo Economico,
+nonché della sussistenza dei presupposti per il rilascio dell’autorizzazione all’acquisizione
+del controllo o della partecipazione, secondo quanto previsto dall’articolo 68 del decreto e
+dalle relative disposizioni di attuazione10.
+2. Nel caso si tratti di persone giuridiche, i requisiti di onorabilità devono essere posseduti
+dagli amministratori, dai sindaci e dai direttori generali delle stesse. La documentazione
+per la verifica dei requisiti è indicata nell’Allegato B.111.
+3. Ai fini dell’esercizio dei controlli sui soggetti partecipanti al capitale, l’ IVASS può
+richiedere ulteriori dati, informazioni e documenti all’impresa e agli stessi soggetti.
+Comma modificato dall’articolo 4, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma sostituito dall’articolo 4, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014. La versione
+precedente del comma 2 recitava: “Fino all’emanazione dei provvedimenti di cui al comma 1 si applica quanto disposto
+dall’articolo 45, commi 2 e 3”.
+
+=== K581 | [Sezione I - Art. 10] (Stretti legami)
+Art. 10
+(Stretti legami)
+1. L’impresa, al fine di consentire all’ISVAP l’individuazione delle fattispecie di stretti legami
+tra la stessa o i soggetti del gruppo di appartenenza ed altri soggetti, che possono
+recare ostacolo all’effettivo esercizio delle funzioni di vigilanza, allega all’istanza di
+autorizzazione la documentazione di cui all’allegato B.3 al Regolamento. L’impresa non
+è tenuta a trasmettere tale documentazione se la stessa è stata già inviata nell’ambito
+delle verifiche di cui all’articolo 9.
+2. In relazione alle verifiche da effettuare ai fini della valutazione delle fattispecie di stretti
+legami, l’ISVAP può richiedere ulteriori dati, informazioni e documenti all’impresa ed agli
+altri soggetti interessati dalle verifiche stesse.
+
+=== K582 | [Sezione II (3)] Istanza di autorizzazione all’esercizio di specifici rami danni
+Sezione II
+Istanza di autorizzazione all’esercizio di specifici rami danni
+
+=== K583 | [Sezione II - Art. 11 (2)] (Programma di attività per l’autorizzazione all’esercizio dei rami 10 e 12)
+Art. 11
+(Programma di attività per l’autorizzazione all’esercizio dei rami 10 e 12)
+1. L’impresa che richiede l’autorizzazione all’esercizio dei rami 10 e 12 allega al
+programma di attività:
+a) le condizioni generali e speciali di contratto;
+b) la nota informativa redatta ai sensi dell’articolo 185 del decreto e delle relative
+disposizioni di attuazione;
+c) l’elenco dei mandatari per la liquidazione dei sinistri da designare nei singoli Stati
+membri;
+d) la documentazione attestante il rispetto dell’articolo 131, comma 1, del decreto in
+ordine all’allestimento del sito Internet.
+2. L’impresa che richiede l’autorizzazione per i rami 10 e 12 indica nella relazione tecnica di
+cui all’articolo 8 le previsioni relative all’ammontare dei sinistri da pagare e da iscrivere a
+riserva, comprese le spese di liquidazione, tenendo conto della frequenza media e del
+costo medio dei sinistri.
+
+=== K584 | [Sezione II - Art. 12 (2)] (Programma di attività per l’autorizzazione all’esercizio dei rami 14 e 15)
+Art. 12
+(Programma di attività per l’autorizzazione all’esercizio dei rami 14 e 15)
+1. L’impresa che richiede l’autorizzazione all’esercizio dei rami 14 o 15 allega al
+programma di attività:
+a) una relazione sulla struttura e sulle procedure che regolano le istruttorie tecnico-
+informative, finalizzate ad evidenziare la natura e la caratteristica dei rischi da
+garantire nonché a valutare l’assicurando e la solidità patrimoniale, finanziaria ed
+economica e l’affidabilità dei debitori, in modo da poter determinare i limiti di
+affidamento, le caratteristiche tecniche del contratto ed il costo della garanzia;
+b) una relazione illustrativa delle procedure di affidamento, di emissione dei contratti
+nonché di gestione delle polizze, dei sinistri e dei recuperi e delle procedure di
+conservazione della documentazione;
+c) documentazione dalla quale risulti il livello di specializzazione del personale
+incaricato della gestione del ramo.
+
+=== K585 | [Sezione II - Art. 13 (2)] (Programma di attività per l’autorizzazione all’esercizio del ramo 17)
+Art. 13
+(Programma di attività per l’autorizzazione all’esercizio del ramo 17)
+1. L’impresa che richiede l’autorizzazione all’esercizio del ramo 17 indica nel programma di
+attività quale, tra le modalità di cui all’articolo 164, comma 2, del decreto, intende
+adottare per la gestione dei sinistri e per la relativa attività di consulenza.
+2. Se l’impresa intende avvalersi della facoltà di cui all’articolo 164, comma 2, lettera a), del
+decreto, illustra nel programma di attività le procedure idonee a garantire l’indipendenza
+del personale incaricato della gestione dei sinistri e della relativa attività di consulenza,
+evitando che lo stesso svolga le medesime attività in altri rami danni esercitati
+dall’impresa o da altre imprese con le quali intercorrono legami finanziari, commerciali o
+amministrativi.
+3. Se l’impresa intende avvalersi della facoltà di cui all’articolo 164, comma 2, lettera b), del
+decreto, allega al programma di attività gli accordi, o le bozze di accordi, che
+conferiscono ad altra impresa l’incarico di provvedere alla gestione dei sinistri del ramo
+ed alla relativa consulenza. Fermo restando quanto disposto dal Regolamento ISVAP di
+attuazione degli articoli 87 e 191, comma 1, lettera c) del decreto in materia di
+adeguatezza del sistema dei controlli interni e di gestione dei rischi delle imprese e dei
+gruppi assicurativi, gli accordi prevedono l’impegno dell’impresa incaricata a:
+a) trasmettere l’elenco del personale preposto all’attività di gestione dei sinistri e a
+quella di consulenza;
+b) curare fino ad esaurimento, anche in caso di cessazione per qualsiasi causa
+dell’accordo, la gestione dei sinistri in corso.
+
+=== K586 | [Sezione II - Art. 14 (2)] (Programma di attività per l’autorizzazione all’esercizio del ramo 18)
+Art. 14
+(Programma di attività per l’autorizzazione all’esercizio del ramo 18)
+1. L’impresa che richiede l’autorizzazione all’esercizio del ramo 18 descrive nel programma
+di attività la struttura organizzativa nonché le modalità operative che intende adottare per
+adempiere agli obblighi derivanti dall’esercizio del ramo, allegando idonea
+documentazione. La struttura organizzativa, interna od esterna, cui è affidata l’attività di
+gestione dei sinistri che richiedono l’erogazione di prestazioni in natura è organizzata in
+modo tale da soddisfare i requisiti determinati ai sensi dell’articolo 30, comma 3, del
+decreto e delle relative disposizioni di attuazione.
+2. L’impresa non dotata di attrezzature e di personale propri per l’erogazione delle
+prestazioni di assistenza in natura, ai fini del rilascio dell’autorizzazione, dimostra di poter
+disporre dei mezzi e degli operatori di una o più strutture organizzative, in possesso dei
+requisiti di cui al comma 1, appartenenti a società terza non esercente l’attività
+assicurativa o ad altra impresa di assicurazione. A tal fine allega all’istanza di
+autorizzazione:
+a) nel caso di struttura di società terza o di altra impresa di assicurazione autorizzata
+all’esercizio dell’attività assicurativa nel ramo 18, copia dell’accordo con il quale è
+conferito a tale società o impresa, proprietaria della struttura, l’incarico di
+provvedere alla gestione dei sinistri del ramo;
+b) nel caso di struttura di altra impresa di assicurazione autorizzata all’esercizio
+dell’attività assicurativa nel ramo 18 e dell’attività riassicurativa, bozza del trattato di
+riassicurazione obbligatoria in quota stipulato con tale impresa e copia del collegato
+accordo di conferimento al riassicuratore dell’incarico di trattazione dei sinistri del
+ramo. Il trattato di riassicurazione può prevedere una cessione massima del 90 per
+cento dei premi e dei sinistri del ramo.
+3. Fermo restando quanto disposto dal Regolamento ISVAP di attuazione degli articoli 87 e
+191, comma 1, lettera c) del decreto in materia di adeguatezza del sistema dei controlli
+interni e di gestione dei rischi delle imprese e dei gruppi assicurativi, l’accordo di cui al
+comma 2, lettera a), stipulato con la società non esercente attività assicurativa prevede
+l’impegno della stessa a:
+a) consentire il controllo da parte dell’ISVAP anche per quanto concerne la sua rete di
+collaboratori indipendenti;
+b) comunicare all’ISVAP l’eventuale assunzione di nuovi obblighi di prestazione di
+servizi verso altri soggetti.
+
+=== K587 | [Sezione III (2)] Istruttoria e provvedimento finale
+Sezione III
+Istruttoria e provvedimento finale
+
+=== K588 | [Sezione III - Art. 15] (Attività istruttoria)
+Art. 15
+(Attività istruttoria)
+1. Ai fini del rilascio dell’autorizzazione, l’ISVAP verifica, sulla base della documentazione
+prodotta dall’impresa, la sussistenza delle condizioni di cui all’articolo 14 del decreto e al
+presente Capo.
+2. Tempestivamente, e comunque non oltre il termine previsto dal Regolamento ISVAP n.
+2 del 9 maggio 2006, l’ISVAP comunica all’impresa l’avvio del procedimento.
+3. Nel caso in cui l’istanza risulti incompleta per assenza di uno o più dei documenti o delle
+informazioni indicati all’articolo 4, ovvero risulti irregolare, l’ISVAP ne dà comunicazione
+all’impresa tempestivamente, e comunque non oltre il termine previsto dal Regolamento
+ISVAP n. 2 del 9 maggio 2006, indicando le cause dell’incompletezza o dell’irregolarità.
+In tali casi, il termine del procedimento decorre nuovamente dalla data del
+completamento o della regolarizzazione dell’istanza.
+4. Ai fini dello svolgimento dell’istruttoria, l’ISVAP può richiedere all’impresa istante
+informazioni e chiarimenti ad integrazione della documentazione prevista dal presente
+Regolamento. In tali casi il termine per la conclusione del procedimento è sospeso fino
+al ricevimento delle informazioni e della documentazione richiesta. L’ISVAP comunica
+all’impresa la sospensione del termine per provvedere.
+5. Ai fini dello svolgimento dell’istruttoria, l’ISVAP può richiedere ad Autorità nazionali od
+estere elementi informativi, documentazione, valutazioni o pareri, in particolare quando il
+procedimento di autorizzazione include verifiche nei confronti di soggetti vigilati da tali
+Autorità. In questo caso, il termine per la conclusione del procedimento è sospeso sino
+alla data del ricevimento di quanto richiesto.
+6. Nelle ipotesi di cui all’articolo 203 del decreto, l’ISVAP consulta in via preliminare le
+Autorità competenti degli altri Stati membri in merito al rilascio delle autorizzazioni. In tali
+casi, il termine per la conclusione del procedimento è sospeso sino alla data di
+acquisizione del parere delle Autorità consultate.
+7. Nei casi previsti dai commi 5 e 6, l’ISVAP comunica all’impresa la sospensione e la
+riapertura del termine per provvedere.
+8. Trascorsi novanta giorni senza che l’impresa abbia prodotto la documentazione
+integrativa richiesta ai sensi dei commi 3 e 4, l’istanza di autorizzazione si intende
+decaduta. L’ISVAP ne dà comunicazione all’impresa istante.
+9. Per quanto non disciplinato dal presente articolo si applicano le previsioni del
+Regolamento ISVAP n. 2 del 9 maggio 2006.
+
+=== K589 | [Sezione III - Art. 16 (2)] (Provvedimento di autorizzazione)
+Art. 16
+(Provvedimento di autorizzazione)
+1. In caso di esito positivo dell’istruttoria, l’ISVAP emana il provvedimento di autorizzazione
+entro novanta giorni dalla data di presentazione dell’istanza fatte le salve le ipotesi di
+interruzione e di sospensione di cui all’articolo 15 e trasmette il provvedimento
+all’impresa istante.
+2. L’impresa invia all’ISVAP il certificato attestante l’iscrizione nel registro delle imprese.
+3. L’ISVAP, preso atto dell’adempimento di cui al comma 2, iscrive l’impresa nell’albo di cui
+all’articolo 35, dandone comunicazione all’impresa e pubblica il provvedimento di
+autorizzazione nel Bollettino e nel proprio sito internet.
+4. L’ impresa può avviare l’attività dal momento in cui è iscritta nell’albo delle imprese.

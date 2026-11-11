@@ -1,0 +1,1102 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Norme in materia di imposta sul valore aggiunto.  (id IT-decreto.legislativo-1997-09-02-313)
+
+=== K450 | [6] Modifiche al regime IVA per il settore editoriale
+Art. 6
+Modifiche al regime IVA per il settore editoriale
+1. Nell'articolo 74, primo comma, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, la lettera c) è sostituita dalla seguente: "c) per il commercio di giornali quotidiani, di
+periodici, di libri, dei relativi supporti integrativi e di cataloghi, dagli editori sulla base del prezzo di vendita al pubblico, in relazione al numero delle copie vendute. L'imposta può applicarsi
+in relazione al numero delle copie consegnate o spedite, diminuito a titolo di forfettizzazione della resa del 53 per cento per i libri e del 60 per cento per i giornali quotidiani e periodici,
+esclusi quelli pornografici e quelli ceduti unitamente a supporti integrativi o ad altri beni. Per periodici si intendono i prodotti editoriali registrati come pubblicazioni ai sensi della legge 8
+febbraio 1948, n. 47, e successive modificazioni. Per supporti integrativi si intendono i nastri, i dischi, le videocassette e gli altri supporti sonori o videomagnetici ceduti, anche gratuitamente,
+in unica confezione, unitamente a giornali quotidiani, periodici e libri a condizione che i beni unitamente ceduti abbiano prezzo indistinto e che il costo dei supporti integrativi non sia superiore
+al cinquanta per cento del prezzo della confezione stessa. Qualora non ricorrano tali condizioni, l'imposta si applica con l'aliquota del supporto integrativo. La disposizione di cui al primo periodo
+della presente lettera c) si applica anche se i giornali quotidiani, i periodici ed i libri sono ceduti unitamente a beni diversi dai supporti integrativi, con prezzo indistinto ed in unica
+confezione, semprechè il costo del bene ceduto, anche gratuitamente, congiuntamente alla pubblicazione non sia superiore al cinquanta per cento del prezzo dell'intera confezione; se il costo del bene
+ceduto, anche gratuitamente, congiuntamente alla pubblicazione è superiore al dieci per cento del prezzo dell'intera confezione, l'imposta si applica con l'aliquota di ciascuno dei beni ceduti. I
+soggetti che esercitano l'opzione per avvalersi delle disposizioni della legge 16 dicembre 1991, n. 398, applicano, per le cessioni di prodotti editoriali, l'imposta in relazione al numero delle copie
+vendute, secondo le modalità previste dalla predetta legge.".
+2. Al numero 18) e al numero 35) della tabella A parte II, allegata al decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, dopo la parola "periodici" sono aggiunte le seguenti: "ad
+esclusione dei giornali e periodici pornografici e dei cataloghi diversi da quelli di informazione libraria".
+Note all'art. 6:
+- Si riporta il testo dell'art. 74 del decreto del Presidente della Repubblica n. 633/1972, come modificato dagli artt. 6, 7 e 8 del presente decreto:
+"Art. 74 (Disposizioni relative a particolari settori). - In deroga alle disposizioni dei titoli primo e secondo, l'imposta è dovuta:
+a) per il commercio di sali e tabacchi importati o fabbricati dall'Amministrazione autonoma dei monopoli dello Stato, ceduti attraverso le rivendite dei generi di monopoli, dall'amministrazione
+stessa, sulla base del prezzo di vendita al pubblico;
+b) per il commercio dei fiammiferi, limitatamente alle cessioni successive alle consegne effettuate al Consorzio industrie fiammiferi, dal Consorzio stesso, sulla base del prezzo di vendita al
+pubblico. Lo stesso regime si applica nei confronti del soggetto che effettua la prima immissione al consumo di fiammiferi di provenienza comunitaria.
+L'imposta concorre a formare la percentuale di cui all'art. 8 delle norme di esecuzione annesse al decreto legislativo 17 aprile 1948, n. 525;
+c) per il commercio di giornali quotidiani, di periodici, di libri, dei relativi supporti integrativi e di cataloghi, dagli editori sulla base del prezzo di vendita al pubblico, in relazione al numero
+delle copie vendute.
+L'imposta può applicarsi in relazione al numero delle copie consegnate o spedite, diminuito a titolo di forfettizzazione della resa del 53 per cento per i libri e del 60 per cento per i giornali
+quotidiani e periodici, esclusi quelli pornografici e quelli ceduti unitamente a supporti integrativi o ad altri beni. Per periodici si intendono i prodotti editoriali registrati come pubblicazioni ai
+sensi della legge 8 febbraio 1948, n. 47 e successive modificazioni. Per supporti integrativi si intendono i nastri, i dischi, le videocassette e gli altri supporti sonori o videomagnetici ceduti,
+anche gratuitamente, in unica confezione, unitamente a giornali quotidiani, periodici e libri a condizione che i beni unitamente ceduti abbiano prezzo indistinto e che il costo dei supporti
+integrativi non sia superiore al cinquanta per cento del prezzo della confezione stessa. Qualora non ricorrano tali condizioni, l'imposta si applica con l'aliquota del supporto integrativo. La
+disposizione di cui al primo periodo della presente lettera c) si applica anche se i giornali quotidiani, i periodici ed i libri sono ceduti unitamente a beni diversi dai supporti integrativi, con
+prezzo indistinto ed in unica confezione, semprechè il costo del bene ceduto, anche gratuitamente, congiuntamente alla pubblicazione non sia superiore al cinquanta per cento del prezzo dell'intera
+confezione; se il costo del bene ceduto, anche gratuitamente, congiuntamente alla pubblicazione è superiore al dieci per cento del prezzo dell'intera confezione, l'imposta si applica con l'aliquota di
+ciascuno dei beni ceduti. I soggetti che esercitano l'opzione per avvalersi delle disposizioni della legge 16 dicembre 1991, n. 398, applicano, per le cessioni di prodotti editoriali, l'imposta in
+relazione al numero delle copie vendute, secondo le modalità previste dalla predetta legge;
+d) per le prestazioni dei gestori di telefoni posti a disposizione del pubblico, nonchè per la vendita di qualsiasi mezzo tecnico per fruire dei servizi di telecomunicazione, fissa o mobile, e di
+telematica, dal titolare della concessione o autorizzazione ad esercitare i servizi, sulla base del corrispettivo dovuto dall'utente;
+e) per la vendita al pubblico, da parte di rivenditori autorizzati, di documenti di viaggio relativi ai trasporti pubblici urbani di persone dall'esercente l'attività di trasporto e per la vendita al
+pubblico di documenti di sosta relativi ai parcheggi veicolari dall'esercente l'attività di gestione dell'autoparcheggio;
+e-bis) (già abrogata).
+Le operazioni non soggette all'imposta in virtù del precedente comma sono equiparate per tutti gli effetti del presente decreto alle operazioni non imponibili di cui al terzo comma dell'art. 2.
+Le modalità ed i termini per l'applicazione delle disposizioni dei commi precedenti saranno stabiliti con decreti del Ministro delle finanze.
+Gli enti e le imprese che prestano servizi al pubblico con caratteri di uniformità, frequenza e diffusione tali da comportare l'addebito dei corrispettivi per periodi superiori al mese possono essere
+autorizzati, con decreto del Ministro delle finanze, ad eseguire le liquidazioni periodiche di cui all'art. 27 e i relativi versamenti trimestralmente anzichè mensilmente. La stessa autorizzazione può
+essere concessa agli esercenti impianti di distribuzione di carburante per uso di autotrazione e agli autotrasportatori di cose per conto terzi iscritti all'albo di cui alla legge 6 giugno 1974, n.
+298. Non si applicano le disposizioni di cui all'art. 33 per le liquidazioni ed i versamenti trimestrali effettuati dagli esercenti impianti di distribuzione di carburante per uso di autotrazione e
+dagli autotrasportatori iscritti nell'albo sopra indicato, nonchè per le liquidazioni ed i versamenti trimestrali disposti con decreti del Ministro delle finanze, emanati a norma dell'art. 73, primo
+comma, lettera e), e del primo periodo del presente comma. In deroga a quanto disposto dall'art. 23, primo comma, a decorrere dal 1 aprile 1995, le fatture emesse in ciascun trimestre solare dagli
+autotrasportatori indicati nel periodo precedente, possono essere annotate entro il trimestre successivo a quello di emissione, con riferimento alla data di annotazione.
+Per gli spettacoli e i giuochi, esclusi quelli indicati nei numeri 6) e 7) dell'art. 10, e per i trattenimenti pubblici effettuati dalle imprese esercenti le suddette attività l'imposta si applica
+sulla stessa base imponibile dell'imposta sugli spettacoli ed è riscossa con le stesse modalità stabilite per quest'ultima imposta. La detrazione di cui all'art. 19 è forfettizzata in misura pari al
+cinquanta per cento dell'imposta relativa alle operazioni imponibili ai fini dell'imposta sugli spettacoli. Se le suddette imprese effettuano anche prestazioni di sponsorizzazione, e cessioni o
+concessioni di diritti di ripresa televisiva e di trasmissione radiofonica, comunque connesse a quelle di spettacolo, applicano l'imposta sul valore aggiunto con le predette modalità, ma la detrazione
+è forfettizzata in misura pari a un decimo dell'imposta relativa alle operazioni stesse per le prestazioni di sponsorizzazione ed in misura pari ad un terzo per le cessioni o concessioni di diritti di
+ripresa televisiva e di trasmissione radiofonica. Se nell'esercizio dell'attività di spettacolo vengono effettuate anche operazioni non soggette all'imposta sugli spettacoli, comprese prestazioni
+pubblicitarie, l'imposta sui relativi corrispettivi è riscossa con le stesse modalità dell'imposta sugli spettacoli e la detrazione di cui all'art. 19 è forfettizzata in misura pari ad un decimo
+dell'imposta relativa alle operazioni stesse. Per le operazioni non soggette all'imposta ai sensi dell'art. 7, l'importo della detrazione si calcola con riferimento all'ammontare dell'imposta che
+sarebbe applicabile sulle analoghe operazioni imponibili. Eventuali eccedenze detraibili di imposta vanno computate con la successiva liquidazione dell'imposta stessa. Le imprese sono esonerate dagli
+obblighi di fatturazione, tranne che per le prestazioni di sponsorizzazione, per le cessioni o concessioni di diritti di ripresa televisiva e di trasmissione radiofonica e per le prestazioni
+pubblicitarie, di registrazione e dichiarazione, salvo quanto stabilito dall'art. 25; per il contenzioso si applica la disciplina stabilita per l'imposta sugli spettacoli. Le singole imprese hanno la
+facoltà di optare per l'applicazione dell'imposta nei modi ordinari dandone comunicazione all'Ufficio accertatore dell'imposta sugli spettacoli prima dell'inizio dell'anno solare e all'Ufficio
+dell'imposta sul valore aggiunto ai sensi dell'art. 35, ovvero, in caso di inizio di attività, nella relativa dichiarazione; l'opzione ha effetto fino a quando non è revocata, entro gli stessi termini
+e con le medesime modalità, ed è comunque vincolante per un quinquennio; qualora siano stati acquistati o prodotti beni ammortizzabili l'opzione è vincolante fino a quando non sia trascorso il periodo
+della relativa rettifica previsto dall'art. 19-bis2. La disposizione relativa alla diversa detrazione per le prestazioni di sponsorizzazione, per le cessioni o concessioni di diritti di ripresa
+televisiva e di trasmissione radiofonica e per le operazioni non soggette all'imposta sugli spettacoli nonchè la disposizione concernente l'obbligo di fatturazione, non si applicano ai soggetti che
+hanno esercitato l'opzione di cui alla legge 16 dicembre 1991, n. 398.
+Per le operazioni relative all'esercizio dei giuochi di abilità e dei concorsi pronostici riservati allo Stato e agli enti indicati nel decreto legislativo 14 aprile 1948, n. 496, e successive
+modificazioni, ratificato con legge 22 aprile 1953, n. 342, l'imposta, compresa quella sulle operazioni riguardanti la raccolta delle giuocate, è compresa nella imposta unica di cui alla legge 22
+dicembre 1951, n. 1379, e successive modificazioni. Conseguentemente le cessioni di beni e le prestazioni di servizi che formano oggetto delle dette operazioni sono esonerate dagli obblighi di
+fatturazione, registrazione e dichiarazione.
+Le cessioni di rottami, cascami e avanzi di metalli, ferrosi e non ferrosi, e dei relativi lavori, di carta da macero, di stracci e di scarti di ossa, di pelli, di vetri, di gomma e plastica,
+intendendosi comprese anche quelle relative agli anzidetti beni che siano stati ripuliti, selezionati, tagliati, compattati, lingottati o sottoposti ad altri trattamenti atti a facilitarne
+l'utilizzazione, il trasporto e lo stoccaggio senza modificarne la natura, sono effettuate senza pagamento dell'imposta, fermi restando gli obblighi di cui al titolo secondo. Agli effetti della
+limitazione contenuta nel terzo comma dell'art. 30 le cessioni sono considerate operazioni imponibili.
+Le disposizioni del precedente comma si applicano anche per le cessioni dei semilavorati di metalli non ferrosi di cui alle seguenti voci della tariffa doganale comune vigente al 31 dicembre 1996:
+a) rame raffinato e leghe di rame, greggio (v.d. 74.03);
+b) nichel greggio, anche in lega (v.d. 75.02);
+c) alluminio greggio, anche in lega (v.d. 76.01);
+d) piombo greggio, raffinato, antimoniale e in lega (v.d. 78.01);
+e) zinco greggio, anche in lega (v.d. 79.01);
+e-bis) stagno greggio, anche in lega (v.d. 80.01).
+Per le cessioni di carta da macero, di stracci e di scarti di ossa, di pelli, di vetri, di gomma e plastica, le disposizioni del settimo comma si applicano, sotto la responsabilità del cedente,
+semprechè nell'anno solare precedente l'ammontare delle relative cessioni effettuate da operatori dotati di sede fissa non sia stato superiore a due miliardi di lire.
+I raccoglitori non dotati di sede fissa per la successiva rivendita sono tenuti esclusivamente alla numerazione e conservazione, ai sensi dell'art. 39, delle fatture rela- tive alle cessioni
+effettuate, all'emissione delle quali deve provvedere il cessionario che acquista i beni nell'esercizio dell'impresa.
+Per le cessioni di beni, esclusi quelli strumentali per l'esercizio dell'attività e quelli propri, comunque effettuate da esercenti agenzie di vendita all'asta, anche in esecuzione di rapporti di
+commissione o di rappresentanza di soggetti non operanti nell'esercizio di impresa o di arti e professioni, la base imponibile è costituita dal 15 per cento del prezzo di vendita.
+L'imposta afferente l'importazione o l'acquisto intracomunitario dei beni destinati alla vendita non è detraibile. Gli esercenti le dette agenzie, al fine di escludere le presunzioni di cui all'art.
+53, devono annotare in apposito registro, tenuto in conformità all'art. 39, anche i beni ad essi consegnati dai soggetti di cui sopra, indicandone gli elementi identificativi, la data ed il titolo di
+consegna dei beni, nonchè il prezzo di vendita degli stessi.
+Nelle operazioni indicate nel primo comma, lettere a), b) e c) non sono comprese le prestazioni di intermediazione con rappresentanza ad esse relative".
+- La legge 8 febbraio 1948, n. 47, richiamata all'art. 74 del decreto del Presidente della Repubblica n. 633/1972, come ora modificato, reca: "Disposizioni sulla stampa" ed è pubblicata nella Gazzetta
+Ufficiale 20 febbraio 1948, n. 43.
+- La legge 16 dicembre 1991, n. 398, richiamata all'art. 74 del decreto del Presidente della Repubblica n. 633/1972, come ora modificato, reca: "Disposizioni tributarie rela- tive alle associazioni
+sportive dilettantistiche" ed è pubblicata nella Gazzetta Ufficiale 17 dicembre 1991, n. 295.
+- Il testo dell'art. 10 del decreto del Presidente della Repubblica n. 633/1972, richiamato all'art. 74 del decreto del Presidente della Repubblica cit., come ora modificato, ÿ riportato in nota
+all'art. 1.
+- Si riporta il testo dell'art. 7 del decreto del Presidente della Repubblica n. 633/1972, richiamato all'art. 74 del decreto del Presidente della Repubblica cit.:
+"Art. 7 (Territorialità dell'imposta). - Agli effetti del presente decreto:
+a) per "Stato" o "territorio dello Stato" si intende il territorio della Repubblica italiana, con esclusione dei comuni di Livigno e di Campione d'Italia e delle acque italiane del lago di Lugano;
+b) per "Comunità" o "territorio della Comunità" si intende il territorio corrispondente al campo di applicazione del Trattato istitutivo della Comunità economica europea con le seguenti esclusioni,
+oltre quella indicata nella lettera a):
+1) per la Repubblica ellenica, il Monte Athos;
+2) per la Repubblica federale di Germania, l'isola di Helgoland ed il territorio di Busingen;
+3) per la Repubblica francese, i Dipartimenti d'oltremare;
+4) per il Regno di Spagna, Ceuta, Melilla e le isole Canarie;
+c) il Principato di Monaco e l'isola di Man si intendono compresi nel territorio rispettivamente della Repubblica francese e del Regno Unito di Gran Bretagna e Irlanda del Nord.
+Le cessioni di beni si considerano effettuate nel territorio dello Stato se hanno per oggetto beni immobili ovvero beni mobili nazionali, comunitari o vincolati al re- gime della temporanea
+importazione, esistenti nel territorio dello stesso ovvero beni mobili spediti da altro Stato membro, installati, montati o assiemati nel territorio dello Stato dal fornitore o per suo conto. Si
+considerano altresì effettuate nel territorio dello Stato le cessioni di beni nei confronti di passeggeri nel corso di un trasporto intracomunitario a mezzo di navi, aeromobili o treni, se il
+trasporto ha inizio nel territorio dello Stato; si considera intracomunitario il trasporto con luogo di partenza e di arrivo siti in Stati membri diversi e luogo di partenza quello di primo punto di
+imbarco dei passeggeri, luogo di arrivo quello dell'ultimo punto di sbarco.
+Le prestazioni di servizi si considerano effettuate nel territorio dello Stato quando sono rese da soggetti che hanno il domicilio nel territorio stesso o da soggetti ivi residenti che non abbiano
+stabilito il domicilio all'estero, nonchè quando sono rese da stabili organizzazioni in Italia di soggetti domiciliati e residenti all'estero; non si considerano effettuate nel territorio dello Stato
+quando sono rese da stabili organizzazioni all'estero di soggetti domiciliati o residenti in Italia. Per i soggetti diversi dalle persone fisiche, agli effetti del presente articolo, si considera
+domicilio il luogo in cui si trova la sede legale e residenza quello in cui si trova la sede effettiva.
+In deroga al secondo e al terzo comma:
+a) le prestazioni di servizi relativi a beni immobili, comprese le perizie, le prestazioni di agenzia e le prestazioni inerenti alla preparazione e al coordinamento dell'esecuzione dei lavori
+immobiliari, si considerano effettuate nel territorio dello Stato quando l'immobile è situato nel territorio stesso;
+b) le prestazioni di servizi, comprese le perizie, rela- tive a beni mobili materiali e le prestazioni di servizi culturali, scientifici, artistici, didattici, sportivi, ricreativi e simili, nonchè le
+operazioni di carico, scarico, manutenzione e simili, accessorie ai trasporti di beni, si considerano effettuate nel territorio dello Stato quando sono eseguite nel territorio stesso;
+c) le prestazioni di trasporto si considerano effettuate nel territorio dello Stato in proporzione alla distanza ivi percorsa;
+d) le prestazioni derivanti da contratti di locazione, anche finanziaria, noleggio e simili di beni mobili materiali diversi dai mezzi di trasporto, le prestazioni di servizi indicate al numero 2) del
+secondo comma dell'art. 3, le prestazioni pubblicitarie, di consulenza e assistenza tecnica o legale, comprese quelle di formazione e di addestramento del personale, le prestazioni di servizi di
+telecomunicazione, di elaborazione e fornitura di dati e simili, le operazioni bancarie, finanziarie e assicurative e le prestazioni relative a prestiti di personale, nonchè le prestazioni di
+intermediazione inerenti alle suddette prestazioni o operazioni e quelle inerenti all'obbligo di non esercitarle, si considerano effettuate nel territorio dello Stato quando sono rese a soggetti
+domiciliati nel territorio stesso o a soggetti ivi residenti che non hanno stabilito il domicilio all'estero e quando sono rese a stabili organizzazioni in Italia di soggetti domiciliati o residenti
+all'estero, a meno che non siano utilizzate fuori dalla Comunità economica europea;
+e) le prestazioni di servizi e le operazioni di cui alla lettera precedente rese a soggetti domiciliati o residenti in altri Stati membri della Comunità economica europea, si considerano effettuate
+nel territorio dello Stato quando il destinatario non è soggetto passivo dell'imposta nello Stato in cui ha il domicilio o la residenza;
+f) le operazioni di cui alla lettera d), escluse le prestazioni di servizi di telecomunicazione, le prestazioni di consulenza e assistenza tecnica o legale, ivi comprese quelle di formazione e di
+addestramento del personale, di elaborazione e fornitura di dati e simili, rese a soggetti domiciliati e residenti fuori della Comunità economica europea nonchè quelle derivanti da contratti di
+locazione, anche finanziaria, noleggio e simili di mezzi di trasporto rese da soggettidomiciliati o residenti fuori della Comunità stessa ovvero domiciliati o residenti nei territori esclusi a norma
+del primo comma lettera a), ovvero da stabili organizzazioni operanti in detti territori, si considerano effettuate nel territorio dello Stato quando sono ivi utilizzate; queste ultime prestazioni, se
+rese da soggetti domiciliati o residenti in Italia a soggetti domiciliati o residenti fuori della Comunità economica europea, si considerano effettuate nel territorio dello Stato quando sono
+utilizzate in Italia o in altro Stato membro della Comunità stessa;
+f-bis) le prestazioni di servizi di telecomunicazione rese a soggetti domiciliati o residenti fuori del territorio della Comunità da soggetti domiciliati o residenti fuori della Comunità stessa,
+ovvero domiciliati o residenti nei territori esclusi a norma del primo comma, lettera a), si considerano effettuate nel territorio dello Stato quando i servizi sono ivi utilizzati. Tali servizi si
+considerano utilizzati nel territorio dello Stato se in partenza dallo stesso o quando, realizzandosi la prestazione tramite cessione di schede prepagate o di altri mezzi tecnici preordinati
+all'utilizzazione del servizio, la loro distribuzione avviene, direttamente o a mezzo di commissionari, rappresentanti, o altri intermediari, nel territorio dello Stato.
+Non si considerano effettuate nel territorio dello Stato le cessioni all'esportazione, le operazioni assimilate a cessioni all'esportazione e i servizi internazionali o connessi agli scambi
+internazionali di cui ai successivi articoli 8, 8-bis e 9".
+- Il testo dell'art. 25 del decreto del Presidente della Repubblica n. 633/1972, richiamato all'art. 74 del decreto del Presidente della Repubblica cit., è riportato in nota all'art. 4.
+- Si riporta il testo dell'art. 35 del decreto del Presidente della Repubblica n. 633/1972, richiamato all'art. 74 del decreto del Presidente della Repubblica cit.:
+"Art. 35 (Inizio, variazione e cessazione di attività).
+- I soggetti che intraprendono l'esercizio di una impresa, arte o professione nel territorio dello Stato, o vi istituiscono una stabile organizzazione, devono entro trenta giorni farne dichiarazione
+all'ufficio in duplice esemplare e in conformità ad apposito modello approvato con decreto del Ministro delle finanze. L'ufficio attribuisce al contribuente un numero di partita, che deve essere
+indicato nelle dichiarazioni e in ogni altro documento destinato all'ufficio, nonchè nelle deleghe di cui all'art. 38, e deve essere riportato nelle attestazioni di versamento.
+Dalla dichiarazione di inizio dell'attività devono risultare:
+1) per le persone fisiche, il cognome e nome, il luogo e la data di nascita, la residenza, il domicilio fiscale e la eventuale ditta;
+2) per i soggetti diversi dalle persone fisiche, la natura giuridica, la denominazione, ragione sociale o ditta, la sede legale, o in mancanza quella amministrativa, e il domicilio fiscale. Devono
+essere inoltre indicati gli elementi di cui al n. 1) per almeno una delle persone che ne hanno la rappresentanza;
+3) per i soggetti residenti all'estero, anche l'ubicazione della stabile organizzazione;
+4) il tipo e l'oggetto dell'attività e il luogo o i luoghi in cui viene esercitata anche a mezzo di sedi secondarie, filiali, stabilimenti, succursali, negozi, depositi e simili, il luogo o i luoghi
+in cui sono tenuti e conservati i libri, i registri, le scritture e i documenti prescritti dal presente decreto e da altre disposizioni;
+5) ogni altro elemento richiesto dal modello.
+In caso di variazione di alcuno degli elementi di cui al precedente comma o di cessazione di attività, il contribuente deve entro trenta giorni farne dichiarazione all'ufficio in duplice esemplare e
+in conformità al modello approvato con decreto del Ministro delle finanze.
+Se la variazione importa il trasferimento del domicilio fiscale in altra provincia, la dichiarazione deve essere contemporaneamente presentata anche al nuovo ufficio ed ha effetto dal sessantesimo
+giorno successivo alla data della variazione.
+In caso di cessazione dell'attività il termine per la presentazione della dichiarazione di cui al precedente comma decorre, agli effetti del presente decreto, dalla data di ultimazione delle
+operazioni relative alla liquidazione dell'azienda, per le quali rimangono ferme le disposizioni relative al versamento dell'imposta, alla fatturazione, registrazione, liquidazione e dichiarazione.
+Nell'ultima dichiarazione deve tenersi conto anche dell'imposta dovuta ai sensi del n. 5) dell'art. 2, da determinare computando anche le operazioni indicate nell'ultimo comma dell'art. 6 il cui
+corrispettivo non sia stato ancora pagato.
+I soggetti che intraprendono l'esercizio di una impresa, arte o professione, se ritengono di realizzare un volume di affari che comporti l'applicazione degli articoli 32, 33 e 34, terzo comma, devono
+indicarlo nella dichiarazione da presentare a norma del primo comma e devono osservare la disciplina rispettivamente stabilita.
+- Si riporta un estratto della Tabella A, parte II, allegata al decreto del Presidente della Repubblica n. 633/1972, come modificata dal presente decreto:
+"Tabella A - Parte II (Beni e servizi soggetti all'aliquota del 4%).
+(omissis)
+18) giornali quotidiani, libri, periodici ad esclusione dei giornali e periodici pornografici e dei cataloghi diversi da quelli di informazione libraria, edizioni musicali a stampa e carte
+geografiche; carta occorrente per la stampa degli stessi e degli atti e pubblicazioni della Camera dei deputati e del Senato della Repubblica, materiale tipografico, attinente le campagne elettorali;
+(omissis)
+35) prestazioni relative alla composizione, legatoria e stampa dei giornali quotidiani, libri, periodici ad esclusione dei giornali e periodici pornografici e dei cataloghi diversi da quelli di
+informazione libraria, edizioni musicali a stampa, carte geografiche, atti e pubblicazioni della Camera dei deputati e del Senato della Repubblica;
+(omissis)".
+
+=== K451 | [7] Modifiche al regime IVA
+Art. 7
+Modifiche al regime IVA
+per il settore dello spettacolo e dei giochi
+1. Il quinto comma dell'articolo 74, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, è sostituito dal seguente: "Per gli spettacoli e i giuochi, esclusi quelli indicati nei numeri
+6) e 7) dell'articolo 10, e per i trattenimenti pubblici effettuati dalle imprese esercenti le suddette attività l'imposta si applica sulla stessa base imponibile dell'imposta sugli spettacoli ed è
+riscossa con le stesse modalità stabilite per quest'ultima imposta.
+La detrazione di cui all'articolo 19 è forfettizzata in misura pari al cinquanta per cento dell'imposta relativa alle operazioni imponibili ai fini dell'imposta sugli spettacoli. Se le suddette
+imprese effettuano anche prestazioni di sponsorizzazione, e cessioni o concessioni di diritti di ripresa televisiva e di trasmissione radiofonica, comunque connesse a quelle di spettacolo, applicano
+l'imposta sul valore aggiunto con le predette modalità, ma la detrazione è forfettizzata in misura pari a un decimo dell'imposta relativa alle operazioni stesse per le prestazioni di sponsorizzazione
+ed in misura pari ad un terzo per le cessioni o concessioni di diritti di ripresa televisiva e di trasmissione radiofonica. Se nell'esercizio dell'attività di spettacolo vengono effettuate anche
+operazioni non soggette all'imposta sugli spettacoli, comprese prestazioni pubblicitarie, l'imposta sui relativi corrispettivi è riscossa con le stesse modalità dell'imposta sugli spettacoli e la
+detrazione di cui all'articolo 19 è forfettizzata in misura pari ad un decimo dell'imposta relativa alle operazioni stesse. Per le operazioni non soggette all'imposta ai sensi dell'articolo 7,
+l'importo della detrazione si calcola con riferimento all'ammontare dell'imposta che sarebbe applicabile sulle analoghe operazioni imponibili. Eventuali eccedenze detraibili di imposta vanno computate
+con la successiva liquidazione dell'imposta stessa. Le imprese sono esonerate dagli obblighi di fatturazione, tranne che per le prestazioni di sponsorizzazione, per le cessioni o concessioni di
+diritti di ripresa televisiva e di trasmissione radiofonica e per le prestazioni pubblicitarie, di registrazione e dichiarazione, salvo quanto stabilito dall'articolo 25; per il contenzioso si applica
+la disciplina stabilita per l'imposta sugli spettacoli. Le singole imprese hanno la facoltà di optare per l'applicazione dell'imposta nei modi ordinari dandone comunicazione all'Ufficio accertatore
+dell'imposta sugli spettacoli prima dell'inizio dell'anno solare e all'Ufficio dell'imposta sul valore aggiunto ai sensi dell'articolo 35, ovvero, in caso di inizio di attività, nella relativa
+dichiarazione; l'opzione ha effetto fino a quando non è revocata, entro gli stessi termini e con le medesime modalità, ed è comunque vincolante per un quinquennio; qualora siano stati acquistati o
+prodotti beni ammortizzabili l'opzione è vincolante fino a quando non sia trascorso il periodo della relativa rettifica previsto dall'articolo 19-bis2. La disposizione relativa alla diversa detrazione
+per le prestazioni di sponsorizzazione, per le cessioni o concessioni di diritti di ripresa televisiva e di trasmissione radiofonica e per le operazioni non soggette all'imposta sugli spettacoli
+nonchè la disposizione concernente l'obbligo di fatturazione, non si applicano ai soggetti che hanno esercitato l'opzione di cui alla legge 16 dicembre 1991, n. 398.".
+Nota all'art. 7:
+- Il testo dell'art. 74 del decreto del Presidente della Repubblica n. 633/1972, come modificato dal presente decreto, ed i relativi rinvii normativi, sono riportati in nota all'art. 6.
+
+=== K452 | [8] Disposizioni relative a particolari settori
+Art. 8
+Disposizioni relative a particolari settori
+1. All' articolo 74 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633 , dopo l'undicesimo comma, è aggiunto il seguente: "Nelle operazioni indicate nel primo comma, lettere a), b) e
+c) non sono comprese le prestazioni di intermediazione con rappresentanza ad esse relative.".
+2. All' articolo 74, primo comma, lettera e), del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633 , dopo le parole:
+"... dall'esercente l'attività di trasporto;" sono aggiunte le seguenti: "e per la vendita al pubblico di documenti di sosta relativi ai parcheggi veicolari dall'esercente l'attività di gestione
+dell'autoparcheggio;".
+3. Nel primo comma dell'articolo 74 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633 , la lettera d) è sostituita dalla seguente: "d) per le prestazioni dei gestori di telefoni
+posti a disposizione del pubblico, nonchè per la vendita di qualsiasi mezzo tecnico per fruire dei servizi di telecomunicazione, fissa o mobile, e di telematica, dal titolare della concessione o
+autorizzazione ad esercitare i servizi, sulla base del corrispettivo dovuto dall'utente;".
+Nota all'art. 8:
+- Il testo dell' art. 74 del decreto del Presidente della Repubblica n. 633/1972 , come modificato dal presente decreto, ed i relativi rinvii normativi, sono riportati in nota all'art. 6.
+
+=== K453 | [9] Modifiche al regime IVA
+Art. 9
+Modifiche al regime IVA
+per le agenzie di viaggio e turismo
+1. L' articolo 74-ter del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633 , è sostituito dal seguente:
+"Art. 74-ter (Disposizioni per le agenzie di viaggio e turismo). - 1. Le operazioni effettuate dalle agenzie di viaggio e di turismo per la organizzazione di pacchetti turistici costituiti, ai sensi
+dell' articolo 2 del decreto legislativo 17 marzo 1995, n. 111 , da viaggi, vacanze, circuiti tutto compreso e connessi servizi, verso il pagamento di un corrispettivo globale sono considerate come
+una prestazione di servizi unica. Le disposizioni del presente articolo si applicano anche qualora le suddette prestazioni siano rese dalle agenzie di viaggio e turismo tramite mandatari; le stesse
+disposizioni non si applicano alle agenzie di viaggio e turismo che agiscono in nome e per conto dei clienti.
+2. Ai fini della determinazione dell'imposta sulle operazioni indi- cate nel comma 1, il corrispettivo dovuto all'agenzia di viaggi e turismo è diminuito dei costi sostenuti per le cessioni di beni e
+prestazioni di servizi effettuate da terzi a diretto vantaggio dei viaggiatori, al lordo della relativa imposta.
+3. Non è ammessa in detrazione l'imposta relativa ai costi di cui al comma 2.
+4. Se la differenza di cui al comma 2, per effetto di variazioni successivamente intervenute nel costo, risulta superiore a quella determinata all'atto della conclusione del contratto, la maggiore
+imposta è a carico dell'agenzia; se risulta inferiore i viaggiatori non hanno diritto al rimborso della minore imposta.
+5. Per le prestazioni rese dalle agenzie di viaggio e turismo che agiscono in nome e per conto proprio relative a pacchetti turistici organizzati da altri soggetti e per le prestazioni dei mandatari
+senza rappresentanza di cui al secondo periodo del comma 1, l'imposta si applica sulla differenza, al netto dell'imposta, tra il prezzo del pacchetto turistico ed il corrispettivo dovuto all'agenzia
+di viaggio e turismo, comprensivi dell'imposta.
+6. Se le prestazioni rese al cliente sono eseguite in tutto o in parte fuori della Comunità economica europea la parte della prestazione della agenzia di viaggio ad essa corrispondente non è soggetta
+ad imposta a norma dell'articolo 9.
+7. Per le operazioni di cui al comma 1 deve essere emessa fattura ai sensi dell'articolo 21, senza separata indicazione dell'imposta, considerando quale momento impositivo il pagamento integrale del
+corrispettivo o l'inizio del viaggio o del soggiorno se antecedente.
+Se le operazioni sono effettuate tramite intermediari, la fattura può essere emessa entro il mese successivo.
+8. Le agenzie organizzatrici per le prestazioni di intermediazione emettono una fattura riepilogativa mensile per le provvigioni corrisposte a ciascun intermediario, da annotare nei registri di cui
+agli articoli 23 e 25 entro il mese successivo, inviandone copia, ai sensi e per gli effetti previsti dal primo comma, secondo periodo, dell'articolo 21, al rappresentante, il quale le annota ai sensi
+dell'articolo 23 senza la contabilizzazione della relativa imposta.
+9. Con decreto del Ministro delle finanze, da adottare ai sensi dell' articolo 17, comma 3, della legge 23 agosto 1988, n. 400 , sono stabilite le modalità di attuazione del presente articolo.".
+Note all'art. 9:
+- Si riporta il testo dell' art. 2 del decreto legislativo n. 111/1995 , richiamato all' art. 74-ter del decreto del Presidente della Repubblica n. 633/1972 :
+"Art. 2 (Pacchetti turistici). - 1. I pacchetti turistici hanno ad oggetto i viaggi, le vacanze ed i circuiti "tutto compreso", risultanti dalla prefissata combinazione di almeno due degli elementi di
+seguito indicati, venduti od offerti in vendita ad un prezzo forfettario, e di durata superiore alle ventiquattro ore ovvero estendentisi per un periodo di tempo comprendente almeno una notte:
+a) trasporto;
+b) alloggio;
+c) servizi turistici non accessori al trasporto o all'alloggio di cui all'art. 7, lettere i) e m), che costituiscano parte significativa del "pacchetto turistico".
+2. La fatturazione separata degli elementi di uno stesso "pacchetto turistico" non sottrae l'organizzatore o il venditore agli obblighi del presente decreto".
+- Il testo dell' art. 9 del decreto del Presidente della Repubblica n. 633/1972 , richiamato all'art. 74-ter del decreto del Presidente della Repubblica cit., è riportato in nota all'art. 2.
+- Il testo degli artt. 21 e 25 del decreto del Presidente della Repubblica n. 633/1972 , richiamati all'art. 74-ter del decreto del Presidente della Repubblica cit., è riportato, rispettivamente, in
+nota all'art. 5 e in nota all'art. 4.
+- Si riporta il testo dell' art. 23 del decreto del Presidente della Repubblica n. 633/1972 , richiamato all'art. 74-ter del decreto del Presidente della Repubblica cit.:
+"Art. 23 (Registrazione delle fatture). - Il contribuente deve annotare entro quindici giorni le fatture emesse, nell'ordine della loro numerazione e con riferimento alla data della loro emissione, in
+apposito registro. Le fatture di cui al quarto comma, seconda parte, dell'art. 21, devono essere registrate entro il mese di emissione.
+Per ciascuna fattura devono essere indicati il numero progressivo e la data di emissione di essa, l'ammontare imponibile dell'operazione o delle operazioni e l'ammontare dell'imposta, distinti secondo
+aliquota applicata, e la ditta, denominazione o ragione sociale del cessionario del bene o del committente del servizio, ovvero, nelle ipotesi di cui al terzo comma dell'art. 17, del cedente o del
+prestatore.
+Se l'altro contraente non è un'impresa, società o ente devono essere indicati, in luogo della ditta, denominazione o ragione sociale, il nome e il cognome. Per le fatture relative alle operazioni non
+imponibili o esenti di cui al sesto comma dell'art. 21 devono essere indicati, in luogo dell'ammontare dell'imposta, il titolo di inapplicabilità di essa e la relativa norma.
+(Per le fatture di importo inferiore a lire cinquantamila può essere annotato, in luogo di ciascuna, un documento riepilogativo sul quale devono essere indicati i numeri delle fatture cui si
+riferisce, l'ammontare complessivo imponibile delle operazioni e l'ammontare dell'imposta, distinti secondo l'aliquota applicata) (Comma abrogato dall' art. 6 del decreto del Presidente della
+Repubblica n. 695 del 1996 ).
+Nell'ipotesi di cui al quinto comma dell'art. 6 le fatture emesse devono essere registrate anche dal soggetto destinatario in apposito registro, bollato e numerato ai sensi dell'art. 39, secondo
+modalità e termini stabiliti con apposito decreto ministeriale".
+- Il testo dell' art. 17, comma 3, legge n. 400/1988 , richiamato all' art. 74-ter del decreto del Presidente della Repubblica n. 633/1972 , è riportato in nota all'art. 5.
+
+=== K454 | [10] Termini di decadenza per l'accertamento
+Art. 10
+Termini di decadenza per l'accertamento
+delle dichiarazioni a rimborso
+1. Nell' articolo 57, primo comma, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633 , è aggiunto, in fine, il seguente periodo: "Nel caso di richiesta di rimborso dell'eccedenza
+d'imposta detraibile risultante dalla dichiarazione annuale, se tra la data di notifica della richiesta di documenti da parte dell'ufficio e la data della loro consegna intercorre un periodo superiore
+a quindici giorni, il termine di decadenza, relativo agli anni in cui si è formata l'eccedenza detraibile chiesta a rimborso, è differito di un periodo di tempo pari a quello compreso tra il
+sedicesimo giorno e la data di consegna".
+Nota all'art. 10:
+- Si riporta il testo dell' art. 57 del decreto del Presidente della Repubblica n. 633/1972 , come modificato dal presente decreto:
+"Art. 57 (Termine per gli accertamenti). - Gli avvisi relativi alle rettifiche e agli accertamenti previsti nell'art. 54 e nel secondo comma dell'art. 55 devono essere notificati, a pena di decadenza,
+entro il 31 dicembre del quarto anno successivo a quello in cui è stata presentata la dichiarazione. Nel caso di richiesta di rimborso dell'eccedenza d'imposta detraibile risultante dalla
+dichiarazione annuale, se tra la data di notifica della richiesta di documenti da parte dell'ufficio e la data della loro consegna intercorre un periodo superiore a quindici giorni, il termine di
+decadenza, relativo agli anni in cui si è formata l'eccedenza detraibile chiesta a rimborso, è differito di un periodo di tempo pari a quello compreso tra il sedicesimo giorno e la data di consegna.
+In caso di omessa presentazione della dichiarazione, l'avviso di accertamento dell'imposta a norma del primo comma dell'art. 55 può essere notificato fino al 31 dicembre del quinto anno successivo a
+quello in cui la dichiarazione avrebbe dovuto essere presentata.
+Fino alla scadenza del termine stabilito nei commi precedenti le rettifiche e gli accertamenti possono essere integrati o modificati, mediante la notificazione di nuovi avvisi, in base alla
+sopravvenuta conoscenza di nuovi elementi. Nell'avviso devono essere specificamente indicati, a pena di nullità, i nuovi elementi e gli atti o fatti attraverso i quali sono venuti a conoscenza
+dell'ufficio dell'imposta sul valore aggiunto".
+
+=== K455 | [11] Disposizioni transitorie
+Art. 11
+Disposizioni transitorie
+1. La disposizione di cui al secondo periodo del primo comma dell'articolo 19 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, come sostituito dall'articolo 2 del presente decreto,
+si applica agli acquisti ed alle importazioni la cui imposta diviene esigibile a decorrere dal 1 gennaio 1998.
+2. La rettifica della detrazione prevista nei commi 1 e 2 dell'articolo 19-bis2 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, introdotto con l'articolo 3 del presente decreto,
+va operata per i beni e servizi acquistati o utilizzati a decorrere dal 1 gennaio 1998; quella prevista per i beni immobili nel comma 8 del predetto articolo 19-bis2, va operata relativamente ai beni
+acquistati o ultimati a decorrere dal 1 gennaio 1998.
+3. In deroga al comma 2 dell'articolo 19 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, come sostituito dall'articolo 2 del presente decreto, è detraibile l'imposta relativa ai
+beni e servizi afferenti operazioni che, in virtù di specifiche norme, sono state dichiarate temporaneamente non soggette all'imposta anteriormente alla entrata in vigore del presente decreto.
+4. Con decreto del Ministro delle finanze, di concerto con il Ministro delle politiche agricole, da emanarsi ai sensi dell'articolo 34, comma 1, del decreto del Presidente della Repubblica 26 ottobre
+1972, n. 633, come sostituito dall'articolo 5 del presente decreto, sono rideterminate le percentuali di compensazione applicabili, a determinati prodotti agricoli, al fine di tenere conto
+dell'andamento delle grandezze macroeconomiche, assicurando maggiori entrate nette per lire 120 miliardi per l'anno 1998 e per lire 150 miliardi per l'anno 1999.
+5. Per gli
+(( anni dal 1998 al 2005 ))
+le disposizioni di cui all'articolo 34, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, come sostituito dall'articolo 5 del presente decreto, si applicano anche ai soggetti che
+nel corso dell'anno solare precedente hanno realizzato un volume d'affari superiore a quaranta milioni di lire. Per le cessioni di prodotti agricoli ed ittici di cui al comma 1 del medesimo decreto
+effettuate negli
+(( anni dal 1998 al 2005 ))
+dai detti soggetti l'imposta si applica con le aliquote proprie dei singoli prodotti, ferma restando la detrazione sulla base delle percentuali di compensazione. Per i passaggi dei suddetti prodotti
+agli enti, alle cooperative e agli altri organismi associativi che applicano il regime speciale, effettuati da parte di produttori agricoli, soci o associati che applicano lo stesso regime, l'imposta
+si applica con le aliquote corrispondenti alle percentuali di compensazione. (4)(5)
+5-bis.
+(( COMMA ABROGATO DALLA L. 30 DICEMBRE 2004, N. 311 ))
+.
+6. La misura della detrazione forfettizzata relativa alle operazioni imponibili ai fini dell'imposta sugli spettacoli, stabilita dal secondo periodo del quinto comma dell'articolo 74 del decreto del
+Presidente della Repubblica 26 ottobre 1972, n. 633, come sostituito dal presente decreto, si applica, per l'anno 1998, nella misura di due terzi.
+7. Per l'anno 1998 l'opzione precedentemente esercitata prevista dal comma 11 dell'articolo 34 e dal quinto comma dell'articolo 74, come modificati, rispettivamente, dall'articolo 5 e dall'articolo 7
+del presente decreto, nonchè dal terzo comma dell'articolo 36, può essere revocata dandone comunicazione all'ufficio dell'imposta sul valore aggiunto competente nella dichiarazione relativa all'anno
+precedente o, in caso di esonero, nel termine previsto per la presentazione della dichiarazione, ferma restando l'applicazione delle disposizioni di cui al comma 3 dell'articolo 19-bis2, introdotto
+dall'articolo 3 del presente decreto.
+8. Le disposizioni del presente decreto legislativo si applicano a decorrere dal 1 gennaio 1998.
+Dato a Roma, addì 2 settembre 1997
+SCALFARO
+Prodi, Presidente del Consiglio dei Ministri
+Visco, Ministro delle finanze
+Ciampi, Ministro del tesoro
+Visto, il Guardasigilli: Flick
+---------------
+AGGIORNAMENTO (4)
+La L. 23 dicembre 1999, n. 488 ha disposto (con l'art. 60, comma 1) che " I termini temporali indicati nell'articolo 11, comma 5, del decreto legislativo 2 settembre 1997, n. 313, sono riferiti alla
+data di stipulazione dei contratti ad esecuzione continuata o differita."
+-----------------
+AGGIORNAMENTO (5)
+Il D.L. 15 febbraio 2000, n. 21, convertito senza modificazioni dalla L. 14 aprile 2000, n. 15 ha disposto (con l'art. 1, comma 3) che le modifiche al presente articolo hanno effetto dal 1° gennaio
+2000.
+
+
+######## NORMA: Disposizioni per la raccolta del risparmio dei soggetti diversi dalle banche  (id BDI-cdd473d034)
+
+=== K456 | [Premessa] Firmato digitalmente da
+Il presente documento è conforme all'originale contenuto negli archivi della Banca d'Italia
+Firmato digitalmente da
+MARANGONI
+MARIO
+Sede legale Via Nazionale, 91 - Casella Postale 2484 - 00100 Roma - Capitale versato Euro 156.000,00
+Tel. 06/47921 - telex 630045 BANKIT - Partita IVA 00950501007 - www.bancaditalia.it
+PROVVEDIMENTO RECANTE DISPOSIZIONI PER LA RACCOLTA DEL
+RISPARMIO DEI SOGGETTI DIVERSI DALLE BANCHE
+LA BANCA D’ITALIA
+VISTO l’ art. 11 del decreto legislativo del 1° settembre 1993, n. 385 (Testo unico delle leggi in
+materia bancaria e creditizia – TUB), che disciplina la raccolta del risparmio da parte dei
+soggetti diversi dalle banche;
+VISTI gli artt. 130 e 131 del TUB, che assoggettano a sanzione penale l'attività di raccolta del
+risparmio tra il pubblico e l’attività bancaria svolte abusivamente;
+VISTA la delibera del CICR del 19 luglio 2005, attuativa dell'art. 11 del TUB;
+VISTA la delibera del CICR del 22 febbraio 2006, recante integrazioni a quella del 19 luglio
+2005;
+EMANA
+le accluse Disposizioni per la raccolta del risparmio dei soggetti diversi dalle banche.
+Le accluse Disposizioni entrano in vigore il 1° gennaio 2017. A far data dall’entrata in vigore
+delle accluse Disposizioni, è abrogato il Capitolo 2 del Titolo IX della Circolare n. 229 del 21
+aprile 1999.
+Le presenti Disposizioni saranno pubblicate nella Gazzetta Ufficiale della Repubblica Italiana ai
+sensi dell’art. 8, comma 2, del TUB.
+Roma, 8 novembre 2016
+Il Direttore Generale
+Salvatore Rossi
+Delibera 584/2016
+RACCOLTA DEL RISPARMIO DEI SOGGETTI
+DIVERSI DALLE BANCHE
+RACCOLTA DEL RISPARMIO DEI SOGGETTI DIVERSI DALLE BANCHE
+
+=== K457 | [Sezione I] DISPOSIZIONI DI CARATTERE GENERALE
+SEZIONE I
+DISPOSIZIONI DI CARATTERE GENERALE
+
+=== K458 | [Sezione I - par. 1] Premessa
+1. Premessa
+L'art. 11 del TUB – oggetto di una profonda revisione a seguito del d.lgs. n. 37/2004 –
+delinea la nozione di raccolta del risparmio, consistente nell’acquisizione di fondi con obbligo
+di rimborso, sia sotto forma di depositi sia sotto altra forma (comma 1). Lo svolgimento presso
+il pubblico di tale attività è vietato ai soggetti diversi dalle banche (comma 2).
+Ai predetti fini, la medesima disposizione: da un lato, esclude talune fattispecie dalla
+nozione di raccolta del risparmio tra il pubblico; dall’altro, elenca le deroghe al citato divieto nei
+confronti dei soggetti non bancari.
+Sotto il primo profilo, non costituisce raccolta del risparmio tra il pubblico la ricezione di
+fondi connessa all’emissione di moneta elettronica (comma 2-bis) o da inserire in conti di
+pagamento utilizzati esclusivamente per la prestazione di servizi di pagamento (comma 2-ter) e
+quella che, in conformità dei limiti e dei criteri fissati dal CICR, è effettuata presso specifiche
+categorie di soggetti individuate in ragione di rapporti societari e di lavoro (comma 3).
+Sotto il secondo profilo, le previsioni dell’art. 11 (comma 4) escludono l’applicazione
+del divieto a Stati, organismi internazionali ed enti territoriali, nonché a tutti i casi in cui la
+raccolta sia effettuata ai sensi di norme di legge. A tale ultimo riguardo, viene espressamente
+indicata la raccolta effettuata dalle società ai sensi del codice civile mediante obbligazioni,
+titoli di debito o altri strumenti finanziari. A tutela della riserva di attività delle banche,
+rimane comunque preclusa la raccolta di fondi a vista ed ogni forma di raccolta collegata
+all’emissione od alla gestione di mezzi di pagamento a spendibilità generalizzata (comma 5).
+Al CICR è attribuito il compito di individuare gli strumenti finanziari, comunque
+denominati, la cui emissione costituisce raccolta del risparmio e di determinare, se non
+disciplinati dalla legge, limiti all’emissione nonché durata e taglio degli strumenti di raccolta
+diversi dalle obbligazioni (commi 4-bis e 4-ter).
+Il Comitato, a fini di tutela della riserva dell’attività bancaria, stabilisce limiti e criteri,
+anche in deroga al codice civile, per la raccolta effettuata dai soggetti che esercitano nei
+confronti del pubblico attività di concessione di finanziamenti (comma 4-quater).
+La violazione delle prescrizioni dell’art. 11 del T U B e delle relative disposizioni di
+attuazione è sanzionata penalmente dalle norme sull’abusivismo bancario (articoli 130 e 131
+del TUB).
+La disciplina di attuazione dell’art. 11 del TUB è stata dettata con deliberazione del CICR
+del 19 luglio 2005, successivamente integrata con deliberazione del 22 febbraio 2006 al fine di
+tener conto delle modifiche apportate al codice civile, in materia di limiti alle emissioni
+obbligazionarie, dalla l. n. 262/05.
+L’intervento del Comitato – che sostituisce e compendia le precedenti deliberazioni
+adottate in materia – conferma, in linea con le predette indicazioni legislative, le riserve
+riconosciute in favore delle banche (attività bancaria e raccolta del risparmio tra il pubblico)
+tenendo conto delle innovazioni introdotte dalla riforma del diritto societario.
+In un contesto civilistico caratterizzato da un’estensione delle possibilità di accesso al
+risparmio da parte delle imprese e da un’ampia diversificazione delle tipologie degli strumenti
+finanziari utilizzabili per la raccolta, la presente disciplina persegue anche finalità antielusive
+delle regole a tutela delle riserve di attività delle banche, presidiate da sanzioni penali.
+
+=== K459 | [Sezione I - par. 2] Fonti normative
+2. Fonti normative
+La materia è regolata:
+— dai seguenti articoli del TUB:
+o art. 11, che disciplina la raccolta del risparmio da parte dei soggetti diversi dalle
+banche;
+o artt. 130 e 131, che assoggettano a sanzione penale l'attività di raccolta del risparmio tra il
+pubblico e l’attività bancaria svolte abusivamente;
+— dalla delibera CICR del 19 luglio 2005, attuativa dell'art. 11 del TUB;
+— dalla delibera CICR del 22 febbraio 2006, recante integrazioni a quella del 19 luglio
+2005.
+Vengono inoltre in rilevo:
+— gli articoli 2412, 2483 e 2526 del codice civile, concernenti l’emissione di strumenti
+finanziari da parte delle società;
+— la legge 13 gennaio 1994, n. 43, e successive modificazioni, che disciplina le cambiali
+finanziarie;
+— il decreto legislativo 27 gennaio 2010, n. 11, e successive modificazioni, di attuazione della
+direttiva 2007/64/CE, relativa ai servizi di pagamento nel mercato interno;
+— il decreto legislativo 16 aprile 2012, n. 45, di attuazione della direttiva 2009/110/CE,
+concernente l'avvio, l'esercizio e la vigilanza prudenziale dell’attività degli istituti di
+moneta elettronica;
+— l’articolo 32 del decreto-legge 22 giugno 2012, n. 83, convertito in legge, con
+modificazioni, dalla legge 7 agosto 2012, n. 134, e successive modificazioni, che disciplina
+gli strumenti di finanziamento delle imprese diverse dalle banche e dalle micro-imprese,
+anche modificando la disciplina delle cambiali finanziarie e l’articolo 2412 del codice
+civile.
+
+=== K461 | [Sezione I - par. 4] Destinatari della disciplina
+4. Destinatari della disciplina
+Le presenti disposizioni si applicano ai soggetti residenti in Italia e, in quanto compatibili,
+ai soggetti non residenti per l’attività di raccolta effettuata in Italia.
+
+=== K462 | [Sezione II] RACCOLTA DEL RISPARMIO
+SEZIONE II
+RACCOLTA DEL RISPARMIO
+Costituisce raccolta del risparmio l'attività di acquisizione di fondi con obbligo di
+rimborso, sia sotto forma di depositi sia sotto altra forma.
+L’obbligo di rimborso sussiste anche:
+— quando i tempi e l’entità del rimborso sono condizionati da clausole di postergazione o
+dipendono da parametri oggettivi, compresi quelli rapportati all’andamento economico
+dell’impresa o dell’affare in relazione ai quali i fondi sono stati acquisiti;
+— nei casi in cui esso, ancorché escluso o non esplicitamente previsto, sia desumibile dalle
+caratteristiche dei flussi finanziari connessi con l’operazione. In particolare, vengono in
+rilievo l’entità, la periodicità e l’esigibilità dei flussi stessi che possono, di fatto, dare luogo
+a forme di rimborso.
+Non costituisce obbligo di rimborso la partecipazione a una quota degli utili netti derivanti
+dall’attività dell’impresa o la ripartizione del patrimonio netto risultante dalla liquidazione dei
+beni dell’impresa o relativi all’affare in relazione al quale i fondi sono stati acquisiti.
+In linea con le finalità generali della presente disciplina, la distinzione tra le fattispecie
+implicanti attività di acquisizione di fondi con obbligo di rimborso e quelle in cui detto
+obbligo è escluso deve essere individuata avendo riguardo alla complessiva struttura
+finanziaria dell’operazione concretamente posta in essere, indipendentemente dalla
+configurazione giuridica assunta dalla medesima.
+
+=== K463 | [Sezione III] RACCOLTA DEL RISPARMIO TRA IL PUBBLICO
+SEZIONE III
+RACCOLTA DEL RISPARMIO TRA IL PUBBLICO
+
+=== K464 | [Sezione III - par. 1] Premessa
+1. Premessa
+La raccolta del risparmio tra il pubblico è vietata ai soggetti diversi dalle banche, fatte salve
+le deroghe previste dall’art. 11, comma 4, del TUB e la raccolta effettuata mediante emissione
+di strumenti finanziari secondo le modalità e i limiti di seguito previsti.
+Sono comunque precluse ai soggetti non bancari la raccolta di fondi a vista e ogni forma
+di raccolta collegata all’emissione o alla gestione di mezzi di pagamento a spendibilità
+generalizzata.
+A titolo di chiarimento, si precisa che nelle comunicazioni al pubblico e ai potenziali prestatori la
+raccolta del risparmio non può essere qualificata come “rimborsabile a vista” o come collegata
+all’emissione o alla gestione di mezzi di pagamento o con altre espressioni suscettibili di ingenerare
+confusione circa le caratteristiche della raccolta consentita dall’art. 11 del TUB.
+
+=== K465 | [Sezione III - par. 2] Raccolta del risparmio tra il pubblico
+2. Raccolta del risparmio tra il pubblico
+Ai fini della presente disciplina non costituisce raccolta di risparmio tra il pubblico
+l’acquisizione di fondi:
+a. connessa con l’emissione di moneta elettronica o da inserire in conti di pagamento
+utilizzati esclusivamente per la prestazione di servizi di pagamento;
+b. connessa con l'emissione e l’acquisizione di strumenti di pagamento (ad es. carte
+prepagate) che possono essere utilizzati per acquistare beni o servizi solo nella sede
+utilizzata dall’emittente o, in base ad un accordo commerciale con l’emittente,
+all’interno di una rete limitata di prestatori di servizi o per una gamma limitata di beni o
+servizi, ai sensi dell’art. 2, comma 2, lett. m), del decreto legislativo 27 gennaio 2010,
+n.11 ( 1);
+c. presso soci, dipendenti o società del gruppo secondo quanto previsto dalle presenti
+Disposizioni (Sez. V, VI e VII);
+d. effettuata sulla base di trattative personalizzate con singoli soggetti, per i quali tale
+operazione si inserisce, di norma, in una gamma più ampia di rapporti di natura
+economica con il soggetto finanziato. Nel contratto deve comunque risultare con
+chiarezza la natura di "finanziamento" del rapporto stesso. In ogni caso, il reperimento
+di risorse in tal modo effettuato non deve presentare connotazioni tali (ad esempio,
+numerosità e frequenza delle operazioni) da configurare, di fatto, una forma di raccolta
+tra il pubblico;
+e. presso soggetti sottoposti a vigilanza prudenziale, operanti nei settori bancario,
+finanziario, mobiliare, assicurativo e previdenziale.
+1) Analogamente non costituisce raccolta l’acquisizione di fondi il cui valore monetario è memorizzato sugli
+strumenti previsti dall’art. 2, comma 2, lett. m) del decreto legislativo 27 gennaio 2010, n. 11, secondo quanto previsto
+dall’ art. 1, comma 2, lett. h-ter) TUB.
+
+=== K466 | [Sezione IV] RACCOLTA MEDIANTE EMISSIONE DI STRUMENTI FINANZIARI
+SEZIONE IV
+RACCOLTA MEDIANTE EMISSIONE DI STRUMENTI FINANZIARI
+
+=== K467 | [Sezione IV - par. 3] Limiti all’emissione degli strumenti finanziari di raccolta
+3. Limiti all’emissione degli strumenti finanziari di raccolta
+L’importo complessivo delle emissioni di strumenti finanziari di raccolta, per le società per
+azioni, in accomandita per azioni e cooperative è fissato – in linea con quanto previsto
+dall’art. 2412, primo comma, del codice civile – nel doppio del patrimonio ( 1). Al computo
+del limite concorrono altresì gli importi relativi alle garanzie comunque prestate dalla società
+in relazione a strumenti finanziari di raccolta emessi da altre società, anche estere, in linea con
+quanto previsto dall’art. 2412, quarto comma.
+Per il complesso degli strumenti finanziari di raccolta, i citati limiti possono essere
+superati in presenza delle fattispecie derogatorie previste dal medesimo art. 2412 del codice
+civile, segnatamente:
+— la sottoscrizione degli strumenti finanziari da parte di investitori professionali soggetti a
+vigilanza prudenziale;
+— la raccolta effettuata da società mediante emissione di obbligazioni e strumenti
+finanziari (ivi incluse le cambiali finanziarie) destinati alla quotazione in mercati
+regolamentati o in sistemi multilaterali di negoziazione;
+— l’emissione di obbligazioni che danno il diritto di acquisire ovvero di sottoscrivere azioni;
+— l’emissione di strumenti finanziari di raccolta garantiti da ipoteca di primo grado su
+immobili di proprietà della società, sino a due terzi del valore degli immobili
+medesimi.
+La disciplina sancisce l’applicazione dei limiti previsti dal codice civile alle emissioni di
+ogni tipo di strumento finanziario di raccolta, con l’obiettivo di evitare elusioni derivanti
+da una diversa qualificazione giuridica degli strumenti utilizzati.
+Secondo la medesima impostazione, per le società a responsabilità limitata e le cooperative
+alle quali si applicano le norme sulle società a responsabilità limitata, le emissioni di strumenti
+finanziari di raccolta sono consentite in osservanza di quanto previsto rispettivamente dagli
+articoli 2483 (sottoscrizione da parte di investitori professionali soggetti a vigilanza
+prudenziale) e 2526 (sottoscrizione da parte di investitori qualificati degli strumenti privi
+di diritti amministrativi) del codice civile.
+Nell'All. A delle presenti Disposizioni si riporta il quadro riepilogativo delle possibilità di
+raccolta mediante strumenti finanziari.
+
+=== K468 | [Sezione IV - par. 4] Caratteristiche degli strumenti finanziari di raccolta
+4. Caratteristiche degli strumenti finanziari di raccolta
+Gli strumenti di raccolta diversi dalle obbligazioni hanno un taglio minimo unitario non
+inferiore a euro 50.000 ( 2). Tale limite non si applica agli strumenti finanziari destinati alla
+quotazione in mercati regolamentati o in sistemi multilaterali di negoziazione.
+1) Ai fini del calcolo di tale limite con riferimento alle società cooperative, nel patrimonio rientrano le riserve
+disponibili, anche quando, in base a norme di legge o di statuto, siano indivisibili tra i soci.
+2) Resta fermo quanto previsto, per i titoli al portatore, dall’art. 49 del d.lgs. 21 novembre 2007, n. 231.
+Non è fissata una durata minima per gli strumenti finanziari di raccolta, ad eccezione delle
+cambiali finanziarie (cfr. par. 3) e fermo restando il divieto per i soggetti non bancari di
+effettuare la raccolta di fondi a vista. La denominazione degli strumenti finanziari non deve
+contenere indicazioni tali da ingenerare confusione tra gli stessi e i titoli di raccolta bancari
+(certificati di deposito, buoni fruttiferi).
+Sugli strumenti finanziari di raccolta e sui relativi registri deve essere indicata l’identità
+dell’eventuale garante e l’ammontare della garanzia. Tale indicazione assume rilievo, in
+particolare, ai fini di quanto previsto in materia di garanzie dagli articoli 2412 e 2483 del codice
+civile.
+
+=== K469 | [Sezione IV - par. 5] Cambiali finanziarie
+5. Cambiali finanziarie
+Tra gli strumenti finanziari di raccolta rientrano le cambiali finanziarie di cui alla legge 13
+gennaio 1994, n. 43, e successive modificazioni ( 3).
+Le cambiali finanziarie presentano le seguenti caratteristiche:
+— sono titoli di credito all'ordine emessi in serie;
+— hanno durata compresa fra 1 e 36 mesi;
+— anno un valore nominale unitario non inferiore a euro 50.000.
+Sulla cambiale finanziaria, se non emessa in forma dematerializzata ( 4), oltre agli elementi
+di cui all'art. 100 del R.D. n. 1669/33 (5), devono essere indicati:
+— la denominazione, l'oggetto e la sede dell'impresa emittente, con l'indicazione dell'ufficio
+del registro delle imprese presso il quale essa è iscritta;
+— il capitale sociale dell'impresa versato ed esistente al momento dell'emissione ( 6);
+— l'ammontare complessivo dell'emissione di cui la cambiale fa parte;
+— la denominazione di “cambiale finanziaria” e i proventi in qualunque forma pattuiti;
+— in caso di garanzia, l'identità del garante e l'ammontare della garanzia.
+3) In base alla legge n. 43/1994, le cambiali finanziarie possono essere emesse da società di capitali e da società
+cooperative e mutue assicuratrici diverse dalle micro-imprese, come definite dalla raccomandazione 2003/361/CE della
+Commissione, del 6 maggio 2003. Le società non aventi titoli rappresentativi del capitale negoziati in mercati
+regolamentati o non regolamentati possono emettere cambiali finanziarie subordinatamente al rispetto dei requisiti
+previsti dall’art. 1 della legge n. 43/1994. L’emissione di cambiali finanziarie non è consentita alle banche.
+4) L’emissione di cambiali finanziarie in forma dematerializzata è disciplinata dall’art. 1-bis della legge n. 43/1994,
+aggiunto dal decreto-legge 22 giugno 2012, n. 83, convertito con legge 7 agosto 2012, n. 134.
+5) La promessa incondizionata di pagare una somma determinata; l'indicazione della scadenza; l'indicazione del
+luogo di pagamento; il nome di colui al quale o all'ordine del quale deve farsi il pagamento; l'indicazione della data e del
+luogo di emissione; la sottoscrizione dell’emittente; l’indicazione del luogo e della data di nascita ovvero del codice
+fiscale dell’emittente.
+6) Le società cooperative possono indicare il capitale sociale versato come risultante dall'ultimo bilancio approvato.
+
+=== K470 | [Sezione V] RACCOLTA DEL RISPARMIO PRESSO SOCI
+SEZIONE V
+RACCOLTA DEL RISPARMIO PRESSO SOCI
+
+=== K471 | [Sezione V - par. 1] Norme generali
+1. Norme generali
+Le società possono raccogliere risparmio presso soci, con modalità diverse
+dall’emissione di strumenti finanziari, secondo quanto previsto dalla presente Sezione, purché
+tale facoltà sia prevista nello statuto. E’ comunque preclusa la raccolta di fondi a vista e ogni
+forma di raccolta collegata all’emissione o alla gestione di mezzi di pagamento a spendibilità
+generalizzata.
+
+=== K472 | [Sezione V - par. 2] Società diverse dalle cooperative (1)
+2. Società diverse dalle cooperative (1)
+Le società diverse dalle cooperative possono effettuare raccolta di risparmio, senza alcun
+limite, esclusivamente presso i soci che detengano una partecipazione di almeno il 2 per cento
+del capitale sociale risultante dall'ultimo bilancio approvato e siano iscritti nel libro dei soci da
+almeno tre mesi.
+Nelle società di persone (soc. semplice, soc. in nome collettivo e soc. in accomandita
+semplice, con riferimento ai soli soci accomandatari) tali condizioni non sono richieste.
+Nell'All. B delle presenti Disposizioni si riporta un riepilogo delle possibilità di
+raccogliere risparmio presso soci per le società diverse dalle cooperative.
+
+=== K473 | [Sezione V - par. 3] Società cooperative ( 2)
+3. Società cooperative ( 2)
+Le società cooperative possono effettuare raccolta di risparmio presso i propri soci,
+purché l'ammontare complessivo dei prestiti sociali non ecceda il limite del triplo del
+patrimonio (3).
+Tale limite viene elevato fino al quintuplo (4) del patrimonio qualora:
+a. il complesso dei prestiti sociali sia assistito, in misura almeno pari al 30 per cento,
+da garanzia personale o garanzia reale finanziaria rilasciata da soggetti vigilati (5);
+oppure
+b. la società cooperativa aderisca a uno schema di garanzia dei prestiti sociali con
+le caratteristiche di cui al par. 3.1 della presente Sezione.
+1) La raccolta di risparmio mediante strumenti finanziari, anche se effettuata presso soci, è sottoposta alla disciplina
+di cui alla Sez. IV delle presenti Disposizioni.
+2) La raccolta di risparmio mediante strumenti finanziari, anche se effettuata presso soci, è sottoposta alla disciplina
+di cui alla Sez. IV delle presenti Disposizioni.
+3) Nel patrimonio rientrano le riserve disponibili, anche quando, in base a norme di legge o di statuto, siano
+indivisibili tra i soci.
+4) Resta fermo quanto previsto dall’articolo 2545-quinquies del codice civile in materia di rapporto tra
+indebitamento complessivo e patrimonio netto delle cooperative.
+5) Sono soggetti vigilati, a tali fini, le banche autorizzate in Italia e le banche comunitarie, gli intermediari
+finanziari iscritti nell’albo di cui all’art. 106 del TUB e le imprese di assicurazione.
+Se la società cooperativa ha l’obbligo di redigere il bilancio consolidato ai sensi della
+normativa applicabile, il valore del patrimonio ai predetti fini è quello risultante dal bilancio
+consolidato. Se la società è esonerata dall’obbligo di redigere il bilancio consolidato, si
+considera il valore del patrimonio individuale rettificato degli effetti derivanti da operazioni con
+società partecipate che sarebbero state elise se fosse stato redatto il bilancio consolidato.
+I limiti quantitativi sopra indicati non si applicano alle società cooperative con un numero
+di soci pari o inferiore a 50.
+Le modalità di raccolta presso i soci e l'eventuale adesione ad uno schema di garanzia
+devono essere indicate in un apposito regolamento predisposto dall’organo amministrativo e
+approvato dall’assemblea dei soci, che contenga tutte le regole di svolgimento dell’attività di
+raccolta e l’espressa limitazione della raccolta ai soli soci nonché l’esclusione dell’esercizio di
+qualsiasi attività riservata. Nel regolamento e nelle informazioni ai soci, le cooperative indicano
+chiaramente i limiti, le modalità e i tempi del rimborso in caso di attivazione della garanzia, nel
+rispetto delle caratteristiche stabilite nel par. 4.
+Inoltre, le società cooperative con più di 50 soci includono nella nota integrativa del
+bilancio d’esercizio e nelle relazioni semestrali almeno le seguenti informazioni:
+— l’ammontare della raccolta presso soci in essere alla data di riferimento, anche in rapporto
+al patrimonio della società;
+— qualora la società raccolga presso soci per ammontare superiore a tre volte il patrimonio,
+l’indicazione del garante (soggetto vigilato o schema di garanzia) e del tipo di garanzia;
+— il valore di mercato aggiornato delle garanzie reali finanziarie;
+— ove non sia redatto il bilancio consolidato, un prospetto illustrativo del valore del
+patrimonio rettificato degli effetti di operazioni con società partecipate;
+— un indice di struttura finanziaria, dato dal rapporto fra patrimonio più debiti a medio e
+lungo termine e attivo immobilizzato, ossia: (Pat + Dm/l)/AI. Per favorire la comprensione
+dell’informazione, l’indice dovrà essere presentato nei documenti contabili con la seguente
+dicitura: “Un indice di struttura finanziaria < 1 evidenzia situazioni di non perfetto
+equilibrio finanziario dovuto alla mancanza di correlazione temporale tra le fonti di
+finanziamento e gli impieghi della società”.
+La raccolta presso soci con modalità diverse dall’emissione di strumenti finanziari non
+è consentita alle società cooperative che svolgono l’attività di concessione di finanziamenti tra
+il pubblico sotto qualsiasi forma (cfr. Sez. VIII) ( 6).
+Nell'All. B delle presenti Disposizioni si riporta un riepilogo delle possibilità di
+raccogliere risparmio presso soci per le società cooperative.
+
+=== K474 | [Sezione V - par. 3.1] Schemi di garanzia dei prestiti sociali
+3.1 Schemi di garanzia dei prestiti sociali
+Gli schemi di garanzia dei prestiti sociali devono essere promossi dalle associazioni di
+categoria ovvero direttamente dalle cooperative interessate, eventualmente nell'ambito di
+iniziative di tipo consortile.
+6) Ai sensi dell’art. 112, comma 7, TUB, come modificato dal D.Lgs. n. 169/2012, le c.d. casse peota (già
+disciplinate dall’art. 155, comma 6, TUB) e gli enti e le società cooperative costituiti tra i dipendenti di una medesima
+amministrazione pubblica entro il 1° gennaio 1993, già iscritti nell'elenco generale ex art. 106 TUB, possono continuare
+a operare nel rispetto delle condizioni e dei limiti stabiliti dalle disposizioni di settore senza obbligo di iscrizione in albi o
+elenchi tenuti dalla Banca d’Italia.
+In ogni caso, gli schemi sopra indicati prevedono il rimborso dei prestiti effettuati dai soci
+in una misura almeno pari al 30 per cento.
+Gli schemi di garanzia devono disporre di sistemi idonei a determinare le proprie passività
+potenziali e di mezzi finanziari adeguati a far fronte a tali passività.
+I mezzi finanziari degli schemi possono includere, oltre che contributi in denaro versati dai
+loro membri, anche impegni di pagamento delle cooperative aderenti. Questi ultimi possono
+rappresentare una quota complessivamente non superiore al 50 per cento dell’importo totale dei
+mezzi finanziari che devono essere tenuti a disposizione per far fronte alle passività potenziali.
+In fase di costituzione degli schemi di garanzia, l’ammontare complessivo dei mezzi
+finanziari costituiti da contributi in denaro può essere raggiunto in un arco temporale massimo
+di dieci anni, purché la parte di tali mezzi non rappresentata da somme di denaro versate sia
+assistita da garanzie idonee rilasciate da soggetti vigilati.
+Le contribuzioni allo schema sono determinate sulla base dei volumi di garanzie rilasciate
+e della rischiosità degli aderenti. A tal fine si tiene conto dell’ammontare della raccolta tra soci
+effettuata da ciascuna cooperativa e di indicatori di rischiosità riferiti, fra l’altro, alla situazione
+patrimoniale e alla liquidità degli aderenti.
+
+=== K475 | [Sezione V - par. 4] Caratteristiche della garanzia
+4. Caratteristiche della garanzia
+La garanzia dei prestiti sociali, di cui ai parr. 3 e 3.1, è prestata sotto forma di garanzia
+personale o di garanzia reale finanziaria.
+Se prestata in forma di garanzia personale, il contratto di garanzia:
+— ha per oggetto il pagamento diretto dell’obbligazione garantita, per capitale e interessi, a
+favore dei soci prestatori;
+— indica chiaramente che la garanzia copre complessivamente un ammontare almeno pari al
+30 per cento del complesso dei prestiti sociali e, in caso di attivazione, ciascun socio ha il
+diritto di ricevere dal garante il pagamento di una corrispondente quota parte del prestito
+sociale;
+— non contiene clausole che consentono al garante o alla cooperativa di limitare o annullare
+unilateralmente la garanzia o di recedere dal contratto, fino a quando l’ammontare della
+raccolta rimanga superiore a tre volte il patrimonio. La scadenza del contratto di garanzia
+non può essere inferiore alla durata dei prestiti sociali in essere al momento della
+conclusione del contratto. In ogni caso di modifica, annullamento, recesso o scadenza della
+garanzia, deve essere esplicitamente fatta salva l’efficacia della garanzia relativamente agli
+obblighi sorti anteriormente;
+— opera in caso di inadempimento o insolvenza della cooperativa e prevede il pagamento a
+richiesta del creditore o di un rappresentante comune dei creditori; non devono essere
+presenti clausole che abbiano l’effetto di subordinare il pagamento alla condizione che il
+creditore si rivalga in primo luogo sul debitore principale (es. beneficio di preventiva
+escussione).
+Se prestata in forma di garanzia reale finanziaria, le attività costituite in garanzia:
+— sono attività connotate da un adeguato grado di liquidità e con valore di mercato
+sufficientemente stabile nel tempo ( 7);
+— non sono emesse dalla società debitrice e non sono correlate al suo merito creditizio;
+— sono custodite con forme contrattuali e modalità che ne assicurano l’individuazione e la
+separatezza rispetto al patrimonio del debitore, del garante e del terzo depositario e rispetto
+ad altre attività detenute in custodia;
+— sono valutate al valore di mercato con periodicità almeno semestrale e immediatamente
+integrate dal garante qualora il loro valore divenga inferiore al 30 per cento del complesso
+dei prestiti sociali.
+Le garanzie di cui al presente paragrafo non possono essere assistite a loro volta da
+controgaranzia o da collateral in qualsiasi forma prestati, direttamente o indirettamente, dalla
+cooperativa con cui intercorre il contratto di garanzia, da una cooperativa aderente allo schema
+di garanzia, o da soggetti collegati a questi ( 8).
+(7) Le banche e gli intermediari finanziari vigilati che rilasciano garanzie della specie fanno riferimento alle
+categorie di attività individuate dalla relativa disciplina prudenziale come attività idonee a costituire una valida tecnica di
+attenuazione del rischio di credito (cfr. art. 197 del Regolamento (UE) n. 575/2013).
+(8) Per soggetti collegati si intendono i soggetti (persone fisiche e persone giuridiche) uniti alla cooperativa da una
+delle relazioni individuate ai sensi dell’art. 53, commi 4 e seguenti, del TUB.
+
+=== K476 | [Sezione VI] RACCOLTA DEL RISPARMIO PRESSO DIPENDENTI
+SEZIONE VI
+RACCOLTA DEL RISPARMIO PRESSO DIPENDENTI
+Le società possono raccogliere risparmio presso i propri dipendenti, con modalità
+diverse dall’emissione di strumenti finanziari (1), purché:
+— tale facoltà sia prevista nello statuto della società;
+— l'ammontare della raccolta sia contenuto entro il limite complessivo del patrimonio. Per le
+società cooperative l'ammontare della raccolta presso dipendenti, unitamente a quello della
+raccolta presso soci, deve essere ricompreso nei limiti previsti dalla Sez. V, par. 3, del
+presente Capitolo con riferimento alle cooperative aventi più di 50 soci.
+La raccolta presso dipendenti non può comunque avvenire con strumenti "a vista" o
+collegati all'emissione o alla gestione di mezzi di pagamento a spendibilità generalizzata.
+1) La raccolta di risparmio mediante strumenti finanziari, anche se effettuata presso dipendenti, è sottoposta
+alla disciplina di cui alla Sez. IV delle presenti Disposizioni.
+
+=== K477 | [Sezione VII] RACCOLTA NELL'AMBITO DI GRUPPI ( 1)
+SEZIONE VII
+RACCOLTA NELL'AMBITO DI GRUPPI ( 1)
+Le società possono raccogliere risparmio, senza alcun limite, presso società controllanti,
+controllate o collegate ai sensi dell'art. 2359 del codice civile e presso controllate da una stessa
+controllante.
+Nel caso in cui più soggetti di natura cooperativa detengano una partecipazione al
+capitale di una società che svolge attività di concessione di finanziamenti, la raccolta di
+risparmio effettuata da tale società presso le cooperative e/o le società da queste ultime
+controllate non è sottoposta ad alcun vincolo purché i finanziamenti della partecipata siano
+rivolti, in via esclusiva, alle cooperative partecipanti e/o alle loro controllate e la complessiva
+operatività della società medesima sia rivolta, in via prevalente, ai rapporti con le cooperative ( 2).
+Ai fini della presente disciplina sono equiparati ai soggetti di natura cooperativa le
+società, le associazioni o altre istituzioni non aventi finalità lucrative che perseguono
+statutariamente e in via prevalente scopi mutualistici o solidaristici.
+1) La presente Sezione disciplina la raccolta del risparmio effettuata, nell’ambito di gruppi, con modalità diverse
+dall’emissione di strumenti finanziari; la raccolta effettuata con quest’ultima modalità, anche qualora avvenga
+nell’ambito di gruppi, è sottoposta alla disciplina di cui alla Sezione IV delle presenti Disposizioni.
+2) Tali limitazioni dell'oggetto sociale devono risultare dallo statuto della società partecipata.
+
+=== K478 | [Sezione VIII] RACCOLTA DELLE SOCIETÀ FINANZIARIE
+SEZIONE VIII
+RACCOLTA DELLE SOCIETÀ FINANZIARIE
+Le società che svolgono l’attività di concessione di finanziamenti tra il pubblico sotto
+qualsiasi forma possono emettere strumenti finanziari di raccolta entro il limite complessivo
+del patrimonio.
+Per le società che svolgono attività di concessione di finanziamenti tra il pubblico
+iscritte nell’albo di cui all’art. 106 del TUB, l’emissione di strumenti finanziari di raccolta è
+consentita per somma complessivamente non eccedente il doppio del patrimonio. Tale limite
+è elevato fino al quintuplo ove gli strumenti finanziari di raccolta siano destinati alla
+quotazione in mercati regolamentati o in sistemi multilaterali di negoziazione.
+Al computo dei predetti limiti concorrono gli importi relativi a garanzie comunque
+prestate dalla società per obbligazioni e altri strumenti finanziari di raccolta emessi da altre
+società, anche estere.
+Per le società di cui alla presente sezione, costituite in forma di società a responsabilità
+limitata o di società cooperativa cui si applicano le norme sulla società a responsabilità
+limitata, la raccolta viene effettuata in osservanza di quanto previsto, rispettivamente, dagli
+articoli 2483 e 2526 del codice civile.
+Alle società di cui alla presente sezione, costituite in forma cooperativa, non è consentita
+la raccolta del risparmio presso soci con modalità diverse dall’emissione di strumenti
+finanziari.
+Nell'All. A delle presenti Disposizioni si riporta il quadro riepilogativo delle possibilità di
+raccolta mediante strumenti finanziari.
+
+=== K479 | [Sezione IX] SOCIAL LENDING
+SEZIONE IX
+SOCIAL LENDING
+Il social lending (o lending based crowdfunding) è uno strumento attraverso il quale una
+pluralità di soggetti può richiedere a una pluralità di potenziali finanziatori, tramite piattaforme
+on-line, fondi rimborsabili per uso personale o per finanziare un progetto.
+L’operatività dei gestori dei portali on-line che svolgono attività di social lending (di
+seguito, “gestori”) e di coloro che prestano o raccolgono fondi tramite i suddetti portali (di
+seguito, rispettivamente, “finanziatori” e “prenditori”) è consentita nel rispetto delle norme che
+regolano le attività riservate dalla legge a particolari categorie di soggetti (ad esempio, attività
+bancaria, raccolta del risparmio presso il pubblico, concessione di credito nei confronti del
+pubblico, mediazione creditizia, prestazione dei servizi di pagamento).
+Con specifico riferimento alla raccolta del risparmio tra il pubblico, si rammenta che tale
+attività è vietata, in linea di principio e salve le eccezioni di seguito richiamate, sia ai gestori sia
+ai prenditori. Peraltro, valgono anche per detti soggetti le deroghe al divieto di raccolta di
+risparmio tra il pubblico previste dall’art. 11 del TUB, nel rispetto delle modalità e dei limiti
+previsti dalla presenti disposizioni.
+In particolare, per quanto riguarda i gestori, non costituisce raccolta di risparmio tra il
+pubblico:
+— la ricezione di fondi da inserire in conti di pagamento utilizzati esclusivamente per la
+prestazione dei servizi di pagamento dai gestori medesimi, se autorizzati a operare come
+istituti di pagamento, istituti di moneta elettronica o intermediari finanziari di cui all’art.
+106 del TUB autorizzati a prestare servizi di pagamento ai sensi dell’art. 114-novies,
+comma 4, del TUB;
+— la ricezione di fondi connessa all’emissione di moneta elettronica effettuata dai gestori a tal
+fine autorizzati.
+Per quanto riguarda, invece, i prenditori, non costituisce raccolta di risparmio tra il
+pubblico:
+— l’acquisizione di fondi effettuata sulla base di trattative personalizzate con i singoli
+finanziatori. Al riguardo, avute presenti le modalità operative tipiche delle piattaforme di
+social lending, le trattative possono essere considerate personalizzate allorché i prenditori e
+i finanziatori sono in grado di incidere con la propria volontà sulla determinazione delle
+clausole del contratto tra loro stipulato e il gestore del portale si limita a svolgere un’attività
+di supporto allo svolgimento delle trattative precedenti alla formazione del contratto ( 1). Per
+non incorrere nell’esercizio abusivo della raccolta del risparmio, i prenditori si avvalgono
+esclusivamente di piattaforme che assicurano il carattere personalizzato delle trattative e
+sono in grado di dimostrare il rispetto di tale condizione anche attraverso un’adeguata
+informativa pubblica.
+— l’acquisizione di fondi presso soggetti sottoposti a vigilanza prudenziale, operanti nei
+settori bancario, finanziario, mobiliare, assicurativo e previdenziale.
+1) Tale condizione si considera rispettata, ad esempio, allorché il gestore predisponga un regolamento contrattuale
+standard che costituisce solo una base di partenza delle trattative, che devono essere in ogni caso svolte autonomamente
+dai contraenti, eventualmente avvalendosi di strumenti informatici forniti dal gestore.
+La definizione di un limite massimo, di contenuto importo, all’acquisizione di fondi
+tramite portale on line di social lending da parte dei prenditori è coerente con la ratio sottesa
+alle presenti Disposizioni, volta a impedire ai soggetti non bancari di raccogliere fondi per
+ammontare rilevante presso un numero indeterminato di risparmiatori.
+Sono comunque precluse ai gestori e ai prenditori la raccolta di fondi a vista e ogni altra
+forma di raccolta collegata all’emissione o alla gestione di mezzi di pagamento a spendibilità
+generalizzata.
+Restano ferme le possibilità di raccolta senza limiti da parte di banche che esercitano
+attività di social lending attraverso portali on-line.
+
+
+######## NORMA: Trasparenza delle operazioni e dei servizi bancari e finanziari; correttezza delle relazioni tra intermediari e clienti  (id BDI-e1d607dd5f)
+
+=== K481 | [Premessa] Firmato digitalmente da
+Il presente documento è conforme all'originale contenuto negli archivi della Banca d'Italia
+Firmato digitalmente da
+Firmato digitalmente
+FINALDI da FINALDI RUSSO
+RUSSO PAOLO
+Data: 2025.02.12
+PAOLO 17:05:33 +01'00'
+Sede legale Via Nazionale, 91 - Casella Postale 2484 - 00100 Roma - Capitale versato Euro 156.000,00
+Tel. 06/47921 - telex 630045 BANKIT - Partita IVA 00950501007 - www.bancaditalia.it
+TRASPARENZA DELLE OPERAZIONI E DEI SERVIZI
+BANCARI E FINANZIARI
+CORRETTEZZA DELLE RELAZIONI TRA INTERMEDIARI E CLIENTI
+
+=== K482 | [Sezione I] DISPOSIZIONI DI CARATTERE GENERALE
+SEZIONE I
+DISPOSIZIONI DI CARATTERE GENERALE
+
+=== K483 | [Sezione I - par. 1.1] Finalità e ambito di applicazione oggettivo
+1.1 Finalità e ambito di applicazione oggettivo
+La disciplina sulla trasparenza delle operazioni e dei servizi bancari e
+finanziari persegue l’obiettivo, nel rispetto dell’autonomia negoziale, che siano
+resi noti ai clienti gli elementi essenziali del rapporto contrattuale e le loro
+variazioni, favorendo in tal modo anche la concorrenza nei mercati bancario e
+finanziario.
+Il rispetto delle regole e dei principi di trasparenza e correttezza nei rapporti
+con la clientela attenua i rischi legali e di reputazione e concorre alla sana e
+prudente gestione dell’intermediario.
+Le disposizioni in materia di trasparenza (titolo VI del T.U.; delibere del
+CICR citate nel paragrafo 2 e presente provvedimento) si applicano — salva
+diversa previsione — a tutte le operazioni e a tutti i servizi disciplinati ai sensi del
+titolo VI del T.U. aventi natura bancaria e finanziaria offerti dagli intermediari,
+anche al di fuori delle dipendenze (“fuori sede”) o mediante “tecniche di
+comunicazione a distanza”.
+Le presenti disposizioni si applicano inoltre ai servizi di bancoposta. Esse
+non si applicano alla raccolta del risparmio tra il pubblico effettuata da Poste
+Italiane S.p.A. per conto di Cassa Depositi e Prestiti, attraverso libretti di
+risparmio postale e buoni fruttiferi assistiti dalla garanzia dello Stato (per questi
+prodotti le norme in materia di trasparenza, pubblicità, contratti e comunicazioni
+periodiche sono stabilite con decreto del Ministro dell’economia e delle finanze
+del 6 ottobre 2004, pubblicato in G.U. il 13 ottobre 2004) (1).
+(1) Le presenti Disposizioni non pregiudicano quanto previsto ai sensi della disciplina sulle competenze
+dell’Arbitro Bancario Finanziario.
+  1
+Secondo quanto previsto dall’articolo 23, comma 4, del T.U.F., le
+disposizioni non si applicano ai servizi e alle attività di investimento né al
+collocamento di prodotti finanziari (1) e alle operazioni e servizi che siano
+componenti di prodotti finanziari, sottoposti alla disciplina della trasparenza
+prevista dal medesimo T.U.F., salvo che si tratti di operazioni di credito nonché
+di servizi e conti di pagamento disciplinati dal titolo VI, capi I-bis, II, II-bis e II-
+ter, del T.U.
+Conseguentemente, le presenti disposizioni:
+a) non si applicano ai servizi e alle attività di investimento come definiti dal
+T.U.F. e al collocamento di prodotti finanziari aventi finalità di investimento,
+quali, ad esempio, obbligazioni e altri titoli di debito, certificati di deposito,
+contratti derivati, pronti contro termine;
+b) in caso di prodotti composti la cui finalità esclusiva o preponderante non sia
+di investimento si applicano:
+- all’intero prodotto se questo ha finalità, esclusive o preponderanti,
+riconducibili a quelle di servizi o operazioni disciplinati ai sensi del titolo
+VI del T.U. (ad esempio, finalità di finanziamento, di gestione della
+liquidità, ecc.);
+- alle sole componenti riconducibili a servizi o operazioni disciplinati ai
+sensi del titolo VI del T.U. negli altri casi.
+In caso di prodotti composti la cui finalità esclusiva o preponderante sia di
+investimento, si applicano le disposizioni del T.U.F. sia al prodotto nel suo
+complesso sia alle sue singole componenti, a meno che queste non costituiscano
+un’operazione di credito ai consumatori (alle quali si applica quanto previsto dalle
+presenti disposizioni).
+Alcune previsioni delle presenti disposizioni si applicano esclusivamente nei
+rapporti con i consumatori o con i clienti al dettaglio. La qualifica di
+“consumatore” o di “cliente al dettaglio” dei singoli clienti viene rilevata dagli
+intermediari prima della conclusione del contratto. Successivamente alla
+conclusione del contratto gli intermediari sono tenuti a cambiare la qualifica del
+cliente, qualora ne ricorrano i presupposti, solo se questi ne fa richiesta.
+Gli intermediari sono tenuti ad aderire all’Arbitro Bancario Finanziario
+(articolo 128-bis del T.U.; deliberazione del CICR del 29 luglio 2008, n. 275;
+disposizioni della Banca d’Italia del 18 giugno 2009 e successive modificazioni).
+(1) L’articolo 1, comma 1, lettera u), del T.U.F. definisce “prodotti finanziari” gli strumenti finanziari e ogni
+altra forma di investimento di natura finanziaria; non costituiscono prodotti finanziari i depositi bancari o postali
+non rappresentati da strumenti finanziari. Il presente provvedimento si applica, quindi, oltre che ai depositi, anche
+ai buoni fruttiferi e ai certificati di deposito consistenti in titoli individuali non negoziati nel mercato monetario (cfr.
+articolo 1, comma 1 ter, T.U.F.).
+  2

@@ -1,0 +1,1013 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Disciplina delle locazioni di immobili urbani  (id IT-legge-1978-07-27-392)
+
+=== K407 | [48] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18
+Art. 48
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K408 | [49] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18
+Art. 49
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K409 | [50] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18
+Art. 50
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K410 | [51] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 ). (18
+Art. 51
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 ). (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K411 | [52] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18
+Art. 52
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K412 | [53] ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18
+Art. 53
+ARTICOLO ABROGATO DALLA L. 26 NOVEMBRE 1990, N. 353 . (18)
+((19))
+---------------
+AGGIORNAMENTO (18)
+La L. 26 novembre 1990, n. 353 come modificata dalla L. 4 dicembre 1992, n. 477 ha disposto (con l'art. 89 commi 3 e 4) che le modifiche introdotte all'01/01/1992 decorrono a partire dal 02/01/1994.
+---------------
+AGGIORNAMENTO (19)
+La L. 26 novembre 1990, n. 353 come modificata dal D.L. 7 ottobre 1994, n. 571 , convertito con modificazioni dalla L. 6 dicembre 1994, n. 673 , ha disposto (con l'art. 89 commi 3 e 4) che le
+modifiche introdotte al 01/01/1992 decorrono a partire dal 30/04/1995.
+
+=== K413 | [54] Clausola compromissoria
+Art. 54
+(Clausola compromissoria)
+È nulla la clausola con la quale le parti stabiliscono che le controversie relative alla determinazione del canone siano decise da arbitri.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K414 | [55] Termine per il pagamento dei canoni scaduti
+Art. 55
+(Termine per il pagamento dei canoni scaduti)
+La morosità del conduttore nel pagamento dei canoni o degli oneri di cui all'articolo 5 può essere sanata in sede giudiziale per non più di tre volte nel corso di un quadriennio se il conduttore alla
+prima udienza versa l'importo dovuto per tutti i canoni scaduti e per gli oneri accessori maturati sino a tale data, maggiorato degli interessi legali e delle spese processuali liquidate in tale sede
+dal giudice.
+Ove il pagamento non avvenga in udienza, il giudice, dinanzi a comprovate condizioni di difficoltà del conduttore, può assegnare un termine non superiore a giorni novanta.
+In tal caso rinvia l'udienza a non oltre dieci giorni dalla scadenza del termine assegnato.
+La morosità può essere sanata, per non più di quattro volte complessivamente nel corso di un quadriennio, ed il termine di cui al secondo comma è di centoventi giorni, se l'inadempienza, protrattasi
+per non oltre due mesi, è conseguente alle precarie condizioni economiche del conduttore, insorte dopo la stipulazione del contratto e dipendenti da disoccupazione, malattie o gravi, comprovate
+condizioni di difficoltà.
+Il pagamento, nei termini di cui ai commi precedenti, esclude la risoluzione del contratto.
+
+=== K415 | [56] Modalità per il rilascio
+Art. 56
+(((Modalità per il rilascio) ))
+((
+1. Con il provvedimento che dispone il rilascio, il giudice, previa motivazione che tenga conto anche delle condizioni del conduttore comparate a quelle del locatore nonchè delle ragioni per le quali
+viene disposto il rilascio stesso e, nei casi di finita locazione, del tempo trascorso dalla disdetta, fissa la data dell'esecuzione entro il termine massimo di sei mesi ovvero, in casi eccezionali,
+di dodici mesi dalla data del provvedimento.
+2. Nelle ipotesi di cui all'articolo 55, per il caso in cui il conduttore non provveda al pagamento nel termine assegnato, la data dell'esecuzione non può essere fissata oltre sessanta giorni dalla
+scadenza del termine concesso per il pagamento.
+3. Qualunque forma abbia il provvedimento di rilascio, il locatore e il conduttore possono, in qualsiasi momento e limitatamente alla data fissata per l'esecuzione, proporre al tribunale in
+composizione collegiale l'opposizione di cui all' articolo 6, comma 4, della legge 9 dicembre 1998, n. 431 .
+4. Trascorsa inutilmente la data fissata, il locatore promuove l'esecuzione ai sensi degli articoli 605 e seguenti del codice di procedura civile ))
+
+=== K417 | [58] Durata dei contratti in corso soggetti a proroga
+Art. 58
+(Durata dei contratti in corso soggetti a proroga)
+I contratti di locazione e sublocazione di immobili urbani adibiti ad uso di abitazione e soggetti a proroga secondo la legislazione vigente si considerano prorogati ed hanno la durata prevista
+nell'articolo 1 con le seguenti decorrenze:
+a) dal 1 gennaio 1979, per i contratti stipulati anteriormente al 31 dicembre 1952;
+b) dal 1 luglio 1979, per i contratti stipulati fra il 1 gennaio 1953 ed il 7 novembre 1963;
+c) dal 1 gennaio 1980, per i contratti stipulati dopo il 7 novembre 1963. (2)
+((3))
+---------------
+AGGIORNAMENTO (2)
+La Corte costituzionale, con sentenza 22-27 febbraio 1980, n. 22 (in G.U. 1a s.s. 05/03/1980, n. 64) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59, n. 1, 65
+della legge sull'equo canone 27 luglio 1978, n. 392, nella parte in cui esclude il diritto di recesso per necessità del locatore dai contratti in corso alla data del 30 luglio 1978 e non soggetti a
+proroga".
+---------------
+AGGIORNAMENTO (3)
+La Corte costituzionale, con sentenza 15-28 luglio 1983, n. 250 (in G.U. 1a s.s. 03/08/1983, n. 212) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59 nn. 2, 3, 6
+e 8 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit. art. 59 nn. 2, 3, 6 e 8, dai contratti in corso alla
+data del 30 luglio 1978 e non soggetti a proroga". Ha inoltre dichiarato, "in applicazione dell' art. 27 l. 11 marzo 1953 n. 87 , l'illegittimità costituzionale del combinato disposto degli artt. 58,
+59 nn. 4, 5 e 7 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit art. 59 nn. 4, 5 e 7, dai contratfi in corso
+alla data del 30 luglio 1978 e non soggetti a proroga".
+
+=== K418 | [59] Recesso del locatore
+Art. 59
+(Recesso del locatore)
+Nei casi di cui all'articolo precedente il locatore può recedere in ogni momento dal contratto dandone comunicazione al conduttore mediante lettera raccomandata e con un preavviso di almeno sei mesi:
+1) quando abbia la necessità, verificatasi dopo la costituzione del rapporto locatizio, di destinare l'immobile ad uso abitativo, commerciale, artigianale o professionale proprio, del coniuge o dei
+parenti in linea retta entro il secondo grado; (2)
+2) quando, volendo disporre dell'immobile per abitazione propria, del coniuge o dei propri parenti in linea retta fino al secondo grado oppure quando, trattandosi di ente pubblico o comunque con
+finalità pubbliche, sociali, mutualistiche, cooperativistiche, assistenziali o di culto che voglia disporre dell'immobile per l'esercizio delle proprie funzioni, offra al conduttore altro immobile
+idoneo per cui sia dovuto un canone di locazione proporzionato alle condizioni del conduttore medesimo e comunque non superiore del 20 per cento al canone del precedente immobile e assuma a suo carico
+le spese di trasloco. Quando l'opposizione del conduttore all'azione del locatore risulti infondata, questi potrà essere esonerato dalle spese di trasloco;
+((4))
+3) quando l'immobile locato sia compreso in un edificio gravemente danneggiato che debba essere ricostruito o del quale debba essere assicurata la stabilità e la permanenza del conduttore impedisca di
+compiere gli indispensabili lavori;
+((4))
+4) quando il proprietario intenda demolire o trasformare notevolmente l'immobile locato per eseguire nuove costruzioni o, trattandosi di appartamento sito all'ultimo piano, quando intenda eseguire
+sopraelevazioni a norma di legge, e per eseguirle sia indispensabile per ragioni tecniche lo sgombero dell'appartamento stesso;
+((4))
+5) quando l'immobile locato sia di interesse artistico o storico, ai sensi della legge 1 giugno 1939, numero 1089 , nel caso in cui la competente sovraintendenza riconosca necessario ed urgente che si
+proceda a riparazioni o restauri, la cui esecuzione sia resa impossibile dallo stato di occupazione dell'immobile;
+((4))
+6) quando il conduttore può disporre di altra abitazione idonea alle proprie esigenze familiari nello stesso comune ovvero in un comune confinante;
+((4))
+7) quando il conduttore, avendo sublocato parzialmente l'immobile, non lo occupa nemmeno in parte, con continuità. Si presume l'esistenza della sublocazione quando l'immobile risulta occupato da
+persone che non sono alle dipendenze del conduttore o che non sono a questo legate da vincoli di parentela o di affinità entro il quarto grado, salvo che si tratti di ospiti transitori. La presunzione
+non si applica nei confronti delle persone che si sono trasferite nell'immobile assieme al conduttore;
+((4))
+8) quando il conduttore non occupa continuativamente l'immobile senza giustificato motivo.
+((4))
+Nelle ipotesi di cui ai numeri 4) e 5) del precedente comma, il possesso della licenza o concessione è condizione per l'azione di rilascio. Gli effetti del provvedimento di rilascio si risolvono alle
+condizioni previste nella lettera c) dell'articolo 29.
+Alla procedura per il rilascio dell'immobile si applicano le norme di cui ai precedenti articoli 30 e 56.
+---------------
+AGGIORNAMENTO (2)
+La Corte costituzionale, con sentenza 22-27 febbraio 1980, n. 22 (in G.U. 1a s.s. 05/03/1980, n. 64) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59, n. 1, 65
+della legge sull'equo canone 27 luglio 1978, n. 392, nella parte in cui esclude il diritto di recesso per necessità del locatore dai contratti in corso alla data del 30 luglio 1978 e non soggetti a
+proroga".
+---------------
+AGGIORNAMENTO (4)
+La Corte costituzionale, con sentenza 15-28 luglio 1983, n. 250 (in G.U. 1a s.s. 03/08/1983, n. 212) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59 nn. 2, 3, 6
+e 8 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit. art. 59 nn. 2, 3, 6 e 8, dai contratti in corso alla
+data del 30 luglio 1978 e non soggetti a proroga". Ha inoltre dichiarato, "in applicazione dell' art. 27 l. 11 marzo 1953 n. 87 , l'illegittimità costituzionale del combinato disposto degli artt. 58,
+59 nn. 4, 5 e 7 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit art. 59 nn. 4, 5 e 7, dai contratfi in corso
+alla data del 30 luglio 1978 e non soggetti a proroga".
+
+=== K419 | [60] Ripristino del rapporto e risarcimento del danno
+Art. 60
+(Ripristino del rapporto e risarcimento del danno)
+Il provvedimento che dispone il rilascio dell'immobile in conseguenza dell'esercizio da parte del locatore del diritto di recesso, perde efficacia se il locatore, nel termine di sei mesi da quando ha
+riacquistato la disponibilità dell'immobile, non lo adibisca all'uso per il quale aveva agito ovvero, nei casi di cui ai numeri 3), 4) e 5) dell'articolo 59, non inizi, nel suddetto termine, i lavori
+per i quali è stata rilasciata licenza o concessione.
+Il conduttore ha diritto, nei confronti del locatore e dei suoi aventi causa, al ripristino del contratto di locazione, salvi i diritti acquisiti dai terzi in buona fede, e al rimborso delle spese di
+trasloco e degli altri oneri sopportati, ovvero a sua scelta al risarcimento del danno da determinarsi dal giudice in misura non inferiore a 12 e non superiore a 48 mensilità del canone, oltre ad un
+equo indennizzo per le spese di trasloco.
+Il giudice, oltre a determinare il ripristino o il risarcimento, ordina al locatore il pagamento di una somma da L. 500.00 a L. 2.00.000 da devolvere al comune nel cui territorio è sito l'immobile, ad
+integrazione del fondo sociale di cui al titolo III della presente legge.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K420 | [61] Acquirente dell'immobile locato
+Art. 61
+(Acquirente dell'immobile locato)
+La facoltà di recesso nel caso previsto dal n. 1) dell'articolo 59 non può essere esercitata da chi ha acquistato l'immobile per atto tra vivi finchè non siano decorsi almeno due anni dalla data
+dell'acquisto.
+Il termine è ridotto ad un anno se nei confronti dell'acquirente è in corso un procedimento di rilascio non dovuto a morosità ovvero se l'acquirente è cittadino emigrato in un paese straniero in
+qualità di lavoratore e intenda rientrare in Italia per risiedervi stabilmente.
+Quando l'immobile è stato donato a causa di matrimonio o costituito in fondo patrimoniale e il matrimonio sia stato celebrato, il termine di cui al primo comma si computa dal giorno in cui il dante
+causa ha acquistato il diritto sull'immobile.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K421 | [62] Canone dei contratti soggetti a proroga
+Art. 62
+(Canone dei contratti soggetti a proroga)
+Il canone di cui agli articoli 12 e 24 si applica ai contratti previsti nell'articolo 58 dall'inizio del sesto anno a decorrere dalla entrata in vigore dalla presente legge ed il canone è adeguato in
+relazione all'eventuale mutamento degli elementi di cui agli articoli 13 e 15.
+Fino alla data suddetta il canone di locazione corrisposto dal conduttore, calcolato al netto degli oneri accessori, può essere aumentato a richiesta del locatore, a decorrere dal primo giorno del
+quarto mese successivo a quello di entrata in vigore della presente legge, nella misura del 20 per cento all'anno per i primi due anni e del 15 per cento all'anno per gli anni successivi della
+differenza risultante tra il canone definito ai sensi dell'articolo 12 ed il canone attualmente corrisposto.
+Se il canone attualmente corrisposto è superiore a quello definito ai sensi dell'articolo 12 si applicano le disposizioni dello stesso articolo 12 e quelle dell'articolo 24 a partire dal primo giorno
+del quarto mese successivo alla entrata in vigore della presente legge.
+Ove alcuni parametri, coefficienti o altri elementi necessari per la determinazione del canone a norma dell'articolo 12 non siano noti in tempo utile, gli adeguamenti del canone di locazione di cui ai
+precedenti commi si applicano tenendo conto di tutti gli altri elementi noti, salvo i conguagli che decorreranno in ogni caso dalle date di cui ai commi precedenti.
+Le parti possono liberamente concordare modalità diverse sempre che il canone definito non superi quello risultante dall'applicazione degli articoli 12 e 24.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K422 | [63] Aggiornamento del canone dei contratti in corso soggetti a proroga
+Art. 63
+(Aggiornamento del canone dei contratti in corso soggetti a proroga)
+Per i primi due anni a decorrere dalla entrata in vigore della presente legge il canone di locazione relativo ai contratti previsti nell'articolo 58 non è aggiornato per gli effetti di cui
+all'articolo 24.
+Dall'inizio del terzo anno il canone di locazione è aggiornato in base alla variazione, accertata dall'ISTAT, dell'indice dei prezzi al consumo per le famiglie di operai ed impiegati verificatasi
+nell'anno precedente.
+Se le variazioni sono in aumento, di esse si applica soltanto:
+il 20 per cento dall'inizio del terzo anno;
+il 40 per cento dall'inizio del quarto anno;
+il 60 per cento dall'inizio del quinto anno;
+il 75 per cento dall'inizio del sesto anno.
+In ogni caso con l'integrale applicazione dell'equo canone l'aggiornamento di cui all'articolo 24 si applica nella intera misura ivi prevista.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K423 | [64] Particolari contratti soggetti a proroga
+Art. 64
+(Particolari contratti soggetti a proroga)
+Ai contratti di locazione di cui all'articolo 26, comma primo, lettera d) e comma secondo, soggetti a proroga secondo la legislazione vigente, si applicano per la durata le disposizioni dell'articolo
+58.
+Fino al termine di tale durata il canone può essere modificato a richiesta del locatore mediante aggiornamento annuale, in base al 75 per cento della variazione, accertata dall'ISTAT, dell'indice dei
+prezzi al consumo per le famiglie di operai e impiegati, verificatasi nell'anno precedente.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K424 | [65] Contratti in corso non soggetti a proroga
+Art. 65
+(Contratti in corso non soggetti a proroga)
+Le disposizioni degli articoli 1 e 3 si applicano anche ai contratti in corso alla data di entrata in vigore della presente legge e non soggetti a proroga, detraendosi, per la determinazione della
+durata prevista all'articolo 1, il tempo già trascorso dall'inizio della locazione o, in caso di intervenuto rinnovo contrattuale, dalla data di esso.
+La disposizione di cui al comma precedente si applica anche ai contratti per i quali, alla data di entrata in vigore della presente legge, è in corso procedimento per convalida di licenza o di sfratto
+per finita locazione.
+Il canone di cui agli articoli 12 e 24 si applica ai contratti di cui al presente articolo a partire dall'inizio del secondo anno a decorrere dall'entrata in vigore della presente legge, ed il canone
+è adeguato in relazione all'eventuale mutamento degli elementi di cui agli articoli 13 e 15.
+Fino alla data suddetta il canone di locazione corrisposto dal conduttore, calcolato al netto degli oneri accessori, può essere aumentato su richiesta del locatore a decorrere dal primo giorno del
+quarto mese successivo a quello di entrata in vigore della presente legge nella misura del 50 per cento della differenza risultante fra il canone definito ai sensi dell'articolo 12 ed il canone
+attualmente corrisposto.
+Se il canone attualmente corrisposto è superiore a quello definito ai sensi dell'articolo 12 si applicano le disposizioni dello stesso articolo 12 e quelle dell'articolo 24 a partire dal primo giorno
+del quarto mese successivo all'entrata in vigore della presente legge.
+Ai contratti di locazione di cui all'articolo 26, comma primo, lettera d) e comma secondo, non soggetti a proroga, si applicano le disposizioni di cui ai commi primo e secondo del presente articolo.
+Fino alla scadenza di cui al primo comma il canone può essere modificato, su richiesta del locatore, soltanto mediante aggiornamento annuale, in base al 75 per cento della variazione, accertata
+dall'ISTAT, dell'indice dei prezzi al consumo per le famiglie di operai e impiegati verificatasi nell'anno precedente. (2) (4)
+((25))
+---------------
+AGGIORNAMENTO (2)
+La Corte costituzionale, con sentenza 22-27 febbraio 1980, n. 22 (in G.U. 1a s.s. 05/03/1980, n. 64) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59, n. 1, 65
+della legge sull'equo canone 27 luglio 1978, n. 392, nella parte in cui esclude il diritto di recesso per necessità del locatore dai contratti in corso alla data del 30 luglio 1978 e non soggetti a
+proroga".
+---------------
+AGGIORNAMENTO (4)
+La Corte costituzionale, con sentenza 15-28 luglio 1983, n. 250 (in G.U. 1a s.s. 03/08/1983, n. 212) ha dichiarato l'illegittimità costituzionale "del combinato disposto degli artt. 58, 59 nn. 2, 3, 6
+e 8 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit. art. 59 nn. 2, 3, 6 e 8, dai contratti in corso alla
+data del 30 luglio 1978 e non soggetti a proroga". Ha inoltre dichiarato, "in applicazione dell' art. 27 l. 11 marzo 1953 n. 87 , l'illegittimità costituzionale del combinato disposto degli artt. 58,
+59 nn. 4, 5 e 7 nonchè 65 della legge 27 luglio 1978 n. 392 , nella parte in cui esclude il diritto di recesso del locatore, per i motivi indicati nel cit art. 59 nn. 4, 5 e 7, dai contratfi in corso
+alla data del 30 luglio 1978 e non soggetti a proroga".
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K425 | [66] Oneri accessori conglobati nel canone
+Art. 66
+(Oneri accessori conglobati nel canone)
+Gli oneri accessori che, nei rapporti in corso, siano stati posti a carico del conduttore e conglobati nel canone, non possono essere computati in misura superiore al 10 per cento del canone pattuito
+qualora il contraente interessato non ne provi l'importo effettivo.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K426 | [67] Contratti in corso soggetti a proroga
+Art. 67
+(Contratti in corso soggetti a proroga)
+I contratti di locazione di cui all'articolo 27 in corso al momento dell'entrata in vigore della presente legge e soggetti a proroga secondo la legislazione vigente si considerano prorogati ed hanno
+la seguente durata:
+a) anni 4, i contratti stipulati prima del 31 dicembre 1964; (3) (6)
+((8))
+b) anni 5, i contratti stipulati tra il 1 gennaio 1965 ed il 31 dicembre 1973; (3)
+c) anni 6, i contratti stipulati dopo il 31 dicembre 1973. (3)
+La durata di cui sopra decorre dal giorno e dal mese, successivi alla entrata in vigore della presente legge, corrispondenti a quelli di scadenza previsti nel contratto di locazione; ove tale
+determinazione non sia possibile, dallo stesso giorno di entrata in vigore della presente legge.
+È in facoltà delle parti di stipulare anche prima della scadenza sopra prevista un nuovo contratto di locazione secondo le disposizioni del capo II, titolo I, della presente legge.
+---------------
+AGGIORNAMENTO (3)
+Il D.L. 23 gennaio 1982, n. 9 , convertito, con modificazioni, dalla L. 25 marzo 1982, n. 94 (in G.U. 26/03/1982, n. 84) ha disposto (con l'art. 15-bis commi 1, 2 e 3) che "le scadenze dei contratti
+di cui alle lettere a) , b) e c) del primo comma dell'articolo 67 della legge 27 luglio 1978, n. 392 , sono ulteriormente prorogate di due anni.
+Per il periodo di proroga il canone di locazione corrisposto alle scadenze di cui alle lettere a) , b) e c) del primo comma dell'articolo 67 della legge 27 luglio 1978, n. 392 , può essere aumentato,
+a decorrere dalle predette scadenze, nelle seguenti misure:
+a) non superiore al 100 per canto per i contratti stipulati anteriormente al 31 dicembre 1964;
+b) non superiore al 75 per cento per i contratti stipulati fra il gennaio 1965 ed il 31 dicembre 1973;
+c) non superiore al 50 per cento per i contratti stipulati dopo il 31 dicembre 1973.
+Il canone di locazione, determinato ai sensi del comma precedente, può essere aggiornato annualmente a partire dal secondo anno di proroga del contratto, a richiesta del locatore, in misura non
+superiore al 75 per cento della variazione, accertata dall'ISTAT, dell'indice dei prezzi al consumo per le famiglie di operai ed impiegati, verificatasi nell'anno precedente".
+---------------
+AGGIORNAMENTO (6)
+La L. 25 luglio 1984, n. 377 ha disposto (con l'art. 2 comma 1) che "le scadenze dei contratti di cui alla lettera a) del primo comma dell'articolo 67 della legge 27 luglio 1978, n. 392 , sono
+prorogate sino al 31 dicembre 1984".
+---------------
+AGGIORNAMENTO (8)
+Il D.L. 7 febbraio 1985, n. 12 , convertito, con modificazioni, dalla L. 5 aprile 1985, n. 118 ha disposto (con l'art. 1 comma 8) che "le scadenze dei contratti di cui alla lettera a) dell'articolo
+67, primo comma, della legge 27 luglio 1978, n. 392 , sono prorogate fino all'entrata in vigore della nuova disciplina in materia di locazione degli immobili adibiti ad uso diverso dell'abitazione e,
+comunque, non oltre il 30 giugno 1985".
+Ha inoltre disposto (con l'art. 1, comma 9-bis) che "Le disposizioni del decreto-legge [. . .], escluse quelle di cui all'articolo 2 dello stesso decreto, hanno effetto dal 31 gennaio 1985".
+
+=== K427 | [68] Aumenti del canone
+Art. 68
+(Aumenti del canone)
+Nei contratti di locazione o sublocazione di cui al precedente articolo il canone corrisposto dal conduttore, calcolato al netto degli oneri accessori, può essere a richiesta del locatore, aumentato a
+decorrere dal primo giorno del mese successivo a quello di entrata in vigore della presente legge per il restante periodo di durata del contratto, nelle misure seguenti:
+1) non superiore al 15 per cento all'anno, per i contratti stipulati anteriormente al 31 dicembre 1964;
+2) non superiore al 10 per cento all'anno per i contratti stipulati fra il 1 gennaio 1965 ed il 31 dicembre 1973;
+3) non superiore al 5 per cento all'anno per i contratti stipulati dopo il 31 dicembre 1973.
+
+=== K428 | [69] .
+Art. 69.
+(Diritto di prelazione in caso di nuova locazione e indennita' per
+l'avviamento commerciale)
+Nei contratti di locazione di immobili adibiti ad uso diverso da
+quello di abitazione, di cui agli articoli 67 e 71 della presente
+legge, il locatore comunica, mediante raccomandata con avviso di
+ricevimento da inviarsi entro il 28 febbraio 1987, se ed a quali
+condizioni intende proseguire la locazione ovvero le condizioni
+offerte da terzi per la locazione dell'immobile.
+L'obbligo ricorre anche quando il locatore non intende proseguire
+nella locazione per i motivi indicati all'articolo 29.
+Tale obbligo non ricorre quando il conduttore abbia comunicato al
+locatore che non intende rinnovare la locazione e nei casi di
+cessazione del rapporto per inadempimento o recesso del conduttore o
+qualora sia in corso una delle procedure previste dal regio decreto
+16 marzo 1942, n. 267, e successive modificazioni, a carico del
+conduttore medesimo.
+Il conduttore deve rendere noto al locatore, entro trenta giorni
+dalla comunicazione di cui al primo comma, se intende proseguire la
+locazione alle nuove condizioni.
+Il conduttore ha diritto di prelazione se, entro trenta giorni
+dalla ricezione della comunicazione di cui al primo comma, offre
+condizioni uguali a quelle comunicategli dal locatore.Egli conserva
+tale diritto anche nell'ipotesi di cui al quarto comma dell'articolo
+40.
+Il conduttore, se non accetta le condizioni offerte dal locatore
+ovvero non esercita la prelazione, ha diritto ad un compenso pari a
+24 mensilita', ovvero a trenta per le locazioni con destinazione
+alberghiera, del canone richiesto dal locatore od offerto dal terzo.
+Se il locatore non intende proseguire nella locazione il conduttore
+puo', entro trenta giorni dalla comunicazione del locatore o in
+mancanza di questa, se dovuta, dalla scadenza del termine di cui al
+primo comma, offrire un nuovo canone, impegnandosi a costituire,
+all'atto del rinnovo e per la durata del contratto, una polizza
+assicurativa oppure una fidejussione bancaria per una somma pari a 12
+mensilita' del canone offerto.
+Se il locatore non intende proseguire nella locazione sulla base
+delle condizioni offerte, al conduttore e' dovuta l'indennita' per
+l'avviamento commerciale nella misura di 24 mensilita', ovvero di 30
+per le locazioni con destinazione alberghiera, del canone offerto ai
+sensi del comma precedente.
+In mancanza dell'offerta del nuovo canone da parte del conduttore
+nonche' nei casi di rilascio dell'immobile per i motivi di cui
+all'articolo 29 salvo quelli di cui al primo comma, lettera a), e'
+dovuta l'indennita' per avviamento commerciale nella misura di 21
+mensilita', ovvero di 25 per le locazioni con destinazione
+alberghiera, del canone corrente di mercato per i locali aventi le
+stesse caratteristiche. In caso di rilascio dell'immobile per i
+motivi di cui all'articolo 29, primo comma, lettera a), la predetta
+indennita' e' calcolata con riferimento al canone corrisposto.
+L'indennita' dovuta e' complessivamente di 24 mensilita', ovvero di
+32 per le locazioni con destinazione alberghiera, nei casi di cui al
+secondo comma dell'articolo 34.
+L'esecuzione del provvedimento di rilascio dell'immobile e'
+condizionata all'avvenuta corresponsione dell'indennita' di cui ai
+precedenti commi sesto, ottavo e nono.
+Per i contratti di cui agli articoli 67 e 71 le disposizioni del
+presente articolo sono sostitutive di quelle degli articoli 34 e 40.
+((22))
+---------------
+AGGIORNAMENTO (5)
+La Corte costituzionale, con sentenza 5-6 ottobre 1983, n. 300 (in
+G.U. 1a s.s. 12/10/1983, n. 281) ha dichiarato l'illegittimita'
+costituzionale "del combinato disposto dell'art. 69, settimo comma,
+legge 27 luglio 1978, n. 392, e dell'art. 73 stessa legge 27 luglio
+1978, n. 392 (quale modificato dall'art. 1 bis decreto legge 30
+gennaio 1979, n.21, convertito con modificazioni nella legge 31 marzo
+1979, n. 93), nella parte in cui - relativamente alle ipotesi di
+recesso del locatore dai contratti disciplinati dall'art. 67 stessa
+legge 27 luglio 1978, n. 392, motivate con la sopravvenuta necessita'
+di adibire l'immobile ad abitazione propria o del coniuge o dei
+parenti in linea retta entro il secondo grado - prevede che
+l'indennita' per l'avviamento commerciale dovuta al conduttore sia
+determinata sulla base del canone corrente di mercato per i locali
+aventi le stesse caratteristiche, anziche' con riferimento all'ultimo
+canone corrisposto".
+---------------
+AGGIORNAMENTO (8)
+Il D.L. 7 febbraio 1985, n. 12, convertito, con
+modificazioni, dalla L. 5 aprile 1985, n. 118, ha disposto (con
+l'art. 1, comma 9-bis) che "Le disposizioni del decreto-legge [. . .],
+escluse quelle di cui all'articolo 2 dello stesso decreto, hanno
+effetto dal 31 gennaio 1985".
+Ha inoltre disposto (con l'art. 1, comma 9-quinquies) che "Le
+disposizioni dei precedenti commi 9-bis, 9-ter e 9-quater si applicano
+anche ai giudizi in corso alla data di entrata in vigore della
+legge di conversione del presente decreto".
+Successivamente la Corte Costituzionale, con sentenza 22 - 23
+aprile 1986, n. 108 (in G.U. 1a s.s. 30/04/1986, n. 17), ha
+dichiarato l'illegittimita' costituzionale dell'art. 1, commi 9 bis,
+9 ter e 9 quater e 9 quinquies, del D.L. 7 febbraio 1985 n. 12,
+convertito nella L. 5 aprile 1985 n. 118 (che hanno sostituito il
+presente articolo).
+---------------
+AGGIORNAMENTO (22)
+La Corte costituzionale, con sentenza 20 maggio-3 giugno 1992, n.
+242 (in G.U. 1a s.s. 04/06/1992, n. 24) ha dichiarato
+l'illegittimita' costituzionale "dell'art. 69 della legge 27 luglio
+1978, n. 392 (Disciplina delle locazioni di immobili urbani) nella
+parte in cui non prevede che l'obbligo del locatore di corrispondere
+al conduttore la indennita' per l'avviamento commerciale non ricorre
+quando causa di cessazione del rapporto e' un provvedimento della
+pubblica Amministrazione che esclude indefinitamente la utilizzazione
+economica dell'immobile".
+
+=== K429 | [70] Immobili destinati a particolari attività soggetti a proroga
+Art. 70
+(Immobili destinati a particolari attività soggetti a proroga)
+Ai contratti di locazione di cui all'articolo 42 si applicano le disposizioni degli articoli 67 e 68.
+
+=== K430 | [71] Contratti in corso non soggetti a proroga
+Art. 71
+(Contratti in corso non soggetti a proroga)
+Le disposizioni degli articoli 27 e 42, primo comma, si applicano anche ai contratti in corso al momento dell'entrata in vigore della presente legge e non soggetti a proroga legale, detraendosi, per
+la determinazione della durata prevista in detta disposizione, il periodo di locazione già trascorso dall'inizio della locazione o, in caso di intervenuto rinnovo contrattuale, dalla data di esso.
+La durata non può comunque essere inferiore a due anni dalla data di entrata in vigore della presente legge.
+Le disposizioni di cui ai commi precedenti si applicano anche ai contatti di cui sopra per i quali, alla data di entrata in vigore della presente legge, è in corso procedimento per convalida di
+licenza o di sfratto.
+Il canone potrà essere aggiornato annualmente su richiesta del locatore dal giorno della scadenza contrattualmente prevista, in base al 75 per cento della variazione accertata dall'ISTAT, dell'indice
+dei prezzi al consumo per le famiglie di operai ed impiegati verificatasi nell'anno precedente.
+
+=== K431 | [72] Mutamento della destinazione
+Art. 72
+(Mutamento della destinazione)
+I nuovi contratti di locazione di immobili il cui uso venga mutato da quello preesistente di abitazione non possono prevede, per un periodo di quattro anni dalla data di entrata in vigore della
+presente legge, un canone superiore a quello di cui agli articoli 12 e 24, tranne che siano intervenute radicali trasformazioni dell'immobile stesso autorizzate ai sensi delle vigenti leggi.
+
+=== K432 | [73] Norme applicabili
+Art. 73
+(Norme applicabili)
+Per i contratti previsti negli articoli 67, 70 e, ferme restando le scadenze convenzionali, nell'articolo 71 il locatore può recedere in base ai motivi di cui all'articolo 29 e con il preavviso di cui
+all'articolo 59. Nei casi previsti dalle lettere a), b) e dall'ultimo periodo del secondo comma dell'articolo 29 tale facoltà è riconosciuta soltanto ove ricorra la necessità del locatore o del
+coniuge o dei parenti entro il secondo grado in linea retta, verificatasi dopo la costituzione del rapporto locatizio. Si applicano le disposizioni degli articoli 30 e 31 e degli articoli da 35 a 39
+nonchè quelle dell'articolo 69, settimo, ottavo e nono comma. (5)
+((11))
+---------------
+AGGIORNAMENTO (5)
+La Corte costituzionale, con sentenza 5-6 ottobre 1983, n. 300 (in G.U. 1a s.s. 12/10/1983, n. 281) ha dichiarato l'illegittimità costituzionale "del combinato disposto dell' art. 69, settimo comma,
+legge 27 luglio 1978, n. 392 , e dell'art. 73 stessa legge 27 luglio 1978, n. 392 (quale modificato dall' art. 1 bis decreto legge 30 gennaio 1979, n.21 , convertito con modificazioni nella legge 31
+marzo 1979, n. 93 ), nella parte in cui - relativamente alle ipotesi di recesso del locatore dai contratti disciplinati dall'art. 67 stessa legge 27 luglio 1978, n. 392 , motivate con la sopravvenuta
+necessità di adibire l'immobile ad abitazione propria o del coniuge o dei parenti in linea retta entro il secondo grado - prevede che l'indennità per l'avviamento commerciale dovuta al conduttore sia
+determinata sulla base del canone corrente di mercato per i locali aventi le stesse caratteristiche, anzichè con riferimento all'ultimo canone corrisposto".
+---------------
+AGGIORNAMENTO (11)
+La Corte costituzionale, con sentenza 10-18 dicembre 1987, n. 562 (in G.U. 1a s.s. 23/12/1987, n. 54) ha dichiarato l'illegittimità costituzionale "dell' art. 73 della legge 27 luglio 1978, n. 392
+("Disciplina delle locazioni di immobili urbani"), nel testo previgente alla modifica introdotta con la legge 31 marzo 1979, n. 93 , nella parte in cui non richiama espressamente l'obbligo di
+corrispondere l'indennità per la perdita dell'avviamento commerciale di cui all'art. 69, settimo, ottavo e nono comma, della legge stessa nel testo originario".
+
+=== K433 | [74] Rinvio
+Art. 74
+(Rinvio)
+Le disposizioni degli articoli da 43 a 57 sono applicabili alle locazioni previste nei capi I e II del presente titolo.
+
+=== K434 | [75] Istituzione del fondo sociale
+Art. 75
+(Istituzione del fondo sociale)
+Presso il Ministero del tesoro è istituito un fondo sociale per l'integrazione dei canoni di locazione per i conduttori meno abbienti.
+Tale fondo è costituito da un conto corrente infruttifero sul quale le regioni potranno prelevare le cifre messe a disposizione secondo le modalità di cui agli articoli seguenti.
+Il Ministro del bilancio riunisce annualmente la commissione interregionale di cui alla legge 16 maggio 1970, n. 281 , e sottopone ad essa una proposta di ripartizione per regione della somma
+disponibile. Le proposte del Ministro e il parere della commissione sono rimesse al CIPE per le decisioni definitive.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K435 | [76] Ripartizione del fondo
+Art. 76
+(Ripartizione del fondo)
+Le regioni, con provvedimento del consiglio regionale, decidono entro un mese dalla ripartizione dei fondi, le modalità di distribuzione tra i vari comuni tenendo conto delle esigenze esistenti in
+ciascuno di essi. Le somme così ripartite devono servire a concorrere al pagamento degli aumenti del canone di locazione per i conduttori meno abbienti.
+Di norma i comuni, nell'ambito degli stanziamenti assegnati, destineranno le somme secondo i seguenti criteri:
+a) il reddito annuo complessivo, riferito alla somma dei redditi imputati al conduttore ed alle altre persone con lui abitualmente conviventi, non sia superiore complessivamente all'importo di due
+pensioni minime INPS per la generalità dei lavoratori per nuclei familiari costituiti da uno o due componenti;
+b) al momento dell'entrata in vigore della presente legge, i conduttori siano intestatari del contratto di affitto dell'alloggio, che, per ubicazione, tipologia e superficie, deve essere strettamente
+necessario alle esigenze del conduttore e delle persone con lui abitualmente conviventi;
+c) i conduttori abbiano ricevuto, per effetto dell'entrata in vigore della presente legge, richiesta di aumento del canone di locazione attualmente corrisposto.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K436 | [77] Integrazione del canone
+Art. 77
+(Integrazione del canone)
+L'integrazione del canone di locazione consisterà nella corresponsione di un contributo annuo non superiore all'80% per cento dell'aumento del canone di locazione conseguente all'applicazione
+dell'equo canone, secondo l'entità e le modalità definite dalla presente legge.
+Il contributo di cui al comma precedente non può in ogni caso essere superiore alla somma annua di L. 200.000.
+Ai conduttori che usufruiscono del contributo integrativo è fatto divieto di procedere alla sublocazione dell'immobile locato a pena di decadenza dal contributo medesimo.
+((25))
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K438 | [79] Patti contrari alla legge
+Art. 79
+(Patti contrari alla legge)
+È nulla ogni pattuizione diretta a limitare la durata legale del contratto o ad attribuire al locatore un canone maggiore rispetto a quello previsto dagli articoli precedenti ovvero ad attribuirgli
+altro vantaggio in contrasto con le disposizioni della presente legge.
+Il conduttore con azione proponibile fino a sei mesi dopo la riconsegna dell'immobile locato, può ripetere le somme sotto qualsiasi forma corrisposte in violazione dei divieti e dei limiti previsti
+dalla presente legge.
+((In deroga alle disposizioni del primo comma, nei contratti di locazione di immobili adibiti ad uso diverso da quello di abitazione, anche se adibiti ad attività alberghiera, per i quali sia pattuito
+un canone annuo superiore ad euro 250.000, e che non siano riferiti a locali qualificati di interesse storico a seguito di provvedimento regionale o comunale, è facoltà delle parti concordare
+contrattualmente termini e condizioni in deroga alle disposizioni della presente legge. I contratti di cui al periodo precedente devono essere provati per iscritto))
+.
+(25)
+---------------
+AGGIORNAMENTO (25)
+La L. 9 dicembre 1998, n. 431 ha disposto (con l'art. 14 comma 4) l'abrogazione del presente articolo "limitatamente alle locazioni abitative".
+
+=== K439 | [80] Uso diverso da quello pattuito
+Art. 80
+(Uso diverso da quello pattuito)
+Se il conduttore adibisce l'immobile ad un uso diverso da quello pattuito, il locatore può chiedere la risoluzione del contratto entro tre mesi dal momento in cui ne ha avuto conoscenza e comunque
+entro un anno dal mutamento di destinazione.
+((13))
+Decorso tale termine senza che la risoluzione sia stata chiesta, al contratto si applica il regime giuridico corrispondente all'uso effettivo dell'immobile.
+Qualora la destinazione ad uso diverso da quello pattuito sia parziale, al contratto si applica il regime giuridico corrispondente all'uso prevalente.
+---------------
+AGGIORNAMENTO (13)
+La Corte costituzionale, con sentenza 10-18 febbraio 1988, n. 185 (in G.U. 1a s.s. 24/02/1988, n. 8) ha dichiarato l'illegittimità costituzionale "dell' art. 80, primo comma, della legge 27 luglio
+1978, n. 392 ("Disciplina delle locazioni di immobili urbani"), nella parte in cui dispone "e comunque entro un anno dal mutamento di destinazione"".
+
+=== K440 | [81] Pubblicazione dei dati ISTAT nella Gazzetta Ufficiale
+Art. 81
+(Pubblicazione dei dati ISTAT nella Gazzetta Ufficiale)
+Le variazioni dell'indice dei prezzi al consumo per le famiglie di operai e impiegati accertate dall'ISTAT sono pubblicate nella Gazzetta Ufficiale della Repubblica italiana.
+
+=== K441 | [82] Giudizi in corso
+Art. 82
+(Giudizi in corso)
+Ai giudizi in corso al momento dell'entrata in vigore della presente legge continuano ad applicarsi ad ogni effetto le leggi precedenti.
+
+
+######## NORMA: Norme in materia di imposta sul valore aggiunto.  (id IT-decreto.legislativo-1997-09-02-313)
+
+=== K445 | [1] 
+IL PRESIDENTE DELLA REPUBBLICA
+Visti gli articoli 76 e 87, quinto comma, della Costituzione;
+Visto l'articolo 3, comma 66, della legge 23 dicembre 1996, n. 662, recante delega al Governo per l'emanazione di uno o più decreti legislativi in materia di imposta sul valore aggiunto;
+Vista la preliminare deliberazione del Consiglio dei Ministri, adottata nella riunione dell'11 luglio 1997;
+Acquisito il parere della Commissione parlamentare istituita a norma dell'articolo 3, comma 13, della citata legge n. 662 del 1996;
+Vista la deliberazione del Consiglio dei Ministri, adottata nella riunione del 5 agosto 1997;
+Sulla proposta del Ministro delle finanze di concerto con il Ministro del tesoro;
+Emana
+il seguente decreto legislativo:
+Art. 1
+Modifiche al regime IVA in tema di cessioni di beni di esercizio di impresa e di effettuazione delle operazioni
+1. All'articolo 2, terzo comma, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, sono apportate le seguenti modificazioni:
+a) la lettera b) è sostituita dalla seguente: "b) le cessioni e i conferimenti in società o altri enti, compresi i consorzi e le associazioni o altre organizzazioni, che hanno per oggetto aziende o
+rami di azienda";
+b) le lettere e) ed h) sono soppresse.
+2. All'articolo 4 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, sono apportate le seguenti modificazioni:
+a) il primo comma è sostituito dal seguente: "Per esercizio di imprese si intende l'esercizio per professione abituale, ancorchè non esclusiva, delle attività commerciali o agricole di cui agli
+articoli 2135 e 2195 del codice civile, anche se non organizzate in forma di impresa, nonchè l'esercizio di attività, organizzate in forma d'impresa, dirette alla prestazione di servizi che non
+rientrano nell'articolo 2195 del codice civile.";
+b) nel quinto comma è aggiunto, in fine, il seguente periodo: "Non sono considerate, inoltre, attività commerciali, anche in deroga al secondo comma:
+a) il possesso e la gestione di unità immobiliari classificate o classificabili nella categoria catastale A e le loro pertinenze, ad esclusione delle unità classificate o classificabili nella
+categoria catastale A10, di unità da diporto, di aeromobili da turismo o di qualsiasi altro mezzo di trasporto ad uso privato, di complessi sportivi o ricreativi, compresi quelli destinati
+all'ormeggio, al ricovero e al servizio di unità da diporto, da parte di società o enti, qualora la partecipazione ad essi consenta, gratuitamente o verso un corrispettivo inferiore al valore normale,
+il godimento, personale, o familiare dei beni e degli impianti stessi, ovvero quando tale godimento sia conseguito indirettamente dai soci o partecipanti, alle suddette condizioni, anche attraverso la
+partecipazione ad associazioni, enti o altre organizzazioni;
+b) il possesso, non strumentale nè accessorio ad altre attività esercitate, di partecipazioni o quote sociali, di obbligazioni o titoli similari, costituenti immobilizzazioni, al fine di percepire
+dividendi, interessi o altri frutti, senza strutture dirette ad esercitare attività finanziaria, ovvero attività di indirizzo, di coordinamento o altri interventi nella gestione delle società
+partecipate.".
+3. All'articolo 6, del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, il quinto comma è sostituito dal seguente: "L'imposta relativa alle cessioni di beni ed alle prestazioni di
+servizi diviene esigibile nel momento in cui le operazioni si considerano effettuate secondo le disposizioni dei commi precedenti e l'imposta è versata con le modalità e nei termini stabiliti nel
+titolo secondo. Tuttavia per le cessioni dei prodotti farmaceutici indicati nel numero 114) della terza parte dell'allegata tabella A effettuate dai farmacisti, per le cessioni di beni e le
+prestazioni di servizi ai soci, associati o partecipanti, di cui al quarto comma dell'articolo 4, nonchè per quelle fatte allo Stato, agli organi dello Stato ancorchè dotati di personalità giuridica,
+agli enti pubblici territoriali e ai consorzi tra essi costituiti ai sensi dell'articolo 25 della legge 8 giugno 1990, n. 142, agli istituti universitari, alle unità sanitarie locali, agli enti
+ospedalieri, agli enti pubblici di ricovero e cura aventi prevalente carattere scientifico, agli enti pubblici di assistenza e beneficenza e a quelli di previdenza, l'imposta diviene esigibile
+all'atto del pagamento dei relativi corrispettivi, salva la facoltà di applicare le disposizioni del primo periodo. Per le cessioni di beni di cui all'articolo 21, quarto comma, secondo periodo,
+l'imposta diviene esigibile nel mese successivo a quello della loro effettuazione.".
+4. Nell'articolo 10 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, dopo il numero 27-quater), è aggiunto il seguente: "27-quinquies) le cessioni che hanno per oggetto beni
+acquistati o importati senza il diritto alla detrazione totale della relativa imposta ai sensi degli articoli 19, 19-bis1 e 19-bis2.".
+5. Nell'articolo 16 del decreto del Presidente della Repubblica 26 ottobre 1972, n. 633, è abrogato il quarto comma.
+Avvertenza:
+Il testo delle note qui pubblicato è stato redatto ai sensi dell'art. 10, commi 2 e 3, del testo unico delle disposizioni sulla promulgazione delle leggi, sull'emanazione dei decreti del Presidente
+della Repubblica e sulle pubblicazioni ufficiali della Repubblica italiana, approvato con D.P.R. 28 dicembre 1985, n. 1092, al solo fine di facilitare la lettura delle disposizioni di legge modificate
+o alle quali è operato il rinvio. Restano invariati il valore e l'efficacia degli atti legislativi qui trascritti.
+Note alle premesse:
+- L'art. 76 della Costituzione regola la delega al Governo dell'esercizio della funzione legislativa e stabilisce che essa non può avvenire se non con determinazione di principi e criteri direttivi e
+soltanto per tempo limitato e per oggetti definiti.
+- L'art. 87, comma quinto, della Costituzione conferisce al Presidente della Repubblica il potere di promulgare le leggi e di emanare i decreti aventi valore di legge e i regolamenti.
+- Si riporta il testo dei commi 13 e 66 dell'art. 3 della legge 23 dicembre 1996, n. 662 (Misure di razionalizzazione della finanza pubblica):
+"Art. 3 (Disposizioni in materia di entrata).
+(omissis).
+13. Entro trenta giorni dalla data di pubblicazione della presente legge nella Gazzetta Ufficiale della Repubblica italiana, è istituita una commissione composta da quindici senatori e quindici
+deputati, nominati rispettivamente dal Presidente del Senato della Repubblica e dal Presidente della Camera dei deputati nel rispetto della proporzione esistente tra i gruppi parlamentari, sulla base
+delle designazioni dei gruppi medesimi.
+(omissis).
+66. Il Governo è delegato ad emanare, entro nove mesi dalla data di entrata in vigore della presente legge, uno o più decreti legislativi in materia di imposta sul valore aggiunto, in conformità alla
+normativa comunitaria, nel rispetto dei seguenti principi e criteri direttivi:
+a) revisione della soggettività passiva di imposta, con riguardo, anche in funzione antielusiva, a quelle attività di mero godimento di beni, non dirette alla produzione ed allo scambio di beni o
+servizi;
+b) revisione della disciplina delle detrazioni di imposta e delle relative rettifiche, escludendo il diritto alla detrazione per gli acquisti di beni e servizi destinati esclusivamente a finalità
+estranee all'esercizio dell'impresa o dell'arte o professione utilizzati esclusivamente per operazioni non soggette all'imposta, eccettuate quelle cui le norme comunitarie ricollegano comunque il
+diritto alla detrazione;
+c) revisione dei regimi speciali o particolari o che comunque derogano agli ordinari criteri di applicazione del tributo, al fine di assicurare, se riguardano la base imponibile, una maggiore aderenza
+a quella risultante dall'applicazione dei criteri di determinazione ordinari;
+se riguardano aliquote o detrazione forfettarie, che le stesse non possono dar luogo a determinazioni dell'imposta sensibilmente diverse rispetto a quelle derivanti dalla disciplina ordinaria;
+d) revisione della disciplina nelle ipotesi di ritardo da parte del contribuente nell'invio della documentazione richiesta ai fini dell'effettuazione del rimborso;
+e) revisione dell'imposta applicata per gli acquisti di beni e servizi destinati alla esclusiva attività solidaristica, effettuati da organizzazioni di volontariato costituite esclusivamente per il
+perseguimento delle finalità di cui all'art. 1, comma 1, della legge 11 agosto 1991, n. 266".
+Note all'art. 1:
+- Si riporta il testo dell'art. 2 del decreto del Presidente della Repubblica n. 633 del 1972, come modificato dal presente decreto:
+"Art. 2 (Cessioni di beni). - Costituiscono cessioni di beni gli atti a titolo oneroso che importano trasferimento della proprietà
+ovvero costituzione o trasferimento di diritti reali di godimento su beni di ogni genere.
+Costituiscono inoltre cessioni di beni:
+1) le vendite con riserva di proprietà;
+2) le locazioni con clausola di trasferimento della proprietà vincolante per ambedue le parti;
+3) i passaggi dal committente al commissionario o dal commissionario al committente di beni venduti o acquistati in esecuzione di contratti di commissione;
+4) le cessioni gratuite di beni ad esclusione di quelli la cui produzione o il cui commercio non rientra nell'attività propria dell'impresa se di costo unitario non superiore a lire cinquantamila e di
+quelli per i quali non sia stata operata, all'atto dell'acquisto o dell'importazione, la detrazione dell'imposta a norma dell'art. 19, anche se per effetto dell'opzione di cui all'art. 36-bis;
+5) la destinazione di beni all'uso o al consumo personale o familiare dell'imprenditore o di coloro i quali esercitano un'arte o una professione o ad altre finalità estranee alla impresa o
+all'esercizio dell'arte o della professione, anche se determinata da cessazione dell'attività, con esclusione di quei beni per i quali non ÿ stata operata, all'atto dell'acquisto, la detrazione
+dell'imposta di cui all'art. 19, si considera destinato a finalità estranee all'impresa o all'esercizio dell'arte o della professione l'impiego di beni per l'effettuazione di operazioni diverse da
+quelle imponibili ovvero non imponibili ai sensi degli articoli 8, 8-bis e 9, di operazioni escluse dal campo di applicazione dell'imposta ai sensi dell'art. 7 e dell'art. 74, commi primo, quinto e
+sesto, nonchè delle operazioni di cui al terzo comma del presente articolo e all'art. 3, quarto comma;
+6) le assegnazioni ai soci fatte a qualsiasi titolo da società di ogni tipo e oggetto nonchè le assegnazioni o le analoghe operazioni fatte da altri enti privati o pubblici, compresi i consorzi e le
+associazioni o altre organizzazioni senza personalità giuridica.
+Non sono considerate cessioni di beni:
+a) le cessioni che hanno per oggetto denaro o crediti in denaro;
+b) le cessioni e i conferimenti in società o altri enti, compresi i consorzi e le associazioni o altre organizzazioni, che hanno per oggetto aziende o rami di azienda;
+c) le cessioni che hanno per oggetto terreni non suscettibili di utilizzazione edificatoria a norma delle vigenti disposizioni. Non costituisce utilizzazione edificatoria la costruzione delle opere
+indicate nell'art. 9 lettera a), della legge 28 gennaio 1977, n. 10;
+d) le cessioni di campioni gratuiti di modico valore appositamente contrassegnati;
+e) (soppressa);
+f) i passaggi di beni in dipendenza di fusioni, scissioni o trasformazioni di società e di analoghe operazioni poste in essere da altri enti a condizione che il soggetto incorporante o risultante
+dalla fusione, dalla scissione, dalla trasformazione o da analoghe operazioni abbia diritto ad esercitare la detrazione totale dell'imposta nei modi ordinari;
+g) (soppressa);
+h) (soppressa);
+i) le cessioni di valori bollati e postali, marche assicurative e similari;
+l) le cessioni di paste alimentari (v.d. 19.03); le cessioni di pane, biscotto di mare, e di altri prodotti della panetteria ordinaria, senza aggiunta di zuccheri, miele, uova, materie grasse,
+formaggio o frutta (v.d. 19.07); le cessioni di latte fresco, non concentrato nè zuccherato, destinato al consumo alimentare, confezionato per la vendita al minuto, sottoposto a pastorizzazione o ad
+altri trattamenti previsti da leggi sanitarie;
+m) le cessioni di beni soggette alla disciplina dei concorsi e delle operazioni a premio di cui al regio decreto-legge 19 ottobre 1938, n. 1933, convertito nella legge 5 giugno 1939, n. 937, e
+successive modificazioni ed integrazioni".
+- Si riporta il testo delle lettere e) ed h) dell'art. 2, terzo comma, del decreto del Presidente della Repubblica n.
+633 del 1972, ora soppresse:
+"e) i conferimenti in società e altri enti, compresi i consorzi e le associazioni o altre organizzazioni a condizione che il soggetto conferitario abbia diritto ad esercitare la detrazione totale
+dell'imposta nei modi ordinari;
+h) le cessioni che hanno per oggetto beni acquistati o importati dal cedente senza poter detrarre la relativa imposta per effetto dell'art. 19, secondo comma, lettere da a) a e-quater);".
+- Si riporta il testo dell'art. 4 del decreto del Presidente della Repubblica n. 633 del 1972, come modificato dal presente decreto:
+"Art. 4 (Esercizio di imprese). - Per esercizio di imprese si intende l'esercizio per professione abituale, ancorchè non esclusiva, delle attività commerciali o agricole di cui agli articoli 2135 e
+2195 del codice civile, anche se non organizzate in forma di impresa, nonchè l'esercizio di attività, organizzate in forma d'impresa, dirette alla prestazione di servizi che non rientrano nell'art.
+2195 del codice civile.
+Si considerano in ogni caso effettuate nell'esercizio di imprese:
+1) le cessioni di beni e le prestazioni di servizi fatte dalle società in nome collettivo e in accomandita semplice, dalle società per azioni e in accomandita per azioni, dalle società a
+responsabilità limitata, dalle società cooperative, di mutua assicurazione e di armamento, dalle società estere di cui all'art. 2507 del codice civile e dalle società di fatto;
+2) le cessioni di beni e le prestazioni di servizi fatte da altri enti pubblici e privati, compresi i consorzi, le associazioni o altre organizzazioni senza personalità giuridica e le società
+semplici, che abbiano per oggetto esclusivo o principale l'esercizio di attività commerciali o agricole.
+Si considerano effettuate in ogni caso nell'esercizio di imprese, a norma del precedente comma, anche le cessioni di beni e le prestazioni di servizi fatte dalle società e dagli enti ivi indicati ai
+propri soci, associati o partecipanti.
+Per gli enti indicati al n. 2) del secondo comma, che non abbiano per oggetto esclusivo o principale l'esercizio di attività commerciali o agricole, si considerano effettuate nell'esercizio di imprese
+soltanto le cessioni di beni e le prestazioni di servizi fatte nell'esercizio di attività commerciali o agricole. Si considerano fatte nell'esercizio di attività commerciali anche le cessioni di beni
+e le prestazioni di servizi ai soci, associati o partecipanti verso pagamento di corrispettivi specifici, o di contributi supplementari determinati in funzione delle maggiori o di- verse prestazioni
+alle quali danno diritto, ad esclusione di quelle effettuate in conformità alle finalità istituzionali da associazioni politiche, sindacali e di categoria, religiose, assistenziali, culturali e
+sportive, anche se rese nei confronti di associazioni che svolgono la medesima attività e che per legge, regolamento o statuto fanno parte di una unica organizzazione locale o nazionale, nonchè dei
+rispettivi soci, associati o partecipanti e dei tesserati dalle rispettive organizzazioni nazionali. Per le cessioni di beni e le prestazioni di servizio effettuate da associazioni culturali o
+sportive costituite ai sensi dell'art. 36 del codice civile, la disposizione si applica nei confronti degli associati o partecipanti minori d'età e, per i maggiorenni, a condizione che questi abbiano
+il diritto di voto per l'approvazione e le modificazioni dello statuto e dei regolamenti e per la nomina degli organi direttivi dell'associazione ed abbiano diritto a ricevere, nei casi di
+scioglimento della medesima, una quota del patrimonio sociale, se questo non è destinato a finalità di utilità generale.
+Agli effetti delle disposizioni di questo articolo sono considerate in ogni caso commerciali, ancorchè esercitate da enti pubblici, le seguenti attività:
+a) cessioni di beni nuovi prodotti per la vendita, escluse le pubblicazioni delle associazioni politiche, sindacali e di categoria, religiose, assistenziali, culturali e sportive cedute
+prevalentemente ai propri associati;
+b) erogazione di acqua, gas, energia elettrica e vapore; c) gestione di fiere ed esposizioni a carattere commerciale;
+d) gestione di spacci aziendali, gestione di mense e somministrazione di pasti;
+e) trasporto e deposito di merci;
+f) trasporto di persone;
+g) organizzazione di viaggi e soggiorni turistici; prestazioni alberghiere o di alloggio;
+h) servizi portuali e aeroportuali;
+i) pubblicità commerciale;
+l) telecomunicazioni e radiodiffusioni circolari.
+Non sono invece considerate attività commerciali: le operazioni relative all'oro e alle valute estere, compresi i depositi anche in conto corrente, di cui siano parti la Banca d'Italia, l'Ufficio
+italiano dei cambi o le banche agenti; la gestione, da parte delle amministrazioni militari o dei corpi di polizia, di mense e spacci riservati al proprio personale ed a quello dei Ministeri da cui
+dipendono, ammesso ad usufruirne per particolari motivi inerenti al servizio; la prestazione alle imprese consorziate o socie, da parte di consorzi o cooperative, di garanzie mutualistiche e di
+servizi concernenti il controllo qualitativo dei prodotti, compresa l'applicazione di marchi di qualità; le cessioni di beni e le prestazioni di servizi effettuate in occasione di manifestazioni
+propagandistiche dai partiti politici rappresentati nelle Assemblee nazionali e regionali; le cessioni di beni e prestazioni di servizi poste in essere dalla Presidenza della Repubblica, dal Senato
+della Repubblica, dalla Camera dei deputati e dalla Corte costituzionale, nel perseguimento delle proprie finalità istituzionali; le prestazioni sanitarie soggette al pagamento di quote di
+partecipazione alla spesa sanitaria erogate dalle unità sanitarie locali e dalle aziende ospedaliere del Servizio sanitario nazionale.
+Non sono considerate, inoltre, attività commerciali, anche in deroga al secondo comma:
+a) il possesso e la gestione di unità immobiliari classificate o classificabili nella categoria catastale A e le loro pertinenze, ad esclusione delle unità classificate o classificabili nella
+categoria catastale A10, di unità da diporto, di aeromobili da turismo o di qualsiasi altro mezzo di trasporto ad uso privato, di complessi sportivi o ricreativi, compresi quelli destinati
+all'ormeggio, al ricovero e al servizio di unità da diporto, da parte di società o enti, qualora la partecipazione ad essi consenta, gratuitamente o verso un corrispettivo inferiore al valore normale,
+il godimento, personale, o familiare dei beni e degli impianti stessi, ovvero quando tale godimento sia conseguito indirettamente dai soci o partecipanti, alle suddette condizioni, anche attraverso la
+partecipazione ad associazioni, enti o altre organizzazioni;
+b) il possesso, non strumentale nè accessorio ad altre attività esercitate, di partecipazioni o quote sociali, di obbligazioni o titoli similari, costituenti immobilizzazioni, al fine di percepire
+dividendi, interessi o altri frutti, senza strutture dirette ad esercitare attività finanziaria, ovvero attività di indirizzo, di coordinamento o altri interventi nella gestione delle società
+partecipate.
+- Si riporta il testo degli articoli 2135 e 2195 del codice civile, richiamati al primo comma dell'art. 4 del decreto del Presidente della Repubblica n. 633 del 1972:
+"Art. 2135 (Imprenditore agricolo). - È imprenditore agricolo chi esercita un'attività diretta alla coltivazione del fondo, alla silvicoltura, all'allevamento del bestiame e attività connesse. Si
+reputano connesse le attività dirette alla trasformazione o all'alienazione dei prodotti agricoli, quando rientrano nell'esercizio normale dell'agricoltura".
+"Art. 2195 (Imprenditori soggetti a registrazione). - Sono soggetti all'obbligo dell'iscrizione nel registro delle imprese gli imprenditori che esercitano:
+1) un'attività industriale diretta alla produzione di beni o servizi;
+2) un'attività intermediaria nella circolazione dei beni;
+3) un'attività di trasporto per terra, per acqua o per mare;
+4) un'attività bancaria o assicurativa;
+5) altre attività ausiliarie delle precedenti.
+Le disposizioni della legge che fanno riferimento alle attività e alle imprese commerciali si applicano, se non risulta diversamente, a tutte le attività indicate in questo articolo e alle imprese che
+le esercitano".
+- Si riporta il testo dell'art. 6 del decreto del Presidente della Repubblica n. 633 del 1972, come modificato dal presente decreto:
+"Art. 6 (Effettuazione delle operazioni). - Le cessioni di beni si considerano effettuate nel momento della stipulazione se riguardano beni immobili e nel momento della consegna o spedizione se
+riguardano beni mobili.
+Tuttavia le cessioni i cui effetti traslativi o costitutivi si producono posteriormente, tranne quelle indicate ai numeri 1) e 2) dell'art. 2, si considerano effettuate nel momento in cui si producono
+tali effetti e comunque, se riguardano beni mobili, dopo il decorso di un anno dalla consegna o spedizione.
+In deroga al precedente comma l'operazione si considera effettuata:
+a) per le cessioni di beni per atto della pubblica autorità e per le cessioni periodiche o continuative di beni in esecuzione di contratti di somministrazione, all'atto del pagamento del
+corrispettivo;
+b) per i passaggi dal committente al commissionario, di cui al n. 3) dell'art. 2, all'atto della vendita dei beni da parte del commissionario;
+c) per la destinazione al consumo personale o familiare dell'imprenditore e ad altre finalità estranee all'esercizio dell'impresa, di cui al n. 5) dell'art. 2, all'atto del prelievo dei beni;
+d) per le cessioni di beni inerenti a contratti estimatori, all'atto della rivendita a terzi ovvero, per i beni non restituiti, alla scadenza del termine convenuto tra le parti e comunque dopo il
+decorso di un anno dalla consegna o spedizione;
+d-bis) per le assegnazioni in proprietà di case di abitazione fatte ai soci da cooperative edilizie a proprietà divisa, alla data del rogito notarile;
+d-ter) (soppressa).
+Le prestazioni di servizi si considerano effettuate all'atto del pagamento del corrispettivo. Quelle indicate nell'art. 3, terzo comma, primo periodo, si considerano effettuate al momento in cui sono
+rese, ovvero, se di carattere periodico o continuativo, nel mese successivo a quello in cui sono rese.
+Se anteriormente al verificarsi degli eventi indicati nei precedenti commi o indipendentemente da essi sia emessa fattura, o sia pagato in tutto o in parte il corrispettivo, l'operazione si considera
+effettuata, limitatamente all'importo fatturato o pagato, alla data della fattura o a quella del pagamento, ad eccezione del caso previsto alla lettera d-bis) del secondo comma.
+L'imposta relativa alle cessioni di beni ed alle prestazioni di servizi diviene esigibile nel momento in cui le operazioni si considerano effettuate secondo le disposizioni dei commi precedenti e
+l'imposta è versata con le modalità e nei termini stabiliti nel titolo secondo. Tuttavia per le cessioni dei prodotti farmaceutici indicati nel numero 114) della terza parte dell'allegata tabella A
+effettuate dai farmacisti, per le cessioni di beni e le prestazioni di servizi ai soci, associati o partecipanti, di cui al quarto comma dell'art. 4, nonchè per quelle fatte allo Stato, agli organi
+dello Stato ancorchè dotati di personalità giuridica, agli enti pubblici territoriali e ai consorzi tra essi costituiti ai sensi dell'art. 25 della legge 8 giugno 1990, n. 142, agli istituti
+universitari, alle unità sanitarie locali, agli enti ospedalieri, agli enti pubblici di ricovero e cura aventi prevalente carattere scientifico, agli enti pubblici di assistenza e beneficenza e a
+quelli di previdenza, l'imposta diviene esigibile all'atto del pagamento dei relativi corrispettivi, salva la facoltà di applicare le disposizioni del primo periodo. Per le cessioni di beni di cui
+all'art. 21, quarto comma, secondo periodo, l'imposta diviene esigibile nel mese successivo a quello della loro effettuazione".
+- Per opportuna conoscenza si riporta l'elenco dei beni indicati al numero 114) della tabella A, parte III (Beni e servizi soggetti all'aliquota del 10 per cento), allegata al decreto del Presidente
+della Repubblica n. 633 del 1972, richiamati all'art. 6 del decreto del Presidente della Repubblica n. 633 del 1972:
+"114) medicinali pronti per l'uso umano o veterinario, ad eccezione dei prodotti omeopatici; sostanze farmaceutiche ed articoli di medicazione di cui le farmacie devono obbligatoriamente essere dotate
+secondo la farmacopea ufficiale".
+- Per opportuna conoscenza si riporta il testo dell'art. 25 della legge n. 142 del 1990, richiamato all'art. 6 del decreto del Presidente della Repubblica n. 633 del 1972:
+"Art. 25 (Consorzi). - 1. I comuni e le province, per la gestione associata di uno o più servizi e l'esercizio di funzioni possono costituire un consorzio secondo le norme previste per le aziende
+speciali di cui all'art. 23, in quanto compatibili. Al consorzio possono partecipare altri enti pubblici, ivi comprese le comunità montane, quando siano a ciò autorizzati, secondo le leggi alle quali
+sono soggetti.
+2. A tal fine i rispettivi consigli approvano a maggioranza assoluta dei componenti una convenzione ai sensi dell'art. 24, unitamente allo statuto del consorzio.
+3. In particolare la convenzione deve disciplinare le nomine e le competenze degli organi consortili coerentemente a quanto disposto dai commi 5, 5-bis e 5-ter dell'art. 36, e dalla lettera n) del
+comma 2 dell'art. 32, e prevedere la trasmissione, agli enti aderenti, degli atti fondamentali del consorzio; lo statuto deve disciplinare l'organizzazione, la nomina e le funzioni degli organi
+consortili.
+4. Salvo quanto previsto dalla convenzione e dallo statuto per i consorzi, ai quali partecipano a mezzo dei rispettivi rappresentanti legali anche enti diversi da comuni e province, l'assemblea del
+consorzio ÿ composta dai rappresentanti degli enti associati nella persona del sindaco, del presidente o di un loro delegato, ciascuno con responsabilità pari alla quota di partecipazione fissata
+dalla convenzione e dallo statuto.
+5. L'assemblea elegge il consiglio di amministrazione e ne approva gli atti fondamentali previsti dallo statuto.
+6. Tra gli stessi comuni e province non pu essere costituito più di un consorzio.
+7. In caso di rilevante interesse pubblico, la legge dello Stato può prevedere la costituzione di consorzi obbligatori per l'esercizio di determinate funzioni e servizi. La stessa legge ne demanda
+l'attuazione alle leggi regionali.
+7-bis. Ai consorzi che gestiscono attività aventi rilevanza economica e imprenditoriale, ai consorzi creati per la gestione dei servizi sociali se previsto nello statuto, si applicano, per quanto
+attiene alla finanza, alla contabilità ed al regime fiscale, le norme previste per le aziende speciali. Agli altri consorzi si applicano le norme dettate per gli enti locali".
+- Il testo dell'art. 21, quarto comma, del decreto del Presidente della Repubblica n. 633 del 1972, richiamato all'art. 6 del decreto del Presidente della Repubblica n. 633 del 1972, è riportato in
+nota all'art. 5.
+- Si riporta il testo dell'art. 10 del decreto del Presidente della Repubblica n. 633 del 1972, come modificato dal presente decreto:
+"Art. 10 (Operazioni esenti dall'imposta). - Sono esenti dall'imposta:
+1) le prestazioni di servizi concernenti la concessione e la negoziazione di crediti, la gestione degli stessi da parte dei concedenti e le operazioni di finanziamento; l'assunzione di impegni di
+natura finanziaria, l'assunzione di fideiussioni e di altre garanzie e la gestione di garanzie di crediti da parte dei concedenti; le dilazioni di pagamento, le operazioni, compresa la negoziazione,
+rel- ative a depositi di fondi, conti correnti, pagamenti, giroconti, crediti e ad assegni o altri effetti commerciali, ad eccezione del recupero di crediti; la gestione di fondi comuni di
+investimento, le dilazioni di pagamento e le gestioni similari e il servizio bancoposta;
+2) le operazioni di assicurazione, di riassicurazione e di vitalizio;
+3) le operazioni relative a valute estere aventi corso legale e a crediti in valute estere, eccettuati i biglietti e le monete da collezione e comprese le operazioni di copertura dei rischi di cambio;
+4) le operazioni, relative ad azioni, obbligazioni o altri titoli non rappresentativi di merci e a quote sociali, eccettuate la custodia e l'amministrazione dei titoli; le operazioni, incluse le
+negoziazioni e le opzioni, eccettuate la custodia e amministrazione, relative a valori mobiliari e a strumenti finanziari diversi dai titoli. Si considerano in particolare operazioni relative a valori
+mobiliari e a strumenti finanziari i contratti a termine fermo su titoli e altri strumenti finanziari e le relative opzioni, comunque regolati; i contratti a termine su tassi di interesse e le
+relative opzioni; i contratti di scambio di somme di denaro o di valute determinate in funzione di tassi di interesse, di tassi di cambio o di indici finanziari, e relative opzioni; le opzioni su
+valute, su tassi di interesse o su indici finanziari, comunque regolate;
+5) le operazioni relative alla riscossione dei tributi, comprese quelle relative ai versamenti di imposte effettuati per conto dei contribuenti, a norma di specifiche disposizioni di legge, da aziende
+e istituti di credito;
+6) le operazioni relative all'esercizio del lotto, delle lotterie nazionali, nonchè quelle relative all'esercizio dei totalizzatori e delle scommesse di cui al decreto ministeriale 16 novembre 1955,
+pubblicato nella Gazzetta Ufficiale n. 273 del 26 novembre 1955, e alla legge 24 marzo 1942, n. 315, e successive modificazioni, ivi comprese le operazioni relative alla raccolta delle giuocate;
+7) le operazioni relative all'esercizio delle scommesse in occasione di gare, corse, giuochi, concorsi e competizioni di ogni genere, diverse da quelle indicate al numero precedente, nonchè quelle
+relative all'esercizio del giuoco nelle case da giuoco autorizzate e alle operazioni di sorte locali autorizzate;
+8) le locazioni non finanziarie e gli affitti, relative cessioni, risoluzioni e proroghe, di terreni e aziende agricole, di aree diverse da quelle destinate a parcheggio di veicoli, per le quali gli
+strumenti urbanistici non prevedono la destinazione edificatoria, ed i fabbricati, comprese le pertinenze, le scorte e in genere i beni mobili destinati durevolmente al servizio degli immobili locati
+e affittati, esclusi quelli strumentali che per le loro caratteristiche non sono suscettibili di diversa utilizzazione senza radicali trasformazioni e quelli destinati ad uso di civile abitazione
+locati dalle imprese che li hanno costruiti per la vendita;
+8-bis) le cessioni di fabbricati, o di porzioni di fabbricato, a destinazione abitativa, effettuate da soggetti diversi dalle imprese costruttrici degli stessi o dalle imprese che vi hanno eseguito,
+anche tramite imprese appaltatrici, gli interventi di cui all'art. 31, primo comma, lettere c), d) ed e), della legge 5 agosto 1978, n. 457, ovvero dalle imprese che hanno per oggetto esclusivo o
+principale dell'attività esercitata la rivendita dei predetti fabbricati o delle predette porzioni;
+9) le prestazioni di mandato, mediazione e intermediazione relative alle operazioni di cui ai numeri da 1 a 7, nonchè quelle relative all'oro e alle valute estere, compresi i depositi anche in conto
+corrente, effettuate in relazione a rapporti di cui siano parti la Banca d'Italia e l'Ufficio italiano cambi o le banche agenti ai sensi dell'art. 4, ultimo comma, del presente decreto;
+10) (soppresso);
+11) le cessioni di oro in lingotti, pani, verghe, bottoni, granuli;
+12) le cessioni di cui al n. 4) dell'art. 2 fatte ad enti pubblici, associazioni riconosciute o fondazioni aventi esclusivamente finalità di assistenza, beneficenza, educazione, istruzione, studio o
+ricerca scientifica;
+13) le cessioni di cui al n. 4) dell'art. 2 a favore delle popolazioni colpite da calamità naturali o catastrofi dichiarate tali ai sensi della legge 8 dicembre 1970, n. 996, o della legge 24 febbraio
+1992, n. 225;
+14) le prestazioni di trasporto pubblico urbano di persone effettuate con qualsiasi mezzo. Si considerano urbani i trasporti effettuati nel territorio di un comune o tra comuni non distanti tra loro
+oltre cinquanta chilometri e pubblici anche i trasporti mediante veicoli da piazza.
+Per i trasporti eseguiti con i mezzi di cui alla legge 23 giugno 1927, n. 1110 e al regio decreto-legge 7 settembre 1938, n. 1696, convertito nella legge 5 gennaio 1939, n. 8, l'esenzione si applica
+limitatamente a quelli costituenti l'unico sistema di collegamento tra comuni o frazioni di comuni;
+15) le prestazioni di trasporto di malati o feriti con veicoli all'uopo equipaggiati, effettuate da imprese autorizzate;
+16) le prestazioni relative ai servizi postali;
+17) (già abrogato);
+18) le prestazioni sanitarie di diagnosi, cura e riabilitazione rese alla persona nell'esercizio delle professioni e arti sanitarie soggette a vigilanza, ai sensi dell'art. 99 del testo unico delle
+leggi sanitarie, approvato con regio decreto 27 luglio 1934, n. 1265, e suc- cessive modificazioni, ovvero individuate con decreto del Ministro della sanità, di concerto con il Ministro delle finanze;
+19) le prestazioni di ricovero e cura rese da enti ospedalieri o da cliniche e case di cura convenzionate nonchè da società di mutuo soccorso con personalità giuridica, compresa la somministrazione di
+medicinali, presidi sanitari e vitto, nonchè le prestazioni di cura rese da stabilimenti termali;
+20) le prestazioni educative dell'infanzia e della gioventù e quelle didattiche di ogni genere, anche per la formazione, l'aggiornamento, la riqualificazione e riconversione professionale, rese da
+istituti o scuole riconosciuti da pubbliche amministrazioni, comprese le prestazioni relative all'alloggio, al vitto e alla fornitura di libri e materiali didattici, ancorchè fornite da istituzioni,
+collegi o pensioni annessi, dipendenti o funzionalmente collegati, nonchè le lezioni relative a materie scolastiche e universitarie impartite da insegnanti a titolo personale;
+21) le prestazioni proprie dei brefotrofi, orfanotrofi, asili, case di riposo per anziani e simili, delle colonie marine, montane e campestri e degli alberghi e ostelli per la gioventù di cui alla
+legge 21 marzo 1958, n. 326, comprese le somministrazioni di vitto, indumenti e medicinali, le prestazioni curative e le altre prestazioni accessorie;
+22) le prestazioni proprie delle biblioteche, discoteche e simili e quelle inerenti alla visita di musei, gallerie, pinacoteche, monumenti, ville, palazzi, parchi, giardini botanici e zoologici e
+simili;
+23) le prestazioni previdenziali e assistenziali a favore del personale dipendente;
+24) le cessioni di organi, sangue e latte umani e di plasma sanguigno;
+25) (già soppresso);
+26) (già abrogato);
+27) le prestazioni proprie dei servizi di pompe funebri; 27-bis) i canoni dovuti da imprese pubbliche, ivi comprese le aziende municipalizzate, o private per l'affidamento in concessione di
+costruzione e di esercizio di impianti, comprese le discariche, destinati allo smaltimento, al riciclaggio o alla distruzione dei rifiuti urbani speciali, tossici o nocivi, solidi e liquidi;
+27-ter) le prestazioni socio-sanitarie, di assistenza domiciliare o ambulatoriale, in comunità e simili, in favore degli anziani ed inabili adulti, di tossicodipendenti e di malati di AIDS, degli
+handicappati psicofisici, dei minori anche coinvolti in situazioni di disadattamento e di devianza, rese da organismi di diritto pubblico, da istituzioni sanitarie riconosciute che erogano assistenza
+pubblica, previste all'art. 41 della legge 23 dicembre 1978, n. 833, o da enti aventi finalità di assistenza sociale, sia direttamente che in esecuzione di appalti, convenzioni e contratti in genere;
+27-quater) le prestazioni delle compagnie barracellari di cui all'art. 3 della legge 2 agosto 1897, n. 382;
+27-quinquies) le cessioni che hanno per oggetto beni acquistati o importati senza il diritto alla detrazione totale della relativa imposta ai sensi degli articoli 19, 19-bis1 e 19-bis2".
+- Si riporta il testo dell'art. 16 del decreto del Presidente della Repubblica n. 633 del 1972, come modificato dal presente decreto:
+"Art. 16 (Aliquote dell'imposta). - L'aliquota dell'imposta è stabilita nella misura del 19% della base imponibile dell'operazione. L'aliquota è ridotta al 4 e al 10 per cento per le operazioni che
+hanno per oggetto i beni e i servizi elencati nell'allegata tabella A, salvo il disposto dell'art. 34, ed è elevata al 38 per cento (ora diciannove per cento) per quelle che hanno per oggetto i beni
+elencati nell'allegata tabella B.
+Per le prestazioni di servizi dipendenti da contratti d'opera, di appalto e simili che hanno per oggetto la produzione di beni e per quelle dipendenti da contratti di locazione finanziaria, di
+noleggio e simili, l'imposta si applica con la stessa aliquota che sarebbe applicabile in caso di cessione dei beni prodotti, dati con contratti di locazione finanziaria, noleggio e simili".
+- Per opportuna conoscenza si riporta il testo dell'abrogato quarto comma dell'art. 16 del decreto del
+Presidente della Repubblica n. 633 del 1972:
+"In caso di mutamento di aliquota le fatture emesse, ai sensi dell'art. 21 con riferimento ai momenti di effettuazione di cui all'art. 6, commi primo, secondo e quarto, nei confronti dei soggetti
+indicati nell'ultimo comma dello stesso art. 6, non sono soggette a rettifica in relazione all'aliquota applicabile al momento del pagamento del corrispettivo dell'operazione".

@@ -1,0 +1,952 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2021/379 della Banca centrale europea del 22 gennaio 2021 relativo alle voci di bilancio degli enti creditizi e del settore delle istituzioni f  (id UE-32021R0379)
+
+=== K272 | [17] Disposizioni transitorie
+Articolo 17
+Disposizioni transitorie
+1. Le IFM di cui all’articolo 2, paragrafo 1, applicano le disposizioni del regolamento (UE) n. 1071/2013 (BCE/2013/33) dal 26 giugno 2021 al 1 o febbraio 2022.
+2. Gli enti creditizi diversi dalle IFM di cui all’articolo 2, paragrafo 4, applicano gli obblighi di segnalazione applicabili alle IFM stabiliti nel regolamento (UE) n. 1071/2013 (BCE/2013/33) dal 26
+giugno 2021 al 1 o febbraio 2022, ad eccezione degli obblighi di segnalazione di cui all’articolo 6 di tale regolamento. Fatte salve le informazioni statistiche di cui all’allegato III necessarie per
+calcolare l’aggregato soggetto a riserva degli enti creditizi ai sensi dell’articolo 5 del regolamento (UE) 2021/378 (BCE/2021/1), le BCN possono specificare una data entro la quale gli enti creditizi
+diversi dalle IFM devono segnalare le informazioni in conformità a tale paragrafo. Tale data non deve essere successiva al 31 marzo 2022.
+3. Le BCN possono concedere deroghe agli enti creditizi diversi dalle IFM agli obblighi di segnalazione statistica di cui al paragrafo 1, qualora le consistenze in essere delle attività totali del
+soggetto segnalante siano inferiori o uguali a 350 milioni di EUR.
+Qualora le BCN concedano deroghe ai sensi del primo sotto paragrafo, esse raccolgono almeno le informazioni statistiche di cui all’allegato III necessarie per calcolare l’aggregato soggetto a riserva
+degli enti creditizi ai sensi dell’articolo 5 del regolamento (UE) 2021/378 (BCE/2021/1).
+4. Ai fini dei paragrafi 1 e 2, i soggetti segnalanti non sono tenuti a segnalare le disaggregazioni per garanzia immobiliare dei prestiti di cui alla sezione 1 contenuta nella parte 3 dell’allegato I
+del regolamento (UE) n. 1071/2013 (BCE/2013/33).
+5. I soggetti segnalanti continuano a segnalare talune voci del bilancio su base trimestrale, conformemente all’articolo 5, paragrafo 1, terza frase, del regolamento (UE) n. 1071/2013 (BCE/2013/33) e
+come specificato nell’allegato I di tale regolamento, fino al 28 febbraio 2022.
+6. Per il periodo intercorrente tra il 26 giugno 2021 e il 1 o febbraio 2022, qualora i soggetti segnalanti di cui ai paragrafi 1 e 2 segnalino passività nei confronti di enti creditizi che sono
+soggetti all’obbligo di riserva ai sensi del regolamento (UE) 2021/378 (BCE/2021/1), essi includono in tale segnalazione le proprie passività nei confronti di enti creditizi diversi dalle IFM.
+
+=== K273 | [18] Allegato I, parte 1, sezione 1
+Articolo 18
+Allegato I, parte 1, sezione 1
+Allegato I, parte 1
+Allegato I, parte 1, sezione 2
+-
+Allegato I, parte 2
+Allegato I, parte 2
+Allegato I, parte 3
+Allegato I, parte 3
+Allegato I, parte 4
+Allegato I, parte 4
+Allegato I, parte 5
+Allegato I, parte 5
+Allegato I, parte 6
+Allegato I, parte 6
+Allegato I, parte 7
+Allegato I, parte 7
+Allegato II, parte 1, paragrafo 1
+Allegato II, parte 1, paragrafo 1
+Allegato II, parte 1, paragrafo 2, lettera a)
+Articolo 6, paragrafo 1
+Allegato II, parte 1, paragrafo 2, lettera b)
+Allegato II, parte 1, paragrafo 2, lettere a) e c)
+Allegato II, parte 1, paragrafo 2, lettera c)
+Allegato II, parte 1, paragrafo 2, lettere b) e d)
+Allegato II, parte 2
+Allegato II, parte 2
+Allegato II, parte 2, sezione 3, ultima frase
+Articolo 9, paragrafo 9
+Allegato II, parte 3
+Allegato II, parte 3
+Allegato III, parte 1, sezione 1
+Allegato III, parte 1
+Allegato III, parte 2, sezione 1
+
+=== K274 | [Allegato I] OBBLIGHI DI SEGNALAZIONE STATISTICA
+ALLEGATO I
+OBBLIGHI DI SEGNALAZIONE STATISTICA
+PARTE 1
+L’identificazione di talune IFM si basa sul principio di fungibilità dei depositi
+1.1.
+Le istituzioni finanziarie diverse dagli enti creditizi che emettono strumenti finanziari considerati strettamente assimilabili ai depositi sono classificate come IFM a condizione che esse ricadano
+nella definizione di IFM per altre ragioni. La classificazione è basata sul criterio della fungibilità dei depositi (vale a dire se le passività sono classificate come depositi), che è determinata
+dalla loro liquidità, dalle caratteristiche combinate di trasferibilità, convertibilità, certezza e negoziabilità e avuto riguardo, laddove necessario, alla data di emissione.
+Questi criteri di fungibilità dei depositi si applicano anche per determinare se le passività debbano essere classificate come depositi, a meno che non ci sia una categoria determinata per tali
+passività.
+1.2.
+Ai fini sia di determinare la fungibilità dei depositi sia di classificare le passività come depositi:
+a)
+per trasferibilità si intende la possibilità di smobilizzare i fondi investiti in uno strumento finanziario utilizzando mezzi di pagamento quali assegni, ordini di trasferimento, addebiti diretti o
+strumenti analoghi;
+b)
+per convertibilità si intende la possibilità, e il relativo costo, di convertire gli strumenti finanziari in moneta o in depositi trasferibili; la perdita di vantaggi fiscali nel caso di tale
+conversione può essere considerata una penale che riduce il grado di liquidità;
+c)
+per certezza si intende la precisa conoscenza anticipata del valore del capitale di uno strumento finanziario in valuta nazionale;
+d)
+i titoli quotati e scambiati regolarmente su un mercato organizzato sono considerati negoziabili. Per le quote in società di investimento collettivo a capitale variabile non vi è mercato nel senso
+comune del termine. Tuttavia, gli investitori sono a conoscenza del valore giornaliero delle quote e possono prelevare fondi a quel prezzo.
+1.3.
+Non si considerano strettamente assimilabili ai depositi le quote/partecipazioni emesse da società di investimento collettivo che operano esclusivamente come piani di risparmio per i dipendenti
+nell’ambito dei quali gli investitori possono solo riscattare i propri investimenti soggetti a condizioni di riscatto restrittive non legate agli sviluppi del mercato.
+PARTE 2
+Bilancio (consistenze in essere mensili)
+Per compilare gli aggregati monetari e le contropartite dell’area dell’euro, la BCE necessita dei dati contenuti nella tabella 1. Ulteriori dati sono richiesti ai fini del sistema di riserve minime
+della BCE. I requisiti mensili sono i seguenti:
+1. Categorie di strumenti
+a) Passivo
+Le pertinenti categorie di strumenti sono: valuta in circolazione, depositi, quote/partecipazioni emesse in fondi comuni monetari, titoli di debito emessi, capitale e riserve e altre passività. Al
+fine di separare le passività monetarie da quelle non monetarie, i depositi sono anche suddivisi in depositi overnight, depositi con durata stabilita, depositi rimborsabili con preavviso e pronti
+contro termine. Cfr. le definizioni contenute nell’allegato II.
+b) Attivo
+Le pertinenti categorie di strumenti sono: cassa, crediti, titoli di debito detenuti, partecipazioni, quote di fondi di investimento, capitale non finanziario e altre attività. Cfr. le definizioni
+contenute nell’allegato II.
+2. Disaggregazione per durata
+Le scomposizioni per durate originarie costituiscono una fonte alternativa di informazioni dettagliate laddove gli strumenti finanziari non siano pienamente comparabili fra i diversi mercati.
+a) Passivo
+Le soglie per fasce di durata, o per periodi di preavviso, sono: per i depositi con durata prestabilita, una scadenza originaria di un anno e di due anni all’emissione; e per i depositi rimborsabili
+con preavviso, un preavviso di tre mesi e di due anni. Le operazioni di pronti contro termine non sono disaggregate per durata, dato che si tratta generalmente di strumenti a termine molto breve, di
+solito con scadenza originaria inferiore a tre mesi. I titoli di debito emessi dalle IFM sono disaggregati per scadenze a uno e due anni. Non è richiesta alcuna disaggregazione per scadenza per le
+quote/partecipazioni emesse da FCM.
+b) Attivo
+Le soglie per fasce di durata sono: per i prestiti ai residenti dell’area dell’euro (diversi dalle IFM) per sottosettore e ancora per i prestiti alle famiglie per finalità, a durata di uno e cinque
+anni, con un’ulteriore scomposizione a due anni per i prestiti a società non finanziarie dell’area dell’euro e alle famiglie per finalità denominati in euro; e per i titoli di debito emessi da IFM
+situate nell’area dell’euro, a durata di uno e due anni.
+3. Disaggregazione per finalità e identificazione distinta dei prestiti alle imprese individuali/società di persone non riconosciute come entità giuridiche.
+I prestiti alle famiglie e alle istituzioni senza scopo di lucro al servizio delle famiglie sono ulteriormente disaggregati secondo le finalità del prestito (credito al consumo, mutui per l’acquisto
+di abitazione, altri prestiti). All’interno della categoria «altri prestiti», i prestiti concessi alle imprese individuali/società di persone non riconosciute come entità giuridiche devono essere
+identificati separatamente.
+4. Disaggregazione per valuta
+Per le voci di bilancio che possono essere utilizzate nella compilazione degli aggregati monetari, i saldi in euro devono essere identificati separatamente in modo che la BCE abbia l’opzione di
+definire gli aggregati monetari in termini di saldi denominati in tutte le valute combinate o solo in euro.
+5. Disaggregazione per settore e residenza delle controparti
+5.1.
+Per la compilazione dei dati relativi agli aggregati monetari e delle controparti si richiede l’individuazione delle controparti situate nell’area dell’euro che formano il settore detentore di moneta.
+A tal fine, in linea con il Sistema europeo dei conti rivisto (di seguito «SEC 2010») istituito dal regolamento (UE) n. 549/2013 (cfr. la parte 3 dell’allegato II), le controparti non-IFM si
+suddividono in Amministrazioni pubbliche (S.13), dove l’Amministrazione centrale (S.1311) è identificata separatamente nei depositi totali, e altri settori residenti. Al fine di calcolare una
+disaggregazione per settore mensile degli aggregati monetari e delle contropartite di credito, gli altri residenti sono ulteriormente disaggregati nei seguenti sottosettori: società non finanziarie
+(S.11), famiglie + istituzioni senza scopo di lucro al servizio delle famiglie (S.14 + S.15), imprese di assicurazione (S.128), fondi pensione (S.129), fondi di investimento diversi dai FCM (S.124),
+altri intermediari finanziari (S.125), ausiliari finanziari (S.126) e istituzioni finanziarie captive e prestatori di fondi (S.127). Allo scopo di segnalare alcune voci di bilancio, quali prestiti e
+titoli di debito, questi ultimi tre settori sono accorpati (S.125 + S.126 + S.127). È fatta un’ulteriore distinzione per le controparti che sono SV e controparti centrali (CCP) all’interno degli altri
+intermediari finanziari (S.125). Per le imprese individuali/società di persone non riconosciute come entità giuridiche si veda la sezione 3.
+Ai fini del regime delle riserve minime della BCE, nella tabella 1 è fatta una distinzione tra le amministrazioni centrali per quanto riguarda il totale dei depositi e le categorie di deposito
+«depositi con durata prestabilita oltre due anni», «depositi rimborsabili con preavviso di oltre due anni» e «operazioni di pronti contro termine». Anche per il calcolo dell’aggregato soggetto a
+riserva, sono raccolte informazioni per quanto riguarda le passività verso altri enti creditizi soggetti all’obbligo di riserve minime, come specificato nella parte 1 dell’allegato III.
+5.2.
+Le IFM controparti sono suddivise in autorità bancarie centrali (S.121), con un’identificazione distinta della BCE, istituti di deposito, escluse le autorità bancarie centrali (S.122), e FCM (S.123).
+Si tratta di comprendere meglio le politiche di prestito e finanziamento del settore bancario e di monitorare meglio le attività interbancarie.
+5.3.
+Per quanto riguarda le posizioni infra-gruppo, è fatta un’ulteriore distinzione per posizioni e operazioni di prestito dei soggetti segnalanti e istituti di deposito, escluse le autorità bancarie
+centrali (S.122) per consentire l’individuazione delle interazioni tra enti creditizi appartenenti allo stesso gruppo (nazionale o di altri Stati membri dell’area dell’euro).
+5.4.
+Per quanto riguarda le disponibilità in titoli di debito con scadenza originaria fino a un anno, disaggregati per valuta, è fatta un’ulteriore distinzione per le amministrazioni pubbliche (S.13) al
+fine di assicurare una migliore visione d’insieme delle interazioni tra stati sovrani e banche.
+5.5.
+Taluni depositi/prestiti che derivano da operazioni di pronti contro termine/operazioni di acquisto a pronti con patto di rivendita a termine o da operazioni analoghe possono riferirsi alle operazioni
+con controparti centrali. Una controparte centrale è un’entità che si frappone legalmente tra le controparti nei contratti trattati sui mercati finanziari, diventando l’acquirente di ogni vendita e il
+venditore in ogni acquisto. Conformemente all’articolo 8, paragrafo 2, tali attività devono essere segnalate sotto forma di depositi e prestiti, indipendentemente dal trattamento applicato per altre
+finalità di segnalazione. Poiché tali operazioni sostituiscono spesso attività bilaterali tra le IFM, è fatta una distinzione ulteriore per le operazioni di pronti contro termine e le operazioni di
+acquisto a pronti con patto di rivendita a termine che coinvolgono controparti centrali classificate come altri intermediari finanziari (S.125).
+5.6.
+Le controparti «nazionali» sono individuate separatamente da quelle «dell’area dell’euro diverse da quelle nazionali» per quanto riguarda tutte le disaggregazioni statistiche. Le controparti situate
+negli Stati membri sono individuate secondo il proprio settore nazionale o la propria classificazione istituzionale conformemente agli elenchi mantenuti dalla BCE a fini statistici, al «Manuale sulle
+statistiche di bilancio delle IFM» e al SEC 2010. Le istituzioni dell’UE che sono residenti nell’area dell’euro senza essere residenti in uno Stato membro (la BCE è un esempio) sono segnalate come
+controparti «dell’area dell’euro diverse da quelle nazionali». Le controparti situate al di fuori degli Stati membri sono classificate in base al Sistema dei conti nazionali (di seguito l’«SCN 2008»).
+5.7.
+Nel caso delle quote/partecipazioni di FCM emesse da IFM degli Stati membri dell’area dell’euro, i soggetti segnalanti segnalano quanto meno i dati relativi alla residenza dei detentori sulla base di
+una disaggregazione tra residenti nazionali/residenti nell’area dell’euro non nazionali/residenti nel resto del mondo, per consentire di escludere le consistenze dei non residenti nell’area dell’euro.
+Le BCN possono anche derivare le informazioni statistiche necessarie dai dati raccolti sulla base del regolamento (UE) n. 1011/2012 (BCE/2012/24), nella misura in cui tali dati soddisfino i requisiti
+di tempestività imposti dall’articolo 7 del presente regolamento e i requisiti minimi definiti dall’allegato IV.
+a)
+Relativamente alle quote/partecipazioni di FCM che, conformemente alla legislazione nazionale, vengono registrate in base all’identità del/dei loro detentore/i, inclusa la sua/loro residenza, i FCM
+emittenti o i loro legali rappresentanti segnalano nel bilancio mensile i dati disaggregati per residenza dei titolari delle quote/partecipazioni emesse.
+b)
+Relativamente alle quote/partecipazioni di FCM che non vengono registrate in base all’identità del/dei loro detentore/i, conformemente alla legislazione nazionale, o che vengono registrate ma non
+forniscono alcuna informazione sulla residenza dei detentori, i soggetti segnalanti segnalano i dati disaggregati per residenza in conformità all’approccio deciso dalla BCN competente in accordo con
+la BCE. Tale obbligo è limitato a una delle opzioni seguenti o a una loro combinazione, da scegliersi avendo riguardo all’organizzazione dei mercati interessati e alle disposizioni giuridiche
+nazionali vigenti nello Stato membro in questione. Tale obbligo sarà controllato periodicamente dalla BCN.
+i)
+FCM emittenti:
+I FCM emittenti o i loro legali rappresentanti segnalano dati sulla disaggregazione per residenza dei detentori delle loro quote/partecipazioni emesse. Le informazioni possono essere fornite dal
+soggetto che colloca le quote/partecipazioni o da qualsiasi altro soggetto coinvolto nell’emissione, riacquisto o trasferimento delle quote/partecipazioni.
+ii)
+IFM e AIF depositari di quote/partecipazioni di FCM:
+depositari di quote/partecipazioni in fondi comuni monetari segnalano i dati sulla disaggregazione per residenza dei detentori delle quote/partecipazioni emesse da FCM residenti e detenute in custodia
+per conto del possessore o di un altro intermediario che agisce anch’esso come depositario. Tale opzione è applicabile se: i) il depositario distingue le quote/partecipazioni di FCM detenute in
+custodia per conto dei titolari da quelle detenute per conto di altri depositari; e ii) la maggior parte delle quote/partecipazioni di FCM sono custodite presso istituzioni nazionali residenti
+classificate come intermediari finanziari (IFM o AIF).
+iii)
+IFM e AIF in qualità di segnalanti operazioni di residenti con non residenti aventi per oggetto quote/partecipazioni di un FCM residente;
+In quanto soggetti segnalanti, le IFM e gli AIF che agiscono in qualità di segnalanti operazioni di residenti con non residenti aventi ad oggetto quote/partecipazioni di un FCM residente, segnalano i
+dati sulla disaggregazione per residenza dei detentori delle quote/partecipazioni emesse da fondi comuni residenti, negoziate da questi per conto del detentore o di un altro intermediario anch’esso
+coinvolto nell’operazione. Tale opzione è applicabile se: i) la copertura della segnalazione è esauriente, ossia copre sostanzialmente tutte le operazioni effettuate dai soggetti dichiaranti; ii) si
+segnalano dati accurati su acquisti e vendite intercorse con non residenti nell’area dell’euro; iii) le differenze tra il valore di emissione e quello di rimborso, escluse le commissioni, delle stesse
+quote/partecipazioni, sono minime; iv) l’ammontare delle quote/partecipazioni detenute dai non residenti nell’area dell’euro emesse dai FCM residenti è basso.
+iv)
+Se le opzioni da i) a ii) non si applicano, i soggetti segnalanti incluse le IFM e gli AIF, segnalano i dati in questione sulla base delle informazioni disponibili.
+6. Disaggregazione del capitale e delle riserve
+Tale disaggregazione è richiesta al fine di fornire informazioni sui componenti contabili del capitale e delle riserve nonché di monitorare l’interazione di tale voce con altri sviluppi del bilancio.
+7. Individuazione di posizioni in bilancio per i derivati e per gli interessi maturati su prestiti o depositi all’interno delle altre attività e altre passività.
+Tale disaggregazione è richiesta al fine di migliorare la coerenza tra le statistiche.
+8. Disponibilità proprie in titoli
+La tabella 1 richiede informazioni sulle disponibilità proprie delle IFM in titoli di debito e strumenti di capitale, che sono escluse dalle attività e passività a norma dell’articolo 8, paragrafo 5.
+Tabella 1A Aggiustamenti da rivalutazione mensili (1) 1
+PARTE 3
+Bilancio (consistenze in essere trimestrali)
+Al fine di approfondire l’analisi degli andamenti monetari e per altre finalità statistiche, la BCE necessita di quanto segue con riferimento agli elementi chiave:
+1.
+Disaggregazione per sottosettore e per durata dei prestiti erogati ad istituzioni diverse dalle IFM dell’area dell’euro (cfr. la tabella 2).
+Ciò è richiesto per rendere possibile il monitoraggio del sottosettore completo e della struttura delle scadenze del finanziamento del credito complessivo (prestiti erogati e titoli) delle IFM
+riguardo al settore detentore di moneta.
+Per i prestiti denominati in euro con durata originaria di oltre un anno e con durata originaria di oltre due anni nei confronti di società non finanziarie e famiglie, sono richiesti ulteriori
+dettagli per talune durate residue e periodi in cui viene rivisto il tasso d’interesse (cfr. la tabella 2). Un tasso di interesse rivisto è inteso come un cambiamento nel tasso di interesse di un
+prestito che è attualmente stabilito nel contratto di prestito. I prestiti soggetti a revisione del tasso di interesse includono, tra l’altro, prestiti con tassi di interesse che sono periodicamente
+rivisti in base alle variazioni di un indice, ad esempio l’Euribor, prestiti con tassi di interesse indicizzati, ossia «tassi variabili», e prestiti con tassi di interesse che sono modificabili a
+discrezione del prestatore.
+2.
+Disaggregazione per sottosettore dei depositi presso le amministrazioni pubbliche (diverse dalle amministrazioni centrali) degli Stati membri dell’area dell’euro (cfr. la tabella 2).
+Ciò è richiesto come informazione complementare rispetto alla segnalazione mensile.
+3.
+Disaggregazione per settore delle posizioni nei confronti delle controparti al di fuori dell’area dell’euro (cfr. la tabella 2).
+Quando il SEC 2010 non è applicabile si applica la classificazione per settore prevista dall’SCN 2008.
+4.
+Individuazione di beni immobili all’interno di attività non finanziarie.
+Tale disaggregazione è richiesta per fornire informazioni aggiuntive sulle attività non finanziarie e per monitorare l’importanza relativa delle disponibilità di beni immobili da parte del settore
+bancario.
+5.
+Individuazione di posizioni in bilancio per i derivati con una disaggregazione per settore all’interno delle altre attività e altre passività (cfr. la tabella 2).
+Tale disaggregazione è richiesta per migliorare la coerenza tra le statistiche e integra la segnalazione mensile.
+6.
+Disaggregazione di strumenti di capitale detenuti in azioni quotate, azioni non quotate e altre partecipazioni (cfr. la tabella 2)
+Ciò integra la segnalazione mensile fornendo informazioni sul modo in cui gli strumenti di capitale possono essere negoziati.
+7.
+Disaggregazione per paese e posizioni con la Banca europea per gli investimenti, il Meccanismo europeo di stabilità, lo Strumento europeo di stabilità finanziaria e il Comitato di risoluzione unico
+(cfr. la tabella 3).
+Tale disaggregazione è richiesta per analizzare ulteriormente gli andamenti monetari, per fornire informazioni statistiche sugli Stati membri che potrebbero adottare l’euro e per effettuare controlli
+sulla qualità dei dati.
+La disaggregazione per paese deve essere fornita per ciascuno Stato membro. Laddove un paese aderisca all’Unione, la segnalazione della disaggregazione per tale Stato membro ha inizio con il trimestre
+di riferimento in cui ricade la data della relativa adesione.
+La disaggregazione per paese deve essere fornita con riferimento ai paesi che si ritirano, o si sono ritirati, dall’Unione, ossia come disaggregazione separata all’interno della voce «Resto del mondo
+(esclusa l’UE)».
+8.
+Disaggregazione per settore dei depositi e prestiti transfrontalieri all’interno dell’area dell’euro a enti diversi dalle IFM (cfr. la tabella 3).
+Tale disaggregazione è richiesta per valutare le posizioni dei soggetti segnalanti in ogni singolo Stato membro con controparti residenti negli altri Stati membri dell’area dell’euro.
+Laddove uno Stato membro adotti l’euro, la segnalazione della disaggregazione per tale Stato membro inizia con il trimestre di riferimento in cui ricade la data dell’adozione dell’euro da parte di
+tale Stato membro
+9.
+Disaggregazione per valuta (cfr. la tabella 4).
+La disaggregazione per valuta è richiesta per i prestiti relativi alla valuta nazionale di ciascuno Stato membro non appartenente all’area dell’euro e per i depositi, i prestiti e i titoli di debito
+detenuti per valute selezionate (GBP, USD, CHF e JPY).
+Tale disaggregazione è richiesta per permettere il calcolo delle transazioni per gli aggregati monetari e le contropartite, corrette per le variazioni dei tassi di cambio nei casi in cui tali
+aggregati includano tutte le valute combinate.
+Tabella 2A Aggiustamenti da rivalutazione mensili (1) 1
+Tabella 3
+Consistenze in essere trimestrali (disaggregazione per Paese)
+VOCI DI BILANCIO
+UE
+Resto del mondo (escl. UE)
+Altri Stati membri dell'area dell'euro
+Stati membri non appartenenti all'area dell'euro
+Istituzioni dell'UE selezionate ( *1 )
+di cui: Regno Unito
+PASSIVO
+8.
+Banconote e monete in circolazione
+9.
+Depositi
+da IFM
+da istituzioni diverse dalle IFM
+amministrazioni pubbliche
+atri intermediari finanziari + ausiliari finanziari + prestatori di fondi e istituzioni finanziarie captive
+imprese di assicurazione
+fondi pensione
+fondi di investimento diversi dai fondi comuni monetari
+società non finanziarie
+famiglie + istituzioni senza scopo di lucro al servizio delle famiglie
+10.
+Titoli di debito emessi
+11.
+Quote/partecipazioni in FCM
+12.
+Capitale e riserve
+13.
+Altre passività
+ATTIVO
+1.
+Cassa
+2.
+Prestiti
+a IFM
+a istituzioni diverse dalle IFM
+amministrazioni pubbliche
+altri intermediari finanziari + ausiliari finanziari + prestatori di fondi e istituzioni finanziarie captive
+imprese di assicurazione
+fondi pensione
+fondi di investimento diversi dai fondi comuni monetari
+società non finanziarie
+famiglie + istituzioni senza scopo di lucro al servizio delle famiglie
+3.
+Titoli di debito detenuti
+fino a 1 anno
+oltre 1 anno e fino a 2 anni
+oltre 2 anni
+emessi da IFM
+fino a un anno
+oltre 1 anno e fino a 2 anni
+oltre 2 anni
+emessi da istituzioni diverse dalle IFM
+di cui: amministrazioni pubbliche
+4.
+Azioni e altre partecipazioni
+5.
+Quote/partecipazioni in fondi di investimento
+Quote/partecipazioni in FCM
+Quote/partecipazioni in fondi di investimento diversi dai FCM
+6.
+Attività non finanziarie
+7.
+Altre attività
+Tabella 4
+Consistenze in essere trimestrali (disaggregazione per valuta)
+VOCI DI BILANCIO
+Tutte le valute combinate
+Euro
+Valute UE diverse dall'Euro
+Valute di paesi terzi
+Valute selezionate
+Totale
+Valute di ciascuno Stato membro dell'UE
+GBP
+USD
+JPY
+CHF
+PASSIVO
+9.
+Depositi
+A.
+Residenti nazionali
+da IFM
+M
+M
+da istituzioni diverse dalle IFM
+M
+B.
+Residenti nell'area dell'euro diversi da quelli nazionali
+da IFM
+M
+M
+da istituzioni diverse dalle IFM
+M
+C.
+Resto del mondo
+fino a un anno
+M
+oltre 1 anno
+M
+da IFM
+Q
+da istituzioni diverse dalle IFM
+Q
+10.
+Titoli di debito emessi
+M
+M
+ATTIVO
+2.
+Prestiti
+A.
+Residenti nazionali
+a IFM
+M
+a istituzioni diverse dalle IFM
+M
+M
+B.
+Residenti nell'area dell'euro diversi da quelli nazionali
+a IFM
+M
+a istituzioni diverse dalle IFM
+M
+M
+C.
+Resto del mondo
+fino a 1 anno
+M
+oltre 1 anno
+M
+a IFM
+Q
+a istituzioni diverse dalle IFM
+Q
+3.
+Titoli di debito detenuti
+A.
+Residenti nazionali
+emessi da IFM
+M
+M
+emessi da istituzioni diverse dalle IFM
+M
+M
+B.
+Residenti nell'area dell'euro diversi da quelli nazionali
+emessi da IFM
+M
+M
+emessi da istituzioni diverse da IFM
+M
+M
+C.
+Resto del mondo
+emessi da IFM
+Q
+emessi da istituzioni diverse dalle IFM
+Q
+M
+Obblighi relativi ai dati mensili, cfr. tabella 1.
+Q
+Obblighi relativi ai dati trimestrali, cfr. tabella 2.
+PARTE 4
+Segnalazione degli aggiustamenti da rivalutazione per la compilazione dei dati sulle transazioni
+Gli aggiustamenti da rivalutazione sono necessari per consentire alla BCE di calcolare le operazioni finanziarie. Essi forniscono informazioni sulle conseguenze delle modifiche nei prezzi o altre
+valutazioni sulle consistenze di fine periodo delle attività e passività indicate nel bilancio. Modifiche alle consistenze dovute agli effetti di oscillazione dei tassi di cambio sulle attività e
+passività non denominate in euro non sono incluse negli aggiustamenti da rivalutazione segnalati (gli aggiustamenti dei tassi di cambio ai fini della compilazione delle operazioni sono ricavati
+separatamente).
+I requisiti minimi per la segnalazione degli aggiustamenti da rivalutazione rivalutazioni sono stabiliti nelle tabelle 1 A e 2 A. Considerazioni specifiche per gli aggiustamenti da rivalutazione dei
+prestiti e dei titoli sono delineate qui di seguito.
+1. Rivalutazioni dei prestiti (comprese svalutazioni o cancellazioni)
+Gli aggiustamenti da rivalutazione riflettono qualsiasi variazione nelle consistenze dei crediti segnalato in conformità delle parti 2 e 3 causato dall’applicazione delle svalutazioni, inclusa la
+cancellazione dell’intero importo in essere di un prestito (cancellazione), e gli storni di svalutazioni o cancellazioni. L’aggiustamento riflette anche le variazioni negli accantonamenti per perdite
+su crediti nel caso in cui una BCN consenta di registrare le consistenze di bilancio al netto degli accantonamenti per perdite su crediti ai sensi dell’articolo 8, paragrafo 4. Un aggiustamento da
+rivalutazione deve essere registrato anche per tenere conto della differenza tra la variazione nelle consistenze dei crediti derivanti da una cessione di crediti (con cancellazione dal bilancio) e il
+valore dell’operazione (vale a dire il prezzo di vendita). Analogamente, l’acquisizione di crediti a un prezzo inferiore rispetto alle consistenze segnalate dà luogo a una rivalutazione positiva.
+2. Rivalutazione dei prezzi dei titoli
+L’aggiustamento rispetto alla rivalutazione dei prezzi dei titoli fa riferimento alle fluttuazioni nella valutazione dei titoli derivanti dalla variazione del prezzo a cui i titoli sono registrati o
+negoziati. L’aggiustamento comprende le variazioni nel tempo del valore delle consistenze di bilancio di fine periodo derivanti dalla variazione del valore di riferimento al quale i titoli sono
+registrati, vale a dire potenziali guadagni/perdite. Può anche contenere variazioni di valutazione derivanti da operazioni in titoli, vale a dire utili/perdite realizzati.
+Non è previsto alcun obbligo minimo di segnalazione per i titoli di debito emessi. Tuttavia, se le prassi di valutazione applicate dai soggetti segnalanti ai titoli di debito emessi determinano
+modifiche alle loro consistenze di fine periodo, alle BCN è consentito raccogliere dati relativi a tali modifiche.
+Tabella 1A Aggiustamenti da rivalutazione mensili (1) 1
+Tabella 2A Aggiustamenti da rivalutazione mensili (1) 1
+PARTE 5
+Obblighi di segnalazione statistica per la cartolarizzazione di prestiti e per altri trasferimenti di prestiti
+1. Obblighi generali
+1.1.
+I dati sono segnalati ai sensi dell’articolo 8, paragrafo 2 e a quelli dell’articolo 8, paragrafo 4 se applicabile. Tutte le voci sui dati sono disaggregate per residenza e per sottosettore del
+debitore del prestito come indicato nei titoli delle colonne della tabella 5.
+1.2.
+Si distingue tra cartolarizzazioni e altri trasferimenti di prestiti. I prestiti ceduti nella fase di stoccaggio di una cartolarizzazione sono trattati come se fossero già cartolarizzati È richiesta
+un’individuazione distinta per le cartolarizzazioni che coinvolgono SV residenti nell’area dell’euro. Per gli altri trasferimenti di prestiti è richiesta un’individuazione distinta quando la
+controparte è una IFM nazionale o una IFM non nazionale dell’area dell’euro.
+1.3.
+I trasferimenti di prestiti sono inoltre distinti in funzione dell’incidenza sulle consistenze dei prestiti segnalate conformemente alle parti 2 e 3 dell’allegato I:
+a)
+i trasferimenti che incidono sulle consistenze segnalate sono cessioni che comportano la cancellazione dal bilancio e acquisizioni che comportano l’iscrizione o la re-iscrizione in bilancio dei
+prestiti; e
+b)
+i trasferimenti che non incidono sulle consistenze segnalate sono cessioni che non comportano la cancellazione dal bilancio dei prestiti a causa dell’applicazione degli IFRS 9 o di norme analoghe e
+l’acquisizione di prestiti precedentemente trasferiti dalla IFM senza cancellazione dal proprio bilancio. I prestiti presentati come garanzie all’Eurosistema per le operazioni di credito di politica
+monetaria in forma di crediti che comportano un trasferimento senza cancellazione dal bilancio sono esclusi dagli importi segnalati nella tabella 5.
+1.4.
+Per quanto riguarda i trasferimenti che hanno effetto sulle consistenze dei prestiti segnalate, le IFM effettuano un’ulteriore distinzione per i trasferimenti quando operano come di gestori delle
+consistenze in essere dei prestiti trasferiti.
+2. Obblighi di segnalazione dei trasferimenti di prestiti
+2.1.
+Le IFM calcolano i trasferimenti di prestiti netti come acquisizioni durante il mese meno le cessioni durante il mese. A tal fine, le IFM applicano il valore dell’operazione delle acquisizioni e delle
+cessioni (ossia, rispettivamente, il valore degli acquisti e delle vendite).
+2.2.
+Le IFM forniscono dati sui trasferimenti di prestiti in conformità alla tabella 5a come segue:
+a)
+le acquisizioni e le cessioni, da parte della IFM, che hanno effetto sulle sue consistenze dei prestiti segnalate in conformità alle parti 2 e 3 dell’allegato I sono assegnate al campo 1 in cui la IFM
+opera come gestore e al campo 2 in cui l’IFM non opera come gestore; e
+b)
+le acquisizioni e le cessioni, da parte della IFM, che non hanno effetto sulle sue consistenze dei prestiti segnalate in conformità alle parti 2 e 3 dell’allegato I sono assegnate al campo 3.
+2.3.
+Per quanto riguarda l’assegnazione di cui alla sezione 2.2, lettera a), le BCN possono dare istruzioni alle IFM per assegnare i trasferimenti di prestiti al campo 1 anziché al campo 2, quando un’altra
+IFM nazionale opera come gestore dei prestiti trasferiti. Le BCN richiedono che tali trasferimenti siano individuati separatamente nella segnalazione statistica da quelli trasferiti e gestiti dalla
+stessa IFM.
+3. Obblighi di segnalazione delle consistenze in essere dei prestiti trasferiti
+3.1.
+Le IFM forniscono dati in conformità alla tabella 5b sulle consistenze in essere di fine mese dei prestiti, come segue:
+a)
+le consistenze in essere di prestiti che sono stati trasferiti dalla IFM con effetto sulle sue consistenze di prestiti segnalate in conformità alle parti 2 e 3 dell’allegato I e per i quali la IFM
+opera come gestore sono assegnate al campo 1; e
+b)
+le consistenze in essere di prestiti che sono stati trasferiti dalla IFM senza effetto sulle sue consistenze di prestiti segnalate in conformità alle parti 2 e 3 dell’allegato I, per effetto
+dell’applicazione degli IFRS 9 o di norme analoghe, sono assegnate al campo 3.
+3.2.
+Per quanto riguarda l’assegnazione di cui alla sezione 3.1, lettera a), quando le BCN danno istruzioni alle IFM per assegnare i trasferimenti di prestiti a norma della sezione 2.3, le IFM includono
+nel campo 1 le consistenze in essere dei prestiti trasferiti da un’altra IFM nazionale per i quali operano come gestori, nella misura in cui i prestiti non sono inclusi nelle consistenze segnalate
+conformemente alle parti 2 e 3 dell’allegato I delle IFM nazionali. Le BCN richiedono che tali consistenze in essere siano individuate separatamente nelle segnalazioni statistiche da quelle trasferite
+e gestite dalla stessa IFM.
+3.3.
+Le BCN possono richiedere informazioni aggiuntive alle IFM al fine di spiegare l’andamento delle consistenze in essere dei prestiti, in particolare per quanto riguarda la variazione della controparte
+che detiene i prestiti trasferiti, o la variazione delle modalità di gestione dei prestiti cancellati, che può richiedere adeguamenti da riclassificazione per consentire alla BCE di adeguare
+correttamente l’andamento dei prestiti per l’effetto derivante dalle cartolarizzazioni e da altri trasferimenti nel bilancio delle IFM.
+4. Obblighi di segnalazione di aggiustamenti da rivalutazione che incidono sulle consistenze dei prestiti trasferiti
+4.1.
+Le IFM forniscono dati in conformità alla tabella 5b sugli aggiustamenti da rivalutazione che riflettono eventuali variazioni delle consistenze in essere di fine mese dei prestiti segnalate alla
+sezione 3, dovuti all’applicazione di svalutazioni o cancellazioni di prestiti, e variazioni negli accantonamenti sui prestiti (se le consistenze in essere sono registrate al netto degli
+accantonamenti). Gli aggiustamenti da rivalutazione riflettono anche, nel mese del trasferimento del prestito, qualsiasi differenza tra le consistenze in essere dei prestiti trasferiti e il valore
+dell’operazione dell’acquisizione o della cessione di cui alla sezione 2.
+4.2.
+Le IFM forniscono dati in conformità alla tabella 5b sugli aggiustamenti da rivalutazione, come segue:
+a)
+gli aggiustamenti da rivalutazione che corrispondono alle consistenze in essere dei prestiti trasferiti di cui alla sezione 3.1, lettera a), e fatta salva, se del caso, la sezione 3.2, sono assegnati
+al campo 1; e
+b)
+gli aggiustamenti da rivalutazione che corrispondono alle consistenze in essere dei prestiti trasferiti di cui alla sezione 3.1, lettera b), sono assegnati al campo 3.
+Tabella 5a Trasferimenti netti di prestiti (acquisizioni meno cessioni): dati mensili
+Tabella 5b Consistenze in essere e aggiustamenti da rivalutazione di prestiti trasferiti: dati mensili
+PARTE 6
+Segnalazione semplificata per enti creditizi di piccole dimensioni
+Laddove le BCN concedano deroghe agli enti creditizi ai sensi dell’articolo 9, paragrafo 2, esse possono esentare tali enti creditizi dai seguenti obblighi:
+1.
+disaggregazione per valuta di cui alla sezione 4, parte 2;
+2.
+identificazione separata di:
+a)
+posizioni nei confronti di una controparte centrale di cui alla sezione 5.5 della parte 2;
+b)
+prestiti sindacati come indicato nella tavola 1 della parte 2;
+c)
+titoli di debito con durata fino a due anni e capitale nominale garantito al di sotto del 100 %, come indicato nella tabella 1, parte 2;
+d)
+disponibilità immobiliari di cui alla sezione 4 della parte 3.
+3.
+disaggregazione per settore di cui alla sezione 3 della parte 3;
+4.
+disaggregazione per paese di cui alla sezione 7 della parte 3;
+5.
+disaggregazione per valuta di cui alla sezione 9 della parte 3;
+Inoltre, tali enti creditizi possono soddisfare i requisiti di segnalazione statistica di cui alle parti 2, 4 e 5 segnalando i dati solo trimestralmente e in conformità all’obbligo di tempestività
+relativo alle statistiche trimestrali di cui all’articolo 7, paragrafo 3.
+PARTE 7
+Sintesi degli obblighi di segnalazione statistica sulle voci di bilancio ( 1 )
+TIPOLOGIE DI STRUMENTI E DURATA
+VOCI DI BILANCIO
+ATTIVO
+PASSIVO
+1.
+Cassa
+2.
+Prestiti
+fino a 1 anno
+( 2 )
+oltre 1 anno e fino a 5 anni
+( 2 )
+oltre 5 anni
+( 2 )
+di cui: posizioni infragruppo
+di cui: prestiti sindacati
+di cui: operazioni di acquisto a pronti con patto di rivendita a termine
+di cui: posizioni di cash pooling nozionale
+di cui: euro
+fino a 1 anno
+( 3 )
+oltre 1 anno e fino a 2 anni
+( 3 )
+oltre 2 anni e fino a 5 anni
+( 3 )
+oltre 5 anni
+( 3 )
+di cui: prestiti rotativi e scoperti di conto
+( 3 )
+di cui: credito da carte di credito a saldo
+( 3 )
+di cui: credito da carte di credito revolving
+( 3 )
+di cui: posizioni di cash pooling nozionale
+Prestiti con scadenza originaria oltre 1 anno (euro)
+di cui: prestiti con vita residua rimanente inferiore a 1 anno
+di cui: prestiti con vita residua rimanente superiore a 1 anno e con tasso d’interesse ricalcolato nei successivi 12 mesi
+Prestiti con durata originaria oltre 2 anni (euro)
+di cui: prestiti con vita residua rimanente inferiore a due anni
+di cui: prestiti con vita residua rimanente superiore a 2 anni e con tasso d’interesse ricalcolato nei successivi 24 mesi
+3.
+Titoli di debito detenuti
+fino a 1 anno
+( 4 )
+oltre 1 anno e fino a 2 anni
+( 4 )
+oltre 2 anni
+( 4 )
+4.
+Partecipazioni
+Azioni quotate
+Azioni non quotate
+Altre partecipazioni
+5.
+Quote/partecipazioni in fondi di investimento
+Quote/partecipazioni in FCM
+Quote/partecipazioni in fondi di investimento diversi dai FCM
+6.
+Attività non finanziarie
+di cui: beni immobili
+7.
+Altre attività
+di cui: strumenti finanziari derivati
+di cui: interessi maturati su prestiti
+8.
+Banconote e monete in circolazione
+9.
+Depositi
+fino a 1 anno
+( 5 )
+oltre 1 anno
+( 5 )
+di cui: posizioni infragruppo
+di cui: depositi trasferibili
+di cui: fino a 2 anni
+di cui: prestiti sindacati
+9.1.
+Depositi overnight
+di cui: depositi trasferibili
+di cui: posizioni di cash pooling nozionale
+9.2.
+Depositi con durata prestabilita
+fino a un anno
+oltre 1 anno e fino a 2 anni
+oltre 2 anni
+9.3.
+Depositi rimborsabili con preavviso
+fino a 3 mesi
+oltre 3 mesi
+di cui: oltre 2 anni
+( 6 )
+9.4.
+Operazioni di pronti contro termine
+10.
+Quote/partecipazioni in FCM
+11.
+Titoli di debito emessi
+fino a un anno
+oltre 1 anno e fino a 2 anni
+di cui: fino a 2 anni e con garanzia sul capitale nominale sotto il 100 %
+oltre 2 anni
+12.
+Capitale e riserve
+Capitale azionario emesso
+Profitti e perdite accumulati nel periodo di segnalazione
+Reddito e spese imputati direttamente a capitale
+Fondi derivanti da reddito non distribuiti agli azionisti
+Accantonamenti specifici e generali a fronte di attività
+13.
+Altre passività
+di cui: strumenti finanziari derivati
+di cui: interessi maturati sui depositi
+DISAGGREGAZIONE PER CONTROPARTI E FINALITÀ
+ATTIVO
+PASSIVO
+A.
+Residenti nazionali
+IFM
+Autorità bancarie centrali
+Istituti di deposito escluse le autorità bancarie centrali
+FCM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+amministrazioni centrali
+amministrazioni di stati federati
+amministrazioni locali
+enti di previdenza e assistenza sociale
+Altri settori residenti
+( 7 )
+fondi di investimento diversi dai FCM (S.124)
+( 7 )
+altri intermediari finanziari, ausiliari finanziari e istituzioni finanziarie captive e prestatori di fondi (S.125 + S.126 + S.127) ( 7 )
+di cui: controparti centrali
+di cui: SV
+imprese di assicurazione (S.128)
+( 7 )
+fondi pensione (S.129)
+( 7 )
+società non finanziarie (S.11)
+( 7 )
+famiglie e istituzioni senza scopo di lucro al servizio delle famiglie (S.14 + S.15)
+( 7 )
+credito al consumo
+mutui per l’acquisto di abitazioni
+altri prestiti
+di cui: imprese individuali/società di persone non riconosciute come entità giuridiche
+A.
+Residenti nazionali
+IFM
+Autorità bancarie centrali
+Istituti di deposito escluse le autorità bancarie centrali
+FCM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+amministrazioni centrali
+altre amministrazioni pubbliche
+amministrazioni di stati federati
+amministrazioni locali
+enti di previdenza e assistenza sociale
+Altri settori residenti
+( 7 )
+fondi di investimento diversi dai FCM (S.124)
+( 7 )
+altri intermediari finanziari (S.125)
+( 7 )
+di cui: controparti centrali
+di cui: SV
+ausiliari finanziari (S.126)
+( 7 )
+istituzioni finanziarie captive e prestatori di fondi (S.127)
+( 7 )
+imprese di assicurazione (S.128)
+( 7 )
+fondi pensione (S.129)
+( 7 )
+società non finanziarie (S.11)
+( 7 )
+famiglie e istituzioni senza scopo di lucro al servizio delle famiglie (S.14 + S.15) ( 7 )
+B.
+Residenti dell’area dell’euro diversi da quelli nazionali
+IFM
+Autorità bancarie centrali
+di cui: Banca centrale europea
+Istituti di deposito escluse le autorità bancarie centrali
+FCM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+amministrazioni centrali
+amministrazioni di stati federati
+amministrazioni locali
+enti di previdenza e assistenza sociale
+Altri settori residenti
+( 7 )
+fondi di investimento diversi dai FCM (S.124)
+( 7 )
+altri intermediari finanziari, ausiliari finanziari e istituzioni finanziarie captive e prestatori di fondi (S.125 + S.126 + S.127) ( 7 )
+di cui: controparti centrali
+( 8 )
+di cui: SV
+( 8 )
+imprese di assicurazione (S.128)
+( 7 )
+fondi pensione (S.129)
+( 7 )
+società non finanziarie (S.11)
+( 7 )
+famiglie e istituzioni senza scopo di lucro al servizio delle famiglie (S.14 + S.15) ( 7 )
+credito al consumo
+mutui per l’acquisto di abitazioni
+altri prestiti
+di cui: imprese individuali/società di persone non riconosciute come entità giuridiche
+B.
+Residenti dell’area dell’euro diversi da quelli nazionali
+IFM
+Autorità bancarie centrali
+di cui: Banca centrale europea
+Istituti di deposito escluse le autorità bancarie centrali
+FCM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+amministrazioni centrali
+altre amministrazioni pubbliche
+amministrazioni di stati federati
+amministrazioni locali
+enti di previdenza e assistenza sociale
+Altri settori residenti
+( 7 )
+fondi di investimento diversi dai FCM (S.124)
+( 7 )
+altri intermediari finanziari (S.125)
+( 7 )
+di cui: controparti centrali
+( 8 )
+di cui: SV
+( 8 )
+ausiliari finanziari (S.126)
+( 7 )
+istituzioni finanziarie captive e prestatori di fondi (S.127)
+( 7 )
+imprese di assicurazione (S.128)
+( 7 )
+fondi pensione (S.129)
+( 7 )
+società non finanziarie (S.11)
+( 7 )
+famiglie e istituzioni senza scopo di lucro al servizio delle famiglie (S.14 + S.15) ( 7 )
+C.
+Residenti del resto del mondo
+IFM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+Altri residenti
+C.
+Residenti del resto del mondo
+IFM
+Istituzioni diverse dalle IFM
+Amministrazioni pubbliche
+Altri residenti
+D.
+Totale
+D.
+Totale
+VALUTE
+e
+euro
+x
+valute estere – valute diverse dall’euro ( 9 )
+( *1 ) I dati dovrebbero essere identificati separatamente per la Banca europea per gli investimenti, il Meccanismo europeo di stabilità, il Fondo europeo di stabilità finanziaria e il Comitato di
+risoluzione unico.
+( 1 ) I dati sulle disaggregazioni mensili sono indicati in grassetto, i dati sulle disaggregazioni trimestrali sono indicati a caratteri normali.
+( 2 ) La disaggregazione per scadenza mensile riguarda i prestiti ai principali settori residenti diversi dalle IFM, comprese le amministrazioni pubbliche degli Stati membri dell’area dell’euro. Le
+corrispondenti disaggregazioni per scadenza per crediti concessi alle amministrazioni pubbliche diverse da quelle centrali degli Stati membri dell’area dell’euro sono trimestrali.
+( 3 ) Per prestiti concessi a società non finanziarie dell’area dell’euro e a famiglie. Inoltre, la disaggregazione per scadenza viene raccolta per i prestiti alle famiglie per finalità di prestito.
+( 4 ) La disaggregazione per scadenza mensile riguarda soltanto le disponibilità in titoli emessi da IFM situate nell’area dell’euro, e le disponibilità in titoli emessi dalle amministrazioni
+pubbliche dell’area dell’euro hanno una disaggregazione «fino a un anno». Quanto ai dati trimestrali, le disponibilità in titoli emessi da istituzioni diverse dalle IFM dell’area dell’euro sono
+suddivise tra «fino a un anno» e «oltre un anno».
+( 5 ) Solo con controparti residenti nel del resto del mondo.
+( 6 ) La segnalazione della voce «depositi rimborsabili con preavviso di oltre due anni» è facoltativa fino a nuova comunicazione.
+( 7 ) La disaggregazione mensile per sottosettore è richiesta per crediti e depositi.
+( 8 ) Per operazioni di pronti contro termine e operazioni di acquisto a pronti con patto di rivendita a termine è richiesta una disaggregazione per le controparti centrali classificate nel
+sottosettore S.125. Inoltre, per i prestiti, i depositi e i titoli di debito detenuti, è richiesta una disaggregazione per le controparti che sono società veicolo.
+( 9 ) La disaggregazione trimestrale per valuta di ciascun altro Stato membro è richiesta per i prestiti selezionati. La disaggregazione trimestrale per le valute GBP, USD, JPY e CHF è richiesta per
+voci selezionate di depositi, prestiti e i titoli di debito detenuti.

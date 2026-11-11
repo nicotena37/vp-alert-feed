@@ -1,0 +1,1152 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2021/379 della Banca centrale europea del 22 gennaio 2021 relativo alle voci di bilancio degli enti creditizi e del settore delle istituzioni f  (id UE-32021R0379)
+
+=== K275.1 | [Allegato II] PRINCIPI DI CONSOLIDAMENTO E DEFINIZIONI (pezzo 1 di 2)
+ALLEGATO II
+PRINCIPI DI CONSOLIDAMENTO E DEFINIZIONI
+PARTE 1
+Consolidamento a fini statistici all’interno dello stesso Stato membro
+1.
+Per ciascuno degli Stati membri la cui valuta è l’euro (di seguito «Stato membro dell’area dell’euro»), gli operatori soggetti agli obblighi di segnalazione sono le IFM residenti incluse nell’elenco
+delle IFM a fini statistici e gli enti creditizi diversi dalle IFM residenti. Esse sono:
+a)
+le istituzioni costituite e situate in quel territorio, incluse le succursali di case madri situate al di fuori del territorio;
+b)
+le succursali delle istituzioni la cui sede principale è situata al di fuori del territorio.
+I soggetti segnalanti consolidano a fini statistici le attività di tutti i loro uffici nazionali (sede legale o principale e/o succursali) situati all’interno dello stesso Stato membro. Le istituzioni
+situate nei centri finanziari off-shore saranno trattate, dal punto di vista statistico, come residenti nei territori in cui tali centri sono situati.
+1.
+I soggetti segnalanti segnalano tutte le attività dei loro uffici non nazionali come segue:
+a)
+se il soggetto segnalante ha succursali situate all’interno del territorio degli altri Stati membri dell’area dell’euro, il soggetto segnalante considera le posizioni nei confronti di tali succursali
+come posizioni nei confronti di residenti negli altri Stati membri dell’area dell’euro.
+b)
+Se il soggetto segnalante ha succursali situate fuori dal territorio degli Stati membri dell’area dell’euro, il soggetto segnalante considera le posizioni nei confronti di tali succursali come
+posizioni nei confronti di residenti negli altri Stati membri dell’area dell’euro.
+c)
+Se il soggetto segnalante è una succursale, considera le posizioni nei riguardi della propria sede principale o di altre succursali della stessa istituzione, situate all’interno del territorio degli
+altri Stati membri dell’area dell’euro come posizioni nei confronti di residenti negli altri Stati membri dell’area dell’euro.
+d)
+Laddove un soggetto segnalante sia una succursale, considera le posizioni nei riguardi della propria sede principale o di altre succursali della stessa istituzione, situate al di fuori del territorio
+degli altri Stati membri dell’area dell’euro, quali posizioni nei confronti di residenti nel resto del mondo.
+PARTE 2
+Definizioni delle categorie di strumenti
+1.
+Questa tabella fornisce una descrizione dettagliata delle varie categorie di strumenti che le banche centrali nazionali (BCN) traspongono in categorie nazionali conformemente a quanto stabilito dal
+presente regolamento. La tabella non costituisce un elenco di strumenti finanziari individuali e le descrizioni non sono esaustive. Le definizioni fanno riferimento al SEC 2010.
+2.
+La scadenza originaria, ossia la scadenza all’emissione, si riferisce al periodo fisso durante il quale uno strumento finanziario non può essere rimborsato, ad esempio strumenti di debito, o può
+essere rimborsato solo con determinate penali, ad esempio alcuni tipi di depositi. Il periodo di preavviso corrisponde al periodo di tempo che trascorre tra il momento in cui il detentore informa
+della sua intenzione di convertire in contante lo strumento, e la data in cui la conversione può essere effettuata senza incorrere in penali. Gli strumenti finanziari sono classificati in base al
+periodo di preavviso solo in assenza di una durata prestabilita.
+3.
+I crediti finanziari possono essere distinti in negoziabili o non negoziabili. Sono negoziabili se la loro proprietà è rapidamente trasferibile da un’unità all’altra tramite consegna o girata, oppure
+se possono essere oggetto di compensazione nel caso degli strumenti finanziari derivati. Se qualunque strumento finanziario è potenzialmente scambiabile, gli strumenti negoziabili sono destinati a
+essere scambiati in un mercato organizzato o fuori borsa, sebbene l’effettivo scambio non costituisca una condizione imprescindibile per la negoziabilità.
+Tabella
+Categorie di strumenti
+CATEGORIE DELL’ATTIVO
+Categoria
+Descrizione delle caratteristiche principali
+1.
+Cassa
+Disponibilità in euro, banconote e monete estere in circolazione comunemente utilizzate per effettuare pagamenti
+2.
+Prestiti
+Disponibilità in attività finanziarie che si creano allorché i creditori prestano fondi ai debitori, che non sono attestate da un documento oppure sono attestate da un documento non negoziabile. La
+presente voce include anche attività in forma di depositi presso i soggetti segnalanti. Le BCN possono anche richiedere la piena disaggregazione per settore per questa voce.
+1.
+La presente voce include:
+a)
+prestiti concessi a famiglie e istituzioni senza scopo di lucro al servizio delle famiglie, disaggregati per:
+i)
+credito al consumo (prestiti concessi principalmente per uso personale nel consumo di beni e servizi). Il credito al consumo concesso a imprese individuali/società di persone non riconosciute come
+entità giuridiche è incluso in questa categoria, se il soggetto segnalante sa che il prestito è principalmente utilizzato a fini di consumo personale;
+ii)
+prestito per l’acquisto di un’abitazione (credito concesso al fine di investire in abitazioni per uso proprio o da cedere in locazione, inclusi la costruzione e il rinnovamento). Ciò comprende i
+crediti garantiti da ipoteche su immobili ad uso abitativo utilizzati per l’acquisto di un’abitazione e altri crediti per l’acquisto di un’abitazione effettuati a titolo personale o garantiti a fronte
+di altre forme di attività. I mutui concessi a imprese individuali/società di persone non riconosciute come entità giuridiche sono inclusi in questa categoria a meno che il soggetto segnalante non
+sappia che l’abitazione è principalmente utilizzata per finalità connesse ad attività economiche, nel qual caso è segnalata come «altri crediti dei quali a imprese individuali/società di persone non
+riconosciute come entità giuridiche»;
+iii)
+altro (crediti concessi per finalità diverse dal consumo e dall’acquisto di un’abitazione, quali attività economiche, consolidamento del debito, istruzione ecc.). La presente categoria può includere
+prestiti finalizzati al consumo concessi a imprenditori individuali/società di persone non riconosciute come entità giuridiche (cfr. la parte 3 dell’allegato II) se essi non sono segnalati sotto la
+categoria «credito al consumo»;
+b)
+debito da carta di credito
+Ai fini del presente regolamento, la presente categoria comprende il credito concesso alle famiglie o alle società non finanziarie o attraverso carte di addebito posticipato, vale a dire carte che
+concedono credito a saldo come definito di seguito, o attraverso le carte di credito, vale a dire carte che concedono credito a saldo e credito revolving. Il debito da carta di credito è registrato su
+conti relativi alla carta dedicati e di conseguenza non visibili sui conti correnti o sugli scoperti di conto. Il credito a saldo è definito come il credito concesso a un tasso d’interesse dello 0 %
+tra le operazioni di pagamento effettuate con la carta durante un ciclo di fatturazione e la data alla quale i saldi di debito derivanti da tale specifico ciclo di fatturazione diventano esigibili. Il
+credito revolving è definito come il credito concesso dopo le date di scadenza dei cicli di fatturazione precedenti, vale a dire l’ammontare del debito sul conto della carta che non è stato regolato
+quando ciò era possibile per la prima volta, a cui è applicato un tasso d’interesse o tassi d’interesse a scaglioni normalmente superiori allo 0 %. Spesso devono essere versate quote minime per
+rimborsare almeno parzialmente il credito concesso.
+La controparte di queste forme di credito è l’entità responsabile alla fine del rimborso delle somme rimanenti in linea con il contratto, che coincide con il detentore della carta nel caso di utilizzo
+privato delle carte, ma non nel caso delle carte dell’impresa;
+c)
+Prestiti rotativi e scoperti di conto corrente
+I prestiti rotativi sono prestiti che possiedono tutte le caratteristiche seguenti: i) il prestatario può usare o ritirare fondi entro un limite di credito approvato in precedenza senza dare preavviso
+al prestatore; ii) l’ammontare del credito disponibile può aumentare e diminuire in quanto i fondi sono presi in prestito e ripagati; iii) il credito può essere utilizzato ripetutamente.
+I prestiti rotativi includono gli importi ottenuti attraverso una linea di credito non ancora ripagata (importi in essere). Una linea di credito è un accordo tra un prestatore e un prestatario che
+consente a quest’ultimo di prendere anticipi, in un periodo definito e fino ad un certo limite, e rimborsarli a sua discrezione prima di una data definita. Gli importi resi disponibili attraverso una
+linea di credito, che non sono stati ritirati o che sono già stati ripagati, non sono da considerare sotto alcuna categoria di voci del bilancio. Gli scoperti di conto sono saldi di debito sui conti
+correnti. Sia i prestiti rotativi che gli scoperti di conto escludono i prestiti forniti attraverso le carte di credito. L’importo complessivo dovuto dal prestatario deve essere segnalato, a
+prescindere dal fatto che esso rientri o ecceda i limiti prestabiliti tra il prestatore e il prestatario con riguardo all’ordine di grandezza e/o al periodo massimo del prestito;
+d)
+Prestiti sindacati (singoli contratti di credito nei quali diversi enti partecipano in qualità di prestatori).
+prestiti sindacati coprono solo i casi nei quali il prestatario sia a conoscenza, dal contratto di credito, del fatto che il prestito è effettuato da diversi prestatori. A fini statistici, solo gli
+importi realmente sborsati dai prestatori (piuttosto che le linee di credito totali) sono considerati come prestiti sindacati. Il prestito sindacato è normalmente concordato e coordinato da
+un’istituzione (chiamata spesso «gestore principale») ed è effettuato in concreto da vari partecipanti al sindacato. I partecipanti, incluso il gestore principale, segnalano tutti la propria quota di
+prestito al prestatario, vale a dire non al gestore principale, tra le attività del proprio bilancio;
+e)
+depositi, come definiti nella categoria del passivo 9;
+f)
+attività di leasing finanziario a favore di terzi
+Le attività di leasing finanziario sono contratti in base ai quali il proprietario di un bene durevole, di seguito il «concedente» concede tale bene a un terzo, di seguito il «concessionario», per
+tutta, o quasi, la vita economica del bene stesso, in cambio di un canone periodico che copre il costo connesso al bene e a un determinato tasso di interesse. Il concessionario riceve tutti i benefici
+che possono derivare dall’uso del bene e si accolla tutti i costi e i rischi connessi alla sua titolarità. A fini statistici, i contratti di leasing finanziario sono considerati come crediti dal
+concedente al concessionario che permettono al concessionario di acquistare il bene. Le attività (beni durevoli) oggetto della concessione in leasing non sono iscritte in alcuna parte del bilancio;
+g)
+crediti inesigibili che non sono stati ancora rimborsati o cancellati,
+L’ammontare totale dei prestiti nei confronti dei quali il rimborso non è avvenuto nei termini o è altrimenti identificato come deteriorato, parzialmente o totalmente, in linea con la definizione di
+default di cui all’articolo 178 del regolamento (UE) n. 575/2013;
+h)
+disponibilità in titoli non negoziabili,
+disponibilità in titoli di debito che non sono negoziabili e non possono essere scambiate in mercati secondari;
+i)
+crediti negoziati
+I crediti che di fatto sono divenuti negoziabili devono essere iscritti alla voce «crediti» dell’attivo a condizione che si dimostri che non esistono contrattazioni sul mercato secondario. Altrimenti
+dovrebbero essere classificati come titoli di debito (categoria 3);
+j)
+debito subordinato in forma di depositi o crediti
+Gli strumenti di debito subordinato forniscono un credito a titolo sussidiario nei confronti dell’istituzione emittente che può essere solo fatto valere dopo che tutti gli altri crediti di livello
+superiore, ad esempio depositi/crediti, siano stati soddisfatti, attribuendo loro alcune delle caratteristiche delle partecipazioni. A fini statistici, il debito subordinato deve essere classificato
+come «crediti» o «titoli di debito» a seconda della natura dello strumento finanziario. Laddove le disponibilità in tutte le forme di debito subordinato siano attualmente identificate in un valore
+unico a fini statistici, tale valore deve essere classificato nella categoria dell’attivo «titoli di debito», sulla base del fatto che il debito subordinato è costituito principalmente nella forma di
+titoli piuttosto che di crediti;
+k)
+crediti derivanti da operazioni di acquisto a pronti con patto di rivendita a termine o prestito titoli a fronte di contante a garanzia
+Contropartita del contante pagato in cambio di titoli acquistati da parte dei soggetti segnalanti ad un determinato prezzo con l’impegno fermo a rivendere quei titoli o altri simili ad un prezzo
+prestabilito in una specifica data futura, o prestito titoli a fronte di contante a garanzia, si veda passivo voce 9.4.
+l)
+Posizioni di cash pooling nozionale
+Prestiti (sotto forma di scoperti di conto) prelevati da cash pool nozionali da parte di partecipanti al pool. I prestiti non coperti contrattualmente da meccanismi di cash pooling, ma concessi a
+partecipanti al pool non sono inclusi.
+2.
+La voce seguente non è trattata come un credito:
+Crediti concessi su base fiduciaria
+I crediti concessi su base fiduciaria, ossia crediti fiduciari, sono crediti costituiti in nome di una parte, di seguito «fiduciario», e per conto di un terzo, di seguito «beneficiario». A fini
+statistici, i crediti fiduciari non devono essere iscritti nel bilancio del fiduciario laddove i rischi e i vantaggi derivanti dalla titolarità dei fondi sono a carico del beneficiario. I rischi e i
+vantaggi derivanti dalla titolarità dei fondi sono a carico del beneficiario quando: a) il beneficiario si assume il rischio del credito (vale a dire che il proprietario fiduciario è responsabile solo
+della gestione dal punto di vista amministrativo del credito); o b) l’investimento del beneficiario è garantito contro perdite nel caso in cui il fiduciario sia posto in liquidazione (vale a dire che
+il credito fiduciario non fa parte delle attività del fiduciario che possono essere distribuite in caso di fallimento
+3.
+Titoli di debito detenuti
+Disponibilità in titoli di debito, che sono strumenti finanziari negoziabili che servono come prova del debito, sono scambiati sui mercati secondari o possono essere compensati sul mercato e che non
+conferiscono al titolare alcun diritto di proprietà sull’ente emittente.
+La presente voce include:
+a)
+disponibilità in titoli che attribuiscono al detentore il diritto incondizionato a un reddito fisso o determinato contrattualmente nella forma di pagamento di cedole e/o a una somma fissa
+predeterminata a una certa data (o date) o a partire da una data definita al momento dell’emissione;
+b)
+Crediti che siano diventati negoziabili su un mercato organizzato, vale a dire crediti negoziati, a condizione che l’esistenza di contrattazioni sul mercato secondario e di quotazioni frequenti
+dell’attività finanziaria, nonché la presenza di market maker siano dimostrate, ad esempio, dalla differenza tra le quotazioni d’acquisto e di vendita. Laddove ciò non fosse il caso, devono essere
+iscritti alla voce «crediti» dell’attivo [cfr. anche «crediti negoziati» alla voce 2 i)];
+c)
+debito subordinato in forma di titoli di debito [cfr. anche «debito subordinato in forma di depositi o crediti» alla voce 2 j)].
+Titoli dati in prestito mediante operazioni di prestito titoli o venduti mediante un’operazione di pronti contro termine rimangono nel bilancio del titolare originario (e non devono essere iscritti
+nel bilancio dell’acquirente temporaneo), laddove vi sia l’impegno irrevocabile di invertire l’operazione, e non una semplice opzione. Nel caso in cui l’acquirente temporaneo venda i titoli ricevuti,
+tale vendita deve essere registrata come un’operazione definitiva in titoli e iscritta nel bilancio dell’acquirente temporaneo come una posizione negativa nel portafoglio titoli.
+4.
+Partecipazioni
+Le partecipazioni conferiscono diritti di proprietà su società o quasi-società; sono rappresentative del diritto sul valore residuo, dopo che sono stati soddisfatti tutti gli altri creditori
+La presente voce include le seguenti disaggregazioni:
+a)
+Azioni quotate
+Le azioni quotate sono titoli di capitale quotati in una borsa valori. Può trattarsi di una borsa valori riconosciuta o di qualunque altro tipo di mercato secondario. Le azioni quotate sono designate
+anche come azioni in listino. L’esistenza di quotazioni di azioni quotate in borsa implica che i prezzi correnti di mercato sono di solito prontamente disponibili.
+b)
+Azioni non quotate
+Le azioni non quotate sono titoli di capitale non quotati in una borsa valori.
+c)
+Altre partecipazioni
+Le altre partecipazioni comprendono tutte le forme di partecipazione diverse da quelle classificate nelle sottocategorie azioni quotate e azioni non quotate. In particolare, ciò include il capitale
+investito da una sede centrale in succursali non nazionali.
+5.
+Quote/partecipazioni in fondi di investimento
+Quote o partecipazioni emesse da fondi di investimento, costituiti da organismi di investimento collettivo che investono in attività finanziarie e non finanziarie nella misura in cui l’obiettivo
+perseguito è l’investimento di capitali raccolti presso il pubblico.
+La presente voce include quote/partecipazioni emesse da FCM in conformità al presente regolamento e quote/partecipazioni emesse da fondi di investimento diversi dai FCM come definiti dall’articolo 1,
+paragrafo 1, del regolamento (UE) n. 1073/2013 (BCE/2013/38).
+6.
+Attività non finanziarie
+Attività diverse dalle attività finanziarie, comprese le immobilizzazioni (attività non finanziarie prodotte che sono utilizzate ripetutamente o in modo continuativo nella produzione per più di un
+anno).
+Tale voce può includere:
+a)
+immobili, ossia abitazioni, altri fabbricati e strutture (sia esistenti che in fase di sviluppo) e terreni appartenenti legalmente a soggetti segnalanti, anche per uso proprio. La presente voce è
+segnalata come una voce distinta «di cui»;
+b)
+macchinari e attrezzature;
+c)
+oggetti di valore;
+d)
+prodotti di proprietà intellettuale quali software per computer e database.
+7.
+Altre attività
+La voce «altre attività» è la voce residuale nel settore dell’attivo del bilancio e definita come «attività non incluse altrove». Le BCN possono richiedere la segnalazione di specifiche sotto-
+posizioni incluse in questa voce (oltre alle voci «di cui» richieste ai sensi del presente regolamento). Le altre attività possono includere:
+a)
+posizioni in contratti finanziari derivati aventi un valore lordo di mercato positivo
+A fini statistici, gli strumenti finanziari derivati che sono sottoposti a iscrizione nel bilancio sono quivi inclusi e dovrebbero essere segnalati come una voce «di cui» separata;
+b)
+importi lordi esigibili a fronte di partite in sospeso
+Le partite in sospeso sono saldi attivi presenti nei bilanci, non registrati a nome dei clienti, ma che nondimeno sono relativi a fondi dei clienti (ad esempio fondi in attesa di investimento,
+trasferimento o liquidazione);
+c)
+importi lordi esigibili a fronte di partite di transito
+Le partite di transito rappresentano fondi, normalmente appartenenti ai clienti, fatti oggetto di trasmissione fra i soggetti segnalanti. Sono inclusi gli assegni e altre forme di pagamento inviate
+per l’incasso ad altri soggetti segnalanti;
+d)
+interessi esigibili maturati su crediti;
+Conformemente al principio generale di contabilità basato sul periodo di competenza, gli interessi maturati su crediti dovrebbero essere iscritti in bilancio dal momento in cui decorrono, vale a dire
+sulla base della competenza temporale, piuttosto che dal momento in cui sono realmente realizzati, vale a dire sulla base del contante. Gli interessi maturati su crediti sono classificati su base
+lorda sotto la categoria «altre attività». Gli interessi maturati dovrebbero essere esclusi dal credito a cui si riferiscono e dovrebbero essere segnalati ad una separata voce «di cui»;
+e)
+interessi maturati sulle disponibilità in titoli di debito, se gli interessi maturati non sono registrati con lo strumento di cui alla voce «“titoli di debito detenuti»;
+f)
+dividendi da ricevere;
+g)
+importi esigibili non connessi con l’attività principale del soggetto segnalante;
+h)
+voce dell’attivo in contropartita delle monete emesse dalle amministrazioni centrali (solo bilanci delle BCN);
+La voce «altre attività» esclude gli strumenti finanziari che assumono la forma di attività finanziarie (inclusi nelle altre voci del bilancio), alcuni strumenti finanziari non aventi forma di
+attività finanziarie quali garanzie, impegni, crediti amministrati e fiduciari (iscritti fuori bilancio) e attività non finanziarie (inclusi alla categoria 6).
+CATEGORIE DEL PASSIVO
+Categoria
+Descrizione delle principali caratteristiche
+8.
+Banconote e monete in circolazione
+La categoria del passivo «banconote e monete in circolazione» è definita come «banconote e monete in circolazione emesse o autorizzate dalle autorità monetarie». Tale categoria include banconote
+emesse dalla BCE e dalle BCN. Le monete in circolazione fanno parte degli aggregati monetari e sono incluse anche in questa categoria anche se giuridicamente le monete costituiscono una passività
+dell’amministrazione centrale e non della BCN. Quando le monete in circolazione sono emesse dall’amministrazione centrale, la BCN registra una contropartita di tale passività all’interno della voce
+«altre attività» (cfr. la categoria 7).
+9.
+Depositi
+«Importi (azioni, depositi o altro), che sono dovuti ai creditori da parte dei soggetti segnalanti e che sono conformi alle caratteristiche descritte nella parte 1 dell’allegato I, eccetto quelli
+derivanti dall’emissione di titoli negoziabili o da azioni e partecipazioni in FCM». Ai fini dello schema di segnalazione, questa categoria è suddivisa in depositi a vista, depositi con durata
+prestabilita, depositi rimborsabili con preavviso e operazioni di pronti contro termine.
+a)
+depositi e crediti
+I «depositi» comprendono anche «crediti» in qualità di passività. In termini concettuali, i crediti rappresentano importi ricevuti dai soggetti segnalanti non strutturati nella forma di «depositi». Il
+SEC 2010 distingue tra «crediti» e «depositi» a seconda della parte che prende l’iniziativa: se è il prestatario, si tratta di un credito, mentre se è il prestatore del credito, allora si tratta di un
+deposito). Nell’ambito dello schema di segnalazione di cui al presente regolamento, i «crediti» non sono riconosciuti come categoria autonoma sul lato del passivo del bilancio. Al contrario, saldi
+considerati «crediti» dovrebbero essere classificati, indistintamente, sotto la voce «depositi», a meno che non siano rappresentati da strumenti negoziabili. Ciò è in linea con la definizione di
+«depositi» di cui sopra. I crediti ai soggetti segnalanti classificati come «depositi» dovrebbero essere disaggregati in conformità con i requisiti contenuti nello schema di segnalazione, vale a dire
+per settore, strumento, valuta e scadenza. I prestiti sindacati ricevuti dai soggetti segnalanti ricadono in questa categoria.
+b)
+strumenti di debito non negoziabili
+I titoli di debito non negoziabili emessi dai soggetti segnalanti dovrebbero essere generalmente classificati come «depositi». Gli strumenti non negoziabili emessi dai soggetti segnalanti che
+divengono successivamente negoziabili dovrebbero essere riclassificati come «titoli di debito».
+c)
+depositi di margini
+I depositi di margini (margini) effettuati mediante contratti derivati devono essere classificati come «depositi» laddove rappresentano garanzia in contanti depositata presso i soggetti segnalanti e
+laddove rimangono nella proprietà del depositante e sono rimborsabili al depositante alla liquidazione del contratto. In linea di principio, i margini ricevuti dai soggetti segnalanti dovrebbero
+essere classificati solo come «depositi» nei limiti in cui si forniscano al soggetto segnalante fondi liberamente accessibili per i prestiti; laddove una parte dei margini ricevuti dal soggetto
+segnalante deve essere trasferita ad un altro partecipante del mercato dei derivati (ad esempio una stanza di compensazione), in principio solo la parte che rimane a disposizione del soggetto
+segnalante dovrebbe essere classificata come «depositi». Le complessità delle attuali pratiche di mercato possono rendere difficile l’identificazione dei margini realmente rimborsabili, poiché diversi
+tipi di margini sono collocati nel medesimo conto indistintamente, o dei margini che forniscono al soggetto segnalante le risorse per i finanziamenti. In tali casi è accettabile classificare detti
+margini nella categoria «altre passività» o «depositi».
+d)
+Saldi accantonati
+Secondo la prassi nazionale, i «saldi accantonati» relativi ad esempio ai contratti di leasing sono classificati come depositi nella categoria «depositi con durata prestabilita» o «depositi
+rimborsabili con preavviso», a seconda della durata/accantonamento del contratto sottostante.
+e)
+azioni emesse dai soggetti segnalanti classificate come depositi
+Le azioni emesse da soggetti segnalanti sono classificate come depositi invece che come capitale e riserve se: i) c’è una relazione economica debitoria-creditoria tra l’emittente e il detentore (a
+prescindere da eventuali diritti di proprietà in tali azioni); e ii) le azioni possono essere convertite in contanti o rimborsate senza restrizioni o penalità di rilievo. Un periodo di preavviso non è
+considerato una restrizione significativa. Inoltre, tali azioni devono soddisfare le seguenti condizioni:
+—
+le disposizioni nazionali pertinenti non attribuiscono all‘emittente il diritto incondizionato di rifiutare il rimborso delle proprie azioni,
+—
+le azioni hanno un «valore certo», ossia in circostanze normali esse saranno, in caso di rimborso, pagate al valore nominale,
+—
+in caso di insolvenza della IFM, i detentori delle sue azioni non sono giuridicamente soggetti né all’obbligo di coprire le passività in essere in aggiunta al valore nominale delle azioni, ossia la
+partecipazione degli azionisti al capitale sottoscritto, né a qualsiasi altra obbligazione supplementare a carattere oneroso. La subordinazione delle azioni a qualsiasi altro strumento emesso dai
+soggetti segnalanti non si qualifica come un’obbligazione supplementare a carattere oneroso.
+I periodi di preavviso per la conversione di tali azioni in valuta sono utilizzati per classificare le azioni per periodo di preavviso nell’ambito della categoria degli strumenti «depositi». Detti
+periodi di preavviso si applicano anche nel determinare l’aliquota di riserva da applicare ai sensi dell’articolo 6 del regolamento (UE) 2021/378 (BCE/2021/1). Qualsiasi azione vincolata relativa ai
+crediti accordati dal soggetto segnalante deve essere classificata come deposito, con la stessa disaggregazione per scadenza originaria del credito sottostante, vale a dire come «deposito a scadenza
+prestabilita» o «depositi rimborsabili con preavviso», a seconda della scadenza del sottostante contratto di credito.
+Qualora un soggetto segnalante detenga azioni classificate come depositi che sono state emesse da altri soggetti segnalanti, le partecipazioni devono essere classificate come crediti nel lato attivo
+del proprio bilancio invece che come «capitale».
+f)
+passività da cartolarizzazioni
+La contropartita del pagamento ricevuto in cambio di prestiti e/o altre attività di cui si dispone in una cartolarizzazione, ma che sono comunque riconosciuti in bilancio
+La voce seguente non è trattata come un deposito:
+I fondi (depositi) ricevuti su base fiduciaria non sono registrati nel bilancio (cfr. «crediti concessi su base fiduciaria» sotto la categoria 2).
+9.1.
+Depositi overnight
+Depositi convertibili in contante e/o trasferibili su richiesta tramite assegno, vaglia bancario, addebito o con modalità simili, senza significativi ritardi, restrizioni o penali. La presente voce
+include:
+a)
+saldi (fruttiferi o non) immediatamente convertibili in contante su richiesta o entro il giorno successivo a quello in cui il deposito è stato effettuato, senza alcuna penale o restrizione rilevante,
+ma che non sono trasferibili;
+b)
+saldi (fruttiferi o non) che rappresentano gli importi prepagati nel contesto della moneta elettronica (per esempio carte prepagate);
+c)
+crediti che devono essere rimborsati entro il giorno successivo a quello in cui è stato concesso il credito.
+d)
+posizioni di cash pooling nozionale costituite da depositi overnight detenuti in cash pool nozionali dai partecipanti al pool.
+9.1a.
+Depositi trasferibili
+I depositi trasferibili sono quei depositi all’interno della categoria «depositi a vista» che sono direttamente trasferibili a richiesta per effettuare pagamenti in favore di altri operatori economici
+con mezzi di pagamento comunemente utilizzati, come il trasferimento di crediti e l’addebito diretto, eventualmente anche attraverso carta di credito o di addebito, operazioni in moneta elettronica,
+assegni, o mezzi simili, senza ritardi di rilievo, restrizioni o penali. I depositi che possono essere usati solo per il ritiro di contante e/o i depositi dai quali i fondi possono essere solo
+ritirati o trasferiti attraverso un altro conto del medesimo titolare non sono da includere come depositi trasferibili.
+9.2.
+Depositi con durata prestabilita
+Depositi non trasferibili che non possono essere convertiti in contante prima della scadenza prestabilita o che possono essere convertiti in contante prima di tale scadenza solo dietro pagamento di
+una penale. Questa voce include anche i depositi di risparmio amministrati per i quali il criterio della durata non è significativo; questi dovrebbero essere iscritti nella fascia di scadenza «oltre i
+due anni». I prodotti finanziari che presentano disposizioni sul «roll-over» devono essere classificati sulla base della scadenza più vicina. Nonostante i depositi con una durata prestabilita possano
+presentare la possibilità di un rimborso anticipato dopo la previa notifica, o possano essere rimborsati a richiesta, con l’applicazione di penalità, tali caratteristiche non sono considerate
+rilevanti a fini di riclassificazione
+9.2a/9.2b/9.2c
+Depositi con scadenza prestabilita fino ad un massimo di un anno/oltre un anno e fino ad un massimo di due anni/oltre due anni
+Tali voci includono per ciascuna disaggregazione per scadenza:
+a)
+Saldi collocati con scadenza prestabilita di fino a un massimo di un anno/oltre un anno e fino a un massimo di due anni/oltre due anni, che non sono trasferibili e non possono essere convertiti in
+valuta prima di tale scadenza;
+b)
+Saldi collocati con scadenza prestabilita fino ad un massimo di un anno/oltre un anno e fino a due anni/oltre due anni, non trasferibili ma che possono essere rimborsati prima della scadenza, previa
+notifica; laddove la notifica è stata data, tali saldi sono classificati sotto 9.3a o 9.3b, se del caso;
+c)
+Saldi collocati con scadenza prestabilita fino a un massimo di un anno/oltre un anno e fino a un massimo di due anni/oltre due anni, che non sono trasferibili ma possono essere rimborsati su
+richiesta, a condizione che si applichino determinate penali;
+d)
+Pagamenti di margini effettuati mediante contratti su strumenti derivati da estinguersi entro un anno/entro un periodo compreso fra uno e due anni/oltre due anni, sotto forma di contante a garanzia
+dato per cautelarsi contro il rischio di credito, ma che rimane di proprietà del depositante ed è rimborsabile al depositante quando il contratto si estingue;
+e)
+I prestiti, che siano rappresentati da certificati non negoziabili o non siano rappresentati da alcun certificato, con scadenza originaria fino ad un massimo di un anno/oltre un anno e fino ad un
+massimo di due anni/oltre due anni;
+f)
+Titoli di debito non negoziabili emessi con scadenza originaria fino ad un massimo di un anno/oltre un anno e fino ad un massimo di due anni/oltre due anni;
+g)
+Debiti subordinati emessi sotto forma di depositi o debiti con scadenza originaria superiore fino ad un anno e fino a un massimo di due anni/oltre due anni;
+h)
+Passività da cartolarizzazioni.
+La contropartita del pagamento ricevuto in cambio di prestiti e/o altre attività di cui si dispone in una cartolarizzazione, ma che sono comunque riconosciuti in bilancio. Per convenzione tali
+passività sono assegnate alla disaggregazione per scadenza prestabilita «oltre due anni».
+Inoltre, i depositi con scadenza prestabilita includono:
+Saldi (a prescindere dalla scadenza) nei quali i tassi di interesse e/o i termini e/o le condizioni applicate sono stabilite nella legislazione nazionale e che sono previsti per finalità particolari,
+ad esempio finanziamento immobiliare, che si verificano dopo due anni, anche se tecnicamente rimborsabili su richiesta.
+9.3.
+Depositi rimborsabili con preavviso
+Depositi non trasferibili senza durata prestabilita non convertibili in valuta senza un periodo di preavviso; prima della scadenza la conversione stessa non è possibile o lo è soltanto con
+l’applicazione di una penale. Includono depositi che, anche se talvolta legittimamente estinguibili su richiesta, in base agli usi nazionali sarebbero assoggettati a penali e a restrizioni
+(classificati nella fascia di scadenza «fino a tre mesi inclusi») e conti di investimento senza periodo di preavviso o scadenza prestabilita, ma che prevedono condizioni restrittive sul prelievo
+(classificati nella fascia di scadenza «oltre tre mesi»).
+9.3a/9.3b
+Depositi rimborsabili con preavviso fino ad un massimo di tre mesi/oltre tre mesi di cui preavviso oltre due anni
+Tali voci includono:
+a)
+Saldi senza scadenza prestabilita che possono essere ritirati solo con preavviso fino ad un massimo di tre mesi/oltre tre mesi, di cui oltre due anni; se il rimborso è possibile prima di tale periodo
+di preavviso (o addirittura su richiesta), esso comporta il pagamento di una penale; e
+b)
+Saldi collocati con scadenza prestabilita, non trasferibili ma che sono stati oggetto di una notifica inferiore a tre mesi/oltre tre mesi, di cui oltre due anni, per un rimborso anticipato.
+Inoltre, i depositi rimborsabili con preavviso fino ad un massimo di tre mesi includono: i depositi di risparmio a vista non trasferibili e altri tipi di depositi al dettaglio che, anche se
+legittimamente estinguibili su richiesta, sono soggetti a penali significative.
+I depositi rimborsabili con preavviso superiore a tre mesi, di cui con preavviso superiore a due anni (ove applicabile) includono: i conti di investimento senza periodo di preavviso o scadenza
+prestabilita, ma che prevedono condizioni restrittive riguardanti il prelievo.
+9.4.
+Operazioni di pronti contro termine
+Contropartita del contante ricevuto in cambio di titoli venduti dai soggetti segnalanti a un prezzo prestabilito con l’impegno irrevocabile a riacquistare quei titoli, o altri simili, a un prezzo
+prestabilito in una specifica data futura. Gli importi ricevuti dagli operatori soggetti agli obblighi di segnalazione in cambio di titoli trasferiti a terzi, ossia «acquirenti temporanei», devono
+essere classificati sotto la categoria «operazioni di pronti contro termine» nel caso in cui ci sia un impegno irrevocabile, non una semplice opzione, ad invertire l’operazione. Ciò implica che essi
+sostengono tutti i rischi e le soddisfazioni dei titoli sottostanti durante l’operazione.
+Le seguenti varianti dei tipi di operazioni di pronti contro termine sono tutte classificate sotto «operazioni di pronti contro termine»:
+a)
+importi ricevuti in cambio di titoli trasferiti temporaneamente a un terzo sotto forma di prestito di titoli contro garanzia in contante; e
+b)
+importi ricevuti in cambio di titoli trasferiti temporaneamente a terzi sotto forma di operazione di pronti contro termine con attribuzione del rateo di finanziamento o d’impiego.
+I titoli sottostanti le operazioni di tipo pronti contro termine sono registrate seguendo le regole nella voce dell’attivo 3 «titoli di debito». Le operazioni che riguardano il trasferimento
+temporaneo d’oro a fronte di contante a garanzia sono anch’esse incluse sotto questa voce.
+10.
+Quote/partecipazioni in FCM
+Quote o partecipazioni emesse da FCM. Questa voce rappresenta il passivo totale degli azionisti del FCM. Sono altresì compresi i fondi derivanti da utili non distribuiti o da fondi accantonati dal FCM
+in previsione di probabili pagamenti o obbligazioni futuri.
+11.
+Titoli di debito emessi
+Titoli diversi dalle azioni emessi dai soggetti segnalanti, di norma negoziabili e scambiati sui mercati secondari o che possono essere compensati sul mercato e che non danno al possessore alcun tipo
+di diritto di proprietà sull’ente emittente. La presente voce include:
+a)
+titoli che attribuiscono al detentore il diritto incondizionato a un reddito fisso o determinato contrattualmente nella forma di pagamento di cedole e/o a una somma fissa predeterminata a una certa
+data (o date) o a partire da una data definita al momento dell’emissione;
+b)
+strumenti non negoziabili emessi dai soggetti segnalanti che successivamente diventano negoziabili devono essere riclassificati come «titoli di debito» (cfr. categoria 9);
+c)
+debiti subordinati emessi devono essere trattati alla stessa maniera di altri debiti contratti a fini di statistiche monetarie e finanziarie. Quindi, debiti subordinati emessi nella forma di titoli
+devono essere classificati «titoli di debito emessi», mentre debiti subordinati emessi nella forma di depositi o crediti devono essere classificati come «depositi». Laddove tutti i debiti subordinati
+emessi siano identificati in un solo ammontare a fini statistici, tale valore deve essere classificato sotto la voce «titoli di debito emessi», sulla base del fatto che i debiti subordinati sono
+costituiti in maniera predominante nella forma di titoli piuttosto che di crediti. Debiti subordinati non dovrebbero essere classificati sotto la voce del passivo «capitale e riserve»;
+d)
+strumenti ibridi. Strumenti negoziabili con una combinazione di debiti e componenti derivati, inclusi:
+i)
+strumenti di debito negoziabili contenenti derivati incorporati;
+ii)
+strumenti negoziabili il cui valore di rimborso e/o cedola è collegato allo sviluppo di un’attività sottostante di riferimento, al prezzo di un’attività o ad altri indicatori di riferimento rispetto
+alla scadenza dello strumento.
+11a/11b/11c
+Titoli di debito con scadenza originaria fino ad un massimo di un anno/oltre un anno e fino a un massimo di due anni/oltre due anni
+Tali voci includono per ciascuna disaggregazione per scadenza:
+a)
+titoli di debito negoziabili emessi con scadenza originaria fino ad un massimo di un anno/oltre un anno e fino ad un massimo di due anni/oltre due anni; e
+b)
+debito subordinato emesso nella forma di titoli di debito con scadenza originaria fino a un massimo di un anno/oltre un anno e fino a un massimo di due anni/oltre due anni.
+11d
+Di cui titoli di debito fino a due anni e con garanzia sul capitale nominale sotto il 100 %
+Strumenti ibridi emessi con scadenza originaria fino a due anni e che alla scadenza potrebbero avere un valore di rimborso contrattuale nella valuta di emissione più basso dell’ammontare investito
+originariamente a causa della loro combinazione di componenti di debiti e derivati.
+12.
+Capitale e riserve
+Ai fini dello schema di segnalazione, questa voce comprende gli importi derivanti dall’emissione di capitale azionario da parte dei soggetti segnalanti a favore degli azionisti o di altri proprietari,
+che rappresentano per il detentore diritti di proprietà nel soggetto segnalante e in genere un diritto alla partecipazione ai suoi utili e a una quota dei fondi propri nel caso di liquidazione.
+Questa categoria comprende le seguenti disaggregazioni:
+a)
+capitale azionario emesso;
+Comprende tutti i fondi conferiti dai titolari, dal contributo iniziale a tutte le successive emissioni di forme di titolarità e rispecchia l’intero ammontare del capitale raccolto, incluso il premio
+azionario.
+b)
+profitti o perdite accumulati nel periodo contabile
+Comprende tutti i profitti e le perdite del periodo contabile corrente come registrati nel conto profitti e perdite non ancora portati a utile non distribuito.
+c)
+il reddito e le spese rilevati direttamente nel capitale azionario
+Comprende la contropartita delle rivalutazioni nette delle attività e passività registrate direttamente a capitale e non nel conto profitti e perdite secondo la disciplina contabile.
+d)
+fondi derivanti da reddito non distribuiti agli azionisti
+Comprende riserve e altri fondi (ad esempio profitti e perdite portati a nuovo dopo la fine del periodo contabile e prima dell’assunzione di una decisione sulla distribuzione dei dividendi o sullo
+stanziamento a riserva) non distribuiti agli azionisti.
+e)
+accantonamenti specifici e generici a fronte di crediti, titoli e altri tipi di attività.
+Tali accantonamenti dovrebbero comprendere tutte le rettifiche di valore per svalutazioni di crediti e perdite su prestiti non compensati dalla categoria di attività a cui si riferiscono nel bilancio
+statistico.
+13.
+Altre passività
+La voce «altre passività» è la voce residuale nel lato passivo del bilancio e definita come «passività non incluse altrove». Le BCN possono richiedere la segnalazione di specifiche sotto-posizioni
+incluse in questa voce (oltre alle voci «di cui» richieste ai sensi del presente regolamento).
+Le altre passività possono includere:
+a)
+posizioni su strumenti finanziari derivati aventi un valore lordo di mercato negativo
+A fini statistici, gli strumenti finanziari derivati che sono sottoposti a iscrizione nel bilancio sono quivi inclusi e dovrebbero essere segnalati come una voce «di cui» separata;
+b)
+importi lordi dovuti rispetto a partite in sospeso
+Le partite in sospeso sono saldi presenti nei bilanci, non registrati a nome dei clienti ma che nondimeno sono relativi a fondi dei clienti, ad esempio fondi in attesa di investimento, trasferimento o
+liquidazione;
+c)
+importi lordi dovuti rispetto a partite in transito
+Le partite di transito rappresentano fondi, normalmente appartenenti ai clienti, fatti oggetto di trasmissione fra soggetti segnalanti. Sono inclusi i trasferimenti di crediti che sono stati
+effettuati dai conti dei clienti e altri elementi per i quali il corrispondente pagamento non sia ancora stato effettuato da parte del soggetto segnalante;
+d)
+interessi maturati dovuti su depositi
+Conformemente al principio generale di contabilità basato sul periodo di competenza, gli interessi dovuti su depositi sono iscritti in bilancio dal momento in cui decorrono (vale a dire sulla base
+della competenza temporale) piuttosto che dal momento in cui sono realmente pagati (vale a dire sulla base del contante). Gli interessi maturati su depositi sono classificati su base lorda sotto la
+categoria «altre passività». Gli interessi maturati dovrebbero essere esclusi dal credito a cui si riferiscono e dovrebbero essere segnalati ad una separata voce «di cui»;
+e)
+interessi maturati su titoli di debito emessi, se gli interessi maturati non sono registrati con lo strumento di cui alla voce «titoli di debito emessi»;
+f)
+dividendi da pagare;
+g)
+importi dovuti non connessi con l’attività principale delle IMF, importi dovuti a fornitori, tasse, salari, contributi sociali;
+h)
+accantonamenti a fronte di debiti nei confronti di terzi, ad esempio, pensioni, dividendi;
+i)
+pagamenti di margini effettuati sulla base di contratti su derivati
+I pagamenti di margini (margini) effettuati sulla base di contratti su derivati sono classificati normalmente come «depositi» (cfr. categoria 9). Le complessità delle attuali pratiche di mercato
+possono rendere difficile l’identificazione dei margini realmente rimborsabili, poiché diversi tipi di margini sono collocati nel medesimo conto indistintamente, o dei margini che forniscono al
+soggetto segnalante le risorse per i finanziamenti. In tali casi è accettabile classificare detti margini nella categoria «altre passività» o «depositi», secondo le pratiche nazionali;
+j)
+posizioni nette dovute rispetto al futuro regolamento di operazioni in titoli o operazioni in valuta.
+Le «altre passività» possono escludere quasi tutti gli strumenti finanziari nella forma di passività finanziarie (inclusi negli altri elementi di bilancio), gli strumenti finanziari che non hanno la
+forma di passività finanziarie, come garanzie, impegni, crediti amministrati e fiduciari (iscritti fuori bilancio), e attività non finanziarie come voci del capitale sul lato delle passività (inclusi
+nella voce «capitale e riserve»).
+PARTE 3
+Definizioni dei settori
+Il SEC 2010 fornisce il modello per la classificazione settoriale negli Stati membri. La presente tabella fornisce una descrizione tipo dettagliata di settori che le BCN traspongono in categorie
+nazionali in c
+
+=== K275.2 | [Allegato II] PRINCIPI DI CONSOLIDAMENTO E DEFINIZIONI (pezzo 2 di 2)
+onformità al presente regolamento. Le controparti situate nell’area dell’euro sono individuate secondo il proprio settore conformemente agli elenchi mantenuti dalla Banca centrale europea (BCE) a fini
+statistici, se del caso, e ad altri orientamenti per la classificazione statistica delle controparti forniti dalla BCE.
+La classificazione settoriale delle controparti situate al di fuori degli Stati membri dovrebbe essere effettuata conformemente all’SCN 2008. Il termine «IFM» si riferisce solo agli Stati membri. Ai
+fini della classificazione dei residenti di paesi terzi, il termine «IFM» deve essere interpretato nel senso che comprende i settori «banca centrale» dell’SCN 2008, gli «istituti di deposito, escluse
+le autorità bancarie centrali» e i «fondi comuni monetari».
+Tabella
+Definizioni dei settori
+Settore
+Definizione
+IFM
+Cfr. articolo 1
+Amministrazioni pubbliche
+Il settore delle amministrazioni pubbliche (S.13) è costituito dalle unità istituzionali che agiscono da produttori di beni e servizi non destinabili alla vendita, la cui produzione è destinata al
+consumo collettivo e individuale e sono finanziate da versamenti obbligatori effettuati da unità appartenenti ad altri settori, nonché dalle unità istituzionali la cui funzione principale consiste
+nella redistribuzione del reddito e della ricchezza del paese (SEC 2010, paragrafi da 2.111 a 2.113)
+Amministrazioni centrali
+Tale sottosettore (S.1311) include tutti gli organi amministrativi dello Stato e altri enti centrali la cui competenza si estende alla totalità del territorio economico, ad eccezione
+dell’amministrazione degli enti di previdenza e assistenza sociale (SEC 2010, paragrafo 2.114)
+Ai fini del presente regolamento, le amministrazioni centrali comprendono anche le istituzioni e gli organi dell’Unione che sono classificati nel settore delle amministrazioni pubbliche (S.13).
+Amministrazioni di Stati federati
+Il presente sottosettore (S.1312) è costituito dalle amministrazioni che sono unità istituzionali distinte ed esercitano alcune funzioni amministrative a un livello inferiore a quello delle
+amministrazioni centrali e superiore a quello delle unità istituzionali amministrative esistenti a livello locale, esclusi gli enti di previdenza e assistenza sociale (SEC 2010, paragrafo 2.115)
+Amministrazioni locali
+Tale sottosettore (S.1313) comprende gli enti pubblici territoriali la cui competenza si estende a una parte soltanto del territorio economico, escluse le rappresentanze locali degli enti di
+previdenza e assistenza sociale (SEC 2010, paragrafo 2.116)
+Enti di previdenza e assistenza sociale
+Gli enti di previdenza e assistenza (S.1314) includono le unità istituzionali centrali, di Stati federati e locali, la cui attività principale consiste nell’erogare prestazioni sociali e che
+rispondono ai seguenti due criteri: a) in forza di disposizioni legislative o regolamentari determinati gruppi della popolazione sono tenuti a partecipare al regime o a versare contributi; b) le
+amministrazioni pubbliche sono responsabili della gestione dell’istituzione per quanto riguarda la fissazione o l’approvazione dei contributi e delle prestazioni, a prescindere dal loro ruolo di
+organismo di sorveglianza o di datore di lavoro (SEC 2010, paragrafo 2.117)
+Fondi di investimento diversi dai FCM
+FI come definiti nel regolamento (UE) n. [1073] (BCE/2013/38). Il presente sottosettore comprende tutti gli organismi di investimento collettivi, esclusi i FCM, che investono in attività finanziarie
+e/o non finanziarie, nella misura in cui abbiano per oggetto l’investimento di capitali raccolti presso il pubblico
+Altri intermediari finanziari, eccetto imprese di assicurazione e fondi pensione + ausiliari finanziari + istituzioni finanziarie captive e prestatori di fondi
+Il sottosettore degli altri intermediari finanziari, escluse le imprese di assicurazione e i fondi pensione (S.125), comprende tutte le società e quasi-società finanziarie che svolgono come attività
+principale la funzione di intermediazione finanziaria mediante l’assunzione da unità istituzionali di passività in forme diverse da moneta, depositi (o loro prossimi sostituti), quote/partecipazioni
+di FI o in relazione a assicurazioni, pensioni e sistemi di garanzie standard. (SEC 2010, paragrafi da 2.86 a 2.94).
+Il sottosettore degli ausiliari finanziari (S.126) comprende tutte le società e quasi-società finanziarie la cui funzione principale consiste nell’esercitare attività strettamente correlate
+all’intermediazione finanziaria, ma che non si configurano di per sé come intermediari finanziari. Tale sottosettore include altresì le holding operative le cui consociate sono tutte o per la maggior
+parte società finanziarie (SEC 2010, paragrafi da 2.95 a 2.97).
+Il sottosettore dei prestatori di fondi e delle istituzioni finanziarie captive (S.127) comprende tutte le società e quasi-società finanziarie che non svolgono una funzione di intermediazione
+finanziaria né esercitano attività finanziarie ausiliarie e le cui attività o passività non sono per la maggior parte negoziate in mercati aperti. Tale sottosettore include, tra l’altro, le società di
+partecipazione che detengono quote di controllo del capitale sociale di un gruppo di consociate e la cui attività principale consiste nel detenere la proprietà del gruppo, senza fornire altri servizi
+alle imprese di cui detengono il capitale, senza amministrare o gestire altre unità (SEC 2010, paragrafi da 2.98 a 2.99)
+Imprese di assicurazione
+Il sottosettore delle imprese di assicurazione (S.128) comprende tutte le società e quasi-società finanziarie che svolgono come attività principale la funzione di intermediazione finanziaria,
+principalmente nella forma di assicurazione diretta o di riassicurazione, in conseguenza del pooling dei rischi (SEC 2010, paragrafi da 2.100 a 2.104)
+Fondi pensione
+Il sottosettore dei fondi pensione (S.129) comprende tutte le società e quasi-società finanziarie che svolgono come attività principale la funzione di intermediazione finanziaria in conseguenza del
+pooling dei rischi e dei bisogni degli assicurati (assicurazione sociale). I fondi pensione, come sistemi di assicurazione sociale, forniscono reddito ai pensionati e spesso prestazioni in caso di
+morte o di invalidità (SEC 2010, paragrafi da 2.105 a 2.110)
+Società non finanziarie
+Il settore delle società non finanziarie (S.11) comprende le unità istituzionali che sono entità giuridiche indipendenti e che agiscono da produttori di beni e servizi destinabili alla vendita, la cui
+attività principale consiste nel produrre beni e servizi non finanziari. Tale settore include altresì le quasi-società non finanziarie (SEC 2010, paragrafi da 2.45 a 2.54)
+Famiglie + istituzioni senza scopo di lucro al servizio delle famiglie
+Il settore delle famiglie (S.14) è costituito da individui o da gruppi di individui, nella loro funzione di consumatori e di imprenditori, che producono beni e servizi finanziari e non finanziari
+destinabili alla vendita (produttori di beni e servizi destinabili alla vendita) purché la produzione di beni e servizi non sia operata da entità distinte trattate come quasi-società. Esso comprende
+anche individui o gruppi di individui che producono beni e servizi non finanziari esclusivamente per proprio uso finale (SEC 20102, paragrafi da 2.118 a 2.128).
+Il settore delle istituzioni senza scopo di lucro al servizio delle famiglie (S.15) è costituito dagli organismi senza scopo di lucro che sono entità giuridiche distinte al servizio delle famiglie e
+sono produttori privati di beni e servizi non destinabili alla vendita. Le loro risorse derivano principalmente da contributi volontari in denaro o in natura versati dalle famiglie nella loro funzione
+di consumatori, da pagamenti effettuati dall’ amministrazione pubblica e da redditi da capitale (SEC 2010, paragrafi da 2.129 a 2.130)
+Imprese individuali e società di persone non riconosciute come entità giuridiche (sotto-gruppo di «Famiglie»)
+Imprese individuali e società di persone non riconosciute come entità giuridiche – diverse da quelle create come quasi-società – che agiscono da produttori di beni e servizi destinabili alla vendita
+(SEC 2010, paragrafi 2.119d)
+
+=== K276 | [Allegato III] SEGNALAZIONE AI FINI DEGLI OBBLIGHI DI RISERVA
+ALLEGATO III
+SEGNALAZIONE AI FINI DEGLI OBBLIGHI DI RISERVA
+PARTE 1
+Norme generali
+1.
+Le celle contrassegnate con * nella tabella 1 nella parte 2 dell’allegato I sono utilizzate nel calcolo dell’aggregato soggetto a riserva ai fini del regolamento (UE) 2021/378 (BCE/2021/1). Rispetto
+ai titoli di debito, gli enti creditizi o presentano prova delle passività da escludere dall’aggregato soggetto a riserva o applicano una deduzione standard di una percentuale fissa specificata dalla
+Banca centrale europea (BCE). Le celle con un motivo grafico sono segnalate solo da enti creditizi soggetti agli obblighi di riserva.
+2.
+Le celle nella tabella 1 riguardanti depositi presso «enti creditizi soggetti all’obbligo di riserva» non devono includere le passività dei soggetti segnalanti dovute agli enti elencati come esenti
+dal sistema di riserve minime della BCE, ossia quegli enti esenti per motivi non riconducibili a misure di riorganizzazione. Le istituzioni esenti temporaneamente dall’obbligo di riserva in quanto
+oggetto di misure di riorganizzazione sono considerate come soggette all’obbligo di riserva e pertanto le passività dovute a tali enti figurano nella tabella 1 della presente parte. Tale tabella
+comprende anche le passività nei confronti di quelle istituzioni che non sono effettivamente tenute al mantenimento di riserve presso il Sistema europeo di banche centrali a causa dell’applicazione
+della detrazione forfettaria.
+3.
+A seconda del sistema nazionale di raccolta e ferma restando la piena conformità alle definizioni e ai principi di classificazione di cui al presente regolamento, gli enti creditizi soggetti
+all’obbligo di riserva possono, in alternativa, segnalare i dati necessari per calcolare l’aggregato soggetto a riserva, eccetto quelli sugli strumenti negoziabili, conformemente a quanto indicato
+nella tabella 1 della presente parte., purché nessuna delle posizioni riportate nelle celle prive di motivo grafico di cui alla tabella 1 nella parte 2 dell’allegato I ne risenta.
+4.
+Per quanto riguarda le segnalazioni conformi con la tavola di sotto, deve essere garantita la piena corrispondenza con la tabella 1 nella parte 2 dell’allegato I.
+Tabella 1
+Aggregato soggetto a riserva
+Consistenze in essere di passività dovute, diverse dalla BCE, dalle BCN e da altri enti creditizi soggetti a obbligo di riserva ( 1 )
+PASSIVITÀ RIFERITE A DEPOSITI
+(euro e valute estere combinati)
+9.
+TOTALE DEPOSITI
+9.1e + 9.1x
+9.2e + 9.2x
+9.3e + 9.3x
+9.4e + 9.4x
+di cui:
+9.2e + 9.2x with agreed maturity
+oltre due anni
+di cui:
+Segnalazione volontaria ( 2 )
+9.3e + 9.3x rimborsabili con preavviso
+oltre due anni
+di cui:
+9.4e + 9.4x operazioni di pronti contro termine
+Consistenze in essere di passività dovute ( 3 )
+STRUMENTI NEGOZIABILI
+(euro e valute estere combinati)
+11.
+TITOLI DI DEBITO EMESSI
+11e + 11x con durata prestabilita
+fino a due anni
+oltre due anni
+PARTE 2
+Norme speciali nel caso di fusione che coinvolga enti creditizi
+1.
+Ove si verifichi una fusione tra due enti creditizi, l’aggregato soggetto a riserva dell’ente incorporante per i periodi di mantenimento immediatamente successivi alla fusione, è calcolato, in
+conformità all’articolo 12 del regolamento (UE) 2021/378 (BCE/2021/1), come aggregato del relativo aggregato soggetto a riserva e dell’aggregato soggetto a riserva dell’ente incorporato come se la
+fusione non avesse avuto luogo utilizzando le informazioni statistiche segnalate ai sensi del presente regolamento.
+2.
+Ove l’istituzione incorporante nella fusione di cui al paragrafo 1 non sia un ente nella coda, i periodi di riferimento pertinenti delle informazioni statistiche segnalate ai sensi del presente
+regolamento da utilizzare ai fini del calcolo di cui al primo paragrafo sono i seguenti:
+a)
+per le istituzioni incorporate che sono enti nella coda, il periodo di riferimento per il pertinente periodo di mantenimento stabilito all’articolo 5, paragrafo 6, del regolamento (UE) 2021/378
+(BCE/2021/1);
+b)
+per le istituzioni incorporate che non sono enti nella coda, il periodo di riferimento per il pertinente periodo di mantenimento stabilito all’articolo 5, paragrafo 5, del regolamento (UE) 2021/378
+(BCE/2021/1);
+3.
+Ove l’istituzione incorporante nella fusione di cui al paragrafo 1 sia un ente nella coda, i periodi di riferimento delle informazioni statistiche segnalate ai sensi del presente regolamento da
+utilizzare ai fini del calcolo di cui al paragrafo 1 sono i seguenti:
+a)
+per le istituzioni incorporate che sono enti nella coda, il periodo di riferimento per il pertinente periodo di mantenimento stabilito all’articolo 5, paragrafo 6, del regolamento (UE) 2021/378
+(BCE/2021/1);
+b)
+per le istituzioni incorporate che non sono enti nella coda, il periodo di riferimento più vicino nel tempo tra i seguenti:
+i)
+il periodo di riferimento per il pertinente periodo di mantenimento stabilito all’articolo 5, paragrafo 6, del regolamento (UE) 2021/378 (BCE/2021/1);
+ii)
+il periodo di riferimento in cui si è perfezionata la fusione.
+4.
+Il calcolo di cui al paragrafo 1 si applica altresì ai periodi di mantenimento successivi laddove sussistano entrambe seguenti condizioni:
+a)
+l’istituzione incorporante nella fusione di cui al paragrafo 1 è un ente nella coda; e
+b)
+il pertinente periodo di riferimento per tale periodo di mantenimento in conformità all’articolo 5, paragrafo 6, del regolamento (UE) 2021/378 (BCE/2021/1) precede il periodo di riferimento in cui la
+fusione ha acquistato efficacia.
+( 1 ) Calcolato come somma di:
+Colonne (a)-(b)+(c)+(d)+(e)+(f)-(g)+(h)+(i)+(j)+(k) nella tabella 1 (Passivo) nella parte 2 dell’allegato I al regolamento (UE) n. 1071/2013 (BCE/2013/33); oppure
+Colonne (a)-(b)-(c)+(d)+(e)+(f)+(g)-(h)-(i)+(j)+(k)+(l)+(m)nella tabella 1 (Passivo) nella parte 2 dell’allegato I al presente regolamento.
+( 2 ) I soggetti segnalanti possono soddisfare i requisiti di segnalazione mediante segnalazione volontaria, ossia possono segnalare dati reali (comprese le posizioni nulle), oppure «dati mancanti».
+Una volta optato per la segnalazione dei dati reali, i soggetti segnalanti non possono più segnalare «dati mancanti».
+( 3 ) Calcolato da:
+Colonna (l) della tabella 1 (Passivo) nella parte 2 dell’allegato I al regolamento (UE) n. 1071/2013 (BCE/2013/33); oppure
+Colonna (n) della tabella 1 (Passivo) nella parte 2 dell’allegato I al presente regolamento.
+
+=== K277 | [Allegato IV] REQUISITI MINIMI CHE DEVONO ESSERE RISPETTATI DAGLI OPERATORI EFFETTIVAMENTE SOGGETTI AGLI OBBLIGHI DI SEGNALAZIONE
+ALLEGATO IV
+REQUISITI MINIMI CHE DEVONO ESSERE RISPETTATI DAGLI OPERATORI EFFETTIVAMENTE SOGGETTI AGLI OBBLIGHI DI SEGNALAZIONE
+I soggetti segnalanti devono soddisfare i requisiti minimi richiesti per l’adempimento degli obblighi di segnalazione statistica della Banca centrale europea (BCE).
+1.
+Requisiti minimi per la trasmissione:
+a)
+le segnalazioni devono essere tempestive ed avvenire entro i termini fissati dalla BCN competente;
+b)
+le segnalazioni statistiche devono essere conformi, sotto il profilo delle specifiche e del formato, ai requisiti tecnici di segnalazione definiti dalla BCN competente;
+c)
+il soggetto segnalante deve fornire i dettagli di una o più persone che fungono da referenti presso la BCN competente;
+d)
+le specifiche tecniche per la trasmissione dei dati alla BCN competente devono essere rispettate.
+2.
+Requisiti minimi di accuratezza:
+a)
+le informazioni statistiche devono essere corrette: tutti i vincoli lineari devono essere soddisfatti, ad esempio i totali di attivo e passivo di bilancio devono essere uguali, e la somma dei totali
+parziali deve uguagliare i totali generali) e i dati devono essere coerenti su tutte le frequenze;
+b)
+i soggetti segnalanti devono essere in grado di fornire indicazioni sugli sviluppi desumibili dai dati trasmessi;
+c)
+le informazioni statistiche devono essere complete e non devono contenere lacune continue e strutturali: le lacune esistenti devono essere evidenziate, spiegate alle BCN competenti e, se del caso,
+colmate il più presto possibile;
+d)
+i soggetti segnalanti devono attenersi alle dimensioni, alla politica di arrotondamento e ai decimali fissati dalla BCN competente per la trasmissione tecnica dei dati.
+3.
+Requisiti minimi per la conformità ai concetti:
+a)
+le informazioni statistiche devono essere conformi alle definizioni e alle classificazioni previste nel presente regolamento;
+b)
+in caso di scostamento da tali definizioni e classificazioni, i soggetti segnalanti devono controllare e quantificare a intervalli regolari la differenza tra le misure utilizzate e le misure
+previste/tra i criteri utilizzati e i criteri previsti dal presente regolamento;
+c)
+i soggetti segnalanti devono essere in grado di spiegare le discontinuità tra i dati trasmessi e quelli relativi ai periodi precedenti.
+4.
+Requisiti minimi per le revisioni:
+La politica e le procedure di revisione fissate dalla BCE e dalla BCN competente devono essere rispettate. Le revisioni che non rientrano tra quelle ordinarie devono essere accompagnate da una nota
+esplicativa.
+
+=== K278 | [Allegato V] Regolamento abrogato e relativa modifica
+ALLEGATO V
+Regolamento abrogato e relativa modifica
+Regolamento (UE) n. 1071/2013 della Banca centrale europea, del 24 settembre 2013, relativo al bilancio del settore delle istituzioni finanziarie monetarie (rifusione) (BCE/2013/33) ( GU L 297 del
+7.11.2013, pag. 1 ).
+Regolamento (UE) n. 1375/2014 della Banca centrale europea, del 10 dicembre 2014, che modifica il regolamento (UE) n. 1071/2013 relativo al bilancio del settore delle istituzioni finanziarie monetarie
+(BCE/2013/33) (BCE/2014/51) ( GU L 366 del 20.12.2014, pag. 77 .
+
+
+######## NORMA: Regolamento delegato (UE) 2017/2359 della Commissione, del 21 settembre 2017, che integra la direttiva (UE) 2016/97 del Parlamento europeo e del Consiglio per q  (id UE-32017R2359)
+
+=== K280 | [1] Ambito di applicazione
+Articolo 1
+Ambito di applicazione
+Il presente regolamento si applica alla distribuzione assicurativa di prodotti di investimento assicurativi svolta da intermediari assicurativi o da imprese di assicurazione.
+
+=== K282 | [3] Identificazione dei conflitti di interesse
+Articolo 3
+Identificazione dei conflitti di interesse
+▼M2
+1.
+Al fine di identificare, in conformità dell’articolo 28 della direttiva (UE) 2016/97, i tipi di conflitto di interesse che possono insorgere durante lo svolgimento di qualsiasi attività di
+distribuzione assicurativa connessa a prodotti di investimento assicurativi e che implicano il rischio di ledere gli interessi di un cliente, comprese le sue preferenze di sostenibilità, gli
+intermediari assicurativi e le imprese di assicurazione valutano se loro stessi, un soggetto rilevante o qualsiasi soggetto da loro controllato direttamente o indirettamente abbiano un interesse nel
+risultato delle attività di distribuzione assicurativa che soddisfi i criteri che seguono:
+a)
+è distinto dall’interesse del cliente o del potenziale cliente nel risultato delle attività di distribuzione assicurativa;
+b)
+ha una potenziale influenza sul risultato delle attività di distribuzione a svantaggio del cliente.
+Gli intermediari assicurativi e le imprese di assicurazione procedono nello stesso modo al fine di identificare i conflitti di interesse tra un cliente e l’altro.
+▼B
+2.
+Al fine della valutazione a norma del paragrafo 1, gli intermediari assicurativi e le imprese di assicurazione prendono in considerazione, come criteri minimi, le situazioni seguenti:
+a)
+è probabile che l'intermediario assicurativo o l'impresa di assicurazione, un soggetto rilevante o qualsiasi persona da loro controllata, direttamente o indirettamente, realizzino un guadagno
+finanziario o evitino una perdita finanziaria a potenziale discapito del cliente;
+b)
+l'intermediario assicurativo o l'impresa di assicurazione, un soggetto rilevante o qualsiasi persona da loro controllata, direttamente o indirettamente, ha un vantaggio finanziario o di altra natura a
+privilegiare gli interessi di un altro cliente o gruppo di clienti rispetto a quelli del cliente in questione;
+c)
+l'intermediario assicurativo o l'impresa di assicurazione, un soggetto rilevante o qualsiasi persona da loro controllata, direttamente o indirettamente, partecipa sostanzialmente alla gestione o allo
+sviluppo dei prodotti di investimento assicurativi, in particolare laddove tale persona possa influenzare il prezzo di tali prodotti o i relativi costi di distribuzione.
+
+=== K283 | [4] Politica sui conflitti di interesse
+Articolo 4
+Politica sui conflitti di interesse
+1.
+Per le finalità di cui all'articolo 27 della direttiva (UE) 2016/97, gli intermediari assicurativi e le imprese di assicurazione sono tenuti ad elaborare, attuare e mantenere un'efficace politica sui
+conflitti di interesse redatta per iscritto e adeguata alla loro dimensione, organizzazione, natura, portata nonché alla complessità della loro attività.
+Laddove l'intermediario assicurativo o l'impresa di assicurazione sia membro di un gruppo, tale politica tiene conto anche di qualunque circostanza di cui l'intermediario assicurativo o l'impresa di
+assicurazione è o dovrebbe essere informato/a, che possa portare a un conflitto di interesse derivante dalla struttura e dalle attività di altri membri del gruppo.
+2.
+La politica sui conflitti di interesse elaborata conformemente al paragrafo 1 include quanto segue:
+a)
+in riferimento alle specifiche attività di distribuzione assicurativa svolte, le circostanze che generano o potrebbero generare un conflitto di interesse che possa ledere gli interessi di uno o più
+clienti;
+b)
+le procedure da seguire e le misure da adottare al fine di gestire tali conflitti ed evitare che ledano gli interessi del cliente.
+
+=== K284 | [5] Procedure e misure previste dalla politica sui conflitti di interesse
+Articolo 5
+Procedure e misure previste dalla politica sui conflitti di interesse
+1.
+Le procedure e le misure di cui all'articolo 4, paragrafo 2, lettera b), sono adeguate alla dimensione e alle attività svolte dall'intermediario assicurativo o dall'impresa di assicurazione, a quelle
+del gruppo a cui possano eventualmente appartenere e al rischio di ledere gli interessi del cliente.
+Le procedure da seguire e le misure da adottare in conformità all'articolo 4, paragrafo 2, lettera b), includono, se appropriato, quanto segue:
+a)
+procedure efficaci per impedire o per controllare lo scambio di informazioni tra i soggetti rilevanti impegnati in attività che comportano un rischio di conflitto di interesse, quando lo scambio di
+tali informazioni può ledere gli interessi di uno o più clienti;
+b)
+la vigilanza separata sui soggetti rilevanti le cui principali funzioni implicano l'esercizio di attività per conto di clienti o la prestazione di servizi a clienti con interessi in potenziale
+conflitto, o che rappresentano in altro modo interessi diversi in potenziale conflitto, ivi compresi quelli dell'intermediario assicurativo o dell'impresa di assicurazione;
+c)
+l'eliminazione di ogni legame diretto tra i pagamenti, incluso il compenso, ai soggetti rilevanti che esercitano un'attività e i pagamenti, incluso il compenso, ad altri soggetti rilevanti che
+esercitano prevalentemente un'altra attività, nel caso in cui possa sorgere un conflitto di interesse in relazione a dette attività;
+d)
+misure miranti a impedire o limitare l'esercizio da parte di qualsiasi persona di un'influenza indebita sul modo in cui le attività di distribuzione assicurativa vengono svolte dall'intermediario
+assicurativo o dall'impresa di assicurazione, o dai loro dirigenti o dipendenti, o da chiunque sia da loro controllato, direttamente o indirettamente;
+e)
+misure miranti a impedire o a controllare la partecipazione simultanea o consecutiva di un soggetto rilevante ad attività di distribuzione assicurativa distinte, quando tale partecipazione può nuocere
+alla gestione corretta dei conflitti di interesse;
+f)
+una politica sugli omaggi e sui benefici che stabilisca chiaramente in quali condizioni gli omaggi e i benefici possono essere accettati o concessi e quali misure devono essere adottate quando li si
+accettano o li si concedono.
+2.
+Quando gli intermediari assicurativi e le imprese di assicurazione possono dimostrare che le misure e le procedure di cui al paragrafo 1 non sono adeguate per assicurare che le attività di
+distribuzione assicurativa siano svolte nel migliore interesse del cliente e che non siano influenzate dai conflitti di interesse dell'intermediario assicurativo, dell'impresa di assicurazione o di un
+altro cliente, gli intermediari assicurativi e le imprese di assicurazione adottano misure e procedure alternative adeguate a tal fine.
+
+=== K285 | [6] Comunicazione
+Articolo 6
+Comunicazione
+1.
+Gli intermediari assicurativi e le imprese di assicurazione evitano di fare eccessivo affidamento sulla comunicazione al fine di assicurare che la comunicazione ai clienti, a norma dell'articolo 28,
+paragrafo 2, della direttiva (UE) 2016/97, sia l'ultima risorsa, da utilizzare solo laddove le disposizioni organizzative e amministrative efficaci stabilite dall'intermediario assicurativo o
+dall'impresa di assicurazione per evitare o gestire i conflitti di interesse, in conformità all'articolo 27 della direttiva (UE) 2016/97, non siano sufficienti ad assicurare, con ragionevole certezza,
+che sia evitato il rischio di nuocere agli interessi del cliente.
+2.
+Ai fini della comunicazione dei conflitti di interesse, gli intermediari assicurativi e le imprese di assicurazione svolgono quanto segue:
+a)
+forniscono una descrizione specifica del conflitto di interesse in questione;
+b)
+spiegano il carattere generale e le fonti del conflitto di interesse;
+c)
+spiegano al consumatore i rischi che insorgono dal conflitto di interesse e le misure adottate per attenuare tali rischi;
+d)
+indicano chiaramente che le disposizioni organizzative e amministrative adottate dall'intermediario assicurativo o dall'impresa di assicurazione per evitare o gestire il conflitto di interesse non
+sono sufficienti per assicurare, con ragionevole certezza, che venga evitato il rischio di ledere gli interessi del cliente.
+
+=== K287 | [8] Valutazione di incentivi e schemi di incentivazione
+Articolo 8
+Valutazione di incentivi e schemi di incentivazione
+1.
+Si considera che un incentivo o uno schema di incentivazione abbia una ripercussione negativa sulla qualità del pertinente servizio al cliente laddove sia di natura e portata tali da incentivare lo
+svolgimento delle attività di distribuzione assicurativa in modo non conforme rispetto all'obbligo di agire in modo onesto, equo e professionale nel migliore interesse del cliente.
+2.
+Al fine di valutare se un incentivo o uno schema di incentivazione possa avere una ripercussione negativa sulla qualità del pertinente servizio al cliente, gli intermediari assicurativi e le imprese
+di assicurazione svolgono un'analisi complessiva che prende in considerazione tutti i fattori rilevanti che possono aumentare o diminuire il rischio di tale ripercussione negativa sulla qualità del
+pertinente servizio al cliente, e qualsiasi misura organizzativa adottata dall'intermediario assicurativo o dall'impresa di assicurazione che svolge attività di distribuzione per evitare il rischio di
+una ripercussione negativa.
+In particolare, essi considerano i criteri che seguono:
+a)
+se un incentivo o uno schema di incentivazione possa indurre l'intermediario assicurativo o l'impresa di assicurazione ad offrire o raccomandare un particolare prodotto o servizio assicurativo al
+cliente malgrado il fatto che l'intermediario o l'impresa sia in grado di offrire un prodotto o servizio assicurativo diverso che soddisfi maggiormente le necessità del cliente;
+b)
+se l'incentivo o lo schema di incentivazione si basi solo o principalmente su criteri quantitativi commerciali o se prenda in considerazione criteri qualitativi adeguati, che riflettono quanto
+previsto dai regolamenti applicabili, la qualità dei servizi forniti ai clienti e la soddisfazione del cliente;
+c)
+il valore dell'incentivo versato o percepito in relazione al valore del prodotto e dei servizi forniti;
+d)
+se l'incentivo sia interamente o principalmente versato al momento della conclusione del contratto di assicurazione o se si estenda a tutta la durata del contratto;
+e)
+l'esistenza di un meccanismo adeguato per richiedere il rimborso dell'incentivo nel caso in cui il prodotto si estingua anticipatamente o venga riscattato in anticipo o nel caso in cui gli interessi
+del cliente siano stati lesi;
+f)
+l'esistenza di qualsiasi forma di soglia variabile o contingente o qualsiasi altro tipo di acceleratore di valore che venga sbloccato dal raggiungimento di un obiettivo che si basi sul volume o sul
+valore delle vendite.
+CAPO III
+VALUTAZIONE DELL'IDONEITÀ E DELL'ADEGUATEZZA
+SEZIONE 1
+Valutazione dell'idoneità
+
+=== K288 | [9] Informazioni da raccogliere ai fini della valutazione dell'idoneità
+Articolo 9
+Informazioni da raccogliere ai fini della valutazione dell'idoneità
+1.
+Al fine di fornire una consulenza su un prodotto di investimento assicurativo in conformità all'articolo 30, paragrafo 1, della direttiva (UE) 2016/97, gli intermediari assicurativi o le imprese di
+assicurazione stabiliscono l'entità delle informazioni da raccogliere presso il cliente o potenziale cliente in considerazione di tutte le caratteristiche della consulenza da fornire al cliente o
+potenziale cliente.
+2.
+Fatto salvo che, in conformità dell'articolo 20, paragrafo 1, della direttiva (UE) 2016/97, qualsiasi contratto proposto deve essere coerente con le richieste e le esigenze del cliente, gli
+intermediari assicurativi e le imprese di assicurazione ricevono dai clienti o potenziali clienti le informazioni che consentono loro di capire i fatti essenziali relativi al cliente o potenziale
+cliente, e di avere una base ragionevole per stabilire che la propria raccomandazione personale al cliente o potenziale cliente soddisfa tutti i criteri che seguono:
+▼M2
+a)
+corrisponde agli obiettivi di investimento del cliente o potenziale cliente, inclusa la sua tolleranza al rischio e le sue eventuali preferenze di sostenibilità;
+▼B
+b)
+corrisponde alla situazione finanziaria del cliente o potenziale cliente, compresa la sua capacità di sostenere perdite;
+c)
+è di natura tale per cui il cliente o potenziale cliente possiede la conoscenza e l'esperienza necessarie nell'ambito di investimento rilevante per il tipo specifico di prodotto o servizio.
+3.
+Le informazioni sulla situazione finanziaria del cliente o potenziale cliente, tra cui la sua capacità di sostenere perdite, includono, laddove rilevante, dati riguardanti la fonte e la consistenza
+del reddito regolare, le attività, incluse le attività liquide, gli investimenti e beni immobili e gli impegni finanziari regolari. Il livello di informazioni raccolto è adeguato alla specifica
+tipologia di prodotto o servizio preso in considerazione.
+▼M2
+4.
+Le informazioni relative agli obiettivi di investimento del cliente o potenziale cliente includono, laddove pertinenti, dati sul periodo di tempo per il quale il cliente o potenziale cliente desidera
+mantenere l’investimento, le sue preferenze in materia di assunzione del rischio, il suo profilo di rischio, la finalità dell’investimento nonché le sue preferenze di sostenibilità. Il livello delle
+informazioni raccolte è adeguato alla specifica tipologia di prodotto o servizio preso in considerazione.
+▼B
+5.
+Se non ottiene le informazioni previste dall'articolo 30, paragrafo 1, della direttiva (UE) 2016/97, l'intermediario assicurativo o l'impresa di assicurazione non fornisce consulenza sui prodotti di
+investimento assicurativi al cliente o al potenziale cliente.
+▼M2
+6.
+Nel caso di una consulenza riguardo a un prodotto di investimento assicurativo in conformità all’articolo 30, paragrafo 1, della direttiva (UE) 2016/97, un intermediario assicurativo o un’impresa di
+assicurazione non emette una raccomandazione nel caso in cui nessuno dei prodotti sia adeguato al cliente o potenziale cliente.
+Un intermediario assicurativo o un’impresa di assicurazione non raccomanda prodotti di investimento assicurativi come rispondenti alle preferenze di sostenibilità di un cliente o potenziale cliente se
+detti prodotti non soddisfano tali preferenze. L’intermediario assicurativo o l’impresa di assicurazione spiega ai suoi clienti o potenziali clienti le ragioni per cui non lo fa e conserva la relativa
+documentazione.
+Se nessun prodotto di investimento assicurativo soddisfa le preferenze di sostenibilità del cliente o potenziale cliente, e se il cliente decide di adattare le proprie preferenze di sostenibilità,
+l’intermediario assicurativo o l’impresa di assicurazione conserva traccia della decisione del cliente, compresi i relativi motivi.
+▼B
+7.
+Se viene fornita una consulenza che implica il cambiamento delle attività di investimento sottostanti, gli intermediari assicurativi e le imprese di assicurazione raccolgono le informazioni necessarie
+sulle attività di investimento sottostanti esistenti del cliente e sulle nuove attività di investimento raccomandate, e svolgono un'analisi dei costi e dei benefici attesi da tale cambiamento, in modo
+da essere ragionevolmente in grado di provare che i benefici attesi dal trasferimento sono superiori ai costi.
+
+=== K289 | [10] Affidabilità delle informazioni
+Articolo 10
+Affidabilità delle informazioni
+Gli intermediari assicurativi e le imprese di assicurazione adottano misure ragionevoli per assicurare che le informazioni raccolte sui clienti e potenziali clienti, ai fini della valutazione
+dell'idoneità, siano affidabili. Tali misure comprendono, a titolo esemplificativo e non esaustivo:
+a)
+assicurarsi che i clienti siano consapevoli dell'importanza di fornire informazioni accurate e aggiornate;
+b)
+assicurarsi che tutti gli strumenti, quali strumenti di valutazione del profilo di rischio o strumenti per valutare le conoscenze ed esperienze del cliente, impiegati nel processo di valutazione
+dell'idoneità rispondano allo scopo prefisso e siano correttamente concepiti per l'utilizzo con i clienti, individuandone e attenuandone attivamente le eventuali limitazioni durante il processo di
+valutazione dell'idoneità;
+c)
+assicurarsi che le domande utilizzate nel processo siano comprensibili ai clienti e in grado di riflettere in modo accurato gli obiettivi e le necessità del cliente, nonché di fornire le informazioni
+necessarie per effettuare la valutazione dell'idoneità;
+d)
+intraprendere azioni, laddove opportuno, per assicurare la coerenza delle informazioni sul cliente, per esempio analizzando se nelle informazioni da questi fornite vi siano delle evidenti
+imprecisioni.
+
+=== K290 | [11] Comunicazione con i clienti riguardo alla valutazione dell'idoneità
+Articolo 11
+Comunicazione con i clienti riguardo alla valutazione dell'idoneità
+Gli intermediari assicurativi e le imprese di assicurazione non creano ambiguità o confusione riguardo alle proprie responsabilità nel processo di valutazione dell'idoneità dei prodotti di
+investimento assicurativi in conformità all'articolo 30, paragrafo 1, della direttiva (UE) 2016/97. Gli intermediari assicurativi e le imprese di assicurazione informano i clienti, in modo chiaro e
+semplice, che la valutazione dell'idoneità viene svolta al fine di agire nel migliore interesse del cliente.
+
+=== K291 | [12] Consulenza automatizzata
+Articolo 12
+Consulenza automatizzata
+La responsabilità dell'intermediario assicurativo o dell'impresa di assicurazione nello svolgimento della valutazione dell'idoneità in conformità all'articolo 30, paragrafo 1, della direttiva (UE)
+2016/97 non può ridursi per il fatto che la consulenza sui prodotti di investimento assicurativi viene fornita completamente o in parte da un sistema automatico o semiautomatico.
+
+=== K292 | [13] Assicurazione collettiva
+Articolo 13
+Assicurazione collettiva
+Riguardo all'assicurazione collettiva, l'intermediario assicurativo o l'impresa di assicurazione fissa e attua una politica che indica il soggetto che deve essere sottoposto alla valutazione
+dell'idoneità, nel caso un cui un contratto di assicurazione venga concluso per conto di un gruppo di membri e ciascun singolo membro non possa decidere individualmente se aderire o meno. Una tale
+politica contiene anche le regole che stabiliscono le modalità di realizzazione di tale valutazione, in particolare presso chi devono essere raccolte le informazioni sulle conoscenze e l'esperienza,
+sulla situazione finanziaria e sugli obiettivi di investimento.
+L'intermediario assicurativo o l'impresa di assicurazione registra la politica così come definita in conformità al primo comma.
+
+=== K293 | [14] Dichiarazione di idoneità
+Articolo 14
+Dichiarazione di idoneità
+1.
+Quando viene fornita una consulenza sull'idoneità di un prodotto di investimento assicurativo in conformità all'articolo 30, paragrafo 1, della direttiva (UE) 2016/97, gli intermediari assicurativi e
+le imprese di assicurazione forniscono una dichiarazione al cliente (dichiarazione di idoneità) che include:
+a)
+uno schema della consulenza fornita;
+b)
+le informazioni sul perché dell'idoneità della raccomandazione fornita al cliente, in particolare il modo in cui soddisfa:
+▼M2
+i)
+gli obiettivi di investimento del cliente, inclusa la sua tolleranza al rischio, e se gli obiettivi di investimento del cliente sono conseguiti tenuto conto delle sue preferenze di sostenibilità;
+▼B
+ii)
+la situazione finanziaria del cliente, tra cui la sua capacità di sostenere perdite;
+iii)
+le conoscenze e l'esperienza del cliente.
+2.
+Gli intermediari assicurativi e le imprese di assicurazione portano all'attenzione dei clienti, includendole nella dichiarazione di idoneità, le informazioni sulla probabilità che il cliente debba
+chiedere periodicamente la revisione della situazione dei prodotti di investimento assicurativi raccomandati.
+3.
+Laddove l'intermediario assicurativo o l'impresa di assicurazione abbia informato il cliente del fatto che svolgerà una valutazione periodica dell'idoneità, le dichiarazioni successive allo
+stabilimento del servizio iniziale possono limitarsi a modifiche di servizi o di attività di investimento sottostanti, e/o delle circostanze del cliente senza ripetizione di tutti i dettagli contenuti
+nella prima dichiarazione.
+4.
+Gli intermediari assicurativi e le imprese di assicurazione che forniscono una valutazione periodica di idoneità rivedono l'idoneità dei prodotti di investimento assicurativi raccomandati con cadenza
+almeno annuale e nel migliore interesse dei propri clienti. La frequenza di tale valutazione aumenta a seconda delle caratteristiche del cliente, come ad esempio la sua tolleranza al rischio e la
+natura del prodotto di investimento assicurativo raccomandato.
+▼M2
+Gli obblighi di soddisfare le preferenze di sostenibilità dei clienti o potenziali clienti non modificano le condizioni di cui al primo comma, ove pertinente.
+▼B
+SEZIONE 2
+Valutazione dell'adeguatezza
+
+=== K294 | [15] Procedura di valutazione
+Articolo 15
+Procedura di valutazione
+Fatto salvo che, in conformità all'articolo 20, paragrafo 1, della direttiva (UE) 2016/97, qualsiasi contratto proposto deve essere coerente con le richieste e le necessità del cliente, gli
+intermediari assicurativi o le imprese di assicurazione stabiliscono se il cliente possieda le conoscenze e l'esperienza necessarie al fine di comprendere i rischi che implica il servizio o prodotto
+proposto o richiesto al momento della valutazione dell'adeguatezza del servizio o prodotto assicurativo distribuito in conformità all'articolo 30, paragrafo 2, della direttiva (UE) 2016/97.
+
+=== K295 | [16] Prodotti di investimento assicurativi non complessi
+Articolo 16
+Prodotti di investimento assicurativi non complessi
+Un prodotto di investimento assicurativo è considerato non complesso ai fini dell'articolo 30, paragrafo 3, lettera a), punto ii), della direttiva (UE) 2016/97 laddove soddisfi tutti i criteri che
+seguono:
+a)
+include un valore di scadenza minimo garantito per contratto, che corrisponde almeno all'importo versato dal cliente al netto dei costi legittimi;
+b)
+non presenta una clausola, condizione o motivo scatenante che consenta all'impresa di assicurazione di alterare materialmente la natura, il rischio o il profilo di pay-out del prodotto di investimento
+assicurativo;
+c)
+prevede opzioni per riscattare o realizzare altrimenti il prodotto di investimento assicurativo a un valore disponibile per il cliente;
+d)
+non include alcun onere esplicito o implicito avente l'effetto che il riscatto o qualsiasi altra forma di realizzo del prodotto di investimento assicurativo, per quanto tecnicamente possibile, possa
+provocare uno svantaggio irragionevole al cliente, essendo gli oneri sproporzionati rispetto ai costi dell'impresa di assicurazione;
+e)
+non include in alcun altro modo una struttura che renda difficoltoso per il cliente capire il rischio assunto.
+SEZIONE 3
+Disposizioni comuni alla valutazione dell'idoneità e dell'adeguatezza
+
+=== K296 | [17] Informazioni da ottenere dal cliente
+Articolo 17
+Informazioni da ottenere dal cliente
+1.
+Ai fini dell'articolo 30, paragrafi 1 e 2, della direttiva (UE) 2016/97, le informazioni che gli intermediari assicurativi e le imprese di assicurazione devono ottenere riguardo alle conoscenze e
+all'esperienza del cliente o del potenziale cliente nel campo di investimento pertinente includono, laddove rilevanti, gli elementi seguenti, a seconda del tipo di cliente e della natura, tipologia e
+complessità del prodotto o servizio offerto o richiesto, nonché dei relativi rischi:
+a)
+le tipologie di servizio, transazione, prodotto di investimento assicurativo o strumento finanziario con cui il cliente o il potenziale cliente ha familiarità;
+b)
+la natura, il numero, il valore e la frequenza delle transazioni del cliente o del potenziale cliente in prodotti di investimento assicurativi o in strumenti finanziari e il periodo nel quale sono
+state effettuate;
+c)
+il livello di istruzione e la professione o, se pertinente, l'ex professione del cliente o del potenziale cliente.
+2.
+L'intermediario assicurativo o l'impresa di assicurazione non scoraggia un cliente o potenziale cliente dal fornire le informazioni richieste per le finalità dell'articolo 30, paragrafi 1 e 2, della
+direttiva (UE) 2016/97.
+3.
+Laddove le informazioni richieste per le finalità dell'articolo 30, paragrafo 1 o 2, della direttiva (UE) 2016/97 siano già state ottenute in conformità all'articolo 20 della direttiva (UE) 2016/97,
+gli intermediari assicurativi e le imprese di assicurazione non le richiedono nuovamente al cliente.
+4.
+L'intermediario assicurativo o l'impresa di assicurazione è autorizzato a fare affidamento sulle informazioni fornite dai propri clienti o potenziali clienti salvo qualora sia consapevole, o dovrebbe
+esserlo, che le informazioni sono chiaramente non aggiornate, imprecise o incomplete.
+
+=== K297 | [18] Relazione periodica
+Articolo 18
+Relazione periodica
+1.
+Fatto salvo l'articolo 185 della direttiva 2009/138/CE del Parlamento europeo e del Consiglio (
+3
+), l'intermediario assicurativo o l'impresa di assicurazione fornisce al cliente una relazione periodica, su supporto durevole, dei servizi forniti e delle transazioni effettuate per conto del
+cliente.
+2.
+La relazione periodica richiesta ai sensi del paragrafo 1 fornisce un resoconto imparziale e obiettivo dei servizi forniti e delle transazioni intraprese per conto di tale cliente nel corso del
+periodo di riferimento e include, laddove rilevante, le spese totali associate a questi servizi e transazioni, nonché il valore di ciascuna attività di investimento sottostante.
+3.
+La relazione periodica richiesta ai sensi del paragrafo 1 viene fornita almeno con frequenza annuale.

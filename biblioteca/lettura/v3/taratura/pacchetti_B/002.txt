@@ -1,0 +1,1768 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativo alla resilienza operativa digitale per il settore finanziario e   (id UE-32022R2554)
+
+=== K41 | [42] Seguito dato dalle autorità competenti
+Articolo 42
+Seguito dato dalle autorità competenti
+1. Entro 60 giorni di calendario dalla ricezione delle raccomandazioni formulate dall’autorità di sorveglianza capofila ai sensi dell’articolo 35, paragrafo 1, lettera d), i fornitori terzi critici di
+servizi TIC comunicano all’autorità di sorveglianza capofila la loro intenzione di attenersi alle raccomandazioni o forniscono una spiegazione articolata del motivo per cui non lo faranno. L’autorità
+di sorveglianza capofila trasmette immediatamente le informazioni alle autorità competenti delle entità finanziarie interessate.
+2. L’autorità di sorveglianza capofila rende pubblici i casi in cui un fornitore terzo critico di servizi TIC non dà notifica all’autorità di sorveglianza capofila conformemente al paragrafo 1 o se la
+spiegazione fornita dal fornitore terzo critico di servizi TIC non è ritenuta sufficiente. Le informazioni pubblicate rivelano l’identità del fornitore terzo critico di servizi TIC nonché informazioni
+sul tipo e la natura dell’inosservanza. Tali informazioni sono limitate a quanto è pertinente e proporzionato al fine di assicurare la sensibilizzazione del pubblico, salvo il caso in cui la
+pubblicazione possa arrecare un danno sproporzionato alle parti coinvolte o mettere gravemente a rischio il regolare funzionamento e l’integrità dei mercati finanziari o la stabilità dell’intero
+sistema finanziario dell’Unione o di parte di esso.
+L’autorità di sorveglianza capofila informa il fornitore terzo di servizi TIC di tale divulgazione al pubblico.
+3. Le autorità competenti informano le entità finanziarie interessate dei rischi individuati nelle raccomandazioni inviate ai fornitori terzi critici di servizi TIC conformemente all’articolo 35,
+paragrafo 1, lettera d).
+Nella gestione dei rischi informatici derivanti da terzi, le entità finanziarie tengono conto dei rischi di cui al primo comma.
+4. Qualora un’autorità competente ritenga che un’entità finanziaria non tenga conto dei rischi specifici individuati nelle raccomandazioni, o non li affronti in misura sufficiente, nell’ambito della
+sua gestione dei rischi informatici derivanti da terzi, essa notifica all’entità finanziaria la possibilità di adottare una decisione, entro 60 giorni di calendario dal ricevimento di tale notifica, a
+norma del paragrafo 6, in assenza di adeguati accordi contrattuali volti a far fronte a tali rischi.
+5. Dopo aver ricevuto le relazioni di cui all’articolo 35, paragrafo 1, lettera c), e prima di adottare una decisione di cui al paragrafo 6 del presente articolo, le autorità competenti possono, su
+base volontaria, consultare le autorità competenti designate o istituite in conformità della direttiva (UE) 2022/2555 responsabili della vigilanza di un soggetto essenziale o importante ai sensi di
+tale direttiva, che è stato designato come fornitore terzo critico di servizi TIC.
+6. A norma dell’articolo 50, le autorità competenti possono adottare, come misura di ultima istanza, a seguito della notifica e, se del caso, della consultazione di cui ai paragrafi 4 e 5 del presente
+articolo, una decisione che impone alle entità finanziarie di sospendere temporaneamente, in tutto o in parte, l’utilizzo o l’introduzione di un servizio prestato dal fornitore terzo critico di
+servizi TIC, fino a quando non siano stati affrontati i rischi identificati nelle raccomandazioni trasmesse ai fornitori terzi critici di servizi TIC. Laddove si renda necessario, le autorità
+competenti possono chiedere alle entità finanziarie di risolvere, in tutto o in parte, gli accordi contrattuali pertinenti stipulati con i fornitori terzi critici di servizi TIC.
+7. Qualora un fornitore terzo critico di servizi TIC rifiuti di accogliere raccomandazioni basandosi su un approccio diverso da quello raccomandato dall’autorità di sorveglianza capofila e qualora
+tale approccio diverso possa avere un impatto negativo su un numero considerevole di entità finanziarie, o su una parte significativa del settore finanziario, e le singole segnalazioni emesse dalle
+autorità competenti non abbiano dato luogo ad approcci coerenti che attenuino il rischio potenziale per la stabilità finanziaria, l’autorità di sorveglianza capofila può, previa consultazione del
+forum di sorveglianza, emettere pareri non vincolanti e non pubblici alle autorità competenti, al fine di promuovere, se del caso, misure di follow-up coerenti e convergenti in materia di vigilanza.
+8. Dopo aver ricevuto le relazioni di cui all’articolo 35, paragrafo 1, lettera c), le autorità competenti tengono conto, al momento di adottare le decisioni di cui al paragrafo 6 del presente
+articolo, del tipo e delle dimensioni del rischio che non è stato affrontato dal fornitore terzo critico di servizi TIC, nonché della gravità dell’inosservanza, in considerazione dei criteri seguenti:
+a)
+la gravità e la durata dell’inosservanza;
+b)
+se l’inosservanza abbia portato alla luce gravi carenze nelle procedure, nei sistemi di gestione, nella gestione dei rischi e nei controlli interni del fornitore terzo critico di servizi TIC;
+c)
+se l’inosservanza abbia favorito o generato un reato finanziario o se tale reato sia in qualche misura attribuibile all’inosservanza;
+d)
+se l’inosservanza sia stata commessa intenzionalmente o per negligenza;
+e)
+se la sospensione o la risoluzione degli accordi contrattuali comporti un rischio per la continuità delle operazioni commerciali dell’entità finanziaria malgrado gli sforzi dell’entità finanziaria per
+evitare perturbazioni nella fornitura dei suoi servizi;
+f)
+se del caso, il parere, richiesto su base volontaria conformemente al paragrafo 5 del presente articolo, delle autorità competenti designate o istituite a norma della direttiva (UE) 2022/2555
+responsabili della vigilanza di un soggetto essenziale o importante ai sensi di tale direttiva, che è stato designato come fornitore terzo critico di servizi TIC.
+Le autorità competenti concedono alle entità finanziarie il periodo di tempo necessario per consentire loro di adeguare gli accordi contrattuali con i fornitori terzi critici di servizi TIC al fine di
+evitare effetti negativi sulla loro resilienza operativa digitale e di consentire loro di attuare le strategie di uscita e i piani di transizione di cui all’articolo 28.
+9. La decisione di cui al paragrafo 6 del presente articolo è notificata ai membri del forum di sorveglianza di cui all’articolo 32, paragrafo 4, lettere a), b) e c), e alla rete di sorveglianza
+comune.
+I fornitori terzi critici di servizi TIC interessati dalle decisioni di cui al paragrafo 6 cooperano pienamente con le entità finanziarie colpite, in particolare nel contesto del processo di
+sospensione o risoluzione dei loro accordi contrattuali.
+10. Le autorità competenti informano l’autorità di sorveglianza capofila in merito alle misure e agli approcci adottati nell’ambito dei propri compiti di vigilanza in relazione alle entità
+finanziarie, nonché in merito agli accordi contrattuali conclusi da queste ultime qualora i fornitori terzi critici di servizi TIC abbiano disatteso, in tutto o in parte, le raccomandazioni loro
+rivolte dall’autorità di sorveglianza capofila.
+11. L’autorità di sorveglianza capofila può, su richiesta, fornire ulteriori chiarimenti sulle raccomandazioni formulate per orientare le autorità competenti sulle misure di follow-up.
+
+=== K42 | [43] Commissioni per le attività di sorveglianza
+Articolo 43
+Commissioni per le attività di sorveglianza
+1. L’autorità di sorveglianza capofila addebita, conformemente all’atto delegato di cui al paragrafo 2 del presente articolo, ai fornitori terzi critici di servizi TIC commissioni che coprono
+completamente le spese necessarie sostenute dall’autorità di sorveglianza capofila in relazione allo svolgimento dei compiti di sorveglianza ai sensi del presente regolamento, compreso il rimborso dei
+costi eventualmente sostenuti in seguito al lavoro svolto dal gruppo di esaminatori congiunto di cui all’articolo 40, nonché i costi della consulenza fornita dagli esperti indipendenti di cui
+all’articolo 32, paragrafo 4, secondo comma, in relazione a questioni che rientrano nell’ambito delle attività di sorveglianza diretta.
+L’importo della commissione addebitata al fornitore terzo critico di servizi TIC copre tutti i costi derivanti dall’esecuzione dei compiti di cui alla presente sezione ed è proporzionato al fatturato
+del fornitore.
+2. Alla Commissione è conferito il potere di adottare un atto delegato, conformemente all’articolo 57, per integrare il presente regolamento determinando l’importo delle commissioni e le relative
+modalità di pagamento entro il 17 luglio 2024.
+
+=== K43 | [44] Cooperazione internazionale
+Articolo 44
+Cooperazione internazionale
+1. Fatto salvo l’articolo 36, ai sensi, rispettivamente, dell’articolo 33 dei regolamenti (UE) n. 1093/2010, (UE) n. 1095/2010 e (UE) n. 1094/2010, l’ABE, l’ESMA e l’EIOPA possono concludere accordi
+amministrativi con le autorità di vigilanza e di regolamentazione di paesi terzi per promuovere la cooperazione internazionale in materia di rischi informatici derivanti da terzi tra i diversi settori
+finanziari, in particolare definendo migliori prassi per il riesame delle pratiche e dei controlli per la gestione dei rischi informatici nonché per le misure di attenuazione e risposta agli
+incidenti.
+2. Le AEV, tramite il comitato congiunto, presentano ogni cinque anni al Parlamento europeo, al Consiglio e alla Commissione una relazione congiunta riservata in cui sintetizzano le conclusioni delle
+discussioni pertinenti tenute con le autorità dei paesi terzi di cui al paragrafo 1, con particolare attenzione all’evoluzione dei rischi informatici derivanti da terzi e alle implicazioni per la
+stabilità finanziaria, l’integrità del mercato, la protezione degli investitori e il funzionamento del mercato interno.
+CAPO VI
+Meccanismi di condivisione delle informazioni
+
+=== K44 | [45] Meccanismi di condivisione delle informazioni e delle analisi delle minacce informatiche
+Articolo 45
+Meccanismi di condivisione delle informazioni e delle analisi delle minacce informatiche
+1. Le entità finanziarie possono scambiarsi reciprocamente informazioni e analisi delle minacce informatiche, tra cui indicatori di compromissione, tattiche, tecniche e procedure, segnali di allarme
+per la cibersicurezza e strumenti di configurazione, nella misura in cui tale condivisione di informazioni e dati:
+a)
+mira a potenziare la resilienza operativa digitale delle entità finanziarie, in particolare aumentando la consapevolezza in merito alle minacce informatiche, contenendo o inibendo la capacità di
+diffusione delle minacce informatiche, sostenendo le capacità di difesa, le tecniche di individuazione delle minacce, le politiche di mitigazione o le fasi di risposta e ripristino;
+b)
+si svolge entro comunità fidate di entità finanziarie;
+c)
+si realizza mediante meccanismi di condivisione delle informazioni che tutelano la natura potenzialmente sensibile delle informazioni condivise e sono disciplinati da norme di condotta pienamente
+rispettose della riservatezza dell’attività economica, della protezione dei dati personali ai sensi del regolamento (UE) 2016/679 e delle linee guida sulla politica in materia di concorrenza.
+2. Ai fini del paragrafo 1, lettera c), i meccanismi di condivisione delle informazioni definiscono le condizioni per la partecipazione e, se del caso, definiscono i dettagli concernenti il
+coinvolgimento delle autorità pubbliche e la veste in cui queste possono partecipare ai meccanismi di condivisione delle informazioni, il coinvolgimento dei fornitori terzi di servizi TIC, nonché gli
+elementi operativi tra cui l’utilizzo di piattaforme informatiche apposite.
+3. Le entità finanziarie notificano alle autorità competenti la propria partecipazione ai meccanismi di condivisione delle informazioni di cui al paragrafo 1, al momento della convalida della propria
+adesione o, se del caso, della cessazione dell’adesione, quando quest’ultima abbia effetto.
+CAPO VII
+Autorità competenti
+
+=== K45 | [46] Autorità competenti
+Articolo 46
+Autorità competenti
+Fatte salve le disposizioni sul quadro di sorveglianza per i fornitori terzi critici di servizi TIC di cui al capo V, sezione II, il rispetto del presente regolamento è assicurato dalle seguenti
+autorità competenti conformemente ai poteri conferiti dai rispettivi atti giuridici:
+a)
+per gli enti creditizi e per gli enti esentati a norma della direttiva 2013/36/UE: l’autorità competente designata in conformità dell’articolo 4 di tale direttiva; e per gli enti creditizi
+classificati come significativi ai sensi dell’articolo 6, paragrafo 4, del regolamento (UE) n. 1024/2013: la BCE conformemente ai poteri e ai compiti conferiti da tale regolamento;
+b)
+per gli istituti di pagamento, compresi quelli esentati a norma della direttiva (UE) 2015/2366, gli istituti di moneta elettronica, compresi quelli esentati a norma della direttiva 2009/110/CE, e i
+prestatori di servizi di informazione sui conti di cui all’articolo 33, paragrafo 1, della direttiva (UE) 2015/2366: l’autorità competente designata in conformità dell’articolo 22 della direttiva (UE)
+2015/2366;
+c)
+per le imprese di investimento: l’autorità competente designata in conformità dell’articolo 4 della direttiva (UE) 2019/2034 del Parlamento europeo e del Consiglio ( 38 ) ;
+d)
+per i fornitori di servizi per le cripto-attività quali autorizzati ai sensi del regolamento sui mercati delle cripto-attività e gli emittenti di token collegati ad attività: l’autorità competente
+designata in conformità delle pertinenti disposizioni di tale regolamento;
+e)
+per i depositari centrali di titoli: l’autorità competente designata in conformità dell’articolo 11 del regolamento (UE) n. 909/2014;
+f)
+per le controparti centrali: l’autorità competente designata in conformità dell’articolo 22 del regolamento (UE) n. 648/2012;
+g)
+per le sedi di negoziazione e i fornitori di servizi di comunicazione dati: l’autorità competente designata in conformità dell’articolo 67 della direttiva 2014/65/UE e l’autorità competente quale
+definita all’articolo 2, paragrafo 1, punto 18), del regolamento (UE) n. 600/2014;
+h)
+per i repertori di dati sulle negoziazioni: l’autorità competente designata in conformità dell’articolo 22 del regolamento (UE) n. 648/2012;
+i)
+per i gestori di fondi di investimento alternativi: l’autorità competente designata in conformità dell’articolo 44 della direttiva 2011/61/UE;
+j)
+per le società di gestione: l’autorità competente designata in conformità dell’articolo 97 della direttiva 2009/65/CE;
+k)
+per le imprese di assicurazione e di riassicurazione: l’autorità competente designata in conformità dell’articolo 30 della direttiva 2009/138/CE;
+l)
+per gli intermediari assicurativi, gli intermediari riassicurativi e gli intermediari assicurativi a titolo accessorio: l’autorità competente designata in conformità dell’articolo 12 della direttiva
+(UE) 2016/97;
+m)
+per gli enti pensionistici aziendali o professionali: l’autorità competente designata a norma dell’articolo 47 della direttiva (UE) 2016/2341;
+n)
+per le agenzie di rating del credito: l’autorità competente designata in conformità dell’articolo 21 del regolamento (CE) n. 1060/2009;
+o)
+per gli amministratori di indici di riferimento critici: l’autorità competente designata in conformità degli articoli 40 e 41 del regolamento (UE) 2016/1011;
+p)
+per i fornitori di servizi di crowdfunding: l’autorità competente designata in conformità dell’articolo 29 del regolamento (UE) 2020/1503;
+q)
+per i repertori di dati sulle cartolarizzazioni: l’autorità competente designata in conformità dell’articolo 10 e dell’articolo 14, paragrafo 1, del regolamento (UE) 2017/2402.
+
+=== K46 | [47] Cooperazione con le strutture e le autorità istituite dalla direttiva (UE) 2022/2555
+Articolo 47
+Cooperazione con le strutture e le autorità istituite dalla direttiva (UE) 2022/2555
+1. Per promuovere la cooperazione e consentire lo scambio di pratiche di vigilanza tra le autorità competenti designate a norma del presente regolamento e il gruppo di cooperazione istituito
+dall’articolo 14 della direttiva (UE) 2022/2555, le AEV e le autorità competenti possono partecipare alle attività del gruppo di cooperazione per le questioni che riguardano le loro attività di
+vigilanza in relazione alle entità finanziarie. Le AEV e le autorità competenti possono chiedere di essere invitate a partecipare alle attività del gruppo di cooperazione per questioni relative alle
+entità essenziali o importanti ai sensi della direttiva (UE) 2022/2555 che sono anch’esse state designate come fornitori terzi critici di servizi TIC a norma dell’articolo 31 del presente regolamento.
+2. Le autorità competenti possono consultare, se del caso, i punti di contatto unici e i CSIRT designati o istituiti in conformità della direttiva (UE) 2022/2555, e scambiare informazioni con essi.
+3. Se del caso, le autorità competenti possono richiedere qualsiasi consulenza e assistenza tecnica pertinenti alle autorità competenti designate o istituite a norma della direttiva (UE) 2022/2555 e
+stabilire accordi di cooperazione per consentire l’istituzione di meccanismi di coordinamento efficaci e di risposta rapida.
+4. Gli accordi di cui al paragrafo 3 del presente articolo possono, tra l’altro, specificare le procedure per il coordinamento delle attività di vigilanza e di sorveglianza, rispettivamente, in
+relazione a soggetti essenziali o importanti ai sensi della direttiva (UE) 2022/2555 che sono stati designati come fornitori terzi critici di servizi TIC a norma dell’articolo 31 del presente
+regolamento, anche per lo svolgimento, conformemente al diritto nazionale, di indagini e ispezioni in loco, nonché per i meccanismi per lo scambio di informazioni tra le autorità competenti ai sensi
+del presente regolamento e le autorità competenti designate o istituite a norma di tale direttiva, il che comprende l’accesso alle informazioni richieste da tali ultime autorità.
+
+=== K47 | [48] Cooperazione tra autorità
+Articolo 48
+Cooperazione tra autorità
+1. Le autorità competenti cooperano strettamente tra loro e, se del caso, con l’autorità di sorveglianza capofila.
+2. Le autorità competenti e l’autorità di sorveglianza capofila si scambiano tempestivamente tutte le informazioni pertinenti riguardanti i fornitori terzi critici di servizi TIC che sono necessarie
+per svolgere i rispettivi compiti ai sensi del presente regolamento, in particolare in relazione ai rischi individuati, agli approcci e alle misure adottate nell’ambito dei compiti di sorveglianza
+dell’autorità di sorveglianza capofila.
+
+=== K48 | [49] Comunicazione, cooperazione e attività finanziarie intersettoriali
+Articolo 49
+Comunicazione, cooperazione e attività finanziarie intersettoriali
+1. Le AEV, tramite il comitato congiunto e in collaborazione con le autorità competenti, le autorità di risoluzione di cui all’articolo 3 della direttiva 2014/59/UE, la BCE, il Comitato di risoluzione
+unico per quanto riguarda le informazioni relative alle entità che rientrano nell’ambito di applicazione del regolamento (UE) n. 806/2014, il CERS e l’ENISA, se del caso, possono istituire meccanismi
+che consentano la condivisione di pratiche efficaci tra i vari settori finanziari per migliorare la consapevolezza situazionale e identificare i rischi e le vulnerabilità informatiche comuni a tutti i
+settori.
+Le AEV possono elaborare esercitazioni di gestione delle crisi e delle emergenze comprendenti scenari di attacchi informatici al fine di sviluppare canali di comunicazione e promuovere gradualmente
+una risposta efficace coordinata a livello dell’Unione nel caso di grave incidente transfrontaliero connesso alle TIC o relativa minaccia aventi un impatto sistemico sull’intero settore finanziario
+dell’Unione.
+A seconda dei casi, tali esercitazioni possono anche servire come test delle dipendenze del settore finanziario da altri settori economici.
+2. Le autorità competenti, le AEV e la BCE cooperano strettamente tra loro e si scambiano informazioni per svolgere i compiti di cui agli articoli da 47 a 54. Realizzano uno stretto coordinamento
+dell’attività di vigilanza per rilevare e correggere le violazioni del presente regolamento, sviluppare e promuovere migliori prassi, agevolare la collaborazione, promuovere la coerenza
+dell’interpretazione e formulare valutazioni transgiurisdizionali in caso di disaccordo.
+
+=== K49 | [50] Sanzioni amministrative e misure di riparazione
+Articolo 50
+Sanzioni amministrative e misure di riparazione
+1. Alle autorità competenti sono conferiti tutti i poteri di vigilanza, di indagine e sanzionatori necessari per adempiere i propri compiti ai sensi del presente regolamento.
+2. I poteri di cui al paragrafo 1 includono almeno i poteri seguenti:
+a)
+l’avere accesso a qualsiasi documento o dato, detenuto in qualsiasi forma, che l’autorità competente consideri pertinente per lo svolgimento dei propri compiti e la possibilità di riceverne o farne
+una copia;
+b)
+lo svolgere ispezioni o indagini in loco comprendenti tra l’altro:
+i)
+la convocazione di rappresentanti delle entità finanziarie per ottenere spiegazioni scritte od orali su fatti o documenti relativi all’oggetto e alle finalità dell’indagine e registrarne le risposte;
+ii)
+l’audizione di persone fisiche o giuridiche consenzienti allo scopo di raccogliere informazioni pertinenti all’oggetto dell’indagine;
+c)
+il richiedere l’applicazione di misure correttive e di riparazione per le violazioni dei requisiti del presente regolamento.
+3. Fatto salvo il diritto degli Stati membri di imporre sanzioni penali in conformità dell’articolo 52, gli Stati membri stabiliscono norme che prevedano adeguate sanzioni amministrative e misure di
+riparazione per le violazioni del presente regolamento e ne garantiscono l’effettiva applicazione.
+Tali sanzioni e misure sono efficaci, proporzionate e dissuasive.
+4. Gli Stati membri conferiscono alle autorità competenti il potere di applicare almeno le sanzioni amministrative o misure di riparazione seguenti per le violazioni del presente regolamento:
+a)
+emanare un ordine che imponga alla persona fisica o giuridica di porre termine al comportamento in violazione del presente regolamento e di astenersi dal ripeterlo;
+b)
+richiedere la cessazione temporanea o permanente di qualsiasi pratica o comportamento che le autorità competenti considerino contrari alle disposizioni del presente regolamento e prevenirne la
+reiterazione;
+c)
+adottare qualsiasi tipo di misura, anche di natura pecuniaria, per assicurare che le entità finanziarie continuino a rispettare i requisiti di legge;
+d)
+chiedere, nella misura in cui ciò sia consentito dal diritto nazionale, le registrazioni esistenti di traffico dati detenute dagli operatori di telecomunicazioni, qualora vi sia il ragionevole
+sospetto di violazioni del presente regolamento e qualora si ritenga che le registrazioni possano essere pertinenti ai fini delle rispettive indagini; nonché
+e)
+pubblicare comunicazioni pubbliche, comprese dichiarazioni pubbliche, indicanti l’identità della persona fisica o giuridica e la natura della violazione.
+5. Qualora il paragrafo 2, lettera c), e il paragrafo 4 si applichino a persone giuridiche, gli Stati membri conferiscono alle autorità competenti il potere di imporre sanzioni amministrative e misure
+di riparazione, alle condizioni previste dal diritto nazionale, nei confronti di membri dell’organo di gestione e di altre persone che, ai sensi del diritto nazionale, siano responsabili della
+violazione.
+6. Gli Stati membri garantiscono che qualsiasi decisione di imporre sanzioni amministrative o misure di riparazione adottata ai sensi del paragrafo 2, lettera c), sia adeguatamente motivata e preveda
+il diritto di ricorso.
+
+=== K50 | [51] Esercizio del potere di imporre sanzioni amministrative e misure di riparazione
+Articolo 51
+Esercizio del potere di imporre sanzioni amministrative e misure di riparazione
+1. Le autorità competenti esercitano il potere di imporre sanzioni amministrative e misure di riparazione di cui all’articolo 50 in conformità del proprio quadro giuridico nazionale, a seconda dei
+casi:
+a)
+direttamente;
+b)
+in collaborazione con altre autorità;
+c)
+sotto la propria responsabilità mediante delega ad altre autorità; oppure
+d)
+rivolgendosi alle competenti autorità giudiziarie.
+2. Per stabilire il tipo e il livello della sanzione amministrativa o della misura di riparazione da imporre a norma dell’articolo 50, le autorità competenti tengono conto della misura in cui la
+violazione è intenzionale o è dovuta a negligenza e di tutte le altre circostanze pertinenti, tra cui, secondo il caso:
+a)
+la rilevanza, la gravità e la durata della violazione;
+b)
+il grado di responsabilità della persona fisica o giuridica responsabile della violazione;
+c)
+la solidità finanziaria della persona fisica o giuridica responsabile;
+d)
+l’importanza degli utili realizzati o delle perdite evitate da parte della persona fisica o giuridica responsabile, nella misura in cui possano essere determinati;
+e)
+le perdite subite da terzi a causa della violazione, nella misura in cui possano essere determinate;
+f)
+il livello di cooperazione che la persona fisica o giuridica responsabile ha dimostrato nei confronti dell’autorità competente, ferma restando la necessità di garantire la restituzione degli utili
+realizzati o delle perdite evitate da tale persona fisica o giuridica;
+g)
+le precedenti violazioni commesse dalla persona fisica o giuridica responsabile.
+
+=== K51 | [52] Sanzioni penali
+Articolo 52
+Sanzioni penali
+1. Gli Stati membri possono decidere di non emanare norme relative a sanzioni amministrative o misure di riparazione per violazioni che, ai sensi del rispettivo diritto nazionale, siano passibili di
+sanzioni penali.
+2. Qualora abbiano deciso di imporre sanzioni penali per violazioni del presente regolamento, gli Stati membri provvedono affinché siano messe in atto misure adeguate per far sì che le autorità
+competenti dispongano di tutti i poteri necessari per stabilire contatti con le autorità giudiziarie, le autorità inquirenti o le autorità di giustizia penale della loro giurisdizione, al fine di
+ricevere informazioni specifiche sulle indagini o i procedimenti penali avviati per violazioni del presente regolamento, e di trasmetterle alle altre autorità competenti, nonché all’ABE, all’ESMA o
+all’EIOPA in modo tale che possano adempiere l’obbligo di cooperazione ai fini del presente regolamento.
+
+=== K52 | [53] Obblighi di notifica
+Articolo 53
+Obblighi di notifica
+Gli Stati membri notificano alla Commissione, all’ESMA, all’ABE e all’EIOPA le disposizioni legislative, regolamentari e amministrative adottate in attuazione del presente capo, incluse le eventuali
+norme di diritto penale pertinenti, entro il 17 gennaio 2025. Gli Stati membri notificano senza indebito ritardo alla Commissione, all’ESMA, all’ABE e all’EIOPA tutte le successive modifiche.
+
+=== K53 | [54] Pubblicazione delle sanzioni amministrative
+Articolo 54
+Pubblicazione delle sanzioni amministrative
+1. Le autorità competenti pubblicano senza indebito ritardo sul proprio sito web ufficiale qualsiasi decisione di imporre sanzioni amministrative contro la quale non vi sia diritto di ricorso, dopo la
+notifica al destinatario.
+2. La pubblicazione di cui al paragrafo 1 comprende informazioni sul tipo e la natura della violazione, l’identità delle persone responsabili e le sanzioni imposte.
+3. Qualora, in seguito a una valutazione caso per caso, ritenga che la pubblicazione dell’identità, nel caso di persone giuridiche, o dell’identità e dei dati personali, nel caso di persone fisiche,
+sarebbe sproporzionata, ivi compresi rischi inerenti alla protezione dei dati personali, metterebbe a repentaglio la stabilità dei mercati finanziari o lo svolgimento di un’indagine penale in corso,
+oppure provocherebbe, nella misura in cui possano essere determinati, danni sproporzionati alla persona coinvolta, l’autorità competente adotta una delle soluzioni seguenti in merito alla decisione di
+imporre una sanzione amministrativa:
+a)
+rinvia la pubblicazione fino al momento in cui cesseranno di esistere tutti i motivi che giustificano la non pubblicazione;
+b)
+pubblica la sanzione in forma anonima in maniera conforme al diritto nazionale; oppure
+c)
+si astiene dalla pubblicazione, qualora le opzioni di cui alle lettere a) e b) siano ritenute insufficienti per scongiurare ogni pericolo per la stabilità dei mercati finanziari, oppure quando tale
+pubblicazione non sarebbe proporzionata alla mitezza della sanzione imposta.
+4. Qualora si decida di pubblicare una sanzione amministrativa in forma anonima, ai sensi del paragrafo 3, lettera b), la pubblicazione dei dati pertinenti può essere rinviata.
+5. Qualora l’autorità competente pubblichi una decisione che impone una sanzione amministrativa che è oggetto di ricorso dinanzi alle pertinenti autorità giudiziarie, le autorità competenti aggiungono
+immediatamente sul proprio sito web ufficiale tale informazione e, nelle fasi successive, eventuali informazioni correlate all’esito del ricorso. È pubblicata anche ogni decisione giudiziaria che
+annulli una decisione di imporre una sanzione amministrativa.
+6. Le autorità competenti provvedono affinché le informazioni pubblicate ai sensi dei paragrafi da 1 a 4 restino sul loro sito web ufficiale unicamente per il periodo necessario ai fini
+dell’applicazione del presente articolo. Tale periodo non è superiore ai cinque anni dalla sua pubblicazione.
+
+=== K54 | [55] Segreto professionale
+Articolo 55
+Segreto professionale
+1. Le informazioni riservate ricevute, scambiate o trasmesse a norma del presente regolamento sono soggette alle condizioni in materia di segreto professionale di cui al paragrafo 2.
+2. L’obbligo del segreto professionale si applica a tutte le persone che prestano o hanno prestato la loro attività per le autorità competenti ai sensi del presente regolamento o per qualsiasi
+autorità, impresa che opera sul mercato o persona fisica o giuridica cui tali autorità competenti hanno delegato i propri poteri, compresi i revisori e gli esperti incaricati da dette autorità.
+3. Le informazioni coperte dal segreto professionale, ivi compreso lo scambio di informazioni tra le autorità competenti ai sensi del presente regolamento e le autorità competenti designate o
+istituite a norma della direttiva (UE) 2022/2555, non sono divulgate ad alcuna altra persona o autorità se non in forza di disposizioni del diritto dell’Unione o del diritto nazionale;
+4. Tutte le informazioni scambiate tra le autorità competenti in applicazione del presente regolamento relativamente ad aspetti commerciali od operativi e ad altre questioni di natura economica o
+personale sono considerate riservate e sono soggette all’obbligo del segreto professionale, salvo quando l’autorità competente dichiara al momento della loro comunicazione che è consentita la
+divulgazione di tali informazioni o che la stessa è necessaria a fini di procedimenti giudiziari.
+
+=== K55 | [56] Protezione dei dati
+Articolo 56
+Protezione dei dati
+1. Le AEV e le autorità competenti sono autorizzate a trattare i dati personali solo se necessario ai fini dell’adempimento dei rispettivi obblighi e doveri ai sensi del presente regolamento, in
+particolare per quanto riguarda le indagini, le ispezioni, la richiesta di informazioni, la comunicazione, la pubblicazione, le valutazioni, la verifica e la stesura dei piani di sorveglianza. I dati
+personali sono trattati a norma del regolamento (UE) 2016/679 o del regolamento (UE) 2018/1725, a seconda dei casi.
+2. Salvo nel caso in cui sia altrimenti disposto in altri atti settoriali, i dati personali di cui al paragrafo 1 sono conservati fino all’espletamento degli obblighi di vigilanza applicabili e, in
+ogni caso, per un periodo massimo di 15 anni, salvo in caso di procedimenti giudiziari in corso che richiedono un’ulteriore conservazione di tali dati.
+CAPO VIII
+Atti delegati
+
+=== K57 | [58] Clausola di riesame
+Articolo 58
+Clausola di riesame
+1. Entro il 17 gennaio 2028, la Commissione, dopo aver consultato le AEV e il CERS, a seconda dei casi, effettua un riesame e presenta al Parlamento europeo e al Consiglio una relazione accompagnata,
+se del caso, da una proposta legislativa. Il riesame comprende almeno:
+a)
+i criteri per la designazione dei fornitori terzi critici di servizi TIC, di cui all’articolo 31, paragrafo 2;
+b)
+il carattere volontario della notifica di minacce informatiche significative di cui all’articolo 19;
+c)
+il regime di cui all’articolo 31, paragrafo 12, e i poteri dell’autorità di sorveglianza capofila di cui all’articolo 35, paragrafo 1, lettera d ), punto iv), primo trattino, al fine di valutare
+l’efficacia di tali disposizioni per quanto riguarda la garanzia di una sorveglianza efficace dei fornitori terzi critici di servizi TIC stabiliti in un paese terzo e la necessità di istituire
+un’impresa figlia nell’Unione.
+Ai fini del primo comma della presente lettera, il riesame comprende un’analisi del regime di cui all’articolo 31, paragrafo 12, comprese le condizioni di accesso delle entità finanziarie dell’Unione
+ai servizi di paesi terzi e la disponibilità di tali servizi sul mercato dell’Unione, e tiene conto degli ulteriori sviluppi nei mercati dei servizi disciplinati dal presente regolamento,
+dell’esperienza pratica delle entità finanziarie e delle autorità di vigilanza finanziaria per quanto riguarda l’applicazione e, rispettivamente, la vigilanza di tale regime e di eventuali sviluppi
+pertinenti in materia di regolamentazione e vigilanza a livello internazionale;
+d)
+se sia opportuno includere nell’ambito di applicazione del presente regolamento le entità finanziarie di cui all’articolo 2, paragrafo 3, lettera e), che utilizzano sistemi di vendita automatizzata,
+alla luce dei futuri sviluppi del mercato sull’uso di tali sistemi;
+e)
+il funzionamento e l’efficacia della rete di sorveglianza comune in termini di sostegno alla coerenza della sorveglianza e all’efficienza dello scambio di informazioni nell’ambito del quadro di
+sorveglianza.
+2. Nel contesto del riesame della direttiva (UE) 2015/2366, la Commissione valuta la necessità di una maggiore ciberresilienza dei sistemi di pagamento e delle attività di trattamento dei pagamenti e
+se sia opportuno ampliare l’ambito di applicazione del presente regolamento agli operatori dei sistemi di pagamento e alle entità coinvolte nelle attività di trattamento dei pagamenti. Alla luce di
+tale valutazione, la Commissione presenta, nell’ambito del riesame della direttiva (UE) 2015/2366, una relazione al Parlamento europeo e al Consiglio e entro il 17 luglio 2023.
+Sulla base di tale relazione di riesame e previa consultazione delle AEV, della BCE e del CERS, la Commissione può presentare, se del caso e nell’ambito della proposta legislativa che può adottare a
+norma dell’articolo 108, secondo comma, della direttiva (UE) 2015/2366, una proposta volta a garantire che tutti gli operatori dei sistemi di pagamento e le entità coinvolte nelle attività di
+trattamento dei pagamenti siano soggetti a un’adeguata sorveglianza, tenendo conto nel contempo dell’esistente sorveglianza da parte delle banche centrali.
+3. Entro il 17 gennaio 2026, la Commissione, dopo aver consultato le AEV e il comitato degli organismi europei di controllo delle attività di revisione contabile, effettua un riesame e presenta al
+Parlamento europeo e al Consiglio una relazione accompagnata, se del caso, da una proposta legislativa sull’opportunità di rafforzare i requisiti per i revisori legali e le imprese di revisione
+contabile per quanto riguarda la resilienza operativa digitale, mediante l’inclusione dei revisori legali e delle imprese di revisione contabile nell’ambito di applicazione del presente regolamento o
+mediante modifiche della direttiva 2006/43/CE del Parlamento europeo e del Consiglio ( 39 ) .
+Sezione II
+Modifiche
+
+=== K58 | [59] Modifiche del regolamento (CE) n. 1060/2009
+Articolo 59
+Modifiche del regolamento (CE) n. 1060/2009
+Il regolamento (CE) n. 1060/2009 è così modificato:
+1)
+nell’allegato I, sezione A, punto 4, il primo comma è sostituito dal seguente:
+«Un’agenzia di rating del credito dispone di procedure amministrative e contabili solide, di meccanismi di controllo interno, di procedure efficaci per la valutazione del rischio e di meccanismi
+efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *1 ) .
+( *1 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+2)
+nell’allegato III, il punto 12) è sostituito dal seguente:
+«12)
+L’agenzia di rating del credito viola l’articolo 6, paragrafo 2, in combinato disposto con l’allegato I, sezione A, punto 4, quando non dispone di procedure amministrative o contabili solide, di
+meccanismi di controllo interno, di procedure efficaci per la valutazione del rischio o di meccanismi efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del
+regolamento (UE) 2022/2554, o non instaurando, né mantenendo le procedure di adozione di decisione o le strutture organizzative richieste dal predetto punto.».
+
+=== K59 | [60] Modifiche del regolamento (UE) n. 648/2012
+Articolo 60
+Modifiche del regolamento (UE) n. 648/2012
+Il regolamento (UE) n. 648/2012 è così modificato:
+1)
+l’articolo 26 è così modificato:
+a)
+il paragrafo 3 è sostituito dal seguente:
+«3. Le CCP mantengono e gestiscono una struttura organizzativa che assicuri la continuità e il regolare funzionamento della prestazione dei servizi e dell’esercizio delle attività. Esse utilizzano
+sistemi, risorse e procedure adeguati e proporzionati, tra cui sistemi di TIC gestiti in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *2 ) .
+( *2 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+b)
+il paragrafo 6 è soppresso;
+2)
+l’articolo 34 è così modificato:
+a)
+il paragrafo 1 è sostituito dal seguente:
+«1. Le CCP adottano, attuano e mantengono una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro, comprendenti una politica di continuità operativa delle TIC e
+piani di risposta e ripristino relativi alle TIC predisposti e attuati in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle funzioni, la ripresa tempestiva delle
+attività e l’adempimento degli obblighi della CCP.»;
+b)
+al paragrafo 3, il primo comma è sostituito dal seguente:
+«3. Al fine di garantire l’applicazione coerente del presente articolo, l’ESMA, previa consultazione dei membri del SEBC, elabora progetti di norme tecniche di regolamentazione per specificare il
+contenuto minimo e i requisiti della politica di continuità operativa e del piano di ripristino in caso di disastro, con l’esclusione della politica di continuità operativa delle TIC e dei piani di
+risposta e ripristino relativi alle TIC.»;
+3)
+all’articolo 56, paragrafo 3, il primo comma è sostituito dal seguente:
+«3. Per assicurare l’applicazione uniforme del presente articolo, l’ESMA elabora progetti di norme tecniche di regolamentazione che specifichino, tranne che per i requisiti in materia di gestione dei
+rischi informatici, i dettagli della domanda di registrazione di cui al paragrafo 1.»;
+4)
+all’articolo 79, i paragrafi 1 e 2 sono sostituiti dai seguenti:
+«1. I repertori di dati sulle negoziazioni individuano le fonti di rischio operativo e le riducono anche sviluppando sistemi, controlli e procedure adeguati, tra cui sistemi di TIC gestiti ai sensi
+del regolamento (UE) 2022/2554.
+2. I repertori di dati sulle negoziazioni stabiliscono, attuano e mantengono una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro, comprendenti una politica di
+continuità operativa delle TIC e piani di risposta e ripristino relativi alle TIC istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle loro funzioni, la
+ripresa tempestiva delle attività e l’adempimento degli obblighi assunti.»;
+5)
+all’articolo 80, il paragrafo 1 è soppresso;
+6)
+nell’allegato I, la sezione II è così modificata:
+a)
+le lettere a) e b) sono sostituite dalle seguenti:
+«a)
+un repertorio di dati sulle negoziazioni viola l’articolo 79, paragrafo 1, allorché non individua le fonti di rischio operativo o non limita al massimo tali rischi sviluppando sistemi, controlli e
+procedure adeguati, tra cui sistemi di TIC gestiti ai sensi del regolamento (UE) 2022/2554;
+b)
+un repertorio di dati sulle negoziazioni viola l’articolo 79, paragrafo 2, allorché non stabilisce, non attua o non mantiene una politica adeguata di continuità operativa e un piano di ripristino in
+caso di disastro, istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle proprie funzioni, la ripresa tempestiva delle attività e l’adempimento degli
+obblighi assunti;»;
+b)
+la lettera c) è soppressa;
+7)
+l’allegato III è così modificato:
+a)
+La sezione II è così modificata:
+i)
+la lettera c) è sostituita dalla seguente:
+«c)
+una CCP di classe 2 viola l’articolo 26, paragrafo 3, allorché non mantiene o non gestisce una struttura organizzativa che assicuri la continuità e il regolare funzionamento della prestazione dei
+propri servizi e dell’esercizio delle attività, o allorché non utilizza sistemi, risorse o procedure adeguati e proporzionati, tra cui sistemi di TIC gestiti conformemente al regolamento (UE)
+2022/2554»;
+ii)
+la lettera f) è soppressa;
+b)
+nella sezione III, la lettera a) è sostituita dalla seguente:
+«a)
+una CCP di classe 2 viola l’articolo 34, paragrafo 1, allorché non stabilisce, non attua o non mantiene una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro,
+istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle proprie funzioni, la ripresa tempestiva delle attività e l’adempimento degli obblighi assunti dalla
+CCP; tale piano prevede almeno la ripresa di tutte le operazioni in corso al momento della perturbazione in modo da permettere alla CCP di continuare a funzionare con certezza e di completare il
+regolamento alla data prevista;».
+
+=== K60 | [61] Modifiche del regolamento (UE) n. 909/2014
+Articolo 61
+Modifiche del regolamento (UE) n. 909/2014
+L’articolo 45 del regolamento (UE) n. 909/2014 è così modificato:
+1)
+il paragrafo 1 è sostituito dal seguente:
+«1. I CSD individuano le fonti di rischio operativo, interne ed esterne, e ne riducono al minimo l’impatto avvalendosi di strumenti, processi e politiche in materia di TIC adeguati, istituiti e
+gestiti ai sensi del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *3 ) , nonché mediante qualsiasi altro tipo adeguato di strumenti, controlli e procedure per altri tipi di
+rischi operativi, anche per tutti i sistemi di regolamento titoli da essi operati.
+( *3 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+2)
+il paragrafo 2 è soppresso;
+3)
+i paragrafi 3 e 4 sono sostituiti dai seguenti:
+«3. Per i servizi che forniscono nonché per ciascun sistema di regolamento titoli da essi operato, i CSD stabiliscono, attuano e mantengono una politica adeguata di continuità operativa e un piano di
+ripristino in caso di disastro, comprendente una politica di continuità operativa delle TIC e piani di risposta e ripristino relativi alle TIC istituiti ai sensi del regolamento (UE) 2022/2554, allo
+scopo di preservare i servizi, assicurare la ripresa tempestiva delle attività e l’adempimento degli obblighi del CSD in caso di eventi che comportino un rischio significativo di perturbare le
+attività.
+4. Il piano di cui al paragrafo 3 prevede il ripristino di tutte le operazioni e posizioni dei partecipanti al momento della perturbazione, in modo da permettere ai partecipanti al CSD di continuare
+ad operare con certezza e di completare il regolamento alla data prevista, anche assicurando che i sistemi informatici critici possano riprendere a funzionare dal momento della perturbazione, come
+previsto dall’articolo 12, paragrafi 5 e 7, del regolamento (UE) 2022/2554.»;
+4)
+il paragrafo 6 è sostituito dal seguente:
+«6. I CSD individuano, controllano e gestiscono i rischi ai quali i principali partecipanti ai sistemi di regolamento titoli da essi operati nonché i fornitori di servizi e utenze, e altri CSD o altre
+infrastrutture di mercato possono esporre le loro attività. Su richiesta, forniscono alle autorità competenti e alle autorità rilevanti informazioni su ogni rischio siffatto individuato. Informano
+inoltre senza ritardo l’autorità competente e le autorità rilevanti in merito a eventuali incidenti operativi causati da tali rischi, tranne che in relazione ai rischi informatici.»;
+5)
+al paragrafo 7, il primo comma è sostituito dal seguente:
+«7. L’ESMA, in stretta cooperazione con i membri del SEBC, elabora progetti di norme tecniche di regolamentazione per specificare i rischi operativi di cui ai paragrafi 1 e 6, tranne che in relazione
+ai rischi informatici, i metodi per testare, gestire o ridurre al minimo tali rischi, ivi compresi le politiche di continuità operativa e i piani di ripristino in caso di disastro di cui ai paragrafi
+3 e 4, nonché i metodi di valutazione degli stessi.».
+
+=== K61 | [62] Modifiche del regolamento (UE) n. 600/2014
+Articolo 62
+Modifiche del regolamento (UE) n. 600/2014
+Il regolamento (UE) n. 600/2014 è così modificato:
+1)
+l’articolo 27 octies è così modificato:
+a)
+il paragrafo 4 è sostituito dal seguente:
+«4.
+Gli APA rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *4 ) .
+( *4 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+b)
+al paragrafo 8, la lettera c) è sostituita dalla seguente:
+«c)
+i requisiti organizzativi concreti di cui ai paragrafi 3 e 5.»;
+2)
+l’articolo 27 nonies è così modificato:
+a)
+il paragrafo 5 è sostituito dal seguente:
+«5. I CTP rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554.»;
+b)
+al paragrafo 8, la lettera e) è sostituita dalla seguente:
+«e)
+i requisiti organizzativi concreti di cui al paragrafo 4.»;
+3)
+l’articolo 27 decies è così modificato:
+a)
+il paragrafo 3 è sostituito dal seguente:
+«3. Gli ARM rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554.»;
+b)
+al paragrafo 5, la lettera b) è sostituita dalla seguente:
+«b)
+i requisiti organizzativi concreti di cui ai paragrafi 2 e 4.».
+
+=== K62 | [63] Modifiche del regolamento (UE) 2016/1011
+Articolo 63
+Modifiche del regolamento (UE) 2016/1011
+All’articolo 6 del regolamento (UE) 2016/1011 è aggiunto il paragrafo seguente:
+«6.
+Per gli indici di riferimento critici, un amministratore dispone di procedure amministrative e contabili solide, di meccanismi di controllo interno, di procedure efficaci per la valutazione del
+rischio e di meccanismi efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *5 ) .
+
+
+######## NORMA: Servizi di pagamento nel mercato interno  (id IT-DLGS-2010-11)
+
+=== K64 | [1] 
+IL PRESIDENTE DELLA REPUBBLICA
+ VISTI gli articoli 76 e 87 della Costituzione ;
+ VISTA la direttiva 2007/64/CE del Parlamento europeo e del Consiglio, del 13 novembre 2007 , relativa ai servizi di pagamento nel mercato interno, recante modifica delle direttive 97/7/CE ,
+2002/65/CE , 2005/60/CE e 2006/48/CE , e abrogazione della direttiva 97/5/CE ;
+ VISTA la legge 7 luglio 2009, n. 88 , recante disposizioni per l'adempimento di obblighi derivanti dall'appartenenza dell'Italia alle Comunità europee - Legge comunitaria 2008, ed in particolare
+l'articolo 32;
+ VISTO il testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 .";
+ VISTO il decreto-legge 1° luglio 2009, n. 78 , convertito, con modificazioni, dalla legge 3 agosto 2009, n. 102 , ed in particolare l'articolo 2;
+ VISTA la preliminare deliberazione del Consiglio dei Ministri, adottata nella riunione del 28 ottobre 2009;
+ ACQUISITI i pareri delle competenti Commissioni della Camera dei deputati e del Senato della Repubblica;
+ VISTA la deliberazione del Consiglio dei Ministri, adottata nella riunione del 22 gennaio 2010;
+ SULLA
+ PROPOSTA dei Ministri per le politiche europee e dell'economia e delle finanze, di concerto con i Ministri degli affari esteri, della giustizia, dello sviluppo economico, dell'interno e per la
+pubblica amministrazione ed l'innovazione; EMANA il seguente decreto legislativo:
+ Art. 1
+ (Definizioni)
+ 1. Nel presente decreto legislativo si intendono per:
+ a) "consumatore": la persona fisica di cui all' articolo 3, comma 1, lettera a), del decreto legislativo 6 settembre 2005, n. 206 , e successive modificazioni;
+ b) "servizi di pagamento":
+ ((le attività come definite dall'articolo 1, comma 2, lettera h-septies.1), del decreto legislativo 1° settembre 1993, n. 385 ;))
+ :
+ 1)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 2)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 3)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ :
+ 3.1.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 3.2.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 3.3.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 4)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ :
+ 4.1.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 4.2.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 4.3.
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 5)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 6)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ 7)
+ ((NUMERO SOPPRESSO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ ((b-bis) "servizio di disposizione di ordine di pagamento": un servizio che dispone l'ordine di pagamento su richiesta dell'utente di servizi di pagamento relativamente a un conto di pagamento
+detenuto presso un altro prestatore di servizi di pagamento;
+ b-ter) "servizio di informazione sui conti": un servizio online che fornisce informazioni relativamente a uno o più conti di pagamento detenuti dall'utente di servizi di pagamento presso un altro
+prestatore di servizi di pagamento o presso più prestatori di servizi di pagamento;))
+ c) "operazione di pagamento": l'attività, posta in essere dal pagatore o dal beneficiario, di versare, trasferire o prelevare fondi, indipendentemente da eventuali obblighi sottostanti tra pagatore e
+beneficiario;
+ ((c-bis) "operazione di pagamento a distanza": un'operazione di pagamento iniziata tramite internet o tramite un dispositivo che può essere utilizzato per comunicare a distanza;
+ c-ter) "convenzionamento di operazioni di pagamento": un servizio di pagamento fornito da un prestatore di servizi di pagamento che stipula un contratto con il beneficiario per accettare e trattare
+le operazioni di pagamento e che dà luogo a un trasferimento di fondi al beneficiario;
+ c-quater) "emissione di strumenti di pagamento": un servizio di pagamento fornito da un prestatore di servizi di pagamento che stipula un contratto per fornire al pagatore uno strumento di pagamento
+per disporre e trattare/ le operazioni di pagamento di quest'ultimo;))
+ d) "sistema di pagamento" o "sistema di scambio, di compensazione e di regolamento": un sistema di trasferimento di fondi con meccanismi di funzionamento formali e standardizzati e regole comuni per
+il trattamento, la compensazione e/o il regolamento di operazioni di pagamento;
+ e) "pagatore": il soggetto titolare di un conto di pagamento a valere sul quale viene impartito un ordine di pagamento ovvero, in mancanza di un conto di pagamento, il soggetto che impartisce un
+ordine di pagamento;
+ f) "beneficiario": il soggetto previsto quale destinatario dei fondi oggetto dell'operazione di pagamento;
+ g) "prestatore di servizi di pagamento": uno dei seguenti organismi: istituti di moneta elettronica e istituti di pagamento nonchè, quando prestano servizi di pagamento, banche, Poste Italiane
+s.p.a., la Banca centrale europea e le banche centrali nazionali se non agiscono in veste di autorità monetarie, altre autorità pubbliche, le pubbliche amministrazioni statali, regionali e locali se
+non agiscono in veste di autorità pubbliche;
+ ((g-bis) "prestatore di servizi di pagamento di radicamento del conto": un prestatore di servizi di pagamento che offre e amministra un conto di pagamento per un pagatore;))
+ h) "
+ ((utente))
+ di servizi di pagamento" o "
+ ((utente))
+ ": il soggetto che utilizza un servizio di pagamento in veste di pagatore o beneficiario o di entrambi;
+ i) "contratto quadro": il contratto che disciplina la futura esecuzione di operazioni di pagamento singole e ricorrenti e che può dettare gli obblighi e le condizioni che le parti devono rispettare
+per l'apertura e la gestione di un conto di pagamento;
+ l) "conto di pagamento": un conto intrattenuto presso un prestatore di servizi di pagamento da uno o più
+ ((utenti))
+ di servizi di pagamento per l'esecuzione di operazioni di pagamento;
+ m) "fondi": banconote e monete, moneta scritturale e moneta elettronica così come definita dall'articolo 1, comma 2, lettera h-ter), testo unico delle leggi in materia bancaria e creditizia, di cui
+al decreto legislativo 1° settembre 1993, n. 385 ;
+ n) "rimessa di denaro": servizio di pagamento dove, senza l'apertura di conti di pagamento a nome del pagatore o del beneficiario, il prestatore di servizi di pagamento riceve i fondi dal pagatore
+con l'unico scopo di trasferire un ammontare corrispondente
+ ((, espresso in moneta avente corso legale,))
+ al beneficiario o a un altro prestatore di servizi di pagamento che agisce per conto del beneficiario, e/o dove tali fondi sono ricevuti per conto del beneficiario e messi a sua disposizione;
+ o) "ordine di pagamento": qualsiasi istruzione data da un pagatore o da un beneficiario al proprio prestatore di servizi di pagamento con la quale viene chiesta l'esecuzione di un'operazione di
+pagamento;
+ ((o-bis) "bonifico": l'accredito sul conto di pagamento del beneficiario tramite un'operazione di pagamento o una serie di operazioni di pagamento effettuate a valere sul conto di pagamento del
+pagatore ed eseguite dal prestatore di servizi di pagamento di radicamento del conto del pagatore, sulla base di un'istruzione impartita da quest'ultimo;))
+ p) "data valuta": la data di riferimento usata da un prestatore di servizi di pagamento per il calcolo degli interessi applicati ai fondi addebitati o accreditati su un conto di pagamento;
+ q)
+ (("autenticazione": la procedura che consente al prestatore di servizi di pagamento di verificare l'identità di un utente di servizi di pagamento o la validità dell'uso di uno specifico strumento di
+pagamento, incluse le relative credenziali di sicurezza personalizzate fornite dal prestatore;))
+ (( q-bis) "autenticazione forte del cliente": un'autenticazione basata sull'uso di due o più elementi, classificati nelle categorie della conoscenza (qualcosa che solo l'utente conosce), del possesso
+(qualcosa che solo l'utente possiede) e dell'inerenza (qualcosa che caratterizza l'utente), che sono indipendenti, in quanto la violazione di uno non compromette l'affidabilità degli altri, e che è
+concepita in modo tale da tutelare la riservatezza dei dati di autenticazione;
+ q-ter) "credenziali di sicurezza personalizzate": funzionalità personalizzate fornite a un utente di servizi di pagamento dal prestatore di servizi di pagamento a fini di autenticazione;
+ q-quater) "dati sensibili relativi ai pagamenti": dati che possono essere usati per commettere frodi, incluse le credenziali di sicurezza personalizzate. Per l'attività dei prestatori di servizi di
+disposizione di ordine di pagamento e dei prestatori di servizi di informazione sui conti, il nome del titolare del conto e il numero del conto non costituiscono dati sensibili relativi ai
+pagamenti;))
+ r) "identificativo unico": la combinazione di lettere, numeri o simboli che il prestatore di servizi di pagamento indica all'
+ ((utente))
+ di servizi di pagamento e che l'
+ ((utente))
+ deve fornire al proprio prestatore di servizi di pagamento per identificare con chiarezza l'altro
+ ((utente))
+ del servizio di pagamento e/o il suo conto di pagamento per l'esecuzione di un'operazione di pagamento; ove non vi sia un conto di pagamento, l'identificativo unico identifica solo l'
+ ((utente))
+ del servizio di pagamento;
+ s) "strumento di pagamento": qualsiasi dispositivo personalizzato e/o insieme di procedure concordate tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento e di cui l'
+ ((utente))
+ di servizi di pagamento si avvale per impartire un ordine di pagamento;
+ t) "micro-impresa": l'impresa che, al momento della conclusione del contratto per la prestazione di servizi di pagamento, è un'impresa che possiede i requisiti previsti dalla raccomandazione n.
+2003/361/CE della Commissione, del 6 maggio 2003 , vigente alla data di entrata in vigore del presente decreto, ovvero i requisiti individuati con decreto del Ministro dell'economia e delle finanze
+attuativo delle misure adottate dalla Commissione europea ai sensi dell'articolo
+ ((104, lettera a) della direttiva 2015/2366/UE) )
+ ;
+ u) "giornata operativa": il giorno in cui il prestatore di servizi di pagamento del pagatore o del beneficiario coinvolto nell'esecuzione di un'operazione di pagamento è operativo, in base a quanto è
+necessario per l'esecuzione dell'operazione stessa;
+ v) "addebito diretto": un servizio di pagamento per l'addebito del conto di pagamento di un pagatore in base al quale un'operazione di pagamento è disposta dal beneficiario in conformità al consenso
+dato dal pagatore al beneficiario, al prestatore di servizi di pagamento del beneficiario o al prestatore di servizi di pagamento del pagatore medesimo;
+ z)
+ ((LETTERA SOPPRESSA DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ;
+ aa)
+ (("tasso di cambio di riferimento": il tasso di cambio che è utilizzato come base per calcolare un cambio valuta e che è reso disponibile dal prestatore di servizi di pagamento o proviene da una
+fonte accessibile al pubblico;))
+ ((bb) "contenuto digitale": i beni o i servizi prodotti e forniti in formato digitale il cui uso o consumo è limitato a un dispositivo tecnico e che non comprendono in alcun modo l'uso o il consumo
+di beni o servizi fisici.
+ cc) "ABE": indica l'Autorità Bancaria Europea))
+ .
+ ((2. Al Titolo IV-bis del presente decreto attuativo del Regolamento (UE) n. 751/2015 del Parlamento europeo e del Consiglio, del 29 aprile 2015 si applicano le definizioni contenute nel Regolamento
+stesso.))
+
+=== K65 | [2] Ambito di applicazione
+Art. 2
+ (Ambito di applicazione)
+ 1. Il presente decreto si applica ai servizi di pagamento prestati nel territorio della Repubblica.
+ 2. Il presente decreto non si applica nel caso di:
+ a) operazioni di pagamento effettuate esclusivamente in contante direttamente dal pagatore al beneficiario, senza alcuna intermediazione;
+ b) operazioni di pagamento dal pagatore al beneficiario effettuate tramite un agente commerciale autorizzato in base a un accordo a negoziare o a concludere la vendita o l'acquisto di beni o servizi
+a condizione che agisca per conto del solo pagatore o del solo beneficiario oppure qualora l'agente stesso non entri mai in possesso dei fondi dei clienti;
+ c) trasporto materiale, a titolo professionale, di banconote e monete, ivi compresa la raccolta, il trattamento e la consegna;
+ d) operazioni di pagamento consistenti nella raccolta e nella consegna di contante, a titolo non professionale, nel quadro di un'attività senza scopo di lucro o a fmi di beneficenza;
+ e) servizi in cui il beneficiario fornisce contante al pagatore nel contesto di un'operazione di pagamento, a seguito di una richiesta esplicita dell'utente immediatamente precedente l'esecuzione
+dell'operazione di pagamento destinata all'acquisto di beni o servizi, nei limiti eventualmente stabiliti con decreto del Ministro dell'economia e delle finanze da adottarsi, sentita la Banca
+d'Italia;
+ f) operazioni di cambio di valuta contante contro contante nell'ambito delle quali i fondi non sono detenuti su un conto di pagamento;
+ g) operazioni di pagamento basate su uno dei seguenti tipi di documenti cartacei, con i quali viene ordinato al prestatore di servizi di pagamento di mettere dei fondi a disposizione del
+beneficiario: assegni, titoli cambiari, voucher, traveller's cheque, vaglia postali;
+ h) operazioni di pagamento realizzate all'interno di un sistema di pagamento o di un sistema di regolamento dei titoli tra agenti di regolamento, controparti centrali, stanze di compensazione e/o
+banche centrali e altri partecipanti al sistema e prestatori di servizi di pagamento, fatta salva l'applicazione dell'articolo 30;
+ i) operazioni di pagamento collegate all'amministrazione degli strumenti finanziari, compresi i dividendi, le entrate o altre distribuzioni, o ai rimborsi o proventi di cessioni, effettuate dalle
+persone di cui alla lettera h), ovvero da imprese di investimento, enti creditizi, organismi di investimento collettivo o società di gestione patrimoniale che prestano servizi di investimento ed ogni
+altra entità autorizzata ad avere la custodia di strumenti finanziari;
+ l) servizi forniti dai prestatori di servizi tecnici, che supportano la prestazione dei servizi di pagamento, senza mai entrare in possesso dei fondi da trasferire, compresi l'elaborazione e la
+registrazione di dati, i servizi fiduciari e di protezione dei dati personali, l'autenticazione dei dati e delle entità, la fornitura di reti informatiche e di comunicazione, la fornitura e la
+manutenzione di terminali e dispositivi utilizzati per i servizi di pagamento;
+ m) servizi basati su specifici strumenti di pagamento utilizzabili solo in modo limitato, che soddisfino una delle seguenti condizioni:
+ 1) strumenti che possono essere utilizzati per acquistare beni o servizi solo nei locali dell'emittente o all'interno di una rete limitata di prestatori di servizi vincolati da un accordo commerciale
+con l'emittente; 2) strumenti che possono essere utilizzati unicamente per l'acquisto di una gamma molto limitata di beni o servizi; 3) strumenti che sono regolamentati da un'autorità pubblica
+nazionale o regionale per specifici scopi sociali o fiscali, per l'acquisto di beni o servizi specifici da fornitori aventi un accordo commerciale con l'emittente e che hanno validità solamente in un
+unico Stato membro;
+ n) operazioni di pagamento effettuate da un fornitore di reti o servizi di comunicazione elettronica che, in aggiunta a detti servizi di comunicazione elettronica, consentono a un utente della rete o
+del servizio di effettuare operazioni di pagamento addebitandole alla relativa fattura o al conto prealimentato dell'utente stesso in essere presso il medesimo fornitore di reti o servizi di
+comunicazione elettronica, a condizione che il valore di ciascuna operazione di pagamento non superi euro 50 e il valore complessivo delle operazioni stesse non superi euro 300 mensili e che
+l'operazione di pagamento:
+ 1) sia diretta all'acquisto di contenuti digitali e servizi a tecnologia vocale;
+ 2) sia effettuata da o tramite un dispositivo elettronico nel quadro di un'attività di beneficenza, per effettuare erogazioni liberali destinate agli enti del terzo settore di cui all' articolo 4 del
+decreto legislativo 3 luglio 2017, n. 117 , che esercitano in via esclusiva o prevalente una o più attività caritatevoli tra quelle di cui all' articolo 5 del decreto legislativo 3 luglio 2017, n. 117
+, individuate con decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro dell'economia e delle finanze, da adottarsi ai sensi dell' articolo 17, comma 3, della legge 23
+agosto 1988, n. 400 , sentita la Cabina di regia di cui all' articolo 97 del decreto legislativo 3 luglio 2017, n. 117 ;
+ 3) sia effettuata da o tramite un dispositivo elettronico per l'acquisto di biglietti relativi esclusivamente alla prestazione di servizi;
+ o) operazioni di pagamento realizzate tra prestatori di servizi di pagamento, relativi agenti o succursali per proprio conto;
+ p) operazioni di pagamento tra un'impresa madre e la relativa filiazione, o tra filiazioni della stessa impresa madre, senza alcuna intermediazione da parte di un prestatore di servizi di pagamento
+diverso da una delle imprese appartenenti al medesimo gruppo;
+ q) servizi di prelievo di contante forniti da prestatori, tramite sportelli automatici per conto di uno o più emittenti della carta, che non sono parti del contratto quadro con il cliente che preleva
+denaro da un conto di pagamento, a condizione che detti prestatori non forniscano altri servizi di pagamento. È fatta salva l'applicazione dell'articolo 32-quater.
+ 3. Il titolo II del presente decreto legislativo, l'articolo 115 e il capo II-bis del titolo VI del decreto legislativo 1° settembre 1993, n. 385 , si applicano ai servizi di pagamento nella valuta
+di uno Stato membro prestati nell'Unione europea, a condizione che i prestatori di servizi di pagamento del pagatore e del beneficiario siano insediati nell'Unione europea ovvero l'unico prestatore di
+servizi di pagamento coinvolto nell'operazione di pagamento sia insediato nell'Unione europea.
+ 3-bis. Il titolo II del presente decreto legislativo, salvo gli articoli da 18 a 22, e l'articolo 115 e il capo II-bis del titolo VI, salvo l' articolo 126-quater, del decreto legislativo 1°
+settembre 1993, n. 385 , si applicano, secondo le modalità stabilite dalla Banca d'Italia in conformità alla direttiva (UE) 2015/2366 , ai servizi di pagamento in una valuta che non è quella di uno
+Stato membro, a condizione che i prestatori di servizi di pagamento del pagatore e del beneficiario siano insediati nell'Unione europea ovvero l'unico prestatore di servizi di pagamento coinvolto
+nell'operazione di pagamento sia insediato nell'Unione europea, per le parti dell'operazione di pagamento ivi effettuate.
+ 3-ter. Il titolo II, salvo l'articolo 3, commi 2 e 4, gli articoli 13, 14 e 18, l'articolo 20, comma 1, e gli articoli 25 e 27, del presente decreto legislativo e l'articolo 115 e il capo II-bis del
+titolo VI, salvo l' articolo 126-quater, del decreto legislativo 1° settembre 1993, n. 385 , si applicano, secondo le modalità stabilite dalla Banca d'Italia in conformità alla direttiva (UE)
+2015/2366 , ai servizi di pagamento in tutte le valute laddove soltanto uno dei prestatori di servizi di pagamento sia insediato nell'Unione europea, per le parti dell'operazione di pagamento ivi
+effettuate.
+ 4. Ai fini dell'applicazione del titolo II:
+ a) per servizi di pagamento si intende anche l'emissione di moneta elettronica;
+ b) se l'utente dei servizi di pagamento non è un consumatore, le parti possono convenire che gli articoli 3, comma 1, 5, comma 4, 10, commi 1 e 2, 12, 12-bis, 13, 14, 17 e 25 non siano in tutto o in
+parte applicati. Le parti possono altresì concordare un periodo di tempo diverso per effettuare la comunicazione di operazioni non autorizzate o effettuate in modo inesatto di cui all'articolo 9;
+ c) le microimprese sono equiparate ai consumatori; tuttavia, le parti possono convenire che gli articoli 13, 14 e 17, comma 3 non siano in tutto o in parte applicati.
+ 4-bis. La Banca d'Italia definisce modalità e termini per l'invio delle informazioni che i prestatori dei servizi di cui al comma 2, lettere m), punti 1) e 2), e n), sono tenuti a notificare in
+conformità all' articolo 37, della direttiva (UE) 2015/2366 .
+ 4-ter. La Banca d'Italia comunica all'ABE i servizi ad essa notificati ai sensi del comma 4-bis.
+ 4-quater.
+ ((Resta fermo quanto stabilito dal regolamento (UE) 2024/886 del Parlamento europeo e del Consiglio, del 13 marzo 2024 ))
+ .
+
+=== K66 | [3] Spese applicabili
+Art. 3
+ (Spese applicabili)
+ 1. Il prestatore di servizi di pagamento non può addebitare all'
+ ((utente))
+ dei servizi di pagamento le spese sostenute per
+ ((l'adempimento dei propri obblighi di informazione o per))
+ l'adozione di misure correttive e preventive ai sensi del presente Titolo, salvo quanto previsto negli articoli 16, comma 4, 17, comma 5, e 24, comma 2. Quando applicabili, le spese sono concordate
+tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento in modo da risultare adeguate e coerenti con i costi effettivamente sostenuti da quest'ultimo.
+ ((
+ 2. Se il prestatore di servizi di pagamento del pagatore e quello del beneficiario siano entrambi situati nell'Unione europea, ovvero l'unico prestatore di servizi di pagamento coinvolto
+nell'operazione di pagamento sia situato nell'Unione europea, il pagatore e il beneficiario sostengono ciascuno le spese applicate dal rispettivo prestatore di servizi di pagamento. Resta
+impregiudicata la possibilità di prevedere forme di esenzione dall'applicazione di spese per l'accredito di somme, ivi inclusi gli emolumenti a favore di pensionati e lavoratori dipendenti.
+ ))
+ 3.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ ((
+ 4. Il beneficiario non può applicare a carico del pagatore spese relative all'utilizzo di strumenti di pagamento.
+ ))
+ ((
+ 4-bis. L'Autorità garante della concorrenza e del mercato è designata quale autorità competente a verificare l'osservanza del divieto di cui al comma 4, e ad applicare le relative sanzioni,
+avvalendosi a tal fine degli strumenti, anche sanzionatori, previsti dal decreto legislativo 6 settembre 2005, n. 206 .
+ 4-ter. La Banca d'Italia e l'Autorità garante della concorrenza e del mercato collaborano tra loro, anche mediante scambio di informazioni, al fine di agevolare le rispettive funzioni. Dette autorità
+non possono reciprocamente opporsi il segreto d'ufficio.
+ ))
+ 5. Le disposizioni del presente articolo non producono effetti sul pagamento di eventuali spese concordate tra prestatori di servizi di pagamento o soggetti di cui essi si avvalgono.
+
+=== K67 | [4] Deroga per gli strumenti di pagamento di basso valore e moneta elettronica
+Art. 4
+ (Deroga per gli strumenti di pagamento di basso valore e moneta elettronica)
+ 1. Nel caso di strumenti di pagamento che conformemente al contratto quadro consentono esclusivamente singole operazioni di pagamento di importo non superiore a 30 euro o che presentano un limite di
+spesa complessivo di 150 euro o che sono avvalorati per un importo che in nessun momento supera i 150 euro, le parti del contratto quadro possono convenire che:
+ a) gli articoli 7, comma 1, lettera b), 8, comma 1, lettere c) e d), e 12, commi 1 e 2, non si applicano se lo strumento di pagamento non può essere bloccato o non può esserne impedito l'ulteriore
+utilizzo;
+ b) gli articoli 10, 11 e 12, commi 3 e 4, non si applicano se lo strumento di pagamento è utilizzabile in forma anonima o se, a causa delle caratteristiche dello strumento, il prestatore di servizi
+di pagamento non è in grado di dimostrare che l'operazione di pagamento è stata autorizzata;
+ c) il prestatore di servizi di pagamento, in deroga all'articolo 16,
+ ((comma 2))
+ , non è tenuto ad informare l'
+ ((utente))
+ di servizi di pagamento del rifiuto di un ordine di pagamento quando la mancata esecuzione
+ ((o disposizione))
+ dello stesso risulta evidente dal contesto;
+ d) il pagatore, in deroga all'articolo 17, non può revocare l'ordine di pagamento dopo averlo trasmesso al beneficiario o dopo avergli dato il proprio consenso ad avviare l'esecuzione dell'operazione
+di pagamento;
+ e) si applicano altri termini di esecuzione, in deroga agli articoli 20 e 21.
+ 2. Gli importi di cui al comma 1 sono raddoppiati quando i prestatori di servizi di pagamento del pagatore e del beneficiario sono insediati in Italia; per gli strumenti di pagamento prepagati il
+limite di 150 euro è elevato a 500 euro.
+ ((
+ 3. Gli articoli 11 e 12 non si applicano alla moneta elettronica quando le modalità di funzionamento del relativo circuito non consentono al prestatore di servizi di pagamento di congelare il conto
+su cui è caricata la moneta elettronica o di bloccare lo strumento di pagamento e lo strumento prevede limiti di avvaloramento non superiori a euro 500.
+ ))
+ 4. La Banca d'Italia, in attuazione delle misure adottate dalla Commissione europea, può disporre l'applicazione di limiti di importo diversi da quelli previsti dai commi 1, 2 e 3.
+
+=== K68 | [5] Consenso e revoca del consenso
+Art. 5
+ (Consenso e revoca del consenso)
+ 1. Il consenso del pagatore è un elemento necessario per la corretta esecuzione di un'operazione di pagamento. In assenza del consenso, un'operazione di pagamento non può considerarsi autorizzata.
+ 2. Il consenso ad eseguire un'operazione di pagamento o una serie di operazioni di pagamento è prestato nella forma e secondo la procedura concordata nel contratto quadro o nel contratto relativo a
+singole operazioni di pagamento.
+ ((Il consenso a eseguire operazioni di pagamento può anche essere prestato tramite il beneficiario o il prestatore di servizi di disposizione di ordine di pagamento.))
+ 3.
+ ((Il consenso può essere dato))
+ prima o, ove concordato tra il pagatore e il proprio prestatore di servizi di pagamento, dopo l'esecuzione di un'operazione di pagamento.
+ 4.
+ ((Il consenso ad eseguire un'operazione di pagamento o una serie di operazioni di pagamento può essere revocato in qualsiasi momento, nella forma e secondo la procedura concordata nel contratto
+quadro o nel contratto relativo a singole operazioni di pagamento, purchè ciò avvenga prima che l'ordine di pagamento diventi irrevocabile ai sensi dell'articolo 17. Le operazioni di pagamento
+eseguite dopo la revoca non sono considerate autorizzate.))
+ .
+
+=== K69 | [5-bis] Conferma della disponibilità di fondi).
+Art. 5-bis
+ (( (Conferma della disponibilità di fondi). ))
+ ((1. Su richiesta del prestatore di servizi di pagamento emittente strumenti di pagamento basati su carta, il prestatore di servizi di pagamento di radicamento del conto conferma senza indugio se sul
+conto del pagatore vi è la disponibilità dell'importo richiesto per l'esecuzione dell'operazione di pagamento, purchè:
+ a) al momento della richiesta il conto del pagatore sia accessibile on-line;
+ b) il pagatore abbia prestato il consenso esplicito al prestatore di servizi di pagamento di radicamento del conto a rispondere a richieste di conferma da parte di uno specifico prestatore di servizi
+di pagamento in merito alla disponibilità sul conto di pagamento del pagatore dell'importo corrispondente a una determinata operazione di pagamento basata su carta;
+ c) il consenso di cui alla lettera b) sia stato prestato anteriormente alla prima richiesta di conferma))
+ ((3))
+ ((2. Il prestatore di servizi di pagamento può chiedere la conferma di cui al comma 1, quando siano soddisfatte tutte le seguenti condizioni:
+ a) il pagatore ha prestato il consenso esplicito al prestatore di servizi di pagamento a richiedere la conferma di cui al comma 1;
+ b) il pagatore ha disposto l'operazione di pagamento utilizzando uno strumento di pagamento basato su carta emesso dal prestatore di servizi di pagamento;
+ c) prima di ciascuna richiesta di conferma, il prestatore di servizi di pagamento si autentica presso il prestatore di servizi di pagamento di radicamento del conto e comunica in maniera sicura,
+conformemente a quanto previsto dall' articolo 98, paragrafo 1, lettera d), della direttiva (UE) 2015/2366 e dalle relative norme tecniche di regolamentazione adottate dalla Commissione europea))
+ ((3))
+ ((3. La conferma di cui al comma 1 consiste esclusivamente nella risposta positiva o negativa e non può essere memorizzata o utilizzata per scopi diversi dall'esecuzione dell'operazione di pagamento
+per cui è stata chiesta. La conferma non può consistere nell'estratto del saldo del conto e non può consentire al prestatore di servizi di pagamento di radicamento del conto di bloccare i fondi sul
+conto di pagamento del pagatore))
+ ((3))
+ ((
+ 4. Il pagatore può chiedere al prestatore di servizi di pagamento di radicamento del conto di comunicargli l'avvenuta identificazione del prestatore di servizi di pagamento che ha chiesto la conferma
+e la risposta che è stata fornita.
+ 5. Il presente articolo non si applica a operazioni di pagamento disposte tramite strumenti di pagamento basati su carta su cui è caricata moneta elettronica.))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 6) che "Le misure di sicurezza di cui agli articoli 5-bis, commi 1, 2 e 3, 5-ter, 5-quater e 10-bis del decreto legislativo 27
+gennaio 2010, n. 11 , si applicano decorsi diciotto mesi dalla data di entrata in vigore delle norme tecniche di regolamentazione di cui all' articolo 98 della direttiva (UE) n. 2015/2366 . A
+decorrere dalla medesima data, in deroga al comma 2, si applicano le sanzioni previste dall'articolo 2, comma 36, lettera a), del presente decreto per l'inosservanza degli articoli 5-bis, commi 1, 2 e
+3, 5-ter, 5-quater e 10-bis del decreto legislativo 27 gennaio 2010, n. 11 ".
+
+=== K70 | [5-ter] Disposizioni per l'accesso ai conti di pagamento in caso di servizi di disposizione di ordine di pagamento).
+Art. 5-ter
+ (( (Disposizioni per l'accesso ai conti di pagamento in caso di servizi di disposizione di ordine di pagamento). ))
+ ((
+ 1. Se il conto di pagamento è accessibile on-line, il pagatore ha il diritto di avvalersi di un prestatore di servizi di disposizione di ordine di pagamento per il servizio di pagamento di cui
+all'articolo, 1, comma 2, lettera h-septies.1), n. 7, del decreto legislativo 1° settembre 1993, n. 385 . La prestazione di tale servizio non è subordinata all'esistenza di un rapporto contrattuale
+tra il prestatore di servizi di disposizione di ordine di pagamento e il prestatore di servizi di pagamento di radicamento del conto.
+ 2. Il prestatore di servizi di disposizione di ordine di pagamento:
+ a) non detiene in alcun momento i fondi del pagatore in relazione alla prestazione del servizio di disposizione di ordine di pagamento;
+ b) provvede affinchè le credenziali di sicurezza personalizzate del pagatore non siano accessibili ad altri fuorchè al pagatore stesso e all'emittente delle credenziali di sicurezza personalizzate e
+che esse siano trasmesse attraverso canali sicuri ed efficienti;
+ c) provvede affinchè qualunque altra informazione sul pagatore, ottenuta nella prestazione del servizio di disposizione di ordine di pagamento, sia fornita esclusivamente al beneficiario e solo con
+il consenso esplicito del pagatore;
+ d) ogni volta che dispone un ordine di pagamento, si identifica presso il prestatore di servizi di pagamento di radicamento del conto del pagatore, comunicando con quest'ultimo, il pagatore e il
+beneficiario in maniera sicura, in conformità a quanto previsto dall' articolo 98, paragrafo 1, lett. d), della direttiva (UE) 2015/2366 e dalle relative norme tecniche di regolamentazione adottate
+dalla Commissione europea;
+ e) non chiede al pagatore dati diversi da quelli necessari per prestare il servizio di disposizione di ordine di pagamento; non usa nè conserva dati nè vi accede per fini diversi dalla prestazione
+del servizio di disposizione di ordine di pagamento e non conserva dati sensibili relativi ai pagamenti del pagatore;
+ f) non modifica l'importo, il beneficiario o qualsiasi altro dato dell'operazione;
+ g) quando dispone un ordine di pagamento mette a disposizione del prestatore di servizi di pagamento di radicamento del conto il riferimento dell'operazione di pagamento.
+ 3. Al fine di garantire l'esercizio del diritto del pagatore di avvalersi del servizio di disposizione di ordine di pagamento, il prestatore di servizi di pagamento di radicamento del conto:
+ a) comunica in maniera sicura con i prestatori di servizi di disposizione di ordine di pagamento, conformemente all' articolo 98, paragrafo 1, lett. d), della direttiva (UE) 2015/2366 e alle relative
+norme tecniche di regolamentazione adottate dalla Commissione europea;
+ b) immediatamente dopo aver ricevuto l'ordine di pagamento dal prestatore di servizi di disposizione di ordine di pagamento, fornisce a quest'ultimo o mette a disposizione dello stesso, tutte le
+informazioni sull'ordine di pagamento e sulla relativa esecuzione disponibili al medesimo prestatore di servizi di pagamento di radicamento del conto;
+ c) assicura parità di trattamento agli ordini trasmessi mediante un prestatore di servizi di disposizione di ordine di pagamento rispetto a quelli trasmessi direttamente dal pagatore, fatte salve
+ragioni obiettive riferibili, in particolare, ai tempi, alla priorità o alle spese applicabili.))
+ ((3))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 6) che "Le misure di sicurezza di cui agli articoli 5-bis, commi 1, 2 e 3, 5-ter, 5-quater e 10-bis del decreto legislativo 27
+gennaio 2010, n. 11 , si applicano decorsi diciotto mesi dalla data di entrata in vigore delle norme tecniche di regolamentazione di cui all' articolo 98 della direttiva (UE) n. 2015/2366 . A
+decorrere dalla medesima data, in deroga al comma 2, si applicano le sanzioni previste dall'articolo 2, comma 36, lettera a), del presente decreto per l'inosservanza degli articoli 5-bis, commi 1, 2 e
+3, 5-ter, 5-quater e 10-bis del decreto legislativo 27 gennaio 2010, n. 11 ".
+
+=== K71 | [5-quater] Disposizioni per l'accesso alle informazioni sui conti di pagamento e all'utilizzo delle stesse in caso di servizi di in
+Art. 5-quater
+ (( (Disposizioni per l'accesso alle informazioni sui conti di pagamento e all'utilizzo delle stesse in caso di servizi di informazioni sui conti). ))
+ ((
+ 1. Se il conto di pagamento è accessibile online, l'utente ha il diritto di avvalersi di un prestatore di servizi di informazione sui conti per il servizio di pagamento di cui all'articolo 1, comma
+2, lettera h-septies.1), n. 8, del decreto legislativo 1° settembre 1993, n. 385 . La prestazione di tale servizio non è subordinata all'esistenza di un rapporto contrattuale tra il prestatore di
+servizi di informazione sui conti e il prestatore di servizi di pagamento di radicamento del conto.
+ 2. Il prestatore di servizi di informazione sui conti:
+ a) presta il proprio servizio unicamente sulla base del consenso esplicito dell'utente;
+ b) provvede affinchè le credenziali di sicurezza personalizzate dell'utente non siano accessibili ad altri fuorchè all'utente stesso e all'emittente delle credenziali di sicurezza personalizzate e
+che esse siano trasmesse attraverso canali sicuri ed efficienti;
+ c) per ogni sessione di comunicazione, si identifica presso il prestatore o i prestatori di servizi di pagamento di radicamento del conto, comunicando con questi e con l'utente in maniera sicura,
+conformemente all' articolo 98, paragrafo 1, lett. d), della direttiva (UE) 2015/2366 e alle relative norme tecniche di regolamentazione adottate dalla Commissione europea;
+ d) accede soltanto alle informazioni sui conti di pagamento designati e sulle operazioni di pagamento effettuate a valere su tali conti, non richiedendo dati sensibili relativi ai pagamenti;
+ e) non usa, nè conserva dati, nè vi accede per fini diversi dalla prestazione del servizio di informazione sui conti, conformemente alle norme sulla protezione dei dati.
+ 3. In relazione ai conti di pagamento, il prestatore di servizi di pagamento di radicamento del conto:
+ a) comunica in maniera sicura con i prestatori di servizi di informazione sui conti, conformemente all' articolo 98, paragrafo 1, lett. d), della direttiva (UE) 2015/2366 e alle relative norme
+tecniche di regolamentazione adottate dalla Commissione europea;
+ b) assicura parità di trattamento alle richieste di dati trasmesse dal prestatore di servizi di informazione sui conti rispetto a quelle trasmesse direttamente dall'utente, fatte salve ragioni
+obiettive.))
+ ((3))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 ha disposto (con l'art. 5, comma 6) che "Le misure di sicurezza di cui agli articoli 5-bis, commi 1, 2 e 3, 5-ter, 5-quater e 10-bis del decreto legislativo 27
+gennaio 2010, n. 11 , si applicano decorsi diciotto mesi dalla data di entrata in vigore delle norme tecniche di regolamentazione di cui all' articolo 98 della direttiva (UE) n. 2015/2366 . A
+decorrere dalla medesima data, in deroga al comma 2, si applicano le sanzioni previste dall'articolo 2, comma 36, lettera a), del presente decreto per l'inosservanza degli articoli 5-bis, commi 1, 2 e
+3, 5-ter, 5-quater e 10-bis del decreto legislativo 27 gennaio 2010, n. 11 ".
+
+=== K72 | [6] Limiti all'utilizzo degli strumenti di pagamento
+Art. 6
+ (( (Limiti all'utilizzo degli strumenti di pagamento) ))
+ ((
+ 1. Qualora per dare il consenso venga utilizzato uno specifico strumento di pagamento, il pagatore e il relativo prestatore di servizi di pagamento possono concordare limiti di spesa per le
+operazioni eseguite attraverso detto strumento.
+ ))
+ 2. Il contratto quadro può prevedere il diritto del prestatore di servizi di pagamento di bloccare l'utilizzo di uno strumento di pagamento al ricorrere di giustificati motivi connessi con uno o più
+dei seguenti elementi:
+ a) la sicurezza dello strumento;
+ b) il sospetto di un suo utilizzo fraudolento o non autorizzato;
+ c) nel caso in cui lo strumento preveda la concessione di una linea di credito per il suo utilizzo, un significativo aumento del rischio che il pagatore non sia in grado di ottemperare ai propri
+obblighi di pagamento.
+ ((
+ 3. Nei casi di cui al comma 2, il prestatore di servizi di pagamento informa il pagatore, secondo le modalità concordate, del blocco dello strumento, motivando tale decisione. Ove possibile,
+l'informazione viene resa in anticipo rispetto al blocco dello strumento di pagamento o al più tardi immediatamente dopo, salvo che tale informazione non debba essere fornita in quanto in contrasto
+con obiettivi di ordine pubblico o di pubblica sicurezza, individuati ai sensi dell' articolo 126 del decreto legislativo 1° settembre 1993, n. 385 , o ricorrano altri giustificati motivi ostativi in
+base alle disposizioni in materia di contrasto del riciclaggio e del finanziamento del terrorismo, di legge o di regolamento.
+ ))
+ 4. Al venir meno delle ragioni che hanno portato al blocco dello strumento di pagamento, il prestatore di servizi di pagamento provvede a riattivare lo strumento o ad emetterne uno nuovo in
+sostituzione di quello precedentemente bloccato.
+
+=== K73 | [6-bis] Limiti all'accesso ai conti di pagamento da parte dei prestatori di servizi di pagamento
+Art. 6-bis
+ (( (Limiti all'accesso ai conti di pagamento da parte dei prestatori di servizi di pagamento) ))
+ ((
+ 1. Il prestatore di servizi di pagamento di radicamento del conto può rifiutare l'accesso a un conto di pagamento a un prestatore di servizi di informazione sui conti o a un prestatore di servizi di
+disposizione di ordine di pagamento, per giustificate e comprovate ragioni connesse all'accesso fraudolento o non autorizzato al conto di pagamento da parte di tali soggetti, compresi i casi di ordini
+di pagamento fraudolenti o non autorizzati. In tali casi, il prestatore di servizi di pagamento di radicamento del conto, secondo le modalità convenute con l'utente, informa quest'ultimo del rifiuto e
+dei relativi motivi. Ove possibile, tale informazione è resa prima che l'accesso sia rifiutato o, al più tardi, immediatamente dopo, salvo che tale informazione non debba essere fornita in quanto in
+contrasto con obiettivi di ordine pubblico o di pubblica sicurezza, individuati ai sensi dell' articolo 126 del decreto legislativo 1° settembre 1993, n. 385 , o ricorrano altri giustificati motivi
+ostativi in base alle disposizioni in materia di contrasto del riciclaggio e del finanziamento del terrorismo, di legge o di regolamento. Al venir meno delle ragioni che hanno portato al rifiuto, il
+prestatore di servizi di pagamento di radicamento del conto consente l'accesso al conto di pagamento.
+ 2. Il prestatore di servizi di pagamento di radicamento del conto comunica immediatamente alla Banca d'Italia il rifiuto di cui al comma precedente, indicandone le motivazioni. La Banca d'Italia
+effettua le valutazioni di competenza e, ove necessario, adotta le misure ritenute opportune.
+ 3. In ogni caso il prestatore di servizi di pagamento di radicamento del conto deve rifiutare senza indugio l'accesso al conto di pagamento a un prestatore di servizi di informazione sui conti o a un
+prestatore di servizi di disposizione di ordine di pagamento se riceve dall'utente la revoca del consenso alla prestazione di tali servizi. Il prestatore dei servizi di pagamento di radicamento del
+conto informa immediatamente della revoca il prestatore di servizi di disposizione di ordine di pagamento e il prestatore di servizi di informazione sui conti.
+ ))
+
+=== K74 | [6-ter] Notifica dei dati relativi alle frodi
+Art. 6-ter
+ (( (Notifica dei dati relativi alle frodi) ))
+ ((
+ 1. I prestatori di servizi di pagamento trasmettono alla Banca d'Italia dati statistici sulle frodi connesse agli strumenti e ai servizi di pagamento.
+ 2. La Banca d'Italia definisce le modalità e i termini per l'invio dei dati di cui al comma precedente, anche per tener conto di orientamenti dell'ABE.
+ 3. La Banca d'Italia trasmette in forma aggregata i dati ricevuti ai sensi dei commi precedenti all'ABE e alla BCE.
+ ))
+
+=== K75 | [7] Obblighi a carico dell'utente dei servizi di pagamento in relazione agli strumenti di pagamento e alle credenziali di si
+Art. 7
+ (( (Obblighi a carico dell'utente dei servizi di pagamento in relazione agli strumenti di pagamento e alle credenziali di sicurezza personalizzate) ))
+ 1. L'
+ ((utente))
+ abilitato all'utilizzo di uno strumento di pagamento ha l'obbligo di:
+ a) utilizzare lo strumento di pagamento in conformità con i termini, esplicitati nel contratto quadro, che ne regolano l'emissione e l'uso
+ ((e che devono essere obiettivi, non discriminatori e proporzionati))
+ ;
+ b) comunicare senza indugio, secondo le modalità previste nel contratto quadro, al prestatore di servizi di pagamento o al soggetto da questo indicato lo smarrimento, il furto, l'appropriazione
+indebita o l'uso non autorizzato dello strumento non appena ne viene a conoscenza.
+ ((
+ 2. Ai fini di cui al comma 1, lettera a), l'utente, non appena riceve uno strumento di pagamento, adotta tutte le ragionevoli misure idonee a proteggere le credenziali di sicurezza personalizzate.
+ ))
+
+=== K76 | [8] Obblighi a carico del prestatore di servizi di pagamento in relazione agli strumenti di pagamento
+Art. 8
+ (Obblighi a carico del prestatore di servizi di pagamento in relazione agli strumenti di pagamento)
+ 1. Il prestatore di servizi di pagamento che emette uno strumento di pagamento ha l'obbligo di:
+ ((a) assicurare che le credenziali di sicurezza personalizzate non siano accessibili a soggetti diversi dall'utente abilitato a usare lo strumento di pagamento, fatti salvi gli obblighi posti in capo
+a quest'ultimo ai sensi dell'articolo 7;))
+ b) astenersi dall'inviare strumenti di pagamento non
+ ((...))
+ richiesti, a meno che lo strumento di pagamento già consegnato all'
+ ((utente))
+ debba essere sostituito;
+ ((c) assicurare che siano sempre disponibili strumenti adeguati affinchè l'utente dei servizi di pagamento possa eseguire la comunicazione di cui all'articolo 7, comma 1, lettera b), nonchè, nel caso
+di cui all'articolo 6, comma 4, di chiedere lo sblocco dello strumento di pagamento o l'emissione di uno nuovo, ove il prestatore di servizi di pagamento non vi abbia già provveduto. Ove richiesto
+dall'utente, il prestatore di servizi di pagamento gli fornisce i mezzi per dimostrare di aver effettuato la comunicazione di cui all'articolo 7, comma 1, lettera b), entro i 18 mesi successivi alla
+comunicazione medesima;))
+ ((c-bis) fornire all'utente la possibilità di procedere alla comunicazione di cui all'articolo 7, comma 1, lettera b), a titolo gratuito, addebitandogli eventualmente solo i costi di sostituzione
+dello strumento di pagamento;))
+ d) impedire qualsiasi utilizzo dello strumento di pagamento successivo alla comunicazione
+ ((di cui))
+ all'articolo 7, comma 1, lettera b).
+ ((
+ 2. I rischi derivanti dalla spedizione di uno strumento di pagamento o delle relative credenziali di sicurezza personalizzate sono a carico del prestatore di servizi di pagamento.
+ ))
+
+=== K77 | [9] Notifica e rettifica di operazioni non autorizzate o non correttamente eseguite
+Art. 9
+ ((Notifica e rettifica di operazioni non autorizzate o non correttamente eseguite))
+ 1.
+ ((L'utente, venuto a conoscenza di un'operazione di pagamento non autorizzata o non correttamente eseguita, ivi compresi i casi di cui all'articolo 25, ha il diritto di ottenerne la rettifica solo se
+comunica senza indugio tale circostanza al proprio prestatore di servizi di pagamento secondo i termini e le modalità previste nel contratto quadro o nel contratto relativo a singole operazioni di
+pagamento.))
+ La comunicazione deve essere in ogni caso effettuata entro 13 mesi dalla data di addebito, nel caso del pagatore, o di accredito, nel caso del beneficiario.
+ 2. Il termine di 13 mesi non opera se il prestatore di servizi di pagamento ha omesso di fornire o mettere a disposizione le informazioni relative all'operazione di pagamento secondo quanto previsto
+dalle disposizioni in materia di trasparenza delle condizioni e di requisiti informativi per i servizi di pagamento di cui al titolo VI del testo unico delle leggi in materia bancaria e creditizia, di
+cui al decreto legislativo 1° settembre 1993, n. 385 .
+ ((
+ 2-bis. Se è coinvolto un prestatore di servizi di disposizione di ordine di pagamento, l'utente ha il diritto di ottenere la rettifica dal prestatore di servizi di pagamento di radicamento del conto
+a norma del primo comma, fatti salvi gli articoli 11, comma 2-bis, e 25-bis, comma 1.
+ ))
+ ((
+ 3. Un'operazione di pagamento si intende non eseguita correttamente quando l'esecuzione non è conforme all'ordine o alle istruzioni impartite dall'utente al proprio prestatore di servizi di
+pagamento.
+ ))
+
+=== K78 | [10] Prova di autenticazione ed esecuzione delle operazioni di pagamento
+Art. 10
+ (Prova di autenticazione ed esecuzione delle operazioni di pagamento)
+ 1. Qualora l'
+ ((utente))
+ di servizi di pagamento neghi di aver autorizzato un'operazione di pagamento già eseguita o sostenga che questa non sia stata correttamente eseguita, è onere del prestatore di servizi di pagamento
+provare che l'operazione di pagamento è stata autenticata, correttamente registrata e contabilizzata e che non ha subito le conseguenze del malfunzionamento delle procedure necessarie per la sua
+esecuzione o di altri inconvenienti.
+ ((
+ 1-bis. Se l'operazione di pagamento è disposta mediante un prestatore di servizi di disposizione di ordine di pagamento, questi ha l'onere di provare che, nell'ambito delle proprie competenze,
+l'operazione di pagamento è stata autenticata, correttamente registrata e non ha subito le conseguenze del malfunzionamento delle procedure necessarie per la sua esecuzione o di altri inconvenienti
+connessi al servizio di disposizione di ordine di pagamento prestato.
+ ))
+ ((
+ 2. Quando l'utente di servizi di pagamento neghi di aver autorizzato un'operazione di pagamento eseguita, l'utilizzo di uno strumento di pagamento registrato dal prestatore di servizi di pagamento,
+compreso, se del caso, il prestatore di servizi di disposizione di ordine di pagamento, non è di per sè necessariamente sufficiente a dimostrare che l'operazione sia stata autorizzata dall'utente
+medesimo, nè che questi abbia agito in modo fraudolento o non abbia adempiuto con dolo o colpa grave a uno o più degli obblighi di cui all'articolo 7. È onere del prestatore di servizi di pagamento,
+compreso, se del caso, il prestatore di servizi di disposizione di ordine di pagamento, fornire la prova della frode, del dolo o della colpa grave dell'utente.
+ ))
+
+=== K79 | [10-bis] Autenticazione e misure di sicurezza
+Art. 10-bis
+ ((Autenticazione e misure di sicurezza))
+ ((
+ 1. Conformemente all' articolo 98 della direttiva (UE) 2015/2366 e alle relative norme tecniche di regolamentazione adottate dalla Commissione europea, i prestatori di servizi di pagamento applicano
+l'autenticazione forte del cliente quando l'utente:
+ a) accede al suo conto di pagamento on-line;
+ b) dispone un'operazione di pagamento elettronico;
+ c) effettua qualsiasi azione, tramite un canale a distanza, che può comportare un rischio di frode nei pagamenti o altri abusi.
+ 2. Nel caso dell'avvio di un'operazione di pagamento elettronico di cui al paragrafo 1, lettera b), per le operazioni di pagamento elettronico a distanza, l'autenticazione forte del cliente applicata
+dai prestatori di servizi di pagamento comprende elementi che colleghino in maniera dinamica l'operazione a uno specifico importo e a un beneficiario specifico.
+ 3. Conformemente all' articolo 98 della direttiva (UE) 2015/2366 e alle relative norme tecniche di regolamentazione adottate dalla Commissione europea, i prestatori di servizi di pagamento
+predispongono misure di sicurezza adeguate per tutelare la riservatezza e l'integrità delle credenziali di sicurezza personalizzate degli utenti di servizi di pagamento.
+ 4. I commi 2 e 3 si applicano anche allorchè i pagamenti sono disposti mediante un prestatore di servizi di disposizione di ordine di pagamento. I commi 1 e 3 si applicano anche allorchè le
+informazioni sono richieste mediante un prestatore di servizi di informazione sui conti.
+ 5. I prestatori di servizi di pagamento di radicamento del conto consentono ai prestatori di servizi di disposizione di ordine di pagamento e ai prestatori di servizi di informazione sui conti di
+utilizzare le procedure di autenticazione fornite dagli stessi prestatori di servizi di pagamento di radicamento del conto all'utente.))
+ ((3))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art.5, comma 6) che "Le misure di sicurezza di cui agli articoli 5-bis, commi 1, 2 e 3, 5-ter, 5-quater e 10-bis del decreto legislativo 27
+gennaio 2010, n. 11 , si applicano decorsi diciotto mesi dalla data di entrata in vigore delle norme tecniche di regolamentazione di cui all' articolo 98 della direttiva (UE) n. 2015/2366 . A
+decorrere dalla medesima data, in deroga al comma 2, si applicano le sanzioni previste dall'articolo 2, comma 36, lettera a), del presente decreto per l'inosservanza degli articoli 5-bis, commi 1, 2 e
+3, 5-ter, 5-quater e 10-bis del decreto legislativo 27 gennaio 2010, n. 11 ".
+
+=== K80 | [11] Responsabilità del prestatore di servizi di pagamento per le operazioni di pagamento non autorizzate
+Art. 11
+ (Responsabilità del prestatore di servizi di pagamento per le operazioni di pagamento non autorizzate)
+ ((
+ 1. Fatto salvo l'articolo 9, nel caso in cui sia stata eseguita un'operazione di pagamento non autorizzata, il prestatore di servizi di pagamento rimborsa al pagatore l'importo dell'operazione
+medesima immediatamente e in ogni caso al più tardi entro la fine della giornata operativa successiva a quella in cui prende atto dell'operazione o riceve una comunicazione in merito. Ove per
+l'esecuzione dell'operazione sia stato addebitato un conto di pagamento, il prestatore di servizi di pagamento riporta il conto nello stato in cui si sarebbe trovato se l'operazione di pagamento non
+avesse avuto luogo, assicurando che la data valuta dell'accredito non sia successiva a quella dell'addebito dell'importo.
+ ))
+ 2. In caso di motivato sospetto di frode, il prestatore di servizi di pagamento può sospendere il rimborso di cui al comma 1 dandone immediata comunicazione
+ ((per iscritto alla Banca d'Italia))
+ all'
+ ((...))
+ .
+ ((
+ 2-bis. Se l'operazione di pagamento è disposta mediante un prestatore di servizi di disposizione di ordine di pagamento, il prestatore di servizi di pagamento di radicamento del conto rimborsa al
+pagatore immediatamente e, in ogni caso, entro la fine della giornata operativa successiva, l'importo dell'operazione non autorizzata, riportando il conto di pagamento addebitato nello stato in cui si
+sarebbe trovato se l'operazione di pagamento non avesse avuto luogo. In caso di operazione di pagamento non autorizzata, se il relativo ordine di pagamento è disposto mediante un prestatore di servizi
+di disposizione di ordine di pagamento, quest'ultimo è tenuto a rimborsare immediatamente e, in ogni caso, entro la fine della giornata operativa successiva, senza che sia necessaria la costituzione
+in mora, al prestatore di servizi di pagamento di radicamento del conto su richiesta di quest'ultimo, gli importi rimborsati al pagatore. Se il prestatore di servizi di disposizione di ordine di
+pagamento è responsabile dell'operazione di pagamento non autorizzata, risarcisce immediatamente e, in ogni caso, entro la fine della giornata operativa successiva senza che sia necessaria la
+costituzione in mora il prestatore di servizi di pagamento di radicamento del conto, su richiesta di quest'ultimo, anche per le perdite subite. In entrambi i casi è fatta salva la facoltà del
+prestatore di servizi di disposizione di ordine di pagamento di dimostrare, in conformità a quanto disposto dall'articolo 10, comma 1-bis, che, nell'ambito delle sue competenze, l'operazione di
+pagamento è stata autenticata, correttamente registrata e non ha subito le conseguenze di guasti tecnici o altri inconvenienti relativi al servizio di pagamento da questo prestato, con conseguente
+diritto in questi casi alla restituzione delle somme da quest'ultimo versate al prestatore di servizi di pagamento di radicamento del conto ai sensi del presente comma.
+ ))
+ ((
+ 3. Il rimborso di cui ai commi precedenti non preclude la possibilità per il prestatore di servizi di pagamento di dimostrare, anche in un momento successivo, che l'operazione di pagamento era stata
+autorizzata. In tal caso, il prestatore di servizi di pagamento ha il diritto di chiedere direttamente all'utente e ottenere da quest'ultimo la restituzione dell'importo rimborsato ai sensi dei commi
+1 e 2-bis.
+ ))
+ 4. Il risarcimento di danni ulteriori subiti può essere previsto in conformità alla disciplina applicabile al contratto stipulato tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento
+ ((compreso, se del caso, il prestatore di servizi di disposizione di ordine di pagamento))
+ .
+
+=== K81 | [12] Responsabilità del pagatore per l'utilizzo non autorizzato di strumenti o servizi di pagamento
+Art. 12
+ (Responsabilità del pagatore per l'utilizzo non autorizzato di strumenti o servizi di pagamento)
+ 1. Salvo il caso in cui abbia agito in modo fraudolento, l'
+ ((utente))
+ non sopporta alcuna perdita derivante dall'utilizzo di uno strumento di pagamento smarrito, sottratto o utilizzato indebitamente intervenuto dopo la comunicazione eseguita ai sensi dell'articolo 7,
+comma 1, lettera b).
+ 2. Salvo il caso in cui abbia agito in modo fraudolento, l'
+ ((utente))
+ non è responsabile delle perdite derivanti dall'utilizzo dello strumento di pagamento smarrito, sottratto o utilizzato indebitamente quando il prestatore di servizi di pagamento non ha adempiuto
+all'obbligo di cui all'articolo 8, comma 1, lettera c).
+ ((
+ 2-bis. Salvo il caso in cui abbia agito in modo fraudolento, il pagatore non sopporta alcuna perdita se il prestatore di servizi di pagamento non esige un'autenticazione forte del cliente. Il
+beneficiario o il prestatore di servizi di pagamento del beneficiario rimborsano il danno finanziario causato al prestatore di servizi di pagamento del pagatore se non accettano l'autenticazione forte
+del cliente.
+ 2-ter. Il pagatore non sopporta alcuna perdita se lo smarrimento, la sottrazione o l'appropriazione indebita dello strumento di pagamento non potevano essere notati dallo stesso prima di un
+pagamento, salvo il caso in cui abbia agito in modo fraudolento, o se la perdita è stata causata da atti o omissioni di dipendenti, agenti o succursali del prestatore di servizi di pagamento o
+dell'ente cui sono state esternalizzate le attività.
+ ))
+ ((
+ 3. Negli altri casi, salvo se abbia agito in modo fraudolento o non abbia adempiuto a uno o più degli obblighi di cui all'articolo 7, con dolo o colpa grave, il pagatore può sopportare, per un
+importo comunque non superiore a euro 50, la perdita relativa a operazioni di pagamento non autorizzate derivanti dall'utilizzo indebito dello strumento di pagamento conseguente al suo furto,
+smarrimento o appropriazione indebita.
+ ))
+ 4.
+ ((Qualora abbia agito in modo fraudolento o non abbia adempiuto ad uno o più obblighi di cui all'articolo 7, con dolo o colpa grave, l'utente sopporta tutte le perdite derivanti da operazioni di
+pagamento non autorizzate e non si applica il limite di 50 euro di cui al comma 3.))
+ 5.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+
+=== K82 | [12-bis] Operazioni di pagamento il cui importo non sia noto in anticipo).
+Art. 12-bis
+ (( (Operazioni di pagamento il cui importo non sia noto in anticipo).))
+ ((
+ 1. Se un'operazione di pagamento basata su carta è disposta dal beneficiario o per suo tramite, senza che sia noto l'importo dell'operazione nel momento in cui il pagatore presta il proprio consenso,
+il prestatore di servizi di pagamento del pagatore può bloccare i fondi sul conto di pagamento del pagatore solo se quest'ultimo ha acconsentito a che sia bloccato un importo predeterminato.
+ 2. Il prestatore di servizi di pagamento del pagatore sblocca senza indugio i fondi bloccati ai sensi del comma precedente nel momento della ricezione delle informazioni concernenti l'esatto importo
+dell'operazione di pagamento e, al più tardi, dopo la ricezione dell'ordine di pagamento.
+ ))
+
+=== K83 | [13] Rimborsi per operazioni di pagamento
+Art. 13
+ (Rimborsi per operazioni di pagamento
+ ((autorizzate))
+ disposte dal beneficiario o per il suo tramite)
+ 1. Nel caso in cui un'operazione di pagamento autorizzata disposta su iniziativa del beneficiario o per il suo tramite sia già stata eseguita, il pagatore ha diritto al rimborso dell'importo
+trasferito qualora siano soddisfatte entrambe le seguenti condizioni:
+ a) al momento del rilascio, l'autorizzazione non specificava l'importo dell'operazione di pagamento;
+ b) l'importo dell'operazione supera quello che il pagatore avrebbe potuto ragionevolmente aspettarsi avuti presenti il suo precedente modello di spesa, le condizioni del suo contratto quadro e le
+circostanze del caso.
+ 2. Su richiesta del prestatore di servizi di pagamento, il pagatore fornisce documenti e ogni altro elemento utile a sostenere l'esistenza delle condizioni di cui al comma 1. Il rimborso corrisponde
+all'intero importo dell'operazione di pagamento eseguita
+ ((e la data valuta dell'accredito non è successiva a quella dell'addebito dell'importo))
+ . Nel caso di addebiti diretti il pagatore e il prestatore di servizi di pagamento possono convenire nel contratto quadro che il pagatore ha diritto al rimborso anche a prescindere dalla sussistenza
+delle condizioni di cui al comma 1.
+ 3. Ai fini del comma 1. lettera b), il pagatore non può far valere ragioni legate al cambio, se è stato applicato il tasso di cambio di riferimento concordato con il prestatore di servizi di
+pagamento. Se il tasso di cambio di riferimento riguarda un'operazione di pagamento che rientra in un contratto quadro, in tale contratto devono essere concordati il metodo di calcolo dell'interesse
+effettivo, la data pertinente e l'indice o la base presi in considerazione per determinare tale tasso di cambio di riferimento.
+ ((
+ 3-bis. Fatto salvo quanto disposto dal comma 4, in aggiunta a quanto disposto dal comma 1, nel caso di addebiti diretti di cui all' articolo 1 del Regolamento (UE) n. 260/2012 , il pagatore ha un
+diritto incondizionato al rimborso nei termini di cui all'articolo 14.
+ ))
+ 4.
+ ((Il contratto quadro tra il pagatore e il prestatore di servizi di pagamento può escludere il diritto al rimborso se ricorrono entrambe le seguenti condizioni:))
+ a) il pagatore ha dato l'autorizzazione direttamente al proprio prestatore di servizi di pagamento;
+ b) ove possibile, le informazioni sulla futura operazione di pagamento, limitatamente al caso in cui l'autorizzazione del pagatore è stata data prima dell'esecuzione dell'operazione di pagamento,
+sono state fornite o messe a disposizione del pagatore dal prestatore di servizi di pagamento o dal beneficiario almeno quattro settimane prima della sua esecuzione, secondo quanto concordato nel
+contratto quadro.
+
+=== K84 | [14] Richieste di rimborso per operazioni di pagamento
+Art. 14
+ (Richieste di rimborso per operazioni di pagamento
+ ((autorizzate))
+ disposte dal beneficiario o per il suo tramite)
+ 1. Il pagatore può chiedere il rimborso di cui all'articolo 13 entro otto settimane dalla data in cui i fondi sono stati addebitati.
+ 2. Il prestatore di servizi di pagamento rimborsa l'intero importo dell'operazione di pagamento, ovvero fornisce una giustificazione per il rifiuto del rimborso medesimo, entro dieci giornate
+operative dalla ricezione della richiesta. In tale ultimo caso comunica al pagatore il suo diritto di presentare un esposto alla Banca d'Italia ovvero di ricorrere ai sistemi stragiudiziali di cui
+all'articolo 128-bis del testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385 , ove non accetti la giustificazione fornita.
+ ((
+ 3. Il diritto del prestatore di servizi di pagamento di rifiutare il rimborso di cui al comma 2 non si applica nel caso di cui all'articolo 13, comma 3-bis.
+ ))
+
+=== K85 | [15] Ricezione degli ordini di pagamento
+Art. 15
+ (Ricezione degli ordini di pagamento)
+ 1. Il momento della ricezione di un ordine di pagamento è quello in cui l'ordine
+ ((...))
+ è ricevuto dal prestatore di servizi di pagamento di cui si avvale il pagatore.
+ ((Prima di tale momento, il conto di pagamento del pagatore non può essere addebitato.))
+ Se il momento della ricezione non ricorre in una giornata operativa per il prestatore di servizi di pagamento di cui si avvale il pagatore, l'ordine di pagamento si intende ricevuto la giornata
+operativa successiva. Il prestatore di servizi di pagamento può stabilire un limite, fissato in prossimità della fine della giornata operativa avuto anche riguardo alle modalità di trasmissione
+dell'ordine di pagamento, oltre il quale gli ordini di pagamento ricevuti si considerano ricevuti la giornata operativa successiva.
+ 2. Se l'
+ ((utente))
+ e il prestatore di servizi di pagamento di cui egli si avvale concordano che l'esecuzione dell'ordine di pagamento sia avviata in un giorno determinato o alla fine di un determinato periodo o il
+giorno in cui il pagatore ha messo i fondi a disposizione del prestatore di servizi di pagamento, il momento della ricezione coincide con il giorno convenuto. Ove il giorno convenuto non sia una
+giornata operativa per il prestatore di servizi di pagamento, l'ordine si intende ricevuto la giornata operativa successiva.
+
+=== K86 | [16] Rifiuto degli ordini di pagamento
+Art. 16
+ (Rifiuto degli ordini di pagamento)
+ 1.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ ((
+ 2. Qualora il prestatore di servizi di pagamento rifiuti di eseguire o di disporre un ordine di pagamento, il rifiuto e, ove possibile, le relative motivazioni, nonchè la procedura per correggere
+eventuali errori materiali imputabili all'utente che abbiano causato il rifiuto, sono comunicati all'utente, salvo che tale informazione non debba essere fornita in quanto in contrasto con obiettivi
+di ordine pubblico o di pubblica sicurezza, individuati ai sensi dell' articolo 126 del decreto legislativo 1° settembre 1993, n. 385 , o ricorrano giustificati motivi ostativi in base alle
+disposizioni in materia di contrasto del riciclaggio e del finanziamento del terrorismo, di legge o di regolamento.
+ ((
+ 3. Il prestatore di servizi di pagamento effettua la comunicazione di cui al comma 2 secondo le modalità concordate con l'utente, con la massima sollecitudine e, al più tardi, entro i termini
+previsti per l'esecuzione dell'operazione di pagamento di cui all'articolo 20.
+ ))
+ ((
+ 4. Ove il rifiuto di un ordine di pagamento sia obiettivamente giustificato, il prestatore di servizi di pagamento può addebitare spese ragionevoli per la comunicazione all'utente, ove ciò sia stato
+concordato tra le parti.
+ ))
+ ((
+ 4-bis. Quando tutte le condizioni previste dal contratto quadro sono soddisfatte, il prestatore di servizi di pagamento di radicamento del conto del pagatore non può rifiutare di eseguire un ordine
+di pagamento autorizzato, indipendentemente dal fatto che tale ordine sia disposto dal pagatore, anche tramite un prestatore di servizi di disposizione di ordine di pagamento, o dal beneficiario o per
+il tramite di quest'ultimo, salvo che ciò risulti contrario a disposizioni di diritto dell'Unione europea o nazionale.
+ ))
+ 5. Ai fini di quanto previsto dagli articoli 20 e 25, un ordine di pagamento di cui sia stata rifiutata l'esecuzione per motivi obiettivamente giustificati non è considerato ricevuto.
+
+=== K87 | [17] Irrevocabilità di un ordine di pagamento
+Art. 17
+ (Irrevocabilità di un ordine di pagamento)
+ 1.
+ ((Fatte salve le disposizioni di cui al presente articolo, una volta ricevuto dal prestatore di servizi di pagamento del pagatore, l'ordine di pagamento non può essere revocato dall'utente.))
+ ((
+ 2. Fatto salvo quanto previsto all'articolo 5, comma 4, se l'operazione di pagamento è disposta da un prestatore di servizi di disposizione di ordine di pagamento o su iniziativa del beneficiario o
+per il suo tramite, il pagatore non può revocare l'ordine di pagamento dopo aver prestato il proprio consenso a disporre o ad eseguire l'operazione di pagamento al prestatore di servizi di
+disposizione di ordine di pagamento o beneficiario.
+ ))
+ 3. Nel caso di addebito diretto e fatti salvi i diritti di rimborso, il pagatore può revocare l'ordine di pagamento non oltre la fine della giornata operativa precedente il giorno concordato per
+l'addebito dei fondi. Il prestatore di servizi di pagamento del pagatore dà tempestiva comunicazione della revoca al prestatore di servizi di pagamento del beneficiario, ove le modalità e i tempi di
+effettuazione della revoca lo consentano.
+ 4. Nel caso di cui all'articolo 15, comma 2, l'
+ ((utente))
+ può revocare un ordine di pagamento non oltre la fine della giornata operativa precedente il giorno concordato.
+ ((
+ 5. Decorsi i termini di cui ai commi da 1 a 4, l'ordine di pagamento può essere revocato solo se è stato concordato tra l'utente e i prestatori di servizi di pagamento interessati. Nel caso di
+un'operazione di pagamento disposta su iniziativa del beneficiario o per il suo tramite, per la revoca dell'ordine di pagamento è necessario anche il consenso del beneficiario. Il prestatore di
+servizi di pagamento può addebitare le spese della revoca solo qualora ciò sia previsto nel contratto quadro.
+ ))
+ 6. In ogni caso, la revoca di un ordine di pagamento ha effetto solo nel rapporto tra il prestatore di servizi di pagamento e l'utilizzatore del servizio, senza pregiudicare il carattere definitivo
+delle operazioni di pagamento nei sistemi di pagamento.
+ 7.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ 8. Nell'ambito di un contratto quadro, il consenso ad eseguire un'operazione di pagamento può essere revocato nella forma e secondo la procedura concordata tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento nel contratto medesimo.
+
+=== K88 | [18] Importi trasferiti e importi ricevuti
+Art. 18
+ (Importi trasferiti e importi ricevuti)
+ 1. I prestatori di servizi di pagamento
+ ((ed eventuali loro intermediari))
+ che partecipano al trasferimento di fondi necessario all'esecuzione di un'operazione di pagamento trasferiscono la totalità dell'importo dell'operazione e non trattengono spese sull'importo
+trasferito.
+ 2. In deroga al comma 1, il beneficiario e il prestatore di servizi di pagamento di cui si avvale possono concordare che quest'ultimo trattenga le proprie spese sull'importo trasferito prima di
+accreditarlo al beneficiario. In tale caso, nelle informazioni rese al beneficiario la totalità dell'importo trasferito e le spese sono indicate separatamente.
+ 3. Qualora dall'importo trasferito siano trattenute spese diverse da quelle
+ ((di cui al comma precedente))
+ , il prestatore di servizi di pagamento del pagatore garantisce che il beneficiario riceva la totalità dell'importo dell'operazione di pagamento disposta dal pagatore. Quando l'operazione di
+pagamento è disposta su iniziativa del beneficiario o per il suo tramite, il prestatore di servizi di pagamento di cui egli si avvale garantisce che la totalità dell'importo dell'operazione sia
+ricevuto dal beneficiario.
+
+=== K89 | [19] Ambito di applicazione
+Art. 19
+ (Ambito di applicazione)
+ 1. La presente sezione si applica:
+ a) alle operazioni di pagamento in euro;
+ b) alle operazioni di pagamento transfrontaliere che comportano un'unica conversione tra l'euro e la valuta ufficiale di uno Stato membro non appartenente all'area dell'euro, a condizione che esse
+abbiano luogo in euro e che la conversione valutaria abbia luogo nello Stato membro non appartenente all'area dell'euro.
+ ((
+ 2. La presente sezione è applicabile anche ad operazioni di pagamento diverse da quelle di cui al comma 1, a meno che non sia diversamente convenuto dall'utente e dal prestatore di servizi di
+pagamento. Resta comunque ferma l'applicazione dell'articolo 23, che non può essere oggetto di deroga contrattuale. Per le operazioni di pagamento effettuate nel territorio dell'Unione europea, quando
+le parti di un contratto di pagamento convengono un termine massimo di esecuzione superiore a quello di cui all'articolo 20, tale termine non può essere superiore a quattro giornate operative dal
+momento della ricezione dell'ordine di pagamento.
+ ))
+
+=== K90 | [20] Operazioni di pagamento su un conto di pagamento
+Art. 20
+ (Operazioni di pagamento su un conto di pagamento)
+ ((
+ 1. Il prestatore di servizi di pagamento del pagatore assicura che dal momento della ricezione dell'ordine di pagamento l'importo dell'operazione venga accreditato sul conto del prestatore di servizi
+di pagamento del beneficiario entro la fine della giornata operativa successiva. Se convenuto tra le parti, per le operazioni di pagamento disposte su supporto cartaceo, tale termine massimo può
+essere prorogato di una ulteriore giornata operativa.
+ ))
+ 2. Il prestatore di servizi di pagamento del beneficiario applica la data valuta e rende disponibile l'importo dell'operazione di pagamento sul conto del beneficiario in conformità con quanto
+previsto dall'art. 23.
+ 3. Quando l'ordine di pagamento è disposto su iniziativa del beneficiario o per il suo tramite, il prestatore di servizi di pagamento di cui egli si avvale trasmette l'ordine al prestatore di servizi
+di pagamento del pagatore entro i limiti di tempo convenuti tra il beneficiario e il proprio prestatore di servizi di pagamento.
+ Nel caso degli addebiti diretti, l'ordine viene trasmesso entro limiti di tempo che consentano il regolamento dell'operazione alla data di scadenza convenuta.
+
+=== K91 | [21] Mancanza di un conto di pagamento dei beneficiari presso il prestatore di servizi di pagamento
+Art. 21
+ (Mancanza di un conto di pagamento dei beneficiari presso il prestatore di servizi di pagamento)
+ 1. Se il beneficiario non dispone di un conto di pagamento presso il prestatore di servizi di pagamento che riceve i fondi, quest'ultimo mette i fondi ricevuti a disposizione del beneficiario entro
+il termine specificato ai sensi dell'articolo
+ ((23, comma 2))
+ .
+
+=== K92 | [22] Depositi versati in un conto di pagamento
+Art. 22
+ (Depositi versati in un conto di pagamento)
+ 1. Quando un
+ ((consumatore))
+ versa
+ ((contanti))
+ su un conto di pagamento nella valuta in cui il conto è denominato, il prestatore di servizi di pagamento applica la data di ricezione dei fondi quale data valuta e rende disponibili i fondi
+immediatamente dopo la ricezione. Se l'
+ ((utente))
+ non è un consumatore, l'importo è reso disponibile e la valuta datata al più tardi la giornata operativa successiva alla ricezione dei fondi.
+
+=== K93 | [23] Data valuta e disponibilità dei fondi
+Art. 23
+ (Data valuta e disponibilità dei fondi)
+ 1. La data valuta dell'accredito sul conto di pagamento del beneficiario non può essere successiva alla giornata operativa in cui l'importo dell'operazione di pagamento viene accreditato sul conto
+del prestatore di servizi di pagamento del beneficiario.
+ ((
+ 2. Purchè non vi sia conversione valutaria o vi sia conversione valutaria tra euro e la valuta di uno Stato membro ovvero tra le valute di due Stati membri, il prestatore di servizi di pagamento del
+beneficiario assicura che l'importo dell'operazione di pagamento sia a disposizione del beneficiario non appena tale importo è accreditato sul conto del prestatore medesimo, ovvero nella stessa
+giornata operativa di ricezione dell'ordine di pagamento per i pagamenti gestiti da un unico prestatore di servizi di pagamento.
+ ))
+ 3. La data valuta dell'addebito sul conto di pagamento del pagatore non può precedere la giornata operativa in cui l'importo dell'operazione di pagamento è addebitato sul medesimo conto di pagamento.
+ 4.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+
+=== K94 | [24] Identificativi unici inesatti
+Art. 24
+ (Identificativi unici inesatti)
+ 1. Se un ordine di pagamento è eseguito conformemente all'identificativo unico, esso si ritiene eseguito correttamente per quanto concerne il beneficiario e/o il conto indicato dall'identificativo
+unico.
+ ((
+ 2. Se l'identificativo unico fornito dall'utente è inesatto, il prestatore di servizi di pagamento non è responsabile, ai sensi dell'articolo 25, della mancata o inesatta esecuzione dell'operazione
+di pagamento. Il prestatore di servizi di pagamento del pagatore compie tuttavia sforzi ragionevoli per recuperare i fondi oggetto dell'operazione di pagamento. Il prestatore di servizi di pagamento
+del beneficiario è tenuto a collaborare, anche comunicando al prestatore di servizi di pagamento del pagatore ogni informazione utile. Se non è possibile il recupero dei fondi, il prestatore di
+servizi di pagamento del pagatore, su richiesta scritta del pagatore, è tenuto a fornirgli ogni informazione disponibile che sia utile ai fini di un'azione di tutela. Ove previsto nel contratto
+quadro, il prestatore di servizi di pagamento addebita all'utente le spese sostenute per il recupero dei fondi.
+ ))
+ 3. Il prestatore di servizi di pagamento è responsabile solo dell'esecuzione dell'operazione di pagamento in conformità con l'identificativo unico fornito dall'
+ ((utente))
+ anche qualora quest'ultimo abbia fornito al suo prestatore di servizi di pagamento informazioni ulteriori rispetto all'identificativo unico.
+
+=== K95 | [25] Responsabilità dei prestatori di servizi di pagamento per la mancata, inesatta o tardiva esecuzione delle operazioni di 
+Art. 25
+ ((Responsabilità dei prestatori di servizi di pagamento per la mancata, inesatta o tardiva esecuzione delle operazioni di pagamento))
+ ((1. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28, quando l'operazione di pagamento è disposta dal pagatore, il prestatore di servizi di pagamento del pagatore è responsabile nei confronti di
+quest'ultimo della corretta esecuzione dell'ordine di pagamento ricevuto, a meno che non sia in grado di provare al pagatore ed eventualmente al prestatore di servizi di pagamento del beneficiario che
+quest'ultimo ha ricevuto l'importo dell'operazione conformemente all'articolo 20, comma 1.))
+ 2. Quando il prestatore di servizi di pagamento del pagatore è responsabile ai sensi del comma 1, rimborsa senza indugio al pagatore l'importo dell'operazione di pagamento non eseguita o eseguita in
+modo inesatto e, se l'operazione è stata eseguita a valere su un conto di pagamento, ne ripristina la situazione come se l'operazione di pagamento eseguita in modo inesatto non avesse avuto luogo.
+ ((La data valuta dell'accredito sul conto di pagamento del pagatore non deve essere successiva a quella di addebito dell'importo.))
+ 3.
+ ((COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ .
+ ((
+ 4. Qualora il prestatore di servizi di pagamento del beneficiario sia responsabile ai sensi del comma 1, mette senza indugio l'importo dell'operazione di pagamento a disposizione del beneficiario o
+accredita immediatamente l'importo corrispondente sul conto di pagamento del beneficiario medesimo. La data valuta dell'accredito sul conto di pagamento di quest'ultimo non deve essere successiva a
+quella che sarebbe stata attribuita al beneficiario in caso di esecuzione corretta dell'operazione di pagamento.
+ ))
+ ((
+ 5. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28, quando l'operazione di pagamento è disposta su iniziativa del beneficiario o per il suo tramite, il prestatore di servizi di pagamento del
+beneficiario è responsabile nei confronti del proprio utente della corretta trasmissione dell'ordine di pagamento al prestatore di servizi di pagamento del pagatore conformemente all'articolo 20,
+comma 3 ed è tenuto a trasmettere l'ordine di pagamento in questione senza indugio. In caso di trasmissione tardiva, la data valuta riconosciuta al beneficiario non può essere successiva a quella che
+gli sarebbe stata attribuita in caso di esecuzione corretta dell'operazione di pagamento.
+ ))
+ ((
+ 5-bis. Il prestatore di servizi di pagamento del beneficiario è responsabile nei confronti del beneficiario per il rispetto delle disposizioni di cui all'articolo 23 ed è tenuto a mettergli a
+disposizione l'importo dell'operazione di pagamento non appena esso sia accreditato sul proprio conto di pagamento, applicando una data valuta che non può essere successiva a quella che gli sarebbe
+stata attribuita in caso di esecuzione corretta.
+ ))
+ ((
+ 6. Nel caso in cui il prestatore di servizi di pagamento del beneficiario non sia responsabile della mancata o inesatta esecuzione di un'operazione di pagamento ai sensi dei commi precedenti, il
+prestatore di servizi di pagamento del pagatore è responsabile nei confronti del pagatore ed è tenuto a rimborsare al pagatore senza indugio l'importo dell'operazione non eseguita o eseguita in modo
+inesatto. Ove per l'esecuzione dell'operazione sia stato addebitato un conto di pagamento, il prestatore di servizi di pagamento riporta quest'ultimo allo stato in cui si sarebbe trovato se
+l'operazione non avesse avuto luogo. La data valuta dell'accredito sul conto di pagamento del pagatore non deve essere successiva a quella di addebito dell'importo.
+ ))
+ ((
+ 6-bis. L'obbligo di cui al comma 6 non si applica se il prestatore di servizi di pagamento del pagatore dimostra che il prestatore di servizi di pagamento del beneficiario ha ricevuto l'importo
+dell'operazione, anche se con lieve ritardo. In questo caso il prestatore di servizi di pagamento del beneficiario accredita l'importo al proprio utente con data valuta non successiva a quella che gli
+sarebbe stata attribuita in caso di esecuzione corretta.
+ ))
+ ((
+ 7. Indipendentemente dalla responsabilità di cui ai commi da 1 a 6, quando un'operazione di pagamento non è eseguita o è eseguita in modo inesatto, i prestatori di servizi di pagamento si adoperano
+senza indugio e senza spese, su richiesta dei rispettivi utenti, a rintracciare l'operazione di pagamento, e li informano del risultato.
+ ))
+ ((
+ 8. I prestatori di servizi di pagamento sono inoltre responsabili nei confronti dei rispettivi utenti di tutte le spese ed interessi loro imputati a seguito della mancata, inesatta o tardiva
+esecuzione dell'operazione di pagamento.
+ ))
+
+=== K96 | [25-bis] Responsabilità in caso di prestazione dei servizi di disposizione di ordine di pagamento per la mancata, inesatta o tard
+Art. 25-bis
+ (( (Responsabilità in caso di prestazione dei servizi di disposizione di ordine di pagamento per la mancata, inesatta o tardiva esecuzione dell'operazione di pagamento).))
+ ((
+ 1. Fatti salvi gli articoli 9, 24, commi 2 e 3, e 28 se l'ordine di pagamento è disposto mediante un prestatore di servizi di disposizione di ordine di pagamento il prestatore di servizi di pagamento
+di radicamento del conto rimborsa al pagatore l'importo dell'operazione di pagamento non eseguita o non correttamente eseguita e, se del caso, riporta il conto di pagamento addebitato nello stato in
+cui si sarebbe trovato se l'operazione non correttamente eseguita non avesse avuto luogo.
+ 2. In caso di operazione di pagamento non eseguita o non correttamente eseguita, se il relativo ordine di pagamento è disposto mediante un prestatore di servizi di disposizione di ordine di
+pagamento, quest'ultimo è tenuto a rimborsare, immediatamente e senza che sia necessaria la costituzione in mora, al prestatore di servizi di pagamento di radicamento del conto, su richiesta di
+quest'ultimo, gli importi rimborsati al pagatore. Se il prestatore di servizi di disposizione di ordine di pagamento è responsabile per la mancata, inesatta o tardiva esecuzione dell'operazione di
+pagamento, risarcisce, immediatamente e senza che sia necessaria la costituzione in mora, il prestatore di servizi di pagamento di radicamento del conto, su sua richiesta, anche per le perdite subite.
+In entrambi i casi è fatta salva la facoltà del prestatore di servizi di disposizione di ordine di pagamento di dimostrare, in conformità a quanto disposto dall'articolo 10, comma 1-bis, che l'ordine
+di pagamento è stato ricevuto dal prestatore di servizi di pagamento di radicamento del conto del pagatore conformemente all'articolo 15 e che, nell'ambito delle competenze del medesimo prestatore di
+servizi di disposizione di ordine di pagamento, l'operazione di pagamento è stata autenticata, correttamente registrata e non ha subito le conseguenze di guasti tecnici o altri inconvenienti correlati
+alla mancata, inesatta o tardiva esecuzione dell'operazione di pagamento, con conseguente diritto in questi casi alla restituzione delle somme da quest'ultimo versate al prestatore di servizi di
+pagamento di radicamento del conto ai sensi del presente comma.
+ ))
+
+=== K97 | [26] Risarcimento dei danni ulteriori
+Art. 26
+ (Risarcimento dei danni ulteriori)
+ 1. Qualsiasi risarcimento ulteriore rispetto a quelli previsti dalla presente sezione può essere determinato in conformità alla disciplina applicabile al contratto concluso tra l'
+ ((utente))
+ e il prestatore di servizi di pagamento.
+
+=== K98 | [27] Diritto di regresso
+Art. 27
+ (Diritto di regresso)
+ ((
+ 1. Qualora la responsabilità di un prestatore di servizi di pagamento ai sensi degli articoli 11, 25 e 25-bis sia attribuibile ad un altro prestatore di servizi di pagamento coinvolto o ad un
+qualsiasi altro soggetto interposto nell'esecuzione dell'operazione, quest'ultimo risarcisce il primo prestatore di servizi di pagamento in caso di perdite o di importi versati ai sensi degli articoli
+11, 25 e 25-bis. È, altresì, prevista una compensazione degli importi qualora i prestatori di servizi di pagamento non si avvalgano dell'autenticazione forte del cliente.
+ ))
+ 2. Ulteriori compensazioni e risarcimenti possono essere determinati conformemente agli accordi tra prestatori di servizi di pagamento e alla disciplina ad essi applicabile.
+
+=== K99 | [28] Circostanze anormali e imprevedibili
+Art. 28
+ ((Circostanze anormali e imprevedibili))
+ 1. Le responsabilità di cui agli articoli da 5 a 27 non si applicano in caso di caso fortuito o forza maggiore e nei casi in cui il prestatore di servizi di pagamento abbia agito in conformità con i
+vincoli derivanti da altri obblighi di legge.
+
+=== K100 | [29] Protezione dei dati
+Art. 29
+ (Protezione dei dati)
+ ((
+ 1. I prestatori di servizi di pagamento e i gestori di sistemi di pagamento possono trattare dati personali ove ciò sia necessario a prevenire, individuare e indagare casi di frode nei pagamenti. La
+fornitura di informazioni a persone fisiche in merito al trattamento dei dati personali e ad altro trattamento ai fini del presente decreto avviene in conformità al decreto legislativo 30 giugno 2003,
+n. 196 e successive modificazioni.
+ ))
+ ((
+ 1-bis. I prestatori di servizi di pagamento hanno accesso, trattano e conservano i dati personali necessari alla prestazione dei propri servizi solo previo consenso esplicito dell'utente dei servizi
+di pagamento.
+ ))
+
+=== K101 | [30] Accesso ai sistemi di pagamento
+Art. 30
+ (Accesso ai sistemi di pagamento)
+ 1. Nell'esercizio del potere di cui all'articolo 146, comma 2, lettera b), numero 2), del testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n.
+385 , come modificato dal presente decreto, la Banca d'Italia verifica che le norme emanate dai gestori di sistemi di pagamento, al fine di disciplinare l'accesso delle persone giuridiche autorizzate
+a svolgere servizi di pagamento, siano obiettive, non discriminatorie, proporzionate e non limitino l'accesso se non nella misura necessaria a proteggere il sistema da rischi specifici quali il
+rischio di regolamento, il rischio operativo e il rischio d'impresa, e a tutelarne la stabilità finanziaria e operativa.
+ 2. Ai fini di cui al comma 1, le norme che disciplinano l'accesso ai sistemi di pagamento non possono imporre nessuno dei seguenti requisiti ai prestatori di servizi di pagamento, agli utenti di
+servizi di pagamento o ad altri sistemi di pagamento:
+ a) restrizioni all'effettiva partecipazione ad altri sistemi di pagamento;
+ b) discriminazioni tra prestatori di servizi di pagamento autorizzati o registrati in relazione ai diritti, agli obblighi e alle prerogative dei partecipanti;
+ c) LETTERA SOPPRESSA DAL D.LGS. 15 DICEMBRE 2017, N. 218 .
+ 3.
+ ((I commi 1 e 2 non si applicano ai sistemi di pagamento costituiti esclusivamente da prestatori di servizi di pagamento appartenenti a un medesimo gruppo))
+ .
+ 3-bis.
+ ((...))
+ qualora il partecipante a un sistema designato consenta a un prestatore di servizi di pagamento autorizzato o registrato che non è un partecipante al sistema di trasmettere ordini di trasferimento
+mediante il sistema stesso, tale partecipante fornisce, su richiesta, la stessa opportunità in maniera obiettiva, proporzionata e non discriminatoria, ad altri prestatori di servizi di pagamento
+autorizzati o registrati, conformemente ai commi 1 e 2.
+ In caso di rifiuto, il partecipante fornisce al prestatore di servizi di pagamento motivazioni circostanziate.
+
+=== K102 | [30-bis] Condizioni per richiedere la partecipazione a sistemi di pagamento designati).
+Art. 30-bis
+ (( (Condizioni per richiedere la partecipazione a sistemi di pagamento designati).))
+ 1.
+ ((Fermo restando quanto previsto dall'articolo 30, ai fini della partecipazione a un sistema di pagamento designato ai sensi del presente decreto gli istituti di pagamento e gli istituti di moneta
+elettronica predispongono:
+ a) una descrizione delle misure adottate per tutelare i fondi degli utenti di servizi di pagamento;
+ b) una descrizione dei dispositivi di governo societario e dei meccanismi di controllo interno per i servizi di pagamento o i servizi di moneta elettronica prestati, ivi comprese le procedure
+amministrative, di gestione del rischio e contabili, dell'istituto di pagamento o dell'istituto di moneta elettronica nonchè una descrizione delle modalità per l'uso dei servizi delle tecnologie
+dell'informazione e della comunicazione dell'istituto di pagamento o dell'istituto di moneta elettronica relativi agli articoli 6 e 7 del regolamento (UE) 2022/2554 del Parlamento europeo e del
+Consiglio, del 14 dicembre 2022 ;
+ c) un piano di liquidazione in caso di dissesto.))
+ 2.
+ ((Ai fini del comma 1, lettera a), la descrizione delle misure adottate comprende, a seconda dei casi:
+ a) se l'istituto di pagamento o l'istituto di moneta elettronica tutela i fondi degli utenti di servizi di pagamento depositando fondi su un conto distinto di un ente creditizio o investendo in
+attività sicure, liquide e a basso rischio quali definite dalle competenti autorità dello Stato membro di origine:
+ 1) una descrizione della politica di investimento per garantire che le attività scelte siano liquide, sicure e a basso rischio;
+ 2) il numero dei soggetti che hanno accesso al conto di tutela e le rispettive funzioni;
+ 3) una descrizione della gestione e del processo di riconciliazione per assicurare che i fondi degli utenti di servizi di pagamento siano isolati, nell'interesse dei medesimi, dalle richieste di
+pagamento di altri creditori dell'istituto di pagamento o dell'istituto di moneta elettronica, in particolare in caso di insolvenza;
+ 4) una copia del progetto di contratto con la banca italiana o la banca dell'Unione europea;
+ 5) una dichiarazione esplicita della conformità all' articolo 10 della direttiva (UE) 2015/2366 del Parlamento europeo e del Consiglio, del 25 novembre 2015 , da parte dell'istituto di pagamento o
+dell'istituto di moneta elettronica;
+ b) se l'istituto di pagamento o l'istituto di moneta elettronica tutela i fondi dell'utente di servizi di pagamento mediante una polizza assicurativa o garanzia comparabile ottenuta da un'impresa di
+assicurazione o da un ente creditizio:
+ 1) la conferma che la polizza assicurativa o la garanzia comparabile ottenuta da un'impresa di assicurazione o da una banca italiana o dell'Unione europea proviene da un'entità non appartenente allo
+stesso gruppo di imprese cui appartiene l'istituto di pagamento o l'istituto di moneta elettronica;
+ 2) informazioni dettagliate sul processo di riconciliazione previsto per garantire che la polizza assicurativa o la garanzia comparabile sia sufficiente a soddisfare in qualsiasi momento gli obblighi
+di tutela dell'istituto di pagamento o dell'istituto di moneta elettronica;
+ 3) la durata e le modalità di rinnovo della copertura;
+ 4) una copia del contratto di assicurazione o della garanzia comparabile o dei relativi progetti.))
+ 3.
+ ((Ai fini del comma 1, lettera b), la descrizione dei dispositivi di governo societario e dei meccanismi di controllo interno dimostra che i dispositivi di governo societario, i meccanismi di
+controllo interno e le modalità per l'uso delle tecnologie dell'informazione e della comunicazione di cui alla medesima lettera b) sono proporzionati, appropriati, validi e adeguati. I dispositivi di
+governo societario e i meccanismi di controllo interno comprendono inoltre:
+ a) una mappatura dei rischi individuati dall'istituto di pagamento o dall'istituto di moneta elettronica, compresi il tipo di rischi e le procedure che l'istituto di pagamento o l'istituto di moneta
+elettronica ha messo o metterà in atto per valutare e prevenire tali rischi;
+ b) le diverse procedure per svolgere controlli periodici e permanenti, comprese la frequenza e le risorse umane assegnate;
+ c) le procedure contabili mediante le quali l'istituto di pagamento o l'istituto di moneta elettronica registra e comunica le proprie informazioni finanziarie;
+ d) l'identità della persona o delle persone responsabili delle funzioni di controllo interno, compresi i controlli periodici, permanenti e di conformità, nonchè un curriculum vitae aggiornato di tale
+persona o di tali persone;
+ e) l'identità di tutti i revisori che non siano revisori legali ai sensi dell'articolo 2, punto 2), della direttiva 2006/43/CE del Parlamento europeo e del Consiglio, del 17 maggio 2006 ;
+ f) la composizione dell'organo di amministrazione e, se applicabile, di ogni altro organo o comitato di vigilanza;
+ g) una descrizione delle modalità di monitoraggio e controllo delle funzioni esternalizzate onde evitare di mettere a repentaglio la qualità del controllo interno dell'istituto di pagamento o
+dell'istituto di moneta elettronica;
+ h) una descrizione delle modalità di monitoraggio e controllo degli agenti e delle succursali nel quadro dei controlli interni dell'istituto di pagamento o dell'istituto di moneta elettronica;
+ i) se l'istituto di pagamento o l'istituto di moneta elettronica è una filiazione di un'entità regolamentata in un altro Stato membro, una descrizione della governance del gruppo.))
+ 4.
+ ((Ai fini del comma 1, lettera c), il piano di liquidazione è adattato alle dimensioni e al modello commerciale previsti dell'istituto di pagamento o dell'istituto di moneta elettronica e comprende
+una descrizione delle misure di mitigazione che l'istituto di pagamento o l'istituto di moneta elettronica deve adottare in caso di cessazione dei suoi servizi di pagamento, che garantirebbero
+l'esecuzione delle operazioni di pagamento pendenti e la risoluzione dei contratti esistenti.))
+ 5.
+ ((Gli istituti di pagamento e gli istituti di moneta elettronica trasmettono all'operatore del sistema italiano una dichiarazione firmata dal legale rappresentante, previa approvazione dell'organo di
+gestione competente, che confermi la sussistenza dei requisiti indicati nei commi da 1 a 4. Gli istituti di pagamento e gli istituti di moneta elettronica informano contestualmente la Banca d'Italia
+di aver richiesto la partecipazione a sistemi di pagamento designati.))
+ 6.
+ ((L'operatore del sistema italiano può chiedere ai soggetti di cui al comma 1 specifiche informazioni o ulteriori attestazioni, anche in forma di un parere legale, al fine di valutare la sussistenza
+dei requisiti del presente articolo))
+ .
+
+=== K103 | [31] ARTICOLO ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218
+Art. 31
+ ((ARTICOLO ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 ))
+ ((3))
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K104 | [32] Sanzioni
+Art. 32
+ (Sanzioni)
+ 1. Nei confronti dei prestatori di servizi di pagamento e dei soggetti ai quali sono esternalizzate funzioni aziendali essenziali o importanti, nonchè di quelli incaricati della revisione legale dei
+conti, si applica la sanzione amministrativa pecuniaria da euro 30.000 fino a euro 5 milioni ovvero fino al 10 per cento del fatturato, quando tale importo è superiore a euro 5 milioni e il fatturato
+è disponibile e determinabile, per le seguenti violazioni:
+ a) inosservanza dell'articolo 3, commi 1 e 2, dell'articolo 5-bis, commi 1, 2 e 3, dell'articolo 5-ter, dell'articolo 5-quater, dell'articolo 8, comma 1, dell'articolo 9, commi 1 e 2-bis,
+dell'articolo 10-bis, dell'articolo 11, commi 1, 2 e 2-bis, dell'articolo 12-bis, dell'articolo 16, commi 2, 3, 4 e 4-bis, dell'articolo 18, dell'articolo 20, dell'articolo 21, dell'articolo 22,
+dell'articolo 23, dell'articolo 25, commi 2, 4, 5, 5-bis, 6, 6-bis, 7
+ ((, dell'articolo 25-bis, commi 1 e 2, o delle relative norme tecniche di regolamentazione e di attuazione emanate dalla Commissione europea ai sensi degli articoli 10 e 15 del regolamento (UE) n.
+1093/2010 e dell'articolo 30-bis))
+ ;
+ b) inosservanza degli atti dell'ABE direttamente applicabili ai soggetti vigilati adottati ai sensi di quest'ultimo regolamento; (3)
+ 1-bis. Nel caso in cui il prestatore di servizi di pagamento mandante rilevi nel comportamento dell'agente in servizi di pagamento le violazioni previste dall'articolo 3, commi 1 e 2, dall'articolo
+8, comma 1, dall'articolo 9, commi 1 e 2-bis, dall'articolo 11, commi 1, 2 e 2-bis, dall'articolo 16, commi 2, 3, 4 e 4-bis, dall'articolo 18, dall'articolo 21, dall'articolo 25, commi 2, 4, 5, 5-bis,
+6, 6-bis e 7 adotta immediatamente misure correttive e trasmette la documentazione relativa alle violazioni riscontrate, anche ai fini dell'applicazione dell' articolo 128-duodecies del decreto
+legislativo 1° settembre 1993, n. 385 , all'Organismo di cui all'articolo 128-undecies. (3)
+ 1-ter. Le sanzioni previste al comma 1, si applicano quando le infrazioni rivestono carattere rilevante secondo i criteri definiti dalla Banca d'Italia, con provvedimento di carattere generale,
+tenuto conto dell'incidenza delle condotte sulla complessiva organizzazione aziendale e sui profili di rischio. (3)
+ 1-quater. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai massimali indicati nel presente articolo, le sanzioni amministrative pecuniarie
+di cui al presente articolo sono elevate fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile. (3)
+ 2. Per la grave inosservanza degli obblighi previsti dagli articoli 8, 16, 20, 21 e 22 e dalle relative misure di attuazione, nei confronti dei soggetti che svolgono funzioni di amministrazione o di
+direzione, nonchè dei dipendenti dei prestatori di servizi di pagamento si applica la sanzione amministrativa pecuniaria da 10.000 euro a 100.000 euro.
+ 3. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 4. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 5. COMMA ABROGATO DAL D.LGS. 15 DICEMBRE 2017, N. 218 . (3)
+ 6. Nel caso di servizi offerti da prestatori di servizi di pagamento insediati in Italia e filiali di prestatori di servizi di pagamento comunitari che operano in regime di libero stabilimento in
+Italia, le sanzioni di cui al presente articolo sono irrogate dalla Banca d'Italia. (3)
+ -------------
+ AGGIORNAMENTO (3)
+ Il D.Lgs. 15 dicembre 2017, n. 218 , ha disposto (con l'art. 5, comma 2) che "Le modifiche apportate dal presente decreto all' articolo 144 del decreto legislativo 1° settembre 1993, n. 385 , gli
+articoli 2, commi 36 e 37, e 4 del presente decreto legislativo, nonchè il Capo II del Titolo IV-bis del decreto legislativo 27 gennaio 2010 n. 11 come introdotto dall'articolo 3, comma 1 del presente
+decreto legislativo si applicano alle violazioni commesse a partire dal 13 gennaio 2018, salvo quanto previsto dal comma 6. Alle violazioni commesse prima di questa data continuano ad applicarsi le
+norme del titolo VIII del decreto legislativo 1° settembre 1993, n. 385 nonchè l'articolo 32 del decreto legislativo 27 gennaio 2010 n. 11 e gli articoli 3 , 4 e 5 del decreto legislativo 18 agosto
+2015, n. 135 vigenti prima della data di entrata in vigore del presente decreto legislativo".
+
+=== K105 | [32-bis] Altre sanzioni amministrative agli esponenti o al personale).
+Art. 32-bis
+ (( (Altre sanzioni amministrative agli esponenti o al personale). ))
+ ((
+ 1. Fermo restando quanto previsto per i prestatori di servizi di pagamento e per gli enti nei confronti dei quali sono accertate le violazioni, per l'inosservanza delle norme richiamate dall'articolo
+32, comma 1, si applica la sanzione amministrativa pecuniaria da euro 5.000 a euro 5 milioni di euro nei confronti dei soggetti che svolgono funzioni di amministrazione, di direzione o di controllo,
+nonchè del personale, quando l'inosservanza è conseguenza della violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione
+aziendale o sui profili di rischio.
+ 2. Con il provvedimento di applicazione della sanzione, in ragione della gravità della violazione accertata e tenuto conto dei criteri per la determinazione delle sanzioni stabiliti dall'articolo
+32-ter, la Banca d'Italia può applicare la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di
+amministrazione, direzione e controllo presso i prestatori di servizi di pagamento autorizzati ai sensi del decreto legislativo 1° settembre 1993, n. 385 .
+ 3. Si applica l'articolo 32, comma 1-quater.
+ ))
+
+=== K106 | [32-ter] Criteri per la determinazione delle sanzioni e procedura sanzionatoria).
+Art. 32-ter
+ (( (Criteri per la determinazione delle sanzioni e procedura sanzionatoria). ))
+ ((
+ 1. Nella determinazione dell'ammontare delle sanzioni amministrative pecuniarie o della durata delle sanzioni accessorie previste dal presente Capo, si applica l' articolo 144-quater, del decreto
+legislativo 1 settembre 1993, n. 385 .
+ 2. Si applica il Capo VI, Titolo VIII del citato decreto legislativo n. 385 del 1993 .
+ ))
+
+=== K107 | [32-quater] Controlli sui servizi di prelievo di contante tramite sportelli automatici).
+Art. 32-quater
+ (( (Controlli sui servizi di prelievo di contante tramite sportelli automatici). ))
+ ((
+ 1. Fatta salva l'applicazione dell' articolo 62 del decreto legislativo 6 settembre 2005, n. 206 , i prestatori dei servizi di cui all'articolo 2, comma 2, lettera q), forniscono agli utenti le
+informazioni di cui agli articoli 126-quater e 126-octies del decreto legislativo 1° settembre 1993, n. 385 , in merito a qualsiasi commissione sui prelievi di contante.
+ 2. I controlli sull'osservanza dell'obbligo previsto dal comma 1 sono esercitati dall'Autorità garante della concorrenza e del mercato la quale li effettua sulla base dei poteri istruttori e
+sanzionatori di cui all' articolo 27 del decreto legislativo 6 settembre 2005, n. 206 .
+ ))
+
+=== K108 | [32-quinquies] Procedura di riscossione).
+Art. 32-quinquies
+ (( (Procedura di riscossione). ))
+ ((
+ 1. Le sanzioni di cui al presente Capo si riscuotono secondo i termini e le modalità previsti dal decreto del Presidente della Repubblica 29 settembre 1973, n. 602 , e i relativi proventi affluiscono
+all'entrata del bilancio dello Stato.
+ ))

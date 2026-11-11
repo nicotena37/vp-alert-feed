@@ -1,0 +1,1625 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Documento ESMA35-36-2848 dell'11 luglio 2023 - Final Report - Review of the technical standards under Article 34 of MiFID II  (id CONSOB-7387549f7d)
+
+=== K532 | [par. 4 (2)] Effective supervision by NCAs of entities providing investment services on a cross-
+4. Effective supervision by NCAs of entities providing investment services on a cross-
+border basis is therefore of key importance to ensure that clients, especially retail clients,
+are given an adequate level of protection regardless of the jurisdiction of origin of the
+entities offering these services.
+5. The information provided by an investment firm at the passporting stage may play a key
+role in raising the NCA’s scrutiny of the investment firm’s cross-border activities or plans
+of cross-border activities.
+6. The purpose of the amendments to the list of information to be provided by investment
+firms at the passporting stage and to the list of notification of changes that are required
+afterwards in case of a change to the information initially notified aim at improving the
+range of information that home and host NCAs receive under Article 34 of MiFID II, thus
+improving their awareness and supervision of investment firms’ cross-border activities.
+7. Based on its initial cost-benefit analysis and the responses to the CP, ESMA is trying to
+achieve a balance between i) acceptable additional cost for investment firms passporting
+their services and NCAs and ii) the benefits brought about by the new information
+requirements.
+Benefits
+8. The main benefits linked to the review of the existing RTS and ITS are the following:
+ better awareness of an investment firm’s cross-border activities across the EU and
+which categories of clients such investment firm is targeting;
+ better awareness of an investment firm’s organisational set-up and arrangements
+(including regarding complaints handling) to provide services on a cross-border
+basis;
+ better awareness of an investment firm’s ways of marketing its investment services
+and activities in host Member States;
+ consequently, improved supervision by the home NCA of the cross-border services
+provided and activities performed by the investment firms it supervises and better
+investor protection;
+ host NCAs are also kept informed of incoming cross-border activities in their
+jurisdictions and are therefore able to also better monitor potential investor
+protection issues.
+Costs
+9. With reference to the costs, ESMA considers that investment firms intending to provide
+investment services and activities on a cross-border basis will incur slightly higher costs
+in i) gathering the necessary information at the passporting stage as well as in ii) keeping
+track of the changes that may affect the information provided at the passporting stage
+for any future notification of changes.
+10. However, ESMA believes that it is in the interest of the investment firm itself as well as
+its clients that the investment firm keeps track of such information as, ultimately, this
+should result in better supervision of cross-border activities and better investor
+protection.
+11. Similarly, home and host NCAS will incur higher costs caused by the collection and
+processing of the additional information that investment firms have to provide. However,
+ESMA is of the view that the higher costs incurred will be reasonable and wholly
+compensated by the benefits brought on by bolstered supervision and, ultimately, better
+investor protection, made possible due to the changes made.
+12. ESMA, however, took into account the comments made by some of the respondents
+regarding proportionality. As a result, i) the information requested regarding marketing
+means was simplified and ii) ESMA clarified that the information requested in relation to
+investment firms’ internal organisation in relation to cross-border activities should be high
+level.
+13. On this basis, ESMA believes that the proposed options in this area provide the most
+cost-efficient solution to achieving the general objectives of the changes made to the
+existing RTS and ITS. This is especially true as the amendments made to the technical
+standards will only apply to new passporting notifications and new notifications of
+changes and investment firms will thus not be required to resubmit all passporting
+notifications previously submitted.
+Conclusions
+In light of what has been illustrated above, ESMA believes that the overall costs associated
+with the implementation of the changes to the existing RTS and ITS will be fully compensated
+by the benefits from a strengthened supervision of cross-border activities. These benefits will
+interest all the market participants contributing to the consolidation of the fundamental trust in
+the financial markets.
+
+=== K533 | [par. 4.2] Annex II
+4.2 Annex II
+Legislative mandate to develop implementing technical standards
+Article 34(8) of MiFID II
+ESMA shall develop draft regulatory technical standards to specify the information to be
+notified in accordance with paragraphs 2, 4, 5 and 7.
+Article 34(9) of MiFID II
+ESMA shall develop draft implementing technical standards to establish standard forms,
+templates and procedures for the transmission of information in accordance with paragraphs
+3, 4, 5 and 7.
+4.3 Annex III: Draft RTS
+COMMISSION DELEGATED REGULATION (EU) …/…
+of [•]
+amending Commission Delegated Regulation (EU) 2017/1018 of 29 June 2016
+supplementing Directive 2014/65/EU of the European Parliament and of the Council on
+markets in financial instruments with regard to regulatory technical standards
+specifying information to be notified by investment firms, market operators and credit
+institutions
+(Text with EEA relevance)
+THE EUROPEAN COMMISSION,
+Having regard to the Treaty on the Functioning of the European Union,
+Having regard to Directive 2014/65/EU of the European Parliament and of the Council of 15
+May 2014 on markets in financial instruments and amending Directive 2002/92/EC and
+Directive 2011/61/EU10, and in particular the third subparagraph of Article 34(8) thereof,
+Whereas:
+(1) Commission Delegated Regulation (EU) 2017/1018 of 29 June 2016 supplementing
+Directive 2014/65/EU of the European Parliament and of the Council on markets in
+financial instruments with regard to regulatory technical standards specifying information
+to be notified by investment firms, market operators and credit institutions11 specifies the
+information that investment firms, market operators, and, where required by Directive
+2014/65/EU, credit institutions should notify to the competent authorities of their home
+Member State when they wish to provide investment services or perform investment
+activities as well as ancillary services in another Member State, in order to establish
+uniform information requirements and to benefit from the possibility to provide such
+cross-border services throughout the Union.
+OJ L 173, 12.6.2014, p. 349.
+OJ L 155, 17.6.2017, p. 1.
+(2) Since the adoption of Commission Delegated Regulation (EU) 2017/1018, cross-border
+services have increased due in part to market conditions resulting from the COVID-19
+pandemic and the trend towards the digitalisation of financial services. The increased
+volume of cross-border services has given competent authorities additional experience
+of the supervision of those services as well as the cooperation between home and host
+authorities.
+(3) In view of this experience, to ensure that the home national competent authority receives
+adequate information on the cross-border plans of an investment firm, it is necessary to
+further specify certain particulars of the information referred to in Article 34(2) of Directive
+2014/65/EU and of the changes to those particulars that must be notified in accordance
+with Article 34(4) thereof.
+(4) In particular, home national competent authorities should receive information on the
+Member States where an investment firm is actively targeting clients, how it is targeting
+clients and how the investment firm is organised to carry out its cross-border activities.
+(5) In accordance with Article 34(5) of Directive 2014/65/EU, credit institutions wishing to
+provide investment services or activities as well as ancillary services on a cross-border
+basis through tied agents established in their home Member States should notify the
+home national competent authorities with the identity of the tied agent as well as the
+investment services or activities, ancillary services and financial instruments to be
+provided by the latter. Other information required to be notified by investment firms
+wishing to provide investment services and activities on a cross-border basis are not
+required from credit institutions. The further information required from investment firms
+will therefore not affect credit institutions.
+(6) Commission Delegated Regulation (EU) 2017/1018 should therefore be amended
+accordingly.
+(7) This Regulation is based on the draft regulatory technical standards submitted to the
+Commission by the European Securities and Markets Authority (ESMA).
+(8) ESMA has conducted open public consultations on the draft regulatory technical
+standards on which this Regulation is based, analysed the potential related costs and
+benefits and requested the advice of the ESMA Securities and Markets Stakeholder
+Group established in accordance with Article 37 of Regulation (EU) No 1095/201012,
+Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European
+Supervisory Authority (European Securities and Markets Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/77/EC (OJ L 331, 15.12.2010, p. 84).
+HAS ADOPTED THIS REGULATION:
+Article 1
+Amendments to Commission Delegated Regulation (EU) 2017/1018
+Commission Delegated Regulation (EU) 2017/1018 is amended as follows:
+(1) in Article 3, paragraph (1) is replaced by the following:
+‘1. Investment firms shall ensure that the investment services and activities
+passport notification submitted pursuant to Article 34(2) of Directive 2014/65/EU includes
+the following information:
+(a) the name, address and contact details of the investment firm along with the name
+of a specified contact person at the investment firm;
+(b) a programme of operations which includes the following items:
+(i) details of the particular investment services, activities and ancillary services
+to be provided in the host Member State and the financial instruments to be
+used;
+(ii) confirmation as to whether the investment firm wishes to use tied agents,
+established in its home Member State, to provide services or promote
+investment and/or ancillary services in the host Member State and, if so the
+name, address, contact details of such tied agents and the investment
+services or activities, ancillary services and financial instruments to be
+provided by the latter;
+(c) whether the investment firm will be actively targeting clients in the host Member
+State, the date the investment firm intends to do so and whether the targeted
+clients are retail clients or professional clients;
+(d) details of the marketing means the investment firm will use in the host Member
+State;
+(e) details of the languages for which the investment firm has the necessary
+arrangements to deal with complaints from clients from the host Member State;
+(f) a summary of the internal organisation in relation to the cross-border activities of
+the investment firm, including:
+(i) the main functional and legal reporting lines relating to the cross-border
+activities of the investment firm;
+(ii) the main arrangements put in place by the investment firm to ensure that the
+internal control functions have the capacity to control the cross-border
+activities, including those provided in a language other than English or the
+official languages of the home Member State;
+(iii) the procedure for cross-border clients to submit and for the investment firm
+to deal with complaints resulting from the cross-border activities of the
+investment firm.
+For the purpose of this Article, ‘actively targeting clients’ means any circumstances
+where the investment firm engages with clients or potential clients to raise awareness of
+specific investment products, services or activities, or to raise awareness of the
+investment firm’s brand in general, or the brand of any member of its group that carries
+out investment services or activities, whatever the means of engagement.’
+(2) Article 4 is replaced by the following:
+‘Article 4
+Information to be notified concerning the change of investment services and
+activities particulars
+
+=== K534 | [par. 1 (2)] Investment firms shall ensure that a notification to communicate a change in
+1. Investment firms shall ensure that a notification to communicate a change in
+particulars, pursuant to Article 34(4) of Directive 2014/65/EU, includes details of any
+change to the information previously notified in accordance with points (a), (b), (c) and
+(f) of Article 3(1).
+2. Credit institutions referred to in Article 1(2)(a) shall ensure that a notification to
+communicate a change in particulars, pursuant to Article 34(4) of Directive 2014/65/EU,
+includes details of any change to the information previously notified in accordance with
+this Regulation.’.
+Article 2
+Entry into force
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union.
+This Regulation shall be binding in its entirety and directly applicable in all Member States.
+Done at Brussels, […]
+[For the Commission
+The President]
+[On behalf of the President]
+4.4 Annex IV: Draft ITS
+COMMISSION IMPLEMENTING REGULATION (EU) …/…
+of [•]
+amending Commission Implementing Regulation (EU) 2017/2382 of 14 December 2017
+laying down implementing technical standards with regard to standard forms,
+templates and procedures for the transmission of information in accordance with
+Directive 2014/65/EU of the European Parliament and of the Council
+(Text with EEA relevance)
+THE EUROPEAN COMMISSION,
+Having regard to the Treaty on the Functioning of the European Union,
+Having regard to Directive 2014/65/EU of the European Parliament and of the Council of 15
+May 2014 on markets in financial instruments and amending Directive 2002/92/EC and
+Directive 2011/61/EU13, and in particular the third subparagraph of Article 34(9) thereof,
+Whereas:
+(1) Commission Implementing Regulation (EU) 2017/2382 of 14 December 2017 laying
+down implementing technical standards with regard to standard forms, templates and
+procedures for the transmission of information in accordance with Directive 2014/65/EU
+of the European Parliament and of the Council 14 provides for the common standard
+forms, procedures and templates for the submission of information required when
+investment firms, market operators, and, where required by Directive 2014/65/EU, credit
+institutions wish to provide investment services and perform activities in another Member
+State under the freedom to provide services.
+(2) Since the adoption of Commission Delegated Regulation (EU) 2017/1018, cross-border
+services have increased due in part to market conditions resulting from the COVID-19
+OJ L 173, 12.6.2014, p. 349.
+OJ L 340, 20.12.2017, p. 6.
+pandemic and the trend towards the digitalisation of financial services. The increased
+volume of cross-border services has given competent authorities additional experience
+of the supervision of those services as well as the cooperation between home and host
+authorities.
+(3) In view of this experience, to ensure that the home national competent authority receives
+adequate information on the cross-border plans of an investment firm, Commission
+Delegated Regulation (EU) …/… amended Commission Delegated Regulation (EU)
+2017/1018. Commission Implementing Regulation (EU) 2017/2382 should also be
+amended to ensure coherence. In particular, it is appropriate to update the common
+standard forms, procedures and templates for the submission of information required
+when investment firms wish to provide investment services and perform activities in
+another Member State under the freedom to provide services.
+(4) This Regulation is based on the draft implementing technical standards submitted to the
+Commission by the European Securities and Markets Authority (ESMA).
+(5) ESMA has conducted open public consultations on the draft implementing technical
+standards on which this Regulation is based, analysed the potential related costs and
+benefits and requested the advice of the ESMA Securities and Markets Stakeholder
+Group established in accordance with Article 37 of Regulation (EU) No 1095/201015,
+Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European
+Supervisory Authority (European Securities and Markets Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/77/EC (OJ L 331, 15.12.2010, p. 84).
+HAS ADOPTED THIS REGULATION:
+Article 1
+Amendments to Commission Implementing Regulation (EU) 2017/2382
+Commission Implementing Regulation (EU) 2017/2382 is amended as follows:
+1. in Article 6, paragraph 1 is replaced by the following:
+‘1. In the event of a change in any of the particulars of Parts 1 to 3 and Part 6 of an
+investment services and activities passport notification, the investment firm or credit
+institution referred to in Article 1(2)(a) shall submit a notification to the competent
+authority of the home Member State using the form set out in Annex I.’;
+
+=== K535 | [par. 2 (2)] Annex I of Commission Implementing Regulation (EU) 2017/2382 is replaced with Annex
+2. Annex I of Commission Implementing Regulation (EU) 2017/2382 is replaced with Annex
+I of this Regulation;
+
+=== K536 | [par. 3 (2)] Annex III of Commission Implementing Regulation (EU) 2017/2382 is replaced with
+3. Annex III of Commission Implementing Regulation (EU) 2017/2382 is replaced with
+Annex II of this Regulation.
+Article 2
+Entry into force
+This Regulation shall enter into force on the twentieth day following that of its publication in the
+Official Journal of the European Union. This Regulation shall be binding in its entirety and
+directly applicable in all Member States.
+Done at Brussels, […]
+[For the Commission
+The President]
+[On behalf of the President]
+ANNEX I
+ANNEX I
+Form for the investment services and activities passport notification and the change of
+investment services and activities particulars notification per Member State (16)
+Articles 3 and 6 of Commission Implementing Regulation (EU) 2017/2382
+Reference number: ………..
+Date: ………….
+Part 1 – Contact information
+Type of notification: Investment services and activities passport notification
+/ change of investment services and activities
+particulars notification
+Member State in which the investment firm/credit
+institution intends to operate
+Name of investment firm/credit institution:
+Trading name(s):
+Address:
+Telephone number:
+Email:
+Name of the contact person at the investment
+firm/credit institution:
+Home Member State:
+Authorisation status: Authorised by [Home Member State Competent
+Authority]
+Authorisation date:
+Part 2 – Programme of operations
+Intended investment services, activities and ancillary services for which the passport notification is sought
+(*)
+For the purposes of a change of investment services and activities particulars notification please complete only the parts of the
+form which are relevant to the notified changes. If the intention is to make changes to the investment services, activities, ancillary
+services or financial instruments, please list all the investment services, activities, ancillary services or financial instruments the
+firm will provide.
+Investment services and activities Ancillary services
+A1 A2 A3 A4 A5 A6 A7 A8 A9 B1 B2 B3 B4 B5 B6 B7
+C1 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C2 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C3 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C4 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+Financial instruments
+C5 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C6 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C7 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C8 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C9 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C10 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+C11 ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐
+(*) Please place an (x) in the appropriate boxes.
+Details of tied agent located in the Home Member State (*)
+Name of the Address Telephone Email Contact Promotion of
+tied agent investment
+and/or
+ancillary
+services (**)
+☐
+☐
+☐
+(*) Please provide separate matrices with the intended investment services for each tied agent the investment
+firm intends to use.
+(**) Please place an (x) in the appropriate boxes.
+Intended investment services to be provided by the tied agent (*)(**)
+Investment services and activities Ancillary services
+A1 A2 A3 A4 A5 A6 A7 A8 A9 B1 B2 B3 B4 B5 B6 B7
+C1 ☐ ☐ ☐
+C2 ☐ ☐ ☐
+C3 ☐ ☐ ☐
+C4 ☐ ☐ ☐
+Financial instruments
+C5 ☐ ☐ ☐
+C6 ☐ ☐ ☐
+C7 ☐ ☐ ☐
+C8 ☐ ☐ ☐
+C9 ☐ ☐ ☐
+C10 ☐ ☐ ☐
+C11 ☐ ☐ ☐
+(*) Please place an (x) in the appropriate box(es). If you intend to make changes to the investment services,
+activities or financial instruments provided by the tied agent, please list all investment services, activities or
+financial instruments the tied agent will provide.
+(**) Please do not fill in this table if the tied agent does not intend to provide any investment services or activities
+but only, for example, intends to provide promotional activities.
+Part 3 – Whether the investment firm will be actively targeting clients in the host Member State
+Will the investment firm be From (intended date): Whether the investment firm Whether the investment
+actively targeting clients will be actively targeting retail firm will be actively
+(*) clients (**) targeting professional
+clients
+Yes ☐ dd/mm/yyyy ☐ ☐
+No ☐
+(*) Please place an (x) in the appropriate boxes. Only place an (x) in the boxes relating to the Member States where
+the firm will be actively targeting clients as referred to in Article 3(1) of Commission Delegated Regulation (EU)
+2017/1018 of 29 June 2016 supplementing Directive 2014/65/EU of the European Parliament and of the Council on
+markets in financial instruments with regard to regulatory technical standards specifying information to be notified by
+investment firms, market operators and credit institutions17. Any other Member State where the firm intends to start
+its activities at a later stage shall be notified by means of a change to the initial notification.
+(**) Please place an (x) in the appropriate box(es) if the firm intends to actively target the relevant category of clients
+in the Member State.
+OJ L 155, 17.6.2017, p. 1.
+Part 4 – Marketing means of the investment firm in the host Member State (*)
+Means of ☐ Social media campaign (**) (please specify on
+marketing for the which social media
+purposes of platform(s) and/or
+actively targeting network(s), including
+clients the number of
+influencers used by
+the firm, if any)
+☐ Mobile app (please specify which
+app)
+☐ Roadshows
+☐ Post
+☐ Calls (please specify
+whether you will be
+using a call centre,
+tied agents or
+whether calls will be
+placed by employees
+of the firm)
+☐ Dedicated website (please specify the
+domain names)
+☐ Dedicated marketing material
+☐ Webinars
+☐ Educational material
+☐ Others (please specify)
+Languages used ☐ English
+for marketing
+purposes ☐ Official language(s) of the home Member State
+☐ Official language(s) of the host Member State
+☐ Others:_________________________________________
+(*) Please place an (x) in the appropriate boxes. This includes any marketing means used by tied agents on
+behalf of the firm.
+(**) Social media campaigns are online marketing campaigns whereby a firm is creating and publishing online
+content, engaging with clients and potential clients. They may be conducted on one or more social media
+channels at the same time to increase awareness of specific products or firms. Social media channels are all
+online platforms, networks or websites allowing users and creators to reach out and/or interact with each other,
+such as social networks, blogs and vlogs, media sharing sites, content communities, discussion forums and
+bookmarking networks.
+Part 5 – Complaints
+Language(s) for which the investment ☐ English
+firm has the necessary arrangements
+to deal with complaints from clients ☐ Official language(s) of the home Member State
+from the host Member State
+☐ Official language(s) of the host Member State
+☐ Others: ___________________________________________
+Part 6 – Summary of the internal organisation in relation to the cross-border activities of the investment
+firm
+Please provide a summary explanation of: (*)
+(1) The main functional and legal reporting lines relating to the cross-border activities of the investment firm.
+(2) The main arrangements which have been put in place to ensure that the internal control functions have
+the capacity to control the cross-border activities (including those provided in a language other than
+English or the official language(s) of the home Member State).
+(3) The procedure for cross-border clients to submit and for the firm to deal with complaints resulting from
+the cross-border activities of the investment firm.
+(*) The summary description shall provide a concise overview of the main points related to (1), (2) and (3) above.
+The summary description shall provide a broad understanding of how the cross-border activities of the firm
+integrate in the overall business operationally, legally and from an internal control point of view.
+ANNEX II
+ANNEX III
+Form for the communication of a change in the particulars of an investment services and activities
+passport notification or in a notification for the provision of arrangements to facilitate access to an MTF
+or OTF by the competent authority of the home Member State to the competent authority of the host
+Member State
+Articles 7 and 8 of Commission Implementing Regulation (EU) 2017/2382
+Reference number: ………..
+Date: ………….
+Communication in accordance with Article 34(4) or Article 34(7) of Directive 2014/65/EU (1)
+FROM:
+Member State:
+Competent authority of the home Member State:
+Address:
+Designated contact point:
+Telephone number:
+Email:
+TO:
+Member State:
+Competent authority of the host Member State:
+Address:
+Designated contact point:
+Telephone number:
+Email:
+In accordance with Article 34(4) of the Directive 2014/65/EU, we wish to inform you that [name of firm], an
+investment firm/credit institution/ market operator authorised/supervised by [name of the competent authority of the
+home Member State], has:
+(a) amended the investment services and activities/ancillary services/financial instruments that it intends to carry
+on in your territory on a cross-border basis
+(b) changed its name from [previous name] to [new name] with effect from [date of change]
+(c) moved to the following address with effect from [date of change]: [new address]
+(d) changed its other contact information with effect from [date of change] to the following: [add any changes
+made to the contact information of Part 1 in Annex I]
+(e) engaged an additional registered tied agent in [name of the home Member State] to provide its investment
+services and activities in your territory on a cross-border basis
+(f) amended the list of Member States where the firm is actively targeting clients and/or the type of clients in
+such Member States
+(g) changed its internal organisation in relation to the provision of cross-border activities
+(h) amended the arrangements provided in [name of the host Member State] in order to facilitate the access to
+and trading of the [name of the MTF or OTF]
+(i) ceased to provide investment services and/or perform investment activities due to the
+withdrawal/cancellation of its authorisation with effect [date of withdrawal/cancellation];
+(j) decided to cease providing investment services and/or perform investment activities with effect [date of
+withdrawal of passporting notification].
+Please find attached a copy of the change of [investment services and activities particulars notification/particulars
+for the provision of arrangements to facilitate access to an MTF or OTF notification] with the relevant changes. If
+you have any queries, please do not hesitate to contact us.
+Yours sincerely,
+[signature]
+________________
+(1) Please amend as appropriate in accordance with the changes to be notified.
+
+
+######## NORMA: Regolamento ISVAP n. 10 del 2 gennaio 2008 Regolamento concernente le procedure di accesso all'attività assicurativa e l'albo delle imprese di assicurazione.  (id IVASS-faaa7cccad)
+
+=== K537 | [Premessa] REGOLAMENTO CONCERNENTE LA PROCEDURA DI ACCESSO ALL’ATTIVITÀ ASSICURATIVA E
+REGOLAMENTO N. 10 DEL 2 GENNAIO 2008
+REGOLAMENTO CONCERNENTE LA PROCEDURA DI ACCESSO ALL’ATTIVITÀ ASSICURATIVA E
+L’ALBO DELLE IMPRESE DI ASSICURAZIONE DI CUI AL TITOLO II DEL DECRETO LEGISLATIVO 7
+SETTEMBRE 2005, N. 209 – CODICE DELLE ASSICURAZIONI PRIVATE.
+MODIFICATO ED INTEGRATO DAL REGOLAMENTO ISVAP N. 33 DEL 10 MARZO 2010, DAL PROVVEDIMENTO
+IVASS N. 5 DEL 4 GIUGNO 2013 E DAL PROVVEDIMENTO IVASS N. 23 DEL 18 NOVEMBRE 2014. LE MODIFICHE
+SONO RIPORTATE IN CORSIVO.
+L’ISVAP
+(Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo)
+VISTA la legge 12 agosto 1982, n. 576 e le successive modificazioni ed integrazioni,
+concernente la riforma della vigilanza sulle assicurazioni;
+VISTO il decreto legislativo 7 settembre 2005, n. 209 e le successive modificazioni ed
+integrazioni, recante il Codice delle Assicurazioni Private;
+VISTO il decreto del Presidente della Repubblica 28 dicembre 2000, n. 445, recante il Testo
+Unico delle disposizioni legislative e regolamentari in materia di documentazione
+amministrativa;
+adotta il seguente:
+REGOLAMENTO
+INDICE
+TITOLO I - Disposizioni di carattere generale
+
+=== K538 | [Art. 3] (Ambito di applicazione)
+Art. 3 (Ambito di applicazione)
+TITOLO II – Accesso all’esercizio dell’attività assicurativa da parte di imprese con
+sede legale nel territorio della Repubblica
+Capo I – Procedura di autorizzazione all’esercizio dell’attività assicurativa e
+riassicurativa
+
+=== K558 | [Sezione II (2)] – Esercizio dell’attività nel territorio di Stati terzi
+Sezione II – Esercizio dell’attività nel territorio di Stati terzi
+
+=== K571 | [Sezione III - Art. 47] (Entrata in vigore)
+Art. 47 (Entrata in vigore)
+Elenco degli allegati:
+A1 Documentazione per la verifica dei requisiti degli esponenti aziendali
+B.12 Documentazione riguardante i requisiti di onorabilità dei soggetti che detengono,
+direttamente o indirettamente, il controllo dell’impresa o una partecipazione
+superiore al dieci per cento
+B.23 Documentazione per la verifica della sana e prudente gestione dei soggetti che
+detengono, direttamente o indirettamente, il controllo dell’impresa o una
+partecipazione superiore al dieci per cento
+B.3 Documentazione riguardante gli stretti legami
+Allegato sostituito dall’articolo 8, comma 1, del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Allegato sostituito dall’articolo 8, comma 2, del Provvedimento IVASS n. 23 del 18 novembre 2014
+Allegato sostituito dall’articolo 8, comma 3, del Provvedimento IVASS n. 23 del 18 novembre 2014.
+TITOLO I
+Disposizioni di carattere generale
+
+=== K572 | [Sezione III - Art. 1] (Fonti normative)
+Art. 1
+(Fonti normative)
+1. Il presente Regolamento è adottato ai sensi degli articoli 14, comma 1, lettera c) e comma
+5, 15, comma 4, 28, commi 5 e 6 e 349, comma 1, del decreto legislativo 7 settembre
+2005, n. 209.
+
+=== K573 | [Sezione III - Art. 2] (Definizioni)
+Art. 2
+(Definizioni)
+1. Ai fini del presente Regolamento si intende per:
+a) “albo delle imprese”: l’albo nel quale sono iscritte le imprese autorizzate dall’ISVAP
+all’esercizio dell’attività assicurativa e riassicurativa nel territorio della Repubblica;
+b) “alta Direzione”: l’amministratore delegato, il direttore generale, nonché l’alta
+dirigenza che svolge compiti di sovrintendenza gestionale;
+c) “attività in regime di libertà di prestazione di servizi”: l’attività che un’impresa di
+assicurazione svolge, da uno stabilimento situato nel territorio di uno Stato membro,
+assumendo obbligazioni con contraenti aventi il domicilio, o, se persone giuridiche, la
+sede in un altro Stato membro, ovvero assumendo rischi da uno stabilimento situato
+nel territorio di uno Stato membro diverso da quello in cui sono ubicati i rischi stessi;
+d) “attività in regime di stabilimento”: l’attività che un’impresa di assicurazione svolge, da
+uno stabilimento situato nel territorio di uno Stato membro, assumendo obbligazioni
+con contraenti aventi il domicilio, o, se persone giuridiche, la sede in un altro Stato
+membro, ovvero assumendo rischi da uno stabilimento situato nel territorio dello
+stesso Stato membro in cui sono ubicati i rischi;
+e) “decreto“: decreto legislativo 7 settembre 2005, n. 209, recante il Codice delle
+Assicurazioni Private;
+f) “impresa di assicurazione”: l’impresa autorizzata secondo quanto previsto nelle
+direttive comunitarie sull’assicurazione diretta;
+g) “impresa di riassicurazione”: l’impresa autorizzata all’esercizio della sola
+riassicurazione, diversa da una impresa di assicurazione o da una impresa di
+assicurazione extracomunitaria, la cui attività principale consiste nell’accettare i rischi
+ceduti da una impresa di assicurazione, da una impresa di assicurazione avente sede
+legale in uno Stato terzo, o da altre imprese di riassicurazione;
+h) “ISVAP” o “Autorità” ovvero “IVASS”: l’Istituto per la vigilanza sulle assicurazioni
+private e di interesse collettivo cui è succeduto l’IVASS, Istituto per la vigilanza sulle
+assicurazioni, ai sensi dell’art. 13 del decreto legge 6 luglio 2012, n. 95 convertito con
+legge 7 agosto 2012, n. 1354;
+i) “organo amministrativo”: il consiglio di amministrazione o, nelle imprese che hanno
+adottato il sistema di cui all’articolo 2409 octies del codice civile, il consiglio di
+gestione, per le imprese con sede legale in Stati terzi, l’organo sociale
+corrispondente;
+j) “particolari mutue assicuratrici”: le società di mutua assicurazione di cui all’articolo 52
+del decreto costituite ai sensi dell’articolo 2546 del codice civile;
+k) “partecipazioni rilevanti”: le partecipazioni che comportano il controllo dell’impresa di
+assicurazione e le partecipazioni individuate dall’ISVAP con regolamento, in conformità
+ai principi stabiliti nel regolamento adottato dal Ministro dello Sviluppo Economico;
+Comma modificato dall’articolo 1 del Provvedimento IVASS n. 23 del 18 novembre 2014. La precedente versione recitava:
+““ISVAP” o ‘Autorità’: l’Istituto per la vigilanza sulle assicurazioni private e di interesse collettivo”.
+l) “quota di garanzia”: la quota del margine di solvibilità come determinata ai sensi
+dell’articolo 46 del decreto legislativo 7 settembre 2005 n. 209;
+m) “rappresentante per la gestione dei sinistri": il rappresentante nominato dalle imprese
+esercenti l'attività assicurativa in un altro Stato membro in regime di libera
+prestazione di servizi, residente o stabilito nel proprio territorio e dotato dei poteri
+indicati nell’articolo 12 bis, paragrafo 4, della direttiva 88/357/CEE;
+n) “sede secondaria o succursale”: una sede che costituisce parte, sprovvista di
+personalità giuridica, di un’impresa di assicurazione e che effettua direttamente, in
+tutto o in parte, l’attività assicurativa;
+o) “Stato di origine”: lo Stato in cui è situata la sede legale dell’impresa che assume
+l’obbligazione o il rischio;
+p) “Stato membro”: uno Stato membro dell’Unione europea o uno Stato aderente allo
+Spazio economico europeo, come tale equiparato allo Stato membro dell’Unione
+europea;
+q) “Stato membro di prestazione di servizi”: lo Stato membro dell’obbligazione o in cui è
+ubicato il rischio, quando l’obbligazione o il rischio è assunto da uno stabilimento
+situato in altro Stato membro;
+r) “Stato membro di stabilimento”: lo Stato membro in cui è situato lo stabilimento dal
+quale l’impresa opera;
+s) “Stato terzo”: uno Stato che non è membro dell’Unione europea o non è aderente allo
+Spazio economico europeo;
+t) “stretti legami”: il rapporto tra due o più persone fisiche o giuridiche nei casi in cui
+sussiste:
+1) un legame di controllo ai sensi dell’articolo 72 del decreto legislativo 7 settembre
+2005 n. 209;
+2) una partecipazione, detenuta direttamente o per il tramite di società controllate,
+società fiduciarie o per interposta persona, almeno pari al dieci per cento del
+capitale o dei diritti di voto, ovvero una partecipazione che, pur restando al di
+sotto di tale limite, dà comunque la possibilità di esercitare un’influenza notevole
+ancorché non dominante;
+3) un legame in base al quale le stesse persone sono sottoposte al controllo del
+medesimo soggetto, o comunque sono sottoposte a direzione unitaria in virtù di
+un contratto o di una clausola statutaria, oppure quando gli organi di
+amministrazione sono composti in maggioranza dalle medesime persone, oppure
+quando esistono legami importanti e durevoli di riassicurazione;
+4) un rapporto di carattere tecnico, organizzativo giuridico e familiare che possa
+influire in misura rilevante sulla gestione dell’impresa;
+u) "Ufficio nazionale di assicurazione": l’organizzazione professionale che è costituita,
+conformemente alla raccomandazione n. 5 adottata il 25 gennaio 1949 dal
+sottocomitato dei trasporti stradali del comitato dei trasporti interni della Commissione
+economica per l'Europa dell'Organizzazione delle Nazioni Unite, e che raggruppa
+imprese di assicurazione che hanno ottenuto in uno Stato l'autorizzazione ad
+esercitare il ramo responsabilità civile autoveicoli.
+2. La numerazione dei rami vita e danni richiamati nel presente Regolamento è riferita alla
+classificazione di cui all’articolo 2, commi 1 e 3, del decreto.
+
+=== K574 | [Sezione III - Art. 3] (Ambito di applicazione)
+Art. 3
+(Ambito di applicazione)
+1. Il presente Regolamento disciplina:
+a) le procedure di autorizzazione all’esercizio dell’attività assicurativa e riassicurativa
+delle imprese aventi sede legale nel territorio della Repubblica e delle imprese aventi
+sede legale in uno Stato terzo che intendono operare nel territorio della Repubblica in
+regime di stabilimento;
+b) l’abilitazione delle imprese aventi sede legale nel territorio della Repubblica ad
+esercitare l’attività assicurativa in regime di stabilimento o di libera prestazione di
+servizi nel territorio di altri Stati membri o di Stati terzi;
+c) l’istituzione e il funzionamento dell’albo delle imprese.
+TITOLO II
+Accesso all’esercizio dell’attività assicurativa da parte di imprese con sede legale nel
+territorio della Repubblica
+Capo I
+Procedura di autorizzazione all’esercizio dell’attività assicurativa e riassicurativa
+
+=== K575 | [Sezione I - Art. 4 (2)] (Presentazione dell’istanza di autorizzazione)
+Art. 4
+(Presentazione dell’istanza di autorizzazione)
+1. L’impresa che intende esercitare l’attività assicurativa e riassicurativa nel territorio della
+Repubblica presenta all’IVASS istanza di autorizzazione5.
+2. All’istanza sono allegati:
+a) copia autentica dell’atto costitutivo e dello statuto sociale contenente le indicazioni
+relative ai limiti dell’oggetto sociale in conformità alle disposizioni di cui all’articolo 11
+del decreto. Lo statuto dell’impresa che intende esercitare congiuntamente i rami
+vita e i rami danni 1 e 2 reca l’indicazione della parte del capitale sociale o del fondo
+di garanzia, nonché delle riserve patrimoniali destinate rispettivamente alla gestione
+vita e alla gestione danni, secondo quanto previsto dalle disposizioni di attuazione
+dell’articolo 348, comma 2, del decreto;
+b) documentazione comprovante l’avvenuto versamento del capitale sociale o del
+fondo di garanzia adeguato alle previsioni formulate nel programma di attività di cui
+all’articolo 7 e, comunque, non inferiore alla misura minima prevista dall’articolo 5;
+c) documentazione comprovante l’ammontare dei mezzi finanziari disponibili a
+copertura delle spese di impianto, secondo quanto indicato nell’articolo 6;
+d) elenco dei componenti degli organi sociali, con indicazione del sistema e del
+contenuto delle deleghe dell’organo amministrativo e dell’Alta direzione;
+e) documentazione necessaria ai fini della verifica dei requisiti di onorabilità,
+professionalità e indipendenza delle persone alle quali sono attribuite funzioni di
+amministrazione, di direzione e di controllo, ai sensi dell’articolo 76 del decreto e
+delle relative disposizioni di attuazione. La documentazione per la verifica dei requisiti
+è indicata nell’allegato A6;
+e bis) a partire dal 1° gennaio 2015, attestazione della sussistenza, in base alla politica
+adottata dall’organo amministrativo, dei requisiti di idoneità alla carica dei soggetti
+indicati nell’art. 5, comma 2, lett. e) del Regolamento ISVAP n. 20 del 26 marzo
+20087;
+f) relazione sulla struttura organizzativa, comprensiva dell’organigramma aziendale e
+della descrizione delle funzioni attribuite alle singole unità aziendali ed ai relativi
+responsabili;
+g) programma di attività contenente le informazioni indicate nell’articolo 7 ed ogni altro
+elemento utile ad illustrare compiutamente le caratteristiche operative della impresa;
+Comma modificato dall’articolo 2, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 2, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Lettera inserita dall’articolo 2, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+h) relazione tecnica di cui all’articolo 8;
+i) elenco dei soggetti che partecipano direttamente o indirettamente al capitale
+dell’impresa, con l’indicazione delle rispettive quote di partecipazione in valore
+assoluto e in termini percentuali; per le partecipazioni indirette è specificato il
+soggetto tramite il quale è detenuta la partecipazione, ai sensi dell’articolo 73 del
+decreto;
+j) documentazione di cui all’articolo 9 relativa ai soggetti partecipanti al capitale;
+k) documentazione necessaria ai fini della verifica dell’insussistenza di fattispecie di
+stretti legami, secondo quanto indicato nell’articolo 10.
+3. L’impresa che intende esercitare anche l’attività riassicurativa può chiedere
+l’autorizzazione esclusivamente per i rami per i quali richiede l’autorizzazione ad
+esercitare l’attività assicurativa.
+4. Non sono tenuti a comprovare il possesso dei requisiti di onorabilità di cui alla lettera e) i
+soggetti che svolgono funzioni di amministrazione, di direzione e di controllo presso
+imprese di assicurazione o di riassicurazione.
+5. (abrogato)8
+
+=== K576 | [Sezione I - Art. 5 (2)] (Requisiti di capitale o del fondo di garanzia)
+Art. 5
+(Requisiti di capitale o del fondo di garanzia)
+1. Ai fini del rilascio dell’autorizzazione, l’ammontare minimo iniziale del capitale sociale o
+del fondo di garanzia è stabilito in misura non inferiore a:
+a) 5 milioni di euro, per l’esercizio di uno dei rami vita I, II, III, IV, V e VI;
+b) 5 milioni di euro, per l’esercizio dei rami danni 10, 11, 12, 13, 14 e 15;
+c) 2,5 milioni di euro, per l’esercizio dei rami danni 1, 2, 3, 4, 5, 6, 7, 8, 16 e 18;
+d) 1,5 milioni di euro, per l’esercizio dei rami danni 9 e 17;
+e) 7,5 milioni di euro, per l’esercizio congiunto dei rami vita e dei rami danni 1 e 2. Di
+tale importo, 5 milioni di euro sono destinati alla gestione dei rami vita e 2,5 milioni
+di euro alla gestione dei rami danni 1 e 2.
+2. Se l’autorizzazione riguarda più rami di assicurazione, per la determinazione dell’importo
+minimo del capitale iniziale o del fondo di garanzia, si ha riguardo al solo ramo per il
+quale, ai sensi del comma 1, è richiesta la misura più elevata.
+
+=== K577 | [Sezione I - Art. 6 (2)] (Fondo a copertura delle spese di impianto)
+Art. 6
+(Fondo a copertura delle spese di impianto)
+1. L’impresa, in aggiunta al capitale sociale o al fondo di garanzia di cui all’articolo 5, deve
+disporre di mezzi finanziari adeguati alla copertura delle spese di impianto, relative alla
+costituzione dei servizi amministrativi e tecnici, centrali e periferici, e per
+l’organizzazione agenziale e produttiva, come risultanti dal programma di attività.
+2. I mezzi di cui al comma 1 confluiscono in un fondo patrimoniale specificamente
+destinato alle finalità indicate al medesimo comma, che non può essere computato ai fini
+del margine di solvibilità disponibile.
+3. Il fondo deve restare integro nel periodo intercorrente tra la presentazione dell’istanza ed
+il rilascio dell’autorizzazione. I soci effettuano ulteriori versamenti commisurati alle spese
+eventualmente sostenute dall’impresa in tale periodo, qualora non coperte dai redditi
+derivanti dalle attività patrimoniali.
+Comma abrogato dall’articolo 2, comma 1, lettera d), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 5
+disponeva: “Con riguardo alla documentazione di cui al comma 1, lettera e) fino all’entrata in vigore delle disposizioni di
+attuazione dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1”.
+4. Decorso un triennio dal rilascio dell’autorizzazione le disponibilità residue del fondo sono
+imputabili, con le dovute procedure, a capitale sociale.
+
+=== K578 | [Sezione I - Art. 7] (Programma di attività)
+Art. 7
+(Programma di attività)
+1. Il programma di attività, approvato dall’organo amministrativo, illustra con riferimento al
+primo triennio:
+a) per ciascun ramo per cui viene richiesta l’autorizzazione, le obbligazioni ed i rischi
+che l’impresa intende assumere;
+b) gli elementi patrimoniali che costituiscono il capitale sociale o il fondo di garanzia;
+c) le previsioni relative alle spese di impianto dei servizi amministrativi e tecnici,
+centrali e periferici, e dell’organizzazione agenziale e produttiva;
+d) i criteri che l’impresa intende seguire per la riassicurazione dei rischi assunti e il
+piano di riassicurazione, a cui vanno allegate le bozze dei trattati di riassicurazione
+e le lettere di impegno dei riassicuratori a sottoscriverli;
+e) la struttura della rete di vendita e le modalità operative della distribuzione, in
+conformità al Regolamento ISVAP n. 5 del 16 ottobre 2006;
+f) le procedure di assunzione e di valutazione dei rischi da sottoscrivere;
+g) le procedure di emissione delle polizze e di incasso dei premi. In caso di vendita
+tramite sportelli bancari, sono indicati anche gli aspetti organizzativi ed informatici e i
+presidi tesi a garantire la sicurezza e riservatezza dei dati, escludendo la possibilità
+di modifiche da parte dell’operatore bancario;
+h) la struttura liquidativa, direzionale e periferica;
+i) le procedure di liquidazione dei sinistri e delle somme da pagare;
+j) le procedure di controllo interno e di gestione dei rischi che l’impresa intende
+adottare;
+k) l’assetto e la composizione delle funzioni di revisione interna, di risk management e
+di compliance;
+l) le procedure per il rispetto della normativa antiriciclaggio di cui al decreto legislativo
+21 novembre 2007, n. 2319;
+m) per ciascun soggetto terzo a cui l’impresa intende esternalizzare proprie attività, le
+indicazioni richieste dal Regolamento ISVAP di attuazione degli articoli 87 e 191,
+comma 1, lettera c) del decreto in materia di adeguatezza del sistema dei controlli
+interni e di gestione dei rischi delle imprese e dei gruppi assicurativi.
+2. Il programma contiene, oltre a quanto previsto al comma 1, con riferimento al primo
+triennio:
+a) la prevedibile situazione di tesoreria;
+b) le previsioni relative ai mezzi finanziari necessari per la copertura delle riserve
+tecniche e del margine di solvibilità, tenendo conto che i mezzi finanziari a copertura
+del margine di solvibilità devono essere tali da garantire almeno la copertura della
+quota di garanzia;
+c) le previsioni relative all’ammontare dei premi, coerenti con le possibilità operative
+offerte dal mercato;
+d) le previsioni relative alle spese di gestione, diverse dalle spese di impianto e, in
+particolare, quelle relative alle spese generali correnti e all’ammontare delle
+provvigioni riconosciute alle reti di vendita;
+e) le previsioni relative all’ammontare delle prestazioni dovute per i rami vita e
+all’ammontare dei sinistri da pagare per i rami danni, comprese le spese di
+liquidazione, da iscrivere a riserva;
+f) il dettaglio delle previsioni dei costi e dei ricavi riferibili a ciascun ramo, tenuto conto
+delle operazioni di assicurazione, delle operazioni di riassicurazione passiva e delle
+Lettera modificata dall’articolo 3 del Provvedimento IVASS n. 23 del 18 novembre 2014.
+operazioni di riassicurazione attiva, se l’impresa intende essere autorizzata anche
+all’esercizio di quest’ultima.
+Le previsioni sono rappresentate utilizzando i modelli di bilancio (stato patrimoniale,
+conto economico, prospetto delle attività a copertura delle riserve tecniche, prospetto del
+margine di solvibilità) e la modulistica di vigilanza (conti tecnici di ramo) previsti dalla
+vigente normativa.
+3. Il programma di attività dell’impresa che presenta istanza di autorizzazione all’esercizio
+dell’attività nei rami danni 10, 12, 14, 15, 17 e 18 è integrato dalle informazioni e dalla
+documentazione previsti dalla Sezione II del presente Capo.
+4. L’impresa che richiede l’autorizzazione all’esercizio congiunto dei rami vita e dei rami
+danni 1 e 2, fornisce le informazioni richiamate per il programma di attività e la relazione
+tecnica in maniera distinta per le due gestioni.
+5. Nel caso in cui l’impresa richieda l’autorizzazione anche all’esercizio dell’attività
+riassicurativa, il programma di attività illustra la natura dei rischi che l’impresa si propone
+di garantire, il tipo di accordi di riassicurazione che l’impresa intende concludere con le
+imprese cedenti, la politica di retrocessione, nonché i dati di cui al comma 2 riferiti
+all’attività riassicurativa.
+
+=== K579 | [Sezione I - Art. 8] (Relazione tecnica)
+Art. 8
+(Relazione tecnica)
+1. La relazione tecnica contiene l’esposizione dei criteri in base ai quali il programma di
+attività è stato redatto e sono state determinate le previsioni relative ai ricavi, ai costi ed
+ai flussi di tesoreria.
+2. La relazione tecnica è sottoscritta da un attuario iscritto all’albo professionale.
+3. La relazione tecnica delle imprese che presentano istanza di autorizzazione all’esercizio
+dell’attività nei rami danni 10 e 12, è integrato dalle informazioni previste dalla Sezione II
+del presente Capo.
+
+=== K580 | [Sezione I - Art. 9 (2)] (Soggetti partecipanti al capitale)
+Art. 9
+(Soggetti partecipanti al capitale)
+1. L’impresa, unitamente all’istanza di autorizzazione di cui all’articolo 4, trasmette
+all’IVASS la documentazione necessaria alla verifica della sussistenza dei requisiti di
+onorabilità in capo ai soggetti che detengono, direttamente o indirettamente, il controllo o
+una partecipazione rilevante nell’impresa, secondo quanto previsto dall’articolo 77 del
+decreto e dal relativo regolamento di attuazione del Ministro dello Sviluppo Economico,
+nonché della sussistenza dei presupposti per il rilascio dell’autorizzazione all’acquisizione
+del controllo o della partecipazione, secondo quanto previsto dall’articolo 68 del decreto e
+dalle relative disposizioni di attuazione10.
+2. Nel caso si tratti di persone giuridiche, i requisiti di onorabilità devono essere posseduti
+dagli amministratori, dai sindaci e dai direttori generali delle stesse. La documentazione
+per la verifica dei requisiti è indicata nell’Allegato B.111.
+3. Ai fini dell’esercizio dei controlli sui soggetti partecipanti al capitale, l’ IVASS può
+richiedere ulteriori dati, informazioni e documenti all’impresa e agli stessi soggetti.
+Comma modificato dall’articolo 4, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma sostituito dall’articolo 4, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014. La versione
+precedente del comma 2 recitava: “Fino all’emanazione dei provvedimenti di cui al comma 1 si applica quanto disposto
+dall’articolo 45, commi 2 e 3”.
+
+=== K581 | [Sezione I - Art. 10] (Stretti legami)
+Art. 10
+(Stretti legami)
+1. L’impresa, al fine di consentire all’ISVAP l’individuazione delle fattispecie di stretti legami
+tra la stessa o i soggetti del gruppo di appartenenza ed altri soggetti, che possono
+recare ostacolo all’effettivo esercizio delle funzioni di vigilanza, allega all’istanza di
+autorizzazione la documentazione di cui all’allegato B.3 al Regolamento. L’impresa non
+è tenuta a trasmettere tale documentazione se la stessa è stata già inviata nell’ambito
+delle verifiche di cui all’articolo 9.
+2. In relazione alle verifiche da effettuare ai fini della valutazione delle fattispecie di stretti
+legami, l’ISVAP può richiedere ulteriori dati, informazioni e documenti all’impresa ed agli
+altri soggetti interessati dalle verifiche stesse.
+
+=== K582 | [Sezione II (3)] Istanza di autorizzazione all’esercizio di specifici rami danni
+Sezione II
+Istanza di autorizzazione all’esercizio di specifici rami danni
+
+=== K583 | [Sezione II - Art. 11 (2)] (Programma di attività per l’autorizzazione all’esercizio dei rami 10 e 12)
+Art. 11
+(Programma di attività per l’autorizzazione all’esercizio dei rami 10 e 12)
+1. L’impresa che richiede l’autorizzazione all’esercizio dei rami 10 e 12 allega al
+programma di attività:
+a) le condizioni generali e speciali di contratto;
+b) la nota informativa redatta ai sensi dell’articolo 185 del decreto e delle relative
+disposizioni di attuazione;
+c) l’elenco dei mandatari per la liquidazione dei sinistri da designare nei singoli Stati
+membri;
+d) la documentazione attestante il rispetto dell’articolo 131, comma 1, del decreto in
+ordine all’allestimento del sito Internet.
+2. L’impresa che richiede l’autorizzazione per i rami 10 e 12 indica nella relazione tecnica di
+cui all’articolo 8 le previsioni relative all’ammontare dei sinistri da pagare e da iscrivere a
+riserva, comprese le spese di liquidazione, tenendo conto della frequenza media e del
+costo medio dei sinistri.
+
+=== K584 | [Sezione II - Art. 12 (2)] (Programma di attività per l’autorizzazione all’esercizio dei rami 14 e 15)
+Art. 12
+(Programma di attività per l’autorizzazione all’esercizio dei rami 14 e 15)
+1. L’impresa che richiede l’autorizzazione all’esercizio dei rami 14 o 15 allega al
+programma di attività:
+a) una relazione sulla struttura e sulle procedure che regolano le istruttorie tecnico-
+informative, finalizzate ad evidenziare la natura e la caratteristica dei rischi da
+garantire nonché a valutare l’assicurando e la solidità patrimoniale, finanziaria ed
+economica e l’affidabilità dei debitori, in modo da poter determinare i limiti di
+affidamento, le caratteristiche tecniche del contratto ed il costo della garanzia;
+b) una relazione illustrativa delle procedure di affidamento, di emissione dei contratti
+nonché di gestione delle polizze, dei sinistri e dei recuperi e delle procedure di
+conservazione della documentazione;
+c) documentazione dalla quale risulti il livello di specializzazione del personale
+incaricato della gestione del ramo.
+
+=== K585 | [Sezione II - Art. 13 (2)] (Programma di attività per l’autorizzazione all’esercizio del ramo 17)
+Art. 13
+(Programma di attività per l’autorizzazione all’esercizio del ramo 17)
+1. L’impresa che richiede l’autorizzazione all’esercizio del ramo 17 indica nel programma di
+attività quale, tra le modalità di cui all’articolo 164, comma 2, del decreto, intende
+adottare per la gestione dei sinistri e per la relativa attività di consulenza.
+2. Se l’impresa intende avvalersi della facoltà di cui all’articolo 164, comma 2, lettera a), del
+decreto, illustra nel programma di attività le procedure idonee a garantire l’indipendenza
+del personale incaricato della gestione dei sinistri e della relativa attività di consulenza,
+evitando che lo stesso svolga le medesime attività in altri rami danni esercitati
+dall’impresa o da altre imprese con le quali intercorrono legami finanziari, commerciali o
+amministrativi.
+3. Se l’impresa intende avvalersi della facoltà di cui all’articolo 164, comma 2, lettera b), del
+decreto, allega al programma di attività gli accordi, o le bozze di accordi, che
+conferiscono ad altra impresa l’incarico di provvedere alla gestione dei sinistri del ramo
+ed alla relativa consulenza. Fermo restando quanto disposto dal Regolamento ISVAP di
+attuazione degli articoli 87 e 191, comma 1, lettera c) del decreto in materia di
+adeguatezza del sistema dei controlli interni e di gestione dei rischi delle imprese e dei
+gruppi assicurativi, gli accordi prevedono l’impegno dell’impresa incaricata a:
+a) trasmettere l’elenco del personale preposto all’attività di gestione dei sinistri e a
+quella di consulenza;
+b) curare fino ad esaurimento, anche in caso di cessazione per qualsiasi causa
+dell’accordo, la gestione dei sinistri in corso.
+
+=== K586 | [Sezione II - Art. 14 (2)] (Programma di attività per l’autorizzazione all’esercizio del ramo 18)
+Art. 14
+(Programma di attività per l’autorizzazione all’esercizio del ramo 18)
+1. L’impresa che richiede l’autorizzazione all’esercizio del ramo 18 descrive nel programma
+di attività la struttura organizzativa nonché le modalità operative che intende adottare per
+adempiere agli obblighi derivanti dall’esercizio del ramo, allegando idonea
+documentazione. La struttura organizzativa, interna od esterna, cui è affidata l’attività di
+gestione dei sinistri che richiedono l’erogazione di prestazioni in natura è organizzata in
+modo tale da soddisfare i requisiti determinati ai sensi dell’articolo 30, comma 3, del
+decreto e delle relative disposizioni di attuazione.
+2. L’impresa non dotata di attrezzature e di personale propri per l’erogazione delle
+prestazioni di assistenza in natura, ai fini del rilascio dell’autorizzazione, dimostra di poter
+disporre dei mezzi e degli operatori di una o più strutture organizzative, in possesso dei
+requisiti di cui al comma 1, appartenenti a società terza non esercente l’attività
+assicurativa o ad altra impresa di assicurazione. A tal fine allega all’istanza di
+autorizzazione:
+a) nel caso di struttura di società terza o di altra impresa di assicurazione autorizzata
+all’esercizio dell’attività assicurativa nel ramo 18, copia dell’accordo con il quale è
+conferito a tale società o impresa, proprietaria della struttura, l’incarico di
+provvedere alla gestione dei sinistri del ramo;
+b) nel caso di struttura di altra impresa di assicurazione autorizzata all’esercizio
+dell’attività assicurativa nel ramo 18 e dell’attività riassicurativa, bozza del trattato di
+riassicurazione obbligatoria in quota stipulato con tale impresa e copia del collegato
+accordo di conferimento al riassicuratore dell’incarico di trattazione dei sinistri del
+ramo. Il trattato di riassicurazione può prevedere una cessione massima del 90 per
+cento dei premi e dei sinistri del ramo.
+3. Fermo restando quanto disposto dal Regolamento ISVAP di attuazione degli articoli 87 e
+191, comma 1, lettera c) del decreto in materia di adeguatezza del sistema dei controlli
+interni e di gestione dei rischi delle imprese e dei gruppi assicurativi, l’accordo di cui al
+comma 2, lettera a), stipulato con la società non esercente attività assicurativa prevede
+l’impegno della stessa a:
+a) consentire il controllo da parte dell’ISVAP anche per quanto concerne la sua rete di
+collaboratori indipendenti;
+b) comunicare all’ISVAP l’eventuale assunzione di nuovi obblighi di prestazione di
+servizi verso altri soggetti.
+
+=== K587 | [Sezione III (2)] Istruttoria e provvedimento finale
+Sezione III
+Istruttoria e provvedimento finale
+
+=== K588 | [Sezione III - Art. 15] (Attività istruttoria)
+Art. 15
+(Attività istruttoria)
+1. Ai fini del rilascio dell’autorizzazione, l’ISVAP verifica, sulla base della documentazione
+prodotta dall’impresa, la sussistenza delle condizioni di cui all’articolo 14 del decreto e al
+presente Capo.
+2. Tempestivamente, e comunque non oltre il termine previsto dal Regolamento ISVAP n.
+2 del 9 maggio 2006, l’ISVAP comunica all’impresa l’avvio del procedimento.
+3. Nel caso in cui l’istanza risulti incompleta per assenza di uno o più dei documenti o delle
+informazioni indicati all’articolo 4, ovvero risulti irregolare, l’ISVAP ne dà comunicazione
+all’impresa tempestivamente, e comunque non oltre il termine previsto dal Regolamento
+ISVAP n. 2 del 9 maggio 2006, indicando le cause dell’incompletezza o dell’irregolarità.
+In tali casi, il termine del procedimento decorre nuovamente dalla data del
+completamento o della regolarizzazione dell’istanza.
+4. Ai fini dello svolgimento dell’istruttoria, l’ISVAP può richiedere all’impresa istante
+informazioni e chiarimenti ad integrazione della documentazione prevista dal presente
+Regolamento. In tali casi il termine per la conclusione del procedimento è sospeso fino
+al ricevimento delle informazioni e della documentazione richiesta. L’ISVAP comunica
+all’impresa la sospensione del termine per provvedere.
+5. Ai fini dello svolgimento dell’istruttoria, l’ISVAP può richiedere ad Autorità nazionali od
+estere elementi informativi, documentazione, valutazioni o pareri, in particolare quando il
+procedimento di autorizzazione include verifiche nei confronti di soggetti vigilati da tali
+Autorità. In questo caso, il termine per la conclusione del procedimento è sospeso sino
+alla data del ricevimento di quanto richiesto.
+6. Nelle ipotesi di cui all’articolo 203 del decreto, l’ISVAP consulta in via preliminare le
+Autorità competenti degli altri Stati membri in merito al rilascio delle autorizzazioni. In tali
+casi, il termine per la conclusione del procedimento è sospeso sino alla data di
+acquisizione del parere delle Autorità consultate.
+7. Nei casi previsti dai commi 5 e 6, l’ISVAP comunica all’impresa la sospensione e la
+riapertura del termine per provvedere.
+8. Trascorsi novanta giorni senza che l’impresa abbia prodotto la documentazione
+integrativa richiesta ai sensi dei commi 3 e 4, l’istanza di autorizzazione si intende
+decaduta. L’ISVAP ne dà comunicazione all’impresa istante.
+9. Per quanto non disciplinato dal presente articolo si applicano le previsioni del
+Regolamento ISVAP n. 2 del 9 maggio 2006.
+
+=== K589 | [Sezione III - Art. 16 (2)] (Provvedimento di autorizzazione)
+Art. 16
+(Provvedimento di autorizzazione)
+1. In caso di esito positivo dell’istruttoria, l’ISVAP emana il provvedimento di autorizzazione
+entro novanta giorni dalla data di presentazione dell’istanza fatte le salve le ipotesi di
+interruzione e di sospensione di cui all’articolo 15 e trasmette il provvedimento
+all’impresa istante.
+2. L’impresa invia all’ISVAP il certificato attestante l’iscrizione nel registro delle imprese.
+3. L’ISVAP, preso atto dell’adempimento di cui al comma 2, iscrive l’impresa nell’albo di cui
+all’articolo 35, dandone comunicazione all’impresa e pubblica il provvedimento di
+autorizzazione nel Bollettino e nel proprio sito internet.
+4. L’ impresa può avviare l’attività dal momento in cui è iscritta nell’albo delle imprese.
+
+=== K590 | [Sezione III - Art. 17 (2)] (Diniego dell’autorizzazione)
+Art. 17
+(Diniego dell’autorizzazione)
+1. In caso di insussistenza delle condizioni di cui all’articolo 14 del decreto e di cui al
+presente Capo, l’ISVAP, prima della formale adozione del relativo provvedimento,
+comunica all’impresa interessata i motivi che ostano all'accoglimento dell’istanza,
+invitandola a fornire eventuali dati o documenti utili ad evitare il rigetto.
+2. Entro il termine indicato dall’ISVAP, comunque non inferiore a dieci giorni dal
+ricevimento della comunicazione, l’impresa interessata può presentare per iscritto le
+proprie osservazioni, eventualmente corredate da documentazione di supporto.
+3. La comunicazione di cui al comma 1 interrompe il termine per la conclusione del
+procedimento, che inizia nuovamente a decorrere dalla data di presentazione delle
+osservazioni12.
+4. Decorso inutilmente il termine di cui al comma 2, o nel caso in cui permangano i
+presupposti per il diniego dell’autorizzazione, l’ISVAP emana il provvedimento di rigetto
+definitivo dell’istanza dando conto delle relative motivazioni.
+5. L’ISVAP comunica all’impresa istante il provvedimento di diniego dell’autorizzazione.
+Capo II
+Estensione dell’autorizzazione
+
+=== K591 | [Sezione III - Art. 18 (2)] (Istanza di autorizzazione ad estendere l’esercizio dell’attività)
+Art. 18
+(Istanza di autorizzazione ad estendere l’esercizio dell’attività)
+1. L’impresa autorizzata all’esercizio dell’attività assicurativa e riassicurativa in uno o più
+rami vita o danni, che intende estendere l’attività ad altri rami o rischi rientranti nei rami
+per i quali è stata autorizzata in via limitata, presenta all’ISVAP istanza di estensione
+dell’autorizzazione. A tal fine allega documentazione idonea a dimostrare che:
+a) è stato interamente versato il capitale sociale o il fondo di garanzia minimo previsto
+per l’esercizio dei nuovi rami;
+b) è in regola con le disposizioni relative alle riserve tecniche, al margine di solvibilità
+individuale ed alla quota di garanzia, nonché al margine di solvibilità corretto, se
+l’impresa è soggetta al relativo calcolo. Se per l’esercizio dei nuovi rami è richiesta
+una quota di garanzia più elevata di quella posseduta, l’impresa deve dimostrare
+altresì di disporre di tale quota minima;
+c) dispone del fondo a copertura delle spese di impianto di cui all’articolo 6, adeguato
+in funzione dei nuovi rami o rischi oggetto dell’estensione se l’esercizio di tali rami o
+rischi comporta spese di impianto ulteriori.
+Comma modificato dall’articolo 1, comma 1, del Provvedimento IVASS n. 5 del 4 giugno 2013. Il comma 3 disponeva
+“La comunicazione di cui al comma 1 sospende il termine per la conclusione del procedimento, che inizia nuovamente a
+decorrere dalla data di presentazione delle osservazioni”.
+2. L’impresa, in aggiunta alla documentazione di cui al comma 1, trasmette copia dello
+statuto, dal quale risulti l’inclusione nell’oggetto sociale dell’esercizio dei rami vita o dei
+rami danni oggetto dell’estensione, ivi compresa l’eventuale attività di riassicurazione.
+Se l’estensione dell’attività determina l’esercizio congiunto dei rami vita e dei rami danni
+1 e 2, lo statuto indica la parte del capitale sociale o del fondo di garanzia nonché delle
+riserve patrimoniali destinate rispettivamente alla gestione vita e alla gestione danni,
+secondo quanto previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del
+decreto.
+3. L’istanza di autorizzazione è corredata del programma di attività di cui all’articolo 7,
+concernente l’attività oggetto di estensione, nonché della relazione tecnica di cui
+all’articolo 8. In caso di estensione dell’esercizio dell’attività nei rami 10, 12, 14, 15, 17 e
+18, il programma di attività è integrato dalle informazioni e dalla documentazione previsti
+dal Capo I, Sezione II, del presente Titolo.
+
+=== K592 | [Sezione III - Art. 19] (Istruttoria)
+Art. 19
+(Istruttoria)
+1. Ai fini del rilascio dell’autorizzazione ad estendere l’attività, l’ISVAP verifica, sulla base
+della documentazione prodotta dall’impresa, la sussistenza dei requisiti e delle
+condizioni di cui all’articolo 15 del decreto e di cui al Titolo II, Capo II del presente
+Regolamento.
+2. Al procedimento di estensione si applica quanto previsto dall’articolo 15, commi da 2 a
+9.
+
+=== K593 | [Sezione III - Art. 20] (Provvedimento di estensione)
+Art. 20
+(Provvedimento di estensione)
+1. In caso di esito positivo dell’istruttoria, l’ISVAP emana il provvedimento di estensione
+dell’autorizzazione entro novanta giorni dalla data di presentazione dell’istanza, fatte
+salve le ipotesi di interruzione e di sospensione di cui all’articolo 19, comma 2.
+2. L’ISVAP trasmette all’impresa istante il provvedimento di estensione dell’autorizzazione,
+provvede all’aggiornamento dell’albo di cui all’articolo 35, dandone comunicazione
+all’impresa, e pubblica il provvedimento di autorizzazione nel Bollettino e nel proprio sito
+internet.
+3. L’impresa che ha ottenuto l’autorizzazione ad estendere l’esercizio dell’attività
+assicurativa a nuovi rami o rischi, può avviare la nuova attività a decorrere dal momento
+in cui l’autorizzazione all’estensione viene annotata nell’albo delle imprese.
+
+=== K594 | [Sezione III - Art. 21 (2)] (Diniego dell’estensione)
+Art. 21
+(Diniego dell’estensione)
+1. In caso di insussistenza delle condizioni di cui all’articolo 15 del decreto e di cui al
+presente Capo, si applicano le diposizioni dell’articolo 17.
+Capo III
+Abilitazione all’esercizio dell’attività assicurativa al di fuori del territorio della
+Repubblica italiana
+
+=== K595 | [Sezione I (2)] Esercizio dell’attività nel territorio di altri Stati membri
+Sezione I
+Esercizio dell’attività nel territorio di altri Stati membri
+
+=== K596 | [Sezione I - Art. 22 (2)] (Esercizio dell’attività in regime di stabilimento)
+Art. 22
+(Esercizio dell’attività in regime di stabilimento)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+istituire una sede secondaria in un altro Stato membro ne dà preventiva comunicazione
+all’IVASS13 ai sensi dell’articolo 16 del decreto, indicando lo Stato, o gli Stati, in
+cui intende esercitare l’attività. A tal fine allega alla comunicazione:
+a) una relazione che illustra:
+1) le motivazioni dell’operazione;
+2) gli obiettivi che intende conseguire con la creazione della sede secondaria;
+b) un programma di attività contenente le seguenti informazioni:
+1) i rischi e le obbligazioni che intende assumere;
+2) la struttura organizzativa della sede secondaria con indicazione della
+denominazione e dell’indirizzo della sede, del personale che intende impiegare e
+dei costi di impianto e di gestione;
+3) le previsioni triennali relative ai costi e ai ricavi riferibili a ciascun ramo che
+intende esercitare;
+4) la situazione previsionale del margine di solvibilità;
+5) la struttura della rete di vendita di cui intende avvalersi;
+6) le procedure di liquidazione dei sinistri e delle somme da pagare;
+c) la documentazione comprovante la nomina di un rappresentante generale avente
+domicilio allo stesso indirizzo della sede secondaria;
+d) la copia del mandato conferito al rappresentante generale conforme a quanto
+previsto dall’articolo 16, comma 3, del decreto;
+e) la documentazione comprovante il possesso dei requisiti di onorabilità e professionalità
+in capo al rappresentante generale o, se diverso, della persona preposta alla gestione
+effettiva, individuati ai sensi dell’articolo 76 del decreto e delle relative disposizioni di
+attuazione. La documentazione per la verifica dei requisiti è indicata nell’allegato A14.
+2. (abrogato)15
+3. L’impresa che intende esercitare il ramo 10, esclusa la responsabilità del vettore, allega
+alla comunicazione di cui al comma 1 anche una dichiarazione dalla quale risulta che
+essa è divenuta membro dell’Ufficio nazionale di assicurazione e del Fondo nazionale di
+garanzia dello Stato della sede secondaria.
+4. L’impresa che intende esercitare il ramo 17 indica anche la modalità di gestione di
+sinistri scelta tra quelle previste dall’articolo 3, paragrafo 2, della direttiva 87/344/CEE.
+5. L’impresa che intende esercitare il ramo 18 fornisce indicazioni sul personale e sulle
+attrezzature di cui intende avvalersi e sulle modalità operative da adottare per l’esercizio
+del ramo.
+6. La documentazione indicata al comma 1, lettere a), b), c) e d), nonché quella richiamata
+nei commi 3, 4 e 5 è trasmessa anche nella lingua ufficiale dello Stato membro in cui
+l’impresa intende operare o in lingua inglese.
+7. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’IVASS ai sensi e per gli effetti di cui all’articolo 17, comma 5
+del decreto16.
+Comma modificato dall’articolo 5, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 5, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma abrogato dall’articolo 5, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 2
+disponeva: “Con riguardo alla documentazione di cui al comma 1, lettera e), fino all’entrata in vigore delle disposizioni di
+attuazione dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1, lettera a)”.
+Comma modificato dall’articolo 5, comma 1, lettera d), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+
+=== K597 | [Sezione I - Art. 23 (2)] (Estensione dell’abilitazione all’esercizio dell’attività in regime di stabilimento)
+Art. 23
+(Estensione dell’abilitazione all’esercizio dell’attività in regime di stabilimento)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+estendere l’attività della propria sede secondaria in un altro Stato membro a rami e rischi
+non oggetto della prima abilitazione invia all’ISVAP, con riguardo ai rami e ai rischi
+oggetto di estensione, apposita comunicazione recante le informazioni e la
+documentazione di cui all’articolo 22.
+2. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP ai sensi e per gli effetti di cui all’articolo 17, comma 5,
+del decreto.
+
+=== K598 | [Sezione I - Art. 24 (2)] (Esercizio dell’attività in regime di libertà di prestazione di servizi)
+Art. 24
+(Esercizio dell’attività in regime di libertà di prestazione di servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+operare in regime di libertà di prestazione di servizi in un altro Stato membro ne dà
+preventiva comunicazione all’ISVAP ai sensi dell’articolo 18 del decreto, allegando alla
+comunicazione un programma di attività contenente le seguenti informazioni:
+a) gli Stati membri in cui intende svolgere l’attività;
+b) la denominazione e indirizzo degli stabilimenti situati negli Stati membri dai quali
+intende esercitare l’attività di libera prestazione di servizi se tale attività non viene
+svolta direttamente dalla sede legale dell’impresa;
+c) la natura dei rischi e delle obbligazioni che intende assumere;
+d) le previsioni triennali relative ai costi e ai ricavi riferibili a ciascun ramo in cui intende
+operare;
+e) la rete di vendita di cui intende avvalersi.
+2. L’impresa che intende esercitare il ramo 10, esclusa la responsabilità del vettore, indica,
+nella comunicazione di cui al comma 1, il nominativo e l’indirizzo del rappresentante per
+la gestione dei sinistri, allegando una dichiarazione dalla quale risulta che l’impresa è
+divenuta membro dell’Ufficio nazionale di assicurazione e del Fondo nazionale di
+garanzia dello Stato membro in cui viene effettuata la prestazione di servizi.
+3. L’impresa che intende esercitare il ramo 17 indica anche la modalità di gestione di
+sinistri scelta tra quelle previste dall’articolo 3, paragrafo 2, della direttiva 87/344/CEE.
+4. L’impresa che intende esercitare il ramo 18 fornisce indicazioni sul personale, sulle
+attrezzature e sulle modalità operative di cui intende avvalersi per l’esercizio del ramo.
+5. La documentazione di cui al presente articolo è trasmessa anche nella lingua ufficiale
+dello Stato membro in cui la società intende operare o in lingua inglese.
+6. L’impresa che intende modificare il contenuto della comunicazione informa
+preventivamente l’ISVAP ai sensi e per gli effetti dell’articolo 17, comma 5, del decreto.
+
+=== K599 | [Sezione I - Art. 25 (2)] (Estensione dell’abilitazione all’esercizio dell’attività in regime di libertà di prestazione di
+Art. 25
+(Estensione dell’abilitazione all’esercizio dell’attività in regime di libertà di prestazione di
+servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+estendere l’attività in regime di libertà di prestazione di servizi in un altro Stato membro a
+rami o a rischi non oggetto della prima abilitazione invia, con riguardo ai rami e ai rischi
+oggetto di estensione, apposita comunicazione recante le informazioni di cui all’articolo
+24.
+2. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP ai sensi e per gli effetti dell’articolo 17, comma 5, del
+decreto.
+
+=== K600 | [Sezione II (4)] Esercizio dell’attività nel territorio di Stati terzi
+Sezione II
+Esercizio dell’attività nel territorio di Stati terzi
+
+=== K601 | [Sezione II - Art. 26 (2)] (Esercizio dell’attività in regime di stabilimento e in regime di libertà di prestazione di servizi)
+Art. 26
+(Esercizio dell’attività in regime di stabilimento e in regime di libertà di prestazione di servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+istituire una sede secondaria o operare in regime di libertà di prestazione di servizi in
+uno Stato terzo ne dà preventiva comunicazione all’ISVAP, indicando lo Stato, o gli
+Stati, in cui intende esercitare l’attività.
+2. L’impresa allega alla comunicazione un programma di attività contenente le seguenti
+informazioni:
+a) l’indirizzo della sede secondaria, se intende svolgere l’attività in regime di
+stabilimento;
+b) il nominativo della persona che intende preporre alla direzione della sede secondaria;
+c) la struttura organizzativa della sede secondaria, con evidenza del numero degli
+addetti e delle spese di impianto da sostenere nei primi tre esercizi;
+d) la natura dei rischi e delle obbligazioni che intende assumere;
+e) relativamente ai primi tre esercizi, le previsioni relative all’ammontare del gettito dei
+premi, delle provvigioni da corrispondere e dell’ammontare dei sinistri da pagare o
+delle prestazioni dovute;
+f) la situazione previsionale del margine di solvibilità tenuto conto della nuova attività.
+3. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP.
+
+=== K602 | [Sezione III - Art. 27 (2)] (Procedura di abilitazione)
+Art. 27
+(Procedura di abilitazione)
+1. Verificata la sussistenza delle condizioni previste dal decreto e dal presente
+Regolamento per l’esercizio dell’attività assicurativa in regime di stabilimento o di libertà
+di prestazione di servizi in un altro Stato membro, l’ISVAP trasmette, nei termini e
+secondo le procedure indicate rispettivamente negli articoli 17 e 19 del decreto, le
+necessarie informazioni all’Autorità di vigilanza competente e ne dà notizia all’impresa.
+2. Ai fini dell’avvio dell’attività in regime di stabilimento o di libera prestazione di servizi si
+applicano rispettivamente l’articolo 17, comma 4, e l’articolo 19, comma 3 del decreto.
+3. Nel caso in cui l’ISVAP rilevi che non sussistono i presupposti per l’avvio dell’attività in
+regime di stabilimento ai sensi dell’articolo 17, comma 2, del decreto o in regime di libera
+prestazione di servizi ai sensi dell’articolo 19, comma 2, del decreto, adotta un
+provvedimento motivato di diniego e ne dà comunicazione all’impresa nei termini e
+secondo la procedura previsti dai medesimi articoli.
+4. Nel caso in cui l’impresa comunichi la propria intenzione di svolgere l’attività assicurativa
+in regime di stabilimento o di libertà di prestazione di servizi in uno Stato terzo, l’ISVAP
+rende note all’impresa le proprie valutazioni entro il termine di novanta giorni dal
+ricevimento della comunicazione.
+TITOLO III
+Accesso all’esercizio dell’attività assicurativa e riassicurativa da parte di imprese con
+sede legale in uno Stato terzo
+Capo I
+Disposizioni generali
+
+=== K603 | [Sezione III - Art. 28] (Istanza di autorizzazione)
+Art. 28
+(Istanza di autorizzazione)
+1. L’impresa con sede legale in uno Stato terzo, costituita nello Stato di origine in una
+forma sociale equivalente a quella di società per azioni, società cooperativa, società di
+mutua assicurazione, per esercitare l’attività assicurativa e la relativa riassicurazione nel
+territorio italiano in regime di stabilimento, presenta all’IVASS istanza di autorizzazione
+all’esercizio dell’attività assicurativa prima di dar corso al procedimento di iscrizione della
+sede secondaria nel registro delle imprese17.
+2. L’impresa deve dimostrare di essere autorizzata nello Stato di origine all’esercizio del
+ramo o dei rami corrispondenti a quelli indicati all’articolo 2 del decreto e per i quali
+richiede l’autorizzazione.
+3. L’impresa che nello Stato di origine esercita congiuntamente i rami vita e i rami danni
+limita la propria istanza ai rami vita o ai rami danni o all’esercizio congiunto dei rami vita
+e dei rami danni 1 e 2.
+4. All’istanza di autorizzazione sono allegati, redatti in lingua italiana o accompagnati da
+traduzione giurata in lingua italiana:
+a) copia autentica dell’atto costitutivo, dello statuto e dell’atto da cui risulti la
+deliberazione di istituire la sede secondaria. Lo statuto dell’impresa che intende
+esercitare congiuntamente i rami vita e i rami danni 1 e 2 reca l’indicazione della
+parte del fondo di dotazione di cui all’articolo 29, nonché delle riserve patrimoniali
+attribuite rispettivamente alla gestione vita e alla gestione danni, secondo quanto
+previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del decreto;
+b) documentazione comprovante la nomina di un rappresentante generale della sede
+secondaria avente domicilio allo stesso indirizzo della sede secondaria;
+c) copia del mandato conferito al rappresentante generale conforme a quanto previsto
+dall’articolo 28, comma 4, del decreto;
+d) documentazione comprovante il possesso dei requisiti di onorabilità e professionalità
+in capo al rappresentante generale o, se diverso, della persona preposta alla
+gestione effettiva, individuati ai sensi dell’articolo 76 del decreto e delle relative
+disposizioni di attuazione. La documentazione per la verifica dei requisiti è indicata
+nell’allegato A18.
+e) elenco nominativo dei soggetti cui sono attribuite le funzioni di direzione e di gestione
+della sede secondaria;
+f) documentazione di cui all’articolo 10 atta a dimostrare l’insussistenza di stretti legami
+con persone fisiche o giuridiche tali da ostacolare l’effettivo esercizio delle funzioni di
+vigilanza;
+g) certificato rilasciato dalle competenti Autorità di vigilanza dello Stato di origine con
+indicazione dei rami che l’impresa è autorizzata ad esercitare e delle attività o dei
+rischi effettivamente esercitati;
+Comma modificato dall’articolo 6, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 6, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+h) dichiarazione dell’Autorità di vigilanza dello Stato di origine dalla quale risulti il
+preventivo consenso alla istituzione di una sede secondaria nel territorio della
+Repubblica da parte dell’impresa;
+i) attestazione dell’Autorità di vigilanza dello Stato di origine in ordine al rispetto, da
+parte dell’impresa, dei requisiti di adeguatezza patrimoniale previsti dall’ordinamento
+nazionale, all’adeguatezza delle strutture amministrative e contabili dell’impresa o del
+gruppo assicurativo di appartenenza, all’impegno a tenere presso la sede
+secondaria una contabilità specifica dell’attività esercitata e a conservarvi i documenti
+relativi agli affari trattati;
+j) impegno a costituire un margine di solvibilità in conformità a quanto disposto dalla
+normativa italiana;
+k) bilanci relativi agli ultimi tre esercizi o, se l’impresa esercita l’attività da meno di tre
+anni, quelli relativi agli esercizi già chiusi.
+5. (abrogato)19
+
+=== K604 | [Sezione III - Art. 29 (2)] (Fondo di dotazione e mezzi finanziari a copertura delle spese di impianto)
+Art. 29
+(Fondo di dotazione e mezzi finanziari a copertura delle spese di impianto)
+1. Ai fini del rilascio dell’autorizzazione all’esercizio dell’attività assicurativa, la sede
+secondaria di un’impresa avente sede legale in uno Stato terzo deve disporre di un
+fondo di dotazione non inferiore all’ammontare minimo iniziale del capitale sociale o del
+fondo di garanzia, prescritto all’articolo 5, e dei mezzi finanziari a copertura delle spese
+di impianto, secondo quanto disposto all’articolo 6.
+2. Il fondo di dotazione ed i mezzi finanziari di cui al comma 1, costituiti esclusivamente da
+conferimenti in denaro, devono essere interamente versati.
+3. Un ammontare almeno pari all’importo minimo della quota di garanzia è investito nel
+territorio della Repubblica. Una somma in numerario o in titoli, pari ad almeno la metà
+dell’importo minimo della quota di garanzia, è depositato a titolo di cauzione presso la
+Cassa Depositi e Prestiti o presso la Banca d’Italia.
+
+=== K605 | [Sezione III - Art. 30 (2)] (Programma di attività e relazione tecnica)
+Art. 30
+(Programma di attività e relazione tecnica)
+1. Ai fini del rilascio dell’autorizzazione, la sede secondaria di un’impresa avente sede
+legale in uno Stato terzo predispone un programma di attività e una relazione tecnica,
+comprensivi dei relativi allegati, conformi alle indicazioni contenute negli articoli 7 e 8
+nonché nel Titolo II, Capo I, Sezione II.
+
+=== K606 | [Sezione III - Art. 31 (2)] (Istanza di autorizzazione ad estendere l’esercizio dell’attività assicurativa)
+Art. 31
+(Istanza di autorizzazione ad estendere l’esercizio dell’attività assicurativa)
+1. L’impresa con sede legale in uno Stato terzo già autorizzata all’esercizio dell’attività
+assicurativa e riassicurativa nel territorio della Repubblica in uno o più rami vita o danni,
+che intende estendere l’attività ad altri rami o rischi rientranti nei rami per i quali è stata
+autorizzata in via limitata, presenta all’ISVAP istanza di estensione dell’autorizzazione.
+L’impresa che richiede l’autorizzazione all’estensione deve dimostrare di essere
+autorizzata nello Stato di origine all’esercizio del ramo o dei rami, corrispondenti a quelli
+indicati all’articolo 2 del decreto e per i quali richiede l’estensione.
+2. L’impresa allega all’istanza di cui al comma 1 documentazione idonea a dimostrare che:
+Comma abrogato dall’articolo 6, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 5
+disponeva: “Con riguardo alla documentazione di cui alla lettera d), fino all’entrata in vigore delle disposizioni di attuazione
+dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1, lettera a)”.
+a) dispone interamente del fondo di dotazione minimo di cui all’articolo 29 previsto per
+l’esercizio dei nuovi rami;
+b) è in regola con le disposizioni relative alle riserve tecniche, al margine di solvibilità ed
+alla quota di garanzia. Ove sia richiesta, per l’esercizio dei nuovi rami, una quota di
+garanzia più elevata di quella posseduta, attesta di disporre anche di tale quota
+minima;
+c) dispone del fondo a copertura delle spese di impianto di cui all’articolo 6, adeguato in
+funzione dei nuovi rami o delle nuove attività oggetto dell’estensione, se l’esercizio di
+tali rami comporta spese di impianto ulteriori;
+d) lo statuto prevede l’esercizio dei rami vita o dei rami danni oggetto dell’estensione, ivi
+compresa l’eventuale attività di riassicurazione. Se l’estensione dell’attività determina
+l’esercizio congiunto dei rami vita e dei rami danni 1 e 2, lo statuto indica anche la
+parte del fondo di dotazione di cui all’articolo 29, nonché delle riserve patrimoniali,
+destinata rispettivamente alla gestione vita e alla gestione danni, secondo quanto
+previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del decreto.
+3. L’istanza di estensione è corredata dal programma di attività e dalla relazione tecnica
+per l’attività oggetto di estensione, secondo quanto previsto dall’articolo 30.
+
+=== K607 | [Sezione III - Art. 32 (2)] (Istruttoria e provvedimento di autorizzazione)
+Art. 32
+(Istruttoria e provvedimento di autorizzazione)
+1. Ai fini del rilascio del provvedimento di autorizzazione o di estensione ad un’impresa con
+sede legale in uno Stato terzo, l’ISVAP compie un’istruttoria finalizzata a verificare, sulla
+base della documentazione prodotta dalla stessa, la sussistenza delle condizioni
+previste dall’articolo 28 del decreto e dal presente Capo.
+2. L’ISVAP valuta altresì le seguenti condizioni:
+a) che lo Stato di origine rispetti il principio di parità di trattamento e di reciprocità nei
+confronti delle imprese aventi sede legale nel territorio della Repubblica che
+intendono costituire o abbiano costituito in tale Stato una sede secondaria;
+b) che nello Stato di origine che intende istituire la sede secondaria nel territorio della
+Repubblica vi sia una regolamentazione adeguata sotto il profilo dei controlli di
+vigilanza prudenziale a fini di stabilità sulle imprese di assicurazione;
+c) che esistano accordi in materia di scambio di informazioni ovvero non vi siano
+ostacoli allo scambio di informazioni con l’Autorità di vigilanza dello Stato di origine.
+3. Allo svolgimento dell’istruttoria e all’emanazione del provvedimento di autorizzazione si
+applica quanto previsto dall’articolo 15, commi da 2 a 9 e dall’articolo 16.
+4. Allo svolgimento dell’istruttoria e all’emanazione del provvedimento di estensione
+dell’autorizzazione si applica quanto previsto dall’articolo 19, comma 2 e dall’articolo 20.
+
+=== K608 | [Sezione III - Art. 33 (2)] (Diniego dell’autorizzazione)
+Art. 33
+(Diniego dell’autorizzazione)
+1. Ove sussistano i presupposti per il diniego dell’autorizzazione, l’ISVAP, prima della
+formale adozione del relativo provvedimento, comunica all’impresa i motivi che ostano
+all'accoglimento dell’istanza. Si applica quanto previsto dall'articolo 17.
+2. Nel caso in cui lo Stato di origine non rispetti il principio di parità di trattamento o di
+reciprocità nei confronti delle imprese con sede legale in Italia che abbiano costituito o
+intendano costituire una sede secondaria, l’ISVAP, prima dell’adozione del
+provvedimento di diniego, informa la Commissione europea. Si applica la procedura
+indicata dall'articolo 208, comma 3, del decreto.
+Capo II
+Disposizioni particolari applicabili alle imprese con sede legale nella Confederazione
+Elvetica
+
+=== K609 | [Sezione III - Art. 34 (2)] (Requisiti di accesso)
+Art. 34
+(Requisiti di accesso)
+1. L’autorizzazione all’esercizio dell’attività assicurativa nei rami danni da parte della sede
+secondaria di un’impresa avente sede legale nella Confederazione Elvetica è regolata
+dalle disposizioni di cui all’Accordo tra la Comunità Economica Europea e la
+Confederazione Svizzera concernente l’assicurazione diretta diversa dall’assicurazione
+sulla vita, siglato a Lussemburgo il 10 ottobre 1989.
+2. All’impresa di cui al comma 1 non si applicano le disposizioni di cui all’articolo 28,
+comma 4, del decreto, relativamente al potere del rappresentante generale di compiere
+le operazioni necessarie per la costituzione ed il vincolo del deposito cauzionale, né
+quelle di cui all’articolo 28, comma 5, del decreto, limitatamente al possesso nel territorio
+della Repubblica di investimenti per un ammontare almeno uguale all’importo minimo
+della quota di garanzia ed al deposito cauzionale.
+3. Salvo quanto indicato al comma 2, le imprese aventi sede legale nella Confederazione
+Elvetica che intendono esercitare nel territorio della Repubblica i rami danni ed i rami
+vita sono soggette alle disposizioni di cui al Capo I del Titolo II.
+TITOLO IV
+Albo delle imprese
+Capo I
+Disciplina dell’albo delle imprese
+
+=== K610 | [Sezione III - Art. 35] (Albo delle imprese)
+Art. 35
+(Albo delle imprese)
+1. E’ istituito presso l’ISVAP l’albo delle imprese.
+2. L’albo delle imprese si compone di cinque sezioni:
+a) nella sezione I sono iscritte le imprese di assicurazione con sede legale nel territorio
+della Repubblica;
+b) nella sezione II sono iscritte le sedi secondarie, stabilite nel territorio della
+Repubblica, delle imprese di assicurazione con sede legale in uno Stato terzo;
+c) nella sezione III sono iscritte le particolari mutue assicuratrici;
+d) nella sezione IV sono iscritte le imprese di riassicurazione con sede legale nel
+territorio della Repubblica;
+e) nella sezione V sono iscritte le sedi secondarie, stabilite nel territorio della
+Repubblica, delle imprese di riassicurazione con sede legale in uno Stato terzo.
+3. L’albo delle imprese è reso disponibile sul sito internet dell’ISVAP.
+
+=== K611 | [Sezione III - Art. 36] (Contenuto dell’albo)
+Art. 36
+(Contenuto dell’albo)
+1. Nell’albo delle imprese sono indicate le informazioni essenziali ai fini della identificazione
+di ogni impresa iscritta, incluse quelle relative agli estremi della autorizzazione
+all’esercizio dell’attività assicurativa e riassicurativa.
+2. Con successivi provvedimenti l’ISVAP definisce le modalità e la tempistica di
+acquisizione delle informazioni.
+
+=== K612 | [Sezione III - Art. 37 (2)] (Iscrizione di diritto nell’albo)
+Art. 37
+(Iscrizione di diritto nell’albo)
+1. Le imprese di assicurazione e di riassicurazione con sede legale nel territorio della
+Repubblica, le sedi secondarie di imprese di assicurazione con sede legale in uno Stato
+terzo e le sedi secondarie di imprese di riassicurazione con sede legale in uno Stato
+terzo, autorizzate alla data di entrata in vigore del presente Regolamento, sono iscritte di
+diritto, ai sensi dell’articolo 338 del decreto, nell’albo delle imprese.
+
+=== K613 | [Sezione III - Art. 38 (2)] (Variazioni e aggiornamento dell’albo)
+Art. 38
+(Variazioni e aggiornamento dell’albo)
+1. Le imprese iscritte nell’albo comunicano tempestivamente all’ISVAP ogni variazione
+delle informazioni contenute nell’albo stesso.
+2. L’ISVAP, ad avvenuta comunicazione delle intervenute variazioni, provvede ad
+aggiornare l’albo.
+3. L’ISVAP procede alla cancellazione dell’impresa dall’albo nelle ipotesi di decadenza
+dall’autorizzazione ai sensi dell’articolo 240 del decreto, di revoca dell’autorizzazione ai
+sensi degli articoli 242, 243, 244 del decreto, nonché di operazioni straordinarie di cui
+agli articoli 201 e 202 del decreto.
+Capo II
+Elenchi in appendice all’albo delle imprese
+
+=== K614 | [Sezione III - Art. 39] (Elenchi)
+Art. 39
+(Elenchi)
+1. In appendice all’albo delle imprese sono istituiti i seguenti elenchi:
+a) nell’elenco I sono iscritte le imprese di assicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di stabilimento;
+b) nell’elenco II sono iscritte le imprese di assicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di libertà di
+prestazione di servizi;
+c) nell’elenco III sono iscritte le imprese di riassicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di stabilimento.

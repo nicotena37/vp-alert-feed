@@ -1,0 +1,2024 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento ISVAP n. 10 del 2 gennaio 2008 Regolamento concernente le procedure di accesso all'attività assicurativa e l'albo delle imprese di assicurazione.  (id IVASS-faaa7cccad)
+
+=== K590 | [Sezione III - Art. 17 (2)] (Diniego dell’autorizzazione)
+Art. 17
+(Diniego dell’autorizzazione)
+1. In caso di insussistenza delle condizioni di cui all’articolo 14 del decreto e di cui al
+presente Capo, l’ISVAP, prima della formale adozione del relativo provvedimento,
+comunica all’impresa interessata i motivi che ostano all'accoglimento dell’istanza,
+invitandola a fornire eventuali dati o documenti utili ad evitare il rigetto.
+2. Entro il termine indicato dall’ISVAP, comunque non inferiore a dieci giorni dal
+ricevimento della comunicazione, l’impresa interessata può presentare per iscritto le
+proprie osservazioni, eventualmente corredate da documentazione di supporto.
+3. La comunicazione di cui al comma 1 interrompe il termine per la conclusione del
+procedimento, che inizia nuovamente a decorrere dalla data di presentazione delle
+osservazioni12.
+4. Decorso inutilmente il termine di cui al comma 2, o nel caso in cui permangano i
+presupposti per il diniego dell’autorizzazione, l’ISVAP emana il provvedimento di rigetto
+definitivo dell’istanza dando conto delle relative motivazioni.
+5. L’ISVAP comunica all’impresa istante il provvedimento di diniego dell’autorizzazione.
+Capo II
+Estensione dell’autorizzazione
+
+=== K591 | [Sezione III - Art. 18 (2)] (Istanza di autorizzazione ad estendere l’esercizio dell’attività)
+Art. 18
+(Istanza di autorizzazione ad estendere l’esercizio dell’attività)
+1. L’impresa autorizzata all’esercizio dell’attività assicurativa e riassicurativa in uno o più
+rami vita o danni, che intende estendere l’attività ad altri rami o rischi rientranti nei rami
+per i quali è stata autorizzata in via limitata, presenta all’ISVAP istanza di estensione
+dell’autorizzazione. A tal fine allega documentazione idonea a dimostrare che:
+a) è stato interamente versato il capitale sociale o il fondo di garanzia minimo previsto
+per l’esercizio dei nuovi rami;
+b) è in regola con le disposizioni relative alle riserve tecniche, al margine di solvibilità
+individuale ed alla quota di garanzia, nonché al margine di solvibilità corretto, se
+l’impresa è soggetta al relativo calcolo. Se per l’esercizio dei nuovi rami è richiesta
+una quota di garanzia più elevata di quella posseduta, l’impresa deve dimostrare
+altresì di disporre di tale quota minima;
+c) dispone del fondo a copertura delle spese di impianto di cui all’articolo 6, adeguato
+in funzione dei nuovi rami o rischi oggetto dell’estensione se l’esercizio di tali rami o
+rischi comporta spese di impianto ulteriori.
+Comma modificato dall’articolo 1, comma 1, del Provvedimento IVASS n. 5 del 4 giugno 2013. Il comma 3 disponeva
+“La comunicazione di cui al comma 1 sospende il termine per la conclusione del procedimento, che inizia nuovamente a
+decorrere dalla data di presentazione delle osservazioni”.
+2. L’impresa, in aggiunta alla documentazione di cui al comma 1, trasmette copia dello
+statuto, dal quale risulti l’inclusione nell’oggetto sociale dell’esercizio dei rami vita o dei
+rami danni oggetto dell’estensione, ivi compresa l’eventuale attività di riassicurazione.
+Se l’estensione dell’attività determina l’esercizio congiunto dei rami vita e dei rami danni
+1 e 2, lo statuto indica la parte del capitale sociale o del fondo di garanzia nonché delle
+riserve patrimoniali destinate rispettivamente alla gestione vita e alla gestione danni,
+secondo quanto previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del
+decreto.
+3. L’istanza di autorizzazione è corredata del programma di attività di cui all’articolo 7,
+concernente l’attività oggetto di estensione, nonché della relazione tecnica di cui
+all’articolo 8. In caso di estensione dell’esercizio dell’attività nei rami 10, 12, 14, 15, 17 e
+18, il programma di attività è integrato dalle informazioni e dalla documentazione previsti
+dal Capo I, Sezione II, del presente Titolo.
+
+=== K592 | [Sezione III - Art. 19] (Istruttoria)
+Art. 19
+(Istruttoria)
+1. Ai fini del rilascio dell’autorizzazione ad estendere l’attività, l’ISVAP verifica, sulla base
+della documentazione prodotta dall’impresa, la sussistenza dei requisiti e delle
+condizioni di cui all’articolo 15 del decreto e di cui al Titolo II, Capo II del presente
+Regolamento.
+2. Al procedimento di estensione si applica quanto previsto dall’articolo 15, commi da 2 a
+9.
+
+=== K593 | [Sezione III - Art. 20] (Provvedimento di estensione)
+Art. 20
+(Provvedimento di estensione)
+1. In caso di esito positivo dell’istruttoria, l’ISVAP emana il provvedimento di estensione
+dell’autorizzazione entro novanta giorni dalla data di presentazione dell’istanza, fatte
+salve le ipotesi di interruzione e di sospensione di cui all’articolo 19, comma 2.
+2. L’ISVAP trasmette all’impresa istante il provvedimento di estensione dell’autorizzazione,
+provvede all’aggiornamento dell’albo di cui all’articolo 35, dandone comunicazione
+all’impresa, e pubblica il provvedimento di autorizzazione nel Bollettino e nel proprio sito
+internet.
+3. L’impresa che ha ottenuto l’autorizzazione ad estendere l’esercizio dell’attività
+assicurativa a nuovi rami o rischi, può avviare la nuova attività a decorrere dal momento
+in cui l’autorizzazione all’estensione viene annotata nell’albo delle imprese.
+
+=== K594 | [Sezione III - Art. 21 (2)] (Diniego dell’estensione)
+Art. 21
+(Diniego dell’estensione)
+1. In caso di insussistenza delle condizioni di cui all’articolo 15 del decreto e di cui al
+presente Capo, si applicano le diposizioni dell’articolo 17.
+Capo III
+Abilitazione all’esercizio dell’attività assicurativa al di fuori del territorio della
+Repubblica italiana
+
+=== K595 | [Sezione I (2)] Esercizio dell’attività nel territorio di altri Stati membri
+Sezione I
+Esercizio dell’attività nel territorio di altri Stati membri
+
+=== K596 | [Sezione I - Art. 22 (2)] (Esercizio dell’attività in regime di stabilimento)
+Art. 22
+(Esercizio dell’attività in regime di stabilimento)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+istituire una sede secondaria in un altro Stato membro ne dà preventiva comunicazione
+all’IVASS13 ai sensi dell’articolo 16 del decreto, indicando lo Stato, o gli Stati, in
+cui intende esercitare l’attività. A tal fine allega alla comunicazione:
+a) una relazione che illustra:
+1) le motivazioni dell’operazione;
+2) gli obiettivi che intende conseguire con la creazione della sede secondaria;
+b) un programma di attività contenente le seguenti informazioni:
+1) i rischi e le obbligazioni che intende assumere;
+2) la struttura organizzativa della sede secondaria con indicazione della
+denominazione e dell’indirizzo della sede, del personale che intende impiegare e
+dei costi di impianto e di gestione;
+3) le previsioni triennali relative ai costi e ai ricavi riferibili a ciascun ramo che
+intende esercitare;
+4) la situazione previsionale del margine di solvibilità;
+5) la struttura della rete di vendita di cui intende avvalersi;
+6) le procedure di liquidazione dei sinistri e delle somme da pagare;
+c) la documentazione comprovante la nomina di un rappresentante generale avente
+domicilio allo stesso indirizzo della sede secondaria;
+d) la copia del mandato conferito al rappresentante generale conforme a quanto
+previsto dall’articolo 16, comma 3, del decreto;
+e) la documentazione comprovante il possesso dei requisiti di onorabilità e professionalità
+in capo al rappresentante generale o, se diverso, della persona preposta alla gestione
+effettiva, individuati ai sensi dell’articolo 76 del decreto e delle relative disposizioni di
+attuazione. La documentazione per la verifica dei requisiti è indicata nell’allegato A14.
+2. (abrogato)15
+3. L’impresa che intende esercitare il ramo 10, esclusa la responsabilità del vettore, allega
+alla comunicazione di cui al comma 1 anche una dichiarazione dalla quale risulta che
+essa è divenuta membro dell’Ufficio nazionale di assicurazione e del Fondo nazionale di
+garanzia dello Stato della sede secondaria.
+4. L’impresa che intende esercitare il ramo 17 indica anche la modalità di gestione di
+sinistri scelta tra quelle previste dall’articolo 3, paragrafo 2, della direttiva 87/344/CEE.
+5. L’impresa che intende esercitare il ramo 18 fornisce indicazioni sul personale e sulle
+attrezzature di cui intende avvalersi e sulle modalità operative da adottare per l’esercizio
+del ramo.
+6. La documentazione indicata al comma 1, lettere a), b), c) e d), nonché quella richiamata
+nei commi 3, 4 e 5 è trasmessa anche nella lingua ufficiale dello Stato membro in cui
+l’impresa intende operare o in lingua inglese.
+7. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’IVASS ai sensi e per gli effetti di cui all’articolo 17, comma 5
+del decreto16.
+Comma modificato dall’articolo 5, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 5, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma abrogato dall’articolo 5, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 2
+disponeva: “Con riguardo alla documentazione di cui al comma 1, lettera e), fino all’entrata in vigore delle disposizioni di
+attuazione dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1, lettera a)”.
+Comma modificato dall’articolo 5, comma 1, lettera d), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+
+=== K597 | [Sezione I - Art. 23 (2)] (Estensione dell’abilitazione all’esercizio dell’attività in regime di stabilimento)
+Art. 23
+(Estensione dell’abilitazione all’esercizio dell’attività in regime di stabilimento)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+estendere l’attività della propria sede secondaria in un altro Stato membro a rami e rischi
+non oggetto della prima abilitazione invia all’ISVAP, con riguardo ai rami e ai rischi
+oggetto di estensione, apposita comunicazione recante le informazioni e la
+documentazione di cui all’articolo 22.
+2. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP ai sensi e per gli effetti di cui all’articolo 17, comma 5,
+del decreto.
+
+=== K598 | [Sezione I - Art. 24 (2)] (Esercizio dell’attività in regime di libertà di prestazione di servizi)
+Art. 24
+(Esercizio dell’attività in regime di libertà di prestazione di servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+operare in regime di libertà di prestazione di servizi in un altro Stato membro ne dà
+preventiva comunicazione all’ISVAP ai sensi dell’articolo 18 del decreto, allegando alla
+comunicazione un programma di attività contenente le seguenti informazioni:
+a) gli Stati membri in cui intende svolgere l’attività;
+b) la denominazione e indirizzo degli stabilimenti situati negli Stati membri dai quali
+intende esercitare l’attività di libera prestazione di servizi se tale attività non viene
+svolta direttamente dalla sede legale dell’impresa;
+c) la natura dei rischi e delle obbligazioni che intende assumere;
+d) le previsioni triennali relative ai costi e ai ricavi riferibili a ciascun ramo in cui intende
+operare;
+e) la rete di vendita di cui intende avvalersi.
+2. L’impresa che intende esercitare il ramo 10, esclusa la responsabilità del vettore, indica,
+nella comunicazione di cui al comma 1, il nominativo e l’indirizzo del rappresentante per
+la gestione dei sinistri, allegando una dichiarazione dalla quale risulta che l’impresa è
+divenuta membro dell’Ufficio nazionale di assicurazione e del Fondo nazionale di
+garanzia dello Stato membro in cui viene effettuata la prestazione di servizi.
+3. L’impresa che intende esercitare il ramo 17 indica anche la modalità di gestione di
+sinistri scelta tra quelle previste dall’articolo 3, paragrafo 2, della direttiva 87/344/CEE.
+4. L’impresa che intende esercitare il ramo 18 fornisce indicazioni sul personale, sulle
+attrezzature e sulle modalità operative di cui intende avvalersi per l’esercizio del ramo.
+5. La documentazione di cui al presente articolo è trasmessa anche nella lingua ufficiale
+dello Stato membro in cui la società intende operare o in lingua inglese.
+6. L’impresa che intende modificare il contenuto della comunicazione informa
+preventivamente l’ISVAP ai sensi e per gli effetti dell’articolo 17, comma 5, del decreto.
+
+=== K599 | [Sezione I - Art. 25 (2)] (Estensione dell’abilitazione all’esercizio dell’attività in regime di libertà di prestazione di
+Art. 25
+(Estensione dell’abilitazione all’esercizio dell’attività in regime di libertà di prestazione di
+servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+estendere l’attività in regime di libertà di prestazione di servizi in un altro Stato membro a
+rami o a rischi non oggetto della prima abilitazione invia, con riguardo ai rami e ai rischi
+oggetto di estensione, apposita comunicazione recante le informazioni di cui all’articolo
+24.
+2. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP ai sensi e per gli effetti dell’articolo 17, comma 5, del
+decreto.
+
+=== K600 | [Sezione II (4)] Esercizio dell’attività nel territorio di Stati terzi
+Sezione II
+Esercizio dell’attività nel territorio di Stati terzi
+
+=== K601 | [Sezione II - Art. 26 (2)] (Esercizio dell’attività in regime di stabilimento e in regime di libertà di prestazione di servizi)
+Art. 26
+(Esercizio dell’attività in regime di stabilimento e in regime di libertà di prestazione di servizi)
+1. L’impresa di assicurazione con sede legale nel territorio della Repubblica che intende
+istituire una sede secondaria o operare in regime di libertà di prestazione di servizi in
+uno Stato terzo ne dà preventiva comunicazione all’ISVAP, indicando lo Stato, o gli
+Stati, in cui intende esercitare l’attività.
+2. L’impresa allega alla comunicazione un programma di attività contenente le seguenti
+informazioni:
+a) l’indirizzo della sede secondaria, se intende svolgere l’attività in regime di
+stabilimento;
+b) il nominativo della persona che intende preporre alla direzione della sede secondaria;
+c) la struttura organizzativa della sede secondaria, con evidenza del numero degli
+addetti e delle spese di impianto da sostenere nei primi tre esercizi;
+d) la natura dei rischi e delle obbligazioni che intende assumere;
+e) relativamente ai primi tre esercizi, le previsioni relative all’ammontare del gettito dei
+premi, delle provvigioni da corrispondere e dell’ammontare dei sinistri da pagare o
+delle prestazioni dovute;
+f) la situazione previsionale del margine di solvibilità tenuto conto della nuova attività.
+3. L’impresa che intende modificare il contenuto della comunicazione di cui al comma 1
+informa preventivamente l’ISVAP.
+
+=== K602 | [Sezione III - Art. 27 (2)] (Procedura di abilitazione)
+Art. 27
+(Procedura di abilitazione)
+1. Verificata la sussistenza delle condizioni previste dal decreto e dal presente
+Regolamento per l’esercizio dell’attività assicurativa in regime di stabilimento o di libertà
+di prestazione di servizi in un altro Stato membro, l’ISVAP trasmette, nei termini e
+secondo le procedure indicate rispettivamente negli articoli 17 e 19 del decreto, le
+necessarie informazioni all’Autorità di vigilanza competente e ne dà notizia all’impresa.
+2. Ai fini dell’avvio dell’attività in regime di stabilimento o di libera prestazione di servizi si
+applicano rispettivamente l’articolo 17, comma 4, e l’articolo 19, comma 3 del decreto.
+3. Nel caso in cui l’ISVAP rilevi che non sussistono i presupposti per l’avvio dell’attività in
+regime di stabilimento ai sensi dell’articolo 17, comma 2, del decreto o in regime di libera
+prestazione di servizi ai sensi dell’articolo 19, comma 2, del decreto, adotta un
+provvedimento motivato di diniego e ne dà comunicazione all’impresa nei termini e
+secondo la procedura previsti dai medesimi articoli.
+4. Nel caso in cui l’impresa comunichi la propria intenzione di svolgere l’attività assicurativa
+in regime di stabilimento o di libertà di prestazione di servizi in uno Stato terzo, l’ISVAP
+rende note all’impresa le proprie valutazioni entro il termine di novanta giorni dal
+ricevimento della comunicazione.
+TITOLO III
+Accesso all’esercizio dell’attività assicurativa e riassicurativa da parte di imprese con
+sede legale in uno Stato terzo
+Capo I
+Disposizioni generali
+
+=== K603 | [Sezione III - Art. 28] (Istanza di autorizzazione)
+Art. 28
+(Istanza di autorizzazione)
+1. L’impresa con sede legale in uno Stato terzo, costituita nello Stato di origine in una
+forma sociale equivalente a quella di società per azioni, società cooperativa, società di
+mutua assicurazione, per esercitare l’attività assicurativa e la relativa riassicurazione nel
+territorio italiano in regime di stabilimento, presenta all’IVASS istanza di autorizzazione
+all’esercizio dell’attività assicurativa prima di dar corso al procedimento di iscrizione della
+sede secondaria nel registro delle imprese17.
+2. L’impresa deve dimostrare di essere autorizzata nello Stato di origine all’esercizio del
+ramo o dei rami corrispondenti a quelli indicati all’articolo 2 del decreto e per i quali
+richiede l’autorizzazione.
+3. L’impresa che nello Stato di origine esercita congiuntamente i rami vita e i rami danni
+limita la propria istanza ai rami vita o ai rami danni o all’esercizio congiunto dei rami vita
+e dei rami danni 1 e 2.
+4. All’istanza di autorizzazione sono allegati, redatti in lingua italiana o accompagnati da
+traduzione giurata in lingua italiana:
+a) copia autentica dell’atto costitutivo, dello statuto e dell’atto da cui risulti la
+deliberazione di istituire la sede secondaria. Lo statuto dell’impresa che intende
+esercitare congiuntamente i rami vita e i rami danni 1 e 2 reca l’indicazione della
+parte del fondo di dotazione di cui all’articolo 29, nonché delle riserve patrimoniali
+attribuite rispettivamente alla gestione vita e alla gestione danni, secondo quanto
+previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del decreto;
+b) documentazione comprovante la nomina di un rappresentante generale della sede
+secondaria avente domicilio allo stesso indirizzo della sede secondaria;
+c) copia del mandato conferito al rappresentante generale conforme a quanto previsto
+dall’articolo 28, comma 4, del decreto;
+d) documentazione comprovante il possesso dei requisiti di onorabilità e professionalità
+in capo al rappresentante generale o, se diverso, della persona preposta alla
+gestione effettiva, individuati ai sensi dell’articolo 76 del decreto e delle relative
+disposizioni di attuazione. La documentazione per la verifica dei requisiti è indicata
+nell’allegato A18.
+e) elenco nominativo dei soggetti cui sono attribuite le funzioni di direzione e di gestione
+della sede secondaria;
+f) documentazione di cui all’articolo 10 atta a dimostrare l’insussistenza di stretti legami
+con persone fisiche o giuridiche tali da ostacolare l’effettivo esercizio delle funzioni di
+vigilanza;
+g) certificato rilasciato dalle competenti Autorità di vigilanza dello Stato di origine con
+indicazione dei rami che l’impresa è autorizzata ad esercitare e delle attività o dei
+rischi effettivamente esercitati;
+Comma modificato dall’articolo 6, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Periodo aggiunto dall’articolo 6, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+h) dichiarazione dell’Autorità di vigilanza dello Stato di origine dalla quale risulti il
+preventivo consenso alla istituzione di una sede secondaria nel territorio della
+Repubblica da parte dell’impresa;
+i) attestazione dell’Autorità di vigilanza dello Stato di origine in ordine al rispetto, da
+parte dell’impresa, dei requisiti di adeguatezza patrimoniale previsti dall’ordinamento
+nazionale, all’adeguatezza delle strutture amministrative e contabili dell’impresa o del
+gruppo assicurativo di appartenenza, all’impegno a tenere presso la sede
+secondaria una contabilità specifica dell’attività esercitata e a conservarvi i documenti
+relativi agli affari trattati;
+j) impegno a costituire un margine di solvibilità in conformità a quanto disposto dalla
+normativa italiana;
+k) bilanci relativi agli ultimi tre esercizi o, se l’impresa esercita l’attività da meno di tre
+anni, quelli relativi agli esercizi già chiusi.
+5. (abrogato)19
+
+=== K604 | [Sezione III - Art. 29 (2)] (Fondo di dotazione e mezzi finanziari a copertura delle spese di impianto)
+Art. 29
+(Fondo di dotazione e mezzi finanziari a copertura delle spese di impianto)
+1. Ai fini del rilascio dell’autorizzazione all’esercizio dell’attività assicurativa, la sede
+secondaria di un’impresa avente sede legale in uno Stato terzo deve disporre di un
+fondo di dotazione non inferiore all’ammontare minimo iniziale del capitale sociale o del
+fondo di garanzia, prescritto all’articolo 5, e dei mezzi finanziari a copertura delle spese
+di impianto, secondo quanto disposto all’articolo 6.
+2. Il fondo di dotazione ed i mezzi finanziari di cui al comma 1, costituiti esclusivamente da
+conferimenti in denaro, devono essere interamente versati.
+3. Un ammontare almeno pari all’importo minimo della quota di garanzia è investito nel
+territorio della Repubblica. Una somma in numerario o in titoli, pari ad almeno la metà
+dell’importo minimo della quota di garanzia, è depositato a titolo di cauzione presso la
+Cassa Depositi e Prestiti o presso la Banca d’Italia.
+
+=== K605 | [Sezione III - Art. 30 (2)] (Programma di attività e relazione tecnica)
+Art. 30
+(Programma di attività e relazione tecnica)
+1. Ai fini del rilascio dell’autorizzazione, la sede secondaria di un’impresa avente sede
+legale in uno Stato terzo predispone un programma di attività e una relazione tecnica,
+comprensivi dei relativi allegati, conformi alle indicazioni contenute negli articoli 7 e 8
+nonché nel Titolo II, Capo I, Sezione II.
+
+=== K606 | [Sezione III - Art. 31 (2)] (Istanza di autorizzazione ad estendere l’esercizio dell’attività assicurativa)
+Art. 31
+(Istanza di autorizzazione ad estendere l’esercizio dell’attività assicurativa)
+1. L’impresa con sede legale in uno Stato terzo già autorizzata all’esercizio dell’attività
+assicurativa e riassicurativa nel territorio della Repubblica in uno o più rami vita o danni,
+che intende estendere l’attività ad altri rami o rischi rientranti nei rami per i quali è stata
+autorizzata in via limitata, presenta all’ISVAP istanza di estensione dell’autorizzazione.
+L’impresa che richiede l’autorizzazione all’estensione deve dimostrare di essere
+autorizzata nello Stato di origine all’esercizio del ramo o dei rami, corrispondenti a quelli
+indicati all’articolo 2 del decreto e per i quali richiede l’estensione.
+2. L’impresa allega all’istanza di cui al comma 1 documentazione idonea a dimostrare che:
+Comma abrogato dall’articolo 6, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 5
+disponeva: “Con riguardo alla documentazione di cui alla lettera d), fino all’entrata in vigore delle disposizioni di attuazione
+dell’articolo 76 del decreto, si applica quanto previsto dall’articolo 45, comma 1, lettera a)”.
+a) dispone interamente del fondo di dotazione minimo di cui all’articolo 29 previsto per
+l’esercizio dei nuovi rami;
+b) è in regola con le disposizioni relative alle riserve tecniche, al margine di solvibilità ed
+alla quota di garanzia. Ove sia richiesta, per l’esercizio dei nuovi rami, una quota di
+garanzia più elevata di quella posseduta, attesta di disporre anche di tale quota
+minima;
+c) dispone del fondo a copertura delle spese di impianto di cui all’articolo 6, adeguato in
+funzione dei nuovi rami o delle nuove attività oggetto dell’estensione, se l’esercizio di
+tali rami comporta spese di impianto ulteriori;
+d) lo statuto prevede l’esercizio dei rami vita o dei rami danni oggetto dell’estensione, ivi
+compresa l’eventuale attività di riassicurazione. Se l’estensione dell’attività determina
+l’esercizio congiunto dei rami vita e dei rami danni 1 e 2, lo statuto indica anche la
+parte del fondo di dotazione di cui all’articolo 29, nonché delle riserve patrimoniali,
+destinata rispettivamente alla gestione vita e alla gestione danni, secondo quanto
+previsto dalle disposizioni di attuazione dell’articolo 348, comma 2, del decreto.
+3. L’istanza di estensione è corredata dal programma di attività e dalla relazione tecnica
+per l’attività oggetto di estensione, secondo quanto previsto dall’articolo 30.
+
+=== K607 | [Sezione III - Art. 32 (2)] (Istruttoria e provvedimento di autorizzazione)
+Art. 32
+(Istruttoria e provvedimento di autorizzazione)
+1. Ai fini del rilascio del provvedimento di autorizzazione o di estensione ad un’impresa con
+sede legale in uno Stato terzo, l’ISVAP compie un’istruttoria finalizzata a verificare, sulla
+base della documentazione prodotta dalla stessa, la sussistenza delle condizioni
+previste dall’articolo 28 del decreto e dal presente Capo.
+2. L’ISVAP valuta altresì le seguenti condizioni:
+a) che lo Stato di origine rispetti il principio di parità di trattamento e di reciprocità nei
+confronti delle imprese aventi sede legale nel territorio della Repubblica che
+intendono costituire o abbiano costituito in tale Stato una sede secondaria;
+b) che nello Stato di origine che intende istituire la sede secondaria nel territorio della
+Repubblica vi sia una regolamentazione adeguata sotto il profilo dei controlli di
+vigilanza prudenziale a fini di stabilità sulle imprese di assicurazione;
+c) che esistano accordi in materia di scambio di informazioni ovvero non vi siano
+ostacoli allo scambio di informazioni con l’Autorità di vigilanza dello Stato di origine.
+3. Allo svolgimento dell’istruttoria e all’emanazione del provvedimento di autorizzazione si
+applica quanto previsto dall’articolo 15, commi da 2 a 9 e dall’articolo 16.
+4. Allo svolgimento dell’istruttoria e all’emanazione del provvedimento di estensione
+dell’autorizzazione si applica quanto previsto dall’articolo 19, comma 2 e dall’articolo 20.
+
+=== K608 | [Sezione III - Art. 33 (2)] (Diniego dell’autorizzazione)
+Art. 33
+(Diniego dell’autorizzazione)
+1. Ove sussistano i presupposti per il diniego dell’autorizzazione, l’ISVAP, prima della
+formale adozione del relativo provvedimento, comunica all’impresa i motivi che ostano
+all'accoglimento dell’istanza. Si applica quanto previsto dall'articolo 17.
+2. Nel caso in cui lo Stato di origine non rispetti il principio di parità di trattamento o di
+reciprocità nei confronti delle imprese con sede legale in Italia che abbiano costituito o
+intendano costituire una sede secondaria, l’ISVAP, prima dell’adozione del
+provvedimento di diniego, informa la Commissione europea. Si applica la procedura
+indicata dall'articolo 208, comma 3, del decreto.
+Capo II
+Disposizioni particolari applicabili alle imprese con sede legale nella Confederazione
+Elvetica
+
+=== K609 | [Sezione III - Art. 34 (2)] (Requisiti di accesso)
+Art. 34
+(Requisiti di accesso)
+1. L’autorizzazione all’esercizio dell’attività assicurativa nei rami danni da parte della sede
+secondaria di un’impresa avente sede legale nella Confederazione Elvetica è regolata
+dalle disposizioni di cui all’Accordo tra la Comunità Economica Europea e la
+Confederazione Svizzera concernente l’assicurazione diretta diversa dall’assicurazione
+sulla vita, siglato a Lussemburgo il 10 ottobre 1989.
+2. All’impresa di cui al comma 1 non si applicano le disposizioni di cui all’articolo 28,
+comma 4, del decreto, relativamente al potere del rappresentante generale di compiere
+le operazioni necessarie per la costituzione ed il vincolo del deposito cauzionale, né
+quelle di cui all’articolo 28, comma 5, del decreto, limitatamente al possesso nel territorio
+della Repubblica di investimenti per un ammontare almeno uguale all’importo minimo
+della quota di garanzia ed al deposito cauzionale.
+3. Salvo quanto indicato al comma 2, le imprese aventi sede legale nella Confederazione
+Elvetica che intendono esercitare nel territorio della Repubblica i rami danni ed i rami
+vita sono soggette alle disposizioni di cui al Capo I del Titolo II.
+TITOLO IV
+Albo delle imprese
+Capo I
+Disciplina dell’albo delle imprese
+
+=== K610 | [Sezione III - Art. 35] (Albo delle imprese)
+Art. 35
+(Albo delle imprese)
+1. E’ istituito presso l’ISVAP l’albo delle imprese.
+2. L’albo delle imprese si compone di cinque sezioni:
+a) nella sezione I sono iscritte le imprese di assicurazione con sede legale nel territorio
+della Repubblica;
+b) nella sezione II sono iscritte le sedi secondarie, stabilite nel territorio della
+Repubblica, delle imprese di assicurazione con sede legale in uno Stato terzo;
+c) nella sezione III sono iscritte le particolari mutue assicuratrici;
+d) nella sezione IV sono iscritte le imprese di riassicurazione con sede legale nel
+territorio della Repubblica;
+e) nella sezione V sono iscritte le sedi secondarie, stabilite nel territorio della
+Repubblica, delle imprese di riassicurazione con sede legale in uno Stato terzo.
+3. L’albo delle imprese è reso disponibile sul sito internet dell’ISVAP.
+
+=== K611 | [Sezione III - Art. 36] (Contenuto dell’albo)
+Art. 36
+(Contenuto dell’albo)
+1. Nell’albo delle imprese sono indicate le informazioni essenziali ai fini della identificazione
+di ogni impresa iscritta, incluse quelle relative agli estremi della autorizzazione
+all’esercizio dell’attività assicurativa e riassicurativa.
+2. Con successivi provvedimenti l’ISVAP definisce le modalità e la tempistica di
+acquisizione delle informazioni.
+
+=== K612 | [Sezione III - Art. 37 (2)] (Iscrizione di diritto nell’albo)
+Art. 37
+(Iscrizione di diritto nell’albo)
+1. Le imprese di assicurazione e di riassicurazione con sede legale nel territorio della
+Repubblica, le sedi secondarie di imprese di assicurazione con sede legale in uno Stato
+terzo e le sedi secondarie di imprese di riassicurazione con sede legale in uno Stato
+terzo, autorizzate alla data di entrata in vigore del presente Regolamento, sono iscritte di
+diritto, ai sensi dell’articolo 338 del decreto, nell’albo delle imprese.
+
+=== K613 | [Sezione III - Art. 38 (2)] (Variazioni e aggiornamento dell’albo)
+Art. 38
+(Variazioni e aggiornamento dell’albo)
+1. Le imprese iscritte nell’albo comunicano tempestivamente all’ISVAP ogni variazione
+delle informazioni contenute nell’albo stesso.
+2. L’ISVAP, ad avvenuta comunicazione delle intervenute variazioni, provvede ad
+aggiornare l’albo.
+3. L’ISVAP procede alla cancellazione dell’impresa dall’albo nelle ipotesi di decadenza
+dall’autorizzazione ai sensi dell’articolo 240 del decreto, di revoca dell’autorizzazione ai
+sensi degli articoli 242, 243, 244 del decreto, nonché di operazioni straordinarie di cui
+agli articoli 201 e 202 del decreto.
+Capo II
+Elenchi in appendice all’albo delle imprese
+
+=== K614 | [Sezione III - Art. 39] (Elenchi)
+Art. 39
+(Elenchi)
+1. In appendice all’albo delle imprese sono istituiti i seguenti elenchi:
+a) nell’elenco I sono iscritte le imprese di assicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di stabilimento;
+b) nell’elenco II sono iscritte le imprese di assicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di libertà di
+prestazione di servizi;
+c) nell’elenco III sono iscritte le imprese di riassicurazione con sede legale in uno Stato
+membro ammesse ad operare nel territorio della Repubblica in regime di stabilimento.
+
+=== K615 | [Sezione III - Art. 40] (Contenuto degli elenchi)
+Art. 40
+(Contenuto degli elenchi)
+1. Nell’elenco I di cui all’articolo 39, comma 1, lettera a), per ogni impresa di assicurazione
+ammessa ad operare nel territorio della Repubblica in regime di stabilimento, sono
+indicate le informazioni essenziali ai fini dell’identificazione dell’impresa e dei rami al cui
+esercizio l’impresa è abilitata.
+2. Nell’elenco II di cui all’articolo 39, comma 1, lettera b), per ogni impresa di assicurazione
+ammessa ad operare nel territorio della Repubblica in regime di libertà di prestazione di
+servizi, sono indicate le informazioni essenziali ai fini dell’identificazione dell’impresa e
+dei rami al cui esercizio l’impresa è abilitata.
+3. Nell’elenco III di cui all’articolo 39, comma 1, lettera c), per ogni impresa di
+riassicurazione ammessa ad operare nel territorio della Repubblica in regime di
+stabilimento, sono indicate le informazioni essenziali ai fini dell’identificazione
+dell’impresa e dei rami al cui esercizio l’impresa è abilitata.
+4. Con successivi provvedimenti l’ISVAP definisce le modalità e la tempistica di
+acquisizione delle informazioni.
+
+=== K616 | [Sezione III - Art. 41] (Iscrizione negli elenchi)
+Art. 41
+(Iscrizione negli elenchi)
+1. L’ISVAP iscrive negli elenchi di cui all’articolo 39 le imprese con sede legale in uno Stato
+membro a conclusione delle procedure previste per l’accesso all’esercizio dell’attività
+assicurativa nel territorio della Repubblica in regime di stabilimento o di libera
+prestazione di servizi.
+
+=== K617 | [Sezione III - Art. 42 (2)] (Iscrizione di diritto negli elenchi)
+Art. 42
+(Iscrizione di diritto negli elenchi)
+1. Le imprese di assicurazione con sede legale in altri Stati membri, già ammesse ad
+operare nel territorio della Repubblica in regime di stabilimento o di libera prestazione di
+servizi alla data di entrata in vigore del presente Regolamento, sono iscritte di diritto, ai
+sensi dell’articolo 338, commi 6 e 7 del decreto, rispettivamente negli elenchi I e II di cui
+all’articolo 39.
+2. Le imprese di riassicurazione con sede legale in altri Stati membri, già ammesse ad
+operare nel territorio della Repubblica in regime di stabilimento alla data di entrata in
+vigore del presente Regolamento, sono iscritte di diritto nell’elenco III di cui all’articolo
+39.
+
+=== K618 | [Sezione III - Art. 43 (2)] (Variazioni e aggiornamento degli elenchi)
+Art. 43
+(Variazioni e aggiornamento degli elenchi)
+1. Sulla base delle comunicazioni pervenute dalle Autorità di vigilanza competenti degli altri
+Stati membri, l’ISVAP provvede all’aggiornamento dei dati contenuti negli elenchi di cui
+all’articolo 39.
+TITOLO V
+Disposizioni finali
+
+=== K619 | [Sezione III - Art. 44] (Abrogazioni)
+Art. 44
+(Abrogazioni)
+1. Sono abrogati, dalla data di entrata in vigore del presente Regolamento:
+a) le circolari ISVAP:
+n. 113 del 20 marzo 1989;
+n. 177 del 20 maggio 1992, limitatamente ai paragrafi 4.1 e 4.2;
+n. 170 del 21 febbraio 1992;
+b) i provvedimenti ISVAP:
+n. 97 del 13 dicembre 1995;
+n. 98 del 13 dicembre 1995.
+2. Non è applicabile ogni altra disposizione incompatibile con le norme del presente
+Regolamento.
+
+=== K620 | [Sezione III - Art. 45] (Disposizioni transitorie)
+Art. 45
+(Disposizioni transitorie)
+1. (abrogato)20
+2. (abrogato)21
+3. Fino all’emanazione del Regolamento di cui all’articolo 68 del decreto, i soggetti che
+detengono, direttamente o indirettamente, il controllo dell’impresa o una partecipazione
+superiore al dieci per cento del capitale dell’impresa rappresentato da azioni con diritto di
+voto, devono dimostrare di essere in grado di garantire la sana e prudente gestione
+dell’impresa secondo quanto stabilito dal decreto ministeriale 24 aprile 1987, n. 186.
+A tal fine le imprese allegano all’istanza di cui all’articolo 4 la documentazione prevista
+dall’allegato B.2 al Regolamento22.
+4. In relazione alle verifiche da effettuare ai sensi del presente articolo, l’IVASS può
+richiedere ulteriori dati, informazioni e documenti all’impresa ed agli altri soggetti
+interessati23.
+5.
+
+=== K621 | [Sezione III - Art. 46] (Pubblicazione)
+Art. 46
+(Pubblicazione)
+1. Il presente Regolamento è pubblicato nella Gazzetta Ufficiale della Repubblica Italiana,
+nel Bollettino e sul sito internet dell’Autorità.
+
+=== K622 | [Sezione III - Art. 47 (2)] (Entrata in vigore)
+Art. 47
+(Entrata in vigore)
+1. Il presente Regolamento entra in vigore il giorno successivo alla sua emanazione.
+Il Presidente
+Comma abrogato dall’articolo 7, comma 1, lettera a), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 1
+disponeva: “Fino all’emanazione del Regolamento di cui all’articolo 76 del decreto:
+a) i soggetti cui sono attribuite funzioni di amministrazione e di direzione dell’impresa devono essere in possesso dei
+requisiti di onorabilità e professionalità stabiliti dagli articoli 2 e 3 del decreto ministeriale 24 aprile 1987, n. 186 e non
+devono versare in una delle situazioni impeditive di cui all’articolo 3, comma 4, del decreto ministeriale 24 aprile 1987, n.
+186;
+b) i soggetti cui sono attribuite funzioni di controllo dell’impresa devono essere in possesso dei requisiti di onorabilità e
+professionalità stabiliti dagli articoli 2 e 3 del decreto ministeriale 24 aprile 1987, n. 186 e dagli articoli 1 e 2 del decreto
+ministeriale 30 marzo 2000, n. 162 e non devono versare in una delle situazioni impeditive di cui all’articolo 3, comma 4, del
+decreto ministeriale 24 aprile 1997, n. 186 e all’articolo 1, commi 5 e 6 del decreto ministeriale 30 marzo 2000, n. 162.
+A tal fine le imprese allegano all’istanza di cui all’articolo 4 la documentazione prevista dall’allegato A al presente
+Regolamento”.
+Comma abrogato dall’articolo 7, comma 1, lettera b), del Provvedimento IVASS n. 23 del 18 novembre 2014. Il comma 2
+disponeva: “Fino all’emanazione del Regolamento di cui all’articolo 77 del decreto, i soggetti che detengono, direttamente o
+indirettamente, il controllo dell’impresa o una partecipazione superiore al cinque per cento del capitale dell’impresa
+rappresentato da azioni con diritto di voto devono essere in possesso dei requisiti di onorabilità stabiliti dall’articolo 2 del
+decreto ministeriale 24 aprile 1987, n. 186. Nel caso si tratti di persone giuridiche, i requisiti di onorabilità devono essere
+posseduti dagli amministratori, dai sindaci e dai direttori generali delle stesse. A tal fine le imprese allegano all’istanza di cui
+all’articolo 4 la documentazione prevista dall’allegato B.1 al Regolamento”.
+Comma modificato dall’articolo 7, comma 1, lettera c), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma modificato dall’articolo 7, comma 1, lettera d), del Provvedimento IVASS n. 23 del 18 novembre 2014.
+Comma abrogato dall’articolo 140, comma 1, lettera a) del Regolamento ISVAP n. 33 del 10 marzo 2010. Il comma 5
+disponeva “Fino all’entrata in vigore della disciplina di recepimento della direttiva2005/68/CE in materia di riassicurazione e
+delle relative norme di attuazione, le disposizioni del presente Regolamento si applicano, in quanto compatibili, alle imprese
+che intendono esercitare esclusivamente l’attività di riassicurazione, con sede legale nel territorio della Repubblica e alle
+sedi secondarie di imprese di riassicurazione con sede legale in uno Stato terzo”.
+
+
+######## NORMA: Guidelines on the use of Remote Customer Onboarding Solutions.pdf  (id EBA-d703d6836b)
+
+=== K623 | [Premessa] 22/11/2022
+EBA/GL/2022/15
+22/11/2022
+Final Report
+Guidelines on the use of Remote Customer Onboarding Solutions
+under Article 13(1) of Directive (EU) 2015/849
+Contents
+
+=== K627 | [par. 1 (2)] Executive Summary
+1. Executive Summary
+In September 2020, the European Commission published its Digital Finance Strategy for the
+European Union. This document sets out a strategic objective ‘to embrace digital finance for the
+good of consumers and businesses and identifies EU priorities and actions to ‘make the benefits of
+digital finance available to European consumers and businesses while also mitigating risks 1.
+One of the Commission’s priorities is to address the fragmentation in the Digital Single Market for
+financial services. To this end, the Commission asked the EBA to issue guidelines on the application
+of anti-money laundering and countering the financing of terrorism (AML/CFT) rules where
+customers are onboarded remotely. In the Commission’s view, customer due diligence (CDD) rules
+in Directive (EU) 2015/849 do not provide sufficient clarity about what is, and what is not, allowed
+in a remote and digital context.
+The EBA confirms that supervisory expectations and what credit and financial institutions do to
+comply differs across Member States. Regulatory divergence is an obstacle to innovation and the
+cross-border provision of financial services; it can also create gaps and expose the Union’s single
+market to financial crime. For this reason, these Guidelines set common EU standards on the
+development and implementation of sound, risk-sensitive initial CDD processes in the remote
+customer onboarding context. They set out the steps credit and financial institutions should take
+when choosing remote customer onboarding tools and what credit and financial institutions should
+do to satisfy themselves that the chosen tool is adequate and reliable, that it remains adequate and
+reliable, and that it enables them to comply effectively with their initial CDD obligations. The
+Guidelines are clear that as long as the conditions set out in these guidelines are met, and to the
+extent that this is permitted by national law, the choice of individual technological solutions is the
+credit and financial institutions.
+The EBA publicly consulted on a version of these guidelines between 10 December 2021 and 10
+March 2022 and amended them as necessary to address concerns raised in this context. The
+Guidelines will enter into force 6 months after their publication in all EU official languages.
+Next steps
+The guidelines will be translated into the official EU languages and published on the EBA website.
+The deadline for competent authorities to report whether they comply with the guidelines will be
+two months after the publication of the translations. The guidelines will apply from 02.10.2023.
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0591
+
+=== K628 | [par. 2 (2)] Background and rationale
+2. Background and rationale
+Background
+1. In 2020, when publishing its Digital Finance Strategy 1, the European Commission invited the EBA,
+to develop guidelines in consultation with the other European Supervisory Authorities (ESAs) on
+elements related to identification and verification for customer remote onboarding and reliance
+on CDD processes carried out by third parties, specifically:
+a. the types of innovative technologies that are acceptable when financial institutions
+on-board customers remotely,
+b. the conditions that need to be met when financial institutions use innovative
+technologies to on-board customers remotely,
+c. the acceptable forms of digital documentation used for remote customer
+onboarding, and
+d. the conditions under which it is acceptable for financial institutions to rely on
+information provided by third parties when on-boarding customer remotely.
+2. The Commission made this request to address the fact that in the Commission’s view, the current
+AML/CFT rules on CDD in Directive (EU) 2015/849 do not provide sufficient clarity about what is,
+and what is not, allowed in a remote and digital context.
+3. There has been a significant increase in demand for remote onboarding from institutions and their
+customers. This trend was exacerbated by restrictions on movement in the context of the COVID-
+19 pandemic, which highlighted the importance of institutions having at their disposal reliable
+and effective means to meet their CDD obligations in this context.
+4. The EBA considers it important for competent authorities and credit and financial institutions to
+understand the capabilities of these new remote solutions to onboard customers to make the
+most of the opportunities they offer. At the same time, to support their sound and responsible
+use, competent authorities and credit and financial institutions need to be aware of ML/TF risks
+arising from the use of such tools and take steps to mitigate those risks effectively. Consequently,
+the EBA published a first Opinion, in 2018, on the use of innovative solutions by credit and financial
+institutions in the CDD process 2, and included specific guidance on collecting identity’s evidence
+for non-face to face situations in its revised Risk Factors Guidelines 3 . These new guidelines
+complement existing guidelines with specific instructions on the steps credit and financial
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0591
+JC 2017 81
+EBA/GL/2021/02
+institutions should take when choosing remote customer onboarding tools, and when
+ascertaining whether these tools are sufficient to enable them to comply effectively with their
+initial CDD obligations. Supervisors will use these guidelines to assess whether credit and financial
+institutions’ tools are adequate.
+Rationale
+5. Under the EBA competences within its regulatory framework, the EBA has a leading role in the
+area of prevention of the use of the EU’s financial system for ML/TF purposes, and is mandated
+to lead, monitor and coordinate the EU financial sector’s fight against ML/TF. Through these
+guidelines, the EBA establishes a common understanding by competent authorities and credit and
+financial institutions on the steps credit and financial institutions should take to ensure safe and
+effective remote customer onboarding practices that are in line with the applicable AML/CFT legal
+and data protection framework.
+6. These Guidelines do not favour specific technological solutions and respect the principle of
+technological neutrality. Technological neutrality is important to foster ongoing innovation and to
+ensure that the AML/CFT principles and procedures set out in these guidelines remain relevant
+and applicable. These guidelines should help credit and financial institutions to mitigate risks
+arising from the use of technological solutions in the remote onboarding context, such as
+impersonation fraud risks.
+7. These guidelines apply to standard remote customer onboarding journeys. Nevertheless, in
+situations where simplified due diligence could be applied, credit and financial institutions may
+adjust the elements of these guidelines that relate to the nature and type of verification data and
+documentation in line with a risk-based approach. Paragraphs 4.40 to 4.44 of the EBA ML/TF Risk
+Factors Guidelines set out what simplified due diligence might entail.
+8. These guidelines also support the use of non-qualified trust services or other solutions that are
+regulated, recognized, approved, or accepted at a national level, in accordance with the Article
+13(1) (a) of the AMLD. The use of such services and solutions is, however, contingent on the
+application of adequate safeguards that mitigate against impersonation and identity fraud risks in
+this context. The guidelines set out what these safeguards should be.
+Interaction with other guidelines
+9. The guidelines complement the following ESAs Guidelines:
+• EBA Guidelines on customer due diligence and the factors credit and financial institutions
+should consider when assessing the money laundering and terrorist financing risk associated
+with individual business relationships and occasional transactions (‘The ML/TF Risk Factors
+Guidelines’) under Articles 17 and 18(4) of Directive (EU) 2015/849 4;
+EBA/GL/2021/02
+• EBA Guidelines on internal governance under Directive 2013/36/EU 5;
+• EBA Guidelines on policies and procedures in relation to compliance management and the
+role and responsibilities of the AML/CFT Compliance Officer under Article 8 and Chapter VI
+of Directive (EU) 2015/849 6;
+• EBA Guidelines on outsourcing arrangements 7;
+• EBA Guidelines on ICT and security risk management 8.
+EBA/GL/2021/05
+EBA/CP/2021/31
+EBA/GL/2019/02
+EBA/GL/2019/04
+
+=== K629 | [par. 3 (2)] Guidelines
+3. Guidelines
+EBA/GL/2022/15
+22/11/2022
+Guidelines
+on the use of Remote Customer Onboarding
+Solutions under Article 13(1) of Directive (EU)
+2015/849
+
+=== K630 | [par. 1 (3)] Compliance and reporting
+1. Compliance and reporting
+obligations
+Status of these guidelines
+1. This document contains guidelines issued pursuant to Article 16 of Regulation (EU) No
+1093/2010 9 . In accordance with Article 16(3) of Regulation (EU) No 1093/2010, competent
+authorities and financial institutions must make every effort to comply with these guidelines.
+2. Guidelines set the EBA view of appropriate supervisory practices within the European System of
+Financial Supervision or of how Union law should be applied in a particular area. Competent
+authorities as defined in Article 4(2) of Regulation (EU) No 1093/2010 to whom guidelines apply
+should comply by incorporating them into their practices as appropriate (e.g. by amending their
+legal framework or their supervisory processes), including where guidelines are directed
+primarily at institutions.
+Reporting requirements
+3. According to Article 16(3) of Regulation (EU) No 1093/2010, competent authorities must notify
+the EBA as to whether they comply or intend to comply with these guidelines, or otherwise with
+reasons for non-compliance, by 30.05.2023. In the absence of any notification by this deadline,
+competent authorities will be considered by the EBA to be non-compliant. Notifications should
+be sent by submitting the form available on the EBA website with the reference
+‘EBA/GL/2022/15’. Notifications should be submitted by persons with appropriate authority to
+report compliance on behalf of their competent authorities. Any change in the status of
+compliance must also be reported to EBA.
+4. Notifications will be published on the EBA website, in line with Article 16(3).
+Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November 2010 establishing a
+European Supervisory Authority (European Banking Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/78/EC, (OJ L 331, 15.12.2010, p.12).
+
+=== K631 | [par. 2 (3)] Subject matter, scope and
+2. Subject matter, scope and
+definitions
+Subject matter and scope of application
+5. These guidelines set out the steps credit and financial institutions should take when adopting or
+reviewing solutions to comply with their obligations under Article 13(1) points (a), (b) and (c) of
+Directive (EU) 2015/849 10 to onboard new customers remotely. It also sets out the steps credit
+and financial institutions should take when relying on third parties in accordance with Chapter I,
+Section 4 of Directive (EU) 2015/849, and the policies controls and procedures credit and financial
+institutions should put in place in relation to customer due diligence (CDD) as referred to in
+Article 8(3) and (4) point (a) of Directive (EU) 2015/849 where the CDD measures are performed
+remotely.
+6. Competent authorities should have regard to these guidelines when assessing whether the steps
+credit and financial institutions take to comply with their obligations under Directive (EU)
+2015/849 in the remote customer onboarding context are adequate and effective.
+Addressees
+7. These guidelines are addressed to competent authorities as defined in Article 4(2) of Regulation
+(EU) No 1093/2010. These guidelines are also addressed to financial sector operators as defined
+in Article 4(1a) of that Regulation, which are credit and financial institutions as defined in Article
+3(1) and 3(2) of Directive (EU) 2015/849.
+Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of
+the financial system for the purposes of money laundering or terrorist financing
+Definitions
+8. Unless otherwise specified, terms used and defined in Directive (EU) 2015/849 have the same
+meaning in the guidelines. In addition, for the purposes of these guidelines, the following
+definitions apply:
+Personal data relating to the physical,
+physiological or behavioural characteristics of a
+natural person, which allow or confirm the
+Biometric data unique identification of that natural person,
+such as facial images or dactyloscopic data,
+which is obtained and processed using
+technical means.
+
+=== K632 | [par. 3 (3)] Implementation
+3. Implementation
+Date of application
+These Guidelines apply from 02.10.2023.
+
+=== K633 | [par. 4] Guidelines on the use of Remote
+4. Guidelines on the use of Remote
+Customer Onboarding Solutions
+under Article 13(1) of Directive (EU)
+2015/849
+
+=== K634 | [par. 4.1.1] Policies and procedures relating to remote customer onboarding
+4.1.1 Policies and procedures relating to remote customer onboarding
+9. Credit and financial institutions should put in place and maintain policies and procedures to
+comply with their obligations under Article 13(1) (a) and (c) of Directive (EU) 2015/849 in
+situations where the customer is onboarded remotely. These policies and procedures should
+be risk-sensitive and set out at least:
+a) a general description of the solution credit and financial institutions have put in place
+to collect, verify, and record information throughout the remote customer
+onboarding process. This should include an explanation of the features and
+functioning of the solution;
+b) the situations where the remote customer onboarding solution can be used, taking
+into account the risk factors identified and assessed in accordance with Article 8 (1)
+of the Directive (EU) 2015/849 and in the business-wide risk assessment, including a
+description of the category of customers, products and services that are eligible for
+remote onboarding;
+c) which steps are fully autonomized and which steps require human intervention;
+d) the controls in place to ensure that the first transaction with a newly onboarded
+customer is executed only once all initial customer due diligence (CDD) measures,
+have been applied;
+e) a description of the induction and regular training programs to ensure staff
+awareness and up-to-date knowledge of the functioning of the remote customer
+onboarding solution, the associated risks, and of the remote customer onboarding
+policies and procedures aimed at mitigating such risks.
+
+=== K635 | [par. 10] The policies and procedures, when implemented, should enable credit and financial
+10. The policies and procedures, when implemented, should enable credit and financial
+institutions to ensure compliance with the provisions in Section 4.2 to 4.7 of these Guidelines.
+
+=== K636 | [par. 4.1.2] Governance
+4.1.2 Governance
+11. In addition to the provisions set out in the Section 4.2.4 of the EBA Compliance Officer
+Guidelines 11 , the AML/CFT Compliance Officer 12 should, as part of their general duty to
+prepare policies and procedures to comply with the CDD requirements, make sure that
+remote customer onboarding policies and procedures are implemented effectively, reviewed
+regularly and amended where necessary.
+12. The management body of the credit and financial institution should approve remote customer
+onboarding policies and procedures and oversee their correct implementation.
+
+=== K637 | [par. 4.1.3] The pre-implementation assessment of the remote customer onboarding solution
+4.1.3 The pre-implementation assessment of the remote customer onboarding solution
+13. When considering whether to adopt a new remote customer onboarding solution, credit and
+financial institutions should carry out a pre-implementation assessment of the remote
+customer onboarding solution.
+14. Credit and financial institutions should set out the scope, steps and record keeping
+requirements of the pre-implementation assessment in their policies and procedures, which
+should include at least:
+a) an assessment of the adequacy of the solution regarding the completeness and
+accuracy of the data and documents to be collected, as well as of the reliability and
+independence of the sources of information it uses;
+b) an assessment of the impact of the use of the remote customer onboarding solution
+on its business-wide risks, including ML/TF, operational, reputational and legal risks;
+c) the identification of possible mitigating measures and remedial actions for each risk
+identified in the assessment under letter b);
+d) tests to assess fraud risks including impersonation fraud risks and other information
+and communications technology (“ICT”) and security risks, in accordance with the
+provision 43 of the EBA Guidelines on ICT and security risk management 13;
+e) an end-to-end testing of the functioning of the solution targeting customer(s),
+product(s) and service(s) identified in the remote customer onboarding policies and
+procedures.
+15. Credit and financial institutions should consider the criteria in paragraph 14 (a) (d) and (e) to
+be met where the solution uses one of the following:
+Draft Guidelines on policies and procedures in relation to compliance management and the role and responsibilities of
+the AML/CFT Compliance Officer under Article 8 and Chapter VI of Directive
+In accordance with the Proportionality criteria set out in Section 4.2.2 of the Compliance Officer Guidelines
+EBA/GL/2019/04
+a) electronic identification schemes notified in accordance with Article 9 of Regulation
+(EU) No 910/2014 and meeting the requirements of assurance levels ‘substantial’ or
+‘high’ in accordance with Article 8 of that Regulation;
+b) relevant qualified trust services that meet the requirements of Regulation (EU) No
+910/2014, in particular Chapter III, Section 3 and Article 24 (1), subparagraph 2, point
+(b) of that Regulation.
+16. Credit and financial institutions should be able to demonstrate to their competent authority
+which assessments they carried out before implementation of the remote customer
+onboarding solution, the outcome of their assessment and how its use is appropriate in light
+of the ML/TF risks identified for the types of customer(s), service(s), geographies and
+product(s) in its scope.
+17. Credit and financial institutions should start using a remote customer onboarding solution
+only once they are satisfied that it can be integrated into the institution’s wider internal
+control system, thereby allowing the institution to adequately manage the ML/TF risks that
+may arise from the use of the remote customer onboarding solution.
+
+=== K638 | [par. 4.1.4] Ongoing monitoring of the remote customer onboarding solution
+4.1.4 Ongoing monitoring of the remote customer onboarding solution
+18. Credit and financial institutions should monitor the remote customer onboarding solution on
+an ongoing basis to ensure that it operates in line with the credit and financial institutions
+expectations. They should complement their policies and procedures described in paragraph
+9 with a description of at least:
+a) the steps they will take to be satisfied of the ongoing quality, completeness, accuracy
+and adequacy of data collected during the remote customer onboarding process,
+which should be commensurate to the ML/TF risks to which the credit and financial
+institution is exposed to;
+b) the scope and frequency of such regular reviews; and
+c) the circumstances that will trigger ad hoc reviews, which should include at least:
+a. changes to the ML/TF risk exposure of the credit and financial institution;
+b. deficiencies on the functioning of the solution detected in the course of
+monitoring, audit or supervisory activities;
+c. A perceived increase in fraud attempts;
+d. changes to the legal or regulatory framework.
+19. Credit and financial institutions should set out in their procedures and processes remedial
+measures where a risk has materialised, or where errors have been identified that have an
+impact on the efficiency and effectiveness of the general remote customer onboarding
+solution. These measures should include at least:
+a) a review of all affected business relationships, to assess whether sufficient initial CDD
+has been applied by the credit and financial institutions in order to comply with
+article 13 (1), (a), (b) and (c) of the AMLD. Credit and financial institutions should
+prioritise those business relationships that carry the highest ML/TF risk;
+b) taking into account the information obtained in the above-mentioned review, an
+assessment of whether an affected business relationships should be:
+a. subject to additional due diligence measures;
+b. subject to limitations, such as limits on the volume of transaction, where
+permitted under national law, until such time as a review has taken place;
+c. terminated;
+d. reported to the FIU;
+e. reclassified into a different risk category.
+20. Credit and financial institutions should consider the most effective way to monitor the
+ongoing adequacy and reliability of the remote customer onboarding solutions. They should
+consider one or more of, but not limited to, the following means:
+i. quality assurance testing;
+ii. automated critical alerts and notifications;
+iii. regular automated quality reports;
+iv. sample testing;
+v. manual reviews.
+21. This section also applies where fully automated remote customer onboarding solutions are
+used which are highly dependent on automated algorithms, without or with little human
+intervention.
+22. Credit and financial institutions should be able to demonstrate to their competent authority
+which reviews they carried out and the remedial steps they have taken to rectify any
+shortcomings identified throughout the lifetime of the remote customer onboarding solution.
+
+=== K639 | [par. 4.2.1] Identifying the customer
+4.2.1 Identifying the customer
+23. In addition to the points set out in paragraph 9, credit and financial institutions should set out
+in their policies and procedures the information needed to identify the customer, the types
+of documents, data, or information the institution will use to verify the customer’s identity
+and the manner in which this information will be verified.
+24. Credit and financial institutions should ensure that:
+a) the information obtained through the remote customer onboarding solution is up-
+to-date and adequate to meet the applicable legal and regulatory standards for initial
+customer due diligence;
+b) any images, video, sound and data are captured in a readable format and with
+sufficient quality so that the customer is unambiguously recognisable;
+c) the identification process does not continue if technical shortcomings or unexpected
+connection interruptions are detected.
+25. Credit or financial institutions should consider the criteria in paragraph 24 to be met where
+the solution uses one of the following:
+a) electronic identification schemes notified in accordance with Article 9 of Regulation
+(EU) No 910/2014 and meeting the requirements of assurance levels ‘substantial’ or
+‘high’ in accordance with Article 8 of that Regulation;
+b) relevant qualified trust services that meet the requirements of Regulation (EU) No
+910/2014, in particular Chapter III, Section 3 and Article 24 (1), subparagraph 2, point
+(b) of that Regulation.
+26. The documents and information collected during the remote identification process, which are
+required to be retained in accordance with Article 40(1) point (a) of Directive (EU) 2015/849,
+should be time-stamped and stored securely by the credit and financial institution. The
+content of stored records, including images, videos, sound and data should be available in a
+readable format and allow for ex-post verifications.
+
+=== K640 | [par. 4.2.2] Identifying natural persons
+4.2.2 Identifying natural persons
+27. Credit and financial institutions should determine in their policies, as set out in Section 4.1.1
+paragraph 9, the information they need to obtain to identify customers remotely in
+accordance with Article 13(1) (a) and (c) of Directive (EU) 2015/849. In addition, credit and
+financial institutions should define what information:
+a) is manually entered by the customer;
+b) is automatically captured from the documentation provided by the customer;
+c) is gathered using other internal or external sources.
+28. Credit and financial institutions should put in place and maintain appropriate mechanisms to
+ensure that the information they capture automatically in line with paragraph 27 is reliable.
+They should apply controls to address associated risks, including risks associated with
+automatic capture of data such as the obfuscation of the location of the customer’s device
+spoofed Internet Protocol (IP) addresses or services such as Virtual Private Networks (VPNs).
+
+=== K641 | [par. 4.2.3] Identifying Legal Entities
+4.2.3 Identifying Legal Entities
+29. Where credit and financial institutions remotely onboard customers that are legal entities,
+they should define in their policies and procedures, as set out in Section 4.1.1 paragraph 9,
+which category of legal entities they will onboard remotely, taking into account the level of
+ML/TF risk associated with each category, and the level of human intervention required to
+validate the identification information.
+30. Credit and financial institutions should ensure that the remote customer onboarding solution
+has features to collect:
+a) all relevant data and documentation to identify and verify the legal person
+b) all relevant data and documentation to verify that the natural person acting on
+behalf of the legal person is legally entitled to act as such;
+c) the information regarding the beneficial owners in accordance with provision 4.12
+of the EBA Risk Factors Guidelines 14.
+31. For the natural person acting on behalf of a legal person, credit and financial institutions
+should apply the identification process described in the Section 4.2.2.
+
+=== K642 | [par. 4.2.4] Nature and purpose of the business relationship
+4.2.4 Nature and purpose of the business relationship
+32. When credit and financial institutions assess and, as appropriate, obtain information on the
+purpose and intended nature of the business relationship in accordance with Article 13(1)
+point (c) of Directive (EU) 2015/849, as further specified in Section 4.38 of the EBA Risk Factors
+Guidelines, they should, for the purposes of these guidelines, have completed the relevant
+actions before the end of the remote customer onboarding process.
+
+=== K643 | [par. 4.3] Document authenticity & integrity
+4.3 Document authenticity & integrity
+EBA/GL/2021/02
+33. Where credit and financial institutions accept reproductions of an original document and do
+not examine the original document, they should take steps to ascertain that the reproduction
+is reliable. Credit and financial institutions should establish at least the following:
+a) if the reproduction includes security features embedded in the original document
+and if the specifications of the original document that are being reproduced are valid
+and acceptable, in particular, type, size of characters and structure of the document,
+by comparing them with official databases, such as PRADO 15;
+b) whether personal data has been altered or otherwise tampered with or, where
+applicable, whether the picture of the customer embedded in the document was not
+replaced;
+c) whether the integrity of the algorithm used to generate the unique identification
+number of the original document, in case the official document has been issued with
+machine-readable zone (MRZ);
+d) whether the provided reproduction is of sufficient quality and definition so as to
+ensure that relevant information is unambiguous;
+e) that the provided reproduction has not been displayed on a screen based on a
+photograph or scan of the original identity document.
+34. Where credit and financial institutions use features to automatically read information from
+documents, such as Optical Character Recognition (OCR) algorithms or Machine Readable
+Zone (MRZ) verifications, they should take the steps necessary to ensure that that these tools
+capture information in an accurate and consistent manner.
+35. In situations where the device the customers use to prove their identity allows the collection
+of relevant data, for example because the data is contained in the chip of a national identity
+card, and it is technically feasible for the credit and financial institutions to access this data,
+credit and financial institutions should consider using this information to verify its consistency
+with the information obtained through other sources, such as the submitted data or other
+documents submitted by the customer.
+36. Where available, during the verification process, credit and financial institutions should verify
+the security features embedded in the official document, if any, such as holograms, as a proof
+of their authenticity.
+37. Credit and financial institutions should set out in their policies and procedures how they will
+adjust their documentation requests for the purposes of financial inclusion. Where weaker or
+non-traditional forms of documentation are accepted as a result, credit and financial
+institutions should carry out in addition to measures as set out in paragraph 4.10 of the EBA
+https://www.consilium.europa.eu/prado/en/prado-start-page.html
+Risk Factors Guidelines, controls or increased human intervention to satisfy themselves that
+they understand the ML/TF risk associated with the business relationship.
+
+=== K644 | [par. 4.4] Matching customer identity as part of the verification process
+4.4 Matching customer identity as part of the verification process
+38. Remote customer onboarding solutions implemented by a credit and financial institutions
+should, as a minimum, allow for the following, as part of their verification process:
+a) there is a match between the visible information of the natural person and the
+documentation provided;
+b) where the customer is a legal entity, it is publicly registered, where applicable;
+c) where the customer is a legal entity, the natural person that represents it is entitled
+to act on its behalf.
+39. Where the remote customer onboarding solution involves the use of biometric data to verify
+the customer’s identity, credit and financial institutions should make sure that the biometric
+data is sufficiently unique to be unequivocally linked to a single natural person. Credit and
+financial institutions should use strong and reliable algorithms to verify the match between
+the biometric data provided on the submitted identity document and the customer being
+onboarded. In situations where the solution does not provide the required level of
+confidence, additional controls should be applied.
+40. In situations where the evidence provided is of insufficient quality resulting in ambiguity or
+uncertainty so that the performance of remote checks is affected, the individual remote
+customer onboarding process should be interrupted and restarted or redirected to a face-to-
+face verification.
+41. Where credit and financial institutions use unattended remote onboarding solutions, in which
+the customer does not interact with an employee to perform the verification process, they
+should:
+a) ensure that any photograph(s) or video is taken under adequate lighting conditions
+and that the required properties are captured with necessary clarity to allow the
+proper verification of the customer’s identity;
+b) ensure that any photograph(s) or video is taken at the time the customer is
+performing the verification process;
+c) perform liveness detection verifications, which may include procedures where a
+specific action from the customer is required to verify that he/she is present in the
+communication session or which can be based on the analysis of the received data
+and does not require a specific action by the customer;
+d) use strong and reliable algorithms to verify if the photograph(s) or video taken
+matches the picture(s) retrieved from the official document(s) belonging to the
+customer.
+42. Where credit and financial institutions use attended remote customer onboarding solutions
+in which the customer interacts with an employee to perform the verification process, they
+should:
+a) ensure that the quality of the image and audio is sufficient to allow the proper
+verification of the customer’s identity and that reliable technological systems are
+used;
+b) foresee the participation of an employee that has sufficient knowledge of the
+applicable AML/CFT regulation and security aspects of remote verification and who
+is sufficiently trained to anticipate and prevent the intentional or deliberate use of
+deception techniques related to remote verification, and to detect and react in case
+of their occurrence;
+c) develop an interview guide defining the subsequent steps of the remote verification
+process as well as the actions required from the employee. The interview guide
+should include guidance on observing and identifying psychological factors or other
+features that might characterise suspicious behaviour during remote verification.
+43. Where possible, credit and financial institutions should use remote customer onboarding
+solutions that include randomness in the sequence of actions to be performed by the
+customer for verification purposes to guard against risks such as the use of synthetic identities
+or coercion. Where possible, credit and financial institutions should also provide random
+assignments to the employee responsible for the remote verification process to avoid
+collusion between the customer and the responsible employee.
+44. In addition to the above, and where commensurate with the ML/TF risk associated with the
+business relationship, credit and financial institutions should use of one or more of the
+following controls or a similar measure to increase the reliability of the verification process.
+These controls or measures may include, but are not limited to, the following:
+a) the first payment is drawn on an account in the sole or joint name of the customer
+with an EEA-regulated credit or financial institution or in a third country that has
+AML/CFT requirements that are not less robust than those required by Directive (EU)
+2015/849;
+b) send a randomly generated passcode to the customer to confirm the presence
+during the remote verification process. The passcode should be a single-use and
+time-limited code;
+c) capture biometric data to compare them with data collected through other
+independent and reliable sources;
+d) telephone contacts with the customer;
+e) direct mailing (both electronic and postal) to the customer.
+45. Credit and financial institutions should consider the criteria in paragraphs 38 to 43 to be met
+where the solution uses one of the following:
+a) electronic identification schemes notified in accordance with Article 9 of Regulation
+(EU) No 910/2014 and meeting the requirements of assurance levels ‘substantial’ or
+‘high’ in accordance with Article 8 of that Regulation;
+b) relevant qualified trust services that meet the requirements of Regulation (EU) No
+910/2014, in particular Chapter III, Section 3 and Article 24 (1), subparagraph 2, point
+(b) of that Regulation.
+
+=== K645 | [par. 4.5] Reliance on third parties and outsourcing
+4.5 Reliance on third parties and outsourcing
+46. In addition to the points set out in paragraph 9, credit and financial institutions should include
+in their policies and procedures specifications setting out which remote customer onboarding
+functions and activities will be carried out or performed by the credit and financial institution,
+by third parties or by another outsourced service provider.
+4.5.1 Reliance on Third Party Providers in accordance with Chapter II, Section 4 of
+Directive (EU) 2015/849
+47. In addition to the EBA Risk Factors Guidelines 16, in particular to guidelines 2.20 to 2.21 and
+4.32 to 4.37 of those Guidelines, they should apply the following criteria:
+a) take the steps necessary to be satisfied that the third party’s own CDD remote
+customer onboarding processes and procedures and the information and data they
+collect in this context, are sufficient and consistent with requirements laid down in
+these Guidelines;
+b) ensure the continuity of the business relationships established between the
+customer and the credit and financial institution to guard against events that might
+reveal shortcomings on the remote customer onboarding process carried out by the
+third party.
+
+=== K646 | [par. 4.5.2] Outsourcing of CDD
+4.5.2 Outsourcing of CDD
+EBA/GL/2021/02
+48. Where credit and financial institutions outsource all or parts of the remote customer
+onboarding process to an outsourced service provider, as referred to in Article 29 of Directive
+(EU) 2015/849, credit and financial institutions should apply in addition to guidelines 2.20 to
+2.21 and 4.32 to 4.37 of the EBA Risk Factors Guidelines and in addition to the EBA Guidelines
+on Outsourcing 17 where applicable, before and during the business relationship with the
+outsourced service provider the following measures, the extent of which should be adjusted
+on a risk-sensitive basis:
+a) ensure that the outsourced service provider effectively implements and complies
+with the credit and financial institution’s remote customer onboarding policies and
+procedures in accordance with the outsourcing agreement. This should be achieved
+through regular reporting, ongoing monitoring, on-site visits or sample testing;
+b) carry out assessments to ensure that the outsourced service provider is sufficiently
+equipped and able to perform the remote customer onboarding process.
+Assessments may include, but are not limited to, the assessment of staff training,
+technology fitness and data governance at the outsourced service provider;
+c) ensure that the outsourced service provider informs the credit and financial
+institutions of any proposed changes of the remote customer onboarding process or
+any modification made to the solution provided by the outsourced service provider.
+49. Where the outsourced service provider stores customer data, including, but not limited to,
+photography, videos, and documents, during the remote onboarding process, credit and
+financial institutions should ensure that:
+a) only necessary customer’s data is collected and stored in line with a clearly defined
+retention period;
+b) access to the data is strictly limited and registered;
+c) appropriate security measures are implemented to ensure that the stored data is
+protected.
+
+=== K647 | [par. 4.6] ICT and security risk management
+4.6 ICT and security risk management
+50. Credit and financial institutions should identify and manage their ICT and security risks related
+to the use of the remote customer onboarding process, including where credit and financial
+institutions rely on third parties or where the service is outsourced, including to group
+entities.
+51. In addition to complying with requirements set out in the EBA Guidelines on ICT and security
+risk management 18 where applicable, credit and financial institutions should use secure
+EBA Guidelines on outsourcing arrangements.docx (europa.eu)
+EBA/GL/2019/04
+communication channels to interact with the customer during the remote customer
+onboarding process. The remote customer onboarding solution should use secure protocols
+and cryptographic algorithms according to the industry best practices to safeguard the
+confidentiality, authenticity, and integrity of the exchanged data, where applicable.
+52. Credit and financial institutions should provide a secure access point for starting the remote
+customer onboarding process based on qualified certificates for electronic seals as referred
+to in Article 3(30) of Regulation (EU) No 910/2014 or for website authentication as referred
+to in Article 3(39) of that Regulation. The customer should also be informed about the
+applicable security measures that should be taken to ensure a secure use of the system.
+53. Where a multi-purpose device is used to perform the remote customer onboarding process,
+a secure environment should be used for the execution of the software code on the
+customer’s side, where applicable. Additional security measures should be implemented to
+ensure the security and reliance of the software code and the collected data, according to the
+security risk assessment as laid down in EBA Guidelines on ICT and security risk management.
+
+=== K648 | [par. 4.7] Compliance with these guidelines where credit and financial
+4.7 Compliance with these guidelines where credit and financial
+institutions use trust services and national identification processes as
+referred to in Article 13(1) (a) of Directive (EU) 2015/849
+54. Credit and financial institutions may use relevant trust services and electronic identification
+processes regulated, recognised, approved, or accepted by the relevant national authorities
+as referred to in Article 13 (1) point (a) of Directive (EU) 2015/849 to comply with these
+guidelines. When using such solutions, credit and financial institutions should assess in how
+far the solution complies with the provisions in these guidelines and apply measures
+necessary to mitigate any relevant risks that arise from the use of these solutions. They should
+particularly take into account whether the following risks are addressed:
+a) the risks involved in the authentication and set out in their policies and procedures
+specific mitigation measures, especially with regard to impersonation fraud risks;
+b) the risk that the customer's identity is not the claimed identity;
+c) the risk of lost, stolen, suspended, revoked, or expired identity evidence, including, as
+appropriate, tools to detect and prevent the use of identity frauds.
+
+=== K649 | [par. 4.1] Draft cost-benefit analysis / impact assessment
+4.1 Draft cost-benefit analysis / impact assessment
+Article 16(2) of Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24
+November 2010 establishing a European Supervisory Authority (European Banking Authority) (EBA
+Regulation) provides that the EBA should carry out an analysis of ‘the potential related costs and
+benefits’ of any guidelines it develops. Such analyses shall be proportionate in relation to the scope,
+nature and impact of the guidelines. This analysis should provide an overview of the findings
+regarding the problem to be dealt with, the solutions proposed and the potential impact of these
+options.
+In this section we look at specific issues where various options were weighed and choices made. The
+section explains the costs of benefits of each of these options and explains the preferred option.
+More generally, the guidelines are not expected to create a significant burden on credit and financial
+institutions that use remote customer onboarding solutions- The guidelines are expected to provide
+significant benefit to the institutions as they will be able to have a common standard to follow and
+to make sure that the AML risk is minimized by following the recommended steps.
+
+=== K650 | [par. 1 (4)] Inclusion of a “policies and procedures” section in the Guidelines
+1. Inclusion of a “policies and procedures” section in the Guidelines
+A. Problem identification
+In its request to the EBA, the COM asked the EBA to draft guidelines, in consultation with the other
+ESAs, with a view to providing greater clarity and convergence on four points:
+1) The types of innovative technologies that are acceptable when financial institutions
+onboard customers remotely;
+2) The conditions that need to be met when financial institutions use innovative technologies
+to on-board customers remotely, including any supplemental measures that may be
+required;
+3) The acceptable forms of digital documentation used for remote customer onboarding;
+4) The conditions under which it is acceptable for financial institutions to rely on information
+provided by third parties when on-boarding customers remotely, including, where relevant,
+clarification of any issues arising in respect of liability.
+In addition to the above points, some issues related to remote customer onboarding stem from
+governance shortcomings, rather than technical features. The governance arrangements however
+are not covered in the European Commission request.
+B. Policy objectives
+The objective is to prevent the use of the EU’s financial system for ML/TF purposes, while observing
+the principle of technology neutrality.
+C. Options considered
+Option 1: No governance arrangements included in the guidelines, in line with the European
+Commission request
+Option 2: Governance arrangements included in the guidelines, in line with the EBA survey findings
+D. Cost-benefit analysis
+The table below shows the pros and cons of each of the options considered.
+Pros Cons
+Option 1: No governance Follows exactly the request Does not cover an important
+arrangements included in the from the European source of risk in the remote
+guidelines Commission customer onboarding
+Option 2: Governance Covers governance, that was
+arrangements included in the identified as an important
+guidelines source of risks related to
+remote customer onboarding
+E. Preferred option
+Option 2 is preferred, as it ensures that the credit and financial institutions oversee the remote
+customer onboarding solution(s) during its lifecycle, while all areas of potential risks, including
+shortcomings in governance, are covered.
+
+=== K651 | [par. 2 (4)] Proportionality in governance arrangements when using solutions under eIDAS
+2. Proportionality in governance arrangements when using solutions under eIDAS
+regulation
+A. Problem identification
+The section “Policies and procedures relating to remote customer onboarding” sets out governance
+arrangements necessary to to create an ongoing secure environment and ensure consistency in the
+process.
+In cases where credit and financial institutions resort to digital interties under the eIDAS framework,
+some aspects of the policies and procedures may have been covered in the assessments conducted
+as part of rigorous conformity assessments and peer-to-peer reviews under A. 8-12 eIDAS.
+The application of the governance arrangements in such cases could create disproportionate work
+with respect to the CDD process.
+B. Policy objectives
+The objective is to prevent the use of the EU’s financial system for ML/TF purposes, while
+acknowledging the work and progress that has already been done until today in the framework of
+the eIDAS regulation and leveraging on this work in the CDD processes of the credit and financial
+institutions.
+C. Options considered
+Option 1: No differentiation in governance provisions
+Option 2: Exemption of the eID solutions from governance provisions
+Option 3: Governance provisions taking into account the assessments under eID solutions
+D. Cost-benefit analysis
+Option 1 envisages that the governance arrangements are the same irrespective of the method of
+verification of identity and that the credit and financial institution should not consider any
+assessment already done by the digital identity provider. While this approach may be secure, it is
+burdensome and involves double work with regard to assessments that already have been conducted
+by the digital identity issuers.
+Option 2 envisages an exemption of some governance arrangements for cases when eID solutions
+are used. This option would reduce the burden of verification on credit and financial institutions, but
+at the same time, may lead to gaps in the verification process, because using a certified eIDAS digital
+identity does not mean by itself that there are no associated risks to the Financial Sector Operator
+and to the customer.
+In Option 3, the Guidelines allows credit and financial institutions, when using a certified digital
+identity issuer, to take into account the assessment already performed by the national competent
+authority according to Regulation on electronic identification and trust services for electronic
+transactions in the internal market 19. This allows the credit and financial institutions to the extent
+possible to leverage the assessments already conducted, but the ultimate responsibility for the
+underlying verification process still lies with it.
+Options Pros Cons
+Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014
+Option 1: No differentiation in Ensuring that the due In cases where some of these
+governance provisions diligence is conducted at the steps are already taken as
+level of credit and financial part of digital identity issuer,
+institution the governance provisions
+may lead to double work
+Option 2: Exemption of the Acknowledgement of the Risk of credit and financial
+eID solutions from governance rigorous conformity institutions relying on the
+provisions assessments and peer-to- eIDAS assessments, and not
+peer reviews under eIDAS considering other risks that
+might be associated to the
+overall remote customer
+onboarding process
+Option 3: Taking into account Acknowledgement of the
+the assessments under eID rigorous conformity
+solutions assessments and peer-to-
+peer reviews under eIDAS
+E. Preferred option
+The preferred option is Option 3, where the credit and financial institutions can take into account the
+assessments conducted under the eID solutions notified under eIDAS. In this regard, when resorting
+to certified digital identity issuer, credit and financial institutions should take into account the
+assessment already performed by the national competent authority.
+3. Verification process: Liveness detection
+A. Problem identification
+The guidelines set out how credit and financial institutions should verify that the person entering the
+business relationship is the person that claims to be. One of the steps of the verification process is
+the ability to verify whether the video, picture or other biometric data belong to a living person at
+the moment of the capture. In situations where credit and financial institutions do not resort to live
+videoconference, credit and financial institutions can perform these checks by using active or passive
+liveness detection. This part discusses whether and when liveness detection should be required.
+B. Policy objectives
+The objective is to increase the reliability of the verification process, while observing the principle of
+technology neutrality.
+C. Options considered
+Option 1: No mandatory liveness detection
+Option 2: Mandatory liveness detection for all unattended situations
+Option 3: Mandatory liveness detection in all cases
+D. Cost-benefit analysis
+The liveness detection (passive or active) aims to increase the reliability of the verification process
+and it might be a key requirement for the remote customer onboarding process, therefore it should
+not be avoided, as suggested in option 1.
+At the same time, other more advanced approaches and technologies that increase the reliability of
+the verification process are already developed. Implementation of liveness detection may be costly
+but, by itself, it is not the unique key safeguard for the verification process. Therefore, Option 3,
+imposing liveness detection in all cases is assessed to be disproportionate.
+The second option requires the use of liveness detection only in unattended situations, i.e. where
+the customer does not interact with an employee of the credit and financial institution to perform
+the verification process. This means that all unattended situations, with fully automated remote
+verification, would require liveness detection (apart from situations where credit and financial
+institutions resort to Digital Identity Issuers).
+Unattended situations are highly dependent on the technology with little or no direct human
+intervention. Requiring liveness detection will increase the reliability of the verification process. This
+approach is proportionate, acknowledges the advances in technology and makes sure that liveness
+detection is deployed when most needed.
+E. Preferred option
+The preferred option is mandatory liveness detection in all unattended situations only (Option 2).
+These situations are highly dependent on the technology with little or no direct human intervention.
+In this context, EBA considered that the reliability of the verification process increases significantly
+when the process resorts to liveness detection.
+
+=== K652 | [par. 4.2] Feedback on the public consultation and on the opinion of the
+4.2 Feedback on the public consultation and on the opinion of the
+BSG
+The EBA publicly consulted on a draft version of these guidelines. The consultation period lasted for
+3 months and ended on 10 March 2022. 58 responses were received, including a response from the
+BSG. 43 non-anonymous responses are now published on the EBA website.
+This chapter summarises the comments raised by respondents, the analysis and discussion resulting
+from these comments, and the actions the EBA has taken to address them, if deemed necessary,
+including changes to the draft.
+In many cases, respondents made similar comments. In such cases, the comments, and the EBA’s
+analysis thereof, are grouped in a way that the EBA considers most appropriate. The section below
+includes the EBA’s response to the submission from the EBA’s Banking Stakeholder Group. In
+addition, in the feedback table that follows, the EBA has summarised the most relevant comments
+received from all respondents and has explained which responses have or have not led to changes
+and the reasons for the decision.
+The EBA’s response to the Banking Stakeholder Group’s submission
+The BSG submitted a number of comments on the draft guidelines and highlighted in particular the
+following points:
+• The scope of the guidelines. The BSG suggested to extend the scope of the Guidelines for
+other situations that are not initial customer due diligence, such as the acquisition of new
+products.
+The EBA clarifies that these guidelines apply in situations where credit and financial
+institutions onboard new customers. This means that the scope is limited to initial customer
+due diligence processes under Article 13(1) (a), (b) and (c) of the AMLD. The application of
+remote CDD measures in situations where existing customers acquire new products is
+outside of the scope of these Guidelines, but many provisions in these guidelines will also be
+relevant in this context.
+• Policies and Procedures. The BSG was of the view that the section on Policies and Procedures
+could be simplified. They considered that this section was prescriptive, which meant that
+there was a risk of imposing unnecessary cost and compliance burden for little benefit.
+The EBA considers that this section does not introduce new requirements but instead
+explains how existing requirements apply in the remote onboarding context. To further
+clarify regulatory expectations, this section was reorganized by merging some of the
+provisions in the consultation draft with relevant provisions in later sections of the final
+guidelines.
+• Application of simplified due diligence measures. The BSG suggested to clarify which
+document integrity checks and which identity verification checks should be completed in
+situations where simplified due diligence can be applied.
+The EBA clarifies that the guidance relating to document integrity checks in these guidelines
+apply to all remote customer onboarding journeys. Nevertheless, in situations where credit
+and financial situations can apply simplified due diligence, those aspects of the guidelines
+may be adjusted. In those particular cases, these guidelines should be read in conjunction
+with paragraphs 4.40 to 4.44 of the EBA ML/TF Risk Factors Guidelines.
+• Biometric Data. The BSG suggested to add technical support on how to use biometric data
+remotely.
+The EBA clarifies that technical details of the use of biometric data is outside of the scope of
+these guidelines. Furthermore, the guidelines do not prevent the use of different forms of
+biometrics once they are sufficiently unique to be unequivocally linked to a single natural
+person.
+• Authenticity checks: The BSG is of the view that applying liveness detection based on the
+ML/TF risk of the customer leaves room for different interpretations and might be difficult
+to implement.
+The EBA agrees and clarified that liveness detection should be included in all unattended
+situations, irrespective of the level of ML/TF risk.
+• Attended situations: The BSG considered the requirements for solutions that include
+interaction with an employee too burdensome, namely on the identification of psychological
+factors that might characterise suspicious behaviours.
+The EBA recalls that customer’s behaviour can be an important risk indicator, in line with
+provision 9.6 of the EBA Risk Factors Guidelines.
+• Section on ‘Digital Identities’: The BSG is of the view that guidelines should not prevent the
+use of technical solutions that are not electronic identification schemes made available at
+the national level.
+The EBA clarifies that these guidelines clarify that the use of solutions that are not within the
+scope of the eIDAS regulation is permitted. This is because Article 13(1) (a) of the AMLD
+states that relevant trust services and other solutions that are regulated, recognized,
+approved or accepted at a national level might also be used to perform the identification and
+verification process.
+Summary of key issues and the EBA’s response
+Respondents that contributed to the public consultation were asked to provide their responses to
+the following questions:
+• Do you have any comments on the section ‘Subject matter, scope and definitions’?
+• Do you have any comments on Guideline 4.1 ‘Internal policies and procedures’?
+• Do you have any comments on the Guideline 4.2 ‘Acquisition of information’?
+• Do you have any comments on the Guideline 4.3 ‘Document authenticity & integrity’?
+• Do you have any comments on the Guideline 4.4 ‘Authenticity checks’?
+• Do you have any comments on the Guideline 4.5 ‘Digital identities’?
+• Do you have any comments on the Guideline 4.6 ‘Reliance on third parties and outsourcing’?
+• Do you have any comments on the Guideline 4.7 ‘ICT and security risk management’?
+In respect of Guideline 4.1, respondents asked the EBA to simplify requirements. They also
+considered that regulatory expectations were not always clear. The EBA considered that this section
+does not add additional requirements, instead, it builds on provisions in other ESA guidelines, such
+as the Guidelines on Internal Governance or ICT Guidelines and clarifies how these provisions apply
+in the remote customer onboarding context. To clarify expectations, the EBA restructured this section
+and moved several provisions into other sections of the Guidelines.
+In respect of Guideline 4.2, respondents asked which data should be obtained for identification
+purpose. The purpose of these guidelines is to ensure a robust approach to obtain data, in line with
+the common principles set in Article 13(1) points(a) and (c) of Directive (EU) 2015/849. It is not to
+prescribe which documents and data that should be collected during the process. For this reason, the
+EBA did not amend the guidelines on this point.
+In respect of Guideline 4.3 and Guideline 4.4, respondents asked the EBA to align the draft with ETSI
+TS 119 461 Standards. The EBA agreed to align the draft with ETSI standards where possible and
+updated the guidelines accordingly.
+In respect of Guideline 4.5 (Digital Identities) of the consultation document, respondents asked the
+EBA to clarify the requirements and the situations that are included under this section. The EBA
+amended the guidelines to clarify that credit and financial institutions that are using solutions based
+on electronic identification schemes or issued by qualified trust service providers under the eIDAS
+Regulation comply with provisions included in the Guideline 4.5 of the consultation version. In those
+cases, the Guidelines should be read in conjunction with eIDAS Regulation. The use of other solutions
+such as non-qualified trust services or other solutions that are regulated, recognized, approved, or
+accepted at a national level remains possible in line with the Article 13(1) (a) of the AMLD, subject to
+specific safeguards.
+Summary of responses to the consultation and the EBA’s analysis
+Feedback on responses to Question 1 (Subject matter, scope and definitions)
+Subject matter One respondent asked about the interaction The aim of these guidelines is to ensure that “(…) These Guidelines set out the
+and scope of the between the requirements of these Guidelines institutions put in place and maintain sound and steps credit and financial
+Guidelines and rules or restrictions issued by state authorities secure remote customer onboarding processes. They institutions should take when
+on remote onboarding processes. do not override provisions in national law. adopting or reviewing solutions to
+comply with their obligations under
+One respondent suggested that the Guidelines These Guidelines should be read in conjunction with
+Article 13(1) points (a), (b) and (c)
+clarify the relationship between the remote the Risk Factors Guidelines. They apply specifically to
+of Directive (EU) 2015/849 to,
+onboarding process described in the draft new business relationships but may also be useful in
+when remote which use remote
+guideline and that set out in the revised version of situations where institutions perform remote CDD on
+channels CDD. Those solutions are
+the Risk Factors Guidelines (EBA/GL/2021/02). existing customers.
+used to carry out performing the
+Several respondents asked whether the These guidelines apply in situations where credit and initial customer due diligence
+Guidelines should apply to situations where CDD financial institutions adopt a new remote customer (CDD) onboard new customers
+was carried out in a remote manner on existing onboarding solution and in situations where remotely, using remote channels,
+customers, or whether they should be applied institutions review remote customer onboarding without physical contact. (…)”
+retrospectively to existing remote customer solutions already in place. The scope of these
+onboarding solutions. Guidelines was amended to make this clear.
+Addressees Some respondents were confused by the use of The addressees of these guidelines are determined by The expression ‘Financial Sector
+the term ‘Financial Sector Operator’. the EBA’s scope of action under the EBA’s founding Operator’ was replaced by ‘credit
+regulation CASPs are not currently part of this scope, and financial institution’.
+Several respondents suggested that the scope of
+which means that the Guideline cannot be extended
+the Guidelines be extended to other entities,
+to them.
+including CASPs.
+Proportionality Some respondents considered that the The guidelines are clear that institutions can adjust No change
+Guidelines are introducing a disproportionate the extent of the measures in line with a risk-based
+approach.
+number of requirements which consequently will
+require an increase of time and effort to comply.
+Feedback on responses to Question 2 (Policies and procedures)
+General A respondent proposed introducing safety levels The ultimate responsibility under AMLD lies with the No change
+comments and service certification for IT solutions used for credit and financial institution and could not be
+remote customer onboarding. transferred to a third party. This aspect goes beyond
+the scope of these Guidelines and would be too
+Other respondents suggested that a list of
+prescriptive with insufficient legal bases.
+standards and technical specifications should be
+provided separately from AML/CFT requirements, Although EBA understands that in some countries,
+as they might involve different competent remote onboarding solutions must be authorised, it is
+authorities (one which is competent to authorise not the case everywhere. The Guidelines should be
+the remote onboarding solution, and another relevant for all addressees.
+which is competent for AML/CFT matters).
+There is no official list of relevant standards and
+technical specifications and these Guidelines do not
+intend to give prescriptive indications as to how credit
+and financial institutions are expected to draw up
+their policies and procedures.
+General A respondent noted that, as the internal policies The ML/TF Risk Factors Guidelines set out risk factors No change
+comments and procedures should be risk-based, either the that also apply in the remote onboarding context.
+‘Guidelines on the use of remote customer
+onboarding’ or the ‘The ML/TF Risk Factors
+Guidelines’ should be supplemented with the list
+of potential risk factors concerning the remote-
+onboarding process for example the behavioural
+factors concerning the client.
+Old GL 10 c) Some respondents considered that the choice of The Guidelines were amended to clarify that types of New draft:
+the remote onboarding solution should be the customers/services/products covered by the solution
+New GL 9 c) result of the risk assessment of the business should be clearly identified in the institution’s policies “the situations where the remote
+relationship as a whole, and not only of a single and procedures, in line with the institution’s business- customer onboarding solution can
+factor such as e.g., the product. wide risk assessment. be used, taking into account the
+risk factors identified and assessed
+Some respondents argued that a client risk
+in accordance with Article 8 (1) of
+category is often defined only after the
+the Directive (EU) 2015/849 and in
+onboarding process is initiated, i.e., when the
+the business-wide risk assessment,
+onboarding solution has already been chosen.
+including a description of the
+They considered that "products and services"
+category of customers, products
+should also be removed from the Guideline as
+and services that are eligible for
+customer onboarding is specific to the customers
+remote onboarding”
+and including all products and services makes it a
+risk assessment as opposed to a customer
+onboarding question.
+Old GL 10 d) Some respondents argued that Guidelines 10 d) The Guidelines were amended to clarify this point. New draft:
+and e) might be redundant regarding the concept
+New GL 23 To simplify the reading, this provision was moved to In addition to the points set out in
+of "information" that is required to identify the
+Section 4.2. paragraph 9, credit and financial
+customer and suggest deleting it in Guideline 10
+institutions should set out in their
+d).
+policies and procedures the
+information needed to identify the
+customer, the types of documents,
+data, or information the institution
+will use to verify the customer’s
+identity and the manner in which
+this information will be verified.
+Old GL 10 h) A respondent argued that the Guidelines should The derogations included in Article 14 of the AMLD No Change
+allow for transactions to be executed even before apply irrespective of the content included in these
+New GL 10 d)
+the identity has been fully verified, as long as Guidelines.
+some safeguards have been put in place to reduce
+the risk (very low transactional limit, geographical
+limitations, etc.). In the same vein, a respondent
+claims this Guideline should be deleted, as it is at
+odds with Article 14(2) AMLD which allows for the
+verification to be performed after the business
+relationship has been established.
+Old GL 14 Several respondents requested the EBA to clarify The Guidelines were amended to clarify expectations “When considering whether to
+that the requirement to conduct a pre- regarding the pre-implementation assessment. The adopt a new remote customer
+New GL 13
+implementation assessment does not apply to use of additional documentation remains possible, onboarding solution, Financial
+onboarding processes already implemented by including documents made available by the credit and financial institutions
+the credit and financial institution, prior to the competent authorities or the output of the general should carry out a pre-
+entry into force of this Guideline. risk management requirements, to inform and implementation assessment (…)”
+complement the pre-implementation process.
+Some respondents asked to include an explicit
+exemption for cases where the remote
+onboarding solution has been officially approved,
+recognised, or otherwise accepted by the
+competent authority or to consider this obligation
+as part of other general risk management
+requirements (such as MaRisk, BAIT or the EBA’s
+ICT risk management guidelines).
+Old GL 15 Some respondents asked for further guidance on In accordance with the risk-based approach, credit Provision 15 e) was removed.
+how letter a) and e) of the list should be and financial institutions should define what they
+New GL 14
+measured. In particular, the respondent would consider to be “complete” and “accurate” in relation
+like that the expression “completeness and to their specific CDD measures.
+accuracy of the collected data and documents”
+The EBA agrees that the requirement in letter e)
+mentioned in letter a) be more closely defined.
+might be difficult to meet under the pre-
+Some respondents argued that the requirement implementation assessment and removed this
+under letter e) is difficult to achieve and to provision.
+measure: the adaptability of the solution(s) to any
+changes in legal or regulatory requirements may
+not be properly assessed in advance without
+knowing the specific terms of such
+legislative/regulatory amendment. Likewise,
+potential consequences of changes in the
+geographical distribution of services and products
+cannot take into consideration unpredictable
+political situations, e.g. the outbreak of a war
+and/or any further international sanction in a
+specific geographic area and/or involving a
+specific geographic area.
+Old GL 19 and 20 Several respondents cautioned against the risk The Guidelines provide that credit and financial No change
+that the Guideline adopt a too prescriptive and institutions should define in their policy with which
+New GL 18 and 19
+onerous approach, in particular for solutions frequency and according to which process they
+provided by a qualified trust service provider. intend to carry out ongoing reviews.
+Other respondents referred to that this process The ongoing monitoring requirements addressed to
+cannot always be performed by credit and credit and financial institutions relate to the quality,
+financial institutions due to the fact that in some completeness, accuracy, and adequacy of the data
+situations the solution is implemented primarily for CDD purposes, which remains the responsibility
+by the service provider itself. of credit and financial institutions.
+Old GL 21 Some respondents asked to add new means to The examples listed in paragraph 21 are not No change
+carry out the ongoing monitoring as well as to add exhaustive and institutions can meet their obligations
+New GL 20
+further guidance on what EBA’s expectations are in other ways.
+with regard to the examples.
+Old GL 22 Some respondents questioned the rationale for External audits do not replace the responsibility of Guideline removed.
+this provision and requested clarifications on the the institution to ensure ongoing effectiveness of the
+use of external or internal auditors in other sub- solution it uses.
+processes of the remote customer onboarding
+process.
+Some respondents suggested to make the use of
+external auditors mandatory, since internal audits
+are not considered sufficiently neutral.
+Feedback on responses to Question 3 (Acquisition of information)
+Old GL 25 Several respondents requested more detail on Once the conditions set out in this Guideline are d) any technical shortcomings that
+this Guideline, namely on the data format of the fulfilled, the technical details are at the discretion of might hinder the identification
+New GL 24
+information. the credit and financial institution. process does not continue if
+technical shortcomings or , such
+One respondent requested to delete the The EBA agrees with the argument regarding the
+as unexpected connection
+requirement to investigate any connection investigation of connection interruptions and
+interruptions, are detected and
+interruptions because sometimes it is unfeasible, amended this point.
+investigated.
+worthless and places redundant responsibility on
+the credit and financial institution.
+GL 26 Some respondents requested more detailed These Guidelines specify which conditions institutions “(…) should be time-stamped and
+information on which data should be obtained for should put in place when obtaining data, in line with stored securely by the credit and
+identification purposes. the common principles set in Art 13(1) points(a) and financial institution. The content
+(c) of Directive (EU) 2015/849. (…)”
+Some respondents asked for more detail
+regarding data retention periods and encryption The GDPR applies, therefore the guidelines do not
+policies, as the Guideline makes reference to ‘ex- specify retention periods. In the same vein,
+post verifications’. references to ‘ex-post verifications’ do not prevent
+the encryption of data, in line with Article 32 of the
+One respondent requested that it is necessary to
+GPDR Regulation.
+specify that the obligations under this provision
+should lie on the credit and financial institution. The EBA agrees to specify that the obligation to store
+and time stamp the identification proofs lies with the
+credit and financial institution.
+GL 28 Some respondents questioned how the location The location of the customer might be used to access Editorial amendments.
+of the customer can be leveraged during the potential geographical risks, however, it should be
+remote identification and verification process. the only factor to be taken into account. The
+guidelines were amended to make this clear.
+GL 32 Some respondents suggested to remove The risk factors guidelines clarify that initial customer Editorial amendments.
+references to the nature and purpose of the due diligence includes a specific step to identify the
+business relationship as this could generate purpose and intended nature of the business
+confusion and could be captured outside of initial relationship, in line with Article 13 of the AMLD. The
+customer due diligence. guidelines were amended to make this clear.
+Feedback on responses to Question 4 (Document authenticity & integrity)
+GL 33 Some respondents requested to add into the The EBA agrees and amended the guideline on this “Where the credit and financial
+Guidelines 33 the case when credit and financial point and brought consequential amendments to institutions accept reproductions
+institution accepts videos of physical identity guidelines 33, 33 a) 33 d). of the original document paper
+document. copies, photos or scans of paper-
+based documents (…)”
+Some respondents indicated that using copies,
+photos or scans of identity documents during
+remote onboarding process of customer is not in
+line with most national requirements, prevailing
+practise and increases the risk of fraud and ID
+theft.
+Some respondents asked for clarification of the
+sentence “this may include verifying” so that the
+requirement is not confused with the verification
+obligation of the AML/CFT requirements
+legislation.
+GL 33 Some respondents suggested to add additional The EBA agrees and amended the Guidelines New point:
+security measures during the verification of the accordingly.
+“e) that the provided reproduction
+identity document to prevent replay attacks.
+has not been displayed on a screen
+based on a photograph or scan of
+the original identity document.”
+GL 35 Some respondents expressed concerns regarding The EBA amended this Guideline to clarify that the Editorial amendments.
+what they interpreted as the mandatory nature of use of data contained in the chips of the national
+the requirement. These concerns varied from identity card is not mandatory.
+issues concerning the operationalisation of the
+The proposal to include the checking of data against
+provision and potential competitive issues due to
+reliable external sources is already included.
+nature of how NFC chips are accessed on devices
+EBA considers ETSI TS 119 461 (Electronic Signatures
+Another respondent proposed to clarify that such
+and Infrastructures Policy and security requirements
+checking can take place not only against
+for trust service components providing identity
+“submitted data and other submitted documents”
+proofing) a relevant set of standards and agreed to
+but also in reliable external, including public,
+amend the draft of these Guidelines with it, where
+databases.
+possible.
+Several respondents suggested that the
+Guidelines should cross reference ETSI TS 119 461.
+GL 37 A number of respondents noted that ETSI TS 119 Paragraph 4.10 of the Risk Factors Guidelines states Editorial amendments.
+461 exclusively requires that an authorized type of that “firms should put in place appropriate and risk-
+identification evidence: an official identity sensitive policies and procedures to ensure that their
+document (physical or digital), electronic approach to applying CDD measures does not result in
+identification of sufficient quality (level unduly denying legitimate customers access to
+substantial), or a qualified signature should be financial services”.
+accepted as main evidence. Other documentation
+Where credit and financial institutions accept
+can be used as supplementary evidence only.
+alternative documentation for the purposes of
+financial inclusion, it is expected that it is done in a
+One respondent stated that remote onboarding way which balances the need for financial inclusion
+should not be possible in the case of customers with the need to mitigate ML/TF risk.
+being accepted as part of financial inclusion.
+Explicitly excluding such customers from remote
+onboarding, as per respondent suggestions, would be
+contrary to the goal of financial inclusion.
+Feedback on responses to Question 5 (Authenticity checks)
+GL 39 Several respondents suggested to add more The definition of ‘biometric data’ is aligned with GDPR Added in the Guideline: “(..) In
+details, including examples, regarding the use of regulation which also includes the reference to ‘facial situations the solution does not
+biometric data, as it is not clear, for example, images’. provide the required level of
+whether a picture might be considered itself, as confidence, additional controls
+EBA recognises the importance of implementing
+biometric data. should be considered.”
+strong algorithms to match the customer’s
+One respondent suggested that human information with the biometric data, however the
+intervention should be considered when the level of reliability could be achieved using other
+comparison algorithms are not reliable. mechanisms, not exclusively based on human
+intervention.
+Old GL 40 and 43 Several respondents argued that references to EBA amended guidelines 40 and 43 to include liveness Guideline 40 removed
+'increased ML/TF risk' are unclear. Other detection in all unattended situations (the customer
+New GL 41 Guideline 43 was amended:
+respondents questioned why liveness detection does not interact with an employee of the credit and
+“Where credit and financial
+should only be mandatory in situations with financial institution to perform the verification
+institutions use unattended
+increased ML/TF risk, as this approach is not process).
+remote onboarding solutions in
+aligned with ETSI standard TS 119 461.
+This guideline does not establish the liveness which the customer does not
+Some respondents requested more guidance on detection methods that might be used. As stated in interact with an employee to
+specific procedures in the scope of the liveness guideline 43, it is up to the credit and financial perform the verification process,
+detection institution to decide whether liveness detection photograph(s) as a mean to verify
+should be performed actively or passively. ISO 30.107 the identity of the customer by
+defines several standards for liveness detection comparing it with a picture(s)
+techniques that might be consulted by the credit and incorporated in an official
+financial institution. document, they should:
+a) ensure that the photograph(s) or
+video (…)”
+Feedback on responses to Question 6 (Digital Identities)
+Section on Digital Some respondents raised concerns about the Following the feedback received, the EBA agreed to New section (Compliance with
+Identities scope of this section. Other respondents amend this section and clarify the conditions that are these guidelines where credit and
+requested clarifications on the concepts used met when credit and financial institutions use financial institutions use trust
+among this section, namely the references to electronic identification schemes with an assurance services and national identification
+‘digital identity providers’ and ‘trust service level that is substantial or high, or qualified trust processes as referred to in Article
+providers’. service providers. 13(1) (a) of Directive (EU)
+2015/849)
+As a result of the above, these Guidelines introduce a
+final provision to include other solutions such as non-
+qualified trust services or other solutions that are
+regulated, recognized, approved, or accepted at a
+national level. According to the Article 13(1) (a) of the
+AMLD, the use of such solutions is permitted.
+However, the EBA is empowered to further specify
+what level of quality and what security level should be
+applied - in general - in order to onboard remotely for
+the purposes of CDD measures under Article 13 of the
+AMLD, irrespective of which means, process, services
+or scheme is used. In conclusion, when using non-
+qualified trust services and those identification
+processes regulated, recognised, approved, or
+accepted by the national relevant authority, it should
+be up to the credit and financial institutions to assess
+and make sure that they still meet the standards
+established in the EBA guidelines. To ensure a robust
+approach to remote customer onboarding, the
+Guidelines set out the safeguards institutions should
+apply in those cases.
+Finally, the EBA is aware that the European
+Commission’s proposal to review the eIDAS
+Regulation and introduce a European Digital Identity
+Wallet would significantly help overcome the existing
+fragmentation in this area. However, until the review
+is finalised and enters into force, the EBA must base
+its assessment on the existing regulatory framework.
+Feedback on responses to Question 7 (Outsourcing and Reliance on Third Parties)
+Old Section 4.6.1 Some respondents suggested that Guidelines The remote customer onboarding processes carried No change
+should be densified in order to provide for out by intra-group entities should follow the same
+New Section 4.5.1
+lighter/more flexible guidance for intra-group approach as the other methods of onboarding new
+shared services/tools. customers, therefore, the same principles should be
+applied. This means that, for example, nothing
+prevents the use of the pre-implementation
+assessment carried out by an entity of the group that
+uses the remote customer onboarding solution by
+another entity of the group.
+Old Section 4.6.2 Several respondents suggested to include further Relevant guidance is contained in the EBA Guidelines No change
+guidance on sub-outsourcing. on Outsourcing.
+New Section 4.5.1
+Old GL 58 c) Several respondents noted that the solutions The EBA amended the guidelines accordingly. Ensure that the outsourcing
+provided by outsourcing providers are usually provider request the agreement
+New GL 48 c) used by other associates of the provider that inform the credit and financial
+require similar services (such as points of entry in institutions on any proposed
+a country or governmental authorities) as well. changes of the remote customer
+Therefore, requesting the agreement of the credit onboarding process or any
+and financial institutions may cause disturbance in modification made to the solution
+the providers business and the providers will not provided by the outsourcing
+be willing to contractually bind to this. provider.
+Feedback on responses to Question 8 (ICT and security risk management)
+Old GL 61 One respondent proposed to specify the These Guidelines are technology neutral. It is up to “(…) The remote customer
+situations where secure protocols and encryption the credit and financial institution to ensure that onboarding solution should use
+New GL 51
+techniques should be used to safeguard the appropriate security measures are implemented. secure protocols and
+confidentiality, authenticity, and integrity of the The guidelines were amended in this regard. cryptographic algorithms
+exchanged data at rest and in transit (including according to the industry best
+examples). It was also requested to clarify if this practices and strong and widely
+refers to internal or external exchanges; and the recognised encryption techniques
+meaning of “widely recognised”. should be used to safeguard the
+confidentiality, authenticity, and
+integrity of the exchanged data,
+where applicable at rest and in
+transit.”
+Old GL 62 One respondent mentioned that the current The Guidelines were amended accordingly. “Credit and financial institutions
+reference to qualified website authentication should provide a secure access
+New GL 52
+certificate can be considered misleading, as point for starting the remote
+service providers following CA/B Forum customer onboarding process,
+requirements for issuance of website based on qualified certificates for
+authentication certificates can achieve same level electronic seals as referred to in
+of assurance. Article 3(30) of Regulation (EU) No
+910/2014 or for website
+authentication as referred to in
+Article 3(39) of that Regulation.
+The use of a qualified website
+authentication certificate provides
+higher authenticity to the website
+where the customer can initiate the
+remote customer onboarding
+process.”
+Old GL 63 One respondent highlighted that security The EBA agrees to broaden the scope of this “(…) Additional security measures
+mechanisms used to ensure the integrity of the provision. The applicable measures should be should be implemented to ensure
+New GL 53
+software code and the confidentiality and implemented on a case-to-case basis addressing both the security and reliance of the
+authenticity of data on a multi-purpose device are the software and data integrity and reliance. This shall software code and the collected
+desirable but insufficient to protect such be in result of an adequate security risk assessment data, according to the security risk
+authenticity. as laid down in EBA Guidelines on ICT and security risk assessment as laid down in EBA
+management Guidelines on ICT and security risk
+management. A security
+mechanism should be used to
+ensure the integrity of the software
+code and the confidentiality and
+authenticity of sensitive data.”
