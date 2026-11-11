@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-10T12-45-22.json",
+"nome_file": "vpalert_rss_ACN_2026-11-11T11-56-58.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-10T12:45:22Z",
+"letto_il": "2026-11-11T11:56:58Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,126 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in PrestaShop",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prestashop",
+"data_originale": "Wed, 11 Nov 2026 11:46:52 GMT",
+"data": "2026-11-11",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 18 vulnerabilità, di cui 15 con gravità \"alta\", in PrestaShop, noto CMS open source utilizzato per la realizzazione e la gestione di siti e-commerce."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Sanata vulnerabilità in 7-Zip",
+"link": "https://www.acn.gov.it/portale/w/sanata-vulnerabilita-in-7-zip-1",
+"data_originale": "Wed, 11 Nov 2026 11:15:05 GMT",
+"data": "2026-11-11",
+"descrizione": "Rilasciati aggiornamenti di sicurezza che sanano una vulnerabilità con gravità \"alta\" presente in 7-Zip, noto software open source per la compressione e decompressione di file. Tale vulnerabilità potrebbe consentire a un utente malintenzionato di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in WatchGuard Endpoint Security",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-watchguard-endpoint-security-1",
+"data_originale": "Wed, 11 Nov 2026 10:40:46 GMT",
+"data": "2026-11-11",
+"descrizione": "WatchGuard ha rilasciato aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità \"alta\" in Endpoint Security per Windows. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato autenticato localmente di elevare i propri privilegi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti Mensili Microsoft",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-mensili-microsoft-26",
+"data_originale": "Wed, 11 Nov 2026 10:13:43 GMT",
+"data": "2026-11-11",
+"descrizione": "Microsoft ha rilasciato gli aggiornamenti di sicurezza mensili che risolvono un totale di 1095 nuove vulnerabilità, di cui 1 di tipo 0-day."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in MongoDB Server",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-mongodb-server",
+"data_originale": "Wed, 11 Nov 2026 10:33:20 GMT",
+"data": "2026-11-11",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 26 vulnerabilità, di cui 2 con gravità “critica” e 16 con gravità “alta”, in MongoDB Server."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in React",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-react",
+"data_originale": "Wed, 11 Nov 2026 10:29:39 GMT",
+"data": "2026-11-11",
+"descrizione": "Aggiornamenti di sicurezza sanano una vulnerabilità con gravità \"critica\" in Server Components, architettura React per l'esecuzione e il rendering dei contenuti lato server. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Ivanti November Security Update",
+"link": "https://www.acn.gov.it/portale/w/ivanti-november-security-update-1",
+"data_originale": "Wed, 11 Nov 2026 09:57:43 GMT",
+"data": "2026-11-11",
+"descrizione": "Rilasciati gli aggiornamenti di sicurezza di novembre che risolvono 13 vulnerabilità, di cui due con gravità “critica” e una con gravità “alta”, in alcuni prodotti. Tali vulnerabilità potrebbero consentire a un attaccante remoto di eseguire codice arbitrario o di aggiungere ed eliminare arbitrariamente certificati attendibili sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Mozilla",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-15",
+"data_originale": "Wed, 11 Nov 2026 09:26:47 GMT",
+"data": "2026-11-11",
+"descrizione": "Aggiornamenti di sicurezza sanano 111 vulnerabilità, di cui 7 con gravità “critica” e 69 con gravità “alta”, nei prodotti Firefox, Firefox ESR e Thunderbird."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "N-Able: rilevate molteplici vulnerabilità 0-day denominate \"Able2Shell\" in N-central",
+"link": "https://www.acn.gov.it/portale/w/n-able-rilevate-molteplici-vulnerabilita-0-day-denominate-able2shell-in-n-central",
+"data_originale": "Tue, 10 Nov 2026 13:37:32 GMT",
+"data": "2026-11-10",
+"descrizione": "Rilevate vulnerabilità 0-day, complessivamente denominate “Able2Shell”, in N-central, piattaforma di monitoraggio e gestione remota degli ambienti informatici. Tali vulnerabilità potrebbero consentire ad un attaccante remoto non autenticato di eludere i meccanismi di autenticazione, acquisire credenziali e informazioni riservate, alterare configurazioni, scrivere file arbitrari ed eseguire codice con privilegi elevati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Adobe: aggiornamenti di sicurezza",
+"link": "https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-27",
+"data_originale": "Wed, 11 Nov 2026 08:33:06 GMT",
+"data": "2026-11-11",
+"descrizione": "Adobe ha rilasciato aggiornamenti di sicurezza per risolvere 110 vulnerabilità, di cui 21 con gravità “critica” e 49 con gravità “alta”, nei prodotti Photoshop, Experience Manager (AEM) Cloud Service (CS), LTS, Dimension, Audition, Media Encoder, Premiere, After Effects e Connect."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Siemens",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-siemens",
+"data_originale": "Tue, 10 Nov 2026 15:32:39 GMT",
+"data": "2026-11-10",
+"descrizione": "Rilevate alcune vulnerabilità, di cui 6 con gravità “alta”, in diversi prodotti Siemens. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di eseguire codice arbitrario o di eludere i meccanismi di autenticazione sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "SAP Security Patch Day",
+"link": "https://www.acn.gov.it/portale/w/sap-security-patch-day-22",
+"data_originale": "Tue, 10 Nov 2026 15:00:14 GMT",
+"data": "2026-11-10",
+"descrizione": "Nell’ambito del Security Patch Day di novembre, SAP rilascia aggiornamenti di sicurezza per risolvere 42 nuove vulnerabilità, di cui 9 con gravità “critica” e 19 con gravità “alta”."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -404,123 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Zohocorp: sanate vulnerabilità in prodotti ManageEngine",
-"link": "https://www.acn.gov.it/portale/w/zohocorp-sanate-vulnerabilita-in-prodotti-manageengine",
-"data_originale": "Mon, 02 Nov 2026 09:37:01 GMT",
-"data": "2026-11-02",
-"descrizione": "Aggiornamenti di sicurezza sanano 13 vulnerabilità, di cui una con gravità \"critica\" e 12 con gravità “alta”, che interessano i prodotti ManageEngine SharePoint Manager Plus, Password Manager Pro, PAM360, Eventlog Analyzer, Log360 e Key Manager Plus."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità nei chipset Qualcomm",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-nei-chipset-qualcomm-1",
-"data_originale": "Wed, 04 Nov 2026 14:06:19 GMT",
-"data": "2026-11-04",
-"descrizione": "Rilevate molteplici vulnerabilità di sicurezza, di cui 2 con gravità \"critica\" e 13 con gravita \"alta\", nei chipset Qualcomm, componenti hardware impiegati in dispositivi mobili, sistemi embedded, apparati di rete, piattaforme automotive e altri sistemi basati sulle tecnologie Qualcomm Snapdragon e FastConnect."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-4",
-"data_originale": "Wed, 04 Nov 2026 14:04:41 GMT",
-"data": "2026-11-04",
-"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 15 vulnerabilità, di cui 6 con gravità \"alta\" in Database Tools e nei driver C, Atlas SQL ODBC e Node.js."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Github Enterprise server",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-github-enterprise-server-1",
-"data_originale": "Wed, 04 Nov 2026 11:35:54 GMT",
-"data": "2026-11-04",
-"descrizione": "GitHub ha rilasciato aggiornamenti di sicurezza che risolvono diverse vulnerabilità, di cui due con gravità “alta”, in GitHub Enterprise Server, edizione on‑premises della piattaforma GitHub, progettata per ambienti aziendali con requisiti avanzati di sicurezza e conformità."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti HPE",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-hpe",
-"data_originale": "Wed, 04 Nov 2026 11:16:32 GMT",
-"data": "2026-11-04",
-"descrizione": "Rilevate molteplici vulnerabilità, di cui 3 con gravità “critica” e 27 con gravità “alta”, nei prodotti HPE Fabric Composer e Virtual Intranet Access (VIA). Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di eludere i meccanismi di autenticazione, eseguire codice arbitrario, accedere a informazioni sensibili, ottenere privilegi elevati o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti ASUS",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-5",
-"data_originale": "Wed, 04 Nov 2026 10:01:20 GMT",
-"data": "2026-11-04",
-"descrizione": "Rilevate 4 nuove vulnerabilità, di cui 3 con gravità “alta”, in alcuni prodotti ASUS. Tali vulnerabilità potrebbero consentire a un attaccante, in alcuni casi non autenticato, di elevare i propri privilegi, eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Docker",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-docker",
-"data_originale": "Wed, 04 Nov 2026 09:31:06 GMT",
-"data": "2026-11-04",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità “critica” e 3 con gravità “alta”, nei prodotti Docker Sandboxes, Docker Buildx e Docker Desktop. Tali vulnerabilità potrebbero consentire a un utente malintenzionato locale di eseguire codice arbitrario sul sistema host al di fuori dell'ambiente isolato ed eludere le restrizioni applicate ai container per accedere a servizi e file sul sistema host."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in SolarWinds Dameware",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-solarwinds-dameware",
-"data_originale": "Wed, 04 Nov 2026 09:21:15 GMT",
-"data": "2026-11-04",
-"descrizione": "Aggiornamenti di sicurezza risolvono tre vulnerabilità, di cui una con gravità \"critica\" e due con gravità \"alta\", presenti in SolarWinds Dameware, nota soluzione di amministrazione remota e supporto IT utilizzata per la gestione, il controllo e l'assistenza di sistemi informatici. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente autenticato malintenzionato, anche da remoto per due di esse, di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in Mozilla Firefox",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-mozilla-firefox",
-"data_originale": "Wed, 04 Nov 2026 09:17:15 GMT",
-"data": "2026-11-04",
-"descrizione": "Aggiornamenti di sicurezza risolvono una vulnerabilità con gravità “alta” in Mozilla Firefox. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di eseguire codice arbitrario, compromettere la disponibilità del servizio e/o accedere ad informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-84",
-"data_originale": "Wed, 04 Nov 2026 08:06:48 GMT",
-"data": "2026-11-04",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 213 nuove vulnerabilità di sicurezza, di cui 21 con gravità “critica” e 63 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in prodotti Grafana",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-grafana",
-"data_originale": "Tue, 03 Nov 2026 14:49:12 GMT",
-"data": "2026-11-03",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità “alta” presente in Grafana Enterprise Metrics (GEM) e Mimir, piattaforme impiegate per l'archiviazione e la gestione di metriche di monitoraggio. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante autenticato e dotato di specifici permessi di leggere file arbitrari e accedere a informazioni sensibili, quali credenziali e configurazioni, presenti sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti PostgreSQL",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-postgresql",
-"data_originale": "Tue, 03 Nov 2026 13:24:17 GMT",
-"data": "2026-11-03",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 6 con gravità “alta”, in PostgreSQL psqlODBC. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di modificare dati o di eseguire codice arbitrario sui sistemi interessati."
+"titolo": "ACN e il Gruppo di Cooperazione NIS per la cybersicurezza dell’UE",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-e-il-gruppo-di-cooperazione-nis-per-la-cybersicurezza-dell-ue",
+"data_originale": "10/11/2026",
+"data": "2026-11-10",
+"descrizione": "News - 10 Novembre 2026 Conclusi a Roma tre workstream del NIS Cooperation Group su Supervision, Digital infrastructure e Incident reporting ENISA NIS Relazioni internazionali Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "06/11/2026",
 "data": "2026-11-06",
 "descrizione": "News - 06 Novembre 2026 Dal 25 al 27 novembre a Verona Fiere workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento allo stand con \"ACN risponde\" PA Cybersicurezza Anci ACN NCC-IT"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "Il Direttore Andrea Quacivi in audizione presso la Commissione parlamentare di inchiesta sul sistema bancario, finanziario e assicurativo",
-"link": "https://www.acn.gov.it/portale/web/guest/-/il-direttore-andrea-quacivi-in-audizione-presso-la-commissione-parlamentare-di-inchiesta-sul-sistema-bancario-finanziario-e-assicurativo",
-"data_originale": "05/11/2026",
-"data": "2026-11-05",
-"descrizione": "News - 05 Novembre 2026 Attacchi cyber, criptovalute e prevenzione nell’intervento in commissione d’inchiesta su banche e servizi Direttore CSIRT Italia Cybersicurezza ACN"
 },
 {
 "sito": "ACN",

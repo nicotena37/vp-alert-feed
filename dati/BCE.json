@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BCE_2026-11-10T12-46-51.json",
+"nome_file": "vpalert_rss_BCE_2026-11-11T11-58-20.json",
 "sito": "BCE",
 "origine": "github-actions",
-"letto_il": "2026-11-10T12:46:51Z",
+"letto_il": "2026-11-11T11:58:20Z",
 "feed": [
 {
 "nome": "BCE - comunicati",
@@ -57,7 +57,7 @@
 {
 "nome": "BCE - situazione contabile settimanale dell'Eurosistema",
 "url": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/html/index.en.html",
-"voci": 1
+"voci": 2
 },
 {
 "nome": "BCE - Survey of Monetary Analysts (risultati)",
@@ -67,6 +67,26 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "BCE",
+"feed": "BCE - comunicati",
+"categoria": "Vigilanza",
+"titolo": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+"link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+"data_originale": "Tue, 10 Nov 2026 17:45:00 +0100",
+"data": "2026-11-10",
+"descrizione": ""
+},
+{
+"sito": "BCE",
+"feed": "BCE - comunicati",
+"categoria": "Vigilanza",
+"titolo": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+"link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html",
+"data_originale": "Tue, 10 Nov 2026 15:00:00 +0100",
+"data": "2026-11-10",
+"descrizione": ""
+},
 {
 "sito": "BCE",
 "feed": "BCE - comunicati",
@@ -199,23 +219,33 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - comunicati",
+"feed": "BCE - pubblicazioni",
 "categoria": "Vigilanza",
-"titolo": "October 2026 euro area bank lending survey",
-"link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
-"data_originale": "Tue, 27 Oct 2026 01:00:00 +0100",
-"data": "2026-10-27",
-"descrizione": ""
+"titolo": "The real and financial effects of local corporate tax increases: evidence from linked firm–bank data",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3309~4e8af93b3a.en.pdf",
+"data_originale": "Wed, 11 Nov 2026 11:00:00 +0100",
+"data": "2026-11-11",
+"descrizione": "We study how local corporate tax increases affect firms’ financing and real activity. In Portugal, municipalities independently set a surtax on corporate income, generating plausibly exogenous variation across space and time. We link the universe of corporate balance sheets and profit-and-loss statements to loan-level data from the Bank of Portugal’s credit registry, allowing us to track firms’ liquidity, leverage, borrowing costs, and credit quality alongside revenues, employment, and productivity. We estimate local-projection difference-in-differences models that address staggered treatment timing and dynamic responses. Surtax hikes immediately tighten financing conditions: liquidity falls"
 },
 {
 "sito": "BCE",
-"feed": "BCE - comunicati",
+"feed": "BCE - pubblicazioni",
 "categoria": "Vigilanza",
-"titolo": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
-"link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
-"data_originale": "Mon, 26 Oct 2026 10:00:00 +0100",
-"data": "2026-10-26",
-"descrizione": ""
+"titolo": "The role of refining costs and margins in HICP energy inflation",
+"link": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202607_05~d82730508f.en.html",
+"data_originale": "Wed, 11 Nov 2026 10:00:00 +0100",
+"data": "2026-11-11",
+"descrizione": "Energy market developments continue to be shaped by the conflict in the Middle East. Global refinery runs have fallen significantly compared to previous years, driven by reduced refinery activity in the Middle East, Russia and Asia. The constrained supply of crude oil and refined products has led to a persistent global increase in refining margins and costs, particularly for diesel. In view of the important role of refining costs and margins in transport and heating fuel inflation, the ECB’s short-term inflation projection model for energy shows that expected heightened trajectories for refined energy product prices may lead to higher energy inflation even if oil prices move in the opposite "
+},
+{
+"sito": "BCE",
+"feed": "BCE - pubblicazioni",
+"categoria": "Vigilanza",
+"titolo": "Bank competitiveness and its role for monetary policy",
+"link": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202607_07~5cefb128e2.en.html",
+"data_originale": "Tue, 10 Nov 2026 14:00:00 +0100",
+"data": "2026-11-10",
+"descrizione": "Banks are at the heart of the EU economy, making them a key channel for monetary policy transmission. However, institutional factors continue to lead to fragmentation in the sector, constraining scale, efficiency and competitiveness. As shown by Altavilla et al. (2024), more competitive banks are more resilient to shocks and transmit monetary policy more effectively. The competitiveness of euro area banks has improved in recent years, reflecting stronger balance sheets and higher intermediation margins, but pockets of cost inefficiency and issues of scale remain, leaving further room for improvement. These factors could be eased by completing the savings and investments union and facilitatin"
 },
 {
 "sito": "BCE",
@@ -339,32 +369,12 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - pubblicazioni",
+"feed": "BCE - post del blog",
 "categoria": "Vigilanza",
-"titolo": "Main findings from the ECB’s recent contacts with non-financial companies",
-"link": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202607_04~26727550fe.en.html",
-"data_originale": "Fri, 30 Oct 2026 10:00:00 +0100",
-"data": "2026-10-30",
-"descrizione": "This box summarises the main findings from recent contacts between ECB staff and representatives of 64 leading non-financial companies operating in the euro area. According to these exchanges, which mainly took place between 28 September and 7 October 2026, activity continued to grow moderately in the third quarter with similar momentum expected for the fourth quarter. Growth was particularly focused in high-value manufacturing and IT services, while growth in consumer spending was relatively weak. Employment dynamics remained subdued, with many firms in cost-cutting mode. Growth in selling prices accelerated in the third quarter, reflecting rising costs owing to the ongoing conflict in the "
-},
-{
-"sito": "BCE",
-"feed": "BCE - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "The euro area bank lending survey - Third quarter of 2026",
-"link": "https://www.ecb.europa.eu//stats/ecb_surveys/bank_lending_survey/html/ecb.blssurvey2026q3~c6a731e213.en.html",
-"data_originale": "Tue, 27 Oct 2026 10:00:00 +0100",
-"data": "2026-10-27",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "Survey on the Access to Finance of Enterprises in the euro area - Third quarter of 2026",
-"link": "https://www.ecb.europa.eu//stats/ecb_surveys/safe/html/ecb.safe202610.en.html",
-"data_originale": "Mon, 26 Oct 2026 10:00:00 +0100",
-"data": "2026-10-26",
+"titolo": "How the sovereign debt crisis shaped wealth inequality in the euro area",
+"link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20261111~ee77dcd0d0.en.html",
+"data_originale": "Wed, 11 Nov 2026 11:00:00 +0100",
+"data": "2026-11-11",
 "descrizione": ""
 },
 {
@@ -505,16 +515,6 @@
 "link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20260831~dac6a37e73.en.html",
 "data_originale": "Mon, 31 Aug 2026 11:00:00 +0200",
 "data": "2026-08-31",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - post del blog",
-"categoria": "Vigilanza",
-"titolo": "AI adoption and the productivity promise: what workers report",
-"link": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20260826~e1c1a89999.en.html",
-"data_originale": "Wed, 26 Aug 2026 11:00:00 +0200",
-"data": "2026-08-26",
 "descrizione": ""
 },
 {
@@ -671,6 +671,16 @@
 "sito": "BCE",
 "feed": "BCE - working paper",
 "categoria": "Vigilanza",
+"titolo": "The real and financial effects of local corporate tax increases: evidence from linked firm–bank data",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3309~4e8af93b3a.en.pdf",
+"data_originale": "Wed, 11 Nov 2026 11:00:00 +0100",
+"data": "2026-11-11",
+"descrizione": "We study how local corporate tax increases affect firms’ financing and real activity. In Portugal, municipalities independently set a surtax on corporate income, generating plausibly exogenous variation across space and time. We link the universe of corporate balance sheets and profit-and-loss statements to loan-level data from the Bank of Portugal’s credit registry, allowing us to track firms’ liquidity, leverage, borrowing costs, and credit quality alongside revenues, employment, and productivity. We estimate local-projection difference-in-differences models that address staggered treatment timing and dynamic responses. Surtax hikes immediately tighten financing conditions: liquidity falls"
+},
+{
+"sito": "BCE",
+"feed": "BCE - working paper",
+"categoria": "Vigilanza",
 "titolo": "Unlocking supervisory effectiveness in credit risk: insights from the ECB’s supervisory findings and measures",
 "link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3308~a6e82e37aa.en.pdf",
 "data_originale": "Mon, 09 Nov 2026 11:00:00 +0100",
@@ -806,16 +816,6 @@
 "data_originale": "Wed, 07 Oct 2026 11:00:00 +0200",
 "data": "2026-10-07",
 "descrizione": "We introduce two indicators to track the build-up of vulnerabilities in the euro area banking sector on a quarterly basis by leveraging the information collected in EU-wide solvency stress tests. First, we introduce an indicator of conditional capital depletion, the Stress Vulnerability Index (SVI), which quantifies potential losses under adverse scenarios when tail credit risk is highest. Second, we introduce an indicator of earnings vulnerability, the Profitability Vulnerability Index (PVI), which assesses the capacity of the banking sector to generate capital organically. While the two indices spike synchronously during systemic crises, they can also decouple. We show that this occurs whe"
-},
-{
-"sito": "BCE",
-"feed": "BCE - working paper",
-"categoria": "Vigilanza",
-"titolo": "Understanding inflation: insights from the term structure of inflation risks",
-"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3294~343f6d6c31.en.pdf",
-"data_originale": "Mon, 05 Oct 2026 11:00:00 +0200",
-"data": "2026-10-05",
-"descrizione": "This paper investigates the information content of the term structure of inflation risks and its usefulness for understanding inflation dynamics. Using prices of traded zero-coupon inflation caps and floors, we develop a robust non-parametric methodology, combined with a Student’s t-copula, to estimate spot and forward risk-neutral densities at short-, medium-, and long-term horizons, i.e., long-horizon risks are identified from liquid instruments alone, at daily frequency, without forward-starting contracts. Focusing on the euro area over 2009-2026, we show that the term structure of inflation risks provides valuable information about the persistence of inflation shocks and the degree to wh"
 },
 {
 "sito": "BCE",
@@ -1526,6 +1526,16 @@
 "data_originale": "Mon, 9 Jan 2017 12:00:00 +0100",
 "data": "2017-01-09",
 "descrizione": "The historical euro area government bond yield curve contains the spot rate, instantaneous forward and par yield curves for both AAA-rated euro-denominated bonds issued by euro area central governments and all euro area central government bonds. The maturity spectrum covers three months up to 30 years. Data are available from 29 December 2006 to 06 January 2017."
+},
+{
+"sito": "BCE",
+"feed": "BCE - situazione contabile settimanale dell'Eurosistema",
+"categoria": "Vigilanza",
+"titolo": "Consolidated financial statement of the Eurosystem as at 6 November 2026",
+"link": "https://www.ecb.europa.eu/press/annual-reports-financial-statements/wfs/2026/html/ecb.fst261110.en.html",
+"data_originale": "2026-11-10",
+"data": "2026-11-10",
+"descrizione": "Consolidated financial statement of the Eurosystem 6 November 2026 Assets (EUR millions) Balance Difference compared with last week due to transactions Totals/sub-totals may not add up, due to rounding 1 Gold and gold receivables 1,286,235 −6 2 Claims on non-euro area residents denominated in foreign currency 523,492 −1,002 2.1 Receivables from the IMF 233,397 138 2.2 Balances with banks and security investments, external loans and other external assets 290,095 −1,140 3 Claims on euro area residents denominated in foreign currency 19,782 114 4 Claims on non-euro area residents denominated in euro 39,162 42 4.1 Balances with banks, security investments and loans 39,162 42 4.2 Claims arising f"
 },
 {
 "sito": "BCE",

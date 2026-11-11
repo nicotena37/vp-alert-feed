@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-10T12:43:34+00:00",
+ "letto_il": "2026-11-11T11:55:10+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -32,7 +32,7 @@
   "Consob": {
    "feed_ok": 1,
    "feed_totali": 6,
-   "notizie": 60,
+   "notizie": 61,
    "allarmi": [
     "Consob - Bollettino (ultima quindicina): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo1",
     "Consob - Bollettino (quindicina precedente): feed non leggibile (ValueError: il sito risponde con un CAPTCHA anti-bot ai server di GitHub (non si aggira)) - https://www.consob.it/web/area-pubblica/bollettino/periodo2",
@@ -68,7 +68,7 @@
   "Agenzia delle Entrate": {
    "feed_ok": 4,
    "feed_totali": 4,
-   "notizie": 49,
+   "notizie": 51,
    "allarmi": []
   },
   "INPS": {
@@ -154,7 +154,7 @@
   "BCE": {
    "feed_ok": 12,
    "feed_totali": 12,
-   "notizie": 150,
+   "notizie": 151,
    "allarmi": []
   },
   "ESRB": {
@@ -174,7 +174,7 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 155,
+   "notizie": 102,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -206,7 +206,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 9,
+   "notizie": 10,
    "allarmi": []
   },
   "AMLA": {
@@ -242,17 +242,14 @@
   "IFRS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 28,
+   "notizie": 27,
    "allarmi": []
   },
   "ISDA": {
-   "feed_ok": 0,
+   "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 0,
-   "allarmi": [
-    "ISDA - comunicati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/news/press-releases/feed/",
-    "ISDA - public policy (risposte e lettere): feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://www.isda.org/category/public-policy/feed/"
-   ]
+   "notizie": 20,
+   "allarmi": []
   },
   "EIOPA": {
    "feed_ok": 3,
@@ -269,7 +266,7 @@
   "Senato della Repubblica": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 54,
+   "notizie": 58,
    "allarmi": []
   },
   "INAIL": {
