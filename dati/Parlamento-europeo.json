@@ -1,13 +1,13 @@
 {
-"nome_file": "vpalert_rss_Parlamento-europeo_2026-11-11T11-59-33.json",
+"nome_file": "vpalert_rss_Parlamento-europeo_2026-11-12T12-53-38.json",
 "sito": "Parlamento europeo",
 "origine": "github-actions",
-"letto_il": "2026-11-11T11:59:33Z",
+"letto_il": "2026-11-12T12:53:38Z",
 "feed": [
 {
 "nome": "Parlamento UE - testi approvati (dati aperti)",
 "url": "https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week",
-"voci": 102
+"voci": 106
 }
 ],
 "allarmi": [],
@@ -16,30 +16,50 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - testi approvati (dati aperti)",
 "categoria": "Iter",
+"titolo": "Modernisation of the key information document",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0372",
+"data_originale": "2026-11-12T12:42:56.573Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Request for the waiver of the immunity of András Tivadar Kulja",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0368",
+"data_originale": "2026-11-12T12:33:02.408Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Request for the waiver of the immunity of Afroditi Latinopoulou",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0369",
+"data_originale": "2026-11-12T12:32:57.066Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amendments to the Statute for Members of the European Parliament, as regards proxy voting",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0370",
+"data_originale": "2026-11-12T12:03:00.899Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
 "titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/002 ES/ Galicia automotive ancillary - Spain",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0331",
-"data_originale": "2026-11-10T17:21:02.379Z",
-"data": "2026-11-10",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Empowering France to accede to the Inter-American Convention for the Protection and Conservation of Sea Turtles",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0329",
-"data_originale": "2026-11-10T17:21:01.302Z",
-"data": "2026-11-10",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Consular protection for unrepresented citizens of the Union in third countries",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0330",
-"data_originale": "2026-11-10T17:20:13.706Z",
-"data": "2026-11-10",
+"data_originale": "2026-11-12T10:08:44.253Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
@@ -48,18 +68,28 @@
 "categoria": "Iter",
 "titolo": "CO2 emission class of heavy-duty vehicles with trailers",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0328",
-"data_originale": "2026-11-10T17:20:13.652Z",
-"data": "2026-11-10",
+"data_originale": "2026-11-12T10:08:41.313Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - testi approvati (dati aperti)",
 "categoria": "Iter",
-"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/001 BE/Cora - Belgium",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0333",
-"data_originale": "2026-11-10T17:19:17.279Z",
-"data": "2026-11-10",
+"titolo": "Consular protection for unrepresented citizens of the Union in third countries",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0330",
+"data_originale": "2026-11-12T10:08:38.253Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Empowering France to accede to the Inter-American Convention for the Protection and Conservation of Sea Turtles",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0329",
+"data_originale": "2026-11-12T10:08:36.150Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
@@ -68,8 +98,18 @@
 "categoria": "Iter",
 "titolo": "Recommendation on EU-China political relations",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0334",
-"data_originale": "2026-11-10T17:19:13.219Z",
-"data": "2026-11-10",
+"data_originale": "2026-11-12T10:08:05.023Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/001 BE/Cora - Belgium",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0333",
+"data_originale": "2026-11-12T10:08:01.789Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
@@ -78,8 +118,8 @@
 "categoria": "Iter",
 "titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/003 FI/Valmet Automotive - Finland",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0332",
-"data_originale": "2026-11-10T17:19:12.769Z",
-"data": "2026-11-10",
+"data_originale": "2026-11-12T10:07:03.930Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
@@ -88,8 +128,348 @@
 "categoria": "Iter",
 "titolo": "Establishment and functioning of European Works Councils - effective enforcement",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2025-0226",
-"data_originale": "2026-11-10T16:28:40.176Z",
-"data": "2026-11-10",
+"data_originale": "2026-11-12T09:49:28.620Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Attempts by the ruling party Georgian Dream to ban opposition parties in Georgia",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0336",
+"data_originale": "2026-11-12T08:58:21.261Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Pilot project on European Schools Alliances and its contribution to citizenship education, democratic competences and European values",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0338",
+"data_originale": "2026-11-12T08:58:18.818Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The state of play of advancing EU-Africa trade and investment relations",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0340",
+"data_originale": "2026-11-12T08:58:17.769Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The 2026 undemocratic elections to the Russian State Duma and its implications on civil society",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0339",
+"data_originale": "2026-11-12T08:58:16.677Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The cases of Ali Karimli, Anar Mammadli and other political prisoners in Azerbaijan",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0337",
+"data_originale": "2026-11-12T08:57:16.202Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The need for an EU strategy to counter Islamist entryism and the influence of the Muslim Brotherhood network",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0342",
+"data_originale": "2026-11-12T08:57:15.359Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Human rights situation in Iran, notably the cases of Taraneh Rahimi and Leila Abolhasani",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0335",
+"data_originale": "2026-11-12T08:57:13.366Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "The upcoming EU anti-corruption strategy",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0341",
+"data_originale": "2026-11-12T08:57:10.710Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Combating VAT fraud – the effectiveness of cross-border cooperation when it comes to VAT fraud and its impact on the EU budget",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0350",
+"data_originale": "2026-11-12T08:39:14.542Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cohesion policy – the driving force in implementing the EU agenda for cities",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0349",
+"data_originale": "2026-11-12T08:39:11.070Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Protection of adults: jurisdiction, applicable law, recognition and enforcement of measures and cooperation",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0348",
+"data_originale": "2026-11-12T08:39:08.251Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Suspending the application of the rules on extended producer responsibility for batteries and waste batteries and packaging and packaging waste (Omnibus VIII on environmental legislation)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0345",
+"data_originale": "2026-11-12T08:39:07.775Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Public interface connected to the Internal Market Information System for the declaration of posting of workers",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0346",
+"data_originale": "2026-11-12T08:38:23.222Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Suspending the application of the rules on extended producer responsibility for waste, waste electrical and electronical equipment and single use plastic waste (Omnibus VIII on environmental legislation)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0344",
+"data_originale": "2026-11-12T08:38:18.900Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Transport: enforcement of passenger rights in the Union",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0347",
+"data_originale": "2026-11-12T08:38:14.092Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Connecting Europe through high-speed rail",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0351",
+"data_originale": "2026-11-12T08:38:09.372Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amendments to the Critical Raw Materials Act",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0343",
+"data_originale": "2026-11-12T08:38:09.285Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Russian strikes in the EU, particularly on Black Sea shipping, threatening human life, regional stability and food security",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0365",
+"data_originale": "2026-11-12T08:32:40.719Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0360",
+"data_originale": "2026-11-12T08:32:38.663Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Revised heat and fuel benchmark values for 2026-2030",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0363",
+"data_originale": "2026-11-12T08:32:37.235Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Cohesion policy in the EU’s eastern border regions: strengthening territorial resilience and cross-border cooperation",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0364",
+"data_originale": "2026-11-12T08:32:33.581Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Erasmus+ programme 2028–2034",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0361",
+"data_originale": "2026-11-12T08:32:31.445Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Simplification of certain requirements and procedures for chemical products",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0362",
+"data_originale": "2026-11-12T08:32:27.956Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "UN Climate Change Conference 2026 in Antalya, Türkiye (COP31)",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0367",
+"data_originale": "2026-11-12T08:32:27.578Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Escalation of Houthi attacks and implications for regional security",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0366",
+"data_originale": "2026-11-12T08:32:25.402Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Genetically modified soybean MON 87769",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0359",
+"data_originale": "2026-11-12T08:27:23.253Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Discharge 2024: EU general budget – European Council and Council",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0353",
+"data_originale": "2026-11-12T08:27:20.498Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Union Solidarity Fund: assistance to Malta, Italy, Portugal and Spain with regard to storms in 2026",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0354",
+"data_originale": "2026-11-12T08:27:17.768Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "General budget of the European Union for the financial year 2027 – all sections",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0352",
+"data_originale": "2026-11-12T08:27:14.548Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/004 FI/Etelä-Suomi and Helsinki-Uusimaa paper - Finland",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0355",
+"data_originale": "2026-11-12T08:27:12.562Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Guidelines for the employment policies of the Member States",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0357",
+"data_originale": "2026-11-12T08:27:10.679Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Amendments to the draft general budget of the European Union for the financial year 2027",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-10-21-ANN01",
+"data_originale": "2026-11-12T08:26:35.717Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Pericles V exchange, assistance and training programme for the protection of the euro against counterfeiting 2028–2034",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0356",
+"data_originale": "2026-11-12T08:26:32.759Z",
+"data": "2026-11-12",
+"descrizione": ""
+},
+{
+"sito": "Parlamento europeo",
+"feed": "Parlamento UE - testi approvati (dati aperti)",
+"categoria": "Iter",
+"titolo": "Boosting skills in the Union – opportunities for vocational education and training in times of transition",
+"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0358",
+"data_originale": "2026-11-12T08:26:29.879Z",
+"data": "2026-11-12",
 "descrizione": ""
 },
 {
@@ -196,266 +576,6 @@
 "sito": "Parlamento europeo",
 "feed": "Parlamento UE - testi approvati (dati aperti)",
 "categoria": "Iter",
-"titolo": "Revised heat and fuel benchmark values for 2026-2030",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0363",
-"data_originale": "2026-11-06T10:39:55.007Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Simplification of certain requirements and procedures for chemical products",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0362",
-"data_originale": "2026-11-06T10:39:54.707Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Escalation of Russian strikes in the EU, particularly on Black Sea shipping, threatening human life, regional stability and food security",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0365",
-"data_originale": "2026-11-06T10:39:51.420Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Escalation of Houthi attacks and implications for regional security",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0366",
-"data_originale": "2026-11-06T10:39:47.479Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Erasmus+ programme 2028–2034",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0361",
-"data_originale": "2026-11-06T10:39:47.179Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "UN Climate Change Conference 2026 in Antalya, Türkiye (COP31)",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0367",
-"data_originale": "2026-11-06T10:39:47.150Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Reduction of methane emissions in the energy sector: postponement of certain obligations",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0360",
-"data_originale": "2026-11-06T10:39:02.416Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Cohesion policy in the EU’s eastern border regions: strengthening territorial resilience and cross-border cooperation",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0364",
-"data_originale": "2026-11-06T10:38:55.702Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Suspending the application of the rules on extended producer responsibility for batteries and waste batteries and packaging and packaging waste (Omnibus VIII on environmental legislation)",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0345",
-"data_originale": "2026-11-06T10:14:53.795Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Cohesion policy – the driving force in implementing the EU agenda for cities",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0349",
-"data_originale": "2026-11-06T10:14:51.175Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Combating VAT fraud – the effectiveness of cross-border cooperation when it comes to VAT fraud and its impact on the EU budget",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0350",
-"data_originale": "2026-11-06T10:14:45.952Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Protection of adults: jurisdiction, applicable law, recognition and enforcement of measures and cooperation",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0348",
-"data_originale": "2026-11-06T10:14:39.536Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Transport: enforcement of passenger rights in the Union",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0347",
-"data_originale": "2026-11-06T10:13:52.706Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amendments to the Critical Raw Materials Act",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0343",
-"data_originale": "2026-11-06T10:13:50.997Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Connecting Europe through high-speed rail",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0351",
-"data_originale": "2026-11-06T10:13:47.691Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Public interface connected to the Internal Market Information System for the declaration of posting of workers",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0346",
-"data_originale": "2026-11-06T10:13:47.211Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Suspending the application of the rules on extended producer responsibility for waste, waste electrical and electronical equipment and single use plastic waste (Omnibus VIII on environmental legislation)",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0344",
-"data_originale": "2026-11-06T10:13:43.017Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Guidelines for the employment policies of the Member States",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0357",
-"data_originale": "2026-11-06T10:11:40.416Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Mobilisation of the European Globalisation Adjustment Fund for Displaced Workers: application EGF/2026/004 FI/Etelä-Suomi and Helsinki-Uusimaa paper - Finland",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0355",
-"data_originale": "2026-11-06T10:11:36.228Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "General budget of the European Union for the financial year 2027 – all sections",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0352",
-"data_originale": "2026-11-06T10:11:35.794Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Mobilisation of the European Union Solidarity Fund: assistance to Malta, Italy, Portugal and Spain with regard to storms in 2026",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0354",
-"data_originale": "2026-11-06T10:11:32.974Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Genetically modified soybean MON 87769",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0359",
-"data_originale": "2026-11-06T10:11:32.578Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Discharge 2024: EU general budget – European Council and Council",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0353",
-"data_originale": "2026-11-06T10:11:32.495Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Boosting skills in the Union – opportunities for vocational education and training in times of transition",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0358",
-"data_originale": "2026-11-06T10:10:15.259Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Pericles V exchange, assistance and training programme for the protection of the euro against counterfeiting 2028–2034",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0356",
-"data_originale": "2026-11-06T10:10:11.034Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Amendments to the draft general budget of the European Union for the financial year 2027",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-10-21-ANN01",
-"data_originale": "2026-11-06T10:09:49.462Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
 "titolo": "The recent hybrid attacks and instrumentalisation of migrants in Ceuta and the need for a coordinated response to protect EU’s external borders",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0317",
 "data_originale": "2026-11-06T10:04:05.150Z",
@@ -549,86 +669,6 @@
 "titolo": "Post-electoral repression in Zambia and the killing of Mutotwe Kafwaya",
 "link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0311",
 "data_originale": "2026-11-06T10:02:41.934Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Pilot project on European Schools Alliances and its contribution to citizenship education, democratic competences and European values",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0338",
-"data_originale": "2026-11-06T09:43:43.150Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "The 2026 undemocratic elections to the Russian State Duma and its implications on civil society",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0339",
-"data_originale": "2026-11-06T09:43:41.165Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Attempts by the ruling party Georgian Dream to ban opposition parties in Georgia",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0336",
-"data_originale": "2026-11-06T09:43:39.186Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "The state of play of advancing EU-Africa trade and investment relations",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0340",
-"data_originale": "2026-11-06T09:43:34.650Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "Human rights situation in Iran, notably the cases of Taraneh Rahimi and Leila Abolhasani",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0335",
-"data_originale": "2026-11-06T09:43:02.642Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "The upcoming EU anti-corruption strategy",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0341",
-"data_originale": "2026-11-06T09:42:59.393Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "The need for an EU strategy to counter Islamist entryism and the influence of the Muslim Brotherhood network",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0342",
-"data_originale": "2026-11-06T09:42:58.055Z",
-"data": "2026-11-06",
-"descrizione": ""
-},
-{
-"sito": "Parlamento europeo",
-"feed": "Parlamento UE - testi approvati (dati aperti)",
-"categoria": "Iter",
-"titolo": "The cases of Ali Karimli, Anar Mammadli and other political prisoners in Azerbaijan",
-"link": "https://data.europarl.europa.eu/eli/dl/doc/TA-10-2026-0337",
-"data_originale": "2026-11-06T09:42:57.116Z",
 "data": "2026-11-06",
 "descrizione": ""
 },

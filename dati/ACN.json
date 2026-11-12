@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-11T11-56-58.json",
+"nome_file": "vpalert_rss_ACN_2026-11-12T12-50-53.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-11T11:56:58Z",
+"letto_il": "2026-11-12T12:50:53Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,96 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Git",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-git",
+"data_originale": "Thu, 12 Nov 2026 12:37:48 GMT",
+"data": "2026-11-12",
+"descrizione": "Rilevate 6 nuove vulnerabilità in Git, noto sistema distribuito open source per il controllo di versione del codice sorgente. Tali vulnerabilità potrebbero consentire a un utente malintenzionato di eseguire codice arbitrario, leggere o modificare file, divulgare informazioni sensibili o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Barracuda: disponibile PoC per lo sfruttamento delle CVE-2026-116606 e CVE-2026-111560",
+"link": "https://www.acn.gov.it/portale/w/barracuda-disponibile-poc-per-lo-sfruttamento-delle-cve-2026-116606-e-cve-2026-111560",
+"data_originale": "Fri, 06 Nov 2026 12:31:52 GMT",
+"data": "2026-11-06",
+"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento delle vulnerabilità identificate tramite le CVE-2026-116606 e CVE-2026-111560 che interessano vari prodotti Barracuda. Tali vulnerabilità, qualora sfruttate in combinazione, potrebbero consentire a un attaccante remoto, in grado di raggiungere l'interfaccia amministrativa del dispositivo, di eludere i meccanismi di autenticazione ed eseguire codice arbitrario sul dispositivo interessato."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Progress Telerik",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-progress-telerik-2",
+"data_originale": "Thu, 12 Nov 2026 11:22:17 GMT",
+"data": "2026-11-12",
+"descrizione": "Progress ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 10 con gravità “alta”, in diversi prodotti. Tali vulnerabilità potrebbero consentire a un attaccante remoto di compromettere la disponibilità del servizio, eludere i meccanismi di autenticazione ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti ManageEngine",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-manageengine-1",
+"data_originale": "Thu, 12 Nov 2026 11:17:48 GMT",
+"data": "2026-11-12",
+"descrizione": "Rilevate molteplici vulnerabilità, di cui 3 con gravità “critica” e 16 con gravità “alta”, in diversi prodotti ManageEngine. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di eseguire codice arbitrario, eludere i meccanismi di autenticazione e di sicurezza , accedere a informazioni sensibili, elevare i propri privilegi e manipolare i dati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Apache HTTP Server",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-apache-http-server-1",
+"data_originale": "Thu, 12 Nov 2026 10:41:06 GMT",
+"data": "2026-11-12",
+"descrizione": "Aggiornamenti di sicurezza sanano 3 vulnerabilità, di cui una con gravità \"critica\" e una con gravità \"alta\", in Apache HTTP Server. Tali vulnerabilità, qualora sfruttate, potrebbero permettere a un attaccante remoto di eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Cisco",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-cisco-30",
+"data_originale": "Thu, 20 Aug 2026 08:18:38 GMT",
+"data": "2026-08-20",
+"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza che risolvono molteplici vulnerabilità, tra cui 8 con gravità \"critica\" e 2 con gravità “alta”, riguardanti vari prodotti."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Farmasimplex",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-farmasimplex",
+"data_originale": "Tue, 10 Nov 2026 10:56:34 GMT",
+"data": "2026-11-10",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto Farmasimplex, software gestionale sviluppato da CIPCarbone, progettato specificamente per le esigenze di farmacie e parafarmacie."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
+"data_originale": "Wed, 04 Nov 2026 08:15:58 GMT",
+"data": "2026-11-04",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a professionisti, farmacie e strutture sanitarie."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Magistra",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-magistra",
+"data_originale": "Tue, 03 Nov 2026 08:19:16 GMT",
+"data": "2026-11-03",
+"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto di Galeno Sistemi Magistra, software per la gestione del laboratorio galenico di farmacia."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -141,16 +231,6 @@
 "data_originale": "Tue, 10 Nov 2026 15:00:14 GMT",
 "data": "2026-11-10",
 "descrizione": "Nell’ambito del Security Patch Day di novembre, SAP rilascia aggiornamenti di sicurezza per risolvere 42 nuove vulnerabilità, di cui 9 con gravità “critica” e 19 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Farmasimplex",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-farmasimplex",
-"data_originale": "Tue, 10 Nov 2026 10:56:34 GMT",
-"data": "2026-11-10",
-"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto Farmasimplex, software gestionale sviluppato da CIPCarbone, progettato specificamente per le esigenze di farmacie e parafarmacie."
 },
 {
 "sito": "ACN",
@@ -316,41 +396,11 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Barracuda: disponibile PoC per lo sfruttamento delle CVE-2026-116606 e CVE-2026-111560",
-"link": "https://www.acn.gov.it/portale/w/barracuda-disponibile-poc-per-lo-sfruttamento-delle-cve-2026-116606-e-cve-2026-111560",
-"data_originale": "Fri, 06 Nov 2026 12:31:52 GMT",
-"data": "2026-11-06",
-"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento delle vulnerabilità identificate tramite le CVE-2026-116606 e CVE-2026-111560 che interessano vari prodotti Barracuda. Tali vulnerabilità, qualora sfruttate in combinazione, potrebbero consentire a un attaccante remoto, in grado di raggiungere l'interfaccia amministrativa del dispositivo, di eludere i meccanismi di autenticazione ed eseguire codice arbitrario sul dispositivo interessato."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "OpenAI: risolta vulnerabilità in Codex",
 "link": "https://www.acn.gov.it/portale/w/openai-risolta-vulnerabilita-in-codex",
 "data_originale": "Fri, 06 Nov 2026 10:09:02 GMT",
 "data": "2026-11-06",
 "descrizione": "OpenAI ha rilasciato aggiornamenti di sicurezza per sanare una vulnerabilità con gravità “alta” in Codex Desktop. Tale vulnerabilità, in determinate condizioni, potrebbe consentire a un attaccante di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti CompuGroup Medical",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-compugroup-medical",
-"data_originale": "Wed, 04 Nov 2026 08:15:58 GMT",
-"data": "2026-11-04",
-"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, presenti in diverse soluzioni software di CompuGroup Medical per la gestione e l'efficienza operativa dei processi relativi a professionisti, farmacie e strutture sanitarie."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Magistra",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-magistra",
-"data_originale": "Tue, 03 Nov 2026 08:19:16 GMT",
-"data": "2026-11-03",
-"descrizione": "Nell’ambito del processo di divulgazione coordinata delle vulnerabilità (Coordinated Vulnerability Disclosure – CVD), si rendono note le vulnerabilità individuate da ricercatori di sicurezza, e coordinate da questo CSIRT in collaborazione con il vendor interessato, relative al prodotto di Galeno Sistemi Magistra, software per la gestione del laboratorio galenico di farmacia."
 },
 {
 "sito": "ACN",
@@ -471,56 +521,6 @@
 "data_originale": "Tue, 14 May 2024 12:41:03 GMT",
 "data": "2024-05-14",
 "descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità presenti nei propri prodotti."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Sicurezza dei sistemi a supporto della catena del freddo e interfacce di management di sistemi connessi: richiamo urgente alle misure di verifica e mitigazione",
-"link": "https://www.acn.gov.it/portale/w/sicurezza-dei-sistemi-a-supporto-della-catena-del-freddo-e-interfacce-di-management-di-sistemi-connessi-richiamo-urgente-alle-misure-di-verifica-e-mitigazione",
-"data_originale": "Wed, 04 Nov 2026 17:38:53 GMT",
-"data": "2026-11-04",
-"descrizione": "Alla luce dei recenti accadimenti e delle evidenze rilevate, si richiamano i soggetti nazionali ad applicare con urgenza le raccomandazioni già formulate da questo CSIRT per gli operatori della distribuzione alimentare e della filiera del freddo."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Misure urgenti di verifica e mitigazione per operatori della distribuzione alimentare e della filiera del freddo",
-"link": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
-"data_originale": "Tue, 13 Oct 2026 10:44:39 GMT",
-"data": "2026-10-13",
-"descrizione": "L’Agenzia per la Cybersicurezza Nazionale richiama l’attenzione delle organizzazioni operanti nei settori della grande distribuzione organizzata (GDO), della logistica alimentare, della refrigerazione industriale e dei servizi di manutenzione connessi, alla luce del recente incidente informatico che ha colpito numerose catene di supermercati francesi."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Dispositivi IoT e servizi di accesso remoto connessi ad Internet: rischi e mitigazioni",
-"link": "https://www.acn.gov.it/portale/w/dispositivi-iot-e-servizi-di-accesso-remoto-connessi-ad-internet-rischi-e-mitigazioni",
-"data_originale": "Thu, 26 Jun 2025 16:53:24 GMT",
-"data": "2025-06-26",
-"descrizione": "Nell'ambito delle proprie attività, volte ad individuare fattori di rischio a cui è esposto lo spazio digitale nazionale, lo CSIRT Italia registra costantemente un alto numero di dispositivi e servizi eterogenei (ad esempio IoT, router industriali, telecamere IP e controllori e sistemi SCADA) esposti su Internet in maniera insicura."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "WordPress: rilevato sfruttamento in rete della CVE-2026-119977",
-"link": "https://www.acn.gov.it/portale/w/wordpress-rilevato-sfruttamento-in-rete-della-cve-2026-119977",
-"data_originale": "Wed, 04 Nov 2026 16:27:58 GMT",
-"data": "2026-11-04",
-"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-119977 - già sanata dal vendor - presente in WordPress. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Supply Chain Attack: distribuzione di versioni malevole dell'estensione Claude Code sul Marketplace di Cursor",
-"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-distribuzione-di-versioni-malevole-dell-estensione-claude-code-sul-marketplace-di-cursor",
-"data_originale": "Wed, 04 Nov 2026 15:11:27 GMT",
-"data": "2026-11-04",
-"descrizione": "È stata recentemente rilevata la distribuzione di versioni malevole dell'estensione Anthropic.claude-code all'interno del \"Cursor VS Code Extension Marketplace\", che ha comportato la raccolta e l'esfiltrazione di informazioni di sistema e sull'ambiente di lavoro degli host e il tentativo di installazione di una backdoor SSH persistente sui dispositivi degli sviluppatori."
 },
 {
 "sito": "ACN",
