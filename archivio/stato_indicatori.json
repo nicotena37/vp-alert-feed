@@ -1,50 +1,50 @@
 {
- "bce_discorsi_scaricato": "2026-11-11",
- "ultimo_giro": "2026-11-11T13:09:34+00:00",
+ "bce_discorsi_scaricato": "2026-11-12",
+ "ultimo_giro": "2026-11-12T14:01:09+00:00",
  "dal": "2026-10-26",
- "voci_nuove": 419,
- "voci_in_archivio": 15565,
+ "voci_nuove": 389,
+ "voci_in_archivio": 15954,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 543,
-   "con_tema": 25,
-   "secondi": 63
+   "voci": 569,
+   "con_tema": 26,
+   "secondi": 104
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 2459,
-   "con_tema": 112,
-   "secondi": 12
+   "voci": 2453,
+   "con_tema": 108,
+   "secondi": 9
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 146,
+   "voci": 148,
    "con_tema": 7,
-   "secondi": 8
+   "secondi": 4
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 718,
-   "con_tema": 32,
+   "voci": 788,
+   "con_tema": 37,
    "secondi": 14
   },
   "BCE - discorsi": {
    "ok": true,
    "voci": 3,
    "con_tema": 3,
-   "secondi": 8
+   "secondi": 7
   },
   "BIS - discorsi": {
    "ok": true,
    "voci": 50,
-   "con_tema": 22,
-   "secondi": 6
+   "con_tema": 24,
+   "secondi": 4
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 67,
-   "con_tema": 14,
+   "voci": 55,
+   "con_tema": 7,
    "secondi": 4
   },
   "Sole 24 Ore Finanza": {
@@ -56,14 +56,14 @@
   "Il Sole 24 Ore - Economia": {
    "ok": true,
    "voci": 12,
-   "con_tema": 2,
+   "con_tema": 1,
    "secondi": 3
   },
   "Il Sole 24 Ore - Norme e tributi": {
    "ok": true,
-   "voci": 4,
+   "voci": 5,
    "con_tema": 1,
-   "secondi": 3
+   "secondi": 4
   },
   "Corriere della Sera - Economia": {
    "ok": true,
@@ -74,26 +74,26 @@
   "la Repubblica - Economia": {
    "ok": true,
    "voci": 25,
-   "con_tema": 4,
+   "con_tema": 5,
    "secondi": 4
   },
   "ANSA - Europa": {
    "ok": true,
    "voci": 12,
-   "con_tema": 2,
+   "con_tema": 0,
    "secondi": 0
   },
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 7,
+   "con_tema": 6,
    "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
-   "con_tema": 6,
-   "secondi": 7
+   "con_tema": 5,
+   "secondi": 6
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
@@ -103,13 +103,13 @@
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1929,
-   "con_tema": 472,
+   "voci": 1938,
+   "con_tema": 468,
    "secondi": 1
   },
   "Media Cloud": {
-   "ok": true,
-   "righe": 75
+   "ok": false,
+   "errore": "ReadTimeout: HTTPSConnectionPool(host='search.mediacloud.org', port=443): Read timed out. (read timeout=60)"
   },
   "OpenAlex": {
    "ok": true,
