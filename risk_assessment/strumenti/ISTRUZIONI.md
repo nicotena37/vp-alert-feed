@@ -35,3 +35,9 @@ Ogni adempimento ha il campo `per`: lista di perimetri a cui si applica. Valori:
 
 ## Precisazione: "assicurazioni e IA sempre inclusi" vale SOLO per il VP Alert
 Nel risk assessment non c'è nessuna inclusione automatica: assicurazioni e IA entrano solo se l'ambito soggettivo dell'articolo li riguarda, e il perimetro scelto decide cosa si vede. Nel dubbio: BORDER, analisi in più sul testo, decisione motivata per iscritto.
+
+## Regole fissate dall'utente (13/11/2026)
+- **xlsx di copertura**: si rigenera SOLO quando l'utente lo chiede.
+- **Attribuzione del perimetro = parte dell'attribuzione**: quando si attribuiscono tematica, ambito e processo a una norma/articolo, si attribuisce nello stesso passaggio anche il perimetro (`per`), leggendo l'ambito soggettivo nel testo. Le regole automatiche (parole come "enti creditizi", TUB, G-SII/O-SII) servono solo come prima stima, mai come decisione.
+- **Revisione indipendente obbligatoria per ogni ambito nuovo**: dopo l'attribuzione, un secondo revisore (subagente che non ha visto il lavoro) rilegge il testo dell'articolo e ricontrolla tematica/ambito/processo e `per`. Le divergenze si risolvono rileggendo il testo; il motivo si scrive in `per_stato`. Solo dopo l'adempimento entra nei dati.
+- Così la copertura cresce ambito per ambito, con `per` già verificato.
