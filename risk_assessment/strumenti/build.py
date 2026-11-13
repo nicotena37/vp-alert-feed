@@ -27,7 +27,15 @@ def per_di(i,x):
         if BANCA_RE.search((x.get('cit') or '')+' '+x['titolo']+' '+x['dest']): DAVERIF.append('a%03d'%(i+1)); return ['banca']
         return ['tutti']
     return ['banca']  # norme non DORA: per default solo banche finché non indicato
-PER={i:per_di(i,x) for i,x in enumerate(a)}
+# ambito soggettivo letto nel testo (indagine sul testo degli articoli):
+#  - quadro semplificato (art. 16 DORA + RTS 2024/1774 art. 28-41, a371-a403): NON per le banche, solo imprese di investimento piccole e non interconnesse (SIM) e piccoli enti pensionistici
+#  - TLPT (art. 26 DORA + RTS 2025/1190): enti creditizi G-SII/O-SII, istituti di pagamento/IMEL grandi, CSD, CCP, sedi di negoziazione maggiori, grandi assicurazioni; SIM e SGR non sono nell'elenco
+#  - a159: solo enti creditizi significativi; a460: enti creditizi significativi, gestori di sedi di negoziazione e CCP; a478: G-SII/O-SII, CCP, CSD, sedi di negoziazione
+PEROV={i:['sim','fondi_pensione'] for i in range(370,403)}
+for i,x in enumerate(a):
+    if x['norma']=='UE-32025R1190' or (x['norma']=='UE-32022R2554' and x['art']=='26'): PEROV[i]=['banca','assicurazione','sedi','ccp_csd']
+PEROV[158]=['banca']; PEROV[459]=['banca','sedi','ccp_csd']; PEROV[477]=['banca','sedi','ccp_csd']
+PER={i:(PEROV[i] if i in PEROV else per_di(i,x)) for i,x in enumerate(a)}
 json.dump(sorted(MAI),open('esclusi.json','w'))
 M1="Governance e gestione dei rischi TIC";M2="Sicurezza dei sistemi, dei dati e degli accessi";M3="Continuità operativa e ripristino";M4="Incidenti TIC: gestione, classificazione e segnalazione";M5="Test di resilienza operativa digitale e TLPT";M6="Rischi da fornitori terzi di servizi TIC e registro degli accordi";M7="Ambito di applicazione per tipo di entità"
 def macro_di(t):
