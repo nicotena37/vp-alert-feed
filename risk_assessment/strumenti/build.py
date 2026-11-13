@@ -17,6 +17,26 @@ def macro_di(t):
         ("Governance",M1),("quadro dei rischi",M1),("quadro di gestione",M1),("Politiche di sicurezza TIC",M1),("Valutare e trattare",M1),("inventariare",M1),("Imparare",M1)]:
         if k in t: return m
     return M2
+
+import re
+def short(n):
+    m=re.match(r'UE-3(\d{4})([RL])(\d+)$',n)
+    if m: return ('Reg. (UE) ' if m.group(2)=='R' else 'Dir. (UE) ')+m.group(1)+'/'+str(int(m.group(3)))
+    if n.startswith('IT-decreto'): return 'd.lgs. 23/2025'
+    if n=='IVASS-7772be2880': return 'Lettera IVASS 14/02/2025 (segnalazioni incidenti)'
+    if n=='IVASS-22f87cfee4': return 'Lettera IVASS 07/03/2025 (registro delle informazioni)'
+    if n.startswith('EBA'): return 'Orientamenti congiunti ESA sulla stima dei costi e delle perdite'
+    return n
+def fontitxt(m):
+    d={}
+    for x in m:
+        art=x['art']; lab=art if (art=='Premessa' or art.startswith('Allegato')) else 'art. '+art
+        d.setdefault(x['norma'],{}).setdefault(lab,[])
+        if x['comma'] and x['comma'] not in d[x['norma']][lab]: d[x['norma']][lab].append(x['comma'])
+    out=[]
+    for n,arts in d.items():
+        out.append(short(n)+' ('+', '.join(a+(' c. '+', '.join(c) if c else '') for a,c in arts.items())+')')
+    return '; '.join(out)
 K=["sanz","rep","oper","econ","compl","freq","nov"]
 RINOMINA={"Fornitori critici: designazione, raccomandazioni e cooperazione":("Fornitori critici: seguire le raccomandazioni e sospendere i contratti","Le banche tengono conto delle raccomandazioni dell'autorità di sorveglianza nella gestione dei rischi da terzi, utilizzano fornitori critici di paesi terzi solo se hanno una filiale nell'Unione e sospendono o risolvono i contratti se imposto dall'autorità.")}
 out=[]
@@ -37,7 +57,7 @@ for tit,desc,idx in G:
     termine=ter[0] if len(ter)==1 else ('Vari: vedi le fonti' if ter else '')
     comp=''
     out.append({"norma":p['norma'],"art":p['art'],"comma":p['comma'],"titolo":tit,
-      "desc":desc+((' Comprende: '+comp) if comp else ''),
+      "desc":desc+'\n\nObblighi compresi:\n'+'\n'.join('- '+x['titolo'].rstrip('.') for x in m)+'\n\nFonti normative: '+fontitxt(m)+'.',
       "dest":p['dest'],"termine":termine,
       "natura":'obbligatorio' if any(x['natura']=='obbligatorio' for x in m) else p['natura'],
       "sogg":'banca',"cit":p['cit'],"citOk":bool(p.get('citOk')),
