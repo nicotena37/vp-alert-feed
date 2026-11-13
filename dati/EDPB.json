@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_EDPB_2026-11-12T12-53-30.json",
+"nome_file": "vpalert_rss_EDPB_2026-11-13T12-21-27.json",
 "sito": "EDPB",
 "origine": "github-actions",
-"letto_il": "2026-11-12T12:53:30Z",
+"letto_il": "2026-11-13T12:21:27Z",
 "feed": [
 {
 "nome": "EDPB - news",
@@ -21,6 +21,16 @@
 "EDPB - news: feed non leggibile (ValueError: HTTP 503) - https://www.edpb.europa.eu/feed/news_en"
 ],
 "notizie": [
+{
+"sito": "EDPB",
+"feed": "EDPB - pubblicazioni",
+"categoria": "Vigilanza",
+"titolo": "Statement 3/2026 on use of other model clauses",
+"link": "https://www.edpb.europa.eu/documents/statement/statement-32026-on-use-of-other-model-clauses_en",
+"data_originale": "Tue, 10 Nov 2026 12:00:00 +0000",
+"data": "2026-11-10",
+"descrizione": ""
+},
 {
 "sito": "EDPB",
 "feed": "EDPB - pubblicazioni",
@@ -97,16 +107,6 @@
 "categoria": "Vigilanza",
 "titolo": "Guidelines 03/2026 on web scraping in the context of generative AI",
 "link": "https://www.edpb.europa.eu/documents/guideline/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en",
-"data_originale": "Wed, 08 Jul 2026 12:00:00 +0000",
-"data": "2026-07-08",
-"descrizione": ""
-},
-{
-"sito": "EDPB",
-"feed": "EDPB - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "Guidelines 02/2026 on Anonymisation",
-"link": "https://www.edpb.europa.eu/documents/guideline/guidelines-022026-on-anonymisation_en",
 "data_originale": "Wed, 08 Jul 2026 12:00:00 +0000",
 "data": "2026-07-08",
 "descrizione": ""

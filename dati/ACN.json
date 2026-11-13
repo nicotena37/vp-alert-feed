@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-12T12-50-53.json",
+"nome_file": "vpalert_rss_ACN_2026-11-13T12-18-52.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-12T12:50:53Z",
+"letto_il": "2026-11-13T12:18:52Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,86 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Check Point",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-check-point",
+"data_originale": "Fri, 13 Nov 2026 11:45:01 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevate tre nuove vulnerabilità, di cui due con gravità “alta”, in vari prodotti Check Point. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di elevare i propri privilegi sui sistemi interessati. Tra queste si evidenzia la CVE-2026-123039, per la quale è stato rilevato lo sfruttamento attivo in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Apache Axis: rilevato sfruttamento in rete della CVE-2026-90436",
+"link": "https://www.acn.gov.it/portale/w/apache-axis-rilevato-sfruttamento-in-rete-della-cve-2026-90436",
+"data_originale": "Fri, 13 Nov 2026 09:42:26 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevato lo sfruttamento attivo in rete della CVE-2026-90436 - per la quale risulta disponibile anche un Proof of Concept (PoC) - presente in Apache Axis, framework open source per creare servizi web basati su SOAP (Simple Object Access Protocol). Tale vulnerabilità potrebbe consentire a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Grafana",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-grafana",
+"data_originale": "Fri, 13 Nov 2026 09:03:47 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevate 3 vulnerabilità con gravità “alta” in Grafana OSS e Grafana Enterprise, note applicazioni web per la visualizzazione e l’analisi interattiva di dati. Tali vulnerabilità potrebbero consentire a un attaccante remoto autenticato di ottenere privilegi elevati , eludere i meccanismi di autorizzazione o impersonare un'entità legittima sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Citrix",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-citrix",
+"data_originale": "Thu, 12 Nov 2026 17:22:00 GMT",
+"data": "2026-11-12",
+"descrizione": "Citrix ha rilasciato aggiornamenti di sicurezza per risolvere molteplici vulnerabilità, di cui 10 con gravità \"critica\" e 15 con gravità \"alta\", presenti nei prodotti NetScaler ADC, NetScaler Gateway, NetScaler Console, Secure Access Client e App Layering."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vates: rilevato sfruttamento in rete di vulnerabilità in Xen Orchestra",
+"link": "https://www.acn.gov.it/portale/w/vates-rilevato-sfruttamento-in-rete-di-vulnerabilita-in-xen-orchestra",
+"data_originale": "Thu, 12 Nov 2026 15:15:11 GMT",
+"data": "2026-11-12",
+"descrizione": "Vates ha rilevato lo sfruttamento in rete di vulnerabilità che interessano Xen Orchestra e Xen Orchestra Appliance, soluzioni per la gestione centralizzata di infrastrutture di virtualizzazione basate su XCP-ng e Xen. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di autenticazione e sicurezza, acquisire privilegi amministrativi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Node.js",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-node.js",
+"data_originale": "Thu, 12 Nov 2026 13:53:10 GMT",
+"data": "2026-11-12",
+"descrizione": "Rilevate molteplici vulnerabilità, di cui 7 con gravità “alta”, in Node.js, noto software open source per l’esecuzione di codice JavaScript. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di sicurezza e di autenticazione, compromettere la disponibilità del servizio, accedere ad informazioni sensibili e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti Zoom",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-zoom-4",
+"data_originale": "Thu, 12 Nov 2026 13:14:05 GMT",
+"data": "2026-11-12",
+"descrizione": "Zoom ha rilasciato aggiornamenti di sicurezza per sanare due vulnerabilità, una con gravità “critica” e una con gravità “alta”, nel prodotto Zoom Workplace, piattaforma per la comunicazione e la collaborazione. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di ottenere privilegi elevati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Google Chrome",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-86",
+"data_originale": "Thu, 12 Nov 2026 13:06:03 GMT",
+"data": "2026-11-12",
+"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 83 nuove vulnerabilità di sicurezza, di cui 5 con gravità “critica” e 78 con gravità “alta”."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -441,86 +521,6 @@
 "data_originale": "Thu, 05 Nov 2026 15:38:07 GMT",
 "data": "2026-11-05",
 "descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di molteplici vulnerabilità, di cui 3 con gravità \"critica\" e 24 con gravità “alta”, in FreeRDP, implementazione open source del protocollo Remote Desktop Protocol (RDP), utilizzato per collegarsi e controllare a distanza un computer."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti per prodotti Siemens",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-per-prodotti-siemens-25",
-"data_originale": "Tue, 11 Aug 2026 14:03:30 GMT",
-"data": "2026-08-11",
-"descrizione": "Siemens ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità nei propri prodotti, di cui 1 con gravità “critica” e 13 con gravità “alta”. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario e di leggere file arbitrari sul filesystem dei sistemi interessati. Tra queste si evidenzia la CVE-2026-58115 per la quale è stato rilevato lo sfruttamento attivo in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in VeraCrypt",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-veracrypt",
-"data_originale": "Thu, 05 Nov 2026 14:27:00 GMT",
-"data": "2026-11-05",
-"descrizione": "Aggiornamenti di sicurezza sanano una vulnerabilità con gravità \"alta\" in VeraCrypt, noto software open source per la cifratura di dischi, partizioni e volumi virtuali. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di accedere ad informazioni sensibili o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Linux: disponibile PoC per lo sfruttamento della CVE-2026-98432",
-"link": "https://www.acn.gov.it/portale/w/linux-disponibile-poc-per-lo-sfruttamento-della-cve-2026-98432",
-"data_originale": "Thu, 05 Nov 2026 11:11:12 GMT",
-"data": "2026-11-05",
-"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-98432 - già sanata dal vendor - che interessa il kernel Linux. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante remoto non autenticato di compromettere la disponibilità del servizio e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti WatchGuard",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-watchguard-4",
-"data_originale": "Thu, 05 Nov 2026 10:08:54 GMT",
-"data": "2026-11-05",
-"descrizione": "WatchGuard ha rilasciato aggiornamenti di sicurezza per sanare 4 vulnerabilità, 3 con gravità “critica” e una con gravità “alta”, nel prodotto AuthPoint Authentication Gateway, componente on-premise della piattaforma MFA AuthPoint che collega Active Directory/LDAP e gestisce l'autenticazione RADIUS."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Cisco",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-cisco-2",
-"data_originale": "Thu, 05 Nov 2026 10:05:28 GMT",
-"data": "2026-11-05",
-"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per risolvere tre vulnerabilità nei propri prodotti, di cui una con gravità “alta” in Cisco Unified Computing System (UCS) Central Software, piattaforma di gestione centralizzata per infrastrutture server Cisco UCS. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto autenticato di eseguire comandi arbitrari, scrivere file sul filesystem e accedere ad informazioni sensibili sui sistemi target."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Drupal: rilevato sfruttamento in rete della CVE-2026-118539",
-"link": "https://www.acn.gov.it/portale/w/drupal-rilevato-sfruttamento-in-rete-della-cve-2026-118539",
-"data_originale": "Thu, 05 Nov 2026 08:38:37 GMT",
-"data": "2026-11-05",
-"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-118539 - già sanata dal vendor - presente in Drupal Commerce Core, modulo dedicato all'implementazione di funzionalità di commercio elettronico per la vendita di beni e servizi tramite carrello acquisti, checkout integrato e applicazioni basate su API."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti Mensili Microsoft",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-mensili-microsoft-25",
-"data_originale": "Wed, 14 Oct 2026 08:49:33 GMT",
-"data": "2026-10-14",
-"descrizione": "Microsoft ha rilasciato gli aggiornamenti di sicurezza mensili che risolvono un totale di 1416 nuove vulnerabilità, di cui una di tipo 0-day."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Apple",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-21",
-"data_originale": "Tue, 14 May 2024 12:41:03 GMT",
-"data": "2024-05-14",
-"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità presenti nei propri prodotti."
 },
 {
 "sito": "ACN",
