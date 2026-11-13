@@ -305,7 +305,7 @@ let pesiOverride={}, libreria=[], sample=null, cfgLoaded=false;
 const nuovoRA=()=>({id:"ra"+Date.now().toString(36),titolo:"Nuovo risk assessment",stato:"in_corso",creato:new Date().toISOString(),agg:new Date().toISOString(),modo:"amb",amb:[],oggetto:"",incS:false,incAb:false,sig:"",norme:{},livello:"prescrizioni",metodo:"m3",fp:"",richiesta:null,extra:{},step:1,nAdem:0,nVal:0});
 let tmr=null;
 function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=new Date().toISOString();R.nAdem=A.length;R.nVal=A.filter(a=>a.val).length;R.nNr=A.filter(a=>a.nr).length;
-    try{await kv.set("ra/"+R.id,clone(R));$("#stSalv").textContent=$("#stSalv2").textContent="Salvato alle "+ora();$("#stSalv").className=$("#stSalv2").className="status"}
+    try{if(R.richiesta?.stato==="inviata"){const c=await kv.get("ra/"+R.id);if(c?.richiesta?.stato==="pronta")R.richiesta=c.richiesta}await kv.set("ra/"+R.id,clone(R));$("#stSalv").textContent=$("#stSalv2").textContent="Salvato alle "+ora();$("#stSalv").className=$("#stSalv2").className="status"}
     catch(e){$("#stSalv").textContent=$("#stSalv2").textContent="Salvataggio non riuscito: "+(e?.message||e);$("#stSalv").className=$("#stSalv2").className="status err"}};
   if(subito)return f();tmr=setTimeout(f,700)}
 (async()=>{try{sample=await window.claude?.use?.("sample")}catch{}})();
@@ -326,8 +326,9 @@ function entra(){
   $$("input[name=modo]").forEach(r=>r.checked=r.value===R.modo);
   unsubA=kv.watch("ra/"+R.id+"/adem",l=>{A=l.sort((a,b)=>String(a._id).localeCompare(String(b._id)));importaAdem();if(!$("#s6").hidden)renderAdem();if(!$("#s7").hidden)renderRiep();renderSteps()},()=>{});
   kv.get("ra/"+R.id).then(d=>{if(d?.richiesta&&(!R.richiesta||d.richiesta.stato!==R.richiesta.stato)){R.richiesta=d.richiesta;if(!$("#s6").hidden)renderRichiesta()}});
-  renderTem();renderLivelli();renderSteps();vai(R.step||1,true);window.scrollTo(0,0)}
-$("#bHome").onclick=async()=>{await persist(true);if(unsubA){unsubA();unsubA=null}R=null;$("#vWiz").hidden=true;$("#vHome").hidden=false}
+  renderTem();renderLivelli();renderSteps();vai(R.step||1,true);avviaPoll();window.scrollTo(0,0)}
+let pollTmr=null;function avviaPoll(){clearInterval(pollTmr);pollTmr=setInterval(async()=>{if(!R||R.richiesta?.stato!=="inviata")return;try{const d=await kv.get("ra/"+R.id);if(d?.richiesta?.stato==="pronta"){R.richiesta=d.richiesta;if(!$("#s6").hidden)renderRichiesta();importaAdem()}}catch{}},4000)}
+$("#bHome").onclick=async()=>{clearInterval(pollTmr);await persist(true);if(unsubA){unsubA();unsubA=null}R=null;$("#vWiz").hidden=true;$("#vHome").hidden=false}
 $("#titolo").addEventListener("input",()=>{R.titolo=$("#titolo").value;persist()});
 $("#bSalva").onclick=()=>persist(true);
 
