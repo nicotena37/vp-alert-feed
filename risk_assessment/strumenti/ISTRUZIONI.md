@@ -32,3 +32,6 @@ Ogni adempimento ha il campo `per`: lista di perimetri a cui si applica. Valori:
 
 ## Report di copertura per perimetro
 `risk_assessment/copertura/` contiene `copertura.py` (calcolo: stato di ogni norma, perimetro stimato, adempimenti) e `xlsx.py` (crea `copertura_perimetri.xlsx`: Riepilogo, Per ambito, Adempimenti per norma, Norme, Da fare, Buchi noti). Rigenerarlo dopo ogni estrazione o attribuzione: `python3 copertura.py --scrivi-per` solo se si vuole riscrivere il campo `per` in `ambiti_articoli.json` (backup automatico `ambiti_articoli.bak_prima_perimetro.json`), poi `python3 xlsx.py`. Il perimetro delle norme è una stima da correggere man mano.
+
+## Precisazione: "assicurazioni e IA sempre inclusi" vale SOLO per il VP Alert
+Nel risk assessment non c'è nessuna inclusione automatica: assicurazioni e IA entrano solo se l'ambito soggettivo dell'articolo li riguarda, e il perimetro scelto decide cosa si vede. Nel dubbio: BORDER, analisi in più sul testo, decisione motivata per iscritto.
