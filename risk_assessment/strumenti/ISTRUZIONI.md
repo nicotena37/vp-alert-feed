@@ -41,3 +41,8 @@ Nel risk assessment non c'è nessuna inclusione automatica: assicurazioni e IA e
 - **Attribuzione del perimetro = parte dell'attribuzione**: quando si attribuiscono tematica, ambito e processo a una norma/articolo, si attribuisce nello stesso passaggio anche il perimetro (`per`), leggendo l'ambito soggettivo nel testo. Le regole automatiche (parole come "enti creditizi", TUB, G-SII/O-SII) servono solo come prima stima, mai come decisione.
 - **Revisione indipendente obbligatoria per ogni ambito nuovo**: dopo l'attribuzione, un secondo revisore (subagente che non ha visto il lavoro) rilegge il testo dell'articolo e ricontrolla tematica/ambito/processo e `per`. Le divergenze si risolvono rileggendo il testo; il motivo si scrive in `per_stato`. Solo dopo l'adempimento entra nei dati.
 - Così la copertura cresce ambito per ambito, con `per` già verificato.
+
+## Perimetri: scissione di "intermediari" (13/11/2026)
+Nuovi valori di `per`: `istituti_pagamento`, `imel`, `intermediari_credito` (mediatori creditizi, agenti, intermediari ai sensi della dir. 2008/48 e 2014/17). `intermediari` resta solo per gli intermediari finanziari art. 106 TUB.
+- Le proposte dei revisori con `intermediari` generico vanno rilette sul testo e assegnate al valore giusto; se nessun perimetro è adeguato, `per` resta vuoto.
+- `intermediari_credito` è fuori dal campo DORA: i trasversali (`tutti`) non gli si applicano, vede solo gli adempimenti con `per` esplicito (costante NODORA in build.py e nella pagina).
