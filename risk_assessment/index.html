@@ -324,7 +324,7 @@ function entra(){
   if(unsubA){unsubA();unsubA=null}
   $("#vHome").hidden=true;$("#vWiz").hidden=false;$("#titolo").value=R.titolo;$("#ogg").value=R.oggetto||"";$("#incS").checked=!!R.incS;$("#incAb").checked=!!R.incAb;$("#fp").value=R.fp||"";
   $$("input[name=modo]").forEach(r=>r.checked=r.value===R.modo);
-  unsubA=kv.watch("ra/"+R.id+"/adem",l=>{A=l.sort((a,b)=>String(a._id).localeCompare(String(b._id)));if(!$("#s6").hidden)renderAdem();if(!$("#s7").hidden)renderRiep();renderSteps()},()=>{});
+  unsubA=kv.watch("ra/"+R.id+"/adem",l=>{A=l.sort((a,b)=>String(a._id).localeCompare(String(b._id)));importaAdem();if(!$("#s6").hidden)renderAdem();if(!$("#s7").hidden)renderRiep();renderSteps()},()=>{});
   kv.get("ra/"+R.id).then(d=>{if(d?.richiesta&&(!R.richiesta||d.richiesta.stato!==R.richiesta.stato)){R.richiesta=d.richiesta;if(!$("#s6").hidden)renderRichiesta()}});
   renderTem();renderLivelli();renderSteps();vai(R.step||1,true);window.scrollTo(0,0)}
 $("#bHome").onclick=async()=>{await persist(true);if(unsubA){unsubA();unsubA=null}R=null;$("#vWiz").hidden=true;$("#vHome").hidden=false}
@@ -522,6 +522,11 @@ function calc(ad){const {I,P}=IP(ad),RI=I*P,E=eff(ad),li=lvRI(RI),fp=+R.fp||0,r=
   r.sel=r[R.metodo];r.selIn=R.metodo==="m3"?r.in3:R.metodo==="m4"?(r.in4??null):li;return r}
 
 /* ---- popup di valutazione ---- */
+let importando=false;
+async function importaAdem(){const q=R&&R.richiesta;if(importando||!q||q.stato!=="pronta"||!q.file||q.importato||A.length)return;importando=true;
+  try{const arr=await (await fetch(q.file,{cache:"no-store"})).json();const st=$("#stInv");let n=0;
+    for(const d of arr){const id=d._id;const x={...d};delete x._id;await kv.set("ra/"+R.id+"/adem/"+id,x);n++;if(st&&n%25===0)st.textContent="Importo gli adempimenti… "+n+"/"+arr.length}
+    R.richiesta={...q,importato:true};R.nAdem=arr.length;await persist(true)}catch(e){const st=$("#stInv");if(st)st.textContent="Importazione non riuscita: ricarica la pagina."}finally{importando=false}}
 function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#dAd").showModal()}
 const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
 function presHtml(a){return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
