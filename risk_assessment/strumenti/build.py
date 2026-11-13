@@ -3,7 +3,7 @@ sys.path.insert(0,'.')
 from gruppi import G
 a=json.load(open('../adem_ramweuq26q.ORIG.json'))
 # adempimenti NON riferiti alle banche (autorità, Stati membri, ESA, fornitori TIC, CSD/CCP)
-EX={i for i,x in enumerate(a) if x['sogg']=='altro'}-{335}
+EX={i for i,x in enumerate(a) if x['sogg']=='altro'}
 EX|={196,202}|set(range(422,430))
 # entità non bancarie: intermediari finanziari, Bancoposta, sedi di negoziazione, assicurazioni, fondi pensione, lettere IVASS
 EX|={17,18,20,21,22,23,24}|set(range(27,42))
