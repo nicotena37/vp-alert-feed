@@ -20,3 +20,12 @@ Regole
 
 Output: scrivi con Write un file JSON (solo JSON valido, nessun testo attorno) in /home/claude/ra_el/out/<NOME>.json, dove <NOME> è il nome del file di input senza ".txt". Struttura: una lista di oggetti con i campi: norma, art, comma, titolo, desc, dest, termine, natura, sogg, cit, f (oggetto con le 9 chiavi), sanz_txt, S. `norma` = l'identificativo indicato nel prompt; `art` = il numero tra parentesi quadre della parte (stringa, identico).
 Usa solo gli strumenti Read e Write (vietati Bash, mcp__*, send_later, trigger). Rispondi alla fine solo: "fatto, N adempimenti".
+
+## Perimetri (campo `per`) — regole per le norme future
+Ogni adempimento ha il campo `per`: lista di perimetri a cui si applica. Valori: `tutti` (obbligo trasversale di tutte le entità finanziarie, es. DORA), `banca`, `assicurazione`, `sim`, `sgr`, `intermediari` (art. 106 TUB), `bancoposta`, `sedi` (sedi di negoziazione), `fondi_pensione`, `ccp_csd`.
+- Chi estrae gli adempimenti DEVE compilare `per`. Se manca, `build.py` lo deduce: atti UE DORA, d.lgs. 23/2025 ed EBA = `tutti`; testi con "ente creditizio / G-SII / O-SII / TUB" = `banca`; ogni altra norma = `banca` (prudente).
+- Mai nel risk assessment, in nessun perimetro: adempimenti di autorità, Stati membri, ESA, Commissione e fornitori TIC (restano solo nella lista `esclusi_ids.json`, tabella MAI di build.py).
+- Gli adempimenti di altri perimetri non si cancellano mai: restano nei dati e la pagina li nasconde per perimetro. Un adempimento di soggetto diverso dal perimetro scelto non si vede.
+- Controllo obbligatorio dopo ogni estrazione: `build.py` stampa "DA VERIFICARE" (testo con termini bancari classificato `tutti`) e il conteggio per perimetro. Rileggere a mano questi casi prima di pubblicare, in particolare prima di dare `per` specifico a un obbligo che potrebbe valere per tutti.
+- I livelli aggregati (prescrizioni, obblighi, pilastri) sono generati solo per le banche: un gruppo è visibile in un altro perimetro solo se tutte le sue fonti sono `tutti`. I testi sono scritti per le banche.
+- Per un nuovo perimetro (SIM, SGR, assicurazioni…) serve una nuova estrazione delle norme specifiche; poi si assegna `per` e si rigenerano i gruppi per quel perimetro.

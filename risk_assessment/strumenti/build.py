@@ -8,7 +8,22 @@ EX|={196,202}|set(range(422,430))
 # entità non bancarie: intermediari finanziari, Bancoposta, sedi di negoziazione, assicurazioni, fondi pensione, lettere IVASS
 EX|={17,18,20,21,22,23,24}|set(range(27,42))
 for i in sorted(EX): a[i]['_escl']=True
-json.dump(sorted(EX),open('esclusi.json','w'))
+# perimetri: le entità non bancarie restano nei dati (campo per), non vengono più scartate
+SPEC={17:['intermediari'],18:['intermediari'],20:['bancoposta'],21:['sedi'],22:['sedi'],23:['assicurazione'],24:['fondi_pensione'],335:['ccp_csd'],147:['ccp_csd']}
+for i in range(27,42): SPEC[i]=['assicurazione']
+MAI=EX-set(SPEC)   # autorità, Stati membri, ESA, fornitori TIC: mai negli adempimenti
+import re
+BANCA_RE=re.compile(r'ent[ie] creditizi|\bTUB\b|G-SII|O-SII',re.I)
+DAVERIF=[]
+def per_di(i,x):
+    if x.get('per'): return x['per']
+    if i in SPEC: return SPEC[i]
+    if re.match(r'(UE-3|IT-decreto|EBA)',x['norma']):
+        if BANCA_RE.search((x.get('cit') or '')+' '+x['titolo']+' '+x['dest']): DAVERIF.append('a%03d'%(i+1)); return ['banca']
+        return ['tutti']
+    return ['banca']  # norme non DORA: per default solo banche finché non indicato
+PER={i:per_di(i,x) for i,x in enumerate(a)}
+json.dump(sorted(MAI),open('esclusi.json','w'))
 M1="Governance e gestione dei rischi TIC";M2="Sicurezza dei sistemi, dei dati e degli accessi";M3="Continuità operativa e ripristino";M4="Incidenti TIC: gestione, classificazione e segnalazione";M5="Test di resilienza operativa digitale e TLPT";M6="Rischi da fornitori terzi di servizi TIC e registro degli accordi";M7="Ambito di applicazione per tipo di entità"
 def macro_di(t):
     for k,m in [("Imparare",M1),("TLPT",M5),("tester",M5),("Applicare DORA",M7),("sedi di negoziazione",M7),("Quadro semplificato: continuità",M3),("Quadro semplificato: governance",M1),("Quadro semplificato: identificazione",M1),
@@ -64,17 +79,19 @@ for tit,desc,idx in G:
       "natura":'obbligatorio' if any(x['natura']=='obbligatorio' for x in m) else p['natura'],
       "sogg":'banca',"cit":p['cit'],"citOk":bool(p.get('citOk')),
       "f":f,"sanz_txt":sanz,"S":0,"C":0,"lv":"prescrizioni","pres":[],"stato":None,"val":False,
+      "per":(lambda sp:sorted(sp) if sp else ['tutti'])(set(q for i in idx for q in PER[i])-{'tutti'}),
       "macro":macro_di(tit),"fonti":[{**{k:x[k] for k in('norma','art','comma','cit')},'pid':x['_id'],'titolo':x['titolo']} for x in m]})
 for n,x in enumerate(out,1): x['_id']='a%03d'%n
 json.dump(out,open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
-pun=[x for i,x in enumerate(a) if i not in EX]
+pun=[x for i,x in enumerate(a) if i not in MAI]
+for i,x in enumerate(a): x['per']=PER[i]
 for x in pun: x.pop('_escl',None)
 json.dump(pun,open('/home/claude/ra_el/adem_ramweuq26q.json','w'),ensure_ascii=False)
 json.dump(pun,open('/home/claude/ra_build/data/adem_ramweuq26q.json','w'),ensure_ascii=False)
 MAP={}
 for x in out:
     for f in x['fonti']: MAP[f['pid']]=x['macro']
-for x in pun: x['macro']=MAP[x['_id']]; x['sogg']='banca'
+for x in pun: x['macro']=MAP.get(x['_id'],M7); x['sogg']='banca'
 json.dump(pun,open('/home/claude/ra_el/adem_ramweuq26q.json','w'),ensure_ascii=False)
 json.dump(pun,open('/home/claude/ra_build/data/adem_ramweuq26q.json','w'),ensure_ascii=False)
 json.dump(MAP,open('/home/claude/ra_build/data/macro.json','w'),ensure_ascii=False)
@@ -82,4 +99,7 @@ json.dump(out,open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure
 from collections import Counter
 print(Counter(x['macro'] for x in out))
 print(len(EX),'esclusi;',len(pun),'puntuali;',len(out),'prescrizioni;',sum(len(x['fonti']) for x in out))
-ids=['a%03d'%(i+1) for i in sorted(EX)]; json.dump(ids,open('esclusi_ids.json','w')); print(ids)
+json.dump({'a%03d'%(i+1):PER[i] for i in range(len(a)) if i not in MAI},open('/home/claude/ra_build/data/per.json','w'))
+print('DA VERIFICARE (testo con termini bancari, messi su banca):',DAVERIF)
+print(Counter(tuple(v) for i,v in PER.items() if i not in MAI))
+ids=['a%03d'%(i+1) for i in sorted(MAI)]; json.dump(ids,open('esclusi_ids.json','w')); print(ids)
