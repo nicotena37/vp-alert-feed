@@ -498,7 +498,7 @@ function renderAdem(){
   if(!R)return;const per={};for(const a of A)(per[a.norma]=per[a.norma]||[]).push(a);
   $("#st5").textContent=A.length?`${A.length} adempimenti · ${A.filter(a=>a.val).length} valutati · ${METODI.find(m=>m[0]===R.metodo)[1]}`:"";
   const senza=R.richiesta?.senza||[];
-  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>`<h3 class="groupt" style="margin:6px 0 0">${esc(att(nid).tit)}</h3>`+ads.map(a=>{const r=calc(a);return `<button class="ar" type="button" data-ad="${esc(a._id)}"><b>${esc(a.titolo)}</b><span class="s">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura||"")}${a.sogg==="altro"?" · obbligo di altro soggetto":""}</span><span class="r">${a.val?'<span class="chip ok">valutato</span>':'<span class="chip">da valutare</span>'}${lv(r.sel)}</span></button>`}).join("")).join("")
+  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>`<h3 class="groupt" style="margin:6px 0 0">${esc(att(nid).tit)}</h3>`+ads.map(a=>{const r=calc(a);return `<button class="ar" type="button" data-ad="${esc(a._id)}"><b>${esc(a.titolo)}</b><span class="s">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura||"")}${a.sogg==="altro"?" · obbligo di altro soggetto":""}</span><span class="r">${a.val?'<span class="chip ok">valutato</span>'+lv(r.sel):'<span class="chip">da valutare</span>'}</span></button>`}).join("")).join("")
    +(senza.length?`<p class="small">Norme senza adempimenti per la banca (archiviate dalla scelta delle norme): ${senza.map(s=>esc(s.tit||s.id)).join("; ")}.</p>`:"")
    ||(R.richiesta?.stato==="inviata"?'<p class="status">In attesa degli adempimenti di Claude…</p>':'<p class="status">Nessun adempimento ancora: invia la richiesta qui sopra.</p>');}
 $("#adem").addEventListener("click",e=>{const b=e.target.closest("[data-ad]");if(b)apriAd(b.dataset.ad)});
@@ -544,7 +544,7 @@ function corpoAd(){const a=W,r=calc(a),m=R.metodo,I=["sanz","rep","oper","econ"]
   $("#bAd").innerHTML=`<h2 style="font-size:18px;margin:0">${esc(a.titolo)}</h2>
    <div class="row small"><span>${esc(att(a.norma).tit.slice(0,110))}</span><span class="mono">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""}</span><button class="btn ghost sm" type="button" data-leggi="${esc(a.norma)}|${esc(String(a.art))}">Leggi testo intero</button></div>
    <div>${esc(a.desc)}</div>${a.cit?`<q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>`:""}
-   <div class="box"><h4>Sanzioni (da Claude, in base alla norma)</h4><div>${esc(a.sanz_txt||"Non indicate dalla norma.")}</div>${R.metodo!=="m4"?`<div class="fx"><label>Sanzione massima (€)<input type="number" data-v="S" value="${a.S||""}" min="0"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label></div>`:""}</div>
+   <div class="box"><h4>Sanzioni (inserite da Claude in base alla norma)</h4><div>${esc(a.sanz_txt||"Non indicate dalla norma.")}</div></div>
    ${blocco}
    <div class="res"><span>Inerente ${lv(r.selIn)}</span><span>Residuo ${lv(r.sel)}</span><span class="small mono">presidi ${Math.round(r.E*100)}%</span></div>
    <label class="small">Note<textarea data-v="nota" style="min-height:56px">${esc(a.nota||"")}</textarea></label>`}
@@ -576,7 +576,7 @@ $("#bClose").onclick=()=>$("#dSet").close();
 
 /* ---- riepilogo ---- */
 function renderRiep(){if(!R)return;if(!A.length){$("#riep").innerHTML='<p class="status">Nessun adempimento da riepilogare.</p>';return}
-  const conf=$("#conf").checked,Rr=A.map(a=>({a,r:calc(a)})),per={};for(const x of Rr)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
+  const conf=$("#conf").checked,Rr=A.map(a=>{const r=calc(a);return {a,r:a.val?r:{...r,sel:null,selIn:null,m1:null,m2:null,m3:null,m4:null,m5:null}}}),per={};for(const x of Rr)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
   const sintesi=Object.entries(per).map(([nid,xs])=>{const vals=xs.map(x=>x.r.sel).filter(v=>v!=null),mx=vals.length?Math.max(...vals):null,cnt=[0,1,2,3].map(i=>vals.filter(v=>v===i).length);
     return `<tr><td>${esc(att(nid).tit)}</td><td>${lv(mx)}</td>${cnt.map(c=>`<td class="num">${c}</td>`).join("")}<td>${mx>=3?"Piano di mitigazione + segnalazione al CdA":mx===2?"Piano di mitigazione obbligatorio":"—"}</td></tr>`}).join("");
   const head=conf?METODI.map(m=>`<th>${m[1].split(" · ")[0]}</th>`).join(""):`<th>Residuo</th>`;
