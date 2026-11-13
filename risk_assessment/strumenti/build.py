@@ -11,6 +11,11 @@ for i in sorted(EX): a[i]['_escl']=True
 # perimetri: le entità non bancarie restano nei dati (campo per), non vengono più scartate
 SPEC={17:['intermediari'],18:['intermediari'],20:['bancoposta'],21:['sedi'],22:['sedi'],23:['assicurazione'],24:['fondi_pensione'],335:['ccp_csd'],147:['ccp_csd']}
 for i in range(27,42): SPEC[i]=['assicurazione']
+import re
+PERIM_LISTA=[('banca',0),('assicurazione',0),('sim',0),('sgr',0),('intermediari',0),('bancoposta',0),('sedi',0),('fondi_pensione',0),('ccp_csd',0)]
+PROV=re.compile(r'fornitor|prestator|outsourc',re.I); KEEP={294,306,321}
+for i in KEEP: a[i]['dest']='banca'
+EX|={i for i,x in enumerate(a) if PROV.search(x['dest']) and not re.search(r'banca|enti creditizi|entit',x['dest']) and i not in KEEP}
 MAI=EX-set(SPEC)   # autorità, Stati membri, ESA, fornitori TIC: mai negli adempimenti
 import re
 BANCA_RE=re.compile(r'ent[ie] creditizi|\bTUB\b|G-SII|O-SII',re.I)
@@ -56,12 +61,13 @@ def fontitxt(m):
     return '; '.join(out)
 K=["sanz","rep","oper","econ","compl","freq","nov"]
 RINOMINA={"Fornitori critici: designazione, raccomandazioni e cooperazione":("Fornitori critici: seguire le raccomandazioni e sospendere i contratti","Le banche tengono conto delle raccomandazioni dell'autorità di sorveglianza nella gestione dei rischi da terzi, utilizzano fornitori critici di paesi terzi solo se hanno una filiale nell'Unione e sospendono o risolvono i contratti se imposto dall'autorità.")}
-out=[]
-for tit,desc,idx in G:
-    idx=[i for i in idx if i not in EX]
-    if not idx: continue
-    if tit in RINOMINA: tit,desc=RINOMINA[tit]
-    m=[a[i] for i in idx]; p=m[0]
+def vis(i,p): return 'tutti' in PER[i] or p in PER[i]
+def adatta(t,p):
+    if p=='banca': return t
+    for x,y in [('La banca',"L'entità"),('la banca',"l'entità"),('della banca',"dell'entità"),('alla banca',"all'entità"),('dalla banca',"dall'entità"),('Le banche','Le entità'),('le banche','le entità')]: t=t.replace(x,y)
+    return t
+def componi(tit,desc,idx,p):
+    m=[a[i] for i in idx]; q=m[0]
     f={}
     for k in K:
         v=[x['f'][k] for x in m]; f[k]=max(1,min(4,round(.5*max(v)+.5*sum(v)/len(v))))
@@ -72,16 +78,37 @@ for tit,desc,idx in G:
         t=(x.get('termine') or '').strip()
         if t and t not in ter: ter.append(t)
     termine=ter[0] if len(ter)==1 else ('Vari: vedi le fonti' if ter else '')
-    comp=''
-    out.append({"norma":p['norma'],"art":p['art'],"comma":p['comma'],"titolo":tit,
-      "desc":desc+'\n\nObblighi compresi:\n'+'\n'.join('- '+x['titolo'].rstrip('.') for x in m)+'\n\nFonti normative: '+fontitxt(m)+'.',
-      "dest":p['dest'],"termine":termine,
-      "natura":'obbligatorio' if any(x['natura']=='obbligatorio' for x in m) else p['natura'],
-      "sogg":'banca',"cit":p['cit'],"citOk":bool(p.get('citOk')),
-      "f":f,"sanz_txt":sanz,"S":0,"C":0,"lv":"prescrizioni","pres":[],"stato":None,"val":False,
-      "per":(lambda sp:sorted(sp) if sp else ['tutti'])(set(q for i in idx for q in PER[i])-{'tutti'}),
-      "macro":macro_di(tit),"fonti":[{**{k:x[k] for k in('norma','art','comma','cit')},'pid':x['_id'],'titolo':x['titolo']} for x in m]})
-for n,x in enumerate(out,1): x['_id']='a%03d'%n
+    spec=set(z for i in idx for z in PER[i])-{'tutti'}
+    d=desc+'\n\nObblighi compresi:\n'+'\n'.join('- '+x['titolo'].rstrip('.') for x in m)+'\n\nFonti normative: '+fontitxt(m)+'.'
+    return {"norma":q['norma'],"art":q['art'],"comma":q['comma'],"titolo":adatta(tit,p),"desc":adatta(d,p),
+      "dest":q['dest'],"termine":termine,"natura":'obbligatorio' if any(x['natura']=='obbligatorio' for x in m) else q['natura'],
+      "sogg":p,"cit":q['cit'],"citOk":bool(q.get('citOk')),"f":f,"sanz_txt":sanz,"S":0,"C":0,"lv":"prescrizioni","pres":[],"stato":None,"val":False,
+      "per":sorted(spec) if spec else ['tutti'],"macro":macro_di(tit),
+      "fonti":[{**{k:x[k] for k in('norma','art','comma','cit')},'pid':x['_id'],'titolo':x['titolo']} for x in m]}
+def costruisci(p):
+    out=[];usati=set()
+    for tit,desc,idx in G:
+        idx=[i for i in idx if i not in MAI and vis(i,p)]
+        if not idx: continue
+        if tit in RINOMINA: tit,desc=RINOMINA[tit]
+        usati|=set(idx); out.append(componi(tit,desc,idx,p))
+    # adempimenti rimasti del perimetro, non coperti dai gruppi a mano: un gruppo per norma (se almeno 2)
+    resto=collections.defaultdict(list)
+    for i in range(len(a)):
+        if i not in MAI and i not in usati and vis(i,p): resto[a[i]['norma']].append(i)
+    for nm,ix in resto.items():
+        if len(ix)>=2 and len(ix)<=15:
+            out.append(componi("Adempimenti specifici: "+short(nm),"Gli adempimenti previsti da "+short(nm)+" per questo perimetro.",ix,p))
+    for n,x in enumerate(out,1): x['_id']='a%03d'%n
+    return out
+import collections
+out=costruisci('banca')
+GRP={'banca':out}
+for p,_ in PERIM_LISTA:
+    if p!='banca':
+        g=costruisci(p)
+        if g: GRP[p]=g
+for p,g in GRP.items(): json.dump(g,open('/home/claude/ra_build/data/prescrizioni_%s.json'%p,'w'),ensure_ascii=False)
 json.dump(out,open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
 pun=[x for i,x in enumerate(a) if i not in MAI]
 for i,x in enumerate(a): x['per']=PER[i]
