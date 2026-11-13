@@ -1,9 +1,11 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>compliAInce Risk Assessment</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: colonna di lavoro a passi numerati (il processo è davvero sequenziale), barra di avanzamento in alto */
 :root{
   --bg:#f4f6f8; --panel:#ffffff; --ink:#14243a; --muted:#5b6a7d; --line:#d9dfe7; --accent:#1d6670; --accent-weak:#e2eff0;
   --b:#2f7d4f; --mb:#8a7a12; --ma:#c26a14; --a:#b3261e;
@@ -17,161 +19,203 @@
   --bg:#0f1720; --panel:#16212d; --ink:#e5ebf2; --muted:#9aa8b8; --line:#2a3847; --accent:#5fb3bc; --accent-weak:#18343a;
   --b:#6cc28f; --mb:#d6c55a; --ma:#f0a05a; --a:#f08077; --b-bg:#173226; --mb-bg:#33301a; --ma-bg:#3a2a19; --a-bg:#3d1f1d; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
-.wrap{max-width:1080px;margin:0 auto}
-header.top{padding-block:28px 12px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
-h1{font-family:var(--f-display);font-weight:650;font-size:30px;margin:0;text-wrap:balance}
-h1 small{display:block;font-family:var(--f-body);font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
-.steps{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 20px}
-.steps button{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:5px 12px;font:500 13px var(--f-body);cursor:pointer}
-.steps button[aria-current="step"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
-.steps button.done{color:var(--accent);border-color:var(--accent)}
-section.step{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px}
-section.step h2{font-family:var(--f-display);font-weight:650;font-size:21px;margin:0;display:flex;gap:10px;align-items:baseline}
-section.step h2 .n{font-family:var(--f-mono);font-size:13px;color:var(--accent);font-weight:500}
-p.hint{margin:0;color:var(--muted);max-width:70ch}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 40px;margin:0}
+.wrap{max-width:1120px;margin:0 auto}
+header.top{padding-block:24px 10px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+h1{font-family:var(--f-display);font-weight:650;font-size:28px;margin:0;text-wrap:balance}
+h1 small{display:block;font-family:var(--f-body);font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+h2{font-family:var(--f-display);font-weight:650;font-size:21px;margin:0;display:flex;gap:10px;align-items:baseline;text-wrap:balance}
+h2 .n{font-family:var(--f-mono);font-size:13px;color:var(--accent);font-weight:500}
+h3.groupt{font-family:var(--f-display);font-size:17px;font-weight:650;margin:14px 0 0}
+p.hint{margin:0;color:var(--muted);max-width:75ch}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{border:1px solid var(--accent);background:var(--accent);color:var(--panel);border-radius:7px;padding:8px 14px;font:600 14px var(--f-body);cursor:pointer}
 .btn.ghost{background:transparent;color:var(--accent)}
+.btn.sm{padding:3px 9px;font-size:12px}
 .btn:disabled{opacity:.45;cursor:not-allowed}
-.btn:focus-visible,.steps button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-input[type=text],input[type=number],textarea,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:8px 10px}
+.btn:focus-visible,.steps button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,.rac:focus-visible,.plus:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=text],input[type=number],textarea,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:8px 10px;min-width:0}
 textarea{width:100%;min-height:90px;resize:vertical}
-.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
-details.tem{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--bg);min-width:0}
-details.tem summary{cursor:pointer;font-weight:600;display:flex;justify-content:space-between;gap:8px}
-details.tem summary .c{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:400}
-details.tem label{display:flex;gap:8px;align-items:flex-start;padding:3px 0;font-size:14px}
-details.tem label .c{margin-left:auto;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.status{font-size:13px;color:var(--muted);min-height:1.3em}.status.err{color:var(--a)}
+.small{font-size:12px;color:var(--muted)}.mono{font-family:var(--f-mono)}
+section.step,.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px;min-width:0}
+.win{max-height:58vh;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--bg);display:grid;gap:8px;align-content:start;min-width:0}
+.win.tall{max-height:64vh}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 14px}
+.steps button{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:5px 12px;font:500 13px var(--f-body);cursor:pointer}
+.steps button[aria-current="step"]{background:var(--accent);border-color:var(--accent);color:var(--panel)}
+.steps button.done{color:var(--accent);border-color:var(--accent)}
+.steps button:disabled{opacity:.5;cursor:not-allowed}
+/* home */
+.split{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;margin-top:8px}
+.split .panel{align-content:start;grid-template-rows:auto 1fr}
+.split .win{max-height:none;height:62vh;background:var(--panel)}
+.plusc{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-size:12px;font-weight:600;color:var(--accent);width:104px}
+.plus{width:68px;height:68px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);color:var(--panel);font-size:40px;line-height:1;cursor:pointer;display:grid;place-items:center;padding-bottom:5px}
+.plus:hover{background:var(--panel);color:var(--accent)}
+@media (max-width:780px){.split{grid-template-columns:1fr}.split .win{height:34vh}.plusc{width:auto;flex-direction:row;justify-content:center;order:2}.split>.panel:first-child{order:1}.split>.panel:last-child{order:3}}
+.rac{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg);display:grid;gap:3px;cursor:pointer;text-align:left;font:inherit;color:var(--ink);width:100%;min-width:0}
+.rac:hover{border-color:var(--accent)}
+.rac b{overflow-wrap:anywhere}.rac span{font-size:12px;color:var(--muted)}
+/* temi */
+details.tem{border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--panel);min-width:0}
+details.tem>summary{cursor:pointer;font-weight:600;display:flex;justify-content:space-between;gap:8px;align-items:center}
+details.tem>summary label{display:flex;gap:8px;align-items:center;font-weight:600}
+details.tem .c{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:400}
+details.tem label.ai{display:flex;gap:8px;align-items:flex-start;padding:3px 0 3px 22px;font-size:14px}
+details.tem label.ai .c{margin-left:auto}
 .new{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
-.status{font-size:13px;color:var(--muted);min-height:1.3em}
-.status.err{color:var(--a)}
-.list{display:grid;gap:8px}
-.act{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:start;min-width:0}
+.act{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:start;min-width:0;background:var(--panel)}
 .act .t{font-weight:600;min-width:0;overflow-wrap:anywhere}
 .act .m{grid-column:2;color:var(--muted);font-size:13px;min-width:0;overflow-wrap:anywhere}
 .chip{display:inline-block;font-size:12px;border-radius:999px;padding:1px 8px;border:1px solid var(--line);color:var(--muted);margin-right:4px;white-space:nowrap}
-.chip.P{border-color:var(--accent);color:var(--accent)}
-.chip.ab{border-color:var(--ma);color:var(--ma)}
-.chip.si{background:var(--b-bg);color:var(--b);border-color:transparent}
-.chip.contorno{background:var(--mb-bg);color:var(--mb);border-color:transparent}
-.chip.no{background:var(--a-bg);color:var(--a);border-color:transparent}
-.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
-.opt{border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:6px;cursor:pointer;background:var(--bg)}
+.chip.P{border-color:var(--accent);color:var(--accent)}.chip.ab{border-color:var(--ma);color:var(--ma)}
+.chip.ok{background:var(--b-bg);color:var(--b);border-color:transparent}
+.parte{display:flex;gap:8px;align-items:center;padding:3px 0 3px 4px;font-size:14px;border-top:1px dashed var(--line)}
+.parte label{display:flex;gap:8px;align-items:flex-start;flex:1;min-width:0;overflow-wrap:anywhere}
+/* livelli */
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.opt{border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:8px;cursor:pointer;background:var(--bg);align-content:start;min-width:0}
 .opt:has(input:checked){border-color:var(--accent);background:var(--accent-weak)}
-.opt b{font-size:15px}
-.opt span{font-size:13px;color:var(--muted)}
+.opt b{font-size:15px}.opt>span{font-size:13px;color:var(--muted)}
+.ex{border-top:1px dashed var(--line);padding-top:8px;display:grid;gap:6px;font-size:13px}
+.ex .e{border-left:3px solid var(--accent);padding-left:8px}.ex .e i{display:block;font-style:normal;color:var(--muted);font-size:12px}
+.ex .tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
 .lvl{display:inline-block;font-size:12px;font-weight:700;border-radius:5px;padding:2px 8px;white-space:nowrap}
-.l0{background:var(--b-bg);color:var(--b)} .l1{background:var(--mb-bg);color:var(--mb)} .l2{background:var(--ma-bg);color:var(--ma)} .l3{background:var(--a-bg);color:var(--a)} .lx{background:var(--bg);color:var(--muted)}
+.l0{background:var(--b-bg);color:var(--b)}.l1{background:var(--mb-bg);color:var(--mb)}.l2{background:var(--ma-bg);color:var(--ma)}.l3{background:var(--a-bg);color:var(--a)}.lx{background:var(--bg);color:var(--muted)}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
 table{border-collapse:collapse;width:100%;font-size:13px}
 th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{font-weight:600;color:var(--muted);background:var(--bg);position:sticky;top:0}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--f-mono)}
-.ad{border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:8px;min-width:0}
-.ad .h{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
-.ad .h b{font-size:15px;min-width:0;overflow-wrap:anywhere}
-.ad .src{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
-.ad q{display:block;font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:10px;quotes:none}
-.ad q.ok{border-left-color:var(--b)} .ad q.ko{border-left-color:var(--a)}
-.fx{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 10px;font-size:13px}
-.fx label{display:grid;gap:2px;color:var(--muted)}
-.fx select,.fx input{padding:4px 6px}
-.pres{display:grid;gap:6px}
-.pr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;border-top:1px dashed var(--line);padding-top:6px}
-.pr .nm{flex:1 1 200px;min-width:0}
+/* adempimenti */
+.ar{border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;cursor:pointer;background:var(--panel);text-align:left;font:inherit;color:var(--ink);width:100%;min-width:0}
+.ar:hover{border-color:var(--accent)}.ar b{overflow-wrap:anywhere}.ar .s{font-size:12px;color:var(--muted);grid-column:1;overflow-wrap:anywhere}
+.ar .r{grid-column:2;grid-row:1/3;display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+q{display:block;font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:10px;quotes:none}
+q.ok{border-left-color:var(--b)}q.ko{border-left-color:var(--a)}
+.fx{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px 12px;font-size:13px}
+.fx label{display:grid;gap:2px;color:var(--muted)}.fx select,.fx input{padding:5px 7px;width:100%}
+.pr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;border-top:1px dashed var(--line);padding-top:6px}.pr .nm{flex:1 1 200px;min-width:0}
 .res{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:13px}
-.groupt{font-family:var(--f-display);font-size:17px;font-weight:650;margin:10px 0 0}
-dialog{border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);max-width:min(760px,calc(100vw - 32px));width:100%;padding:18px}
-dialog::backdrop{background:rgb(0 0 0 / .35)}
-.small{font-size:12px;color:var(--muted)}
-.mono{font-family:var(--f-mono)}
+.box{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg);display:grid;gap:8px}
+.box h4{margin:0;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+dialog{border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);max-width:min(860px,calc(100vw - 24px));width:100%;padding:18px;max-height:92vh}
+dialog::backdrop{background:rgb(0 0 0 / .4)}
+dialog .body{display:grid;gap:12px;max-height:68vh;overflow:auto;padding-right:4px}
+pre.testo{white-space:pre-wrap;font:13px/1.55 var(--f-body);margin:0;overflow-wrap:anywhere}
+.bar{height:6px;border-radius:3px;background:var(--accent);min-width:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-</style>
-
+</style></head>
+<body>
 <div class="wrap">
 <header class="top">
-  <h1><small>compliAInce Dynamic · prova</small>Risk assessment normativo</h1>
-  <div class="row"><button class="btn ghost" id="bSet" type="button">Impostazioni pesi</button><button class="btn ghost" id="bReset" type="button">Nuovo risk assessment</button></div>
+  <h1><small>compliAInce Dynamic</small>Risk assessment normativo</h1>
+  <div class="row"><span class="status" id="stSalv"></span><button class="btn ghost" id="bSet" type="button">Impostazioni pesi</button></div>
 </header>
-<nav class="steps" id="steps" aria-label="Passi"></nav>
 
-<section class="step" data-s="1" id="s1">
-  <h2><span class="n">1</span>Ambiti o processi da analizzare</h2>
-  <p class="hint">Spunta uno o più ambiti, oppure parti dai processi della banca. Claude leggerà solo le norme della biblioteca associate alle voci scelte. Il numero accanto è quanti atti in vigore hanno quella voce come principale.</p>
-  <div class="row" role="radiogroup" aria-label="Punto di partenza"><label><input type="radio" name="modo" value="amb"> Parti dagli ambiti</label><label><input type="radio" name="modo" value="proc"> Parti dai processi (tassonomia ABI Lab)</label></div>
-  <p class="hint" id="hintProc" hidden>I processi sono associati per ora solo alle 50 norme già lette articolo per articolo; le altre si aggiungono al passo 3.</p>
-  <div class="row"><input type="text" id="fAmb" placeholder="Filtra (es. outsourcing, DORA, reclami, crediti)" style="flex:1 1 260px"><span class="status" id="selAmb"></span></div>
-  <div class="tgrid" id="tem"><p class="status">Carico la biblioteca…</p></div>
-  <div class="row"><button class="btn" id="go2" type="button" disabled>Avanti</button></div>
-</section>
-
-<section class="step" data-s="2" id="s2" hidden>
-  <h2><span class="n">2</span>Cosa vuoi analizzare</h2>
-  <p class="hint">Descrivi in parole tue l'oggetto del risk assessment. Tutte le norme degli ambiti scelti vengono proposte; al passo 4 Claude legge ogni norma per intero e individua le parti che toccano l'oggetto.</p>
-  <textarea id="ogg">Esternalizzazione di funzioni ICT essenziali a un fornitore cloud: contratto, registro delle informazioni, piano di uscita e controlli sul fornitore.</textarea>
-  <div class="row">
-    <label class="row small"><input type="checkbox" id="incS"> includi anche gli atti con ambito secondario</label>
-    <label class="row small"><input type="checkbox" id="incAb"> includi gli atti abrogati</label>
+<!-- HOME -->
+<main id="vHome">
+  <p class="hint">Qui trovi i risk assessment in corso e quelli passati. Con il tasto + ne inizi uno nuovo.</p>
+  <p class="status" id="stHome">Carico l'archivio…</p>
+  <div class="split">
+    <section class="panel"><h2>In corso <span class="n" id="nCorso"></span></h2><div class="win" id="lCorso"></div></section>
+    <div class="plusc"><button class="plus" id="bNuovo" type="button" aria-label="Crea nuovo risk assessment">+</button><span>Crea nuovo risk assessment</span></div>
+    <section class="panel"><h2>Passati <span class="n" id="nPass"></span></h2><div class="win" id="lPass"></div></section>
   </div>
-  <div class="row"><button class="btn" id="bLeggi" type="button">Mostra le norme degli ambiti</button><button class="btn ghost" id="bStop1" type="button" hidden>Ferma</button><span class="status" id="st2"></span></div>
-</section>
+</main>
 
-<section class="step" data-s="3" id="s3" hidden>
-  <h2><span class="n">3</span>Norme da analizzare</h2>
-  <p class="hint">Sono spuntate tutte le norme che hanno l'ambito scelto come principale; quelle con ambito secondario sono proposte senza spunta. Togli quelle che non vuoi e aggiungine altre dall'elenco della tematica, per nome o da PDF.</p>
-  <div class="row"><span class="status" id="st3"></span></div>
-  <div class="list" id="norme"></div>
-  <h3 class="groupt">Aggiungi norme</h3>
-  <div class="row"><input type="text" id="cerca" placeholder="Cerca: TUB, DORA, Circ. 285, D.Lgs. 231/2007, Reg. UE 2022/2554…" style="flex:1 1 320px"></div>
-  <div class="list" id="risCerca"></div>
-  <div id="tendine" class="list"></div>
-  <div class="row">
-    <label class="btn ghost" for="pdf">Carica un PDF</label><input type="file" id="pdf" accept="application/pdf" hidden>
-    <button class="btn ghost" type="button" disabled title="Non disponibile in questa prova">Ricerca web (in arrivo)</button>
-    <span class="status" id="stPdf"></span>
+<!-- WIZARD -->
+<main id="vWiz" hidden>
+  <div class="row" style="justify-content:space-between;margin-bottom:6px">
+    <div class="row"><button class="btn ghost sm" id="bHome" type="button">← Elenco</button><input type="text" id="titolo" aria-label="Titolo del risk assessment" style="min-width:260px;font-weight:600"></div>
+    <div class="row"><span class="status" id="stSalv2"></span><button class="btn" id="bSalva" type="button">Salva</button></div>
   </div>
-  <div class="row"><button class="btn" id="go4" type="button">Avanti</button></div>
-</section>
+  <nav class="steps" id="steps" aria-label="Passi"></nav>
 
-<section class="step" data-s="4" id="s4" hidden>
-  <h2><span class="n">4</span>Parti di testo da analizzare</h2>
-  <p class="hint">Per ogni norma Claude legge il testo completo, articoli e allegati, e sceglie le parti con regole sull'oggetto (le definizioni sono escluse). Gli adempimenti saranno creati solo da queste parti: controlla e togli o aggiungi quello che serve.</p>
-  <div class="row"><button class="btn" id="bParti" type="button">Individua le parti di testo</button><button class="btn ghost" id="bStop3" type="button" hidden>Ferma</button><span class="status" id="stParti"></span></div>
-  <div class="list" id="parti"></div>
-  <div class="row"><button class="btn" id="go5" type="button">Avanti</button></div>
-</section>
+  <section class="step" data-s="1" id="s1">
+    <h2><span class="n">1</span>Ambiti da analizzare</h2>
+    <p class="hint">Spunta gli ambiti, oppure parti dai processi della banca. La finestra scorre: ci sono tutte le tematiche. Il numero è quante norme in vigore hanno quella voce come principale.</p>
+    <div class="row" role="radiogroup" aria-label="Punto di partenza"><label><input type="radio" name="modo" value="amb"> Per ambiti</label><label><input type="radio" name="modo" value="proc"> Per processi (tassonomia ABI Lab)</label>
+      <input type="text" id="fAmb" placeholder="Filtra (es. outsourcing, DORA, reclami)" style="flex:1 1 220px"><span class="status" id="selAmb"></span></div>
+    <div class="win tall" id="tem"><p class="status">Carico la biblioteca…</p></div>
+    <div class="row"><button class="btn" id="go2" type="button" disabled>Avanti</button></div>
+  </section>
 
-<section class="step" data-s="5" id="s5" hidden>
-  <h2><span class="n">5</span>Livello di dettaglio e metodologia</h2>
-  <div class="opts" id="livelli"></div>
-  <h3 class="groupt">Metodologia di valutazione</h3>
-  <div class="opts" id="metodi"></div>
-  <div class="row"><button class="btn" id="bGen" type="button">Crea gli adempimenti</button><button class="btn ghost" id="bStop2" type="button" hidden>Ferma</button><span class="status" id="st4"></span></div>
-</section>
+  <section class="step" data-s="2" id="s2" hidden>
+    <h2><span class="n">2</span>Cosa vuoi analizzare <span class="small">(facoltativo)</span></h2>
+    <p class="hint">Se vuoi restringere a una materia precisa, descrivila qui; se lasci vuoto, si analizzano gli ambiti scelti per intero.</p>
+    <textarea id="ogg" placeholder="Es. Esternalizzazione di funzioni ICT essenziali a un fornitore cloud: contratto, registro delle informazioni, piano di uscita."></textarea>
+    <div class="row">
+      <label class="row small"><input type="checkbox" id="incS"> includi anche le norme con ambito secondario</label>
+      <label class="row small"><input type="checkbox" id="incAb"> includi gli atti abrogati</label>
+    </div>
+    <div class="row"><button class="btn ghost" id="back1" type="button">Indietro</button><button class="btn" id="go3" type="button">Avanti</button><span class="status" id="st2"></span></div>
+  </section>
 
-<section class="step" data-s="6" id="s6" hidden>
-  <h2><span class="n">6</span>Adempimenti e valutazione</h2>
-  <p class="hint">Ogni adempimento riporta la frase della norma: il bordo verde vuol dire che la citazione è stata ritrovata alla lettera nel testo, rosso che va verificata. I fattori proposti da Claude si possono cambiare; aggiungi i presidi dall'elenco, dalla tua libreria o a mano.</p>
-  <div class="row">
-    <label class="small">Fondi propri della banca (€) <input type="number" id="fp" min="0" step="1000000" placeholder="es. 250000000" style="width:170px"></label>
-    <span class="small">Servono solo alla metodologia 4.</span>
-  </div>
-  <div class="row"><span class="status" id="st5"></span></div>
-  <div class="list" id="adem"></div>
-  <div class="row"><button class="btn" id="go6" type="button">Vai al riepilogo</button></div>
-</section>
+  <section class="step" data-s="3" id="s3" hidden>
+    <h2><span class="n">3</span>Norme da analizzare</h2>
+    <p class="hint">Sono spuntate le norme con l'ambito scelto come principale; quelle con ambito secondario, se le hai incluse, sono proposte senza spunta. Restano fuori le norme senza adempimenti. Se una norma che ti aspetti non c'è, aggiungila con il tasto sotto.</p>
+    <span class="status" id="st3"></span>
+    <div class="win tall" id="norme"></div>
+    <div class="row"><button class="btn ghost" id="bAddNorma" type="button">+ Aggiungi norma</button></div>
+    <div class="row"><button class="btn ghost" id="back2" type="button">Indietro</button><button class="btn" id="go4" type="button">Avanti</button></div>
+  </section>
 
-<section class="step" data-s="7" id="s7" hidden>
-  <h2><span class="n">7</span>Riepilogo</h2>
-  <div class="row"><label class="row small"><input type="checkbox" id="conf"> Confronta le 5 metodologie</label><button class="btn ghost" id="bCsv" type="button">Copia la tabella (CSV)</button><span class="status" id="st6"></span></div>
-  <div id="riep"></div>
-</section>
+  <section class="step" data-s="4" id="s4" hidden>
+    <h2><span class="n">4</span>Parti di testo da analizzare</h2>
+    <p class="hint">Gli adempimenti nasceranno solo dalle parti spuntate (le definizioni sono escluse). Con «Leggi testo intero» apri l'articolo completo. Ogni parte può dare più adempimenti.</p>
+    <div class="row"><button class="btn ghost" id="bParti" type="button">Proponi le parti con Claude (bozza veloce)</button><button class="btn ghost" id="bStop3" type="button" hidden>Ferma</button><span class="status" id="stParti"></span></div>
+    <div class="win tall" id="parti"></div>
+    <div class="row"><button class="btn ghost" id="back3" type="button">Indietro</button><button class="btn" id="go5" type="button">Avanti</button></div>
+  </section>
+
+  <section class="step" data-s="5" id="s5" hidden>
+    <h2><span class="n">5</span>Livello di dettaglio</h2>
+    <p class="hint">Il livello cambia solo il numero di righe: più il livello è alto, più adempimenti simili sono riassunti in uno. Sotto ogni livello c'è l'esempio sulla stessa norma, il Regolamento DORA (artt. 28 e 30 sui fornitori di servizi TIC).</p>
+    <div class="opts" id="livelli"></div>
+    <h3 class="groupt">Metodologia di valutazione</h3>
+    <p class="hint">La metodologia cambia come è fatta la riga di valutazione di ogni adempimento.</p>
+    <div class="opts" id="metodi"></div>
+    <div class="row"><button class="btn ghost" id="back4" type="button">Indietro</button><button class="btn" id="go6" type="button">Avanti</button></div>
+  </section>
+
+  <section class="step" data-s="6" id="s6" hidden>
+    <h2><span class="n">6</span>Adempimenti e valutazione</h2>
+    <div class="box" id="richiesta"></div>
+    <div class="row"><label class="small">Fondi propri della banca (€) <input type="number" id="fp" min="0" step="1000000" placeholder="es. 250000000" style="width:170px"></label><span class="small">Servono solo alla metodologia 4.</span><span class="status" id="st5"></span></div>
+    <div class="win tall" id="adem"></div>
+    <div class="row"><button class="btn ghost" id="back5" type="button">Indietro</button><button class="btn" id="go7" type="button">Vai al riepilogo</button></div>
+  </section>
+
+  <section class="step" data-s="7" id="s7" hidden>
+    <h2><span class="n">7</span>Riepilogo</h2>
+    <div class="row"><label class="row small"><input type="checkbox" id="conf"> Confronta le 5 metodologie</label><button class="btn ghost" id="bCsv" type="button">Copia la tabella (CSV)</button><button class="btn" id="bConcludi" type="button">Concludi il risk assessment</button><span class="status" id="st6"></span></div>
+    <div id="riep"></div>
+    <div class="row"><button class="btn ghost" id="back6" type="button">Indietro</button></div>
+  </section>
+</main>
 </div>
+
+<dialog id="dNorma"><h2 style="margin:0 0 8px">Aggiungi norma</h2>
+  <div class="body">
+    <div class="box"><h4>Cerca in biblioteca</h4><input type="text" id="cerca" placeholder="TUB, DORA, Circ. 285, D.Lgs. 231/2007, Reg. UE 2022/2554…"><div class="win" id="risCerca" style="max-height:30vh"></div></div>
+    <div class="box"><h4>Altre norme delle tematiche scelte</h4><p class="small" style="margin:0">Norme con la tematica ma non proposte (ambito secondario o non incluse).</p><div id="tendine" style="display:grid;gap:8px"></div></div>
+    <div class="box"><h4>Da PDF o dal web</h4><div class="row"><label class="btn ghost" for="pdf">Carica un PDF</label><input type="file" id="pdf" accept="application/pdf" hidden><button class="btn ghost" type="button" disabled title="Non ancora disponibile">Ricerca web (in arrivo)</button></div><span class="status" id="stPdf"></span></div>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn" id="cNorma" type="button">Chiudi</button></div>
+</dialog>
+
+<dialog id="dTesto"><h2 id="tTesto" style="margin:0 0 8px;font-size:17px"></h2><div class="body"><pre class="testo" id="pTesto"></pre></div><div class="row" style="margin-top:12px"><button class="btn" id="cTesto" type="button">Chiudi</button></div></dialog>
+
+<dialog id="dAd"><div class="body" id="bAd"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" id="saveAd" type="button">Salva valutazione</button><button class="btn ghost" id="cAd" type="button">Chiudi senza salvare</button><span class="status" id="stAd"></span></div>
+</dialog>
 
 <dialog id="dSet">
   <h2 style="font-family:var(--f-display);margin:0 0 6px">Impostazioni pesi dei presidi</h2>
-  <p class="small">Ogni peso resta nella fascia della sua natura: sistema 0,65–1,00 · procedura 0,50–0,85 · persona 0,45–0,70. Le modifiche valgono per i prossimi calcoli in questo browser.</p>
+  <p class="small">Ogni peso resta nella fascia della sua natura: sistema 0,65–1,00 · procedura 0,50–0,85 · persona 0,45–0,70.</p>
   <div class="tw" style="max-height:55vh"><table id="tSet"></table></div>
   <div class="row" style="margin-top:12px"><input type="text" id="motSet" placeholder="Motivo della modifica" style="flex:1 1 240px"><button class="btn ghost" id="bStd" type="button">Ripristina standard</button><button class="btn" id="bSave" type="button">Salva</button><button class="btn ghost" id="bClose" type="button">Chiudi</button></div>
 </dialog>
@@ -183,8 +227,7 @@ dialog::backdrop{background:rgb(0 0 0 / .35)}
   <div class="row"><input type="text" id="npNome" placeholder="Nome del presidio" style="flex:1 1 220px">
     <select id="npNat"><option value="Sistema">Sistema</option><option value="Procedura" selected>Procedura</option><option value="Persona">Persona</option></select>
     <select id="npTipo"><option>Preventivo</option><option>Rilevativo</option></select>
-    <input type="number" id="npPeso" step="0.05" min="0.45" max="1" value="0.7" style="width:80px" aria-label="Peso">
-  </div>
+    <input type="number" id="npPeso" step="0.05" min="0.45" max="1" value="0.7" style="width:80px" aria-label="Peso"></div>
   <div class="row" style="margin-top:8px"><label class="row small"><input type="checkbox" id="npLib" checked> salva nella libreria della banca</label><button class="btn" id="bNewPres" type="button">Aggiungi presidio nuovo</button><button class="btn ghost" id="bClosePres" type="button">Chiudi</button></div>
   <p class="status" id="stPres"></p>
 </dialog>
@@ -195,13 +238,28 @@ dialog::backdrop{background:rgb(0 0 0 / .35)}
 "use strict";
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const clone=o=>JSON.parse(JSON.stringify(o));
 const LIV=["Basso","Medio-basso","Medio-alto","Alto"];
 const lv=i=>i==null?'<span class="lvl lx">n.d.</span>':`<span class="lvl l${i}">${LIV[i]}</span>`;
-const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const f2=x=>x==null?"—":(+x).toLocaleString("it-IT",{maximumFractionDigits:2});
+const eur=x=>x==null?"—":Math.round(x).toLocaleString("it-IT")+" €";
+const ora=()=>new Date().toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"});
+const data=iso=>{try{return new Date(iso).toLocaleDateString("it-IT",{day:"numeric",month:"short",year:"numeric"})}catch{return""}};
 const NUOVI=new Set(["Credito al consumo","Valutazione del merito creditizio","Resilienza operativa digitale (DORA)","Intelligenza artificiale","Data governance","Servizi di accesso ai conti (PISP/AISP)","Requisiti patrimoniali e di liquidità","Risanamento e risoluzione","Vigilanza su gruppi e conglomerati","Riserve tecniche e solvibilità assicurativa","Succursali di paesi terzi","Sanzioni amministrative e reati societari","Gruppi bancari cooperativi e BCC","Infrastrutture di post-trading","Negoziazione algoritmica e internalizzazione sistematica","Salvaguardia dei beni dei clienti","Crowdfunding","Derivati su merci e quote di emissione","Commercializzazione di OICR","Trasferimenti di dati verso paesi terzi","Accessibilità e inclusione finanziaria","Revisione legale dei conti","Gestione sinistri RC auto","Whistleblowing"]);
 
-/* ---------- costanti metodologia ---------- */
-const FATT=[ // chiave, nome, gruppo, peso, descrizioni 1..4
+/* ================= archivio: db condiviso, con ripiego sul browser ================= */
+let DB=null; const wq={}, bus={};
+const LS={g(k){try{return JSON.parse(localStorage.getItem("kv:"+k))}catch{return null}},s(k,v){try{localStorage.setItem("kv:"+k,JSON.stringify(v))}catch{}}};
+const kv={
+  async get(p){if(DB){const s=await DB.doc(p).get();return s.exists?clone(s.data()):null}return LS.g(p)},
+  set(p,d){const run=async()=>{if(DB){await DB.doc(p).set(d)}else{LS.s(p,d);const c=p.split("/").slice(0,-1).join("/"),ix=LS.g("ix:"+c)||[],id=p.split("/").pop();if(!ix.includes(id)){ix.push(id);LS.s("ix:"+c,ix)}(bus[c]||[]).forEach(f=>f())}};
+    return wq[p]=(wq[p]||Promise.resolve()).catch(()=>{}).then(run)},
+  async list(c){if(DB){const s=await DB.collection(c).get();return s.docs.map(d=>({...clone(d.data()),_id:d.id}))}return(LS.g("ix:"+c)||[]).map(id=>({...LS.g(c+"/"+id),_id:id}))},
+  watch(c,cb,err){if(DB)return DB.collection(c).onSnapshot(s=>cb(s.docs.map(d=>({...clone(d.data()),_id:d.id}))),err);
+    const f=()=>kv.list(c).then(cb);(bus[c]=bus[c]||[]).push(f);f();return()=>{bus[c]=bus[c].filter(x=>x!==f)}}};
+
+/* ================= costanti metodologia ================= */
+const FATT=[
  ["sanz","Sanzionatorio","I",.4,["nessuna o richiamo","fino a 500.000 €","fino a 5 mln € o % fatturato","oltre, penali o interdittive"]],
  ["rep","Reputazionale","I",.2,["solo interno","noto alle autorità","tocca la clientela","pubblicazione o caso mediatico"]],
  ["oper","Operativo","I",.2,["un ufficio","più uffici","processi core o IT","continuità operativa"]],
@@ -223,275 +281,306 @@ const PRES_STD=[
  ["Controllo manuale di primo livello","Persona",.55,"Rilevativo"],["Referente nominato","Persona",.50,"Preventivo"],["Formazione del personale","Persona",.45,"Preventivo"]];
 const ADEG=[["Adeguato",1],["Parzialmente adeguato",.6],["Debole",.3],["Inadeguato o assente",0]];
 const TEST=[["Testato, senza rilievi",1],["Non testato",.8],["Testato con rilievi",.5]];
+const STATI=["Conforme","Largamente conforme","Parzialmente conforme","Non conforme o non valutato"];
+const ESEMPIO={norma:"Reg. (UE) 2022/2554 (DORA), artt. 28 e 30",
+ puntuali:{n:41,ex:[["art. 28 c. 3","Mantenere e aggiornare il registro delle informazioni su tutti gli accordi contrattuali per servizi TIC prestati da terzi."],["art. 28 c. 4 lett. d","Svolgere la due diligence sul potenziale fornitore prima di stipulare il contratto."],["art. 30 c. 2 lett. b","Indicare nel contratto le località di svolgimento e conservazione dei dati e l'obbligo del fornitore di avvisare prima di cambiarle."]]},
+ prescrizioni:{n:7,ex:[["art. 28 c. 3","Tenere il registro dei contratti TIC e comunicare i dati alle autorità.","riassume 5 adempimenti puntuali: registro, distinzione per funzioni essenziali, comunicazione annuale, accesso su richiesta, avviso tempestivo"],["art. 28 c. 4–5","Valutare ogni fornitore e ogni accordo prima della firma.","riassume 6 adempimenti puntuali: funzione essenziale, condizioni di vigilanza, rischi e concentrazione, due diligence, conflitti d'interessi, standard di sicurezza"]]},
+ obblighi:{n:2,ex:[["art. 28 c. 1–5","Governare il rischio dei fornitori TIC e valutarli prima del contratto.","riassume 16 adempimenti puntuali (3 prescrizioni)"],["art. 28 c. 6–8; art. 30","Costruire contratti idonei, controllare il fornitore e prepararne l'uscita.","riassume 25 adempimenti puntuali (4 prescrizioni)"]]},
+ pilastri:{n:1,ex:[["artt. 28–30","Gestione del rischio derivante dai fornitori terzi di servizi TIC.","riassume tutti i 41 adempimenti puntuali (7 prescrizioni, 2 obblighi)"]]}};
 const LIVELLI=[
- ["pilastri","Pilastri","Claude legge l'atto per intero e raggruppa gli obblighi per finalità (governo del rischio, informativa, segnalazioni): ogni pilastro unisce più articoli o un capo e dice cosa deve garantire la banca."],
- ["obblighi","Obblighi","Per ogni articolo i comportamenti richiesti o vietati: uno o pochi obblighi per articolo, con riferimento e sintesi fedele."],
- ["prescrizioni","Prescrizioni","Scende a comma e lettera: chi deve agire, cosa, entro quando o con quale frequenza, a quali condizioni. Legge anche le norme con ambito secondario."],
- ["puntuali","Elementi puntuali","Scompone ogni prescrizione in soglie, eccezioni, termini, documenti e controlli verificabili; segue i rinvii e collega la sanzione. Livello da controllo ispettivo."]];
+ ["puntuali","Elementi puntuali","Ogni singola parte di testo con un comportamento richiesto crea un adempimento. Una parte può crearne più di uno."],
+ ["prescrizioni","Prescrizioni","Da 2 a 15 adempimenti simili diventano un unico adempimento che li riassume."],
+ ["obblighi","Obblighi","Da 15 a 30 adempimenti collegati diventano un unico adempimento."],
+ ["pilastri","Pilastri","Gruppi più ampi: da 30 adempimenti in su diventano un unico adempimento."]];
 const METODI=[
- ["m1","1 · Matrice inerente × vulnerabilità","Tabella fissa 4×4, schema dell'autovalutazione antiriciclaggio Banca d'Italia."],
- ["m2","2 · Riduzione percentuale","Residuo = inerente × (1 − efficacia dei presidi). Graduale."],
- ["m3","3 · Fattori ponderati (predefinita)","Media ponderata dei 9 fattori, mostra il contributo di ognuno."],
- ["m4","4 · Perdita attesa in euro","Probabilità annua × (sanzione + costi), soglie sui fondi propri."],
- ["m5","5 · Regole a soglia","Stato di conformità: −2, −1 o nessun livello rispetto all'inerente."]];
+ ["m1","1 · Matrice inerente × vulnerabilità","Riga con impatto (4 fattori) e probabilità (5 fattori); i presidi danno la vulnerabilità e il residuo esce dalla matrice 4×4 (schema antiriciclaggio Banca d'Italia)."],
+ ["m2","2 · Riduzione percentuale","Riga con i fattori del rischio inerente e l'elenco dei presidi con peso, adeguatezza e test: l'efficacia complessiva riduce il rischio in percentuale."],
+ ["m3","3 · Fattori ponderati (predefinita)","Riga con 9 fattori, ciascuno col suo peso e il suo contributo al punteggio, più i presidi."],
+ ["m4","4 · Perdita attesa in euro","Riga con la probabilità annua, la sanzione in euro e i costi di rimedio, più i presidi: esce una perdita attesa in euro rispetto ai fondi propri."],
+ ["m5","5 · Regole a soglia","Riga con lo stato di conformità e i presidi: il residuo scende di 0, 1 o 2 livelli rispetto all'inerente."]];
 
-/* ---------- stato ---------- */
-let IDX={}, TAX={}, PROC=[], SHARDS={};
-const S=store.get("ra_bozza",null)||{};
-S.amb=new Set(S.amb||[]); S.modo=S.modo||"amb"; S.norme=S.norme||{}; S.livello=S.livello||"obblighi"; S.metodo=S.metodo||"m3"; S.adem=S.adem||[]; S.extra=S.extra||{};
-let pesiOverride=store.get("ra_pesi",{}), libreria=store.get("ra_presidi_lib",[]);
-const salva=()=>store.set("ra_bozza",{...S,amb:[...S.amb]});
-let sample=null;
-(async()=>{try{sample=await window.claude?.use?.("sample")}catch{} if(!sample){$("#bLeggi").title="Claude non disponibile in questa vista";}})();
+/* ================= stato ================= */
+let IDX={}, TAX={}, PROC=[], SHARDS={}, PDFARTS={}, HOME=[], A=[], R=null, unsubA=null, W=null, adTarget=null;
+let pesiOverride={}, libreria=[], sample=null, cfgLoaded=false;
+const nuovoRA=()=>({id:"ra"+Date.now().toString(36),titolo:"Nuovo risk assessment",stato:"in_corso",creato:new Date().toISOString(),agg:new Date().toISOString(),modo:"amb",amb:[],oggetto:"",incS:false,incAb:false,sig:"",norme:{},livello:"prescrizioni",metodo:"m3",fp:"",richiesta:null,extra:{},step:1,nAdem:0,nVal:0});
+let tmr=null;
+function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=new Date().toISOString();R.nAdem=A.length;R.nVal=A.filter(a=>a.val).length;
+    try{await kv.set("ra/"+R.id,clone(R));$("#stSalv").textContent=$("#stSalv2").textContent="Salvato alle "+ora();$("#stSalv").className=$("#stSalv2").className="status"}
+    catch(e){$("#stSalv").textContent=$("#stSalv2").textContent="Salvataggio non riuscito: "+(e?.message||e);$("#stSalv").className=$("#stSalv2").className="status err"}};
+  if(subito)return f();tmr=setTimeout(f,700)}
+(async()=>{try{sample=await window.claude?.use?.("sample")}catch{}})();
 
-/* ---------- passi ---------- */
-const NOMI=["Ambiti o processi","Oggetto","Norme","Parti di testo","Livello","Adempimenti","Riepilogo"];
-let cur=1;
-function vai(n){cur=n;$$("section.step").forEach(s=>s.hidden=+s.dataset.s>n);renderSteps();document.getElementById("s"+n).scrollIntoView({behavior:"smooth",block:"start"})}
-function renderSteps(){$("#steps").innerHTML=NOMI.map((t,i)=>`<button type="button" data-go="${i+1}" ${i+1===cur?'aria-current="step"':''} class="${i+1<cur?'done':''}" ${i+1>maxStep()?'disabled':''}>${i+1} · ${t}</button>`).join("")}
-function maxStep(){if(S.adem.length)return 7;if(Object.values(S.norme).some(n=>n.parti))return 5;if(Object.keys(S.norme).length)return 4;if(S.amb.size)return 2;return 1}
-$("#steps").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b&&!b.disabled)vai(+b.dataset.go)});
+/* ================= elenco ================= */
+function renderHome(){
+  const corso=HOME.filter(r=>r.stato!=="concluso").sort((a,b)=>String(b.agg).localeCompare(a.agg)), pass=HOME.filter(r=>r.stato==="concluso").sort((a,b)=>String(b.agg).localeCompare(a.agg));
+  const card=r=>`<button class="rac" type="button" data-open="${esc(r._id)}"><b>${esc(r.titolo||"Senza titolo")}</b><span>${esc((r.oggetto||"").slice(0,110)||"intero ambito")}</span><span>${Object.values(r.norme||{}).filter(n=>n.sel).length} norme · ${r.nAdem||0} adempimenti (${r.nVal||0} valutati) · ${esc((METODI.find(m=>m[0]===r.metodo)||[0,""])[1].split(" · ")[0]?("metodologia "+r.metodo.slice(1)):"")} · aggiornato ${data(r.agg)}</span></button>`;
+  $("#lCorso").innerHTML=corso.map(card).join("")||'<p class="status">Nessun risk assessment in corso.</p>';
+  $("#lPass").innerHTML=pass.map(card).join("")||'<p class="status">Nessun risk assessment passato.</p>';
+  $("#nCorso").textContent=corso.length||"";$("#nPass").textContent=pass.length||"";}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if(b)apriRA(b.dataset.open)});
+$("#bNuovo").onclick=()=>{R=nuovoRA();A=[];entra()};
+async function apriRA(id){const d=await kv.get("ra/"+id);if(!d)return;R={...nuovoRA(),...d,amb:d.amb||[],norme:d.norme||{},extra:d.extra||{}};A=[];entra()}
+function entra(){
+  if(unsubA){unsubA();unsubA=null}
+  $("#vHome").hidden=true;$("#vWiz").hidden=false;$("#titolo").value=R.titolo;$("#ogg").value=R.oggetto||"";$("#incS").checked=!!R.incS;$("#incAb").checked=!!R.incAb;$("#fp").value=R.fp||"";
+  $$("input[name=modo]").forEach(r=>r.checked=r.value===R.modo);
+  unsubA=kv.watch("ra/"+R.id+"/adem",l=>{A=l.sort((a,b)=>String(a._id).localeCompare(String(b._id)));if(!$("#s6").hidden)renderAdem();if(!$("#s7").hidden)renderRiep();renderSteps()},()=>{});
+  kv.get("ra/"+R.id).then(d=>{if(d?.richiesta&&(!R.richiesta||d.richiesta.stato!==R.richiesta.stato)){R.richiesta=d.richiesta;if(!$("#s6").hidden)renderRichiesta()}});
+  renderTem();renderLivelli();renderSteps();vai(R.step||1,true);window.scrollTo(0,0)}
+$("#bHome").onclick=async()=>{await persist(true);if(unsubA){unsubA();unsubA=null}R=null;$("#vWiz").hidden=true;$("#vHome").hidden=false}
+$("#titolo").addEventListener("input",()=>{R.titolo=$("#titolo").value;persist()});
+$("#bSalva").onclick=()=>persist(true);
 
-/* ---------- dati ---------- */
+/* ================= dati biblioteca ================= */
 async function shard(s){if(SHARDS[s])return SHARDS[s];const r=await fetch(`data/t/${String(s).padStart(2,"0")}.b64.txt`);if(!r.ok)throw new Error("testo non trovato");
   const bin=atob((await r.text()).trim()),buf=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)buf[i]=bin.charCodeAt(i);
   const txt=await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
   return SHARDS[s]=JSON.parse(txt)}
-async function testoAtto(id){if(S.extra[id])return S.extra[id].arts;const a=IDX[id];const sh=await shard(a[5]);return sh[id]||[]}
-const att=id=>S.extra[id]?{tit:S.extra[id].tit,est:"PDF caricato",fonte:"pdf",ab:0,amb:[],n:S.extra[id].arts.length}:{tit:IDX[id][0],est:IDX[id][1],fonte:IDX[id][2],ab:IDX[id][3],amb:IDX[id][4],n:IDX[id][6],url:IDX[id][7]};
+async function testoAtto(id){if(R.extra[id]){if(PDFARTS[id])return PDFARTS[id];const l=(await kv.list("ra/"+R.id+"/pdf")).filter(x=>x.pid===id).sort((a,b)=>a.i-b.i);return PDFARTS[id]=l.flatMap(x=>x.arts)}
+  const sh=await shard(IDX[id][5]);return sh[id]||[]}
+const att=id=>R&&R.extra[id]?{tit:R.extra[id].tit,est:"PDF caricato",ab:0,n:R.extra[id].n}:IDX[id]?{tit:IDX[id][0],est:IDX[id][1],ab:IDX[id][3],n:IDX[id][6]}:{tit:id,est:"",ab:0,n:0};
+async function apriTesto(nid,art){const arts=await testoAtto(nid).catch(()=>[]);const a=arts.find(x=>String(x[0])===String(art));
+  $("#tTesto").textContent=`${att(nid).tit.slice(0,120)} — ${/^Allegato/i.test(art)?"":"Art. "}${art}${a&&a[1]?" – "+a[1]:""}`;$("#pTesto").textContent=a?a[2]:"Testo non disponibile in biblioteca per questa parte.";
+  if(!$("#dTesto").open)$("#dTesto").showModal()}
+$("#cTesto").onclick=()=>$("#dTesto").close();
+document.addEventListener("click",e=>{const b=e.target.closest("[data-leggi]");if(b){e.preventDefault();e.stopPropagation();const [n,a]=b.dataset.leggi.split("|");apriTesto(n,a)}});
 
 async function init(){
+  try{DB=await window.claude?.use?.("db")||null}catch{DB=null}
   try{[IDX,TAX,PROC]=await Promise.all([fetch("data/indice.json").then(r=>r.json()),fetch("data/tax.json").then(r=>r.json()),fetch("data/proc.json").then(r=>r.json())])}
-  catch{ $("#tem").innerHTML='<p class="status err">Non riesco a caricare la biblioteca. Ricarica la pagina.</p>';return}
-  renderTem(); renderLivelli(); if(Object.keys(S.norme).length){renderNorme();} if(S.adem.length){renderAdem();renderRiep()}
-  renderSteps(); renderParti(); if(S.adem.length)vai(7); else if(Object.keys(S.norme).length) vai(3);
+  catch{ $("#stHome").textContent="Non riesco a caricare la biblioteca. Ricarica la pagina.";$("#stHome").className="status err";return}
+  try{const p=await kv.get("ra_cfg/pesi");pesiOverride=p?.pesi||{};const l=await kv.get("ra_cfg/presidi");libreria=l?.lista||[]}catch{}
+  const t=setTimeout(()=>{$("#stHome").textContent="L'archivio non risponde: i dati potrebbero non essere aggiornati.";$("#stHome").className="status err"},10000);
+  $("#stHome").textContent=DB?"Archivio condiviso attivo.":"Archivio condiviso non disponibile in questa vista: salvo solo in questo browser.";
+  kv.watch("ra",l=>{clearTimeout(t);HOME=l;renderHome();$("#stHome").className="status"},e=>{$("#stHome").textContent="Archivio non raggiungibile.";$("#stHome").className="status err"});
 }
-function chiavi(v){return S.modo==="proc"?(v[8]||[]).map(([p,e])=>["§"+p,"P",e]):v[4].map(([t,a,r,e])=>[t+"||"+a,r,e])}
-function conteggi(){const c={},tot={};for(const id in IDX){for(const [k,r] of chiavi(IDX[id])){tot[k]=(tot[k]||0)+1;if(r==="P"&&!IDX[id][3])c[k]=(c[k]||0)+1}}c.__tot=tot;return c}
-function albero(){if(S.modo!=="proc")return TAX;const t={};for(const p of PROC){const [m,...r]=p.split(" > ");(t[m]=t[m]||[]).push(r.join(" > "))}return t}
-function renderTem(){
-  const c=conteggi(), f=$("#fAmb").value.trim().toLowerCase(), TAX=albero(), kk=(t,a)=>S.modo==="proc"?"§"+t+" > "+a:t+"||"+a;
-  const html=Object.keys(TAX).sort((a,b)=>a.localeCompare(b,"it")).map(t=>{
-    const am=TAX[t].filter(a=>!f||(t+" "+a).toLowerCase().includes(f)); if(!am.length)return"";
-    const tot=am.reduce((s,a)=>s+(c[kk(t,a)]||0),0), sel=am.some(a=>S.amb.has(kk(t,a)));
-    return `<details class="tem" ${f||sel?"open":""}><summary>${esc(t)} <span class="c">${tot}</span></summary>${am.map(a=>{const k=kk(t,a);const vuoto=!c.__tot[k];return `<label ${vuoto?'title="Nessun atto in biblioteca per questa voce" style="opacity:.5"':""}><input type="checkbox" data-amb="${esc(k)}" ${S.amb.has(k)?"checked":""} ${vuoto&&!S.amb.has(k)?"disabled":""}> <span>${esc(a)} ${NUOVI.has(a)?'<span class="new">nuovo</span>':''}</span><span class="c">${c[k]||0}</span></label>`}).join("")}</details>`}).join("");
-  $("#tem").innerHTML=html||'<p class="status">Nessun ambito con questo nome.</p>'; updAmb()}
-function updAmb(){$("#selAmb").textContent=S.amb.size?`${S.amb.size} ${S.modo==="proc"?"processi scelti":"ambiti scelti"} · ${candidati().length} norme candidate`:"";updCand();$("#go2").disabled=!S.amb.size;renderSteps()}
-$("#fAmb").addEventListener("input",renderTem);
-document.querySelectorAll('input[name=modo]').forEach(r=>{r.checked=r.value===S.modo;r.addEventListener("change",()=>{if(r.checked){S.modo=r.value;S.amb=new Set();$("#hintProc").hidden=S.modo!=="proc";salva();renderTem()}})});$("#hintProc").hidden=S.modo!=="proc";
-$("#tem").addEventListener("change",e=>{const k=e.target.dataset.amb;if(!k)return;e.target.checked?S.amb.add(k):S.amb.delete(k);salva();updAmb()});
-$("#go2").onclick=()=>{updCand();vai(2)};
-function updCand(){const n=candidati().length;$("#st2").className="status";$("#st2").textContent=`${n} norme candidate con le opzioni attuali.`}
-$("#incS").addEventListener("change",updCand);$("#incAb").addEventListener("change",updCand);
 
-/* ---------- passo 2: lettura ---------- */
-function candidati(){const incS=$("#incS").checked||["prescrizioni","puntuali"].includes(S.livello), incAb=$("#incAb").checked, out=[];
-  for(const id in IDX){if(IDX[id][3]&&!incAb)continue;const hit=chiavi(IDX[id]).filter(([k,r])=>S.amb.has(k)&&(r==="P"||incS));
+/* ================= passi ================= */
+const NOMI=["Ambiti","Oggetto","Norme","Parti di testo","Livello e metodologia","Adempimenti","Riepilogo"];
+let cur=1;
+function maxStep(){if(A.length)return 7;if(Object.values(R.norme).some(n=>n.sel&&n.parti?.length))return 6;if(Object.values(R.norme).some(n=>n.sel))return 5;if(R.sig)return 3;if(R.amb.length)return 2;return 1}
+function vai(n,noPersist){cur=n;R.step=n;$$("section.step").forEach(s=>s.hidden=+s.dataset.s!==n);renderSteps();
+  if(n===1)renderTem();if(n===3)renderNorme();if(n===4)renderParti();if(n===5)renderLivelli();if(n===6){renderRichiesta();renderAdem()}if(n===7)renderRiep();
+  if(!noPersist)persist()}
+function renderSteps(){if(!R)return;const mx=maxStep();$("#steps").innerHTML=NOMI.map((t,i)=>`<button type="button" data-go="${i+1}" ${i+1===cur?'aria-current="step"':''} class="${i+1<cur?'done':''}" ${i+1>mx?'disabled':''}>${i+1} · ${t}</button>`).join("")}
+$("#steps").addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b&&!b.disabled)vai(+b.dataset.go)});
+[["back1",1],["back2",2],["back3",3],["back4",4],["back5",5],["back6",6]].forEach(([b,n])=>$("#"+b).onclick=()=>vai(n));
+
+/* ---- passo 1 ---- */
+const kk=(t,a)=>R.modo==="proc"?"§"+t+" > "+a:t+"||"+a;
+function chiavi(v){return R.modo==="proc"?(v[8]||[]).map(([p,e,r])=>["§"+p,r||"P",e]):v[4].map(([t,a,r,e])=>[t+"||"+a,r,e])}
+function conteggi(){const c={},tot={};for(const id in IDX){if(IDX[id][10])continue;for(const [k,r] of chiavi(IDX[id])){tot[k]=(tot[k]||0)+1;if(r==="P"&&!IDX[id][3])c[k]=(c[k]||0)+1}}c.__tot=tot;return c}
+function albero(){if(R.modo!=="proc")return TAX;const t={};for(const p of PROC){const [m,...r]=p.split(" > ");(t[m]=t[m]||[]).push(r.join(" > "))}return t}
+function renderTem(){
+  if(!R||!Object.keys(IDX).length)return;const c=conteggi(),f=$("#fAmb").value.trim().toLowerCase(),T=albero(),S=new Set(R.amb);
+  const html=Object.keys(T).sort((a,b)=>a.localeCompare(b,"it")).map(t=>{
+    const am=T[t].filter(a=>!f||(t+" "+a).toLowerCase().includes(f));if(!am.length)return"";
+    const tot=am.reduce((s,a)=>s+(c[kk(t,a)]||0),0),nsel=am.filter(a=>S.has(kk(t,a))).length;
+    return `<details class="tem" open><summary><label><input type="checkbox" data-tt="${esc(t)}" ${nsel===am.length?"checked":""}> ${esc(t)}</label><span class="c">${tot}</span></summary>${am.map(a=>{const k=kk(t,a),vuoto=!c.__tot[k];return `<label class="ai" ${vuoto?'title="Nessuna norma in biblioteca per questa voce" style="opacity:.5"':""}><input type="checkbox" data-amb="${esc(k)}" ${S.has(k)?"checked":""} ${vuoto&&!S.has(k)?"disabled":""}> <span>${esc(a)} ${NUOVI.has(a)?'<span class="new">nuovo</span>':''}</span><span class="c">${c[k]||0}</span></label>`}).join("")}</details>`}).join("");
+  $("#tem").innerHTML=html||'<p class="status">Nessuna voce con questo nome.</p>';updAmb()}
+function updAmb(){const n=candidati().length;$("#selAmb").textContent=R.amb.length?`${R.amb.length} ${R.modo==="proc"?"processi scelti":"ambiti scelti"} · ${n} norme candidate`:"";$("#go2").disabled=!R.amb.length;renderSteps()}
+$("#fAmb").addEventListener("input",renderTem);
+$$("input[name=modo]").forEach(r=>r.addEventListener("change",()=>{if(r.checked&&R){R.modo=r.value;R.amb=[];persist();renderTem()}}));
+$("#tem").addEventListener("change",e=>{const t=e.target;
+  if(t.dataset.tt){const am=albero()[t.dataset.tt].filter(a=>{const k=kk(t.dataset.tt,a);return !(conteggi().__tot[k]===undefined)});const S=new Set(R.amb);am.forEach(a=>t.checked?S.add(kk(t.dataset.tt,a)):S.delete(kk(t.dataset.tt,a)));R.amb=[...S];renderTem();persist();return}
+  if(t.dataset.amb){const S=new Set(R.amb);t.checked?S.add(t.dataset.amb):S.delete(t.dataset.amb);R.amb=[...S];persist();updAmb()}});
+$("#go2").onclick=()=>vai(2);
+
+/* ---- passo 2 ---- */
+$("#ogg").addEventListener("input",()=>{R.oggetto=$("#ogg").value.trim();persist()});
+$("#incS").addEventListener("change",()=>{R.incS=$("#incS").checked;persist()});$("#incAb").addEventListener("change",()=>{R.incAb=$("#incAb").checked;persist()});
+function candidati(){const incS=R.incS,incAb=R.incAb,S=new Set(R.amb),out=[];
+  for(const id in IDX){if(IDX[id][10])continue;if(IDX[id][3]&&!incAb)continue;const hit=chiavi(IDX[id]).filter(([k,r])=>S.has(k)&&(r==="P"||incS));
     if(hit.length)out.push({id,ruolo:hit.some(h=>h[1]==="P")?"P":"S",art:[...new Set(hit.flatMap(h=>h[2]))]})}
   return out.sort((a,b)=>(a.ruolo>b.ruolo)-(a.ruolo<b.ruolo))}
-function estratto(arts,lista,max){const set=new Set(lista.map(String));let sel=arts.filter(a=>set.has(String(a[0])));if(!sel.length)sel=arts.slice(0,3);
-  let s="";for(const a of sel){const t=`[Art. ${a[0]}${a[1]?" – "+a[1]:""}] ${a[2]}\n`;if(s.length+t.length>max){s+=t.slice(0,Math.max(0,max-s.length));break}s+=t}return s}
-let ctl1=null;
-$("#bLeggi").onclick=()=>{
-  const C=candidati(); S.oggetto=$("#ogg").value.trim(); const st=$("#st2"); st.className="status";
-  if(!C.length){st.textContent="Nessuna norma in vigore con questi ambiti come principali: spunta \"includi anche gli atti con ambito secondario\" o \"gli abrogati\", oppure torna al passo 1 e scegli altri ambiti.";return}
-  S.norme={};
-  for(const c of C){const ab=IDX[c.id][3];S.norme[c.id]={sel:c.ruolo==="P"&&!ab,pert:c.ruolo==="P"?"si":"contorno",motivo:c.ruolo==="P"?(S.modo==="proc"?"la norma impone adempimenti sul processo scelto (lettura per articolo)":"l'ambito scelto è un tema principale della norma"):"la norma tocca l'ambito in modo secondario: spuntala se vuoi includerla",art:c.art,ruolo:c.ruolo}}
-  salva(); renderNorme(); vai(3);
-};
-$("#bStop1").onclick=()=>ctl1?.abort();
-function errMsg(e){const m={cancelled:"Lettura fermata.",not_granted:"Non hai autorizzato la pagina a usare Claude.",rate_limited:"Troppe richieste o limite di utilizzo raggiunto: riprova più tardi.",prompt_too_large:"Testo troppo lungo per una richiesta.",invalid_json:"Risposta di Claude non leggibile: riprova.",sampling_disabled:"Claude non è disponibile per questo account."};return m[e?.code]||("Errore: "+(e?.message||e))}
+$("#go3").onclick=()=>{const sig=JSON.stringify([[...R.amb].sort(),R.modo,R.incS,R.incAb]);
+  if(sig!==R.sig){const C=candidati(),n={};for(const id in R.norme)if(R.norme[id].pert==="aggiunta")n[id]=R.norme[id];
+    for(const c of C){const ab=IDX[c.id][3];n[c.id]={sel:c.ruolo==="P"&&!ab,pert:c.ruolo==="P"?"si":"contorno",motivo:c.ruolo==="P"?(R.modo==="proc"?"la norma impone adempimenti sul processo scelto":"l'ambito scelto è un tema principale della norma"):"ambito secondario: spuntala se vuoi includerla",art:c.art,ruolo:c.ruolo}}
+    R.norme=n;R.sig=sig}
+  vai(3)};
 
-/* ---------- passo 3: norme ---------- */
+/* ---- passo 3 ---- */
 function renderNorme(){
-  const ids=Object.keys(S.norme).sort((a,b)=>{const o={si:0,contorno:1};return (o[S.norme[a].pert]??2)-(o[S.norme[b].pert]??2)});
-  $("#st3").textContent=`${ids.filter(i=>S.norme[i].sel).length} norme selezionate su ${ids.length} proposte.`;
-  $("#norme").innerHTML=ids.map(id=>{const n=S.norme[id],a=att(id);return `<label class="act"><input type="checkbox" data-nor="${esc(id)}" ${n.sel?"checked":""}>
-   <span class="t">${esc(a.tit)}</span><span class="m">${n.pert==="aggiunta"?'<span class="chip">aggiunta</span>':""}${n.ruolo?`<span class="chip ${n.ruolo}">${n.ruolo==="P"?"ambito principale":"ambito secondario"}</span>`:""}${a.ab?'<span class="chip ab">abrogato</span>':""} ${esc(a.est)} · art. ${esc((n.art||[]).slice(0,12).join(", ")||"tutti")}<br>${esc(n.motivo)}</span></label>`}).join("")||'<p class="status">Nessuna norma ancora.</p>';
-  renderTendine(); renderSteps()}
-$("#norme").addEventListener("change",e=>{const id=e.target.dataset.nor;if(id){S.norme[id].sel=e.target.checked;salva();renderNorme()}});
-function aggiungi(id,motivo){if(!S.norme[id])S.norme[id]={sel:true,pert:"aggiunta",motivo,art:[],ruolo:""};else S.norme[id].sel=true;salva();renderNorme()}
-function renderTendine(){const tems=S.modo==="proc"?[...new Set([...S.amb].flatMap(k=>{const id0=Object.keys(IDX).find(id=>(IDX[id][8]||[]).some(x=>"§"+x[0]===k));return id0?IDX[id0][4].filter(x=>x[2]==="P").map(x=>x[0]):[]}))]:[...new Set([...S.amb].map(k=>k.split("||")[0]))];
-  $("#tendine").innerHTML=tems.map(t=>{const altri=Object.keys(IDX).filter(id=>!S.norme[id]&&!IDX[id][3]&&IDX[id][4].some(x=>x[0]===t));
-    return `<details class="tem"><summary>Norme mancanti · ${esc(t)} <span class="c">${altri.length}</span></summary>${altri.slice(0,200).map(id=>`<label><button class="btn ghost" type="button" data-add="${esc(id)}" style="padding:2px 8px;font-size:12px">+</button><span>${esc(IDX[id][0])}</span></label>`).join("")}</details>`}).join("")}
+  const ids=Object.keys(R.norme).sort((a,b)=>{const o={si:0,aggiunta:1,contorno:2};return (o[R.norme[a].pert]??3)-(o[R.norme[b].pert]??3)});
+  $("#st3").textContent=`${ids.filter(i=>R.norme[i].sel).length} norme selezionate su ${ids.length} proposte.`;
+  $("#norme").innerHTML=ids.map(id=>{const n=R.norme[id],a=att(id);return `<label class="act"><input type="checkbox" data-nor="${esc(id)}" ${n.sel?"checked":""}>
+   <span class="t">${esc(a.tit)}</span><span class="m">${n.pert==="aggiunta"?'<span class="chip">aggiunta</span>':""}${n.ruolo?`<span class="chip ${n.ruolo}">${n.ruolo==="P"?"ambito principale":"ambito secondario"}</span>`:""}${a.ab?'<span class="chip ab">abrogato</span>':""} ${esc(a.est)}${(n.art||[]).length?" · art. "+esc(n.art.slice(0,12).join(", ")):""}<br>${esc(n.motivo)}</span></label>`}).join("")||'<p class="status">Nessuna norma: aggiungine con il tasto sotto.</p>';
+  renderSteps()}
+$("#norme").addEventListener("change",e=>{const id=e.target.dataset.nor;if(id){R.norme[id].sel=e.target.checked;persist();renderNorme()}});
+function aggiungi(id,motivo){if(!R.norme[id])R.norme[id]={sel:true,pert:"aggiunta",motivo,art:[],ruolo:""};else R.norme[id].sel=true;persist();renderNorme();renderDialogNorma()}
+$("#bAddNorma").onclick=()=>{renderDialogNorma();$("#dNorma").showModal()};$("#cNorma").onclick=()=>$("#dNorma").close();
+function renderDialogNorma(){
+  const tems=R.modo==="proc"?[...new Set(Object.keys(IDX).filter(id=>chiavi(IDX[id]).some(([k])=>R.amb.includes(k))).flatMap(id=>IDX[id][4].filter(x=>x[2]==="P").map(x=>x[0])))].slice(0,12):[...new Set(R.amb.map(k=>k.split("||")[0]))];
+  $("#tendine").innerHTML=tems.map(t=>{const altri=Object.keys(IDX).filter(id=>!R.norme[id]&&!IDX[id][3]&&!IDX[id][10]&&IDX[id][4].some(x=>x[0]===t));
+    return `<details class="tem"><summary>${esc(t)} <span class="c">${altri.length}</span></summary><div class="win" style="max-height:26vh">${altri.slice(0,300).map(id=>`<div class="parte"><button class="btn ghost sm" type="button" data-add="${esc(id)}">+</button><span>${esc(IDX[id][0])}</span></div>`).join("")}</div></details>`}).join("")||'<p class="status">Scegli prima degli ambiti.</p>'}
 $("#tendine").addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(b)aggiungi(b.dataset.add,"aggiunta dall'elenco della tematica")});
 const ALIAS={tub:"385/1993",tuf:"58/1998",cap:"209/2005",dora:"2022/2554",gdpr:"2016/679","ai act":"2024/1689",micar:"2023/1114",mica:"2023/1114",crr:"575/2013",crd:"2013/36",brrd:"2014/59",srmr:"806/2014",psd2:"2015/2366",mifid:"2014/65",mifir:"600/2014",emir:"648/2012",idd:"2016/97",solvency:"2009/138",antiriciclaggio:"231/2007",aml:"231/2007","231":"231/2001",priips:"1286/2014",sfdr:"2019/2088",csrd:"2022/2464",nis2:"2022/2555",mar:"596/2014",ucits:"2009/65",aifmd:"2011/61",ifr:"2019/2033",ifd:"2019/2034"};
 function cerca(q){q=q.toLowerCase().trim();if(q.length<2)return[];let num=null;const m=q.match(/(\d{1,4})\s*\/\s*(\d{2,4})/);if(m)num=m[1]+"/"+m[2];
   for(const k in ALIAS)if(q===k||q.split(/\s+/).includes(k))num=ALIAS[k];
-  const circ=q.match(/circ\w*\.?\s*(\d+)/), toks=q.split(/[^a-zà-ù0-9]+/).filter(w=>w.length>2&&!/^\d+$/.test(w));
-  const out=[];for(const id in IDX){const t=(IDX[id][0]+" "+IDX[id][1]).toLowerCase();let s=0;
+  const circ=q.match(/circ\w*\.?\s*(\d+)/),toks=q.split(/[^a-zà-ù0-9]+/).filter(w=>w.length>2&&!/^\d+$/.test(w)),out=[];
+  for(const id in IDX){if(IDX[id][10])continue;const t=(IDX[id][0]+" "+IDX[id][1]).toLowerCase();let s=0;
     if(num){const [a,b]=num.split("/");if(new RegExp(`\\b${a}\\s*/\\s*${b}\\b`).test(t)||new RegExp(`\\b${b}\\s*/\\s*${a}\\b`).test(t)||t.includes(`n. ${a} del ${b}`))s+=10;
-      if(new RegExp(`[-.]${b}(-\\d\\d-\\d\\d)?-0*${a}$`).test(id.toLowerCase())||new RegExp(`${a}[rld]0*${b}$`,"i").test(id))s+=30; else if(new RegExp(`\\b${b}\\b`).test(t)&&new RegExp(`n\\.\\s*${a}\\b`).test(t))s+=8}
+      if(new RegExp(`[-.]${b}(-\\d\\d-\\d\\d)?-0*${a}$`).test(id.toLowerCase())||new RegExp(`${a}[rld]0*${b}$`,"i").test(id))s+=30;else if(new RegExp(`\\b${b}\\b`).test(t)&&new RegExp(`n\\.\\s*${a}\\b`).test(t))s+=8}
     if(circ&&new RegExp(`circolare[^0-9]{0,15}${circ[1]}\\b`).test(t))s+=10;
     for(const w of toks)if(t.includes(w))s+=1;
     if(s>0)out.push([s,id])}
   return out.sort((a,b)=>b[0]-a[0]).slice(0,10).map(x=>x[1])}
-$("#cerca").addEventListener("input",()=>{const r=cerca($("#cerca").value);$("#risCerca").innerHTML=r.map(id=>`<div class="act"><button class="btn ghost" type="button" data-add="${esc(id)}" style="padding:2px 8px">+</button><span class="t">${esc(IDX[id][0])}</span><span class="m">${esc(IDX[id][1])} ${S.norme[id]?"· già presente":""}</span></div>`).join("")||($("#cerca").value.length>1?'<p class="status">Nessuna norma trovata in biblioteca: puoi caricarla in PDF.</p>':"")});
-$("#risCerca").addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(b)aggiungi(b.dataset.add,"aggiunta con la ricerca")});
+$("#cerca").addEventListener("input",()=>{const r=cerca($("#cerca").value);$("#risCerca").innerHTML=r.map(id=>`<div class="parte"><button class="btn ghost sm" type="button" data-add2="${esc(id)}">+</button><span>${esc(IDX[id][0])} <span class="small">${esc(IDX[id][1])}${R.norme[id]?" · già presente":""}</span></span></div>`).join("")||($("#cerca").value.length>1?'<p class="status">Nessuna norma trovata in biblioteca: puoi caricarla in PDF.</p>':"")});
+$("#risCerca").addEventListener("click",e=>{const b=e.target.closest("[data-add2]");if(b)aggiungi(b.dataset.add2,"aggiunta con la ricerca")});
 $("#pdf").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;const st=$("#stPdf");st.className="status";
   if(!window.pdfjsLib){st.className="status err";st.textContent="Lettore PDF non disponibile.";return}
   try{st.textContent="Leggo il PDF…";const doc=await pdfjsLib.getDocument({data:await f.arrayBuffer()}).promise;let t="";
     for(let p=1;p<=doc.numPages;p++){const c=await (await doc.getPage(p)).getTextContent();t+=c.items.map(i=>i.str+(i.hasEOL?"\n":" ")).join("")+"\n"}
-    if(t.replace(/\s/g,"").length<300){st.className="status err";st.textContent="Il PDF sembra una scansione senza testo: in questa prova non posso leggerlo.";return}
-    const parts=t.split(/\n(?=\s*(?:Articolo|Art\.)\s+\d+)/), arts=[];
-    parts.forEach((p,i)=>{const m=p.match(/^\s*(?:Articolo|Art\.)\s+(\d+[\w-]*)/);arts.push([m?m[1]:(i?String(i):"Premessa"),"",p.trim().slice(0,20000)])});
-    const id="PDF-"+Date.now(); S.extra[id]={tit:f.name.replace(/\.pdf$/i,""),arts}; aggiungi(id,`PDF caricato, ${arts.length} parti`); st.textContent=`Aggiunto: ${f.name} (${arts.length} parti).`;
-  }catch(err){st.className="status err";st.textContent="Non riesco a leggere questo PDF."}
+    if(t.replace(/\s/g,"").length<300){st.className="status err";st.textContent="Il PDF sembra una scansione senza testo: non posso leggerlo.";return}
+    const parts=t.split(/\n(?=\s*(?:Articolo|Art\.)\s+\d+)/),arts=[];
+    parts.forEach((p,i)=>{const m=p.match(/^\s*(?:Articolo|Art\.)\s+(\d+[\w-]*)/);arts.push([m?m[1]:(i?String(i):"Premessa"),"",p.trim().slice(0,30000)])});
+    const id="PDF-"+Date.now();R.extra[id]={tit:f.name.replace(/\.pdf$/i,""),n:arts.length};PDFARTS[id]=arts;
+    let ch=[],len=0,i=0;const salvaCh=async()=>{if(ch.length)await kv.set(`ra/${R.id}/pdf/${id}-${i++}`,{pid:id,i,arts:ch});ch=[];len=0};
+    for(const a of arts){if(len+a[2].length>180000)await salvaCh();ch.push(a);len+=a[2].length}await salvaCh();
+    aggiungi(id,`PDF caricato, ${arts.length} parti`);st.textContent=`Aggiunto: ${f.name} (${arts.length} parti).`;
+  }catch(err){st.className="status err";st.textContent="Non riesco a leggere o salvare questo PDF."}
   e.target.value=""});
-$("#go4").onclick=()=>{if(!Object.values(S.norme).some(n=>n.sel)){$("#st3").textContent="Seleziona almeno una norma.";return}vai(4)};
-$("#go5").onclick=()=>{if(!Object.values(S.norme).some(n=>n.sel&&n.parti?.length)){$("#stParti").textContent="Individua prima le parti di testo.";return}vai(5)};
+$("#go4").onclick=()=>{if(!Object.values(R.norme).some(n=>n.sel)){$("#st3").textContent="Seleziona almeno una norma.";return}vai(4)};
 
-/* ---------- passo 4: parti di testo ---------- */
+/* ---- passo 4 ---- */
 let ctl3=null;
-function renderParti(){const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel&&S.norme[i].parti);if(!ids.length){$("#parti").innerHTML="";return}
-  Promise.all(ids.map(async id=>{const arts=await testoAtto(id).catch(()=>[]),n=S.norme[id],ps=new Set(n.parti.map(String));
-    return `<details class="tem" ${ids.length<6?"open":""}><summary>${esc(att(id).tit.slice(0,140))} <span class="c">${ps.size} parti su ${arts.length}</span></summary>${n.partiMotivo?`<p class="small">${esc(n.partiMotivo)}</p>`:""}
-    ${arts.map(a=>`<label><input type="checkbox" data-pn="${esc(id)}" data-pp="${esc(a[0])}" ${ps.has(String(a[0]))?"checked":""}> <span>${/^Allegato/i.test(a[0])?"":"Art. "}${esc(a[0])}${a[1]?" – "+esc(a[1].slice(0,90)):""}</span></label>`).join("")}</details>`})).then(h=>{$("#parti").innerHTML=h.join("")})}
-$("#parti").addEventListener("change",e=>{const id=e.target.dataset.pn;if(!id)return;const n=S.norme[id],p=e.target.dataset.pp;n.parti=n.parti.filter(x=>String(x)!==p);if(e.target.checked)n.parti.push(p);salva();
-  e.target.closest("details").querySelector("summary .c").textContent=`${n.parti.length} parti`;renderSteps()});
-$("#bParti").onclick=async()=>{const st=$("#stParti");st.className="status";const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel);
+function renderParti(){const ids=Object.keys(R.norme).filter(i=>R.norme[i].sel);
+  $("#parti").innerHTML=ids.map(id=>{const n=R.norme[id];return `<details class="tem" data-pd="${esc(id)}"><summary>${esc(att(id).tit.slice(0,150))} <span class="c" id="cnt-${esc(id)}">${n.parti?n.parti.length+" parti":"apri per scegliere"}</span></summary><div data-pb="${esc(id)}" class="small">Carico il testo…</div></details>`}).join("")||'<p class="status">Nessuna norma selezionata.</p>';renderSteps()}
+$("#parti").addEventListener("toggle",async e=>{const d=e.target;if(!d.dataset?.pd||!d.open)return;const id=d.dataset.pd,box=d.querySelector("[data-pb]");
+  const arts=await testoAtto(id).catch(()=>[]);const n=R.norme[id];if(!n.parti)n.parti=defaultParti(id,arts);const ps=new Set(n.parti.map(String));
+  box.className="";box.innerHTML=(n.partiMotivo?`<p class="small">${esc(n.partiMotivo)}</p>`:"")+(arts.map(a=>`<div class="parte"><label><input type="checkbox" data-pn="${esc(id)}" data-pp="${esc(a[0])}" ${ps.has(String(a[0]))?"checked":""}> <span>${/^Allegato/i.test(a[0])?"":"Art. "}${esc(a[0])}${a[1]?" – "+esc(a[1].slice(0,100)):""}</span></label><button class="btn ghost sm" type="button" data-leggi="${esc(id)}|${esc(a[0])}">Leggi testo intero</button></div>`).join("")||'<p class="status err">Testo non disponibile in biblioteca.</p>');persist()},true);
+function defaultParti(id,arts){const guida=IDX[id]?.[9]&&R.norme[id].art?.length?R.norme[id].art.map(String):null;const v=new Set(arts.map(a=>String(a[0])));
+  if(guida){const g=guida.filter(x=>v.has(x));if(g.length)return g}return arts.map(a=>String(a[0]))}
+$("#parti").addEventListener("change",e=>{const id=e.target.dataset.pn;if(!id)return;const n=R.norme[id],p=e.target.dataset.pp;n.parti=n.parti.filter(x=>String(x)!==p);if(e.target.checked)n.parti.push(p);
+  $("#cnt-"+CSS.escape(id)).textContent=n.parti.length+" parti";persist();renderSteps()});
+function errMsg(e){const m={cancelled:"Lettura fermata.",not_granted:"Non hai autorizzato la pagina a usare Claude.",rate_limited:"Troppe richieste o limite di utilizzo raggiunto: riprova più tardi.",prompt_too_large:"Testo troppo lungo per una richiesta.",invalid_json:"Risposta di Claude non leggibile: riprova.",sampling_disabled:"Claude non è disponibile per questo account."};return m[e?.code]||("Errore: "+(e?.message||e))}
+$("#bParti").onclick=async()=>{const st=$("#stParti");st.className="status";const ids=Object.keys(R.norme).filter(i=>R.norme[i].sel);
+  if(!R.oggetto||!sample){st.textContent=!sample?"Claude non è disponibile in questa vista: scegli le parti a mano.":"Senza oggetto le parti sono tutte quelle delle norme: restringi a mano.";return}
   ctl3=new AbortController();$("#bStop3").hidden=false;$("#bParti").disabled=true;
-  try{for(let k=0;k<ids.length;k++){const id=ids[k],n=S.norme[id],arts=await testoAtto(id);
-      const guida=IDX[id]?.[9]&&n.art?.length?n.art.map(String):null;
-      if(!S.oggetto||!sample){n.parti=guida||arts.map(a=>String(a[0]));n.partiMotivo=(!sample?"Claude non disponibile: ":"Nessun oggetto indicato: ")+(guida?"prese le parti associate alle voci scelte nella lettura per articolo.":"prese tutte le parti.");continue}
-      st.textContent=`Leggo l'indice: norma ${k+1} di ${ids.length} — ${att(id).tit.slice(0,60)}…`;const scelte=[],motivi=[];
-      const lotti=[];let curL=[],len=0;for(const a of arts){const t=`[${a[0]}] ${a[1]||""}\n${a[2]}\n\n`;if(len+t.length>150000&&curL.length){lotti.push(curL);curL=[];len=0}curL.push(t.slice(0,150000));len+=Math.min(t.length,150000)}if(curL.length)lotti.push(curL);
-      for(let i=0;i<lotti.length;i++){st.textContent=`Claude legge il testo completo: norma ${k+1} di ${ids.length}${lotti.length>1?`, parte ${i+1} di ${lotti.length}`:""} — ${att(id).tit.slice(0,60)}…`;
-        const r=await sample.json(`Sei un esperto di compliance bancaria. Oggetto del risk assessment: "${S.oggetto}".\nNorma: "${att(id).tit}".${guida?`\nNella lettura per articolo della biblioteca queste parti sono state associate alle voci scelte: ${guida.join(", ")}. Usale come guida, ma controlla tutto il testo: possono mancarne o esserci parti non pertinenti all'oggetto.`:""}\nLeggi per intero il testo qui sotto (articoli e allegati, ognuno preceduto dal suo numero tra parentesi quadre) e scegli SOLO le parti che contengono regole, obblighi o divieti sull'oggetto. Escludi le definizioni, l'ambito di applicazione generale, l'entrata in vigore e le parti che non toccano l'oggetto. Se nessuna parte tocca l'oggetto restituisci una lista vuota.\nRispondi SOLO con JSON: {"parti":["5","6","Allegato I"],"motivo":"una frase"}\n\n${lotti[i].join("")}`,{modelTier:"quick",signal:ctl3.signal});
+  try{for(let k=0;k<ids.length;k++){const id=ids[k],n=R.norme[id],arts=await testoAtto(id);if(!arts.length)continue;
+      st.textContent=`Claude legge: norma ${k+1} di ${ids.length} — ${att(id).tit.slice(0,60)}…`;const scelte=[],motivi=[];
+      const lotti=[];let cL=[],len=0;for(const a of arts){const t=`[${a[0]}] ${a[1]||""}\n${a[2]}\n\n`;if(len+t.length>150000&&cL.length){lotti.push(cL);cL=[];len=0}cL.push(t.slice(0,150000));len+=Math.min(t.length,150000)}if(cL.length)lotti.push(cL);
+      for(let i=0;i<lotti.length;i++){const r=await sample.json(`Sei un esperto di compliance bancaria. Oggetto del risk assessment: "${R.oggetto}".\nNorma: "${att(id).tit}".\nLeggi il testo (articoli e allegati, ognuno preceduto dal numero tra parentesi quadre) e scegli SOLO le parti con regole, obblighi o divieti sull'oggetto. Escludi definizioni, ambito di applicazione, entrata in vigore e parti non pertinenti. Se nessuna parte tocca l'oggetto restituisci lista vuota.\nRispondi SOLO con JSON: {"parti":["5","6","Allegato I"],"motivo":"una frase"}\n\n${lotti[i].join("")}`,{modelTier:"quick",signal:ctl3.signal});
         for(const p of (r?.parti||[]))scelte.push(String(p).replace(/^(art\.?|articolo)\s*/i,""));if(r?.motivo)motivi.push(String(r.motivo))}
-      const valide=new Set(arts.map(a=>String(a[0])));n.parti=[...new Set(scelte)].filter(p=>valide.has(p));n.partiMotivo=motivi.join(" ");salva()}
-    const vuote=ids.filter(i=>!S.norme[i].parti.length).length;
-    st.textContent=`Fatto. ${vuote?vuote+" norme senza parti sull'oggetto: puoi toglierle o scegliere le parti a mano.":""}`;renderParti();renderSteps()}
-  catch(e){st.className="status err";st.textContent=errMsg(e);renderParti()}
+      const valide=new Set(arts.map(a=>String(a[0])));n.parti=[...new Set(scelte)].filter(p=>valide.has(p));n.partiMotivo=motivi.join(" ");persist()}
+    st.textContent="Fatto: controlla e correggi le parti.";renderParti()}
+  catch(e){st.className="status err";st.textContent=errMsg(e)}
   finally{$("#bStop3").hidden=true;$("#bParti").disabled=false}};
 $("#bStop3").onclick=()=>ctl3?.abort();
+$("#go5").onclick=async()=>{for(const id of Object.keys(R.norme).filter(i=>R.norme[i].sel&&!R.norme[i].parti)){const arts=await testoAtto(id).catch(()=>[]);R.norme[id].parti=defaultParti(id,arts)}
+  if(!Object.values(R.norme).some(n=>n.sel&&n.parti?.length)){$("#stParti").textContent="Nessuna parte di testo scelta.";$("#stParti").className="status err";return}vai(5)};
 
-/* ---------- passo 5 ---------- */
-function renderLivelli(){
-  $("#livelli").innerHTML=LIVELLI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="liv" value="${k}" ${S.livello===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("");
-  $("#metodi").innerHTML=METODI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="met" value="${k}" ${S.metodo===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("")}
-document.addEventListener("change",e=>{if(e.target.name==="liv"){S.livello=e.target.value;salva()}if(e.target.name==="met"){S.metodo=e.target.value;salva();renderAdem();renderRiep()}});
-const ISTR={
- pilastri:"Raggruppa gli obblighi per finalità: ogni adempimento è un PILASTRO che unisce più articoli o un intero capo e dice cosa deve garantire la banca, senza dettagli operativi. Pochi adempimenti per atto (di solito 2-6).",
- obblighi:"Per ogni articolo che contiene obblighi ricava i comportamenti richiesti o vietati: uno o pochi adempimenti per articolo, con sintesi fedele.",
- prescrizioni:"Scendi a comma e lettera: ogni adempimento indica chi deve agire, cosa deve fare, entro quando o con quale frequenza e a quali condizioni. I commi solo descrittivi non producono adempimenti.",
- puntuali:"Scomponi ogni prescrizione nelle sue parti verificabili: ogni soglia, eccezione, termine, documento da produrre e controllo è un adempimento separato; indica i rinvii a norme attuative e la sanzione collegata se nel testo."};
-let ctl2=null;
-$("#bGen").onclick=async()=>{
-  const st=$("#st4"); st.className="status"; if(!sample){st.className="status err";st.textContent="Claude non è disponibile in questa vista.";return}
-  const ids=Object.keys(S.norme).filter(i=>S.norme[i].sel); ctl2=new AbortController(); $("#bStop2").hidden=false; $("#bGen").disabled=true; S.adem=[];
-  try{
-    for(const id of ids){S.norme[id].senza=[];S.norme[id].esito=null}
-    for(let k=0;k<ids.length;k++){const id=ids[k],a=att(id),arts=await testoAtto(id),n=S.norme[id];
-      if(!arts.length){n.esito={art:0,trovati:0,err:"testo della norma non disponibile in biblioteca"};continue}
-      const ps=new Set((n.parti||[]).map(String)); const sel=arts.filter(x=>ps.has(String(x[0]))); if(!sel.length){n.esito={art:0,trovati:0,err:"nessuna parte di testo scelta per questa norma"};continue}
-      const blocchi=[];let cur="";for(const x of sel){const t=`[Art. ${x[0]}${x[1]?" – "+x[1]:""}]\n${x[2]}\n\n`;if(cur.length+t.length>70000&&cur){blocchi.push(cur);cur=""}cur+=t.slice(0,70000)}if(cur)blocchi.push(cur);
-      for(let b=0;b<blocchi.length;b++){
-        st.textContent=`Creo gli adempimenti: norma ${k+1} di ${ids.length}${blocchi.length>1?`, parte ${b+1} di ${blocchi.length}`:""} — ${a.tit.slice(0,70)}…`;
-        const prompt=`Sei un esperto di compliance bancaria italiana. Norma: "${a.tit}" (${a.est}).\nOggetto del risk assessment: "${S.oggetto||"intera norma"}". Il testo qui sotto è già limitato alle parti della norma che riguardano l'oggetto: crea gli adempimenti da questo testo. Se un obbligo è a carico di un altro soggetto (fornitore, prestatore di servizi fiduciari, autorità) ma la banca ne è coinvolta come cliente o utente, includilo con "soggetto":"altro" e spiega nella descrizione cosa deve verificare o pretendere la banca. Se non trovi adempimenti per la banca spiega il motivo in senza_obbligo.\nLivello di dettaglio: ${ISTR[S.livello]}\nMetodo per riconoscere un adempimento: c'è un soggetto obbligato che è la banca o una categoria che la comprende (un obbligo solo dell'autorità non è un adempimento); c'è un comportamento da fare o da non fare (non una definizione o descrizione); indica la natura: obbligatorio, condizionato ("se la banca...") o facoltà (da documentare).\nPer ogni adempimento proponi i fattori di rischio da 1 a 4: sanz (sanzione: 1 nessuna, 2 fino 500k€, 3 fino 5mln€ o % fatturato, 4 oltre/penali), rep (reputazionale), oper (operativo), econ (costi di rimedio), compl (complessità), freq (frequenza e volumi), nov (novità: 1 >3 anni, 4 nuova). Se conosci la sanzione massima prevista in euro mettila in sanz_euro, altrimenti null.\nLa "citazione" deve essere una frase copiata ALLA LETTERA dal testo (max 300 caratteri).\nRispondi SOLO con un oggetto JSON: {"adempimenti":[{"art":"5","comma":"2","titolo":"breve","descrizione":"cosa deve fare la banca","destinatario":"...","termine":"... o null","natura":"obbligatorio|condizionato|facoltà","soggetto":"banca|altro","citazione":"...","fattori":{"sanz":3,"rep":2,"oper":2,"econ":2,"compl":3,"freq":2,"nov":2},"sanz_euro":null}],"senza_obbligo":[{"art":"1","motivo":"definizioni"}]}\n\nTESTO:\n${blocchi[b]}`;
-        const r=await sample.json(prompt,{signal:ctl2.signal});
-        const norm=s=>String(s||"").toLowerCase().replace(/[^a-zà-ù0-9]+/g," ").trim(), testo=norm(blocchi[b]);
-        for(const x of (r?.adempimenti||[])){const f={};for(const [kk] of FATT)f[kk]=Math.min(4,Math.max(1,Math.round(+x.fattori?.[kk]||3)));f.ctrl=3;f.att=3;
-          const cit=String(x.citazione||""); S.adem.push({id:"a"+S.adem.length,norma:id,art:String(x.art||""),comma:String(x.comma||""),titolo:String(x.titolo||""),desc:String(x.descrizione||""),dest:String(x.destinatario||""),termine:x.termine?String(x.termine):"",natura:String(x.natura||""),sogg:String(x.soggetto||"banca"),cit,citOk:cit.length>15&&testo.includes(norm(cit).slice(0,160)),f,S:x.sanz_euro?+x.sanz_euro:0,C:0,pres:[],stato:null})}
-        n.senza=(n.senza||[]).concat(r?.senza_obbligo||[]); n.esito={art:sel.length,trovati:(n.esito?.trovati||0)+(r?.adempimenti||[]).length};
-        salva(); renderAdem();
-      }
-    }
-    st.textContent=`Fatto: ${S.adem.length} adempimenti da ${ids.length} norme.`; renderAdem(); vai(6);
-  }catch(e){st.className="status err";st.textContent=errMsg(e);if(S.adem.length)vai(6)}
-  finally{$("#bStop2").hidden=true;$("#bGen").disabled=false;renderSteps()}
-};
-$("#bStop2").onclick=()=>ctl2?.abort();
+/* ---- passo 5 ---- */
+function renderLivelli(){if(!R)return;
+  const exHtml=k=>{const e=ESEMPIO[k];const prefix=`<div class="tag">Esempio · ${esc(ESEMPIO.norma)}</div><div class="small">${k==="puntuali"?`${e.n} righe in tutto, tra cui:`:`${e.n} ${e.n===1?"riga":"righe"} in tutto${k==="prescrizioni"?", tra cui":""}:`}</div>`;
+    return prefix+e.ex.map(x=>`<div class="e">${esc(x[1])}<i>${esc(x[0])}${x[2]?" · "+esc(x[2]):""}</i></div>`).join("")};
+  $("#livelli").innerHTML=LIVELLI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="liv" value="${k}" ${R.livello===k?"checked":""}><b>${n}</b></span><span>${d}</span><div class="ex">${exHtml(k)}</div></label>`).join("");
+  $("#metodi").innerHTML=METODI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="met" value="${k}" ${R.metodo===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("")}
+document.addEventListener("change",e=>{if(!R)return;if(e.target.name==="liv"){R.livello=e.target.value;persist()}if(e.target.name==="met"){R.metodo=e.target.value;persist();if(!$("#s6").hidden){renderAdem()}}});
+$("#go6").onclick=()=>vai(6);
 
-/* ---------- calcoli ---------- */
-function pesoPres(nome,nat,base){const o=pesiOverride[nome];const [lo,hi]=FASCIA[nat];return Math.min(hi,Math.max(lo,o??base))}
-function eff(ad){let q=1;for(const p of ad.pres){const e=pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*TEST[p.test][1];q*=1-e}return Math.min(.9,1-q)}
-function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){g==="I"?I+=w*ad.f[k]:P+=w*ad.f[k]}return {I,P}}
+/* ---- passo 6 ---- */
+function copia(t,st){navigator.clipboard.writeText(t).then(()=>{st.textContent="Copiato."}).catch(()=>{st.textContent="Copia non consentita: seleziona il testo."})}
+function renderRichiesta(){const q=R.richiesta,sel=Object.keys(R.norme).filter(i=>R.norme[i].sel),np=sel.reduce((s,i)=>s+(R.norme[i].parti?.length||0),0);
+  const liv=LIVELLI.find(l=>l[0]===R.livello)[1],met=METODI.find(m=>m[0]===R.metodo)[1];
+  const cmd=`Elabora gli adempimenti del risk assessment ${R.id}`;
+  if(!q){$("#richiesta").innerHTML=`<h4>Richiesta a Claude</h4><div>${sel.length} norme · ${np} parti di testo · livello <b>${esc(liv)}</b> · metodologia <b>${esc(met)}</b>.</div><p class="small" style="margin:0">Claude legge le parti con doppia lettura e arbitro, crea gli adempimenti, ne ricava i riferimenti e le sanzioni dalla norma. Dopo l'invio avvisalo in chat: la pagina si aggiorna da sola.</p><div class="row"><button class="btn" id="bInvia" type="button">Invia la richiesta</button><span class="status" id="stInv"></span></div>`;
+    $("#bInvia").onclick=async()=>{R.richiesta={stato:"inviata",quando:new Date().toISOString(),livello:R.livello,metodo:R.metodo,norme:sel.map(i=>({id:i,tit:att(i).tit,parti:R.norme[i].parti||[]}))};await persist(true);renderRichiesta()}}
+  else if(q.stato==="inviata"){$("#richiesta").innerHTML=`<h4>Richiesta inviata</h4><div>In attesa di Claude (${data(q.quando)} ${new Date(q.quando).toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"})}). Scrivi in chat: <span class="mono">${esc(cmd)}</span></div><div class="row"><button class="btn ghost sm" id="bCopia" type="button">Copia il messaggio</button><button class="btn ghost sm" id="bAnn" type="button">Annulla la richiesta</button><span class="status" id="stInv"></span></div>`;
+    $("#bCopia").onclick=()=>copia(cmd,$("#stInv"));$("#bAnn").onclick=async()=>{R.richiesta=null;await persist(true);renderRichiesta()}}
+  else{$("#richiesta").innerHTML=`<h4>Adempimenti pronti</h4><div class="small">Creati da Claude il ${data(q.pronta||q.quando)}: livello ${esc((LIVELLI.find(l=>l[0]===(q.livello||R.livello))||[0,""])[1])}. Se cambi livello o metodologia, puoi chiedere una nuova elaborazione.</div><div class="row"><button class="btn ghost sm" id="bRif" type="button">Chiedi una nuova elaborazione</button></div>`;
+    $("#bRif").onclick=async()=>{R.richiesta=null;await persist(true);renderRichiesta()}}}
+function renderAdem(){
+  if(!R)return;const per={};for(const a of A)(per[a.norma]=per[a.norma]||[]).push(a);
+  $("#st5").textContent=A.length?`${A.length} adempimenti · ${A.filter(a=>a.val).length} valutati · ${METODI.find(m=>m[0]===R.metodo)[1]}`:"";
+  const senza=R.richiesta?.senza||[];
+  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>`<h3 class="groupt" style="margin:6px 0 0">${esc(att(nid).tit)}</h3>`+ads.map(a=>{const r=calc(a);return `<button class="ar" type="button" data-ad="${esc(a._id)}"><b>${esc(a.titolo)}</b><span class="s">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura||"")}${a.sogg==="altro"?" · obbligo di altro soggetto":""}</span><span class="r">${a.val?'<span class="chip ok">valutato</span>':'<span class="chip">da valutare</span>'}${lv(r.sel)}</span></button>`}).join("")).join("")
+   +(senza.length?`<p class="small">Norme senza adempimenti per la banca (archiviate dalla scelta delle norme): ${senza.map(s=>esc(s.tit||s.id)).join("; ")}.</p>`:"")
+   ||(R.richiesta?.stato==="inviata"?'<p class="status">In attesa degli adempimenti di Claude…</p>':'<p class="status">Nessun adempimento ancora: invia la richiesta qui sopra.</p>');}
+$("#adem").addEventListener("click",e=>{const b=e.target.closest("[data-ad]");if(b)apriAd(b.dataset.ad)});
+$("#fp").addEventListener("input",()=>{R.fp=$("#fp").value;persist()});
+$("#go7").onclick=()=>vai(7);
+
+/* ---- calcoli ---- */
+function pesoPres(nome,nat,base){const o=pesiOverride[nome];const [lo,hi]=FASCIA[nat]||[0,1];return Math.min(hi,Math.max(lo,o??base))}
+function eff(ad){let q=1;for(const p of ad.pres||[]){q*=1-pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*TEST[p.test][1]}return Math.min(.9,1-q)}
+function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){const v=ad.f?.[k]??3;g==="I"?I+=w*v:P+=w*v}return {I,P}}
 const lvRI=x=>x<4?0:x<7?1:x<12?2:3, lv3=x=>x<1.75?0:x<2.5?1:x<3.25?2:3;
 const MAT=[[0,0,0,0],[0,0,1,1],[1,1,2,2],[1,2,3,3]];
-function vuln(E){return E>=.75?0:E>=.5?1:E>=.25?2:3}
-function statoAuto(ad,E){if(E>=.75)return ad.pres.every(p=>p.test===0)?0:1;if(E>=.5)return 1;if(E>=.25)return 2;return 3}
-const STATI=["Conforme","Largamente conforme","Parzialmente conforme","Non conforme o non valutato"];
-function calc(ad){const {I,P}=IP(ad),RI=I*P,E=eff(ad),li=lvRI(RI),fp=+$("#fp").value||0;
-  const r={I,P,RI,E,inLv:li};
-  r.m1=Math.min(li,MAT[li][vuln(E)]);
-  r.m2v=RI*(1-E); r.m2=Math.min(li,lvRI(r.m2v));
-  const RI3=.5*I+.5*P; r.RI3=RI3; r.m3v=RI3-(RI3-1)*E; r.m3=Math.min(lv3(RI3),lv3(r.m3v)); r.in3=lv3(RI3);
-  const pmap=[0,.02,.10,.30,.60], pf=Math.floor(P), p=pmap[Math.min(4,pf)]+(pf<4?(pmap[pf+1]-pmap[pf])*(P-pf):0), imp=(ad.S||0)+(ad.C||0);
+const vuln=E=>E>=.75?0:E>=.5?1:E>=.25?2:3;
+const statoAuto=(ad,E)=>E>=.75?((ad.pres||[]).every(p=>p.test===0)?0:1):E>=.5?1:E>=.25?2:3;
+function calc(ad){const {I,P}=IP(ad),RI=I*P,E=eff(ad),li=lvRI(RI),fp=+R.fp||0,r={I,P,RI,E,inLv:li};
+  r.m1=Math.min(li,MAT[li][vuln(E)]);r.m2v=RI*(1-E);r.m2=Math.min(li,lvRI(r.m2v));
+  const RI3=.5*I+.5*P;r.RI3=RI3;r.m3v=RI3-(RI3-1)*E;r.m3=Math.min(lv3(RI3),lv3(r.m3v));r.in3=lv3(RI3);
+  const pmap=[0,.02,.10,.30,.60],pf=Math.floor(P),p=pmap[Math.min(4,pf)]+(pf<4?(pmap[pf+1]-pmap[pf])*(P-pf):0),imp=(ad.S||0)+(ad.C||0);r.pann=p;
   if(imp>0){r.m4in=p*imp;r.m4v=r.m4in*(1-E);const th=fp>0?[fp*.0001,fp*.001,fp*.01]:[1e4,1e5,1e6];const L=x=>x<th[0]?0:x<th[1]?1:x<th[2]?2:3;r.in4=L(r.m4in);r.m4=L(r.m4v)}else r.m4=null;
-  const st=ad.stato??statoAuto(ad,E); r.stato=st; const sysProc=ad.pres.some(x=>x.nat!=="Persona"&&ADEG[x.adeg][1]>0);
-  const red=st===0?2:st===1?1:st===2?(sysProc?1:0):0; r.m5=Math.max(0,li-red);
-  r.sel=r[S.metodo]; r.selIn=S.metodo==="m3"?r.in3:S.metodo==="m4"?(r.in4??null):li; return r}
-const f2=x=>x==null?"—":(+x).toLocaleString("it-IT",{maximumFractionDigits:2});
-const eur=x=>x==null?"—":Math.round(x).toLocaleString("it-IT")+" €";
+  const st=ad.stato??statoAuto(ad,E);r.stato=st;const sp=(ad.pres||[]).some(x=>x.nat!=="Persona"&&ADEG[x.adeg][1]>0);r.m5=Math.max(0,li-(st===0?2:st===1?1:st===2?(sp?1:0):0));
+  r.sel=r[R.metodo];r.selIn=R.metodo==="m3"?r.in3:R.metodo==="m4"?(r.in4??null):li;return r}
 
-/* ---------- passo 5: adempimenti ---------- */
-function renderAdem(){const sel=Object.keys(S.norme).filter(i=>S.norme[i].sel&&S.norme[i].esito);if(!S.adem.length&&!sel.length){$("#adem").innerHTML="";return}
-  const per={};for(const i of sel)per[i]=[];for(const a of S.adem){(per[a.norma]=per[a.norma]||[]).push(a)}
-  $("#st5").textContent=`${S.adem.length} adempimenti · citazioni ritrovate alla lettera: ${S.adem.filter(a=>a.citOk).length}. Metodologia: ${METODI.find(m=>m[0]===S.metodo)[1]}.`;
-  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>{const n=S.norme[nid]||{};const senza=(n.senza||[]).length?`<p class="small">Articoli letti senza obblighi: ${esc((n.senza||[]).map(s=>"art. "+s.art+" ("+s.motivo+")").join("; "))}</p>`:"";
-    const es=n.esito?`<p class="small">${n.esito.err?esc(n.esito.err):`Articoli letti: ${n.esito.art} · adempimenti trovati: ${n.esito.trovati}`}</p>`:"";
-    return `<h3 class="groupt">${esc(att(nid).tit)}</h3>${es}${senza}`+(ads.length?ads.map(cardAd).join(""):`<p class="status">Nessun adempimento per la banca in questa norma${(n.senza||[]).length?": vedi il motivo sopra":""}.</p>`)}).join("")}
-function cardAd(a){const r=calc(a);
-  return `<div class="ad" data-ad="${a.id}"><div class="h"><b>${esc(a.titolo)}</b><span class="res">Inerente ${lv(r.selIn)} → Residuo ${lv(r.sel)}<span class="small mono">E ${Math.round(r.E*100)}%</span></span></div>
-  <div class="src">${a.sogg==="altro"?'<span class="chip ab">obbligo di altro soggetto</span>':""}Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura)}${a.dest?" · "+esc(a.dest):""}${a.termine?" · termine: "+esc(a.termine):""}</div>
-  <div>${esc(a.desc)}</div><q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>
-  <details><summary class="small">Fattori, presidi e importi</summary>
-   <div class="fx">${FATT.map(([k,n,g,,d])=>`<label>${n}<select data-f="${k}">${d.map((t,i)=>`<option value="${i+1}" ${a.f[k]===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`).join("")}
-    <label>Sanzione (€)<input type="number" data-v="S" value="${a.S||""}" min="0"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label>
-    <label>Stato di conformità (met. 5)<select data-v="stato"><option value="">automatico: ${STATI[statoAuto(a,r.E)]}</option>${STATI.map((s,i)=>`<option value="${i}" ${a.stato===i?"selected":""}>${s}</option>`).join("")}</select></label></div>
-   <div class="pres">${a.pres.map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
-     <select data-pa="${i}" aria-label="Adeguatezza">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
-     <select data-pt="${i}" aria-label="Test">${TEST.map((x,j)=>`<option value="${j}" ${p.test===j?"selected":""}>${x[0]}</option>`).join("")}</select>
-     <button class="btn ghost" type="button" data-pdel="${i}" style="padding:3px 8px">Togli</button></div>`).join("")}
-    <div class="row"><button class="btn ghost" type="button" data-padd="1" style="padding:4px 10px">+ Presidio</button><span class="small">I ${Math.round(r.I*100)/100} × P ${Math.round(r.P*100)/100} = ${f2(r.RI)} · met.2 ${f2(r.m2v)} · met.3 ${f2(r.m3v)} · met.4 ${eur(r.m4v)}</span></div></div>
-  </details></div>`}
-$("#adem").addEventListener("change",e=>{const c=e.target.closest("[data-ad]");if(!c)return;const a=S.adem.find(x=>x.id===c.dataset.ad),t=e.target;
-  if(t.dataset.f)a.f[t.dataset.f]=+t.value; else if(t.dataset.v==="stato")a.stato=t.value===""?null:+t.value; else if(t.dataset.v)a[t.dataset.v]=+t.value||0;
-  else if(t.dataset.pa!=null)a.pres[+t.dataset.pa].adeg=+t.value; else if(t.dataset.pt!=null)a.pres[+t.dataset.pt].test=+t.value;
-  salva();refreshCard(c,a);renderRiep()});
-function refreshCard(c,a){const open=c.querySelector("details").open;c.outerHTML=cardAd(a);const n=document.querySelector(`[data-ad="${a.id}"] details`);if(n)n.open=open}
-let adTarget=null;
-$("#adem").addEventListener("click",e=>{const c=e.target.closest("[data-ad]");if(!c)return;const a=S.adem.find(x=>x.id===c.dataset.ad);
-  if(e.target.dataset.pdel!=null){a.pres.splice(+e.target.dataset.pdel,1);salva();refreshCard(c,a);renderRiep()}
-  if(e.target.dataset.padd){adTarget=a;apriPres()}});
+/* ---- popup di valutazione ---- */
+function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#dAd").showModal()}
+const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
+function presHtml(a){return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
+   <select data-pa="${i}" aria-label="Adeguatezza">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
+   <select data-pt="${i}" aria-label="Test">${TEST.map((x,j)=>`<option value="${j}" ${p.test===j?"selected":""}>${x[0]}</option>`).join("")}</select>
+   <button class="btn ghost sm" type="button" data-pdel="${i}">Togli</button></div>`).join("")||'<span class="small">Nessun presidio: il residuo coincide con l\'inerente.</span>'}
+   <div class="row"><button class="btn ghost sm" type="button" data-padd="1">+ Presidio</button></div></div>`}
+function corpoAd(){const a=W,r=calc(a),m=R.metodo,I=["sanz","rep","oper","econ"],P=["compl","freq","nov","ctrl","att"];
+  let blocco="";
+  if(m==="m1")blocco=`<div class="box"><h4>Impatto (4 fattori)</h4><div class="fx">${I.map(k=>fsel(a,k)).join("")}</div></div><div class="box"><h4>Probabilità (5 fattori)</h4><div class="fx">${P.map(k=>fsel(a,k)).join("")}</div></div>${presHtml(a)}<div class="small">Impatto ${f2(r.I)} × probabilità ${f2(r.P)} = ${f2(r.RI)} → inerente ${LIV[r.inLv]} · vulnerabilità ${["bassa","medio-bassa","medio-alta","alta"][vuln(r.E)]} (presidi ${Math.round(r.E*100)}%)</div>`;
+  else if(m==="m2")blocco=`<div class="box"><h4>Rischio inerente (fattori)</h4><div class="fx">${[...I,...P].map(k=>fsel(a,k)).join("")}</div></div>${presHtml(a)}<div class="small">Inerente ${f2(r.RI)} × (1 − ${Math.round(r.E*100)}%) = residuo ${f2(r.m2v)}</div>`;
+  else if(m==="m3")blocco=`<div class="box"><h4>Nove fattori ponderati</h4><div class="fx">${[...I,...P].map(k=>fsel(a,k)).join("")}</div><div class="small">Contributo al punteggio: ${FATT.map(([k,n,g,w])=>`${n} ${f2(w*(a.f[k]??3))}`).join(" · ")}</div></div>${presHtml(a)}<div class="small">Inerente ${f2(r.RI3)} → residuo ${f2(r.m3v)}</div>`;
+  else if(m==="m4")blocco=`<div class="box"><h4>Probabilità annua</h4><div class="fx">${P.map(k=>fsel(a,k)).join("")}</div><div class="small">Probabilità annua stimata: ${Math.round(r.pann*100)}%</div></div><div class="box"><h4>Importi</h4><div class="fx"><label>Sanzione massima (€)<input type="number" data-v="S" value="${a.S||""}" min="0"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label></div>${R.fp?"":'<span class="small">Indica i fondi propri al passo 6 per soglie in proporzione.</span>'}</div>${presHtml(a)}<div class="small">Perdita attesa inerente ${eur(r.m4in)} → residua ${eur(r.m4v)}</div>`;
+  else blocco=`<div class="box"><h4>Stato di conformità</h4><div class="fx"><label>Stato<select data-v="stato"><option value="">automatico: ${STATI[statoAuto(a,r.E)]}</option>${STATI.map((s,i)=>`<option value="${i}" ${a.stato===i?"selected":""}>${s}</option>`).join("")}</select></label></div></div>${presHtml(a)}<details class="box"><summary class="small">Rischio inerente (fattori)</summary><div class="fx" style="margin-top:8px">${[...I,...P].map(k=>fsel(a,k)).join("")}</div></details><div class="small">Il residuo scende di 0, 1 o 2 livelli rispetto all'inerente (${LIV[r.inLv]}).</div>`;
+  $("#bAd").innerHTML=`<h2 style="font-size:18px;margin:0">${esc(a.titolo)}</h2>
+   <div class="row small"><span>${esc(att(a.norma).tit.slice(0,110))}</span><span class="mono">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""}</span><button class="btn ghost sm" type="button" data-leggi="${esc(a.norma)}|${esc(String(a.art))}">Leggi testo intero</button></div>
+   <div>${esc(a.desc)}</div>${a.cit?`<q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>`:""}
+   <div class="box"><h4>Sanzioni (da Claude, in base alla norma)</h4><div>${esc(a.sanz_txt||"Non indicate dalla norma.")}</div>${R.metodo!=="m4"?`<div class="fx"><label>Sanzione massima (€)<input type="number" data-v="S" value="${a.S||""}" min="0"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label></div>`:""}</div>
+   ${blocco}
+   <div class="res"><span>Inerente ${lv(r.selIn)}</span><span>Residuo ${lv(r.sel)}</span><span class="small mono">presidi ${Math.round(r.E*100)}%</span></div>
+   <label class="small">Note<textarea data-v="nota" style="min-height:56px">${esc(a.nota||"")}</textarea></label>`}
+$("#bAd").addEventListener("change",e=>{const t=e.target;if(!W)return;
+  if(t.dataset.f)W.f[t.dataset.f]=+t.value;else if(t.dataset.v==="stato")W.stato=t.value===""?null:+t.value;else if(t.dataset.v==="nota"){W.nota=t.value;return}else if(t.dataset.v)W[t.dataset.v]=+t.value||0;
+  else if(t.dataset.pa!=null)W.pres[+t.dataset.pa].adeg=+t.value;else if(t.dataset.pt!=null)W.pres[+t.dataset.pt].test=+t.value;
+  corpoAd()});
+$("#bAd").addEventListener("click",e=>{if(e.target.dataset.pdel!=null){W.pres.splice(+e.target.dataset.pdel,1);corpoAd()}if(e.target.dataset.padd){adTarget=W;apriPres()}});
+$("#saveAd").onclick=async()=>{if(!W)return;W.val=true;const id=W._id;const d=clone(W);delete d._id;
+  try{await kv.set(`ra/${R.id}/adem/${id}`,d);const i=A.findIndex(x=>x._id===id);if(i>=0)A[i]={...d,_id:id};$("#stAd").textContent="Salvato.";persist();renderAdem();renderSteps();setTimeout(()=>$("#dAd").close(),400)}
+  catch(e){$("#stAd").textContent="Salvataggio non riuscito.";$("#stAd").className="status err"}};
+$("#cAd").onclick=()=>$("#dAd").close();
+
+/* ---- presidi e pesi ---- */
 function tuttiPresidi(){return PRES_STD.map(p=>({nome:p[0],nat:p[1],peso:p[2],tipo:p[3],lib:false})).concat(libreria.map(p=>({...p,lib:true})))}
 function apriPres(){$("#selPres").innerHTML=tuttiPresidi().map((p,i)=>`<option value="${i}">${esc(p.nome)} — ${p.nat}, ${f2(pesoPres(p.nome,p.nat,p.peso))}${p.lib?" (libreria)":""}</option>`).join("");$("#stPres").textContent="";$("#dPres").showModal()}
-$("#bAddPres").onclick=()=>{const p=tuttiPresidi()[+$("#selPres").value];adTarget.pres.push({nome:p.nome,nat:p.nat,peso:p.peso,tipo:p.tipo,adeg:0,test:1});salva();renderAdem();renderRiep();$("#stPres").textContent="Aggiunto: "+p.nome};
-$("#bNewPres").onclick=()=>{const nome=$("#npNome").value.trim();if(!nome){$("#stPres").textContent="Scrivi il nome del presidio.";return}
+$("#bAddPres").onclick=()=>{const p=tuttiPresidi()[+$("#selPres").value];adTarget.pres.push({nome:p.nome,nat:p.nat,peso:p.peso,tipo:p.tipo,adeg:0,test:1});corpoAd();$("#stPres").textContent="Aggiunto: "+p.nome};
+$("#bNewPres").onclick=async()=>{const nome=$("#npNome").value.trim();if(!nome){$("#stPres").textContent="Scrivi il nome del presidio.";return}
   const nat=$("#npNat").value,[lo,hi]=FASCIA[nat],peso=Math.min(hi,Math.max(lo,+$("#npPeso").value||lo)),p={nome,nat,peso,tipo:$("#npTipo").value};
-  if($("#npLib").checked&&!libreria.some(x=>x.nome===nome)){libreria.push(p);store.set("ra_presidi_lib",libreria)}
-  adTarget.pres.push({...p,adeg:0,test:1});salva();renderAdem();renderRiep();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)}, dentro la fascia ${nat.toLowerCase()})`;$("#npNome").value=""};
+  if($("#npLib").checked&&!libreria.some(x=>x.nome===nome)){libreria.push(p);try{await kv.set("ra_cfg/presidi",{lista:libreria})}catch{}}
+  adTarget.pres.push({...p,adeg:0,test:1});corpoAd();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)})`;$("#npNome").value=""};
 $("#bClosePres").onclick=()=>$("#dPres").close();
-$("#fp").addEventListener("input",()=>{S.fp=$("#fp").value;salva();renderAdem();renderRiep()});
-$("#go6").onclick=()=>{renderRiep();vai(7)};
-
-/* ---------- impostazioni ---------- */
 $("#bSet").onclick=()=>{const all=tuttiPresidi();$("#tSet").innerHTML=`<tr><th>Presidio</th><th>Natura</th><th class="num">Standard</th><th class="num">Peso</th></tr>`+all.map((p,i)=>`<tr><td>${esc(p.nome)}${p.lib?' <span class="chip">libreria</span>':''}</td><td>${p.nat}</td><td class="num">${f2(p.peso)}</td><td class="num"><input type="number" step="0.05" min="${FASCIA[p.nat][0]}" max="${FASCIA[p.nat][1]}" value="${pesoPres(p.nome,p.nat,p.peso)}" data-sw="${i}" style="width:80px"></td></tr>`).join("");$("#dSet").showModal()};
-$("#bSave").onclick=()=>{const all=tuttiPresidi();$$("[data-sw]").forEach(inp=>{const p=all[+inp.dataset.sw],v=+inp.value;if(Math.abs(v-p.peso)>1e-9)pesiOverride[p.nome]=v;else delete pesiOverride[p.nome]});
-  const log=store.get("ra_pesi_log",[]);log.push({quando:new Date().toISOString(),motivo:$("#motSet").value||"",pesi:{...pesiOverride}});store.set("ra_pesi_log",log);store.set("ra_pesi",pesiOverride);$("#dSet").close();renderAdem();renderRiep()};
-$("#bStd").onclick=()=>{pesiOverride={};store.set("ra_pesi",{});$("#dSet").close();renderAdem();renderRiep()};
+$("#bSave").onclick=async()=>{const all=tuttiPresidi();$$("[data-sw]").forEach(inp=>{const p=all[+inp.dataset.sw],v=+inp.value;if(Math.abs(v-p.peso)>1e-9)pesiOverride[p.nome]=v;else delete pesiOverride[p.nome]});
+  try{const old=await kv.get("ra_cfg/pesi");const log=(old?.log||[]).concat([{quando:new Date().toISOString(),motivo:$("#motSet").value||"",pesi:{...pesiOverride}}]);await kv.set("ra_cfg/pesi",{pesi:pesiOverride,log})}catch{}
+  $("#dSet").close();if(R&&!$("#s6").hidden)renderAdem();if(R&&!$("#s7").hidden)renderRiep()};
+$("#bStd").onclick=async()=>{pesiOverride={};try{await kv.set("ra_cfg/pesi",{pesi:{},log:[]})}catch{}$("#dSet").close()};
 $("#bClose").onclick=()=>$("#dSet").close();
-$("#bReset").onclick=()=>{if($("#bReset").dataset.ok!=="1"){$("#bReset").dataset.ok="1";$("#bReset").textContent="Conferma: cancella la bozza";setTimeout(()=>{$("#bReset").dataset.ok="";$("#bReset").textContent="Nuovo risk assessment"},4000);return}
-  store.set("ra_bozza",null);location.reload()};
 
-/* ---------- riepilogo ---------- */
-function righe(){return S.adem.map(a=>({a,r:calc(a)}))}
-function renderRiep(){if(!S.adem.length){$("#riep").innerHTML="";return}const R=righe(),conf=$("#conf").checked;
-  const per={};for(const x of R)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
+/* ---- riepilogo ---- */
+function renderRiep(){if(!R)return;if(!A.length){$("#riep").innerHTML='<p class="status">Nessun adempimento da riepilogare.</p>';return}
+  const conf=$("#conf").checked,Rr=A.map(a=>({a,r:calc(a)})),per={};for(const x of Rr)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
   const sintesi=Object.entries(per).map(([nid,xs])=>{const vals=xs.map(x=>x.r.sel).filter(v=>v!=null),mx=vals.length?Math.max(...vals):null,cnt=[0,1,2,3].map(i=>vals.filter(v=>v===i).length);
     return `<tr><td>${esc(att(nid).tit)}</td><td>${lv(mx)}</td>${cnt.map(c=>`<td class="num">${c}</td>`).join("")}<td>${mx>=3?"Piano di mitigazione + segnalazione al CdA":mx===2?"Piano di mitigazione obbligatorio":"—"}</td></tr>`}).join("");
   const head=conf?METODI.map(m=>`<th>${m[1].split(" · ")[0]}</th>`).join(""):`<th>Residuo</th>`;
-  const det=R.map(({a,r})=>`<tr><td>${esc(att(a.norma).tit.slice(0,60))}</td><td class="mono">${esc(a.art)}${a.comma?"."+esc(a.comma):""}</td><td>${esc(a.titolo)}</td><td>${lv(r.selIn)}</td><td class="num">${Math.round(r.E*100)}%</td>${conf?["m1","m2","m3","m4","m5"].map(k=>`<td>${lv(r[k])}</td>`).join(""):`<td>${lv(r.sel)}</td>`}</tr>`).join("");
-  $("#riep").innerHTML=`<h3 class="groupt">Per norma</h3><p class="small">Il livello della norma è il più alto tra i suoi adempimenti; accanto, quanti adempimenti per livello.</p>
-  <div class="tw"><table><tr><th>Norma</th><th>Livello</th><th class="num">B</th><th class="num">MB</th><th class="num">MA</th><th class="num">A</th><th>Azione richiesta</th></tr>${sintesi}</table></div>
-  <h3 class="groupt">Adempimenti</h3><div class="tw"><table><tr><th>Norma</th><th>Art.</th><th>Adempimento</th><th>Inerente</th><th class="num">Presidi</th>${head}</tr>${det}</table></div>`;
-  $("#st6").textContent=`Metodologia scelta: ${METODI.find(m=>m[0]===S.metodo)[1]} · livello di dettaglio: ${LIVELLI.find(l=>l[0]===S.livello)[1]}.`}
+  const det=Rr.map(({a,r})=>`<tr><td>${esc(att(a.norma).tit.slice(0,60))}</td><td class="mono">${esc(a.art)}${a.comma?"."+esc(a.comma):""}</td><td>${esc(a.titolo)}${a.val?"":' <span class="chip">da valutare</span>'}</td><td>${lv(r.selIn)}</td><td class="num">${Math.round(r.E*100)}%</td>${conf?["m1","m2","m3","m4","m5"].map(k=>`<td>${lv(r[k])}</td>`).join(""):`<td>${lv(r.sel)}</td>`}</tr>`).join("");
+  $("#riep").innerHTML=`<h3 class="groupt">Per norma</h3><div class="tw"><table><tr><th>Norma</th><th>Livello</th><th class="num">B</th><th class="num">MB</th><th class="num">MA</th><th class="num">A</th><th>Azione richiesta</th></tr>${sintesi}</table></div>
+  <h3 class="groupt">Adempimenti</h3><div class="tw" style="max-height:60vh"><table><tr><th>Norma</th><th>Art.</th><th>Adempimento</th><th>Inerente</th><th class="num">Presidi</th>${head}</tr>${det}</table></div>`;
+  $("#st6").textContent=`Metodologia: ${METODI.find(m=>m[0]===R.metodo)[1]} · livello: ${LIVELLI.find(l=>l[0]===R.livello)[1]}.`}
 $("#conf").addEventListener("change",renderRiep);
-$("#bCsv").onclick=async()=>{const R=righe(),q=s=>'"'+String(s??"").replace(/"/g,'""')+'"';
-  const csv=["Norma;Articolo;Adempimento;Natura;Inerente;Efficacia presidi;Met1;Met2;Met3;Met4;Met5;Citazione verificata"].concat(R.map(({a,r})=>[att(a.norma).tit,a.art+(a.comma?"."+a.comma:""),a.titolo,a.natura,LIV[r.inLv],Math.round(r.E*100)+"%",...["m1","m2","m3","m4","m5"].map(k=>r[k]==null?"":LIV[r[k]]),a.citOk?"sì":"no"].map(q).join(";"))).join("\n");
-  try{await navigator.clipboard.writeText(csv);$("#st6").textContent="Tabella copiata: incollala in Excel."}catch{$("#st6").textContent="Copia non consentita in questa vista."}};
+$("#bCsv").onclick=()=>{const q=s=>'"'+String(s??"").replace(/"/g,'""')+'"';
+  const csv=["Norma;Articolo;Adempimento;Natura;Sanzione;Inerente;Efficacia presidi;Met1;Met2;Met3;Met4;Met5"].concat(A.map(a=>{const r=calc(a);return [att(a.norma).tit,a.art+(a.comma?"."+a.comma:""),a.titolo,a.natura,a.sanz_txt||"",LIV[r.inLv],Math.round(r.E*100)+"%",...["m1","m2","m3","m4","m5"].map(k=>r[k]==null?"":LIV[r[k]])].map(q).join(";")})).join("\n");
+  copia(csv,$("#st6"))};
+$("#bConcludi").onclick=async()=>{R.stato=R.stato==="concluso"?"in_corso":"concluso";await persist(true);$("#bConcludi").textContent=R.stato==="concluso"?"Riapri il risk assessment":"Concludi il risk assessment";$("#st6").textContent=R.stato==="concluso"?"Spostato tra i passati.":"Riportato tra quelli in corso."};
 
-if(S.fp)$("#fp").value=S.fp;
 init();
 </script>
+</body></html>
