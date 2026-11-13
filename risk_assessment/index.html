@@ -107,6 +107,8 @@ dialog .body{display:grid;gap:12px;max-height:68vh;overflow:auto;padding-right:4
 pre.testo{white-space:pre-wrap;font:13px/1.55 var(--f-body);margin:0;overflow-wrap:anywhere}
 .bar{height:6px;border-radius:3px;background:var(--accent);min-width:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.tx p{margin:0 0 .8em;line-height:1.6;max-width:70ch}
+#pTesto mark{background:#ffe08a;color:#222;padding:1px 2px;border-radius:3px}
 </style></head>
 <body>
 <div class="wrap">
@@ -207,7 +209,7 @@ pre.testo{white-space:pre-wrap;font:13px/1.55 var(--f-body);margin:0;overflow-wr
   <div class="row" style="margin-top:12px"><button class="btn" id="cNorma" type="button">Chiudi</button></div>
 </dialog>
 
-<dialog id="dTesto"><h2 id="tTesto" style="margin:0 0 8px;font-size:17px"></h2><div class="body"><pre class="testo" id="pTesto"></pre></div><div class="row" style="margin-top:12px"><button class="btn" id="cTesto" type="button">Chiudi</button></div></dialog>
+<dialog id="dTesto"><h2 id="tTesto" style="margin:0 0 8px;font-size:17px"></h2><div class="body"><div id="pTesto"></div></div><div class="row" style="margin-top:12px"><button class="btn" id="cTesto" type="button">Chiudi</button></div></dialog>
 
 <dialog id="dAd"><div class="body" id="bAd"></div>
   <div class="row" style="margin-top:12px"><button class="btn" id="saveAd" type="button">Salva valutazione</button><button class="btn ghost" id="cAd" type="button">Chiudi senza salvare</button><input type="text" id="nrMot" placeholder="Motivo (facoltativo)" style="flex:1 1 150px;min-width:0"><button class="btn ghost" id="nrAd" type="button" title="Questo adempimento non riguarda la banca: non viene valutato ed esce dal riepilogo">Non rilevante</button><span class="status" id="stAd"></span></div>
@@ -344,11 +346,35 @@ const modArts=id=>new Set(((IDX[id]&&IDX[id][11])?IDX[id][11].a:[]).map(String))
 const modTarget=id=>(IDX[id]&&IDX[id][11])?IDX[id][11].t.map(t=>IDX[t]?IDX[t][0].slice(0,70):t).join("; "):"";
 const modDa=id=>(IDX[id]&&IDX[id][12])?IDX[id][12]:[];
 const modDaTxt=id=>modDa(id).map(([m,a])=>(IDX[m]?IDX[m][1]+" "+IDX[m][0].slice(0,60):m)+(a.length?" (art. "+a.join(", ")+")":"")).join(" · ");
-async function apriTesto(nid,art){const arts=await testoAtto(nid).catch(()=>[]);const a=arts.find(x=>String(x[0])===String(art));
-  $("#tTesto").textContent=`${att(nid).tit.slice(0,120)} — ${/^Allegato/i.test(art)?"":"Art. "}${art}${a&&a[1]?" – "+a[1]:""}`;$("#pTesto").textContent=a?a[2].replace(/▼B\s*/g,"").replace(/▼M(\d+)/g,"【modificato da atto successivo, M$1】").replace(/▼C(\d+)/g,"【rettifica C$1】")+(modArts(nid).has(String(art))?"\n\n— Parte che modifica altri atti: "+modTarget(nid)+". Nessun adempimento.":"")+(modDa(nid).length?"\n\n— Testo aggiornato. Modificata da: "+modDaTxt(nid):""):"Testo non disponibile in biblioteca per questa parte.";
-  if(!$("#dTesto").open)$("#dTesto").showModal()}
+/* ---- lettura del testo: paragrafi leggibili, passaggio dell'adempimento evidenziato ---- */
+function paragrafi(t){const righe=String(t||"").replace(/▼B\s*/g,"").replace(/▼M(\d+)/g,"【modificato da atto successivo, M$1】").replace(/▼C(\d+)/g,"【rettifica C$1】").split(/\r?\n/).map(x=>x.trim());
+  const out=[];let cur="";const nuovo=/^(\(?\d{1,3}[\).]|\(?[a-z]{1,2}\)|[•\-–—]|Articolo\s+\d|Art\.\s*\d|Allegato|CAPO|SEZIONE|TITOLO)/;
+  for(const r of righe){if(!r){if(cur)out.push(cur);cur="";continue}
+    if(cur&&(nuovo.test(r)||(/[.;:]$/.test(cur)&&/^[A-Z0-9«"(]/.test(r)&&cur.length>40))){out.push(cur);cur=r}else cur=cur?(cur.endsWith("-")&&!/\s-$/.test(cur)?cur.slice(0,-1)+r:cur+" "+r):r}
+  if(cur)out.push(cur);return out}
+const nz=s=>String(s||"").replace(/[’‘]/g,"'").replace(/[“”«»]/g,'"').replace(/\s+/g," ").trim().toLowerCase();
+function evidenzia(par,cit){const c=nz(cit);if(!c)return esc(par);
+  const re=c.slice(0,160).split(" ").map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("\\s+");
+  try{const m=new RegExp(re,"i").exec(par.replace(/[’‘]/g,"'").replace(/[“”«»]/g,'"'));if(m){const a=m.index,b=a+Math.max(m[0].length,Math.min(par.length-a,cit.length));return esc(par.slice(0,a))+"<mark>"+esc(par.slice(a,b))+"</mark>"+esc(par.slice(b))}}catch{}return esc(par)}
+function trovaPar(pars,cit){const c=nz(cit).slice(0,60);if(!c)return -1;let i=pars.findIndex(p=>nz(p).includes(c));if(i<0){const w=c.split(" ").slice(0,5).join(" ");i=pars.findIndex(p=>nz(p).includes(w))}return i}
+const linkNorma=nid=>{const u=IDX[nid]&&IDX[nid][7];return u?`<a class="btn ghost sm" href="${esc(u)}" target="_blank" rel="noopener">Apri la norma completa ↗</a>`:""};
+async function apriTesto(nid,art,ad){const arts=await testoAtto(nid).catch(()=>[]);const a=arts.find(x=>String(x[0])===String(art));
+  const sede=`${/^Allegato/i.test(art)?"":"Art. "}${art}`;
+  const pars=a?paragrafi(a[2]):[];let tutto=!ad;
+  const nota=(modArts(nid).has(String(art))?`<p class="small"><span class="chip">modifica di altri atti</span> ${esc(modTarget(nid))}. Nessun adempimento.</p>`:"")+(modDa(nid).length?`<p class="small"><span class="chip">testo aggiornato</span> Modificata da: ${esc(modDaTxt(nid))}.</p>`:"");
+  const disegna=()=>{
+    const k=ad?trovaPar(pars,ad.cit):-1;
+    let corpo;
+    if(!a)corpo='<p class="small">Testo non disponibile in biblioteca per questa parte.</p>';
+    else if(ad&&!tutto&&k>=0)corpo=`<div class="tx"><p>${evidenzia(pars[k],ad.cit)}</p></div><p class="small">Passaggio da cui nasce l'adempimento. <button class="btn ghost sm" type="button" id="bTutto">Mostra tutto ${/^Allegato/i.test(art)?"l'allegato":"l'articolo"}</button></p>`;
+    else corpo=`<div class="tx">${pars.map((q,i)=>`<p>${i===k?evidenzia(q,ad.cit):esc(q)}</p>`).join("")}</div>`+(ad&&k<0?'<p class="small">Non trovo il passaggio esatto: ecco tutta la parte.</p>':"");
+    $("#pTesto").innerHTML=nota+corpo+`<div class="row" style="margin-top:8px">${linkNorma(nid)}</div>`;
+    const bt=$("#bTutto");if(bt)bt.onclick=()=>{tutto=true;disegna()};
+    const mk=$("#pTesto mark");if(mk&&tutto)mk.scrollIntoView({block:"center"})};
+  $("#tTesto").textContent=ad?`${sede}${ad.comma?" c. "+ad.comma:""} — ${ad.titolo}`:`${att(nid).tit.slice(0,120)} — ${sede}${a&&a[1]?" – "+a[1]:""}`;
+  disegna();if(!$("#dTesto").open)$("#dTesto").showModal()}
 $("#cTesto").onclick=()=>$("#dTesto").close();
-document.addEventListener("click",e=>{const b=e.target.closest("[data-leggi]");if(b){e.preventDefault();e.stopPropagation();const [n,a]=b.dataset.leggi.split("|");apriTesto(n,a)}});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-leggi]");if(b){e.preventDefault();e.stopPropagation();const [n,a]=b.dataset.leggi.split("|");apriTesto(n,a,b.dataset.ad?W:undefined)}});
 
 async function init(){
   try{DB=await window.claude?.use?.("db")||null}catch{DB=null}
@@ -546,7 +572,7 @@ function corpoAd(){const a=W,r=calc(a),m=R.metodo,I=["sanz","rep","oper","econ"]
   else if(m==="m4")blocco=`<div class="box"><h4>Probabilità annua</h4><div class="fx">${P.map(k=>fsel(a,k)).join("")}</div><div class="small">Probabilità annua stimata: ${Math.round(r.pann*100)}%</div></div><div class="box"><h4>Importi</h4><div class="fx"><label>Sanzione massima (€)<input type="number" data-v="S" value="${a.S||""}" min="0" placeholder="${sAuto(a)?"auto: "+Math.round(sAuto(a)).toLocaleString("it-IT"):""}"></label><label>Costi di rimedio (€)<input type="number" data-v="C" value="${a.C||""}" min="0"></label></div>${R.fat?"":'<span class="small">Indica il fatturato annuo al passo 6: la sanzione in percentuale diventa un importo in euro.</span> '}${R.fp?"":'<span class="small">Indica i fondi propri al passo 6 per soglie in proporzione.</span>'}</div>${presHtml(a)}<div class="small">Perdita attesa inerente ${eur(r.m4in)} → residua ${eur(r.m4v)}</div>`;
   else blocco=`<div class="box"><h4>Stato di conformità</h4><div class="fx"><label>Stato<select data-v="stato"><option value="">automatico: ${STATI[statoAuto(a,r.E)]}</option>${STATI.map((s,i)=>`<option value="${i}" ${a.stato===i?"selected":""}>${s}</option>`).join("")}</select></label></div></div>${presHtml(a)}<details class="box"><summary class="small">Rischio inerente (fattori)</summary><div class="fx" style="margin-top:8px">${[...I,...P].map(k=>fsel(a,k)).join("")}</div></details><div class="small">Il residuo scende di 0, 1 o 2 livelli rispetto all'inerente (${LIV[r.inLv]}).</div>`;
   $("#bAd").innerHTML=`<h2 style="font-size:18px;margin:0">${esc(a.titolo)}</h2>
-   <div class="row small"><span>${esc(att(a.norma).tit.slice(0,110))}</span><span class="mono">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""}</span><button class="btn ghost sm" type="button" data-leggi="${esc(a.norma)}|${esc(String(a.art))}">Leggi testo intero</button></div>
+   <div class="row small"><span>${esc(att(a.norma).tit.slice(0,110))}</span><span class="mono">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""}</span><button class="btn ghost sm" type="button" data-leggi="${esc(a.norma)}|${esc(String(a.art))}" data-ad="1">Leggi il passaggio</button></div>
    <div>${esc(a.desc)}</div>${a.cit?`<q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>`:""}
    <div class="box"><h4>Sanzioni (inserite da Claude in base alla norma)</h4><div>${esc(a.sanz_txt||"Non indicate dalla norma.")}</div></div>
    ${blocco}
