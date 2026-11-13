@@ -5,6 +5,8 @@ a=json.load(open('../adem_ramweuq26q.ORIG.json'))
 # adempimenti NON riferiti alle banche (autorità, Stati membri, ESA, fornitori TIC, CSD/CCP)
 EX={i for i,x in enumerate(a) if x['sogg']=='altro'}-{335}
 EX|={196,202}|set(range(422,430))
+# entità non bancarie: intermediari finanziari, Bancoposta, sedi di negoziazione, assicurazioni, fondi pensione, lettere IVASS
+EX|={17,18,20,21,22,23,24}|set(range(27,42))
 for i in sorted(EX): a[i]['_escl']=True
 json.dump(sorted(EX),open('esclusi.json','w'))
 M1="Governance e gestione dei rischi TIC";M2="Sicurezza dei sistemi, dei dati e degli accessi";M3="Continuità operativa e ripristino";M4="Incidenti TIC: gestione, classificazione e segnalazione";M5="Test di resilienza operativa digitale e TLPT";M6="Rischi da fornitori terzi di servizi TIC e registro degli accordi";M7="Ambito di applicazione per tipo di entità"
