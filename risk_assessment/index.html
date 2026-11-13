@@ -323,12 +323,11 @@ const perDi=a=>{if(a.per&&a.per.length)return a.per;
   if(a.fonti&&a.fonti.length){const sp=new Set(a.fonti.flatMap(f=>PERMAP[f.pid]||["tutti"]));sp.delete("tutti");return sp.size?[...sp]:["tutti"]}
   return["tutti"]};
 const perOk=a=>{const p=(R&&R.per)||"banca",x=perDi(a);return x.includes("tutti")||x.includes(p)};
-function renderPer(){const el=$("#perRow");if(!el||!R)return;const cnt={},spc={};
-  for(const v of Object.values(PERMAP)){for(const [k] of PERIM){if(v.includes("tutti")||v.includes(k))cnt[k]=(cnt[k]||0)+1;if(v.includes(k))spc[k]=(spc[k]||0)+1}}
-  el.innerHTML=PERIM.map(([k,n])=>`<label title="${cnt[k]||0} adempimenti puntuali; ${spc[k]||0} solo per questo perimetro"><input type="radio" name="per" value="${k}" ${(R.per||"banca")===k?"checked":""}> ${n} <span class="small">(${cnt[k]||0})</span></label>`).join("");
+function renderPer(){const el=$("#perRow");if(!el||!R)return;const blocc=!!(R.richiesta&&R.richiesta.stato);
+  el.innerHTML=PERIM.map(([k,n])=>`<label><input type="radio" name="per" value="${k}" ${(R.per||"banca")===k?"checked":""} ${blocc?"disabled":""}> ${n}</label>`).join("");
   $$("input[name=per]").forEach(r=>r.onchange=()=>{if(!r.checked)return;R.per=r.value;persist();renderPer();filtraA()});
   const k=R.per||"banca",nm=PERIM.find(x=>x[0]===k)[1];
-  $("#perHint").textContent=`Perimetro scelto: ${nm}. Vedi gli adempimenti trasversali (valgono per tutte le entità finanziarie) più quelli solo di questo perimetro${k==="banca"?"":"; i testi sono scritti per le banche e per ora non sono adattati"}. Gli adempimenti degli altri perimetri restano nei dati e non vengono mai cancellati.`}
+  $("#perHint").textContent=blocc?`Perimetro fissato: ${nm}. È stato scelto alla creazione degli adempimenti; per cambiarlo crea un nuovo risk assessment.`:`Il perimetro scelto decide quali adempimenti vengono creati: quelli trasversali (validi per tutte le entità finanziarie) e quelli propri di ${nm}. Gli altri non vengono creati${k==="banca"?"":"; i testi sono scritti per le banche e per ora non sono adattati"}.`}
 
 const raggruppato=a=>!!(a.fonti&&a.fonti.length>1);
 const macroDi=a=>a.macro||MACROMAP[a._id]||"Altri adempimenti";
@@ -562,7 +561,7 @@ function renderRichiesta(){const q=R.richiesta,sel=Object.keys(R.norme).filter(i
   const liv=LIVELLI.find(l=>l[0]===R.livello)[1],met=METODI.find(m=>m[0]===R.metodo)[1];
   const cmd=`Elabora gli adempimenti del risk assessment ${R.id}`;
   if(!q){$("#richiesta").innerHTML=`<h4>Richiesta a Claude</h4><div>${sel.length} norme · ${np} parti di testo · livello <b>${esc(liv)}</b> · metodologia <b>${esc(met)}</b>.</div><p class="small" style="margin:0">Claude legge le parti con doppia lettura e arbitro, crea gli adempimenti, ne ricava i riferimenti e le sanzioni dalla norma. Dopo l'invio avvisalo in chat: la pagina si aggiorna da sola.</p><div class="row"><button class="btn" id="bInvia" type="button">Invia la richiesta</button><span class="status" id="stInv"></span></div>`;
-    $("#bInvia").onclick=async()=>{R.richiesta={stato:"inviata",quando:new Date().toISOString(),livello:R.livello,metodo:R.metodo,norme:sel.map(i=>({id:i,tit:att(i).tit,parti:R.norme[i].parti||[]}))};await persist(true);renderRichiesta()}}
+    $("#bInvia").onclick=async()=>{R.richiesta={stato:"inviata",per:R.per||"banca",quando:new Date().toISOString(),livello:R.livello,metodo:R.metodo,norme:sel.map(i=>({id:i,tit:att(i).tit,parti:R.norme[i].parti||[]}))};await persist(true);renderRichiesta()}}
   else if(q.stato==="inviata"){$("#richiesta").innerHTML=`<h4>Richiesta inviata</h4><div>In attesa di Claude (${data(q.quando)} ${new Date(q.quando).toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"})}). Scrivi in chat: <span class="mono">${esc(cmd)}</span></div><div class="row"><button class="btn ghost sm" id="bCopia" type="button">Copia il messaggio</button><button class="btn ghost sm" id="bAnn" type="button">Annulla la richiesta</button><span class="status" id="stInv"></span></div>`;
     $("#bCopia").onclick=()=>copia(cmd,$("#stInv"));$("#bAnn").onclick=async()=>{R.richiesta=null;await persist(true);renderRichiesta()}}
   else{$("#richiesta").innerHTML=`<h4>Adempimenti pronti</h4><div class="small">Creati da Claude il ${data(q.pronta||q.quando)}: livello ${esc((LIVELLI.find(l=>l[0]===(q.livello||R.livello))||[0,""])[1])}. Se cambi livello o metodologia, puoi chiedere una nuova elaborazione.</div><div class="row"><button class="btn ghost sm" id="bRif" type="button">Chiedi una nuova elaborazione</button></div>`;
@@ -601,9 +600,9 @@ function calc(ad){const {I,P}=IP(ad),RI=I*P,E=eff(ad),li=lvRI(RI),fp=+R.fp||0,r=
 /* ---- popup di valutazione ---- */
 let importando=false;
 async function importaAdem(){const q=R&&R.richiesta;if(importando||!q||q.stato!=="pronta"||!q.file||q.importato||A.length)return;importando=true;
-  try{const arr=await (await fetch(q.file,{cache:"no-store"})).json();const st=$("#stInv");let n=0;
+  try{const arr0=await (await fetch(q.file,{cache:"no-store"})).json();const pp=q.per||R.per||"banca";const arr=arr0.filter(d=>{const x=d.per&&d.per.length?d.per:perDi(d);return x.includes("tutti")||x.includes(pp)});const st=$("#stInv");let n=0;
     for(const d of arr){const id=d._id;const x={...d};delete x._id;await kv.set("ra/"+R.id+"/adem/"+id,x);n++;if(st&&n%25===0)st.textContent="Importo gli adempimenti… "+n+"/"+arr.length}
-    R.richiesta={...q,importato:true};R.nAdem=arr.length;await persist(true)}catch(e){const st=$("#stInv");if(st)st.textContent="Importazione non riuscita: ricarica la pagina."}finally{importando=false}}
+    R.richiesta={...q,importato:true,nAdem:arr.length};R.nAdem=arr.length;await persist(true)}catch(e){const st=$("#stInv");if(st)st.textContent="Importazione non riuscita: ricarica la pagina."}finally{importando=false}}
 function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#nrMot").value=W.nrMot||"";$("#nrAd").textContent=W.nr?"Rimetti in valutazione":"Non rilevante";const eb=$("#espl");eb.hidden=!raggruppato(W);delete eb.dataset.ok;eb.textContent="Scomponi in adempimenti più precisi";const rb=$("#risali");rb.hidden=!W.da;delete rb.dataset.ok;rb.textContent="Torna al livello superiore";$("#dAd").showModal()}
 const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
 function presHtml(a){return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
