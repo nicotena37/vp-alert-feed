@@ -210,7 +210,7 @@ pre.testo{white-space:pre-wrap;font:13px/1.55 var(--f-body);margin:0;overflow-wr
 <dialog id="dTesto"><h2 id="tTesto" style="margin:0 0 8px;font-size:17px"></h2><div class="body"><pre class="testo" id="pTesto"></pre></div><div class="row" style="margin-top:12px"><button class="btn" id="cTesto" type="button">Chiudi</button></div></dialog>
 
 <dialog id="dAd"><div class="body" id="bAd"></div>
-  <div class="row" style="margin-top:12px"><button class="btn" id="saveAd" type="button">Salva valutazione</button><button class="btn ghost" id="cAd" type="button">Chiudi senza salvare</button><span class="status" id="stAd"></span></div>
+  <div class="row" style="margin-top:12px"><button class="btn" id="saveAd" type="button">Salva valutazione</button><button class="btn ghost" id="cAd" type="button">Chiudi senza salvare</button><input type="text" id="nrMot" placeholder="Motivo (facoltativo)" style="flex:1 1 150px;min-width:0"><button class="btn ghost" id="nrAd" type="button" title="Questo adempimento non riguarda la banca: non viene valutato ed esce dal riepilogo">Non rilevante</button><span class="status" id="stAd"></span></div>
 </dialog>
 
 <dialog id="dSet">
@@ -304,7 +304,7 @@ let IDX={}, TAX={}, PROC=[], SHARDS={}, PDFARTS={}, HOME=[], A=[], R=null, unsub
 let pesiOverride={}, libreria=[], sample=null, cfgLoaded=false;
 const nuovoRA=()=>({id:"ra"+Date.now().toString(36),titolo:"Nuovo risk assessment",stato:"in_corso",creato:new Date().toISOString(),agg:new Date().toISOString(),modo:"amb",amb:[],oggetto:"",incS:false,incAb:false,sig:"",norme:{},livello:"prescrizioni",metodo:"m3",fp:"",richiesta:null,extra:{},step:1,nAdem:0,nVal:0});
 let tmr=null;
-function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=new Date().toISOString();R.nAdem=A.length;R.nVal=A.filter(a=>a.val).length;
+function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=new Date().toISOString();R.nAdem=A.length;R.nVal=A.filter(a=>a.val).length;R.nNr=A.filter(a=>a.nr).length;
     try{await kv.set("ra/"+R.id,clone(R));$("#stSalv").textContent=$("#stSalv2").textContent="Salvato alle "+ora();$("#stSalv").className=$("#stSalv2").className="status"}
     catch(e){$("#stSalv").textContent=$("#stSalv2").textContent="Salvataggio non riuscito: "+(e?.message||e);$("#stSalv").className=$("#stSalv2").className="status err"}};
   if(subito)return f();tmr=setTimeout(f,700)}
@@ -498,7 +498,7 @@ function renderAdem(){
   if(!R)return;const per={};for(const a of A)(per[a.norma]=per[a.norma]||[]).push(a);
   $("#st5").textContent=A.length?`${A.length} adempimenti · ${A.filter(a=>a.val).length} valutati · ${METODI.find(m=>m[0]===R.metodo)[1]}`:"";
   const senza=R.richiesta?.senza||[];
-  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>`<h3 class="groupt" style="margin:6px 0 0">${esc(att(nid).tit)}</h3>`+ads.map(a=>{const r=calc(a);return `<button class="ar" type="button" data-ad="${esc(a._id)}"><b>${esc(a.titolo)}</b><span class="s">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura||"")}${a.sogg==="altro"?" · obbligo di altro soggetto":""}</span><span class="r">${a.val?'<span class="chip ok">valutato</span>'+lv(r.sel):'<span class="chip">da valutare</span>'}</span></button>`}).join("")).join("")
+  $("#adem").innerHTML=Object.entries(per).map(([nid,ads])=>`<h3 class="groupt" style="margin:6px 0 0">${esc(att(nid).tit)}</h3>`+ads.map(a=>{const r=calc(a);return `<button class="ar" type="button" data-ad="${esc(a._id)}" ${a.nr?'style="opacity:.55"':""}><b>${esc(a.titolo)}</b><span class="s">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""} · ${esc(a.natura||"")}${a.sogg==="altro"?" · obbligo di altro soggetto":""}</span><span class="r">${a.nr?'<span class="chip">non rilevante</span>':a.val?'<span class="chip ok">valutato</span>'+lv(r.sel):'<span class="chip">da valutare</span>'}</span></button>`}).join("")).join("")
    +(senza.length?`<p class="small">Norme senza adempimenti per la banca (archiviate dalla scelta delle norme): ${senza.map(s=>esc(s.tit||s.id)).join("; ")}.</p>`:"")
    ||(R.richiesta?.stato==="inviata"?'<p class="status">In attesa degli adempimenti di Claude…</p>':'<p class="status">Nessun adempimento ancora: invia la richiesta qui sopra.</p>');}
 $("#adem").addEventListener("click",e=>{const b=e.target.closest("[data-ad]");if(b)apriAd(b.dataset.ad)});
@@ -530,7 +530,7 @@ async function importaAdem(){const q=R&&R.richiesta;if(importando||!q||q.stato!=
   try{const arr=await (await fetch(q.file,{cache:"no-store"})).json();const st=$("#stInv");let n=0;
     for(const d of arr){const id=d._id;const x={...d};delete x._id;await kv.set("ra/"+R.id+"/adem/"+id,x);n++;if(st&&n%25===0)st.textContent="Importo gli adempimenti… "+n+"/"+arr.length}
     R.richiesta={...q,importato:true};R.nAdem=arr.length;await persist(true)}catch(e){const st=$("#stInv");if(st)st.textContent="Importazione non riuscita: ricarica la pagina."}finally{importando=false}}
-function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#dAd").showModal()}
+function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#nrMot").value=W.nrMot||"";$("#nrAd").textContent=W.nr?"Rimetti in valutazione":"Non rilevante";$("#dAd").showModal()}
 const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
 function presHtml(a){return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
    <select data-pa="${i}" aria-label="Adeguatezza">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
@@ -556,7 +556,10 @@ $("#bAd").addEventListener("change",e=>{const t=e.target;if(!W)return;
   else if(t.dataset.pa!=null)W.pres[+t.dataset.pa].adeg=+t.value;else if(t.dataset.pt!=null)W.pres[+t.dataset.pt].test=+t.value;
   corpoAd()});
 $("#bAd").addEventListener("click",e=>{if(e.target.dataset.pdel!=null){W.pres.splice(+e.target.dataset.pdel,1);corpoAd()}if(e.target.dataset.padd){adTarget=W;apriPres()}});
-$("#saveAd").onclick=async()=>{if(!W)return;W.val=true;const id=W._id;const d=clone(W);delete d._id;
+$("#nrAd").onclick=async()=>{if(!W)return;W.nr=!W.nr;W.nrMot=W.nr?$("#nrMot").value.trim():"";if(W.nr)W.val=false;const id=W._id;const d=clone(W);delete d._id;
+  try{await kv.set(`ra/${R.id}/adem/${id}`,d);const i=A.findIndex(x=>x._id===id);if(i>=0)A[i]={...d,_id:id};$("#stAd").textContent=W.nr?"Segnato non rilevante.":"Rimesso in valutazione.";persist();renderAdem();renderSteps();setTimeout(()=>$("#dAd").close(),400)}
+  catch(e){$("#stAd").textContent="Salvataggio non riuscito.";$("#stAd").className="status err"}};
+$("#saveAd").onclick=async()=>{if(!W)return;W.nr=false;W.nrMot="";W.val=true;const id=W._id;const d=clone(W);delete d._id;
   try{await kv.set(`ra/${R.id}/adem/${id}`,d);const i=A.findIndex(x=>x._id===id);if(i>=0)A[i]={...d,_id:id};$("#stAd").textContent="Salvato.";persist();renderAdem();renderSteps();setTimeout(()=>$("#dAd").close(),400)}
   catch(e){$("#stAd").textContent="Salvataggio non riuscito.";$("#stAd").className="status err"}};
 $("#cAd").onclick=()=>$("#dAd").close();
@@ -579,17 +582,17 @@ $("#bClose").onclick=()=>$("#dSet").close();
 
 /* ---- riepilogo ---- */
 function renderRiep(){if(!R)return;if(!A.length){$("#riep").innerHTML='<p class="status">Nessun adempimento da riepilogare.</p>';return}
-  const conf=$("#conf").checked,Rr=A.map(a=>{const r=calc(a);return {a,r:a.val?r:{...r,sel:null,selIn:null,m1:null,m2:null,m3:null,m4:null,m5:null}}}),per={};for(const x of Rr)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
+  const conf=$("#conf").checked,Rr=A.filter(a=>!a.nr).map(a=>{const r=calc(a);return {a,r:a.val?r:{...r,sel:null,selIn:null,m1:null,m2:null,m3:null,m4:null,m5:null}}}),per={};for(const x of Rr)(per[x.a.norma]=per[x.a.norma]||[]).push(x);
   const sintesi=Object.entries(per).map(([nid,xs])=>{const vals=xs.map(x=>x.r.sel).filter(v=>v!=null),mx=vals.length?Math.max(...vals):null,cnt=[0,1,2,3].map(i=>vals.filter(v=>v===i).length);
     return `<tr><td>${esc(att(nid).tit)}</td><td>${lv(mx)}</td>${cnt.map(c=>`<td class="num">${c}</td>`).join("")}<td>${mx>=3?"Piano di mitigazione + segnalazione al CdA":mx===2?"Piano di mitigazione obbligatorio":"—"}</td></tr>`}).join("");
   const head=conf?METODI.map(m=>`<th>${m[1].split(" · ")[0]}</th>`).join(""):`<th>Residuo</th>`;
   const det=Rr.map(({a,r})=>`<tr><td>${esc(att(a.norma).tit.slice(0,60))}</td><td class="mono">${esc(a.art)}${a.comma?"."+esc(a.comma):""}</td><td>${esc(a.titolo)}${a.val?"":' <span class="chip">da valutare</span>'}</td><td>${lv(r.selIn)}</td><td class="num">${Math.round(r.E*100)}%</td>${conf?["m1","m2","m3","m4","m5"].map(k=>`<td>${lv(r[k])}</td>`).join(""):`<td>${lv(r.sel)}</td>`}</tr>`).join("");
-  $("#riep").innerHTML=`<h3 class="groupt">Per norma</h3><div class="tw"><table><tr><th>Norma</th><th>Livello</th><th class="num">B</th><th class="num">MB</th><th class="num">MA</th><th class="num">A</th><th>Azione richiesta</th></tr>${sintesi}</table></div>
+  const nNr=A.filter(a=>a.nr).length;$("#riep").innerHTML=(nNr?`<p class="small">${nNr} ${nNr===1?"adempimento segnato non rilevante":"adempimenti segnati non rilevanti"}: esclusi dal riepilogo.</p>`:"")+`<h3 class="groupt">Per norma</h3><div class="tw"><table><tr><th>Norma</th><th>Livello</th><th class="num">B</th><th class="num">MB</th><th class="num">MA</th><th class="num">A</th><th>Azione richiesta</th></tr>${sintesi}</table></div>
   <h3 class="groupt">Adempimenti</h3><div class="tw" style="max-height:60vh"><table><tr><th>Norma</th><th>Art.</th><th>Adempimento</th><th>Inerente</th><th class="num">Presidi</th>${head}</tr>${det}</table></div>`;
   $("#st6").textContent=`Metodologia: ${METODI.find(m=>m[0]===R.metodo)[1]} · livello: ${LIVELLI.find(l=>l[0]===R.livello)[1]}.`}
 $("#conf").addEventListener("change",renderRiep);
 $("#bCsv").onclick=()=>{const q=s=>'"'+String(s??"").replace(/"/g,'""')+'"';
-  const csv=["Norma;Articolo;Adempimento;Natura;Sanzione;Inerente;Efficacia presidi;Met1;Met2;Met3;Met4;Met5"].concat(A.map(a=>{const r=calc(a);return [att(a.norma).tit,a.art+(a.comma?"."+a.comma:""),a.titolo,a.natura,a.sanz_txt||"",LIV[r.inLv],Math.round(r.E*100)+"%",...["m1","m2","m3","m4","m5"].map(k=>r[k]==null?"":LIV[r[k]])].map(q).join(";")})).join("\n");
+  const csv=["Norma;Articolo;Adempimento;Natura;Sanzione;Inerente;Efficacia presidi;Met1;Met2;Met3;Met4;Met5"].concat(A.filter(a=>!a.nr).map(a=>{const r=calc(a);return [att(a.norma).tit,a.art+(a.comma?"."+a.comma:""),a.titolo,a.natura,a.sanz_txt||"",LIV[r.inLv],Math.round(r.E*100)+"%",...["m1","m2","m3","m4","m5"].map(k=>r[k]==null?"":LIV[r[k]])].map(q).join(";")})).join("\n");
   copia(csv,$("#st6"))};
 $("#bConcludi").onclick=async()=>{R.stato=R.stato==="concluso"?"in_corso":"concluso";await persist(true);$("#bConcludi").textContent=R.stato==="concluso"?"Riapri il risk assessment":"Concludi il risk assessment";$("#st6").textContent=R.stato==="concluso"?"Spostato tra i passati.":"Riportato tra quelli in corso."};
 
