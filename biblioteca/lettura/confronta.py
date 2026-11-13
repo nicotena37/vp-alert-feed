@@ -39,6 +39,16 @@ def testo_parti(tappa):
         if len(t) > 5000: break
     return t
 
+# parole che indicano un obbligo a carico di un soggetto vigilato: una parte "senza ambito" che le contiene va riletta dall'arbitro
+OBBLIGO = re.compile(r"\b(deve|devono|è tenut\w*|sono tenut\w*|è vietat\w*|sono vietat\w*|obbligo|obblighi|"
+                     r"adottano|adotta|garantiscono|assicurano|predispongono|stabiliscono|mantengono|comunicano|"
+                     r"valutano|conservano|effettuano|notificano|trasmettono|segnalano|documentano|sottopongono|"
+                     r"must|shall)\b", re.I)
+_T = {}
+def TESTO_K(tappa, k):
+    if tappa not in _T: _T[tappa] = testo_parti(tappa)
+    pz = _T[tappa].get(k, {}); return "\n".join(pz[j][1] for j in sorted(pz))
+
 def main(tappa, s1, s2):
     d = L / "v3" / tappa
     parti = json.loads((d / "parti.json").read_text(encoding="utf-8"))
@@ -52,7 +62,10 @@ def main(tappa, s1, s2):
         if not x or not y: st["manca una lettura"] += 1; arb.append(k); continue
         if x["a"] and y["a"] and set(x["a"]) == set(y["a"]): st["identiche"] += 1; acc[k] = {"a": x["a"], "na": None, "fonte": "accordo"}
         elif not x["a"] and not y["a"]:
-            st["identiche"] += 1; acc[k] = {"a": [], "na": SIGLE.get(x["na"] or y["na"], "Obblighi di altri soggetti"), "fonte": "accordo"}
+            sg = x["na"] or y["na"]
+            if sg in ("C", "O", "F") and OBBLIGO.search(TESTO_K(tappa, k)):
+                st["senza ambito ma con parole di obbligo -> arbitro"] += 1; arb.append(k); continue      # controllo obblighi nascosti
+            st["identiche"] += 1; acc[k] = {"a": [], "na": SIGLE.get(sg, "Obblighi di altri soggetti"), "fonte": "accordo"}
             if x["na"] != y["na"]: st["  di cui sigla diversa"] += 1
         elif x["a"] and y["a"] and x["a"][0] == y["a"][0]:
             # stesso ambito principale, secondari diversi: tieni il principale e i secondari comuni

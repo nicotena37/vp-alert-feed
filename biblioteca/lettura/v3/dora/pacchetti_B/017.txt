@@ -1,0 +1,1131 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Joint Guidelines on oversight cooperation  (id EBA-c77302e20a)
+
+=== K265 | [par. 4.2] Summary of responses to the public consultation
+4.2 Summary of responses to the public consultation
+The ESAs ran a public consultation on its proposed draft guidelines between 8 December 2023 and 4 March 2024. The ESAs received 29 responses to the
+Consultation Paper. As indicated in the charts below, the vast majority of respondents are financial entities and industry associations/federations most of
+which are related to the banking and payments sector. Most respondents are located in Germany.
+Type of stakeholder Financial sector Member State of stakeholders
+Financial entity
+Industry Association/Federation Banking and payments Insurance and pension Germany Other Member States
+ICT Third-Party Service Provider Markets and securities Other EU trade associations
+The table below provides an overview of the comments received and if/how the ESAs have addressed the comments. References in the table are made to
+the numbering of the draft Guidelines submitted for public consultation.
+Point 1.6: Dedicated Two stakeholders raised concerns about The ESAs agree that there is a need for the Point 1.6 has been adjusted and new
+online tool to share potential leakage of sensitive information online tool to have strong security point 1.7 has been added to address
+information due to a lack of security measures for the measures and, therefore, point 1.6 states the concerns raised.
+dedicated online tool to share that the tool should allow for confidential
+information. It is suggested to describe and secure information exchange. Details
+how information will be transmitted, of the technical security measures will be
+exchanged, handled, stored and accessed specified when developing the tool. The
+to ensure that confidential and sensitive ESAs agree that the information to be
+information is secured against exchanged via the tool should be limited to
+unauthorised and third-party access, and the information specified in the GLs and
+inadvertent disclosure. under DORA.
+Point 1.7: One stakeholder suggested to delete The ESAs are of the view that the Point 1.7 has been removed.
+Acknowledgement of point 1.7 given that the ESAs and CAs acknowledge of receipt of information may
+receipt of information have established a single point of contact be too burdensome for CAs and the LO in
+in the form of a dedicated the absence of an automatic
+institutional/functional email address. acknowledgement of receipt through the
+online tool.
+Point 1.8: One stakeholder raised concerns about According to point 1.6, the online tool No change
+Communication and the proposed accessibility of information should allow for secure and confidential
+information exchange given that such information contains information exchange (see changes made
+should be accessible security-sensitive and competition- point 1.6). In addition, point 1.8 highlights
+and inclusive for all sensitive information about CTPPs and that translation services or accessible
+parties financial entities (FEs) shared among communication tools should only be used if
+multiple supervisory bodies. data is protected from unauthorised use of
+third parties. The ESAs are of the view that
+points 1.6 and 1.8 are sufficient safeguards
+in that respect.
+Point 3: Difference of One stakeholder suggested to impose a The ESAs are of the view that there should No change
+opinions between timeline for ESAs and CAs to find a be sufficient flexibility for ESAs and CAs to
+ESAs and competent mutually agreed solution and, if no find a mutually agreed solution. The tasks
+authorities solution can be found, have the Oversight and timelines applicable to the OF may be
+Forum (OF) act as a referee subject to specified in separate rules of procedure of
+simple majority vote within a pre-agreed the OF.
+timeline.
+Point 5.1: Several stakeholders expressed the view The ESAs would like to clarify that they will No change
+Transmission of the that financial entities should not be make use of Article 35(2)12 of the ESAs’
+full register of required to transmit the full register to Regulations to request the transmission of
+the CAs as this would involve an the full register of information for the
+designation of CTPPs. The European
+12Article 35(2) of the ESAs’ Regulations: “The Authority may also request information to be provided at recurring intervals and in specified formats. Such requests shall, where possible, be made
+using common reporting formats.”
+information from CAs additional amount of work and is not Commission has welcomed the ESA’s
+to the OF foreseen under DORA. proposal to make use of Article 35(2) and
+the request will be formalised in a joint
+BoSs Decision in 2024. The formats and
+procedures for the transmission of the
+register will be specified in that Decision.
+Point 8.1: Information Several stakeholders suggested that The ESAs would like to clarify that point 8.1 No change
+about identity of information about the identity of is not intended to inform CTPPs, but CAs.
+authorised persons for authorised persons should be provided at The information exchange between the LO
+the general least 6 weeks (instead of 3 weeks) before and the CTPPs is not covered by these
+investigation or the start of the inspection or general Guidelines. CTPPs will be informed about
+inspection investigation to allow sufficient time for the identity of authorised persons in due
+preparation. time before the start of the inspection or
+general investigation to allow sufficient
+time for preparation.
+Point 9: Measures by Some stakeholders mentioned that point The intention of this provision was not to Point 9 has been deleted. Point 7 has
+CAs concerning CTPPs 9 suggests that CAs are empowered to empower or encourage CAs to take been updated to allow CAs to
+take measures concerning CTPPs and that measures concerning CTPPs. Article 33(5) comment on the draft oversight plan.
+this can lead to duplications/overlaps and provides the possibility for CAs to take, The annual consultation of CAs on HR
+may not be in line with the Level 1 text. either directly or indirectly, measures resources and expected profiles of
+concerning CTPPs in agreement with the staff to carry out the oversight
+LO. The ESAs are of the view that, in order activity has been removed from the
+to influence the LO oversight, CAs should content of the oversight plan under
+comment on the draft oversight plan and point 7.3 to avoid overlap with the
+then volunteer to take part in the JET. consultation of the OF as per Article
+3(1) of the draft RTS on the Joint
+Examination Teams. Additional
+sentence has been added to point 6
+of the Introduction of the Final
+Report indicating that there should
+be a coordinated approach between
+the oversight activities of the LO and
+the activities of the CAs concerning
+directly or indirectly the CTPPs
+without any hindrance to the
+efficiency of the CAs’ powers towards
+the financial entities under their
+supervision.
+Point 10.1: Several stakeholders suggested that the The ESAs would like to clarify that point No change
+Transmission of the deadline to submit the relevant scope of 10.1 specifies that the relevant scope of
+relevant scope of the the request for information should be the request for information sent to the
+request for extended to 15 working days after CTPP should be submitted by the LO to the
+acceptance of the request for JON and CAs 10 working days following the
+information submitted information to the CTPP to allow LO’s adoption of its request for
+to the CTPP sufficient time for processing. information. The LO does not need to
+process any specific information following
+the adoption of its request for information
+so 10 working days are sufficient time for
+the LO to transmit the scope of the request
+for information.
+Point 10.2: Major ICT- One stakeholder expressed the view that The ESAs agree that CTPPs are not required Point 10.2 has been adjusted to align
+related incidents the LO should not be expected to inform by DORA to proactively report major ICT- with Article 3(2), letter l of draft RTS
+reported by the CTPP CAs of major ICT-related incidents related incidents to the LO. However, the on conduct oversight.
+reported by the CTPP because DORA does ESAs can request such information from
+not require CTPPs to proactively report CTPPs in accordance with Article 37 of
+such incidents to the LO. DORA which allows the LO to require the
+CTPP to provide all information necessary
+for the LO to carry out its duties under
+DORA.
+Point 10.3: Primary Two stakeholders suggested that The ESAs would like to clarify that point No change
+point of contact for competent authorities can be the primary 10.3 is in line with the suggestion made by
+the purposes of all point of contact for CTPPs where the stakeholders, i. e. CAs can be the primary
+matters related to the interaction is unrelated to DORA point of contact for CTPPs where the
+oversight interaction is unrelated to DORA oversight.
+oversight, including in relation to national Point 10.3 refers to “all matters related to
+laws. the oversight” and this reflects Article
+33(1) of DORA.
+Point 12.1: Two stakeholders expressed the view Article 4(1) of the draft RTS on the No change
+Transmission of the that Article 35(1)(c) does not always harmonisation of conditions enabling the
+remediation plan require remediation and that a CTPP is conduct of the oversight activities under
+not compelled to remediate. Article 41(1), (a), (b) and (d) of DORA
+foresee that, as part of the notification of
+its intention to comply with the
+recommendations, the CTPP provides the
+LO with a remediation plan. The
+remediation plan is requested from the
+CTPP in accordance with Article 37 of
+DORA which allows the LO to require the
+CTPP to provide all information necessary
+for the LO to carry out its duties under
+DORA.
+Point 12.2: One stakeholder suggested that the The ESAs agree that recommendations Point 12.2 has been adjusted
+Implementation of the adequacy of implementation of the should be deemed as having been accordingly.
+remediation plan recommendations must be assessed adequately implemented where they are in
+based on adherence to the remediation accordance with the remediation plan
+plan. prepared by the CTPP.
+Point 12.3(a): One stakeholder suggested that the term The ESAs would like to clarify that the term Reference to Article 42(4) has been
+Transmission of “adoption” should be clarified and “adoption” in point 12.3(a) refers to the added to point 12.3(a).
+information where reference to the Level 1 text be added adoption by CAs of the notification to the
+CTPPs have not when referring to the “decision being FEs according to Article 42(4) and the
+endorsed in part or taken” to require FEs to adoption by CAs of the individual warnings
+entirely suspend/terminate the relevant issued by CAs according to Article 42(7).
+recommendations contractual arrangements with the CTPP.
+Scope of the Several stakeholders proposed to: The ESAs would like to clarify that the No change
+Guidelines scope of the Guidelines is limited to the
+• include a description and criteria for
+cooperation and information exchange
+the application of measures CAs can
+between ESAs and CAs. Other areas, such
+impose on financial entities as well
+as the measures CAs can impose on FEs
+as provide scenarios for the
+and the information exchange between
+measures;
+CAs and FEs, are outside the scope of the
+• provide guidance on how, what and Guidelines.
+when the CAs should inform the FEs
+The ESAs acknowledge that it is important
+about recommendations issued by
+to ensure that FEs are continuously
+the LO; and
+informed about findings/conclusions
+arising from the oversight activities so that
+• describe how FEs should be FEs will be able to consider such
+continuously informed by CAs about information as part of upcoming
+the findings/conclusions of the outsourcing arrangements/processes
+oversight activities. ensuring on-going compliance.
+Annex: Table summarising information exchanges
+The following table summarises the information exchanges between the LO/ESAs (marked grey) and
+CAs (marked green) as indicated by these Guidelines. The table is not intended to introduce any new
+guidance, but to reflect the guidance included in the Guidelines. If there are any differences between
+the Guidelines and this table, the information included in the Guidelines prevails.
+text
+Section 1: General considerations
+LO, in consultation with relevant CAs, reduce or
+- - 2.1
+extend the timelines
+LO, in consultation with the JON, to present to the
+OF difference of opinions regarding the oversight - - 3.1
+cooperation and information exchanges
+Where possible, CAs and LO to make available to
+each other, relevant information from their - 4.1
+dialogue with NIS2 authorities
+Section 2: Designation of CTPPs
+Without undue 28(3)13
+delay following the
+CAs to make available the full register of 31(1)(a)14, (2), (6)15
+receipt of the 5.1
+information to the ESAs and (10)16
+register of
+information Article 35(2) of the
+ESAs’ founding
+CAs to make available to the ESAs any relevant - regulation17 5.2
+quantitative or qualitative information at their
+13 Article 28(3): As part of their ICT risk management framework, financial entities shall maintain and update at entity level,
+and at sub-consolidated and consolidated levels, a register of information in relation to all contractual arrangements on the
+use of ICT services provided by ICT third-party service providers…
+14 Article 31(1)(a): The ESAs, through the Joint Committee and upon recommendation from the Oversight Forum established
+pursuant to Article 32(1), shall designate the ICT third-party service providers that are critical for financial entities, following
+an assessment that takes into account the criteria specified in paragraph 2.
+15 Article 31(6): The Commission is empowered to adopt a delegated act in accordance with Article 57 to supplement this
+Regulation by specifying further the criteria referred to in paragraph 2 of this Article, by 17 July 2024.
+16 Article 31(10): For the purposes of paragraph 1, point (a), competent authorities shall, on a yearly and aggregated basis,
+transmit the reports referred to in Article 28(3), third subparagraph, to the Oversight Forum established pursuant to Article
+32....
+17 Article 35(2) of the ESAs’ founding regulation: The Authority may also request information to be provided at recurring
+intervals and in specified formats. Such requests shall, where possible, be made using common reporting formats.
+text
+disposal to facilitate the criticality assessment
+Upon request, CAs to make available additional
+available information acquired in their supervisory - 5.3
+activities
+ESAs to make available to CAs information about Within 10 working
+the TPP that submitted a request to be designated days following the 6.1
+as critical receipt from the TPP
+Within 10 working
+LO to share with CAs notification of the CTPP about
+days following the 6.2
+any changes to the structure of the management of 31(5)18, (11)19 and
+receipt from the (a)
+the subsidiary established in the Union (13)20
+CTPP
+Within 10 working
+LO to share with CAs information about the TPP
+days after the 6.2
+that has been designated as critical and the starting
+submission of the (b)
+date of designation
+notification
+Section 3: Core oversight activities
+Prior to the
+33(4)21
+LO to make available to CAs the draft annual finalisation of the
+Recital 3 of draft 7.1
+oversight plan annual oversight
+plan Regulatory
+Technical
+Within 30 working Standards on the
+CAs may provide comments on the draft annual
+days following the conduct of 7.3
+oversight plan
+receipt oversight activities
+in relation to the
+LO to make available to CAs, the annual oversight Within 10 working joint examination 7.4
+18 Article 31(5): … After designating an ICT third-party service provider as critical, the ESAs, through the Joint Committee,
+shall notify the ICT third-party service provider of such designation and the starting date as from which they will effectively
+be subject to oversight activities.
+19 Article 31(11): The ICT third-party service providers that are not included in the list referred to in paragraph 9 may request
+to be designated as critical in accordance with paragraph 1, point (a).
+20 Article 31(13): The critical ICT third-party service provider referred to in paragraph 12 shall notify the Lead Overseer of any
+changes to the structure of the management of the subsidiary established in the Union.
+21 Article 33(4): Based on the assessment referred to in paragraph 2, and in coordination with the Joint Oversight Network
+referred to in Article 34(1), the Lead Overseer shall adopt a clear, detailed and reasoned individual oversight plan describing
+the annual oversight objectives and the main oversight actions planned for each critical ICT third-party service provider. That
+plan shall be communicated yearly to the critical ICT third-party service provider.
+text
+plan and the multi-annual oversight plan. days following the teams under DORA
+adoption
+Without undue
+LO to make available to CAs any material updates to
+delay following the
+the annual oversight plan and the multi-annual 7.5
+adoption of the
+oversight plan
+updates
+Within 30 working
+CAs may provide comments on the material
+days following the 7.5
+updates to the annual oversight plan
+receipt
+At least 3 weeks
+before the start of
+the investigation or
+inspection
+LO to confirm to the CAs of the identity of the
+Or 36(1), 38(5)22 and
+authorised persons for the investigation or 8.1
+39(3)23
+inspection With the shortest
+possible delay in
+case of an urgent
+investigation or
+inspection
+LO to inform CAs where the authorised persons find
+that a CTPP opposes an inspection, including
+- 39(7)24 8.3
+imposing any unjustified conditions to the
+inspection
+22 Article 38(5): In good time before the start of the investigation, the Lead Overseer shall inform competent authorities of
+the financial entities using the ICT services of that critical ICT third-party service provider of the envisaged investigation and
+of the identity of the authorised persons.
+23 Article 39(3): In good time before the start of the inspection, the Lead Overseer shall inform the competent authorities of
+the financial entities using that ICT third-party service provider.
+24 Article 39(7): Where the officials and other persons authorised by the Lead Overseer find that a critical ICT third-party
+service provider opposes an inspection ordered pursuant to this Article, the Lead Overseer shall inform the critical ICT third-
+party service provider of the consequences of such opposition, including the possibility for competent authorities of the
+relevant financial entities to require financial entities to terminate the contractual arrangements concluded with that critical
+ICT third-party service provider.
+text
+Within 10 working
+days following the
+LO to make available to the JON and the CAs,
+adoption of the 36(1)25,37(1)26 and
+relevant scope of the request for information 9.1
+request for 37(5)27
+submitted to the CTPP
+information to the
+CTPP
+33(4)28
+LO to make available to CAs of: Article 3(2), letter l
+• major incidents with direct/indirect impact on of Draft regulatory
+FEs when reported by the CTPP (upon request technical
+by LO); standards on the
+harmonisation of
+• relevant changes in the strategy of the CTPP on conditions
+- 9.2
+ICT third-party risk; enabling the
+• events that could represent important risk to conduct of the
+the provision of ICT services; oversight activities
+under Article 41(1)
+• reasoned statement from the CTPP evidencing points (a), b) and
+the expected impact of the draft oversight plan. (d) of Regulation
+(EU) 2022/2554
+CAs to make available to the LO, communications of - 33(1)29 9.3
+the CTPP with the CAs for the purposes of all
+25 Article 36(1): When oversight objectives cannot be attained by means of interacting with the subsidiary set up for the
+purpose of Article 31(12), or by exercising oversight activities on premises located in the Union, the Lead Overseer may
+exercise the powers, referred to in the following provisions, on any premises located in a third-country which is owned, or
+used in any way, for the purposes of providing services to Union financial entities, by a critical ICT third party service provider,
+in connection with its business operations, functions or services, including any administrative, business or operational offices,
+premises, lands, buildings or other properties…
+26 Article 37(1): The Lead Overseer may, by simple request or by decision, require critical ICT third-party service providers to
+provide all information that is necessary for the Lead Overseer to carry out its duties under this Regulation, including all
+relevant business or operational documents, contracts, policies, documentation, ICT security audit reports, ICT-related
+incident reports, as well as any information relating to parties to whom the critical ICT third-party service provider has
+outsourced operational functions or activities.
+27 The Lead Overseer shall, without delay, transmit a copy of the decision to supply information to the competent authorities
+of the financial entities using the services of the relevant critical ICT third-party service providers and to the JON.
+28 Article 33(4), third subparagraph: Upon receipt of the draft oversight plan, the critical ICT third-party service provider may
+submit a reasoned statement within 15 calendar days evidencing the expected impact on customers which are entities falling
+outside of the scope of this Regulation and where appropriate, formulating solutions to mitigate risks.
+29 Article 33(1): The Lead Overseer shall conduct the oversight of the assigned critical ICT third party service providers and
+shall be, for the purposes of all matters related to the oversight, the primary point of contact for those critical ICT third party
+service providers.
+text
+matters related to the oversight
+Section 4: Follow-up of the recommendations
+LO to make available to CAs:
+• notification of CTPP to follow recommendations;
+• the CTPP’s remediation plan; Within 10 working
+11.1
+days following the
+• the reasoned explanation of the CTPP for not a)
+receipt by the LO
+following the recommendations; and
+35(1)(c)30 and
+• the report specifying the actions taken or 42(1)31
+remedies implemented by the CTPP
+LO to make available to CAs, the fact that the CTPP Within 10 working
+failed to send the notification within 60 calendar days after the 11.1
+days after the issuance of recommendations to the expiration of the 60 b)
+CTPP calendar days
+LO to make available to CAs: Within 10 working 35(1)(c), 35(6)32,
+11.1
+days following the 35(10)33, 42(1),
+• assessment as to whether the CTPP’s c)
+adoption by the LO 42(8)(a-d)34
+explanation for not following the LO’s
+30 Article 35(1)(c): The Lead Overseer has the power to request, after the completion of the oversight activities, reports
+specifying the actions that have been taken or the remedies that have been implemented by the critical ICT third party service
+provider in relation to the recommendations issued.
+31 Article 42(1): Within 60 calendar days of the receipt of the recommendations issued by the Lead Overseer, critical ICT third
+party service providers shall either notify the Lead Overseer of their intention to follow the recommendations or provide a
+reasoned explanation for not following such recommendations.
+32 Article 35(6): In the event of whole or partial non-compliance with the measures required to be taken pursuant to the
+exercise of the powers under paragraph 1, points (a), (b) and (c), and after the expiry of a period of at least 30 calendar days
+from the date on which the critical ICT third-party service provider received notification of the respective measures, the Lead
+Overseer shall adopt a decision imposing a periodic penalty payment to compel the critical ICT third-party service provider
+to comply with those measures.
+33 Article 35(10): The Lead Overseer shall disclose to the public every periodic penalty payment that has been imposed, unless
+such disclosure would seriously jeopardise the financial markets or cause disproportionate damage to the parties involved.
+34 Article 42(8): Upon receiving the reports referred to in Article 35(1), point (c), competent authorities, when taking a
+decision as referred to in paragraph 6 of this Article, shall take into account the type and magnitude of risk that is not
+addressed by the critical ICT third-party service provider, as well as the seriousness of the non-compliance, having regard to
+the following criteria:
+(a) the gravity and the duration of the non-compliance;
+(b) whether the non-compliance has revealed serious weaknesses in the critical ICT third-party service provider’s procedures,
+management systems, risk management and internal controls;
+(c) whether a financial crime was facilitated, occasioned or is otherwise attributable to the non-compliance;
+(d) whether the non-compliance has been intentional or negligent.
+text
+recommendations is deemed sufficient and, if
+so, the LO’s decision concerning amendment of
+recommendations;
+• assessment of the reports specifying the actions
+taken or remedies implemented by the CTPP;
+• decision imposing a periodic penalty payment
+on the CTPP;
+• assessment as to whether the refusal of a CTPP
+to endorse recommendations could adversely
+impact a large number of financial entities, or a
+significant part of the financial sector
+CAs to make available to LO:
+• notification to the financial entity of the
+possibility of a decision being taken;
+Within 10 working
+42(4)35, (7)36 and 11.2
+• individual warnings issued by CAs and relevant days following the
+(10)37 a)
+information which allows the LO to assess adoption by the CA
+whether such warnings have resulted in
+consistent approaches mitigating the potential
+risk to financial stability
+Where possible, CAs to make available to LO, Within 10 working
+11.2
+outcome of the consultation with NIS2 authorities days following the 42(5)38
+b)
+prior to taking a decision. consultation
+35 Article 42(4): Where a competent authority deems that a financial entity fails to take into account or to sufficiently address
+within its management of ICT third-party risk the specific risks identified in the recommendations, it shall notify the financial
+entity of the possibility of a decision being taken, within 60 calendar days of the receipt of such notification, pursuant to
+paragraph 6, in the absence of appropriate contractual arrangements aiming to address such risks.
+36 Article 42(7): Where a critical ICT third-party service provider refuses to endorse recommendations, based on a divergent
+approach from the one advised by the Lead Overseer, and such a divergent approach may adversely impact a large number
+of financial entities, or a significant part of the financial sector, and individual warnings issued by competent authorities have
+not resulted in consistent approaches mitigating the potential risk to financial stability, the Lead Overseer may, after
+consulting the Oversight Forum, issue non-binding and non-public opinions to competent authorities, in order to promote
+consistent and convergent supervisory follow-up measures, as appropriate.
+37 Article 42(10): Competent authorities shall regularly inform the Lead Overseer on the approaches and measures taken in
+their supervisory tasks in relation to financial entities as well as on the contractual arrangements concluded by financial
+entities where critical ICT third party service providers have not endorsed in part or entirely recommendations addressed to
+them by the Lead Overseer.
+38 Article 42(5): Upon receiving the reports referred to in Article 35(1), point (c), and prior to taking a decision as referred to
+in paragraph 6 of this Article, competent authorities may, on a voluntary basis, consult the competent authorities designated
+or established in accordance with Directive (EU) 2022/2555 responsible for the supervision of an essential or important entity
+subject to that Directive, which has been designated as a critical ICT third-party service provider.
+text
+CAs to make available to LO:
+• the material changes to existing contractual Within 10 working
+arrangements of financial entities with CTPPs days following the
+11.2
+made to address the risks identified in the receipt of the 28 and 42(10)39
+c)
+recommendations; information from
+financial entities
+• the start of executing exit strategies and
+transition plans of the financial entities
+CAs to inform LO of:
+• intention to notify a financial entity of the
+possibility of a decision being taken if the
+financial entity does not adopt appropriate
+contractual arrangements to address the - 12.1
+specific risks identified in the recommendations;
+• all relevant information regarding the decision;
+• whether they intend to carry out an urgent
+decision
+42(4) and (10)
+Within 10 working
+days from the
+receipt of the
+information referred
+LO to make available to CAs, non-binding
+to in GL 12.1
+assessment of potential impact the decision might
+12.2
+have for the CTPP whose service would be or
+temporarily suspended or terminated
+With the shortest
+possible delay in
+case of an urgent
+decision
+39 Article 42(10): Competent authorities shall regularly inform the Lead Overseer on the approaches and measures taken in
+their supervisory tasks in relation to financial entities as well as on the contractual arrangements concluded by financial
+entities where critical ICT third-party service providers have not endorsed in part or entirely recommendations addressed to
+them by the Lead Overseer.
+
+
+######## NORMA: Joint Guidelines on the estimation of aggregated costs/losses caused by major ICT-related incidents  (id EBA-8edbe0bc94)
+
+=== K266 | [Premessa] JC 2024 34
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+JC 2024 34
+
+=== K267 | [par. 5] June 2024
+5 June 2024
+Final Report
+Joint Guidelines
+on the estimation of aggregated annual costs and losses caused by
+major ICT-related incidents under Regulation (EU) 2022/2554
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Contents
+
+=== K268 | [par. 2] Background and rationale 5
+2. Background and rationale 5
+Background 5
+Rationale 5
+3. Joint Guidelines on the estimation of aggregated annual costs and losses caused by major
+ICT-related incidents 8
+Status of these Joint Guidelines 8
+Reporting Requirements 8
+Title I - Subject matter, scope, addressees, and definitions 9
+Subject matter and Scope of application 9
+Addressees 9
+Definitions 9
+Title II- Implementation 9
+Date of application 9
+Title III- Provisions on the estimation of aggregated annual costs and losses of major ICT-related
+incidents 10
+Annex: Reporting template for gross costs and losses and financial recoveries in a reference year
+
+=== K271 | [par. 1] Executive Summary
+1. Executive Summary
+Article 11(11) of Regulation 2022/2554 on digital operational resilience for the financial sector
+(DORA) mandates the European Supervisory Authorities (ESAs), to develop ‘common guidelines on
+the estimation of aggregated annual costs and losses caused by major ICT-related incidents’. These
+Guidelines aim at harmonising the estimation by financial entities of their aggregated annual costs
+and losses caused by major information and communication technology (ICT)-related incidents
+according to Article 11(10) DORA.
+In view of the ESAs, this mandate is closely interlinked with the DORA mandates conferred to the
+ESAs under Article 18(3) on incident classification and under Article 20 on reporting of incidents as
+these also require an assessment of costs and losses of ICT-related incidents. Consequently, the
+ESAs seek to achieve consistency across these mandates to avoid contradictions, increase
+comparability of the reported figures under the different mandates and, in case the competent
+authorities request such information from the financial entities, reduce the reporting burden for
+financial entities. All the criteria in the RTS on classification, including, but not limited to, the one
+on ‘economic impact’, are designed to ensure proportionality, meaning that small financial entities
+are likely to classify ICT-related incidents as “major” less frequently than bigger financial entities.
+Proportionality is thereby embedded in all other mandates that build on the classification of ICT-
+related incidents as major, including these Guidelines.
+In fulfilment of the mandate, the Guidelines therefore set out that financial entities:
+• apply the same approach as the regulatory technical standard specifying the criteria for the
+classification of ICT-related incidents under Article 18(3) DORA for assessing gross costs and
+losses and to apply the same approach as the forthcoming technical standards on incident
+reporting under Article 20 DORA for assessing the financial recoveries of major ICT-related
+incidents;
+• include only those ICT-related incidents that have been classified as major and for which
+the financial entity has provided a final incident report according to Article 19(4)(c) DORA
+in the reference year, or submitted in previous years if it had an impact on the costs and
+losses of that reference year; and
+• report the breakdown of the gross costs and losses and financial recoveries by major ICT-
+related incident to substantiate the aggregate figures.
+The ESAs conducted a public consultation on a draft version of the Guidelines from November 2023
+to March 2024 and received seventy consultation responses. After assessing these responses, the
+ESAs decided to review their proposal how to set the reference year to allow for more flexibility for
+financial entities, that will also reduce their reporting burden. To further limit the reporting burden,
+the ESAs also decided to request only the estimation of gross costs and losses, not net costs and
+losses, as the competent authorities can calculate those by themselves.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Next steps
+The Joint Guidelines will be translated into the official EU languages and published on the ESAs
+websites. The deadline for competent authorities to report whether they comply with the
+Guidelines will be two months after the publication of the translations. The Guidelines should apply
+from 17 January 2025.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+
+=== K272 | [par. 2 (2)] Background and rationale
+2. Background and rationale
+Background
+1. Article 11(11) of Regulation 2022/2554 on digital operational resilience for the financial sector
+(DORA) mandates the European Supervisory Authorities (ESAs), which consist of the European
+Banking Authority (EBA), the European Insurance and Occupational Pensions Authority (EIOPA)
+and the European Securities and Markets Authority (ESMA), to develop ‘common guidelines
+on the estimation of aggregated annual costs and losses caused by major ICT-related
+incidents’. 1 These Guidelines aim at harmonising the estimation by financial entities of their
+aggregated annual costs and losses caused by major information and communication
+technology (ICT)-related incidents according to Article 11(10) DORA, which are then to be
+submitted by financial entities, other than microenterprises, to their competent authority (CA)
+upon its request. Costs and losses incurred by the financial entities from non-major ICT-related
+incidents are not in the scope of these Guidelines.
+2. In fulfilment of the aforementioned mandate and related provisions and recitals, the ESAs
+published on 27 November 2023 a Consultation Paper (CP), which set out the ESA’s proposals
+for the Guidelines. The CP laid out the proposed content on how to estimate the annual costs
+and losses, how to define the one-year period and which figures to use for the estimation of
+costs and losses. It concludes with a proposal on the aggregation and estimation of gross and
+net costs and losses incurred across major ICT-related incidents. A public hearing was held on
+23 January 2023 before the end of the consultation period on 4 March 2024, by which time the
+ESAs had received seventy responses which were assessed in detail, as presented in the
+feedback table in section 4.2 of this Final Report.
+3. The Rationale section below provides an overview of the key changes that have been made
+after the public consultation of the draft Guidelines originally proposed.
+Rationale
+4. The respondents to the public consultation commented on all aspects of the proposed draft
+Guidelines. The key points raised that led to changes to the draft Guidelines are a) reviewing
+the reference year for which financial entities should provide an estimation to the competent
+authority; and b) limiting the costs and losses that should be reported to the competent
+authorities. These two points are discussed in this section. Further comments were received
+that led to clarifications in the Guidelines, but not to significant changes, as well as comments
+that did not lead to any changes. These comments and the ESAs’ analyses of them are
+presented in detail in the feedback table in section 4.2.
+https://eur-lex.europa.eu/eli/reg/2022/2554/oj
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Reviewing the reference year for which financial entities should provide an estimation
+5. Several respondents argued to allow for reporting by calendar year and based on supervisory
+reporting or internal risk management figures instead of reporting by financial year and based
+on financial statements, because:
+• Financial accounts do not include the types of costs that are listed in the RTS on
+classification while data on operational risk losses do;
+• Reporting requirements under the CRR operational risk framework and DORA should be
+harmonised;
+• Asset managers already use annual cost estimates for risk management purposes on a
+calendar-year basis. Reporting for the financial year would lead to an additional burden for
+them.
+6. The ESAs’ initial proposal in the Consultation Paper aimed at limiting the reporting burden for
+financial entities, as many of them are not subject to regular reporting requirements like credit
+institutions that report on operational risks. The responses to the public consultation
+confirmed that these entities overwhelmingly support the possibility to base the estimations
+on accounting figures, for which it is necessary to stick to the accounting year.
+7. Nevertheless, the ESAs acknowledge that especially for credit institutions and other financial
+entities that have already established an operational risk framework, it makes more sense to
+provide the reporting on already existing reporting requirements for operational risk.
+8. Consequently, the ESAs have decided to amend the Guidelines to allow financial entities to
+choose which reference year they intend to use. However, once they have decided whether
+they will report based on the calendar year or the accounting year, financial entities should
+also provide future annual reports on the same type of year. If a financial entity wanted to
+change its decision, it should notify the competent authority, who would have a 2-month
+period to object to the change of decision. This approach to provide flexibility on which year
+to use will make it simpler for financial entities to choose the most appropriate and easily
+accessible data source they have. This will especially benefit financial entities that have such
+information available via their supervisory reporting, for instance credit institutions.
+Limiting the costs and losses that should be reported to the competent authorities
+9. Some respondents argued to only include the gross costs while others argued to only include
+the net costs in the estimation. The same applies to the reporting of the gross and net costs
+and losses and to the reporting template. The gross costs are the costs or losses that the
+financial entity paid or booked. The net costs are a simple subtraction of financial recoveries
+from the gross costs and losses. As such, the ESAs are of the view that competent authorities
+can themselves calculate the net costs and losses. Consequently, the ESAs have arrived at the
+view that the requirement to include and report the net costs and losses can be deleted from
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+the Guidelines to simplify the reporting requirements for financial entities. However, the
+estimate of the financial recoveries has been maintained in the Guidelines, in addition to the
+gross costs and losses.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+
+=== K273 | [par. 3] Joint Guidelines on the estimation of
+3. Joint Guidelines on the estimation of
+aggregated annual costs and losses
+caused by major ICT-related incidents
+Status of these Joint Guidelines
+This document contains Joint Guidelines issued pursuant to Article 16 of Regulation (EU) No
+1093/2010 2; Article 16 of Regulation (EU) No 1094/2010 3; and Article 16 of Regulation (EU) No
+1095/2010 4 - ‘the ESAs’ Regulations’. In accordance with Article 16(3) of the respective ESAs’
+Regulations, competent authorities and financial institutions must make every effort to comply
+with the Guidelines.
+Joint Guidelines set out the ESAs’ view of appropriate supervisory practices within the European
+System of Financial Supervision or of how Union law should be applied in a particular area.
+Competent authorities to whom the Joint Guidelines apply should comply by incorporating them
+into their supervisory practices as appropriate (e.g. by amending their legal framework or their
+supervisory processes), including where the Joint Guidelines are directed primarily at institutions.
+Reporting Requirements
+In accordance with Article 16(3) of the ESAs’ Regulations, competent authorities must notify the
+respective ESA whether they comply or intend to comply with these Joint
+Guidelines/Recommendations, or otherwise with reasons for non-compliance, by 19.05.2025. In
+the absence of any notification by this deadline, competent authorities will be considered by the
+respective ESA to be non-compliant. Notifications should be sent to compliance@eba.europa.eu,
+compliance@eiopa.europa.eu and DORA@esma.europa.eu with the reference ‘JC/GL/2024/34’. A
+template for notifications is available on the ESAs’ websites. Notifications should be submitted by
+persons with appropriate authority to report compliance on behalf of their competent authorities.
+Notifications will be published on the ESAs’ websites, in line with Article 16(3).
+Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November 2010 establishing a
+European Supervisory Authority (European Banking Authority), amending Decision No 716/2009/EC and repealing
+Commission Decision 2009/78/EC, (OJ L 331, 15.12.2010, p.12)
+Regulation (EU) No 1094/2010 of the European Parliament and of the Council of 24 November 2010 establishing a
+European Supervisory Authority (European Insurance and Occupational Pensions Authority), amending Decision
+No 716/2009/EC and repealing Commission Decision 2009/79/EC, (OJ L 331, 15.12.2010, p. 48–83)
+Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November 2010 establishing a
+European Supervisory Authority (European Securities and Markets Authority), amending Decision No 716/2009/EC and
+repealing Commission Decision 2009/77/EC, (OJ L 331, 15.12.2010, p. 84–119)
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Title I - Subject matter, scope, addressees, and definitions
+Subject matter and Scope of application
+1. These guidelines are aimed at fulfilling the mandate given to the ESAs under Article 11(11) of
+Regulation (EU) 2022/2554 5, to develop common guidelines on the estimation of aggregated
+annual costs and losses of major ICT-related incidents referred to Article 11(10) of that
+Regulation. These guidelines also specify a common template for the submission of the
+aggregated annual costs and losses.
+Addressees
+2. These guidelines are addressed to competent authorities as defined in Article 46 of Regulation
+2022/2554 and to financial institutions as defined in Article 4(1) of Regulation (EU) 1093/2010,
+Article 4(1) of Regulation (EU) 1094/2010 and Article 4(1) of Regulation (EU) 1095/2010 .
+Definitions
+3. Terms used and defined in Regulation (EU) 2022/2554 have the same meaning in these
+guidelines.
+Title II- Implementation
+Date of application
+4. These Guidelines apply from 19.05.2025.
+Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational
+resilience for the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014,
+(EU) No 909/2014 and (EU) 2016/1011, (OJ L 333, 27.12.2022, p. 1–79)
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Title III- Provisions on the estimation of aggregated annual costs
+and losses of major ICT-related incidents
+5. Financial entities should estimate the aggregate annual costs and losses of major ICT-related
+incidents by aggregating the costs and losses for major ICT-related incidents that fall within the
+reference year for which the competent authority requested the estimation. The financial
+entity may choose whether the reference year should correspond to either the completed
+calendar year, or to the completed accounting year of the financial entity for which the financial
+entity has finalised its financial statements. Once a financial entity has decided whether it will
+provide the estimation based on the calendar year or its accounting year, such a decision should
+be applied to future estimations of aggregated annual costs and losses. The financial entity may
+change that decision by notifying the competent authority, and provided that the competent
+authority does not object within two months of receiving the notification. Financial entities
+should not include costs and losses related to those incidents that fall before or after that
+reference year.
+6. Financial entities should include in the estimation all ICT-related incidents that, irrespective of
+the reason, were classified as major in accordance with Commission Delegated Regulation [OJ
+L, 2024/1772, 25.6.2024] 6 on incident classification and
+(a) for which the financial entity has submitted a final report in accordance with Article 19(4)(c)
+Regulation (EU) 2022/2554 in the relevant reference year, or
+(b) any incident for which the financial entity submitted in previous reference years a final
+report in accordance with Article 19(4)(c) of Regulation (EU) 2022/2554 that had a
+quantifiable financial impact on the financial entity in the relevant reference year.
+7. Financial entities should estimate the aggregated annual costs and losses by applying the follow
+sequential steps:
+(a) estimate the costs and losses of each major ICT-related incident as referred to in paragraph
+6 individually. Those estimations should produce the gross costs and losses taking into
+account the types of costs and losses as set out in Article 7(1) and (2) of the Commission
+Delegated Regulation [OJ L, 2024/1772, 25.6.2024];
+(b) for each major ICT-related incident, financial entities should also estimate the financial
+recoveries as specified in Annex II to Commission Implementing Regulation [OJ L, 2025/302,
+20.2.2025] 7;
+Commission Delegated Regulation (EU) 2024/1772 of 13 March 2024 supplementing Regulation (EU) 2022/2554 of the
+European Parliament and of the Council with regard to regulatory technical standards specifying the criteria for the
+classification of ICT-related incidents and cyber threats, setting out materiality thresholds and specifying the details of
+reports of major incidents [OJ L, 2024/1772, 25.6.2024, ELI: http://data.europa.eu/eli/reg_del/2024/1772/oj]
+Commission Implementing Regulation (EU) 2025/302 of 23 October 2024 laying down implementing technical standards
+for the application of Regulation (EU) 2022/2554 of the European Parliament and of the Council with regard to the
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+(c) financial entities should aggregate the gross costs and losses and the financial recoveries
+across major ICT-related incidents.
+8. As basis for the estimations, financial entities should refer to the costs, losses and financial
+recoveries that are reflected in their financial statements such as the profit and loss account,
+or where applicable in their supervisory reporting, of the relevant reference year. In their
+estimation, financial entities should also include accounting provisions that are reflected in
+their financial statements such as the profit and loss account of the relevant reference year.
+Where accurate data is not available, financial entities should base their estimation on other
+available data and information to the extent possible.
+9. Financial entities should include adjustments on the costs and losses of an estimation that it
+submitted for a previous year in the estimation of the relevant reference year in which the
+adjustments are made.
+10. Financial entities should include in the report of their estimation of the aggregated annual costs
+and losses also the breakdown of gross costs and losses and of financial recoveries for each
+major ICT-related incident that were included in the aggregation.
+11. Financial entities should use the template in the Annex to submit to the competent authority
+the estimation of their aggregated annual costs and losses for the reference year. For each item
+under paragraph 6 and 9 that is included in the estimation of the reference year, financial
+entities should use the same incident reference codes provided by the financial entity as the
+ones used in the final report in accordance with Article 19(4)(c) of Regulation (EU) 2022/2554.
+standard forms, templates, and procedures for financial entities to report a major ICT-related incident and to notify a
+significant cyber threat [OJ L, 2025/302, 20.2.2025, ELI: http://data.europa.eu/eli/reg_impl/2025/302/oj]
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Annex: Reporting template for gross costs and losses and financial
+recoveries in a reference year
+Name of the financial entity
+Legal Entity Identifier
+Start and end date of the reference year of the
+financial entity
+Currency
+Number of Date of the Incident Gross costs and losses Recoveries of the
+incident submission of the reference of the incident in the incident in the
+final incident report number reference year (1000s of reference year
+units) (1000s of units)
+…
+Total for ----------- -----------
+reference
+year
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+
+=== K274 | [par. 4.1 (2)] Cost- Benefit Analysis / Impact Assessment
+4.1 Cost- Benefit Analysis / Impact Assessment
+As per Article 16(2) of Regulation (EU) No 1093/2010 (EBA Regulation), 1093/2010 (EIOPA
+Regulation) and 1095/2010 (ESMA regulation), any guidelines and recommendations developed by
+the ESAs shall be accompanied by an Impact Assessment (IA) which analyses ‘the potential related
+costs and benefits’.
+This analysis presents the IA of the main policy options included in this Consultation Paper (CP) on
+Joint Guidelines (RTS) on the estimation of aggregated annual costs and losses caused by major ICT-
+related incidents.
+A. Problem identification
+According to Article 11 of the Regulation 2022/2554 (DORA), financial entities, other than
+microenterprises, shall report to the competent authorities, upon their request, an estimation of
+aggregated annual costs and losses caused by major ICT-related incidents.
+The costs and losses can be measured in various ways and also may be estimated differently across
+sectors and financial entities. Without further specifications, the data on costs and losses reported
+by financial entities may be based on different methodologies and assumptions. These divergences
+can lead to a lack of comparability of data across financial entities and would undermine the
+usefulness of this information for the Competent Authorities with respect to their supervisory role.
+B. Policy objectives
+The general objective of the guidelines is to harmonise across sectors the estimation of the
+aggregated annual costs and losses caused by major ICT-related incidents to be reported to the
+CAs.
+More specific objectives of the guidelines are to enable CAs to use the reported aggregated costs
+and losses to improve their assessment of the efficiency of the ICT risk management framework of
+financial entities.
+C. Baseline scenario
+The baseline scenario is the situation when the current definitions and taxonomy is kept, without
+further changes or further harmonisation.
+With the entry into force of DORA, financial entities must comply with Article 11 of DORA. The
+above legal requirements form the baseline scenario of the impact assessment, i.e. the impact
+caused by DORA is not assessed within this impact assessment, which focuses only on areas where
+further specifications have been provided in the Guidelines.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+The following aspects have been considered when developing the Guidelines.
+Policy issue 1: Start and end dates for aggregating costs and losses
+Options considered
+Option A: CAs can specify start and end date, which may have to be calculated on other figures
+than the profit and loss statements
+Option B: Start and end date of accounting years, based on the profit and loss statement of that
+accounting year
+Option C: The financial entities can decide themselves whether they want to set the start and end
+dates of the reference year according to the calendar year or according to their accounting year,
+but they would need to stick to that decision.
+Option A, whereby the CA is free to specify the start and end date for the estimation, allows the CA
+to decide which period is most relevant for its purposes. The disadvantage of this approach is that
+depending on the CA request, the financial entities will need to recalculate the costs for the
+respective periods.
+Option B would be to set the start and end date to be identical with the accounting year of the
+financial entity. The advantage of this approach is that it would allow financial entities to base their
+estimates on existing figures from the profit and loss statement. The reporting of costs on losses
+based on the profit and loss statement will thus be the easiest to implement for the financial entity.
+However, as some financial entities already calculate the figures for their operational risk
+management based on the calendar year, this option would impose that these financial entities re-
+calculate the figures for their accounting years, if that is not identical to the calendar year.
+Option C would leverage on the most conveniently available data for financial entities as those that
+have already an operational risk management framework in place can re-use the data from that.
+Other financial entities that do not have such a framework in place could rely more on using their
+accounting figures, which will be a source of information for all financial entities. As financial
+entities should report consistently by calendar or accounting year over the years, this will ensure
+that the figures will be coherent for each financial entity over time, since it will rely on a similar
+established estimation methodology. As a result, in cases when data will be requested over several
+years, the information provided will be comparable and consistent over time.
+Considering the above arguments, Option C is the preferred one.
+Policy issue 2: Granularity of reported data
+Options considered
+Option A: Aggregated data per year only
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Option B: Also report the breakdown of the data per year by incident
+The mandate requires that financial entities report data on aggregated costs and losses, which
+would justify Option A. While this option entails reporting of one datapoint per financial entity per
+year, this figure may not be meaningful for the CA in case they would request the financial entities
+to report their estimations, since it may hide information on incidents of various sizes and incidents
+spanning over several years, for which the costs will be split across periods.
+Option B, whereby costs and losses are reported at incident level, has several advantages:
+- Costs and losses at incident level are more meaningful for the CA being reported separately
+for each incident;
+- In case of incidents spanning over multiple years, the CA would be able to reconstruct the
+chain of losses from one single incident incurred over several periods.
+Furthermore, Option B, despite requiring the reporting of disaggregated data, will not create
+additional material burden, since the raw data will be estimated at incident level, and therefore will
+already exist in a disaggregated form.
+Option B is therefore preferred.
+Cost and benefit analysis
+Overall, the guidelines are expected to provide advantages to both financial entities and competent
+authorities by clarifying the way aggregated costs and losses should be reported, without adding
+any additional material burden.
+Advantages Disadvantages
+Clarity on the way data is
+Financial entities None
+estimated
+Ensuring comparability of data
+across sectors and Member
+Competent authorities States None
+Ensuring the data is meaningful
+to the CA and usable
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+
+=== K275 | [par. 4.2 (2)] Feedback on the public consultation
+4.2 Feedback on the public consultation
+The ESAs publicly consulted on the draft proposal contained in the Consultation paper.
+The consultation period lasted for more than three months and ended on 4 March 2024. 70
+responses were received.
+This section presents a summary of the key points and other comments arising from the
+consultation, the analysis and discussion triggered by these comments and the actions taken to
+address them if deemed necessary. In many cases several industry bodies made similar comments
+or the same body repeated its comments in the response to different questions. In such cases, the
+comments, and ESAs’ analysis are included in the section of this paper where ESAs consider them
+most appropriate.
+Changes to the draft Guidelines have been incorporated as a result of the responses received during
+the public consultation.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Summary of the responses to the consultation and the ESAs’ analysis
+Feedback on responses to question 1: Do you agree with paragraph 7 and 9 of the Guidelines on the assessment of gross and net costs and losses of major ICT-
+related incidents? If not, please provide your reasoning and alternative approach(es) you would suggest.
+Comments Several respondents raised issues that relate to The comments raised do not relate to the Guidelines but to the RTS No change.
+relating to the on the classification of major ICT-related incidents (JC 2023 83) and
+- the types of costs to be analysed, such as how to
+RTS on major ICT- are consequently out of the scope of these Guidelines. The Guidelines
+define/ specify them, or whether opportunity costs
+related incident refer to these RTS in order to ensure consistency.
+can be included in the types of costs, or whether
+classification
+indirect costs can be excluded, or to remove certain
+types of costs and that there are too many types of
+costs to assess,
+- the approach to estimating these costs, such as
+whether estimates are acceptable, or that only
+external/exceptional costs should be considered,
+- that the threshold of 100,000 EUR for the
+economic impact criterion is too low, and
+- that the ’economic impact’ should not be part of
+the classification criterions.
+Include either net Some respondents argued to only include the gross The gross costs are the costs or losses that the financial entity paid or Paragraph 7 point (b) and (c) have been amended as
+or gross costs and costs while others argued to only include the net booked. The net costs are a simple subtraction of financial recoveries follows:
+losses, not both. costs. The same applies to the reporting of the gross from the gross costs and losses. As such, the competent authorities
+and net costs and losses and to the reporting can themselves calculate the net costs and losses. Consequently, the “b) for each major ICT-related incident, financial
+template. ESAs have arrived at the view that the requirement to include and entities should also calculate the net costs and losses
+report the net costs and losses can be deleted from the Guidelines to by deducting from the estimated gross costs and
+simplify the reporting requirements for financial entities. However,
+losses estimate the financial recoveries as specified in
+the estimate of the financial recoveries has been maintained in the
+Guidelines, in addition to the gross costs and losses. row 4.24 of the Annex II of the implementing
+technical standards on to Commission Implementing
+Regulation [OJ L, 2024/1772, 25.6.2024];
+c) financial entities should aggregate the gross costs
+and losses, and the financial recoveries and the net
+costs and losses across major ICT-related incidents.”
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Paragraph 10 has been amended as follows:
+“ Financial entities should include in the report of
+their estimation of the aggregated annual costs and
+losses also the breakdown of gross and net costs and
+losses and of financial recoveries for each major ICT-
+related incident that were included in the
+aggregation.”
+The template in the annex has been amended to
+delete the column “Net costs and losses of the
+incident in the accounting year”
+Adjustments to Several respondents asked to clarify how the The Guidelines require adjustments to be included in the following Paragraph 11 has been amended as follows:
+previous reports adjustments are to be conducted, for instance when years so that annual reports do not need to be updated. Also, the
+costs or losses are wrongly calculated and in the reports of following years will only need to be submitted if the „Financial entities should use the template in the
+case of costs and losses which become quantifiable competent authority requests it. Also, paragraph 9 is clear that Annex to report submit to the competent authority
+at a later time or if the financial entity wants to adjustments to reports of previous years should only be included in the estimation of aggregated annual costs and losses
+update the annual report at a later point in time. the report of the year in which the adjustments are made.
+their aggregated annual costs and losses for the
+One respondent also suggested to include a column
+The ESAs do not consider a separate column for the adjustments to reference year. For each item under paragraph 6 and
+in the annex to track the adjustments.
+be necessary. In case the economic impact of past incidents are 9 that is included in the estimation of the reference
+One respondent argued that adjustments should adjusted during the following year(s), the FEs should have to include
+year, financial entities should use the same incident
+only be made for incidents that occurred in the year again the incidents in the breakdown for each major ICT-related
+prior to the reference year as “tracking” the incident in their template (with the same incident reference numbers reference codes provided by the financial entity as
+incidents is burdensome. as the ones used the first time they have been reported), but the the ones used in the final report in accordance with
+value of gross costs and losses/recoveries would be limited to the Article 19(4)(c) of Regulation (EU) 2022/2554.”
+value of the adjustments. To make this clear, the ESAs have amended
+paragraph 11. The ESAs have decided to clarify to which incident The Annex has been amended to include the Legal
+reference code from the final incident report the FE should refer to Entity Identifier (LEI) of the financial entity.
+and also included in the Annex the LEI of the FEs to avoid any
+misunderstanding and for CAs to be capable of reconciling all the
+information provided across years.
+Considering the proposal to limit the time horizon for how long an
+entity should track an incident and include adjustments in the annual
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+report, the ESAs arrived at the view that one of the main advantages
+of the annual report for competent authorities is to understand the
+evolution of the costs and losses and financial recoveries over time.
+Furthermore, Article 17(2) DORA requires the financial entities to
+record all ICT-related incidents so such information should be
+available in any case. Consequently, the ESAs have rejected the
+proposal.
+Estimating costs Some respondents argued that estimating costs for The ESAs do not agree with this assessment, as financial entities need No change.
+by incidents is each incident individually is overly burdensome to be able to track the costs of the incidents in any case as they are
+overly since in the financial statements the costs and losses supposed to be able to assess the economic impact in accordance
+burdensome are already aggregated. with Article 18(1) point (f) DORA.
+Estimation of Five respondents argued that several types of costs Since the Guidelines detail that the annual report represents an No change.
+costs are difficult to estimate with reasonable accuracy estimation of costs and losses, the ESAs are of the view that the
+and propose to allow determining the costs on a Guidelines are sufficiently clear that an estimation is sufficient. Being
+best effort basis. more prescriptive may increase the burden for financial entities.
+Three respondents asked for more guidance on the Details of the elements to take into account in costs and losses
+estimation of costs and losses. estimations are given in Paragraph 7 of the GL, which also refers to
+the RTS on classification. Paragraph 8 of the GL only specifies the
+One respondent asked for further clarifications and
+source of estimates.
+examples on how the estimated costs have to be
+reflected. Where accurate data is not available for the valuation of some types
+of costs and losses, the financial entity should rely on estimated
+One respondent pointed to a discrepancy between
+values based on other available data and information to the extent

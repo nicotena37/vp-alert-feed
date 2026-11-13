@@ -1,0 +1,683 @@
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+=== K227 | [2] Oggetto e ambito di applicazione
+Art. 2
+Oggetto e ambito di applicazione
+1. Il presente decreto detta le disposizioni necessarie all'adeguamento del quadro normativo nazionale al regolamento DORA e al recepimento della direttiva DORA, nonchè a garantire il coordinamento
+con le vigenti disposizioni di settore.
+2. Il presente decreto individua, altresì, le disposizioni applicabili agli intermediari finanziari e a Bancoposta in materia di resilienza operativa digitale.
+3. Resta fermo quanto stabilito dal decreto-legge 21 settembre 2019, n. 105 , convertito, con modificazioni, dalla legge 18 novembre 2019, n. 133 , in materia di perimetro di sicurezza nazionale
+cibernetica, nei confronti dei soggetti di cui all'articolo 1, comma 2-bis, del medesimo decreto-legge n. 105 del 2019 .
+Note all'art. 2:
+- Si riporta il testo dell'articolo 1, commi da 1 a 2-bis, del citato decreto-legge 21 settembre 2019, n. 105 :
+«Art. 1 (Perimetro di sicurezza nazionale cibernetica). - 1. Al fine di assicurare un livello elevato di sicurezza delle reti, dei sistemi informativi e dei servizi informatici delle amministrazioni
+pubbliche, degli enti e degli operatori pubblici e privati aventi una sede nel territorio nazionale, da cui dipende l'esercizio di una funzione essenziale dello Stato, ovvero la prestazione di un
+servizio essenziale per il mantenimento di attività civili, sociali o economiche fondamentali per gli interessi dello Stato e dal cui malfunzionamento, interruzione, anche parziali, ovvero utilizzo
+improprio, possa derivare un pregiudizio per la sicurezza nazionale, è istituito il perimetro di sicurezza nazionale cibernetica.
+2. Entro quattro mesi dalla data di entrata in vigore della legge di conversione del presente decreto, con decreto del Presidente del Consiglio dei ministri, adottato su proposta del Comitato
+interministeriale per la cybersicurezza (CIC):
+a) sono definiti modalità e criteri procedurali di individuazione di amministrazioni pubbliche, enti e operatori pubblici e privati di cui al comma 1 aventi una sede nel territorio nazionale, inclusi
+nel perimetro di sicurezza nazionale cibernetica e tenuti al rispetto delle misure e degli obblighi previsti dal presente articolo; ai fini dell' individuazione, fermo restando che per gli Organismi
+di informazione per la sicurezza si applicano le norme previste dalla legge 3 agosto 2007, n. 124 , si procede sulla base dei seguenti criteri:
+1) il soggetto esercita una funzione essenziale dello Stato, ovvero assicura un servizio essenziale per il mantenimento di attività civili, sociali o economiche fondamentali per gli interessi dello
+Stato;
+2) l'esercizio di tale funzione o la prestazione di tale servizio dipende da reti, sistemi informativi e servizi informatici;
+2-bis) l'individuazione avviene sulla base di un criterio di gradualità, tenendo conto dell'entità del pregiudizio per la sicurezza nazionale che, in relazione alle specificità dei diversi settori di
+attività, può derivare dal malfunzionamento, dall'interruzione, anche parziali, ovvero dall'utilizzo improprio delle reti, dei sistemi informativi e dei servizi informatici predetti;
+b) sono definiti, sulla base di un'analisi del rischio e di un criterio di gradualità che tenga conto delle specificità dei diversi settori di attività, i criteri con i quali i soggetti di cui al
+comma 2-bis predispongono e aggiornano con cadenza almeno annuale un elenco delle reti, dei sistemi informativi e dei servizi informatici di cui al comma 1, di rispettiva pertinenza, comprensivo della
+relativa architettura e componentistica, fermo restando che, per le reti, i sistemi informativi e i servizi informatici attinenti alla gestione delle informazioni classificate, si applica quanto
+previsto dal regolamento adottato ai sensi dell' articolo 4, comma 3, lettera l), della legge 3 agosto 2007, n. 124 ; all'elaborazione di tali criteri provvede, adottando opportuni moduli
+organizzativi, il Tavolo interministeriale di cui all'articolo 6 del regolamento di cui al decreto del Presidente del Consiglio dei ministri 30 luglio 2020, n. 131 ; entro sei mesi dalla data della
+comunicazione, prevista dal comma 2-bis, a ciascuno dei soggetti iscritti nell'elenco di cui al medesimo comma, i soggetti pubblici e quelli di cui all' articolo 29 del codice dell'amministrazione
+digitale , di cui al decreto legislativo 7 marzo 2005, n. 82 , nonchè quelli privati, di cui al citato comma 2-bis, trasmettono tali elenchi all'Agenzia per la cybersicurezza nazionale, anche per le
+attività di prevenzione, preparazione e gestione di crisi cibernetiche affidate al Nucleo per la cybersicurezza; il Dipartimento delle informazioni per la sicurezza, l'Agenzia informazioni e sicurezza
+esterna (AISE) e l'Agenzia informazioni e sicurezza interna (AISI) ai fini dell'esercizio delle funzioni istituzionali previste dagli articoli 1, comma 3-bis , 4 , 6 e 7 della legge n. 124 del 2007 ,
+nonchè l'organo del Ministero dell'interno per la sicurezza e per la regolarità dei servizi di telecomunicazione di cui all' articolo 7-bis del decreto-legge 27 luglio 2005, n. 144 , convertito, con
+modificazioni, dalla legge 31 luglio 2005, n. 155 , accedono a tali elenchi per il tramite della piattaforma digitale di cui all'articolo 9, comma 1, del regolamento di cui al decreto del Presidente
+del Consiglio dei ministri n. 131 del 2020 , costituita presso l'Agenzia per la cybersicurezza nazionale.
+2-bis. L'elencazione dei soggetti individuati ai sensi del comma 2, lettera a), è contenuta in un atto amministrativo, adottato dal Presidente del Consiglio dei ministri, su proposta del CIC, entro
+trenta giorni dalla data di entrata in vigore del decreto del Presidente del Consiglio dei ministri di cui al comma 2. Il predetto atto amministrativo, per il quale è escluso il diritto di accesso,
+non è soggetto a pubblicazione, fermo restando che a ciascun soggetto è data, separatamente, comunicazione senza ritardo dell'avvenuta iscrizione nell'elenco. L'aggiornamento del predetto atto
+amministrativo è effettuato con le medesime modalità di cui al presente comma.
+(Omissis).».
+
+
+>>> LETTURA 1: nessun ambito, sigla C
+>>> LETTURA 2: nessun ambito, sigla C
+
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+=== K228 | [3] Autorità competenti DORA e partecipazione al forum di sorveglianza
+Art. 3
+Autorità competenti DORA e partecipazione al forum di sorveglianza
+1. Ai sensi dell'articolo 46 del regolamento DORA, la Banca d'Italia, la Commissione nazionale per la società e la borsa (Consob), l'Istituto per la vigilanza sulle assicurazioni (IVASS) e la
+Commissione di vigilanza sui fondi pensione (COVIP) sono le autorità competenti per il rispetto degli obblighi posti dal medesimo regolamento a carico dei soggetti vigilati dalle medesime autorità,
+secondo le rispettive attribuzioni di vigilanza.
+2. La Banca d'Italia è l'autorità competente per il rispetto degli obblighi posti dal regolamento DORA a carico di Cassa depositi e prestiti S.p.A.
+3. La Banca d'Italia è l'autorità competente per il rispetto degli obblighi posti dal presente decreto legislativo a carico degli intermediari finanziari e di Bancoposta.
+4. Ai fini della partecipazione al forum di sorveglianza di cui all'articolo 32 del regolamento DORA:
+a) la Banca d'Italia è l'autorità competente interessata di cui al paragrafo 4, lettera b), del citato articolo 32;
+b) la Consob partecipa in qualità di osservatore con un proprio rappresentante ai sensi del paragrafo 4, lettera d), del medesimo articolo 32;
+c) a seconda della tematica trattata, possono partecipare in qualità di osservatori con un proprio rappresentante ai sensi del paragrafo 4, lettera d), del medesimo articolo 32 anche l'IVASS e la
+COVIP.
+5. I protocolli di cui all'articolo 5, comma 1, del presente decreto possono disciplinare le modalità di partecipazione e lo scambio di informazioni relative al forum di sorveglianza.
+
+
+>>> LETTURA 1: nessun ambito, sigla O
+>>> LETTURA 2: nessun ambito, sigla O
+
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+=== K230 | [5] Protocolli d'intesa e scambio di informazioni
+Art. 5
+Protocolli d'intesa e scambio di informazioni
+1. Le Autorità competenti DORA individuano forme di coordinamento operativo e informativo tramite uno o più protocolli d'intesa, che garantiscono la tempestiva e completa condivisione dei dati e delle
+informazioni utili all'esercizio delle proprie funzioni di vigilanza, ivi incluse le informazioni sui gravi incidenti TIC, anche in relazione alle entità finanziarie soggette, ai sensi della normativa
+di settore, alla vigilanza di più Autorità. I protocolli d'intesa sono resi pubblici con le modalità stabilite dalle medesime Autorità.
+2. Per le finalità di cui al regolamento DORA, le Autorità competenti DORA stipulano protocolli di intesa con l'Agenzia per la cybersicurezza nazionale per regolare lo scambio di informazioni
+pertinenti, istituire forme di consulenza e assistenza tecnica reciproca e meccanismi di coordinamento efficaci e di risposta rapida nel caso di incidenti, nonchè specificare, se del caso, le modalità
+di coordinamento delle attività relative a soggetti essenziali o importanti, ai sensi della direttiva (UE) 2022/2555 , che siano stati designati come fornitori terzi critici di servizi TIC, a norma
+dell'articolo 31 del regolamento DORA. Le Autorità competenti DORA stipulano un apposito protocollo d'intesa con il Corpo della Guardia di finanza, ai sensi dell'articolo 19, paragrafo 6, lettera e),
+del regolamento DORA, per disciplinare lo scambio di informazioni relative alle segnalazioni e alle notifiche di cui all'articolo 4, per finalità di prevenzione, accertamento e repressione degli
+illeciti di natura economico finanziaria.
+3. Le informazioni acquisite dall'Agenzia per la cybersicurezza nazionale, anche sulla base dei protocolli di intesa di cui al comma 2, sono trasmesse agli organismi di informazione per la sicurezza
+di cui agli articoli 4 , 6 e 7 della legge 3 agosto 2007, n. 124 , per le loro finalità istituzionali, sulla base di intesa tra l'Agenzia per la cybersicurezza nazionale e gli stessi organismi di
+informazione per la sicurezza e, ove rilevanti per la difesa dello Stato, al Ministero della difesa, in qualità di Autorità nazionale di gestione delle crisi informatiche ai sensi dell' articolo 13
+del decreto legislativo 4 settembre 2024, n. 138 .
+4. Qualora l'Autorità nazionale competente NIS, in sede di vigilanza o di esecuzione, venga a conoscenza di una violazione degli obblighi di segnalazione di cui all'articolo 4 del presente decreto da
+parte di un'entità finanziaria, ne informa, senza indebito ritardo, le Autorità competenti DORA.
+Note all'art. 5:
+- Per i riferimenti alla direttiva (UE) 2022/2555 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , si vedano le note alle premesse.
+- Si riporta il testo degli articoli 4, 6, e 7 della legge 3 agosto 2007, n. 124 recante: «Sistema di informazione per la sicurezza della Repubblica e nuova disciplina del segreto», pubblicata nella
+Gazzetta Ufficiale n. 187 del 13 agosto 2007 :
+«Art. 4 (Dipartimento delle informazioni per la sicurezza). - 1. Per lo svolgimento dei compiti di cui al comma 3 è istituito, presso la Presidenza del Consiglio dei ministri, il Dipartimento delle
+informazioni per la sicurezza (DIS).
+2. Il Presidente del Consiglio dei ministri e l'Autorità delegata, ove istituita, si avvalgono del DIS per l'esercizio delle loro competenze, al fine di assicurare piena unitarietà nella
+programmazione della ricerca informativa del Sistema di informazione per la sicurezza, nonchè nelle analisi e nelle attività operative dei servizi di informazione per la sicurezza.
+3. Il DIS svolge i seguenti compiti:
+a) coordina l'intera attività di informazione per la sicurezza, verificando altresì i risultati delle attività svolte dall'AISE e dall'AISI, ferma restando la competenza dei predetti servizi
+relativamente alle attività di ricerca informativa e di collaborazione con i servizi di sicurezza degli Stati esteri;
+b) è costantemente informato delle operazioni di competenza dei servizi di informazione per la sicurezza e trasmette al Presidente del Consiglio dei ministri le informative e le analisi prodotte dal
+Sistema di informazione per la sicurezza;
+c) raccoglie le informazioni, le analisi e i rapporti provenienti dai servizi di informazione per la sicurezza, dalle Forze armate e di polizia, dalle amministrazioni dello Stato e da enti di ricerca
+anche privati; ferma l'esclusiva competenza dell'AISE e dell'AISI per l'elaborazione dei rispettivi piani di ricerca operativa, elabora analisi strategiche o relative a particolari situazioni; formula
+valutazioni e previsioni, sulla scorta dei contributi analitici settoriali dell'AISE e dell'AISI;
+d) elabora, anche sulla base delle informazioni e dei rapporti di cui alla lettera c), analisi globali da sottoporre al CISR, nonchè progetti di ricerca informativa, sui quali decide il Presidente del
+Consiglio dei ministri, dopo avere acquisito il parere del CISR;
+d-bis) sulla base delle direttive di cui all'articolo 1, comma 3-bis, nonchè delle informazioni e dei rapporti di cui alla lettera c) del presente comma, coordina le attività di ricerca informativa
+finalizzate a rafforzare la protezione cibernetica e la sicurezza informatica nazionali;
+e) promuove e garantisce, anche attraverso riunioni periodiche, lo scambio informativo tra l'AISE, l'AISI e le Forze di polizia; comunica al Presidente del Consiglio dei ministri le acquisizioni
+provenienti dallo scambio informativo e i risultati delle riunioni periodiche;
+f) trasmette, su disposizione del Presidente del Consiglio dei ministri, sentito il CISR, informazioni e analisi ad amministrazioni pubbliche o enti, anche ad ordinamento autonomo, interessati
+all'acquisizione di informazioni per la sicurezza;
+g) elabora, d'intesa con l'AISE e l'AISI, il piano di acquisizione delle risorse umane e materiali e di ogni altra risorsa comunque strumentale all'attività dei servizi di informazione per la
+sicurezza, da sottoporre all'approvazione del Presidente del Consiglio dei ministri;
+h) sentite l'AISE e l'AISI, elabora e sottopone all'approvazione del Presidente del Consiglio dei ministri lo schema del regolamento di cui all'articolo 21, comma 1;
+i) esercita il controllo sull'AISE e sull'AISI, verificando la conformità delle attività di informazione per la sicurezza alle leggi e ai regolamenti, nonchè alle direttive e alle disposizioni del
+Presidente del Consiglio dei ministri. Per tale finalità, presso il DIS è istituito un ufficio ispettivo le cui modalità di organizzazione e di funzionamento sono definite con il regolamento di cui al
+comma 7. Con le modalità previste da tale regolamento è approvato annualmente, previo parere del Comitato parlamentare di cui all'articolo 30, il piano annuale delle attività dell'ufficio ispettivo.
+L'ufficio ispettivo, nell'ambito delle competenze definite con il predetto regolamento, può svolgere, anche a richiesta del direttore generale del DIS, autorizzato dal Presidente del Consiglio dei
+ministri, inchieste interne su specifici episodi e comportamenti verificatisi nell'ambito dei servizi di informazione per la sicurezza;
+l) assicura l'attuazione delle disposizioni impartite dal Presidente del Consiglio dei ministri con apposito regolamento adottato ai sensi dell'articolo 1, comma 2, ai fini della tutela amministrativa
+del segreto di Stato e delle classifiche di segretezza, vigilando altresì sulla loro corretta applicazione;
+m) cura le attività di promozione e diffusione della cultura della sicurezza e la comunicazione istituzionale;
+n) impartisce gli indirizzi per la gestione unitaria del personale di cui all'articolo 21, secondo le modalità definite dal regolamento di cui al comma 1 del medesimo articolo;
+n-bis) gestisce unitariamente, ferme restando le competenze operative dell'AISE e dell'AISI, gli approvvigionamenti e i servizi logistici comuni.
+4. Fermo restando quanto previsto dall' articolo 118-bis del codice di procedura penale , introdotto dall'articolo 14 della presente legge, qualora le informazioni richieste alle Forze di polizia, ai
+sensi delle lettere c) ed e) del comma 3 del presente articolo, siano relative a indagini di polizia giudiziaria, le stesse, se coperte dal segreto di cui all' articolo 329 del codice di procedura
+penale , possono essere acquisite solo previo nulla osta della autorità giudiziaria competente.
+L'autorità giudiziaria può trasmettere gli atti e le informazioni anche di propria iniziativa.
+5. La direzione generale del DIS è affidata ad un dirigente di prima fascia o equiparato dell'amministrazione dello Stato, la cui nomina e revoca spettano in via esclusiva al Presidente del Consiglio
+dei ministri, sentito il CISR. L'incarico ha la durata massima di otto anni ed è conferibile, senza soluzione di continuità, anche con provvedimenti successivi, ciascuno dei quali di durata non
+superiore al quadriennio. Per quanto previsto dalla presente legge, il direttore del DIS è il diretto referente del Presidente del Consiglio dei ministri e dell'Autorità delegata, ove istituita, salvo
+quanto previsto dall'articolo 6, comma 5, e dall'articolo 7, comma 5, ed è gerarchicamente e funzionalmente sovraordinato al personale del DIS e degli uffici istituiti nell'ambito del medesimo
+Dipartimento.
+6. Il Presidente del Consiglio dei ministri, sentito il direttore generale del DIS, nomina uno o più vice direttori generali; il direttore generale affida gli altri incarichi nell'ambito del
+Dipartimento, ad eccezione degli incarichi il cui conferimento spetta al Presidente del Consiglio dei ministri.
+7. L'ordinamento e l'organizzazione del DIS e degli uffici istituiti nell'ambito del medesimo Dipartimento sono disciplinati con apposito regolamento.
+8. Il regolamento previsto dal comma 7 definisce le modalità di organizzazione e di funzionamento dell'ufficio ispettivo di cui al comma 3, lettera i), secondo i seguenti criteri:
+a) agli ispettori è garantita piena autonomia e indipendenza di giudizio nell'esercizio delle funzioni di controllo;
+b) salva specifica autorizzazione del Presidente del Consiglio dei ministri o dell'Autorità delegata, ove istituita, i controlli non devono interferire con le operazioni in corso;
+c) sono previste per gli ispettori specifiche prove selettive e un'adeguata formazione;
+d) non è consentito il passaggio di personale dall'ufficio ispettivo ai servizi di informazione per la sicurezza;
+e) gli ispettori, previa autorizzazione del Presidente del Consiglio dei ministri o dell'Autorità delegata, ove istituita, possono accedere a tutti gli atti conservati presso i servizi di informazione
+per la sicurezza e presso il DIS; possono altresì acquisire, tramite il direttore generale del DIS, altre informazioni da enti pubblici e privati.».
+«Art. 6 (Agenzia informazioni e sicurezza esterna). - 1. È istituita l'Agenzia informazioni e sicurezza esterna (AISE), alla quale è affidato il compito di ricercare ed elaborare nei settori di
+competenza tutte le informazioni utili alla difesa dell'indipendenza, dell'integrità e della sicurezza della Repubblica, anche in attuazione di accordi internazionali, dalle minacce provenienti
+dall'estero.
+2. Spettano all'AISE, inoltre, le attività in materia di controproliferazione concernenti i materiali strategici, nonchè le attività di informazione per la sicurezza, che si svolgono al di fuori del
+territorio nazionale, a protezione degli interessi politici, militari, economici, scientifici e industriali dell'Italia.
+3. È, altresì, compito dell'AISE individuare e contrastare al di fuori del territorio nazionale le attività di spionaggio dirette contro l'Italia e le attività volte a danneggiare gli interessi
+nazionali.
+4. L'AISE può svolgere operazioni sul territorio nazionale soltanto in collaborazione con l'AISI, quando tali operazioni siano strettamente connesse ad attività che la stessa AISE svolge all'estero. A
+tal fine il direttore generale del DIS provvede ad assicurare le necessarie forme di coordinam
+>>> LETTURA 1: nessun ambito, sigla O
+>>> LETTURA 2: nessun ambito, sigla O
+
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+=== K233.1 | [8] Poteri di vigilanza (pezzo 1 di 2)
+Art. 8
+Poteri di vigilanza
+1. Ai fini dello svolgimento dei compiti previsti dal regolamento DORA, dagli atti delegati e dalle norme tecniche di regolamentazione e di attuazione del medesimo regolamento, nonchè dal presente
+decreto e dalle relative disposizioni attuative, le Autorità competenti DORA, secondo le rispettive competenze, dispongono nei confronti delle entità finanziarie, di Cassa depositi e prestiti S.p.A.,
+degli intermediari finanziari, di Bancoposta e dei fornitori terzi di servizi TIC a supporto di funzioni essenziali o importanti, dei poteri di vigilanza previsti dagli articoli 42, paragrafo 6, e 50,
+paragrafo 2, del regolamento DORA e di quelli attribuiti dalla normativa di settore, nonchè di quelli previsti dal presente articolo.
+2. Per le finalità di cui al comma 1, le Autorità competenti DORA possono effettuare accessi e ispezioni presso i fornitori terzi di servizi TIC a supporto di funzioni essenziali o importanti delle
+entità finanziarie, di Cassa depositi e prestiti S.p.A., degli intermediari finanziari e di Bancoposta, nonchè convocare gli amministratori, i sindaci e il personale dei medesimi fornitori e
+richiedere loro di fornire informazioni e di esibire documenti.
+Restano fermi i poteri previsti dagli articoli 51, 53-bis, 54 e 108 del TUB, dall' articolo 4, comma 4, del decreto legislativo 5 settembre 2024, n. 129 , dagli articoli 6, comma 1, lettera c),
+30-septies, 188, 189, 190, 205-bis del CAP e dagli articoli 5-septies e 19 del decreto legislativo 5 dicembre 2005, n. 252 , nei confronti dei soggetti ai quali siano state esternalizzate funzioni
+aziendali e del relativo personale, nonchè i poteri previsti dagli articoli 114-quinquies.2 e 114-quaterdecies del TUB, dagli articoli 6-bis, 6-ter, 7 e 62-novies del TUF e dall' articolo 22 della
+legge 28 dicembre 2005, n. 262 .
+Note all'art. 8:
+- Si riporta il testo degli articoli 51, 53-bis, 54, 108, 114-quinquies.2 e 114-quaterdecies del citato decreto legislativo 1° settembre 1993, n. 385 :
+«Art. 51 - 1. Le banche inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, le segnalazioni periodiche nonchè ogni altro dato e documento richiesto. Esse trasmettono anche i
+bilanci con le modalità e nei termini stabiliti dalla Banca d'Italia.
+1-bis. Le banche comunicano alla Banca d'Italia:
+a) la nomina e la mancata nomina del soggetto incaricato della revisione legale dei conti;
+b) le dimissioni del soggetto incaricato della revisione legale dei conti;
+c) la risoluzione consensuale del mandato;
+d) la revoca dell'incarico di revisione legale dei conti, fornendo adeguate spiegazioni in ordine alle ragioni che l'hanno determinata.
+1-ter. La Banca d'Italia stabilisce modalità e termini per l'invio delle comunicazioni di cui al comma 1-bis.
+1-quater. La Banca d'Italia può chiedere informazioni al personale delle banche anche per il tramite di queste ultime.
+1-quinquies. Le previsioni del comma 1 si applicano anche ai soggetti ai quali le banche abbiano esternalizzato funzioni aziendali e al loro personale.».
+«Art. 53-bis (Poteri di intervento). - 1. La Banca d'Italia può:
+a) convocare gli amministratori, i sindaci e il personale delle banche;
+b) ordinare la convocazione degli organi collegiali delle banche, fissandone l'ordine del giorno, e proporre l'assunzione di determinate decisioni;
+c) procedere direttamente alla convocazione degli organi collegiali delle banche quando gli organi competenti non abbiano ottemperato a quanto previsto dalla lettera b);
+d) adottare per le materie indicate nell'articolo 53, comma 1, ove la situazione lo richieda, provvedimenti specifici nei confronti di una o più banche o dell'intero sistema bancario riguardanti
+anche: l'imposizione di un requisito di fondi propri aggiuntivi; la restrizione delle attività o della struttura territoriale; il divieto di effettuare determinate operazioni, anche di natura
+societaria, e di distribuire utili o altri elementi del patrimonio, nonchè, con riferimento a strumenti finanziari computabili nel patrimonio a fini di vigilanza, il divieto di pagare interessi; la
+fissazione di limiti all'importo totale della parte variabile delle remunerazioni nella banca, quando sia necessario per il mantenimento di una solida base patrimoniale; per le banche che beneficiano
+di eccezionali interventi di sostegno pubblico, possono inoltre essere fissati limiti alla remunerazione complessiva degli esponenti aziendali;
+e) disporre, qualora la loro permanenza in carica sia di pregiudizio per la sana e prudente gestione della banca, la rimozione di uno o più esponenti aziendali; la rimozione non è disposta ove
+ricorrano gli estremi per pronunciare la decadenza ai sensi dell'articolo 26, salvo che sussista urgenza di provvedere.
+2. La Banca d'Italia può altresì convocare gli amministratori, i sindaci e il personale dei soggetti ai quali siano state esternalizzate funzioni aziendali.
+Art. 54 (Misure macroprudenziali). - 1. La Banca d'Italia è autorità nazionale designata per l'adozione delle misure richiamate dall' articolo 5 del regolamento (UE) n. 1024/2013 .
+2. I poteri di vigilanza attribuiti alla Banca d'Italia dal presente decreto legislativo possono essere esercitati, per finalità macroprudenziali, anche nei confronti di soggetti significativi.».
+«Art. 108 (Vigilanza). - 1. La Banca d'Italia emana disposizioni di carattere generale aventi a oggetto: il governo societario, l'adeguatezza patrimoniale, il contenimento del rischio nelle sue
+diverse configurazioni, l'organizzazione amministrativa e contabile, i controlli interni e i sistemi di remunerazione e incentivazione nonchè l'informativa da rendere al pubblico sulle predette
+materie. La Banca d'Italia può adottare, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli intermediari per le materie in precedenza indicate.
+Con riferimento a determinati tipi di attività la Banca d'Italia può inoltre dettare disposizioni volte ad assicurarne il regolare esercizio.
+2. Le disposizioni emanate ai sensi del comma 1 prevedono che gli intermediari finanziari possano utilizzare:
+a) le valutazioni del rischio di credito rilasciate da società o enti esterni previsti dall'articolo 53, comma 2-bis, lettera a);
+b) sistemi interni di misurazione dei rischi per la determinazione dei requisiti patrimoniali, previa autorizzazione della Banca d'Italia.
+3. La Banca d'Italia può:
+a) convocare gli amministratori, i sindaci e i dirigenti degli intermediari finanziari per esaminare la situazione degli stessi;
+b) ordinare la convocazione degli organi collegiali degli intermediari finanziari, fissandone l'ordine del giorno, e proporre l'assunzione di determinate decisioni;
+c) procedere direttamente alla convocazione degli organi collegiali degli intermediari finanziari quando gli organi competenti non abbiano ottemperato a quanto previsto dalla lettera b);
+d) adottare per le materie indicate nel comma 1, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli intermediari finanziari, riguardanti anche: la restrizione delle
+attività o della struttura territoriale; il divieto di effettuare determinate operazioni, anche di natura societaria, e di distribuire utili o altri elementi del patrimonio, nonchè, con riferimento a
+strumenti finanziari computabili nel patrimonio a fini di vigilanza, il divieto di pagare interessi;
+d-bis) disporre, qualora la loro permanenza in carica sia di pregiudizio per la sana e prudente gestione dell'intermediario finanziario, la rimozione dalla carica di uno o più esponenti aziendali; la
+rimozione non è disposta ove ricorrano gli estremi per pronunciare la decadenza ai sensi dell'articolo 26, salvo che sussista urgenza di provvedere.
+3-bis. La Banca d'Italia può altresì convocare gli amministratori, i sindaci, i dirigenti dei soggetti ai quali siano state esternalizzate funzioni aziendali.
+4. Gli intermediari finanziari inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, le segnalazioni periodiche nonchè ogni altro dato e documento richiesto. Essi trasmettono
+anche i bilanci con le modalità e nei termini stabiliti dalla Banca d'Italia.
+4-bis. La Banca d'Italia può chiedere informazioni al personale degli intermediari finanziari, anche per il tramite di questi ultimi.
+4-ter. Gli obblighi previsti dal comma 4 si applicano anche ai soggetti ai quali gli intermediari finanziari abbiano esternalizzato funzioni aziendali e al loro personale.
+5. La Banca d'Italia può effettuare ispezioni presso gli intermediari finanziari o i soggetti a cui sono esternalizzate funzioni aziendali e richiedere a essi l'esibizione di documenti e gli atti che
+ritenga necessari.
+6. Nell'esercizio dei poteri di cui al presente articolo la Banca d'Italia osserva criteri di proporzionalità, avuto riguardo alla complessità operativa, dimensionale e organizzativa degli
+intermediari, nonchè alla natura specifica dell'attività svolta.».
+«Art. 114-quinquies.2 (Vigilanza). - 1. Gli istituti di moneta elettronica inviano alla Banca d'Italia, con le modalità e nei termini da essa stabiliti, le segnalazioni periodiche nonchè ogni altro
+dato e documento richiesto.
+Essi trasmettono anche i bilanci con le modalità e nei termini stabiliti dalla Banca d'Italia.
+1-bis. La Banca d'Italia può chiedere informazioni al personale degli istituti di moneta elettronica, anche per il tramite di questi ultimi.
+1-ter. Gli obblighi previsti dal comma 1 si applicano anche ai soggetti ai quali gli istituti di moneta elettronica abbiano esternalizzato funzioni aziendali essenziali o importanti e al loro
+personale.
+2. La Banca d'Italia emana disposizioni di carattere generale aventi a oggetto: il governo societario, l'adeguatezza patrimoniale, il contenimento del rischio nelle sue diverse configurazioni,
+l'organizzazione amministrativa e contabile, nonchè i controlli interni e i sistemi di remunerazione e incentivazione.
+3. La Banca d'Italia può:
+a) convocare gli amministratori, i sindaci e i dirigenti degli istituti di moneta elettronica per esaminare la situazione degli stessi;
+b) ordinare la convocazione degli organi collegiali degli istituti di moneta elettronica, fissandone l'ordine del giorno, e proporre l'assunzione di determinate decisioni;
+c) procedere direttamente alla convocazione degli organi collegiali degli istituti di moneta elettronica quando gli organi competenti non abbiano ottemperato a quanto previsto dalla lettera b);
+d) adottare per le materie indicate nel comma 2, ove la situazione lo richieda, provvedimenti specifici nei confronti di singoli istituti di moneta elettronica riguardanti anche la restrizione delle
+attività o della struttura territoriale, il divieto di effettuare determinate operazioni anche di natura societaria e di distribuire utili o altri elementi del patrimonio nonchè, con riferimento a
+strumenti finanziari computabili nel patrimonio a fini di vigilanza, il divieto di pagare interessi;
+d-bis) disporre, qualora la loro permanenza in carica sia di pregiudizio per la sana e prudente gestione dell'istituto di moneta elettronica, la rimozione dalla carica di uno o più esponenti; la
+rimozione non è disposta ove ricorrano gli estremi per pronunciare la decadenza ai sensi dell'articolo 26, salvo che sussista urgenza di provvedere.
+3-bis. La Banca d'Italia può altresì convocare gli amministratori, i sindaci, i dirigenti dei soggetti ai quali siano state esternalizzate funzioni aziendali essenziali o importanti.
+4. La Banca d'Italia può effettuare ispezioni presso gli istituti di moneta elettronica, i loro agenti o i soggetti a cui sono esternalizzate funzioni aziendali essenziali o importanti e richiedere a
+essi l'esibizione di documenti e gli atti che ritenga necessari. La Banca d'Italia notifica all'autorità competente dello Stato ospitante l'intenzione di effettuare ispezioni su succursali, agenti o
+soggetti a cui sono esternalizzate funzioni aziendali essenziali o importanti di istituti 
+>>> LETTURA 1: A059,A072
+>>> LETTURA 2: nessun ambito, sigla O
+
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+=== K240 | [15] Disposizioni di coordinamento con il decreto legislativo 4 settembre 2024, n. 138
+Art. 15
+Disposizioni di coordinamento con il decreto legislativo 4 settembre 2024, n. 138
+1 . A Bancoposta, se identificato come soggetto essenziale o importante dei settori 3 o 4 dell'allegato I al decreto legislativo 4 settembre 2024, n. 138 , non si applicano le disposizioni di cui
+all'articolo 17 e ai capi IV e V del medesimo decreto, in quanto soggetto sottoposto ai sensi del presente decreto a obblighi derivanti dal diritto dell'Unione europea equivalenti a quelli previsti
+dal citato decreto legislativo.
+Note all'art. 15:
+- Si riporta l'allegato I e il testo dell'articolo 17 del citato decreto legislativo 4 settembre 2024, n. 138 :
+«
+Parte di provvedimento in formato grafico
+.».
+«Art. 17 (Accordi di condivisione delle informazioni sulla sicurezza informatica). - 1. I soggetti che rientrano nell'ambito di applicazione del presente decreto e laddove opportuno anche ulteriori
+soggetti, possono scambiarsi, su base volontaria, pertinenti informazioni sulla sicurezza informatica, comprese informazioni relative a minacce informatiche, quasi-incidenti, vulnerabilità, tecniche e
+procedure, indicatori di compromissione, tattiche avversarie, informazioni specifiche sugli attori delle minacce, allarmi di sicurezza informatica e raccomandazioni concernenti la configurazione degli
+strumenti di sicurezza informatica per individuare le minacce informatiche, se tale condivisione di informazioni:
+a) mira a prevenire o rilevare gli incidenti, a recuperare dagli stessi o a mitigarne l'impatto;
+b) aumenta il livello di sicurezza informatica, in particolare sensibilizzando in merito alle minacce informatiche, limitando o inibendo la capacità di diffusione di tali minacce e sostenendo una
+serie di capacità di difesa, la risoluzione e la divulgazione delle vulnerabilità, tecniche di rilevamento, contenimento e prevenzione delle minacce, strategie di mitigazione o fasi di risposta e
+recupero, oppure promuovendo la ricerca collaborativa sulle minacce informatiche tra soggetti pubblici e privati.
+2. Lo scambio di informazioni di cui al comma 1 avviene nell'ambito di comunità di soggetti essenziali e di soggetti importanti e, se opportuno, nell'ambito dei loro fornitori o fornitori di servizi.
+Tale scambio è attuato mediante accordi di condivisione delle informazioni sulla sicurezza informatica che tengono conto della natura potenzialmente sensibile delle informazioni condivise.
+3. L'Agenzia per la cybersicurezza nazionale, nello svolgimento delle funzioni di Autorità nazionale competente NIS e di CSIRT Italia, ove possibile, tenuto conto degli orientamenti e delle migliori
+pratiche non vincolanti elaborati dall'ENISA, favorisce la conclusione degli accordi di condivisione delle informazioni sulla sicurezza informatica di cui al comma 2 e può specificare gli elementi
+operativi, compreso l'uso di piattaforme TIC dedicate e di strumenti di automazione, i contenuti e le condizioni degli accordi di condivisione delle informazioni. Nello stabilire i dettagli relativi
+alla partecipazione delle autorità pubbliche a tali accordi, l'Autorità nazionale competente NIS può imporre condizioni, secondo le modalità di cui all'articolo 40, comma 5, alinea, per le
+informazioni messe a disposizione dalle autorità competenti e dal CSIRT Italia. L'Agenzia per la cybersicurezza nazionale, nello svolgimento delle funzioni di Autorità nazionale competente NIS e di
+CSIRT Italia, supporta i soggetti essenziali e i soggetti importanti per l'applicazione di tali accordi conformemente alle loro misure strategiche di cui all'articolo 9, comma 3, lettera h).
+4. I soggetti essenziali e i soggetti importanti notificano all'Autorità nazionale competente NIS la loro partecipazione agli accordi di condivisione delle informazioni sulla sicurezza informatica di
+cui al comma 2 al momento della conclusione di tali accordi o, ove applicabile, del loro ritiro da tali accordi, una volta che questo è divenuto effettivo.
+5. È assicurato l'accesso degli Organismi di informazione per la sicurezza di cui agli articoli 4 , 6 e 7 della legge n. 124 del 2007 alle informazioni riguardanti l'elenco dei soggetti essenziali e
+dei soggetti importanti, tramite la piattaforma digitale di cui all'articolo 7, le notifiche di cui agli articoli 25 e 26, le vulnerabilità rilevate nell'applicazione del presente decreto, e le
+ulteriori informazioni rispetto a quelle di cui al presente comma che dovessero essere ritenute utili, relative alle attività di cui al presente decreto, previe intese tra i predetti Organismi e
+l'Agenzia per la cybersicurezza nazionale.».
+- Il capo IV e V del citato decreto legislativo 4 settembre 2024, n. 138 recano rispettivamente degli «Obblighi in materia di gestione del rischio per la sicurezza informatica e di notifica di
+incidente» e del «Monitoraggio, vigilanza ed esecuzione».
+
+
+
+>>> LETTURA 1: nessun ambito, sigla C
+>>> LETTURA 2: nessun ambito, sigla C
+
+######## NORMA: Joint Guidelines on oversight cooperation  (id EBA-c77302e20a)
+=== K249 | [par. 2.2] Scope
+2.2 Scope
+7. Pursuant to Article 32(7) of the DORA, in accordance with Article 16 of Regulation (EU) No
+1093/2010 (EBA Regulation), Regulation (EU) No 1094/2010 (EIOPA Regulation), and Regulation
+(EU) No 1095/2010 (ESMA Regulation), “the ESAs shall issue, for the purposes of this Section [i.e.
+Chapter V – Section II “Oversight framework of critical ICT third party service providers”],
+Guidelines on the cooperation between the ESAs and the competent authorities covering:
+• the detailed procedures and conditions for the allocation and execution of tasks between
+competent authorities and the ESAs; and
+• the details on the exchanges of information which are necessary for competent authorities to
+ensure the follow–up of recommendations pursuant to Article 35(1), point (d), addressed to
+critical ICT third–party service providers.”
+8. Since Section II of Chapter V of the DORA comprises Articles 31 to 44, the scope of the Guidelines
+relates to these articles. Hence, other articles which relate to the cooperation between the ESAs
+and CAs (e.g. Article 49 on “Financial cross-sector exercises, communication and cooperation”)
+are not covered by these Guidelines.
+9. Articles which cover tasks that only apply to either one specific CA or ESA or that apply to financial
+entities and CTPPs, are outside the scope of the Guidelines given that for such tasks, cooperation
+between the CAs and the ESAs is not required.
+10. These Guidelines cover the cooperation between the ESAs and CAs, which are defined in Article
+46 of the DORA. Hence, these Guidelines do not cover:
+• the cooperation among CAs,
+• the cooperation between CAs and CAs under NIS2,
+• the cooperation among the ESAs, and
+• the cooperation between the ESAs and other EU authorities.
+11. Articles 31 to 44 of the DORA also cover the governance arrangements that need to be set up by
+the ESAs to ensure cooperation and take decisions (e.g. under Article 32, the ESAs need to
+establish the OF and under Article 34, the LOs need to set up the Joint Oversight Network). The
+cooperation between CAs and ESAs in the context of these governance arrangements – including
+for specific tasks such as the collective assessment of the results and findings of the oversight
+activities (Article 32(2)) or the preparation of benchmark of CTPPs (Article 32(3)) – are not covered
+by the Guidelines given that they are subject to the rules of procedure (to be) established by the
+Joint Committee of the ESAs.
+12. Where the ESAs or the European Commission have a legal mandate in DORA to provide further
+details (e. g. through delegated acts) to any aspects concerning the coordination between the
+ESAs and CAs as referred to in Article 32(7) of the DORA, the Guidelines do not cover such aspects.
+For example, the following aspects are not covered by the Guidelines:
+• criteria for designation of CTPPs (Article 31(6)) – i. e. the Guidelines do not further specify such
+criteria given that the European Commission will adopt a delegated act on this;
+• criteria for determining the composition of the JET, their designation, tasks and working
+arrangements (Article 41(1)(c)) – i. e. the allocation and execution of tasks between CAs and
+the ESAs within the JET are not covered by these Guidelines, but by separate regulatory
+technical standards to be developed by the ESAs (Article 41(1)(c)).
+
+
+>>> LETTURA 1: nessun ambito, sigla C
+>>> LETTURA 2: nessun ambito, sigla C
+
+######## NORMA: Joint Guidelines on oversight cooperation  (id EBA-c77302e20a)
+=== K250 | [par. 3 (2)] Draft Guidelines on ESAs-competent
+3. Draft Guidelines on ESAs-competent
+authorities oversight cooperation
+Status of the Guidelines
+These Guidelines are issued pursuant to Article 16 of Regulation (EU) No 1093/2010 establishing a
+European Supervisory Authority (European Banking Authority); Regulation (EU) No 1094/2010
+establishing a European Supervisory Authority (European Insurance and Occupational Pensions
+Authority); and Regulation (EU) No 1095/2010 establishing a European Supervisory Authority
+(European Securities and Markets Authority) (the ESAs’ Regulations)4.
+The European Supervisory Authorities (ESAs) issue these Guidelines on the basis of Article 32(7) of
+Regulation (EU) 2022/2554 (“DORA”)5, according to which the ESAs shall issue guidelines on the
+cooperation between the ESAs and the competent authorities covering:
+• the detailed procedures and conditions for the allocation and execution of tasks between
+competent authorities and the ESAs; and
+• the details on the exchanges of information which are necessary for competent authorities to
+ensure the follow–up of recommendations addressed to ICT third party service providers to
+financial entities designated as critical.
+Reporting requirements
+In accordance with Article 16(3) of the ESAs’ Regulations, competent authorities shall make every
+effort to comply with the Guidelines. Competent authorities must notify the respective ESA whether
+they comply or intend to comply with these Guidelines, or otherwise with reasons for non-compliance,
+within two months after the issuance of the translated versions of the Guidelines. In the absence of
+any notification by this deadline, competent authorities will be considered by the respective ESA to
+be non-compliant. Notifications should be sent to compliance@eba.europa.eu,
+compliance@eiopa.europa.eu and DORA@esma.europa.eu with the reference ‘JC/GL/2024/36’.
+Notifications should be submitted by persons with appropriate authority to report compliance on
+behalf of their competent authorities. Notifications will be published on the ESAs’ websites, in line
+with Article 16(3).
+4 Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November 2010 establishing a European
+Supervisory Authority (European Banking Authority), amending Decision No 716/2009/EC and repealing Commission
+Decision 2009/78/EC (OJ L 331, 15.12.2010, p.12-47). Regulation (EU) No 1094/2010 of the European Parliament and of the
+Council of the European Parliament and of the Council of 24 November 2010 establishing a European Supervisory Authority
+(European Insurance and Occupational Pensions Authority), amending Decision No 716/2009/EC and repealing Commission
+Decision 2009/79/EC (OJ L 331, 15.12.2010, p.48-83).Regulation (EU) No 1095/2010 of the European Parliament and of the
+Council of 24 November 2010 establishing a European Supervisory Authority (European Securities and Markets Authority),
+amending Decision No 716/2009/EC and repealing Commission Decision 2009/77/EC (OJ L 331, 15.12.2010 p. 84-119).
+5 Regulation (EU) No 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational
+resilience for the financial sector amending Regulations (EC) No 1060/2009, (EU)No 648/2012, (EU) No 600/2014, (EU) No
+909/2014 and (EU) 2016/1011 (OJ L 333, 27.12.2022, p.01-79).
+Section 1: General considerations
+General aims and principles
+These Guidelines aim at ensuring that the ESAs and the competent authorities have:
+• an overview of the areas where cooperation and/or exchange of information between
+competent authorities and the ESAs is needed in accordance with Article 32(7) of the DORA;
+• a coordinated and cohesive approach between the ESAs and competent authorities in the
+exchange of information and when cooperating for the purpose of oversight activities to
+ensure efficiency and consistency as well as to avoid duplications;
+• a common approach to the rules of procedure and timelines that apply in relation to
+cooperation and information exchange, including roles and responsibilities and means for
+cooperation and information exchange.
+These Guidelines constitute consistent, efficient and effective practices on the oversight cooperation
+and information exchange between ESAs and competent authorities in the context of Article 32(7) of
+the DORA. These Guidelines do not hinder the exchange of further information and extended
+oversight cooperation between ESAs and competent authorities. The practical details of the
+cooperation and information sharing between ESAs and competent authorities may be subject to
+bespoke target operating models.
+The cooperation and information exchange set out in these Guidelines should take into account a
+preventive and risk-based approach which should lead to a balanced allocation of tasks and
+responsibilities between the three ESAs and competent authorities and should make the best use of
+the human resources and technical expertise available in each of the ESAs and competent authorities.
+Unless otherwise specified in these Guidelines, ESAs refers to the three ESAs including the Lead
+Overseer.
+Scope
+The scope of these Guidelines relates only to Section II of Chapter V (Articles 31-44) of the DORA and
+does not cover articles related to:
+• tasks that only apply to either one specific competent authority or ESA (e. g. Article 43 on
+Oversight fees, being a task for the LO only) or that apply to financial entities and critical ICT
+third-party service providers (e. g. under Article 35(5) , CTPPs are to cooperate in good faith
+with LO, and assist it in fulfilment of its tasks);
+• the cooperation among competent authorities (e. g. under Article 48(1), CAs shall cooperate
+closely among themselves), among the ESAs (e. g. under Article 35(2)(a), the LO shall ensure
+regular coordination within the Joint Oversight Network) and with other EU authorities (e. g.
+under Article 34(3), the LO may call on the ECB and ENISA to provide technical advice);
+• the governance arrangements that are subject to the rules of procedure of the ESAs (e. g.
+under Article 32, the ESAs need to establish the OF and under Article 34, the LOs need to set
+up the Joint Oversight Network);
+• the separate legal mandates (e. g. the criteria for determining the composition of the JET, their
+designation, tasks and working arrangements are covered by separate regulatory technical
+standards to be developed by the ESAs (Article 41(1)(c) of DORA).
+
+
+>>> LETTURA 1: nessun ambito, sigla O
+>>> LETTURA 2: nessun ambito, sigla O
+
+######## NORMA: Joint Guidelines on oversight cooperation  (id EBA-c77302e20a)
+=== K264 | [par. 4.1] Draft cost-benefit analysis
+4.1 Draft cost-benefit analysis
+1. As per Article 16(2) of the ESAs Regulations, the ESAs shall, where appropriate, analyse the related
+potential costs and benefits of issuing guidelines (impact assessment) and that analysis shall be
+proportionate in relation to the scope, nature and impact of the guidelines.
+2. This analysis presents the impact assessment (IA) of the main policy options included in this
+Consultation Paper (CP) on the oversight cooperation and information exchange between the ESAs
+and CAs under DORA.
+Problem identification
+3. DORA introduces an oversight framework to the financial sector for all CTPPs designated in
+accordance with Article 31(1)(a).
+4. In order to ensure a consistent and coherent supervisory approach and a level playing field where
+financial entities are using the ICT services provided by a CTPPs across Member States, it is
+important to have close cooperation between CAs and the ESAs through the mutual exchange of
+information and the provision of assistance in the context of relevant supervisory activities.
+5. In this context, the ESAs have been mandated under Article 32(7) of the DORA to issue guidelines
+on the cooperation between the ESAs and the CAs covering the detailed procedures and conditions
+for the allocation and execution of tasks between CAs and the ESAs and the details on the
+exchanges of information which are necessary for CAs to ensure the follow-up of recommendations
+addressed to CTPPs.
+Policy objectives
+6. The Guidelines aim at ensuring that the ESAs and the CAs have:
+a) an overview of the areas where cooperation and/or exchange of information between CAs
+and the ESAs is needed in accordance with Article 32(7) of the DORA;
+b) a coordinated and cohesive approach between ESAs and CAs in the exchange of information
+and when cooperating for the purpose of oversight activities to ensure efficiency and
+consistency as well as to avoid duplications;
+c) a common approach to the rules of procedure and timelines that apply in relation to
+cooperation and information exchange, including roles and responsibilities and means for
+cooperation and information exchange.
+Baseline scenario
+7. Recitals 93 and 97 as well as Article 48(2) of the DORA highlight the importance of close
+cooperation and information exchange between the ESAs and CAs in the conduct of oversight
+activities. However, DORA does not include detailed provisions on the cooperation and exchanges
+of information necessary for the purpose of oversight activities.
+8. In the absence of further clarifications on details on the exchanges of information and the
+allocation and execution of tasks between CAs and ESAs, there is a risk of lack of coordination and
+information exchange between CAs and ESAs, resulting potentially in duplications/overlaps in the
+measures directed at CTPPs and financial entities using ICT services of CTPPs and
+inconsistent/divergent supervisory approaches by CAs.
+POLICY ISSUE 1 – GUIDELINE 5: INFORMATION FOR THE CRITICALITY ASSESSMENT TO BE SUBMITTED
+BY CAS TO THE ESAS
+Options considered
+9. For the purposes of designating the ICT third-party service providers that are critical for financial
+entities, CAs should make available to the ESAs:
+- Option A: Only the reports referred to in Article 31(10) of the DORA;
+- Option B: Only the register of information referred to in Article 28(3) of the DORA; or
+- Option C: The register of information referred to in Article 28(3) of the DORA and any relevant
+additional information at the disposal of CAs.
+Cost benefit analysis
+11. The information referred to in Options A and B is not sufficient for the purpose of designating the
+ICT third-party service providers that are critical for financial entities. In order to assess the
+criticality, the ESAs need additional input from CAs, including, relevant quantitative or qualitative
+information to determinate/calculate the indicators for the criticality criteria set out in Article 31(2)
+of the DORA (Option C). In order to avoid costs and burden for financial entities and CAs, CAs are
+not required gather any additional information from financial entities, but use the information they
+already have at their disposal.
+Preferred option
+12. Option C has been retained.
+POLICY ISSUE 2 – GUIDELINE 12: DECISION REQUIRING FINANCIAL ENTITIES TO TEMPORARILY
+SUSPEND THE USE OR DEPLOYMENT OF A SERVICE PROVIDED BY THE CRITICAL ICT THIRD-PARTY
+SERVICE PROVIDER OR TERMINATE THE RELEVANT CONTRACTUAL ARRANGEMENTS CONCLUDED
+WITH THE CRITICAL ICT THIRD-PARTY SERVICE PROVIDER
+Options considered
+13. CAs should inform the LO:
+• Option A: After taking the decision as referred to in Article 42(6) of the DORA;
+• Option B: After notifying the financial entity of the possibility of a decision being taken as
+referred to in Article 42(4) of the DORA; or
+• Option C: Before notifying the financial entity of the possibility of a decision being taken as
+referred to in Article 42(4) of the DORA.
+Cost benefit analysis
+14. If CAs inform the LO of their decision only after it has been taken (Option A) or the financial entity
+has been notified of the possibility of a decision being taken (Option B), the CAs will not be able to
+consider at an early stage of the decision-making process, the LO’s assessment of the potential
+impact of such decision on the CTPP and the LO’s information about any inconsistent or divergent
+supervisory approaches where applicable. Options A and B could result in an unlevel playing field
+where financial entities are using the ICT services provided by CTPPs across Member States.
+15. If CAs inform the LO before notifying the financial entity of the possibility of a decision being taken
+(Option C), CAs will be able to adequately consider the LO’s assessment/information in their
+supervisory approaches, resulting in a more coordinated approach and a level playing for financial
+entities from a very early stage.
+Preferred option
+16. Option C has been retained.
+
+
+>>> LETTURA 1: nessun ambito, sigla O
+>>> LETTURA 2: nessun ambito, sigla C
+
+######## NORMA: Joint Guidelines on oversight cooperation  (id EBA-c77302e20a)
+=== K265 | [par. 4.2] Summary of responses to the public consultation
+4.2 Summary of responses to the public consultation
+The ESAs ran a public consultation on its proposed draft guidelines between 8 December 2023 and 4 March 2024. The ESAs received 29 responses to the
+Consultation Paper. As indicated in the charts below, the vast majority of respondents are financial entities and industry associations/federations most of
+which are related to the banking and payments sector. Most respondents are located in Germany.
+Type of stakeholder Financial sector Member State of stakeholders
+Financial entity
+Industry Association/Federation Banking and payments Insurance and pension Germany Other Member States
+ICT Third-Party Service Provider Markets and securities Other EU trade associations
+The table below provides an overview of the comments received and if/how the ESAs have addressed the comments. References in the table are made to
+the numbering of the draft Guidelines submitted for public consultation.
+Point 1.6: Dedicated Two stakeholders raised concerns about The ESAs agree that there is a need for the Point 1.6 has been adjusted and new
+online tool to share potential leakage of sensitive information online tool to have strong security point 1.7 has been added to address
+information due to a lack of security measures for the measures and, therefore, point 1.6 states the concerns raised.
+dedicated online tool to share that the tool should allow for confidential
+information. It is suggested to describe and secure information exchange. Details
+how information will be transmitted, of the technical security measures will be
+exchanged, handled, stored and accessed specified when developing the tool. The
+to ensure that confidential and sensitive ESAs agree that the information to be
+information is secured against exchanged via the tool should be limited to
+unauthorised and third-party access, and the information specified in the GLs and
+inadvertent disclosure. under DORA.
+Point 1.7: One stakeholder suggested to delete The ESAs are of the view that the Point 1.7 has been removed.
+Acknowledgement of point 1.7 given that the ESAs and CAs acknowledge of receipt of information may
+receipt of information have established a single point of contact be too burdensome for CAs and the LO in
+in the form of a dedicated the absence of an automatic
+institutional/functional email address. acknowledgement of receipt through the
+online tool.
+Point 1.8: One stakeholder raised concerns about According to point 1.6, the online tool No change
+Communication and the proposed accessibility of information should allow for secure and confidential
+information exchange given that such information contains information exchange (see changes made
+should be accessible security-sensitive and competition- point 1.6). In addition, point 1.8 highlights
+and inclusive for all sensitive information about CTPPs and that translation services or accessible
+parties financial entities (FEs) shared among communication tools should only be used if
+multiple supervisory bodies. data is protected from unauthorised use of
+third parties. The ESAs are of the view that
+points 1.6 and 1.8 are sufficient safeguards
+in that respect.
+Point 3: Difference of One stakeholder suggested to impose a The ESAs are of the view that there should No change
+opinions between timeline for ESAs and CAs to find a be sufficient flexibility for ESAs and CAs to
+ESAs and competent mutually agreed solution and, if no find a mutually agreed solution. The tasks
+authorities solution can be found, have the Oversight and timelines applicable to the OF may be
+Forum (OF) act as a referee subject to specified in separate rules of procedure of
+simple majority vote within a pre-agreed the OF.
+timeline.
+Point 5.1: Several stakeholders expressed the view The ESAs would like to clarify that they will No change
+Transmission of the that financial entities should not be make use of Article 35(2)12 of the ESAs’
+full register of required to transmit the full register to Regulations to request the transmission of
+the CAs as this would involve an the full register of information for the
+designation of CTPPs. The European
+12Article 35(2) of the ESAs’ Regulations: “The Authority may also request information to be provided at recurring intervals and in specified formats. Such requests shall, where possible, be made
+using common reporting formats.”
+information from CAs additional amount of work and is not Commission has welcomed the ESA’s
+to the OF foreseen under DORA. proposal to make use of Article 35(2) and
+the request will be formalised in a joint
+BoSs Decision in 2024. The formats and
+procedures for the transmission of the
+register will be specified in that Decision.
+Point 8.1: Information Several stakeholders suggested that The ESAs would like to clarify that point 8.1 No change
+about identity of information about the identity of is not intended to inform CTPPs, but CAs.
+authorised persons for authorised persons should be provided at The information exchange between the LO
+the general least 6 weeks (instead of 3 weeks) before and the CTPPs is not covered by these
+investigation or the start of the inspection or general Guidelines. CTPPs will be informed about
+inspection investigation to allow sufficient time for the identity of authorised persons in due
+preparation. time before the start of the inspection or
+general investigation to allow sufficient
+time for preparation.
+Point 9: Measures by Some stakeholders mentioned that point The intention of this provision was not to Point 9 has been deleted. Point 7 has
+CAs concerning CTPPs 9 suggests that CAs are empowered to empower or encourage CAs to take been updated to allow CAs to
+take measures concerning CTPPs and that measures concerning CTPPs. Article 33(5) comment on the draft oversight plan.
+this can lead to duplications/overlaps and provides the possibility for CAs to take, The annual consultation of CAs on HR
+may not be in line with the Level 1 text. either directly or indirectly, measures resources and expected profiles of
+concerning CTPPs in agreement with the staff to carry out the oversight
+LO. The ESAs are of the view that, in order activity has been removed from the
+to influence the LO oversight, CAs should content of the oversight plan under
+comment on the draft oversight plan and point 7.3 to avoid overlap with the
+then volunteer to take part in the JET. consultation of the OF as per Article
+3(1) of the draft RTS on the Joint
+Examination Teams. Additional
+sentence has been added to point 6
+of the Introduction of the Final
+Report indicating that there should
+be a coordinated approach between
+the oversight activities of the LO and
+the activities of the CAs concerning
+directly or indirectly the CTPPs
+without any hindrance to the
+efficiency of the CAs’ powers towards
+the financial entities under their
+supervision.
+Point 10.1: Several stakeholders suggested that the The ESAs would like to clarify that point No change
+Transmission of the deadline to submit the relevant scope of 10.1 specifies that the relevant scope of
+relevant scope of the the request for information should be the request for information sent to the
+request for extended to 15 working days after CTPP should be submitted by the LO to the
+acceptance of the request for JON and CAs 10 working days following the
+information submitted information to the CTPP to allow LO’s adoption of its request for
+to the CTPP sufficient time for processing. information. The LO does not need to
+process any specific information following
+the adoption of its request for information
+so 10 working days are sufficient time for
+the LO to transmit the scope of the request
+for information.
+Point 10.2: Major ICT- One stakeholder expressed the view that The ESAs agree that CTPPs are not required Point 10.2 has been adjusted to align
+related incidents the LO should not be expected to inform by DORA to proactively report major ICT- with Article 3(2), letter l of draft RTS
+reported by the CTPP CAs of major ICT-related incidents related incidents to the LO. However, the on conduct oversight.
+reported by the CTPP because DORA does ESAs can request such information from
+not require CTPPs to proactively report CTPPs in accordance with Article 37 of
+such incidents to the LO. DORA which allows the LO to require the
+CTPP to provide all information necessary
+for the LO to carry out its duties under
+DORA.
+Point 10.3: Primary Two stakeholders suggested that The ESAs would like to clarify that point No change
+point of contact for competent authorities can be the primary 10.3 is in line with the suggestion made by
+the purposes of all point of contact for CTPPs where the stakeholders, i. e. CAs can be the primary
+matters related to the interaction is unrelated to DORA point of contact for CTPPs where the
+oversight interaction is unrelated to DORA oversight.
+oversight, including in relation to national Point 10.3 refers to “all matters related to
+laws. the oversight” and this reflects Article
+33(1) of DORA.
+Point 12.1: Two stakeholders expressed the view Article 4(1) of the draft RTS on the No change
+Transmission of the that Article 35(1)(c) does not always harmonisation of conditions enabling the
+remediation plan require remediation and that a CTPP is conduct of the oversight activities under
+not compelled to remediate. Article 41(1), (a), (b) and (d) of DORA
+foresee that, as part of the notification of
+its intention to comply with the
+recommendations, the CTPP provides the
+LO with a remediation plan. The
+remediation plan is requested from the
+CTPP in accordance with Article 37 of
+DORA which allows the LO to require the
+CTPP to provide all information necessary
+for the LO to carry out its duties under
+DORA.
+Point 12.2: One stakeholder suggested that the The ESAs agree that recommendations Point 12.2 has been adjusted
+Implementation of the adequacy of implementation of the should be deemed as having been accordingly.
+remediation plan recommendations must be assessed adequately implemented where they are in
+based on adherence to the remediation accordance with the remediation plan
+plan. prepared by the CTPP.
+Point 12.3(a): One stakeholder suggested that the term The ESAs would like to clarify that the term Reference to Article 42(4) has been
+Transmission of “adoption” should be clarified and “adoption” in point 12.3(a) refers to the added to point 12.3(a).
+information where reference to the Level 1 text be added adoption by CAs of the notification to the
+CTPPs have not when referring to the “decision being FEs according to Article 42(4) and the
+endorsed in part or taken” to require FEs to adoption by CAs of the individual warnings
+entirely suspend/terminate the relevant issued by CAs according to Article 42(7).
+recommendations contractual arrangements with the CTPP.
+Scope of the Several stakeholders proposed to: The ESAs would like to clarify that the No change
+Guidelines scope of the Guidelines is limited to the
+• include a description and criteria for
+cooperation and information exchange
+the application of measures CAs can
+between ESAs and CAs. Other areas, such
+impose on financial entities as well
+as the measures CAs can impose on FEs
+as provide scenarios for the
+and the information exchange between
+measures;
+CAs and FEs, are outside the scope of the
+• provide guidance on how, what and Guidelines.
+when the CAs should inform the FEs
+The ESAs acknowledge that it is important
+about recommendations issued by
+to ensure that FEs are continuously
+the LO; and
+informed about findings/conclusions
+arising from the oversight activities so that
+• describe how FEs should be FEs will be able to consider such
+continuously informed by CAs about information as part of upcoming
+the findings/conclusions of the outsourcing arrangements/processes
+oversight activities. ensuring on-going compliance.
+Annex: Table summarising information exchanges
+The following table summarises the information exchanges between the LO/ESAs (mar
+>>> LETTURA 1: nessun ambito, sigla O
+>>> LETTURA 2: nessun ambito, sigla I

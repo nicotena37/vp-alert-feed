@@ -1,0 +1,1466 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento di esecuzione (UE) 2024/2956 della Commissione, del 29 novembre 2024, che stabilisce norme tecniche di attuazione per l'applicazione del regolamento  (id UE-32024R2956)
+
+=== K222.1 | [Allegato I] Istruzioni per la compilazione del registro delle informazioni (pezzo 1 di 2)
+ALLEGATO I
+Istruzioni per la compilazione del registro delle informazioni
+PARTE 1
+ISTRUZIONI DI CARATTERE GENERALE
+Nel mantenere e aggiornare il registro delle informazioni a livello di entità, e su base subconsolidata e consolidata, le entità finanziarie inseriscono i dati nei modelli del registro delle
+informazioni utilizzando i formati stabiliti nelle istruzioni di cui alla parte 2.
+La parte 2 contiene le istruzioni che le entità finanziarie devono seguire per compilare ciascuna colonna di ciascun modello. Nell'inserire le informazioni in alcune colonne, le entità finanziarie
+fanno riferimento agli allegati II, III e IV o ad altre fonti esterne. In tali casi, il riferimento agli allegati o fonti esterne pertinenti è indicato nelle istruzioni.
+Elenco dei modelli
+Codice del modello
+Nome del modello
+Breve descrizione
+B_01.01
+Entità che mantiene il registro delle informazioni
+Questo modello identifica l'entità che mantiene e aggiorna il registro delle informazioni, rispettivamente a livello di entità, e su base subconsolidata e consolidata.
+B_01.02
+Elenco delle entità incluse nell'ambito del consolidamento
+Questo modello identifica tutte le entità appartenenti al gruppo. Se l'entità finanziaria che ha la responsabilità di mantenere e aggiornare il registro delle informazioni non appartiene a un gruppo,
+in questo modello è segnalata solo tale entità finanziaria.
+B_01.03
+Elenco delle succursali
+Questo modello identifica le succursali delle entità finanziarie di cui al modello B_01.02.
+B_02.01
+Accordi contrattuali - informazioni generali
+Questo modello elenca tutti gli accordi contrattuali stipulati con fornitori terzi diretti di servizi TIC.
+Per ciascun accordo contrattuale con un fornitore terzo diretto di servizi TIC, l'entità finanziaria che mantiene il registro delle informazioni assegna un «numero di riferimento dell'accordo
+contrattuale» univoco per identificare senza ambiguità l'accordo contrattuale stesso.
+B_02.02
+Accordi contrattuali - informazioni specifiche
+Questo modello fornisce dettagli in relazione a ciascun accordo contrattuale elencato nel modello B_02.01 per quanto riguarda:
+a) i servizi TIC inclusi nell'ambito di applicazione dell'accordo contrattuale;
+b) le funzioni delle entità finanziarie supportate da tali servizi TIC;
+c) altre informazioni importanti in relazione agli specifici servizi TIC prestati (ad esempio, termine di preavviso, diritto applicabile all'accordo, ecc.).
+B_02.03
+Elenco degli accordi contrattuali intragruppo
+Questo modello identifica i collegamenti tra gli accordi contrattuali intragruppo e gli accordi contrattuali con fornitori terzi di servizi TIC che non fanno parte del gruppo, utilizzando i numeri di
+riferimento contrattuali quando fanno parte della catena di approvvigionamento dei servizi TIC.
+B_03.01
+Entità che firmano gli accordi contrattuali per ricevere il servizio o i servizi TIC o che firmano per conto delle entità che si avvalgono del servizio o dei servizi TIC
+Questo modello fornisce informazioni sull'entità che firma gli accordi contrattuali con il fornitore terzo diretto di servizi TIC per l'entità che si avvale dei servizi TIC.
+Se il registro delle informazioni è mantenuto e aggiornato a livello di entità, l'entità finanziaria che mantiene e aggiorna il registro delle informazioni è l'entità che firma l'accordo contrattuale
+e l'entità che si avvale dei servizi TIC.
+Nel contesto del subconsolidamento e del consolidamento l'entità finanziaria che si avvale dei servizi TIC prestati non è necessariamente l'entità che firma l'accordo contrattuale con i fornitori
+terzi di servizi TIC.
+B_03.02
+Fornitori terzi di servizi TIC che firmano gli accordi contrattuali per la prestazione del servizio o dei servizi TIC
+Questo modello identifica tutti i fornitori terzi di servizi TIC di cui al modello B_05.01 che firmano gli accordi contrattuali di cui al modello B_02.01 per la prestazione dei servizi TIC.
+B_03.03
+Entità che firmano gli accordi contrattuali per la prestazione del servizio o dei servizi TIC ad altre entità incluse nell'ambito del consolidamento
+Questo modello identifica tutte le entità di cui al modello B_01.02 che firmano gli accordi contrattuali di cui al modello B_02.01 per la prestazione di servizi TIC ad altre entità che rientrano nel
+consolidamento.
+B_04.01
+Entità che si avvalgono dei servizi TIC
+Questo modello identifica tutte le entità che si avvalgono dei servizi TIC prestati da fornitori terzi di servizi TIC e sono iscritte nel registro delle informazioni.
+Le entità che si avvalgono dei servizi TIC sono le entità finanziarie incluse nell'ambito di applicazione o i fornitori intragruppo di servizi TIC.
+Se il registro delle informazioni è mantenuto e aggiornato a livello di entità, l'entità finanziaria che mantiene il registro è l'entità che firma l'accordo contrattuale e l'entità che si avvale dei
+servizi TIC.
+B_05.01
+Fornitori terzi di servizi TIC
+Questo modello elenca e fornisce informazioni generali per identificare:
+a) i fornitori terzi diretti di servizi TIC;
+b) i fornitori intragruppo di servizi TIC;
+c) tutti i subappaltatori inclusi nel modello B_05.02 nella catena di approvvigionamento dei servizi TIC;
+d) l'impresa madre capogruppo dei fornitori terzi di servizi TIC elencati alle lettere a), b) e c).
+B_05.02
+Catena di approvvigionamento dei servizi TIC
+Questo modello identifica e collega i fornitori terzi di servizi TIC che fanno parte della stessa catena di approvvigionamento di servizi TIC.
+Le entità finanziarie identificano i fornitori terzi di servizi TIC per ciascun servizio TIC incluso in ciascun accordo contrattuale, e assegnano loro una posizione.
+Esempio: un'entità finanziaria ha un accordo contrattuale con un fornitore terzo di servizi TIC («fornitore terzo di servizi TIC X») per ricevere due servizi TIC specifici («servizio TIC A» e
+«servizio TIC B») e il fornitore di servizi si avvale di un subappaltatore («fornitore terzo di servizi TIC Y») per prestare uno di tali servizi («servizio TIC B»).
+— Per quanto riguarda il servizio TIC A, la catena di approvvigionamento dei servizi TIC è composta da un fornitore terzo di servizi TIC, il fornitore terzo di servizi TIC X, cui sarà assegnata la
+posizione numero 1 nel modello. Il fornitore terzo di servizi TIC X è il fornitore terzo diretto di servizi TIC.
+— Per quanto riguarda il servizio TIC B, la catena di approvvigionamento dei servizi TIC è composta da due fornitori terzi di servizi TIC:
+— a) il fornitore terzo di servizi TIC X, cui sarà assegnata la posizione numero 1 nel modello. Il fornitore terzo di servizi TIC X è il fornitore terzo diretto di servizi TIC;
+b) il fornitore terzo di servizi TIC Y, cui sarà assegnata la posizione numero 2 nel modello. Il fornitore terzo di servizi TIC Y è un subappaltatore.
+— Tutti i fornitori terzi di servizi TIC appartenenti alla stessa catena di approvvigionamento di servizi TIC condividono lo stesso «numero di riferimento dell'accordo contrattuale» di cui al modello
+B_02.01 e lo stesso tipo di servizi TIC.
+B_06.01
+Identificazione delle funzioni
+Questo modello identifica le funzioni dell'entità finanziaria che si avvale dei servizi TIC e fornisce informazioni a riguardo.
+Nelle informazioni da fornire in questo modello, le entità finanziarie includono un identificativo univoco, l'«identificativo della funzione» per ciascuna combinazione di LEI, attività autorizzata e
+funzione dell'entità finanziaria.
+Esempio: a un'entità finanziaria (LEI: 21USLEIC20231109J3Z8) che opera nell'ambito di due attività autorizzate («attività A» e «attività B») si assegnano due «identificativi della funzione» univoci
+per la stessa funzione X (ad esempio vendite) svolta rispettivamente per l'attività A e l'attività B. L'identificativo della funzione sarà:
+F1 per la combinazione di «21USLEIC20231109J3Z8»«attività A» e «funzione X»
+F2 per la combinazione di «21USLEIC20231109J3Z8»«attività B» e «funzione X».
+B_07.01
+Valutazioni dei servizi TIC
+Questo modello contiene le informazioni relative alla valutazione dei rischi dei servizi TIC (ad esempio sostituibilità, data dell'ultimo audit, ecc.) quando tali servizi TIC supportano una funzione
+essenziale o importante o una parte significativa di essa.
+B_99.01
+Definizioni fornite dalle entità che si avvalgono dei servizi TIC
+Questo modello contiene le spiegazioni, i significati e le definizioni interni all'entità in merito all'insieme chiuso di indicatori utilizzati dall'entità finanziaria nel registro delle informazioni.
+Esempio : nel modello B_07.01 l'entità finanziaria fornisce un'indicazione sull'impatto dell'interruzione dei servizi TIC utilizzando un insieme chiuso di opzioni (basso, medio, alto). Nel modello
+B_99.01 l'entità finanziaria precisa il significato di tali opzioni.
+PARTE 2
+ISTRUZIONI SPECIFICHE PER MODELLO
+Istruzioni per la compilazione del modello B_01.01 — Entità finanziaria che mantiene il registro delle informazioni
+Identificare l'entità finanziaria che mantiene e aggiorna il registro delle informazioni.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_01.01.0010
+LEI dell'entità finanziaria che mantiene il registro delle informazioni
+Alfanumerico
+Identificare l'entità finanziaria che mantiene e aggiorna il registro delle informazioni utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_01.01.0020
+Nome dell'entità finanziaria
+Alfanumerico
+Denominazione legale dell'entità finanziaria che mantiene e aggiorna il registro delle informazioni.
+Obbligatoria
+B_01.01.0030
+Paese dell'entità finanziaria
+Paese
+Indicare il codice ISO 3166-1 alpha-2 del paese in cui è stata rilasciata l'autorizzazione o è stata effettuata la registrazione dell'entità segnalata nel registro delle informazioni.
+Obbligatoria
+B_01.01.0040
+Tipo di entità finanziaria
+Insieme chiuso di opzioni
+Identificare il tipo di entità finanziaria utilizzando una delle opzioni presenti nell'elenco chiuso seguente:
+1. enti creditizi;
+2. istituti di pagamento, compresi gli istituti di pagamento esentati a norma della direttiva (UE) 2015/2366 del Parlamento europeo e del Consiglio ( 1 ) ;
+3. prestatori di servizi di informazione sui conti;
+4. istituti di moneta elettronica, compresi gli istituti di moneta elettronica esentati a norma della direttiva 2009/110/CE del Parlamento europeo e del Consiglio ( 2 ) ;
+5. imprese di investimento;
+6. prestatori di servizi per le cripto-attività autorizzati a norma del regolamento (UE) 2023/1114 del Parlamento europeo e del Consiglio ( 3 ) ;
+7. emittenti di token collegati ad attività autorizzati a norma del regolamento (UE) 2023/1114;
+8. depositari centrali di titoli;
+9. controparti centrali;
+10. sedi di negoziazione;
+11. repertori di dati sulle negoziazioni;
+12. gestori di fondi di investimento alternativi;
+13. società di gestione;
+14. fornitori di servizi di comunicazione dati;
+15. imprese di assicurazione e di riassicurazione;
+16. intermediari assicurativi, intermediari riassicurativi e intermediari assicurativi a titolo accessorio;
+17. enti pensionistici aziendali o professionali;
+18. agenzie di rating del credito;
+19. amministratori di indici di riferimento critici;
+20. fornitori di servizi di crowdfunding;
+21. repertori di dati sulle cartolarizzazioni;
+22. altra entità finanziaria.
+Se il registro delle informazioni è mantenuto a livello di gruppo dall'impresa madre ed essa non è soggetta all'obbligo di mantenere tale registro, ossia non rientra nella definizione di entità
+finanziarie di cui all'articolo 2 del regolamento (UE) 2022/2554 (ad esempio società di partecipazione finanziaria, società di partecipazione finanziaria mista o società di partecipazione mista), si
+sceglie l'opzione «Altra entità finanziaria».
+Obbligatoria
+B_01.01.0050
+Autorità competente
+Alfanumerico
+Identificare l'autorità competente di cui all'articolo 46 del regolamento (UE) 2022/2554, a disposizione della quale è messo il registro delle informazioni.
+Obbligatoria in caso di messa a disposizione
+B_01.01.0060
+Data della messa a disposizione
+Data
+Indicare la data utilizzando il codice ISO 8601 (aaaa-mm-gg) della data di messa a disposizione.
+Obbligatoria in caso di messa a disposizione
+( 1 )
+Direttiva (UE) 2015/2366 del Parlamento europeo e del Consiglio, del 25 novembre 2015, relativa ai servizi di pagamento nel mercato interno, che modifica le direttive 2002/65/CE, 2009/110/CE e
+2013/36/UE e il regolamento (UE) n. 1093/2010, e abroga la direttiva 2007/64/CE (GU L 337 del 23.12.2015, pag. 35, ELI: http://data.europa.eu/eli/dir/2015/2366/oj).
+( 2 )
+Direttiva 2009/110/CE del Parlamento europeo e del Consiglio, del 16 settembre 2009, concernente l'avvio, l'esercizio e la vigilanza prudenziale dell'attività degli istituti di moneta elettronica, che
+modifica le direttive 2005/60/CE e 2006/48/CE e che abroga la direttiva 2000/46/CE (GU L 267 del 10.10.2009, pag. 7, ELI: http://data.europa.eu/eli/dir/2009/110/oj).
+( 3 )
+Regolamento (UE) 2023/1114 del Parlamento europeo e del Consiglio, del 31 maggio 2023, relativo ai mercati delle cripto-attività e che modifica i regolamenti (UE) n. 1093/2010 e (UE) n. 1095/2010 e le
+direttive 2013/36/UE e (UE) 2019/1937 (GU L 150 del 9.6.2023, pag. 40, ELI: http://data.europa.eu/eli/reg/2023/1114/oj).
+Istruzioni per la compilazione del modello B_01.02 — Elenco delle entità finanziarie incluse nell'ambito di applicazione del registro delle informazioni
+Se il registro delle informazioni è mantenuto e aggiornato su base subconsolidata e consolidata, questo modello identifica tutte le entità finanziarie appartenenti al sottogruppo e al gruppo. Se
+l'entità finanziaria che ha la responsabilità di mantenere e aggiornare il registro delle informazioni non appartiene a un gruppo, in questo modello è segnalata solo tale entità finanziaria e la voce
+inserita in questo modello è la stessa del modello B_01.01.
+Se un'entità agisce per conto di un'entità finanziaria per tutte le attività di quest'ultima (compresi i servizi TIC), i fornitori terzi diretti che prestano servizi TIC a tale entità dovrebbero
+essere registrati nei pertinenti modelli del registro delle informazioni dell'entità finanziaria. In tal caso l'entità è registrata solo come entità che mantiene il registro e non è segnalata in
+questo modello.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_01.02.0010
+LEI dell'entità finanziaria
+Alfanumerico
+Identificare l'entità finanziaria segnalata nel registro delle informazioni utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_01.02.0020
+Nome dell'entità finanziaria
+Alfanumerico
+Denominazione legale dell'entità finanziaria segnalata nel registro delle informazioni
+Obbligatoria
+B_01.02.0030
+Paese dell'entità finanziaria
+Paese
+Indicare il codice ISO 3166-1 alpha-2 del paese in cui è stata rilasciata l'autorizzazione o è stata effettuata la registrazione dell'entità finanziaria segnalata nel registro delle informazioni.
+Obbligatoria
+B_01.02.0040
+Tipo di entità finanziaria
+Insieme chiuso di opzioni
+Identificare il tipo di entità finanziaria utilizzando una delle opzioni presenti nell'elenco chiuso seguente:
+1. enti creditizi;
+2. istituti di pagamento, compresi gli istituti di pagamento esentati a norma della direttiva (UE) 2015/2366;
+3. prestatori di servizi di informazione sui conti;
+4. istituti di moneta elettronica, compresi gli istituti di moneta elettronica esentati a norma della direttiva 2009/110/CE;
+5. imprese di investimento;
+6. prestatori di servizi per le cripto-attività autorizzati a norma del regolamento (UE) 2023/1114;
+7. emittenti di token collegati ad attività autorizzati a norma del regolamento (UE) 2023/1114;
+8. depositari centrali di titoli;
+9. controparti centrali;
+10. sedi di negoziazione;
+11. repertori di dati sulle negoziazioni;
+12. gestori di fondi di investimento alternativi;
+13. società di gestione;
+14. fornitori di servizi di comunicazione dati;
+15. imprese di assicurazione e di riassicurazione;
+16. intermediari assicurativi, intermediari riassicurativi e intermediari assicurativi a titolo accessorio;
+17. enti pensionistici aziendali o professionali;
+18. agenzie di rating del credito;
+19. amministratori di indici di riferimento critici;
+20. fornitori di servizi di crowdfunding;
+21. repertori di dati sulle cartolarizzazioni;
+22. altra entità finanziaria;
+23. entità non finanziaria: fornitori intragruppo di servizi TIC;
+24. entità non finanziaria: altro.
+Obbligatoria
+B_01.02.0050
+Gerarchia dell'entità finanziaria all'interno del gruppo (se del caso)
+Insieme chiuso di opzioni
+Determinare la gerarchia dell'entità finanziaria nel consolidamento utilizzando una delle opzioni nell'elenco chiuso seguente:
+1. l'entità finanziaria è l'impresa madre capogruppo nel consolidamento;
+2. l'entità finanziaria è l'impresa madre di una parte subconsolidata nel consolidamento;
+3. l'entità finanziaria è un'impresa figlia nel consolidamento e non è un'impresa madre di una parte subconsolidata;
+4. l'entità finanziaria non fa parte di un gruppo;
+5. l'entità finanziaria è un fornitore di servizi al quale l'entità finanziaria (o il fornitore terzo di servizi che agisce per suo conto) esternalizza tutte le sue attività operative.
+Se l'entità soddisfa più di un'opzione dell'elenco chiuso di cui sopra, deve essere selezionata l'opzione di livello superiore applicabile a tale entità.
+Obbligatoria
+B_01.02.0060
+LEI dell'impresa madre diretta dell'entità finanziaria
+Alfanumerico
+Identificare l'impresa madre diretta dell'entità finanziaria segnalata nel registro delle informazioni utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_01.02.0070
+Data dell'ultimo aggiornamento
+Data
+Indicare la data utilizzando il codice ISO 8601 (aaaa-mm-gg) della data dell'ultimo aggiornamento effettuato o dell'ultima modifica apportata nel registro delle informazioni in relazione all'entità
+finanziaria.
+Obbligatoria
+B_01.02.0080
+Data dell'integrazione nel registro delle informazioni
+Data
+Indicare la data utilizzando il codice ISO 8601 (aaaa-mm-gg) della data di integrazione dell'entità finanziaria nel registro delle informazioni.
+Obbligatoria
+B_01.02.0090
+Data della cancellazione dal registro delle informazioni
+Data
+Indicare la data utilizzando il codice ISO 8601 (aaaa-mm-gg) della data di cancellazione dell'entità finanziaria dal registro delle informazioni.
+Se l'entità finanziaria non è stata cancellata, inserire «9999-12-31».
+Obbligatoria
+B_01.02.0100
+Valuta
+Valuta
+Indicare il codice alfabetico ISO 4217 della valuta utilizzata per la preparazione del bilancio d'esercizio dell'entità finanziaria.
+La valuta indicata deve essere la stessa valuta utilizzata dall'entità finanziaria per la preparazione del bilancio d'esercizio a livello di entità, su base subconsolidata o su base consolidata, a
+seconda dei casi.
+Obbligatoria soltanto se è compilata la colonna B_01.02.0110
+B_01.02.0110
+Valore delle attività totali dell'entità finanziaria
+Monetario
+Valore monetario delle attività totali dell'entità finanziaria come segnalato nel bilancio dell'entità finanziaria dell'esercizio precedente la data dell'ultimo aggiornamento del registro delle
+informazioni. Il valore monetario è segnalato in unità.
+Per compilare questa colonna si rimanda all'allegato IV.
+Obbligatoria se l'entità è un'entità finanziaria
+Istruzioni per la compilazione del modello B_01.03 — Elenco delle succursali
+Se un'entità finanziaria dispone di succursali situate al di fuori del paese d'origine, identificare tali succursali mediante questo modello.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_01.03.0010
+Codice identificativo della succursale
+Alfanumerico
+Identificare una succursale di un'entità finanziaria situata al di fuori del paese d'origine utilizzando un codice univoco per ciascuna succursale. Utilizzare una delle opzioni indicate nell'elenco
+chiuso seguente:
+a) LEI della succursale, se univoco per tale succursale e diverso da B_01.03.0020;
+b) altro codice identificativo utilizzato dall'entità finanziaria per identificare la succursale (se il LEI della succursale è equivalente a quello del modello B_01.03.0020 o equivalente al LEI di
+un'altra succursale).
+Obbligatoria
+B_01.03.0020
+LEI della sede centrale dell'entità finanziaria da cui dipende la succursale
+Alfanumerico
+Come segnalato in B_01.02.0010
+Identificare la sede centrale dell'entità finanziaria da cui dipende la succursale utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_01.03.0030
+Nome della succursale
+Alfanumerico
+Indicare il nome della succursale.
+Obbligatoria
+B_01.03.0040
+Paese della succursale
+Paese
+Indicare il codice ISO 3166-1 alpha-2 del paese in cui la succursale è ubicata.
+Obbligatoria
+Istruzioni per la compilazione del modello B_02.01 — Accordi contrattuali — Informazioni generali
+Le entità finanziarie designano un «numero di riferimento dell'accordo contrattuale» per ciascun accordo contrattuale nel registro delle informazioni. Se il fornitore terzo esterno di servizi TIC si
+avvale di subappaltatori, le entità finanziarie non inseriscono nel registro delle informazioni un «numero di riferimento dell'accordo contrattuale» per gli accordi tra i fornitori terzi esterni di
+servizi TIC e i loro subappaltatori. Nel caso di un fornitore intragruppo di servizi TIC, le entità finanziarie includono in questo modello il «numero di riferimento dell'accordo contrattuale» tra
+tale fornitore intragruppo di servizi TIC e i suoi fornitori terzi di servizi TIC e compilano di conseguenza il modello B_02.03 (Elenco degli accordi contrattuali intragruppo).
+Il «numero di riferimento dell'accordo contrattuale» si riferisce ai tipi seguenti di accordi contrattuali:
+a)
+qualsiasi tipo di accordo autonomo;
+b)
+qualsiasi tipo di «accordo generale o quadro», compresi gli accordi quadro e gli accordi master;
+c)
+qualsiasi tipo di «accordo successivo o associato», compresi gli accordi di attuazione, gli accordi di sottoservizi e i buoni d'ordine.
+Il numero di riferimento del contratto non fa riferimento ad alcun tipo di accordo sul livello dei servizi subordinato a uno dei tipi di accordi contrattuali di cui alle lettere a), b) e c).
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_02.01.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Identificare l'accordo contrattuale tra l'entità finanziaria oppure, nel caso di un gruppo, l'impresa figlia del gruppo e il fornitore terzo diretto di servizi TIC.
+Il numero di riferimento dell'accordo contrattuale è il numero di riferimento interno dell'accordo contrattuale assegnato dall'entità finanziaria.
+Il numero di riferimento dell'accordo contrattuale è univoco e coerente nel tempo a livello di entità, su base subconsolidata e su base consolidata, a seconda dei casi.
+Il numero di riferimento dell'accordo contrattuale è utilizzato in modo coerente in tutti i modelli del registro delle informazioni quando si riferisce allo stesso accordo contrattuale.
+Nel caso in cui un'entità agisca per conto di un'entità finanziaria per tutte le attività di quest'ultima, compresi i servizi TIC (cfr. considerando 7), il numero di riferimento dell'accordo
+contrattuale può essere l'accordo contrattuale tra l'entità e il suo fornitore terzo diretto di servizi TIC.
+Obbligatoria
+B_02.01.0020
+Tipo di accordo contrattuale
+Insieme chiuso di opzioni
+Identificare il tipo di accordo contrattuale utilizzando una delle opzioni dell'elenco chiuso seguente:
+1. accordo autonomo;
+2. accordo contrattuale generale/master;
+3. accordo successivo o associato.
+Obbligatoria
+B_02.01.0030
+Numero di riferimento dell'accordo contrattuale generale
+Alfanumerico
+Non applicabile se l'accordo contrattuale è l'«accordo contrattuale generale» o un «accordo autonomo». Negli altri casi, indicare il numero di riferimento dell'accordo contrattuale riferito
+all'accordo generale, che deve corrispondere al valore inserito nella colonna B_02.01.0010 al momento di segnalare l'accordo contrattuale generale.
+Obbligatoria
+B_02.01.0040
+Valuta dell'importo segnalato in B_02.01.0050
+Valuta
+Indicare il codice alfabetico ISO 4217 della valuta utilizzata per esprimere l'importo in B_02.01.0050.
+Obbligatoria
+B_02.01.0050
+Spese o costi stimati annuali dell'accordo contrattuale per l'anno passato
+Monetario
+Spese o costi stimati annuali (o trasferimento intragruppo) dell'accordo contrattuale relativo a servizi TIC per l'anno passato. Il valore monetario è segnalato in unità.
+Le spese o i costi stimati annuali sono espressi nella valuta segnalata in B_01.02.0040.
+Nel caso di un accordo generale con accordi successivi o associati, la somma delle spese o dei costi stimati annuali dichiarati per l'accordo generale e gli accordi successivi o associati è pari al
+totale delle spese o dei costi stimati per l'accordo contrattuale complessivo. Non vi è ripetizione o duplicazione delle spese o dei costi stimati annuali. Occorre tenere conto dei casi seguenti:
+a) se le spese o i costi stimati annuali non sono determinati a livello dell'accordo generale (ossia sono 0), le spese o i costi stimati annuali sono dichiarati a livello di ciascun accordo successivo
+o associato;
+b) se le spese o i costi stimati annuali non possono essere dichiarati per ciascuno degli accordi successivi o associati, le spese o i costi stimati annuali totali sono dichiarati a livello
+dell'accordo generale;
+c) qualora vi siano spese o costi stimati annuali relativi a ciascun livello dell'accordo, ossia generale e successivo o associato, e tali informazioni siano disponibili, le spese o i costi stimati
+annuali sono dichiarati senza duplicazioni a ciascun livello dell'accordo contrattuale.
+Obbligatoria
+Istruzioni per la compilazione del modello B_02.02 — Accordi contrattuali — Informazioni specifiche
+Le entità finanziarie compilano questo modello con il massimo livello di granularità possibile. Se l'accordo contrattuale comprende molteplici servizi TIC a sostegno di molteplici funzioni, le entità
+finanziarie utilizzano tante righe quanti sono gli elementi del modello, combinando i servizi TIC contemplati dall'accordo contrattuale e le funzioni dell'entità finanziaria.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_02.02.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.01.0010
+Obbligatoria
+B_02.02.0020
+LEI dell'entità finanziaria che si avvale del servizio o dei servizi TIC
+Alfanumerico
+Come segnalato in B_04.01.0020
+Identificare l'entità finanziaria che si avvale del servizio o dei servizi TIC utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_02.02.0030
+Codice identificativo del fornitore terzo di servizi TIC
+Alfanumerico
+Come segnalato in B_05.01.0010
+Codice per identificare il fornitore terzo di servizi TIC come segnalato in B_05.01.0010 per tale fornitore.
+Obbligatoria
+B_02.02.0040
+Tipo di codice per identificare il fornitore terzo di servizi TIC
+Pattern
+Come segnalato in B_05.01.0020
+Tipo di codice per identificare il fornitore terzo di servizi TIC in B_02.02.0030, come segnalato in B_05.01.0020 per tale fornitore.
+Obbligatoria
+B_02.02.0050
+Identificativo della funzione
+Pattern
+Come definito dall'entità finanziaria in B_06.01.0010
+Obbligatoria
+B_02.02.0060
+Tipo di servizi TIC
+Insieme chiuso di opzioni
+Uno dei tipi di servizi TIC di cui all'allegato III
+Obbligatoria
+B_02.02.0070
+Data di inizio dell'accordo contrattuale
+Data
+Indicare la data di entrata in vigore dell'accordo contrattuale stabilita nell'accordo contrattuale utilizzando il codice ISO 8601 (aaaa-mm-gg).
+Obbligatoria
+B_02.02.0080
+Data di fine dell'accordo contrattuale
+Data
+Indicare la data di fine stabilita nell'accordo contrattuale utilizzando il codice ISO 8601 (aaaa-mm-gg). Se l'accordo contrattuale ha una durata indeterminata, inserire «9999-12-31». In caso di
+risoluzione dell'accordo contrattuale in una data diversa dalla data di fine, inserire la data di risoluzione.
+Se l'accordo contrattuale prevede un rinnovo, inserire la data del rinnovo del contratto come stabilito nell'accordo contrattuale.
+Obbligatoria
+B_02.02.0090
+Motivo della risoluzione o della fine dell'accordo contrattuale
+Insieme chiuso di opzioni
+In caso di risoluzione o fine dell'accordo contrattuale, indicare il motivo della risoluzione o della fine dell'accordo contrattuale utilizzando una delle opzioni indicate nell'elenco chiuso seguente:
+1. risoluzione per scadenza naturale: l'accordo contrattuale è scaduto/giunto alla fine e non è stato rinnovato da nessuna delle parti;
+2. risoluzione per giusta causa: la risoluzione dell'accordo contrattuale è dovuta alla violazione, da parte del fornitore terzo di servizi TIC, di leggi, regolamenti o condizioni contrattuali
+applicabili;
+3. risoluzione per giusta causa: la risoluzione dell'accordo contrattuale è dovuta all'individuazione di impedimenti, riguardanti il fornitore terzo di servizi TIC, suscettibili di alterare
+l'esercizio della funzione supportata;
+4. risoluzione per giusta causa: la risoluzione dell'accordo contrattuale è dovuta a punti deboli del fornitore terzo di servizi TIC per quanto riguarda la gestione e la sicurezza dei dati o delle
+informazioni sensibili di una qualsiasi delle controparti;
+5. risoluzione su richiesta di un'autorità competente: la risoluzione dell'accordo contrattuale avviene su richiesta di un'autorità competente;
+6. altro: l'accordo contrattuale è stato risolto da una delle parti per qualsiasi motivo diverso dai motivi di cui ai punti da 1 a 5.
+Obbligatoria in caso di risoluzione dell'accordo contrattuale
+B_02.02.0100
+Termine di preavviso per l'entità finanziaria che si avvale del servizio o dei servizi TIC
+Numero naturale
+Indicare il termine di preavviso per la risoluzione dell'accordo contrattuale da parte dell'entità finanziaria in una situazione di status quo. Il termine di preavviso è espresso in numero di giorni
+di calendario dal ricevimento della richiesta di cessazione del servizio TIC da parte della controparte.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante
+B_02.02.0110
+Termine di preavviso per il fornitore terzo di servizi TIC
+Numero naturale
+Indicare il termine di preavviso per la risoluzione dell'accordo contrattuale da parte del fornitore terzo diretto di servizi TIC in una situazione di status quo. Il termine di preavviso è espresso in
+numero di giorni di calendario dal ricevimento della richiesta di cessazione del servizio TIC da parte della controparte.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante
+B_02.02.0120
+Paese del diritto applicabile all'accordo contrattuale
+Paese
+Indicare il paese del diritto applicabile all'accordo contrattuale utilizzando il codice ISO 3166-1 alpha-2.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante
+B_02.02.0130
+Paese da cui si prestano i servizi TIC
+Paese
+Indicare il paese da cui i servizi TIC sono prestati utilizzando il codice ISO 3166-1 alpha-2.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante
+B_02.02.0140
+Conservazione dei dati
+[Sì/No]
+Il servizio TIC riguarda (o prevede) la conservazione dei dati (anche temporanea)?
+Una delle opzioni contenute nell'elenco chiuso seguente:
+1. sì;
+2. no.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante
+B_02.02.0150
+Ubicazione dei dati «at rest» (conservazione)
+Paese
+Indicare il paese di ubicazione dei dati «at rest» (conservazione) utilizzando il codice ISO 3166-1 alpha-2.
+Se vi sono più paesi di ubicazione, utilizzare una riga supplementare per ciascun paese.
+Obbligatoria se in B_02.02.0140 è segnalato «Sì»
+B_02.02.0160
+Ubicazione della gestione dei dati (trattamento)
+Paese
+Indicare il paese di ubicazione della gestione dei dati (trattamento) utilizzando il codice ISO 3166-1 alpha-2.
+Se vi sono più paesi di ubicazione, utilizzare una riga supplementare per ciascun paese.
+Obbligatoria se il servizio TIC si basa sul trattamento dei dati o lo prevede
+B_02.02.0170
+Sensibilità dei dati conservati dal fornitore terzo di servizi TIC
+Insieme chiuso di opzioni
+Identificare il livello di sensibilità dei dati conservati o trattati dal fornitore terzo di servizi TIC, utilizzando una delle opzioni contenute nell'elenco chiuso seguente:
+1. basso
+2. medio
+3. alto
+Prevalgono i dati più sensibili: ad esempio, se sono applicabili entrambe le opzioni «medio» e «alto», selezionare «alto».
+Obbligatoria se il fornitore terzo di servizi TIC conserva i dati e se il servizio TIC supporta una funzione essenziale o importante o una parte significativa di essa.
+B_02.02.0180
+Livello di dipendenza dal servizio TIC che supporta la funzione essenziale o importante
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. dipendenza irrilevante;
+2. dipendenza modesta: in caso di perturbazione dei servizi le funzioni supportate non subirebbero un impatto significativo (nessuna interruzione, nessun danno importante) oppure la perturbazione può
+essere risolta rapidamente e con un impatto minimo sulle funzioni supportate;
+3. dipendenza significativa: in caso di perturbazione dei servizi le funzioni supportate subirebbero un impatto significativo se la perturbazione durasse più di alcuni minuti/alcune ore; la
+perturbazione può causare danni, ma è comunque gestibile;
+4. dipendenza totale: in caso di perturbazione dei servizi le funzioni supportate si interromperebbero immediatamente e rimarrebbero gravemente interrotte/danneggiate per un lungo periodo.
+Obbligatoria se il servizio TIC supporta una funzione essenziale o importante o una parte significativa di essa
+Istruzioni per la compilazione del modello B_02.03 — Elenco degli accordi contrattuali intragruppo
+Il modello B_02.03 identifica gli accordi contrattuali della stessa catena di approvvigionamento dei servizi TIC, utilizzando i numeri di riferimento contrattuali intragruppo nei casi in cui la catena
+di approvvigionamento dei servizi TIC contenga fornitori intragruppo di servizi TIC, ossia se almeno uno dei fornitori terzi di servizi TIC nella catena di approvvigionamento dei servizi TIC è
+un'entità appartenente allo stesso gruppo dell'entità che si avvale dei servizi TIC.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_02.03.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Numero di riferimento dell'accordo contrattuale tra l'entità che si avvale del servizio o dei servizi TIC prestati e il fornitore intragruppo di servizi TIC.
+Il numero di riferimento dell'accordo contrattuale è univoco e coerente nel tempo e in tutto il gruppo.
+Obbligatoria
+B_02.03.0020
+Accordo contrattuale collegato all'accordo contrattuale in B_02.03.0010
+Alfanumerico
+Numero di riferimento dell'accordo contrattuale riguardante l'accordo contrattuale tra il fornitore intragruppo di servizi TIC dell'accordo contrattuale in B_02.03.0010 e il suo fornitore terzo
+diretto di servizi TIC.
+Obbligatoria
+Istruzioni per la compilazione del modello B_03.01 — Entità che firmano gli accordi contrattuali per ricevere il servizio o i servizi TIC per conto delle entità finanziarie che si avvalgono del
+servizio o dei servizi TIC
+Identificare tutte le entità finanziarie di cui al modello B_01.02 che firmano gli accordi contrattuali di cui al modello B_02.01 per ricevere i servizi TIC. Se il registro delle informazioni è
+mantenuto e aggiornato a livello di entità, l'entità finanziaria che firma gli accordi contrattuali è l'entità finanziaria che mantiene e aggiorna il registro delle informazioni.
+L'entità che firma l'accordo contrattuale non è necessariamente un'entità finanziaria né l'entità finanziaria che si avvale dei servizi TIC prestati dal fornitore terzo di servizi TIC.
+Ad esempio, l'entità che firma l'accordo contrattuale di cui al secondo comma può essere un fornitore intragruppo di servizi TIC o un'entità finanziaria o non finanziaria appartenente allo stesso
+gruppo di entità finanziarie che si avvalgono dei servizi TIC prestati dal fornitore terzo di servizi TIC.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_03.01.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.02.0010
+Indicare il numero di riferimento dell'accordo contrattuale firmato dall'impresa.
+Obbligatoria
+B_03.01.0020
+LEI dell'entità che firma l'accordo contrattuale
+Alfanumerico
+Identificare l'impresa che firma l'accordo contrattuale utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442 o l'EUID.
+Obbligatoria
+Istruzioni per la compilazione del modello B_03.02 — Fornitori terzi di servizi TIC che firmano gli accordi contrattuali per la prestazione del servizio o dei servizi TIC
+Identificare tutti i fornitori terzi di servizi TIC di cui al modello B_05.01 che firmano gli accordi contrattuali per la prestazione di servizi TIC di cui al modello B_02.01.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_03.02.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.02.0010
+Indicare il numero di riferimento dell'accordo contrattuale firmato dal fornitore terzo di servizi TIC.
+Obbligatoria
+B_03.02.0020
+Codice identificativo del fornitore terzo di servizi TIC
+Alfanumerico
+Come segnalato in B_05.01.0010
+Codice per identificare il fornitore terzo di servizi TIC come segnalato in B_05.01.0020 per tale fornitore.
+Obbligatoria
+B_03.02.0030
+Tipo di codice per identificare il fornitore terzo di servizi TIC
+Pattern
+Come segnalato in B_05.01.0020
+Tipo di codice per identificare il fornitore terzo di servizi TIC in B_03.02.0020, come segnalato in B_05.01.0020 per tale fornitore.
+Obbligatoria
+Istruzioni per la compilazione del modello B_03.03 — Entità finanziarie che firmano gli accordi contrattuali per la prestazione del servizio o dei servizi TIC ad altre entità finanziarie nel
+consolidamento.
+Identificare tutte le entità finanziarie di cui al modello B_01.02 che hanno firmato gli accordi contrattuali di cui al modello B_02.01 per la prestazione di servizi TIC ad altre entità nel
+consolidamento di cui al modello B_01.02.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_03.03.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.02.0010
+Indicare il numero di riferimento dell'accordo contrattuale firmato dall'entità per la prestazione del servizio o dei servizi TIC.
+Obbligatoria
+B_03.03.0020
+LEI dell'entità finanziaria che fornisce servizi TIC
+Alfanumerico
+Come segnalato in B_01.02.0010
+Identificare l'entità che fornisce servizi TIC utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+Istruzioni per la compilazione del modello B_04.01 — Entità finanziarie che si avvalgono dei servizi TIC
+In questo modello sono segnalate tutte le entità finanziarie di cui al modello B_01.02 e le succursali delle entità finanziarie di cui al modello B_01.03 che si avvalgono dei servizi TIC prestati da
+un fornitore terzo di TIC.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_04.01.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.01.0010
+Indicare il numero di riferimento dell'accordo contrattuale connesso all'entità finanziaria che si avvale dei servizi TIC prestati.
+Obbligatoria
+B_04.01.0020
+LEI dell'entità finanziaria che si avvale del servizio o dei servizi TIC
+Alfanumerico
+Identificare l'entità finanziaria che si avvale del servizio o dei servizi TIC utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+B_04.01.0030
+Natura dell'entità finanziaria che si avvale del servizio o dei servizi TIC
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. l'entità finanziaria che si avvale del servizio o dei servizi TIC è una succursale dell'entità finanziaria;
+2. l'entità finanziaria che si avvale del servizio o dei servizi TIC non è una succursale.
+Obbligatoria
+B_04.01.0040
+Codice identificativo della succursale
+Alfanumerico
+Codice identificativo della succursale segnalato in B_01.03.0010
+Obbligatoria se l'entità finanziaria che si avvale del servizio o dei servizi TIC è una succursale dell'entità finanziaria (B_04.01.0030)
+Istruzioni per la compilazione del modello B_05.01 — Fornitore terzo di servizi TIC
+Le entità finanziarie identificano tutti i fornitori terzi di servizi TIC pertinenti, in particolare:
+a)
+tutti i fornitori terzi diretti di servizi TIC;
+b)
+tutti i fornitori intragruppo di servizi TIC;
+c)
+tutti i subappaltatori identificati nel modello B_05.02 nella catena di approvvigionamento dei servizi TIC;
+d)
+tutte le imprese madri capogruppo dei fornitori terzi di servizi TIC di cui alle lettere a), b) e c).
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_05.01.0010
+Codice identificativo del fornitore terzo di servizi TIC
+Alfanumerico
+Codice per identificare il fornitore terzo di servizi TIC.
+Se è utilizzato il LEI, esso è indicato sotto forma di codice alfanumerico di 20 caratteri basato sulla norma ISO 17442.
+Se è utilizzato l'EUID, esso è indicato come specificato all'articolo 9 del regolamento di esecuzione (UE) 2021/1042 della Commissione.
+Obbligatoria
+B_05.01.0020
+Tipo di codice per identificare il fornitore terzo di servizi TIC
+Pattern
+►C1
+Tipo di codice per identificare il fornitore terzo di servizi TIC indicato in B_05.01.0010
+1. «LEI» per LEI
+2. «EUID» per EUID
+3. CRN per il numero di iscrizione nel registro delle imprese
+4. IVA per il numero di partita IVA
+5. PNR per il numero di passaporto
+6. NIN per il numero di identità nazionale.
+Per le persone giuridiche identificate in B_05.01.0070 devono essere utilizzati soltanto il LEI o l’EUID; è possibile utilizzare un codice alternativo soltanto per le persone fisiche che agiscono a
+titolo professionale.
+Per le persone giuridiche che non sono stabilite nell’Unione si utilizza esclusivamente il LEI. ◄
+Obbligatoria
+B_05.01.0030
+Codice identificativo aggiuntivo del fornitore terzo di servizi TIC
+Alfanumerico
+Codice aggiuntivo per identificare il fornitore terzo di servizi TIC, ove disponibile.
+Facoltativa
+B_05.01.0040
+Tipo di codice identificativo aggiuntivo per identificare il fornitore terzo di servizi TIC
+Pattern
+Il tipo di codice identificativo aggiuntivo per identificare il fornitore terzo di servizi TIC indicato in B_05.01.0030:
+1. «LEI» per LEI
+2. «EUID» per EUID
+3. CRN per il numero di iscrizione nel registro delle imprese
+4. IVA per il numero di partita IVA
+5. PNR per il numero di passaporto
+6. NIN per il numero di identità nazionale.
+Per le persone giuridiche identificate in B_05.01.0070 deve essere utilizzato il LEI o l'EUID; è possibile utilizzare un codice alternativo soltanto per le persone fisiche che agiscono a titolo
+professionale.
+Per le persone giuridiche che non sono stabilite nell'Unione si utilizza esclusivamente il LEI.
+Obbligatoria se è compilata la colonna B_05.01.0030
+B_05.01.0050
+Denominazione legale del fornitore terzo di servizi TIC
+Alfanumerico
+Denominazione legale del fornitore terzo di servizi TIC come iscritta nel registro delle imprese in alfabeto latino, cirillico o greco.
+Obbligatoria
+B_05.01.0060
+Nome del fornitore terzo di servizi TIC in alfabeto latino
+Alfanumerico
+Nome del fornitore terzo di servizi TIC in alfabeto latino.
+Se il nome del fornitore terzo di servizi TIC indicato in B_05.01.0050 è in caratteri latini, deve essere ripetuto anche in questo campo di dati.
+Obbligatoria
+B_05.01.0070
+Fornitore terzo di servizi TIC - tipologia di persona
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. persona giuridica, escluse le persone fisiche che agiscono a titolo professionale;
+2. persona fisica che agisce a titolo professionale.
+Obbligatoria
+B_05.01.0080
+Paese della sede centrale del fornitore terzo di servizi TIC
+Paese
+Indicare il codice ISO 3166-1 alpha-2 del paese in cui è ubicata la sede operativa a livello mondiale del fornitore terzo di servizi TIC (in genere è il paese di residenza fiscale).
+Obbligatoria
+B_05.01.0090
+►C1
+Valuta dell’importo segnalato in B_05.01.0100 ◄
+Valuta
+Indicare il codice alfabetico ISO 4217 della valuta utilizzata per esprimere l'importo in B_05.01.0100.
+La valuta indicata deve essere la stessa valuta utilizzata dall'entità finanziaria per la preparazione del bilancio d'esercizio a livello di entità, su base subconsolidata o su base consolidata, a
+seconda dei casi.
+Obbligatoria se è compilata la colonna B_05.01.0100
+B_05.01.0100
+Spese o costi stimati annuali totali del
+
+=== K222.2 | [Allegato I] Istruzioni per la compilazione del registro delle informazioni (pezzo 2 di 2)
+fornitore terzo di servizi TIC
+Monetario
+Spese o costi stimati annuali per l'utilizzo dei servizi TIC prestati dal fornitore terzo di servizi TIC alle entità che si avvalgono dei servizi TIC. Il valore monetario è segnalato in unità.
+Obbligatoria se il fornitore terzo di servizi TIC è un fornitore terzo diretto di servizi TIC.
+B_05.01.0110
+Codice identificativo dell'impresa madre capogruppo del fornitore terzo di servizi TIC
+Alfanumerico
+Codice per identificare l'impresa madre capogruppo del fornitore terzo di servizi TIC.
+Il codice utilizzato per identificare l'impresa madre capogruppo in questo campo deve corrispondere al codice identificativo indicato in B_05.01.0010 per tale impresa madre capogruppo.
+Se il fornitore terzo di servizi TIC non fa parte di un gruppo, il codice identificativo utilizzato per identificare tale fornitore terzo di servizi TIC in B_05.01.0010 deve essere ripetuto anche in
+questo campo di dati.
+Obbligatoria se il fornitore terzo di servizi TIC non è l'impresa madre capogruppo
+B_05.01.0120
+Tipo di codice per identificare l'impresa madre capogruppo del fornitore terzo di servizi TIC
+Pattern
+Tipo di codice per identificare l'impresa madre capogruppo del fornitore terzo di servizi TIC in B_05.01.0110.
+Il tipo di codice utilizzato per identificare l'impresa madre capogruppo in questo campo deve corrispondere al codice identificativo indicato in B_05.01.0020 per tale impresa madre capogruppo.
+Se il fornitore terzo di servizi TIC non fa parte di un gruppo, il tipo di codice identificativo utilizzato per identificare tale fornitore terzo di servizi TIC in B_05.01.0020 deve essere ripetuto
+anche in questo campo di dati.
+Obbligatoria se il fornitore terzo di servizi TIC non è l'impresa madre capogruppo
+Istruzioni per la compilazione del modello B_05.02 — Catene di approvvigionamento dei servizi TIC
+Questo modello identifica e collega i fornitori terzi di servizi TIC che insieme fanno parte della stessa catena di approvvigionamento di servizi TIC.
+La catena di approvvigionamento dei servizi TIC comprende, se del caso:
+a)
+tutti i fornitori terzi diretti di servizi TIC;
+b)
+tutti i fornitori intragruppo di servizi TIC;
+c)
+per i servizi TIC che supportano una funzione essenziale o importante o una parte significativa di essa, tutti i subappaltatori che svolgono un ruolo effettivo nella prestazione di tali servizi TIC
+(ossia tutti i subappaltatori che prestano servizi TIC la cui perturbazione comprometterebbe la sicurezza o la continuità della prestazione del servizio);
+d)
+se un fornitore intragruppo di servizi TIC si avvale di subappaltatori per prestare i propri servizi TIC all'entità finanziaria, almeno il primo subappaltatore extra-gruppo, anche se i servizi TIC
+prestati non supportano una funzione essenziale o importante o parti significative di essa.
+Tutti i fornitori terzi di servizi TIC appartenenti alla stessa catena di approvvigionamento di servizi TIC condividono:
+a)
+lo stesso «numero di riferimento dell'accordo contrattuale» di cui al modello B_02.01;
+b)
+lo stesso «tipo di servizi TIC» di cui all'allegato III.
+A ciascun fornitore terzo di servizi TIC che appartiene alla stessa catena di approvvigionamento dei servizi TIC si assegna una «posizione» (modello B_05.02.0050) per individuare la sua collocazione
+all'interno della catena di approvvigionamento dei servizi TIC. Qualora molteplici fornitori terzi di servizi TIC occupino la stessa collocazione all'interno della stessa catena di approvvigionamento
+di servizi TIC, a tali fornitori è assegnata la stessa «posizione». Conformemente all'articolo 2, i fornitori terzi diretti di servizi TIC occupano pertanto la posizione 1. Se la posizione è superiore
+a 1, i fornitori terzi di servizi TIC sono subappaltatori.
+Per collegare i fornitori terzi di servizi TIC che insieme appartengono alla stessa catena di approvvigionamento di servizi TIC, per ciascun subappaltatore di TIC (ossia se la «posizione» è superiore
+a 1) le entità finanziarie identificano il fornitore terzo di servizi TIC che riceve i suoi servizi subappaltati. L'identificazione del fornitore terzo di servizi TIC che riceve i servizi subappaltati
+si effettua utilizzando le colonne B_05.02.0060 e B_05.02.0070.
+Per ciascuna catena di approvvigionamento dei servizi TIC (ossia una combinazione di un «numero di riferimento dell'accordo contrattuale» e di un «tipo di servizi TIC»), qualora vi siano molteplici
+fornitori terzi di servizi TIC che ricevono i servizi subappaltati, tutti questi fornitori di servizi sono segnalati in righe separate del modello. La stessa logica si applica a ciascuna posizione
+della catena di approvvigionamento dei servizi TIC.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_05.02.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.01.0010
+Obbligatoria
+B_05.02.0020
+Tipo di servizi TIC
+Insieme chiuso di opzioni
+Uno dei tipi di servizi TIC di cui all'allegato III
+Obbligatoria
+B_05.02.0030
+Codice identificativo del fornitore terzo di servizi TIC
+Alfanumerico
+Come segnalato in B_05.01.0010 per tale fornitore terzo di servizi TIC.
+Esempi:
+— il codice identificativo del fornitore terzo diretto di servizi TIC che fornisce il servizio TIC all'entità finanziaria che di esso si avvale;
+— il codice identificativo del subappaltatore nella posizione 2 che fornisce un servizio al fornitore terzo diretto di servizi TIC.
+Obbligatoria
+B_05.02.0040
+Tipo di codice per identificare il fornitore terzo di servizi TIC
+Pattern
+Come segnalato in B_05.01.0020 per tale fornitore terzo di servizi TIC.
+Obbligatoria
+B_05.02.0050
+Posizione
+Numero naturale
+Se firma l'accordo contrattuale con l'entità finanziaria, il fornitore terzo di servizi TIC è considerato un fornitore terzo diretto di servizi TIC e la «posizione» da segnalare è 1;
+se firma il contratto con il fornitore terzo diretto di servizi TIC, il fornitore terzo di servizi TIC è considerato un subappaltatore e la «posizione» da segnalare è 2.
+La stessa logica si applica a tutti i subappaltatori seguenti aumentando il numero naturale che indica la «posizione».
+Se molteplici fornitori terzi di servizi TIC occupano la stessa «posizione» nella catena di approvvigionamento dei servizi TIC, le entità finanziarie segnalano la stessa «posizione» per tutti i
+fornitori terzi di servizi TIC.
+Obbligatoria
+B_05.02.0060
+Codice identificativo del destinatario dei servizi TIC subappaltati
+Alfanumerico
+Non compilare se il fornitore terzo di servizi TIC (modello B_05.02.0030) è un fornitore terzo diretto di servizi TIC, ossia occupa una «posizione» p = 1 (modello B_05.02.0050);
+se il fornitore terzo di servizi TIC occupa una «posizione» p = n, dove n>1, indicare il «Codice identificativo del destinatario dei servizi subappaltati» nella «posizione» p = n-1 che ha subappaltato
+il servizio TIC (anche parzialmente) al fornitore terzo di servizi TIC nella «posizione» p = n.
+Esempi:
+— il codice identificativo del fornitore terzo diretto di servizi TIC che riceve il servizio TIC dal subappaltatore che occupa la posizione 2;
+— il codice identificativo del subappaltatore nella posizione 3 che riceve il servizio dal subappaltatore nella posizione 2.
+Il codice utilizzato per identificare il destinatario dei servizi TIC subappaltati corrisponde al codice identificativo indicato in B_05.01.0010 per tale fornitore.
+Obbligatoria, non applicabile per la posizione 1
+B_05.02.0070
+Tipo di codice per identificare il destinatario dei servizi TIC subappaltati
+Pattern
+Non compilare se il fornitore terzo di servizi TIC (modello B_05.02.0030) occupa una posizione p = 1 (modello B_05.02.0050).
+Se il fornitore terzo di servizi TIC occupa una «posizione» p = n, dove n>1, indicare il «Tipo di codice per identificare il destinatario del servizio subappaltato» nella «posizione» p = n-1 che ha
+subappaltato il servizio TIC (anche parzialmente) al fornitore terzo di servizi TIC nella «posizione» p = n.
+1. «LEI» per LEI
+2. «EUID» per EUID
+3. CRN per il numero di iscrizione nel registro delle imprese
+4. IVA per il numero di partita IVA
+5. PNR per il numero di passaporto
+6. NIN per il numero di identità nazionale.
+Il tipo di codice utilizzato per identificare il destinatario dei servizi TIC subappaltati corrisponde al codice identificativo indicato in B_05.01.0020 per tale fornitore.
+Obbligatoria, non applicabile per la posizione 1
+Istruzioni per la compilazione del modello B_06.01 — Identificazione delle funzioni
+L'entità finanziaria identifica, sulla base della sua organizzazione interna, tutte le funzioni dell'entità finanziaria supportate da un servizio TIC fornito da fornitori terzi di servizi TIC e
+fornisce informazioni a riguardo.
+A ciascuna combinazione degli elementi seguenti si assegna un identificativo della funzione univoco:
+a)
+«LEI dell'entità finanziaria che si avvale del servizio o dei servizi TIC», colonna B_06.01.0040;
+b)
+«Attività autorizzata», colonna B_06.01.0020;
+c)
+«Nome della funzione» colonna B_06.01.0030.
+Le entità finanziarie utilizzano un numero di righe corrispondente a quello degli elementi del modello combinando le due voci precedenti per compilare questo modello.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni
+Opzioni per la compilazione
+B_06.01.0010
+Identificativo della funzione
+Pattern
+L'identificativo della funzione è composto dalla lettera F (lettera maiuscola) seguita da un numero naturale (ad esempio «F1» per il primo identificativo della funzione e « Fn » per l'identificativo
+della funzione n-esimo, dove «n» è un numero naturale).
+Ciascuna combinazione tra «LEI dell'entità finanziaria che si avvale del servizio o dei servizi TIC» (B_06.01.0040), «Nome della funzione» (B_06.01.0030) e «Attività autorizzata» (B_06.01.0020)
+dispone di un identificativo della funzione univoco.
+Esempio: a un'entità finanziaria che opera nell'ambito di due attività autorizzate («attività A» e «attività B») si assegnano due «identificativi della funzione» univoci per la stessa funzione X (ad
+esempio Vendite) svolta per l'attività A e l'attività B.
+Obbligatoria
+B_06.01.0020
+Attività autorizzata
+Insieme chiuso di opzioni
+Una delle attività autorizzate di cui agli atti giuridici sottostanti, secondo l'elenco di cui all'allegato II per i diversi tipi di entità finanziarie.
+Se la funzione non è collegata a un'attività registrata o autorizzata, inserire «funzioni di supporto».
+Obbligatoria
+B_06.01.0030
+Nome della funzione
+Alfanumerico
+Nome della funzione sulla base dell'organizzazione interna dell'entità finanziaria.
+Obbligatoria
+B_06.01.0040
+LEI dell'entità finanziaria
+Alfanumerico
+Come segnalato in B_04.01.0020
+Identificare l'entità finanziaria utilizzando il LEI, codice alfanumerico di 20 caratteri conforme alla norma ISO 17442.
+Obbligatoria
+►C1
+B_06.01.0050
+◄
+Valutazione dell'essenzialità o dell'importanza
+Insieme chiuso di opzioni
+Utilizzare questa colonna per indicare se la funzione è essenziale o importante secondo la valutazione dell'entità finanziaria. Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. sì;
+2. no;
+3. valutazione non effettuata.
+Obbligatoria
+►C1
+B_06.01.0060
+◄
+Motivi dell'essenzialità o dell'importanza
+Alfanumerico
+Breve spiegazione dei motivi per cui la funzione è stata classificata come essenziale o importante (massimo 300 caratteri)
+Facoltativa
+►C1
+B_06.01.0070
+◄
+Data dell'ultima valutazione dell'essenzialità o dell'importanza
+Data
+Indicare la data utilizzando il codice ISO 8601 (aaaa-mm-gg) della data dell'ultima valutazione dell'essenzialità o dell'importanza nel caso in cui la funzione sia supportata da servizi TIC prestati
+da fornitori terzi di servizi TIC.
+Se la valutazione dell'essenzialità o dell'importanza della funzione non è effettuata, inserire «9999-12-31».
+Obbligatoria
+►C1
+B_06.01.0080
+◄
+Obiettivo di tempo di ripristino della funzione
+Numero naturale
+In numero di ore. Se l'obiettivo di tempo di ripristino è inferiore a un'ora, inserire «1». Se l'obiettivo di tempo di ripristino della funzione non è definito, inserire «0».
+Obbligatoria
+►C1
+B_06.01.0090
+◄
+Obiettivo di punto di ripristino della funzione
+Numero naturale
+In numero di ore. Se l'obiettivo di punto di ripristino è inferiore a un'ora, inserire «1». Se l'obiettivo di punto di ripristino della funzione non è definito, inserire «0».
+Obbligatoria
+►C1
+B_06.01.0100
+◄
+Impatto dell'interruzione della funzione
+Insieme chiuso di opzioni
+Utilizzare questa colonna per indicare l'impatto dell'interruzione della funzione secondo la valutazione dell'entità finanziaria. Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. basso;
+2. medio;
+3. alto;
+4. valutazione non effettuata.
+Obbligatoria
+Istruzioni per la compilazione del modello B_07.01 — Valutazione dei servizi TIC
+Nel supporto a funzioni essenziali o importanti o parti significative di esse, questo modello consente ulteriori valutazioni dei servizi TIC prestati all'entità finanziaria da fornitori terzi di
+servizi TIC, compreso il primo subappaltatore extra-gruppo nella catena di approvvigionamento dei servizi TIC quando i precedenti fornitori terzi di servizi TIC sono intragruppo.
+Codice colonna
+Denominazione colonna
+Tipo
+Istruzioni per la compilazione
+Opzioni per la compilazione
+B_07.01.0010
+Numero di riferimento dell'accordo contrattuale
+Alfanumerico
+Come segnalato in B_02.01.0010
+Obbligatoria
+B_07.01.0020
+Codice identificativo del fornitore terzo di servizi TIC
+Alfanumerico
+Come segnalato in B_05.01.0010
+Obbligatoria
+B_07.01.0030
+Tipo di codice per identificare il fornitore terzo di servizi TIC
+Pattern
+Come segnalato in B_05.01.0020
+Obbligatoria
+B_07.01.0040
+Tipo di servizi TIC
+Insieme chiuso di opzioni
+Uno dei tipi di servizi TIC di cui all'allegato III
+Obbligatoria
+B_07.01.0050
+Sostituibilità del fornitore terzo di servizi TIC
+Insieme chiuso di opzioni
+Utilizzare questa colonna per fornire i risultati della valutazione dell'entità finanziaria in relazione al grado di sostituibilità del fornitore terzo di servizi TIC nella prestazione degli specifici
+servizi TIC a supporto di una funzione essenziale o importante.
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. non sostituibile;
+2. sostituibilità molto complessa;
+3. media complessità in termini di sostituibilità;
+4. facilmente sostituibile.
+Obbligatoria
+B_07.01.0060
+Motivo per cui il fornitore terzo di servizi TIC è considerato non sostituibile o difficilmente sostituibile
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. la mancanza di alternative reali, anche parziali, dovuta al limitato numero di fornitori terzi di servizi TIC attivi su un mercato specifico, alla quota di mercato del fornitore terzo di servizi
+TIC in questione, o ancora alla complessità tecnica o al grado di sofisticazione, anche in relazione a eventuali tecnologie proprietarie, o alle caratteristiche specifiche dell'organizzazione o
+dell'attività del fornitore terzo di servizi TIC;
+2. difficoltà inerenti alla migrazione, totale o parziale, dei dati e dei carichi di lavoro dal fornitore terzo di servizi TIC interessato a un altro, oppure alla loro reintegrazione nell'operatività
+dell'entità finanziaria, a causa dei cospicui costi finanziari, del tempo o di altre risorse che possono essere necessarie per il processo di migrazione, oppure dei maggiori rischi informatici o di
+altri rischi operativi cui l'entità finanziaria può esporsi;
+3. entrambi i motivi di cui ai punti 1 e 2.
+Obbligatoria se in B_07.01.0041 sono stati selezionati «non sostituibile» o «sostituibilità molto complessa»
+B_07.01.0070
+Data dell'ultimo audit sul fornitore terzo di servizi TIC
+Data
+Utilizzare questa colonna per indicare la data dell'ultimo audit effettuato sugli specifici servizi TIC prestati dal fornitore terzo di servizi TIC.
+Questa colonna si riferisce agli audit effettuati da uno dei soggetti seguenti:
+a) il servizio di audit interno o altro personale qualificato supplementare dell'entità finanziaria;
+b) un gruppo congiunto insieme ad altri clienti dello stesso fornitore terzo di servizi TIC («audit congiunto»);
+c) un terzo incaricato dall'entità sottoposta a vigilanza di sottoporre ad audit il fornitore di servizi.
+Questa colonna non si riferisce alla data di ricevimento o di riferimento delle certificazioni di terzi o delle relazioni di audit interno del fornitore terzo di servizi TIC, né alla data di
+monitoraggio annuale dell'accordo da parte dell'entità finanziaria, né alla data del riesame della valutazione del rischio effettuata dall'entità finanziaria.
+Questa colonna è utilizzata per segnalare tutti i tipi di audit effettuati da uno dei soggetti di cui alle lettere a), b) e c) riguardanti in tutto o in parte i servizi TIC prestati dal fornitore
+terzo di servizi TIC.
+Per indicare la data utilizzare il codice ISO 8601 (aaaa-mm-gg).
+Se non è stato effettuato alcun audit, inserire «9999-12-31».
+Obbligatoria
+B_07.01.0080
+Esistenza di un piano di uscita
+[Sì/No]
+Utilizzare questa colonna per segnalare l'esistenza di un piano di uscita dal fornitore terzo di servizi TIC in relazione allo specifico servizio TIC prestato.
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. sì;
+2. no.
+Obbligatoria
+B_07.01.0090
+Possibilità di reintegrazione del servizio TIC previsto dal contratto
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. facile;
+2. difficile;
+3. molto complessa.
+Utilizzare questa colonna se il servizio TIC è prestato da un fornitore terzo di servizi TIC che non è un fornitore intragruppo di servizi TIC.
+Obbligatoria
+B_07.01.0100
+Impatto dell'interruzione dei servizi TIC
+Insieme chiuso di opzioni
+Utilizzare questa colonna per indicare l'impatto per l'entità finanziaria dell'interruzione dei servizi TIC prestati dal fornitore terzo di servizi TIC secondo la valutazione dell'entità finanziaria.
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. basso;
+2. medio;
+3. alto;
+4. valutazione non effettuata.
+Obbligatoria
+B_07.01.0110
+Sono stati individuati fornitori terzi alternativi di servizi TIC?
+Insieme chiuso di opzioni
+Utilizzare una delle opzioni indicate nell'elenco chiuso seguente:
+1. sì;
+2. no;
+►C1
+3. valutazione non effettuata. ◄
+Per ciascun fornitore terzo di servizi TIC che supporta una funzione essenziale o importante, si effettua la valutazione volta a individuare un fornitore di servizi alternativo.
+Obbligatoria
+B_07.01.0120
+Individuazione di fornitori terzi alternativi di servizi TIC
+Alfanumerico
+Se in B_07.01.0110 è segnalato «Sì», in questa colonna si possono inserire informazioni supplementari.
+Facoltativa
+Istruzioni per la compilazione del modello B_99.01 — Terminologia utilizzata dalle entità finanziarie che si avvalgono dei servizi TIC
+L'entità finanziaria fornisce le spiegazioni, i significati e le definizioni interni all'entità in merito all'insieme chiuso di indicatori e opzioni che essa utilizza nel registro delle informazioni.
+B_99.01.C0010
+B_99.01.C0020
+B_99.01.C0030
+B_99.01.C0040
+Codice colonna
+Denominazione colonna
+Opzione
+Descrizione/definizione interna dell'opzione
+B_99.01.R0010
+B_02.01.0020
+Tipo di accordo contrattuale
+1. Accordo autonomo
+B_99.01.R0020
+2. Accordo generale
+B_99.01.R0030
+3. Accordo successivo o associato
+B_99.01.R0040
+B_02.02.0170
+Sensibilità dei dati conservati dal fornitore terzo di servizi TIC
+1. Bassa
+B_99.01.R0050
+2. Media
+B_99.01.R0060
+3. Alta
+B_99.01.R0070
+B_06.01.0110
+Impatto dell'interruzione della funzione
+1. Basso
+B_99.01.R0080
+2. Medio
+B_99.01.R0090
+3. Alto
+B_99.01.R0100
+B_07.01.0050
+Sostituibilità del fornitore terzo di servizi TIC
+1. Non sostituibile
+B_99.01.R0110
+2. Sostituibilità molto complessa
+B_99.01.R0120
+3. Media complessità in termini di sostituibilità
+B_99.01.R0130
+4. Facilmente sostituibile
+B_99.01.R0140
+B_07.01.0090
+Possibilità di reintegrazione del servizio TIC previsto dal contratto
+1. Facile
+B_99.01.R0150
+2. Difficile
+B_99.01.R0160
+3. Molto complessa
+B_99.01.R0170
+B_07.01.0100
+Impatto dell'interruzione dei servizi TIC
+1. Basso
+B_99.01.R0180
+2. Medio
+B_99.01.R0190
+3. Alto
+
+=== K223 | [Allegato II] Elenco delle attività per tipo di entità
+ALLEGATO II
+Elenco delle attività per tipo di entità
+Tipo di entità
+Elenco delle attività e dei servizi
+a) Enti creditizi
+Attività elencate nell'allegato I della direttiva 2013/36/UE e attività elencate nell'allegato I, sezioni A e B, della direttiva 2014/65/UE
+b) Istituti di pagamento, compresi gli istituti di pagamento esentati a norma della direttiva (UE) 2015/2366
+Attività elencate nell'allegato I della direttiva (UE) 2015/2366
+c) Prestatori di servizi di informazione sui conti
+Servizi di informazione sui conti di cui all'allegato I, punto 8), della direttiva (UE) 2015/2366
+d) Istituti di moneta elettronica, compresi gli istituti di moneta elettronica esentati a norma della direttiva 2009/110/CE
+Emissione di moneta elettronica conformemente alla direttiva 2009/110/CE e alle attività elencate nell'allegato I della direttiva (UE) 2015/2366
+e) Imprese di investimento
+Servizi e attività di investimento elencati nell'allegato I, sezioni A e B, della direttiva 2014/65/UE
+f) Prestatori di servizi per le cripto-attività autorizzati a norma del regolamento (UE) 2023/1114
+Servizi e attività elencati all'articolo 3, punto 16), del regolamento (UE) 2023/1114
+g) Emittenti di token collegati ad attività autorizzati a norma del regolamento (UE) 2023/1114
+Attività di cui all'articolo 16, paragrafo 1, del regolamento (UE) 2023/1114
+h) Depositari centrali di titoli
+Attività elencate nell'allegato del regolamento (UE) n. 909/2014 del Parlamento europeo e del Consiglio ( 1 )
+i) Controparti centrali
+Attività delle controparti centrali quali definite all'articolo 2, punto 1), del regolamento (UE) n. 648/2012
+j) Sedi di negoziazione
+Attività delle sedi di negoziazione secondo le definizioni di cui all'articolo 4, punti da 21) a 24), della direttiva 2014/65/UE
+k) Repertori di dati sulle negoziazioni
+Attività dei repertori di dati sulle negoziazioni quali definiti all'articolo 2, punto 2), del regolamento (UE) n. 648/2012 e all'articolo 3, punto 1), del regolamento (UE) 2015/2365 del Parlamento
+europeo e del Consiglio ( 2 )
+l) Gestori di fondi di investimento alternativi
+Attività elencate all'articolo 6, punto 4), e nell'allegato I della direttiva 2011/61/UE del Parlamento europeo e del Consiglio ( 3 )
+m) Società di gestione
+Attività elencate all'articolo 6, paragrafo 3, e nell'allegato II della direttiva 2009/65/CE del Parlamento europeo e del Consiglio ( 4 )
+n) Fornitori di servizi di comunicazione dati
+Servizi di cui all'articolo 2, paragrafo 1, punti 34), 35) e 36), del regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio ( 5 )
+o) Imprese di assicurazione e di riassicurazione
+Attività autorizzate per: i) i rami dell'assicurazione non vita di cui all'allegato I, sezione B, della direttiva 2009/138/CE del Parlamento europeo e del Consiglio ( 6 ) ; ii) i rami
+dell'assicurazione vita di cui all'allegato II di tale direttiva; iii) attività di riassicurazione non vita e iv) attività di riassicurazione vita di cui all'articolo 15, paragrafo 5, di tale
+direttiva
+p) Intermediari assicurativi, intermediari riassicurativi e intermediari assicurativi a titolo accessorio
+Attività di distribuzione assicurativa e riassicurativa quali definite all'articolo 2, paragrafo 1, punti 1) e 2), della direttiva (UE) 2016/97 del Parlamento europeo e del Consiglio ( 7 )
+q) Enti pensionistici aziendali o professionali
+Attività degli enti pensionistici aziendali o professionali di cui all'articolo 7 della direttiva (UE) 2016/2341 del Parlamento europeo e del Consiglio ( 8 )
+r) Agenzie di rating del credito
+Attività delle agenzie di rating del credito di cui all'articolo 3, paragrafo 1, lettere a) e b), del regolamento (CE) n. 1060/2009 del Parlamento europeo e del Consiglio ( 9 )
+s) Amministratori di indici di riferimento critici
+Fornitura di indici di riferimento da parte di amministratori quale definita all'articolo 3, paragrafo 1, punti 5) e 6), del regolamento (UE) 2016/1011 del Parlamento europeo e del Consiglio, in
+relazione agli indici di riferimento critici quali definiti all'articolo 3, paragrafo 1, punto 25), di tale regolamento
+t) Fornitori di servizi di crowdfunding
+Prestazione di servizi di crowdfunding a norma dell'articolo 3 del regolamento (UE) 2020/1503 del Parlamento europeo e del Consiglio ( 10 )
+u) Repertori di dati sulle cartolarizzazioni
+Attività dei repertori di dati sulle cartolarizzazioni quali definiti all'articolo 2, punto 23), del regolamento (UE) 2017/2402 del Parlamento europeo e del Consiglio ( 11 ) e all'articolo 1, punti 4)
+e 5), del regolamento delegato (UE) 2020/1230 della Commissione ( 12 )
+Entità non finanziaria: fornitore intragruppo di servizi TIC
+Non applicabile
+Entità non finanziaria: altra entità intragruppo
+Non applicabile
+Entità non finanziaria: fornitore terzo di servizi TIC
+Non applicabile
+( 1 )
+Regolamento (UE) n. 909/2014 del Parlamento europeo e del Consiglio, del 23 luglio 2014, relativo al miglioramento del regolamento titoli nell'Unione europea e ai depositari centrali di titoli e
+recante modifica delle direttive 98/26/CE e 2014/65/UE e del regolamento (UE) n. 236/2012 (GU L 257 del 28.8.2014, pag. 1, ELI: http://data.europa.eu/eli/reg/2014/909/oj).
+( 2 )
+Regolamento (UE) 2015/2365 del Parlamento europeo e del Consiglio, del 25 novembre 2015, sulla trasparenza delle operazioni di finanziamento tramite titoli e del riutilizzo e che modifica il
+regolamento (UE) n. 648/2012 (GU L 337 del 23.12.2015, pag. 1, ELI: http://data.europa.eu/eli/reg/2015/2365/oj).
+( 3 )
+Direttiva 2011/61/UE del Parlamento europeo e del Consiglio, dell'8 giugno 2011, sui gestori di fondi di investimento alternativi, che modifica le direttive 2003/41/CE e 2009/65/CE e i regolamenti
+(CE) n. 1060/2009 e (UE) n. 1095/2010 (GU L 174 dell'1.7.2011, pag. 1, ELI: http://data.europa.eu/eli/dir/2011/61/oj).
+( 4 )
+Direttiva 2009/65/CE del Parlamento europeo e del Consiglio, del 13 luglio 2009, concernente il coordinamento delle disposizioni legislative, regolamentari e amministrative in materia di taluni
+organismi d'investimento collettivo in valori mobiliari (OICVM) (GU L 302 del 17.11.2009, pag. 32, ELI: http://data.europa.eu/eli/dir/2009/65/oj).
+( 5 )
+Regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio, del 15 maggio 2014, sui mercati degli strumenti finanziari e che modifica il regolamento (UE) n. 648/2012 (GU L 173 del 12.6.2014,
+pag. 84, ELI: http://data.europa.eu/eli/reg/2014/600/oj).
+( 6 )
+Direttiva 2009/138/CE del Parlamento europeo e del Consiglio, del 25 novembre 2009, in materia di accesso ed esercizio delle attività di assicurazione e di riassicurazione (solvibilità II) (GU L 335
+del 17.12.2009, pag. 1, ELI: http://data.europa.eu/eli/dir/2009/138/oj).
+( 7 )
+Direttiva (UE) 2016/97 del Parlamento europeo e del Consiglio, del 20 gennaio 2016, sulla distribuzione assicurativa (GU L 26 del 2.2.2016, pag. 19, ELI: http://data.europa.eu/eli/dir/2016/97/oj).
+( 8 )
+Direttiva (UE) 2016/2341 del Parlamento europeo e del Consiglio, del 14 dicembre 2016, relativa alle attività e alla vigilanza degli enti pensionistici aziendali o professionali (EPAP) (GU L 354 del
+23.12.2016, pag. 37, ELI: http://data.europa.eu/eli/dir/2016/2341/oj).
+( 9 )
+Regolamento (CE) n. 1060/2009 del Parlamento europeo e del Consiglio, del 16 settembre 2009, relativo alle agenzie di rating del credito (GU L 302 del 17.11.2009, pag. 1, ELI:
+http://data.europa.eu/eli/reg/2009/1060/oj).
+( 10 )
+Regolamento (UE) 2020/1503 del Parlamento europeo e del Consiglio, del 7 ottobre 2020, relativo ai fornitori europei di servizi di crowdfunding per le imprese, e che modifica il regolamento (UE)
+2017/1129 e la direttiva (UE) 2019/1937 (GU L 347 del 20.10.2020, pag. 1, ELI: http://data.europa.eu/eli/reg/2020/1503/oj).
+( 11 )
+Regolamento (UE) 2017/2402 del Parlamento europeo e del Consiglio, del 12 dicembre 2017, che stabilisce un quadro generale per la cartolarizzazione, instaura un quadro specifico per cartolarizzazioni
+semplici, trasparenti e standardizzate e modifica le direttive 2009/65/CE, 2009/138/CE e 2011/61/UE e i regolamenti (CE) n. 1060/2009 e (UE) n. 648/2012 (GU L 347 del 28.12.2017, pag. 35, ELI:
+http://data.europa.eu/eli/reg/2017/2402/oj).
+( 12 )
+Regolamento delegato (UE) 2020/1230 della Commissione, del 29 novembre 2019, che integra il regolamento (UE) 2017/2402 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di
+regolamentazione che specificano i dettagli della domanda di registrazione dei repertori di dati sulle cartolarizzazioni e i dettagli della domanda semplificata di estensione della registrazione dei
+repertori di dati sulle negoziazioni (GU L 289 del 3.9.2020, pag. 345, ELI: http://data.europa.eu/eli/reg/2020/1230/oj).
+
+=== K224 | [Allegato III] Tipo di servizi TIC
+ALLEGATO III
+Tipo di servizi TIC
+Quando si fa riferimento a un tipo di servizi TIC nei modelli del registro delle informazioni, si segnala soltanto l'identificativo (da S01 a S19) del tipo di servizi TIC pertinente.
+Identificativo
+Tipo di servizi TIC
+Descrizione
+S01
+1. Gestione dei progetti relativi alle TIC
+Prestazione di servizi relativi al responsabile della gestione dei progetti (PMO)
+S02
+2. Sviluppo delle TIC
+Prestazione di servizi relativi a: analisi dell'attività aziendale, progettazione e sviluppo di software, test
+S03
+3. Helpdesk per le TIC e assistenza di primo livello
+Prestazione di servizi relativi a: helpdesk e assistenza di primo livello in caso di incidenti connessi alle TIC
+S04
+4. Servizi di gestione della sicurezza delle TIC
+Prestazione di servizi relativi a: sicurezza delle TIC (protezione, individuazione, risposta e ripristino), compresi il trattamento degli incidenti di sicurezza e la scienza forense
+S05
+5. Trasmissione dei dati
+Abbonamento ai servizi dei fornitori di dati (servizio di dati digitali)
+S06
+6. Analisi dei dati
+Prestazione di servizi relativi al supporto per l'analisi dei dati (servizio di dati digitali)
+S07
+7. TIC, attrezzature e servizi di hosting (esclusi i servizi cloud)
+Fornitura di infrastrutture, attrezzature e servizi di hosting TIC, compresa la fornitura di utenze (energia, gestione del calore, ecc.), accesso alle telecomunicazioni e sicurezza fisica (esclusi i
+servizi cloud) e attività di trattamento dei pagamenti o la gestione delle infrastrutture di pagamento
+S08
+8. Calcolo
+Fornitura di capacità di trattamento digitale (compresa l'elaborazione dei dati), esclusi i servizi di calcolo prestati nel contesto di un ambiente cloud
+S09
+9. Conservazione dei dati non cloud
+Fornitura di piattaforme per la conservazione dei dati (esclusi i servizi cloud)
+S10
+10. Operatore di telecomunicazioni
+Operazioni per i sistemi di telecomunicazione e la gestione dei flussi. I servizi telefonici analogici tradizionali sono esplicitamente esclusi a norma dell'articolo 3, punto 21), del regolamento (UE)
+2022/2554.
+S11
+11. Infrastrutture di rete
+Fornitura di infrastrutture di rete
+S12
+12. Hardware e dispositivi fisici
+Fornitura di postazioni di lavoro, telefoni, server, dispositivi di conservazione dei dati, apparecchiature, ecc. sotto forma di servizio
+S13
+13. Concessione di licenze di software (esclusi SaaS)
+Fornitura di software operanti in sede
+S14
+14. Gestione del funzionamento delle TIC (compresa la manutenzione)
+Prestazione di servizi relativi a: configurazione, manutenzione, installazione, gestione della capacità, gestione della continuità operativa, ecc. dell'infrastruttura (sistemi e hardware ad eccezione
+della rete)
+compresi i fornitori di servizi gestiti (MSP)
+S15
+15. Consulenza in materia di TIC
+Prestazione di servizi a carattere intellettuale/offerta di competenze in materia di TIC
+S16
+16. Gestione dei rischi informatici
+Verifica della conformità ai requisiti in materia di gestione dei rischi informatici a norma dell'articolo 6, paragrafo 10, del regolamento (UE) 2022/2554
+S17
+17. Servizi cloud: IaaS
+Servizio a livello di infrastruttura
+S18
+18. Servizi cloud: PaaS
+Servizio a livello di piattaforma
+S19
+19. Servizi cloud: SaaS
+Servizio a livello di software
+
+=== K225 | [Allegato IV] Istruzioni per la segnalazione del «valore delle attività totali»
+ALLEGATO IV
+Istruzioni per la segnalazione del «valore delle attività totali»
+Tipo di entità
+Istruzioni per la segnalazione del valore delle attività totali nella colonna B_01.02.0110
+a) Enti creditizi
+Informazioni di cui all'allegato X, modello C40.00, riga 0410, colonna 0010, del regolamento di esecuzione (UE) 2021/451 della Commissione ( 1 )
+b) Istituti di pagamento, compresi gli istituti di pagamento esentati a norma della direttiva (UE) 2015/2366
+Valore delle attività totali nella contabilità obbligatoria
+c) Prestatori di servizi di informazione sui conti
+Valore delle attività totali nella contabilità obbligatoria
+d) Istituti di moneta elettronica, compresi gli istituti di moneta elettronica esentati a norma della direttiva 2009/110/CE
+Valore delle attività totali nella contabilità obbligatoria
+e) Imprese di investimento
+Informazioni di cui all'allegato I, modello Z01.00, colonna 0090, del regolamento di esecuzione (UE) 2018/1624 della Commissione ( 2 )
+f) Prestatori di servizi per le cripto-attività autorizzati a norma del regolamento (UE) 2023/1114
+Valore delle attività totali nella contabilità obbligatoria
+g) Emittenti di token collegati ad attività autorizzati a norma del regolamento (UE) 2023/1114
+Valore delle attività totali nella contabilità obbligatoria
+h) Depositari centrali di titoli
+Valore delle attività totali nel bilancio sottoposto a revisione comunicato alle autorità competenti a norma dell'articolo 41, lettera a), del regolamento delegato (UE) 2017/392 della Commissione ( 3
+)
+i) Controparti centrali
+Informazioni come segnalato nelle norme in materia di informativa «Public quantitative disclosure standards for central counterparties» di BRI/IOSCO, campo 15.2
+j) Sedi di negoziazione
+Valore delle attività totali nella contabilità obbligatoria
+k) Repertori di dati sulle negoziazioni
+Valore delle attività totali nella contabilità obbligatoria
+l) Gestori di fondi di investimento alternativi
+Valore delle attività totali nella contabilità obbligatoria
+m) Società di gestione
+Valore delle attività totali nella contabilità obbligatoria
+n) Fornitori di servizi di comunicazione dati
+Valore delle attività totali nella contabilità obbligatoria
+o) Imprese di assicurazione e di riassicurazione
+Informazioni di cui all'allegato II e all'allegato III, modello S02.01, riga 0500, colonna 0010, del regolamento di esecuzione (UE) 2023/894 della Commissione ( 4 )
+p) Intermediari assicurativi, intermediari riassicurativi e intermediari assicurativi a titolo accessorio
+Valore delle attività totali nella contabilità obbligatoria
+q) Enti pensionistici aziendali o professionali
+Le attività totali devono essere pari alla somma di tutte le voci distintamente individuate sul lato dell'attivo del bilancio e anche pari alle passività totali
+r) Agenzie di rating del credito
+Valore delle attività totali nella contabilità obbligatoria
+s) Amministratori di indici di riferimento critici
+Valore delle attività totali nella contabilità obbligatoria
+t) Fornitori di servizi di crowdfunding
+Valore delle attività totali nella contabilità obbligatoria
+u) Repertori di dati sulle cartolarizzazioni
+Valore delle attività totali nella contabilità obbligatoria
+Entità non finanziaria: fornitore intragruppo di servizi TIC
+Non applicabile
+Entità non finanziaria: altra entità intragruppo
+Non applicabile
+Entità non finanziaria: fornitore terzo di servizi TIC
+Non applicabile
+( 1 )
+Regolamento di esecuzione (UE) 2021/451 della Commissione, del 17 dicembre 2020, che stabilisce norme tecniche di attuazione per l'applicazione del regolamento (UE) n. 575/2013 del Parlamento europeo
+e del Consiglio per quanto riguarda le segnalazioni degli enti a fini di vigilanza e che abroga il regolamento di esecuzione (UE) n. 680/2014 (GU L 97 del 19.3.2021, pag. 1, ELI:
+http://data.europa.eu/eli/reg_impl/2021/451/oj).
+( 2 )
+Regolamento di esecuzione (UE) 2018/1624 della Commissione, del 23 ottobre 2018, che stabilisce norme tecniche di attuazione per quanto riguarda le procedure e i moduli e modelli standard per la
+presentazione di informazioni ai fini dei piani di risoluzione per gli enti creditizi e le imprese di investimento ai sensi della direttiva 2014/59/UE del Parlamento europeo e del Consiglio e che
+abroga il regolamento di esecuzione (UE) 2016/1066 della Commissione (GU L 277 del 7.11.2018, pag. 1, ELI: http://data.europa.eu/eli/reg_impl/2018/1624/oj).
+( 3 )
+Regolamento delegato (UE) 2017/392 della Commissione, dell'11 novembre 2016, che integra il regolamento (UE) n. 909/2014 del Parlamento europeo e del Consiglio per quanto riguarda le norme tecniche di
+regolamentazione in materia di autorizzazione, vigilanza e requisiti operativi per i depositari centrali di titoli (GU L 65 del 10.3.2017, pag. 48, ELI: http://data.europa.eu/eli/reg_del/2017/392/oj).
+( 4 )
+Regolamento di esecuzione (UE) 2023/894 della Commissione, del 4 aprile 2023, che stabilisce norme tecniche di attuazione per l'applicazione della direttiva 2009/138/CE del Parlamento europeo e del
+Consiglio per quanto riguarda i modelli per la presentazione, da parte delle imprese di assicurazione e di riassicurazione alle loro autorità di vigilanza, delle informazioni necessarie per la loro
+vigilanza e che abroga il regolamento di esecuzione (UE) 2015/2450 (GU L 120 del 5.5.2023, pag. 1, ELI: http://data.europa.eu/eli/reg_impl/2023/894/oj).

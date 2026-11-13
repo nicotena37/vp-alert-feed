@@ -1,0 +1,1480 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento delegato (UE) 2025/295 della Commissione, del 24 ottobre 2024, che integra il regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio per   (id UE-32025R0295)
+
+=== K196 | [3] Informazioni che i fornitori terzi critici di servizi TIC devono fornire dopo la formulazione di raccomandazioni
+Articolo 3
+Informazioni che i fornitori terzi critici di servizi TIC devono fornire dopo la formulazione di raccomandazioni
+1. Il fornitore terzo critico di servizi TIC presenta all’autorità di sorveglianza capofila una relazione contenente un piano correttivo in relazione alle raccomandazioni e ai rimedi che il fornitore
+terzo critico di servizi TIC intende attuare ai fini dell’attenuazione dei rischi individuati nelle raccomandazioni di cui all’articolo 35, paragrafo 1, lettera d), del regolamento (UE) 2022/2554. La
+relazione è coerente con il calendario fissato dall’autorità di sorveglianza capofila per ciascuna raccomandazione.
+2. Al fine di consentire il monitoraggio dell’attuazione delle azioni adottate o dei rimedi applicati dal fornitore terzo critico di servizi TIC in relazione alle raccomandazioni ricevute, il
+fornitore terzo critico di servizi TIC condivide con l’autorità di sorveglianza capofila, su richiesta:
+a)
+le relazioni intermedie sullo stato di avanzamento e i relativi documenti giustificativi che specifichino i progressi compiuti nell’attuazione delle azioni e delle misure indicate nella relazione
+trasmessa dal fornitore terzo critico di servizi TIC all’autorità di sorveglianza capofila entro il termine stabilito dall’autorità di sorveglianza capofila;
+b)
+le relazioni finali e i relativi documenti giustificativi che specifichino le azioni adottate o i rimedi applicati dal fornitore terzo critico di servizi TIC ai fini dell’attenuazione dei rischi
+individuati nelle raccomandazioni ricevute.
+
+=== K197 | [4] Struttura e formato delle informazioni trasmesse dai fornitori terzi critici di servizi TIC
+Articolo 4
+Struttura e formato delle informazioni trasmesse dai fornitori terzi critici di servizi TIC
+1. Il fornitore terzo critico di servizi TIC trasmette le informazioni richieste all’autorità di sorveglianza capofila tramite gli appositi canali elettronici sicuri indicati nella richiesta
+dall’autorità di sorveglianza capofila e nella forma stabilita da quest’ultima.
+2. All’atto della trasmissione delle informazioni all’autorità di sorveglianza capofila, i fornitori terzi critici di servizi TIC:
+a)
+seguono la struttura indicata dall’autorità di sorveglianza capofila nella sua richiesta di informazioni;
+b)
+indicano chiaramente l’informazione pertinente nella documentazione presentata.
+3. Le informazioni trasmesse, diffuse o segnalate all’autorità di sorveglianza capofila da parte del fornitore terzo critico di servizi TIC sono redatte in una lingua comunemente utilizzata negli
+ambienti della finanza internazionale.
+
+=== K198 | [5] Modello per la trasmissione di informazioni relative agli accordi di subappalto
+Articolo 5
+Modello per la trasmissione di informazioni relative agli accordi di subappalto
+Il fornitore terzo critico di servizi TIC che è tenuto a condividere informazioni relative agli accordi di subappalto trasmette le informazioni all’autorità di sorveglianza capofila conformemente al
+modello di cui all’allegato.
+
+=== K199 | [6] Valutazione da parte delle autorità competenti dei rischi trattati nelle raccomandazioni dell’autorità di sorveglianza c
+Articolo 6
+Valutazione da parte delle autorità competenti dei rischi trattati nelle raccomandazioni dell’autorità di sorveglianza capofila
+1. Nell’ambito della vigilanza sulle entità finanziarie, l’autorità competente valuta l’impatto su queste ultime delle misure adottate dal fornitore terzo critico di servizi TIC sulla base delle
+raccomandazioni dell’autorità di sorveglianza capofila conformemente al principio di proporzionalità.
+2. Nell’effettuare la valutazione di cui al paragrafo 1, l’autorità competente tiene conto di tutti gli aspetti seguenti:
+a)
+l’adeguatezza e la coerenza delle misure correttive e di riparazione attuate dalle entità finanziarie ai fini dell’attenuazione dei rischi individuati nelle raccomandazioni;
+b)
+la valutazione effettuata dall’autorità di sorveglianza capofila del rispetto, da parte del fornitore terzo critico di servizi TIC, delle misure e delle azioni incluse nella relazione qualora abbia un
+impatto sull’esposizione delle entità finanziarie che rientrano nel suo ambito di competenza ai rischi individuati nelle raccomandazioni;
+c)
+il parere di qualsiasi altra autorità competente che sia stata consultata conformemente all’articolo 42, paragrafo 5, del regolamento (UE) 2022/2554;
+d)
+se l’autorità di sorveglianza capofila ha ritenuto che le azioni e i rimedi attuati dal fornitore terzo critico di servizi TIC erano adeguati per attenuare l’esposizione delle entità finanziarie che
+rientrano nel suo ambito di competenza ai rischi individuati nelle raccomandazioni.
+3. Su richiesta dell’autorità di sorveglianza capofila, l’autorità competente fornisce in tempi ragionevoli i risultati della valutazione di cui al paragrafo 1. Nel richiedere i risultati di tale
+valutazione, l’autorità di sorveglianza capofila tiene conto del principio di proporzionalità e della dimensione dei rischi associati alle raccomandazioni, compresi gli impatti transfrontalieri di
+tali rischi quando incidono su entità finanziarie che operano in più di uno Stato membro.
+4. Se del caso, l’autorità competente chiede alle entità finanziarie di fornire tutte le informazioni necessarie per effettuare la valutazione di cui al paragrafo 1.
+
+=== K201 | [Allegato] MODELLO PER LA CONDIVISIONE DI INFORMAZIONI RELATIVE AGLI ACCORDI DI SUBAPPALTO
+ALLEGATO
+MODELLO PER LA CONDIVISIONE DI INFORMAZIONI RELATIVE AGLI ACCORDI DI SUBAPPALTO
+Categoria di informazioni
+Elementi di informazione principali
+Informazioni generali
+—
+Nome del fornitore terzo critico di servizi TIC.
+—
+Codice identificativo del fornitore terzo critico di servizi TIC.
+—
+Il nome del referente e le informazioni di contatto del fornitore terzo critico di servizi TIC.
+—
+Data di presentazione del modello.
+Panoramica degli accordi di subappalto
+—
+Mappatura degli accordi di subappalto, compresa una breve descrizione della finalità e della portata dei rapporti di subappalto (tra cui un’indicazione del livello di criticità o di importanza degli
+accordi di subappalto per il fornitore terzo critico di servizi TIC).
+—
+Specificazione e descrizione dei tipi di servizi TIC subappaltati e della loro rilevanza per i servizi TIC prestati alle entità finanziarie, in linea con le norme tecniche di attuazione adottate ai
+sensi dell’articolo 28, paragrafo 9, del regolamento (UE) 2022/2554.
+—
+Nello specificare i tipi di servizi TIC, fare riferimento all’elenco di cui all’allegato IV delle norme tecniche di attuazione adottate ai sensi dell’articolo 28, paragrafo 9, del regolamento (UE)
+2022/2554.
+Informazioni sui subappaltatori
+—
+Denominazione e dati della persona giuridica (compreso il codice identificativo) di ciascun subappaltatore.
+—
+Recapiti dei membri del personale responsabili di ciascuno dei rapporti di subappalto in seno alla struttura di gestione del fornitore terzo critico di servizi TIC.
+—
+Panoramica, per ciascun subappaltatore, delle competenze, dell’esperienza e delle qualifiche relative ai servizi TIC appaltati.
+Descrizione dei servizi prestati dai subappaltatori
+—
+Descrizione dettagliata dei servizi TIC specifici prestati da ciascun subappaltatore.
+—
+Ripartizione delle responsabilità e dei compiti assegnati ai subappaltatori, specificando i diversi ruoli nelle diverse fasi dei processi TIC.
+—
+Informazioni sul livello di accesso da parte dei subappaltatori a dati personali o altrimenti sensibili o sistemi relativi ai servizi TIC prestati alle entità finanziarie.
+—
+Informazioni sui siti da cui vengono prestati i servizi dei subappaltatori e sulle misure adottate per affrontare i rischi derivanti dai servizi prestati al di fuori dell’Unione.
+Governance e sorveglianza dei subappalti
+—
+Descrizione del quadro contrattuale e di governance in atto per gestire i rapporti di subappalto, comprese le clausole che limitano l’uso di dati sensibili.
+—
+Spiegazione dei processi di selezione, assunzione e monitoraggio dei subappaltatori.
+—
+Panoramica delle metriche di prestazione, degli obiettivi e degli accordi sul livello dei servizi e degli indicatori chiave di prestazione utilizzati per valutare le prestazioni e il monitoraggio
+dell’affidabilità del subappaltatore.
+Gestione dei rischi e conformità
+—
+Valutazione dei profili di rischio del subappaltatore e del potenziale impatto sui servizi TIC prestati alle entità finanziarie.
+—
+Spiegazione delle misure di attenuazione dei rischi attuate per far fronte ai rischi connessi al subappalto.
+—
+Informazioni dettagliate sul rispetto, da parte del subappaltatore, della normativa pertinente, anche per quanto riguarda la protezione dei dati e le norme di settore.
+Continuità operativa e pianificazione di emergenza
+—
+Panoramica della continuità operativa e dei piani di risposta e ripristino del subappaltatore.
+—
+Descrizione dei meccanismi in essere per garantire la continuità del servizio in caso di perturbazioni o di risoluzione da parte del subappaltatore.
+—
+Frequenza dei test dei piani di continuità operativa e dei piani di risposta e ripristino da parte dei subappaltatori, date dei test più recenti effettuati negli ultimi tre anni e indicazione
+dell’eventuale coinvolgimento del fornitore terzo critico di servizi TIC in tali test.
+Segnalazione
+—
+Descrizione dei meccanismi di segnalazione e frequenza delle segnalazioni tra il fornitore terzo critico di servizi TIC e i suoi subappaltatori.
+Adozione di rimedi e gestione degli incidenti
+—
+Descrizione delle procedure per affrontare gli incidenti, le violazioni o l’inosservanza connessi ai subappaltatori.
+Certificazioni e audit
+—
+Informazioni su eventuali certificazioni, audit o valutazioni indipendenti condotti sui subappaltatori per convalidarne i controlli di sicurezza, le norme di qualità o la conformità alla normativa.
+—
+Data e frequenza degli audit sui subappaltatori condotti dal fornitore terzo critico di servizi TIC.
+ELI: http://data.europa.eu/eli/reg_del/2025/295/oj
+ISSN 1977-0707 (electronic edition)
+
+
+######## NORMA: Regolamento di esecuzione (UE) 2025/302 della Commissione, del 23 ottobre 2024, che stabilisce norme tecniche di attuazione per l’applicazione del regolamento (  (id UE-32025R0302)
+
+=== K202 | [1] Modello per la segnalazione degli incidenti gravi connessi alle TIC
+Articolo 1
+Modello per la segnalazione degli incidenti gravi connessi alle TIC
+1. Le entità finanziarie utilizzano il modello di cui all’allegato I per trasmettere la notifica iniziale, la relazione intermedia e la relazione finale di cui all’articolo 19, paragrafo 4, del
+regolamento (UE) 2022/2554 come segue:
+a)
+le entità finanziarie che presentano una notifica iniziale compilano i campi di dati del modello che corrispondono alle informazioni da fornire a norma dell’articolo 2 del regolamento delegato (UE)
+2025/301 della Commissione ( 7 ) e possono, qualora dispongano già di tali informazioni, completare i campi di dati la cui compilazione non è richiesta per una notifica iniziale ma è richiesta per una
+relazione intermedia o finale;
+b)
+le entità finanziarie che presentano una relazione intermedia compilano i campi di dati del modello che corrispondono alle informazioni da fornire a norma dell’articolo 3 del regolamento delegato (UE)
+2025/301 e possono, qualora dispongano già di tali informazioni, completare i campi di dati la cui compilazione non è richiesta per la relazione intermedia ma è richiesta per la relazione finale.
+c)
+le entità finanziarie che presentano una relazione finale compilano i campi di dati del modello che corrispondono alle informazioni da fornire a norma dell’articolo 4 del regolamento delegato (UE)
+2025/301
+2. Le entità finanziarie garantiscono che le informazioni contenute nella notifica iniziale, nella relazione intermedia e nella relazione finale siano complete e accurate.
+3. Le entità finanziarie forniscono stime dei valori sulla base di altri dati e informazioni disponibili, nella misura del possibile, qualora non siano disponibili dati accurati al momento della
+trasmissione della notifica iniziale o della relazione intermedia.
+4. All’atto della trasmissione di una relazione intermedia o finale, le entità finanziarie utilizzano il modello di cui all’allegato I per fornire tutte le informazioni richieste e aggiornare, se del
+caso, le informazioni precedentemente fornite nella notifica iniziale o nella relazione intermedia.
+5. All’atto della compilazione del modello di cui all’allegato I le entità finanziarie seguono il glossario dei dati e le istruzioni di cui all’allegato II.
+
+=== K203 | [2] Trasmissione congiunta della notifica iniziale, della relazione intermedia e della relazione finale
+Articolo 2
+Trasmissione congiunta della notifica iniziale, della relazione intermedia e della relazione finale
+Le entità finanziarie possono combinare la presentazione della notifica iniziale, della relazione intermedia e della relazione finale per fornire due o tutte le informazioni contemporaneamente,
+qualora siano riprese le attività regolari o sia stata completata l’analisi delle cause profonde e purché siano rispettati i termini di cui all’articolo 5 del regolamento delegato (UE) 2025/301
+
+=== K204 | [3] Incidenti ricorrenti connessi alle TIC
+Articolo 3
+Incidenti ricorrenti connessi alle TIC
+Le entità finanziarie che forniscono informazioni su incidenti ricorrenti connessi alle TIC non gravi che soddisfano cumulativamente le condizioni per la sussistenza di un incidente grave connesso
+alle TIC di cui all’articolo 8, paragrafo 2, del regolamento delegato (UE) 2024/1772 trasmettono tali informazioni in forma aggregata.
+
+=== K205 | [4] Uso di canali elettronici sicuri
+Articolo 4
+Uso di canali elettronici sicuri
+1. Le entità finanziarie utilizzano canali elettronici sicuri messi a disposizione dalla rispettiva autorità competente per la trasmissione della notifica iniziale e delle relazioni intermedia e
+finale.
+2. Le entità finanziarie che non sono in grado di utilizzare i canali elettronici sicuri messi a disposizione dalla rispettiva autorità competente informano la propria autorità competente in merito a
+un incidente grave connesso alle TIC mediante altri mezzi sicuri, d’intesa con l’autorità competente. Se richiesto dall’autorità competente, le entità finanziarie trasmettono nuovamente la notifica
+iniziale oppure la relazione intermedia o finale, attraverso il canale elettronico sicuro messo a disposizione dalla rispettiva autorità competente appena sono in grado di farlo.
+
+=== K206 | [5] Riclassificazione degli incidenti gravi connessi alle TIC
+Articolo 5
+Riclassificazione degli incidenti gravi connessi alle TIC
+Se, dopo un’ulteriore valutazione, l’entità finanziaria conclude che l’incidente connesso alle TIC precedentemente segnalato come grave non soddisfaceva in alcun momento i criteri e le soglie di
+classificazione di cui all’articolo 8 del regolamento delegato (UE) 2024/1772, l’entità finanziaria notifica all’autorità competente di aver riclassificato l’incidente connesso alle TIC da grave a non
+grave fornendo le informazioni relative a tale riclassificazione nel modello di cui all’allegato II del presente regolamento nei campi «tipo di segnalazione» e «altre informazioni».
+
+=== K207 | [6] Notifica dell’esternalizzazione degli obblighi di segnalazione
+Articolo 6
+Notifica dell’esternalizzazione degli obblighi di segnalazione
+1. Le entità finanziarie che hanno esternalizzato l’obbligo di segnalazione degli incidenti gravi connessi alle TIC a norma dell’articolo 19, paragrafo 5, del regolamento (UE) 2022/2554 informano
+l’autorità competente di tale accordo di esternalizzazione non appena quest’ultimo è stato concluso e al più tardi prima della prima notifica o relazione.
+2. Le entità finanziarie forniscono all’autorità competente il nome, le informazioni di contatto e il codice identificativo del terzo che trasmetterà per loro conto le notifiche o le relazioni in
+merito agli incidenti gravi connessi alle TIC.
+3. Le entità finanziarie informano la rispettiva autorità competente non appena cessano di esternalizzare i propri obblighi di segnalazione di cui all’articolo 19, paragrafo 5, del regolamento (UE)
+2022/2554.
+
+=== K208 | [7] Segnalazione aggregata
+Articolo 7
+Segnalazione aggregata
+1. Un fornitore terzo di servizi cui sono stati esternalizzati obblighi di segnalazione conformemente all’articolo 19, paragrafo 5, del regolamento (UE) 2022/2554 può utilizzare il modello di cui
+all’allegato I del presente regolamento per fornire informazioni aggregate in merito a un incidente grave connesso alle TIC che ha un impatto su più entità finanziarie in un’unica notifica o relazione
+e trasmettere tale notifica o relazione all’autorità competente per conto di tutte le entità finanziarie interessate, purché siano soddisfatte tutte le condizioni seguenti:
+a)
+l’incidente grave connesso alle TIC da segnalare ha origine presso un fornitore terzo di servizi TIC o è causato da quest’ultimo;
+b)
+il fornitore terzo di servizi presta il servizio TIC pertinente a più di un’entità finanziaria o a un gruppo;
+c)
+l’incidente connesso alle TIC è classificato come grave da ciascuna entità finanziaria interessata nella notifica o relazione aggregata;
+d)
+l’incidente grave connesso alle TIC interessa entità finanziarie all’interno di un unico Stato membro e la relazione aggregata si riferisce a entità finanziarie sottoposte alla vigilanza della
+medesima autorità competente;
+e)
+le autorità competenti hanno esplicitamente consentito a questo tipo di entità finanziarie di aggregare le loro segnalazioni.
+2. Il paragrafo 1 non si applica agli enti creditizi considerati significativi di cui all’articolo 2, punto 16), del regolamento (UE) n. 468/2014 della Banca centrale europea ( 8 ) , ai gestori delle
+sedi di negoziazione e alle controparti centrali, che utilizzano il modello di cui all’allegato I solo per trasmettere notifiche o relazioni individuali in merito a incidenti gravi connessi alle TIC
+alla rispettiva autorità competente.
+3. Qualora le autorità competenti richiedano informazioni sull’impatto individuale dell’incidente grave connesso alle TIC su un’unica entità finanziaria, su richiesta dell’autorità competente l’entità
+finanziaria trasmette una notifica o una relazione individuale in merito all’incidente grave connesso alle TIC.
+
+=== K209 | [8] Notifica delle minacce informatiche significative
+Articolo 8
+Notifica delle minacce informatiche significative
+1. Le entità finanziarie che notificano minacce informatiche significative alle autorità competenti a norma dell’articolo 19, paragrafo 2, del regolamento (UE) 2022/2554 utilizzano il modello di cui
+all’allegato III del presente regolamento e seguono il glossario dei dati e le istruzioni di cui all’allegato IV del presente regolamento.
+2. Le entità finanziarie garantiscono che le informazioni contenute nella notifica delle minacce informatiche significative siano complete e accurate.
+
+=== K211 | [Allegato I] MODELLI PER LA SEGNALAZIONE DI INCIDENTI GRAVI
+ALLEGATO I
+MODELLI PER LA SEGNALAZIONE DI INCIDENTI GRAVI
+Numero del campo
+Campo di dati
+Informazioni generali sull’entità finanziaria
+1.1
+Tipo di segnalazione
+1.2
+Denominazione dell’entità che trasmette la segnalazione
+1.3
+Codice identificativo dell’entità che trasmette la segnalazione
+1.4
+Tipo di entità finanziaria interessata
+1.5
+Denominazione dell’entità finanziaria interessata
+1.6
+Codice LEI dell’entità finanziaria interessata
+1.7
+Nome del referente principale
+1.8
+E-mail: del referente principale
+1.9
+Telefono del referente principale
+1.10
+Nome del secondo referente
+1.11
+E-mail: del secondo referente
+1.12
+Telefono del secondo referente
+1.13
+Denominazione dell’impresa madre capogruppo
+1.14
+Codice LEI dell’impresa madre capogruppo
+1.15
+Valuta della segnalazione
+Contenuto della notifica iniziale
+2.1
+Codice di riferimento dell’incidente assegnato dall’entità finanziaria
+2.2
+Data e ora di individuazione dell’incidente grave connesso alle TIC
+2.3
+Data e ora della classificazione dell’incidente connesso alle TIC come grave
+2.4
+Descrizione dell’incidente grave connesso alle TIC
+2.5
+Criteri di classificazione che hanno determinato la segnalazione dell’incidente
+2.6
+Soglie di rilevanza per il criterio di classificazione «Estensione geografica»
+2.7
+Constatazione dell’incidente grave connesso alle TIC
+2.8
+Indicazione dell’origine dell’incidente grave connesso alle TIC presso un fornitore terzo o presso un’altra entità finanziaria
+2.9
+Attivazione del piano di continuità operativa, se attivato
+2.10
+Altre informazioni pertinenti
+Contenuto della relazione intermedia
+3.1
+Codice di riferimento dell’incidente fornito dall’autorità competente
+3.2
+Data e ora in cui si è verificato l’incidente grave connesso alle TIC
+3.3
+Data e ora di ripristino dei servizi, delle attività o delle operazioni
+3.4
+Numero di clienti interessati
+3.5
+Percentuale di clienti interessati
+3.6
+Numero di controparti finanziarie interessate
+3.7
+Percentuale di controparti finanziarie interessate
+3.8
+Impatto su clienti o controparti finanziarie rilevanti
+3.9
+Numero di transazioni interessate
+3.10
+Percentuale di transazioni interessate
+3.11
+Valore delle transazioni interessate
+3.12
+Informazioni indicanti se i numeri sono effettivi o stimati o se non vi è stato alcun impatto
+3.13
+Impatto reputazionale
+3.14
+Informazioni contestuali sull’impatto reputazionale
+3.15
+Durata dell’incidente grave connesso alle TIC
+3.16
+Periodo di inattività del servizio
+3.17
+Informazioni indicanti se i numeri relativi alla durata e al periodo di inattività del servizio sono effettivi o stimati.
+3.18
+Tipi di impatto negli Stati membri
+3.19
+Descrizione dell’impatto dell’incidente grave connesso alle TIC in altri Stati membri
+3.20
+Soglie di rilevanza per il criterio di classificazione «Perdite di dati»
+3.21
+Descrizione delle perdite di dati
+3.22
+Criterio di classificazione «Servizi critici colpiti»
+3.23
+Tipo di incidente grave connesso alle TIC
+3.24
+Altri tipi di incidenti
+3.25
+Minacce e tecniche utilizzate dall’autore della minaccia
+3.26
+Altri tipi di tecniche
+3.27
+Informazioni sulle aree funzionali interessate e sui processi commerciali interessati
+3.28
+Componenti infrastrutturali interessate che sostengono i processi commerciali
+3.29
+Informazioni sulle componenti infrastrutturali interessate che sostengono i processi commerciali
+3.30
+Impatto sugli interessi finanziari dei clienti
+3.31
+Segnalazione ad altre autorità
+3.32
+Indicazione delle autorità di «altro» tipo
+3.33
+Azioni/misure temporanee adottate o previste per effettuare il ripristino a seguito dell’incidente
+3.34
+Descrizione di eventuali azioni e misure temporanee adottate o previste per effettuare il ripristino a seguito dell’incidente
+3.35
+Indicatori di compromissione
+Contenuto della relazione finale
+4.1
+Classificazione di alto livello delle cause di fondo dell’incidente
+4.2
+Classificazione dettagliata delle cause di fondo dell’incidente
+4.3
+Ulteriore classificazione delle cause di fondo dell’incidente
+4.4
+Altri tipi di cause di fondo
+4.5
+Informazioni sulle cause di fondo dell’incidente
+4.6
+Sintesi della risoluzione dell’incidente
+4.7
+Data e ora in cui è stata affrontata la causa di fondo dell’incidente
+4.8
+Data e ora in cui l’incidente è stato risolto
+4.9
+Informazioni indicanti se la data di risoluzione definitiva dell’incidente differisce dalla data di attuazione inizialmente prevista
+4.10
+Valutazione del rischio per le funzioni essenziali ai fini della risoluzione
+4.11
+Informazioni pertinenti per le autorità di risoluzione
+4.12
+Soglia di rilevanza per il criterio di classificazione «Impatto economico»
+4.13
+Importo dei costi diretti e indiretti e delle perdite lordi
+4.14
+Importo dei recuperi finanziari
+4.15
+Informazioni indicanti se gli incidenti non gravi sono stati ricorrenti
+4.16
+Data e ora in cui si sono verificati incidenti ricorrenti
+
+=== K212.1 | [Allegato II] GLOSSARIO DEI DATI E ISTRUZIONI PER LA SEGNALAZIONE DEGLI INCIDENTI GRAVI (pezzo 1 di 2)
+ALLEGATO II
+GLOSSARIO DEI DATI E ISTRUZIONI PER LA SEGNALAZIONE DEGLI INCIDENTI GRAVI
+Campo di dati
+Descrizione
+Obbligatorio per la notifica iniziale
+Obbligatorio per la relazione intermedia
+Obbligatorio per la relazione finale
+Tipo di campo
+Informazioni generali sull’entità finanziaria
+1.1.
+Tipo di segnalazione
+Indicare il tipo di notifica o di relazione in merito all’incidente trasmessa all’autorità competente.
+Sì
+Sì
+Sì
+Selezionare:
+—
+notifica iniziale;
+—
+relazione intermedia;
+—
+relazione finale;
+—
+incidente grave riclassificato come non grave.
+1.2.
+Denominazione dell’entità che trasmette la segnalazione
+Denominazione giuridica completa dell’entità che trasmette la segnalazione.
+Sì
+Sì
+Sì
+Alfanumerico
+1.3.
+Codice identificativo dell’entità che trasmette la segnalazione
+Codice identificativo dell’entità che trasmette la segnalazione.
+Se la notifica/relazione è trasmessa da entità finanziarie, il codice identificativo è un identificativo della persona giuridica ( Legal Entity Identifier , LEI), che è un codice unico composto da 20
+caratteri alfanumerici, basato sulla norma ISO 17442-1:2020.
+Un fornitore terzo che trasmette una segnalazione per un’entità finanziaria può utilizzare un codice identificativo come specificato nelle norme tecniche di attuazione adottate ai sensi dell’articolo
+28, paragrafo 9, del regolamento (UE) 2022/2554.
+Sì
+Sì
+Sì
+Alfanumerico
+1.4.
+Tipo di entità finanziaria interessata
+Tipo di entità di cui all’articolo 2, paragrafo 1, lettere da a) a t), del regolamento (UE) 2022/2554 per la quale è trasmessa la segnalazione.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, selezionare i diversi tipi di entità finanziarie indicate nella segnalazione aggregata.
+Sì
+Sì
+Sì
+Selezionare (scelta multipla):
+—
+ente creditizio;
+—
+istituto di pagamento;
+—
+istituto di pagamento esentato;
+—
+prestatore di servizi di informazione sui conti;
+—
+istituto di moneta elettronica;
+—
+istituto di moneta elettronica esentato;
+—
+impresa di investimento;
+—
+fornitore di servizi per le cripto-attività;
+—
+emittente di token collegati ad attività;
+—
+depositario centrale di titoli;
+—
+controparte centrale;
+—
+sede di negoziazione;
+—
+repertorio di dati sulle negoziazioni;
+—
+gestore di fondi di investimento alternativi;
+—
+società di gestione;
+—
+fornitore di servizi di comunicazione dati;
+—
+impresa di assicurazione e di riassicurazione;
+—
+intermediario assicurativo, intermediario riassicurativo e intermediario assicurativo a titolo accessorio;
+—
+ente pensionistico aziendale o professionale;
+—
+agenzia di rating del credito;
+—
+amministratore di indici di riferimento critici;
+—
+fornitore di servizi di crowdfunding;
+—
+repertorio di dati sulle cartolarizzazioni.
+1.5.
+Denominazione dell’entità finanziaria interessata
+Denominazione giuridica completa dell’entità finanziaria interessata dall’incidente grave connesso alle TIC e tenuta a segnalarlo alla propria autorità competente a norma dell’articolo 19 del
+regolamento (UE) 2022/2554.
+In caso di segnalazione aggregata:
+a)
+elenco di tutte le denominazioni delle entità finanziarie interessate dall’incidente grave connesso alle TIC, separate da un punto e virgola;
+b)
+il fornitore terzo che trasmette una notifica o una relazione in merito a un incidente grave in forma aggregata come indicato all’articolo 7 del presente regolamento è tenuto a elencare le
+denominazioni di tutte le entità finanziarie interessate dall’incidente, separate da un punto e virgola.
+Sì, se l’entità finanziaria interessata dall’incidente è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Sì, se l’entità finanziaria interessata dall’incidente è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Sì, se l’entità finanziaria interessata dall’incidente è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Alfanumerico
+1.6.
+Codice LEI dell’entità finanziaria interessata
+Identificativo della persona giuridica ( Legal Entity Identifier , LEI) dell’entità finanziaria interessata dall’incidente grave connesso alle TIC assegnato conformemente alle norme
+dell’Organizzazione internazionale per la standardizzazione.
+In caso di segnalazione aggregata:
+a)
+un elenco di tutti i codici LEI delle entità finanziarie interessate dall’incidente grave connesso alle TIC, separati da un punto e virgola;
+b)
+il fornitore terzo che trasmette una notifica o una relazione in merito a un incidente grave in forma aggregata come indicato all’articolo 7 del presente regolamento è tenuto a elencare i codici LEI
+di tutte le entità finanziarie interessate dall’incidente, separati da un punto e virgola.
+L’ordine di presentazione dei codici LEI e delle denominazioni delle entità finanziarie è identico.
+Sì, se l’entità finanziaria interessata dall’incidente grave connesso alle TIC è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Sì, se l’entità finanziaria interessata dall’incidente grave connesso alle TIC è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Sì, se l’entità finanziaria interessata dall’incidente grave connesso alle TIC è diversa dall’entità che trasmette la segnalazione e in caso di segnalazione aggregata.
+Codice unico di 20 caratteri alfanumerici, basato sulla norma ISO 17442-1:2020
+1.7.
+Nome del referente principale
+Nome e cognome del referente principale dell’entità finanziaria.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il nome del referente principale dell’entità che trasmette la segnalazione aggregata.
+Sì
+Sì
+Sì
+Alfanumerico
+1.8.
+E-mail: del referente principale
+Indirizzo di posta elettronica del referente principale che può essere utilizzato dall’autorità competente per le comunicazioni successive.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, l’indirizzo di posta elettronica del referente principale dell’entità che trasmette la segnalazione aggregata.
+Sì
+Sì
+Sì
+Alfanumerico
+1.9.
+Telefono del referente principale
+Numero di telefono del referente principale che può essere utilizzato dall’autorità competente per le comunicazioni successive.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il numero di telefono del referente principale dell’entità che trasmette la segnalazione aggregata.
+Indicare il numero di telefono inserendo tutti i prefissi internazionali (ad esempio +33XXXXXXXXX).
+Sì
+Sì
+Sì
+Alfanumerico
+1.10.
+Nome del secondo referente
+Nome e cognome del secondo referente o nome del gruppo responsabile dell’entità finanziaria o dell’entità che trasmette la segnalazione per conto dell’entità finanziaria.
+Sì
+Sì
+Sì
+Alfanumerico
+1.11.
+E-mail: del secondo referente
+Indirizzo di posta elettronica del secondo referente o indirizzo di posta elettronica funzionale del gruppo che può essere utilizzato dall’autorità competente per le comunicazioni successive.
+Sì
+Sì
+Sì
+Alfanumerico
+1.12.
+Telefono del secondo referente
+Numero di telefono del secondo referente, o di un gruppo, che può essere utilizzato dall’autorità competente per le comunicazioni successive.
+Indicare il numero di telefono inserendo tutti i prefissi internazionali (ad esempio +33xxxxxxxxx).
+Sì
+Sì
+Sì
+Alfanumerico
+1.13.
+Denominazione dell’impresa madre capogruppo
+Denominazione dell’impresa madre capogruppo del gruppo cui appartiene l’entità finanziaria interessata, se del caso.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Alfanumerico
+1.14.
+Codice LEI dell’impresa madre capogruppo
+Codice LEI dell’impresa madre capogruppo del gruppo cui appartiene l’entità finanziaria interessata, se del caso. Assegnato conformemente alle norme dell’Organizzazione internazionale per la
+standardizzazione.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Sì, se l’entità finanziaria appartiene a un gruppo.
+Codice unico di 20 caratteri alfanumerici, basato sulla norma ISO 17442-1:2020.
+1.15.
+Valuta della segnalazione
+Valuta utilizzata per la segnalazione dell’incidente.
+Sì
+Sì
+Sì
+Scelta compilata utilizzando i codici valuta ISO 4217
+Contenuto della notifica iniziale
+2.1.
+Codice di riferimento dell’incidente assegnato dall’entità finanziaria
+Codice di riferimento unico emesso dall’entità finanziaria che identifica inequivocabilmente l’incidente grave connesso alle TIC.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il codice di riferimento dell’incidente assegnato dal fornitore terzo.
+Sì
+Sì
+Sì
+Alfanumerico
+2.2.
+Data e ora di individuazione dell’incidente connesso alle TIC
+Data e ora in cui l’entità finanziaria è venuta a conoscenza dell’incidente connesso alle TIC.
+Per gli incidenti ricorrenti, data e ora in cui è stato individuato l’ultimo incidente connesso alle TIC.
+Sì
+Sì
+Sì
+UTC secondo la norma ISO 8601 (AAAA-MM-GG T hh: mm:ss)
+2.3.
+Data e ora della classificazione dell’incidente come grave
+Data e ora in cui l’incidente connesso alle TIC è stato classificato come grave secondo i criteri di classificazione stabiliti nel regolamento delegato (UE) 2024/1772.
+Sì
+Sì
+Sì
+UTC secondo la norma ISO 8601 (AAAA-MM-GG T hh: mm:ss)
+2.4.
+Descrizione dell’incidente connesso alle TIC
+Descrizione degli aspetti più rilevanti dell’incidente grave connesso alle TIC.
+Le entità finanziarie forniscono una panoramica di alto livello delle informazioni seguenti, quali possibili cause, impatti immediati, sistemi interessati ecc. Le entità finanziarie indicano altresì,
+se noto o ragionevolmente previsto, se l’incidente riguarda fornitori terzi o altre entità finanziarie, il tipo di fornitore o di entità finanziaria, il loro nome, i rispettivi codici identificativi e
+il tipo di codice identificativo (ad esempio LEI o EUID).
+Nelle relazioni successive il contenuto del campo può evolvere nel tempo in modo da rispecchiare la comprensione costante dell’incidente connesso alle TIC e descrivere qualsiasi altra informazione
+pertinente sull’incidente connesso alle TIC non rilevata dai campi di dati, comprese la valutazione interna della gravità da parte dell’entità finanziaria (ad esempio molto bassa, bassa, media,
+elevata, molto elevata) e un’indicazione del livello e del nome delle strutture decisionali di alto livello coinvolte nella risposta all’incidente connesso alle TIC.
+Sì
+Sì
+Sì
+Alfanumerico
+2.5.
+Criteri di classificazione che hanno determinato la segnalazione dell’incidente
+I criteri di classificazione di cui al regolamento delegato (UE) 2024/1772 che hanno determinato la qualificazione dell’incidente connesso alle TIC come grave e la successiva notifica e segnalazione.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, i criteri di classificazione che hanno determinato la qualificazione dell’incidente connesso alle TIC come grave per
+almeno una o più entità finanziarie.
+Sì
+Sì
+Sì
+Selezionare (scelta multipla):
+—
+clienti, controparti finanziarie e transazioni interessati;
+—
+impatto reputazionale;
+—
+durata e periodo di inattività del servizio;
+—
+estensione geografica;
+—
+perdite di dati;
+—
+servizi critici colpiti;
+—
+impatto economico.
+2.6.
+Soglie di rilevanza per il criterio di classificazione «Estensione geografica»
+Stati membri del SEE interessati dall’incidente grave connesso alle TIC.
+Nel valutare l’impatto dell’incidente grave connesso alle TIC in altri Stati membri, le entità finanziarie tengono conto degli articoli 4 e 12 del regolamento delegato (UE) 2024/1772.
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Scelta (multipla) compilata utilizzando il codice ISO 3166 ALPHA-2 dei paesi interessati
+2.7.
+Constatazione dell’incidente grave connesso alle TIC
+Indicare il modo in cui è stato constatato l’incidente grave connesso alle TIC.
+Sì
+Sì
+Sì
+Selezionare:
+—
+sicurezza informatica;
+—
+personale;
+—
+audit interno;
+—
+audit esterno;
+—
+clienti;
+—
+controparti finanziarie;
+—
+fornitore terzo;
+—
+autore dell’attacco;
+—
+sistemi di monitoraggio;
+—
+autorità/agenzia/orga-nismo di contrasto;
+—
+altro.
+2.8.
+Indicazione dell’origine dell’incidente presso un fornitore terzo o presso un’altra entità finanziaria
+Indicare se l’incidente grave connesso alle TIC ha origine presso un fornitore terzo o presso un’altra entità finanziaria.
+Le entità finanziarie indicano se l’incidente grave connesso alle TIC ha origine presso un fornitore terzo o presso un’altra entità finanziaria (comprese le entità finanziarie appartenenti allo stesso
+gruppo dell’entità che effettua la segnalazione) e il nome, il codice identificativo del fornitore terzo o dell’entità finanziaria e il tipo di codice identificativo (ad esempio LEI o EUID).
+Sì, se l’incidente ha origine presso un fornitore terzo o presso un’altra entità finanziaria.
+Sì, se l’incidente ha origine presso un fornitore terzo o presso un’altra entità finanziaria.
+Sì, se l’incidente ha origine presso un fornitore terzo o presso un’altra entità finanziaria.
+Alfanumerico
+2.9.
+Attivazione del piano di continuità operativa, se attivato
+Indicare l’eventuale attivazione formale delle misure di risposta in materia di continuità operativa dell’entità finanziaria.
+Sì
+Sì
+Sì
+Booleano (Sì o No)
+2.10.
+Altre informazioni pertinenti
+Qualsiasi altra informazione non contemplata nel modello.
+Le entità finanziarie che hanno riclassificato un incidente grave connesso alle TIC come non grave descrivono i motivi per cui l’incidente connesso alle TIC non soddisfa e non dovrebbe soddisfare i
+criteri per essere considerato un incidente grave connesso alle TIC.
+Sì, se vi sono altre informazioni non contemplate nel modello o se l’incidente grave connesso alle TIC è stato riclassificato come non grave.
+Sì, se vi sono altre informazioni non contemplate nel modello o se l’incidente grave connesso alle TIC è stato riclassificato come non grave.
+Sì, se vi sono altre informazioni non contemplate nel modello o se l’incidente grave connesso alle TIC è stato riclassificato come non grave.
+Alfanumerico
+Contenuto della relazione intermedia
+3.1.
+Codice di riferimento dell’incidente fornito dall’autorità competente
+Codice di riferimento unico assegnato dall’autorità competente al momento del ricevimento della notifica iniziale per identificare inequivocabilmente l’incidente grave connesso alle TIC.
+No
+Sì, se del caso.
+Sì, se del caso.
+Alfanumerico
+3.2.
+Data e ora in cui si è verificato l’incidente
+Data e ora in cui si è verificato l’incidente grave connesso alle TIC, se diverse dal momento in cui l’entità finanziaria è venuta a conoscenza dell’incidente grave connesso alle TIC.
+Per gli incidenti ricorrenti gravi connessi alle TIC, la data e l’ora in cui si è verificato l’ultimo incidente grave connesso alle TIC.
+No
+Sì
+Sì
+UTC secondo la norma ISO 8601 (AAAA-MM-GG T hh: mm:ss)
+3.3.
+Data e ora di ripristino dei servizi, delle attività o delle operazioni
+Indicare la data e l’ora del ripristino dei servizi, delle attività o delle operazioni interessati dall’incidente grave connesso alle TIC.
+No
+Sì, se è stato compilato il campo di dati 3.16. «Periodo di inattività del servizio»
+Sì, se è stato compilato il campo di dati 3.16. «Periodo di inattività del servizio»
+UTC secondo la norma ISO 8601 (AAAA-MM-GG T hh: mm:ss)
+3.4.
+Numero di clienti interessati
+Numero di clienti interessati dall’incidente grave connesso alle TIC che si avvalgono del servizio fornito dall’entità finanziaria.
+Nella valutazione del numero di clienti interessati, le entità finanziarie tengono conto dell’articolo 1, paragrafo 1, e dell’articolo 9, paragrafo 1, lettera b), del regolamento delegato (UE)
+2024/1772. L’entità finanziaria che non è in grado di determinare il numero effettivo di clienti interessati utilizza stime basate sui dati disponibili relativi a periodi di riferimento comparabili.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il numero totale di clienti interessati in tutte le entità finanziarie.
+No
+Sì
+Sì
+Numero intero
+3.5.
+Percentuale di clienti interessati
+Percentuale di clienti interessati dall’incidente grave connesso alle TIC rispetto al numero totale di clienti che si avvalgono del servizio interessato fornito dall’entità finanziaria. Nel caso in
+cui sia interessato più di un servizio, i servizi sono indicati in forma aggregata.
+Nella loro valutazione le entità finanziarie tengono conto dell’articolo 1, paragrafo 1, e dell’articolo 9, paragrafo 1, lettera a), del regolamento delegato (UE) 2024/1772.
+L’entità finanziaria che non è in grado di determinare la percentuale effettiva di clienti interessati utilizza stime basate sui dati disponibili relativi a periodi di riferimento comparabili.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, l’entità finanziaria divide la somma di tutti i clienti interessati per il numero totale di clienti di tutte le entità
+finanziarie interessate.
+No
+Sì
+Sì
+Espresso come percentuale, qualsiasi valore fino a un massimo di cinque caratteri numerici compreso al massimo un decimale espresso come percentuale (ad esempio 2,4 invece di 2,4 %). Se il valore ha
+più di una cifra decimale, le controparti segnalanti arrotondano allo 0,5 superiore.
+3.6.
+Numero di controparti finanziarie interessate
+Numero di controparti finanziarie interessate dall’incidente grave connesso alle TIC che hanno concluso un contratto con l’entità finanziaria.
+Nel valutare il numero di controparti finanziarie interessate, le entità finanziarie tengono conto dell’articolo 1, paragrafo 2, del regolamento delegato (UE) 2024/1772. L’entità finanziaria che non è
+in grado di determinare il numero effettivo di controparti finanziarie interessate utilizza stime basate sui dati disponibili relativi a periodi di riferimento comparabili.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il numero totale di controparti finanziarie interessate in tutte le entità finanziarie.
+No
+Sì
+Sì
+Numero intero
+3.7.
+Percentuale di controparti finanziarie interessate
+Percentuale di controparti finanziarie interessate dall’incidente grave connesso alle TIC rispetto al numero totale di controparti finanziarie che hanno concluso un contratto con l’entità finanziaria.
+Nel valutare la percentuale di controparti finanziarie interessate, le entità finanziarie tengono conto dell’articolo 1, paragrafo 1, e dell’articolo 9, paragrafo 1, lettera c), del regolamento
+delegato (UE) 2024/1772.
+L’entità finanziaria che non è in grado di determinare la percentuale effettiva di controparti finanziarie interessate utilizza stime basate sui dati disponibili relativi a periodi di riferimento
+comparabili.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, indicare la somma di tutte le controparti finanziarie interessate divisa per il numero totale di controparti
+finanziarie di tutte le entità finanziarie interessate.
+No
+Sì
+Sì
+Espresso come percentuale, qualsiasi valore fino a un massimo di cinque caratteri numerici compreso al massimo un decimale espresso come percentuale (ad esempio 2,4 invece di 2,4 %). Se il valore ha
+più di una cifra decimale, le controparti segnalanti arrotondano allo 0,5 superiore.
+3.8.
+Impatto su clienti o controparti finanziarie rilevanti
+Qualsiasi impatto individuato sui clienti o controparti finanziarie rilevanti di cui all’articolo 1, paragrafo 3, e all’articolo 9, paragrafo 1, lettera f), del regolamento delegato (UE) 2024/1772.
+No
+Sì, se è raggiunta la soglia per il criterio «Rilevanza dei clienti e delle controparti finanziarie».
+Sì, se è raggiunta la soglia per il criterio «Rilevanza dei clienti e delle controparti finanziarie».
+Booleano (Sì o No)
+3.9.
+Numero di transazioni interessate
+Numero di transazioni interessate dall’incidente grave connesso alle TIC.
+Nel valutare l’impatto sulle transazioni, le entità finanziarie tengono conto dell’articolo 1, paragrafo 4, del regolamento delegato (UE) 2024/1772, comprese tutte le transazioni nazionali e
+transfrontaliere interessate che implicano un importo monetario quando almeno una parte della transazione è effettuata nell’Unione.
+L’entità finanziaria che non è in grado di determinare il numero effettivo di transazioni interessate utilizza stime basate sui dati disponibili relativi a periodi di riferimento comparabili.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, indicare il numero totale di transazioni interessate in tutte le entità finanziarie.
+No
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Numero intero
+3.10.
+Percentuale di transazioni interessate
+Percentuale di transazioni interessate rispetto al numero medio giornaliero di transazioni nazionali e transfrontaliere effettuate dall’entità finanziaria in relazione al servizio interessato.
+Le entità finanziarie tengono conto dell’articolo 1, paragrafo 4, e dell’articolo 9, paragrafo 1, lettera d), del regolamento delegato (UE) 2024/1772.
+L’entità finanziaria che non è in grado di determinare la percentuale effettiva di transazioni interessate utilizza stime.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, l’entità finanziaria somma il numero di tutte le transazioni interessate e divide tale somma per il numero totale di
+transazioni di tutte le entità finanziarie interessate.
+No
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Espresso come percentuale, qualsiasi valore fino a un massimo di cinque caratteri numerici compreso al massimo un decimale espresso come percentuale (ad esempio 2,4 invece di 2,4 %). Se il valore ha
+più di una cifra decimale, le controparti segnalanti arrotondano allo 0,5 superiore.
+3.11.
+Valore delle transazioni interessate
+Il valore totale delle transazioni interessate dall’incidente grave connesso alle TIC è valutato conformemente all’articolo 1, paragrafo 4, e all’articolo 9, paragrafo 1, lettera e), del regolamento
+delegato (UE) 2024/1772.
+L’entità finanziaria che non è in grado di determinare il valore effettivo delle transazioni interessate utilizza stime basate sui dati disponibili relativi a periodi di riferimento comparabili.
+L’entità finanziaria indica l’importo monetario come valore positivo.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, il valore totale delle transazioni interessate in tutte le entità finanziarie.
+No
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Sì, se l’incidente ha interessato una qualsiasi transazione.
+Monetario
+Le entità finanziarie segnalano il punto di dati in unità utilizzando una precisione minima equivalente a migliaia di unità (ad esempio 2,5 anziché 2 500 EUR).
+3.12.
+Informazioni indicanti se i numeri sono effettivi o stimati o se non vi è stato alcun impatto
+Indicare se i valori riportati nei campi di dati da 3.4. a 3.11. sono effettivi o stimati o se non vi è stato alcun impatto.
+No
+Sì
+Sì
+Selezionare (scelta multipla):
+—
+cifre effettive relative ai clienti interessati;
+—
+cifre effettive relative alle controparti finanziarie interessate;
+—
+cifre effettive relative alle transazioni interessate;
+—
+stime dei clienti interessati;
+—
+stime delle controparti finanziarie interessate;
+—
+stime delle transazioni interessate;
+—
+nessun impatto sui clienti;
+—
+nessun impatto sulle controparti finanziarie;
+—
+nessun impatto sulle transazioni.
+3.13.
+Impatto reputazionale
+Informazioni sull’impatto reputazionale derivante dall’incidente grave connesso alle TIC di cui agli articoli 2 e 10 del regolamento delegato (UE) 2024/1772.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, le categorie di impatto reputazionale che si applicano ad almeno un’entità finanziaria.
+No
+Sì, se è soddisfatto il criterio «Impatto reputazionale».
+Sì, se è soddisfatto il criterio «Impatto reputazionale».
+Selezionare (scelta multipla):
+—
+l’incidente grave connesso alle TIC è stato riportato dai media;
+—
+l’incidente grave connesso alle TIC ha dato luogo a ripetuti reclami da parte di diversi clienti o controparti finanziarie in relazione a servizi prestati a diretto contatto con i clienti o a
+relazioni commerciali critiche;
+—
+a seguito dell’incidente grave connesso alle TIC l’entità finanziaria non sarà in grado o potrebbe non essere in grado di soddisfare i requisiti normativi;
+—
+a seguito dell’incidente grave connesso alle TIC l’entità finanziaria perderà o potrebbe perdere clienti o controparti finanziarie, con un impatto significativo sulla sua attività.
+3.14.
+Informazioni contestuali sull’impatto reputazionale
+Descrizione del modo in cui l’incidente grave connesso alle TIC ha inciso o potrebbe incidere sulla reputazione dell’entità finanziaria, comprese le violazioni del diritto, il mancato rispetto dei
+requisiti normativi, il numero di reclami dei clienti ecc.
+Le informazioni contestuali includono il tipo di media (ad esempio media tradizionali e digitali, blog, piattaforme di streaming) e la copertura mediatica, compresa la portata dei media (locali,
+nazionali, internazionali). La copertura mediatica in questo contesto non comprende i pochi commenti negativi da parte di follower o di utenti dei social network.
+L’entità finanziaria indica inoltre se la copertura mediatica ha evidenziato rischi significativi per i suoi clienti in relazione all’incidente grave connesso alle TIC, compreso il rischio di
+insolvenza dell’entità finanziaria o il rischio di perdita di fondi.
+Le entità finanziarie indicano inoltre se hanno fornito ai media informazioni che sono servite a mettere al corrente il pubblico in modo affidabile dell’incidente grave connesso alle TIC e delle sue
+conseguenze.
+Le entità finanziarie possono inoltre indicare se nei media siano state riportate informazioni false in relazione all’incidente connesso alle TIC, comprese informazioni basate sulla diffusione
+intenzionale di notizie false da parte degli autori delle minacce, o informazioni che riguardano o si riferiscono alla deturpazione ( defacement ) del sito web dell’entità finanziaria.
+No
+Sì, se è soddisfatto il criterio «Impatto reputazionale».
+Sì, se è soddisfatto il criterio «Impatto reputazionale».
+Alfanumerico
+3.15.
+Durata dell’incidente
+Le entità finanziarie misurano la durata dell’incidente grave connesso alle TIC a partire dal momento in cui l’incidente si è verificato fino al momento in cui è stato risolto.
+Le entità finanziarie che non sono in grado di determinare il momento in cui si è verificato l’incidente grave connesso alle TIC misurano la durata dell’incidente grave connesso alle TIC a partire dal
+momento in cui l’entità finanziaria ha individuato l’incidente o, se precedente, dal momento in cui l’entità finanziaria ha registrato l’incidente nei registri di rete o di sistema o in altre fonti di
+dati. Le entità finanziarie che non sanno ancora quando l’incidente grave connesso alle TIC sarà risolto applicano stime. Il valore è espresso in giorni, ore e minuti.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento e qualora siano presenti differenze tra le entità finanziarie, queste ultime misurano la durata più lunga
+dell’incidente grave connesso alle TIC.
+No
+Sì
+Sì
+GG:HH:MM
+3.16.
+Periodo di inattività del servizio
+Il periodo di inattività del servizio misurato dal momento in cui il servizio è totalmente o parzialmente indisponibile per i clienti, le controparti finanziarie o altri utenti interni o esterni fino
+al momento in cui sono ripristinate le regolari attività o operazioni al livello di servizio fornito prima dell’incidente grave connesso alle TIC.
+Se il periodo di inattività del servizio causa un ritardo nella fornitura del servizio dopo che sono state ripristinate le regolari attività o operazioni, le entità finanziarie misurano il periodo di
+inattività dall’inizio dell’incidente grave connesso alle TIC fino al momento della fornitura del servizio che ha subito il ritardo. Le entità finanziarie che non sono in grado di determinare il
+momento in cui è iniziato il periodo di inattività del servizio misurano tale periodo a partire dal momento in cui l’incidente è stato individuato o, se precedente, dal momento in cui è stato
+registrato.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento e qualora siano presenti differenze tra le entità finanziarie, queste ultime misurano la durata più lunga del periodo
+di inattività del servizio.
+No
+Sì, se l’incidente ha causato un periodo di inattività del servizio.
+Sì, se l’incidente ha causato un periodo di inattività del servizio.
+GG:HH:MM
+3.17.
+Informazioni indicanti se i numeri relativi alla durata e al periodo di inattività del servizio sono effettivi o stimati.
+Indicare se i valori riportati nei campi di dati 3.15 e 3.16 sono effettivi o stimati.
+No
+Sì, se è soddisfatto il criterio «Durata e periodo di inattività del servizio».
+Sì, se è soddisfatto il criterio «Durata e periodo di inattività del servizio».
+Selezionare:
+—
+cifre effettive;
+—
+stime;
+—
+cifre effettive e stime;
+—
+informazioni non disponibili.
+3.18.
+Tipi di impatto negli Stati membri
+Tipo di impatto nei rispettivi Stati membri del SEE.
+Indicare se l’incidente grave connesso alle TIC ha avuto un impatto in altri Stati membri del SEE (diversi dallo Stato membro dell’autorità competente cui l’incidente è segnalato direttamente),
+conformemente all’articolo 4 del regolamento delegato (UE) 2024/1772, in particolare per quanto riguarda la rilevanza dell’impatto in relazione ai seguenti soggetti:
+a)
+clienti e controparti finanziarie interessati di altri Stati membri; oppure
+b)
+succursali o altre entità finanziarie del gruppo che svolgono attività in altri Stati membri; oppure
+c)
+infrastrutture dei mercati finanziari o fornitori terzi che potrebbero avere un impatto su entità finanziarie di altri Stati membri a cui forniscono servizi.
+No
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Selezionare (scelta multipla):
+—
+clienti;
+—
+controparti finanziarie;
+—
+succursale dell’entità finanziaria;
+—
+entità finanziarie del gruppo che svolgono attività in altri Stati membri;
+—
+infrastrutture dei mercati finanziari;
+—
+fornitori terzi che possono essere comuni ad altre entità finanziarie.
+3.19.
+Descrizione dell’impatto dell’incidente in altri Stati membri
+Descrizione dell’impatto e della gravità dell’incidente grave connesso alle TIC in ciascuno Stato membro interessato, compresa una valutazione dell’impatto e della gravità sui seguenti soggetti:
+a)
+clienti;
+b)
+controparti finanziarie;
+c)
+succursali dell’entità finanziaria;
+d)
+altre entità finanziarie del gruppo che svolgono attività in altri Stati membri;
+e)
+infrastrutture dei mercati finanziari;
+f)
+fornitori terzi che possono essere comuni ad altre entità finanziarie, se del caso, in altri Stati membri.
+No
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Sì, se è raggiunta la soglia per il criterio «Estensione geografica».
+Alfanumerico
+3.20.
+Soglie di rilevanza per il criterio di classificazione «Perdite di dati»
+Tipo di perdite di dati derivanti dall’incidente grave connesso alle TIC, in relazione alla disponibilità, autenticità, integrità e riservatezza dei dati.
+Nella loro valutazione le entità finanziarie tengono conto degli articoli 5 e 13 del regolamento delegato (UE) 2024/1772.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, le perdite di dati che interessano almeno un’entità finanziaria.
+No
+Sì, se è soddisfatto il criterio «Perdite di dati».
+Sì, se è soddisfatto il criterio «Perdite di dati».
+Selezionare (scelta multipla):
+—
+disponibilità;
+—
+autenticità;
+—
+integrità;
+—
+riservatezza.
+3.21.
+Descrizione delle perdite di dati
+Descrizione dell’impatto dell’incidente grave connesso alle TIC sulla disponibilità, autenticità, integrità e riservatezza dei dati critici conformemente agli articoli 5 e 13 del regolamento delegato
+(UE) 2024/1772.
+Informazioni in merito all’impatto sulla realizzazione degli obiettivi commerciali dell’entità finanziaria o sul rispetto dei requisiti normativi.
+Nell’ambito delle informazioni fornite, le entità finanziarie indicano se i dati interessati sono dati dei clienti, dati di altre entità (ad esempio controparti finanziarie) o dati dell’entità
+finanziaria stessa.
+L’entità finanziaria può anche indicare il tipo di dati coinvolti nell’incidente, in particolare se i dati sono riservati e quale tipo di riservatezza è stato coinvolto (ad esempio riservatezza
+commerciale/aziendale, dati personali, segreto professionale: segreto bancario, segreto assicurativo, segreto dei servizi di pagamento ecc.).
+Le informazioni possono includere anche i possibili rischi associati alle perdite di dati, ad esempio se i dati interessati dall’incidente possano essere utilizzati per identificare individui e
+potrebbero essere utilizzati dall’autore della minaccia per ottenere crediti o prestiti senza il loro consenso, per condurre attacchi di spear phishing e per divulgare informazioni pubblicamente.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, una descrizione generale dell’impatto dell’incidente sulle entità finanziarie interessate. Qualora vi siano differenze
+di impatto, la descrizione dell’impatto indica chiaramente l’impatto specifico sulle diverse entità finanziarie.
+No
+Sì, se è soddisfatto il criterio «Perdite di dati».
+Sì, se è soddisfatto il criterio «Perdite di dati».
+Alfanumerico
+3.22.
+Criterio di classificazione «Servizi critici colpiti»
+Informazioni relative al criterio «Servizi critici colpiti».
+Nella loro valutazione le entità finanziarie tengono conto dell’articolo 6 del regolamento delegato (UE) 2024/1772, comprese le informazioni riguardanti:
+—
+i servizi o le attività interessati che richiedono l’autorizzazione, la registrazione o che sono sottoposti a vigilanza da parte delle autorità competenti; oppure
+—
+i servizi TIC o i sistemi informatici e di rete a supporto di funzioni essenziali o importanti dell’entità finanziaria; nonché
+—
+la natura dell’accesso doloso e non autorizzato ai sistemi informatici e di rete dell’entità finanziaria.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, l’impatto sui servizi critici che si applica ad almeno un’entità finanziaria.
+No
+Sì
+Sì
+Alfanumerico
+3.23.
+Tipo di incidente
+Classificazione degli incidenti per tipo.
+No
+Sì
+Sì
+Selezionare (scelta multipla):
+—
+connesso alla cibersicurezza;
+—
+malfunzionamento del processo;
+—
+avaria del sistema;
+—
+eventi esterni;
+—
+connesso ai pagamenti;
+—
+altro (precisare).
+3.24.
+Altri tipi di incidenti
+Altri tipi di incidenti connessi alle TIC: le entità finanziarie che hanno selezionato «altro» tra i tipi di incidente nel campo di dati 3.23 precisano il tipo di incidente connesso alle TIC.
+No
+Sì, se tra i tipi di incidente nel campo di dati 3.23 si è selezionato «altro».
+Sì, se tra i tipi di incidente nel campo di dati 3.23 si è selezionato «altro».
+Alfanumerico
+3.25.
+Minacce e tecniche utilizzate dall’autore della minaccia
+Indicare le minacce e le tecniche utilizzate dall’autore della minaccia, tra cui:
+a)
+ingegneria sociale, compreso il phishing;
+b)
+attacco Distributed Denial of Service (DDoS);
+c)
+usurpazione di identità;
+d)
+cifratura dei dati per l’impatto, compreso il ransomware;
+e)
+dirottamento di risorse;
+f)
+estrapolazione e manipolazione dei dati, esclusa l’usurpazione di identità;
+g)
+distruzione dei dati;
+h)
+defacement;
+i)
+attacco alla catena di approvvigionamento;
+j)
+altro (precisare).
+No
+Sì, se il tipo di incidente connesso alle TIC è «connesso alla cibersicurezza» nel campo 3.23.
+Sì, se il tipo di incidente connesso alle TIC è «connesso alla cibersicurezza» nel campo 3.23.
+Selezionare (scelta multipla):
+—
+ingegneria sociale (compreso il phishing);
+—
+attacco Distributed Denial of Service (DDoS);
+—
+usurpazione di identità;
+—
+cifratura dei dati per l’impatto, compreso il ransomware;
+—
+dirottamento di risorse;
+—
+estrapolazione e manipolazione dei dati, compresa l’usurpazione di identità;
+—
+distruzione dei dati;
+—
+defacement;
+—
+attacco alla catena di approvvigionamento;
+—
+altro (precisare).
+3.26.
+Altri tipi di tecniche
+Altri tipi di tecniche
+Le entità finanziarie che hanno selezionato «altro» tra i tipi di tecniche nel campo di dati 3.25 precisano il tipo di tecnica.
+No
+Sì, se tra i tipi di tecniche nel campo di dati 3.25 si è selezionato «altro».
+Sì, se tra i tipi di tecniche nel campo di dati 3.25 si è selezionato «altro».
+Alfanumerico
+3.27.
+Informazioni sulle aree funzionali interessate e sui processi commerciali interessati
+Indicazione delle aree funzionali e dei processi commerciali interessati dall’incidente, compresi prodotti e servizi.
+Le aree funzionali comprendono, tra l’altro:
+a)
+marketing e sviluppo aziendale;
+b)
+servizio clienti;
+c)
+gestione dei prodotti;
+d)
+conformità alla normativa;
+e)
+gestione del rischio;
+f)
+finanza e contabilità;
+g)
+risorse umane e servizi generali;
+h)
+tecnologie dell’informazione;
+I processi commerciali comprendono, tra l’altro:
+—
+informazione sui conti;
+—
+servizi attuariali;
+—
+convenzionamento di operazioni di pagamento;
+—
+autenticazione/autorizzazione;
+—
+autorità
+—
+inserimento (on-boarding) di clienti;
+—
+gestione delle prestazioni;
+—
+gestione dei pagamenti delle prestazioni;
+—
+acquisto e vendita di pacchetti di polizze assicurative tra assicurazioni;
+—
+pagamenti con carta;
+—
+gestione di cassa;
+—
+deposito o prelievo di contanti;
+—
+gestione dei sinistri;
+—
+procedura di sinistro assicurativo;
+—
+compensazione;
+—
+prestiti a conglomerati di imprese;
+—
+assicurazioni collettive;
+—
+bonifici;
+—
+custodia di attivi;
+—
+acquisizione di clienti;
+—
+inserimento dati;
+—
+elaborazione dati;
+—
+addebiti diretti;
+—
+assicurazioni per l’esportazione;
+—
+conclusione di transazioni/operazioni;
+—
+collocamento di strumenti finanziari;
+—
+contabilità dei fondi;
+—
+denaro in valuta estera;
+—
+consulenza in materia di investimenti;
+—
+gestione degli investimenti;
+—
+emissione di strumenti di pagamento;
+—
+gestione dei prestiti;
+—
+processo di pagamento dell’assicurazione vita;
+—
+rimessa di denaro;
+—
+calcolo dell’attivo netto;
+—
+ordine;
+—
+disposizione di ordine di pagamento;
+—
+sottoscrizione di assicurazioni;
+—
+gestione di portafogli;
+—
+riscossione dei premi;
+—
+ricevimento/trasmissione/esecuzione;
+—
+riassicurazione;
+—
+liquidazione;
+—
+monitoraggio delle transazioni.
+In caso di segnalazione aggregata di cui all’articolo 7 del presente regolamento, le aree funzionali e i processi commerciali che sono stati interessati in almeno un’entità finanziaria.
+No
+Sì
+Sì
+Alfanumerico
+3.28.
+Componenti infrastrutturali interessate che sostengono i processi commerciali
+Indicare se le componenti infrastrutturali (server, sistemi operativi, software, server applicativi, middleware, componenti di rete, altri) che sostengono i processi commerciali sono state interessate
+dall’incidente grave connesso alle TIC.
+No
+Sì
+Sì
+Selezionare:
+—
+Sì
+—
+No
+—
+Informazioni non disponibili
+3.29.
+Informazioni sulle componenti infrastrutturali interessate che sostengono i processi commerciali
+Descrizione dell’impatto dell’incidente grave connesso alle TIC sulle componenti infrastrutturali che sostengono i processi commerciali, compresi hardware e software.
+L’hardware comprende server, computer, centri dati, commutatori, router, hub. Il software comprende sistemi operativi, applicazioni, banche dati, strumenti di sicurezza, componenti di rete, altro,
+precisare. Fornire la descrizione o il nome delle componenti o dei sistemi infrastrutturali interessati e, se disponibili, indicare:
+a)
+informazioni sulla versione;
+b)
+se si tratta di un’infrastruttura interna/parzialmente esternalizzata/interamente esternalizzata, il nome del fornitore terzo;
+c)
+se l’infrastruttura è utilizzata o condivisa da più funzioni operative;
+d)
+i meccanismi messi in atto in termini di resilienza/continuità/ripristino/sostituibilità.
+No
+Sì, se l’incidente ha interessato componenti infrastrutturali che sostengono i processi commerciali.
+Sì, se l’incidente ha interessato componenti infrastrutturali che sostengono i processi commerciali.
+Alfanumerico
+3.30.
+Impatto sugli interessi finanziari dei clienti
+Indicare se l’incidente grave connesso alle TIC ha inciso sugli interessi finanziari dei clienti.
+No
+Sì
+Sì
+Selezionare:
+—
+Sì
+—
+No
+—
+Informazioni non disponibili
+3.31.
+Segnalazione ad altre autorità
+Specificare quali autorità sono state informate dell’incidente grave connesso alle TIC.
+Tenendo conto delle differenze derivanti dalla legislazione nazionale degli Stati membri, il concetto di autorità di contrasto è inteso dalle entità finanziarie in senso lato in modo da includere le
+autorità pubbliche abilitate a perseguire la criminalità informatica, comprese le forze di polizia, le agenzie di contrasto e i pubblici ministeri.
+No
+Sì
+Sì
+Selezionare (scelta multipla):
+—
+forze di polizia/autorità di contrasto
+—
+CSIRT
+—
+autorità competente per la protezione dei dati
+—
+agenzia nazionale per la cibersicurezza
+—
+nessuna
+—
+altre (precisare)
+3.32.
+Indicazione delle autorità di «altro» tipo
+Specificare quale «altro» tipo di autorità è stato informato dell’incidente grave connesso alle TIC.
+Se nel campo di dati 3.31 si è selezionato «altro», la descrizione comprende informazioni più dettagliate sull’autorità alla quale l’entità finanziaria ha trasmesso informazioni sull’incidente grave
+connesso alle TIC.
+No
+Sì, se l’entità finanziaria ha informato un «altro» tipo di autorità in merito all’incidente grave connesso alle TIC.
+Sì, se l’entità finanziaria ha informato un «altro» tipo di autorità in merito all’incidente grave connesso alle TIC.
+Alfanumerico
+3.33.
+Azioni/misure temporanee adottate o previste per effettuare il ripristino a seguito dell’incidente
+Indicare se l’entità finanziaria ha attuato (o prevede di attuare) eventuali azioni temporanee che sono state adottate (o di cui è prevista l’adozione) per effettuare il ripristino a seguito
+dell’incidente grave connesso alle TIC.
+No
+Sì
+Sì
+Booleano (Sì o No)
+3.34.
+Descrizione di eventuali azioni e misure temporanee adottate o previste per effettuare il ripristino a seguito dell’incidente
+Le informazioni descrivono le azioni immediate adottate, compreso l’isolamento dell’incidente a livello di rete, l’attivazione delle procedure di risoluzione, il blocco delle porte USB, l’attivazione
+del sito di ripristino in caso di disastro e qualsiasi altro controllo di sicurezza supplementare temporaneamente messo in atto.
+Le entità finanziarie indicano la data e l’ora di attuazione delle azioni temporanee e la data prevista di ritorno al sito primario. Per eventuali azioni temporanee che non sono state attuate ma sono
+ancora pianificate, indicare la data entro la quale è prevista la loro attuazione.
+Se non sono state adottate azioni/misure temporanee, indicarne il motivo.
+No
+Sì, se sono state adottate o si prevede di adottare azioni/misure temporanee (campo di dati 3.33).
+Sì, se sono state adottate o si prevede di adottare azioni/misure temporanee (campo di dati 3.33).
+Alfanumerico
+3.35.
+Indicatori di compromissione
+Informazioni relative all’incidente grave connesso alle TIC che possono contribuire a individuare attività dolose all’interno di un sistema informatico o di rete (indicatori di compromissione o IoC),
+se del caso.
+Il campo si applica solo alle entità finanziarie che rientrano nell’ambito di applicazione della direttiva (UE) 2022/2555 del Parlamento europeo e del Consiglio ( 1 ) e alle entità finanziarie
+identificate come soggetti essenziali o importanti ai sensi delle norme nazionali che recepiscono l’articolo 3 della direttiva (UE) 2022/2555, se del caso.
+Gli IoC forniti dall’entità finanziaria comprendono le categorie di dati seguenti:
+a)
+indirizzi IP;
+b)
+indirizzi URL;
+c)
+domini;
+d)
+hash dei file;
+e)
+dati del malware (nome del malware, nomi dei file e loro ubicazione, chiavi di registro specifiche associate all’attività di malware);
+f)
+dati relativi alle attività di rete (porte, protocolli, indirizzi, referrer, programmi utente, header, log specifici o schemi distintivi nel traffico di rete);
+g)
+dati del messaggio di posta elettronica (mittente, destinatario, oggetto, intestazione, contenuto);
+h)
+richieste DNS e configurazioni dei registri;
+i)
+attività dell’account utente (login, attività di account utente privilegiato, privilege escalation);
+j)
+traffico delle banche dati (lettura/scrittura), richieste relative allo stesso file.
+In pratica, questo tipo di informazioni può includere dati relativi, tra l’altro, agli indicatori che descrivono gli schemi nel traffico di rete corrispondenti ad attacchi noti/comunicazioni botnet,
+indirizzi IP delle macchine infette da malware (bot), dati relativi ai server di «comando e controllo» ut

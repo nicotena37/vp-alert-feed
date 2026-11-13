@@ -1,0 +1,832 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativo alla resilienza operativa digitale per il settore finanziario e   (id UE-32022R2554)
+
+=== K42 | [32] Struttura del quadro di sorveglianza
+Articolo 32
+Struttura del quadro di sorveglianza
+1. Il comitato congiunto, in conformità dell’articolo 57, paragrafo 1, dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n. 1095/2010, istituisce il forum di sorveglianza come sottocomitato
+incaricato di coadiuvare il lavoro del comitato congiunto e dell’autorità di sorveglianza capofila di cui all’articolo 31, paragrafo 1, lettera b), per quanto concerne i rischi informatici derivanti
+da terzi in tutti i settori finanziari. Il forum di sorveglianza prepara i progetti di posizioni comuni e atti comuni del comitato congiunto in tale ambito.
+Il forum di sorveglianza discute periodicamente gli sviluppi rilevanti in materia di vulnerabilità e rischi relativi alle TIC e promuove un approccio coerente al monitoraggio dei rischi informatici
+derivanti da terzi a livello dell’Unione.
+2. Il forum di sorveglianza intraprende, con cadenza annuale, una valutazione collettiva degli esiti e delle risultanze delle attività di sorveglianza condotte su tutti i fornitori terzi critici di
+servizi TIC e promuove misure di coordinamento per potenziare la resilienza operativa digitale delle entità finanziarie, favorire le migliori prassi per contrastare il rischio di concentrazione delle
+TIC e studiare metodi per attenuare i trasferimenti intersettoriali dei rischi.
+3. Il forum di sorveglianza sottopone al comitato congiunto parametri di riferimento generali ai fornitori terzi critici di servizi TIC affinché siano adottati come posizioni congiunte delle AEV ai
+sensi dell’articolo 56, paragrafo 1, dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010.
+4. Il forum di sorveglianza è composto da:
+a)
+i presidenti delle AEV;
+b)
+un rappresentante di alto livello del personale in servizio dell’autorità competente interessata di cui all’articolo 46 di ciascuno Stato membro;
+c)
+i direttori esecutivi di ciascuna AEV e un rappresentante della Commissione, del CERS, della BCE e dell’ENISA in qualità di osservatori;
+d)
+se del caso, un rappresentante supplementare di un’autorità competente di cui all’articolo 46 di ciascuno Stato membro in qualità di osservatore;
+e)
+ove applicabile, un rappresentante delle autorità competenti designate o istituite in conformità della direttiva (UE) 2022/2555 responsabile della vigilanza di un soggetto essenziale o importante ai
+sensi di tale direttiva, che è stato designato come un fornitore terzo di servizi TIC critici in qualità di osservatore.
+Il forum di sorveglianza può, se del caso, chiedere il parere di esperti indipendenti nominati a norma del paragrafo 6.
+5. Ciascuno Stato membro designa l’autorità competente interessata il cui membro del personale è il rappresentante di alto livello di cui al paragrafo 4, primo comma, lettera b), e ne informa
+l’autorità di sorveglianza capofila.
+Le AEV pubblicano sul loro sito web l’elenco dei rappresentanti di alto livello dell’attuale personale della pertinente autorità competente designati dagli Stati membri.
+6. Gli esperti indipendenti di cui al paragrafo 4, secondo comma, sono nominati dal forum di sorveglianza e provengono da un gruppo di esperti selezionati al termine di una procedura di candidatura
+pubblica e trasparente. Gli esperti indipendenti sono nominati sulla base dell’esperienza maturata in settori quali la stabilità finanziaria, la resilienza operativa digitale e le questioni di
+sicurezza delle TIC.
+Agiscono in piena indipendenza e obiettività nell’interesse esclusivo dell’Unione nel suo insieme, senza chiedere né ricevere istruzioni da parte di istituzioni od organi dell’Unione, governi degli
+Stati membri o altri soggetti pubblici o privati.
+7. Ai sensi dell’articolo 16 dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010, le AEV, entro il 17 luglio 2024, formulano, ai fini della presente sezione, orientamenti sulla
+cooperazione tra le AEV e le autorità competenti concernenti le procedure e le condizioni dettagliate per la ripartizione e l’esecuzione dei compiti tra le autorità competenti e le AEV, nonché
+forniscono dettagli sugli scambi di informazioni necessari alle autorità competenti per garantire il seguito da dare alle raccomandazioni a norma dell’articolo 35, paragrafo 1, lettera d) rivolte ai
+fornitori terzi critici di servizi TIC.
+8. I requisiti di cui alla presente sezione non pregiudicano l’applicazione della direttiva (UE) 2022/2555 né di altre norme dell’Unione in materia di sorveglianza applicabili ai fornitori di servizi
+di cloud computing.
+9. Sulla base di un lavoro preparatorio svolto dal forum di sorveglianza, le AEV, tramite il comitato congiunto, trasmettono ogni anno una relazione sull’applicazione della presente sezione al
+Parlamento europeo, al Consiglio e alla Commissione.
+
+=== K43 | [33] Compiti dell’autorità di sorveglianza capofila
+Articolo 33
+Compiti dell’autorità di sorveglianza capofila
+1. L’autorità di sorveglianza capofila, nominata conformemente all’articolo 31, paragrafo 1, lettera b), effettua la sorveglianza dei fornitori terzi critici di servizi TIC assegnati e, ai fini di
+tutte le questioni relative alla sorveglianza, è il principale punto di contatto per tali fornitori terzi critici di servizi TIC.
+2. Ai fini del paragrafo 1, l’autorità di sorveglianza capofila valuta se ciascun fornitore terzo critico di servizi TIC abbia predisposto norme, procedure, meccanismi e accordi esaustivi, solidi ed
+efficaci per gestire i rischi informatici cui esso può esporre le entità finanziarie.
+La valutazione di cui al primo comma si concentra principalmente sui servizi TIC forniti dal fornitore terzo critico di servizi TIC a supporto di funzioni essenziali o importanti delle entità
+finanziarie. Se necessario per affrontare tutti i rischi pertinenti, tale valutazione si estende ai servizi TIC a supporto di funzioni diverse da quelle essenziali o importanti.
+3. La valutazione di cui al paragrafo 2 riguarda:
+a)
+requisiti in materia di TIC atti a garantire, in particolare, la sicurezza, la disponibilità, la continuità, la scalabilità e la qualità dei servizi che il fornitore terzo critico di servizi TIC
+presta alle entità finanziarie, nonché la capacità di mantenere standard di, disponibilità, autenticità, integrità o riservatezza dei dati costantemente elevati;
+b)
+la sicurezza fisica che contribuisce a mantenere la sicurezza delle TIC, compresa la sicurezza dei locali, delle attrezzature e dei centri di elaborazione dati;
+c)
+i processi di gestione del rischio, comprese le politiche di gestione dei rischi informatici, la politica di continuità operativa delle TIC e i piani di risposta e ripristino relativi alle TIC;
+d)
+i meccanismi di governance, compresa una struttura organizzativa dotata di linee e norme in materia di responsabilità chiare, trasparenti e coerenti che consentano un’efficace gestione dei rischi
+informatici;
+e)
+l’identificazione, il monitoraggio e la tempestiva segnalazione alle entità finanziarie di incidenti significativi connessi alle TIC, la gestione e la risoluzione di tali incidenti, in particolare
+degli attacchi informatici;
+f)
+i meccanismi per la portabilità dei dati, la portabilità e l’interoperabilità delle applicazioni, per assicurare un effettivo esercizio dei diritti di risoluzione da parte delle entità finanziarie;
+g)
+i test su sistemi, infrastrutture e controlli relativi alle TIC;
+h)
+gli audit in materia di TIC;
+i)
+l’utilizzo dei pertinenti standard nazionali e internazionali applicabili alla fornitura dei servizi TIC alle entità finanziarie.
+4. Sulla base della valutazione di cui al paragrafo 2, e in coordinamento con la rete di sorveglianza comune di cui all’articolo 34, paragrafo 1, l’autorità di sorveglianza capofila adotta un piano di
+sorveglianza individuale chiaro, dettagliato e motivato che descrive gli obiettivi annuali in materia di sorveglianza e le principali azioni di sorveglianza previste per ciascun fornitore terzo
+critico di servizi TIC. Tale piano è comunicato annualmente al fornitore terzo critico di servizi TIC.
+Prima dell’adozione del piano di sorveglianza, l’autorità di sorveglianza capofila comunica il progetto di piano di sorveglianza al fornitore terzo critico di servizi TIC.
+Al ricevimento del progetto di piano di sorveglianza, il fornitore terzo critico di servizi TIC può presentare, entro 15 giorni di calendario, una dichiarazione motivata che dimostri l’impatto
+previsto sui clienti che sono entità che non rientrano nell’ambito di applicazione del presente regolamento e, se del caso, formuli soluzioni per attenuare i rischi.
+5. Allorché i piani di sorveglianza annuali di cui al paragrafo 4 sono stati adottati e notificati ai fornitori terzi critici di servizi TIC, le autorità competenti possono adottare misure concernenti
+tali fornitori terzi critici di servizi TIC soltanto in accordo con l’autorità di sorveglianza capofila.
+
+=== K44 | [34] Coordinamento operativo tra autorità di sorveglianza capofila
+Articolo 34
+Coordinamento operativo tra autorità di sorveglianza capofila
+1. Per garantire un approccio coerente alle attività di sorveglianza e al fine di consentire strategie di sorveglianza generale coordinate e approcci operativi e metodologie di lavoro coerenti, le tre
+autorità di sorveglianza capofila nominate a norma dell’articolo 31, paragrafo 1, lettera b), istituiscono una rete di sorveglianza comune per coordinarsi tra loro nelle fasi preparatorie e coordinare
+lo svolgimento delle attività di sorveglianza sui rispettivi fornitori terzi critici di servizi TIC sottoposti a sorveglianza, nonché nello svolgimento di qualsiasi azione eventualmente necessaria a
+norma dell’articolo 42.
+2. Ai fini del paragrafo 1, le autorità di sorveglianza capofila elaborano un protocollo comune di sorveglianza che specifica le procedure dettagliate da seguire per effettuare il coordinamento
+quotidiano e garantire scambi e reazioni rapidi. Il protocollo è riveduto periodicamente per tener conto delle esigenze operative, in particolare dell’evoluzione delle modalità pratiche di
+sorveglianza.
+3. Le autorità di sorveglianza capofila possono, a seconda dei casi, chiedere alla BCE e all’ENISA di fornire consulenza tecnica, condividere esperienze pratiche o partecipare a specifiche riunioni di
+coordinamento della rete di sorveglianza comune.
+
+=== K45 | [35] Poteri dell’autorità di sorveglianza capofila
+Articolo 35
+Poteri dell’autorità di sorveglianza capofila
+1. Ai fini dello svolgimento dei compiti previsti dalla presente sezione, all’autorità di sorveglianza capofila sono conferiti i poteri indicati di seguito riguardo ai fornitori terzi critici di
+servizi TIC:
+a)
+richiedere tutte le informazioni e la documentazione pertinenti ai sensi dell’articolo 37;
+b)
+condurre indagini e ispezioni di carattere generale ai sensi degli articoli 38 e 39 rispettivamente;
+c)
+richiedere, dopo il completamento delle attività di sorveglianza, relazioni in cui si specifichino le azioni adottate o i rimedi applicati da parte dei fornitori terzi critici di servizi TIC in
+relazione alle raccomandazioni di cui alla lettera d) del presente paragrafo;
+d)
+formulare raccomandazioni concernenti i settori di cui all’articolo 33, paragrafo 3, in particolare per quanto riguarda gli elementi indicati di seguito:
+i)
+l’impiego di specifici processi o requisiti di sicurezza e qualità delle TIC, segnatamente per il rilascio di correzioni, aggiornamenti, cifratura e altre misure di sicurezza che l’autorità di
+sorveglianza capofila giudichi pertinenti per garantire la sicurezza delle TIC dei servizi forniti alle entità finanziarie;
+ii)
+l’uso di termini e condizioni, compresa la relativa attuazione tecnica, in base ai quali i fornitori terzi critici di servizi TIC prestano servizi TIC alle entità finanziarie, che l’autorità di
+sorveglianza capofila giudichi importanti per prevenire il prodursi di singoli punti di vulnerabilità ( points of failure ), l’amplificazione degli stessi, oppure per ridurre al minimo il possibile
+impatto sistemico in tutto il settore finanziario dell’Unione in caso di rischio di concentrazione delle TIC;
+iii)
+eventuali subappalti previsti, ove l’autorità di sorveglianza capofila ritenga che ulteriori subappalti, compresi gli accordi di subappalto che i fornitori terzi critici di servizi TIC intendano
+stipulare con fornitori terzi di servizi TIC o con subappaltatori di TIC stabiliti in un paese terzo, possano produrre rischi per la fornitura di servizi da parte dell’entità finanziaria o rischi per
+la stabilità finanziaria, sulla base dell’esame delle informazioni raccolte a norma degli articoli 37 e 38;
+iv)
+la rinuncia a stipulare un ulteriore accordo di subappalto qualora siano soddisfatte le condizioni cumulative seguenti:
+—
+il subappaltatore designato è un fornitore terzo di servizi TIC oppure un subappaltatore di TIC stabilito in un paese terzo;
+—
+il subappalto riguarda funzioni essenziali o importanti dell’entità finanziaria; nonché
+—
+l’autorità di sorveglianza capofila ritiene che il ricorso a tale subappalto rappresenti un rischio grave e chiaro per la stabilità finanziaria dell’Unione o per le entità finanziarie, anche per
+quanto riguarda la capacità delle entità finanziarie di rispettare i requisiti in materia di sorveglianza.
+Ai fini del punto iv) della presente lettera, i fornitori terzi di servizi TIC trasmettono all’autorità di sorveglianza capofila, utilizzando il modello di cui all’articolo 41, paragrafo 1, lettera
+b), le informazioni relative al subappalto.
+2. Nell’esercizio dei poteri di cui al presente articolo, l’autorità di sorveglianza capofila:
+a)
+assicura un coordinamento regolare all’interno della rete di sorveglianza comune e, in particolare, persegue approcci coerenti, se del caso, per quanto riguarda la sorveglianza dei fornitori terzi
+critici di servizi TIC;
+b)
+tiene debitamente conto del quadro istituito dalla direttiva (UE) 2022/2555 e, se necessario, consulta le autorità competenti interessate designate o istituite in conformità di tale direttiva, al fine
+di evitare duplicazioni delle misure tecniche e organizzative che potrebbero applicarsi ai fornitori terzi critici di servizi TIC ai sensi di tale direttiva;
+c)
+si adopera per ridurre al minimo, nella misura del possibile, il rischio di perturbazione dei servizi forniti da fornitori terzi critici di servizi TIC a clienti che sono entità non rientranti
+nell’ambito di applicazione del presente regolamento.
+3. L’autorità di sorveglianza capofila consulta il forum di sorveglianza prima di esercitare i poteri di cui al paragrafo 1.
+Prima di formulare raccomandazioni a norma del paragrafo 1, lettera d), l’autorità di sorveglianza capofila dà al fornitore terzo di servizi TIC la possibilità di fornire entro 30 giorni di calendario
+informazioni pertinenti che dimostrino l’impatto previsto sui clienti che sono entità che non rientrano nell’ambito di applicazione del presente regolamento e, se del caso, formulino soluzioni per
+attenuare i rischi.
+4. L’autorità di sorveglianza capofila informa la rete di sorveglianza comune dell’esito dell’esercizio dei poteri di cui al paragrafo 1, lettere a) e b). L’autorità di sorveglianza capofila
+trasmette, senza indebito ritardo, le relazioni di cui al paragrafo 1, lettera c), alla rete di sorveglianza comune e alle autorità competenti delle entità finanziarie che utilizzano i servizi TIC di
+tale fornitore terzo critico di servizi TIC.
+5. I fornitori terzi critici di servizi TIC cooperano in buona fede con l’autorità di sorveglianza capofila e la coadiuvano nell’adempimento dei suoi compiti.
+6. In caso di inosservanza totale o parziale delle misure che devono essere adottate ai sensi dell’esercizio dei poteri di cui al paragrafo 1, lettere a), b) e c), e dopo la scadenza di un periodo di
+almeno 30 giorni di calendario dalla data in cui il fornitore terzo critico di servizi TIC ha ricevuto la notifica delle rispettive misure, l’autorità di sorveglianza capofila adotta una decisione che
+impone una penalità di mora al fine di costringere il fornitore terzo critico di servizi TIC a conformarsi a tali misure.
+7. La penalità di mora, di cui al paragrafo 6, è imposta su base giornaliera fino al conseguimento della conformità e per un periodo non superiore a sei mesi dalla notifica della decisione che impone
+una penalità di mora al fornitore terzo critico di servizi TIC.
+8. L’importo della penalità di mora, calcolato a partire dalla data indicata nella decisione che la impone, è fino all’1 % del fatturato medio quotidiano realizzato a livello mondiale dal fornitore
+terzo critico di servizi TIC nel precedente esercizio. Nel determinare l’importo della penalità, l’autorità di sorveglianza capofila tiene conto dei seguenti criteri per quanto riguarda l’inosservanza
+delle misure di cui al paragrafo 6:
+a)
+la gravità e la durata dell’inosservanza;
+b)
+se l’inosservanza sia stata commessa intenzionalmente o per negligenza;
+c)
+il livello di cooperazione del fornitore terzo di servizi TIC con l’autorità di sorveglianza capofila.
+Ai fini del primo comma, per garantire un approccio coerente, l’autorità di sorveglianza capofila avvia consultazioni nell’ambito della rete di sorveglianza comune.
+9. Le penalità sono di natura amministrativa e sono esecutive. L’applicazione delle penalità è regolata dalle norme di procedura civile vigenti nello Stato membro sul cui territorio si svolgono le
+ispezioni e l’accesso. I giudici dello Stato membro interessato esercitano la giurisdizione sui reclami concernenti l’irregolarità dell’applicazione delle penalità. Gli importi delle penalità sono
+assegnati al bilancio generale dell’Unione europea.
+10. L’autorità di sorveglianza capofila comunica al pubblico ogni penalità di mora inflitta, salvo il caso in cui tale comunicazione possa mettere gravemente a rischio i mercati finanziari o possa
+arrecare un danno sproporzionato alle parti coinvolte.
+11. Prima di imporre una penalità di mora ai sensi del paragrafo 6, l’autorità di sorveglianza capofila concede ai rappresentanti del fornitore terzo critico di servizi TIC oggetto del procedimento
+l’opportunità di essere sentiti in merito alle risultanze, e fonda le proprie decisioni unicamente sulle risultanze in merito alle quali il fornitore terzo critico di servizi TIC oggetto del
+procedimento ha avuto la possibilità di esporre le proprie osservazioni.
+Nel corso del procedimento sono pienamente garantiti i diritti della difesa delle persone interessate dal procedimento. Il fornitore terzo critico di servizi TIC oggetto del procedimento ha diritto di
+accesso al fascicolo, fermo restando il legittimo interesse di altre persone alla tutela dei propri segreti aziendali. Il diritto di accesso al fascicolo non si estende alle informazioni riservate o
+ai documenti preparatori interni dell’autorità di sorveglianza capofila.
+
+=== K46 | [36] Esercizio dei poteri dell’autorità di sorveglianza capofila al di fuori dell’Unione
+Articolo 36
+Esercizio dei poteri dell’autorità di sorveglianza capofila al di fuori dell’Unione
+1. Qualora gli obiettivi di sorveglianza non possano essere conseguiti interagendo con l’impresa figlia istituita ai fini dell’articolo 31, paragrafo 12, o esercitando attività di sorveglianza in
+locali situati nell’Unione, l’autorità di sorveglianza capofila può esercitare i poteri, di cui alle disposizioni seguenti, in qualsiasi locale situato in un paese terzo che sia posseduto, o
+utilizzato in qualsiasi modo, ai fini della fornitura di servizi a entità finanziarie dell’Unione da parte di un fornitore terzo critico di servizi di TIC, riguardo alle relative operazioni
+commerciali, funzioni o servizi, compresi eventuali uffici amministrativi, commerciali o operativi, locali, terreni, edifici o altre proprietà:
+a)
+articolo 35, paragrafo 1, lettera a); e
+b)
+articolo 35, paragrafo 1, lettera b), conformemente all’articolo 38, paragrafo 2, lettere a), b) e d), e all’articolo 39, paragrafi 1 e 2, lettera a).
+I poteri di cui al primo comma possono essere esercitati alle condizioni seguenti:
+i)
+lo svolgimento di un’ispezione in un paese terzo è ritenuto necessario dall’autorità di sorveglianza capofila per consentirle di svolgere pienamente ed efficacemente i propri compiti ai sensi del
+presente regolamento;
+ii)
+l’ispezione in un paese terzo è direttamente connessa alla fornitura di servizi TIC a entità finanziarie nell’Unione;
+iii)
+il fornitore terzo critico di servizi TIC interessato acconsente allo svolgimento di un’ispezione in un paese terzo; nonché
+iv)
+l’autorità pertinente del paese terzo interessato è stata ufficialmente informata dall’autorità di sorveglianza capofila e non ha sollevato obiezioni al riguardo.
+2. Fatte salve le rispettive competenze delle istituzioni dell’Unione e degli Stati membri, ai fini del paragrafo 1, l’ABE, l’ESMA o l’EIOPA concludono accordi di cooperazione amministrativa con
+l’autorità pertinente del paese terzo al fine di consentire il regolare svolgimento delle ispezioni nel paese terzo interessato da parte dell’autorità di sorveglianza capofila e del gruppo designato
+per la sua missione in tale paese terzo. Tali accordi di cooperazione non creano obblighi giuridici per l’Unione e i suoi Stati membri, né impediscono agli Stati membri e alle loro autorità competenti
+di concludere accordi bilaterali o multilaterali con tali paesi terzi e le loro autorità pertinenti.
+Tali accordi di cooperazione specificano almeno gli elementi seguenti:
+a)
+le procedure per il coordinamento delle attività di sorveglianza svolte a norma del presente regolamento e qualsiasi analogo monitoraggio dei rischi informatici derivanti da terzi nel settore
+finanziario esercitato dall’autorità pertinente del paese terzo interessato, comprese le modalità di trasmissione dell’accordo di quest’ultimo al fine di consentire all’autorità di sorveglianza
+capofila e al suo gruppo designato di svolgere le indagini generali e le ispezioni in loco di cui al paragrafo 1, primo comma, nel territorio sotto la sua giurisdizione;
+b)
+il meccanismo per la trasmissione di tutte le informazioni pertinenti tra l’ABE, l’ESMA o l’EIOPA e l’autorità pertinente del paese terzo interessato, in particolare in relazione alle informazioni che
+possono essere richieste dall’autorità di sorveglianza capofila a norma dell’articolo 37;
+c)
+i meccanismi per la tempestiva notifica, da parte dell’autorità pertinente del paese terzo interessato all’ABE, all’ESMA o all’EIOPA, dei casi in cui si ritiene che un fornitore terzo di servizi TIC
+stabilito in un paese terzo e designato come critico ai sensi dell’articolo 31, paragrafo 1, lettera a), abbia violato gli obblighi ai quali è tenuto a norma del diritto applicabile del paese terzo
+interessato quando fornisce servizi a enti finanziari in tale paese terzo, nonché i mezzi di ricorso e le penalità applicate;
+d)
+la trasmissione periodica di aggiornamenti sugli sviluppi normativi o di vigilanza sul monitoraggio dei rischi informatici derivanti da terzi degli enti finanziari nel paese terzo interessato;
+e)
+i dettagli per consentire, se necessario, la partecipazione di un rappresentante dell’autorità pertinente del paese terzo alle ispezioni condotte dall’autorità di sorveglianza capofila e dal gruppo
+designato.
+3. Quando l’autorità di sorveglianza capofila non è in grado di svolgere le attività di sorveglianza, al di fuori dell’Unione, di cui ai paragrafi 1 e 2, l’autorità di sorveglianza capofila:
+a)
+esercita i poteri di cui all’articolo 35 sulla base di tutti i fatti e di tutti i documenti di cui dispone;
+b)
+documenta e spiega le eventuali conseguenze della sua incapacità di svolgere le attività di sorveglianza previste di cui al presente articolo.
+Le potenziali conseguenze di cui alla lettera b) del presente comma sono prese in considerazione nelle raccomandazioni dell’autorità di sorveglianza capofila emesse a norma dell’articolo 35, paragrafo
+1, lettera d).
+
+=== K47 | [37] Richiesta di informazioni
+Articolo 37
+Richiesta di informazioni
+1. L’autorità di sorveglianza capofila può, con semplice richiesta o mediante decisione, imporre ai fornitori terzi critici di servizi TIC di trasmettere tutte le informazioni necessarie all’autorità
+di sorveglianza capofila per adempiere i propri compiti ai sensi del presente regolamento, tra cui tutti i pertinenti documenti aziendali od operativi, contratti, documentazione strategica, relazioni
+di audit sulla sicurezza delle TIC, segnalazioni di incidenti informatici, nonché qualsiasi informazione relativa ai soggetti cui il fornitore terzo critico di servizi TIC ha esternalizzato attività o
+funzioni operative.
+2. Quando invia una semplice richiesta di informazioni a norma del paragrafo 1, l’autorità di sorveglianza capofila:
+a)
+fa riferimento al presente articolo quale base giuridica della richiesta;
+b)
+dichiara la finalità della richiesta;
+c)
+specifica le informazioni richieste;
+d)
+stabilisce un termine entro il quale tali informazioni devono pervenirle;
+e)
+informa il rappresentante critico del fornitore terzo di servizi TIC cui sono richieste le informazioni che non è tenuto a fornirle, ma in caso di risposta volontaria alla richiesta di informazioni,
+tali informazioni non devono essere inesatte né fuorvianti.
+3. Quando impone mediante decisione la comunicazione di informazioni a norma del paragrafo 1, l’autorità di sorveglianza capofila:
+a)
+fa riferimento al presente articolo quale base giuridica della richiesta;
+b)
+dichiara la finalità della richiesta;
+c)
+specifica le informazioni richieste;
+d)
+stabilisce un termine entro il quale tali informazioni devono pervenirle;
+e)
+indica le penalità di mora di cui all’articolo 35, paragrafo 6, laddove le informazioni fornite siano incomplete o quando tali informazioni non siano fornite entro il termine indicato alla lettera d)
+del presente paragrafo;
+f)
+indica il diritto di presentare ricorso contro la decisione dinanzi alla commissione di ricorso dell’AEV e di adire la Corte di giustizia dell’Unione europea («Corte di giustizia») in conformità degli
+articoli 60 e 61 dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010.
+4. I rappresentanti dei fornitori terzi critici di servizi TIC forniscono le informazioni richieste. Gli avvocati debitamente incaricati possono fornire le informazioni richieste a nome dei loro
+clienti. I fornitori terzi critici di servizi TIC sono pienamente responsabili qualora le informazioni fornite siano incomplete, inesatte o fuorvianti.
+5. L’autorità di sorveglianza capofila trasmette senza ritardo copia della decisione di fornire informazioni alle autorità competenti delle entità finanziarie che utilizzano i servizi dei fornitori
+terzi interessati di servizi TIC critici e alla rete di sorveglianza comune.
+
+=== K48 | [38] Indagini generali
+Articolo 38
+Indagini generali
+1. Per adempiere i propri compiti ai sensi del presente regolamento, l’autorità di sorveglianza capofila, coadiuvata dal gruppo di esaminatori congiunto di cui all’articolo 40, paragrafo 1, può, se
+necessario, svolgere le indagini sui fornitori terzi critici di servizi TIC.
+2. L’autorità di sorveglianza capofila ha il potere di:
+a)
+esaminare registri, dati, procedure e qualsiasi altro materiale pertinente per l’esecuzione dei compiti di sua competenza, su qualsiasi forma di supporto;
+b)
+fare od ottenere copie certificate o estratti di tali registri, dati, procedure documentate e di ogni altro materiale;
+c)
+convocare rappresentanti del fornitore terzo critico di servizi TIC e chiedere loro spiegazioni scritte od orali su fatti o documenti relativi all’oggetto e alle finalità dell’indagine e registrarne
+le risposte;
+d)
+interpellare persone fisiche o giuridiche consenzienti allo scopo di raccogliere informazioni pertinenti all’oggetto dell’indagine;
+e)
+richiedere la documentazione relativa al traffico telefonico e al traffico dati.
+3. I funzionari e altre persone autorizzate dall’autorità di sorveglianza capofila allo svolgimento dell’indagine di cui al paragrafo 1 esercitano i loro poteri dietro esibizione di un’autorizzazione
+scritta che specifichi l’oggetto e le finalità dell’indagine.
+Tale autorizzazione indica anche la penalità di mora, di cui all’articolo 35, paragrafo 6, qualora i registri, i dati, le procedure documentate o qualsiasi altro materiale richiesto, oppure le
+risposte alle domande poste ai rappresentanti del fornitore terzo di servizi TIC, siano incompleti o non siano forniti affatto.
+4. I rappresentanti dei fornitori terzi critici di servizi TIC sono tenuti a sottoporsi alle indagini sulla base di una decisione dell’autorità di sorveglianza capofila. La decisione specifica
+l’oggetto e le finalità dell’indagine nonché le penalità di mora di cui all’articolo 35, paragrafo 6, i mezzi di ricorso disponibili ai sensi dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o
+(UE) n. 1095/2010 e il diritto di ricorso dinanzi alla Corte di giustizia avverso la decisione.
+5. In tempo utile prima dell’avvio dell’indagine, l’autorità di sorveglianza capofila informa le autorità competenti delle entità finanziarie che si avvalgono dei servizi TIC del fornitore terzo
+critico di servizi TIC in questione in merito all’indagine prevista e all’identità delle persone autorizzate.
+L’autorità di sorveglianza capofila comunica alla rete di sorveglianza comune tutte le informazioni trasmesse a norma del primo comma.
+
+=== K49 | [39] Ispezioni
+Articolo 39
+Ispezioni
+1. Per adempiere i propri compiti ai sensi del presente regolamento, l’autorità di sorveglianza capofila può, coadiuvata dai gruppi di esaminatori congiunti di cui all’articolo 40, paragrafo 1,
+accedere a locali commerciali, immobili o proprietà dei fornitori terzi di servizi TIC, come sedi centrali, centri operativi, sedi secondarie, per condurvi tutte le necessarie ispezioni in loco; può
+inoltre effettuare ispezioni extra loco.
+Ai fini dell’esercizio dei poteri di cui al primo comma, l’autorità di sorveglianza capofila consulta la rete di sorveglianza comune.
+2. I funzionari e altre persone autorizzate dall’autorità di sorveglianza capofila a effettuare l’ispezione in loco hanno il potere di:
+a)
+accedere ai suddetti locali commerciali, immobili o proprietà; e
+b)
+sigillare i suddetti locali, libri o registri, per il periodo dell’ispezione e nella misura necessaria per effettuarla.
+I funzionari e altre persone autorizzate dall’autorità di sorveglianza capofila esercitano i loro poteri dietro esibizione di un’autorizzazione scritta che specifichi l’oggetto e le finalità
+dell’ispezione, nonché le penalità di mora di cui all’articolo 35, paragrafo 6, qualora i rappresentanti dei fornitori terzi critici di servizi TIC interessati non si sottopongano all’ispezione.
+3. In tempo utile prima dell’avvio dell’ispezione, l’autorità di sorveglianza capofila informa le autorità competenti delle entità finanziarie che si avvalgono di quel fornitore terzo di servizi TIC.
+4. Le ispezioni si estendono all’intera gamma di sistemi, reti, dispositivi, informazioni e dati in materia di TIC utilizzati per la fornitura di servizi TIC alle entità finanziarie, o che vi
+contribuiscono.
+5. Prima di qualsiasi ispezione in loco programmata, l’autorità di sorveglianza capofila concede un ragionevole preavviso ai fornitori terzi critici di servizi TIC, a meno che tale preavviso si riveli
+impossibile per una situazione di emergenza o di crisi, o qualora il preavviso rischi di provocare una situazione in cui l’ispezione o l’audit non sarebbero più efficaci.
+6. Il fornitore terzo critico di servizi TIC si sottopone alle ispezioni in loco ordinate con decisione dell’autorità di sorveglianza capofila. La decisione specifica l’oggetto e le finalità
+dell’ispezione, fissa la data d’inizio dell’ispezione indica le penalità di mora di cui all’articolo 35, paragrafo 6, i mezzi di ricorso disponibili a norma dei regolamenti (UE) n. 1093/2010, (UE) n.
+1094/2010 o (UE) n. 1095/2010, nonché il diritto di presentare ricorso dinanzi alla Corte di giustizia avverso la decisione.
+7. Qualora i funzionari e altre persone autorizzate dall’autorità di sorveglianza capofila constatino che il fornitore terzo critico di servizi TIC si oppone all’ispezione ordinata ai sensi del
+presente articolo, l’autorità di sorveglianza capofila informa il fornitore terzo critico di servizi TIC delle conseguenze di tale opposizione, compresa la possibilità per le autorità competenti delle
+entità finanziarie interessate di imporre alle entità finanziarie di risolvere gli accordi contrattuali stipulati con il fornitore terzo critico di servizi TIC.
+
+=== K50 | [40] Sorveglianza nel continuo
+Articolo 40
+Sorveglianza nel continuo
+1. Nello svolgimento di attività di sorveglianza, in particolare indagini generali o ispezioni, l’autorità di sorveglianza capofila è coadiuvata da un gruppo di esaminatori congiunto istituito per
+ciascun fornitore terzo critico di servizi TIC.
+2. Il gruppo di esaminatori congiunto di cui al paragrafo 1 è composto da membri del personale appartenenti:
+a)
+alle AEV;
+b)
+alle autorità competenti interessate che vigilano sulle entità finanziarie cui il fornitore terzo critico di servizi TIC presta servizi TIC;
+c)
+all’autorità nazionale competente di cui all’articolo 32, paragrafo 4, lettera e), su base volontaria;
+d)
+a un’autorità nazionale competente dello Stato membro in cui è stabilito il fornitore terzo critico di servizi TIC, su base volontaria.
+I membri del gruppo di esaminatori congiunto possiedono competenze in materia di TIC e rischi operativi. Il gruppo di esaminatori congiunto è coordinato da un membro del personale dell’autorità di
+sorveglianza capofila designato a tale scopo («coordinatore dell’autorità di sorveglianza capofila»).
+3. Entro tre mesi dal completamento dell’indagine o dell’ispezione, l’autorità di sorveglianza capofila, dopo essersi consultata con il forum di sorveglianza, adotta le raccomandazioni da inviare al
+fornitore terzo critico di servizi TIC in forza dei poteri che le sono stati conferiti ai sensi dell’articolo 35.
+4. Le raccomandazioni di cui al paragrafo 3 sono comunicate immediatamente al fornitore terzo critico di servizi TIC e alle autorità competenti delle entità finanziarie cui il fornitore in questione
+presta i suoi servizi TIC.
+Per l’espletamento delle attività di sorveglianza, l’autorità di sorveglianza capofila può tener conto di qualsiasi pertinente certificazione fornita da terzi e di relazioni di audit interni o esterni
+effettuati da terzi in materia di TIC messe a disposizione dal fornitore terzo critico di servizi TIC.
+
+=== K51 | [41] Armonizzazione delle condizioni che consentono lo svolgimento delle attività di sorveglianza
+Articolo 41
+Armonizzazione delle condizioni che consentono lo svolgimento delle attività di sorveglianza
+1. Le AEV, tramite il comitato congiunto, elaborano progetti di norme tecniche di regolamentazione per specificare:
+a)
+le informazioni che il fornitore terzo di servizi TIC deve fornire nella domanda di designazione volontaria quale fornitore critico a norma dell’articolo 31, paragrafo 11;
+b)
+il contenuto, la struttura e il formato delle informazioni da trasmettere, diffondere o segnalare da parte dei fornitori terzi di servizi TIC ai sensi dell’articolo 35, paragrafo 1, compreso il
+modello per fornire informazioni relative agli accordi di subappalto;
+c)
+i criteri per determinare la composizione del gruppo di esaminatori congiunto, garantendo una partecipazione equilibrata dei membri del personale delle AEV e delle autorità competenti interessate, la
+loro nomina, i compiti e le modalità di lavoro.
+d)
+i dettagli della valutazione, da parte delle autorità competenti, delle misure adottate dai fornitori terzi critici di servizi TIC sulla base delle raccomandazioni dell’autorità di sorveglianza
+capofila ai sensi dell’articolo 42, paragrafo 3.
+2. Le AEV presentano tali progetti di norme tecniche di regolamentazione alla Commissione entro il 17 luglio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al paragrafo 1, in conformità della procedura sancita agli articoli
+da 10 a 14 dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010.
+
+=== K52 | [42] Seguito dato dalle autorità competenti
+Articolo 42
+Seguito dato dalle autorità competenti
+1. Entro 60 giorni di calendario dalla ricezione delle raccomandazioni formulate dall’autorità di sorveglianza capofila ai sensi dell’articolo 35, paragrafo 1, lettera d), i fornitori terzi critici di
+servizi TIC comunicano all’autorità di sorveglianza capofila la loro intenzione di attenersi alle raccomandazioni o forniscono una spiegazione articolata del motivo per cui non lo faranno. L’autorità
+di sorveglianza capofila trasmette immediatamente le informazioni alle autorità competenti delle entità finanziarie interessate.
+2. L’autorità di sorveglianza capofila rende pubblici i casi in cui un fornitore terzo critico di servizi TIC non dà notifica all’autorità di sorveglianza capofila conformemente al paragrafo 1 o se la
+spiegazione fornita dal fornitore terzo critico di servizi TIC non è ritenuta sufficiente. Le informazioni pubblicate rivelano l’identità del fornitore terzo critico di servizi TIC nonché informazioni
+sul tipo e la natura dell’inosservanza. Tali informazioni sono limitate a quanto è pertinente e proporzionato al fine di assicurare la sensibilizzazione del pubblico, salvo il caso in cui la
+pubblicazione possa arrecare un danno sproporzionato alle parti coinvolte o mettere gravemente a rischio il regolare funzionamento e l’integrità dei mercati finanziari o la stabilità dell’intero
+sistema finanziario dell’Unione o di parte di esso.
+L’autorità di sorveglianza capofila informa il fornitore terzo di servizi TIC di tale divulgazione al pubblico.
+3. Le autorità competenti informano le entità finanziarie interessate dei rischi individuati nelle raccomandazioni inviate ai fornitori terzi critici di servizi TIC conformemente all’articolo 35,
+paragrafo 1, lettera d).
+Nella gestione dei rischi informatici derivanti da terzi, le entità finanziarie tengono conto dei rischi di cui al primo comma.
+4. Qualora un’autorità competente ritenga che un’entità finanziaria non tenga conto dei rischi specifici individuati nelle raccomandazioni, o non li affronti in misura sufficiente, nell’ambito della
+sua gestione dei rischi informatici derivanti da terzi, essa notifica all’entità finanziaria la possibilità di adottare una decisione, entro 60 giorni di calendario dal ricevimento di tale notifica, a
+norma del paragrafo 6, in assenza di adeguati accordi contrattuali volti a far fronte a tali rischi.
+5. Dopo aver ricevuto le relazioni di cui all’articolo 35, paragrafo 1, lettera c), e prima di adottare una decisione di cui al paragrafo 6 del presente articolo, le autorità competenti possono, su
+base volontaria, consultare le autorità competenti designate o istituite in conformità della direttiva (UE) 2022/2555 responsabili della vigilanza di un soggetto essenziale o importante ai sensi di
+tale direttiva, che è stato designato come fornitore terzo critico di servizi TIC.
+6. A norma dell’articolo 50, le autorità competenti possono adottare, come misura di ultima istanza, a seguito della notifica e, se del caso, della consultazione di cui ai paragrafi 4 e 5 del presente
+articolo, una decisione che impone alle entità finanziarie di sospendere temporaneamente, in tutto o in parte, l’utilizzo o l’introduzione di un servizio prestato dal fornitore terzo critico di
+servizi TIC, fino a quando non siano stati affrontati i rischi identificati nelle raccomandazioni trasmesse ai fornitori terzi critici di servizi TIC. Laddove si renda necessario, le autorità
+competenti possono chiedere alle entità finanziarie di risolvere, in tutto o in parte, gli accordi contrattuali pertinenti stipulati con i fornitori terzi critici di servizi TIC.
+7. Qualora un fornitore terzo critico di servizi TIC rifiuti di accogliere raccomandazioni basandosi su un approccio diverso da quello raccomandato dall’autorità di sorveglianza capofila e qualora
+tale approccio diverso possa avere un impatto negativo su un numero considerevole di entità finanziarie, o su una parte significativa del settore finanziario, e le singole segnalazioni emesse dalle
+autorità competenti non abbiano dato luogo ad approcci coerenti che attenuino il rischio potenziale per la stabilità finanziaria, l’autorità di sorveglianza capofila può, previa consultazione del
+forum di sorveglianza, emettere pareri non vincolanti e non pubblici alle autorità competenti, al fine di promuovere, se del caso, misure di follow-up coerenti e convergenti in materia di vigilanza.
+8. Dopo aver ricevuto le relazioni di cui all’articolo 35, paragrafo 1, lettera c), le autorità competenti tengono conto, al momento di adottare le decisioni di cui al paragrafo 6 del presente
+articolo, del tipo e delle dimensioni del rischio che non è stato affrontato dal fornitore terzo critico di servizi TIC, nonché della gravità dell’inosservanza, in considerazione dei criteri seguenti:
+a)
+la gravità e la durata dell’inosservanza;
+b)
+se l’inosservanza abbia portato alla luce gravi carenze nelle procedure, nei sistemi di gestione, nella gestione dei rischi e nei controlli interni del fornitore terzo critico di servizi TIC;
+c)
+se l’inosservanza abbia favorito o generato un reato finanziario o se tale reato sia in qualche misura attribuibile all’inosservanza;
+d)
+se l’inosservanza sia stata commessa intenzionalmente o per negligenza;
+e)
+se la sospensione o la risoluzione degli accordi contrattuali comporti un rischio per la continuità delle operazioni commerciali dell’entità finanziaria malgrado gli sforzi dell’entità finanziaria per
+evitare perturbazioni nella fornitura dei suoi servizi;
+f)
+se del caso, il parere, richiesto su base volontaria conformemente al paragrafo 5 del presente articolo, delle autorità competenti designate o istituite a norma della direttiva (UE) 2022/2555
+responsabili della vigilanza di un soggetto essenziale o importante ai sensi di tale direttiva, che è stato designato come fornitore terzo critico di servizi TIC.
+Le autorità competenti concedono alle entità finanziarie il periodo di tempo necessario per consentire loro di adeguare gli accordi contrattuali con i fornitori terzi critici di servizi TIC al fine di
+evitare effetti negativi sulla loro resilienza operativa digitale e di consentire loro di attuare le strategie di uscita e i piani di transizione di cui all’articolo 28.
+9. La decisione di cui al paragrafo 6 del presente articolo è notificata ai membri del forum di sorveglianza di cui all’articolo 32, paragrafo 4, lettere a), b) e c), e alla rete di sorveglianza
+comune.
+I fornitori terzi critici di servizi TIC interessati dalle decisioni di cui al paragrafo 6 cooperano pienamente con le entità finanziarie colpite, in particolare nel contesto del processo di
+sospensione o risoluzione dei loro accordi contrattuali.
+10. Le autorità competenti informano l’autorità di sorveglianza capofila in merito alle misure e agli approcci adottati nell’ambito dei propri compiti di vigilanza in relazione alle entità
+finanziarie, nonché in merito agli accordi contrattuali conclusi da queste ultime qualora i fornitori terzi critici di servizi TIC abbiano disatteso, in tutto o in parte, le raccomandazioni loro
+rivolte dall’autorità di sorveglianza capofila.
+11. L’autorità di sorveglianza capofila può, su richiesta, fornire ulteriori chiarimenti sulle raccomandazioni formulate per orientare le autorità competenti sulle misure di follow-up.
+
+=== K53 | [43] Commissioni per le attività di sorveglianza
+Articolo 43
+Commissioni per le attività di sorveglianza
+1. L’autorità di sorveglianza capofila addebita, conformemente all’atto delegato di cui al paragrafo 2 del presente articolo, ai fornitori terzi critici di servizi TIC commissioni che coprono
+completamente le spese necessarie sostenute dall’autorità di sorveglianza capofila in relazione allo svolgimento dei compiti di sorveglianza ai sensi del presente regolamento, compreso il rimborso dei
+costi eventualmente sostenuti in seguito al lavoro svolto dal gruppo di esaminatori congiunto di cui all’articolo 40, nonché i costi della consulenza fornita dagli esperti indipendenti di cui
+all’articolo 32, paragrafo 4, secondo comma, in relazione a questioni che rientrano nell’ambito delle attività di sorveglianza diretta.
+L’importo della commissione addebitata al fornitore terzo critico di servizi TIC copre tutti i costi derivanti dall’esecuzione dei compiti di cui alla presente sezione ed è proporzionato al fatturato
+del fornitore.
+2. Alla Commissione è conferito il potere di adottare un atto delegato, conformemente all’articolo 57, per integrare il presente regolamento determinando l’importo delle commissioni e le relative
+modalità di pagamento entro il 17 luglio 2024.
+
+=== K54 | [44] Cooperazione internazionale
+Articolo 44
+Cooperazione internazionale
+1. Fatto salvo l’articolo 36, ai sensi, rispettivamente, dell’articolo 33 dei regolamenti (UE) n. 1093/2010, (UE) n. 1095/2010 e (UE) n. 1094/2010, l’ABE, l’ESMA e l’EIOPA possono concludere accordi
+amministrativi con le autorità di vigilanza e di regolamentazione di paesi terzi per promuovere la cooperazione internazionale in materia di rischi informatici derivanti da terzi tra i diversi settori
+finanziari, in particolare definendo migliori prassi per il riesame delle pratiche e dei controlli per la gestione dei rischi informatici nonché per le misure di attenuazione e risposta agli
+incidenti.
+2. Le AEV, tramite il comitato congiunto, presentano ogni cinque anni al Parlamento europeo, al Consiglio e alla Commissione una relazione congiunta riservata in cui sintetizzano le conclusioni delle
+discussioni pertinenti tenute con le autorità dei paesi terzi di cui al paragrafo 1, con particolare attenzione all’evoluzione dei rischi informatici derivanti da terzi e alle implicazioni per la
+stabilità finanziaria, l’integrità del mercato, la protezione degli investitori e il funzionamento del mercato interno.
+CAPO VI
+Meccanismi di condivisione delle informazioni
+
+=== K55 | [45] Meccanismi di condivisione delle informazioni e delle analisi delle minacce informatiche
+Articolo 45
+Meccanismi di condivisione delle informazioni e delle analisi delle minacce informatiche
+1. Le entità finanziarie possono scambiarsi reciprocamente informazioni e analisi delle minacce informatiche, tra cui indicatori di compromissione, tattiche, tecniche e procedure, segnali di allarme
+per la cibersicurezza e strumenti di configurazione, nella misura in cui tale condivisione di informazioni e dati:
+a)
+mira a potenziare la resilienza operativa digitale delle entità finanziarie, in particolare aumentando la consapevolezza in merito alle minacce informatiche, contenendo o inibendo la capacità di
+diffusione delle minacce informatiche, sostenendo le capacità di difesa, le tecniche di individuazione delle minacce, le politiche di mitigazione o le fasi di risposta e ripristino;
+b)
+si svolge entro comunità fidate di entità finanziarie;
+c)
+si realizza mediante meccanismi di condivisione delle informazioni che tutelano la natura potenzialmente sensibile delle informazioni condivise e sono disciplinati da norme di condotta pienamente
+rispettose della riservatezza dell’attività economica, della protezione dei dati personali ai sensi del regolamento (UE) 2016/679 e delle linee guida sulla politica in materia di concorrenza.
+2. Ai fini del paragrafo 1, lettera c), i meccanismi di condivisione delle informazioni definiscono le condizioni per la partecipazione e, se del caso, definiscono i dettagli concernenti il
+coinvolgimento delle autorità pubbliche e la veste in cui queste possono partecipare ai meccanismi di condivisione delle informazioni, il coinvolgimento dei fornitori terzi di servizi TIC, nonché gli
+elementi operativi tra cui l’utilizzo di piattaforme informatiche apposite.
+3. Le entità finanziarie notificano alle autorità competenti la propria partecipazione ai meccanismi di condivisione delle informazioni di cui al paragrafo 1, al momento della convalida della propria
+adesione o, se del caso, della cessazione dell’adesione, quando quest’ultima abbia effetto.
+CAPO VII
+Autorità competenti
+
+=== K56 | [46] Autorità competenti
+Articolo 46
+Autorità competenti
+Fatte salve le disposizioni sul quadro di sorveglianza per i fornitori terzi critici di servizi TIC di cui al capo V, sezione II, il rispetto del presente regolamento è assicurato dalle seguenti
+autorità competenti conformemente ai poteri conferiti dai rispettivi atti giuridici:
+a)
+per gli enti creditizi e per gli enti esentati a norma della direttiva 2013/36/UE: l’autorità competente designata in conformità dell’articolo 4 di tale direttiva; e per gli enti creditizi
+classificati come significativi ai sensi dell’articolo 6, paragrafo 4, del regolamento (UE) n. 1024/2013: la BCE conformemente ai poteri e ai compiti conferiti da tale regolamento;
+b)
+per gli istituti di pagamento, compresi quelli esentati a norma della direttiva (UE) 2015/2366, gli istituti di moneta elettronica, compresi quelli esentati a norma della direttiva 2009/110/CE, e i
+prestatori di servizi di informazione sui conti di cui all’articolo 33, paragrafo 1, della direttiva (UE) 2015/2366: l’autorità competente designata in conformità dell’articolo 22 della direttiva (UE)
+2015/2366;
+c)
+per le imprese di investimento: l’autorità competente designata in conformità dell’articolo 4 della direttiva (UE) 2019/2034 del Parlamento europeo e del Consiglio ( 38 ) ;
+d)
+per i fornitori di servizi per le cripto-attività quali autorizzati ai sensi del regolamento sui mercati delle cripto-attività e gli emittenti di token collegati ad attività: l’autorità competente
+designata in conformità delle pertinenti disposizioni di tale regolamento;
+e)
+per i depositari centrali di titoli: l’autorità competente designata in conformità dell’articolo 11 del regolamento (UE) n. 909/2014;
+f)
+per le controparti centrali: l’autorità competente designata in conformità dell’articolo 22 del regolamento (UE) n. 648/2012;
+g)
+per le sedi di negoziazione e i fornitori di servizi di comunicazione dati: l’autorità competente designata in conformità dell’articolo 67 della direttiva 2014/65/UE e l’autorità competente quale
+definita all’articolo 2, paragrafo 1, punto 18), del regolamento (UE) n. 600/2014;
+h)
+per i repertori di dati sulle negoziazioni: l’autorità competente designata in conformità dell’articolo 22 del regolamento (UE) n. 648/2012;
+i)
+per i gestori di fondi di investimento alternativi: l’autorità competente designata in conformità dell’articolo 44 della direttiva 2011/61/UE;
+j)
+per le società di gestione: l’autorità competente designata in conformità dell’articolo 97 della direttiva 2009/65/CE;
+k)
+per le imprese di assicurazione e di riassicurazione: l’autorità competente designata in conformità dell’articolo 30 della direttiva 2009/138/CE;
+l)
+per gli intermediari assicurativi, gli intermediari riassicurativi e gli intermediari assicurativi a titolo accessorio: l’autorità competente designata in conformità dell’articolo 12 della direttiva
+(UE) 2016/97;
+m)
+per gli enti pensionistici aziendali o professionali: l’autorità competente designata a norma dell’articolo 47 della direttiva (UE) 2016/2341;
+n)
+per le agenzie di rating del credito: l’autorità competente designata in conformità dell’articolo 21 del regolamento (CE) n. 1060/2009;
+o)
+per gli amministratori di indici di riferimento critici: l’autorità competente designata in conformità degli articoli 40 e 41 del regolamento (UE) 2016/1011;
+p)
+per i fornitori di servizi di crowdfunding: l’autorità competente designata in conformità dell’articolo 29 del regolamento (UE) 2020/1503;
+q)
+per i repertori di dati sulle cartolarizzazioni: l’autorità competente designata in conformità dell’articolo 10 e dell’articolo 14, paragrafo 1, del regolamento (UE) 2017/2402.
+
+=== K57 | [47] Cooperazione con le strutture e le autorità istituite dalla direttiva (UE) 2022/2555
+Articolo 47
+Cooperazione con le strutture e le autorità istituite dalla direttiva (UE) 2022/2555
+1. Per promuovere la cooperazione e consentire lo scambio di pratiche di vigilanza tra le autorità competenti designate a norma del presente regolamento e il gruppo di cooperazione istituito
+dall’articolo 14 della direttiva (UE) 2022/2555, le AEV e le autorità competenti possono partecipare alle attività del gruppo di cooperazione per le questioni che riguardano le loro attività di
+vigilanza in relazione alle entità finanziarie. Le AEV e le autorità competenti possono chiedere di essere invitate a partecipare alle attività del gruppo di cooperazione per questioni relative alle
+entità essenziali o importanti ai sensi della direttiva (UE) 2022/2555 che sono anch’esse state designate come fornitori terzi critici di servizi TIC a norma dell’articolo 31 del presente regolamento.
+2. Le autorità competenti possono consultare, se del caso, i punti di contatto unici e i CSIRT designati o istituiti in conformità della direttiva (UE) 2022/2555, e scambiare informazioni con essi.
+3. Se del caso, le autorità competenti possono richiedere qualsiasi consulenza e assistenza tecnica pertinenti alle autorità competenti designate o istituite a norma della direttiva (UE) 2022/2555 e
+stabilire accordi di cooperazione per consentire l’istituzione di meccanismi di coordinamento efficaci e di risposta rapida.
+4. Gli accordi di cui al paragrafo 3 del presente articolo possono, tra l’altro, specificare le procedure per il coordinamento delle attività di vigilanza e di sorveglianza, rispettivamente, in
+relazione a soggetti essenziali o importanti ai sensi della direttiva (UE) 2022/2555 che sono stati designati come fornitori terzi critici di servizi TIC a norma dell’articolo 31 del presente
+regolamento, anche per lo svolgimento, conformemente al diritto nazionale, di indagini e ispezioni in loco, nonché per i meccanismi per lo scambio di informazioni tra le autorità competenti ai sensi
+del presente regolamento e le autorità competenti designate o istituite a norma di tale direttiva, il che comprende l’accesso alle informazioni richieste da tali ultime autorità.
+
+=== K58 | [48] Cooperazione tra autorità
+Articolo 48
+Cooperazione tra autorità
+1. Le autorità competenti cooperano strettamente tra loro e, se del caso, con l’autorità di sorveglianza capofila.
+2. Le autorità competenti e l’autorità di sorveglianza capofila si scambiano tempestivamente tutte le informazioni pertinenti riguardanti i fornitori terzi critici di servizi TIC che sono necessarie
+per svolgere i rispettivi compiti ai sensi del presente regolamento, in particolare in relazione ai rischi individuati, agli approcci e alle misure adottate nell’ambito dei compiti di sorveglianza
+dell’autorità di sorveglianza capofila.
+
+=== K59 | [49] Comunicazione, cooperazione e attività finanziarie intersettoriali
+Articolo 49
+Comunicazione, cooperazione e attività finanziarie intersettoriali
+1. Le AEV, tramite il comitato congiunto e in collaborazione con le autorità competenti, le autorità di risoluzione di cui all’articolo 3 della direttiva 2014/59/UE, la BCE, il Comitato di risoluzione
+unico per quanto riguarda le informazioni relative alle entità che rientrano nell’ambito di applicazione del regolamento (UE) n. 806/2014, il CERS e l’ENISA, se del caso, possono istituire meccanismi
+che consentano la condivisione di pratiche efficaci tra i vari settori finanziari per migliorare la consapevolezza situazionale e identificare i rischi e le vulnerabilità informatiche comuni a tutti i
+settori.
+Le AEV possono elaborare esercitazioni di gestione delle crisi e delle emergenze comprendenti scenari di attacchi informatici al fine di sviluppare canali di comunicazione e promuovere gradualmente
+una risposta efficace coordinata a livello dell’Unione nel caso di grave incidente transfrontaliero connesso alle TIC o relativa minaccia aventi un impatto sistemico sull’intero settore finanziario
+dell’Unione.
+A seconda dei casi, tali esercitazioni possono anche servire come test delle dipendenze del settore finanziario da altri settori economici.
+2. Le autorità competenti, le AEV e la BCE cooperano strettamente tra loro e si scambiano informazioni per svolgere i compiti di cui agli articoli da 47 a 54. Realizzano uno stretto coordinamento
+dell’attività di vigilanza per rilevare e correggere le violazioni del presente regolamento, sviluppare e promuovere migliori prassi, agevolare la collaborazione, promuovere la coerenza
+dell’interpretazione e formulare valutazioni transgiurisdizionali in caso di disaccordo.
+
+=== K60 | [50] Sanzioni amministrative e misure di riparazione
+Articolo 50
+Sanzioni amministrative e misure di riparazione
+1. Alle autorità competenti sono conferiti tutti i poteri di vigilanza, di indagine e sanzionatori necessari per adempiere i propri compiti ai sensi del presente regolamento.
+2. I poteri di cui al paragrafo 1 includono almeno i poteri seguenti:
+a)
+l’avere accesso a qualsiasi documento o dato, detenuto in qualsiasi forma, che l’autorità competente consideri pertinente per lo svolgimento dei propri compiti e la possibilità di riceverne o farne
+una copia;
+b)
+lo svolgere ispezioni o indagini in loco comprendenti tra l’altro:
+i)
+la convocazione di rappresentanti delle entità finanziarie per ottenere spiegazioni scritte od orali su fatti o documenti relativi all’oggetto e alle finalità dell’indagine e registrarne le risposte;
+ii)
+l’audizione di persone fisiche o giuridiche consenzienti allo scopo di raccogliere informazioni pertinenti all’oggetto dell’indagine;
+c)
+il richiedere l’applicazione di misure correttive e di riparazione per le violazioni dei requisiti del presente regolamento.
+3. Fatto salvo il diritto degli Stati membri di imporre sanzioni penali in conformità dell’articolo 52, gli Stati membri stabiliscono norme che prevedano adeguate sanzioni amministrative e misure di
+riparazione per le violazioni del presente regolamento e ne garantiscono l’effettiva applicazione.
+Tali sanzioni e misure sono efficaci, proporzionate e dissuasive.
+4. Gli Stati membri conferiscono alle autorità competenti il potere di applicare almeno le sanzioni amministrative o misure di riparazione seguenti per le violazioni del presente regolamento:
+a)
+emanare un ordine che imponga alla persona fisica o giuridica di porre termine al comportamento in violazione del presente regolamento e di astenersi dal ripeterlo;
+b)
+richiedere la cessazione temporanea o permanente di qualsiasi pratica o comportamento che le autorità competenti considerino contrari alle disposizioni del presente regolamento e prevenirne la
+reiterazione;
+c)
+adottare qualsiasi tipo di misura, anche di natura pecuniaria, per assicurare che le entità finanziarie continuino a rispettare i requisiti di legge;
+d)
+chiedere, nella misura in cui ciò sia consentito dal diritto nazionale, le registrazioni esistenti di traffico dati detenute dagli operatori di telecomunicazioni, qualora vi sia il ragionevole
+sospetto di violazioni del presente regolamento e qualora si ritenga che le registrazioni possano essere pertinenti ai fini delle rispettive indagini; nonché
+e)
+pubblicare comunicazioni pubbliche, comprese dichiarazioni pubbliche, indicanti l’identità della persona fisica o giuridica e la natura della violazione.
+5. Qualora il paragrafo 2, lettera c), e il paragrafo 4 si applichino a persone giuridiche, gli Stati membri conferiscono alle autorità competenti il potere di imporre sanzioni amministrative e misure
+di riparazione, alle condizioni previste dal diritto nazionale, nei confronti di membri dell’organo di gestione e di altre persone che, ai sensi del diritto nazionale, siano responsabili della
+violazione.
+6. Gli Stati membri garantiscono che qualsiasi decisione di imporre sanzioni amministrative o misure di riparazione adottata ai sensi del paragrafo 2, lettera c), sia adeguatamente motivata e preveda
+il diritto di ricorso.
+
+=== K61 | [51] Esercizio del potere di imporre sanzioni amministrative e misure di riparazione
+Articolo 51
+Esercizio del potere di imporre sanzioni amministrative e misure di riparazione
+1. Le autorità competenti esercitano il potere di imporre sanzioni amministrative e misure di riparazione di cui all’articolo 50 in conformità del proprio quadro giuridico nazionale, a seconda dei
+casi:
+a)
+direttamente;
+b)
+in collaborazione con altre autorità;
+c)
+sotto la propria responsabilità mediante delega ad altre autorità; oppure
+d)
+rivolgendosi alle competenti autorità giudiziarie.
+2. Per stabilire il tipo e il livello della sanzione amministrativa o della misura di riparazione da imporre a norma dell’articolo 50, le autorità competenti tengono conto della misura in cui la
+violazione è intenzionale o è dovuta a negligenza e di tutte le altre circostanze pertinenti, tra cui, secondo il caso:
+a)
+la rilevanza, la gravità e la durata della violazione;
+b)
+il grado di responsabilità della persona fisica o giuridica responsabile della violazione;
+c)
+la solidità finanziaria della persona fisica o giuridica responsabile;
+d)
+l’importanza degli utili realizzati o delle perdite evitate da parte della persona fisica o giuridica responsabile, nella misura in cui possano essere determinati;
+e)
+le perdite subite da terzi a causa della violazione, nella misura in cui possano essere determinate;
+f)
+il livello di cooperazione che la persona fisica o giuridica responsabile ha dimostrato nei confronti dell’autorità competente, ferma restando la necessità di garantire la restituzione degli utili
+realizzati o delle perdite evitate da tale persona fisica o giuridica;
+g)
+le precedenti violazioni commesse dalla persona fisica o giuridica responsabile.
+
+=== K62 | [52] Sanzioni penali
+Articolo 52
+Sanzioni penali
+1. Gli Stati membri possono decidere di non emanare norme relative a sanzioni amministrative o misure di riparazione per violazioni che, ai sensi del rispettivo diritto nazionale, siano passibili di
+sanzioni penali.
+2. Qualora abbiano deciso di imporre sanzioni penali per violazioni del presente regolamento, gli Stati membri provvedono affinché siano messe in atto misure adeguate per far sì che le autorità
+competenti dispongano di tutti i poteri necessari per stabilire contatti con le autorità giudiziarie, le autorità inquirenti o le autorità di giustizia penale della loro giurisdizione, al fine di
+ricevere informazioni specifiche sulle indagini o i procedimenti penali avviati per violazioni del presente regolamento, e di trasmetterle alle altre autorità competenti, nonché all’ABE, all’ESMA o
+all’EIOPA in modo tale che possano adempiere l’obbligo di cooperazione ai fini del presente regolamento.
+
+=== K63 | [53] Obblighi di notifica
+Articolo 53
+Obblighi di notifica
+Gli Stati membri notificano alla Commissione, all’ESMA, all’ABE e all’EIOPA le disposizioni legislative, regolamentari e amministrative adottate in attuazione del presente capo, incluse le eventuali
+norme di diritto penale pertinenti, entro il 17 gennaio 2025. Gli Stati membri notificano senza indebito ritardo alla Commissione, all’ESMA, all’ABE e all’EIOPA tutte le successive modifiche.
+
+=== K64 | [54] Pubblicazione delle sanzioni amministrative
+Articolo 54
+Pubblicazione delle sanzioni amministrative
+1. Le autorità competenti pubblicano senza indebito ritardo sul proprio sito web ufficiale qualsiasi decisione di imporre sanzioni amministrative contro la quale non vi sia diritto di ricorso, dopo la
+notifica al destinatario.
+2. La pubblicazione di cui al paragrafo 1 comprende informazioni sul tipo e la natura della violazione, l’identità delle persone responsabili e le sanzioni imposte.
+3. Qualora, in seguito a una valutazione caso per caso, ritenga che la pubblicazione dell’identità, nel caso di persone giuridiche, o dell’identità e dei dati personali, nel caso di persone fisiche,
+sarebbe sproporzionata, ivi compresi rischi inerenti alla protezione dei dati personali, metterebbe a repentaglio la stabilità dei mercati finanziari o lo svolgimento di un’indagine penale in corso,
+oppure provocherebbe, nella misura in cui possano essere determinati, danni sproporzionati alla persona coinvolta, l’autorità competente adotta una delle soluzioni seguenti in merito alla decisione di
+imporre una sanzione amministrativa:
+a)
+rinvia la pubblicazione fino al momento in cui cesseranno di esistere tutti i motivi che giustificano la non pubblicazione;
+b)
+pubblica la sanzione in forma anonima in maniera conforme al diritto nazionale; oppure
+c)
+si astiene dalla pubblicazione, qualora le opzioni di cui alle lettere a) e b) siano ritenute insufficienti per scongiurare ogni pericolo per la stabilità dei mercati finanziari, oppure quando tale
+pubblicazione non sarebbe proporzionata alla mitezza della sanzione imposta.
+4. Qualora si decida di pubblicare una sanzione amministrativa in forma anonima, ai sensi del paragrafo 3, lettera b), la pubblicazione dei dati pertinenti può essere rinviata.
+5. Qualora l’autorità competente pubblichi una decisione che impone una sanzione amministrativa che è oggetto di ricorso dinanzi alle pertinenti autorità giudiziarie, le autorità competenti aggiungono
+immediatamente sul proprio sito web ufficiale tale informazione e, nelle fasi successive, eventuali informazioni correlate all’esito del ricorso. È pubblicata anche ogni decisione giudiziaria che
+annulli una decisione di imporre una sanzione amministrativa.
+6. Le autorità competenti provvedono affinché le informazioni pubblicate ai sensi dei paragrafi da 1 a 4 restino sul loro sito web ufficiale unicamente per il periodo necessario ai fini
+dell’applicazione del presente articolo. Tale periodo non è superiore ai cinque anni dalla sua pubblicazione.
+
+=== K65 | [55] Segreto professionale
+Articolo 55
+Segreto professionale
+1. Le informazioni riservate ricevute, scambiate o trasmesse a norma del presente regolamento sono soggette alle condizioni in materia di segreto professionale di cui al paragrafo 2.
+2. L’obbligo del segreto professionale si applica a tutte le persone che prestano o hanno prestato la loro attività per le autorità competenti ai sensi del presente regolamento o per qualsiasi
+autorità, impresa che opera sul mercato o persona fisica o giuridica cui tali autorità competenti hanno delegato i propri poteri, compresi i revisori e gli esperti incaricati da dette autorità.
+3. Le informazioni coperte dal segreto professionale, ivi compreso lo scambio di informazioni tra le autorità competenti ai sensi del presente regolamento e le autorità competenti designate o
+istituite a norma della direttiva (UE) 2022/2555, non sono divulgate ad alcuna altra persona o autorità se non in forza di disposizioni del diritto dell’Unione o del diritto nazionale;
+4. Tutte le informazioni scambiate tra le autorità competenti in applicazione del presente regolamento relativamente ad aspetti commerciali od operativi e ad altre questioni di natura economica o
+personale sono considerate riservate e sono soggette all’obbligo del segreto professionale, salvo quando l’autorità competente dichiara al momento della loro comunicazione che è consentita la
+divulgazione di tali informazioni o che la stessa è necessaria a fini di procedimenti giudiziari.
+
+=== K66 | [56] Protezione dei dati
+Articolo 56
+Protezione dei dati
+1. Le AEV e le autorità competenti sono autorizzate a trattare i dati personali solo se necessario ai fini dell’adempimento dei rispettivi obblighi e doveri ai sensi del presente regolamento, in
+particolare per quanto riguarda le indagini, le ispezioni, la richiesta di informazioni, la comunicazione, la pubblicazione, le valutazioni, la verifica e la stesura dei piani di sorveglianza. I dati
+personali sono trattati a norma del regolamento (UE) 2016/679 o del regolamento (UE) 2018/1725, a seconda dei casi.
+2. Salvo nel caso in cui sia altrimenti disposto in altri atti settoriali, i dati personali di cui al paragrafo 1 sono conservati fino all’espletamento degli obblighi di vigilanza applicabili e, in
+ogni caso, per un periodo massimo di 15 anni, salvo in caso di procedimenti giudiziari in corso che richiedono un’ulteriore conservazione di tali dati.
+CAPO VIII
+Atti delegati

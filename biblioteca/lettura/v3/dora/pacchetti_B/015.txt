@@ -1,0 +1,648 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Disposizioni per l'adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2022/2554, relativo alla resilienza operativa digitale per il se  (id IT-decreto.legislativo-2025-03-10-23)
+
+=== K235.2 | [10] Sanzioni amministrative e altre misure (pezzo 2 di 2)
+to a determinare la mancata ottemperanza della società o dell'ente a provvedimenti specifici adottati dalla Banca d'Italia ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell'
+articolo 16 della legge 21 febbraio 2024, n. 15 , ovvero quando la condotta abbia contribuito a determinare l'inosservanza dell'ordine di cui all' articolo 50, paragrafo 4, lettera a), del regolamento
+(UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , da parte della società o dell'ente.
+2-quater. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai limiti massimi indicati nel comma 2-bis, la sanzione amministrativa pecuniaria è
+elevata fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+3. Con il provvedimento di applicazione della sanzione di cui ai commi 1 e 2, in ragione della gravità della violazione accertata e tenuto conto dei criteri stabiliti dall'articolo 144-quater, la
+Banca d'Italia può applicare la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di
+amministrazione, direzione e controllo presso intermediari autorizzati ai sensi del presente decreto legislativo, del decreto legislativo 24 febbraio 1998, n. 58 , del decreto legislativo 7 settembre
+2005, n. 209 , o presso fondi pensione.
+3-bis. Con il provvedimento di applicazione della sanzione amministrativa pecuniaria di cui al comma 2-bis del presente articolo in ragione della gravità della violazione accertata, può essere
+applicata la sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di amministrazione, direzione e
+controllo presso intermediari e imprese autorizzati ai sensi del presente decreto legislativo, del decreto legislativo 24 febbraio 1998, n. 58 , del decreto legislativo 7 settembre 2005, n. 209 , del
+decreto legislativo 5 settembre 2024, n. 129 o presso fondi pensione.
+4. Si applica l'articolo 144, comma 9.».
+- Si riporta il testo degli articoli 310, 311-sexies e 324 del citato decreto legislativo 7 settembre 2005, n. 209 , come modificato dal presente decreto:
+«Art. 310 (Sanzioni amministrative pecuniarie). - 1.
+Si applica la sanzione amministrativa pecuniaria da euro trentamila al dieci percento del fatturato per le seguenti violazioni:
+a) inosservanza degli articoli 11, 12, 13, 15, 16, 18, 21, 22, 28, 29, 30, 30-bis, 30-ter, 30-quater, 30-quinquies, 30-sexies, 30-septies, 30-octies, 30-novies, 32, 33, 35-bis, 35-ter, 35-quater,
+36-bis, 36-ter, 36-quater, 36-quinquies, 36-sexies, 36-septies, 36-octies, 36-novies, 36-decies, 36-undecies, 36-duodecies, 36-terdecies, 37-bis, 37-ter, 38, 41, 42, 42-bis, 43, 44-ter, 44-quater,
+44-quinquies, 44-sexies, 44-septies, 44-octies, 44-novies, 44-decies, 47-quater, comma 1, 47-septies, 47-octies, 47-novies, 47-decies, 48, 48-bis, 49, 51-quater, 53, 55, 56, 57, 57-bis, 58, 59-bis,
+59-ter, 59-quater, 59-quinquies, 60-bis, 62, 63, 64, 65, 65-bis, 66-sexies.1, 66-septies, 67, 73, 75, comma 1, 76, comma 2, 77, commi 1, 3 e 4, 88, 89, 90, 92, 93, 94, 95, 96, 98, 99, 100, 101, 188,
+189, comma 1, 190, commi 1, 1-bis, 1-ter e 5-bis, 190-bis, comma 1, 191, 196, comma 2, 197, 210, 210-ter, comma 8, 213, 214-bis, 215-bis, 216, commi 1 e 2, 216-ter, 216-sexies, 216-octies, 216-novies,
+220-novies, comma 1, 348 e 349, comma 1, o delle relative norme di attuazione;
+b) inosservanza degli articoli 10-quater, 132-ter, 133, o delle relative norme di attuazione;
+c) inosservanza degli articoli 125, comma 5-bis, 127, comma 3, limitatamente all'obbligo di rilascio del certificato di assicurazione, 134 ad eccezione del comma 2, 146, 148, 149, 150, 152, comma 5, e
+183, o delle relative norme di attuazione e delle disposizioni di cui all' articolo 8 della legge 8 marzo 2017, n. 24 .
+c-bis) inosservanza delle disposizioni di cui agli articoli 5, 6, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8, 10, 12, 16, paragrafi 1 e 2, 17, 19, paragrafi 1, 3 e 4, 24 del regolamento (UE) 2022/2554 del
+Parlamento europeo e del Consiglio, del 14 dicembre 2022 , e delle relative norme tecniche di regolamentazione e attuazione, ovvero in caso di omessa collaborazione o mancato seguito dato nell'ambito
+di un'indagine, un'ispezione o una richiesta ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16 della legge 21 febbraio 2024, n. 15 , da parte delle imprese di
+assicurazione, delle imprese di riassicurazione e dei relativi fornitori terzi di servizi TIC di cui all'articolo 3, punto 19), del citato regolamento (UE) 2022/2554 .
+1-bis. Si applica la sanzione amministrativa pecuniaria da euro 30.000 al 7 per cento del fatturato in caso di inosservanza delle disposizioni di cui agli articoli 7, 8, 9, 11, paragrafi 1, 2, 3, 4,
+5, 6, 7, 8, 9 e 10, 13, 14, 18, paragrafi 1 e 2, 25, 26, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8, 27, 28, paragrafi 2, 3, 4, 5, 6, 7 e 8, 29, 30, paragrafi 1, 2, 3 e 4, e 31, paragrafo 12, del regolamento
+(UE) 2022/2554 e delle relative norme tecniche di regolamentazione e attuazione, ovvero in caso di omessa collaborazione o mancato seguito dato nell'ambito di un'indagine, un'ispezione o una richiesta
+ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16 della legge 21 febbraio 2024, n. 15 , da parte delle imprese di assicurazione, delle imprese di
+riassicurazione e dei relativi fornitori terzi di servizi TIC di cui all'articolo 3, punto 19), del citato regolamento (UE) 2022/2554 .
+2. Se il vantaggio ottenuto dall'autore delle violazioni di cui al comma 1, lettere a) e b) e c-bis), come conseguenza delle violazioni stesse è superiore al massimo edittale indicato nel presente
+articolo, la sanzione amministrativa pecuniaria è elevata fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.».
+«Art. 311-sexies (Sanzioni amministrative agli esponenti aziendali o al personale). - 1. Fermo restando quanto previsto all'articolo 325, comma 1 circa la responsabilità delle imprese nei confronti
+delle quali sono accertate le violazioni, per l'inosservanza delle norme richiamate nell'articolo 310, comma 1, lettera a) si applica, salvo che il fatto costituisca reato, la sanzione amministrativa
+pecuniaria da cinquemila euro a cinque milioni di euro nei confronti dei soggetti che svolgono le funzioni di amministrazione, di direzione, di controllo, nonchè dei dipendenti o di coloro che operano
+sulla base di rapporti che ne determinano l'inserimento nell'organizzazione dell'impresa anche in forma diversa dal rapporto di lavoro subordinato quando l'inosservanza è conseguenza della violazione
+di doveri propri o dell'organo di appartenenza e ricorrono una o più delle seguenti condizioni:
+a) la condotta ha inciso in modo rilevante sulla complessiva organizzazione o sui profili di rischio aziendali;
+b) la condotta ha contribuito a determinare la mancata ottemperanza dell'impresa a provvedimenti specifici adottati ai sensi degli articoli 188, comma 3-bis, lettere a), b) e c) e 214-bis, comma 1;
+c) le violazioni riguardano obblighi imposti ai sensi dell'articolo 76 o dell'articolo 79, comma 3, o dell'articolo 191, comma 1, lettera g) ovvero obblighi in materia di remunerazione e
+incentivazione, quando l'esponente o il personale è la parte interessata 1350.
+2. Nel caso in cui la condotta dei soggetti di cui al comma 1 abbia contribuito a determinare l'inosservanza dell'ordine previsto nell'articolo 311-ter da parte dell'impresa, si applica nei confronti
+dei soggetti stessi la sanzione amministrativa pecuniaria da cinquemila euro a cinque milioni di euro.
+2-bis. Salvo che il fatto costituisca reato, se le violazioni indicate dall'articolo 310, commi 1, lettera c-bis), e 1-bis, sono commesse da una persona fisica di cui al comma 2-ter, si applica nei
+confronti di quest'ultima una sanzione amministrativa pecuniaria:
+a) da euro 5.000 fino a euro 5 milioni, nei casi di cui alla lettera c-bis) del comma 1 dell'articolo 310;
+b) da euro 5.000 fino a euro 3,5 milioni, nei casi di cui al comma 1-bis dell'articolo 310.
+2-ter. Fermo restando quanto previsto per le società e gli enti nei confronti dei quali sono accertate le violazioni, la sanzione di cui al comma 2-bis si applica nei confronti dei soggetti che
+svolgono funzioni di amministrazione, direzione o controllo e del personale delle società e degli enti nei confronti dei quali sono accertate le violazioni, quando l'inosservanza è conseguenza della
+violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione o sui profili di rischio aziendali o ha contribuito a determinare
+la mancata ottemperanza della società o dell'ente a provvedimenti specifici adottati dall'IVASS, ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16 della legge
+21 febbraio 2024, n. 15 , ovvero quando la condotta abbia contribuito a determinare l'inosservanza dell'ordine di cui all' articolo 50, paragrafo 4, lettera a), del regolamento (UE) 2022/2554 da parte
+della società o dell'ente.
+3. Con il provvedimento di applicazione della sanzione, tenuto conto dei criteri stabiliti dall'articolo 311-quinquies, l'IVASS può applicare la sanzione amministrativa accessoria dell'interdizione
+dallo svolgimento di funzioni di amministrazione, direzione e controllo presso imprese di assicurazione e di riassicurazione, per un periodo non inferiore a sei mesi e non superiore a tre anni.
+3-bis. Con il provvedimento di applicazione della sanzione amministrativa pecuniaria di cui al comma 2-bis in ragione della gravità della violazione accertata, può essere applicata la sanzione
+amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di amministrazione, direzione e controllo presso
+intermediari e imprese autorizzati ai sensi del presente decreto legislativo, del decreto legislativo 24 febbraio 1998, n. 58 , del decreto legislativo 7 settembre 2005, n. 209 , del decreto
+legislativo 5 settembre 2024, n. 129 o presso fondi pensione.
+4. La misura della sanzione amministrativa pecuniaria può essere aumentata secondo quanto previsto all'articolo 310, comma 2.».
+«Art. 324 (Sanzioni relative alle violazioni delle disposizioni in materia di realizzazione e di distribuzione dei prodotti assicurativi, inclusi i prodotti di investimento assicurativo, nonchè alle
+violazioni delle disposizioni previste dal regolamento (UE) 2022/2554 e dalle relative tecniche di regolamentazione e attuazione, commesse dagli intermediari). - 1. Gli intermediari assicurativi e
+riassicurativi, ivi inclusi quelli a titolo accessorio che nell'ambito delle attività di realizzazione e di distribuzione di prodotti assicurativi e di investimento assicurativi violano gli articoli
+10-quater, 30-decies, 107, comma 5, 109, commi 2, ultimo periodo, 3, 4, 4-bis, 4-sexies, 4-septies e 6, 109-bis, 110, commi 2 e 3, 111, commi 4 e 5, 112, commi 2, 3 e 5, 113 , comma 2, 117, 118, 119,
+comma 2, ultimo periodo, 119-bis, 119-ter, 120, 120-bis, commi 1, 2, 3 e 6, 120-ter, 120-quater, 120-quinquies, 121, 121-bis, 121-ter, 131, 170, 185, 185-bis, 185-ter, 187.1, in caso di mancata
+adesione a detti sistemi, 191 o le relative norme di attuazione, sono puniti secondo i criteri di cui all'articolo 324-sexies con una delle seguenti sanzioni:
+a) richiamo;
+b) censura;
+c) sanzione amministrativa pecuniaria:
+1) per le società, da cinquemila euro a cinque milioni di euro oppure, se superiore, pari al cinque per cento del fatturato complessivo annuo risultante dall'ultimo bilancio disponibile approvato
+dall'organo di amministrazione;
+2) per le persone fisiche, da mille euro a settecentomila euro;
+d) radiazione o, in caso di società di intermediazione, cancellazione.
+2. Il richiamo, consistente in una dichiarazione scritta di biasimo motivato, è disposto per fatti di lieve manchevolezza. La censura è disposta per fatti di particolare gravità. La radiazione o la
+cancellazione della società di intermediazione è disposta per fatti di eccezionale gravità. La radiazione determina l'immediata risoluzione dei rapporti di intermediazione e, nel caso di esercizio
+dell'attività in forma societaria, comporta altresì la cancellazione della società nei casi di particolare gravità o di sistematica reiterazione dell'illecito.
+3. La violazione dei provvedimenti interdittivi e cautelari adottati ai sensi dell'articolo 184 è punita con una delle sanzioni di cui al comma 1.
+4. Gli intermediari che, in proprio oppure attraverso collaboratori o altri ausiliari, operano per conto o a beneficio di imprese di assicurazione e riassicurazione che hanno sede legale nel
+territorio della Repubblica o in Stati terzi, di imprese locali di cui al Titolo IV, Capo I e di particolari mutue assicuratrici di cui all'articolo 52, le quali esercitano l'attività assicurativa o
+riassicurativa oltre i limiti dell'autorizzazione, sono puniti con una delle sanzioni di cui al comma 1.
+5. Quando le violazioni degli articoli, 119-bis, 119-ter, 120, 120-bis, 120-ter, 120-quater, 120-quinquies, 121, riguardano un prodotto di investimento assicurativo, l'IVASS applica le sanzioni di cui
+al comma 1 nei soli confronti degli intermediari di cui all'articolo 109, comma 2, lettere a) e b), e relativi collaboratori di cui alla lettera e), e degli intermediari di cui alla lettera c). In tal
+caso, la misura massima della sanzione pecuniaria può essere determinata, in alternativa rispetto a quanto previsto al comma 1, lettera c), fino al doppio dell'ammontare dei profitti ricavati o delle
+perdite evitate grazie alla violazione, se possono essere determinati. L'IVASS, oltre alle sanzioni di cui al comma 1, può adottare una dichiarazione pubblica indicante la persona fisica o giuridica
+responsabile e la natura della violazione. Le medesime sanzioni di cui al presente comma si applicano nel caso di violazione degli articoli 121-quinquies, 121-sexies e 121-septies.
+6. Quando la violazione degli articoli 30-decies e 121-bis riguarda un prodotto di investimento assicurativo, l'IVASS applica le sanzioni di cui al comma 1 nei confronti di tutti gli intermediari di
+cui al medesimo comma. La misura massima della sanzione pecuniaria può essere determinata, in alternativa rispetto a quanto previsto al comma 1, lettera c), fino al doppio dell'ammontare dei profitti
+ricavati o delle perdite evitate grazie alla violazione, se possono essere determinati. L'IVASS, oltre alle sanzioni di cui al comma 1, può adottare una dichiarazione pubblica indicante la persona
+fisica o giuridica responsabile e la natura della violazione.
+7. Alle violazioni delle disposizioni richiamate all' articolo 24, paragrafo 1, del regolamento (UE) n. 1286/2014 diverse da quelle del presente articolo commesse dai soggetti di cui al comma 5 si
+applica l'articolo 193-quinquies del testo unico dell'intermediazione finanziaria. La nozione di fatturato è definita ai sensi dell'articolo 325-bis del presente codice.
+7-bis. La disposizione di cui al comma 1 si applica anche agli intermediari iscritti al momento della commissione dell'illecito, anche se cancellati dal Registro.
+7-ter. In caso di inosservanza delle disposizioni di cui agli articoli 5, 6, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8, 10, 12, 16, paragrafi 1 e 2, 17, 19, paragrafi 1, 3 e 4, 24 del regolamento (UE)
+2022/2554, del Parlamento europeo e del Consiglio, del 14 dicembre 2022 e delle relative norme tecniche di regolamentazione e attuazione, ovvero in caso di omessa collaborazione o mancato seguito dato
+nell'ambito di un'indagine, un'ispezione o una richiesta ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16 della legge 21 febbraio 2024, n. 15 , da parte degli
+intermediari assicurativi, degli intermediari riassicurativi, degli intermediari assicurativi a titolo accessorio e dei relativi fornitori terzi di servizi TIC di cui all'articolo 3, punto 19), del
+citato regolamento (UE) 2022/2554 , si applica, per le società, la sanzione amministrativa pecuniaria di cui al comma 1, lettera c), numero 1).
+7-quater. In caso di inosservanza delle disposizioni di cui agli articoli 7, 8, 9, 11, paragrafi 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10, 13, 14, 18, paragrafi 1 e 2, 25, 26, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8,
+27, 28, paragrafi 2, 3, 4, 5, 6, 7 e 8, 29, 30, paragrafi 1, 2, 3 e 4, e 31, paragrafo 12, del regolamento (UE) 2022/2554 e delle relative norme tecniche di regolamentazione e attuazione, ovvero in
+caso di omessa collaborazione o mancato seguito dato nell'ambito di un'indagine, un'ispezione o una richiesta ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16
+della legge 21 febbraio 2024, n. 15 , da parte degli intermediari assicurativi, degli intermediari riassicurativi, degli intermediari assicurativi a titolo accessorio e dei relativi fornitori terzi di
+servizi TIC di cui all'articolo 3, punto 19), del citato regolamento (UE) 2022/2554 , si applica, per le società, la sanzione amministrativa pecuniaria da 5.000 euro a 3,5 milioni di euro oppure, se
+superiore, pari al 3,50 per cento del fatturato complessivo annuo risultante dall'ultimo bilancio disponibile approvato dall'organo di amministrazione.
+7-quinquies. Salvo che il fatto costituisca reato, se le violazioni indicate dai commi 7-ter e 7-quater sono commesse da una persona fisica di cui al comma 7-sexies, si applica nei confronti di
+quest'ultima la sanzione amministrativa pecuniaria:
+a) di cui al comma 1, lettera c), numero 2), nei casi di cui al comma 7-ter;
+b) da euro 1.000 fino a euro 500.000, nei casi di cui al comma 7-quater.
+7-sexies. Fermo restando quanto previsto per le società e gli enti nei confronti dei quali sono accertate le violazioni, la sanzione di cui al comma 7-quinquies si applica nei confronti dei soggetti
+che svolgono funzioni di amministrazione, direzione o controllo e del personale delle società e degli enti nei confronti dei quali sono accertate le violazioni, quando l'inosservanza è conseguenza
+della violazione di doveri propri o dell'organo di appartenenza e la condotta ha inciso in modo rilevante sulla complessiva organizzazione o sui profili di rischio aziendali o ha contribuito a
+determinare la mancata ottemperanza della società o dell'ente a provvedimenti specifici adottati dall'IVASS, ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16
+della legge 21 febbraio 2024, n. 15 , ovvero quando la condotta abbia contribuito a determinare l'inosservanza dell'ordine di cui all' articolo 50, paragrafo 4, lettera a), del regolamento (UE)
+2022/2554 da parte della società o dell'ente.
+7-septies. Se il vantaggio ottenuto dall'autore della violazione come conseguenza della violazione stessa è superiore ai limiti massimi indicati nei commi 7-ter, 7-quater e 7-quinquies, la sanzione
+amministrativa pecuniaria è elevata fino al doppio dell'ammontare del vantaggio ottenuto, purchè tale ammontare sia determinabile.
+7-octies. Con il provvedimento di applicazione della sanzione amministrativa pecuniaria di cui al comma 7-quinquies, in ragione della gravità della violazione accertata, può essere applicata la
+sanzione amministrativa accessoria dell'interdizione, per un periodo non inferiore a sei mesi e non superiore a tre anni, dallo svolgimento di funzioni di amministrazione, direzione e controllo presso
+intermediari e imprese autorizzati ai sensi del presente decreto, del decreto legislativo 1° settembre 1993, n. 385 , del decreto legislativo 7 settembre 2005, n. 209 , del decreto legislativo 5
+settembre 2024, n. 129 , o presso fondi pensione.».
+- Si riporta il testo dell'art. 19-quater del citato decreto legislativo 5 dicembre 2005, n. 252 , come modificato dal presente decreto:
+«Art. 19-quater (Sanzioni amministrative). - 1.
+Chiunque adotti, in qualsiasi documento o comunicazione al pubblico, la denominazione "fondo pensione" senza essere iscritto, ai sensi dell'articolo 19, comma 1, del presente decreto, all'Albo tenuto
+a cura della COVIP è punito con la sanzione amministrativa pecuniaria da euro 500 a euro 25.000, con provvedimento motivato del Ministero del lavoro e della previdenza sociale, sentita la COVIP.
+2. I componenti degli organi di amministrazione e di controllo, i direttori generali, i titolari delle funzioni fondamentali i responsabili delle forme pensionistiche complementari, i liquidatori e i
+commissari nominati ai sensi dell'articolo 15 che in relazione alle rispettive competenze:
+a) nel termine prescritto non ottemperano, anche in parte, alle richieste della COVIP, ovvero ritardano l'esercizio delle sue funzioni, sono puniti con la sanzione amministrativa del pagamento di una
+somma da euro 5.000 a euro 25.000;
+b) non osservano le disposizioni previste negli articoli 1, commi 1-bis e 4, 4-bis, 5, 5-bis, 5-ter, 5-quater, 5-quinquies, 5-sexies, 5-sep-ties, 5-octies, 5-nonies, 6, 7, 11, 13-bis, 13-ter,
+13-quater, 13-quinquies, 13-sexies, 13-septies, 14, 14-bis, 15, 15-bis, 17-bis, e 20 ovvero le disposizioni generali o particolari emanate dalla COVIP in base ai medesimi articoli nonchè in base
+all'articolo 19 del presente decreto, sono puniti con la sanzione amministrativa pecuniaria da euro 500 a euro 25.000;
+c) non osservano le disposizioni sui requisiti di onorabilità e professionalità e sulle cause di ineleggibilità e di incompatibilità e sulle situazioni impeditive previste dal decreto del Ministro del
+lavoro e della previdenza sociale di cui all'articolo 5-sexies, ovvero le disposizioni sui limiti agli investimenti e ai conflitti di interessi previste dal decreto del Ministro dell'economia e delle
+finanze di cui all'articolo 6, comma 5-bis, ovvero le disposizioni previste nel decreto adottato dal Ministro dell'economia e delle finanze, di concerto con il Ministro del lavoro e della previdenza
+sociale, di cui all'articolo 20, comma 2, del presente decreto, sono puniti con una sanzione amministrativa da euro 500 a euro 25.000;
+d) non effettuano le comunicazioni relative alla sopravvenuta variazione delle condizioni di onorabilità di cui all'articolo 5-sexies, lettera b), nel termine di quindici giorni dal momento in cui
+sono venuti a conoscenza degli eventi e delle situazioni relative, sono puniti con la sanzione amministrativa del pagamento di una somma da 2.600 euro a 15.500 euro.
+2-bis. I soggetti di cui al comma 2 che, in relazione alle rispettive competenze:
+a) non osservano le disposizioni di cui agli articoli 5, 6, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8, 7, 8, 9, 10, 11, paragrafi 1, 2, 3, 4, 5, 6, 7, 8, 9 e 10, 12, 13, 14, 16, paragrafi 1 e 2, 17, 18,
+paragrafi 1 e 2, 19, paragrafi 1, 3 e 4, 24, 25, 26, paragrafi 1, 2, 3, 4, 5, 6, 7 e 8, 27, 28, paragrafi 2, 3, 4, 5, 6, 7 e 8, 29, 30, paragrafi 1, 2, 3 e 4, e 31, paragrafo 12, del regolamento (UE)
+2022/2554, del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , e delle relative norme tecniche di regolamentazione e attuazione, sono puniti con la sanzione amministrativa pecuniaria di cui
+al comma 2, lettera b);
+b) omettono di collaborare o di dare seguito nell'ambito di un'indagine, di un'ispezione o di una richiesta ai sensi dell'articolo 8 del decreto legislativo adottato in attuazione dell' articolo 16
+della legge 21 febbraio 2024, n. 15 , sono puniti con la sanzione amministrativa di cui al comma 2, lettera a).
+2-ter. Alle sanzioni di cui al comma 2-bis si applicano i commi 3, 4, a eccezione del secondo periodo, e 4-bis dell' articolo 19-quater del decreto legislativo 5 dicembre 2005, n. 252 .
+3. Nelle ipotesi di cui al comma 2, nei casi di maggiore gravità, la COVIP può dichiarare decaduti dall'incarico i componenti degli organi collegiali, il direttore generale, il responsabile della
+forma pensionistica e i titolari delle funzioni fondamentali.
+4. Le sanzioni amministrative previste nei commi 2 e 3 sono applicate, nel rispetto dei principi di cui alla legge 24 novembre 1981, n. 689 . Le sanzioni amministrative sono determinate nella loro
+entità, tenendo conto della diversa potenzialità lesiva dell'interesse protetto che ciascuna infrazione presenta in astratto, di specifiche qualità personali del colpevole, comprese quelle che
+impongono particolari doveri di prevenzione, controllo o vigilanza, nonchè del vantaggio che l'infrazione può recare al colpevole o alla persona o ente nel cui interesse egli agisce. I fondi pensione
+e le società istitutrici di forme pensionistiche complementari rispondono in solido del pagamento della sanzione, salvo il diritto di regresso per l'intero nei confronti del responsabile della
+violazione. I fondi dotati di soggettività giuridica sono obbligati ad agire in regresso, salvo diversa deliberazione assembleare.
+Non si applica l' articolo 16 della legge 24 novembre 1981, n. 689 , e successive modificazioni.
+4-bis. Alle sanzioni di cui al presente articolo trova applicazione la disposizione prevista, per le sanzioni amministrative riguardanti le violazioni in materia di previdenza e assistenza
+obbligatorie, dall' articolo 8, comma 2, della legge 24 novembre 1981, n. 689 .».
+
+=== K236 | [11] Modifiche al testo unico delle disposizioni in materia di intermediazione finanziaria, di cui al decreto legislativo 24 
+Art. 11
+Modifiche al testo unico delle disposizioni in materia di intermediazione finanziaria, di cui al decreto legislativo 24 febbraio 1998, n. 58
+1 . Al testo unico delle disposizioni in materia di intermediazione finanziaria, di cui al decreto legislativo 24 febbraio 1998, n. 58 , sono apportate le seguenti modificazioni:
+a) all'articolo 65, comma 1,
+1) la lettera b) è sostituita dalla seguente:
+«b) procedure per gestire i rischi ai quali sono esposti, compresi i rischi informatici ai sensi del capo II del regolamento (UE) 2022/2554, del Parlamento europeo e del Consiglio, del 14 dicembre
+2022 , dispositivi e sistemi adeguati a identificare i rischi che possono comprometterne il funzionamento e misure efficaci per attenuare tali rischi;»;
+2) la lettera c) è abrogata;
+b) all'articolo 65-sexies il comma 1 è sostituito dal seguente:
+«1. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione istituiscono e mantengono la loro resilienza operativa, conformemente
+agli obblighi stabiliti al capo II del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , per assicurare che i loro sistemi di negoziazione:
+a) siano resilienti e abbiano capacità sufficiente per gestire i picchi di volume di ordini e messaggi;
+b) siano in grado di garantire negoziazioni ordinate in condizioni di mercato critiche;
+c) siano pienamente testati per garantire il rispetto delle condizioni di cui alle lettere a) e b);
+d) siano soggetti a efficaci disposizioni in materia di continuità operativa, compresi politica e piani di continuità operativa delle tecnologie dell'informazione e della comunicazione e piani di
+risposta e di ripristino relativi alle tecnologie dell'informazione e della comunicazione istituiti ai sensi dell' articolo 11 del regolamento (UE) 2022/2554 , per assicurare la continuità dei servizi
+in caso di malfunzionamento dei loro sistemi di negoziazione.».
+Note all'art. 11:
+- Si riporta il testo degli articoli 65 e 65-sexies del citato decreto legislativo 24 febbraio 1998, n. 58 , come modificato dal presente decreto:
+«Art. 65 (Requisiti organizzativi dei mercati regolamentati). - 1. Il mercato regolamentato dispone di:
+a) misure per identificare chiaramente e gestire le potenziali conseguenze negative, per il funzionamento del mercato regolamentato o per i suoi membri o partecipanti, di qualsiasi conflitto tra gli
+interessi del mercato regolamentato, dei suoi proprietari o del gestore del mercato e il suo ordinato funzionamento, in particolare quando tali conflitti possono risultare pregiudizievoli per
+l'assolvimento di qualsiasi funzione delegata al mercato regolamentato dall'autorità competente;
+b) procedure per gestire i rischi ai quali sono esposti, compresi i rischi informatici ai sensi del capo II del regolamento (UE) 2022/2554, del Parlamento europeo e del Consiglio, del 14 dicembre 2022
+, dispositivi e sistemi adeguati a identificare i rischi che possono comprometterne il funzionamento e misure efficaci per attenuare tali rischi;
+c) (abrogata)
+d) regole e procedure trasparenti e non discrezionali che garantiscono un processo di negoziazione corretto e ordinato nonchè di criteri obiettivi che consentono l'esecuzione efficiente degli ordini;
+e) misure efficaci atte ad agevolare il regolamento efficiente delle operazioni eseguite nell'ambito del sistema;
+f) risorse finanziarie sufficienti per renderne possibile il funzionamento ordinato, tenendo conto della natura e dell'entità delle operazioni concluse nel mercato, nonchè della portata e del grado
+dei rischi ai quali esso è esposto.
+2. La Consob può ulteriormente dettagliare, con regolamento, i requisiti organizzativi del mercato regolamentato e può dettare la metodologia di determinazione dell'entità delle risorse finanziarie
+previste nel comma 1, lettera f).
+3. Per le operazioni concluse su un mercato regolamentato, i membri e i partecipanti non sono tenuti ad applicarsi reciprocamente gli obblighi specificamente individuati ai sensi dell'articolo 6,
+comma 2. I membri o i partecipanti di un mercato regolamentato applicano detti obblighi per quanto concerne i loro clienti quando, operando per conto di questi ultimi, ne eseguono gli ordini su un
+mercato regolamentato.».
+«Art. 65-sexies (Requisiti operativi delle sedi di negoziazione). - 1. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione
+istituiscono e mantengono la loro resilienza operativa, conformemente agli obblighi stabiliti al capo II del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 ,
+per assicurare che i loro sistemi di negoziazione:
+a) siano resilienti e abbiano capacità sufficiente per gestire i picchi di volume di ordini e messaggi;
+b) siano in grado di garantire negoziazioni ordinate in condizioni di mercato critiche;
+c) siano pienamente testati per garantire il rispetto delle condizioni di cui alle lettere a) e b);
+d) siano soggetti a efficaci disposizioni in materia di continuità operativa, compresi politica e piani di continuità operativa delle tecnologie dell'informazione e della comunicazione e piani di
+risposta e di ripristino relativi alle tecnologie dell'informazione e della comunicazione istituiti ai sensi dell' articolo 11 del regolamento (UE) 2022/2554 , per assicurare la continuità dei servizi
+in caso di malfunzionamento dei loro sistemi di negoziazione.
+2. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione dispongono di sistemi, procedure e meccanismi efficaci:
+a) per garantire che i sistemi algoritmici di negoziazione utilizzati dai membri o partecipanti o clienti non possano creare o contribuire a creare condizioni di negoziazione anormali sulla sede di
+negoziazione e per gestire qualsiasi condizione di negoziazione anormale causata dagli stessi;
+b) per identificare, attraverso la segnalazione di membri o partecipanti o clienti, gli ordini generati mediante negoziazione algoritmica, i diversi algoritmi utilizzati per la creazione degli ordini
+e le corrispondenti persone che avviano tali ordini;
+c) per rifiutare gli ordini che eccedono soglie predeterminate di prezzo e volume o sono chiaramente errati;
+d) per sospendere o limitare temporaneamente le negoziazioni qualora si registri un'oscillazione significativa nel prezzo di uno strumento finanziario nel mercato gestito o in un mercato correlato in
+un breve lasso di tempo;
+e) in casi eccezionali, per cancellare, modificare o correggere qualsiasi operazione;
+f) per controllare gli ordini inseriti, incluse le cancellazioni e le operazioni eseguite dai loro membri o partecipanti o clienti, per identificare le violazioni delle regole del sistema, le
+condizioni di negoziazione anormali o gli atti che possono indicare comportamenti vietati dal regolamento (UE) n. 596/2014 o le disfunzioni del sistema in relazione a uno strumento finanziario.
+3. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione sottoscrivono accordi scritti vincolanti con i membri o partecipanti o
+clienti che perseguono strategie di market making sul sistema, e si adoperano affinchè un numero sufficiente di soggetti aderisca a tali accordi, in virtù dei quali sono tenuti a trasmettere
+quotazioni irrevocabili a prezzi concorrenziali, con il risultato di fornire liquidità al mercato su base regolare e prevedibile, qualora tale requisito sia adeguato alla natura e alle dimensioni
+delle negoziazioni nelle sedi di negoziazione in questione.
+4. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione dispongono di misure e procedure efficaci, tra cui le necessarie risorse,
+per il controllo regolare dell'ottemperanza alle proprie regole.
+5. I mercati regolamentati e i gestori di un sistema multilaterale di negoziazione o di un sistema organizzato di negoziazione:
+a) sincronizzano, unitamente ai loro membri o partecipanti o clienti, gli orologi utilizzati per registrare la data e l'ora degli eventi che possono essere oggetto di negoziazione;
+b) adottano regole trasparenti, eque e non discriminatorie in materia di servizi di co-ubicazione;
+c) adottano una struttura delle commissioni, incluse le commissioni di esecuzione delle operazioni, le commissioni accessorie e i rimborsi, trasparente, equa e non discriminatoria;
+d) adottano regimi in materia di dimensioni dei tick di negoziazione per azioni, ricevute di deposito, fondi indicizzati quotati, certificates e altri strumenti finanziari analoghi.
+6. La Consob approva gli accordi che il gestore di una sede di negoziazione intende concludere per l'esternalizzazione a soggetti terzi di tutte o parte delle funzioni operative critiche relative ai
+sistemi della sede da esso gestita che consentono la negoziazione algoritmica, intendendosi come funzioni operative critiche quelle indicate dall'articolo 65, comma 1, lettere b), c) ed e).
+7. La Consob individua con regolamento i requisiti operativi specifici di cui le sedi di negoziazione devono dotarsi con riguardo a:
+a) il contenuto minimo degli accordi scritti richiesti ai sensi del comma 3 e gli obblighi di controllo del gestore della sede di negoziazione in merito ai medesimi;
+b) i sistemi, le procedure e i dispositivi in materia di sistemi algoritmici di negoziazione previsti dal comma 2, lettere a) e b);
+c) i criteri in base ai quali fissare i parametri per la sospensione delle negoziazioni e le relative modalità di gestione;
+d) i requisiti per l'accesso elettronico diretto alle sedi di negoziazione;
+e) i requisiti della struttura delle commissioni di cui al comma 5, lettera c);
+f) i parametri per calibrare i regimi in materia di dimensioni dei tick di negoziazione indicati nel comma 5, lettera d).
+8. Le disposizioni di cui al comma 7, lettera b), sono adottate dalla Consob, sentita la Banca d'Italia, per i sistemi multilaterali di negoziazione e i sistemi organizzati di negoziazione che siano
+gestiti da Sim e banche italiane.».
+
+=== K237 | [12] Modifica al codice delle assicurazioni private , di cui al decreto legislativo 7 settembre 2005, n. 209
+Art. 12
+Modifica al codice delle assicurazioni private , di cui al decreto legislativo 7 settembre 2005, n. 209
+1 . All' articolo 30 del codice delle assicurazioni private , di cui al decreto legislativo 7 settembre 2005, n. 209, il comma 4 è sostituito dal seguente:
+«4. L'impresa adotta misure ragionevoli idonee a garantire la continuità e la regolarità dell'attività esercitata, inclusa l'elaborazione di piani di emergenza. A tal fine, l'impresa utilizza sistemi,
+risorse e procedure interne adeguati e proporzionati e, in particolare, istituisce e gestisce sistemi informatici e di rete conformemente al regolamento (UE) 2022/2554 del Parlamento europeo e del
+Consiglio, del 14 dicembre 2022 .».
+Note all'art. 12:
+- Si riporta il testo dell'articolo 30 del citato decreto legislativo 7 settembre 2005, n. 209 , come modificato dal presente decreto:
+«Art. 30 (Sistema di governo societario dell'impresa). - 1. L'impresa si dota di un efficace sistema di governo societario, ivi inclusi i sistemi di remunerazione e di incentivazione, che consenta una
+gestione sana e prudente dell'attività. Il sistema di governo societario è proporzionato alla natura, alla portata e alla complessità delle attività dell'impresa.
+2. Il sistema di governo societario di cui al comma 1 comprende almeno:
+a) l'istituzione di un'adeguata e trasparente struttura organizzativa, con una chiara ripartizione e un'appropriata separazione delle responsabilità delle funzioni e degli organi dell'impresa;
+b) l'organizzazione di un efficace sistema di trasmissione delle informazioni;
+c) il possesso da parte di coloro che svolgono funzioni di amministrazione, direzione e controllo e di coloro che svolgono funzioni fondamentali dei requisiti di cui all'articolo 76;
+d) la predisposizione di meccanismi idonei a garantire il rispetto delle disposizioni di cui al presente Capo;
+e) l'istituzione della funzione di revisione interna, della funzione di verifica della conformità, della funzione di gestione dei rischi e della funzione attuariale. Tali funzioni sono fondamentali e
+di conseguenza sono considerate funzioni essenziali o importanti.
+3. Il sistema di governo societario è sottoposto ad una revisione interna periodica almeno annuale.
+4. L'impresa adotta misure ragionevoli idonee a garantire la continuità e la regolarità dell'attività esercitata, inclusa l'elaborazione di piani di emergenza. A tal fine, l'impresa utilizza sistemi,
+risorse e procedure interne adeguati e proporzionati e, in particolare, istituisce e gestisce sistemi informatici e di rete conformemente al regolamento (UE) 2022/2554 del Parlamento europeo e del
+Consiglio, del 14 dicembre 2022 .
+5. L'impresa adotta politiche scritte con riferimento quanto meno al sistema di gestione dei rischi, al sistema di controllo interno, alla revisione interna e, ove rilevante, all'esternalizzazione,
+nonchè una politica per l'adeguatezza nel continuo delle informazioni fornite al supervisore ai sensi dell'articolo 47-quater e per le informazioni contenute nella relazione sulla solvibilità e sulla
+condizione finanziaria di cui agli articoli 47-septies, 47-octies e 47-novies e garantisce che ad esse sia data attuazione.
+6. Le politiche di cui al comma 5 sono approvate preventivamente dal consiglio di amministrazione. Il consiglio di amministrazione riesamina le politiche almeno una volta l'anno in concomitanza con la
+revisione di cui al comma 3 e, in ogni caso, apporta le modifiche necessarie in caso di variazioni significative del sistema di governo societario.
+7. L'IVASS detta con regolamento disposizioni di dettaglio in materia di sistema di governo societario di cui alla presente Sezione.».
+
+=== K238 | [13] Modifica al decreto legislativo 5 dicembre 2005, n. 252
+Art. 13
+Modifica al decreto legislativo 5 dicembre 2005, n. 252
+1 . All' articolo 4-bis del decreto legislativo 5 dicembre 2005, n. 252 , il comma 6 è sostituito dal seguente:
+«6. I fondi pensione di cui al comma 1 adottano misure ragionevoli atte a garantire la continuità e la regolarità dello svolgimento delle loro attività, tra cui l'elaborazione di piani di emergenza. A
+tal fine i fondi pensione utilizzano sistemi, risorse e procedure adeguati e proporzionati e in particolare, istituiscono e gestiscono sistemi informatici e di rete conformemente al regolamento (UE)
+2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , ove applicabile.».
+Note all'art. 13:
+- Si riporta il testo dell'articolo 4-bis del citato decreto legislativo 5 dicembre 2005, n. 252 , come modificato dal presente decreto:
+«Art. 4-bis (Requisiti generali in materia di sistema di governo). - 1. I fondi pensione istituiti ai sensi dell'articolo 4, comma 1, nonchè quelli già istituiti alla data di entrata in vigore della
+legge 23 ottobre 1992, n. 421 , aventi soggettività giuridica, si dotano di un sistema efficace di governo che assicuri una gestione sana e prudente della loro attività. Tale sistema prevede una
+struttura organizzativa trasparente e adeguata, con una chiara attribuzione e un'appropriata separazione delle responsabilità e un sistema efficace per garantire la trasmissione delle informazioni.
+2. Il sistema di governo è proporzionato alla dimensione, alla natura, alla portata e alla complessità delle attività del fondo pensione. Il sistema di governo è descritto in un apposito documento e
+tiene in considerazione, nelle decisioni relative agli investimenti, dei connessi fattori ambientali, sociali e di governo societario. Il documento è redatto, su base annuale, dall'organo di
+amministrazione ed è reso pubblico congiuntamente al bilancio di cui all'articolo 17-bis.
+3. I fondi pensione di cui al comma 1 stabiliscono e applicano politiche scritte in relazione alla gestione dei rischi, alla revisione interna e, laddove rilevante, alle attività attuariali e a quelle
+esternalizzate. Tali politiche sono deliberate dall'organo di amministrazione del fondo pensione.
+4. L'organo di amministrazione riesamina le politiche scritte di cui al comma 3 almeno ogni tre anni e, in ogni caso, apporta le modifiche necessarie in caso di variazioni significative del settore
+interessato.
+5. I fondi pensione di cui al comma 1 si dotano di un sistema di controllo interno efficace. Tale sistema include procedure amministrative e contabili, un quadro di controllo interno, comprensivo
+della verifica di conformità alla normativa nazionale e alle norme europee direttamente applicabili, e disposizioni di segnalazione adeguate a tutti i livelli del fondo pensione.
+6. I fondi pensione di cui al comma 1 adottano misure ragionevoli atte a garantire la continuità e la regolarità dello svolgimento delle loro attività, tra cui l'elaborazione di piani di emergenza. A
+tal fine i fondi pensione utilizzano sistemi, risorse e procedure adeguati e proporzionati e in particolare, istituiscono e gestiscono sistemi informatici e di rete conformemente al regolamento (UE)
+2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , ove applicabile.
+7. I fondi pensione di cui al comma 1 sono amministrati effettivamente da almeno due persone. La COVIP può autorizzare, in deroga al principio di cui sopra, che sia una sola persona ad amministrare
+effettivamente il fondo, sulla base di una valutazione motivata che tenga conto del ruolo delle parti sociali, nonchè della dimensione, della natura, della portata e della complessità delle attività
+del fondo.».
+
+=== K239 | [14] Modifiche al decreto legislativo 16 novembre 2015, n. 180
+Art. 14
+Modifiche al decreto legislativo 16 novembre 2015, n. 180
+1 . Al decreto legislativo 16 novembre 2015, n. 180 , sono apportate le seguenti modificazioni:
+a) all'articolo 102, comma 3:
+1) alla lettera c), dopo le parole: «garantire la continuità» sono inserite le seguenti: «e la resilienza operativa digitale»;
+2) alla lettera r), sono aggiunte, in fine, le seguenti parole: «, compresi i sistemi informatici e di rete di cui al regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre
+2022 »;
+b) all'articolo 104, comma 1, alla lettera c), dopo le parole: «dei contratti di servizio,» sono inserite le seguenti: «compresi gli accordi contrattuali per l'utilizzo di servizi TIC, come definiti
+all'articolo 3, punto 21), del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 ,».
+Note all'art. 14:
+- Si riporta il testo degli articoli 102 e 104 del citato decreto legislativo 16 novembre 2015, n. 180 , come modificato dal presente decreto:
+«Art. 102 (Contenuto dei piani di risoluzione). - 1.
+Fermo restando quanto previsto dalle norme tecniche di attuazione adottate dalla Commissione europea, il contenuto dei piani di risoluzione è disciplinato dal presente articolo.
+2. Il piano di risoluzione tiene conto di diversi possibili scenari, tra cui l'ipotesi che il dissesto sia idiosincratico o si verifichi in un momento di instabilità finanziaria più ampia o al
+ricorrere di eventi a carattere sistemico. Il piano di risoluzione non presuppone alcuno dei seguenti interventi:
+a) il sostegno finanziario pubblico straordinario, fatto salvo l'utilizzo dei fondi di risoluzione;
+b) l'assistenza di liquidità di emergenza fornita dalla banca centrale; o
+c) l'assistenza di liquidità fornita dalla banca centrale che preveda garanzie, durata e tasso di interesse non standard.
+3. Il piano prevede una serie di opzioni per l'applicazione delle misure e poteri di risoluzione. Esso comprende, laddove possibile e opportuno, in forma quantificata:
+a) una sintesi degli elementi fondamentali del piano;
+b) una sintesi dei cambiamenti sostanziali intervenuti nella banca rispetto all'ultima informazione fornita;
+c) la dimostrazione di come le funzioni essenziali e le linee di operatività principali possano essere separate dalle altre funzioni, sul piano giuridico ed economico, nella misura necessaria, in modo
+da garantirne la continuità e la resilienza operativa digitale in caso di dissesto della banca;
+d) una stima dei tempi necessari per l'esecuzione di ciascun aspetto sostanziale del piano;
+e) una descrizione della valutazione della risolvibilità;
+f) una descrizione delle misure necessarie per affrontare o rimuovere gli impedimenti alla risolvibilità;
+g) una descrizione delle procedure per determinare il valore e la trasferibilità delle funzioni essenziali, linee di operatività principali e attività della banca;
+h) una descrizione dei dispositivi atti a garantire che le informazioni richieste alla banca per la redazione del piano siano aggiornate e a disposizione della Banca d'Italia in qualsiasi momento;
+i) le modalità che permettono il finanziamento delle opzioni di risoluzione senza presupporre alcuno degli interventi seguenti;
+i) sostegno finanziario pubblico straordinario diverso dall'impiego dei fondi di risoluzione;
+ii) assistenza di liquidità di emergenza fornita da una banca centrale; o
+iii) assistenza di liquidità da parte di una banca centrale fornita con costituzione delle garanzie, durata e tasso di interesse non standard.
+l) una descrizione delle diverse strategie di risoluzione che si potrebbero applicare nei vari scenari possibili e le tempistiche applicabili;
+m) una descrizione delle interdipendenze critiche;
+n) una descrizione delle opzioni praticabili per mantenere l'accesso alle sedi di negoziazione e alle infrastrutture di mercato e una valutazione della portabilità delle posizioni dei clienti;
+o) un'analisi dell'impatto del piano sui dipendenti della banca, compresa una stima dei costi associati e una descrizione delle previste procedure di consultazione del personale durante il processo di
+risoluzione, tenendo conto se del caso dei sistemi nazionali di dialogo con le parti sociali;
+p) il piano di comunicazione con i media e con il pubblico;
+q) i requisiti di cui agli articoli 16-septies e 16-octies e il termine per la costituzione di questi requisiti conformemente all'articolo 16-quaterdecies;
+q-bis) laddove la Banca d'Italia applichi l'articolo 16-quater, commi 4, 5 o 7, i termini per l'adempimento da parte dell'ente designato per la risoluzione conformemente all'articolo 16-quaterdecies;
+r) una descrizione delle operazioni e dei sistemi essenziali per assicurare la continuità del funzionamento dei processi operativi della banca, compresi i sistemi informatici e di rete di cui al
+regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 ;
+s) l'eventuale parere espresso dalla banca in merito al piano di risoluzione.
+4. Il piano indica inoltre le modalità e la tempistica con cui, nelle situazioni previste dal piano, la banca può chiedere di ricorrere a forme di assistenza della Banca Centrale Europea e identifica
+le attività che potrebbero essere considerate idonee quali garanzie.
+Contiene infine le ulteriori informazioni richieste dalla Banca d'Italia o da regolamenti della Commissione Europea.
+5. Esso è redatto sulla base di valutazioni eque e prudenti.».
+«Art. 104 (Elementi da considerare nell'ambito della valutazione di risolvibilità di una banca o di un gruppo).
+- 1. Fermo restando quanto previsto dalle norme tecniche di attuazione adottate dalla Commissione europea, per valutare la risolvibilità di una banca o di un gruppo, sono esaminati:204
+a) l'organizzazione della banca/gruppo, in modo da assicurare che le linee di operatività principali e funzioni essenziali siano allocate a soggetti chiaramente identificabili e in modo coerente;
+b) i dispositivi adottati dalla banca/gruppo per fornire personale essenziale, infrastrutture, finanziamenti, liquidità e capitali per sostenere e mantenere in essere le linee di operatività
+principali e le funzioni essenziali;
+c) l'efficacia, anche in caso di risoluzione della banca/gruppo, dei contratti di servizio compresi gli accordi contrattuali per l'utilizzo di servizi TIC, come definiti all'articolo 3, punto 21), del
+regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022 , l'adeguatezza dei presidi di governo adottati dalla banca/gruppo per assicurare che tali contratti siano
+adempiuti nella misura e secondo la qualità concordata, nonchè la presenza di procedure per trasferire a terzi i servizi forniti in virtù di tali accordi, in caso di separazione delle funzioni
+essenziali o delle linee di operatività principali;
+d) i piani e le misure di emergenza per assicurare la continuità dell'accesso alle infrastrutture di mercato;
+e) l'adeguatezza dei sistemi informatici per permettere alla Banca d'Italia di raccogliere informazioni accurate e complete sulle linee di operatività principali e sulle funzioni essenziali, al fine
+di agevolare decisioni rapide;
+f) la capacità dei sistemi informatici di fornire le informazioni essenziali per una risoluzione efficace della banca/gruppo in qualsiasi momento, anche in situazioni in rapida evoluzione;
+g) la misura in cui la banca/gruppo ha testato i propri sistemi informatici in scenari di stress definiti dalla Banca d'Italia;
+h) la continuità dei sistemi informatici sia per la banca/gruppo interessata, sia per il cessionario nel caso in cui le funzioni essenziali e le linee di operatività principali siano oggetto di
+cessione;
+i) le procedure adottate della banca/gruppo per permettere alla Banca d'Italia di disporre delle informazioni necessarie per individuare i depositanti e gli importi coperti dai sistemi di garanzia dei
+depositi;
+l) l'ammontare e la tipologia delle passività ammissibili della banca/gruppo;205
+m) se sono previste garanzie infragruppo o operazioni back to back, la misura in cui: i) queste operazioni sono effettuate a condizioni di mercato e la solidità dei relativi sistemi di gestione del
+rischio; ii) il ricorso a queste operazioni aumenta il rischio di contagio nel gruppo
+n) la misura in cui la struttura giuridica del gruppo ostacola l'applicazione degli strumenti di risoluzione in conseguenza del numero di società, della complessità della struttura del gruppo o della
+difficoltà di associare le linee di business alle componenti del gruppo;
+o) quando la valutazione coinvolge una società di cui all'articolo 65, comma 1, lettera h), del Testo Unico Bancario, la misura in cui la risoluzione di entità del gruppo che sono banche o società
+finanziarie controllate può esercitare un impatto negativo sul ramo non finanziario del gruppo;
+p) la disponibilità, presso le autorità degli Stati terzi, delle misure di risoluzione necessarie per sostenere le autorità di risoluzione dell'Unione Europea nelle azioni di risoluzione e i margini
+per un'azione coordinata fra autorità dell'Unione Europea e autorità degli Stati terzi;
+q) la possibilità di applicare le misure di risoluzione in modo da conseguire gli obiettivi di risoluzione;
+r) la misura in cui la struttura del gruppo permette alla Banca d'Italia di procedere alla risoluzione del gruppo nel suo complesso o di una o più delle sue componenti senza provocare, direttamente o
+indirettamente, un effetto negativo significativo sul sistema finanziario, sulla fiducia del mercato o sull'economia in generale, e al fine di massimizzare il valore del gruppo nel suo complesso;
+s) gli accordi e i mezzi che potrebbero agevolare la risoluzione in caso di gruppi con società controllate stabilite in giurisdizioni diverse;
+t) la credibilità dell'uso delle misure di risoluzione in modo da conseguire gli obiettivi di risoluzione, tenuto conto delle possibili ripercussioni su creditori, controparti, clientela e dipendenti
+e delle azioni eventualmente avviate da autorità di Stati terzi;
+u) la possibilità di valutare l'impatto della risoluzione della banca/gruppo sul sistema finanziario, infrastrutture di mercato, sulla fiducia dei mercati finanziari o sull'economia in generale;
+l'impatto stesso, nonchè il grado di idoneità delle misure o dei poteri di risoluzione a contenerlo.
+2. Il livello di dettaglio della valutazione dipende, tra l'altro, dalle possibili conseguenze del dissesto della banca/gruppo in relazione alle loro caratteristiche, ivi inclusi le dimensioni, la
+complessità operativa, la struttura societaria, lo scopo mutualistico e l'adesione a un sistema di tutela istituzionale.».
+
+=== K240 | [15] Disposizioni di coordinamento con il decreto legislativo 4 settembre 2024, n. 138
+Art. 15
+Disposizioni di coordinamento con il decreto legislativo 4 settembre 2024, n. 138
+1 . A Bancoposta, se identificato come soggetto essenziale o importante dei settori 3 o 4 dell'allegato I al decreto legislativo 4 settembre 2024, n. 138 , non si applicano le disposizioni di cui
+all'articolo 17 e ai capi IV e V del medesimo decreto, in quanto soggetto sottoposto ai sensi del presente decreto a obblighi derivanti dal diritto dell'Unione europea equivalenti a quelli previsti
+dal citato decreto legislativo.
+Note all'art. 15:
+- Si riporta l'allegato I e il testo dell'articolo 17 del citato decreto legislativo 4 settembre 2024, n. 138 :
+«
+Parte di provvedimento in formato grafico
+.».
+«Art. 17 (Accordi di condivisione delle informazioni sulla sicurezza informatica). - 1. I soggetti che rientrano nell'ambito di applicazione del presente decreto e laddove opportuno anche ulteriori
+soggetti, possono scambiarsi, su base volontaria, pertinenti informazioni sulla sicurezza informatica, comprese informazioni relative a minacce informatiche, quasi-incidenti, vulnerabilità, tecniche e
+procedure, indicatori di compromissione, tattiche avversarie, informazioni specifiche sugli attori delle minacce, allarmi di sicurezza informatica e raccomandazioni concernenti la configurazione degli
+strumenti di sicurezza informatica per individuare le minacce informatiche, se tale condivisione di informazioni:
+a) mira a prevenire o rilevare gli incidenti, a recuperare dagli stessi o a mitigarne l'impatto;
+b) aumenta il livello di sicurezza informatica, in particolare sensibilizzando in merito alle minacce informatiche, limitando o inibendo la capacità di diffusione di tali minacce e sostenendo una
+serie di capacità di difesa, la risoluzione e la divulgazione delle vulnerabilità, tecniche di rilevamento, contenimento e prevenzione delle minacce, strategie di mitigazione o fasi di risposta e
+recupero, oppure promuovendo la ricerca collaborativa sulle minacce informatiche tra soggetti pubblici e privati.
+2. Lo scambio di informazioni di cui al comma 1 avviene nell'ambito di comunità di soggetti essenziali e di soggetti importanti e, se opportuno, nell'ambito dei loro fornitori o fornitori di servizi.
+Tale scambio è attuato mediante accordi di condivisione delle informazioni sulla sicurezza informatica che tengono conto della natura potenzialmente sensibile delle informazioni condivise.
+3. L'Agenzia per la cybersicurezza nazionale, nello svolgimento delle funzioni di Autorità nazionale competente NIS e di CSIRT Italia, ove possibile, tenuto conto degli orientamenti e delle migliori
+pratiche non vincolanti elaborati dall'ENISA, favorisce la conclusione degli accordi di condivisione delle informazioni sulla sicurezza informatica di cui al comma 2 e può specificare gli elementi
+operativi, compreso l'uso di piattaforme TIC dedicate e di strumenti di automazione, i contenuti e le condizioni degli accordi di condivisione delle informazioni. Nello stabilire i dettagli relativi
+alla partecipazione delle autorità pubbliche a tali accordi, l'Autorità nazionale competente NIS può imporre condizioni, secondo le modalità di cui all'articolo 40, comma 5, alinea, per le
+informazioni messe a disposizione dalle autorità competenti e dal CSIRT Italia. L'Agenzia per la cybersicurezza nazionale, nello svolgimento delle funzioni di Autorità nazionale competente NIS e di
+CSIRT Italia, supporta i soggetti essenziali e i soggetti importanti per l'applicazione di tali accordi conformemente alle loro misure strategiche di cui all'articolo 9, comma 3, lettera h).
+4. I soggetti essenziali e i soggetti importanti notificano all'Autorità nazionale competente NIS la loro partecipazione agli accordi di condivisione delle informazioni sulla sicurezza informatica di
+cui al comma 2 al momento della conclusione di tali accordi o, ove applicabile, del loro ritiro da tali accordi, una volta che questo è divenuto effettivo.
+5. È assicurato l'accesso degli Organismi di informazione per la sicurezza di cui agli articoli 4 , 6 e 7 della legge n. 124 del 2007 alle informazioni riguardanti l'elenco dei soggetti essenziali e
+dei soggetti importanti, tramite la piattaforma digitale di cui all'articolo 7, le notifiche di cui agli articoli 25 e 26, le vulnerabilità rilevate nell'applicazione del presente decreto, e le
+ulteriori informazioni rispetto a quelle di cui al presente comma che dovessero essere ritenute utili, relative alle attività di cui al presente decreto, previe intese tra i predetti Organismi e
+l'Agenzia per la cybersicurezza nazionale.».
+- Il capo IV e V del citato decreto legislativo 4 settembre 2024, n. 138 recano rispettivamente degli «Obblighi in materia di gestione del rischio per la sicurezza informatica e di notifica di
+incidente» e del «Monitoraggio, vigilanza ed esecuzione».
+
+
+######## NORMA: Lettera al mercato del 14 febbraio 2025 Segnalazioni dei gravi incidenti informatici e delle minacce informatiche ai sensi del Regolamento UE 2022/2054 (DORA)  (id IVASS-7772be2880)
+
+=== K243 | [Premessa] Reg. Uff. P
+IVS IVsAPIC
+Reg. Uff. P
+Prot. N° 0031644/25 del 14/02/2025
+SERVIZIO VIGILANZA PRUDENZIALE
+SERVIZIO VIGILANZA CONDOTTA DI MERCATO
+SERVIZIO NORMATIVA E POLITICHE DI VIGILANZA
+Rifer. a nota n. del Alle Imprese di assicurazione e
+riassicurazione con sede legale in Italia
+Classificazione III 1 3 LORO SEDI
+All.ti n . 2 ITALIA
+Alle Rappresentanze Generali per l'Italia
+delle imprese di assicurazione con sede
+legale in uno Stato terzo rispetto allo S.E.E.
+LORO SEDI
+ITALIA
+Agli intermediari di assicurazione, di
+riassicurazione e assicurativi a titolo
+accessorio rilevanti ai fini della normativa
+DORA (*)
+Oggetto Segnalazioni dei gravi incidenti informatici e delle minacce informatiche ai
+sensi del Regolamento UE 2022/2054 (DORA).
+Il Regolamento UE 2022/2554 (c.d. DORA - Digital Operational Resilience Act),
+applicabile dal 17 gennaio 2025, ha introdotto disposizioni per le imprese assicurative e
+per gli intermediari di assicurazione, di riassicurazione e assicurativi a titolo accessorio
+rilevanti, avuto riguardo alle segnalazioni di grave incidente informatico e di minacce
+informatiche, fattispecie per le quali il Regolamento Delegato UE 2024/1772 e i relativi Atti
+delegati (RTS e ITS) adottati dalla Commissione Europea (di seguito: “Atti delegati”)
+forniscono ulteriori specifiche disposizioni.
+Con riferimento agli incidenti informatici, il Regolamento Delegato UE 2024/1772
+definisce grave un incidente che abbia interessato i servizi critici di cui all’art. 6 e che
+soddisfi una delle seguenti condizioni:
+a) i sistemi informatici siano stati oggetto di accessi non autorizzati come descritto
+all’art. 9, paragrafo 5, lettera b);
+b) siano state raggiunte almeno due delle altre soglie di rilevanza definite nell’art. 9
+paragrafi da 1 a 6.
+*
+Sono soggetti alla disciplina DORA gli intermediari di assicurazione, di riassicurazione e assicurativi a titolo
+accessorio che hanno un numero di dipendenti superiore a 250 e un fatturato annuo superiore a 50 milioni di
+euro o un bilancio annuo superiore a 43 milioni di euro.
+Via del Quirinale, 21 - 00187 Roma - tel.+39 06 421331 - fax +39 06 42133206 - www.ivass.it Pag. 1/2
+4856/25
+Gli Atti delegati stabiliscono inoltre le tempistiche delle tre fasi della reportistica
+all’Autorità competente. In particolare:
+1) una notifica iniziale, al più tardi entro 24 ore dall’identificazione dell’incidente;
+2) un report intermedio, entro 72 ore dalla notifica iniziale, con possibilità di
+trasmettere successivi aggiornamenti;
+3) un report finale, entro un mese dall’invio dell’ultimo aggiornamento del report
+intermedio.
+Gli Atti delegati indicano anche il contenuto delle notifiche, caratterizzate da un livello
+di dettaglio crescente.
+Infine, il Regolamento DORA (art. 19, comma 2) prevede che le entità finanziarie
+hanno la possibilità di segnalare all’Autorità competente, su base volontaria, le minacce
+informatiche ritenute rilevanti per il sistema finanziario, gli utenti dei servizi o i clienti.
+Ciò considerato, al fine di consentire alle imprese di assicurazione1 e agli
+intermediari soggetti alla normativa DORA di ottemperare all’obbligo di segnalare i gravi
+incidenti e di trasmettere, eventualmente, le segnalazioni di minacce informatiche rilevanti,
+si allegano i template che dovranno essere compilati secondo le modalità previste dagli
+Atti delegati.
+Le segnalazioni sugli incidenti andranno trasmesse all’IVASS via PEC, nei tempi
+sopra ricordati, agli indirizzi:
+- vigilanza.prudenziale@pec.ivass.it dalle imprese di assicurazione, e
+- vigilanzacondottamercato@pec.ivass.it dagli intermediari di assicurazione, di
+riassicurazione e assicurativi a titolo accessorio.
+Distinti saluti.
+Per delegazione del Direttorio Integrato
+firma_IV52301 CESARI RICCARDO
+Nelle more dell’adeguamento del Regolamento 38/2018 alle nuove disposizioni DORA, le segnalazioni di
+un grave incidente informatico secondo le modalità indicate nella presente lettera non dovranno essere
+trasmesse anche ai fini del rispetto degli obblighi segnaletici/informativi previsti dall’articolo 16 del Reg.
+38/2018 in materia di Sistemi informatici e cyber security.
+Pag. 2/2
+4856/25

@@ -1,0 +1,791 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativo alla resilienza operativa digitale per il settore finanziario e   (id UE-32022R2554)
+
+=== K26 | [16] Quadro semplificato per la gestione dei rischi informatici
+Articolo 16
+Quadro semplificato per la gestione dei rischi informatici
+1. Gli articoli da 5 a 15 del presente regolamento non si applicano alle imprese di investimento piccole e non interconnesse e agli istituti di pagamento esentati a norma della direttiva (UE)
+2015/2366; agli istituti esentati a norma della direttiva 2013/36/UE per i quali gli Stati membri hanno deciso di non applicare l’opzione di cui all’articolo 2, paragrafo 4, del presente regolamento;
+agli istituti di moneta elettronica esentati a norma della direttiva 2009/110/CE; e ai piccoli enti pensionistici aziendali o professionali.
+Fermo restando il primo comma, le entità elencate al primo comma:
+a)
+pongono in essere e mantengono un solido e documentato quadro per la gestione dei rischi informatici che precisa i meccanismi e le misure finalizzate a una gestione rapida, efficiente e organica dei
+rischi informatici, anche ai fini della protezione delle pertinenti infrastrutture e componenti fisiche;
+b)
+monitorano costantemente la sicurezza e il funzionamento di tutti i sistemi di TIC;
+c)
+riducono al minimo l’impatto dei rischi informatici attraverso l’uso di sistemi, protocolli e strumenti di TIC solidi, resilienti e aggiornati e atti a supportare lo svolgimento delle loro attività e
+la fornitura di servizi e a proteggere adeguatamente la disponibilità, l’autenticità, l’integrità e la riservatezza dei dati nei sistemi informatici e di rete;
+d)
+provvedono a che le fonti di rischi informatici e le anomalie dei sistemi informatici e di rete siano tempestivamente individuate e rilevate e che gli incidenti connessi alle TIC siano trattati con
+rapidità;
+e)
+individuano le principali dipendenze da fornitori terzi di servizi TIC;
+f)
+garantiscono la continuità delle funzioni essenziali o importanti, attraverso piani di continuità operativa e misure di risposta e recupero, che comprendano almeno misure di back-up e ripristino;
+g)
+testano periodicamente i piani e le misure di cui alla lettera f) nonché l’efficacia dei controlli attuati in conformità delle lettere a) e c);
+h)
+attuano, se del caso, le opportune conclusioni operative risultanti dai test di cui alla lettera g) e dall’analisi successiva all’incidente nel processo di valutazione dei rischi informatici ed
+elaborano, in funzione delle esigenze e del profilo dei rischi informatici, programmi di formazione e sensibilizzazione sulla sicurezza delle TIC per il personale e la dirigenza.
+2. Il quadro per la gestione dei rischi informatici di cui al paragrafo 1, secondo comma, lettera a), è documentato e riesaminato periodicamente e al verificarsi di incidenti gravi connessi alle TIC
+conformemente alle istruzioni delle autorità di vigilanza. Il quadro è costantemente migliorato sulla base degli insegnamenti tratti dall’attuazione e dal monitoraggio. Su sua richiesta, è presentata
+all’autorità competente una relazione sul riesame del quadro per la gestione dei rischi informatici.
+3. Tramite il comitato congiunto e in consultazione con l’ENISA, le AEV elaborano progetti di norme tecniche di regolamentazione comuni al fine di:
+a)
+specificare ulteriormente gli elementi da includere nel quadro per la gestione dei rischi informatici di cui al paragrafo 1, secondo comma, lettera a);
+b)
+specificare ulteriormente gli elementi relativi ai sistemi, ai protocolli e agli strumenti per ridurre al minimo l’impatto dei rischi informatici di cui al paragrafo 1, secondo comma, lettera c), allo
+scopo di garantire la sicurezza delle reti, introdurre salvaguardie adeguate contro le intrusioni e l’uso improprio dei dati e preservare la disponibilità, l’autenticità, l’integrità e la riservatezza
+dei dati;
+c)
+specificare ulteriormente le componenti dei piani di continuità operativa delle TIC di cui al paragrafo 1, secondo comma, lettera f);
+d)
+specificare ulteriormente le norme riguardanti i test sui piani di continuità operativa e assicurare l’efficacia dei controlli di cui al paragrafo 1, secondo comma, lettera g), e garantire che tali
+test tengano debitamente conto degli scenari in cui la qualità dell’esercizio di una funzione essenziale o importante si deteriora a un livello inaccettabile o viene meno;
+e)
+specificare ulteriormente il contenuto e il formato della relazione sul riesame del quadro per la gestione dei rischi informatici di cui al paragrafo 2.
+All’atto dell’elaborazione di tali progetti di norme tecniche di regolamentazione, le AEV tengono conto delle dimensioni e del profilo di rischio complessivo dell’entità finanziaria, nonché della
+natura, della portata e della complessità dei suoi servizi, delle sue attività e delle sue operazioni.
+Le AEV presentano tali progetti di norme tecniche di regolamentazione alla Commissione entro il 17 gennaio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al primo comma in conformità degli articoli da 10 a 14 dei
+regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010.
+CAPO III
+Gestione, classificazione e segnalazione degli incidenti informatici
+
+=== K27 | [17] Processo di gestione degli incidenti connessi alle TIC
+Articolo 17
+Processo di gestione degli incidenti connessi alle TIC
+1. Le entità finanziarie definiscono, stabiliscono e attuano un processo di gestione degli incidenti connessi alle TIC al fine di individuare, gestire e notificare tali incidenti.
+2. Le entità finanziarie registrano tutti gli incidenti connessi alle TIC e le minacce informatiche significative. Le entità finanziarie istituiscono procedure e processi appropriati per garantire, in
+maniera coerente e integrata, il monitoraggio e il trattamento degli incidenti connessi alle TIC, nonché il relativo seguito, in modo da identificare, documentare e affrontare le cause di fondo e
+prevenire il verificarsi di tali incidenti.
+3. Il processo di gestione degli incidenti connessi alle TIC di cui al paragrafo 1:
+a)
+predispone indicatori di allerta precoce;
+b)
+stabilisce procedure per identificare, tracciare, registrare, categorizzare e classificare gli incidenti connessi alle TIC in base alla loro priorità e gravità e in base alla criticità dei servizi
+colpiti, conformemente ai criteri di cui all’articolo 18, paragrafo 1;
+c)
+assegna i ruoli e le responsabilità che è necessario attivare per i diversi scenari e tipi di incidenti connessi alle TIC;
+d)
+elabora piani per la comunicazione al personale, ai portatori di interessi esterni e ai mezzi di comunicazione conformemente all’articolo 14, nonché per la notifica ai clienti, per le procedure di
+attivazione dei livelli successivi di intervento, compresi i reclami dei clienti in materia di TIC, e per la comunicazione di informazioni alle entità finanziarie che agiscono da controparti, a
+seconda dei casi;
+e)
+assicura la segnalazione almeno degli incidenti gravi connessi alle TIC agli alti dirigenti interessati e informa l’organo di gestione almeno in merito a detti incidenti, illustrandone l’impatto e la
+risposta e i controlli supplementari da introdurre;
+f)
+stabilisce procedure di risposta agli incidenti connessi alle TIC per attenuarne l’impatto e garantisce tempestivamente l’operatività e la sicurezza dei servizi.
+
+=== K28 | [18] Classificazione degli incidenti connessi alle TIC e delle minacce informatiche
+Articolo 18
+Classificazione degli incidenti connessi alle TIC e delle minacce informatiche
+1. Le entità finanziarie classificano gli incidenti connessi alle TIC e ne determinano l’impatto in base ai criteri seguenti:
+a)
+il numero e/o la rilevanza di clienti o controparti finanziarie interessati e, ove applicabile, la quantità o il numero di transazioni interessate dall’incidente connesso alle TIC e il fatto che tale
+incidente abbia provocato o meno un impatto reputazionale;
+b)
+la durata dell’incidente connesso alle TIC, compreso il periodo di inattività del servizio;
+c)
+l’estensione geografica dell’incidente connesso alle TIC, con riferimento alle aree colpite, in particolare se interessa più di due Stati membri;
+d)
+le perdite di dati derivanti dall’incidente connesso alle TIC, in relazione alla disponibilità, autenticità, integrità o riservatezza dei dati;
+e)
+la criticità dei servizi colpiti, comprese le operazioni dell’entità finanziaria;
+f)
+l’impatto economico dell’incidente connesso alle TIC — in particolare le perdite e i costi diretti e indiretti — in termini sia assoluti che relativi.
+2. Le entità finanziarie classificano le minacce informatiche come significative in base alla criticità dei servizi a rischio, comprese le operazioni dell’entità finanziaria, il numero e/o la
+rilevanza di clienti o controparti finanziarie interessati e l’estensione geografica delle aree a rischio.
+3. In consultazione con la BCE e l’ENISA, le AEV elaborano, tramite il comitato congiunto, progetti di norme tecniche di regolamentazione comuni che specificano ulteriormente gli aspetti seguenti:
+a)
+i criteri di cui al paragrafo 1, comprese le soglie di rilevanza per la determinazione dei gravi incidenti TIC o, ove applicabile, dei gravi incidenti operativi o relativi alla sicurezza dei
+pagamenti, che sono oggetto dell’obbligo di segnalazione di cui all’articolo 19, paragrafo 1;
+b)
+i criteri che le autorità competenti devono applicare per valutare la rilevanza degli gravi incidenti TIC o, ove applicabile, dei gravi incidenti operativi o relativi alla sicurezza dei pagamenti per
+le autorità competenti interessate in altri Stati membri, nonché i dettagli delle segnalazioni di incidenti gravi connessi alle TIC o, ove applicabile, di gravi incidenti operativi o di sicurezza dei
+pagamenti da condividere con altre autorità competenti ai sensi dell’articolo 19, paragrafi 6 e 7.
+c)
+i criteri di cui al paragrafo 2 del presente articolo, comprese soglie di rilevanza elevate per la determinazione delle minacce informatiche significative.
+4. All’atto dell’elaborazione dei progetti di norme tecniche di regolamentazione comuni di cui al paragrafo 3 del presente articolo, le AEV tengono conto dei criteri di cui all’articolo 4, paragrafo
+2, come pure delle norme internazionali, degli orientamenti e delle specifiche elaborati e pubblicati dall’ENISA, tra cui, se del caso, le specifiche riguardanti altri settori economici. Ai fini
+dell’applicazione dei criteri di cui all’articolo 4, paragrafo 2, le AEV tengono debitamente conto della necessità delle microimprese e delle piccole e medie imprese di mobilitare risorse e capacità
+sufficienti per garantire una gestione rapida degli incidenti connessi alle TIC.
+Le AEV presentano tali progetti di norme tecniche di regolamentazione comuni alla Commissione entro il 17 gennaio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al paragrafo 3 in conformità degli articoli da 0 a 14 dei regolamenti
+(UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n. 1095/2010.
+
+=== K29 | [19] Segnalazione dei gravi incidenti TIC e notifica volontaria delle minacce informatiche significative
+Articolo 19
+Segnalazione dei gravi incidenti TIC e notifica volontaria delle minacce informatiche significative
+1. Le entità finanziarie segnalano gli gravi incidenti TIC all’autorità competente interessata di cui all’articolo 46 a norma del paragrafo 4 del presente articolo.
+Se un’entità finanziaria è soggetta alla vigilanza di più di un’autorità nazionale competente di cui all’articolo 46, gli Stati membri designano un’unica autorità competente quale autorità competente
+interessata responsabile dell’espletamento delle funzioni e dei compiti di cui al presente articolo.
+Gli enti creditizi classificati come significativi ai sensi dell’articolo 6, paragrafo 4, del regolamento (UE) n. 1024/2013 segnalano i gravi incidenti TIC all’autorità nazionale competente designata
+ai sensi dell’articolo 4 della direttiva 2013/36/UE, che trasmette immediatamente tale segnalazione alla BCE.
+Ai fini del primo comma, le entità finanziarie redigono, dopo aver raccolto e analizzato tutte le informazioni pertinenti, la notifica iniziale e le relazioni di cui al paragrafo 4 del presente
+articolo utilizzando i modelli di cui all’articolo 20 e le trasmettono all’autorità competente. Qualora un impedimento tecnico non consenta la trasmissione della notifica iniziale utilizzando il
+modello, le entità finanziarie informano in merito l’autorità competente con mezzi alternativi.
+La notifica iniziale e le relazioni di cui al paragrafo 4 contengono tutte le informazioni necessarie all’autorità competente per determinare la rilevanza dell’grave incidente TIC e valutarne i
+possibili impatti transfrontalieri.
+Fatta salva la segnalazione a norma del primo comma da parte dell’entità finanziaria all’autorità competente interessata, gli Stati membri possono stabilire, in aggiunta, che alcune o tutte le entità
+finanziarie forniscano altresì la notifica iniziale e ciascuna relazione di cui al paragrafo 4 del presente articolo utilizzando i modelli di cui all’articolo 20 alle autorità competenti o ai gruppi
+di intervento per la sicurezza informatica in caso di incidente ( computer security incident response teams — CSIRT) designati o istituiti a norma della direttiva (UE) 2022/2555.
+2. Le entità finanziarie possono, su base volontaria, notificare le minacce informatiche significative all’autorità competente interessata qualora ritengano che la minaccia sia rilevante per il
+sistema finanziario, gli utenti dei servizi o i clienti. L’autorità competente interessata può fornire tali informazioni alle altre autorità pertinenti di cui al paragrafo 6.
+Gli enti creditizi classificati come significativi ai sensi dell’articolo 6, paragrafo 4, del regolamento (UE) n. 1024/2013 possono notificare, su base volontaria, le minacce informatiche
+significative all’autorità nazionale competente, designata ai sensi dell’articolo 4 della direttiva 2013/36/UE, che trasmette immediatamente la notifica alla BCE.
+Gli Stati membri possono stabilire che le entità finanziarie che procedono alla notifica su base volontaria e a norma del primo comma possano altresì trasmettere tale notifica ai CSIRT nazionali
+designati o istituiti a norma della direttiva (UE) 2022/2555.
+3. Qualora si verifichi un grave incidente TIC che eserciti un impatto sugli interessi finanziari dei clienti, le entità finanziarie, senza indebito ritardo e non appena ne vengono a conoscenza,
+informano i loro clienti in merito a tale incidente e alle misure che sono state adottate per attenuare gli effetti avversi dell’incidente.
+In caso di minaccia informatica significativa, le entità finanziarie, se del caso, informano i loro clienti potenzialmente interessati in merito alle opportune misure di protezione che i clienti
+stessi possono prendere in considerazione.
+4. Entro i termini da fissare a norma dell’articolo 20, primo comma, lettera a), punto ii), le entità finanziarie trasmettono all’autorità competente interessata:
+a)
+una notifica iniziale;
+b)
+una relazione intermedia dopo la notifica iniziale di cui alla lettera a), non appena lo stato originario dell’incidente cambia in maniera significativa o il trattamento dell’grave incidente TIC
+cambia alla luce delle nuove informazioni disponibili, seguita, a seconda dei casi, da notifiche aggiornate, ogni qualvolta sia disponibile un aggiornamento della situazione, nonché su specifica
+richiesta dell’autorità competente;
+c)
+una relazione finale, quando l’analisi delle cause che hanno dato origine all’incidente sia stata completata, indipendentemente dal fatto che le misure di attenuazione siano già state attuate, e
+quando al posto delle stime siano disponibili i dati dell’impatto effettivo.
+5. Ai sensi del presente articolo, le entità finanziarie possono esternalizzare, conformemente al diritto settoriale dell’Unione e nazionale, gli obblighi di segnalazione a un fornitore terzo di
+servizi. In caso di esternalizzazione, l’entità finanziaria rimane pienamente responsabile di espletare gli obblighi di segnalazione degli incidenti.
+6. Dopo aver ricevuto la notifica iniziale e ciascuna delle relazioni di cui al paragrafo 4, l’autorità competente trasmette tempestivamente i dettagli dell’grave incidente TIC ai seguenti destinatari
+sulla base, ove applicabile, delle rispettive competenze:
+a)
+all’ABE, all’ESMA o all’EIOPA;
+b)
+alla BCE, qualora siano coinvolte le entità finanziarie di cui all’articolo 2, paragrafo 1, lettere a), b) e d);
+c)
+alle autorità competenti, ai punti di contatto unici o ai CSIRT designati o istituiti conformemente alla direttiva (UE) 2022/2555;
+d)
+alle autorità di risoluzione di cui all’articolo 3 della direttiva 2014/59/UE e al Comitato di risoluzione unico (SRB) per quanto riguarda le entità di cui all’articolo 7, paragrafo 2, del regolamento
+(UE) n. 806/2014 del Parlamento europeo e del Consiglio ( 37 ) nonché le entità e i gruppi di cui all’articolo 7, paragrafo 4, lettera b), e all’articolo 7, paragrafo 5, del regolamento (UE) n.
+806/2014, qualora tali dettagli riguardino incidenti che comportano un rischio per le funzioni essenziali definite all’articolo 2, paragrafo 1, punto 35), della direttiva 2014/59/UE; e
+e)
+ad altre pertinenti autorità pubbliche ai sensi del diritto nazionale.
+7. Una volta ricevute le informazioni conformemente al paragrafo 6, l’ABE, l’ESMA o l’EIOPA e la BCE, in consultazione con l’ENISA e in collaborazione con l’autorità competente interessata, valutano
+la pertinenza dell’grave incidente TIC rispetto alle autorità competenti in altri Stati membri. A seguito di tale valutazione, l’ABE, l’ESMA o l’EIOPA inviano una notifica al riguardo il prima
+possibile alle autorità competenti interessate in altri Stati membri. La BCE notifica i membri del Sistema europeo di banche centrali in merito a questioni afferenti il sistema di pagamenti. Sulla
+base di tale notifica, le autorità competenti adottano, se del caso, tutte le misure necessarie per proteggere l’immediata stabilità del sistema finanziario.
+8. La notifica che l’ESMA deve effettuare a norma del paragrafo 7 del presente articolo lascia impregiudicata la responsabilità dell’autorità competente di trasmettere urgentemente i dettagli
+dell’grave incidente TIC all’autorità pertinente dello Stato membro ospitante, laddove uno dei depositari centrali di titoli svolga una cospicua attività transfrontaliera nello Stato membro ospitante,
+laddove l’incidente grave connesso alle TIC possa comportare serie conseguenze per i mercati finanziari dello Stato membro ospitante e laddove vi siano accordi di cooperazione tra le autorità
+competenti in relazione alla vigilanza delle entità finanziarie.
+
+=== K30 | [20] Armonizzazione dei modelli e dei contenuti per la segnalazione
+Articolo 20
+Armonizzazione dei modelli e dei contenuti per la segnalazione
+In consultazione con l’ENISA e la BCE, le AEV, tramite il comitato congiunto, elaborano quanto segue:
+a)
+progetti di norme tecniche di regolamentazione comuni per:
+i)
+stabilire il contenuto delle segnalazioni relative agli incidenti gravi connessi alle TIC al fine di rispecchiare i criteri di cui all’articolo 18, paragrafo 1, e integrare ulteriori elementi, ad
+esempio i dettagli per stabilire la rilevanza delle segnalazioni per gli altri Stati membri e se si tratti o meno di un grave incidente operativo o di sicurezza dei pagamenti;
+ii)
+stabilire i termini della notifica iniziale e di ciascuna relazione di cui all’articolo 19, paragrafo 4;
+iii)
+stabilire il contenuto della notifica per le minacce informatiche significative.
+All’atto dell’elaborazione di tali progetti di norme tecniche di regolamentazione, le AEV tengono conto delle dimensioni e del profilo di rischio complessivo dell’entità finanziaria, nonché della
+natura, della portata e della complessità dei suoi servizi, delle sue attività e delle sue operazioni, in particolare al fine di garantire che, ai fini della lettera a), punto ii) del presente comma,
+termini differenti possano rispecchiare, se del caso, alcune specificità dei settori finanziari, fatto salvo il mantenimento di un approccio coerente alla segnalazione degli incidenti connessi alle
+TIC a norma del presente regolamento e della direttiva (UE) 2022/2555. Se del caso, le AEV forniscono una giustificazione quando si discostano dagli approcci adottati nel contesto di tale direttiva;
+b)
+progetti di norme tecniche di attuazione comuni per stabilire i formati, i modelli e le procedure standard con cui le entità finanziarie devono segnalare un grave incidente TIC e notificare una
+minaccia informatica significativa.
+Le AEV trasmettono alla Commissione i progetti di norme tecniche di regolamentazione comuni di cui al primo comma, lettera a), e i progetti di norme tecniche di attuazione comuni di cui al primo
+comma, lettera b), entro il 17 luglio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione comuni di cui al primo comma, lettera a), in conformità degli articoli da 10
+a 14 dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n. 1095/2010.
+Alla Commissione è conferito il potere di adottare le norme tecniche di attuazione comuni di cui al primo comma, lettera b), in conformità dell’articolo 15 dei regolamenti (UE) n. 1093/2010, (UE) n.
+1094/2010 e (UE) n. 1095/2010.
+
+=== K31 | [21] Centralizzazione delle segnalazioni di incidenti gravi connessi alle TIC
+Articolo 21
+Centralizzazione delle segnalazioni di incidenti gravi connessi alle TIC
+1. In consultazione con la BCE e l’ENISA, le AEV, tramite il comitato congiunto, redigono una relazione congiunta che valuta la fattibilità dell’ulteriore centralizzazione delle segnalazioni degli
+incidenti mediante l’istituzione di un polo UE unico per la segnalazione degli incidenti gravi connessi alle TIC da parte delle entità finanziarie. La relazione congiunta esamina i criteri per
+agevolare il flusso delle segnalazioni di incidenti connessi alle TIC, ridurre i costi associati e corroborare le analisi tematiche per migliorare la convergenza della vigilanza.
+2. La relazione congiunta di cui al paragrafo 1 comprende almeno gli elementi seguenti:
+a)
+prerequisiti per l’istituzione di un polo UE unico;
+b)
+benefici, limiti e rischi, compresi i rischi associati all’elevata concentrazione di informazioni sensibili;
+c)
+la necessaria capacità di garantire l’interoperabilità rispetto ad altri sistemi di segnalazione pertinenti;
+d)
+elementi della gestione operativa;
+e)
+condizioni di adesione;
+f)
+modalità tecniche per l’accesso al polo UE unico da parte delle entità finanziarie e le autorità nazionali competenti;
+g)
+una valutazione preliminare dei costi finanziari sostenuti per l’istituzione della piattaforma operativa su cui dovrà fondarsi il polo UE unico, comprese le richieste competenze.
+3. Le AEV presentano la relazione di cui al paragrafo 1 al Parlamento europeo, al Consiglio e alla Commissione entro il 17 gennaio 2025.
+
+=== K32 | [22] Riscontri forniti dalle autorità di vigilanza
+Articolo 22
+Riscontri forniti dalle autorità di vigilanza
+1. Fatti salvi il contributo tecnico, la consulenza o i rimedi e il successivo seguito dato che possono essere forniti, ove applicabile, conformemente al diritto nazionale, dai CSIRT ai sensi della
+direttiva (UE) 2022/2555, l’autorità competente, dopo aver ricevuto la notifica iniziale e ciascuna delle relazioni di cui all’articolo 19, paragrafo 4, ne accusa ricevuta e può, ove fattibile,
+fornire tempestivamente all’entità finanziaria riscontri pertinenti e proporzionali o orientamenti di alto livello, in particolare rendendo disponibili le informazioni e i dati pertinenti anonimizzati
+su minacce analoghe, e può discutere rimedi applicati a livello di entità finanziaria e metodi per ridurre al minimo e attenuare gli effetti avversi nel settore finanziario. Fatti salvi i riscontri
+ricevuti dalle autorità di vigilanza, le entità finanziarie restano pienamente responsabili del trattamento e delle conseguenze degli incidenti connessi alle TIC segnalati a norma dell’articolo 19,
+paragrafo 1.
+2. Le AEV, tramite il comitato congiunto, riferiscono con frequenza annuale, sulla base di dati anonimizzati e aggregati, in merito agli incidenti gravi connessi alle TIC, i cui dettagli sono forniti
+dalle autorità competenti a norma dell’articolo 19, paragrafo 6, indicando almeno il numero degli incidenti gravi connessi alle TIC, la natura, l’impatto sulle operazioni delle entità finanziarie o
+dei clienti, i costi sostenuti e le azioni di riparazione adottate.
+Le AEV emanano segnalazioni di allerta e redigono statistiche di alto livello a supporto delle valutazioni della vulnerabilità e delle minacce connesse alle TIC.
+
+=== K33 | [23] Incidenti operativi o relativi alla sicurezza dei pagamenti riguardanti enti creditizi, istituti di pagamento, prestator
+Articolo 23
+Incidenti operativi o relativi alla sicurezza dei pagamenti riguardanti enti creditizi, istituti di pagamento, prestatori di servizi di informazione sui conti e istituti di moneta elettronica
+I requisiti contenuti nel presente capo si applicano anche agli incidenti operativi o relativi alla sicurezza dei pagamenti ovvero ai gravi incidenti operativi o relativi alla sicurezza dei pagamenti
+allorché riguardano enti creditizi, istituti di pagamento, prestatori di servizi di informazione sui conti e istituti di moneta elettronica.
+CAPO IV
+Test di resilienza operativa digitale
+
+=== K34 | [24] Requisiti generali per lo svolgimento dei test di resilienza operativa digitale
+Articolo 24
+Requisiti generali per lo svolgimento dei test di resilienza operativa digitale
+1. Allo scopo di valutare la preparazione alla gestione degli incidenti connessi alle TIC, di identificare punti deboli, carenze e lacune della resilienza operativa digitale e di attuare
+tempestivamente misure correttive, le entità finanziarie diverse dalle microimprese, tenuto conto dei criteri di cui all’articolo 4, paragrafo 2, stabiliscono, mantengono e riesaminano un programma di
+test di resilienza operativa digitale solido ed esaustivo quale parte integrante del quadro per la gestione dei rischi informatici di cui all’articolo 6.
+2. Il programma di test di resilienza operativa digitale comprende una serie di valutazioni, test, metodologie, pratiche e strumenti da applicare conformemente agli articoli 25 e 26.
+3. Nello svolgimento del programma di test di resilienza operativa digitale di cui al paragrafo 1 del presente articolo, le entità finanziarie, diverse dalle microimprese, adottano un approccio basato
+sul rischio che prende in considerazione i criteri di cui all’articolo 4, paragrafo 2, tenendo debitamente conto del mutevole contesto dei rischi informatici, di eventuali rischi specifici cui
+l’entità finanziaria interessata è o potrebbe essere esposta, della criticità dei patrimoni informativi e dei servizi forniti, nonché di qualsiasi altro fattore giudicato rilevante dall’entità
+finanziaria stessa.
+4. Le entità finanziarie, diverse dalle microimprese, assicurano che i test siano svolti da soggetti indipendenti, interni o esterni. Se i test sono svolti da un soggetto incaricato dello svolgimento
+dei test interno, le entità finanziarie dedicano risorse sufficienti e garantiscono che siano evitati conflitti d’interessi durante le fasi di progettazione ed esecuzione del test.
+5. Le entità finanziarie, diverse dalle microimprese, definiscono procedure e politiche per dare un ordine di priorità ai problemi riscontrati durante lo svolgimento dei test, per classificarli e
+porvi rimedio; stabiliscono inoltre metodologie di convalida interne per accertare che tutti i punti deboli, le carenze o le lacune che sono stati individuati siano pienamente affrontati.
+6. Le entità finanziarie, diverse dalle microimprese, provvedono affinché, con cadenza almeno annuale, siano eseguiti test adeguati su tutti i sistemi e le applicazioni di TIC a supporto di funzioni
+essenziali o importanti.
+
+=== K35 | [25] Test di strumenti e sistemi di TIC
+Articolo 25
+Test di strumenti e sistemi di TIC
+1. Il programma di test di resilienza operativa digitale di cui all’articolo 24 prevede, conformemente ai criteri di cui all’articolo 4, paragrafo 2, l’esecuzione di test adeguati, tra cui valutazione
+e scansione delle vulnerabilità, analisi open source, valutazioni della sicurezza delle reti, analisi delle carenze, esami della sicurezza fisica, questionari e soluzioni di scansione del software,
+esami del codice sorgente, ove fattibile, test basati su scenari, test di compatibilità, test di prestazione, test end-to-end e test di penetrazione.
+2. I depositari centrali di titoli e le controparti centrali effettuano valutazioni della vulnerabilità prima di ciascun rilascio o nuovo rilascio di nuovi o già esistenti applicazioni e componenti
+infrastrutturali, e servizi TIC a supporto delle funzioni essenziali o importanti dell’entità finanziaria.
+3. Le microimprese eseguono i test di cui al paragrafo 1 combinando un approccio basato sul rischio con una pianificazione strategica dei test relativi alle TIC, tenendo debitamente conto della
+necessità di mantenere un approccio equilibrato tra l’entità delle risorse e il tempo da assegnare ai test relativi alle TIC di cui al presente articolo, da un lato, e l’urgenza, il tipo di rischio,
+la criticità dei patrimoni informativi e dei servizi forniti nonché qualsiasi altro fattore rilevante, compresa la capacità dell’entità finanziaria di assumere rischi calcolati, dall’altro.
+
+=== K36 | [26] Test avanzati di strumenti, sistemi e processi di TIC basati su test di penetrazione guidati dalla minaccia (TLPT)
+Articolo 26
+Test avanzati di strumenti, sistemi e processi di TIC basati su test di penetrazione guidati dalla minaccia (TLPT)
+1. Le entità finanziarie, diverse dalle entità di cui all’articolo 16, paragrafo 1, primo comma, e dalle microimprese, che sono identificate conformemente al paragrafo 8, terzo comma, del presente
+articolo, effettuano test avanzati sotto forma di test di penetrazione basati su minacce con cadenza almeno triennale. Sulla base del profilo di rischio dell’entità finanziaria e tenuto conto delle
+circostanze operative, l’autorità competente può, se necessario, chiedere all’entità finanziaria di ridurre o aumentare tale frequenza.
+2. Ciascun test di penetrazione guidato dalla minaccia riguarda alcune o tutte le funzioni essenziali o importanti dell’entità finanziaria ed è effettuato sui sistemi attivi di produzione a supporto
+di tali funzioni.
+Le entità finanziarie identificano tutti i sistemi, i processi e le tecnologie TIC sottostanti a supporto delle funzioni essenziali o importanti e tutti i pertinenti servizi TIC, compresi quelli a
+supporto di funzioni essenziali o importanti che sono stati esternalizzate o appaltate a fornitori terzi di servizi TIC.
+Le entità finanziarie valutano quali funzioni essenziali o importanti debbano essere interessate dai TLPT. Il risultato della valutazione determina il preciso ambito di applicazione dei TLPT ed è
+convalidato dalle autorità competenti.
+3. Qualora i fornitori terzi di servizi TIC rientrino nell’ambito di applicazione dei TLPT, l’entità finanziaria adotta le misure e le salvaguardie necessarie per garantire la partecipazione di tali
+fornitori terzi di servizi TIC ai TLPT ed è sempre pienamente responsabile di garantire il rispetto del presente regolamento.
+4. Fatto salvo il paragrafo 2, primo e secondo comma, laddove si ritiene ragionevolmente che la partecipazione di un fornitore terzo di servizi TIC ai TLPT di cui al paragrafo 3 possa avere un impatto
+avverso sulla qualità o la sicurezza dei servizi offerti dal fornitore terzo di servizi TIC a clienti che sono entità non rientranti nell’ambito di applicazione del presente regolamento, ovvero sulla
+riservatezza dei dati relativi a tali servizi, l’entità finanziaria e il fornitore terzo di servizi TIC possono concordare per iscritto che il fornitore terzo di servizi TIC stipuli direttamente
+accordi contrattuali con un soggetto incaricato dello svolgimento dei test esterno, allo scopo di condurre, sotto la direzione di un’entità finanziaria designata, un TLPT congiunto che coinvolga
+diverse entità finanziarie ( pooled testing ) a cui il fornitore terzo di servizi TIC fornisce tali servizi.
+Detto test congiunto riguarda la pertinente gamma di servizi TIC a supporto delle funzioni essenziali o importanti appaltate dalle entità finanziarie al rispettivo fornitore terzo di servizi TIC. I
+test congiunti sono considerati TLPT effettuati dalle entità finanziarie che partecipano ai test congiunti.
+Il numero di entità finanziarie che partecipano ai test congiunti è debitamente calibrato tenendo conto della complessità e dei tipi di servizi interessati.
+5. Le entità finanziarie, cooperando con i fornitori terzi di servizi TIC e altre parti coinvolte, inclusi i soggetti incaricati dello svolgimento dei test ma escluse le autorità competenti, applicano
+efficaci controlli di gestione del rischio per attenuare i rischi di potenziali impatti sui dati, danni alle attività e perturbazioni delle funzioni essenziali o importanti, delle operazioni o dei
+servizi delle entità finanziarie, delle loro controparti o del settore finanziario.
+6. Alla fine dei test, dopo che le relazioni e i piani correttivi siano stati concordati, l’entità finanziaria e, ove applicabile, i soggetti incaricato dello svolgimento dei test esterni trasmettono
+all’autorità, designata conformemente al paragrafo 9 o 10, una sintesi delle pertinenti risultanze, i piani correttivi e la documentazione attestante che i TLPT sono stati svolti conformemente ai
+requisiti.
+7. Le autorità forniscono alle entità finanziarie un attestato che conferma che i test sono stati svolti conformemente ai requisiti, come si evince dalla documentazione, in modo da consentire il
+riconoscimento reciproco dei TLPT tra le autorità competenti. L’entità finanziaria notifica all’autorità competente interessata l’attestato, la sintesi delle pertinenti risultanze e i piani
+correttivi.
+Fatto salvo tale attestato, le entità finanziarie rimangono sempre pienamente responsabili degli impatti dei test di cui al paragrafo 4.
+8. Per l’effettuazione dei TLPT, le entità finanziarie si avvalgono di soggetti incaricati dello svolgimento dei test in conformità dell’articolo 27. Quando ricorrono a soggetti incaricati dello
+svolgimento dei test interni per l’effettuazione di TLPT, le entità finanziarie si avvalgono di un soggetto incaricato dello svolgimento dei test esterno ogni tre test.
+Gli enti creditizi classificati come significativi a norma dell’articolo 6, paragrafo 4, del regolamento (UE) n. 1024/2013, ricorrono esclusivamente a soggetto incaricato dello svolgimento dei test
+esterni conformemente all’articolo 27, paragrafo 1, lettere da a) a e).
+Le autorità competenti identificano le entità finanziarie che hanno l’obbligo di svolgere TLPT tenendo conto dei criteri di cui all’articolo 4, paragrafo 2, sulla base della valutazione degli elementi
+seguenti:
+a)
+i fattori correlati all’impatto, in particolare la portata dell’impatto sul settore finanziario dei servizi forniti e delle attività svolte dall’entità finanziaria;
+b)
+i possibili problemi di stabilità finanziaria, tra cui il carattere sistemico dell’entità finanziaria a livello di Unione o nazionale, a seconda dei casi;
+c)
+lo specifico profilo dei rischi informatici, il livello di maturità delle TIC dell’entità finanziaria o le caratteristiche tecnologiche in questione.
+9. Gli Stati membri possono designare un’autorità pubblica unica nel settore finanziario responsabile delle questioni relative ai TLPT nel settore finanziario a livello nazionale e le affidano tutte
+le competenze e tutti i compiti a tal fine.
+10. In assenza di una designazione a norma del paragrafo 9 del presente articolo e fatto salvo il potere di identificare le entità finanziarie tenute a svolgere TLPT, un’autorità competente può
+delegare l’esercizio di alcuni o di tutti i compiti di cui al presente articolo e all’articolo 27 a un’altra autorità nazionale nel settore finanziario.
+11. Di concerto con la BCE, le AEV elaborano progetti di norme tecniche di regolamentazione comuni conformemente al quadro di riferimento TIBER-EU al fine di specificare ulteriormente quanto segue:
+a)
+i criteri utilizzati ai fini dell’applicazione del paragrafo 8, secondo comma;
+b)
+i requisiti e le norme che disciplinano il ricorso a soggetto incaricato dello svolgimento dei test interni;
+c)
+i requisiti concernenti:
+i)
+l’ambito dei TLPT di cui al paragrafo 2;
+ii)
+l’approccio e la metodologia da seguire per i test in ciascuna fase del relativo processo;
+iii)
+i risultati, la chiusura e le fasi correttive dei test;
+d)
+il tipo di cooperazione di vigilanza e altri tipi di cooperazione pertinenti necessari per svolgere i TLPT e per la facilitazione del riconoscimento reciproco di tali test, nel contesto di entità
+finanziarie che operano in più di uno Stato membro, al fine di consentire un livello adeguato di partecipazione alla vigilanza, nonché un’attuazione flessibile per tener conto delle specificità dei
+sottosettori finanziari o dei mercati finanziari locali.
+All’ atto dell’elaborazione di tali progetti di norme tecniche di regolamentazione, le AEV tengono debitamente conto di eventuali caratteristiche specifiche derivanti dalla natura distinta delle
+attività nei diversi settori dei servizi finanziari.
+Le AEV presentano tali progetti di norme tecniche di regolamentazione alla Commissione entro il 17 luglio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al primo comma in conformità degli articoli da 10 a 14 dei
+regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n. 1095/2010.
+
+=== K37 | [27] Requisiti per i soggetti incaricati dello svolgimento dei test per lo svolgimento dei TLPT
+Articolo 27
+Requisiti per i soggetti incaricati dello svolgimento dei test per lo svolgimento dei TLPT
+1. Per lo svolgimento dei test di penetrazione basati su minacce, le entità finanziarie ricorrono unicamente a soggetto incaricato dello svolgimento dei test che:
+a)
+possano vantare il più alto grado di idoneità e reputazione;
+b)
+possiedano capacità tecniche e organizzative e dimostrino esperienza specifica nel campo delle analisi delle minacce, dei test di penetrazione e dei test red team;
+c)
+siano certificati da un ente di accreditamento in uno Stato membro o rispettino codici formali di condotta o quadri etici;
+d)
+forniscano una garanzia indipendente o una relazione di audit concernente la solida gestione dei rischi derivanti dallo svolgimento di TLPT, comprese la dovuta protezione delle informazioni riservate
+dell’entità finanziaria e il risarcimento dei rischi commerciali dell’entità finanziaria;
+e)
+siano debitamente e pienamente coperti da un’assicurazione di responsabilità professionale, anche contro i rischi di colpa e negligenza.
+2. Quando ricorrono a soggetto incaricato dello svolgimento dei test interni, le entità finanziare devono provvedere affinché, oltre all’obbligo di cui al paragrafo 1, siano soddisfatte le condizioni
+seguenti:
+a)
+tale ricorso è stato approvato dall’autorità competente interessata o dall’autorità pubblica unica designata conformemente all’articolo 26, paragrafi 9 e 10;
+b)
+l’autorità competente interessata ha verificato che l’entità finanziaria dispone di risorse dedicate sufficienti e che essa ha garantito che siano evitati conflitti d’interessi durante le fasi di
+progettazione ed esecuzione del test; e
+c)
+il soggetto che fornisce analisi delle minacce è esterno all’entità finanziaria.
+3. Le entità finanziarie garantiscono che i contratti conclusi con i soggetti incaricati dello svolgimento dei test esterni prevedano una solida gestione dei risultati dei TLPT e che qualsiasi
+trattamento dei dati, comprese la generazione, la conservazione, l’aggregazione, l’elaborazione, la segnalazione, la comunicazione o la distruzione, non comporti rischi per l’entità finanziaria.
+CAPO V
+Gestione dei rischi informatici derivanti da terzi
+Sezione I
+Principi fondamentali di una solida gestione dei rischi informatici derivanti da terzi
+
+=== K38 | [28] Principi generali
+Articolo 28
+Principi generali
+1. Le entità finanziarie gestiscono i rischi informatici derivanti da terzi quali componenti integranti dei rischi informatici nel contesto del proprio quadro per la gestione di detti rischi di cui
+all’articolo 6, paragrafo 1, e conformemente ai principi indicati di seguito:
+a)
+le entità finanziarie che hanno stipulato accordi contrattuali per l’utilizzo di servizi TIC per lo svolgimento delle proprie operazioni commerciali rimangono sempre pienamente responsabili del
+rispetto e dell’adempimento di tutti gli obblighi previsti dal presente regolamento e dalla normativa applicabile in materia di servizi finanziari;
+b)
+la gestione dei rischi informatici derivanti da terzi da parte delle entità finanziarie si svolge nel rispetto del principio di proporzionalità, tenendo conto:
+i)
+della natura, della portata, della complessità e dell’importanza delle dipendenze connesse alle TIC;
+ii)
+dei rischi derivanti dagli accordi contrattuali per l’utilizzo di servizi TIC conclusi con fornitori terzi di servizi TIC, tenendo conto della criticità o dell’importanza dei rispettivi servizi,
+processi o funzioni e del potenziale impatto sulla continuità e la disponibilità delle attività e dei servizi finanziari a livello individuale e di gruppo.
+2. Nel contesto del quadro per la gestione dei rischi informatici TIC, le entità finanziarie diverse dalle entità di cui all’articolo 16, paragrafo 1, primo comma, e dalle microimprese adottano e
+riesaminano periodicamente una strategia per i rischi informatici derivanti da terzi, tenendo conto della strategia basata su una varietà di fornitori di cui all’articolo 6, paragrafo 9, ove
+applicabile. Tale strategia comprende una politica per l’utilizzo dei servizi TIC a supporto di funzioni essenziali o importanti prestati da fornitori terzi e si applica su base individuale e, se del
+caso, su base subconsolidata e consolidata. Sulla base di una valutazione del profilo di rischio complessivo dell’entità finanziaria e della portata e della complessità dei servizi operativi, l’organo
+di gestione riesamina periodicamente i rischi individuati in relazione agli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti.
+3. Nel contesto del quadro per la gestione dei rischi informatici, le entità finanziarie mantengono e aggiornano a livello di entità, e su base subconsolidata e consolidata, un registro di
+informazioni su tutti gli accordi contrattuali per l’utilizzo di servizi TIC prestati da fornitori terzi.
+Gli accordi contrattuali di cui al primo comma sono opportunamente documentati, distinguendo quelli che si riferiscono a servizi TIC a supporto di funzioni essenziali o importanti dagli altri.
+Le entità finanziarie comunicano almeno una volta all’anno alle autorità competenti il numero di nuovi accordi per l’utilizzo di servizi TIC, le categorie di fornitori terzi di servizi TIC, il tipo di
+accordi contrattuali e le funzioni e i servizi TIC forniti.
+Su richiesta, le entità finanziarie mettono a disposizione dell’autorità competente il registro delle informazioni completo o, a seconda della richiesta, determinate sezioni del registro insieme alle
+informazioni giudicate necessarie per consentire l’efficace vigilanza sull’entità finanziaria.
+Le entità finanziarie informano tempestivamente l’autorità competente in merito a eventuali accordi contrattuali previsti per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti,
+nonché del momento in cui una funzione diventa essenziale o importante.
+4. Prima di stipulare un accordo contrattuale per l’utilizzo di servizi TIC, le entità finanziarie:
+a)
+valutano se l’accordo contrattuale riguardi l’utilizzo di servizi TIC a supporto di una funzione essenziale o importante;
+b)
+verificano se siano soddisfatte le condizioni di vigilanza per la conclusione del contratto;
+c)
+identificano e valutano tutti i rischi pertinenti relativi all’accordo contrattuale, compresa la possibilità che tale accordo contrattuale possa aggravare il rischio di concentrazione delle TIC di cui
+all’articolo 29;
+d)
+effettuano controlli di dovuta diligenza ( due diligence ) sui potenziali fornitori terzi di servizi TIC e ne garantiscono l’idoneità lungo tutto il processo di selezione e valutazione;
+e)
+individuano e valutano i conflitti d’interessi che possano derivare dall’accordo contrattuale.
+5. Le entità finanziarie possono stipulare accordi contrattuali soltanto con fornitori terzi di servizi TIC che soddisfano standard appropriati in materia di sicurezza delle informazioni. Laddove tali
+accordi contrattuali riguardino funzioni essenziali o importanti, le entità finanziarie, prima di concludere detti accordi, prendono in debita considerazione l’utilizzo da parte dei fornitori terzi di
+servizi TIC degli standard di qualità più aggiornati ed elevati in materia di sicurezza delle informazioni.
+6. Nell’esercizio dei diritti di accesso, ispezione e audit nei confronti del fornitore terzo di servizi TIC, le entità finanziarie predeterminano, sulla base di un approccio basato sul rischio, la
+frequenza delle verifiche di audit e delle ispezioni nonché i settori da sottoporre ad audit, aderendo a standard di audit comunemente accettate in conformità di eventuali indicazioni di vigilanza
+sull’uso e l’integrazione di tali standard di audit.
+Laddove gli accordi contrattuali conclusi con fornitori terzi di servizi TIC per l’utilizzo di servizi TIC comportino un’elevata complessità tecnica, l’entità finanziaria verifica che i revisori,
+indipendentemente dal fatto che siano revisori interni o esterni o siano un gruppo di revisori, possiedano competenze e conoscenze adeguate per svolgere efficacemente gli audit e le valutazioni del
+caso.
+7. Le entità finanziarie stabiliscono clausole che consentano la risoluzione degli accordi contrattuali per l’utilizzo di servizi TIC in una qualsiasi delle circostanze seguenti:
+a)
+rilevante violazione, da parte del fornitore terzo di servizi TIC, di leggi, regolamenti o condizioni contrattuali applicabili;
+b)
+circostanze, identificate nel corso del monitoraggio dei rischi informatici derivanti da terzi, ritenute suscettibili di alterare l’esercizio delle funzioni previsto a norma dell’accordo contrattuale,
+tra cui modifiche di rilievo che incidano sull’accordo o sulla situazione del fornitore terzo di servizi TIC;
+c)
+punti deboli del fornitore terzo di servizi TIC emersi riguardo alla sua gestione complessiva dei rischi informatici e, in particolare, nel modo in cui il fornitore garantisce la disponibilità,
+autenticità, integrità e riservatezza dei dati, siano essi dati personali o altrimenti sensibili, oppure dei dati non personali;
+d)
+laddove l’autorità competente non sia più in grado di vigilare efficacemente sull’entità finanziaria per via delle condizioni dell’accordo contrattuale in questione o delle circostanze ivi afferenti.
+8. Per i servizi TIC a supporto di funzioni essenziali o importanti, le entità finanziarie predispongono strategie di uscita. Tali strategie tengono conto dei rischi che possono emergere a livello dei
+fornitori terzi di servizi TIC, in particolare possibili disfunzioni dei fornitori stessi, il deterioramento della qualità dei servizi TIC forniti, una perturbazione dell’attività commerciale
+conseguente a una fornitura di servizi TIC inadeguata o carente, oppure gravi rischi connessi all’adeguatezza e alla continuità dell’esercizio del rispettivo servizio TIC oppure la risoluzione di
+accordi contrattuali con fornitori terzi di servizi TIC in una delle circostanze di cui al paragrafo 7.
+Le entità finanziarie garantiscono di poter porre termine agli accordi contrattuali senza:
+a)
+perturbare le proprie attività commerciali;
+b)
+limitare il rispetto dei requisiti normativi;
+c)
+pregiudicare la continuità e la qualità dei servizi forniti ai clienti.
+I piani di uscita sono esaustivi, documentati e, conformemente ai criteri di cui all’articolo 4, paragrafo 2, sottoposti a test adeguati e riesaminati periodicamente.
+Le entità finanziarie identificano soluzioni alternative ed elaborano piani di transizione che consentano loro di trasferire i servizi TIC previsti dal contratto e i relativi dati dal fornitore terzo
+di servizi TIC, in maniera sicura e nella loro interezza, a fornitori alternativi oppure reintegrarli al proprio interno.
+Le entità finanziarie dispongono di misure di emergenza idonee per mantenere la continuità operativa qualora si verifichino le circostanze di cui al primo comma.
+9. Le AEV, tramite il comitato congiunto, elaborano progetti di norme tecniche di attuazione per definire modelli standard in relazione al registro delle informazioni di cui al paragrafo 3, comprese
+le informazioni comuni a tutti gli accordi contrattuali per l’utilizzo di servizi TIC. Le AEV presentano tali progetti di norme tecniche di attuazione alla Commissione entro il 17 gennaio 2024.
+Alla Commissione è conferito il potere di adottare le norme tecniche di attuazione di cui al primo comma in conformità dell’articolo 15 dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 e (UE) n.
+1095/2010.
+10. Le AEV, tramite il comitato congiunto, elaborano progetti di norme tecniche di regolamentazione per precisare ulteriormente il contenuto dettagliato della politica di cui al paragrafo 2, in
+relazione agli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti prestati da fornitori terzi di servizi TIC.
+All’atto dell’elaborazione di tali progetti di norme tecniche di regolamentazione, le AEV tengono conto delle dimensioni e del profilo di rischio complessivo dell’entità finanziaria, nonché della
+natura, della portata e della complessità dei suoi servizi, delle sue attività e delle sue operazioni. Le AEV presentano detti progetti di norme tecniche di regolamentazione alla Commissione 17
+gennaio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al primo comma in conformità degli articoli da 10 a 14 dei
+regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n. 1095/2010.
+
+=== K39 | [29] Valutazione preliminare del rischio di concentrazione delle TIC a livello di entità
+Articolo 29
+Valutazione preliminare del rischio di concentrazione delle TIC a livello di entità
+1. All’atto dell’identificazione e della valutazione dei rischi di cui all’articolo 28, paragrafo 4, lettera c), le entità finanziarie tengono conto altresì dell’eventualità che la prevista
+conclusione di un accordo contrattuale relativo a servizi TIC a supporto di funzioni essenziali o importanti possa avere una delle seguenti conseguenze:
+a)
+la conclusione di un contratto con un fornitore terzo di servizi TIC non facilmente sostituibile; o
+b)
+la presenza di molteplici accordi contrattuali relativi alla prestazione di servizi TIC a supporto di funzioni essenziali o importanti con lo stesso fornitore terzo oppure con fornitori terzi
+strettamente connessi.
+Le entità finanziarie vagliano i benefici e i costi di soluzioni alternative, quali il ricorso a diversi fornitori terzi di servizi TIC, verificando se e come le soluzioni previste soddisfino le
+esigenze commerciali e consentano di conseguire gli obiettivi fissati nella propria strategia di resilienza digitale.
+2. Qualora gli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti prevedano la possibilità che un fornitore terzo di servizi TIC subappalti a sua volta
+servizi TIC a supporto di una funzione essenziale o importante ad altri fornitori terzi di servizi TIC, le entità finanziarie vagliano i benefici e i rischi che possono derivare da tale subappalto, in
+particolare nel caso di un subappaltatore di TIC stabilito in un paese terzo.
+Qualora gli accordi contrattuali riguardino servizi TIC a supporto delle funzioni essenziali o importanti, le entità finanziarie tengono in debita considerazione le disposizioni del diritto
+fallimentare applicabili in caso di fallimento del fornitore terzo di servizi TIC come pure eventuali restrizioni relative all’urgente ripristino dei dati dell’entità finanziaria.
+Qualora gli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti siano conclusi con un fornitore terzo di servizi TIC stabilito in un paese terzo, le
+entità finanziarie, in aggiunta alle considerazioni di cui al secondo comma, tengono conto altresì del rispetto delle norme dell’UE sulla protezione dei dati e dell’effettiva applicazione della legge
+in tale paese terzo.
+Qualora gli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti prevedano un subappalto, le entità finanziarie valutano se e come catene di subappalti
+potenzialmente lunghe e complesse possano incidere sulla loro capacità di monitorare pienamente le funzioni appaltate e sulla capacità dell’autorità competente di vigilare efficacemente, a tal
+proposito, sull’entità finanziaria.
+
+=== K40 | [30] Principali disposizioni contrattuali
+Articolo 30
+Principali disposizioni contrattuali
+1. I diritti e gli obblighi dell’entità finanziaria e del fornitore terzo di servizi TIC sono attribuiti chiaramente e definiti per iscritto. Il testo integrale del contratto comprende gli accordi sul
+livello dei servizi ed è contenuto in un documento scritto disponibile alle parti in formato cartaceo oppure in un documento in altro formato scaricabile, durevole e accessibile.
+2. Gli accordi contrattuali per l’utilizzo di servizi TIC comprendono almeno gli elementi seguenti:
+a)
+la descrizione chiara e completa di tutte le funzioni che il fornitore terzo di servizi TIC deve svolgere e tutti i servizi TIC che deve prestare, comprese l’indicazione dell’eventuale autorizzazione
+a subappaltare un servizio TIC a sostegno di una funzione essenziale o importante o parti significative di essa e, in caso affermativo, le condizioni di tale subappalto;
+b)
+le località, segnatamente le regioni o i paesi, in cui si devono svolgere le funzioni e prestare i servizi TIC appaltati o subappaltati e in cui si devono trattare i dati, compreso il luogo di
+conservazione, nonché l’obbligo, per il fornitore terzo di servizi TIC, di segnalare in anticipo all’entità finanziaria l’intenzione di cambiare tale o tali località;
+c)
+le disposizioni in materia di disponibilità, autenticità, integrità e riservatezza in relazione alla protezione dei dati, compresi i dati personali;
+d)
+le disposizioni relative alle garanzie di accesso, ripristino e restituzione, in un formato facilmente accessibile, di dati personali e non personali trattati dall’entità finanziaria in caso di
+insolvenza, risoluzione o interruzione delle operazioni commerciali del fornitore terzo di servizi TIC o in caso di risoluzione degli accordi commerciali;
+e)
+le descrizioni dei livelli di servizio, compresi relativi aggiornamenti e revisioni;
+f)
+l’obbligo per il fornitore terzo di servizi TIC di prestare assistenza all’entità finanziaria senza costi aggiuntivi o a un costo stabilito ex ante, qualora si verifichi un incidente connesso alle TIC
+relativo al servizio TIC fornito all’entità finanziaria;
+g)
+l’obbligo per il fornitore terzo di servizi di TIC di operare senza riserve con le autorità competenti e con le autorità di risoluzione dell’entità finanziaria, comprese le persone da queste nominate;
+h)
+i diritti di risoluzione e il relativo termine minimo di preavviso per la risoluzione degli accordi contrattuali, conformemente alle attese delle autorità competenti e delle autorità di risoluzione;
+i)
+le condizioni riguardanti la partecipazione dei fornitori terzi di servizi TIC ai programmi di sensibilizzazione sulla sicurezza delle TIC e alle attività di formazione sulla resilienza operativa
+digitale delle entità finanziarie conformemente all’articolo 13, paragrafo 6.
+3. Gli accordi contrattuali per l’utilizzo di servizi TIC a supporto di funzioni essenziali o importanti comprendono, in aggiunta agli elementi di cui al paragrafo 2, almeno quanto segue:
+a)
+la descrizione completa dei livelli di servizio, comprendente i relativi aggiornamenti e revisioni con precisi obiettivi quantitativi e qualitativi, in termini di prestazioni, nell’ambito dei livelli
+di servizio concordati, in modo da consentire un monitoraggio efficace da parte dell’entità finanziaria dei servizi TIC e l’applicazione, senza indebito ritardo, di opportune azioni correttive qualora
+i livelli di servizio concordati non siano rispettati;
+b)
+termini di preavviso e obblighi di segnalazione per il fornitore terzo di servizi TIC nei confronti dell’entità finanziaria, tra cui la notifica di eventuali sviluppi che potrebbero esercitare un
+impatto significativo sulla capacità del fornitore terzo di servizi TIC di prestare servizi a supporto di funzioni essenziali o importanti efficacemente, in linea con i livelli di servizio concordati;
+c)
+l’obbligo per il fornitore terzo di servizi TIC di attuare e testare i piani operativi d’emergenza e di predisporre misure, strumenti e politiche per la sicurezza delle TIC che offrano un adeguato
+livello di sicurezza per la fornitura dei servizi da parte dell’entità finanziaria, in linea con il proprio quadro normativo;
+d)
+l’obbligo per il fornitore terzo di servizi TIC di partecipare e cooperare pienamente al TLPT dell’entità finanziaria di cui agli articoli 26 e 27;
+e)
+il diritto di monitorare costantemente le prestazioni del fornitore terzo di servizi TIC, che comporta quanto segue:
+i)
+diritti incondizionati di accesso, ispezione e audit da parte dell’entità finanziaria — o di un terzo designato a tal fine — e dell’autorità competente nonché il diritto di ottenere copia della
+documentazione pertinente in loco, se di importanza critica per le operazioni del fornitore terzo di servizi TIC, il cui effettivo esercizio non sia impedito o limitato da altri accordi contrattuali o
+politiche di attuazione;
+ii)
+il diritto di concordare livelli di garanzia alternativi, qualora siano interessati i diritti di altri clienti;
+iii)
+l’obbligo per il fornitore terzo di servizi TIC di cooperare senza riserve nel corso delle ispezioni e degli audit in loco svolti dalle autorità competenti, dall’autorità di sorveglianza capofila,
+dall’entità finanziaria o da un terzo designato; e
+iv)
+l’obbligo di fornire dettagli sull’ambito di applicazione, sulle procedure da seguire e sulla frequenza di tali ispezioni e audit;
+f)
+le strategie di uscita, in particolare la definizione di un adeguato periodo di transizione obbligatorio:
+i)
+durante il quale il fornitore terzo di servizi TIC continuerà a prestare i suoi servizi TIC o a esercitare le sue funzioni allo scopo di ridurre il rischio di perturbazioni presso l’entità finanziaria
+o di garantire la sua efficace risoluzione e ristrutturazione;
+ii)
+che permetta all’entità finanziaria di migrare verso un altro fornitore terzo di servizi TIC oppure di adottare soluzioni interne coerenti con la complessità del servizio prestato.
+In deroga alla lettera e), il fornitore terzo di servizi TIC e l’entità finanziaria che è una microimpresa possono convenire che i diritti di accesso, ispezione e audit dell’entità finanziaria possano
+essere delegati a un terzo indipendente, nominato dal fornitore terzo di servizi TIC, e che l’entità finanziaria possa richiedere in qualsiasi momento al terzo informazioni e garanzie sulle
+prestazioni del fornitore terzo di servizi TIC.
+4. All’atto della negoziazione degli accordi contrattuali, le entità finanziarie e i fornitori terzi di servizi TIC prendono in considerazione il ricorso a clausole contrattuali standard elaborate
+dalle autorità pubbliche per servizi specifici.
+5. Le AEV, tramite il comitato congiunto, elaborano progetti di norme tecniche di regolamentazione per specificare ulteriormente gli elementi di cui al paragrafo 2, lettera a), che l’entità
+finanziaria deve determinare e valutare quando subappalta servizi TIC a supporto di funzioni essenziali o importanti.
+All’atto dell’elaborazione di tali progetti di norme tecniche di regolamentazione, le AEV tengono conto delle dimensioni e del profilo di rischio complessivo dell’entità finanziaria, nonché della
+natura, della portata e della complessità dei suoi servizi, delle sue attività e delle sue operazioni.
+Le AEV presentano tali progetti di norme tecniche di regolamentazione alla Commissione entro il 17 luglio 2024.
+Alla Commissione è delegato il potere di integrare il presente regolamento, adottando le norme tecniche di regolamentazione di cui al primo comma in conformità degli articoli da 10 a 14 dei
+regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n. 1095/2010.
+Sezione II
+Quadro di sorveglianza dei fornitori terzi critici di servizi TIC
+
+=== K41 | [31] Designazione dei fornitori terzi critici di servizi TIC
+Articolo 31
+Designazione dei fornitori terzi critici di servizi TIC
+1. Le AEV, tramite il comitato congiunto e su raccomandazione del forum di sorveglianza istituito ai sensi dell’articolo 32, paragrafo 1:
+a)
+designano i fornitori terzi di servizi TIC che sono critici per le entità finanziarie, a seguito di una valutazione che tiene conto dei criteri di cui al paragrafo 2;
+b)
+nominano quale autorità di sorveglianza capofila di ciascun fornitore terzo critico di servizi TIC la AEV che è responsabile, a norma dei regolamenti (UE) n. 1093/2010, (UE) n. 1094/2010 o (UE) n.
+1095/2010, delle entità finanziarie che possiedono complessivamente la quota maggiore delle attività totali rispetto al valore delle attività totali di tutte le entità finanziarie che utilizzano i
+servizi del pertinente fornitore terzo critico di servizi TIC, secondo quanto risulta dalla somma dei singoli bilanci di quelle entità finanziarie.
+2. La designazione di cui al paragrafo 1, lettera a), si fonda su tutti i criteri indicati di seguito in relazione ai servizi TIC prestati da un fornitore terzo di servizi TIC:
+a)
+l’impatto sistemico sulla stabilità, la continuità o la qualità della fornitura di servizi finanziari qualora il fornitore terzo di servizi TIC pertinente sia interessato da una disfunzione operativa
+su vasta scala che gli impedisca di fornire i suoi servizi, tenendo conto del numero di entità finanziarie e del valore totale delle attività delle entità finanziarie cui quel fornitore terzo di
+servizi TIC presta servizi;
+b)
+il carattere sistemico o l’importanza delle entità finanziarie che dipendono da quel fornitore terzo di servizi TIC, valutati in conformità dei parametri seguenti:
+i)
+il numero di enti a rilevanza sistemica a livello globale (G-SII) o di altri enti a rilevanza sistemica (O-SII) che dipendono dal rispettivo fornitore terzo di servizi TIC;
+ii)
+l’interdipendenza tra i G-SII o gli O-SII di cui al punto i) e altre entità finanziarie, comprese le situazioni in cui i G-SII o gli O-SII prestano servizi finanziari infrastrutturali ad altre entità
+finanziarie;
+c)
+la dipendenza delle entità finanziarie dai servizi prestati dal pertinente fornitore terzo di servizi TIC in rapporto alle funzioni essenziali o importanti delle entità finanziarie che in ultima
+analisi coinvolgono quel medesimo fornitore terzo di servizi TIC, indipendentemente dal fatto che le entità finanziarie dipendano da tali servizi direttamente o indirettamente, mediante accordi di
+subappalto;
+d)
+il grado di sostituibilità del fornitore terzo di servizi TIC, prendendo in considerazione i parametri seguenti:
+i)
+la mancanza di alternative reali, anche parziali, dovuta al limitato numero di fornitori terzi di servizi TIC attivi su un mercato specifico, alla quota di mercato del fornitore terzo di servizi TIC
+in questione, o ancora alla complessità tecnica o al grado di sofisticazione, anche in relazione a eventuali tecnologie proprietarie, o alle caratteristiche specifiche dell’organizzazione o
+dell’attività del fornitore terzo di servizi TIC;
+ii)
+difficoltà inerenti alla migrazione, totale o parziale, dei dati e dei carichi di lavoro dal fornitore terzo di servizi TIC pertinente a un altro, a causa dei cospicui costi finanziari, del tempo o di
+altre risorse che possono essere necessarie per il processo di migrazione, oppure dei maggiori rischi informatici o di altri rischi operativi cui l’entità finanziaria può esporsi a causa di tale
+migrazione.
+3. Laddove il fornitore terzo di servizi TIC appartenga a un gruppo, i criteri di cui al paragrafo 2 sono presi in considerazione in relazione ai servizi TIC prestati dal gruppo nel suo insieme.
+4. I fornitori terzi critici di servizi TIC che fanno parte di un gruppo designano una persona giuridica come punto di coordinamento per garantire un’adeguata rappresentanza e la comunicazione con
+l’autorità di sorveglianza capofila.
+5. L’autorità di sorveglianza capofila informa il fornitore terzo di servizi TIC in merito all’esito della valutazione che ha portato alla designazione di cui al paragrafo 1, lettera a). Entro sei
+settimane dalla data della notifica, il fornitore terzo di servizi TIC può presentare all’autorità di sorveglianza capofila una dichiarazione motivata contenente tutte le informazioni pertinenti ai
+fini della valutazione. L’autorità di sorveglianza capofila esamina la dichiarazione motivata e può richiedere ulteriori informazioni da presentare entro 30 giorni di calendario dal ricevimento di
+detta dichiarazione.
+Dopo aver designato un fornitore terzo di servizi TIC come critico, le AEV, tramite il comitato congiunto, notificano al fornitore terzo di servizi TIC tale designazione e la data di inizio a partire
+dalla quale sarà effettivamente soggetto ad attività di sorveglianza. La data di inizio è fissata a non più di un mese dall’avvenuta notifica. Il fornitore terzo di servizi TIC notifica alle entità
+finanziarie a cui presta servizi la propria designazione come critico.
+6. Alla Commissione è conferito il potere di adottare un atto delegato, conformemente all’articolo 57, per integrare il presente regolamento specificando ulteriormente i criteri di cui al paragrafo 2
+del presente articolo, entro il 17 luglio 2024.
+7. Il meccanismo di designazione di cui al paragrafo 1, lettera a), non è utilizzato fino a quando la Commissione non abbia adottato un atto delegato in conformità del paragrafo 6.
+8. Il meccanismo di designazione di cui al paragrafo 1, lettera a), non si applica:
+i)
+alle entità finanziarie che forniscono servizi TIC ad altre entità finanziarie;
+ii)
+ai fornitori terzi di servizi TIC che sono soggetti a quadri di sorveglianza istituiti a supporto dei compiti di cui all’articolo 127, paragrafo 2, del trattato sul funzionamento dell’Unione europea;
+iii)
+ai fornitori intragruppo di servizi TIC;
+iv)
+ai fornitori terzi di servizi TIC che prestano servizi TIC unicamente in uno Stato membro a entità finanziarie attive solo in tale Stato membro.
+9. Le AEV, tramite il comitato congiunto, redigono, pubblicano e aggiornano ogni anno l’elenco dei fornitori terzi critici di servizi TIC a livello di Unione.
+10. Ai fini del paragrafo 1, lettera a), le autorità competenti, con cadenza annuale e in forma aggregata, trasmettono le relazioni di cui all’articolo 28, paragrafo 3, terzo comma, al forum di
+sorveglianza istituito ai sensi dell’articolo 32. Il forum di sorveglianza valuta la dipendenza delle entità finanziarie da terzi nel settore delle TIC sulla base delle informazioni ricevute dalle
+autorità competenti.
+11. I fornitori terzi di servizi TIC che non sono inseriti nell’elenco di cui al paragrafo 9 possono chiedere di essere designati come critici conformemente al paragrafo 1, lettera a).
+Ai fini del primo comma, il fornitore terzo di servizi TIC presenta una domanda motivata all’ABE, all’ESMA o all’EIOPA; queste ultime, tramite il comitato congiunto, decidono se designare tale
+fornitore terzo di servizi TIC come critico conformemente al paragrafo 1, lettera a).
+La decisione di cui al secondo comma è adottata e notificata al fornitore terzo di servizi TIC entro sei mesi dalla data in cui è stata ricevuta la domanda.
+12. Le entità finanziarie ricorrono ai servizi di un fornitore terzo di servizi TIC stabilito in un paese terzo e che è stato designato come critico conformemente al paragrafo 1, lettera a), soltanto
+se detto fornitore ha istituito un’impresa figlia nell’Unione entro 12 mesi dalla designazione.
+13. Il fornitore terzo critico di servizi TIC di cui al paragrafo 12 notifica all’autorità di sorveglianza capofila eventuali cambiamenti nella struttura gestionale dell’impresa figlia istituita
+nell’Unione.

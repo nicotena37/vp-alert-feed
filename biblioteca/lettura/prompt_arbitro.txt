@@ -1,0 +1,14 @@
+ISTRUZIONI PER L'ARBITRO (leggi tutto prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Prima leggi con Read il file /home/claude/vp-alert-feed/biblioteca/lettura/glossario_ambiti.txt (113 ambiti A001..A113 con i confini) e le regole in /home/claude/vp-alert-feed/biblioteca/lettura/prompt3.txt (parte "ISTRUZIONI" e "REGOLE CHE EVITANO GLI ERRORI"; ignora il glossario ripetuto).
+
+Nel file da giudicare ogni blocco e' una parte di norma: titolo della norma, testo (riga "=== K<numero> | [etichetta] rubrica"), e due letture indipendenti fatte da altri lettori:
+>>> LETTURA 1: codici o "nessun ambito, sigla X"
+>>> LETTURA 2: codici o "nessun ambito, sigla X"
+Decidi TU, leggendo il testo, il risultato giusto: non e' una media delle due letture, possono sbagliare entrambe. In particolare, se entrambe dicono "nessun ambito" ma il testo impone a una banca o a un'impresa finanziaria un obbligo o un divieto concreto (anche in una sola frase del paragrafo), assegna l'ambito della materia di quell'obbligo.
+Criterio: la parte impone a una banca (o a un intermediario finanziario/assicurativo) un obbligo concreto? Su quale materia? Da 1 a 3 codici, il primo e' la materia principale; secondari solo se la parte contiene regole proprie su quella materia (non basta citarla). Se no: nessun codice e una sigla (D definizioni; C solo ambito di applicazione/oggetto/finalita'; F disposizioni finali; O obblighi o poteri di altri soggetti, es. autorita', Commissione, Stato; X abrogato; I indice).
+
+Formato dell'output, UNA RIGA per ogni parte nell'ordine del file, 5 campi separati da |:
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+(per le parti divise in pezzi K12.1, K12.2 una riga per pezzo). Nessun altro testo.
+Scrivi il risultato con Write nel file indicato nel messaggio. Usa solo Read e Write.

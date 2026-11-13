@@ -1,0 +1,705 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Joint Guidelines on the estimation of aggregated costs/losses caused by major ICT-related incidents  (id EBA-8edbe0bc94)
+
+=== K276 | [Art. 11] (10-11) of DORA and Paragraph 8 of the GL:
+Art. 11(10-11) of DORA and Paragraph 8 of the GL:
+possible.
+DORA requires estimates, whereas the GL expects
+financial entities to refer to the amounts that are
+reflected in their financial statements such as the
+profit and loss account.
+Accuracy of the One respondent argued that a statement on the On the principle, the ESAs agree with the respondent that the annual The Annex has been amended to specify that
+data accuracy of the data should be included, analogue aggregated report, which is an estimation, should not need to be monetary values have to be reported in 1000s of
+to Article 8(1) point a)i) of the Draft RTS on major more precise than the final incident report, which are the actual units.
+incident reporting under DORA which states that impact figures. However, the requirement from the ITS on major
+“data points with the data type ‘Monetary’ shall be incident reports that the respondent refers to is not an alleviation of
+reported using a minimum precision equivalent to reporting accuracy but merely a reporting standard to be able to
+thousands of units”. interpret the figures uniformly. This means that the level of precision
+of the figures is effectively different in dependency of the currency on
+which the financial entity reports the figures.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Consequently, in view of the ESAs, there is no need to specify the level
+of accuracy in the Guidelines as this will give CAs more flexibility in
+setting the level of necessary accuracy, also in consideration of the
+type of entity, its size and other relevant criteria. Nevertheless, to
+avoid a misunderstanding when filling out the template, the template
+has been amended to specify that monetary values have to be
+reported in 1000s of units.
+Group-level vs. Three respondents stated that in capital groups, Article 11(10) DORA requires the reporting at the level of the No change.
+entity-level costs and losses are usually calculated at a group financial entity, not at group level.
+reporting. level. Therefore, the Draft Guidelines should allow
+for the estimates on costs and losses to be
+calculated at a group level.
+Cross-country One respondent asked more details how to reflect As the reporting should be done at the level of the financial entity, it No change.
+incidents on major incident covering two or more countries. should include all costs and losses, irrespective where they
+originated.
+Feedback on responses to question 2: Do you agree with paragraphs 5, 6 and 8 of the Guidelines on the specification of the one-year period, the incidents to
+include in the aggregation and the base of information for the estimation of the aggregated annual gross and net costs and losses of major ICT-related
+incidents? If not, please provide your reasoning and alternative approach(es) you would suggest.
+Allow for Several respondents argued to allow for reporting The ESAs’ initial proposal in the Consultation Paper aimed at limiting Paragraph 5 has been amended as follows:
+estimation based by calendar year and based on supervisory reporting the reporting burden for financial entities, as many of them are not
+on supervisory or internal risk management figures instead of subject to regular reporting requirements like credit institutions that “Financial entities should estimate the aggregate
+reporting, the reporting by financial year and based on financial report on operational risks. These entities seem to overwhelmingly annual costs and losses of major ICT-related incidents
+operational risk statements, because: support the possibility to base the estimations on accounting figures, by aggregating the costs and losses for major ICT-
+framework and for which it is necessary to stick to the accounting year.
+- Financial accounts do not include the types of costs related incidents that fall within the reference period.
+calendar year
+that are listed in the RTS on classification while Nevertheless, the ESAs acknowledge that especially for credit The reference period should be the completed
+operational risk losses do. institutions and other financial entities that have already established accounting year for which the competent authority
+an operational risk framework, it makes more sense to provide the
+- Reporting requirements under the CRR operational requested the estimation. The financial entity may
+reporting on already existing reporting of operational risk.
+risk framework and DORA should be harmonized. choose whether the reference year should
+Consequently, the ESAs have decided to amend the Guidelines to correspond to either the completed calendar year, or
+- Asset managers already use annual cost estimates
+allow financial entities to choose which reference year they intend to to the completed accounting year of the financial
+for risk management purposes on a calendar year
+use. However, once they have decided whether they will report based
+basis. Reporting for the financial year would lead to entity for which the financial entity has finalised its
+on the calendar year or the accounting year, financial entities should
+an additional burden for them. financial statements. Once a financial entity has
+also provide future annual reports on the same type of year. If a
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+financial entity wanted to change its decision, it should notify the decided whether it will provide the estimation based
+- Nevertheless, other FEs support using the
+competent authority, who would have a 2-month period to object to on the calendar year or its accounting year, such a
+accounting year and financial statements, but
+the change of decision. This approach to provide flexibility on which decision should be applied to future estimations of
+request to specify that it is the accounting year of
+year to use will make it simpler for financial entities to choose the
+the FE, not of the CA. aggregated annual costs and losses. The financial
+most appropriate and easily accessible data source they have. This
+will especially benefit financial entities that have such information entity may change that decision by notifying the
+available via their supervisory reporting, for instance credit competent authority, and provided that the
+institutions. competent authority does not object within two
+months of receiving the notification. Financial entities
+should not include costs and losses related to those
+incidents that fall before or after that reference
+period year.”
+Paragraph 6 has been amended as follows:
+“Financial entities should include in the estimation all
+ICT-related incidents that, irrespective of the reason,
+were classified as major in accordance with the
+Commission Delegated Regulation [OJ L,
+2024/1772, 25.6.2024] on incident classification
+and
+(a) for which the financial entity has submitted
+a final report in accordance with Article
+19(4)(c) Regulation (EU) 2022/2554 in the
+relevant accounting reference year, or
+(b) any incident for which the financial entity
+submitted in previous accounting reference
+years a final report in accordance with Article
+19(4)(c) of Regulation (EU) 2022/2554 that
+had a quantifiable financial impact on the
+validated financial statements such as the
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+profit and loss account of the financial entity
+in the relevant accounting reference year.”
+Paragraph 8 has been amended as follows:
+“As basis for the estimations, financial entities
+should refer to the costs, losses and financial
+recoveries that are reflected in their financial
+statements such as the profit and loss account, or
+where applicable in their supervisory reporting, of
+the relevant accounting reference year, and that, if
+legally required, are validated by an independent
+entity. In their estimation, financial entities should
+also include accounting provisions that are reflected
+in their validated financial statements such as the
+profit and loss account of the relevant accounting
+reference year. Where accurate data is not available,
+financial entities should base their estimation on
+other available data and information to the extent
+possible.”
+Paragraph 9 has been amended as follows:
+“ Financial entities should include adjustments on
+the costs and losses reported in the aggregated
+reporting of an estimation that it submitted for a
+previous year in the reporting estimation of the
+relevant accounting reference year in which the
+adjustments are made.”
+Definition of the One respondent asked whether the word "annual" Paragraph 5 of the GL says the reference period is the completed No change.
+reference period should be understood as "calendar" or "fiscal" year. accounting year, which may also be known as the ‘fiscal’ or ‘financial’
+year of the financial entity. It is already defined by the financial
+Another respondent asked to clarify whether the
+entities when submitting their annual accounts.
+accounting year can be specified by the financial
+entity or by the NCA. Setting the start and end date to be identical with the accounting year
+of the financial entity creates the lowest administrative burden for
+Two respondents said that internal financial
+many financial entities, because financial entities can use their
+accounting processes must be modified to meet the
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+reporting requirement and suggest to refer to the financial statements that cover exactly that period as a source of
+general ledger. information for the estimation.
+One respondent said that Paragraph 5 is unclear The last comment about an incident overlapping with several
+(“The reference period should be the completed reference periods is addressed in paragraph 6(b).
+accounting year for which the competent authority
+requested the estimation”) in the case an incident
+overlaps two accounting years.
+Limiting the One respondent requested to include a maximum The ESAs are of the view that it is essential for competent authorities No change.
+number of years number of 3 years backwards from the current for to be able to request the annual reports, where necessary, for several
+for which the CA which the competent authority can request the years. The added value of the Guidelines is to provide the CA a view
+can request the annual report. of the development of the costs and losses over time and thus draw
+annual report. conclusions on the response and recovery actions of the FEs.
+Given that financial entities shall report the annual costs and losses
+to their competent authorities only upon the CAs’ request, it should
+be already clear that the reporting is not automatic.
+Frequency of One respondent asked to confirm that the annual Article 11(10) DORA allows CAs to request this report, it does not No change.
+reporting report will only need to be submitted to the NCA require entities to provide this report even without being requested
+upon its request and not automatically every year. by the CA. The frequency of the reporting will depend on the
+supervisory needs and will be subject to the request from the CA.
+Apply threshold Some respondents argued that not all major ICT- The ESAs disagree with this proposal as it would a) be contrary to the No change.
+for inclusion of related incidents should be included: level one requirement to provide an aggregate overview of costs and
+incidents and losses of major ICT-related incidents, which in the understanding of
+Either a minimum threshold of the costs and losses
+time-limit for the ESAs is independent of the reason of classification and b) reduce
+should be included to disregard negligible costs and
+costs and losses the informative value of the annual report. Furthermore, under this
+losses and keep the reporting burden low, or only
+proposal, financial entities will nevertheless need to estimate the
+include ICT-related incidents that met the
+costs and losses and only once they have done all the work they could
+“economic impact criterion” in the process of being
+establish whether to include the incidents or not. This would not
+classified as “major”.
+reduce the reporting burden for financial entities.
+Furthermore, some respondents argued that only
+Regarding the proposal to limit the time, this contradicts the logic of
+include costs of incidents that occurred in the
+the Guidelines to be able to understand the evolution of costs and
+reporting year, and adjustments to incidents that
+losses over time.
+occurred the year before that reporting year.
+Incidents from further in the past should not be
+considered to limit how long an incident needs to be
+“tracked”.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+Independent Some respondents stated that paragraph 8 "(...) and The reason for this provision is to give a trusted and ideally Paragraph 5 has been amended as shown further
+validation of that, if legally required, are validated by an independent source for costs and losses estimation. The phrase “if above in this feedback table.
+financial independent entity" is unnecessary and confusing. legally required” is included to take into account the fact that some
+statements As not all elements referred to by paragraph 7 are financial entities may not be subject to this requirement, while listed
+reflected in financial statements, let alone companies usually are subject to that requirement. This does not
+independent validation. This could also cause contradict accounting rules and does not impose a new requirement
+additional, disproportionate costs of external to validate the financial statements. Also, no external validation of
+validation of annual reports, especially given that the annual report on costs and losses itself is required.
+only estimations are required by the Guidelines.
+Nevertheless, the ESAs have decided to delete the reference and
+One respondent asked whether the report on costs instead clarify in paragraph 5 of the Guidelines the reference year can
+and losses needs external validation. be that completed accounting year of the financial entity for which
+the financial entity has finalised its financial statements.
+No financial Some respondents stated that the guidelines are The ESAs emphasize that the Guidelines do not introduce any changes As explained further above in this feedback table,
+statements not consistent with accounting rules. If changes to to financial reporting or accounting rules. The financial statements the amendments to paragraph 8 of the Guidelines
+reconciliation financial reporting are necessary, they should be and accounting merely serve as a source of information for the clarify this further.
+determined under the framework of national estimation.
+accounting legislation. Therefore, the proposal is
+that FE provide prudent estimation of the
+aggregated costs and losses of the incidents of the
+past year, without reflecting them in the financial
+statements.
+Feedback on responses to question 3: Do you agree with paragraph 10 and 11 and the annex of the Guidelines on the reporting of annual costs and losses of
+major ICT-related incidents? If not, please provide your reasoning and alternative approach(es) you would suggest.
+Currency to use One respondent argued that the amounts to be If the official currency is not EUR, every costs should be indicated in No change.
+in the report reported if both EUR and non-EUR currencies should local currency according to the principle already established in the
+be taken into account. RTS on incident reporting.
+Scope of the One respondent stated that there is no legal basis The ESAs disagree with this view. The RTS on classification of incidents No change.
+template and for the additional report on costs per incident in Art. requires FEs to determine gross cost and losses to assess whether the
+breakdown by 11(10) and (11) DORA. economic impact criterion has been met. Thereby, gross cost and
+incident losses indicate the impact of the incident, not reflecting who is
+Two respondents are of the view that the reporting
+impacted. Furthermore, it requests reporting financial recoveries.
+of required data fields is too burdensome. While
+However, as explained further above, the ESAs have decided to delete
+some respondents propose to focus reporting on
+the requirement of reporting net costs and losses, as these can be
+gross cost and losses others suggest to just report
+simply calculated by CAs themselves.
+aggregated net cost and losses.
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+As explained in the CP of the GL, the breakdown by incident is also
+necessary to substantiate the aggregated figures.
+Distinction of Some respondents suggested making a distinction in Incidents that do not trigger the economic impact criterion (100k Paragraph 6 has been amended as follows:
+incidents, which the reporting template between incidents that have EUR) can still be classified as major due to other factors, and that does
+triggered the triggered the economic impact criterion according not mean the incident is without an economic impact. As the annual “Financial entities should include in the estimation all
+‘economic to the RTS on incident classification and those that report is non-public and the competent authority has in any case the ICT-related incidents that, irrespective of the reason,
+impact’ criterion have not in order to avoid misrepresentation of the information via the final incident report on the criteria that led to the were classified as major in accordance with the
+financial entity’s risk profile and operational classification of the incident as ‘major’, the ESAs do not consider this
+resilience. additional reporting requirement to be necessary. Nevertheless, the Commission Delegated Regulation [ OJ L,
+ESAs have decided to clarify paragraph 6. 2024/1772, 25.6.2024] on incident classification
+and […]”
+Reporting tool Four respondents suggested using an online In view of the ESAs, CAs can decide independently about the No change.
+platform where FEs can report estimates and where application of the reporting requirements as well as about the
+they can access previous reports. implementation of reporting platforms and methods in their
+jurisdiction. In addition, the mandate of Article 11(10) DORAis about
+the estimation of aggregated annual costs and losses, not about the
+reporting conditions.
+Feedback on responses to question 4: Any other comment
+Purpose of the Six respondents questioned the benefit of reporting DORA sets out the legal mandate for the reporting of aggregated No change.
+report aggregated annual cost and losses due to various annual cost and losses upon request by CAs in Article 11(10).
+reasons: Data is only available long after the
+incident; the reporting of incidents should just focus
+on the impact on clients and customers and not on
+FEs; data on cost and losses of major ICT-related
+incident should already been submitted as part of
+final incident reports under Article 19(4) (c) DORA.
+Proportionality Three respondents stated that smaller financial The annual report should be an estimation and does not aim at being No change.
+entities will not be able to make accurate fully accurate. Furthermore, smaller financial entities are less likely to
+estimations of gross and net losses. The application be requested to provide such a report, both because the classification
+of the principle of proportionality is based on of major ICT-related incidents already provides for proportionality,
+incorrect assumptions, since smaller entities are given many criteria defined in the draft RTS on incident classification
+more likely to classify an incident as major, due to are relative and criteria in absolute values are high. In addition, CAs
+will request the reporting for the various types of financial entities
+JOINT COMMITTEE GUIDELINES ON AGGREGATED ANNUAL COSTS AND LOSSES OF MAJOR ICT-RELATED INCIDENTS
+more Single Point of Failures and to fewer incident under their responsibility, in line with their general supervisory
+mitigation measures practices, which is generally risk-based. Also, Article 11(10) DORA
+exempts microenterprises from reporting annual costs and losses.
+Reconciliation of One respondent stated that more clarity is needed The annual report is independent of the final incident reports given No change.
+the annual report on whether financial entities will have to reconcile they will not be reported at the same time. The final incident reports
+with final incident the content of the cost and losses reports with the will not need to be updated or adjusted. The annual report will also
+report final incident reports. In particular, the Guidelines not need to be updated: adjustments only have to be included in the
+should clarify whether financial entities will be annual cost and losses reports of the following year, in case the CA
+expected to correct both the closed final incident requests that report, too.
+report and cost and losses reports to make sure they
+reconcile, in the event where additional recoveries
+are made after submitting a final incident report.
+Comments Several respondents raised comments that do not DORA mandates the reporting of the economic impact in the final
+relating to the relate to the Guidelines themselves, but rather to incident report. This has to be provided in all cases, irrespective
+final incident the obligation to submit a final incident report, such whether the ‘economic impact’ criterion has been met for
+report as: classification of the incident as ‘major’.
+- the costs and losses should only be provided in the The annual report is an additional requirement that only has to be
+annual report, provided upon request of the competent authority and has no impact
+on the submission and the content of the final incident report.
+- The costs and losses cannot be provided within 30
+days of the incident in the final incident report. The 30-day deadline is established in the ITS on incident reporting
+according to Article 20 DORA. A deferred reporting of the costs and
+losses to update the final incident report is not foreseen by DORA.
+Comparable data Two respondents disagreed with the sentence on The ESAs are conscious of the fact that not all ICT major incidents are No change.
+paragraph 11 in the rationale section of the CP, the same. The meaning of the paragraph 11 was mainly due to the
+stating that “the ESAs are of the view that the fact that the GLs, since they aim to aggregate information for all major
+figures for each major ICT-related incident need to ICT-related incidents of FE in the reporting period, need to take into
+be comparable”. For the respondents this suggests account figures that are comparable as far as possible.
+that all major incidents are similar, which is not the
+case and the ESAs need to carefully consider what
+exactly is being compared and to what effect.
+
+
+######## NORMA: Joint Guidelines on estimation of aggregated annual costs and losses caused by major ICT-related incidents under DORA  (id EIOPA-cca79f5445)
+
+=== K278 | [par. 18 (2)] March 2025
+18 March 2025
+български
+(349.68 KB - PDF)
+Download
+español
+(308.42 KB - PDF)
+Download
+čeština
+(349.32 KB - PDF)
+Download
+dansk
+(304.52 KB - PDF)
+Download
+Deutsch
+(306.69 KB - PDF)
+Download
+eesti
+(300.32 KB - PDF)
+Download
+ελληνικά
+(354.15 KB - PDF)
+Download
+français
+(305.74 KB - PDF)
+Download
+Gaeilge
+(304.41 KB - PDF)
+Download
+hrvatski
+(351.19 KB - PDF)
+Download
+italiano
+(314.83 KB - PDF)
+Download
+latviešu
+(350.58 KB - PDF)
+Download
+lietuvių
+(353.49 KB - PDF)
+Download
+magyar
+(367.19 KB - PDF)
+Download
+Malti
+(352.49 KB - PDF)
+Download
+Nederlands
+(308.73 KB - PDF)
+Download
+polski
+(357.59 KB - PDF)
+Download
+português
+(310.85 KB - PDF)
+Download
+română
+(352.43 KB - PDF)
+Download
+slovenčina
+(358.86 KB - PDF)
+Download
+slovenščina
+(355.57 KB - PDF)
+Download
+suomi
+(303.54 KB - PDF)
+Download
+svenska
+(307.37 KB - PDF)
+Download
+Compliance table - Joint Guidelines on estimation of aggregated annual costs and losses caused by major ICT-related incidents under DORA
+
+
+######## NORMA: Second batch of policy products under DORA  (id EIOPA-3816d71f46)
+
+=== K280 | [par. 17 (2)] July 2024
+17 July 2024
+JC 2024-34 - Final report GL on costs and losses.pdf
+
+=== K281 | [par. 17 (3)] July 2024
+17 July 2024
+JC 2024-54 - Final Report RTS on JET.pdf
+
+=== K282 | [par. 17 (4)] July 2024
+17 July 2024
+JC 2024-35 - Final report on RTS on harmonisation of conditions for OVS conduct.pdf
+
+=== K283 | [par. 17 (5)] July 2024
+17 July 2024
+JC 2024-33 - Final report on the draft RTS and ITS on incident reporting.pdf
+
+=== K284 | [par. 17 (6)] July 2024
+17 July 2024
+JC 2024-29 - Final report_DORA RTS on TLPT.pdf
+
+
+######## NORMA: Joint Guidelines on the oversight cooperation and information exchange between the ESAs and the competent authorities under DORA Regulation (EU) 2022/2554  (id EIOPA-a2858b909d)
+
+=== K286 | [par. 6 (2)] November 2024
+6 November 2024
+български
+(519.78 KB - PDF)
+Download
+español
+(422.7 KB - PDF)
+Download
+čeština
+(501.41 KB - PDF)
+Download
+dansk
+(447.96 KB - PDF)
+Download
+Deutsch
+(455.82 KB - PDF)
+Download
+eesti
+(440.27 KB - PDF)
+Download
+ελληνικά
+(517.97 KB - PDF)
+Download
+français
+(428.98 KB - PDF)
+Download
+Gaeilge
+(401.53 KB - PDF)
+Download
+hrvatski
+(496.75 KB - PDF)
+Download
+italiano
+(517.17 KB - PDF)
+Download
+latviešu
+(487.93 KB - PDF)
+Download
+lietuvių
+(473.19 KB - PDF)
+Download
+magyar
+(505.91 KB - PDF)
+Download
+Malti
+(546.67 KB - PDF)
+Download
+Nederlands
+(445.34 KB - PDF)
+Download
+polski
+(485.46 KB - PDF)
+Download
+português
+(459.51 KB - PDF)
+Download
+română
+(505.92 KB - PDF)
+Download
+slovenčina
+(494.98 KB - PDF)
+Download
+slovenščina
+(499.48 KB - PDF)
+Download
+suomi
+(437.78 KB - PDF)
+Download
+svenska
+(442.03 KB - PDF)
+Download
+JC 2024-36 - Final report on GL on oversight cooperation.pdf
+
+=== K287 | [par. 17] July 2024
+17 July 2024
+Overview of replies – Guidelines on the oversight cooperation and information exchange between the ESAs and the competent authorities under DORA Regulation
+
+=== K288 | [par. 12] March 2025
+12 March 2025
+Austria - Guidelines on oversight cooperation under DORA
+
+=== K290 | [par. 14 (2)] February 2025
+14 February 2025
+Bulgaria  - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K291 | [par. 14 (3)] February 2025
+14 February 2025
+Croatia - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K292 | [par. 14 (4)] February 2025
+14 February 2025
+Cyprus - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K293 | [par. 14 (5)] February 2025
+14 February 2025
+Czech Republic - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K294 | [par. 14 (6)] February 2025
+14 February 2025
+Estonia - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K295 | [par. 14 (7)] February 2025
+14 February 2025
+Finland - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K296 | [par. 14 (8)] February 2025
+14 February 2025
+Germany - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K297 | [par. 14 (9)] February 2025
+14 February 2025
+Greece - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K298 | [par. 14 (10)] February 2025
+14 February 2025
+Hungary - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K299 | [par. 14 (11)] February 2025
+14 February 2025
+Iceland - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K300 | [par. 14 (12)] February 2025
+14 February 2025
+Ireland - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K301 | [par. 14 (13)] February 2025
+14 February 2025
+Italy - IVASS- Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K302 | [par. 14 (14)] February 2025
+14 February 2025
+Italy - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K303 | [par. 14 (15)] February 2025
+14 February 2025
+Latvia - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K304 | [par. 14 (16)] February 2025
+14 February 2025
+Liechtenstein - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K305 | [par. 14 (17)] February 2025
+14 February 2025
+Lithuania - Comply or explain - Guidelines on oversight cooperation under DORA-
+
+=== K306 | [par. 14 (18)] May 2025
+14 May 2025
+Luxembourg - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K307 | [par. 14 (19)] February 2025
+14 February 2025
+Netherlands - Guidelines on oversight cooperation under DORA
+
+=== K308 | [par. 21] March 2025
+21 March 2025
+Poland - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K309 | [par. 14 (20)] February 2025
+14 February 2025
+Spain - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K310 | [par. 14 (21)] February 2025
+14 February 2025
+Sweden - Comply or explain - Guidelines on oversight cooperation under DORA
+
+=== K311 | [par. 14 (22)] February 2025
+14 February 2025
+Slovakia - Comply or explain - Guidelines on oversight cooperation under DORA

@@ -1,0 +1,1000 @@
+ISTRUZIONI (leggi tutto questo file fino in fondo prima di rispondere)
+
+Sei un esperto di compliance bancaria, finanziaria e assicurativa italiana. Sotto trovi: (1) il GLOSSARIO degli ambiti ammessi, (2) il TESTO di alcune parti di norme. Ogni parte inizia con una riga "=== K<numero> | [etichetta] rubrica". Devi classificare OGNI parte.
+
+Per ogni parte chiediti: «questa parte impone a una banca (o a un intermediario finanziario/assicurativo, se la norma è di settore) un obbligo, un divieto o una regola concreta? Su quale materia?»
+- Se sì: indica da 1 a 3 codici di ambito (A001...A113). Il primo è la materia principale della parte. Aggiungine un secondo o terzo SOLO se la parte contiene regole proprie anche su quella materia (non basta che la citi).
+- Se no: nessun codice e UNA sigla:
+  D = solo definizioni
+  C = solo ambito di applicazione, oggetto, finalità, esenzioni
+  F = disposizioni finali: entrata in vigore, abrogazioni, transitorie senza obblighi, modifiche ad altre norme non riportate
+  O = obblighi o poteri di altri soggetti: autorità (Banca d'Italia, BCE, CONSOB, IVASS, COVIP, Garante, ESMA/EBA/EIOPA, Commissione), Stato, giudici, fondi pubblici, commissari, clienti
+  X = parte abrogata
+  I = solo titolo, sommario, intestazione, tabella di concordanza, testo illeggibile
+
+REGOLE CHE EVITANO GLI ERRORI PIÙ FREQUENTI
+1. Decidi dalla SOSTANZA dell'obbligo, non dalle parole che compaiono. Se un articolo sulle sanzioni cita «riciclaggio», l'ambito è quello delle sanzioni, non l'antiriciclaggio.
+2. Poteri, compiti e procedure interne delle autorità = O, anche se parlano di vigilanza o sanzioni. Usa A059 solo se la parte obbliga la banca a fare qualcosa verso l'autorità (trasmettere, collaborare, consentire ispezioni); A060 solo se stabilisce sanzioni o reati a carico della banca o dei suoi esponenti.
+3. Norme di settore rivolte a soggetti finanziari diversi dalle banche (imprese di assicurazione, SGR, SIM, controparti centrali, sedi di negoziazione, istituti di pagamento, fornitori di dati): classifica per materia come se la banca svolgesse quell'attività. Per le imprese di assicurazione usa gli ambiti assicurativi (A037, A038, A110, A112) e NON quelli bancari equivalenti (A105, A107, A111).
+4. Istruzioni di compilazione, schemi e voci di segnalazione = A094 (un solo codice), salvo che la parte contenga una regola sostanziale diversa.
+5. Una parte che contiene sia definizioni/ambito sia obblighi veri: classifica gli obblighi.
+6. Leggi il glossario: molte coppie di ambiti si somigliano e il glossario dice dove sta il confine (es. A055 esternalizzazioni in generale / A072 fornitori ICT in DORA; A098 trasparenza bancaria / A100 codice del consumo; A094 segnalazioni periodiche / A104 informativa al pubblico).
+7. Non lasciare una parte con obblighi senza ambito: se nessun ambito è adatto usa il più vicino e proponi un ambito nuovo nell'ultimo campo.
+8. Se sei incerto tra due scelte, scegli la più probabile e metti "?" nel campo dubbio.
+
+RISPOSTA: scrivi il risultato con lo strumento Write nel file indicato nel messaggio, UNA RIGA PER PARTE, nell'ordine del testo, senza altro testo, in questo formato (5 campi separati da |):
+K<numero>|codici separati da virgola|sigla|?|nuovo ambito
+Esempi:
+K12|A098,A100|||
+K13||O||
+K14|A063||?|
+K15|A028|||Credito > Garanzie pubbliche sui finanziamenti
+Per le parti divise in pezzi (K12.1, K12.2) scrivi una riga per ogni pezzo.
+Usa solo Read e Write. Non usare altri strumenti, non creare attività programmate. Alla fine rispondi solo: fatto, numero di righe scritte.
+
+==================== GLOSSARIO DEGLI AMBITI ====================
+A001 | Affari legali e societari > Appalti | contratti pubblici e appalti: regole per la banca come stazione appaltante o come fornitore/garante in gara. NON l'esternalizzazione di funzioni (A055).
+A002 | Affari legali e societari > Cessione del credito | regole civilistiche sulla cessione di crediti (notifica, opponibilità, crediti verso la PA, crediti fiscali). NON cartolarizzazioni (A021) né factoring (A027).
+A003 | Affari legali e societari > Contrattualistica | forma, contenuto, clausole e validità dei contratti in generale (firma, clausole vessatorie tra imprese, contratti a distanza B2B). NON i contratti con consumatori (A100) né trasparenza bancaria (A098).
+A004 | Affari legali e societari > Fallimento | crisi d'impresa e insolvenza dei clienti: procedure concorsuali, concordati, composizione negoziata, effetti sui rapporti bancari. NON la risoluzione della banca stessa (A108).
+A005 | Affari legali e societari > Obbligazioni | emissione di obbligazioni e titoli di debito da parte di società (regole civilistiche, limiti, assemblea obbligazionisti). NON covered bond (A103) né prospetto (A040).
+A006 | Affari legali e societari > Obblighi di comunicazione alle Autorità Competenti | comunicazioni societarie dovute ad autorità non di vigilanza bancaria (registro imprese, titolare effettivo al registro, autorità giudiziaria, accertamenti e pignoramenti). NON segnalazioni di vigilanza (A094).
+A007 | Affari legali e societari > Rapporti Dormienti | conti e rapporti dormienti, devoluzione al fondo, comunicazioni ai titolari.
+A008 | Antiriciclaggio > Contrasto al finanziamento del terrorismo | congelamento di fondi, liste e misure restrittive/sanzioni finanziarie internazionali, embarghi, finanziamento del terrorismo e della proliferazione.
+A009 | Antiriciclaggio > Gestione del contante | limiti all'uso del contante e dei titoli al portatore, assegni non trasferibili, comunicazioni delle infrazioni, banconote sospette di falsità e ricircolo del contante.
+A010 | Antiriciclaggio > Gestione di adeguata verifica | identificazione e verifica del cliente e del titolare effettivo, profilatura del rischio, verifica semplificata/rafforzata, PEP, esecuzione da parte di terzi, obbligo di astensione.
+A011 | Antiriciclaggio > Gestione Operazioni Sospette | individuazione e segnalazione di operazioni sospette (SOS) alla UIF, indicatori di anomalia, divieto di comunicazione al cliente.
+A012 | Antiriciclaggio > Obblighi di comunicazione | altre comunicazioni antiriciclaggio: comunicazioni oggettive, SARA, comunicazioni degli organi di controllo, dati informativi dei trasferimenti di fondi (travel rule).
+A013 | Antiriciclaggio > Obblighi di conservazione | conservazione di dati, documenti e registrazioni antiriciclaggio (archivi standardizzati, ex AUI).
+A014 | Antiriciclaggio > Organizzazione e presidi antiriciclaggio | funzione antiriciclaggio, responsabile, autovalutazione del rischio, procedure e controlli interni AML, formazione, presidi di gruppo.
+A015 | Antitrust > Disposizioni generali Antitrust | intese, abuso di posizione dominante, concentrazioni, pratiche commerciali scorrette e pubblicità ingannevole verso imprese, poteri AGCM che generano obblighi per l'impresa.
+A016 | Benchmark finanziari > Indici di riferimento | regolamento benchmark: uso di indici di riferimento nei contratti, piani di sostituzione, contribuzione di dati, amministratori di indici.
+A017 | Conflitti di interesse > Conflitti di interesse | individuazione e gestione dei conflitti di interesse, operazioni con parti correlate e soggetti collegati, interessi degli esponenti, divieto di interlocking.
+A018 | Conflitti di interesse > Obblighi informativi / comunicativi / segnaletici | informativa, registri e comunicazioni sui conflitti di interesse e sulle operazioni con parti correlate.
+A019 | Contrasto all'usura > Disposizioni in materia di usura | tassi soglia, calcolo del TEG, divieti e conseguenze dell'usura.
+A020 | Contrasto all'usura > Obblighi informativi - Usura | rilevazione trimestrale dei TEGM, pubblicità dei tassi soglia, segnalazioni ai fini usura.
+A021 | Credito > Cartolarizzazioni | cartolarizzazione di crediti (L. 130/1999, regolamento UE): mantenimento del rischio, due diligence, trasparenza, STS, servicer.
+A022 | Credito > Centrale Rischi | Centrale dei rischi Banca d'Italia e sistemi di informazioni creditizie: segnalazioni, preavvisi, rettifiche, accesso ai dati.
+A023 | Credito > Cessione del quinto | prestiti con cessione del quinto e delegazione di pagamento.
+A024 | Credito > Credito alle PMI/ finanziamenti agevolati | finanziamenti con garanzia o contributo pubblico (Fondo di garanzia PMI, SACE, moratorie, agevolazioni, microcredito, fondi di solidarietà mutui).
+A025 | Credito > Credito fondiario | credito fondiario e ipotecario speciale (limiti di finanziabilità, privilegi processuali, frazionamento). NON il credito immobiliare ai consumatori (A030).
+A026 | Credito > Credito su pegno | prestito su pegno, pegno non possessorio, garanzie mobiliari.
+A027 | Credito > Factoring | cessione di crediti d'impresa (L. 52/1991) e attività di factoring.
+A028 | Credito > Gestione operativa dei crediti | concessione, erogazione, monitoraggio, classificazione e recupero dei crediti; garanzie; rinegoziazioni; portabilità; esecuzioni. Regole di processo del credito non coperte dagli altri ambiti Credito.
+A029 | Credito > Leasing | locazione finanziaria.
+A030 | Credito > Mutuo | mutui e credito immobiliare ai consumatori (MCD, surroga, estinzione anticipata, inadempimento, valutazione degli immobili).
+A031 | Credito > Rating di legalità | rating di legalità delle imprese e suo uso nella concessione del credito.
+A032 | Credito > Credito al consumo | credito ai consumatori (CCD): informativa precontrattuale, TAEG, recesso, rimborso anticipato, intermediari del credito.
+A033 | Credito > Valutazione del merito creditizio | obbligo e criteri di valutazione del merito creditizio del cliente, uso di banche dati, concessione e monitoraggio secondo orientamenti EBA (LOM).
+A034 | Diritto del lavoro > Contributi e Fondi per i lavoratori | contributi previdenziali e assistenziali, TFR, fondi di solidarietà di settore, ammortizzatori sociali: obblighi del datore di lavoro.
+A035 | Diritto del lavoro > Tutela del lavoratore | rapporto di lavoro: assunzione, licenziamento, orario, parità, lavoro agile, congedi, discriminazioni.
+A036 | Diritto del lavoro > Tutela previdenziale dei lavoratori | pensioni e previdenza obbligatoria dei lavoratori, adesione alla previdenza complementare lato datore di lavoro.
+A037 | Distribuzione assicurativa > Servizi e Prodotti assicurativi | attività assicurativa e distribuzione: accesso all'attività, requisiti dei distributori e registro, regole di comportamento, contratti e prodotti assicurativi (vita, danni, IBIP), consulenza, formazione.
+A038 | Distribuzione assicurativa > Trasparenza | informativa precontrattuale e contrattuale assicurativa (DIP, KID assicurativo, set informativo), pubblicità dei prodotti, home insurance.
+A039 | Emittenti > Corporate Governance | governo delle società quotate: assemblea, diritti degli azionisti, voto, organi, quote di genere, politica di remunerazione delle quotate, OPA.
+A040 | Emittenti > Obblighi informativi - Emittenti | informativa al mercato degli emittenti: prospetto, informazioni privilegiate e abusi di mercato (MAR), internal dealing, partecipazioni rilevanti, relazioni finanziarie periodiche.
+A041 | ESG e Sostenibilità > Disposizioni in materia ambientale e sostenibilità | finanza sostenibile: SFDR, tassonomia UE, rendicontazione di sostenibilità (CSRD), preferenze di sostenibilità, rischi climatici e ambientali, green bond.
+A042 | ESG e Sostenibilità > Prevenzione da inquinamento | norme ambientali operative (rifiuti, emissioni, energia degli immobili, bonifiche).
+A043 | Fisco > Disposizioni generali in materia di fisco | imposte e regole fiscali sostanziali che la banca applica (ritenute, imposta di bollo, imposta sostitutiva, IVA, Tobin tax, crediti d'imposta, regimi fiscali dei prodotti).
+A044 | Fisco > Obblighi informativi e dichiarativi | comunicazioni e dichiarazioni al fisco: anagrafe dei rapporti, FATCA/CRS/DAC, monitoraggio fiscale, certificazioni, modello 770, risposte a indagini finanziarie.
+A045 | Gestione collettiva > Disposizioni generali | gestori e fondi (SGR, SICAV, OICVM, FIA): autorizzazione, regole di condotta e organizzazione del gestore, depositario, regolamento del fondo, valutazione, limiti di investimento.
+A046 | Gestione collettiva > Disposizioni in materia di fondi pensione | previdenza complementare: fondi pensione, PIP, PEPP, adesione, contribuzione, prestazioni, governance e vigilanza COVIP che genera obblighi.
+A047 | Gestione collettiva > Operazioni straordinarie - Gestione collettiva | fusioni e scissioni di fondi, liquidazione, strutture master-feeder.
+A048 | Gestione collettiva > Commercializzazione di OICR | commercializzazione e passaporto di OICR, pre-commercializzazione, notifiche, documentazione d'offerta (KIID/KID dei fondi).
+A049 | Gestione patrimonio immobiliare > Immobili di proprietà | gestione degli immobili della banca: norme edilizie, catastali, locazioni, efficienza energetica, limiti agli investimenti in immobili.
+A050 | Gestione reclami > Disciplina delle Alternative Dispute Resolution | sistemi stragiudiziali: ABF, ACF, Arbitro assicurativo, mediazione, negoziazione assistita, ODR.
+A051 | Gestione reclami > Disposizioni per la gestione dei reclami | gestione interna dei reclami: ufficio reclami, tempi di risposta, registro, reporting.
+A052 | Governance > Disposizioni in materia di azioni e partecipazioni | assetti proprietari della banca (acquisto di partecipazioni qualificate nella banca, requisiti dei partecipanti) e partecipazioni detenibili dalla banca; azioni proprie, capitale sociale.
+A053 | Governance > Governo societario | organi sociali della banca: composizione, compiti, requisiti di idoneità degli esponenti (fit and proper), comitati, statuto, flussi informativi, assemblea.
+A054 | Governance > Operazioni straordinarie - Governance | fusioni, scissioni, cessioni di rami d'azienda e di rapporti giuridici, trasformazioni della banca.
+A055 | Governance > Outsourcing | esternalizzazione di funzioni aziendali e accordi con terzi (non ICT o in generale): valutazione, contratto, registro, comunicazioni, controllo del fornitore. Per i fornitori ICT ai sensi DORA usare A072.
+A056 | Governance > Procedimenti autorizzativi | istanze della banca alle autorità: autorizzazione all'attività, apertura di succursali, libera prestazione, modifiche statutarie, albi ed elenchi, decadenza e revoca.
+A057 | Governance > Product Oversight Governance - (POG) | governo e controllo dei prodotti (bancari, finanziari, assicurativi): mercato di riferimento, test, monitoraggio, scambio di informazioni produttore-distributore.
+A058 | Governance > Sistema dei controlli interni | funzioni di controllo (compliance, risk management, internal audit), RAF, coordinamento dei controlli, organismo di vigilanza interno diverso dal 231.
+A059 | Governance > Vigilanza | poteri di vigilanza che impongono alla banca di fare qualcosa: ispezioni, richieste di informazioni, provvedimenti, obblighi di collaborazione, contributi di vigilanza. NON i compiti interni dell'autorità.
+A060 | Governance > Sanzioni amministrative e reati societari | sanzioni amministrative e penali a carico della banca e degli esponenti, procedura sanzionatoria, reati societari e bancari (falso, ostacolo alla vigilanza, abusivismo).
+A061 | Governance > Gruppi bancari cooperativi e BCC | banche di credito cooperativo, gruppo bancario cooperativo, contratto di coesione, mutualità, banche popolari.
+A062 | Incassi e pagamenti > Gestione Tesoreria Enti | servizio di tesoreria e cassa per enti pubblici, tesoreria unica, SIOPE, mandati e reversali, pagoPA lato ente.
+A063 | Incassi e pagamenti > Sistemi e mezzi di pagamento | servizi di pagamento (PSD2): bonifici, addebiti diretti, carte, assegni, bonifici istantanei, SEPA, diritti e obblighi di prestatore e utente, autenticazione forte, commissioni interbancarie, moneta elettronica, sistemi di pagamento.
+A064 | Incassi e pagamenti > Servizi di accesso ai conti (PISP/AISP) | open banking: disposizione di ordini e informazione sui conti, interfacce di accesso (API), terze parti.
+A065 | Informativa finanziaria (reporting) > Contabilità e bilancio | bilancio d'esercizio e consolidato, principi contabili (IAS/IFRS), schemi di bilancio, scritture contabili, informativa di sostenibilità solo se parte del bilancio.
+A066 | Informativa finanziaria (reporting) > Dirigente preposto | dirigente preposto alla redazione dei documenti contabili, attestazioni, controlli sull'informativa finanziaria (L. 262/2005).
+A067 | Informativa finanziaria (reporting) > Revisione legale dei conti | revisione legale: incarico, indipendenza, rotazione, relazione di revisione, comitato per il controllo interno e la revisione, rapporti con il revisore.
+A068 | IT e Digital > Business Continuity | continuità operativa e disaster recovery (non ICT-DORA): piani, test, gestione delle crisi.
+A069 | IT e Digital > Cybersicurezza | sicurezza informatica e delle reti (NIS2, perimetro di sicurezza nazionale, Cyber Resilience Act): misure, notifica di incidenti all'autorità cyber.
+A070 | IT e Digital > Obblighi di conservazione - IT | documento informatico, firma elettronica, identità digitale (eIDAS, CAD), conservazione digitale a norma, PEC.
+A071 | IT e Digital > Sistemi informativi | governo e gestione del sistema informativo fuori da DORA: sviluppo, cambiamenti, servizi digitali e piattaforme (DSA/DMA), cloud, canali telematici.
+A072 | IT e Digital > Resilienza operativa digitale (DORA) | DORA e norme tecniche: gestione del rischio ICT, incidenti ICT, test di resilienza (TLPT), rischio di terze parti ICT e registro, condivisione di informazioni.
+A073 | IT e Digital > Intelligenza artificiale | AI Act e norme nazionali sull'IA: sistemi ad alto rischio, obblighi di fornitori e utilizzatori, trasparenza, alfabetizzazione, uso dell'IA nel lavoro e nel credito.
+A074 | IT e Digital > Data governance | qualità, aggregazione e governo dei dati (BCBS 239), Data Act, Data Governance Act, accesso e condivisione dei dati non personali.
+A075 | Mercati finanziari > Disposizioni in materia di asset digitali e tecnologie | cripto-attività (MiCAR), token, DLT pilot, strumenti finanziari digitali, prestatori di servizi per cripto-attività.
+A076 | Mercati finanziari > Disposizioni in materia di gestione dei mercati | sedi di negoziazione e loro regole: mercati regolamentati, MTF, OTF, requisiti dei gestori, trasparenza pre e post negoziazione, sospensioni, vendite allo scoperto.
+A077 | Mercati finanziari > Investimenti | prestazione di servizi di investimento (MiFID II): adeguatezza e appropriatezza, best execution, incentivi, informativa al cliente, classificazione dei clienti, consulenti, offerta fuori sede, PRIIPs/KID.
+A078 | Mercati finanziari > Obblighi di informazione/comunicazione/conservazione | segnalazione delle operazioni (transaction reporting MiFIR, EMIR, SFTR), registrazione di ordini e conversazioni, conservazione dei registri, dati di riferimento.
+A079 | Mercati finanziari > Infrastrutture di post-trading | compensazione e regolamento: controparti centrali (EMIR), depositari centrali (CSDR), obbligo di clearing, margini, disciplina del regolamento, definitività.
+A080 | Mercati finanziari > Negoziazione algoritmica e internalizzazione sistematica | trading algoritmico e ad alta frequenza, accesso elettronico diretto, market making, internalizzatori sistematici.
+A081 | Mercati finanziari > Salvaguardia dei beni dei clienti | tutela di strumenti finanziari e fondi dei clienti: separazione patrimoniale, deposito, sub-depositari, uso dei beni, riconciliazioni, responsabile unico.
+A082 | Mercati finanziari > Crowdfunding | servizi di crowdfunding per le imprese (Reg. UE 2020/1503) e disciplina nazionale.
+A083 | Mercati finanziari > Derivati su merci e quote di emissione | limiti di posizione e segnalazioni su derivati su merci, quote di emissione, REMIT.
+A084 | Privacy > Codice di Deontologia e Buona Condotta per i SIC | sistemi di informazioni creditizie: codice di condotta, informativa, tempi di conservazione, preavviso di segnalazione.
+A085 | Privacy > Cookie | cookie e altri strumenti di tracciamento, comunicazioni elettroniche (ePrivacy), marketing diretto e telemarketing, registro delle opposizioni.
+A086 | Privacy > Diritti dell'interessato | informativa e diritti: accesso, rettifica, cancellazione, portabilità, opposizione, decisioni automatizzate, riscontro alle richieste.
+A087 | Privacy > Disposizioni generali per il trattamento dei dati | principi e basi giuridiche del trattamento, consenso, categorie particolari, dati giudiziari, trattamenti in ambito bancario, videosorveglianza, dati dei lavoratori.
+A088 | Privacy > Regole ulteriori | regole privacy specifiche non altrove classificabili: codici di condotta, certificazioni, sanzioni e reclami privacy, provvedimenti generali del Garante su settori specifici.
+A089 | Privacy > Sicurezza dati e sistemi | misure di sicurezza dei dati personali, violazioni dei dati (data breach) e loro notifica, tracciamento degli accessi ai dati bancari, amministratori di sistema.
+A090 | Privacy > Soggetti che effettuano il trattamento | titolare, contitolari, responsabile e sub-responsabili, DPO, registro dei trattamenti, DPIA, privacy by design, persone autorizzate.
+A091 | Privacy > Trasferimenti di dati verso paesi terzi | trasferimenti extra UE: adeguatezza, clausole contrattuali tipo, norme vincolanti d'impresa, deroghe.
+A092 | Remunerazione e incentivazione > Disposizioni in materia di remunerazione e incentivazione | politiche di remunerazione: personale più rilevante, componente variabile, differimento, malus e claw-back, remunerazione della rete e degli addetti alla vendita, informativa.
+A093 | Responsabilità amministrativa delle persone giuridiche - D. Lgs. 231/01 > Modello Organizzativo 231 | responsabilità degli enti: reati presupposto, modello organizzativo, organismo di vigilanza 231, sanzioni all'ente.
+A094 | Segnalazioni di Vigilanza > Segnalazione all'autorità di vigilanza compente | segnalazioni periodiche e statistiche alle autorità di vigilanza: matrice dei conti, COREP/FINREP, segnalazioni statistiche BCE (BSI, MIR, AnaCredit), schemi, voci e istruzioni di compilazione, tempi di invio.
+A095 | Sicurezza sui luoghi di lavoro > Disposizioni generali in materia di sicurezza sul lavoro | salute e sicurezza: valutazione dei rischi, RSPP, sorveglianza sanitaria, formazione, emergenze, antincendio.
+A096 | Sicurezza sui luoghi di lavoro > Guardie giurate e istituto di vigilanza | sicurezza fisica delle dipendenze, trasporto valori, guardie giurate, istituti di vigilanza privata, misure antirapina.
+A097 | Sviluppo commerciale e Rete vendita > Gestione Rete Vendita | reti distributive: agenti in attività finanziaria, mediatori creditizi, consulenti finanziari fuori sede, requisiti e controllo della rete, promozione e collocamento a distanza.
+A098 | Trasparenza e tutela del consumatore > Adempimenti organizzativi in materia di trasparenza | trasparenza bancaria (TUB titolo VI e disposizioni Banca d'Italia): fogli informativi, documenti di sintesi, comunicazioni periodiche, modifiche unilaterali (ius variandi), procedure organizzative e controlli di trasparenza.
+A099 | Trasparenza e tutela del consumatore > Servizi al consumatore | prodotti e servizi per i consumatori: conto di base, trasferimento del conto (portabilità), confrontabilità delle spese (PAD), remunerazione di affidamenti e sconfinamenti, depositi.
+A100 | Trasparenza e tutela del consumatore > Tutela del consumatore | Codice del consumo e tutele generali: pratiche commerciali scorrette verso consumatori, clausole vessatorie, contratti a distanza di servizi finanziari, azioni di classe, garanzie di conformità.
+A101 | Trasparenza e tutela del consumatore > Accessibilità e inclusione finanziaria | accessibilità di prodotti e servizi (European Accessibility Act), barriere per persone con disabilità, educazione e inclusione finanziaria.
+A102 | Vigilanza prudenziale > Gestione dei rischi | governo e misurazione dei rischi: credito, mercato, operativo, tasso, concentrazione, grandi esposizioni, ICAAP/ILAAP, SREP, stress test, modelli interni.
+A103 | Vigilanza prudenziale > Obbligazioni garantite | covered bond: emissione, aggregato di copertura, controlli, requisiti.
+A104 | Vigilanza prudenziale > Obblighi informativi - Vigilanza | informativa al pubblico (Pillar 3) e altre informative prudenziali verso il pubblico o la vigilanza diverse dalle segnalazioni periodiche (A094).
+A105 | Vigilanza prudenziale > Sistemi di garanzia | sistemi di garanzia dei depositi (DGS/FITD) e di indennizzo degli investitori: adesione, contribuzioni, informativa ai depositanti, rimborso.
+A106 | Vigilanza prudenziale > Vigilanza in materia di NPL | crediti deteriorati: classificazione, accantonamenti prudenziali (calendar provisioning), strategie NPL, gestori e acquirenti di crediti (direttiva SMD), forbearance.
+A107 | Vigilanza prudenziale > Requisiti patrimoniali e di liquidità | fondi propri, requisiti di capitale (CRR/CRD), riserve di capitale, leva finanziaria, LCR, NSFR, MREL come requisito, riserva obbligatoria.
+A108 | Vigilanza prudenziale > Risanamento e risoluzione | BRRD: piani di risanamento, risoluzione, bail-in, misure di intervento precoce, liquidazione coatta, fondi di risoluzione, sostegno pubblico.
+A109 | Vigilanza prudenziale > Vigilanza su gruppi e conglomerati | gruppo bancario, capogruppo, vigilanza consolidata, conglomerati finanziari, società di partecipazione finanziaria.
+A110 | Vigilanza prudenziale > Riserve tecniche e solvibilità assicurativa | Solvency II: riserve tecniche, requisiti patrimoniali (SCR/MCR), investimenti, governance prudenziale e ORSA delle imprese di assicurazione e riassicurazione, vigilanza sul gruppo assicurativo.
+A111 | Vigilanza prudenziale > Succursali di paesi terzi | succursali in Italia/UE di banche extra UE: autorizzazione, requisiti, segnalazioni. Solo banche, NON imprese di assicurazione.
+A112 | Distribuzione assicurativa > Gestione sinistri RC auto | assicurazione obbligatoria RC auto e natanti: obbligo a contrarre, risarcimento diretto, liquidazione dei sinistri, fondo vittime della strada, banche dati sinistri.
+A113 | Governance > Whistleblowing | segnalazione interna ed esterna delle violazioni: canali, tutela del segnalante, gestione delle segnalazioni.
+
+==================== TESTO DA CLASSIFICARE ====================
+
+######## NORMA: Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio del 14 dicembre 2022 relativo alla resilienza operativa digitale per il settore finanziario e   (id UE-32022R2554)
+
+=== K68 | [58] Clausola di riesame
+Articolo 58
+Clausola di riesame
+1. Entro il 17 gennaio 2028, la Commissione, dopo aver consultato le AEV e il CERS, a seconda dei casi, effettua un riesame e presenta al Parlamento europeo e al Consiglio una relazione accompagnata,
+se del caso, da una proposta legislativa. Il riesame comprende almeno:
+a)
+i criteri per la designazione dei fornitori terzi critici di servizi TIC, di cui all’articolo 31, paragrafo 2;
+b)
+il carattere volontario della notifica di minacce informatiche significative di cui all’articolo 19;
+c)
+il regime di cui all’articolo 31, paragrafo 12, e i poteri dell’autorità di sorveglianza capofila di cui all’articolo 35, paragrafo 1, lettera d ), punto iv), primo trattino, al fine di valutare
+l’efficacia di tali disposizioni per quanto riguarda la garanzia di una sorveglianza efficace dei fornitori terzi critici di servizi TIC stabiliti in un paese terzo e la necessità di istituire
+un’impresa figlia nell’Unione.
+Ai fini del primo comma della presente lettera, il riesame comprende un’analisi del regime di cui all’articolo 31, paragrafo 12, comprese le condizioni di accesso delle entità finanziarie dell’Unione
+ai servizi di paesi terzi e la disponibilità di tali servizi sul mercato dell’Unione, e tiene conto degli ulteriori sviluppi nei mercati dei servizi disciplinati dal presente regolamento,
+dell’esperienza pratica delle entità finanziarie e delle autorità di vigilanza finanziaria per quanto riguarda l’applicazione e, rispettivamente, la vigilanza di tale regime e di eventuali sviluppi
+pertinenti in materia di regolamentazione e vigilanza a livello internazionale;
+d)
+se sia opportuno includere nell’ambito di applicazione del presente regolamento le entità finanziarie di cui all’articolo 2, paragrafo 3, lettera e), che utilizzano sistemi di vendita automatizzata,
+alla luce dei futuri sviluppi del mercato sull’uso di tali sistemi;
+e)
+il funzionamento e l’efficacia della rete di sorveglianza comune in termini di sostegno alla coerenza della sorveglianza e all’efficienza dello scambio di informazioni nell’ambito del quadro di
+sorveglianza.
+2. Nel contesto del riesame della direttiva (UE) 2015/2366, la Commissione valuta la necessità di una maggiore ciberresilienza dei sistemi di pagamento e delle attività di trattamento dei pagamenti e
+se sia opportuno ampliare l’ambito di applicazione del presente regolamento agli operatori dei sistemi di pagamento e alle entità coinvolte nelle attività di trattamento dei pagamenti. Alla luce di
+tale valutazione, la Commissione presenta, nell’ambito del riesame della direttiva (UE) 2015/2366, una relazione al Parlamento europeo e al Consiglio e entro il 17 luglio 2023.
+Sulla base di tale relazione di riesame e previa consultazione delle AEV, della BCE e del CERS, la Commissione può presentare, se del caso e nell’ambito della proposta legislativa che può adottare a
+norma dell’articolo 108, secondo comma, della direttiva (UE) 2015/2366, una proposta volta a garantire che tutti gli operatori dei sistemi di pagamento e le entità coinvolte nelle attività di
+trattamento dei pagamenti siano soggetti a un’adeguata sorveglianza, tenendo conto nel contempo dell’esistente sorveglianza da parte delle banche centrali.
+3. Entro il 17 gennaio 2026, la Commissione, dopo aver consultato le AEV e il comitato degli organismi europei di controllo delle attività di revisione contabile, effettua un riesame e presenta al
+Parlamento europeo e al Consiglio una relazione accompagnata, se del caso, da una proposta legislativa sull’opportunità di rafforzare i requisiti per i revisori legali e le imprese di revisione
+contabile per quanto riguarda la resilienza operativa digitale, mediante l’inclusione dei revisori legali e delle imprese di revisione contabile nell’ambito di applicazione del presente regolamento o
+mediante modifiche della direttiva 2006/43/CE del Parlamento europeo e del Consiglio ( 39 ) .
+Sezione II
+Modifiche
+
+=== K69 | [59] Modifiche del regolamento (CE) n. 1060/2009
+Articolo 59
+Modifiche del regolamento (CE) n. 1060/2009
+Il regolamento (CE) n. 1060/2009 è così modificato:
+1)
+nell’allegato I, sezione A, punto 4, il primo comma è sostituito dal seguente:
+«Un’agenzia di rating del credito dispone di procedure amministrative e contabili solide, di meccanismi di controllo interno, di procedure efficaci per la valutazione del rischio e di meccanismi
+efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *1 ) .
+( *1 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+2)
+nell’allegato III, il punto 12) è sostituito dal seguente:
+«12)
+L’agenzia di rating del credito viola l’articolo 6, paragrafo 2, in combinato disposto con l’allegato I, sezione A, punto 4, quando non dispone di procedure amministrative o contabili solide, di
+meccanismi di controllo interno, di procedure efficaci per la valutazione del rischio o di meccanismi efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del
+regolamento (UE) 2022/2554, o non instaurando, né mantenendo le procedure di adozione di decisione o le strutture organizzative richieste dal predetto punto.».
+
+=== K70 | [60] Modifiche del regolamento (UE) n. 648/2012
+Articolo 60
+Modifiche del regolamento (UE) n. 648/2012
+Il regolamento (UE) n. 648/2012 è così modificato:
+1)
+l’articolo 26 è così modificato:
+a)
+il paragrafo 3 è sostituito dal seguente:
+«3. Le CCP mantengono e gestiscono una struttura organizzativa che assicuri la continuità e il regolare funzionamento della prestazione dei servizi e dell’esercizio delle attività. Esse utilizzano
+sistemi, risorse e procedure adeguati e proporzionati, tra cui sistemi di TIC gestiti in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *2 ) .
+( *2 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+b)
+il paragrafo 6 è soppresso;
+2)
+l’articolo 34 è così modificato:
+a)
+il paragrafo 1 è sostituito dal seguente:
+«1. Le CCP adottano, attuano e mantengono una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro, comprendenti una politica di continuità operativa delle TIC e
+piani di risposta e ripristino relativi alle TIC predisposti e attuati in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle funzioni, la ripresa tempestiva delle
+attività e l’adempimento degli obblighi della CCP.»;
+b)
+al paragrafo 3, il primo comma è sostituito dal seguente:
+«3. Al fine di garantire l’applicazione coerente del presente articolo, l’ESMA, previa consultazione dei membri del SEBC, elabora progetti di norme tecniche di regolamentazione per specificare il
+contenuto minimo e i requisiti della politica di continuità operativa e del piano di ripristino in caso di disastro, con l’esclusione della politica di continuità operativa delle TIC e dei piani di
+risposta e ripristino relativi alle TIC.»;
+3)
+all’articolo 56, paragrafo 3, il primo comma è sostituito dal seguente:
+«3. Per assicurare l’applicazione uniforme del presente articolo, l’ESMA elabora progetti di norme tecniche di regolamentazione che specifichino, tranne che per i requisiti in materia di gestione dei
+rischi informatici, i dettagli della domanda di registrazione di cui al paragrafo 1.»;
+4)
+all’articolo 79, i paragrafi 1 e 2 sono sostituiti dai seguenti:
+«1. I repertori di dati sulle negoziazioni individuano le fonti di rischio operativo e le riducono anche sviluppando sistemi, controlli e procedure adeguati, tra cui sistemi di TIC gestiti ai sensi
+del regolamento (UE) 2022/2554.
+2. I repertori di dati sulle negoziazioni stabiliscono, attuano e mantengono una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro, comprendenti una politica di
+continuità operativa delle TIC e piani di risposta e ripristino relativi alle TIC istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle loro funzioni, la
+ripresa tempestiva delle attività e l’adempimento degli obblighi assunti.»;
+5)
+all’articolo 80, il paragrafo 1 è soppresso;
+6)
+nell’allegato I, la sezione II è così modificata:
+a)
+le lettere a) e b) sono sostituite dalle seguenti:
+«a)
+un repertorio di dati sulle negoziazioni viola l’articolo 79, paragrafo 1, allorché non individua le fonti di rischio operativo o non limita al massimo tali rischi sviluppando sistemi, controlli e
+procedure adeguati, tra cui sistemi di TIC gestiti ai sensi del regolamento (UE) 2022/2554;
+b)
+un repertorio di dati sulle negoziazioni viola l’articolo 79, paragrafo 2, allorché non stabilisce, non attua o non mantiene una politica adeguata di continuità operativa e un piano di ripristino in
+caso di disastro, istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle proprie funzioni, la ripresa tempestiva delle attività e l’adempimento degli
+obblighi assunti;»;
+b)
+la lettera c) è soppressa;
+7)
+l’allegato III è così modificato:
+a)
+La sezione II è così modificata:
+i)
+la lettera c) è sostituita dalla seguente:
+«c)
+una CCP di classe 2 viola l’articolo 26, paragrafo 3, allorché non mantiene o non gestisce una struttura organizzativa che assicuri la continuità e il regolare funzionamento della prestazione dei
+propri servizi e dell’esercizio delle attività, o allorché non utilizza sistemi, risorse o procedure adeguati e proporzionati, tra cui sistemi di TIC gestiti conformemente al regolamento (UE)
+2022/2554»;
+ii)
+la lettera f) è soppressa;
+b)
+nella sezione III, la lettera a) è sostituita dalla seguente:
+«a)
+una CCP di classe 2 viola l’articolo 34, paragrafo 1, allorché non stabilisce, non attua o non mantiene una politica adeguata di continuità operativa e un piano di ripristino in caso di disastro,
+istituiti in conformità del regolamento (UE) 2022/2554, miranti ad assicurare il mantenimento delle proprie funzioni, la ripresa tempestiva delle attività e l’adempimento degli obblighi assunti dalla
+CCP; tale piano prevede almeno la ripresa di tutte le operazioni in corso al momento della perturbazione in modo da permettere alla CCP di continuare a funzionare con certezza e di completare il
+regolamento alla data prevista;».
+
+=== K71 | [61] Modifiche del regolamento (UE) n. 909/2014
+Articolo 61
+Modifiche del regolamento (UE) n. 909/2014
+L’articolo 45 del regolamento (UE) n. 909/2014 è così modificato:
+1)
+il paragrafo 1 è sostituito dal seguente:
+«1. I CSD individuano le fonti di rischio operativo, interne ed esterne, e ne riducono al minimo l’impatto avvalendosi di strumenti, processi e politiche in materia di TIC adeguati, istituiti e
+gestiti ai sensi del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *3 ) , nonché mediante qualsiasi altro tipo adeguato di strumenti, controlli e procedure per altri tipi di
+rischi operativi, anche per tutti i sistemi di regolamento titoli da essi operati.
+( *3 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+2)
+il paragrafo 2 è soppresso;
+3)
+i paragrafi 3 e 4 sono sostituiti dai seguenti:
+«3. Per i servizi che forniscono nonché per ciascun sistema di regolamento titoli da essi operato, i CSD stabiliscono, attuano e mantengono una politica adeguata di continuità operativa e un piano di
+ripristino in caso di disastro, comprendente una politica di continuità operativa delle TIC e piani di risposta e ripristino relativi alle TIC istituiti ai sensi del regolamento (UE) 2022/2554, allo
+scopo di preservare i servizi, assicurare la ripresa tempestiva delle attività e l’adempimento degli obblighi del CSD in caso di eventi che comportino un rischio significativo di perturbare le
+attività.
+4. Il piano di cui al paragrafo 3 prevede il ripristino di tutte le operazioni e posizioni dei partecipanti al momento della perturbazione, in modo da permettere ai partecipanti al CSD di continuare
+ad operare con certezza e di completare il regolamento alla data prevista, anche assicurando che i sistemi informatici critici possano riprendere a funzionare dal momento della perturbazione, come
+previsto dall’articolo 12, paragrafi 5 e 7, del regolamento (UE) 2022/2554.»;
+4)
+il paragrafo 6 è sostituito dal seguente:
+«6. I CSD individuano, controllano e gestiscono i rischi ai quali i principali partecipanti ai sistemi di regolamento titoli da essi operati nonché i fornitori di servizi e utenze, e altri CSD o altre
+infrastrutture di mercato possono esporre le loro attività. Su richiesta, forniscono alle autorità competenti e alle autorità rilevanti informazioni su ogni rischio siffatto individuato. Informano
+inoltre senza ritardo l’autorità competente e le autorità rilevanti in merito a eventuali incidenti operativi causati da tali rischi, tranne che in relazione ai rischi informatici.»;
+5)
+al paragrafo 7, il primo comma è sostituito dal seguente:
+«7. L’ESMA, in stretta cooperazione con i membri del SEBC, elabora progetti di norme tecniche di regolamentazione per specificare i rischi operativi di cui ai paragrafi 1 e 6, tranne che in relazione
+ai rischi informatici, i metodi per testare, gestire o ridurre al minimo tali rischi, ivi compresi le politiche di continuità operativa e i piani di ripristino in caso di disastro di cui ai paragrafi
+3 e 4, nonché i metodi di valutazione degli stessi.».
+
+=== K72 | [62] Modifiche del regolamento (UE) n. 600/2014
+Articolo 62
+Modifiche del regolamento (UE) n. 600/2014
+Il regolamento (UE) n. 600/2014 è così modificato:
+1)
+l’articolo 27 octies è così modificato:
+a)
+il paragrafo 4 è sostituito dal seguente:
+«4.
+Gli APA rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *4 ) .
+( *4 ) Regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio, del 14 dicembre 2022, relativo alla resilienza operativa digitale per il settore finanziario e che modifica i regolamenti (CE)
+n. 1060/2009, (UE) n. 648/2012, (UE) n. 600/2014, (UE) n. 909/2014 e (UE) 2016/1011 ( GU L 333 del 27.12.2022, pag. 1 ).»;"
+b)
+al paragrafo 8, la lettera c) è sostituita dalla seguente:
+«c)
+i requisiti organizzativi concreti di cui ai paragrafi 3 e 5.»;
+2)
+l’articolo 27 nonies è così modificato:
+a)
+il paragrafo 5 è sostituito dal seguente:
+«5. I CTP rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554.»;
+b)
+al paragrafo 8, la lettera e) è sostituita dalla seguente:
+«e)
+i requisiti organizzativi concreti di cui al paragrafo 4.»;
+3)
+l’articolo 27 decies è così modificato:
+a)
+il paragrafo 3 è sostituito dal seguente:
+«3. Gli ARM rispettano i requisiti in materia di sicurezza dei sistemi informatici e di rete di cui al regolamento (UE) 2022/2554.»;
+b)
+al paragrafo 5, la lettera b) è sostituita dalla seguente:
+«b)
+i requisiti organizzativi concreti di cui ai paragrafi 2 e 4.».
+
+=== K73 | [63] Modifiche del regolamento (UE) 2016/1011
+Articolo 63
+Modifiche del regolamento (UE) 2016/1011
+All’articolo 6 del regolamento (UE) 2016/1011 è aggiunto il paragrafo seguente:
+«6.
+Per gli indici di riferimento critici, un amministratore dispone di procedure amministrative e contabili solide, di meccanismi di controllo interno, di procedure efficaci per la valutazione del
+rischio e di meccanismi efficaci di controllo e protezione per la gestione dei sistemi di TIC in conformità del regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio ( *5 ) .
+
+
+######## NORMA: Regolamento delegato (UE) 2025/1190 della Commissione, del 13 febbraio 2025, che integra il regolamento (UE) 2022/2554 del Parlamento europeo e del Consiglio pe  (id UE-32025R1190)
+
+=== K76 | [2] Identificazione delle entità finanziarie che hanno l’obbligo di svolgere TLPT
+Articolo 2
+Identificazione delle entità finanziarie che hanno l’obbligo di svolgere TLPT
+1. Le autorità competenti per i TLPT valutano se un’entità finanziaria ha l’obbligo di svolgere TLPT, tenendo conto dell’impatto di tali entità finanziarie, del loro carattere sistemico e del loro
+profilo dei rischi informatici, sulla base di tutti i criteri seguenti:
+a)
+fattori correlati all’impatto e al carattere sistemico:
+i)
+le dimensioni dell’entità finanziaria, determinate in base al fatto che l’entità finanziaria fornisca servizi finanziari in uno o più Stati membri e confrontando le attività dell’entità finanziaria
+con quelle di altre entità finanziarie che forniscono servizi analoghi;
+ii)
+la portata e la natura dell’interconnessione dell’entità finanziaria con altre entità finanziarie del settore finanziario in uno o più Stati membri;
+iii)
+la criticità o l’importanza dei servizi che l’entità finanziaria fornisce al settore finanziario;
+iv)
+la sostituibilità dei servizi che l’entità finanziaria fornisce;
+v)
+la complessità del modello aziendale dell’entità finanziaria e dei relativi servizi e processi;
+vi)
+se l’entità finanziaria fa parte di un gruppo di carattere sistemico a livello dell’Unione o nazionale nel settore finanziario e che condivide sistemi di TIC;
+b)
+fattori correlati ai rischi informatici:
+i)
+il profilo di rischio dell’entità finanziaria;
+ii)
+il panorama delle minacce dell’entità finanziaria;
+iii)
+il grado di dipendenza delle funzioni essenziali o importanti o delle relative funzioni di supporto dell’entità finanziaria da processi e sistemi di TIC;
+iv)
+la complessità dell’architettura delle TIC dell’entità finanziaria;
+v)
+le funzioni e i servizi TIC supportati da fornitori terzi di servizi TIC nonché la quantità e il tipo di accordi contrattuali con i fornitori terzi di servizi TIC o con i fornitori intragruppo di
+servizi TIC;
+vi)
+i risultati di eventuali esami di vigilanza pertinenti per la valutazione della maturità delle TIC dell’entità finanziaria;
+vii)
+la maturità dei piani di continuità operativa delle TIC e dei piani di risposta e ripristino relativi alle TIC;
+viii)
+la maturità delle misure operative di individuazione e attenuazione per la sicurezza delle TIC, compresa la capacità di:
+1)
+monitorare l’infrastruttura delle TIC dell’entità finanziaria in maniera permanente;
+2)
+individuare gli eventi connessi alle TIC in tempo reale;
+3)
+analizzare gli eventi di cui al punto 2);
+4)
+reagire agli eventi di cui al punto 2) in modo tempestivo ed efficace;
+ix)
+se l’entità finanziaria fa parte di un gruppo attivo nel settore finanziario a livello dell’Unione o nazionale che condivide sistemi di TIC.
+Ai fini della lettera a), punto i), l’autorità competente per il TLPT prende in considerazione, ove possibile:
+a)
+la posizione in termini di quota di mercato dell’entità finanziaria a livello dell’Unione e nazionale;
+b)
+la gamma di attività offerte dall’entità finanziaria;
+c)
+la quota di mercato dei servizi forniti dall’entità finanziaria o delle attività intraprese a livello dell’Unione e nazionale.
+Ai fini della lettera a), punto v), l’autorità competente per il TLPT prende in considerazione, ove possibile:
+a)
+se l’entità finanziaria gestisce più di un modello aziendale;
+b)
+l’interconnessione dei diversi processi aziendali e dei relativi servizi.
+2. Le autorità competenti per i TLPT impongono a tutte le seguenti entità finanziarie di svolgere TLPT, a meno che dalla valutazione di cui al paragrafo 1 in relazione a un’entità finanziaria emerga
+che il suo impatto, i problemi di stabilità finanziaria relativi a tale entità finanziaria o il suo profilo dei rischi informatici non giustificano lo svolgimento di un TLPT:
+a)
+enti creditizi che soddisfano una delle condizioni seguenti:
+i)
+sono stati individuati come enti a rilevanza sistemica a livello globale (G-SII) conformemente all’articolo 131 della direttiva 2013/36/UE del Parlamento europeo e del Consiglio ( 7 ) ;
+ii)
+sono stati individuati come altri enti a rilevanza sistemica («O-SII») conformemente all’articolo 131, paragrafi 1 e 3, della direttiva 2013/36/UE;
+iii)
+fanno parte di G-SII o O-SII;
+b)
+istituti di pagamento che, in ciascuno dei due anni civili precedenti la valutazione da parte dell’autorità competente per il TLPT, hanno superato i 150 miliardi di EUR di valore complessivo delle
+operazioni di pagamento quali definite all’articolo 4, punto 5), della direttiva (UE) 2015/2366 del Parlamento europeo e del Consiglio ( 8 ) ;
+c)
+istituti di moneta elettronica che, in ciascuno dei due anni civili precedenti la valutazione da parte dell’autorità competente per il TLPT, hanno superato i 150 miliardi di EUR di valore complessivo
+delle operazioni di pagamento quali definite all’articolo 4, punto 5), della direttiva (UE) 2015/2366 oppure i 40 miliardi di EUR di valore complessivo dell’importo della moneta elettronica in
+circolazione;
+d)
+depositari centrali di titoli;
+e)
+controparti centrali;
+f)
+sedi di negoziazione dotate di un sistema elettronico di negoziazione che soddisfano uno dei criteri seguenti:
+i)
+la sede di negoziazione detiene la quota di mercato più elevata in termini di volume degli scambi a livello nazionale in ciascuno dei due anni civili precedenti la valutazione da parte dell’autorità
+competente per il TLPT in relazione a uno degli elementi seguenti:
+(1)
+valori mobiliari quali definiti all’articolo 4, paragrafo 1, punto 44), lettera a), della direttiva 2014/65/UE del Parlamento europeo e del Consiglio ( 9 ) ;
+(2)
+valori mobiliari quali definiti all’articolo 4, paragrafo 1, punto 44), lettera b), della direttiva 2014/65/UE;
+(3)
+strumenti derivati quali definiti all’articolo 2, paragrafo 1, punto 29), del regolamento (UE) n. 600/2014 del Parlamento europeo e del Consiglio ( 10 ) ;
+(4)
+strumenti finanziari strutturati quali definiti all’articolo 2, paragrafo 1, punto 28), del regolamento (UE) n. 600/2014;
+(5)
+quote di emissioni quali definite all’allegato I, sezione C, punto 11), della direttiva 2014/65/UE del Parlamento europeo e del Consiglio;
+ii)
+la sede di negoziazione detiene una quota di mercato in termini di volume degli scambi a livello dell’Unione superiore al 5 % in ciascuno dei due anni civili precedenti la valutazione da parte
+dell’autorità competente per il TLPT, in relazione a uno degli elementi seguenti:
+(1)
+azioni di società e altri titoli equivalenti ad azioni di società, di partnership o di altri soggetti e certificati di deposito azionario;
+(2)
+obbligazioni o altri titoli di debito, compresi i certificati di deposito relativi a tali titoli;
+(3)
+strumenti derivati quali definiti all’articolo 2, paragrafo 1, punto 29), del regolamento (UE) n. 600/2014;
+(4)
+strumenti finanziari strutturati quali definiti all’articolo 2, paragrafo 1, punto 28), del regolamento (UE) n. 600/2014;
+(5)
+quote di emissioni quali definite all’allegato I, sezione C, punto 11), della direttiva 2014/65/UE;
+g)
+imprese di assicurazione e di riassicurazione che soddisfano tutti i criteri seguenti:
+i)
+hanno un premio lordo contabilizzato superiore a 1 500 000 000 EUR;
+ii)
+hanno riserve tecniche superiori a 10 000 000 000 EUR;
+iii)
+imprese di assicurazione che svolgono attività solo nel settore vita o che svolgono attività in entrambi i settori vita e non-vita e che detengono attività totali superiori al 3,5 % della somma delle
+attività totali, valutate conformemente all’articolo 75 della direttiva 2009/138/CE del Parlamento europeo e del Consiglio ( 11 ) , delle imprese di assicurazione e di riassicurazione stabilite nello
+Stato membro.
+Ai fini della lettera f), punto ii), se la sede di negoziazione fa parte di un gruppo che condivide sistemi di TIC oppure lo stesso fornitore intragruppo di servizi TIC, si considera il volume degli
+scambi relativi a titoli e contratti derivati in tutte le sedi di negoziazione appartenenti allo stesso gruppo e stabilite nell’Unione.
+Ai fini della lettera g), le autorità competenti per i TLPT individuano un sottoinsieme di tutte le imprese di assicurazione e di riassicurazione applicando i criteri di cui alla lettera g), punti i),
+ii) e iii). Le imprese di assicurazione e di riassicurazione incluse in tale sottoinsieme hanno l’obbligo di svolgere TLPT se anch’esse soddisfano uno dei criteri seguenti:
+a)
+premio lordo contabilizzato superiore a 3 000 000 000 EUR;
+b)
+riserve tecniche superiori a 30 000 000 000 EUR;
+c)
+attività totali che superano il 10 % della somma delle attività totali, valutate conformemente all’articolo 75 della direttiva 2009/138/CE, delle imprese di assicurazione e di riassicurazione
+stabilite nello Stato membro.
+3. Se più di un’entità finanziaria appartenente allo stesso gruppo e che condivide sistemi di TIC o se più di un’entità finanziaria che utilizza lo stesso fornitore intragruppo di servizi TIC
+soddisfano i criteri di cui al paragrafo 2, le autorità competenti per i TLPT di tali entità finanziarie decidono, conformemente all’articolo 16, paragrafo 2, se l’obbligo di svolgere TLPT su base
+individuale sia pertinente per tali entità finanziarie.
+Se l’autorità competente per il TLPT dell’impresa madre di un gruppo di entità finanziarie di cui al primo comma è diversa dalle autorità competenti per i TLPT delle entità finanziarie del gruppo,
+tale autorità è consultata dalle autorità competenti per i TLPT delle entità finanziarie appartenenti a tale gruppo in merito all’opportunità di svolgere TLPT su base individuale.
+
+=== K77 | [3] Team informatico TLPT e responsabili dei test nell’ambito dei TLPT
+Articolo 3
+Team informatico TLPT e responsabili dei test nell’ambito dei TLPT
+1. Un’autorità competente per il TLPT attribuisce a un team informatico TLPT la responsabilità di coordinare le attività relative ai TLPT. Un team informatico TLPT è composto da responsabili dei test
+incaricati di supervisionare un singolo TLPT.
+2. Per ogni test, l’autorità competente per il TLPT designa un responsabile del test e almeno un sostituto.
+3. I responsabili dei test controllano e garantiscono che siano rispettate le prescrizioni di cui al presente regolamento.
+4. Il responsabile del test comunica i dati di contatto del team informatico TLPT all’entità finanziaria mediante la notifica di cui all’articolo 9, paragrafo 1.
+5. L’autorità competente per il TLPT partecipa a tutte le fasi del TLPT.
+
+=== K78 | [4] Disposizioni organizzative per le entità finanziarie
+Articolo 4
+Disposizioni organizzative per le entità finanziarie
+1. Le entità finanziarie nominano un responsabile del team di controllo che ha la responsabilità della gestione quotidiana del TLPT e delle decisioni e azioni del team di controllo.
+2. Le entità finanziarie definiscono misure organizzative e procedurali per garantire che:
+a)
+l’accesso alle informazioni relative a qualsiasi TLPT pianificato o in corso sia limitato, in base alla necessità di sapere, al team di controllo, all’organo di gestione, ai soggetti incaricati dello
+svolgimento dei test, al soggetto che fornisce analisi delle minacce e all’autorità competente per il TLPT;
+b)
+il team di controllo consulti i responsabili dei test prima di coinvolgere qualsiasi membro del blue team in un TLPT;
+c)
+il team di controllo sia informato di qualsiasi rilevamento del TLPT da parte di membri del personale dell’entità finanziaria o dei suoi fornitori terzi di servizi; in caso di escalation della
+conseguente risposta all’incidente, se necessario, il team di controllo contenga tale escalation;
+d)
+siano presenti disposizioni relative alla segretezza del TLPT, applicabili al personale dell’entità finanziaria, al personale dei fornitori terzi di servizi TIC interessati, ai soggetti incaricati
+dello svolgimento dei test e al soggetto che fornisce analisi delle minacce;
+e)
+il team di controllo fornisca ai responsabili dei test, su richiesta, tutte le informazioni relative al TLPT;
+f)
+ove possibile, le parti coinvolte nel TLPT facciano riferimento a quest’ultimo utilizzando solo il nome in codice.
+
+=== K79 | [5] Gestione dei rischi per i TLPT
+Articolo 5
+Gestione dei rischi per i TLPT
+1. Durante la fase di preparazione di cui all’articolo 9, il team di controllo valuta i rischi associati al sottoporre a test sistemi di produzione attivi di funzioni essenziali o importanti
+dell’entità finanziaria, compresi i potenziali impatti su quanto segue:
+a)
+il settore finanziario:
+b)
+la stabilità finanziaria a livello dell’Unione o nazionale.
+Il team di controllo esamina tali impatti per tutta la durata del test.
+2. Ai fini della valutazione e della gestione dei rischi, il team di controllo tiene conto almeno dei seguenti tipi di rischi riguardanti:
+a)
+la concessione dell’accesso a informazioni sensibili sull’entità finanziaria al soggetto che fornisce analisi delle minacce e ai soggetti incaricati dello svolgimento dei test esterni, se del caso;
+b)
+la mancata conformità del TLPT al regolamento (UE) 2022/2554 e al presente regolamento qualora tale mancata conformità si traduca nell’assenza dell’attestato di cui all’articolo 26, paragrafo 7, del
+regolamento (UE) 2022/2554, anche quando tale mancata conformità è dovuta a violazioni della riservatezza del TLPT o a una condotta non etica;
+c)
+l’escalation di crisi e incidenti;
+d)
+la fase attiva del red team, compresi i rischi connessi all’interruzione delle attività critiche e alla corruzione dei dati dovuta alle attività dei soggetti incaricati dello svolgimento dei test, e
+il suo potenziale impatto su terzi;
+e)
+l’attività del blue team, compresi i rischi connessi all’interruzione delle attività critiche e alla corruzione dei dati dovuta alle attività del blue team, e il suo potenziale impatto su terzi;
+f)
+il ripristino incompleto dei sistemi interessati dal TLPT.
+
+=== K80 | [6] Gestione dei rischi per i TLPT congiunti o comuni
+Articolo 6
+Gestione dei rischi per i TLPT congiunti o comuni
+1. Nel caso di un TLPT comune o di un TLPT congiunto, il team di controllo di ciascuna entità finanziaria effettua la propria valutazione dei rischi e definisce le proprie misure di gestione dei
+rischi.
+2. Il team di controllo dell’entità finanziaria designata di cui all’articolo 16, paragrafo 3, lettera b), del presente regolamento, o l’entità finanziaria designata a norma dell’articolo 26,
+paragrafo 4, del regolamento (UE) 2022/2554, valuta i rischi relativi al coinvolgimento di più entità finanziarie nel TLPT. I team di controllo delle entità finanziarie coinvolte cooperano con il team
+di controllo dell’entità finanziaria designata al fine di identificare potenziali rischi comuni.
+
+=== K81 | [7] Selezione dei fornitori di TLPT
+Articolo 7
+Selezione dei fornitori di TLPT
+1. Il team di controllo adotta misure per gestire i rischi relativi al TLPT e garantisce in particolare che, per ciascun TLPT:
+a)
+il soggetto che fornisce analisi delle minacce e i soggetti incaricati dello svolgimento dei test esterni forniscano al team di controllo un curriculum vitae dettagliato e copie di certificazioni che,
+secondo gli standard di mercato riconosciuti, sono adeguate allo svolgimento delle loro attività;
+b)
+il soggetto che fornisce analisi delle minacce e i soggetti incaricati dello svolgimento dei test esterni siano debitamente e pienamente coperti da un’assicurazione di responsabilità professionale
+adeguata, anche contro i rischi di colpa e negligenza;
+c)
+il soggetto che fornisce analisi delle minacce fornisca almeno tre referenze relative a precedenti incarichi nel contesto dei test di penetrazione e dei test red team;
+d)
+i soggetti incaricati dello svolgimento dei test esterni forniscano almeno cinque referenze relative a precedenti incarichi riguardanti test di penetrazione e test red team;
+e)
+il personale del soggetto che fornisce analisi delle minacce assegnato al TLPT:
+i)
+sia composto da almeno un responsabile con minimo cinque anni di esperienza nell’analisi delle minacce e da almeno un altro membro con minimo due anni di esperienza nell’analisi delle minacce;
+ii)
+presenti un’ampia gamma e un livello adeguato di conoscenze e competenze professionali, tra cui:
+1)
+tattiche, tecniche e procedure per la raccolta di informazioni;
+2)
+conoscenze geopolitiche, tecniche e settoriali;
+3)
+adeguate capacità di comunicazione per presentare chiaramente i risultati dell’impegno e riferire in merito;
+iii)
+abbia partecipato in totale ad almeno tre precedenti incarichi di analisi delle minacce nel contesto dei test di penetrazione e dei test red team;
+iv)
+non svolga simultaneamente compiti appartenenti al blue team o altri servizi che possono presentare un conflitto di interessi nei confronti dell’entità finanziaria, del fornitore terzo di servizi di
+TIC o di un fornitore intragruppo di servizi TIC coinvolto nel TLPT cui è assegnato;
+v)
+sia separato dal personale dello stesso fornitore di TLPT che fornisce soggetti incaricati dello svolgimento dei test esterni per lo stesso TLPT, e non faccia capo a tale personale;
+f)
+per i soggetti incaricati dello svolgimento dei test esterni, il red team assegnato al TLPT:
+i)
+sia composto da almeno un responsabile, con minimo cinque anni di esperienza in test di penetrazione e test red team, nonché da almeno due ulteriori soggetti incaricati dello svolgimento dei test,
+ciascuno con minimo due anni di esperienza in test di penetrazione e test red team;
+ii)
+presenti un’ampia gamma e un livello adeguato di conoscenze e competenze professionali, comprese conoscenze sull’attività dell’entità finanziaria, in materia di ricognizione ( reconnaissance ),
+gestione dei rischi, sviluppo di exploit , penetrazione fisica, ingegneria sociale, analisi delle vulnerabilità, nonché adeguate capacità di comunicazione per presentare chiaramente i risultati
+dell’impegno e riferire in merito;
+iii)
+abbia partecipato in maniera combinata ad almeno cinque precedenti incarichi riguardanti test di penetrazione e test red team;
+iv)
+non sia alle dipendenze di un soggetto che fornisce analisi delle minacce che svolge simultaneamente compiti appartenenti al blue team per un’entità finanziaria, un fornitore terzo di servizi TIC o un
+fornitore intragruppo di servizi TIC coinvolto nel TLPT, né fornisca servizi a tale soggetto;
+v)
+sia separato dal personale dello stesso fornitore di TLPT che fornisce contemporaneamente servizi di analisi delle minacce per lo stesso TLPT;
+g)
+i soggetti incaricati dello svolgimento dei test e il soggetto che fornisce analisi delle minacce eseguano procedure di ripristino al termine dei test, anche per quanto riguarda la cancellazione
+sicura delle informazioni relative a password, credenziali e altre chiavi segrete compromesse durante il TLPT, la comunicazione sicura alle entità finanziarie dei conti compromessi, la raccolta,
+l’archiviazione, la gestione e l’eliminazione sicure di altri dati raccolti durante il test;
+h)
+i soggetti incaricati dello svolgimento dei test, oltre alle procedure di ripristino al termine dei test di cui alla lettera g), eseguano le procedure di ripristino seguenti:
+i)
+disattivazione del comando e del controllo;
+ii)
+attivazione di meccanismi di emergenza ( kill switch ) riguardanti ambito di applicazione e data;
+iii)
+rimozione di backdoor e altri malware;
+iv)
+notifica della potenziale violazione;
+v)
+procedure per il ripristino futuro di back-up che possono riguardare malware o strumenti installati durante il test;
+vi)
+monitoraggio delle attività del blue team e comunicazione al team di controllo di eventuali rilevamenti;
+i)
+i soggetti incaricati dello svolgimento dei test e il soggetto che fornisce analisi delle minacce non svolgano alcuna delle attività seguenti, né vi prendano parte:
+i)
+distruzione non autorizzata delle attrezzature dell’entità finanziaria e degli eventuali fornitori terzi di servizi TIC;
+ii)
+modifica incontrollata delle informazioni e delle risorse TIC dell’entità finanziaria e degli eventuali fornitori terzi di servizi TIC;
+iii)
+compromissione intenzionale della continuità di funzioni essenziali o importanti dell’entità finanziaria;
+iv)
+inclusione non autorizzata di sistemi esterni all’ambito di applicazione;
+v)
+divulgazione non autorizzata dei risultati dei test.
+2. Il team di controllo registra la documentazione fornita dai soggetti incaricati dello svolgimento dei test e dai soggetti che forniscono analisi delle minacce per dimostrare la conformità con il
+paragrafo 1, lettere da a) a f).
+In circostanze eccezionali, le entità finanziarie possono avvalersi di soggetti incaricati dello svolgimento dei test esterni e di soggetti che forniscono analisi delle minacce che non soddisfano uno
+o più dei requisiti di cui al paragrafo 1, lettere da a) a f), a condizione che tali entità finanziarie adottino misure adeguate per attenuare i rischi connessi alla mancata conformità con tali punti
+e registrino tali misure.
+
+=== K82 | [8] Specificità per i TLPT comuni o congiunti
+Articolo 8
+Specificità per i TLPT comuni o congiunti
+1. Salvo diversa decisione dell’autorità capofila competente per il TLPT, se più entità finanziarie, identificate a norma dell’articolo 16, paragrafo 2 o 4, sono coinvolte in un TLPT comune o
+congiunto, ciascuna entità finanziaria segue ognuna delle fasi di cui agli articoli da 9 a 15.
+2. Salvo disposizione contraria del presente regolamento, se diverse autorità competenti per i TLPT sono coinvolte in un TLPT comune o in un TLPT congiunto di cui all’articolo 16, paragrafo 3 o 5, i
+riferimenti contenuti negli articoli da 9 a 15 all’«autorità competente per il TLPT» sono da intendersi come riferimenti all’autorità capofila competente per il TLPT per tale TLPT comune o congiunto.
+
+=== K83 | [9] Fase di preparazione
+Articolo 9
+Fase di preparazione
+1. Un’entità finanziaria identificata a norma dell’articolo 26, paragrafo 8, terzo comma, del regolamento (UE) 2022/2554 avvia un TLPT a seguito di una notifica circa la necessità di condurre un TLTP
+da parte dell’autorità competente per il TLPT.
+2. Entro tre mesi dal ricevimento della notifica di cui al paragrafo 1, l’entità finanziaria trasmette ai responsabili dei test tutte le informazioni seguenti relative all’avvio del TLPT:
+a)
+una carta del progetto comprendente un piano di progetto ad alto livello, contenente le informazioni di cui all’allegato I;
+b)
+i recapiti del responsabile del team di controllo;
+c)
+informazioni sull’uso previsto di soggetti incaricati dello svolgimento dei test interni o esterni o di entrambi, se del caso come specificato all’articolo 15;
+d)
+informazioni sui canali di comunicazione da utilizzare durante il TLPT;
+e)
+il nome in codice del TLPT.
+3. Se le informazioni di cui al paragrafo 2, lettere da a) a e), sono complete e garantiscono l’idoneità e lo svolgimento efficace del TLPT, l’autorità competente per il TLPT convalida le informazioni
+di avvio del TLPT dell’entità finanziaria e ne informa quest’ultima.
+4. A seguito della convalida delle informazioni relative all’avvio del TLPT da parte dell’autorità competente per il TLPT, l’entità finanziaria istituisce un team di controllo per coadiuvare il
+responsabile del team di controllo nei compiti seguenti:
+a)
+specificare i canali e i processi di comunicazione all’interno del team di controllo, con i soggetti incaricati dello svolgimento dei test e i soggetti che forniscono analisi delle minacce in tutte le
+questioni relative al TLPT;
+b)
+informare l’organo di gestione dell’entità finanziaria in merito ai progressi del TLPT e ai rischi connessi;
+c)
+adottare decisioni basate sulle competenze in materia durante tutto il TLPT;
+d)
+eseguire il TLPT conformemente al presente regolamento;
+e)
+selezionare il soggetto che fornisce analisi delle minacce per il TLPT;
+f)
+selezionare i soggetti incaricati dello svolgimento dei test esterni, i soggetti incaricati dello svolgimento dei test interni o entrambi;
+g)
+preparare il documento contenente le specifiche relative all’ambito di applicazione.
+5. Se ritiene che la composizione iniziale del team di controllo e le eventuali modifiche successive siano adeguate per lo svolgimento dei compiti di cui al paragrafo 4, l’autorità competente per il
+TLPT convalida il team di controllo e ne informa il relativo responsabile.
+6. L’entità finanziaria presenta ai responsabili dei test un documento relativo alle specifiche dell’ambito di applicazione contenente tutte le informazioni di cui all’allegato II entro sei mesi dal
+ricevimento della notifica da parte dell’autorità competente per il TLPT di cui al paragrafo 1. L’organo di gestione dell’entità finanziaria approva il documento relativo alle specifiche dell’ambito
+di applicazione.
+7. Ai fini dell’inclusione di funzioni essenziali o importanti nell’ambito di applicazione del TLPT, le entità finanziarie prendono in considerazione i criteri seguenti:
+a)
+l’essenzialità o l’importanza della funzione e il suo possibile impatto sul settore finanziario e sulla stabilità finanziaria a livello dell’Unione e nazionale;
+b)
+l’importanza della funzione per l’operatività quotidiana dell’entità finanziaria;
+c)
+l’intercambiabilità della funzione;
+d)
+l’interconnessione con altre funzioni;
+e)
+l’ubicazione geografica della funzione;
+f)
+la dipendenza settoriale di altre entità dalla funzione;
+g)
+se disponibili, analisi delle minacce riguardanti la funzione.
+8. Dopo che i soggetti incaricati dello svolgimento dei test e i soggetti che forniscono analisi delle minacce hanno ricevuto l’incarico, il team di controllo condivide con loro le informazioni
+sull’avvio del TLPT e il documento relativo alle specifiche dell’ambito di applicazione. Il team di controllo informa i soggetti incaricati dello svolgimento dei test e i soggetti che forniscono
+analisi delle minacce in merito al processo di test da seguire.
+9. L’entità finanziaria garantisce che l’acquisizione o l’assegnazione di soggetti incaricati dello svolgimento dei test e di soggetti che forniscono analisi delle minacce sia ultimata prima
+dell’inizio della fase di test.
+10. Prima dell’inizio della fase di test, il team di controllo consulta i responsabili dei test in merito alla valutazione dei rischi relativi al TLPT e alle relative misure di gestione dei rischi. Se
+l’autorità competente per il TLPT ritiene che la valutazione dei rischi o le misure di gestione dei rischi non affrontino adeguatamente i rischi relativi al TLPT, il team di controllo provvede a
+riesaminarle.
+11. Il team di controllo valuta se i soggetti che forniscono analisi delle minacce e i soggetti incaricati dello svolgimento dei test che si intende coinvolgere nel TLPT soddisfano i requisiti di cui
+all’articolo 27 del regolamento (UE) 2022/2554 e all’articolo 7, paragrafo 1, del presente regolamento e documenta l’esito di tale valutazione. Il team di controllo seleziona i soggetti che forniscono
+analisi delle minacce conformemente a tale valutazione e alle sue pratiche di gestione dei rischi. Prima di avvalersi dei soggetti che forniscono analisi delle minacce e dei soggetti incaricati dello
+svolgimento dei test esterni selezionati, il team di controllo fornisce ai responsabili dei test prove del fatto che tali soggetti che forniscono analisi delle minacce e soggetti incaricati dello
+svolgimento dei test soddisfano i requisiti di cui all’articolo 27 del regolamento (UE) 2022/2554 e all’articolo 7, paragrafo 1, del presente regolamento. Il team di controllo non si avvale dei
+soggetti che forniscono analisi delle minacce e dei soggetti incaricati dello svolgimento dei test esterni selezionati se l’autorità competente per il TLPT ritiene che i soggetti che forniscono
+analisi delle minacce e i soggetti incaricati dello svolgimento dei test esterni selezionati non soddisfino i requisiti di cui all’articolo 27 del regolamento (UE) 2022/2554, i requisiti di cui
+all’articolo 7, paragrafo 1, del presente regolamento o requisiti supplementari derivanti da normative nazionali in materia di sicurezza conformemente al diritto dell’Unione, o qualora l’entità
+finanziaria non rispetti l’articolo 7, paragrafo 2, primo comma, del presente regolamento, o qualora non siano soddisfatte le circostanze di cui all’articolo 7, paragrafo 2, secondo comma, del
+presente regolamento.
+12. Se il documento relativo alle specifiche dell’ambito di applicazione è completo e garantisce lo svolgimento di un TLPT adeguato ed efficace, l’autorità competente per il TLPT approva tale
+documento e ne informa il responsabile del team di controllo.
+
+=== K84 | [10] Fase di test: analisi delle minacce
+Articolo 10
+Fase di test: analisi delle minacce
+1. A seguito dell’approvazione del documento relativo alle specifiche dell’ambito di applicazione da parte dell’autorità competente per il TLPT, il soggetto che fornisce analisi delle minacce esamina
+le analisi delle minacce generiche e settoriali pertinenti per l’entità finanziaria. Se l’autorità competente per il TLPT ha fornito un panorama delle minacce generico per il settore finanziario di
+uno Stato membro, il soggetto che fornisce analisi delle minacce può utilizzare tale panorama come base di riferimento per il panorama delle minacce nazionale. Il soggetto che fornisce analisi delle
+minacce individua le minacce informatiche nonché le vulnerabilità esistenti o potenziali riguardanti l’entità finanziaria. Inoltre il soggetto che fornisce analisi delle minacce raccoglie informazioni
+in merito ad analisi delle minacce e dei bersagli riguardanti l’entità finanziaria che siano concrete, fruibili e contestualizzate e provvede ad esaminarle, anche consultando il team di controllo e i
+responsabili dei test.
+2. Il soggetto che fornisce analisi delle minacce presenta le minacce e le analisi mirate delle minacce pertinenti e propone gli scenari necessari al team di controllo, ai soggetti incaricati dello
+svolgimento dei test e ai responsabili dei test. Gli scenari proposti differiscono per quanto riguarda gli autori identificati delle minacce nonché le tattiche, tecniche e procedure associate e sono
+rivolti a ciascuna funzione essenziale o importante nell’ambito di applicazione del TLPT.
+3. Il responsabile del team di controllo seleziona almeno tre scenari per condurre il TLPT sulla base di tutti gli elementi seguenti:
+a)
+la raccomandazione del soggetto che fornisce analisi delle minacce e la natura guidata dalla minaccia di ciascuno scenario;
+b)
+il contributo fornito dai responsabili dei test;
+c)
+la fattibilità degli scenari proposti per l’esecuzione, sulla base del giudizio esperto dei responsabili dei test;
+d)
+le dimensioni, la complessità e il profilo di rischio complessivo dell’entità finanziaria nonché la natura, la portata e la complessità dei suoi servizi, delle sue attività e della sua operatività.
+4. Al massimo uno degli scenari selezionati può non essere guidato dalla minaccia e può basarsi su una minaccia futura e potenzialmente fittizia con un elevato valore predittivo, anticipativo,
+opportunistico o prospettico, in considerazione degli sviluppi previsti del panorama delle minacce riguardante l’entità finanziaria.
+Per i TLPT congiunti, fatti salvi gli scenari che riguardano direttamente le funzioni essenziali o importanti delle entità finanziarie coinvolte nei test, almeno uno scenario comprende i pertinenti
+sistemi, processi e tecnologie TIC sottostanti del fornitore terzo di servizi TIC a supporto delle funzioni essenziali o importanti delle entità finanziarie che rientrano nell’ambito di applicazione.
+Se il test è un TLPT comune che coinvolge un fornitore intragruppo di servizi TIC, fatti salvi gli scenari che riguardano direttamente le funzioni essenziali o importanti delle entità finanziarie
+coinvolte nel test, almeno uno scenario comprende i pertinenti sistemi, processi e tecnologie TIC sottostanti del fornitore intragruppo di servizi TIC a supporto delle funzioni essenziali o importanti
+delle entità finanziarie che rientrano nell’ambito di applicazione.
+5. Il soggetto che fornisce analisi delle minacce trasmette la relazione sull’analisi mirata delle minacce al team di controllo, compresi gli scenari selezionati conformemente ai paragrafi 3 e 4. La
+relazione sull’analisi delle minacce contiene le informazioni di cui all’allegato III.
+6. Il team di controllo sottopone la relazione sull’analisi mirata delle minacce all’approvazione del responsabile dei test. Se la relazione sull’analisi mirata delle minacce è completa e garantisce
+lo svolgimento di un TLPT efficace, l’autorità competente per il TLPT approva la relazione sull’analisi mirata delle minacce e il responsabile del team di controllo
+
+=== K85 | [11] Fase di test: test red team
+Articolo 11
+Fase di test: test red team
+1. A seguito dell’approvazione della relazione sull’analisi mirata delle minacce da parte dell’autorità competente per il TLPT, i soggetti incaricati dello svolgimento dei test preparano il piano
+relativo al test red team che contiene le informazioni di cui all’allegato IV. I soggetti incaricati dello svolgimento dei test utilizzano il documento relativo alle specifiche dell’ambito di
+applicazione e la relazione sull’analisi mirata delle minacce come base per l’elaborazione degli scenari di attacco.
+2. I soggetti incaricati dello svolgimento dei test consultano il team di controllo, il soggetto che fornisce analisi delle minacce e i responsabili dei test in merito al piano relativo al test red
+team, comprese le disposizioni in materia di comunicazione, procedure e gestione del progetto, la preparazione e i casi d’uso per l’attivazione dei leg-up e gli accordi di comunicazione al team di
+controllo e ai responsabili dei test.
+3. Se il piano relativo al test red team è completo e garantisce lo svolgimento di un TLPT efficace, il team di controllo e l’autorità competente per il TLPT approvano il piano relativo al test red
+team e l’autorità competente per il TLPT ne informa il responsabile del team di controllo.
+4. Una volta approvato il piano relativo al test red team conformemente al paragrafo 3, i responsabili dei test conducono il TLPT durante la fase attiva di test red team.
+5. La durata della fase attiva di test red team è proporzionata all’ambito di applicazione del TLPT, alla portata, all’attività, alla complessità e al numero delle entità finanziarie e dei fornitori
+terzi o intragruppo di servizi TIC coinvolti nel TLPT e, in ogni caso, è di minimo 12 settimane. Gli scenari di attacco possono essere eseguiti in sequenza o contemporaneamente. Il team di controllo,
+il soggetto che fornisce analisi delle minacce, i soggetti incaricati dello svolgimento dei test e i responsabili dei test concordano la fine della fase attiva di test red team.
+6. Fermo restando il presupposto che il piano relativo al test red team debba rimanere completo e consentire lo svolgimento di un TLPT efficace, il responsabile del team di controllo e i responsabili
+dei test approvano eventuali modifiche al piano relativo al test red team in seguito alla sua approvazione, anche per quanto riguarda le tempistiche, l’ambito di applicazione, i sistemi di bersagli o
+i flag .
+7. Durante l’intera fase attiva di test red team, i soggetti incaricati dello svolgimento dei test riferiscono con cadenza almeno settimanale al team di controllo e ai responsabili dei test in merito
+ai progressi compiuti nel TLPT e il soggetto che fornisce analisi delle minacce rimane a disposizione a fini di consultazione e per fornire ulteriori analisi delle minacce su richiesta del team di
+controllo.
+8. Il team di controllo fornisce tempestivamente leg-up concepiti sulla base del piano relativo al test red team. I leg-up possono essere aggiunti o adattati previa approvazione del team di controllo
+e dei responsabili dei test.
+9. In caso di rilevamento delle attività di test da parte di qualsiasi membro del personale dell’entità finanziaria o dei suoi fornitori terzi di servizi di TIC o del suo fornitore intragruppo di
+servizi TIC, se del caso, il team di controllo, in consultazione con i soggetti incaricati dello svolgimento dei test e fatto salvo il paragrafo 10, propone e presenta ai responsabili dei test misure
+che consentano di proseguire il TLPT, garantendone nel contempo la segretezza, affinché possano convalidarle.
+10. In circostanze eccezionali che comportano rischi di impatti sui dati, danni alle attività e perturbazioni delle funzioni essenziali o importanti, delle operazioni o dei servizi dell’entità
+finanziaria stessa, dei suoi fornitori terzi di servizi TIC o fornitori intragruppo di servizi TIC, oppure perturbazioni delle sue controparti o del settore finanziario, il responsabile del team di
+controllo può sospendere il TLPT o, in ultima istanza, qualora il proseguimento del TLPT non sia altrimenti possibile e previa convalida da parte dell’autorità competente per il TLPT, può proseguire
+il TLPT utilizzando un esercizio limitato di purple teaming. La durata dell’esercizio limitato di purple teaming è conteggiata ai fini del rispetto della durata minima di 12 settimane della fase
+attiva di test red team di cui al paragrafo 5.
+
+=== K86 | [12] Fase di chiusura
+Articolo 12
+Fase di chiusura
+1. Al termine della fase attiva di test red team, il responsabile del team di controllo informa il blue team dell’avvenuto TLPT.
+2. Entro quattro settimane dalla fine della fase attiva di test red team, i soggetti incaricati dello svolgimento dei test presentano al team di controllo una relazione sul test red team contenente le
+informazioni di cui all’allegato V.
+3. Il team di controllo fornisce senza indebito ritardo la relazione sul test red team al blue team e ai responsabili dei test.
+Dietro richiesta dei responsabili dei test, la relazione di cui al primo comma non contiene informazioni sensibili.
+4. Una volta ricevuta la relazione sul test red team ed entro 10 settimane dalla fine della fase attiva di test red team, il blue team presenta al team di controllo una relazione sul test blue team
+contenente le informazioni di cui all’allegato VI. Il team di controllo fornisce senza indebito ritardo la relazione sul test blue team ai soggetti incaricati dello svolgimento dei test e ai
+responsabili dei test.
+Dietro richiesta dei responsabili dei test, la relazione di cui al primo comma non contiene informazioni sensibili.
+5. Entro 10 settimane dalla fine della fase attiva di test red team, il blue team e i soggetti incaricati dello svolgimento dei test replicano le azioni offensive e difensive eseguite durante il TLPT.
+Il team di controllo esegue inoltre un esercizio di purple teaming su temi individuati di concerto dal blue team e dai soggetti incaricati dello svolgimento dei test, sulla base delle vulnerabilità
+individuate durante il test e, se del caso, su questioni che non hanno potuto essere sottoposte a test durante la fase attiva di test red team.
+6. Al termine degli esercizi di replica e di purple teaming, il team di controllo, il blue team, i soggetti incaricati dello svolgimento dei test e i soggetti che forniscono analisi delle minacce
+scambiano reciprocamente riscontri sul processo di TLPT. I responsabili dei test possono fornire riscontri.
+7. Dopo che l’autorità competente per il TLPT ha notificato al responsabile del team di controllo di aver accertato che la relazione sul test blue team e la relazione sul test red team contengono le
+informazioni di cui agli allegati V e VI, entro otto settimane l’entità finanziaria sottopone all’approvazione dell’autorità competente per il TLPT la relazione di sintesi delle pertinenti risultanze
+di cui all’articolo 26, paragrafo 6, del regolamento (UE) 2022/2554, contenente gli elementi di cui all’allegato VII.
+Dietro richiesta dell’autorità competente per il TLPT, la relazione di cui al primo comma non contiene informazioni sensibili.
+
+=== K87 | [13] Piano correttivo
+Articolo 13
+Piano correttivo
+1. Entro otto settimane dalla notifica di cui all’articolo 12, paragrafo 7, del presente regolamento, l’entità finanziaria trasmette i piani correttivi e la documentazione di cui all’articolo 26,
+paragrafo 6, del regolamento (UE) 2022/2554 all’autorità competente per il TLPT e, se diversa, all’autorità competente dell’entità finanziaria.
+2. Il piano correttivo di cui al paragrafo 1 comprende, per ciascuna risultanza ottenuta nel quadro del TLPT:
+a)
+una descrizione delle carenze individuate;
+b)
+una descrizione delle misure correttive proposte, indicandone l’ordine di priorità e il completamento previsto, comprese, se del caso, misure volte a migliorare le capacità di identificazione,
+protezione, rilevamento e risposta;
+c)
+un’analisi delle cause di fondo;
+d)
+l’indicazione del personale o delle funzioni dell’entità finanziaria responsabili dell’attuazione delle misure correttive o dei miglioramenti proposti;
+e)
+l’indicazione dei rischi associati alla mancata attuazione delle misure di cui alla lettera b) e, se del caso, dei rischi associati all’attuazione di tali misure.
+
+=== K88 | [14] Attestato
+Articolo 14
+Attestato
+1. L’attestato di cui all’articolo 26, paragrafo 7, del regolamento (UE) 2022/2554 contiene le informazioni di cui all’allegato VIII.
+2 Se in un TLPT sono state coinvolte più autorità competenti per i TLPT, l’autorità capofila competente per il TLPT fornisce l’attestato di cui all’articolo 26, paragrafo 7, del regolamento (UE)
+2022/2554 alle entità finanziarie sottoposte a test.
+
+=== K89 | [15] Ricorso a soggetti incaricati dello svolgimento dei test interni
+Articolo 15
+Ricorso a soggetti incaricati dello svolgimento dei test interni
+1. Le entità finanziarie mettono in atto tutte le modalità seguenti per il ricorso a soggetti incaricati dello svolgimento dei test interni:
+a)
+l’istituzione e l’attuazione di una politica per la gestione dei soggetti incaricati dello svolgimento dei test interni in un TLPT;
+b)
+l’adozione di misure volte a garantire che il ricorso a soggetti incaricati dello svolgimento dei test interni per eseguire un TLPT non abbia un impatto negativo sulle capacità generali di difesa o
+resilienza dell’entità finanziaria per quanto riguarda gli incidenti connessi alle TIC o non incida in modo significativo sulla disponibilità di risorse destinate a compiti connessi alle TIC durante
+un TLPT;
+c)
+l’adozione di misure volte a garantire che i soggetti incaricati dello svolgimento dei test interni dispongano di risorse e capacità sufficienti per eseguire un TLPT.
+La politica di cui alla lettera a):
+a)
+contiene criteri per valutare l’idoneità, la competenza e i potenziali conflitti di interesse dei soggetti incaricati dello svolgimento dei test interni e specifica le responsabilità di gestione nel
+processo di test;
+b)
+è documentata e riesaminata periodicamente;
+c)
+prevede che il team interno incaricato dello svolgimento del test comprenda un responsabile del test e almeno altri due membri;
+d)
+impone che tutti i membri del team incaricato dello svolgimento del test siano dipendenti dell’entità finanziaria o di un fornitore intragruppo di servizi TIC da almeno 12 mesi;
+e)
+contiene disposizioni in materia di formazione sulle modalità di esecuzione dei test di penetrazione e dei test di red team per i soggetti incaricati dello svolgimento dei test interni.
+2. Qualora approvi il ricorso a soggetti incaricati dello svolgimento dei test interni conformemente all’articolo 27, paragrafo 2, lettera a), del regolamento (UE) 2022/2554, l’autorità competente per
+il TLPT tiene conto dei requisiti di cui all’articolo 7, paragrafo 1, del presente regolamento.
+3. Quando ricorre a soggetti incaricati dello svolgimento dei test interni, l’entità finanziaria garantisce che tale ricorso sia indicato nei documenti seguenti:
+a)
+le informazioni relative all’avvio del test di cui all’articolo 9;
+b)
+la relazione sul test red team di cui all’articolo 12, paragrafo 2;
+c)
+la relazione di sintesi delle pertinenti risultanze del TLPT di cui all’articolo 26, paragrafo 6, del regolamento (UE) 2022/2554.
+4. I soggetti incaricati dello svolgimento dei test che sono dipendenti di un fornitore intragruppo di servizi TIC sono considerati soggetti incaricati dello svolgimento dei test interni dell’entità
+finanziaria.
+
+=== K90 | [16] Cooperazione e riconoscimento reciproco
+Articolo 16
+Cooperazione e riconoscimento reciproco
+1. Ai fini dello svolgimento di un TLPT in relazione a un’entità finanziaria che fornisce servizi in più di uno Stato membro, anche attraverso una succursale, la rispettiva autorità competente per il
+TLPT:
+a)
+determina quali autorità competenti per i TLPT negli Stati membri ospitanti sono coinvolte, prendendo in considerazione se una o più funzioni essenziali o importanti sono svolte o condivise negli
+Stati membri ospitanti;
+b)
+informa le autorità competenti per i TLPT identificate conformemente alla lettera a) della decisione di svolgere un TLPT sull’entità finanziaria;
+c)
+salvo diversamente concordato dalle autorità competenti per i TLPT, l’autorità competente per il TLPT dell’entità finanziaria dirige il TLPT.
+Entro 20 giorni lavorativi dal ricevimento delle informazioni sul futuro svolgimento di un TLPT, le autorità competenti per i TLPT degli Stati membri ospitanti possono manifestare il proprio interesse
+a seguire il TLPT in qualità di osservatori oppure incaricare un responsabile dei test affinché partecipi al TLPT. L’autorità capofila competente per il TLPT fornisce a tutte le autorità competenti
+per i TLPT che agiscono in qualità di osservatori nel TLPT il documento relativo alle specifiche dell’ambito di applicazione, la relazione di sintesi sul test, il piano correttivo e l’attestato.
+L’autorità capofila competente per il TLPT coordina tutte le autorità competenti per i TLPT partecipanti durante l’intero test e adotta tutte le decisioni necessarie per svolgere il TLPT in modo
+adeguato ed efficace. L’autorità capofila competente per il TLPT può stabilire un numero massimo di autorità competenti per i TLPT partecipanti, qualora lo svolgimento del TLPT in maniera efficiente
+potrebbe risultare altrimenti compromesso.
+2. Se un’entità finanziaria utilizza lo stesso fornitore intragruppo di servizi TIC di entità finanziarie stabilite in altri Stati membri, o appartiene a un gruppo e condivide sistemi di TIC con
+entità finanziarie dello stesso gruppo stabilite in altri Stati membri, l’autorità competente per il TLPT dell’entità finanziaria contatta le autorità competenti per i TLPT delle altre entità
+finanziarie che utilizzano lo stesso fornitore intragruppo di servizi TIC o condividono sistemi di TIC appartenenti al gruppo e valuta con esse la fattibilità e l’idoneità di svolgere un TLPT comune
+nei loro confronti. Un TLPT comune è da preferire a un TLPT individuale se consente una riduzione dei costi e delle risorse per le entità finanziarie e per le autorità competenti per i TLPT, purché la
+solidità e l’efficacia del test non siano compromesse.
+3. Ai fini dello svolgimento di un TLPT comune:
+a)
+le autorità competenti per i TLPT delle entità finanziarie concordano quale entità finanziaria è designata per condurre il TLPT, tenendo conto della struttura del gruppo e dell’efficienza del test;
+b)
+l’autorità competente per il TLPT dell’entità finanziaria designata conformemente alla lettera a) dirige il TLPT, salvo diversamente concordato dalle autorità competenti per i TLPT delle entità
+finanziarie che partecipano al TLPT comune;
+c)
+le autorità competenti per i TLPT delle entità finanziarie diverse dall’entità finanziaria designata per dirigere il TLPT comune possono manifestare il proprio interesse a seguire il TLPT in qualità
+di osservatori o assegnare un responsabile dei test a tale TLPT.
+L’autorità capofila competente per il TLPT coordina tutte le autorità competenti per i TLPT coinvolte nel TLPT comune e adotta tutte le decisioni necessarie per svolgere il TLPT comune in modo
+corretto ed efficace.
+4. Qualora un’entità finanziaria intenda condurre un TLPT congiunto di cui all’articolo 26, paragrafo 4, del regolamento (UE) 2022/2554, che potrebbe coinvolgere entità finanziarie stabilite in altri
+Stati membri, la rispettiva autorità competente per il TLPT contatta le autorità competenti per i TLPT delle altre entità finanziarie e valuta con esse la fattibilità e l’idoneità di svolgere un TLPT
+congiunto che le riguardi a norma dell’articolo 26, paragrafo 4, del regolamento (UE) 2022/2554.
+5. Ai fini dello svolgimento di un TLPT congiunto di cui all’articolo 26, paragrafo 4, del regolamento (UE) 2022/2554:
+a)
+le autorità competenti per i TLPT delle entità finanziarie concordano quale entità finanziaria designare per condurre il TLPT congiunto, tenendo conto dei servizi TIC forniti dal fornitore terzo di
+servizi TIC alle entità finanziarie e dell’efficienza del test;
+b)
+l’autorità competente per il TLPT dell’entità finanziaria designata conformemente alla lettera a) dirige il TLPT, salvo diversamente concordato dalle autorità competenti per i TLPT delle entità
+finanziarie che partecipano al TLPT congiunto;
+c)
+le autorità competenti per i TLPT delle entità finanziarie diverse dall’entità finanziaria designata per dirigere il TLPT congiunto possono manifestare il proprio interesse a seguire il TLPT in
+qualità di osservatori o assegnare un responsabile dei test a tale TLPT.
+L’autorità capofila competente per il TLPT coordina tutte le autorità competenti per i TLPT coinvolte nel TLPT congiunto e adotta tutte le decisioni necessarie per svolgere il TLPT congiunto in modo
+corretto ed efficace.
+6. Se, in relazione a un’entità finanziaria che ha l’obbligo di svolgere un TLPT, la rispettiva autorità competente per il TLPT è diversa dalla rispettiva autorità competente di cui all’articolo 46
+del regolamento (UE) 2022/2554, tali autorità condividono tutte le informazioni pertinenti riguardanti tutte le questioni relative al TLPT ai fini dello svolgimento del TLPT o dell’esercizio delle
+loro funzioni conformemente a detto regolamento.
+
+=== K92 | [Allegato I] Contenuto della carta del progetto [articolo 9, paragrafo 2, lettera a)]
+ALLEGATO I
+Contenuto della carta del progetto [articolo 9, paragrafo 2, lettera a)]
+Tipo di informazione
+Informazioni richieste
+Responsabile del piano di progetto, ossia il responsabile del team di controllo
+Nome
+Recapiti
+Soggetti incaricati dello svolgimento dei test
+☐
+interni
+☐
+esterni
+☐
+entrambi
+Canali di comunicazione selezionati conformemente all’articolo 9, paragrafo 2, lettera d), e all’articolo 9, paragrafo 4, lettera a), tra cui:
+a)
+cifratura delle e-mail da utilizzare
+b)
+sale dati ( data room ) online da utilizzare
+c)
+messaggistica istantanea da utilizzare
+Nome in codice per il TLPT
+Eventuali funzioni essenziali o importanti che l’entità finanziaria svolge in altri Stati membri
+1.
+Elenco delle funzioni essenziali o importanti svolte in un altro Stato membro
+2.
+Per ciascuna funzione essenziale o importante, indicazione dello Stato membro o degli Stati membri in cui è svolta
+Eventuali funzioni essenziali o importanti supportate da fornitori terzi di servizi TIC
+3.
+Elenco delle funzioni essenziali o importanti supportate da fornitori terzi di servizi TIC
+4.
+Per ciascuna funzione, identificazione del fornitore terzo di servizi TIC
+Termini previsti per il completamento di:
+(1)
+fase di preparazione, conformemente all’articolo 9
+aaaa-mm-gg
+(2)
+fase di test, conformemente agli articoli 10 e 11
+aaaa-mm-gg
+(3)
+fase di chiusura, conformemente all’articolo 12
+aaaa-mm-gg
+(4)
+piano correttivo, conformemente all’articolo 13
+aaaa-mm-gg
+
+=== K93 | [Allegato II] Contenuto del documento relativo alle specifiche dell’ambito di applicazione (articolo 9, paragrafo 6)
+ALLEGATO II
+Contenuto del documento relativo alle specifiche dell’ambito di applicazione (articolo 9, paragrafo 6)
+1.
+Il documento relativo alle specifiche dell’ambito di applicazione contiene un elenco di tutte le funzioni essenziali o importanti identificate dall’entità finanziaria.
+2.
+Per ciascuna funzione essenziale o importante identificata sono incluse le informazioni seguenti:
+a)
+se la funzione essenziale o importante non è inclusa nell’ambito di applicazione del TLPT, la spiegazione dei motivi per cui non è inclusa;
+b)
+se la funzione essenziale o importante è inclusa nell’ambito di applicazione del TLPT:
+i)
+la spiegazione dei motivi dell’inclusione;
+ii)
+il sistema o i sistemi di TIC identificati che supportano tale funzione essenziale o importante;
+iii)
+per ciascun sistema di TIC identificato:
+1.
+se è esternalizzato e, in caso affermativo, il nome del fornitore terzo di servizi TIC;
+2.
+le giurisdizioni in cui è utilizzato il sistema di TIC;
+3.
+una descrizione ad alto livello dei flag preliminari, che indichi l’aspetto relativo alla sicurezza della riservatezza, dell’integrità, dell’autenticità o della disponibilità coperto da ciascun flag .
