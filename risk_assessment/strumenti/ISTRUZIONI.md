@@ -29,3 +29,6 @@ Ogni adempimento ha il campo `per`: lista di perimetri a cui si applica. Valori:
 - Controllo obbligatorio dopo ogni estrazione: `build.py` stampa "DA VERIFICARE" (testo con termini bancari classificato `tutti`) e il conteggio per perimetro. Rileggere a mano questi casi prima di pubblicare, in particolare prima di dare `per` specifico a un obbligo che potrebbe valere per tutti.
 - I livelli aggregati (prescrizioni, obblighi, pilastri) sono generati solo per le banche: un gruppo è visibile in un altro perimetro solo se tutte le sue fonti sono `tutti`. I testi sono scritti per le banche.
 - Per un nuovo perimetro (SIM, SGR, assicurazioni…) serve una nuova estrazione delle norme specifiche; poi si assegna `per` e si rigenerano i gruppi per quel perimetro.
+
+## Report di copertura per perimetro
+`risk_assessment/copertura/` contiene `copertura.py` (calcolo: stato di ogni norma, perimetro stimato, adempimenti) e `xlsx.py` (crea `copertura_perimetri.xlsx`: Riepilogo, Per ambito, Adempimenti per norma, Norme, Da fare, Buchi noti). Rigenerarlo dopo ogni estrazione o attribuzione: `python3 copertura.py --scrivi-per` solo se si vuole riscrivere il campo `per` in `ambiti_articoli.json` (backup automatico `ambiti_articoli.bak_prima_perimetro.json`), poi `python3 xlsx.py`. Il perimetro delle norme è una stima da correggere man mano.
