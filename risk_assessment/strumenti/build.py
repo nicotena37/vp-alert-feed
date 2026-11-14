@@ -12,8 +12,7 @@ for i in sorted(EX): a[i]['_escl']=True
 SPEC={17:['intermediari'],18:['intermediari'],20:['bancoposta'],21:['sedi'],22:['sedi'],23:['assicurazione'],24:['fondi_pensione'],335:['ccp_csd'],147:['ccp_csd']}
 for i in range(27,42): SPEC[i]=['assicurazione']
 import re
-PERIM_LISTA=[('banca',0),('assicurazione',0),('sim',0),('sgr',0),('intermediari',0),('bancoposta',0),('sedi',0),('fondi_pensione',0),('ccp_csd',0),('istituti_pagamento',0),('imel',0),('intermediari_credito',0)]
-NODORA={'intermediari_credito'}  # fuori dal campo DORA: i trasversali ('tutti') non si applicano, solo gli adempimenti con per esplicito
+PERIM_LISTA=[('banca',0),('assicurazione',0),('sim',0),('sgr',0),('intermediari',0),('bancoposta',0),('sedi',0),('fondi_pensione',0),('ccp_csd',0)]
 PROV=re.compile(r'fornitor|prestator|outsourc',re.I); KEEP={294,306,321}
 for i in KEEP: a[i]['dest']='banca'
 EX|={i for i,x in enumerate(a) if PROV.search(x['dest']) and not re.search(r'banca|enti creditizi|entit',x['dest']) and i not in KEEP}
@@ -70,7 +69,7 @@ def fontitxt(m):
     return '; '.join(out)
 K=["sanz","rep","oper","econ","compl","freq","nov"]
 RINOMINA={"Fornitori critici: designazione, raccomandazioni e cooperazione":("Fornitori critici: seguire le raccomandazioni e sospendere i contratti","Le banche tengono conto delle raccomandazioni dell'autorità di sorveglianza nella gestione dei rischi da terzi, utilizzano fornitori critici di paesi terzi solo se hanno una filiale nell'Unione e sospendono o risolvono i contratti se imposto dall'autorità.")}
-def vis(i,p): return ('tutti' in PER[i] and p not in NODORA) or p in PER[i]
+def vis(i,p): return 'tutti' in PER[i] or p in PER[i]
 def adatta(t,p):
     if p=='banca': return t
     for x,y in [('La banca',"L'entità"),('la banca',"l'entità"),('della banca',"dell'entità"),('alla banca',"all'entità"),('dalla banca',"dall'entità"),('Le banche','Le entità'),('le banche','le entità')]: t=t.replace(x,y)
