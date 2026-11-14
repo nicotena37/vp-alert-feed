@@ -22,7 +22,7 @@ def sheet(name,head,rows,widths,first=False,filt=True,wrap=()):
     ws.row_dimensions[1].height=32
     return ws
 # ---------- Leggimi
-leg=[["Copertura normativa per perimetro — compliAInce",""],["Aggiornato al",DAY],["",""],
+leg=[["Copertura normativa per perimetro — Compliance dyAInamic",""],["Aggiornato al",DAY],["",""],
 ["Che cos'è","Cruscotto fuori dal sito che mostra, per ogni perimetro (banche, assicurazioni, SIM, SGR…), quante norme ci sono, a che punto è il lavoro, cosa manca e quanti adempimenti sono già stati creati."],
 ["Avanzamento di una norma","1) In elenco (classificata per tematica/ambito)  →  2) Testo scaricato  →  3) Articoli attribuiti (ambiti, processi, perimetro: pronta per il risk assessment)  →  4) Adempimenti creati."],
 ["Cosa manca (3 tipi)","A) Testo non disponibile: norma classificata ma testo non scaricato o non scaricabile.  B) Da lavorare: testo presente ma articoli non ancora attribuiti, quindi nessun adempimento.  C) Buchi noti: censimenti non fatti (vedi foglio 'Buchi noti')."],

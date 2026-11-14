@@ -1,4 +1,4 @@
-"""Scarico dell'intera biblioteca a blocchi (compliAInce Dynamic).
+"""Scarico dell'intera biblioteca a blocchi (Compliance dyAInamic).
 Uso: python biblioteca_tutto.py <blocco> <n_blocchi> [minuti_max]
 Ogni blocco prende le voci di corpus_completo.json con indice % n_blocchi == blocco, salta quelle già scaricate,
 si ferma dopo minuti_max e salva un indice e un log propri (nessun conflitto tra blocchi paralleli)."""

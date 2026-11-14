@@ -1,4 +1,4 @@
-"""Aggiunge gli ALLEGATI ai testi UE già in biblioteca (compliAInce Dynamic).
+"""Aggiunge gli ALLEGATI ai testi UE già in biblioteca (Compliance dyAInamic).
 Molti regolamenti di esecuzione e RTS hanno il contenuto negli allegati, che il primo scarico tagliava.
 Riscarica la pagina EUR-Lex di ogni atto UE, aggiunge le parti "Allegato ..." in coda agli articoli (gli articoli restano invariati).
 Si ferma se EUR-Lex risponde 202 (filtro anti-bot) 5 volte di fila: non lo aggira.

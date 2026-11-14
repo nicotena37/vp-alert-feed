@@ -1,4 +1,4 @@
-"""Biblioteca normativa (compliAInce Dynamic): testi delle autorità (Banca d'Italia, CICR, IVASS, Consob, EBA) da PDF ufficiali.
+"""Biblioteca normativa (Compliance dyAInamic): testi delle autorità (Banca d'Italia, CICR, IVASS, Consob, EBA) da PDF ufficiali.
 Divide il testo in parti (Sezione / paragrafo / articolo) e salva biblioteca/testi/<id>.json nello stesso formato di biblioteca.py.
 Uso: python biblioteca_pdf.py <cartella_pdf> [corpus_pdf.json]"""
 import json, re, subprocess, sys

@@ -1,4 +1,4 @@
-"""Legal inventory compliAInce Dynamic: unisce i cataloghi (UE, BCE, Italia, Banca d'Italia, UIF, IVASS, Consob)
+"""Legal inventory Compliance dyAInamic: unisce i cataloghi (UE, BCE, Italia, Banca d'Italia, UIF, IVASS, Consob)
 in un elenco unico con fonte, tipologia, obbligatorietà (OBBL = la banca deve; BP = è bene fare) e rilevanza per la banca."""
 import json, re, sys, html
 from pathlib import Path

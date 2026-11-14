@@ -119,7 +119,7 @@ R.sort(key=k_ord)
 L = []
 w = L.append
 c_f = Counter(r["fonte"] for r in R); c_o = Counter(r["obbl"].split("/")[0] for r in R)
-w("LEGAL INVENTORY - compliAInce Dynamic")
+w("LEGAL INVENTORY - Compliance dyAInamic")
 w("Normativa applicabile alla banca: norme, disposizioni delle autorità, orientamenti e comunicazioni")
 w("Versione 2 - 07/11/2026 - costruita interrogando le banche dati ufficiali")
 w("")

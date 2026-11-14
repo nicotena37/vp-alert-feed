@@ -1,4 +1,4 @@
-"""Biblioteca normativa (compliAInce Dynamic): scarica il testo vigente delle norme, diviso per articolo, dalle fonti ufficiali.
+"""Biblioteca normativa (Compliance dyAInamic): scarica il testo vigente delle norme, diviso per articolo, dalle fonti ufficiali.
 - Italia: API dati aperti di Normattiva (un articolo per richiesta, testo vigente con data di inizio vigenza).
 - UE: EUR-Lex, ultima versione consolidata (CELEX 0...) o, se manca, il testo originale.
 Salva biblioteca/testi/<id>.json e aggiorna biblioteca/indice.json. Ogni articolo ha un'impronta (hash) per riconoscere le modifiche."""

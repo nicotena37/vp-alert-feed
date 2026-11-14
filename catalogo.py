@@ -1,4 +1,4 @@
-"""Catalogo della legal inventory (compliAInce Dynamic): interroga le banche dati ufficiali e salva in dati/catalogo/.
+"""Catalogo della legal inventory (Compliance dyAInamic): interroga le banche dati ufficiali e salva in dati/catalogo/.
 Modo letto da catalogo/avvia.txt (prima parola): prova | ue | it | tutto."""
 import json, sys, time, re
 from pathlib import Path
