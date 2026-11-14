@@ -356,7 +356,7 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if
 document.addEventListener("click",async e=>{const b=e.target.closest("[data-del]");if(!b)return;
   if(!b.classList.contains("ok")){b.classList.add("ok");b.textContent="Conferma: elimina per sempre";setTimeout(()=>{if(b.isConnected&&!b.dataset.busy){b.classList.remove("ok");b.textContent="Elimina"}},6000);return}
   b.dataset.busy="1";b.disabled=true;b.textContent="Elimino…";const id=b.dataset.del;
-  try{for(const c of ["adem","pdf"]){const l=await kv.list("ra/"+id+"/"+c);for(const x of l)await kv.del("ra/"+id+"/"+c+"/"+x._id)}await kv.del("ra/"+id)}catch(err){b.disabled=false;b.dataset.busy="";b.classList.remove("ok");b.textContent="Non riuscito: riprova";return}
+  try{for(const c of ["adem","pdf"]){const l=await kv.list("ra/"+id+"/"+c);for(let i=0;i<l.length;i+=25){await Promise.all(l.slice(i,i+25).map(x=>kv.del("ra/"+id+"/"+c+"/"+x._id)));b.textContent="Elimino… "+Math.min(i+25,l.length)+"/"+l.length}}await kv.del("ra/"+id)}catch(err){b.disabled=false;b.dataset.busy="";b.classList.remove("ok");b.textContent="Non riuscito: riprova";return}
 });
 $("#bNuovo").onclick=()=>{R=nuovoRA();A=[];entra()};
 async function apriRA(id){const d=await kv.get("ra/"+id);if(!d)return;R={...nuovoRA(),...d,amb:d.amb||[],norme:d.norme||{},extra:d.extra||{}};A=[];entra()}
