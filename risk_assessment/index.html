@@ -57,6 +57,7 @@ section.step,.panel{background:var(--panel);border:1px solid var(--line);border-
 @media (max-width:780px){.split{grid-template-columns:1fr}.split .win{height:34vh}.plusc{width:auto;flex-direction:row;justify-content:center;order:2}.split>.panel:first-child{order:1}.split>.panel:last-child{order:3}}
 .rac{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg);display:grid;gap:3px;cursor:pointer;text-align:left;font:inherit;color:var(--ink);width:100%;min-width:0}
 .rac:hover{border-color:var(--accent)}
+.rw{display:grid;gap:4px;min-width:0}.rw .rdel{justify-self:end}.rw .rdel.ok{border-color:var(--bad,#b3261e);color:var(--bad,#b3261e)}
 .rac b{overflow-wrap:anywhere}.rac span{font-size:12px;color:var(--muted)}
 /* temi */
 details.tem{border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--panel);min-width:0}
@@ -347,10 +348,16 @@ function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=
 function renderHome(){
   const corso=HOME.filter(r=>r.stato!=="concluso").sort((a,b)=>String(b.agg).localeCompare(a.agg)), pass=HOME.filter(r=>r.stato==="concluso").sort((a,b)=>String(b.agg).localeCompare(a.agg));
   const card=r=>`<button class="rac" type="button" data-open="${esc(r._id)}"><b>${esc(r.titolo||"Senza titolo")}</b><span>${esc((r.oggetto||"").slice(0,110)||"intero ambito")}</span><span>${Object.values(r.norme||{}).filter(n=>n.sel).length} norme · ${r.nAdem||0} adempimenti (${r.nVal||0} valutati) · ${esc((METODI.find(m=>m[0]===r.metodo)||[0,""])[1].split(" · ")[0]?("metodologia "+r.metodo.slice(1)):"")} · aggiornato ${data(r.agg)}</span></button>`;
-  $("#lCorso").innerHTML=corso.map(card).join("")||'<p class="status">Nessun risk assessment in corso.</p>';
+  const conDel=r=>`<div class="rw">${card(r)}<button class="btn ghost sm rdel" type="button" data-del="${esc(r._id)}">Elimina</button></div>`;
+  $("#lCorso").innerHTML=corso.map(conDel).join("")||'<p class="status">Nessun risk assessment in corso.</p>';
   $("#lPass").innerHTML=pass.map(card).join("")||'<p class="status">Nessun risk assessment passato.</p>';
   $("#nCorso").textContent=corso.length||"";$("#nPass").textContent=pass.length||"";}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-open]");if(b)apriRA(b.dataset.open)});
+document.addEventListener("click",async e=>{const b=e.target.closest("[data-del]");if(!b)return;
+  if(!b.classList.contains("ok")){b.classList.add("ok");b.textContent="Conferma: elimina per sempre";setTimeout(()=>{if(b.isConnected&&!b.dataset.busy){b.classList.remove("ok");b.textContent="Elimina"}},6000);return}
+  b.dataset.busy="1";b.disabled=true;b.textContent="Elimino…";const id=b.dataset.del;
+  try{for(const c of ["adem","pdf"]){const l=await kv.list("ra/"+id+"/"+c);for(const x of l)await kv.del("ra/"+id+"/"+c+"/"+x._id)}await kv.del("ra/"+id)}catch(err){b.disabled=false;b.dataset.busy="";b.classList.remove("ok");b.textContent="Non riuscito: riprova";return}
+});
 $("#bNuovo").onclick=()=>{R=nuovoRA();A=[];entra()};
 async function apriRA(id){const d=await kv.get("ra/"+id);if(!d)return;R={...nuovoRA(),...d,amb:d.amb||[],norme:d.norme||{},extra:d.extra||{}};A=[];entra()}
 function entra(){
