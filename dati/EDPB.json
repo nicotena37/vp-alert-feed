@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_EDPB_2026-11-13T12-21-27.json",
+"nome_file": "vpalert_rss_EDPB_2026-11-14T19-19-51.json",
 "sito": "EDPB",
 "origine": "github-actions",
-"letto_il": "2026-11-13T12:21:27Z",
+"letto_il": "2026-11-14T19:19:51Z",
 "feed": [
 {
 "nome": "EDPB - news",
@@ -21,6 +21,16 @@
 "EDPB - news: feed non leggibile (ValueError: HTTP 503) - https://www.edpb.europa.eu/feed/news_en"
 ],
 "notizie": [
+{
+"sito": "EDPB",
+"feed": "EDPB - pubblicazioni",
+"categoria": "Vigilanza",
+"titolo": "EDPB letter to the European Commission on the need for a legal basis for cross-regulatory exchange of information",
+"link": "https://www.edpb.europa.eu/documents/edpb-correspondence/edpb-letter-to-the-european-commission-on-the-need-for-a-legal-basis_en",
+"data_originale": "Thu, 12 Nov 2026 12:00:00 +0000",
+"data": "2026-11-12",
+"descrizione": ""
+},
 {
 "sito": "EDPB",
 "feed": "EDPB - pubblicazioni",
@@ -95,30 +105,20 @@
 "sito": "EDPB",
 "feed": "EDPB - pubblicazioni",
 "categoria": "Vigilanza",
+"titolo": "Guidelines 04/2026 on the application of the power to impose administrative fines in relation to other corrective powers under the GDPR",
+"link": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative-0_en",
+"data_originale": "Mon, 21 Sep 2026 12:00:00 +0000",
+"data": "2026-09-21",
+"descrizione": ""
+},
+{
+"sito": "EDPB",
+"feed": "EDPB - pubblicazioni",
+"categoria": "Vigilanza",
 "titolo": "Guidelines 1/2020 on processing personal data in the context of connected vehicles and mobility related applications",
 "link": "https://www.edpb.europa.eu/documents/guideline/guidelines-12020-on-processing-personal-data-in-the-context-of-connected_en",
 "data_originale": "Fri, 07 Feb 2020 12:00:00 +0000",
 "data": "2020-02-07",
-"descrizione": ""
-},
-{
-"sito": "EDPB",
-"feed": "EDPB - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "Guidelines 03/2026 on web scraping in the context of generative AI",
-"link": "https://www.edpb.europa.eu/documents/guideline/guidelines-032026-on-web-scraping-in-the-context-of-generative-ai_en",
-"data_originale": "Wed, 08 Jul 2026 12:00:00 +0000",
-"data": "2026-07-08",
-"descrizione": ""
-},
-{
-"sito": "EDPB",
-"feed": "EDPB - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "Guidelines 1/2026 on processing of personal data for scientific research purposes",
-"link": "https://www.edpb.europa.eu/documents/guideline/guidelines-12026-on-processing-of-personal-data-for-scientific-research_en",
-"data_originale": "Thu, 16 Apr 2026 12:00:00 +0000",
-"data": "2026-04-16",
 "descrizione": ""
 }
 ]

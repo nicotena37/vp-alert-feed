@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-13T12-18-52.json",
+"nome_file": "vpalert_rss_ACN_2026-11-14T19-17-08.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-13T12:18:52Z",
+"letto_il": "2026-11-14T19:17:08Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,86 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "N-Able: rilevate due ulteriori catene di exploit denominate \"Agent2Shell\" e \"4EverAble2Shell\"",
+"link": "https://www.acn.gov.it/portale/w/n-able-rilevate-due-ulteriori-catene-di-exploit-denominate-agent2shell-e-4everable2shell-",
+"data_originale": "Fri, 13 Nov 2026 18:15:54 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevate due ulteriori catene di exploit, denominate \"Agent2Shell\" e \"4EverAble2Shell\", per lo sfruttamento di vulnerabilità zero-day in N-central, piattaforma di monitoraggio e gestione remota degli ambienti informatici. Entrambe le catene sono considerate un'estensione della precedente serie di vulnerabilità nota come \"Able2Shell\", già trattate nell'ambito dell'alert AL07/261110/CSIRT-ITA."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Dell",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-3",
+"data_originale": "Fri, 13 Nov 2026 16:53:54 GMT",
+"data": "2026-11-13",
+"descrizione": "Dell ha rilasciato aggiornamenti di sicurezza per sanare numerose vulnerabilità, di cui 11 con gravità \"critica\" e 23 con gravità “alta”, in PowerStoreT OS, Dell Networking OS10 e PowerScale InsightIQ."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "IBM: rilevato sfruttamento attivo in rete della CVE-2026-123218",
+"link": "https://www.acn.gov.it/portale/w/ibm-rilevato-sfruttamento-attivo-in-rete-della-cve-2026-123218",
+"data_originale": "Fri, 13 Nov 2026 15:44:02 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevato lo sfruttamento attivo in rete della CVE-2026-123218 - già sanata dal vendor - presente in IBM Aspera Faspex, piattaforma web enterprise per lo scambio sicuro e ad alte prestazioni di grandi volumi di dati. Tale vulnerabilità potrebbe consentire a un attaccante autenticato di eludere i meccanismi di sicurezza ed elevare i propri privilegi sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in n8n",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-n8n",
+"data_originale": "Fri, 13 Nov 2026 15:23:21 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 4 con gravità “alta”, in n8n, piattaforma open‑source di workflow automation che consente di integrare applicazioni, servizi e API tramite flussi visuali. Tali vulnerabilità potrebbero consentire a un attaccante l'elusione dei meccanismi di autenticazione, la modifica non autorizzata di dati e l'esecuzione di codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti Dixell XWEB EVO",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-dixell-xweb-evo",
+"data_originale": "Fri, 13 Nov 2026 14:45:37 GMT",
+"data": "2026-11-13",
+"descrizione": "Rilevate molteplici nuove vulnerabilità, di cui 8 con gravità “critica” e 5 con gravità “alta”, nei prodotti Dixell XWEB EVO, sistemi di supervisione, monitoraggio e controllo per impianti di refrigerazione commerciale e HVAC. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto di eludere i meccanismi di autenticazione, modificare determinati parametri di configurazione, compromettere la disponibilità del servizio o eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "SAP Security Patch Day",
+"link": "https://www.acn.gov.it/portale/w/sap-security-patch-day-22",
+"data_originale": "Tue, 10 Nov 2026 14:00:00 GMT",
+"data": "2026-11-10",
+"descrizione": "Nell’ambito del Security Patch Day di novembre, SAP rilascia aggiornamenti di sicurezza per risolvere 42 nuove vulnerabilità, di cui 9 con gravità “critica” e 19 con gravità “alta”."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevata vulnerabilità in jDownloads",
+"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-jdownloads",
+"data_originale": "Fri, 13 Nov 2026 13:09:57 GMT",
+"data": "2026-11-13",
+"descrizione": "Aggiornamenti di sicurezza sanano alcune vulnerabilità, di cui una con gravità \"critica\" e 3 con gravità \"alta\", in jDownload, componente open source di Joomla per la gestione dei download. Tali vulnerabilità, qualora sfruttate, potrebbero permettere a un attaccante di accedere a informazioni sensibili, eludere i meccanismi di sicurezza o eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-5",
+"data_originale": "Fri, 13 Nov 2026 13:05:41 GMT",
+"data": "2026-11-13",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità \"critica\" e 2 con gravità “alta”, nei prodotti Node.js Driver, C# Driver e Atlas SQL JDBC Driver. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di sicurezza, leggere e/o scrivere file arbitrari sul filesystem ed eseguire codice arbitrario sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -306,16 +386,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "SAP Security Patch Day",
-"link": "https://www.acn.gov.it/portale/w/sap-security-patch-day-22",
-"data_originale": "Tue, 10 Nov 2026 15:00:14 GMT",
-"data": "2026-11-10",
-"descrizione": "Nell’ambito del Security Patch Day di novembre, SAP rilascia aggiornamenti di sicurezza per risolvere 42 nuove vulnerabilità, di cui 9 con gravità “critica” e 19 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolte vulnerabilità in Craft CMS",
 "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
 "data_originale": "Mon, 09 Nov 2026 13:14:29 GMT",
@@ -454,73 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti JetBrains",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-4",
-"data_originale": "Fri, 06 Nov 2026 15:16:38 GMT",
-"data": "2026-11-06",
-"descrizione": "JetBrains ha rilasciato aggiornamenti di sicurezza per risolvere molteplici vulnerabilità, di cui tre con gravità \"critica\" e 31 con gravità “alta” nei prodotti YouTrack, WebStorm, Ktor, Junie CLI, Junie GitHub Action, IntelliJ IDEA, Hub, Datalore, CLion e Toolbox App."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "SonicWall: rilevato sfruttamento in rete della CVE-2026-19868",
-"link": "https://www.acn.gov.it/portale/w/sonicwall-rilevato-sfruttamento-in-rete-della-cve-2026-19868",
-"data_originale": "Mon, 09 Nov 2026 08:49:41 GMT",
-"data": "2026-11-09",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 7 vulnerabilità, di cui 4 con gravità \"alta\", che interessano SonicOS, sistema operativo utilizzato nei firewall e negli appliance di sicurezza di SonicWall. Tra queste si evidenzia la CVE-2026-19868 per la quale sono stati osservati tentativi di sfruttamento attivo in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "OpenAI: risolta vulnerabilità in Codex",
-"link": "https://www.acn.gov.it/portale/w/openai-risolta-vulnerabilita-in-codex",
-"data_originale": "Fri, 06 Nov 2026 10:09:02 GMT",
-"data": "2026-11-06",
-"descrizione": "OpenAI ha rilasciato aggiornamenti di sicurezza per sanare una vulnerabilità con gravità “alta” in Codex Desktop. Tale vulnerabilità, in determinate condizioni, potrebbe consentire a un attaccante di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Elastic",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-4",
-"data_originale": "Wed, 04 Nov 2026 13:40:49 GMT",
-"data": "2026-11-04",
-"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 2 con gravità “alta”, nei prodotti Elasticsearch e Kibana. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto, in determinate condizioni, di causare la cancellazione di risorse senza autorizzazione o di compromettere la disponibilità del servizio sui sistemi interessati. Tra queste si evidenzia la CVE-2026-115290 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevata campagna di smishing/phishing a tema PagoPA",
-"link": "https://www.acn.gov.it/portale/w/rilevata-campagna-di-smishing/phishing-a-tema-pagopa",
-"data_originale": "Fri, 06 Nov 2026 09:08:52 GMT",
-"data": "2026-11-06",
-"descrizione": "Questo CSIRT Italia ha rilevato il riacutizzarsi della campagna malevola a tema SEND (Servizio Notifiche Digitali) e PagoPA, già oggetto di precedente segnalazione, veicolata tramite messaggi SMS (smishing). L'attività malevola mira a indurre gli utenti a visitare risorse web opportunamente predisposte al fine di sottrarre dati personali, credenziali di accesso e informazioni relative a strumenti di pagamento."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti SonicWall",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-sonicwall-12",
-"data_originale": "Thu, 05 Nov 2026 15:46:31 GMT",
-"data": "2026-11-05",
-"descrizione": "Rilevate due nuove vulnerabilità, di cui una con gravità \"critica\", che interessano il prodotto SonicWall Global Management System (GMS), piattaforma utilizzata per la gestione centralizzata di firewall e altri dispositivi SonicWall. La vulnerabilità, qualora sfruttata, potrebbe consentire a un attaccante non autenticato di leggere file interni del sistema, ottenendo accesso a informazioni sensibili quali configurazioni, dati di gestione e altre informazioni riservate."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "FreeRDP: disponibili PoC per molteplici vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/freerdp-disponibili-poc-per-molteplici-vulnerabilita",
-"data_originale": "Thu, 05 Nov 2026 15:38:07 GMT",
-"data": "2026-11-05",
-"descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di molteplici vulnerabilità, di cui 3 con gravità \"critica\" e 24 con gravità “alta”, in FreeRDP, implementazione open source del protocollo Remote Desktop Protocol (RDP), utilizzato per collegarsi e controllare a distanza un computer."
+"titolo": "Pubblicato il primo Avviso per l'accesso alle risorse di calcolo di Megaride",
+"link": "https://www.acn.gov.it/portale/web/guest/-/pubblicato-il-primo-avviso-per-l-accesso-alle-risorse-di-calcolo-di-megaride",
+"data_originale": "13/11/2026",
+"data": "2026-11-13",
+"descrizione": "News - 13 Novembre 2026 L'avviso è dedicato a Università e organismi di ricerca italiani che vogliono sviluppare Cybersicurezza Strategia Nazionale di Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "07/11/2026",
 "data": "2026-11-07",
 "descrizione": "News - 07 Novembre 2026 Investire nelle competenze per rafforzare la cybersicurezza europea Vice Direttore Generale Formazione Cybersecurity"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "L'Agenzia per la cybersicurezza nazionale presente ad ANCI 2026",
-"link": "https://www.acn.gov.it/portale/web/guest/-/l-agenzia-per-la-cybersicurezza-nazionale-presente-ad-anci-2026",
-"data_originale": "06/11/2026",
-"data": "2026-11-06",
-"descrizione": "News - 06 Novembre 2026 Dal 25 al 27 novembre a Verona Fiere workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento allo stand con \"ACN risponde\" PA Cybersicurezza Anci ACN NCC-IT"
 },
 {
 "sito": "ACN",
