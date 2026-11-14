@@ -1,0 +1,25 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1200,height:1100}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
+await p.route(/fonts\.|cdnjs/,r=>r.abort());await p.goto('http://localhost:8765/index.html');await p.waitForTimeout(1200);
+await p.evaluate(()=>localStorage.setItem('kv:ra/rg',JSON.stringify({id:'rg',titolo:'t',per:'banca',prob:'voti',metodo:'m3',stato:'in_corso',amb:['IT e Digital||Resilienza operativa digitale (DORA)'],norme:{},livello:'prescrizioni',richiesta:{stato:'pronta',file:'data/adem_ramwf8f1hm.json',importato:false,per:'banca'},extra:{},step:6,nAdem:0,nVal:0,nNr:0})));
+await p.reload();await p.waitForTimeout(1000);await p.evaluate(()=>apriRA('rg'));await p.waitForTimeout(5000);
+const T=await p.evaluate(()=>{const fa=m=>{const d=new Date();d.setMonth(d.getMonth()-m);return d.toISOString().slice(0,10)};const o={};
+ const base={dis:{cop:4,nat:2,tem:4,for:3}};o.D=dispD(base);
+ o.esempio=fattoreTest({...base,tests:[{data:fa(4),tipo:1,proc:2,freq:4,n:25,ecc:1,tol:5,sist:false}]});
+ o.autocontrollo=fattoreTest({...base,tests:[{data:fa(1),tipo:0,proc:0,freq:2}]});
+ o.mai=fattoreTest(base);o.mai_legacy=fattoreTest({adeg:0,tests:[]});
+ o.perfetto=fattoreTest({dis:{cop:4,nat:4,tem:4,for:4},tests:[{data:fa(1),tipo:3,proc:3,freq:2,n:10,ecc:0,tol:0}]});
+ o.sist=fattoreTest({...base,tests:[{data:fa(1),tipo:2,proc:2,freq:2,n:10,ecc:3,sist:true}]});
+ o.campione_poco=fattoreTest({...base,tests:[{data:fa(1),tipo:2,proc:2,freq:4,n:5,ecc:0}]});
+ o.critico_aperto=fattoreTest({...base,tests:[{data:fa(1),tipo:2,proc:3,freq:2,n:10,ecc:0,aperti:true,gr:2}]});
+ return o});console.log(JSON.stringify(T));
+await p.evaluate(()=>{vai(6)});await p.waitForTimeout(300);
+await p.evaluate(()=>{const a=A.find(x=>x.fonti&&x.fonti.length>=3);apriAd(a._id)});await p.waitForTimeout(400);
+await p.evaluate(()=>{W.pres.push({nome:'Doppia firma e separazione dei compiti',nat:'Procedura',peso:.85,tipo:'Preventivo',adeg:0,tests:[]});corpoAd()});
+await p.evaluate(()=>document.querySelector('#bAd [data-dnew]').click());await p.waitForTimeout(100);
+await p.evaluate(()=>document.querySelector('#bAd [data-tadd]').click());await p.waitForTimeout(150);
+console.log('E presidio',await p.evaluate(()=>eff(W).toFixed(3)),'campi test',await p.evaluate(()=>document.querySelectorAll('#bAd [data-tf]').length));
+await p.evaluate(()=>{const e=document.querySelector('#bAd [data-tf$=".n"]');e.value='3';e.dispatchEvent(new Event('change',{bubbles:true}))});await p.waitForTimeout(100);
+console.log('avviso campione',await p.evaluate(()=>/campione insufficiente/.test(document.querySelector('#bAd').textContent)));
+await p.evaluate(()=>{document.querySelector('#bAd .pr').scrollIntoView()});await p.screenshot({path:'t14.png'});
+console.log('errori',errs);await b.close()})()

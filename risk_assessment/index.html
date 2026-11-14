@@ -292,18 +292,32 @@ const PRES_STD=[
  ["Controllo manuale di primo livello","Persona",.55,"Rilevativo"],["Referente nominato","Persona",.50,"Preventivo"],["Formazione del personale","Persona",.45,"Preventivo"]];
 const ADEG=[["Adeguato",1],["Parzialmente adeguato",.6],["Debole",.3],["Inadeguato o assente",0]];
 const TEST=[["Testato, senza rilievi",1],["Non testato",.6],["Testato con rilievi",.5]];
-/* test dei presidi: tipo (affidabilità), copertura, esito, validità nel tempo */
+/* scheda di test dei presidi: disegno (D), funzionamento (O), fiducia nel test (c) */
 const TIPOT=[["Autovalutazione della prima linea",.5],["Controllo di secondo livello",.75],["Audit interno o test indipendente",1],["Verifica esterna o certificazione",1]];
-const COPT=[["Totale",1],["A campione",.9],["Solo documentale",.7]];
-const ESITT=[["Nessun rilievo",1],["Rilievi lievi",.8],["Rilievi significativi",.5],["Rilievi critici",.2]];
+const PROCT=[["Solo domande al responsabile",.3],["Osservazione del controllo",.55],["Ispezione dei documenti",.75],["Rielaborazione o test automatico",1]];
+const FREQ=[["Annuale",1],["Trimestrale",2],["Mensile",5],["Settimanale",15],["Giornaliero",25],["Continuo o a ogni operazione",40]];
+const GRAV=[["Lievi",0],["Significativi",.5],["Critici",.3]];
+const DISC=[["cop","Copertura dell'obbligo",["solo una parte minima","circa metà","quasi tutti i punti","tutti i punti"],.4],["nat","Natura del controllo",["informale o occasionale","manuale","manuale con supporto del sistema","automatico"],.2],["tem","Tempestività",["rilevativo tardivo","rilevativo periodico","rilevativo tempestivo","preventivo"],.2],["for","Formalizzazione",["nessun responsabile né procedura","responsabile o procedura","responsabile e procedura scritta","anche separazione dei compiti e riesame"],.2]];
+const ESITT=[["Nessun rilievo",1],["Rilievi lievi",.85],["Rilievi significativi",.5],["Rilievi critici",.2]];
 const VOTI=[["Non rispettato",1],["Rispettato in parte",2],["Largamente rispettato",3],["Pienamente rispettato",4]];
 const mesiDa=d=>{const t=new Date(d);if(isNaN(t))return 99;const n=new Date();return (n.getFullYear()-t.getFullYear())*12+(n.getMonth()-t.getMonth())+(n.getDate()<t.getDate()?-.5:0)};
 const validita=m=>m<=12?1:m<=24?.7:.4;
-/* fattore di test di un presidio: 0,6 se mai testato; il test più affidabile e recente dà fino a 1; rilievi aperti limitano il valore */
-function fattoreTest(p){const T=p.tests||[];
-  if(!T.length)return p.test===0?1:p.test===2?.5:.6;
-  let best=null;for(const t of T){const c=TIPOT[t.tipo??2][1]*COPT[t.cop??0][1]*validita(mesiDa(t.data));const es=ESITT[t.esito??0][1],pos=.6+.4*c,f=es<1?Math.min(pos,es):pos;if(!best||c>best.c)best={c,f}}
-  let f=best.f;for(const t of T){if(t.aperti&&(t.esito??0)>=2&&mesiDa(t.data)<=24)f=Math.min(f,t.esito===3?.3:.5)}return f}
+/* D: media pesata dei quattro criteri di disegno (0,25-1); senza valutazione si usa l'adeguatezza storica */
+function dispD(p){if(!p.dis)return ADEG[p.adeg??0][1];return DISC.reduce((s,[k,,,w])=>s+w*(p.dis[k]??3),0)/4}
+/* O: funzionamento da casi provati ed eccezioni; test vecchi senza casi usano l'esito */
+function testO(t){const fr=FREQ[t.freq??2][1];let O;
+  if(t.n>0&&t.ecc!=null){const r=100*t.ecc/t.n;O=t.ecc===0?1:(!t.sist&&r<=(+t.tol||0))?.85:!t.sist?.5:.2;if(t.n<fr)O=Math.min(O,.85)}
+  else O=ESITT[t.esito??0][1];
+  if((t.proc??2)===0)O=Math.min(O,.5);return O}
+const testC=t=>.5*PROCT[t.proc??2][1]+.3*TIPOT[t.tipo??2][1]+.2*validita(mesiDa(t.data));
+/* fattore del presidio: (1-c)*0,6 + c*D*O sul test più affidabile; esiti negativi e rilievi aperti lo limitano; mai testato: 0,6*D */
+function fattoreTest(p){const T=p.tests||[],D=dispD(p);
+  if(!T.length)return p.dis?(.6*D):(p.test===0?1:p.test===2?.5:.6);
+  let best=null;for(const t of T){const c=testC(t);if(!best||c>best.c)best={c,t}}
+  const O=testO(best.t);let f=(1-best.c)*.6+best.c*D*O;
+  for(const t of T){const m=mesiDa(t.data);if(m>24)continue;const o=testO(t);if(o<=.5&&(t.proc??2)>0)f=Math.min(f,D*o);
+    if(t.aperti){const g=t.gr??(t.esito>=2?(t.esito===3?2:1):0);if(g>0)f=Math.min(f,GRAV[g][1])}}
+  return f}
 /* probabilità dai voti sugli obblighi: metà caso peggiore + metà media; la valutazione complessiva, se c'è, prevale */
 function Pvoti(ad){const ids=(ad.fonti&&ad.fonti.length>1)?ad.fonti.map(f=>f.pid):[ad._id],V=ad.voti||{},ps=ids.filter(i=>V[i]).map(i=>5-V[i]);
   const calc_=ps.length?.5*Math.max(...ps)+.5*ps.reduce((s,x)=>s+x,0)/ps.length:null,over=ad.vtot?5-ad.vtot:null;
@@ -613,7 +627,7 @@ $("#go7").onclick=()=>vai(7);
 
 /* ---- calcoli ---- */
 function pesoPres(nome,nat,base){const o=pesiOverride[nome];const [lo,hi]=FASCIA[nat]||[0,1];return Math.min(hi,Math.max(lo,o??base))}
-function eff(ad){let q=1;for(const p of ad.pres||[]){q*=1-pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*fattoreTest(p)}return Math.min(.9,1-q)}
+function eff(ad){let q=1;for(const p of ad.pres||[]){const nuovo=!!p.dis||(p.tests||[]).length>0;q*=1-pesoPres(p.nome,p.nat,p.peso)*(nuovo?1:(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1])*fattoreTest(p)}return Math.min(.9,1-q)}
 function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){const v=ad.f?.[k]??3;g==="I"?I+=w*v:P+=w*v}if(R&&R.prob!=="fattori"){const pv=Pvoti(ad);if(pv&&pv.eff!=null)P=pv.eff}return {I,P}}
 const lvRI=x=>x<4?0:x<7?1:x<12?2:3, lv3=x=>x<1.75?0:x<2.5?1:x<3.25?2:3;
 const MAT=[[0,0,0,0],[0,0,1,1],[1,1,2,2],[1,2,3,3]];
@@ -639,14 +653,20 @@ function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres
 const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
 function presHtml(a){const li=lvRI(IP(a).I*IP(a).P),lim=li>=2?12:24;
   const sel=(att,arr,v)=>`<select ${att}>${arr.map((x,j)=>`<option value="${j}" ${v===j?"selected":""}>${x[0]}</option>`).join("")}</select>`;
+  const num=(att,v,ph,w)=>`<label class="small" style="display:flex;flex-direction:column;gap:2px">${ph}<input type="number" min="0" ${att} value="${v??""}" style="width:${w||78}px"></label>`;
+  const disegno=(p,i)=>p.dis?`<details class="small"><summary>Disegno del presidio · D ${f2(dispD(p))}</summary>${DISC.map(([k,n,ops])=>`<div class="row" style="gap:8px;align-items:center;margin:3px 0"><span style="flex:0 0 150px">${n}</span><select data-df="${i}.${k}">${ops.map((o,j)=>`<option value="${j+1}" ${(p.dis[k]??3)===j+1?"selected":""}>${j+1} · ${o}</option>`).join("")}</select></div>`).join("")}</details>`
+    :`<span class="small">Disegno: non valutato (adeguatezza storica ${esc(ADEG[p.adeg??0][0])}). <button class="btn ghost sm" type="button" data-dnew="${i}">Valuta il disegno</button></span>`;
   const testi=(p,i)=>{const T=p.tests||[],ult=T.map(t=>mesiDa(t.data)).sort((x,y)=>x-y)[0];
     const avv=!T.length?`<span class="small">Mai testato: conta ${f2(fattoreTest(p))}.</span>`:ult>lim?`<span class="chip" style="color:var(--bad,#b3261e)">ultimo test di ${Math.floor(ult)} mesi fa: oltre ${lim} mesi, da ripetere</span>`:"";
     return `<details class="small" ${T.length?"open":""}><summary>Test del presidio (${T.length}) · fattore ${f2(fattoreTest(p))}</summary>${avv}
-     ${T.map((t,j)=>`<div class="row" style="gap:6px;align-items:center;margin:4px 0"><input type="date" data-tf="${i}.${j}.data" value="${esc(t.data||"")}" aria-label="Data del test">${sel(`data-tf="${i}.${j}.tipo" aria-label="Tipo di test"`,TIPOT,t.tipo??2)}${sel(`data-tf="${i}.${j}.cop" aria-label="Copertura"`,COPT,t.cop??0)}${sel(`data-tf="${i}.${j}.esito" aria-label="Esito"`,ESITT,t.esito??0)}<label class="small"><input type="checkbox" data-tf="${i}.${j}.aperti" ${t.aperti?"checked":""}> rilievi aperti</label><input type="text" data-tf="${i}.${j}.nota" value="${esc(t.nota||"")}" placeholder="Nota o evidenza" style="flex:1 1 140px"><button class="btn ghost sm" type="button" data-tdel="${i}.${j}">Togli</button></div>`).join("")}
+     ${T.map((t,j)=>{const fr=FREQ[t.freq??2][1],ins=t.n>0&&t.n<fr,rate=t.n>0&&t.ecc!=null?Math.round(1000*t.ecc/t.n)/10:null,O=testO(t),c=testC(t);
+      return `<div class="box" style="margin:6px 0;padding:8px"><div class="row" style="gap:6px;align-items:center"><input type="date" data-tf="${i}.${j}.data" value="${esc(t.data||"")}" aria-label="Data del test">${sel(`data-tf="${i}.${j}.tipo" aria-label="Indipendenza"`,TIPOT,t.tipo??2)}${sel(`data-tf="${i}.${j}.proc" aria-label="Procedura"`,PROCT,t.proc??2)}<button class="btn ghost sm" type="button" data-tdel="${i}.${j}">Togli</button></div>
+       <div class="row" style="gap:6px;align-items:center;margin-top:4px">${sel(`data-tf="${i}.${j}.freq" aria-label="Frequenza del controllo"`,FREQ,t.freq??2)}${num(`data-tf="${i}.${j}.n"`,t.n,"Casi provati")}${num(`data-tf="${i}.${j}.ecc"`,t.ecc,"Eccezioni")}${num(`data-tf="${i}.${j}.tol" step="0.5"`,t.tol,"Soglia tollerata %",110)}<label class="small"><input type="checkbox" data-tf="${i}.${j}.sist" ${t.sist?"checked":""}> eccezioni sistematiche</label></div>
+       <div class="row" style="gap:6px;align-items:center;margin-top:4px"><label class="small"><input type="checkbox" data-tf="${i}.${j}.aperti" ${t.aperti?"checked":""}> rilievi aperti</label>${t.aperti?sel(`data-tf="${i}.${j}.gr" aria-label="Gravità"`,GRAV,t.gr??1):""}<input type="text" data-tf="${i}.${j}.nota" value="${esc(t.nota||"")}" placeholder="Nota o evidenza" style="flex:1 1 140px"></div>
+       <div class="small">${rate!=null?`Tasso di deviazione ${rate}% · `:""}${ins?`<b>campione insufficiente</b> (minimo indicativo ${fr}) · `:""}funzionamento ${f2(O)} · fiducia nel test ${f2(c)}</div></div>`}).join("")}
      <div class="row"><button class="btn ghost sm" type="button" data-tadd="${i}">+ Test</button></div></details>`};
   return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
-   <select data-pa="${i}" aria-label="Adeguatezza del disegno">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
-   <button class="btn ghost sm" type="button" data-pdel="${i}">Togli</button><div style="flex:1 1 100%">${testi(p,i)}</div></div>`).join("")||'<span class="small">Nessun presidio: il residuo coincide con l\'inerente.</span>'}
+   <button class="btn ghost sm" type="button" data-pdel="${i}">Togli</button><div style="flex:1 1 100%">${disegno(p,i)}</div><div style="flex:1 1 100%">${testi(p,i)}</div></div>`).join("")||'<span class="small">Nessun presidio: il residuo coincide con l\'inerente.</span>'}
    <div class="row"><button class="btn ghost sm" type="button" data-padd="1">+ Presidio</button></div></div>`}
 const descHtml=t=>{const righe=String(t||"").split("\n"),out=[];let ul=null;for(const r of righe){if(/^\s*-\s+/.test(r)){(ul=ul||[]).push(r.replace(/^\s*-\s+/,""));continue}if(ul){out.push("<ul class=\"dl\">"+ul.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>");ul=null}if(r.trim())out.push("<p>"+esc(r)+"</p>")}if(ul)out.push("<ul class=\"dl\">"+ul.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>");return out.join("")};
 function temAmb(a){const sel=R.amb||[],ids=[a.norma,...(a.fonti||[]).map(f=>f.norma)];for(const i of ids){const e=((IDX[i]&&IDX[i][4])||[]).find(x=>sel.includes(x[0]+"||"+x[1]));if(e)return[e[0],e[1]]}if(sel[0]){const p=sel[0].split("||");return[p[0],p[1]||""]}const e=IDX[a.norma]&&IDX[a.norma][4]&&IDX[a.norma][4][0];return e?[e[0],e[1]]:["",""]}
@@ -685,12 +705,14 @@ $("#cFonti").onclick=()=>$("#dFonti").close();
 $("#bAd").addEventListener("change",e=>{const t=e.target;if(!W)return;
   if(t.dataset.f)W.f[t.dataset.f]=+t.value;else if(t.dataset.v==="stato")W.stato=t.value===""?null:+t.value;else if(t.dataset.v==="nota"){W.nota=t.value;return}else if(t.dataset.v==="vmot"){W.vmot=t.value;return}else if(t.dataset.v)W[t.dataset.v]=+t.value||0;
   else if(t.dataset.pa!=null)W.pres[+t.dataset.pa].adeg=+t.value;
-  else if(t.dataset.tf){const [i,j,k]=t.dataset.tf.split(".");const x=W.pres[+i].tests[+j];if(k==="data"||k==="nota"){x[k]=t.value;if(k==="nota")return}else if(k==="aperti")x.aperti=t.checked;else x[k]=+t.value}
+  else if(t.dataset.df){const [i,k]=t.dataset.df.split(".");W.pres[+i].dis[k]=+t.value}
+  else if(t.dataset.tf){const [i,j,k]=t.dataset.tf.split(".");const x=W.pres[+i].tests[+j];if(k==="data"||k==="nota"){x[k]=t.value;if(k==="nota")return}else if(k==="aperti"||k==="sist")x[k]=t.checked;else if(k==="n"||k==="ecc"||k==="tol"){if(t.value==="")delete x[k];else x[k]=+t.value}else x[k]=+t.value}
   else if(t.dataset.vo){W.voti=W.voti||{};if(t.value==="")delete W.voti[t.dataset.vo];else W.voti[t.dataset.vo]=+t.value}
   else if(t.dataset.vt!=null){if(t.value==="")delete W.vtot;else W.vtot=+t.value}
   corpoAd()});
 $("#bAd").addEventListener("click",e=>{if(e.target.dataset.pdel!=null){W.pres.splice(+e.target.dataset.pdel,1);corpoAd()}
-  if(e.target.dataset.tadd!=null){const p=W.pres[+e.target.dataset.tadd];(p.tests=p.tests||[]).push({data:new Date().toISOString().slice(0,10),tipo:2,cop:0,esito:0,aperti:false,nota:""});corpoAd()}
+  if(e.target.dataset.tadd!=null){const p=W.pres[+e.target.dataset.tadd];(p.tests=p.tests||[]).push({data:new Date().toISOString().slice(0,10),tipo:2,proc:2,freq:2,tol:0,sist:false,aperti:false,nota:""});corpoAd()}
+  if(e.target.dataset.dnew!=null){W.pres[+e.target.dataset.dnew].dis={cop:3,nat:3,tem:3,for:3};corpoAd()}
   if(e.target.dataset.tdel!=null){const [i,j]=e.target.dataset.tdel.split(".");W.pres[+i].tests.splice(+j,1);corpoAd()}if(e.target.dataset.padd){adTarget=W;apriPres()}});
 $("#espl").onclick=async()=>{if(!W||!raggruppato(W))return;const b=$("#espl");
   if(!b.dataset.ok){b.dataset.ok="1";b.textContent=`Conferma: sostituisci con ${W.fonti.length} adempimenti${W.val?" (la valutazione fatta andrà persa)":""}`;return}
