@@ -74,7 +74,7 @@ def adatta(t,p):
     if p=='banca': return t
     for x,y in [('La banca',"L'entità"),('la banca',"l'entità"),('della banca',"dell'entità"),('alla banca',"all'entità"),('dalla banca',"dall'entità"),('Le banche','Le entità'),('le banche','le entità')]: t=t.replace(x,y)
     return t
-def componi(tit,desc,idx,p):
+def componi(tit,desc,idx,p,lv='prescrizioni',macro=None):
     m=[a[i] for i in idx]; q=m[0]
     f={}
     for k in K:
@@ -90,34 +90,66 @@ def componi(tit,desc,idx,p):
     d=desc+'\n\nObblighi compresi:\n'+'\n'.join('- '+x['titolo'].rstrip('.') for x in m)+'\n\nFonti normative: '+fontitxt(m)+'.'
     return {"norma":q['norma'],"art":q['art'],"comma":q['comma'],"titolo":adatta(tit,p),"desc":adatta(d,p),
       "dest":q['dest'],"termine":termine,"natura":'obbligatorio' if any(x['natura']=='obbligatorio' for x in m) else q['natura'],
-      "sogg":p,"cit":q['cit'],"citOk":bool(q.get('citOk')),"f":f,"sanz_txt":sanz,"S":0,"C":0,"lv":"prescrizioni","pres":[],"stato":None,"val":False,
-      "per":sorted(spec) if spec else ['tutti'],"macro":macro_di(tit),
+      "sogg":p,"cit":q['cit'],"citOk":bool(q.get('citOk')),"f":f,"sanz_txt":sanz,"S":0,"C":0,"lv":lv,"pres":[],"stato":None,"val":False,
+      "per":sorted(spec) if spec else ['tutti'],"macro":macro or macro_di(tit),
       "fonti":[{**{k:x[k] for k in('norma','art','comma','cit')},'pid':x['_id'],'titolo':x['titolo']} for x in m]}
-def costruisci(p):
+def gruppi_p(p):
+    """gruppi a mano ricalcolati sui soli adempimenti visibili per il perimetro (livello OBBLIGHI)"""
     out=[];usati=set()
     for tit,desc,idx in G:
         idx=[i for i in idx if i not in MAI and vis(i,p)]
         if not idx: continue
         if tit in RINOMINA: tit,desc=RINOMINA[tit]
-        usati|=set(idx); out.append(componi(tit,desc,idx,p))
-    # adempimenti rimasti del perimetro, non coperti dai gruppi a mano: un gruppo per norma (se almeno 2)
+        usati|=set(idx); out.append((tit,desc,idx))
     resto=collections.defaultdict(list)
     for i in range(len(a)):
         if i not in MAI and i not in usati and vis(i,p): resto[a[i]['norma']].append(i)
     for nm,ix in resto.items():
         if len(ix)>=2 and len(ix)<=15:
-            out.append(componi("Adempimenti specifici: "+short(nm),"Gli adempimenti previsti da "+short(nm)+" per questo perimetro.",ix,p))
-    for n,x in enumerate(out,1): x['_id']='a%03d'%n
+            out.append(("Adempimenti specifici: "+short(nm),"Gli adempimenti previsti da "+short(nm)+" per questo perimetro.",ix))
     return out
+def sottogruppi(idx):
+    """prescrizioni: dentro ogni obbligo, per (norma, articolo); i singoli si uniscono al vicino (stessa norma se possibile)"""
+    sub=collections.OrderedDict()
+    for i in idx: sub.setdefault((a[i]['norma'],a[i]['art']),[]).append(i)
+    L=[[k,v] for k,v in sub.items()]
+    k=0
+    while k<len(L) and len(L)>1:
+        if len(L[k][1])>=2: k+=1; continue
+        c=[n for n in (k-1,k+1) if 0<=n<len(L)]
+        c.sort(key=lambda n:(L[n][0][0]!=L[k][0][0],len(L[n][1])))
+        n=c[0]; L[n][1]=(L[n][1]+L[k][1]) if n>k else (L[n][1]+L[k][1]); del L[k]
+        k=0 if n>k else max(0,k-1)
+    out=[]
+    for _,v in L:
+        if len(v)>=6:
+            n=-(-len(v)//4); sz=-(-len(v)//n)
+            out+= [v[k:k+sz] for k in range(0,len(v),sz)]
+        else: out.append(v)
+    return out
+def livelli(p):
+    G_=gruppi_p(p); obb=[];pres=[];pil=collections.OrderedDict()
+    for tit,desc,idx in G_:
+        obb.append(componi(tit,desc,idx,p,'obblighi'))
+        mc=macro_di(tit)
+        pil.setdefault(mc,[]).extend(idx)
+        for v in sottogruppi(idx):
+            m0=a[v[0]]
+            pres.append(componi(m0['titolo'].rstrip('.') if len(v)==1 else m0['titolo'].rstrip('.')+(' e obblighi connessi'),m0.get('desc') or m0['titolo'],v,p,'prescrizioni',mc))
+    pill=[componi(mc,"Area di compliance: "+mc+".",sorted(ix),p,'pilastri',mc) for mc,ix in pil.items()]
+    for L_ in (obb,pres,pill):
+        for n,x in enumerate(L_,1): x['_id']='a%03d'%n
+    return {'prescrizioni':pres,'obblighi':obb,'pilastri':pill}
+def costruisci(p): return livelli(p)['obblighi']
 import collections
-out=costruisci('banca')
-GRP={'banca':out}
+LV={}
 for p,_ in PERIM_LISTA:
-    if p!='banca':
-        g=costruisci(p)
-        if g: GRP[p]=g
-for p,g in GRP.items(): json.dump(g,open('/home/claude/ra_build/data/prescrizioni_%s.json'%p,'w'),ensure_ascii=False)
-json.dump(out,open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
+    l=livelli(p)
+    if l['obblighi']: LV[p]=l
+for p,l in LV.items():
+    for nome,g in l.items(): json.dump(g,open('/home/claude/ra_build/data/%s_%s.json'%(nome,p),'w'),ensure_ascii=False)
+out=LV['banca']['obblighi']      # per macro.json (la macro è la stessa a tutti i livelli)
+json.dump(LV['banca']['prescrizioni'],open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
 pun=[x for i,x in enumerate(a) if i not in MAI]
 for i,x in enumerate(a): x['per']=PER[i]
 for x in pun: x.pop('_escl',None)
@@ -130,7 +162,7 @@ for x in pun: x['macro']=MAP.get(x['_id'],M7); x['sogg']='banca'
 json.dump(pun,open('/home/claude/ra_el/adem_ramweuq26q.json','w'),ensure_ascii=False)
 json.dump(pun,open('/home/claude/ra_build/data/adem_ramweuq26q.json','w'),ensure_ascii=False)
 json.dump(MAP,open('/home/claude/ra_build/data/macro.json','w'),ensure_ascii=False)
-json.dump(out,open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
+json.dump(LV['banca']['prescrizioni'],open('/home/claude/ra_build/data/adem_ramwf8f1hm.json','w'),ensure_ascii=False)
 from collections import Counter
 print(Counter(x['macro'] for x in out))
 print(len(EX),'esclusi;',len(pun),'puntuali;',len(out),'prescrizioni;',sum(len(x['fonti']) for x in out))

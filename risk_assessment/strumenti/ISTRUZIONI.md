@@ -44,3 +44,10 @@ Nel risk assessment non c'è nessuna inclusione automatica: assicurazioni e IA e
 
 ## Perimetro `intermediari` (decisione 14/11/2026)
 `intermediari` = SOLO intermediari finanziari art. 106 TUB. Non esistono perimetri per istituti di pagamento, IMEL o intermediari del credito (mediatori, agenti): se un articolo si rivolge solo a loro, `per` resta vuoto e non genera adempimenti. Nelle proposte dei revisori, `intermediari` generico va riletto: tenerlo solo se il testo parla di intermediari art. 106 TUB.
+
+## Livelli per percentuale (14/11/2026)
+I livelli si definiscono sul totale degli adempimenti puntuali del perimetro (100%), non più per numero di elementi raggruppati:
+- puntuali 100%; prescrizioni 25–50% (oggi ~31%: gruppi di 2–5 puntuali, stessa norma e stesso articolo, spezzati se più di 5); obblighi 10–25% (oggi ~12%: i gruppi a mano di `gruppi.py`); pilastri 1–10% (oggi ~1,5%: le aree macro).
+- Gerarchia: ogni prescrizione sta in un solo obbligo, ogni obbligo in un solo pilastro. In ogni livello `fonti` elenca i puntuali sottostanti.
+- Le percentuali si scelgono in base a quanto si possono agglomerare e alla coerenza degli adempimenti; per norme future si rispettano gli stessi intervalli.
+- `build.py` produce `data/prescrizioni_<p>.json`, `obblighi_<p>.json`, `pilastri_<p>.json` per ogni perimetro. I titoli delle prescrizioni sono ricavati dal puntuale principale ("… e obblighi connessi"): da rivedere a mano.
