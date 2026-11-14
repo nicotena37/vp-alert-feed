@@ -291,7 +291,23 @@ const PRES_STD=[
  ["Controllo di secondo livello","Persona",.70,"Rilevativo"],["Revisione interna (terzo livello)","Persona",.60,"Rilevativo"],
  ["Controllo manuale di primo livello","Persona",.55,"Rilevativo"],["Referente nominato","Persona",.50,"Preventivo"],["Formazione del personale","Persona",.45,"Preventivo"]];
 const ADEG=[["Adeguato",1],["Parzialmente adeguato",.6],["Debole",.3],["Inadeguato o assente",0]];
-const TEST=[["Testato, senza rilievi",1],["Non testato",.8],["Testato con rilievi",.5]];
+const TEST=[["Testato, senza rilievi",1],["Non testato",.6],["Testato con rilievi",.5]];
+/* test dei presidi: tipo (affidabilità), copertura, esito, validità nel tempo */
+const TIPOT=[["Autovalutazione della prima linea",.5],["Controllo di secondo livello",.75],["Audit interno o test indipendente",1],["Verifica esterna o certificazione",1]];
+const COPT=[["Totale",1],["A campione",.9],["Solo documentale",.7]];
+const ESITT=[["Nessun rilievo",1],["Rilievi lievi",.8],["Rilievi significativi",.5],["Rilievi critici",.2]];
+const VOTI=[["Non rispettato",1],["Rispettato in parte",2],["Largamente rispettato",3],["Pienamente rispettato",4]];
+const mesiDa=d=>{const t=new Date(d);if(isNaN(t))return 99;const n=new Date();return (n.getFullYear()-t.getFullYear())*12+(n.getMonth()-t.getMonth())+(n.getDate()<t.getDate()?-.5:0)};
+const validita=m=>m<=12?1:m<=24?.7:.4;
+/* fattore di test di un presidio: 0,6 se mai testato; il test più affidabile e recente dà fino a 1; rilievi aperti limitano il valore */
+function fattoreTest(p){const T=p.tests||[];
+  if(!T.length)return p.test===0?1:p.test===2?.5:.6;
+  let best=null;for(const t of T){const c=TIPOT[t.tipo??2][1]*COPT[t.cop??0][1]*validita(mesiDa(t.data));const es=ESITT[t.esito??0][1],pos=.6+.4*c,f=es<1?Math.min(pos,es):pos;if(!best||c>best.c)best={c,f}}
+  let f=best.f;for(const t of T){if(t.aperti&&(t.esito??0)>=2&&mesiDa(t.data)<=24)f=Math.min(f,t.esito===3?.3:.5)}return f}
+/* probabilità dai voti sugli obblighi: metà caso peggiore + metà media; la valutazione complessiva, se c'è, prevale */
+function Pvoti(ad){const ids=(ad.fonti&&ad.fonti.length>1)?ad.fonti.map(f=>f.pid):[ad._id],V=ad.voti||{},ps=ids.filter(i=>V[i]).map(i=>5-V[i]);
+  const calc_=ps.length?.5*Math.max(...ps)+.5*ps.reduce((s,x)=>s+x,0)/ps.length:null,over=ad.vtot?5-ad.vtot:null;
+  return (calc_==null&&over==null)?null:{calc:calc_,over,eff:over??calc_,n:ps.length,tot:ids.length}}
 const STATI=["Conforme","Largamente conforme","Parzialmente conforme","Non conforme o non valutato"];
 const ESEMPIO={norma:"Reg. (UE) 2022/2554 (DORA), artt. 28 e 30",
  puntuali:{n:41,ex:[["art. 28 c. 3","Mantenere e aggiornare il registro delle informazioni su tutti gli accordi contrattuali per servizi TIC prestati da terzi."],["art. 28 c. 4 lett. d","Svolgere la due diligence sul potenziale fornitore prima di stipulare il contratto."],["art. 30 c. 2 lett. b","Indicare nel contratto le località di svolgimento e conservazione dei dati e l'obbligo del fornitore di avvisare prima di cambiarle."]]},
@@ -336,7 +352,7 @@ function chiave(a){if(raggruppato(a)||(R&&R.ord!=="norma"))return{k:"M:"+macroDi
 function gruppi(lista,get=x=>x){const g=new Map();for(const x of lista){const c=chiave(get(x));if(!g.has(c.k))g.set(c.k,{...c,v:[]});g.get(c.k).v.push(x)}return[...g.values()].sort((p,q)=>p.o-q.o||p.t.localeCompare(q.t))}
 let IDX={}, TAX={}, PROC=[], SHARDS={}, PDFARTS={}, HOME=[], A=[], R=null, unsubA=null, W=null, adTarget=null;
 let pesiOverride={}, libreria=[], sample=null, cfgLoaded=false;
-const nuovoRA=()=>({id:"ra"+Date.now().toString(36),titolo:"Nuovo risk assessment",stato:"in_corso",creato:new Date().toISOString(),agg:new Date().toISOString(),modo:"amb",per:"banca",amb:[],oggetto:"",incS:false,incAb:false,sig:"",norme:{},livello:"prescrizioni",metodo:"m3",fp:"",richiesta:null,extra:{},step:1,nAdem:0,nVal:0});
+const nuovoRA=()=>({id:"ra"+Date.now().toString(36),titolo:"Nuovo risk assessment",stato:"in_corso",creato:new Date().toISOString(),agg:new Date().toISOString(),modo:"amb",per:"banca",amb:[],oggetto:"",incS:false,incAb:false,sig:"",norme:{},livello:"prescrizioni",metodo:"m3",prob:"voti",fp:"",richiesta:null,extra:{},step:1,nAdem:0,nVal:0});
 let tmr=null;
 function persist(subito){clearTimeout(tmr);const f=async()=>{if(!R)return;R.agg=new Date().toISOString();R.nAdem=A.length;R.nVal=A.filter(a=>a.val).length;R.nNr=A.filter(a=>a.nr).length;
     try{if(R.richiesta?.stato==="inviata"){const c=await kv.get("ra/"+R.id);if(c?.richiesta?.stato==="pronta")R.richiesta=c.richiesta}await kv.set("ra/"+R.id,clone(R));$("#stSalv").textContent=$("#stSalv2").textContent="Salvato alle "+ora();$("#stSalv").className=$("#stSalv2").className="status"}
@@ -558,8 +574,17 @@ function renderLivelli(){if(!R)return;
   const exHtml=k=>{const e=ESEMPIO[k];const prefix=`<div class="tag">Esempio · ${esc(ESEMPIO.norma)}</div><div class="small">${k==="puntuali"?`${e.n} righe in tutto, tra cui:`:`${e.n} ${e.n===1?"riga":"righe"} in tutto${k==="prescrizioni"?", tra cui":""}:`}</div>`;
     return prefix+e.ex.map(x=>`<div class="e">${esc(x[1])}<i>${esc(x[0])}${x[2]?" · "+esc(x[2]):""}</i></div>`).join("")};
   $("#livelli").innerHTML=LIVELLI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="liv" value="${k}" ${R.livello===k?"checked":""}><b>${n}</b></span><span>${d}</span><div class="ex">${exHtml(k)}</div></label>`).join("");
-  $("#metodi").innerHTML=METODI.map(([k,n,d])=>`<label class="opt"><span class="row"><input type="radio" name="met" value="${k}" ${R.metodo===k?"checked":""}><b>${n}</b></span><span>${d}</span></label>`).join("")}
-document.addEventListener("change",e=>{if(!R)return;if(e.target.name==="liv"){R.livello=e.target.value;persist()}if(e.target.name==="met"){R.metodo=e.target.value;persist();if(!$("#s6").hidden){renderAdem()}}});
+  renderMetodi()}
+function renderMetodi(){if(!R)return;
+  const tipo=R.metodo==="m4"?"e":"q",mq=R.mq||(R.metodo==="m4"?"m3":R.metodo)||"m3",pr=R.prob||"fattori";
+  $("#metodi").innerHTML=`<label class="opt"><span class="row"><input type="radio" name="mt" value="q" ${tipo==="q"?"checked":""}><b>Qualitativa a livelli (predefinita)</b></span><span>Impatto e probabilità danno il rischio inerente su 4 livelli; i presidi lo riducono fino al residuo. Si personalizza con le impostazioni sotto.</span></label>
+   <label class="opt"><span class="row"><input type="radio" name="mt" value="e" ${tipo==="e"?"checked":""}><b>Quantitativa: perdita attesa in euro</b></span><span>Probabilità annua, sanzione in euro e costi di rimedio: esce una perdita attesa in euro rispetto ai fondi propri.</span></label>
+   <div class="box" style="margin-top:8px"><h4>Impostazioni della metodologia</h4>
+   <div class="fx"><label>Come si ricava la probabilità<select name="mprob"><option value="voti" ${pr!=="fattori"?"selected":""}>Dai voti da 1 a 4 sul rispetto degli obblighi (con valutazione complessiva facoltativa)</option><option value="fattori" ${pr==="fattori"?"selected":""}>Dai fattori di probabilità ponderati</option></select></label>
+   ${tipo==="q"?`<label>Come i presidi riducono il rischio<select name="mq"><option value="m3" ${mq==="m3"?"selected":""}>Fattori ponderati (predefinita)</option><option value="m1" ${mq==="m1"?"selected":""}>Matrice impatto × vulnerabilità</option><option value="m2" ${mq==="m2"?"selected":""}>Riduzione percentuale</option><option value="m5" ${mq==="m5"?"selected":""}>Regole a soglia: scende di 0, 1 o 2 livelli</option></select></label>`:""}</div>
+   <p class="small" style="margin:6px 0 0">Le impostazioni si possono cambiare anche a RA avviato: gli adempimenti già valutati si ricalcolano.</p></div>`}
+document.addEventListener("change",e=>{if(!R)return;if(e.target.name==="liv"){R.livello=e.target.value;persist()}const nm=e.target.name;if(nm==="mt"||nm==="mq"||nm==="mprob"){if(nm==="mq")R.mq=e.target.value;if(nm==="mprob")R.prob=e.target.value;if(nm==="mt"&&e.target.value==="q")R.metodo=R.mq||"m3";
+    const mq=R.mq||(R.metodo!=="m4"?R.metodo:"m3");R.mq=mq;R.metodo=(nm==="mt"?e.target.value==="e":R.metodo==="m4")?"m4":mq;persist();renderMetodi();if(!$("#s6").hidden){renderAdem()}}});
 $("#go6").onclick=()=>vai(6);
 
 /* ---- passo 6 ---- */
@@ -588,8 +613,8 @@ $("#go7").onclick=()=>vai(7);
 
 /* ---- calcoli ---- */
 function pesoPres(nome,nat,base){const o=pesiOverride[nome];const [lo,hi]=FASCIA[nat]||[0,1];return Math.min(hi,Math.max(lo,o??base))}
-function eff(ad){let q=1;for(const p of ad.pres||[]){q*=1-pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*TEST[p.test][1]}return Math.min(.9,1-q)}
-function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){const v=ad.f?.[k]??3;g==="I"?I+=w*v:P+=w*v}return {I,P}}
+function eff(ad){let q=1;for(const p of ad.pres||[]){q*=1-pesoPres(p.nome,p.nat,p.peso)*(p.tipo==="Rilevativo"?.8:1)*ADEG[p.adeg][1]*fattoreTest(p)}return Math.min(.9,1-q)}
+function IP(ad){let I=0,P=0;for(const [k,,g,w] of FATT){const v=ad.f?.[k]??3;g==="I"?I+=w*v:P+=w*v}if(R&&R.prob!=="fattori"){const pv=Pvoti(ad);if(pv&&pv.eff!=null)P=pv.eff}return {I,P}}
 const lvRI=x=>x<4?0:x<7?1:x<12?2:3, lv3=x=>x<1.75?0:x<2.5?1:x<3.25?2:3;
 const MAT=[[0,0,0,0],[0,0,1,1],[1,1,2,2],[1,2,3,3]];
 const vuln=E=>E>=.75?0:E>=.5?1:E>=.25?2:3;
@@ -612,14 +637,28 @@ async function importaAdem(){const q=R&&R.richiesta;if(importando||!q||q.stato!=
     R.richiesta={...q,importato:true,nAdem:arr.length};R.nAdem=arr.length;await persist(true)}catch(e){const st=$("#stInv");if(st)st.textContent="Importazione non riuscita: ricarica la pagina."}finally{importando=false}}
 function apriAd(id){const a=A.find(x=>x._id===id);if(!a)return;W=clone(a);W.pres=W.pres||[];W.f=W.f||{};$("#stAd").textContent="";corpoAd();$("#nrMot").value=W.nrMot||"";$("#nrAd").textContent=W.nr?"Rimetti in valutazione":"Non rilevante";const eb=$("#espl");eb.hidden=!raggruppato(W);delete eb.dataset.ok;eb.textContent="Scomponi in adempimenti più precisi";const rb=$("#risali");rb.hidden=!W.da;delete rb.dataset.ok;rb.textContent="Torna al livello superiore";$("#dAd").showModal()}
 const fsel=(a,k)=>{const F=FATT.find(x=>x[0]===k);return `<label>${F[1]} <span class="small">(peso ${Math.round(F[3]*100)}%)</span><select data-f="${k}">${F[4].map((t,i)=>`<option value="${i+1}" ${(a.f[k]??3)===i+1?"selected":""}>${i+1} · ${t}</option>`).join("")}</select></label>`};
-function presHtml(a){return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
-   <select data-pa="${i}" aria-label="Adeguatezza">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
-   <select data-pt="${i}" aria-label="Test">${TEST.map((x,j)=>`<option value="${j}" ${p.test===j?"selected":""}>${x[0]}</option>`).join("")}</select>
-   <button class="btn ghost sm" type="button" data-pdel="${i}">Togli</button></div>`).join("")||'<span class="small">Nessun presidio: il residuo coincide con l\'inerente.</span>'}
+function presHtml(a){const li=lvRI(IP(a).I*IP(a).P),lim=li>=2?12:24;
+  const sel=(att,arr,v)=>`<select ${att}>${arr.map((x,j)=>`<option value="${j}" ${v===j?"selected":""}>${x[0]}</option>`).join("")}</select>`;
+  const testi=(p,i)=>{const T=p.tests||[],ult=T.map(t=>mesiDa(t.data)).sort((x,y)=>x-y)[0];
+    const avv=!T.length?`<span class="small">Mai testato: conta ${f2(fattoreTest(p))}.</span>`:ult>lim?`<span class="chip" style="color:var(--bad,#b3261e)">ultimo test di ${Math.floor(ult)} mesi fa: oltre ${lim} mesi, da ripetere</span>`:"";
+    return `<details class="small" ${T.length?"open":""}><summary>Test del presidio (${T.length}) · fattore ${f2(fattoreTest(p))}</summary>${avv}
+     ${T.map((t,j)=>`<div class="row" style="gap:6px;align-items:center;margin:4px 0"><input type="date" data-tf="${i}.${j}.data" value="${esc(t.data||"")}" aria-label="Data del test">${sel(`data-tf="${i}.${j}.tipo" aria-label="Tipo di test"`,TIPOT,t.tipo??2)}${sel(`data-tf="${i}.${j}.cop" aria-label="Copertura"`,COPT,t.cop??0)}${sel(`data-tf="${i}.${j}.esito" aria-label="Esito"`,ESITT,t.esito??0)}<label class="small"><input type="checkbox" data-tf="${i}.${j}.aperti" ${t.aperti?"checked":""}> rilievi aperti</label><input type="text" data-tf="${i}.${j}.nota" value="${esc(t.nota||"")}" placeholder="Nota o evidenza" style="flex:1 1 140px"><button class="btn ghost sm" type="button" data-tdel="${i}.${j}">Togli</button></div>`).join("")}
+     <div class="row"><button class="btn ghost sm" type="button" data-tadd="${i}">+ Test</button></div></details>`};
+  return `<div class="box"><h4>Presidi</h4>${(a.pres||[]).map((p,i)=>`<div class="pr"><span class="nm">${esc(p.nome)} <span class="chip">${p.nat} · ${f2(pesoPres(p.nome,p.nat,p.peso))} · ${p.tipo}</span></span>
+   <select data-pa="${i}" aria-label="Adeguatezza del disegno">${ADEG.map((x,j)=>`<option value="${j}" ${p.adeg===j?"selected":""}>${x[0]}</option>`).join("")}</select>
+   <button class="btn ghost sm" type="button" data-pdel="${i}">Togli</button><div style="flex:1 1 100%">${testi(p,i)}</div></div>`).join("")||'<span class="small">Nessun presidio: il residuo coincide con l\'inerente.</span>'}
    <div class="row"><button class="btn ghost sm" type="button" data-padd="1">+ Presidio</button></div></div>`}
 const descHtml=t=>{const righe=String(t||"").split("\n"),out=[];let ul=null;for(const r of righe){if(/^\s*-\s+/.test(r)){(ul=ul||[]).push(r.replace(/^\s*-\s+/,""));continue}if(ul){out.push("<ul class=\"dl\">"+ul.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>");ul=null}if(r.trim())out.push("<p>"+esc(r)+"</p>")}if(ul)out.push("<ul class=\"dl\">"+ul.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>");return out.join("")};
 function temAmb(a){const sel=R.amb||[],ids=[a.norma,...(a.fonti||[]).map(f=>f.norma)];for(const i of ids){const e=((IDX[i]&&IDX[i][4])||[]).find(x=>sel.includes(x[0]+"||"+x[1]));if(e)return[e[0],e[1]]}if(sel[0]){const p=sel[0].split("||");return[p[0],p[1]||""]}const e=IDX[a.norma]&&IDX[a.norma][4]&&IDX[a.norma][4][0];return e?[e[0],e[1]]:["",""]}
 let FILEDESC={};
+function votiHtml(a){if(R.prob==="fattori")return"";const pv=Pvoti(a),gr=raggruppato(a),V=a.voti||{};
+  const opt=v=>`<option value="">—</option>`+VOTI.map(([n,x])=>`<option value="${x}" ${v===x?"selected":""}>${x} · ${n}</option>`).join("");
+  const diff=pv&&pv.calc!=null&&pv.over!=null&&Math.abs(pv.calc-pv.over)>1;
+  return `<div class="box"><h4>Rispetto degli obblighi (da 1 a 4)</h4><p class="small" style="margin:0 0 6px">4 = pienamente rispettato, 1 = non rispettato. La probabilità di accadimento è l'inverso. Il calcolo conta per metà il caso peggiore e per metà la media.</p>
+   ${gr?a.fonti.map(f=>`<div class="row" style="gap:8px;align-items:center;margin:3px 0"><span style="flex:1 1 260px">${esc(f.titolo||"")}</span><select data-vo="${esc(f.pid)}" aria-label="Rispetto dell'obbligo">${opt(V[f.pid])}</select></div>`).join(""):""}
+   <div class="row" style="gap:8px;align-items:center;margin-top:6px"><b class="small">${gr?"Valutazione complessiva (facoltativa)":"Rispetto dell'obbligo"}</b><select data-vt="1" aria-label="Valutazione complessiva">${opt(a.vtot)}</select></div>
+   ${gr&&a.vtot?`<label class="small">Motivo della valutazione complessiva${diff?" (obbligatorio: differisce di oltre un livello dal calcolo)":""}<textarea data-v="vmot" style="min-height:44px">${esc(a.vmot||"")}</textarea></label>`:""}
+   <div class="small">${pv?`Probabilità ${f2(pv.eff)} (${pv.over!=null?"da valutazione complessiva":"calcolata su "+pv.n+" di "+pv.tot+" obblighi"}${pv.calc!=null&&pv.over!=null?" · dal calcolo sarebbe "+f2(pv.calc):""})`:"Nessun voto: la probabilità resta quella dei fattori."}</div></div>`}
 function corpoAd(){const a=W,r=calc(a),m=R.metodo,I=["sanz","rep","oper","econ"],P=["compl","freq","nov","ctrl","att"];
   let blocco="";
   if(m==="m1")blocco=`<div class="box"><h4>Impatto (4 fattori)</h4><div class="fx">${I.map(k=>fsel(a,k)).join("")}</div></div><div class="box"><h4>Probabilità (5 fattori)</h4><div class="fx">${P.map(k=>fsel(a,k)).join("")}</div></div>${presHtml(a)}<div class="small">Impatto ${f2(r.I)} × probabilità ${f2(r.P)} = ${f2(r.RI)} → inerente ${LIV[r.inLv]} · vulnerabilità ${["bassa","medio-bassa","medio-alta","alta"][vuln(r.E)]} (presidi ${Math.round(r.E*100)}%)</div>`;
@@ -636,7 +675,7 @@ function corpoAd(){const a=W,r=calc(a),m=R.metodo,I=["sanz","rep","oper","econ"]
    ${raggruppato(a)?"":`<div class="row small"><span>${esc(att(a.norma).tit.slice(0,110))}</span><span class="mono">Art. ${esc(a.art)}${a.comma?" c. "+esc(a.comma):""}</span><button class="btn ghost sm" type="button" data-leggi="${esc(a.norma)}|${esc(String(a.art))}" data-ad="1">Leggi il passaggio</button></div>`}
    ${!raggruppato(a)&&a.cit?`<q class="${a.citOk?"ok":"ko"}">${esc(a.cit)}${a.citOk?"":" — citazione da verificare"}</q>`:""}
    <div class="box"><h4>Sanzioni (inserite da Claude in base alla norma)</h4><div>${esc(a.sanz_txt||"Non indicate dalla norma.")}</div></div>
-   ${blocco}
+   ${votiHtml(a)}${blocco}
    <div class="res"><span>Inerente ${lv(r.selIn)}</span><span>Residuo ${lv(r.sel)}</span><span class="small mono">presidi ${Math.round(r.E*100)}%</span></div>
    <label class="small">Note<textarea data-v="nota" style="min-height:56px">${esc(a.nota||"")}</textarea></label>`}
 $("#bAd").addEventListener("click",e=>{if(e.target.id!=="bFonti"||!W||!raggruppato(W))return;
@@ -644,10 +683,15 @@ $("#bAd").addEventListener("click",e=>{if(e.target.id!=="bFonti"||!W||!raggruppa
   $("#tFonti").textContent=`${W.fonti.length} obblighi: ${W.titolo}`;$("#dFonti").showModal()});
 $("#cFonti").onclick=()=>$("#dFonti").close();
 $("#bAd").addEventListener("change",e=>{const t=e.target;if(!W)return;
-  if(t.dataset.f)W.f[t.dataset.f]=+t.value;else if(t.dataset.v==="stato")W.stato=t.value===""?null:+t.value;else if(t.dataset.v==="nota"){W.nota=t.value;return}else if(t.dataset.v)W[t.dataset.v]=+t.value||0;
-  else if(t.dataset.pa!=null)W.pres[+t.dataset.pa].adeg=+t.value;else if(t.dataset.pt!=null)W.pres[+t.dataset.pt].test=+t.value;
+  if(t.dataset.f)W.f[t.dataset.f]=+t.value;else if(t.dataset.v==="stato")W.stato=t.value===""?null:+t.value;else if(t.dataset.v==="nota"){W.nota=t.value;return}else if(t.dataset.v==="vmot"){W.vmot=t.value;return}else if(t.dataset.v)W[t.dataset.v]=+t.value||0;
+  else if(t.dataset.pa!=null)W.pres[+t.dataset.pa].adeg=+t.value;
+  else if(t.dataset.tf){const [i,j,k]=t.dataset.tf.split(".");const x=W.pres[+i].tests[+j];if(k==="data"||k==="nota"){x[k]=t.value;if(k==="nota")return}else if(k==="aperti")x.aperti=t.checked;else x[k]=+t.value}
+  else if(t.dataset.vo){W.voti=W.voti||{};if(t.value==="")delete W.voti[t.dataset.vo];else W.voti[t.dataset.vo]=+t.value}
+  else if(t.dataset.vt!=null){if(t.value==="")delete W.vtot;else W.vtot=+t.value}
   corpoAd()});
-$("#bAd").addEventListener("click",e=>{if(e.target.dataset.pdel!=null){W.pres.splice(+e.target.dataset.pdel,1);corpoAd()}if(e.target.dataset.padd){adTarget=W;apriPres()}});
+$("#bAd").addEventListener("click",e=>{if(e.target.dataset.pdel!=null){W.pres.splice(+e.target.dataset.pdel,1);corpoAd()}
+  if(e.target.dataset.tadd!=null){const p=W.pres[+e.target.dataset.tadd];(p.tests=p.tests||[]).push({data:new Date().toISOString().slice(0,10),tipo:2,cop:0,esito:0,aperti:false,nota:""});corpoAd()}
+  if(e.target.dataset.tdel!=null){const [i,j]=e.target.dataset.tdel.split(".");W.pres[+i].tests.splice(+j,1);corpoAd()}if(e.target.dataset.padd){adTarget=W;apriPres()}});
 $("#espl").onclick=async()=>{if(!W||!raggruppato(W))return;const b=$("#espl");
   if(!b.dataset.ok){b.dataset.ok="1";b.textContent=`Conferma: sostituisci con ${W.fonti.length} adempimenti${W.val?" (la valutazione fatta andrà persa)":""}`;return}
   delete b.dataset.ok;$("#stAd").textContent="Scompongo…";
@@ -674,11 +718,11 @@ $("#cAd").onclick=()=>$("#dAd").close();
 /* ---- presidi e pesi ---- */
 function tuttiPresidi(){return PRES_STD.map(p=>({nome:p[0],nat:p[1],peso:p[2],tipo:p[3],lib:false})).concat(libreria.map(p=>({...p,lib:true})))}
 function apriPres(){$("#selPres").innerHTML=tuttiPresidi().map((p,i)=>`<option value="${i}">${esc(p.nome)} — ${p.nat}, ${f2(pesoPres(p.nome,p.nat,p.peso))}${p.lib?" (libreria)":""}</option>`).join("");$("#stPres").textContent="";$("#dPres").showModal()}
-$("#bAddPres").onclick=()=>{const p=tuttiPresidi()[+$("#selPres").value];adTarget.pres.push({nome:p.nome,nat:p.nat,peso:p.peso,tipo:p.tipo,adeg:0,test:1});corpoAd();$("#stPres").textContent="Aggiunto: "+p.nome};
+$("#bAddPres").onclick=()=>{const p=tuttiPresidi()[+$("#selPres").value];adTarget.pres.push({nome:p.nome,nat:p.nat,peso:p.peso,tipo:p.tipo,adeg:0,tests:[]});corpoAd();$("#stPres").textContent="Aggiunto: "+p.nome};
 $("#bNewPres").onclick=async()=>{const nome=$("#npNome").value.trim();if(!nome){$("#stPres").textContent="Scrivi il nome del presidio.";return}
   const nat=$("#npNat").value,[lo,hi]=FASCIA[nat],peso=Math.min(hi,Math.max(lo,+$("#npPeso").value||lo)),p={nome,nat,peso,tipo:$("#npTipo").value};
   if($("#npLib").checked&&!libreria.some(x=>x.nome===nome)){libreria.push(p);try{await kv.set("ra_cfg/presidi",{lista:libreria})}catch{}}
-  adTarget.pres.push({...p,adeg:0,test:1});corpoAd();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)})`;$("#npNome").value=""};
+  adTarget.pres.push({...p,adeg:0,tests:[]});corpoAd();$("#stPres").textContent=`Aggiunto: ${nome} (peso ${f2(peso)})`;$("#npNome").value=""};
 $("#bClosePres").onclick=()=>$("#dPres").close();
 $("#bSet").onclick=()=>{const all=tuttiPresidi();$("#tSet").innerHTML=`<tr><th>Presidio</th><th>Natura</th><th class="num">Standard</th><th class="num">Peso</th></tr>`+all.map((p,i)=>`<tr><td>${esc(p.nome)}${p.lib?' <span class="chip">libreria</span>':''}</td><td>${p.nat}</td><td class="num">${f2(p.peso)}</td><td class="num"><input type="number" step="0.05" min="${FASCIA[p.nat][0]}" max="${FASCIA[p.nat][1]}" value="${pesoPres(p.nome,p.nat,p.peso)}" data-sw="${i}" style="width:80px"></td></tr>`).join("");$("#dSet").showModal()};
 $("#bSave").onclick=async()=>{const all=tuttiPresidi();$$("[data-sw]").forEach(inp=>{const p=all[+inp.dataset.sw],v=+inp.value;if(Math.abs(v-p.peso)>1e-9)pesiOverride[p.nome]=v;else delete pesiOverride[p.nome]});
