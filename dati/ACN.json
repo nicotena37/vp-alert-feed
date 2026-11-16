@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-14T19-17-08.json",
+"nome_file": "vpalert_rss_ACN_2026-11-16T12-51-37.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-14T19:17:08Z",
+"letto_il": "2026-11-16T12:51:37Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,26 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Craft CMS",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
+"data_originale": "Mon, 09 Nov 2026 13:14:29 GMT",
+"data": "2026-11-09",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 7 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tra queste si evidenziano le CVE-2026-123488, CVE-2026-115934, CVE-2026-124427 e CVE-2026-124429 per le quali risultano disponibili dei Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti IBM",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-ibm",
+"data_originale": "Mon, 16 Nov 2026 10:16:57 GMT",
+"data": "2026-11-16",
+"descrizione": "IBM ha rilasciato aggiornamenti di sicurezza che sanano alcune vulnerabilità, di cui 4 con gravità \"alta\", in Security QRadar EDR, webMethods Integration Server e ContextForge MCP Gateway. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eludere i meccanismi di autenticazione e di sicurezza o di accedere a informazioni sensibili sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -386,16 +406,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Craft CMS",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
-"data_originale": "Mon, 09 Nov 2026 13:14:29 GMT",
-"data": "2026-11-09",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 7 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tra queste si evidenzia la CVE-2026-123488 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolte vulnerabilità in Synology DiskStation Manager (DSM)",
 "link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-synology-diskstation-manager-dsm-1",
 "data_originale": "Tue, 10 Nov 2026 10:19:13 GMT",
@@ -514,16 +524,6 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Apache OFBiz",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-apache-ofbiz",
-"data_originale": "Fri, 06 Nov 2026 13:16:46 GMT",
-"data": "2026-11-06",
-"descrizione": "Apache Software Foundation ha rilasciato aggiornamenti di sicurezza per risolvere numerose vulnerabilità, di cui 7 con gravità “critica” e 21 con gravità “alta”, nel prodotto OFBiz, piattaforma open source per la gestione aziendale."
-},
-{
-"sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
 "titolo": "Pubblicato il primo Avviso per l'accesso alle risorse di calcolo di Megaride",
@@ -556,6 +556,16 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
+"titolo": "«L'offensiva cyber si è democratizzata. Con l'AI per colpire basta una spesa di pochi dollari»",
+"link": "https://www.acn.gov.it/portale/web/guest/-/-l-offensiva-cyber-si-e-democratizzata.-con-l-ai-per-colpire-basta-una-spesa-di-pochi-dollari-",
+"data_originale": "16/11/2026",
+"data": "2026-11-16",
+"descrizione": "Intervista - 16 Novembre 2026 Quacivi (Acn): tutto è più rapido e accessibile Direttore Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
 "titolo": "Bruno Frattasi: «Vigileremo sui giochi»",
 "link": "https://www.acn.gov.it/portale/web/guest/-/bruno-frattasi-vigileremo-sui-giochi-",
 "data_originale": "09/03/2026",
@@ -571,16 +581,6 @@
 "data_originale": "03/01/2026",
 "data": "2026-01-03",
 "descrizione": "Intervista - 03 Gennaio 2026 Dalla guerra ibrida alla nuova direttiva europea, nello spazio digitale sta crescendo il ruolo dei privati e dell'intelligenza artificiale. Parla Frattasi, direttore dell'Agenzia per la Cybersicurezza Nazionale Cybersicurezza ACN Intelligenza artificiale Sicurezza"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "La risposta dello Stato contro i rischi digitali",
-"link": "https://www.acn.gov.it/portale/web/guest/-/la-risposta-dello-stato-contro-i-rischi-digitali",
-"data_originale": "27/11/2025",
-"data": "2025-11-27",
-"descrizione": "Intervista - 27 Novembre 2025 Intervista al prefetto Bruno Frattasi, Direttore Generale dell'Acn, su investimenti, minacce (ransomware e DDos) e difesa nazionale, incluse le Pmi e l'integrazione civile-militare PMI Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
