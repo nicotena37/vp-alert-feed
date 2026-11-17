@@ -1,33 +1,31 @@
 {
  "bce_discorsi_scaricato": "2026-11-15",
- "ultimo_giro": "2026-11-16T14:13:44+00:00",
+ "ultimo_giro": "2026-11-17T15:06:28+00:00",
  "dal": "2026-11-02",
  "voci_nuove": 267,
- "voci_in_archivio": 16985,
+ "voci_in_archivio": 17252,
  "fonti": {
   "Parlamento UE - interrogazioni": {
-   "ok": true,
-   "voci": 480,
-   "con_tema": 18,
-   "secondi": 69
+   "ok": false,
+   "errore": "RuntimeError: HTTP 500"
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 2408,
+   "voci": 2389,
    "con_tema": 26,
-   "secondi": 7
+   "secondi": 11
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 141,
+   "voci": 139,
    "con_tema": 7,
-   "secondi": 7
+   "secondi": 6
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 679,
-   "con_tema": 38,
-   "secondi": 15
+   "voci": 725,
+   "con_tema": 50,
+   "secondi": 14
   },
   "BCE - discorsi": {
    "ok": true,
@@ -43,8 +41,8 @@
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 34,
-   "con_tema": 9,
+   "voci": 50,
+   "con_tema": 6,
    "secondi": 4
   },
   "Sole 24 Ore Finanza": {
@@ -56,12 +54,12 @@
   "Il Sole 24 Ore - Economia": {
    "ok": true,
    "voci": 12,
-   "con_tema": 2,
+   "con_tema": 0,
    "secondi": 4
   },
   "Il Sole 24 Ore - Norme e tributi": {
    "ok": true,
-   "voci": 7,
+   "voci": 4,
    "con_tema": 0,
    "secondi": 3
   },
@@ -74,46 +72,46 @@
   "la Repubblica - Economia": {
    "ok": true,
    "voci": 25,
-   "con_tema": 6,
+   "con_tema": 8,
    "secondi": 4
   },
   "ANSA - Europa": {
    "ok": true,
    "voci": 12,
-   "con_tema": 0,
-   "secondi": 1
+   "con_tema": 2,
+   "secondi": 0
   },
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 8,
+   "con_tema": 4,
    "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
-   "con_tema": 6,
-   "secondi": 8
+   "con_tema": 5,
+   "secondi": 7
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
    "voci": 31,
-   "con_tema": 5,
-   "secondi": 3
+   "con_tema": 4,
+   "secondi": 4
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1945,
-   "con_tema": 467,
+   "voci": 1959,
+   "con_tema": 470,
    "secondi": 1
   },
   "Media Cloud": {
    "ok": true,
-   "righe": 50
+   "righe": 75
   },
   "OpenAlex": {
    "ok": true,
-   "righe": 50
+   "righe": 0
   }
  }
 }
