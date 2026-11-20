@@ -615,6 +615,16 @@
      "nome": "EDPB - pubblicazioni",
      "url": "https://www.edpb.europa.eu/feed/publications_en",
      "categoria": "Vigilanza"
+    },
+    {
+     "nome": "EDPB - news (pagina elenco)",
+     "url": "https://www.edpb.europa.eu/news_en",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/news/[^/?#]+_en$",
+     "titolo": "riquadro",
+     "dentro": ".view-articles-overview-articles__content",
+     "nota": "riserva del feed RSS news, che dal 20/11/2026 risponde 503"
     }
    ],
    "ente": "Comitato europeo per la protezione dei dati (EDPB)",

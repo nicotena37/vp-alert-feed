@@ -50,10 +50,16 @@ def scarica(url: str, accetta: str | None = None) -> tuple[int, bytes]:
     req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Accept": accetta or "application/rss+xml, "
                                  "application/xml, text/xml, application/atom+xml, text/html;q=0.8, */*;q=0.5"})
     try:
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-            return r.status, r.read()
-    except urllib.error.HTTPError as e:
-        return e.code, b""
+        for tentativo in range(3):                 # errori temporanei del server (502/503/504): riprova dopo una pausa
+            try:
+                with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                    return r.status, r.read()
+            except urllib.error.HTTPError as e:
+                if e.code in (502, 503, 504) and tentativo < 2:
+                    time.sleep(15 * (tentativo + 1))
+                    continue
+                return e.code, b""
+        return 503, b""
     finally:
         _ultima[host] = time.time()
 
@@ -121,7 +127,16 @@ def _testo(voce, nomi: list[str]) -> str:
     return ""
 
 
+def _correggi_codifica(contenuto: bytes) -> bytes:
+    """Alcuni feed (es. Camera dei deputati) dichiarano encoding="UTF-16" ma sono in UTF-8: senza BOM vale UTF-8."""
+    testa = contenuto[:200]
+    if re.search(rb'encoding=["\']utf-16', testa, re.I) and not contenuto[:2] in (b"\xff\xfe", b"\xfe\xff"):
+        return re.sub(rb'encoding=["\']utf-16["\']', b'encoding="UTF-8"', contenuto, count=1, flags=re.I)
+    return contenuto
+
+
 def leggi_rss(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
+    contenuto = _correggi_codifica(contenuto)
     radice = etree.fromstring(contenuto, etree.XMLParser(recover=True, resolve_entities=False, no_network=True,
                                                           huge_tree=True))
     if radice is None:
