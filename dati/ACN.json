@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-20T13-01-23.json",
+"nome_file": "vpalert_rss_ACN_2026-11-20T15-55-52.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-20T13:01:23Z",
+"letto_il": "2026-11-20T15:55:52Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,36 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti Cisco",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-cisco-1",
+"data_originale": "Wed, 21 Oct 2026 16:15:05 GMT",
+"data": "2026-10-21",
+"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per risolvere 34 vulnerabilità nei propri prodotti, di cui 5 con gravità “critica” e 17 con gravità “alta”. Tra queste, si evidenzia la CVE-2026-76466 che interessa i dispositivi Cisco Expressway Core (Expressway-C) e Cisco Expressway Edge (Expressway-E) e risulta sfruttata attivamente in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-6",
+"data_originale": "Fri, 20 Nov 2026 14:45:53 GMT",
+"data": "2026-11-20",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 17 vulnerabilità, di cui due con gravità \"critica\" presenti nelle componenti C# Driver e Java Driver. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato, in presenza di determinate condizioni, di eludere i meccanismi di sicurezza, accedere ad informazioni sensibili e indurre le applicazioni interessate ad utilizzare risultati di interrogazione alterati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in prodotti Synology",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-synology",
+"data_originale": "Fri, 20 Nov 2026 13:33:51 GMT",
+"data": "2026-11-20",
+"descrizione": "Synology ha rilasciato aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità \"critica\" in DiskStation Manager (DSM) e BeeStation OS. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio e di scrivere/leggere file arbitrari sul filesystem dei sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -491,36 +521,6 @@
 "data_originale": "Mon, 16 Nov 2026 13:19:01 GMT",
 "data": "2026-11-16",
 "descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 8 vulnerabilità, di cui 5 con gravità \"alta\", in X server e Xwayland. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di compromettere la disponibilità del servizio, accedere ad informazioni sensibili ed eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Craft CMS",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-4",
-"data_originale": "Mon, 09 Nov 2026 13:14:29 GMT",
-"data": "2026-11-09",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 2 con gravità “critica” e 7 con gravità “alta”, in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tra queste si evidenziano le CVE-2026-123488, CVE-2026-115934, CVE-2026-124427 e CVE-2026-124429 per le quali risultano disponibili dei Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti IBM",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-ibm",
-"data_originale": "Mon, 16 Nov 2026 10:16:57 GMT",
-"data": "2026-11-16",
-"descrizione": "IBM ha rilasciato aggiornamenti di sicurezza che sanano alcune vulnerabilità, di cui 4 con gravità \"alta\", in Security QRadar EDR, webMethods Integration Server e ContextForge MCP Gateway. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eludere i meccanismi di autenticazione e di sicurezza o di accedere a informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "N-Able: rilevate due ulteriori catene di exploit denominate \"Agent2Shell\" e \"4EverAble2Shell\"",
-"link": "https://www.acn.gov.it/portale/w/n-able-rilevate-due-ulteriori-catene-di-exploit-denominate-agent2shell-e-4everable2shell-",
-"data_originale": "Fri, 13 Nov 2026 18:15:54 GMT",
-"data": "2026-11-13",
-"descrizione": "Rilevate due ulteriori catene di exploit, denominate \"Agent2Shell\" e \"4EverAble2Shell\", per lo sfruttamento di vulnerabilità zero-day in N-central, piattaforma di monitoraggio e gestione remota degli ambienti informatici. Entrambe le catene sono considerate un'estensione della precedente serie di vulnerabilità nota come \"Able2Shell\", già trattate nell'ambito dell'alert AL07/261110/CSIRT-ITA."
 },
 {
 "sito": "ACN",
