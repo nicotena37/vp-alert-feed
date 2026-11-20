@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_EDPB_2026-11-19T13-23-23.json",
+"nome_file": "vpalert_rss_EDPB_2026-11-20T13-03-55.json",
 "sito": "EDPB",
 "origine": "github-actions",
-"letto_il": "2026-11-19T13:23:23Z",
+"letto_il": "2026-11-20T13:03:55Z",
 "feed": [
 {
 "nome": "EDPB - news",
@@ -21,6 +21,16 @@
 "EDPB - news: feed non leggibile (ValueError: HTTP 503) - https://www.edpb.europa.eu/feed/news_en"
 ],
 "notizie": [
+{
+"sito": "EDPB",
+"feed": "EDPB - pubblicazioni",
+"categoria": "Vigilanza",
+"titolo": "Opinion 29/2026 on the draft decision of the Swedish Supervisory Authority regarding the Processor Binding Corporate Rules of the Optimizely Group",
+"link": "https://www.edpb.europa.eu/documents/opinion-of-the-board-art-64/opinion-292026-on-the-draft-decision-of-the-swedish_en",
+"data_originale": "Tue, 10 Nov 2026 12:00:00 +0000",
+"data": "2026-11-10",
+"descrizione": ""
+},
 {
 "sito": "EDPB",
 "feed": "EDPB - pubblicazioni",
@@ -109,16 +119,6 @@
 "link": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative-0_en",
 "data_originale": "Mon, 21 Sep 2026 12:00:00 +0000",
 "data": "2026-09-21",
-"descrizione": ""
-},
-{
-"sito": "EDPB",
-"feed": "EDPB - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "Guidelines 1/2020 on processing personal data in the context of connected vehicles and mobility related applications",
-"link": "https://www.edpb.europa.eu/documents/guideline/guidelines-12020-on-processing-personal-data-in-the-context-of-connected_en",
-"data_originale": "Fri, 07 Feb 2020 12:00:00 +0000",
-"data": "2020-02-07",
 "descrizione": ""
 }
 ]

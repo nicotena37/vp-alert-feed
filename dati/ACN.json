@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-19T13-20-39.json",
+"nome_file": "vpalert_rss_ACN_2026-11-20T13-01-23.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-19T13:20:39Z",
+"letto_il": "2026-11-20T13:01:23Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -26,9 +26,109 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Spring",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-spring-6",
+"data_originale": "Fri, 20 Nov 2026 11:30:36 GMT",
+"data": "2026-11-20",
+"descrizione": "Aggiornamenti di sicurezza risolvono numerose vulnerabilità, di cui 5 con gravità \"critica\" e 24 con gravità “alta”, in vari prodotti Spring."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per Ruby",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-ruby-6",
+"data_originale": "Fri, 20 Nov 2026 10:34:40 GMT",
+"data": "2026-11-20",
+"descrizione": "Aggiornamenti di sicurezza Ruby sanano 7 vulnerabilità presenti nel motore di elaborazione delle espressioni regolari (regex) e nelle funzionalità di conversione del maiuscolo/minuscolo delle stringhe. Si evidenzia che, per 6 delle 7 vulnerabilità, il vendor ha dichiarato di essere a conoscenza di Proof of Concept (PoC) in grado di dimostrare l'ottenimento dell'esecuzione remota di codice arbitrario o condizioni di corruzione della memoria in specifici scenari."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti ServiceNow",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-servicenow",
+"data_originale": "Fri, 20 Nov 2026 10:03:09 GMT",
+"data": "2026-11-20",
+"descrizione": "Risolte due vulnerabilità con gravità \"alta\" che interessano ServiceNow AI Platform, piattaforma per l'integrazione di funzionalità di intelligenza artificiale, e Email Response AI Agent di Now Assist for CSM, componente per la gestione automatizzata delle risposte e-mail nell'ambito del servizio clienti. Le vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere i meccanismi di sicurezza ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità nel tema WordPress “Design Scuole Italia”",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-nel-tema-wordpress-design-scuole-italia-",
+"data_originale": "Tue, 15 Sep 2026 07:59:57 GMT",
+"data": "2026-09-15",
+"descrizione": "Rilevate quattro vulnerabilità, di cui due con gravità “alta”, in Design Scuole Italia, noto tema WordPress destinato alla realizzazione dei siti istituzionali delle scuole italiane. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di leggere file arbitrari sul filesystem, eludere i meccanismi di autenticazione e sicurezza, reindirizzare le vittime verso URL arbitrari ed accedere a informazioni sensibili sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti JetBrains",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-5",
+"data_originale": "Thu, 19 Nov 2026 10:32:53 GMT",
+"data": "2026-11-19",
+"descrizione": "Rilevate molteplici nuove vulnerabilità, di cui 5 con gravità \"critica\" e 78 con gravità \"alta\", nei prodotti JetBrains TeamCity, IntelliJ IDEA, Junie e Junie CLI."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Mitel",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-mitel",
+"data_originale": "Tue, 17 Nov 2026 13:03:07 GMT",
+"data": "2026-11-17",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui due con gravità “critica”, presenti nella componente Audio, Web and Video Conferencing (AWV) di Mitel MiCollab. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti VMware",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-vmware-8",
+"data_originale": "Thu, 19 Nov 2026 16:29:50 GMT",
+"data": "2026-11-19",
+"descrizione": "VMware ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità “critica” e due con gravità “alta”, nei prodotti SDDC Manager, VMware vCenter, VMware Cloud Foundation, VMware Telco Cloud Platform e VMware Telco Cloud Infrastructure."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in PHP",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-php",
+"data_originale": "Thu, 19 Nov 2026 16:25:42 GMT",
+"data": "2026-11-19",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 7 con gravità “critica” e 4 con gravità “alta”, in PHP, noto interprete del linguaggio di scripting per lo sviluppo web. Tra queste si evidenzia la CVE-2026-115560, già trattata nell'ambito dell'AL07/261021/CSIRT-ITA, per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti ASUS",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-7",
+"data_originale": "Thu, 19 Nov 2026 14:15:36 GMT",
+"data": "2026-11-19",
+"descrizione": "ASUS ha rilasciato aggiornamenti di sicurezza per risolvere 12 vulnerabilità, di cui 4 con con gravità \"critica\" e 5 con gravità \"alta\", che interessano Control Center, Armoury Crate, System Control Interface, DisplayWidget Center e il firmware di diversi modelli di router. Tra queste si evidenza la CVE-2026-114202 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Splunk",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-splunk-7",
+"data_originale": "Thu, 19 Nov 2026 14:04:16 GMT",
+"data": "2026-11-19",
+"descrizione": "Splunk ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 5 con gravità “critica” e 53 con gravità “alta”, nei prodotti Splunk SOAR, Splunk Enterprise, Splunk App for Stream, Splunk AI Assistant e Splunk Enterprise Security."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
 "titolo": "Java4Shell: aggiornamenti e valutazioni di impatto da parte dei vendor interessati",
 "link": "https://www.acn.gov.it/portale/w/java4shell-aggiornamenti-e-valutazioni-di-impatto-da-parte-dei-vendor-interessati",
-"data_originale": "Thu, 19 Nov 2026 11:22:05 GMT",
+"data_originale": "Thu, 19 Nov 2026 10:22:00 GMT",
 "data": "2026-11-19",
 "descrizione": "Prosegue la pubblicazione di aggiornamenti di sicurezza e comunicazioni da parte dei fornitori di prodotti hardware e software in relazione alla vulnerabilità CVE-2026-114938, nota come \"Java4Shell\" e già trattata da questo CSIRT Italia nell'ambito del AL07/261118/CSIRT-ITA. La vulnerabilità interessa specifiche versioni di OpenJDK, Oracle Java SE e Oracle GraalVM e può coinvolgere applicazioni e prodotti di terze parti che integrano versioni vulnerabili del relativo ambiente di esecuzione."
 },
@@ -41,16 +141,6 @@
 "data_originale": "Thu, 19 Nov 2026 10:44:16 GMT",
 "data": "2026-11-19",
 "descrizione": "Aggiornamenti di sicurezza sanano due vulnerabilità con gravità “alta” in Firefox. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di elevare i propri privilegi, compromettere la disponibilità del servizio e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevata vulnerabilità in JetBrains TeamCity",
-"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-jetbrains-teamcity-1",
-"data_originale": "Thu, 19 Nov 2026 10:32:53 GMT",
-"data": "2026-11-19",
-"descrizione": "Rilevate 21 nuove vulnerabilità, di cui 4 con gravità \"critica\" e 11 con gravità \"alta\", in JetBrains TeamCity. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto di eseguire codice arbitrario, eludere dei meccanismi di sicurezza, accedere ad informazioni sensibili o compromettere la disponibilità del servizio sui sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -256,16 +346,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Mitel",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-mitel",
-"data_originale": "Tue, 17 Nov 2026 13:03:07 GMT",
-"data": "2026-11-17",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui due con gravità “critica”, presenti nella componente Audio, Web and Video Conferencing (AWV) di Mitel MiCollab. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Aggiornamenti di sicurezza Apple",
 "link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
 "data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
@@ -441,86 +521,6 @@
 "data_originale": "Fri, 13 Nov 2026 18:15:54 GMT",
 "data": "2026-11-13",
 "descrizione": "Rilevate due ulteriori catene di exploit, denominate \"Agent2Shell\" e \"4EverAble2Shell\", per lo sfruttamento di vulnerabilità zero-day in N-central, piattaforma di monitoraggio e gestione remota degli ambienti informatici. Entrambe le catene sono considerate un'estensione della precedente serie di vulnerabilità nota come \"Able2Shell\", già trattate nell'ambito dell'alert AL07/261110/CSIRT-ITA."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Dell",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-3",
-"data_originale": "Fri, 13 Nov 2026 16:53:54 GMT",
-"data": "2026-11-13",
-"descrizione": "Dell ha rilasciato aggiornamenti di sicurezza per sanare numerose vulnerabilità, di cui 11 con gravità \"critica\" e 23 con gravità “alta”, in PowerStoreT OS, Dell Networking OS10 e PowerScale InsightIQ."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "IBM: rilevato sfruttamento attivo in rete della CVE-2026-123218",
-"link": "https://www.acn.gov.it/portale/w/ibm-rilevato-sfruttamento-attivo-in-rete-della-cve-2026-123218",
-"data_originale": "Fri, 13 Nov 2026 15:44:02 GMT",
-"data": "2026-11-13",
-"descrizione": "Rilevato lo sfruttamento attivo in rete della CVE-2026-123218 - già sanata dal vendor - presente in IBM Aspera Faspex, piattaforma web enterprise per lo scambio sicuro e ad alte prestazioni di grandi volumi di dati. Tale vulnerabilità potrebbe consentire a un attaccante autenticato di eludere i meccanismi di sicurezza ed elevare i propri privilegi sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in n8n",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-n8n",
-"data_originale": "Fri, 13 Nov 2026 15:23:21 GMT",
-"data": "2026-11-13",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui 4 con gravità “alta”, in n8n, piattaforma open‑source di workflow automation che consente di integrare applicazioni, servizi e API tramite flussi visuali. Tali vulnerabilità potrebbero consentire a un attaccante l'elusione dei meccanismi di autenticazione, la modifica non autorizzata di dati e l'esecuzione di codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti Dixell XWEB EVO",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-dixell-xweb-evo",
-"data_originale": "Fri, 13 Nov 2026 14:45:37 GMT",
-"data": "2026-11-13",
-"descrizione": "Rilevate molteplici nuove vulnerabilità, di cui 8 con gravità “critica” e 5 con gravità “alta”, nei prodotti Dixell XWEB EVO, sistemi di supervisione, monitoraggio e controllo per impianti di refrigerazione commerciale e HVAC. Tali vulnerabilità potrebbero consentire a un utente malintenzionato remoto di eludere i meccanismi di autenticazione, modificare determinati parametri di configurazione, compromettere la disponibilità del servizio o eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "SAP Security Patch Day",
-"link": "https://www.acn.gov.it/portale/w/sap-security-patch-day-22",
-"data_originale": "Tue, 10 Nov 2026 14:00:00 GMT",
-"data": "2026-11-10",
-"descrizione": "Nell’ambito del Security Patch Day di novembre, SAP rilascia aggiornamenti di sicurezza per risolvere 42 nuove vulnerabilità, di cui 9 con gravità “critica” e 19 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevata vulnerabilità in jDownloads",
-"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-jdownloads",
-"data_originale": "Fri, 13 Nov 2026 13:09:57 GMT",
-"data": "2026-11-13",
-"descrizione": "Aggiornamenti di sicurezza sanano alcune vulnerabilità, di cui una con gravità \"critica\" e 3 con gravità \"alta\", in jDownload, componente open source di Joomla per la gestione dei download. Tali vulnerabilità, qualora sfruttate, potrebbero permettere a un attaccante di accedere a informazioni sensibili, eludere i meccanismi di sicurezza o eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-5",
-"data_originale": "Fri, 13 Nov 2026 13:05:41 GMT",
-"data": "2026-11-13",
-"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità \"critica\" e 2 con gravità “alta”, nei prodotti Node.js Driver, C# Driver e Atlas SQL JDBC Driver. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di sicurezza, leggere e/o scrivere file arbitrari sul filesystem ed eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Check Point",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-check-point",
-"data_originale": "Fri, 13 Nov 2026 11:45:01 GMT",
-"data": "2026-11-13",
-"descrizione": "Rilevate tre nuove vulnerabilità, di cui due con gravità “alta”, in vari prodotti Check Point. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di elevare i propri privilegi sui sistemi interessati. Tra queste si evidenzia la CVE-2026-123039, per la quale è stato rilevato lo sfruttamento attivo in rete."
 },
 {
 "sito": "ACN",
