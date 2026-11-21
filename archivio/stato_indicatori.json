@@ -1,67 +1,67 @@
 {
- "bce_discorsi_scaricato": "2026-11-20",
- "ultimo_giro": "2026-11-20T14:34:24+00:00",
+ "bce_discorsi_scaricato": "2026-11-21",
+ "ultimo_giro": "2026-11-21T13:54:30+00:00",
  "dal": "2026-11-02",
- "voci_nuove": 299,
- "voci_in_archivio": 18454,
+ "voci_nuove": 126,
+ "voci_in_archivio": 18580,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 530,
+   "voci": 525,
    "con_tema": 24,
-   "secondi": 144
+   "secondi": 58
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 1018,
-   "con_tema": 12,
-   "secondi": 6
+   "voci": 1574,
+   "con_tema": 21,
+   "secondi": 7
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 136,
+   "voci": 134,
    "con_tema": 7,
-   "secondi": 6
+   "secondi": 8
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 954,
+   "voci": 974,
    "con_tema": 67,
-   "secondi": 13
+   "secondi": 15
   },
   "BCE - discorsi": {
    "ok": true,
    "voci": 0,
    "con_tema": 0,
-   "secondi": 7
+   "secondi": 8
   },
   "BIS - discorsi": {
    "ok": true,
    "voci": 50,
-   "con_tema": 24,
-   "secondi": 5
+   "con_tema": 23,
+   "secondi": 4
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 49,
-   "con_tema": 12,
+   "voci": 36,
+   "con_tema": 2,
    "secondi": 4
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
    "voci": 9,
-   "con_tema": 1,
-   "secondi": 3
+   "con_tema": 0,
+   "secondi": 4
   },
   "Il Sole 24 Ore - Economia": {
    "ok": true,
    "voci": 12,
    "con_tema": 2,
-   "secondi": 3
+   "secondi": 4
   },
   "Il Sole 24 Ore - Norme e tributi": {
    "ok": true,
-   "voci": 5,
+   "voci": 6,
    "con_tema": 1,
    "secondi": 3
   },
@@ -72,10 +72,8 @@
    "secondi": 4
   },
   "la Repubblica - Economia": {
-   "ok": true,
-   "voci": 25,
-   "con_tema": 11,
-   "secondi": 4
+   "ok": false,
+   "errore": "RuntimeError: HTTP 403"
   },
   "ANSA - Europa": {
    "ok": true,
@@ -86,14 +84,14 @@
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 7,
-   "secondi": 4
+   "con_tema": 6,
+   "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
    "con_tema": 6,
-   "secondi": 7
+   "secondi": 8
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
@@ -103,8 +101,8 @@
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1959,
-   "con_tema": 489,
+   "voci": 1965,
+   "con_tema": 486,
    "secondi": 1
   },
   "Media Cloud": {
