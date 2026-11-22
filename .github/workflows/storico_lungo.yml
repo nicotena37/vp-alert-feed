@@ -31,7 +31,9 @@ jobs:
         env:
           MEDIACLOUD_API_KEY: ${{ secrets.MEDIACLOUD_API_KEY }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-        run: python storico_lungo.py --dal 2016-01 --solo ${{ matrix.fonte }}
+        run: |
+          DAL=$(grep -oE '^[0-9]{4}-[0-9]{2}' storico_avvia.txt | head -1)
+          python storico_lungo.py --dal "${DAL:-2016-01}" --solo ${{ matrix.fonte }}
       - name: Salvataggio
         if: always()
         run: |

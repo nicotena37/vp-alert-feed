@@ -26,7 +26,10 @@ def mesi_tra(a, b):
     return out
 
 
-MESI = mesi_tra("2016-01", "2026-10")
+from datetime import date as _date
+_o = _date.today().replace(day=1)
+_ult = f"{_o.year - (_o.month == 1)}-{(_o.month - 2) % 12 + 1:02d}"      # ultimo mese completo
+MESI = mesi_tra("2016-01", _ult)
 
 
 def serie(nome, tipi=None):
@@ -156,7 +159,7 @@ for r in sz:
         sanz[VIOL_TEMA[r["violazione"]]] += 1
 
 ris = json.loads(RIS.read_text(encoding="utf-8"))
-out = {"aggiornato": "2026-11-03", "mesi": MESI, "temi": [{"tema": t, "area": AREA[t]} for t in TEMI],
+out = {"aggiornato": _date.today().isoformat(), "mesi": MESI, "temi": [{"tema": t, "area": AREA[t]} for t in TEMI],
        "serie": S, "totali": TOT, "vp": {"settimane": settimane, "temi": vp, "totale": vp_tot, "nota": "Alert manuali della banca, settimane 2026 (mancano 32-41)"},
        "sezioni": SEZ, "scadenze": scad, "sanzioni": sanz, "tematica": TEMATICA,
        "metodi": {"classifica": ris["classifica"], "risultati": ris["risultati"], "calibrazione": ris["calibrazione"],
