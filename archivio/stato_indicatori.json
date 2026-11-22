@@ -1,33 +1,33 @@
 {
- "bce_discorsi_scaricato": "2026-11-21",
- "ultimo_giro": "2026-11-21T13:54:30+00:00",
+ "bce_discorsi_scaricato": "2026-11-22",
+ "ultimo_giro": "2026-11-22T13:48:48+00:00",
  "dal": "2026-11-02",
- "voci_nuove": 126,
- "voci_in_archivio": 18580,
+ "voci_nuove": 43,
+ "voci_in_archivio": 18623,
  "fonti": {
   "Parlamento UE - interrogazioni": {
    "ok": true,
-   "voci": 525,
-   "con_tema": 24,
-   "secondi": 58
+   "voci": 512,
+   "con_tema": 23,
+   "secondi": 112
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 1574,
+   "voci": 1511,
    "con_tema": 21,
-   "secondi": 7
+   "secondi": 6
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 134,
+   "voci": 133,
    "con_tema": 7,
-   "secondi": 8
+   "secondi": 6
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 974,
+   "voci": 977,
    "con_tema": 67,
-   "secondi": 15
+   "secondi": 18
   },
   "BCE - discorsi": {
    "ok": true,
@@ -39,12 +39,12 @@
    "ok": true,
    "voci": 50,
    "con_tema": 23,
-   "secondi": 4
+   "secondi": 5
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 36,
-   "con_tema": 2,
+   "voci": 4,
+   "con_tema": 0,
    "secondi": 4
   },
   "Sole 24 Ore Finanza": {
@@ -57,7 +57,7 @@
    "ok": true,
    "voci": 12,
    "con_tema": 2,
-   "secondi": 4
+   "secondi": 3
   },
   "Il Sole 24 Ore - Norme e tributi": {
    "ok": true,
@@ -72,8 +72,10 @@
    "secondi": 4
   },
   "la Repubblica - Economia": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 403"
+   "ok": true,
+   "voci": 25,
+   "con_tema": 7,
+   "secondi": 4
   },
   "ANSA - Europa": {
    "ok": true,
@@ -85,13 +87,13 @@
    "ok": true,
    "voci": 10,
    "con_tema": 6,
-   "secondi": 3
+   "secondi": 4
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
    "con_tema": 6,
-   "secondi": 8
+   "secondi": 7
   },
   "Politico Europe - Servizi finanziari": {
    "ok": true,
