@@ -123,6 +123,8 @@ SELECT ?w ?d ?t ?rt WHERE {{ ?w cdm:work_date_document ?d ; cdm:work_has_resourc
             rt = r["rt"].rsplit("/", 1)[-1]
             tipo = "atto" if rt in TIPI_ATTO else "proposta" if rt in TIPI_PROP else "comunicazione"
             tot[tipo] += 1
+            if I.routine({"titolo": r["t"]}):        # misure restrittive di routine: fuori da statistiche e previsioni
+                continue
             temi = I.temi_di(r["t"])
             for tema in temi:
                 s.val[(mese, tema, tipo)] += 1

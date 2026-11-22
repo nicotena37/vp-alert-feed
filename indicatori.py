@@ -348,7 +348,16 @@ def unisci_conteggi(nuove: list[dict]) -> list[dict]:
     return list(righe.values())
 
 
+# misure restrittive di routine (PESC, congelamento dei beni): restano nell'alert ma non contano in statistiche e previsioni (22/11/2026)
+RX_ROUTINE = re.compile(r"misure restrittive|restrictive measures|\(pesc\)|\bpesc\b|congelamento dei beni|sanzioni finanziarie mirate")
+
+
+def routine(e: dict) -> bool:
+    return bool(RX_ROUTINE.search(norm(e.get("titolo", ""))))
+
+
 def calcola(tutti: dict[tuple, dict], conteggi: list[dict], oggi: date) -> None:
+    tutti = {k: e for k, e in tutti.items() if not routine(e)}
     corrente = lunedi(oggi)
     val = defaultdict(int)          # (sett, tema, misura, fonte, area) -> n
     tot = defaultdict(int)          # (sett, fonte) -> totale voci della fonte

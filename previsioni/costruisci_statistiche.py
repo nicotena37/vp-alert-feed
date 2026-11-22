@@ -88,6 +88,8 @@ vp = {t: [0] * len(settimane) for t in TEMI}
 vp_tot = [0] * len(settimane)
 for x in man:
     k = settimane.index(x["sett"])
+    if I.routine({"titolo": f"{x.get('Riferimento normativo', '')} {x.get('Descrizione', '')}"}):
+        continue                                    # misure restrittive di routine: escluse (22/11/2026)
     vp_tot[k] += 1
     temi = I.temi_di(str(x.get("Riferimento normativo", "")), f"{x.get('Descrizione', '')} {x.get('Argomento', '')}")
     prim = TEMATICA.get(str(x.get("Tematica", "")).strip())

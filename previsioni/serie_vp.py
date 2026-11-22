@@ -15,6 +15,8 @@ def serie_vp(man, temi):
         if x["sett"] not in sett:
             continue
         k = sett.index(x["sett"])
+        if I.routine({"titolo": f"{x.get('Riferimento normativo', '')} {x.get('Descrizione', '')}"}):
+            continue                                # misure restrittive di routine: escluse (22/11/2026)
         t = I.temi_di(str(x.get("Riferimento normativo", "")), f"{x.get('Descrizione', '')} {x.get('Argomento', '')}")
         prim = tem.get(str(x.get("Tematica", "")).strip())
         for tt in set([prim] if prim else []) | set(list(t)[:1]):
