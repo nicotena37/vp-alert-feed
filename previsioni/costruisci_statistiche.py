@@ -154,13 +154,18 @@ VIOL_TEMA = {"Antiriciclaggio": "Antiriciclaggio e sanzioni finanziarie", "Trasp
              "Partecipazioni qualificate": "Sistema bancario e vigilanza", "Segnalazioni e informativa al pubblico": "Segnalazioni e reporting di vigilanza"}
 sz = json.loads(SANZ.read_text(encoding="utf-8"))["righe"]
 sanz = defaultdict(int)
-for r in sz:
-    if r.get("data", "") >= "2023-11" and r["violazione"] in VIOL_TEMA:
-        sanz[VIOL_TEMA[r["violazione"]]] += 1
+RA_TEMA = json.loads((QUI / "ra_temi.json").read_text(encoding="utf-8")) if (QUI / "ra_temi.json").exists() else {}
+_lim36 = f"{_date.today().year - 3}-{_date.today().month:02d}"
+for r in sz:                                        # ultimi 36 mesi; tema dall'ambito della sanzione (22/11/2026)
+    if r.get("data", "") < _lim36:
+        continue
+    temi_r = {RA_TEMA[k] for k in (r.get("ambiti") or []) if k in RA_TEMA} or ({VIOL_TEMA[r["violazione"]]} if r.get("violazione") in VIOL_TEMA else set())
+    for t in temi_r:
+        sanz[t] += 1
 
 ris = json.loads(RIS.read_text(encoding="utf-8"))
 out = {"aggiornato": _date.today().isoformat(), "mesi": MESI, "temi": [{"tema": t, "area": AREA[t]} for t in TEMI],
-       "serie": S, "totali": TOT, "vp": {"settimane": settimane, "temi": vp, "totale": vp_tot, "nota": "Alert manuali della banca, settimane 2026 (mancano 32-41)"},
+       "serie": S, "totali": TOT, "vp": {"settimane": settimane, "temi": vp, "totale": vp_tot, "nota": "Alert manuali della banca, settimane 2026 (senza misure restrittive di routine)"},
        "sezioni": SEZ, "scadenze": scad, "sanzioni": sanz, "tematica": TEMATICA,
        "metodi": {"classifica": ris["classifica"], "risultati": ris["risultati"], "calibrazione": ris["calibrazione"],
                   "orizzonte": ris["orizzonte_mesi"], "origini": ris["origini"], "inizio_test": ris["inizio_test"],
