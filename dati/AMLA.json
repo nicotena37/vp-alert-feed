@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_AMLA_2026-11-20T15-59-12.json",
+"nome_file": "vpalert_rss_AMLA_2026-11-23T14-51-01.json",
 "sito": "AMLA",
 "origine": "github-actions",
-"letto_il": "2026-11-20T15:59:12Z",
+"letto_il": "2026-11-23T14:51:01Z",
 "feed": [
 {
 "nome": "AMLA - news",
@@ -12,11 +12,21 @@
 {
 "nome": "AMLA - consultazioni",
 "url": "https://www.amla.europa.eu/node/8/rss_en",
-"voci": 11
+"voci": 13
 }
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "AMLA",
+"feed": "AMLA - news",
+"categoria": "Vigilanza",
+"titolo": "AMLA consults on AML/CFT supervisory colleges in the EU",
+"link": "https://www.amla.europa.eu/amla-consults-amlcft-supervisory-colleges-eu_en",
+"data_originale": "Mon, 23 Nov 2026 15:50:30 +0100",
+"data": "2026-11-23",
+"descrizione": "AMLA has launched two public consultations on draft Regulatory Technical Standards (RTSs) for the functioning of AML/CFT supervisory colleges in the financial and non-financial sectors."
+},
 {
 "sito": "AMLA",
 "feed": "AMLA - news",
@@ -309,13 +319,23 @@
 },
 {
 "sito": "AMLA",
-"feed": "AMLA - news",
+"feed": "AMLA - consultazioni",
 "categoria": "Vigilanza",
-"titolo": "Updated taxonomy for the 2027 risk assessment data collection",
-"link": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
-"data_originale": "Mon, 20 Jul 2026 13:07:35 +0200",
-"data": "2026-07-20",
-"descrizione": "As part of its reporting framework release 4.3, the European Banking Authority (EBA) has published an updated version of the data model and taxonomy that will support the collection of data for AMLA's risk assessment of entities eligible for direct supervision."
+"titolo": "Consultation on the draft RTS on the conditions for the functioning of AML/CFT supervisory colleges in the non-financial sector",
+"link": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-conditions-functioning-amlcft-supervisory-colleges-non-financial-sector_en",
+"data_originale": "Mon, 23 Nov 2026 15:48:05 +0100",
+"data": "2026-11-23",
+"descrizione": "AMLA welcomes contributions on the draft RTS on the conditions for the functioning of AML/CFT supervisory colleges in the nonfinancial sector."
+},
+{
+"sito": "AMLA",
+"feed": "AMLA - consultazioni",
+"categoria": "Vigilanza",
+"titolo": "Consultation on the draft RTS on the conditions for the functioning of AML/CFT supervisory colleges in the financial sector",
+"link": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-conditions-functioning-amlcft-supervisory-colleges-financial-sector_en",
+"data_originale": "Mon, 23 Nov 2026 15:48:00 +0100",
+"data": "2026-11-23",
+"descrizione": "AMLA welcomes contributions on the draft RTS on the conditions for the functioning of AML/CFT supervisory colleges in the financial sector."
 },
 {
 "sito": "AMLA",

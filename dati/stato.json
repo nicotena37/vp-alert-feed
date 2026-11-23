@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-20T15:54:01+00:00",
+ "letto_il": "2026-11-23T14:46:04+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -20,13 +20,13 @@
   "UIF": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 1,
+   "notizie": 2,
    "allarmi": []
   },
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 18,
+   "notizie": 13,
    "allarmi": []
   },
   "Consob": {
@@ -50,7 +50,7 @@
   "MEF - Ragioneria Generale dello Stato": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 59,
+   "notizie": 60,
    "allarmi": []
   },
   "MEF - Dipartimento Finanze": {
@@ -68,7 +68,7 @@
   "Agenzia delle Entrate": {
    "feed_ok": 4,
    "feed_totali": 4,
-   "notizie": 51,
+   "notizie": 50,
    "allarmi": []
   },
   "INPS": {
@@ -90,12 +90,10 @@
    "allarmi": []
   },
   "Camera dei deputati (documenti)": {
-   "feed_ok": 1,
+   "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 10,
-   "allarmi": [
-    "Camera - Ultimi progetti di legge annunciati: feed non leggibile (ValueError: XML non valido (feed cambiato?)) - https://documenti.camera.it/apps/rssFeeds/ultimipdl/pdlUltimiAnnunciati.asp?idLegislatura=19"
-   ]
+   "notizie": 15,
+   "allarmi": []
   },
   "Garante privacy": {
    "feed_ok": 1,
@@ -164,17 +162,15 @@
    "allarmi": []
   },
   "EDPB": {
-   "feed_ok": 1,
-   "feed_totali": 2,
-   "notizie": 10,
-   "allarmi": [
-    "EDPB - news: feed non leggibile (ValueError: HTTP 503) - https://www.edpb.europa.eu/feed/news_en"
-   ]
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 36,
+   "allarmi": []
   },
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 112,
+   "notizie": 90,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -206,13 +202,13 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 17,
+   "notizie": 15,
    "allarmi": []
   },
   "AMLA": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 41,
+   "notizie": 43,
    "allarmi": []
   },
   "Commissione europea - FISMA": {
@@ -266,7 +262,7 @@
   "Senato della Repubblica": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 62,
+   "notizie": 59,
    "allarmi": []
   },
   "INAIL": {

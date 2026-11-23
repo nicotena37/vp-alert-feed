@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_BCE_2026-11-20T15-57-20.json",
+"nome_file": "vpalert_rss_BCE_2026-11-23T14-49-08.json",
 "sito": "BCE",
 "origine": "github-actions",
-"letto_il": "2026-11-20T15:57:20Z",
+"letto_il": "2026-11-23T14:49:08Z",
 "feed": [
 {
 "nome": "BCE - comunicati",
@@ -32,7 +32,7 @@
 {
 "nome": "BCE - operazioni di mercato aperto e comunicazioni",
 "url": "https://www.ecb.europa.eu/rss/operations.html",
-"voci": 32
+"voci": 31
 },
 {
 "nome": "BCE - research bulletin",
@@ -47,7 +47,7 @@
 {
 "nome": "BCE - gare e appalti",
 "url": "https://www.ecb.europa.eu/rss/procurements.html",
-"voci": 4
+"voci": 5
 },
 {
 "nome": "BCE - curva dei rendimenti area euro",
@@ -67,6 +67,26 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "BCE",
+"feed": "BCE - comunicati",
+"categoria": "Vigilanza",
+"titolo": "Philip R. Lane: Climate change and monetary policy",
+"link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf",
+"data_originale": "Mon, 23 Nov 2026 15:30:00 +0100",
+"data": "2026-11-23",
+"descrizione": ""
+},
+{
+"sito": "BCE",
+"feed": "BCE - comunicati",
+"categoria": "Vigilanza",
+"titolo": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral",
+"link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+"data_originale": "Mon, 23 Nov 2026 11:00:00 +0100",
+"data": "2026-11-23",
+"descrizione": ""
+},
 {
 "sito": "BCE",
 "feed": "BCE - comunicati",
@@ -199,23 +219,13 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - comunicati",
+"feed": "BCE - pubblicazioni",
 "categoria": "Vigilanza",
-"titolo": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
-"link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
-"data_originale": "Wed, 04 Nov 2026 01:00:00 +0100",
-"data": "2026-11-04",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - comunicati",
-"categoria": "Vigilanza",
-"titolo": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
-"link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
-"data_originale": "Mon, 02 Nov 2026 10:30:00 +0100",
-"data": "2026-11-02",
-"descrizione": ""
+"titolo": "The geography of financial frictions",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3312~6f0e0bfceb.en.pdf",
+"data_originale": "Mon, 23 Nov 2026 11:00:00 +0100",
+"data": "2026-11-23",
+"descrizione": "This paper studies the aggregate implications of the geography of financial frictions faced by firms in Europe. Using proprietary data from the European Central Bank’s Survey on the Access to Finance of Enterprises, we document substantial regional heterogeneity in the access to external finance, which is persistent over time and matters for monetary policy: high-friction countries are less responsive to monetary shocks. We formalize these findings in a tractable New Keynesian model of a monetary union with 22 countries that are heterogeneous in financial frictions (loan recovery rate), productivity, and size. High-friction countries respond less to monetary shocks because firms face a steep"
 },
 {
 "sito": "BCE",
@@ -356,16 +366,6 @@
 "data_originale": "Wed, 11 Nov 2026 11:00:00 +0100",
 "data": "2026-11-11",
 "descrizione": "We study how local corporate tax increases affect firms’ financing and real activity. In Portugal, municipalities independently set a surtax on corporate income, generating plausibly exogenous variation across space and time. We link the universe of corporate balance sheets and profit-and-loss statements to loan-level data from the Bank of Portugal’s credit registry, allowing us to track firms’ liquidity, leverage, borrowing costs, and credit quality alongside revenues, employment, and productivity. We estimate local-projection difference-in-differences models that address staggered treatment timing and dynamic responses. Surtax hikes immediately tighten financing conditions: liquidity falls"
-},
-{
-"sito": "BCE",
-"feed": "BCE - pubblicazioni",
-"categoria": "Vigilanza",
-"titolo": "The role of refining costs and margins in HICP energy inflation",
-"link": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202607_05~d82730508f.en.html",
-"data_originale": "Wed, 11 Nov 2026 10:00:00 +0100",
-"data": "2026-11-11",
-"descrizione": "Energy market developments continue to be shaped by the conflict in the Middle East. Global refinery runs have fallen significantly compared to previous years, driven by reduced refinery activity in the Middle East, Russia and Asia. The constrained supply of crude oil and refined products has led to a persistent global increase in refining margins and costs, particularly for diesel. In view of the important role of refining costs and margins in transport and heating fuel inflation, the ECB’s short-term inflation projection model for energy shows that expected heightened trajectories for refined energy product prices may lead to higher energy inflation even if oil prices move in the opposite "
 },
 {
 "sito": "BCE",
@@ -671,6 +671,16 @@
 "sito": "BCE",
 "feed": "BCE - working paper",
 "categoria": "Vigilanza",
+"titolo": "The geography of financial frictions",
+"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3312~6f0e0bfceb.en.pdf",
+"data_originale": "Mon, 23 Nov 2026 11:00:00 +0100",
+"data": "2026-11-23",
+"descrizione": "This paper studies the aggregate implications of the geography of financial frictions faced by firms in Europe. Using proprietary data from the European Central Bank’s Survey on the Access to Finance of Enterprises, we document substantial regional heterogeneity in the access to external finance, which is persistent over time and matters for monetary policy: high-friction countries are less responsive to monetary shocks. We formalize these findings in a tractable New Keynesian model of a monetary union with 22 countries that are heterogeneous in financial frictions (loan recovery rate), productivity, and size. High-friction countries respond less to monetary shocks because firms face a steep"
+},
+{
+"sito": "BCE",
+"feed": "BCE - working paper",
+"categoria": "Vigilanza",
 "titolo": "Monetary policy, segmented capital markets and innovation",
 "link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3311~66cc2a4d65.en.pdf",
 "data_originale": "Tue, 17 Nov 2026 11:00:00 +0100",
@@ -809,13 +819,13 @@
 },
 {
 "sito": "BCE",
-"feed": "BCE - working paper",
+"feed": "BCE - operazioni di mercato aperto e comunicazioni",
 "categoria": "Vigilanza",
-"titolo": "Fiscal integration as a Pareto improvement",
-"link": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3297~601502aed4.en.pdf",
-"data_originale": "Mon, 12 Oct 2026 11:00:00 +0200",
-"data": "2026-10-12",
-"descrizione": "Fiscal integration in a currency union is generally understood as a transfer from fiscally strong to fiscally weak countries. I show that this changes when common debt is paired with a non-defaultable common tax, even if national debt remains defaultable. The risky country gains from intertemporal trade: it receives a grant financed by a perpetual obligation it discounts more heavily than lenders do. The cost to the safe member is second-order and the tax removes it by insuring imperfectly correlated cycles rather than transferring resources in expectation. The calibration delivers a narrow Pareto-improving region: the tax that eliminates the risky country’s perverse incentive to default is "
+"titolo": "Announcing 20260103 (MRO,liquidity providing), for 7 days deadline 09:30",
+"link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260103.en.html",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
+"descrizione": ""
 },
 {
 "sito": "BCE",
@@ -823,8 +833,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260102 (OT,liquidity providing):139.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260102.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -833,8 +843,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260101 (MRO,liquidity providing):20660.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260101.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -843,8 +853,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260099 (MRO,liquidity providing):16001.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260099.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -853,8 +863,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260100 (OT,liquidity providing):146.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260100.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -863,8 +873,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260098 (OT,liquidity providing):159.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260098.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -873,8 +883,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260097 (MRO,liquidity providing):16838.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260097.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -883,8 +893,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260096 (OT,liquidity providing):164.00 mn USD alloted (fixed 4.150000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260096.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -893,8 +903,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260095 (LTRO,liquidity providing):9350.00 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260095.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -903,8 +913,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260094 (MRO,liquidity providing):27048.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260094.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -913,8 +923,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260093 (OT,liquidity providing):154.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260093.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -923,8 +933,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260092 (MRO,liquidity providing):19252.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260092.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -933,8 +943,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260091 (OT,liquidity providing):170.10 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260091.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -943,8 +953,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260090 (MRO,liquidity providing):18510.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260090.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -953,8 +963,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260089 (OT,liquidity providing):205.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260089.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -963,8 +973,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260088 (MRO,liquidity providing):18083.60 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260088.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -973,8 +983,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260087 (OT,liquidity providing):207.00 mn USD alloted (fixed 4.130000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260087.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -983,8 +993,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260086 (LTRO,liquidity providing):8898.02 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260086.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -993,8 +1003,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260085 (MRO,liquidity providing):21904.50 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260085.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1003,8 +1013,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260084 (OT,liquidity providing):197.00 mn USD alloted (fixed 4.150000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260084.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1013,8 +1023,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260083 (MRO,liquidity providing):14557.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260083.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1023,8 +1033,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260082 (OT,liquidity providing):72.00 mn USD alloted (fixed 4.110000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260082.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1033,8 +1043,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260081 (MRO,liquidity providing):14892.00 mn EUR alloted (fixed 2.650000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260081.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1043,8 +1053,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260080 (OT,liquidity providing):90.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260080.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1053,8 +1063,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260079 (MRO,liquidity providing):12241.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260079.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1063,8 +1073,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260078 (OT,liquidity providing):101.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260078.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1073,8 +1083,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260077 (MRO,liquidity providing):13866.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260077.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1083,8 +1093,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260076 (OT,liquidity providing):131.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260076.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1093,8 +1103,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260075 (LTRO,liquidity providing):3276.35 mn EUR alloted ( 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1103,28 +1113,8 @@
 "categoria": "Vigilanza",
 "titolo": "20260074 (MRO,liquidity providing):18005.00 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - operazioni di mercato aperto e comunicazioni",
-"categoria": "Vigilanza",
-"titolo": "20260073 (OT,liquidity providing):119.00 mn USD alloted (fixed 3.880000%, 100.000000% allotment at margin)",
-"link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260073.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
-"descrizione": ""
-},
-{
-"sito": "BCE",
-"feed": "BCE - operazioni di mercato aperto e comunicazioni",
-"categoria": "Vigilanza",
-"titolo": "20260072 (MRO,liquidity providing):16708.50 mn EUR alloted (fixed 2.400000%, 100.000000% allotment at margin)",
-"link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20260072.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1133,8 +1123,8 @@
 "categoria": "Vigilanza",
 "titolo": "Announcing 20100084 (,), for days deadline",
 "link": "http://www.ecb.europa.eu/mopo/implement/omo/html/20100084.en.html",
-"data_originale": "Wed, 18 Nov 2026 10:50:20 +0100",
-"data": "2026-11-18",
+"data_originale": "Mon, 23 Nov 2026 15:40:19 +0100",
+"data": "2026-11-23",
 "descrizione": ""
 },
 {
@@ -1441,11 +1431,21 @@
 "sito": "BCE",
 "feed": "BCE - gare e appalti",
 "categoria": "Vigilanza",
+"titolo": "Contract Notice ECB - LED Lighting Installation Works (812582-2026)",
+"link": "https://www.ecb.europa.eu//ecb/jobsproc/proc/pdf/ecb.procurContractNotice-2026-OJS227-00812582.en.pdf",
+"data_originale": "Mon, 23 Nov 2026 00:00:00 +0100",
+"data": "2026-11-23",
+"descrizione": "Procurement:Contract Notice ECB - LED Lighting Installation Works (812582-2026). Issue date: 23/11/2026. Closing date: 23/11/2026."
+},
+{
+"sito": "BCE",
+"feed": "BCE - gare e appalti",
+"categoria": "Vigilanza",
 "titolo": "Contract Award Notice: ECB - Provision of business clothes and ancillary services (804843-2026)",
 "link": "https://www.ecb.europa.eu//ecb/jobsproc/proc/pdf/ecb.procurContractAwardNotice-2026-OJS225-00804843.en.pdf",
 "data_originale": "Fri, 20 Nov 2026 00:00:00 +0100",
 "data": "2026-11-20",
-"descrizione": "Procurement:Contract Award Notice: ECB - Provision of business clothes and ancillary services (804843-2026). Issue date: 20/11/2026. Closing date: 20/11/2026."
+"descrizione": "Procurement:Contract Award Notice: ECB - Provision of business clothes and ancillary services (804843-2026). Issue date: 20/11/2026. Closing date: 23/11/2026."
 },
 {
 "sito": "BCE",
@@ -1455,7 +1455,7 @@
 "link": "https://www.ecb.europa.eu//ecb/jobsproc/proc/pdf/ecb.procurContractNotice-2026-OJS210-00750606.en.pdf",
 "data_originale": "Fri, 30 Oct 2026 00:00:00 +0100",
 "data": "2026-10-30",
-"descrizione": "Procurement:Contract Notice: ECB - Provision of legal translation and other related activities (BG, FR, HR, HU, PL, RO, SL) (750606-2026). Issue date: 30/10/2026. Closing date: 20/11/2026."
+"descrizione": "Procurement:Contract Notice: ECB - Provision of legal translation and other related activities (BG, FR, HR, HU, PL, RO, SL) (750606-2026). Issue date: 30/10/2026. Closing date: 23/11/2026."
 },
 {
 "sito": "BCE",
@@ -1465,7 +1465,7 @@
 "link": "https://www.ecb.europa.eu//ecb/jobsproc/proc/pdf/ecb.procurContractAwardNotice-2026OJS21100756210-en.pdf",
 "data_originale": "Fri, 30 Oct 2026 00:00:00 +0100",
 "data": "2026-10-30",
-"descrizione": "Procurement:Contract Award Notice: ECB - Digital Euro - Network Service Provider (NSP) Connectivity - Lot 2 (756210-2026). Issue date: 30/10/2026. Closing date: 20/11/2026."
+"descrizione": "Procurement:Contract Award Notice: ECB - Digital Euro - Network Service Provider (NSP) Connectivity - Lot 2 (756210-2026). Issue date: 30/10/2026. Closing date: 23/11/2026."
 },
 {
 "sito": "BCE",
@@ -1475,7 +1475,7 @@
 "link": "https://www.ecb.europa.eu//ecb/jobsproc/proc/pdf/ecb.procurContractAwardNotice-2026OJS21100753352-en.pdf",
 "data_originale": "Fri, 30 Oct 2026 00:00:00 +0100",
 "data": "2026-10-30",
-"descrizione": "Procurement:Contract Award Notice: ECB - Digital Euro - Network Service Provider (NSP) Connectivity - Lot 1 (753352-2026). Issue date: 30/10/2026. Closing date: 20/11/2026."
+"descrizione": "Procurement:Contract Award Notice: ECB - Digital Euro - Network Service Provider (NSP) Connectivity - Lot 1 (753352-2026). Issue date: 30/10/2026. Closing date: 23/11/2026."
 },
 {
 "sito": "BCE",
