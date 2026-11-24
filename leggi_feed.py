@@ -17,7 +17,7 @@ import time
 import urllib.error
 import urllib.request
 import urllib.robotparser
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -554,6 +554,15 @@ def main() -> int:
     for sito in siti:
         ris = leggi_sito(sito)
         slug = re.sub(r"[^A-Za-z0-9]+", "-", sito["sito"]).strip("-")
+        if sito.get("accumula_giorni") and (DATI / f"{slug}.json").exists():   # 24/11: pagine che mostrano solo le ultime voci
+            try:                                     # (Assilea: home con le ultime circolari) → si tengono le voci dei giorni prima
+                prima = json.loads((DATI / f"{slug}.json").read_text(encoding="utf-8")).get("notizie", [])
+                lim = (datetime.now().date() - timedelta(days=int(sito["accumula_giorni"]))).isoformat()
+                visti = {n.get("link") for n in ris["notizie"]} | {n.get("titolo") for n in ris["notizie"]}
+                ris["notizie"] += [n for n in prima if str(n.get("data") or "") >= lim
+                                   and n.get("link") not in visti and n.get("titolo") not in visti]
+            except Exception:  # noqa: BLE001
+                pass
         (DATI / f"{slug}.json").write_text(json.dumps(ris, ensure_ascii=False, indent=0), encoding="utf-8")
         ok = sum(1 for f in ris["feed"] if not f.get("errore"))
         stato["siti"][sito["sito"]] = {"feed_ok": ok, "feed_totali": len(ris["feed"]), "notizie": len(ris["notizie"]),
