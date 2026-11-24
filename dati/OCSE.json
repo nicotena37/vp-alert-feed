@@ -1,0 +1,27 @@
+{
+"nome_file": "vpalert_rss_OCSE_2026-11-24T18-55-31.json",
+"sito": "OCSE",
+"origine": "github-actions",
+"letto_il": "2026-11-24T18:55:31Z",
+"feed": [
+{
+"nome": "OCSE - pubblicazioni",
+"url": "https://www.oecd.org/en/publications.html",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+},
+{
+"nome": "OCSE - rapporti",
+"url": "https://www.oecd.org/en/publications/reports.html",
+"voci": 0,
+"errore": true,
+"motivo": "ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub"
+}
+],
+"allarmi": [
+"OCSE - pubblicazioni: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.oecd.org/en/publications.html",
+"OCSE - rapporti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.oecd.org/en/publications/reports.html"
+],
+"notizie": []
+}

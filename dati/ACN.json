@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-24T14-57-21.json",
+"nome_file": "vpalert_rss_ACN_2026-11-24T18-49-58.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-24T14:57:21Z",
+"letto_il": "2026-11-24T18:49:58Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,16 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevato sfruttamento attivo in rete della CVE-2026-131914",
+"link": "https://www.acn.gov.it/portale/w/rilevato-sfruttamento-attivo-in-rete-della-cve-2026-131914",
+"data_originale": "Tue, 24 Nov 2026 15:25:30 GMT",
+"data": "2026-11-24",
+"descrizione": "Rilevato lo sfruttamento attivo in rete della vulnerabilità identificata tramite la CVE-2026-131914, con gravità \"critica\", che interessa Idunno AntiCsrf, libreria ASP.NET per la protezione delle applicazioni web da attacchi di tipo Cross-Site Request Forgery (CSRF). Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un attaccante remoto non autenticato di iniettare codice arbitrario ed eseguire comandi sul sistema interessato."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -514,16 +524,6 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Supply Chain Attack: distribuzione di codice malevolo tramite Optimizely Web Experimentation",
-"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-distribuzione-di-codice-malevolo-tramite-optimizely-web-experimentation",
-"data_originale": "Wed, 18 Nov 2026 08:38:38 GMT",
-"data": "2026-11-18",
-"descrizione": "È stata rilevata una campagna di compromissione della supply chain che ha interessato numerosi progetti cliente della piattaforma Optimizely Web Experimentation, utilizzata da molteplici organizzazioni per attività di A/B testing e personalizzazione dei contenuti. Secondo le analisi pubblicate da ricercatori di Report URI, il 16 novembre 2026 codice JavaScript malevolo è stato distribuito ai visitatori di almeno 178 organizzazioni attraverso snippet caricati dal CDN ufficiale di Optimizely."
-},
-{
-"sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
 "titolo": "Online l’Operational Summary di ottobre 2026 con i dati e gli indicatori della minaccia cyber in Italia",
@@ -619,8 +619,8 @@
 "titolo": "Scopri di più su 43° Assemblea Nazionale ANCI",
 "link": "https://www.acn.gov.it/portale/web/guest/-/43-assemblea-nazionale-anci",
 "data_originale": "27/11/2026",
-"data": "2026-11-27",
-"descrizione": "25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
+"data": "2026-11-24",
+"descrizione": "Data indicata dal sito: 2026-11-27. 25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
 },
 {
 "sito": "ACN",

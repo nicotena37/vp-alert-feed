@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-24T14:55:38+00:00",
+ "letto_il": "2026-11-24T18:48:16+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -132,7 +132,7 @@
   "EBA": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 20,
+   "notizie": 10,
    "allarmi": []
   },
   "ESMA": {
@@ -182,12 +182,10 @@
    ]
   },
   "Commissione europea": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "Commissione UE - press corner: feed non leggibile (nessuna risposta in 25 s) - https://ec.europa.eu/commission/presscorner/api/rss?language=it"
-   ]
+   "notizie": 10,
+   "allarmi": []
   },
   "BIS": {
    "feed_ok": 2,
@@ -204,7 +202,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 19,
+   "notizie": 26,
    "allarmi": []
   },
   "AMLA": {
@@ -281,6 +279,39 @@
     "GAFI - pubblicazioni (ultime 10): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json",
     "GAFI - pubblicazioni (11-20): feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.fatf-gafi.org/content/fatf-gafi/en/publications/jcr:content/root/container_1967587261/faceted_search/results.facets.json?offset=10"
    ]
+  },
+  "ENISA": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 25,
+   "allarmi": []
+  },
+  "EFRAG": {
+   "feed_ok": 2,
+   "feed_totali": 2,
+   "notizie": 12,
+   "allarmi": []
+  },
+  "OCSE": {
+   "feed_ok": 0,
+   "feed_totali": 2,
+   "notizie": 0,
+   "allarmi": [
+    "OCSE - pubblicazioni: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.oecd.org/en/publications.html",
+    "OCSE - rapporti: feed non leggibile (ValueError: HTTP 403: il sito blocca le richieste dai server di GitHub) - https://www.oecd.org/en/publications/reports.html"
+   ]
+  },
+  "Cooperazione PUMA": {
+   "feed_ok": 1,
+   "feed_totali": 1,
+   "notizie": 2,
+   "allarmi": []
+  },
+  "ItaliaOggi": {
+   "feed_ok": 3,
+   "feed_totali": 3,
+   "notizie": 30,
+   "allarmi": []
   }
  }
 }
