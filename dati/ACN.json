@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-23T14-47-46.json",
+"nome_file": "vpalert_rss_ACN_2026-11-24T14-57-21.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-23T14:47:46Z",
+"letto_il": "2026-11-24T14:57:21Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,106 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "N-able: risolta una vulnerabilità in MailAssure",
+"link": "https://www.acn.gov.it/portale/w/n-able-risolta-una-vulnerabilita-in-mailassure",
+"data_originale": "Mon, 23 Nov 2026 11:25:52 GMT",
+"data": "2026-11-23",
+"descrizione": "N-able ha rilasciato aggiornamenti di sicurezza al fine di risolvere una vulnerabilità con gravità \"critica\" in MailAssure, soluzione cloud per la sicurezza della posta elettronica."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Upload2Shell: disponibile PoC per lo sfruttamento dalla CVE-2026-125396 in Ghostscript",
+"link": "https://www.acn.gov.it/portale/w/upload2shell-disponibile-poc-per-lo-sfruttamento-dalla-cve-2026-125396-in-ghostscript",
+"data_originale": "Tue, 24 Nov 2026 13:00:11 GMT",
+"data": "2026-11-24",
+"descrizione": "Disponibile Proof of Concept (PoC) per lo sfruttamento della vulnerabilità identificata dalla CVE-2026-125396 - già sanata dal vendor - denominata \"Upload2Shell\", che interessa il prodotto Ghostscript, interprete open source per i linguaggi PostScript e PDF per visualizzare, elaborare, convertire e stampare documenti. Tale vulnerabilità, qualora sfruttata, consentirebbe a un attaccante di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Supply Chain Attack: installer malevolo di NoMachine Personal Edition per Windows distribuito attraverso il server ufficiale di download",
+"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-installer-malevolo-di-nomachine-personal-edition-per-windows-distribuito-attraverso-il-server-ufficiale-di-download",
+"data_originale": "Tue, 24 Nov 2026 11:16:31 GMT",
+"data": "2026-11-24",
+"descrizione": "Il team di sicurezza di NoMachine ha segnalato la compromissione di un proprio server di distribuzione utilizzato per il download di NoMachine Personal Edition per Windows. Tra il 19 novembre 2026 alle 13:43 UTC e il 20 novembre 2026 alle 10:00 UTC, il pacchetto di installazione nomachine-personal-edition_10.2.3_1_x64.exe è stato alterato da attori malevoli e distribuito con codice dannoso incorporato."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevata vulnerabilità in Check Point ZoneAlarm",
+"link": "https://www.acn.gov.it/portale/w/rilevata-vulnerabilita-in-check-point-zonealarm",
+"data_originale": "Tue, 24 Nov 2026 10:49:44 GMT",
+"data": "2026-11-24",
+"descrizione": "Rilevata una vulnerabilità con gravità “alta” nel prodotto Check Point ZoneAlarm. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a utenti malintenzionati locali di ottenere privilegi elevati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Elastic",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-elastic-5",
+"data_originale": "Tue, 24 Nov 2026 10:12:41 GMT",
+"data": "2026-11-24",
+"descrizione": "Elastic ha rilasciato aggiornamenti di sicurezza per sanare 18 vulnerabilità, di cui una con gravità “alta” che interessa Elasticsearch. Tale vulnerabilità, qualora sfruttata, potrebbe consentire a un utente malintenzionato remoto non autenticato di accedere a informazioni sensibili sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in n8n",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-n8n-1",
+"data_originale": "Tue, 24 Nov 2026 10:07:25 GMT",
+"data": "2026-11-24",
+"descrizione": "Aggiornamenti di sicurezza sanano alcune vulnerabilità, di cui 2 con gravità \"alta\", in n8n, piattaforma open‑source di workflow automation che consente di integrare applicazioni, servizi e API tramite flussi visuali. Tali vulnerabilità potrebbero consentire a un attaccante di eludere i meccanismi di autenticazione o elevare i propri privilegi sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Accessi non autorizzati a dispositivi GL.iNet connessi a GoodCloud",
+"link": "https://www.acn.gov.it/portale/w/accessi-non-autorizzati-a-dispositivi-gl.inet-connessi-a-goodcloud",
+"data_originale": "Tue, 24 Nov 2026 10:02:56 GMT",
+"data": "2026-11-24",
+"descrizione": "GL.iNet ha comunicato che un soggetto non autorizzato ha sfruttato una vulnerabilità di GoodCloud, il servizio cloud di gestione remota, per accedere e installare software dannoso su alcuni router e dispositivi KVM collegati al servizio. Il vendor ha bloccato il vettore di attacco il 20 novembre 2026 e ha pubblicato firmware di sicurezza in grado di disabilitare il malware noto associato all'incidente."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in GeoServer",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-geoserver",
+"data_originale": "Tue, 24 Nov 2026 09:09:11 GMT",
+"data": "2026-11-24",
+"descrizione": "Aggiornamenti di sicurezza sanano numerose vulnerabilità, di cui una con gravità \"critica\" e 13 con gravità \"alta\", in GeoServer, nota piattaforma open source per la gestione e pubblicazione web di dati geografici e cartografici. Tali vulnerabilità potrebbero permettere a un attaccante remoto di eludere i meccanismi di sicurezza e autenticazione, accedere a file e informazioni sensibili, manipolare i dati, elevare i propri privilegi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolta vulnerabilità in Google Chrome",
+"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-google-chrome-7",
+"data_originale": "Tue, 24 Nov 2026 07:45:24 GMT",
+"data": "2026-11-24",
+"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere una nuova vulnerabilità di sicurezza con gravità “critica”. Tale vulnerabilità, qualora sfruttata, potrebbe permettere a un attaccante remoto di eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Impiego di agenti di IA in campagne di compromissione automatizzate",
+"link": "https://www.acn.gov.it/portale/w/impiego-di-agenti-di-ia-in-campagne-di-compromissione-automatizzate",
+"data_originale": "Mon, 23 Nov 2026 20:45:58 GMT",
+"data": "2026-11-23",
+"descrizione": "Lo CSIRT Italia ha rilevato, nel contesto nazionale, campagne di compromissione massiva condotte mediante agenti autonomi orchestrati tramite intelligenza artificiale. L’impiego di tale tecnologia consente di estendere la portata e la frequenza delle azioni offensive contro le infrastrutture connesse, elevando drasticamente il livello di rischio per i sistemi esposti e riducendo il tempo a disposizione delle organizzazioni per individuare e correggere vulnerabilità e errori di configurazione pri"
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -51,16 +151,6 @@
 "data_originale": "Mon, 23 Nov 2026 11:31:30 GMT",
 "data": "2026-11-23",
 "descrizione": "WatchGuard ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 3 con gravità “critica” e 10 con gravità “alta”, nel prodotto Dimension. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di eludere i meccanismi di autorizzazione, elevare i propri privilegi, accedere a informazioni sensibili, scrivere file arbitrari, impersonare entità legittime o eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "N-able: risolta una vulnerabilità in MailAssure",
-"link": "https://www.acn.gov.it/portale/w/n-able-risolta-una-vulnerabilita-in-mailassure",
-"data_originale": "Mon, 23 Nov 2026 11:25:52 GMT",
-"data": "2026-11-23",
-"descrizione": "N-able ha rilasciato aggiornamenti di sicurezza al fine di risolvere una vulnerabilità con gravità \"critica\" in MailAssure, soluzione cloud per la sicurezza della posta elettronica. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato autenticato di indurre il sistema interessato a stabilire connessioni verso host e servizi interni arbitrari, permettendo la ricognizione della rete interna e la potenziale interazione con servizi non direttamente esposti."
 },
 {
 "sito": "ACN",
@@ -434,96 +524,6 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-87",
-"data_originale": "Wed, 18 Nov 2026 07:57:16 GMT",
-"data": "2026-11-18",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 204 nuove vulnerabilità di sicurezza, di cui 6 con gravità “critica” e 62 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti N-able",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-n-able",
-"data_originale": "Tue, 17 Nov 2026 15:19:16 GMT",
-"data": "2026-11-17",
-"descrizione": "N-able ha rilasciato aggiornamenti di sicurezza che risolvono molteplici vulnerabilità, di cui 3 con gravità \"critica\" e 8 con gravità \"alta\", in N-central, piattaforma per il monitoraggio e la gestione centralizzata degli endpoint e delle infrastrutture IT."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Google Chrome",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-google-chrome-86",
-"data_originale": "Thu, 12 Nov 2026 13:06:03 GMT",
-"data": "2026-11-12",
-"descrizione": "Google ha rilasciato un aggiornamento per il browser Chrome al fine di correggere 83 nuove vulnerabilità di sicurezza, di cui 5 con gravità “critica” e 78 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "LibreOffice: disponibili PoC per nuove vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/libreoffice-disponibili-poc-per-nuove-vulnerabilita",
-"data_originale": "Tue, 17 Nov 2026 14:17:32 GMT",
-"data": "2026-11-17",
-"descrizione": "Aggiornamenti di sicurezza sanano molteplici vulnerabilità, di cui 9 con gravità \"alta\", che interessa LibreOffice, nota suite open source di software di produttività. Tra queste si evidenziano le CVE-2026-104692 e CVE-2026-104007 per le quali risulta disponibile un Proof of Concept (PoC) per lo sfruttamento concatenato di tali vulnerabilità."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in TYPO3 CMS",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-typo3-cms-1",
-"data_originale": "Tue, 17 Nov 2026 14:16:25 GMT",
-"data": "2026-11-17",
-"descrizione": "Rilevate nuove vulnerabilità, di cui una con gravità “critica” e quattro con gravità “alta”, nel prodotto Typo3 CMS, sistema open source per la gestione di contenuti web. Tali vulnerabilità potrebbero consentire a un attaccante remoto di eseguire codice arbitrario, scrivere file arbitrari, accedere a informazioni sensibili o causare l'indisponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Apple",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-apple-20",
-"data_originale": "Tue, 27 Oct 2026 08:38:40 GMT",
-"data": "2026-10-27",
-"descrizione": "Apple ha rilasciato aggiornamenti di sicurezza per risolvere 327 nuove vulnerabilità, di cui 20 con gravità “critica” e 231 con gravità “alta”, nei prodotti iOS, iPadOS, macOS Golden Gate, macOS Tahoe, macOS Sequoia, tvOS, watchOS, visionOS e Safari."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "XWiki: disponibili PoC per nuove vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/xwiki-disponibili-poc-per-nuove-vulnerabilita",
-"data_originale": "Tue, 17 Nov 2026 10:53:58 GMT",
-"data": "2026-11-17",
-"descrizione": "Disponibili Proof of Concept (PoC) per lo sfruttamento di tre nuove vulnerabilità, di cui una con gravità \"critica\" e due con gravità “alta”, che interessano XWiki Platform, nota piattaforma open source basata su Java che consente la creazione e gestione collaborativa di contenuti, applicazioni web e knowledge base."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in PrestaShop",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prestashop",
-"data_originale": "Wed, 11 Nov 2026 11:46:52 GMT",
-"data": "2026-11-11",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 18 vulnerabilità, di cui 15 con gravità \"alta\", in PrestaShop, noto CMS open source utilizzato per la realizzazione e la gestione di siti e-commerce."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in GitLab CE/EE",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-gitlab-ce/ee-2",
-"data_originale": "Tue, 17 Nov 2026 07:49:41 GMT",
-"data": "2026-11-17",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 37 vulnerabilità, di cui 4 con gravità “alta”, in GitLab Community Edition (CE) ed Enterprise Edition (EE). Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere i meccanismi di sicurezza, accedere a informazioni sensibili o eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
 "titolo": "Online l’Operational Summary di ottobre 2026 con i dati e gli indicatori della minaccia cyber in Italia",
@@ -586,6 +586,16 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
+"titolo": "Sicurezza informatica e Intelligenza Artificiale: l’ACN indica come proteggere aziende e infrastrutture dai molteplici rischi dell’IA “agentica”",
+"link": "https://www.acn.gov.it/portale/web/guest/-/sicurezza-informatica-e-intelligenza-artificiale-l-acn-indica-come-proteggere-aziende-e-infrastrutture-dai-molteplici-rischi-dell-ia-agentica-",
+"data_originale": "24/11/2026",
+"data": "2026-11-24",
+"descrizione": "Comunicato stampa - 24 Novembre 2026 L’appello del DG Andrea Quacivi: “Mi rivolgo agli amministratori delegati e l’alta dirigenza pubblica e privata: di fronte al livello di minaccia di questi attacchi il debito tecnologico, con le sue vulnerabilità, può diventare fatale e va colmato subito, senza indugi o ritardi” CSIRT Italia Cybersicurezza Intelligenza artificiale"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
 "titolo": "Cybersicurezza, allerta sulla filiera alimentare e della catena del freddo: ACN richiama gli operatori della grande distribuzione e della logistica alimentare alle misure di sicurezza già indicate dopo gli incidenti in Francia",
 "link": "https://www.acn.gov.it/portale/web/guest/-/cybersicurezza-allerta-sulla-filiera-alimentare-e-della-catena-del-freddo-acn-richiama-gli-operatori-della-grande-distribuzione-e-della-logistica-alimentare-alle-misure-di-sicurezza-gia-indicate-dopo-gli-incidenti-in-francia",
 "data_originale": "03/11/2026",
@@ -601,16 +611,6 @@
 "data_originale": "29/10/2026",
 "data": "2026-10-29",
 "descrizione": "Comunicato stampa - 29 Ottobre 2026 A Roma la cerimonia di consegna delle borse di studio ACN per il biennio 2024-2026: assegnate 113 borse da 4.000 euro, in arrivo il nuovo bando Direttore Vice Direttore Generale Cybersicurezza ACN Formazione"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "L’ACN invita la comunità digitale e gli hacker etici a segnalare tutte le vulnerabilità \"Zero Day\"",
-"link": "https://www.acn.gov.it/portale/web/guest/-/l-acn-invita-la-comunita-digitale-e-gli-hacker-etici-a-segnalare-tutte-le-vulnerabilita-zero-day-",
-"data_originale": "07/10/2026",
-"data": "2026-10-07",
-"descrizione": "Comunicato stampa - 07 Ottobre 2026 Il Direttore Generale Acn, Andrea Quacivi, ha adottato la “Politica Nazionale di divulgazione coordinata delle vulnerabilità (CVD)”: “Si consolida un modello di collaborazione tra istituzioni, ricercatori di sicurezza e operatori del settore per il rafforzamento complessivo della resilienza dell’ecosistema digitale nazionale” CSIRT Italia NIS Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
