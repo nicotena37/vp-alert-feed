@@ -1043,6 +1043,125 @@
      "accept": "application/json"
     }
    ]
+  },
+  {
+   "sito": "ENISA",
+   "ente": "ENISA - Agenzia dell'Unione europea per la cibersicurezza",
+   "pagina_apertura": "https://www.enisa.europa.eu/news",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: pagine elenco News e Publications; aggiunta il 24/11/2026 (mancava nel confronto con il caricamento manuale della settimana 46)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "ENISA - news",
+     "url": "https://www.enisa.europa.eu/news",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/news/[a-z0-9-]{10,}"
+    },
+    {
+     "nome": "ENISA - pubblicazioni",
+     "url": "https://www.enisa.europa.eu/publications",
+     "categoria": "Vigilanza",
+     "tipo": "elenco_link",
+     "schema": "/publications/[a-z0-9-]{10,}"
+    }
+   ]
+  },
+  {
+   "sito": "EFRAG",
+   "ente": "EFRAG - European Financial Reporting Advisory Group",
+   "pagina_apertura": "https://www.efrag.org/en/news-and-calendar/news",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: elenco news (prime due pagine); aggiunta il 24/11/2026 (mancava nel confronto con il caricamento manuale della settimana 46)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "EFRAG - news",
+     "url": "https://www.efrag.org/en/news-and-calendar/news",
+     "categoria": "Normativa",
+     "tipo": "elenco_link",
+     "schema": "/en/news-and-calendar/news/[a-z0-9-]{10,}"
+    },
+    {
+     "nome": "EFRAG - news (pagina 2)",
+     "url": "https://www.efrag.org/en/news-and-calendar/news?page=1",
+     "categoria": "Normativa",
+     "tipo": "elenco_link",
+     "schema": "/en/news-and-calendar/news/[a-z0-9-]{10,}"
+    }
+   ]
+  },
+  {
+   "sito": "OCSE",
+   "ente": "OCSE - Organizzazione per la cooperazione e lo sviluppo economico",
+   "pagina_apertura": "https://www.oecd.org/en/publications.html",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "nessun RSS: elenco pubblicazioni; aggiunta il 24/11/2026 (mancava nel confronto con il caricamento manuale della settimana 46)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "OCSE - pubblicazioni",
+     "url": "https://www.oecd.org/en/publications.html",
+     "categoria": "Resto del mondo",
+     "tipo": "elenco_link",
+     "schema": "/en/publications/[a-z0-9-]+_[0-9a-f]{8}-en\\.html"
+    },
+    {
+     "nome": "OCSE - rapporti",
+     "url": "https://www.oecd.org/en/publications/reports.html",
+     "categoria": "Resto del mondo",
+     "tipo": "elenco_link",
+     "schema": "/en/publications/[a-z0-9-]+_[0-9a-f]{8}-en\\.html"
+    }
+   ]
+  },
+  {
+   "sito": "Cooperazione PUMA",
+   "ente": "Cooperazione PUMA (Banca d'Italia e intermediari) - documentazione per le segnalazioni",
+   "pagina_apertura": "https://www.cooperazionepuma.org/",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "feed RSS ufficiale del sito (stessa piattaforma della Banca d'Italia); aggiunta il 24/11/2026 (mancava nel confronto con il caricamento manuale della settimana 46)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "Cooperazione PUMA - aggiornamenti",
+     "url": "https://www.cooperazionepuma.org/footer/rss/index.html?lingua=it",
+     "categoria": "Normativa",
+     "prefisso": "Cooperazione PUMA - "
+    }
+   ]
+  },
+  {
+   "sito": "ItaliaOggi",
+   "ente": "ItaliaOggi (quotidiano)",
+   "pagina_apertura": "https://www.italiaoggi.it/",
+   "affidabilita": "Affidabile",
+   "nota_affidabilita": "quotidiano senza RSS: sezioni economia e finanza, attualità, diritto e fisco (entra solo se utile alla banca); aggiunta il 24/11/2026 (mancava nel confronto con il caricamento manuale della settimana 46)",
+   "frequenza": "ogni giro",
+   "feed": [
+    {
+     "nome": "ItaliaOggi - economia e finanza",
+     "url": "https://www.italiaoggi.it/economia-e-politica/economia-e-finanza",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/[a-z0-9-]{25,}-[a-z0-9]{8}$"
+    },
+    {
+     "nome": "ItaliaOggi - attualità",
+     "url": "https://www.italiaoggi.it/economia-e-politica/attualita",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/[a-z0-9-]{25,}-[a-z0-9]{8}$"
+    },
+    {
+     "nome": "ItaliaOggi - diritto e fisco",
+     "url": "https://www.italiaoggi.it/diritto-e-fisco",
+     "categoria": "Notizie",
+     "tipo": "elenco_link",
+     "schema": "/[a-z0-9-]{25,}-[a-z0-9]{8}$"
+    }
+   ]
   }
  ],
  "senza_rss": [
@@ -1069,10 +1188,6 @@
   {
    "sito": "CNDCEC",
    "cosa_fare": "aggiunta il 14/11: Consiglio nazionale dei commercialisti (schemi di parere, principi); feed non verificato; leggere la pagina news dal browser"
-  },
-  {
-   "sito": "ENISA",
-   "cosa_fare": "aggiunta il 14/11: rapporti sulla sicurezza informatica UE; feed non verificato; leggere la pagina news/publications dal browser"
   }
  ],
  "nota_frequenza": "Giro leggero (predefinito): solo i siti 'ogni giro'. Giro completo (una volta a settimana o su richiesta): tutti. I siti settimanali tengono le ultime 10-50 notizie, quindi una lettura a settimana non perde nulla (lo verifica il foglio Stato fonti RSS)."

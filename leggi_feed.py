@@ -153,7 +153,7 @@ def leggi_rss(sito: dict, f: dict, contenuto: bytes) -> list[dict]:
             link = l.get("href") if l is not None else ""
         data = _testo(v, ["pubDate", "pubdate", "date", "updated", "published"]).replace("T ", "T")
         out.append({"sito": sito["sito"], "feed": f["nome"], "categoria": f["categoria"],
-                    "titolo": pulisci(_testo(v, ["title"])), "link": link.strip(), "data_originale": data,
+                    "titolo": f.get("prefisso", "") + pulisci(_testo(v, ["title"])), "link": link.strip(), "data_originale": data,
                     "data": data_iso(data),
                     "descrizione": pulisci(_testo(v, ["description", "summary", "content", "encoded"]))[:700]})
     return out
@@ -344,7 +344,7 @@ def data_in_testo(s: str) -> str:
             [x[:3] for x in MESI_EN].index(w[:3]) if w[:3] in [x[:3] for x in MESI_EN] else -1
         if i >= 0:
             return f"{int(m.group(1)):02d}/{i + 1:02d}/{m.group(3)}"
-    m = re.search(r"\b(\d{1,2})[/.](\d{1,2})[/.](20\d\d)\b", s)
+    m = re.search(r"(?<!\d)(\d{1,2})[/.](\d{1,2})[/.](20\d\d)\b", s)   # anche attaccata al testo (ItaliaOggi «Adriano24/11/2026»)
     if m:
         return f"{int(m.group(1)):02d}/{int(m.group(2)):02d}/{m.group(3)}"
     m = re.search(r"\b(20\d\d)-(\d{2})-(\d{2})\b", s)
@@ -520,6 +520,11 @@ def leggi_sito(sito: dict) -> dict:
                             v["data"] = v["data_originale"] = md.group(1).decode()
                     except Exception:  # noqa: BLE001
                         pass
+            oggi_iso = datetime.now().date().isoformat()
+            for v in voci:                       # data nel futuro (es. ICMA: scadenza di un'indagine): vale la data di lettura (24/11/2026)
+                if (v.get("data") or "") > oggi_iso and f.get("tipo"):
+                    v["descrizione"] = f"Data indicata dal sito: {v['data']}. {v.get('descrizione', '')}"[:700]
+                    v["data"] = oggi_iso
             if f.get("tipo") and not voci:
                 raise ValueError("nessuna voce trovata nella pagina (struttura cambiata?)")
             ris["notizie"] += voci
