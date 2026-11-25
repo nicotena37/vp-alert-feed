@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-24T18-49-58.json",
+"nome_file": "vpalert_rss_ACN_2026-11-25T14-31-13.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-24T18:49:58Z",
+"letto_il": "2026-11-25T14:31:13Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,126 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità nei componenti di Symfony",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-nei-componenti-di-symfony",
+"data_originale": "Wed, 25 Nov 2026 14:25:55 GMT",
+"data": "2026-11-25",
+"descrizione": "Aggiornamenti di sicurezza risolvono 23 nuove vulnerabilità, tra cui 6 con gravità “alta”, nei componenti HTTP Kernel, HTTP Client, Expression Language e Serializer di Symfony. Tali vulnerabilità, qualora sfruttate con successo, potrebbero consentire ad un utente malintenzionato di eludere meccanismi di sicurezza, accedere ad informazioni sensibili, alterare contenuti applicativi generati dal sistema o compromettere la disponibilità dei sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Dell",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-3",
+"data_originale": "Fri, 13 Nov 2026 16:53:54 GMT",
+"data": "2026-11-13",
+"descrizione": "Dell ha rilasciato aggiornamenti di sicurezza per sanare numerose vulnerabilità, di cui 12 con gravità \"critica\" e 24 con gravità “alta”, in PowerStoreT OS, Dell Networking OS10 e PowerScale InsightIQ."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Joomla!",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-joomla-1",
+"data_originale": "Wed, 25 Nov 2026 12:35:32 GMT",
+"data": "2026-11-25",
+"descrizione": "Aggiornamenti di sicurezza sanano molteplici vulnerabilità, di cui 4 con gravità \"critica\" e 23 con gravità \"alta\", nel noto CMS Joomla!."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in Parallels Desktop",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-parallels-desktop",
+"data_originale": "Wed, 25 Nov 2026 11:36:37 GMT",
+"data": "2026-11-25",
+"descrizione": "Parallels ha risolto alcune vulnerabilità, di cui 2 con gravità \"alta\", in Parallels Desktop, soluzione di virtualizzazione per macOS per l’esecuzione e la gestione di macchine virtuali. Tali vulnerabilità potrebbero permettere a un attaccante locale con privilegi limitati di elevare i propri privilegi ed eseguire codice arbitrario nel contesto del sistema host o dell'hypervisor."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti Copeland XWEB PRO",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-copeland-xweb-pro",
+"data_originale": "Wed, 25 Nov 2026 11:32:17 GMT",
+"data": "2026-11-25",
+"descrizione": "Rilevate 4 nuove vulnerabilità, di cui 3 con gravità “critica”, nei prodotti Copeland XWEB PRO, nota piattaforma web utilizzata per la supervisione e la gestione di impianti di refrigerazione commerciale e sistemi HVAC. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato remoto di eludere i meccanismi di autenticazione o eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti VMware",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-vmware-9",
+"data_originale": "Wed, 25 Nov 2026 10:14:32 GMT",
+"data": "2026-11-25",
+"descrizione": "VMware ha rilasciato aggiornamenti di sicurezza per sanare 23 vulnerabilità, di cui 4 con gravità “critica” e 5 con gravità “alta” in ESX, vCenter, Workstation e Fusion. Tra queste si evidenza la CVE-2026-123903 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Erlang/OTP",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-erlang/otp-6",
+"data_originale": "Wed, 25 Nov 2026 09:03:35 GMT",
+"data": "2026-11-25",
+"descrizione": "Rilevate 10 nuove vulnerabilità, di cui una con gravità \"critica\" e 3 con gravità \"alta\", in Erlang/OTP, piattaforma open source basata sul linguaggio Erlang e sul relativo set di librerie OTP, utilizzata per lo sviluppo di sistemi distribuiti ad alta disponibilità."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in SolarWinds Serv-U",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-solarwinds-serv-u",
+"data_originale": "Wed, 25 Nov 2026 09:03:55 GMT",
+"data": "2026-11-25",
+"descrizione": "SolarWinds ha rilasciato aggiornamenti di sicurezza che sanano molteplici vulnerabilità, di cui 9 con gravità \"critica\" e 2 con gravità \"alta\", in Serv-U, soluzione per il trasferimento gestito e sicuro di file. Tali vulnerabilità potrebbero consentire a un attaccante di eludere i meccanismi di sicurezza, elevare i propri privilegi fino a livelli amministrativi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in Drupal",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-drupal-1",
+"data_originale": "Thu, 19 Nov 2026 10:30:01 GMT",
+"data": "2026-11-19",
+"descrizione": "Rilevate 2 vulnerabilità in Drupal, noto Content Management System (CMS) open source. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati. Tra queste si evidenzia la CVE-2026-132165, per la quale è stato rilevato lo sfruttamento attivo in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti Mozilla",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-mozilla-16",
+"data_originale": "Wed, 25 Nov 2026 08:03:24 GMT",
+"data": "2026-11-25",
+"descrizione": "Aggiornamenti di sicurezza sanano numerose vulnerabilità di sicurezza, di cui una con gravità “critica” e 64 con gravità “alta”, nei prodotti Firefox, Firefox ESR e Thunderbird."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Adobe: aggiornamenti di sicurezza",
+"link": "https://www.acn.gov.it/portale/w/adobe-aggiornamenti-di-sicurezza-28",
+"data_originale": "Wed, 25 Nov 2026 07:55:58 GMT",
+"data": "2026-11-25",
+"descrizione": "Adobe ha rilasciato aggiornamenti di sicurezza per risolvere 113 vulnerabilità, di cui 15 con gravità “critica” e 4 con gravità “alta” nei prodotti Experience Manager e Campaign Classic."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Node.js: rilevate vulnerabilità",
+"link": "https://www.acn.gov.it/portale/w/node.js-rilevate-vulnerabilita",
+"data_originale": "Thu, 12 Nov 2026 12:53:00 GMT",
+"data": "2026-11-12",
+"descrizione": "Rilevate molteplici vulnerabilità, di cui 7 con gravità “alta”, in Node.js, noto software open source per l’esecuzione di codice JavaScript. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di sicurezza e di autenticazione, compromettere la disponibilità del servizio, accedere ad informazioni sensibili e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -386,16 +506,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Drupal",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-drupal-1",
-"data_originale": "Thu, 19 Nov 2026 10:30:01 GMT",
-"data": "2026-11-19",
-"descrizione": "Rilevate 2 vulnerabilità in Drupal, noto Content Management System (CMS) open source. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato remoto di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "HPE: rilevate vulnerabilità in ArubaOS",
 "link": "https://www.acn.gov.it/portale/w/hpe-rilevate-vulnerabilita-in-arubaos",
 "data_originale": "Tue, 27 Oct 2026 10:03:51 GMT",
@@ -411,116 +521,6 @@
 "data_originale": "Thu, 19 Nov 2026 09:18:25 GMT",
 "data": "2026-11-19",
 "descrizione": "Rilevate due vulnerabilità con gravità “alta” in OpenVPN, software open-source per la creazione di reti private virtuali (VPN). Tali vulnerabilità potrebbero consentire a un utente malintenzionato autenticato di ottenere privilegi elevati sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Ubiquiti: sanate nuove vulnerabilità",
-"link": "https://www.acn.gov.it/portale/w/ubiquiti-sanate-nuove-vulnerabilita",
-"data_originale": "Thu, 19 Nov 2026 09:14:12 GMT",
-"data": "2026-11-19",
-"descrizione": "Ubiquiti ha rilasciato aggiornamenti di sicurezza per sanare 7 nuove vulnerabilità, di cui 5 con gravità \"critica\" e 2 con gravità “alta”, in UniFi Access Application, applicazione di gestione centralizzata della soluzione di controllo accessi fisici UniFi Access, utilizzata per amministrare lettori, badge, serrature e politiche di accesso degli edifici."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Cisco",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-cisco-33",
-"data_originale": "Thu, 19 Nov 2026 09:07:57 GMT",
-"data": "2026-11-19",
-"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per sanare 10 vulnerabilità con gravità “alta” presenti in ClamAV, software open source per l'analisi antivirus, e nei prodotti che lo integrano. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "NGINX2Root: molteplici vulnerabilità in prodotti F5",
-"link": "https://www.acn.gov.it/portale/w/nginx2root-molteplici-vulnerabilita-in-prodotti-f5",
-"data_originale": "Thu, 19 Nov 2026 07:06:13 GMT",
-"data": "2026-11-19",
-"descrizione": "F5 ha rilasciato aggiornamenti di sicurezza straordinari per correggere 22 vulnerabilità in diversi prodotti, di cui 10 in NGINX Open Source e NGINX Plus. Tra queste, cinque, analizzate nell’ambito della ricerca NGINX2Root, potrebbero consentire, in specifiche configurazioni, a un attaccante remoto non autenticato di eseguire codice arbitrario."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Atlassian",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-atlassian-2",
-"data_originale": "Thu, 19 Nov 2026 07:17:38 GMT",
-"data": "2026-11-19",
-"descrizione": "Aggiornamenti di sicurezza Atlassian risolvono 17 vulnerabilità con gravità “alta” che interessano i prodotti Bamboo, Confluence, Crucible, Fisheye e Jira. Tali vulnerabilità potrebbero consentire a un utente malintenzionato di leggere file arbitrari, eludere i meccanismi di autenticazione e di autorizzazione, eseguire codice arbitrario o ottenere privilegi elevati sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Java4Shell: Critical Security Patch Update di Oracle",
-"link": "https://www.acn.gov.it/portale/w/java4shell-critical-security-patch-update-di-oracle",
-"data_originale": "Wed, 18 Nov 2026 10:59:49 GMT",
-"data": "2026-11-18",
-"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-114938, nota come \"Java4Shell\", che interessa i prodotti Oracle Java SE, Oracle GraalVM for JDK e Oracle GraalVM Enterprise Edition. La vulnerabilità è stata corretta nell'ambito del Critical Security Patch Update di novembre 2026 che ha risolto complessivamente 581 vulnerabilità su più prodotti Oracle, di cui 50 con gravità “critica” e 210 con gravità “alta”."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Craft CMS",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-craft-cms-5",
-"data_originale": "Wed, 18 Nov 2026 13:04:43 GMT",
-"data": "2026-11-18",
-"descrizione": "Aggiornamenti di sicurezza sanano 6 vulnerabilità, di cui due con gravità \"critica\" e due con gravità \"alta\", in Craft CMS, noto strumento per la gestione di siti web e-commerce. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eseguire codice arbitrario, accedere ad informazioni sensibili o di eludere dei meccanismi di sicurezza sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Synology",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-synology-4",
-"data_originale": "Mon, 24 Nov 2025 12:38:40 GMT",
-"data": "2025-11-24",
-"descrizione": "Aggiornamenti di sicurezza sanano due vulnerabilità con gravità \"alta\" presenti nel prodotto DiskStation Manager (DSM) di Synology. Tali vulnerabilità potrebbero consentire ad un utente malintenzionato di eludere i meccanismi di autenticazione, scrivere o leggere file arbitrari sul filesystem e compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Autodesk",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-autodesk",
-"data_originale": "Wed, 18 Nov 2026 10:35:03 GMT",
-"data": "2026-11-18",
-"descrizione": "Autodesk ha rilasciato aggiornamenti di sicurezza che sanano molteplici vulnerabilità, di cui 11 con gravità \"alta\", in AutoCAD, Advance Steel e Civil 3D. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di eseguire codice arbitrario, compromettere la disponibilità del servizio o accedere a informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Github Enterprise server",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-github-enterprise-server-2",
-"data_originale": "Wed, 18 Nov 2026 09:32:17 GMT",
-"data": "2026-11-18",
-"descrizione": "GitHub ha rilasciato aggiornamenti di sicurezza che risolvono diverse vulnerabilità, di cui 8 con gravità “alta”, in GitHub Enterprise Server, edizione on‑premises della piattaforma GitHub, progettata per ambienti aziendali con requisiti avanzati di sicurezza e conformità."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in Git",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-git",
-"data_originale": "Thu, 12 Nov 2026 12:37:48 GMT",
-"data": "2026-11-12",
-"descrizione": "Rilevate 6 nuove vulnerabilità in Git, noto sistema distribuito open source per il controllo di versione del codice sorgente. Tali vulnerabilità potrebbero consentire a un utente malintenzionato di eseguire codice arbitrario, leggere o modificare file, divulgare informazioni sensibili o compromettere la disponibilità del servizio sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in SmarterMail",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-smartermail-2",
-"data_originale": "Wed, 18 Nov 2026 09:23:06 GMT",
-"data": "2026-11-18",
-"descrizione": "SmarterTools ha risolto alcune vulnerabilità, di cui una con gravità \"critica\" e 2 con gravità \"alta\", in SmarterMail, soluzione per la gestione dei servizi di posta elettronica. Tali vulnerabilità potrebbero consentire a un attaccante remoto di eludere i meccanismi di autenticazione, elevare i propri privilegi o eseguire codice arbitrario con privilegi di sistema sui sistemi interessati."
 },
 {
 "sito": "ACN",
@@ -619,7 +619,7 @@
 "titolo": "Scopri di più su 43° Assemblea Nazionale ANCI",
 "link": "https://www.acn.gov.it/portale/web/guest/-/43-assemblea-nazionale-anci",
 "data_originale": "27/11/2026",
-"data": "2026-11-24",
+"data": "2026-11-25",
 "descrizione": "Data indicata dal sito: 2026-11-27. 25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
 },
 {

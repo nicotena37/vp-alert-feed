@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-24T18:48:16+00:00",
+ "letto_il": "2026-11-25T14:29:24+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,7 +26,7 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 13,
+   "notizie": 19,
    "allarmi": []
   },
   "Consob": {
@@ -132,7 +132,7 @@
   "EBA": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 10,
+   "notizie": 20,
    "allarmi": []
   },
   "ESMA": {
@@ -152,7 +152,7 @@
   "BCE": {
    "feed_ok": 12,
    "feed_totali": 12,
-   "notizie": 150,
+   "notizie": 151,
    "allarmi": []
   },
   "ESRB": {
@@ -170,7 +170,7 @@
   "Parlamento europeo": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 79,
+   "notizie": 93,
    "allarmi": []
   },
   "Consiglio UE": {
@@ -202,13 +202,13 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 26,
+   "notizie": 15,
    "allarmi": []
   },
   "AMLA": {
    "feed_ok": 2,
    "feed_totali": 2,
-   "notizie": 43,
+   "notizie": 44,
    "allarmi": []
   },
   "Commissione europea - FISMA": {
@@ -230,10 +230,12 @@
    "allarmi": []
   },
   "ICMA": {
-   "feed_ok": 1,
+   "feed_ok": 0,
    "feed_totali": 1,
-   "notizie": 192,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "ICMA - news: non letto, sito non raggiungibile (URLError: <urlopen error [Errno -3] Temporary failure in name resolution>) - https://www.icmagroup.org/News/"
+   ]
   },
   "IFRS": {
    "feed_ok": 1,
@@ -262,7 +264,7 @@
   "Senato della Repubblica": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 63,
+   "notizie": 66,
    "allarmi": []
   },
   "INAIL": {
