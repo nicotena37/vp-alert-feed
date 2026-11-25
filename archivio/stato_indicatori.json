@@ -1,37 +1,39 @@
 {
- "bce_discorsi_scaricato": "2026-11-22",
- "ultimo_giro": "2026-11-24T16:31:03+00:00",
+ "bce_discorsi_scaricato": "2026-11-25",
+ "ultimo_giro": "2026-11-25T16:15:13+00:00",
  "dal": "2026-11-09",
- "voci_nuove": 337,
- "voci_in_archivio": 19246,
+ "voci_nuove": 533,
+ "voci_in_archivio": 19779,
  "fonti": {
   "Parlamento UE - interrogazioni": {
-   "ok": false,
-   "errore": "RuntimeError: HTTP 500"
+   "ok": true,
+   "voci": 551,
+   "con_tema": 24,
+   "secondi": 136
   },
   "Camera - interrogazioni": {
    "ok": true,
-   "voci": 2268,
-   "con_tema": 31,
-   "secondi": 6
+   "voci": 2684,
+   "con_tema": 33,
+   "secondi": 7
   },
   "Senato - disegni di legge": {
    "ok": true,
-   "voci": 137,
+   "voci": 141,
    "con_tema": 6,
-   "secondi": 6
+   "secondi": 5
   },
   "EUR-Lex": {
    "ok": true,
-   "voci": 801,
-   "con_tema": 49,
+   "voci": 883,
+   "con_tema": 51,
    "secondi": 12
   },
   "BCE - discorsi": {
    "ok": true,
    "voci": 0,
    "con_tema": 0,
-   "secondi": 0
+   "secondi": 8
   },
   "BIS - discorsi": {
    "ok": true,
@@ -41,14 +43,14 @@
   },
   "ANSA Economia": {
    "ok": true,
-   "voci": 52,
-   "con_tema": 3,
+   "voci": 70,
+   "con_tema": 8,
    "secondi": 4
   },
   "Sole 24 Ore Finanza": {
    "ok": true,
    "voci": 9,
-   "con_tema": 0,
+   "con_tema": 1,
    "secondi": 3
   },
   "Il Sole 24 Ore - Economia": {
@@ -61,36 +63,36 @@
    "ok": true,
    "voci": 5,
    "con_tema": 0,
-   "secondi": 3
+   "secondi": 4
   },
   "Corriere della Sera - Economia": {
    "ok": true,
    "voci": 23,
    "con_tema": 1,
-   "secondi": 4
+   "secondi": 3
   },
   "la Repubblica - Economia": {
    "ok": true,
    "voci": 25,
-   "con_tema": 2,
-   "secondi": 4
+   "con_tema": 7,
+   "secondi": 3
   },
   "ANSA - Europa": {
    "ok": true,
    "voci": 12,
-   "con_tema": 0,
+   "con_tema": 1,
    "secondi": 0
   },
   "Agenda Digitale": {
    "ok": true,
    "voci": 10,
-   "con_tema": 7,
-   "secondi": 4
+   "con_tema": 5,
+   "secondi": 3
   },
   "DirittoBancario": {
    "ok": true,
    "voci": 10,
-   "con_tema": 4,
+   "con_tema": 6,
    "secondi": 6
   },
   "Politico Europe - Servizi finanziari": {
@@ -101,8 +103,8 @@
   },
   "Autorità (giro VP Alert)": {
    "ok": true,
-   "voci": 1956,
-   "con_tema": 512,
+   "voci": 1864,
+   "con_tema": 494,
    "secondi": 1
   },
   "Media Cloud": {
