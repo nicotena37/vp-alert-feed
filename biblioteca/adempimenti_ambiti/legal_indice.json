@@ -1,0 +1,47 @@
+{
+ "aggiornato": "2026-11-27",
+ "ambiti": [
+  {
+   "ambito": "Antiriciclaggio||Gestione di adeguata verifica",
+   "file": "legal_av.json",
+   "n": 19,
+   "punti": 60,
+   "macro": 9,
+   "fonti": [
+    "Disposizioni Banca d'Italia sull'adeguata verifica (30/7/2019)",
+    "Reg. (UE) 2024/1624 (AMLR)",
+    "d.lgs. 231/2007"
+   ]
+  },
+  {
+   "ambito": "Antiriciclaggio||Obblighi di conservazione",
+   "file": "legal_co.json",
+   "n": 3,
+   "punti": 6,
+   "macro": 1,
+   "fonti": [
+    "d.lgs. 231/2007"
+   ]
+  },
+  {
+   "ambito": "Antiriciclaggio||Gestione Operazioni Sospette",
+   "file": "legal_sos.json",
+   "n": 3,
+   "punti": 6,
+   "macro": 1,
+   "fonti": [
+    "d.lgs. 231/2007"
+   ]
+  },
+  {
+   "ambito": "Antiriciclaggio||Contrasto al finanziamento del terrorismo",
+   "file": "legal_ft.json",
+   "n": 2,
+   "punti": 5,
+   "macro": 1,
+   "fonti": [
+    "d.lgs. 109/2007"
+   ]
+  }
+ ]
+}
