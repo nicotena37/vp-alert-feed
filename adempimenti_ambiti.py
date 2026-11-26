@@ -104,7 +104,12 @@ lib("Antiriciclaggio||Contrasto al finanziamento del terrorismo", "FT", [("FT-M1
   A("FT-01", "FT-M1", "Congelare i fondi e non metterli a disposizione dei soggetti designati", "liste", ["ADE-08"], [P("F", "5", "1", None, "I fondi congelati non possono essere trasferiti, disposti o utilizzati"), P("F", "5", "4", None, "Divieto di mettere fondi o risorse a disposizione dei soggetti designati"), P("F", "5", "5", None, "Divieto di aggirare le misure di congelamento")]),
   A("FT-02", "FT-M1", "Comunicare alla UIF le misure di congelamento e le operazioni dei soggetti designati", "liste", ["ADE-08"], [P("F", "7", "1", None, "Comunicare alla UIF le misure di congelamento applicate"), P("F", "7", "2", None, "Comunicare tempestivamente operazioni, rapporti e informazioni riconducibili ai soggetti designati")]),
 ])
-out = SP / "biblioteca" / "adempimenti_ambiti"; out.mkdir(exist_ok=True); indice = {"aggiornato": "2026-11-27", "ambiti": []}
+out = SP / "biblioteca" / "adempimenti_ambiti"; out.mkdir(exist_ok=True)
+_SINT = json.loads((out / "sintesi.json").read_text(encoding="utf-8")) if (out / "sintesi.json").exists() else {}
+for _L in LIB.values():
+    for _a in _L["adempimenti"]:
+        if _a["id"] in _SINT: _a["sintesi"] = _SINT[_a["id"]]
+indice = {"aggiornato": "2026-11-27", "ambiti": []}
 for amb, L in LIB.items():
     f = f"legal_{L['sigla'].lower()}.json"; (out / f).write_text(json.dumps(L, ensure_ascii=False), encoding="utf-8")
     vuoti = [(a["id"], p["rif"]) for a in L["adempimenti"] for p in a["punti"] if not p["estratto"]]
