@@ -1,0 +1,28 @@
+name: Biblioteca adeguata verifica
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["biblioteca/avvia_av.txt"]
+
+permissions:
+  contents: write
+
+jobs:
+  scarica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - run: pip install --quiet requests==2.32.3
+      - run: python biblioteca_av.py
+      - run: |
+          git config user.name "vp-alert-feed"
+          git config user.email "vp-alert-feed@users.noreply.github.com"
+          git add biblioteca
+          git diff --cached --quiet || git commit -q -m "Biblioteca adeguata verifica $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase -X theirs --quiet && git push --quiet && break; sleep 10; done
