@@ -20,6 +20,8 @@ jobs:
       - run: sudo apt-get install -y -qq poppler-utils >/dev/null
       - run: pip install --quiet requests==2.32.3
       - run: python biblioteca_av.py
+        env:
+          SOLO_BDI: ${{ contains(github.event.head_commit.message, 'solo BdI') && '1' || '0' }}
       - run: |
           git config user.name "vp-alert-feed"
           git config user.email "vp-alert-feed@users.noreply.github.com"

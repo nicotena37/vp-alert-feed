@@ -6,14 +6,15 @@ from pathlib import Path
 import requests
 import biblioteca, biblioteca_pdf
 
-biblioteca.scarica("biblioteca/corpus_av.json")
+import os
+if os.environ.get("SOLO_BDI") != "1": biblioteca.scarica("biblioteca/corpus_av.json")
 P = Path("biblioteca/pdf_av"); P.mkdir(parents=True, exist_ok=True)
 UA = {"User-Agent": "Mozilla/5.0 (compliaince-biblioteca)"}
 pagina = "https://www.bancaditalia.it/compiti/vigilanza/normativa/archivio-norme/disposizioni/20190730-dispo/index.html"
 log = []
 try:
-    h = requests.get(pagina, headers=UA, timeout=60).text
-    pdf = [requests.compat.urljoin(pagina, x) for x in re.findall(r'href="([^"]+\.pdf)"', h)]
+    rr = requests.get(pagina, headers=UA, timeout=60); h = rr.text; (P / "pagina.html").write_text(h, encoding="utf-8"); log.append(f"pagina {rr.status_code} {len(h)} caratteri")
+    pdf = list(dict.fromkeys(requests.compat.urljoin(pagina, x) for x in re.findall(r'href=["\']([^"\']+?\.pdf[^"\']*)["\']', h, re.I)))
     log.append("PDF nella pagina: " + " | ".join(pdf))
     scelto = next((u for u in pdf if re.search(r"dispo|disposizioni|adeguata", u, re.I) and not re.search(r"relazione|analisi|resoconto|consultaz", u, re.I)), pdf[0] if pdf else None)
     if scelto:
