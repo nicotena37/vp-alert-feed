@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-25T14-31-13.json",
+"nome_file": "vpalert_rss_ACN_2026-11-26T13-59-23.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-25T14:31:13Z",
+"letto_il": "2026-11-26T13:59:23Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,106 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in prodotti HPE",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-hpe-1",
+"data_originale": "Thu, 26 Nov 2026 12:14:32 GMT",
+"data": "2026-11-26",
+"descrizione": "Aggiornamenti di sicurezza Hewlett Packard Enterprise sanano numerose vulnerabilità di sicurezza, di cui 3 con gravità “critica” e 6 con gravità “alta”, in HPE Aruba Networking Management Software (AirWave). Tali vulnerabilità potrebbero consentire a un utente malintenzionato di eludere i meccanismi di autenticazione, eseguire codice arbitrario, accedere a informazioni sensibili, elevare i propri privilegi o manipolare dati sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in PostgreSQL psqlODBC",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-postgresql-psqlodbc",
+"data_originale": "Thu, 26 Nov 2026 11:42:17 GMT",
+"data": "2026-11-26",
+"descrizione": "Rilevate alcune vulnerabilità, di cui 10 con gravità “alta”, in PostgreSQL psqlODBC, componente utilizzato da applicazioni Windows e multipiattaforma per connettersi a database PostgreSQL tramite l'interfaccia ODBC. Tali vulnerabilità potrebbero consentire a un attaccante remoto, in alcuni casi non autenticato, di eludere i meccanismi di sicurezza, compromettere la disponibilità del servizio ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate nuove vulnerabilità in Jenkins",
+"link": "https://www.acn.gov.it/portale/w/rilevate-nuove-vulnerabilita-in-jenkins-4",
+"data_originale": "Thu, 26 Nov 2026 10:51:06 GMT",
+"data": "2026-11-26",
+"descrizione": "Rilasciati aggiornamenti di sicurezza che sanano 21 vulnerabilità, di cui una con gravità “critica” e sei con gravità “alta”, in numerosi plugin di Jenkins, piattaforma open source di Continuous Integration e Continuous Delivery (CI/CD) per l'automazione delle attività di sviluppo e distribuzione del software. Tali vulnerabilità potrebbero consentire a un attaccante di eludere i meccanismi di sicurezza, leggere file arbitrari ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Drupal: rilevato sfruttamento in rete della CVE-2026-136716",
+"link": "https://www.acn.gov.it/portale/w/drupal-rilevato-sfruttamento-in-rete-della-cve-2026-136716",
+"data_originale": "Thu, 26 Nov 2026 10:44:10 GMT",
+"data": "2026-11-26",
+"descrizione": "È stato rilevato lo sfruttamento attivo in rete della vulnerabilità CVE-2026-136716, già sanata dal vendor, presente in Drupal core, noto Content Management System (CMS) open source."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti Juniper Networks",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-juniper-networks-7",
+"data_originale": "Thu, 29 Oct 2026 11:27:02 GMT",
+"data": "2026-10-29",
+"descrizione": "Juniper Networks ha rilasciato aggiornamenti di sicurezza che sanano 18 vulnerabilità, di cui 2 con gravità \"critica\" e 8 con gravità \"alta\", nei prodotti Session Smart Router e Session Smart Conductor, soluzioni dedicate rispettivamente al routing e alla relativa gestione."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza Mitel",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-mitel",
+"data_originale": "Tue, 17 Nov 2026 13:03:07 GMT",
+"data": "2026-11-17",
+"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui due con gravità “critica”, presenti nella componente Audio, Web and Video Conferencing (AWV) di Mitel MiCollab. Tali vulnerabilità risultano essere tutte sfruttate attivamente in rete."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vates: rilevato sfruttamento in rete di vulnerabilità in Xen Orchestra",
+"link": "https://www.acn.gov.it/portale/w/vates-rilevato-sfruttamento-in-rete-di-vulnerabilita-in-xen-orchestra",
+"data_originale": "Thu, 12 Nov 2026 15:15:11 GMT",
+"data": "2026-11-12",
+"descrizione": "Vates ha rilevato lo sfruttamento in rete di vulnerabilità che interessano Xen Orchestra e Xen Orchestra Appliance, soluzioni per la gestione centralizzata di infrastrutture di virtualizzazione basate su XCP-ng e Xen. Tali vulnerabilità potrebbero consentire a un attaccante remoto non autenticato di eludere i meccanismi di autenticazione e sicurezza, acquisire privilegi amministrativi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Risolte vulnerabilità in GeoServer",
+"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-geoserver",
+"data_originale": "Tue, 24 Nov 2026 09:09:11 GMT",
+"data": "2026-11-24",
+"descrizione": "Aggiornamenti di sicurezza sanano numerose vulnerabilità, di cui una con gravità \"critica\" e 13 con gravità \"alta\", in GeoServer, nota piattaforma open source per la gestione e pubblicazione web di dati geografici e cartografici. Tali vulnerabilità potrebbero permettere a un attaccante remoto di eludere i meccanismi di sicurezza e autenticazione, accedere a file e informazioni sensibili, manipolare i dati, elevare i propri privilegi ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Supply Chain Attack: distribuzione di codice malevolo tramite Optimizely Web Experimentation",
+"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-distribuzione-di-codice-malevolo-tramite-optimizely-web-experimentation",
+"data_originale": "Wed, 18 Nov 2026 08:38:38 GMT",
+"data": "2026-11-18",
+"descrizione": "È stata rilevata una campagna di compromissione della supply chain che ha interessato numerosi progetti dei clienti della piattaforma Optimizely Web Experimentation, utilizzata da molteplici organizzazioni per attività di A/B testing e personalizzazione dei contenuti. Secondo le analisi pubblicate da ricercatori di Report URI, il 16 novembre 2026 codice JavaScript malevolo è stato distribuito ai visitatori di almeno 178 organizzazioni attraverso snippet caricati dal CDN ufficiale di Optimizely."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Rilevate vulnerabilità in prodotti Dell",
+"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-dell-4",
+"data_originale": "Wed, 25 Nov 2026 14:31:55 GMT",
+"data": "2026-11-25",
+"descrizione": "Dell ha rilasciato aggiornamenti di sicurezza per sanare numerose vulnerabilità, di cui 2 con gravità \"critica\" e 9 con gravità “alta”, in Enterprise SONiC Distribution e VSI (Virtual Storage Integrator) for VMware vSphere Web Client."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -226,16 +326,6 @@
 "sito": "ACN",
 "feed": "ACN - notizie",
 "categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in GeoServer",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-geoserver",
-"data_originale": "Tue, 24 Nov 2026 09:09:11 GMT",
-"data": "2026-11-24",
-"descrizione": "Aggiornamenti di sicurezza sanano numerose vulnerabilità, di cui una con gravità \"critica\" e 13 con gravità \"alta\", in GeoServer, nota piattaforma open source per la gestione e pubblicazione web di dati geografici e cartografici. Tali vulnerabilità potrebbero permettere a un attaccante remoto di eludere i meccanismi di sicurezza e autenticazione, accedere a file e informazioni sensibili, manipolare i dati, elevare i propri privilegi ed eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
 "titolo": "Risolta vulnerabilità in Google Chrome",
 "link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-google-chrome-7",
 "data_originale": "Tue, 24 Nov 2026 07:45:24 GMT",
@@ -434,93 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità nel tema WordPress “Design Scuole Italia”",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-nel-tema-wordpress-design-scuole-italia-",
-"data_originale": "Tue, 15 Sep 2026 07:59:57 GMT",
-"data": "2026-09-15",
-"descrizione": "Rilevate quattro vulnerabilità, di cui due con gravità “alta”, in Design Scuole Italia, noto tema WordPress destinato alla realizzazione dei siti istituzionali delle scuole italiane. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di leggere file arbitrari sul filesystem, eludere i meccanismi di autenticazione e sicurezza, reindirizzare le vittime verso URL arbitrari ed accedere a informazioni sensibili sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti JetBrains",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-jetbrains-5",
-"data_originale": "Thu, 19 Nov 2026 10:32:53 GMT",
-"data": "2026-11-19",
-"descrizione": "Rilevate molteplici nuove vulnerabilità, di cui 5 con gravità \"critica\" e 78 con gravità \"alta\", nei prodotti JetBrains TeamCity, IntelliJ IDEA, Junie e Junie CLI."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza Mitel",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-mitel",
-"data_originale": "Tue, 17 Nov 2026 13:03:07 GMT",
-"data": "2026-11-17",
-"descrizione": "Rilasciati aggiornamenti di sicurezza per risolvere 5 vulnerabilità, di cui due con gravità “critica”, presenti nella componente Audio, Web and Video Conferencing (AWV) di Mitel MiCollab. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante remoto non autenticato di eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti ASUS",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-7",
-"data_originale": "Thu, 19 Nov 2026 14:15:36 GMT",
-"data": "2026-11-19",
-"descrizione": "ASUS ha rilasciato aggiornamenti di sicurezza per risolvere 12 vulnerabilità, di cui 4 con con gravità \"critica\" e 5 con gravità \"alta\", che interessano Control Center, Armoury Crate, System Control Interface, DisplayWidget Center e il firmware di diversi modelli di router. Tra queste si evidenza la CVE-2026-114202 per la quale risulta disponibile un Proof of Concept (PoC) in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in prodotti Splunk",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-prodotti-splunk-7",
-"data_originale": "Thu, 19 Nov 2026 14:04:16 GMT",
-"data": "2026-11-19",
-"descrizione": "Splunk ha rilasciato aggiornamenti di sicurezza per sanare molteplici vulnerabilità, di cui 5 con gravità “critica” e 53 con gravità “alta”, nei prodotti Splunk SOAR, Splunk Enterprise, Splunk App for Stream, Splunk AI Assistant e Splunk Enterprise Security."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Java4Shell: aggiornamenti e valutazioni di impatto da parte dei vendor interessati",
-"link": "https://www.acn.gov.it/portale/w/java4shell-aggiornamenti-e-valutazioni-di-impatto-da-parte-dei-vendor-interessati",
-"data_originale": "Thu, 19 Nov 2026 10:22:00 GMT",
-"data": "2026-11-19",
-"descrizione": "Prosegue la pubblicazione di aggiornamenti di sicurezza e comunicazioni da parte dei fornitori di prodotti hardware e software in relazione alla vulnerabilità CVE-2026-114938, nota come \"Java4Shell\" e già trattata da questo CSIRT Italia nell'ambito del AL07/261118/CSIRT-ITA. La vulnerabilità interessa specifiche versioni di OpenJDK, Oracle Java SE e Oracle GraalVM e può coinvolgere applicazioni e prodotti di terze parti che integrano versioni vulnerabili del relativo ambiente di esecuzione."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in Mozilla Firefox",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-mozilla-firefox-1",
-"data_originale": "Thu, 19 Nov 2026 10:44:16 GMT",
-"data": "2026-11-19",
-"descrizione": "Aggiornamenti di sicurezza sanano due vulnerabilità con gravità “alta” in Firefox. Tali vulnerabilità, qualora sfruttate, potrebbero consentire a un attaccante di elevare i propri privilegi, compromettere la disponibilità del servizio e, nei casi più gravi, eseguire codice arbitrario sui sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "HPE: rilevate vulnerabilità in ArubaOS",
-"link": "https://www.acn.gov.it/portale/w/hpe-rilevate-vulnerabilita-in-arubaos",
-"data_originale": "Tue, 27 Oct 2026 10:03:51 GMT",
-"data": "2026-10-27",
-"descrizione": "Rilasciati aggiornamenti di sicurezza che sanano molteplici vulnerabilità, di cui 33 con gravità “critica” e 33 con gravità “alta”, in HPE Aruba Networking AOS-8 e AOS-10, sistemi operativi di rete per la gestione delle infrastrutture Wi-Fi aziendali."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Rilevate vulnerabilità in OpenVPN",
-"link": "https://www.acn.gov.it/portale/w/rilevate-vulnerabilita-in-openvpn",
-"data_originale": "Thu, 19 Nov 2026 09:18:25 GMT",
-"data": "2026-11-19",
-"descrizione": "Rilevate due vulnerabilità con gravità “alta” in OpenVPN, software open-source per la creazione di reti private virtuali (VPN). Tali vulnerabilità potrebbero consentire a un utente malintenzionato autenticato di ottenere privilegi elevati sui sistemi interessati."
+"titolo": "ACN avvia un ciclo di incontri con i settori critici NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-avvia-un-ciclo-di-incontri-con-i-settori-critici-nis",
+"data_originale": "24/11/2026",
+"data": "2026-11-24",
+"descrizione": "News - 24 Novembre 2026 Dal settore alimentare a quello sanitario l’Agenzia incontra istituzioni e operatori per sensibilizzare sul rischio cyber e raccomandare le pratiche di sicurezza essenziali Normativa NIS CSIRT Italia NIS Cybersicurezza Sanità Digitale Operational summary"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "13/11/2026",
 "data": "2026-11-13",
 "descrizione": "News - 13 Novembre 2026 L'avviso è dedicato a Università e organismi di ricerca italiani che vogliono sviluppare Cybersicurezza Strategia Nazionale di Cybersicurezza ACN"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "ACN e il Gruppo di Cooperazione NIS per la cybersicurezza dell’UE",
-"link": "https://www.acn.gov.it/portale/web/guest/-/acn-e-il-gruppo-di-cooperazione-nis-per-la-cybersicurezza-dell-ue",
-"data_originale": "10/11/2026",
-"data": "2026-11-10",
-"descrizione": "News - 10 Novembre 2026 Conclusi a Roma tre workstream del NIS Cooperation Group su Supervision, Digital infrastructure e Incident reporting ENISA NIS Relazioni internazionali Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
@@ -586,6 +586,16 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
+"titolo": "Cybersicurezza, siglata la collaborazione tra AISCAT e Agenzia per la Cybersicurezza Nazionale",
+"link": "https://www.acn.gov.it/portale/web/guest/-/cybersicurezza-siglata-la-collaborazione-tra-aiscat-e-agenzia-per-la-cybersicurezza-nazionale",
+"data_originale": "26/11/2026",
+"data": "2026-11-26",
+"descrizione": "Comunicato stampa - 26 Novembre 2026 L'accordo punta a rafforzare la protezione delle infrastrutture autostradali attraverso la condivisione di informazioni sulle minacce informatiche, l'analisi dei rischi e lo sviluppo di iniziative congiunte di prevenzione e formazione ISAC Italia Cybersicurezza ACN"
+},
+{
+"sito": "ACN",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
+"categoria": "Vigilanza",
 "titolo": "Sicurezza informatica e Intelligenza Artificiale: l’ACN indica come proteggere aziende e infrastrutture dai molteplici rischi dell’IA “agentica”",
 "link": "https://www.acn.gov.it/portale/web/guest/-/sicurezza-informatica-e-intelligenza-artificiale-l-acn-indica-come-proteggere-aziende-e-infrastrutture-dai-molteplici-rischi-dell-ia-agentica-",
 "data_originale": "24/11/2026",
@@ -606,20 +616,10 @@
 "sito": "ACN",
 "feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Cyber Generation: ACN e ITS Academy insieme per formare i professionisti della cybersicurezza",
-"link": "https://www.acn.gov.it/portale/web/guest/-/cyber-generation-acn-e-its-academy-insieme-per-formare-i-professionisti-della-cybersicurezza",
-"data_originale": "29/10/2026",
-"data": "2026-10-29",
-"descrizione": "Comunicato stampa - 29 Ottobre 2026 A Roma la cerimonia di consegna delle borse di studio ACN per il biennio 2024-2026: assegnate 113 borse da 4.000 euro, in arrivo il nuovo bando Direttore Vice Direttore Generale Cybersicurezza ACN Formazione"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
 "titolo": "Scopri di più su 43° Assemblea Nazionale ANCI",
 "link": "https://www.acn.gov.it/portale/web/guest/-/43-assemblea-nazionale-anci",
 "data_originale": "27/11/2026",
-"data": "2026-11-25",
+"data": "2026-11-26",
 "descrizione": "Data indicata dal sito: 2026-11-27. 25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
 },
 {
@@ -631,6 +631,16 @@
 "data_originale": "23/01/2026",
 "data": "2026-01-23",
 "descrizione": "23 Gennaio 2026 - ore 11.00 - 12.00 Sede dell'Agenzia per la cybersicurezza nazionale Presentazione dell'Agenda di Ricerca e Innovazione per la cybersicurezza Aggiornamento 2026"
+},
+{
+"sito": "ACN",
+"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
+"categoria": "Vigilanza",
+"titolo": "ACN avvia un ciclo di incontri con i settori critici NIS",
+"link": "https://www.acn.gov.it/portale/web/guest/-/acn-avvia-un-ciclo-di-incontri-con-i-settori-critici-nis",
+"data_originale": "24/11/2026",
+"data": "2026-11-24",
+"descrizione": "News - 24 Novembre 2026 Dal settore alimentare a quello sanitario l’Agenzia incontra istituzioni e operatori per sensibilizzare sul rischio cyber e raccomandare le pratiche di sicurezza essenziali Normativa NIS CSIRT Italia NIS Cybersicurezza Sanità Digitale Operational summary"
 },
 {
 "sito": "ACN",
@@ -821,16 +831,6 @@
 "data_originale": "04/02/2025",
 "data": "2025-02-04",
 "descrizione": "News - 04 Febbraio 2025 Ancora un mese per adempiere agli obblighi della disciplina volta a rafforzare la postura informatica del Paese Normativa NIS NIS ACN"
-},
-{
-"sito": "ACN",
-"feed": "ACN - NIS notizie (FAQ, determine, modalità)",
-"categoria": "Vigilanza",
-"titolo": "NIS: riunito nella sede di ACN il tavolo per l’attuazione",
-"link": "https://www.acn.gov.it/portale/web/guest/-/nis-riunito-nella-sede-di-acn-il-tavolo-per-l-attuazione",
-"data_originale": "29/01/2025",
-"data": "2025-01-29",
-"descrizione": "News - 29 Gennaio 2025 Tra i temi affrontati, il percorso di registrazione che scade il 28 febbraio e le sanzioni se non viene effettuato Normativa NIS NIS"
 }
 ]
 }
