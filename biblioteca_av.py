@@ -16,7 +16,7 @@ try:
     rr = requests.get(pagina, headers=UA, timeout=60); h = rr.text; (P / "pagina.html").write_text(h, encoding="utf-8"); log.append(f"pagina {rr.status_code} {len(h)} caratteri")
     pdf = list(dict.fromkeys(requests.compat.urljoin(pagina, x) for x in re.findall(r'href=["\']([^"\']+?\.pdf[^"\']*)["\']', h, re.I)))
     log.append("PDF nella pagina: " + " | ".join(pdf))
-    scelto = next((u for u in pdf if re.search(r"dispo|disposizioni|adeguata", u, re.I) and not re.search(r"relazione|analisi|resoconto|consultaz", u, re.I)), pdf[0] if pdf else None)
+    scelto = next((u for u in pdf if re.search(r"/Disposizioni[^/]*\.pdf", u, re.I)), None) or next((u for u in pdf if not re.search(r"emanazione|relazione|analisi|resoconto|consultaz", u, re.I)), pdf[0] if pdf else None)
     if scelto:
         r = requests.get(scelto, headers=UA, timeout=120); (P / "bibl_BDI-AV-2019.pdf").write_bytes(r.content); log.append(f"scaricato {scelto} ({len(r.content)//1024} KB)")
         Path("biblioteca/corpus_av_pdf.json").write_text(json.dumps([{"id": "BDI-AV-2019", "fonte": "Banca d'Italia", "titolo": "Disposizioni in materia di adeguata verifica della clientela per il contrasto del riciclaggio e del finanziamento del terrorismo", "estremi": "Provv. Banca d'Italia 30 luglio 2019 e succ. mod.", "url": scelto, "area": ["Antiriciclaggio"], "file": "bibl_BDI-AV-2019.pdf"}], ensure_ascii=False), encoding="utf-8")
