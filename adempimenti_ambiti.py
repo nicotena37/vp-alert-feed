@@ -117,3 +117,4 @@ for amb, L in LIB.items():
     indice["ambiti"].append({"ambito": amb, "file": f, "n": len(L["adempimenti"]), "punti": sum(len(a["punti"]) for a in L["adempimenti"]), "macro": len(L["macro"]), "fonti": fonti})
     print(amb, len(L["macro"]), len(L["adempimenti"]), sum(len(a["punti"]) for a in L["adempimenti"]), "senza testo:", vuoti)
 (out / "legal_indice.json").write_text(json.dumps(indice, ensure_ascii=False, indent=1), encoding="utf-8")
+import runpy; runpy.run_path(str(SP / "genera_dora.py"))   # DORA: dalla fonte del risk assessment, aggiunta all'indice
