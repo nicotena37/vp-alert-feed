@@ -1,8 +1,8 @@
 {
-"nome_file": "vpalert_rss_ACN_2026-11-26T13-59-23.json",
+"nome_file": "vpalert_rss_ACN_2026-11-27T13-57-53.json",
 "sito": "ACN",
 "origine": "github-actions",
-"letto_il": "2026-11-26T13:59:23Z",
+"letto_il": "2026-11-27T13:57:53Z",
 "feed": [
 {
 "nome": "ACN - notizie",
@@ -22,6 +22,76 @@
 ],
 "allarmi": [],
 "notizie": [
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Java4Shell: Critical Security Patch Update di Oracle",
+"link": "https://www.acn.gov.it/portale/w/java4shell-critical-security-patch-update-di-oracle",
+"data_originale": "Wed, 18 Nov 2026 10:59:49 GMT",
+"data": "2026-11-18",
+"descrizione": "Rilevato lo sfruttamento attivo in rete della CVE-2026-114938, nota come \"Java4Shell\" e per la quale era già disponibile pubblicamente un Proof of Concept (PoC), che interessa i prodotti Oracle Java SE, Oracle GraalVM for JDK e Oracle GraalVM Enterprise Edition. La vulnerabilità è stata corretta nell'ambito del Critical Security Patch Update di novembre 2026 che ha risolto complessivamente 581 vulnerabilità su più prodotti Oracle, di cui 50 con gravità “critica” e 210 con gravità “alta”."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza prodotti Mitel",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-prodotti-mitel-2",
+"data_originale": "Fri, 27 Nov 2026 09:30:25 GMT",
+"data": "2026-11-27",
+"descrizione": "Rilasciati aggiornamenti di sicurezza che risolvono 3 vulnerabilità con gravità “critica” nei prodotti Mitel OpenScape 4000 e OpenScape 4000 Manager, soluzioni di gestione centralizzata per l’erogazione, la configurazione e l’amministrazione di servizi di telefonia. Tali vulnerabilità, qualora sfruttate, potrebbero permettere a un attaccante non autenticato di eludere i meccanismi di autenticazione ed eseguire codice arbitrario sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Vulnerabilità in prodotti ASUS",
+"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-asus-8",
+"data_originale": "Fri, 27 Nov 2026 09:01:26 GMT",
+"data": "2026-11-27",
+"descrizione": "ASUS ha rilasciato aggiornamenti di sicurezza per sanare 3 vulnerabilità, di cui una con gravità \"critica\" e una con gravità \"alta\", che interessano GPU Tweak III e il firmware di diversi modelli di router. Tali vulnerabilità, qualora sfruttate, potrebbero consentire ad un utente malintenzionato di eseguire codice arbitrario o compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per prodotti MongoDB",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-mongodb-7",
+"data_originale": "Fri, 27 Nov 2026 07:32:09 GMT",
+"data": "2026-11-27",
+"descrizione": "MongoDB ha rilasciato aggiornamenti di sicurezza per sanare 21 vulnerabilità, di cui 2 con gravità “critica” e 12 con gravità “alta” in PHP Driver, C Driver, Ruby Driver e Python Driver."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Aggiornamenti di sicurezza per Ruby",
+"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-ruby-6",
+"data_originale": "Fri, 20 Nov 2026 10:34:40 GMT",
+"data": "2026-11-20",
+"descrizione": "Aggiornamenti di sicurezza Ruby sanano 7 vulnerabilità presenti nel motore di elaborazione delle espressioni regolari (regex) e nelle funzionalità di conversione del maiuscolo/minuscolo delle stringhe. Si evidenzia che, per 6 delle 7 vulnerabilità, il vendor ha dichiarato di essere a conoscenza di Proof of Concept (PoC) in grado di dimostrare l'ottenimento dell'esecuzione remota di codice arbitrario o condizioni di corruzione della memoria in specifici scenari."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "FreeRDP: disponibile un PoC per lo sfruttamento della CVE-2026-137077",
+"link": "https://www.acn.gov.it/portale/w/freerdp-disponibile-un-poc-per-lo-sfruttamento-della-cve-2026-137077",
+"data_originale": "Thu, 26 Nov 2026 14:05:00 GMT",
+"data": "2026-11-26",
+"descrizione": "Disponibile un Proof of Concept (PoC) per lo sfruttamento della CVE-2026-137077, già sanata dal vendor, presente in FreeRDP, implementazione open source del protocollo Remote Desktop Protocol (RDP), utilizzato per collegarsi e controllare a distanza un computer. Tale vulnerabilità potrebbe consentire a un attaccante remoto non autenticato di compromettere la disponibilità del servizio sui sistemi interessati."
+},
+{
+"sito": "ACN",
+"feed": "ACN - notizie",
+"categoria": "Vigilanza",
+"titolo": "Danfoss: rilevato sfruttamento di vulnerabilità nei prodotti della serie AK-SM8xxA",
+"link": "https://www.acn.gov.it/portale/w/danfoss-rilevato-sfruttamento-di-vulnerabilita-nei-prodotti-della-serie-ak-sm8xxa",
+"data_originale": "Thu, 26 Nov 2026 14:03:04 GMT",
+"data": "2026-11-26",
+"descrizione": "Rilevato lo sfruttamento di tre vulnerabilità, di cui 2 con gravità \"critica\" e una con gravità \"alta\", nei prodotti Danfoss della serie AK-SM8xxA. Tali vulnerabilità potrebbero consentire a un attaccante remoto di eseguire comandi arbitrari, accedere a file di sistema presenti sul server sottostante oppure eludere i meccanismi di autenticazione e sicurezza per acquisire informazioni sensibili, tra cui indirizzi IP interni, nomi utente e denominazioni dei punti vendita."
+},
 {
 "sito": "ACN",
 "feed": "ACN - notizie",
@@ -454,73 +524,13 @@
 },
 {
 "sito": "ACN",
-"feed": "ACN - notizie",
+"feed": "ACN - comunicazione (notizie dell'Agenzia)",
 "categoria": "Vigilanza",
-"titolo": "Vulnerabilità in prodotti VMware",
-"link": "https://www.acn.gov.it/portale/w/vulnerabilita-in-prodotti-vmware-8",
-"data_originale": "Thu, 19 Nov 2026 16:29:50 GMT",
-"data": "2026-11-19",
-"descrizione": "VMware ha rilasciato aggiornamenti di sicurezza per sanare alcune vulnerabilità, di cui una con gravità “critica” e due con gravità “alta”, nei prodotti SDDC Manager, VMware vCenter, VMware Cloud Foundation, VMware Telco Cloud Platform e VMware Telco Cloud Infrastructure."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Supply Chain Attack: versioni malevole del pacchetto Microsoft Agent Framework distribuite tramite PyPI",
-"link": "https://www.acn.gov.it/portale/w/supply-chain-attack-versioni-malevole-del-pacchetto-microsoft-agent-framework-distribuite-tramite-pypi",
-"data_originale": "Fri, 20 Nov 2026 16:22:13 GMT",
-"data": "2026-11-20",
-"descrizione": "È stata rilevata una compromissione della supply chain che ha interessato il pacchetto Python agent-framework, associato al progetto Microsoft Agent Framework e distribuito attraverso il repository Python Package Index (PyPI)."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per prodotti Cisco",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-prodotti-cisco-1",
-"data_originale": "Wed, 21 Oct 2026 16:15:05 GMT",
-"data": "2026-10-21",
-"descrizione": "Cisco ha rilasciato aggiornamenti di sicurezza per risolvere 34 vulnerabilità nei propri prodotti, di cui 5 con gravità “critica” e 17 con gravità “alta”. Tra queste, si evidenzia la CVE-2026-76466 che interessa i dispositivi Cisco Expressway Core (Expressway-C) e Cisco Expressway Edge (Expressway-E) e risulta sfruttata attivamente in rete."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolta vulnerabilità in prodotti Synology",
-"link": "https://www.acn.gov.it/portale/w/risolta-vulnerabilita-in-prodotti-synology",
-"data_originale": "Fri, 20 Nov 2026 13:33:51 GMT",
-"data": "2026-11-20",
-"descrizione": "Synology ha rilasciato aggiornamenti di sicurezza per risolvere una vulnerabilità con gravità \"critica\" in DiskStation Manager (DSM) e BeeStation OS. Tale vulnerabilità, qualora sfruttata, potrebbe consentire ad un utente malintenzionato di compromettere la disponibilità del servizio e di scrivere/leggere file arbitrari sul filesystem dei sistemi interessati."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti Spring",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-spring-6",
-"data_originale": "Fri, 20 Nov 2026 11:30:36 GMT",
-"data": "2026-11-20",
-"descrizione": "Aggiornamenti di sicurezza risolvono numerose vulnerabilità, di cui 5 con gravità \"critica\" e 24 con gravità “alta”, in vari prodotti Spring."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Aggiornamenti di sicurezza per Ruby",
-"link": "https://www.acn.gov.it/portale/w/aggiornamenti-di-sicurezza-per-ruby-6",
-"data_originale": "Fri, 20 Nov 2026 10:34:40 GMT",
-"data": "2026-11-20",
-"descrizione": "Aggiornamenti di sicurezza Ruby sanano 7 vulnerabilità presenti nel motore di elaborazione delle espressioni regolari (regex) e nelle funzionalità di conversione del maiuscolo/minuscolo delle stringhe. Si evidenzia che, per 6 delle 7 vulnerabilità, il vendor ha dichiarato di essere a conoscenza di Proof of Concept (PoC) in grado di dimostrare l'ottenimento dell'esecuzione remota di codice arbitrario o condizioni di corruzione della memoria in specifici scenari."
-},
-{
-"sito": "ACN",
-"feed": "ACN - notizie",
-"categoria": "Vigilanza",
-"titolo": "Risolte vulnerabilità in prodotti ServiceNow",
-"link": "https://www.acn.gov.it/portale/w/risolte-vulnerabilita-in-prodotti-servicenow",
-"data_originale": "Fri, 20 Nov 2026 10:03:09 GMT",
-"data": "2026-11-20",
-"descrizione": "Risolte due vulnerabilità con gravità \"alta\" che interessano ServiceNow AI Platform, piattaforma per l'integrazione di funzionalità di intelligenza artificiale, e Email Response AI Agent di Now Assist for CSM, componente per la gestione automatizzata delle risposte e-mail nell'ambito del servizio clienti. Le vulnerabilità, qualora sfruttate, potrebbero consentire a un utente malintenzionato di eludere i meccanismi di sicurezza ed eseguire codice arbitrario sui sistemi interessati."
+"titolo": "Anci 2026, termina la tre giorni di Acn dedicata alla cybersicurezza dei comuni",
+"link": "https://www.acn.gov.it/portale/web/guest/-/anci-2026-termina-la-tre-giorni-di-acn-dedicata-alla-cybersicurezza-dei-comuni",
+"data_originale": "27/11/2026",
+"data": "2026-11-27",
+"descrizione": "News - 27 Novembre 2026 Crittografia, cloud, intelligenza artificiale, incidenti informatici: allo stand dell’Agenzia sessioni tematiche, approfondimenti e dialogo con gli enti locali per accrescere le competenze digitali Cloud NIS Crittografia Cybersicurezza Anci ACN"
 },
 {
 "sito": "ACN",
@@ -541,16 +551,6 @@
 "data_originale": "20/11/2026",
 "data": "2026-11-20",
 "descrizione": "News - 20 Novembre 2026 Nel numero di ottobre, registrati 691 eventi cyber (+42%) di cui 394 incidenti con impatto confermato CSIRT Italia Cybersicurezza ACN Operational summary"
-},
-{
-"sito": "ACN",
-"feed": "ACN - comunicazione (notizie dell'Agenzia)",
-"categoria": "Vigilanza",
-"titolo": "Pubblicato il primo Avviso per l'accesso alle risorse di calcolo di Megaride",
-"link": "https://www.acn.gov.it/portale/web/guest/-/pubblicato-il-primo-avviso-per-l-accesso-alle-risorse-di-calcolo-di-megaride",
-"data_originale": "13/11/2026",
-"data": "2026-11-13",
-"descrizione": "News - 13 Novembre 2026 L'avviso è dedicato a Università e organismi di ricerca italiani che vogliono sviluppare Cybersicurezza Strategia Nazionale di Cybersicurezza ACN"
 },
 {
 "sito": "ACN",
@@ -619,8 +619,8 @@
 "titolo": "Scopri di più su 43° Assemblea Nazionale ANCI",
 "link": "https://www.acn.gov.it/portale/web/guest/-/43-assemblea-nazionale-anci",
 "data_originale": "27/11/2026",
-"data": "2026-11-26",
-"descrizione": "Data indicata dal sito: 2026-11-27. 25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
+"data": "2026-11-27",
+"descrizione": "25 - 26 - 27 novembre 2026 Verona, presso Veronafiere 43° Assemblea Nazionale ANCI Stand dell'Agenzia per la cybersicurezza nazionale con workshop su NIS2, cloud, prevenzione delle minacce, formazione del personale e crittografia. Appuntamento con \"ACN risponde\""
 },
 {
 "sito": "ACN",

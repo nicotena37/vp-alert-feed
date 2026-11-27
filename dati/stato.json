@@ -1,5 +1,5 @@
 {
- "letto_il": "2026-11-26T13:57:29+00:00",
+ "letto_il": "2026-11-27T13:56:08+00:00",
  "siti": {
   "Banca d'Italia": {
    "feed_ok": 0,
@@ -26,7 +26,7 @@
   "IVASS": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 23,
+   "notizie": 26,
    "allarmi": []
   },
   "Consob": {
@@ -68,7 +68,7 @@
   "Agenzia delle Entrate": {
    "feed_ok": 4,
    "feed_totali": 4,
-   "notizie": 51,
+   "notizie": 90,
    "allarmi": []
   },
   "INPS": {
@@ -152,7 +152,7 @@
   "BCE": {
    "feed_ok": 12,
    "feed_totali": 12,
-   "notizie": 151,
+   "notizie": 152,
    "allarmi": []
   },
   "ESRB": {
@@ -168,12 +168,10 @@
    "allarmi": []
   },
   "Parlamento europeo": {
-   "feed_ok": 0,
+   "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 0,
-   "allarmi": [
-    "Parlamento UE - testi approvati (dati aperti): feed non leggibile (nessuna risposta in 25 s) - https://data.europarl.europa.eu/api/v2/adopted-texts/feed?timeframe=one-week"
-   ]
+   "notizie": 76,
+   "allarmi": []
   },
   "Consiglio UE": {
    "feed_ok": 1,
@@ -184,10 +182,12 @@
    ]
   },
   "Commissione europea": {
-   "feed_ok": 1,
+   "feed_ok": 0,
    "feed_totali": 1,
-   "notizie": 10,
-   "allarmi": []
+   "notizie": 0,
+   "allarmi": [
+    "Commissione UE - press corner: feed non leggibile (nessuna risposta in 25 s) - https://ec.europa.eu/commission/presscorner/api/rss?language=it"
+   ]
   },
   "BIS": {
    "feed_ok": 2,
@@ -204,7 +204,7 @@
   "Teleborsa": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 17,
+   "notizie": 15,
    "allarmi": []
   },
   "AMLA": {
@@ -264,7 +264,7 @@
   "Senato della Repubblica": {
    "feed_ok": 1,
    "feed_totali": 1,
-   "notizie": 65,
+   "notizie": 63,
    "allarmi": []
   },
   "INAIL": {
